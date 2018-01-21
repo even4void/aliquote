@@ -1,0 +1,31 @@
++++
+title = "Data Science From Scratch"
+date = 2015-07-26T19:58:55+01:00
+draft = false
+
+tags = ["lectures", "review"]
+categories = []
+
+[header]
+image = ""
+caption = ""
+preview = true
+
++++
+
+Yet another quick review of a book I purchased recently on O'Reilly; *Data Science from Scratch*, by [Joel Grus](http://joelgrus.com). I will take advantage of this post to briefly review other related books.
+
+*Data Science from Scratch* covers a number of statistical models (chapters 12 to 18), including: k-nn, naive Bayes, generalized linear models, decision trees, neural networks; additional chapters cover unsupervised learning (k-means and hierarchical clustering), natural language processing (text processing/classification and topic modeling), network analysis and recommender systems. Two extra chapters cover the basic of SQL and MapReduce. Overall, I find that the emphasis is put on applications and Python coding, rather than using Python to solve data science problems.
+
+A scratch course in Python is offered in Chapter 2, and the author suggests to install [Anaconda](http://continuum.io/downloads) as so many do; I am, however, happy with the Python distribution that shipped with my Macbook (that may be just me, but Anaconda is creating a mess with various lib when using Homebrew and R). I don't think this chapter would be enough for a beginner in Python, though. Likewise, chapters on linear algebra and statistics are rather scarse, even if chapter 7 ('Hypothesis and Inference') discusses key elements of statistical inference. The graphics aren't so terrible because the author use Matplotlib with all its horrible default settings (hopefully there are now [bokeh](http://bokeh.pydata.org/en/latest/) and [seaborn](http://stanford.edu/~mwaskom/software/seaborn/)!).
+
+Overall, this book is for people who know Python and are interested into getting introduced to data science quickly, without all the details. The author is certainly very proficient in Python, and he surely knows what he is doing when analyzing data, but I was surprised to find so little discussion about  statistical theory or data science as a whole. As it stands, this book looks more like a collection of recipes for data scientists interested in using Python.
+
+Other titles of interest that I should probably describe in more details in future posts: 
+
+<i class="fa fa-external-link fa-1x"></i>  [Data Science for Business](http://www.data-science-for-biz.com). This book covers the core elements of predictive modeling, with an emphasis on "business problems" (decision-making problems that intermix data-driven approaches and cost/utility analysis) tree-based predictive modeling, classification and regression models, inlcuding non-linear models (SVM, NNs), a complete chapter on overfitting and cross-validation, similarity and distance-based clustering, assessing model performance with graphical displays and numbers, text-mining, some applications of decision analytic techniques. The authors suggest the following four principles: (1) "Extracting useful knowledge from data to solve business problems can be treated systematically by following a process with reasonably well-defined stages."; (2) "From a large mass of data, information technology can be used to find informative descriptive attributes of entities of interest"; (3) "If you look too hard at a set of data, you will find something—but it might not generalize beyond the data you’re looking at"; and (4) "Formulating data mining solutions and evaluating the results involves thinking carefully about the context in which they will be used".  Additional material can be found on GitHub: [Practical Data Science Fall 2014](https://github.com/jattenberg/PDS-Spring-2014) (the 2013 session is dead); see also Josh Attenberg's page on [Tools of the Data Scientist](http://people.stern.nyu.edu/ja1517/datascience.html).
+
+<i class="fa fa-external-link fa-1x"></i>  [Doing Data Science](http://shop.oreilly.com/product/0636920028529.do). It was [reviewed by Joseph Rickert](http://goo.gl/29S0Wu) on the Revolutions R's blog. I find this is a fair review. I would like to add that the applications include social network analysis, fraud detection, recommendation engines, and data engineering (e.g., MapReduce). There's even a chapter dedicated to epidemiological studies, next to that on controlled experimental (as in, e.g., clinical studies or A/B testing). It comes with an [example code repository](https://github.com/oreillymedia/doing_data_science) on GitHub, and a [blog](http://columbiadatascience.com/doing-data-science/) which was used to reflect course progress and additional discussion from the live course. The good thing is that it was written by people with a background in statistics, and the authors are not speaking of 'data science' as a simple toolbox (data munging, machine elarning, data mining, etc.), but as a discipline; this is probably what Joseph Rickert meant when he wrote:
+
+> Every once in a while a single book comes to crystallize a new discipline.
+

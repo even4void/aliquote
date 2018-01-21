@@ -33,6 +33,8 @@ weight = 5
  
 +++
 
-# Biography
+# aliquote
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed neque elit, tristique placerat feugiat ac, facilisis vitae arcu. Proin eget egestas augue. Praesent ut sem nec arcu pellentesque aliquet. Duis dapibus diam vel metus tempus vulputate. 
+> a quantity that can be divided into another a whole number of time
+
+You landed on my homepage. Welcome! This is my little placeholder for notes and random musings in the digital era. Professional details are available on the ["publish-or-perish" page]({{< ref "publications.md" >}}) (defunct) or the {{% staticref "files/chl-2016.pdf" %}}brief and trusty resume{{% /staticref %}}, but let that not stop you reading more.

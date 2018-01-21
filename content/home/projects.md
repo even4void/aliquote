@@ -6,10 +6,10 @@ active = true
 date = "2016-04-20T00:00:00"
 
 title = "Projects"
-subtitle = ""
+subtitle = "Coming soon"
 
 # Order that this section will appear in.
-weight = 50
+weight = 40
 
 # View.
 # Customize how projects are displayed.
