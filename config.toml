@@ -15,7 +15,7 @@ copyright = "&copy; 2018 – Christophe Lalanne"
 theme = "academic"
 enableEmoji = true
 footnotereturnlinkcontents = "<sup>^</sup>"
-ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
+ignoreFiles = ["_files$", "_cache$"]
 preserveTaxonomyNames = true
 paginate = 10
 
@@ -55,12 +55,12 @@ defaultContentLanguageInSubdir = false
 
   # Organizations/Affiliations.
   #   Separate multiple entries with a comma, using the form: `[ {name="Org1", url=""}, {name="Org2", url=""} ]`.
-  organizations = [ { name = "Paris Diderot University", url = "https://www.univ-paris-diderot.fr" } ]
+  # organizations = [ { name = "Paris Diderot University", url = "https://www.univ-paris-diderot.fr" } ]
 
   gravatar = false  # Get your avatar from Gravatar.com? (true/false)
   avatar = ""  # Specify an avatar image (in `static/img/` folder) or delete value to disable avatar.
   email = "ch.lalanne@gmail.com"
-  address = "Not from around here"
+  address = "Not from around here."
   office_hours = ""
   phone = ""
   skype = ""
@@ -111,7 +111,7 @@ defaultContentLanguageInSubdir = false
   comment_count = true
 
   # Display next/previous section pager?
-  section_pager = false
+  section_pager = true
 
   # Enable global LaTeX math rendering?
   #   If false, you can enable it locally on a per page basis.
@@ -145,7 +145,7 @@ defaultContentLanguageInSubdir = false
   #   For more info on the highlighting options, see:
   #   https://sourcethemes.com/academic/post/writing-markdown-latex/#highlighting-options
   highlight = true
-  highlight_languages = ["r", "python", "lisp", "clojure", "c"]
+  highlight_languages = ["r", "python", "lisp", "clojure", "c", "stata", "latex"]
   # highlight_style = "github"
 
   # Enable native social sharing buttons?
@@ -214,25 +214,30 @@ defaultContentLanguageInSubdir = false
   #
   #   Full list: https://jpswalsh.github.io/academicons/
 
-  [[params.social]]
-    icon = "envelope"
-    icon_pack = "fa"
-    link = "mailto:ch.lalanne@gmail.com"
+  # [[params.social]]
+  #   icon = "envelope"
+  #   icon_pack = "fa"
+  #   link = "mailto:ch.lalanne@gmail.com"
 
   [[params.social]]
     icon = "twitter"
     icon_pack = "fa"
     link = "//twitter.com/chlalanne"
 
-  [[params.social]]
-    icon = "google-scholar"
-    icon_pack = "ai"
-    link = "https://scholar.google.co.uk/citations?user=CbDopzIAAAAJ"
+  # [[params.social]]
+  #   icon = "google-scholar"
+  #   icon_pack = "ai"
+  #   link = "https://scholar.google.co.uk/citations?user=CbDopzIAAAAJ"
 
   [[params.social]]
     icon = "github"
     icon_pack = "fa"
     link = "//github.com/chlalanne"
+
+ [[params.social]]
+    icon = "headphones"
+    icon_pack = "fa"
+    link = "//deezer.com/profile/1974959"
 
 
 # Navigation Links
@@ -248,10 +253,10 @@ defaultContentLanguageInSubdir = false
   url = "#about"
   weight = 1
 
-[[menu.main]]
-  name = "Publications"
-  url = "#publications_selected"
-  weight = 2
+# [[menu.main]]
+#   name = "Publications"
+#   url = "#publications_selected"
+#   weight = 2
 
 [[menu.main]]
   name = "Posts"
@@ -261,23 +266,23 @@ defaultContentLanguageInSubdir = false
 [[menu.main]]
   name = "Projects"
   url = "#projects"
-  weight = 4
+  weight = 2
 
-# [[menu.main]]
-#   name = "Teaching"
-#   url = "#teaching"
-#   weight = 5
+[[menu.main]]
+  name = "Teaching"
+  url = "teaching"
+  weight = 4
 
 [[menu.main]]
   name = "Contact"
   url = "#contact"
-  weight = 6
+  weight = 5
 
 # Taxonomies.
 [taxonomies]
   tag = "tags"
   category = "categories"
-  publication_type = "publication_types"
+#  publication_type = "publication_types"
 
 # Languages
 #   Create a [languages.X] block for each language you want, where X is the language ID.
@@ -285,3 +290,6 @@ defaultContentLanguageInSubdir = false
 # Configure the English version of the website.
 [Languages.en]
   languageCode = "en-us"
+
+# [Languages.fr]
+#   languageCode = "fr-fr"

@@ -9,11 +9,11 @@ weight = 5
 
 # List your academic interests.
 [interests]
-  interests = [
-    "Computer science",
-    "Computational statistics",
-    "Data visualization"
-  ]
+#  interests = [
+#    "Computer science",
+#    "Computational statistics",
+#    "Data visualization"
+#  ]
 
 # List your qualifications (such as academic degrees).
 [[education.courses]]
@@ -33,8 +33,14 @@ weight = 5
  
 +++
 
-# aliquote
+# aliquot
+<small> < a quantity that can be divided into another a whole number of time /></small>
 
-> a quantity that can be divided into another a whole number of time
+You landed on my homepage. Welcome! This is my little placeholder for random musings in the digital era. Professional details were once available on a "publish-or-perish" page. Since it is now *defunct*, there only remains the <i class="fa fa-file-pdf-o fa-1x"></i> {{% staticref "files/chl-2016.pdf" %}}brief and trusty resume{{% /staticref %}}. But let that not stop you reading more.
+  
+> There are places I don't remember  
+> There are times and days, they mean nothing to me  
+> I've been looking through some of them old pictures  
+> They don't serve to jog my memory  
+> <small>Tindersticks [<i class="fa fa-play-circle-o fa-1x"></i>](https://www.youtube.com/watch?v=zFfOgtTEji4)</small>
 
-You landed on my homepage. Welcome! This is my little placeholder for notes and random musings in the digital era. Professional details are available on the ["publish-or-perish" page]({{< ref "publications.md" >}}) (defunct) or the {{% staticref "files/chl-2016.pdf" %}}brief and trusty resume{{% /staticref %}}, but let that not stop you reading more.
