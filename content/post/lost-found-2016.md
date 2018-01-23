@@ -1,9 +1,9 @@
 +++
-title = "lost+found 2016–2017"
+title = "lost+found 2016"
 date = 2018-01-21T19:28:46+01:00
 draft = false
 
-tags = ["misc"]
+tags = ["misc", "emacs"]
 categories = []
 
 [header]
@@ -13,7 +13,7 @@ preview = true
 
 +++
 
-Here are some draft notes, from 2016 and 2017, unfilled and lost forever. With slight edits to accomodate a proper archive blog post.
+Here are some draft notes, written in 2016, unfilled but not lost forever. With slight edits to accomodate a proper archive blog post.
 
 ## Docker
 <small>(August 2016)</small>
@@ -60,9 +60,6 @@ where `706c4d957b24` is the contained id that `docker ps` displayed (assuming we
 Well, that's pretty all we need to know to start from scratch with Docker.
 
 
-
-
-
 ## Spacemacs
 <small>(March 2016)</small>
 
@@ -70,7 +67,7 @@ As discussed in many posts of mine, I am a big fond of GNU Emacs. I use it all t
 
 In the mean time, I found interesting blog posts like [Spacemacs for 2016][milosophical] or [Org mode and Pandoc][rousette] where authors describe their experience with Spacemacs.
 
-Everything seems to work right out of the box. A quick check allowed me to confirm that Slime and CIDER can be directly fired from a Lisp or Clojure buffer, while IPython is the default REPL that is launched when visiting a Python file. Spacemacs relies on [anaconda mode][anaconda-mode] (not to be confused with [Anaconda Python][anaconda]) which was a little bit tricky to configure (I ran into trouble with Homebrew Python and then once I installed Anaconda Python, with pip itself[^1]; but see [this discussion][issue2917]). Most important to me is the ability to use [ESS][ess] to manage my statistical projects, and it also proved to work quite smoothly.
+Everything seems to work right out of the box. A quick check allowed me to confirm that Slime and CIDER can be directly fired from a Lisp or Clojure buffer, while IPython is the default REPL that is launched when visiting a Python file. Spacemacs relies on [anaconda mode][anaconda-mode] (not to be confused with [Anaconda Python][anaconda]) which was a little bit tricky to configure (I ran into trouble with Homebrew Python and then once I installed Anaconda Python, with `pip` itself[^1]; but see [this discussion][issue2917]). Most important to me is the ability to use [ESS][ess] to manage my statistical projects, and it also proved to work quite smoothly.
 
 ![Spacemacs in 2016](/img/2016-05-05-12-38-17.png)
 
@@ -96,18 +93,6 @@ Some key features are highlighted below:
 
 - **Update packages and Spacemacs:**
 
-
-## Modern statistics in behanvioral sciences
-<small>(December 2012)</small>
-
-I brought these two books long ago but I just realized that they do really constitute good references for applied researchers in Behavioral Sciences.
-
-1. Wilcox, R. *Modern Statistics for the Social and Behavioral Sciences, A Practical Introduction*, CRC Press, 2012.
-2. Wilcox, R. *Fundamentals of Modern Statistical Methods, Substantially Improving Power and Accuracy* (2nd Ed.), Springer, 2010.
-
-Actually I suspect the first reference was developed as a more complete development of the topics discussed in [2]. Contrary to most textbooks on statistics for the behavioral or social sciences, the author goes beyond classical tests of association and insists on robust methods like trimmed mean and robust regression (e.g., median-based or M-estimators). Moreover, several chapters are dedicated to the analysis of variance and post-hoc multiple comparisons, including within-design. In each case, the bootstrap is discussed extensively. Some R code is provided for most of the illustrations.
-
-I organize a course on [applied statistics for behavioral scientists][cogmaster] each year, and I suggest two free online textbooks: [OpenIntro Statistics][openintrostat] (2nd edition), and [Learning Statistics with R][lsr] (v 0.5). I believe these two textbooks provide enough material for students involved in cognitive science or neurosciences.
 
 [^1]: And then with Python 3.5, which was installed as the default Python interpreter by conda, because I use [offlineimap][offlineimap] to fetch my email on my local HD (and [process them with mu4e][mu4e]) and it is not compatible with Python 3.5, sigh. Maybe I should just switch to [mbsync][mbsync] or [imapfw][imapfw], which might replace offlineimap at some point.
 
@@ -139,6 +124,6 @@ I organize a course on [applied statistics for behavioral scientists][cogmaster]
 [one-dark]: https://github.com/jonathanchu/atom-one-dark-theme
 [source-code]: https://github.com/adobe-fonts/source-code-pro
 [offlineimap]: https://github.com/OfflineIMAP/offlineimap
-[mu4e]: http://aliquote.org/memos/2013/05/31/using-mu-to-manage-e-mails
+[mu4e]: {{< ref "/post/using-mu-to-manage-e-mails.md" >}}
 [imapfw]: http://imapfw.offlineimap.org
 [mbsync]: http://isync.sourceforge.net

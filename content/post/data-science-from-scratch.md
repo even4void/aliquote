@@ -1,5 +1,5 @@
 +++
-title = "Data Science From Scratch"
+title = "Data science from scratch"
 date = 2015-07-26T19:58:55+01:00
 draft = false
 

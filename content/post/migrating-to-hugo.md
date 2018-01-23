@@ -27,3 +27,10 @@ Anyway, it has been a funny experience to edit very old posts and re-read old se
 
 - I had to download and unfill pictures and images from Dropbox
 - Several posts must be converted from Textile to Markdown
+
+
+<i class="fa fa-file-pdf-o fa-1x"></i> indicates a link pointing to a PDF file while <i class="fa fa-file-code-o fa-1x"></i> means a text file with some code
+
+As you may expect, the symbol <i class="fa fa-chain-broken fa-1x"></i> means a broken link or lost ressources.
+
+I usually put <i class="fa fa-external-link fa-1x"></i> at the beginning of an item in a long list of ressources, as in my monthly "tech review".
