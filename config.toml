@@ -14,7 +14,7 @@ copyright = "&copy; 2018 – Christophe Lalanne"
 
 theme = "academic"
 enableEmoji = true
-footnotereturnlinkcontents = "<sup>^</sup>"
+footnotereturnlinkcontents = "↩"
 ignoreFiles = ["_files$", "_cache$"]
 preserveTaxonomyNames = true
 paginate = 10
@@ -260,7 +260,7 @@ defaultContentLanguageInSubdir = false
 
 [[menu.main]]
   name = "Posts"
-  url = "#posts"
+  url = "post"
   weight = 3
 
 [[menu.main]]

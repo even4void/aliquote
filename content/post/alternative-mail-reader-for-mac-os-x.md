@@ -1,5 +1,5 @@
 +++
-title = "Alternative Mail Reader for Mac Os X"
+title = "Alternative mail reader for Mac OS X"
 date = 2012-12-17T22:12:46+01:00
 draft = false
 

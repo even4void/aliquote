@@ -332,3 +332,54 @@ SRMR (Standardized Root Mean Square Residual)
 
           Value                              0.049
 ```
+
+
+## Bifactor models
+
+Here are some notes on Bifactor models, and their use in psychological or
+medical research.
+
+As illustrated in the following picture (taken from Reise et al., 2010; see
+full reference below), a bifactor model differs from a second-order factor
+model in that (1) factor (or primary units) are not correlated, (2) the
+relation between indicators or items and the general factor is direct, and
+not mediated by specific factors as in a second-order factor model. As such,
+the bifactor model may be seen as a measurement model, unlike the later.
+
+![Bifactor models](/img/20140704153700.jpg)
+
+From [Statalist](http://www.stata.com/statalist/archive/2011-11/msg00596.html), I found the following references on second-order factor and bifactor models (whenever possible I fixed dead links and tried to find ungated PDFs):
+
+- Koufteros, X., Babbarb, S., & Kaighobadi, M. (2009). A paradigm for examining second-order factor models employing structural equation modeling. *International Journal of Production Economics*, *120(2)*, 633-652.
+- Rindskopf, D., & Rose, T. (1988). Some theory and applications of confirmatory second-order factor analysis. *Multivariate Behavioral Research*, *23(1)*, 51-67.
+- Chen, F.F., West, S.G., & Sousa, K.H. (2006). [A Comparison of Bifactor and Second-Order Models of Quality of Life](http://www.researchgate.net/publication/228369180_A_comparison_of_bifactor_and_second-order_models_of_quality_of_life/file/79e4150aaad4e77775.pdf). *Multivariate Behavioral Research*, *41(2)*, 189–225.
+- Chen, F.F., Hayes, A., Carver, C.S., Laurenceau, J.-P., Zhang, Z. (2012). [Modeling General and Specific Variance in Multifaceted Constructs: A Comparison of the Bifactor Model to Other Approaches](http://www.psy.miami.edu/faculty/ccarver/documents/12_Chen_JP_Bifactor.pdf). *Journal of Personality*, *80(1)*, 219-251.
+- Landsheer, J.A. (2010). The specification of causal models with Tetrad IV: a review. *Structural Equation Modeling*, *17(4)*, 703-711. http://www.phil.cmu.edu/projects/tetrad/
+- Zheng, Z.E., & Pavlou, P.A. (2010). Toward a Causal Interpretation from Observational Data: A New Bayesian Networks Method for Structural Models with Latent Variables. *Information Systems Research*, *21(2)*, 365-391. http://www.utdallas.edu/~ericz/ISR09.pdf
+- Xu, L. (2010). Machine learning problems from optimization perspective. Journal of Global Optimization, 47, 369–401. http://www.cse.cuhk.edu.hk/~lxu/papers/journal/ml-opt10.pdf
+- Tu, S., & Xu, L. (2011a). Parameterizations make different model selections: Empirical findings from factor analysis. Frontiers of Electrical and Electronic Engineering in China, 6(2), 256–274. http://www.cse.cuhk.edu.hk/~lxu/papers/journal/11FEE-tsk-two.pdf
+- Tu, S., & Xu, L. (2011b). An investigation of several typical model selection criteria for detecting the number of signals. Frontiers of Electrical and Electronic Engineering in China, 6(2), 245–255. http://www.cse.cuhk.edu.hk/~lxu/papers/journal/11FEE-tsk-sev.pdf ;
+- Xu, L. (2011). Codimensional matrix pairing perspective of BYY harmony learning: hierarchy of bilinear systems, joint decomposition of data-covariance, and applications of network biology. Frontiers of Electrical and Electronic Engineering in China, 6(1), 86–119. http://www.cse.cuhk.edu.hk/~lxu/papers/journal/byy11.pdf
+
+Here are some other references:
+
+- Liu, T., Dai, H., and Zhao, Y. (2012). [Comparison of Full-Information and Limited-Information Methods for Bi-Factor Model](http://goo.gl/vXj6Zh) <i class="fa fa-chain-broken fa-1x"></i>. *Advances in information Sciences and Service Sciences (AISS)*, 4(11), 11-18.
+- Chen, F.F., Sousa, K.H., and West, S.G. (2005). [Testing Measurement Invariance of Second-Order Factor Models](http://goo.gl/XuGrJx). *Structural Equation Modeling*, 12(3), 471-492.
+- Resie, S.P, Moore, T.M., and Haviland, M.G. (2010). [Bifactor Models and Rotations: Exploring the Extent to which Multidimensional Data Yield Univocal Scale Scores](http://www.ncbi.nlm.nih.gov/pmc/articles/PMC2981404/). *Journal of Personality Assessement*, *92(6)*, 544–559.
+
+In an older post, I talked about [formative vs. reflective measurement]({{< ref "/post/formative-vs-reflective-measurement.md" >}}). Here are some <i class="fa fa-file-pdf-o fa-1x"></i> [slides](http://goo.gl/61qNvi) that contain a lot more references.
+
+
+## Book review
+
+Here are some notes on statistical books I read this (academic) year. This time, I will concentrate on psychometrics. Several books rely on Mplus.
+
+- Introduction to Psychometric Theory (Raykov & Marcoulides, 2011, Routledge). This is an interesting overview of 'modern' psychometrics, including factor analysis and item response theory. The authors provide a detailed account of reliability (chapters 6 and 7), and generalizability theory.
+
+- Data analysis with Mplus (Geiser, 2013, Guilford Press). This is a gentle introduction to the [Mplus software](http://www.statamodel.com) for structural equation modeling (cross-sectional and longitudinal settings), latent class analysis and hierarchical multilevel models.
+
+- Discovering Structural Equation Modeling Using Stata (Acock, 2013, Stata Press). I really like books from [Stata Press](http://www.stata-press.com/): they are generally well-written, background information is provided and applications are well targeted and illustrated. I already talked about this book as it was published along the new release of [Stata 12 and its SEM builder](http://goo.gl/DnpsBT). As always, additional material are available on the [companion website](http://goo.gl/w3hBPu).
+
+- Structural Equation Modeling. Applications Using Mplus (Wang & Wang, 2012, Wiley). This is a very nice book, with complete Mplus code to illustrate various models fitted on a short version of the Brief Symptoms Inventory (BSI-18).
+
+- Latent Variable Modeling Using R (Beaujean, 2014, Routledge)

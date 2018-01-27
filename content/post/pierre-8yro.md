@@ -1,0 +1,18 @@
++++
+title = "Sun of my life"
+date = 2012-06-23T15:09:59+01:00
+draft = false
+
+tags = ["misc"]
+categories = []
+
+[header]
+image = ""
+caption = ""
+preview = true
+
++++
+
+Eight years now...
+
+![Pierre](20120623224809.jpg)

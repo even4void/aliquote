@@ -6,8 +6,12 @@ highlight = false
 
 # Optional featured image (relative to `static/img/` folder).
 [header]
-image = "headers/DKjxqNxWkAAuKNU.jpg"
-caption = "Credit: @Oniropolis on Twitter"
+
+image = "headers/pexels-photo-post.jpg"
+caption = "Credit: Pexels"
+
+# image = "headers/DKjxqNxWkAAuKNU.jpg"
+# caption = "Credit: @Oniropolis on Twitter"
 
 +++
 

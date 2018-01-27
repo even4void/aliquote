@@ -1,5 +1,5 @@
 +++
-title = "Os X Mavericks"
+title = "OS X Mavericks"
 date = 2014-07-27T15:41:33+01:00
 draft = false
 
