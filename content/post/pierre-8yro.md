@@ -15,4 +15,6 @@ preview = true
 
 Eight years now...
 
-![Pierre](20120623224809.jpg)
+<!--more--> 
+
+![Pierre](/img/20120623224809.jpg)

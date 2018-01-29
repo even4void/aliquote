@@ -1,6 +1,6 @@
 +++
 title = "GNU Emacs on OS X 10.7"
-date = 2018-01-27T15:13:04+01:00
+date = 2012-06-16T15:13:04+01:00
 draft = false
 
 tags = ["apple", "emacs"]
@@ -45,7 +45,7 @@ This will add [Marmalade](http://marmalade-repo.org/) as well as Tromey ELPA to 
 
 in order to exchange command the option (<kbd>⌥</kbd>) and command (<kbd>⌘</kbd>) keys. Otherwise, we cannot type symbols like `~` (<kbd>Alt-n</kbd>), or use square brackets (which is pretty sad when writing R code :-). Other customizations can be added, for example to make the connection with Mac `pbpaste` more transparent.
 
-I was aware of [Yasnippet](http://capitaomorte.github.com/yasnippet/), which is inspired from [Textmate](http://macromates.com/), but I just gave it a try in the past. Now, I'm using it and it seems the trigger key (⇥) is not too intrusive when I'm typing.
+I was aware of [Yasnippet](http://capitaomorte.github.com/yasnippet/), which is inspired from [Textmate](http://macromates.com/), but I just gave it a try in the past. Now, I'm using it and it seems the trigger key (<kbd>⇥</kbd>) is not too intrusive when I'm typing.
 
 I am also trying to familiarize myself with [ido-mode](http://emacswiki.org/emacs/InteractivelyDoThings) that I've never used:
 
@@ -54,7 +54,7 @@ I am also trying to familiarize myself with [ido-mode](http://emacswiki.org/emac
 (ido-mode t)
 ```
 
-My first impressions were disconcerting, but now I seem to get used to it. I just have to remember that I now have to `C-d` to get into `dired-mode` for browsing content of a directory.
+My first impressions were disconcerting, but now I seem to get used to it. I just have to remember that I now have to <kbd>C-d</kbd> to get into `dired-mode` for browsing content of a directory.
 
 My `.emacs` is not entirely clean at the moment: I need to investigate the [autoload vs. require](http://a-nickels-worth.blogspot.fr/2007/11/effective-emacs.html) issue more carefully. For the moment, I am quite happy with the configuration of Lisp, Clojure, R, and Python. I can connect to slime using either `lein swank` or `M-x clojure-jack-in` from within Emacs. For R, I have [Yasnippets](https://github.com/capitaomorte/yasnippet) working right out of the box, together with other goodies from [ESS](http://ess.r-project.org/). I was previously using [ado-mode](http://homepage.mac.com/brising/Stata/), but `ess-mode` provides most of the basic functionalities I need for interacting with Stata.
 

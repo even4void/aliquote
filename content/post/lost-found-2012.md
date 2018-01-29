@@ -57,3 +57,23 @@ Contrary to Likert scaling, the purpose of Guttman scaling is to scale both resp
 
 ### Unfolding theory
 <small>(null & void)</small>
+
+
+## Pyschoco and JSS
+<small>(June 2012)</small>
+
+Last year I posted a note on the [Psychoco conference]({{< ref "/post/psychoco-2011.md" >}}). The official website is [here](http://eeecon.uibk.ac.at/psychoco/). There is now a special issue in the *Journal of Statistical Software* about this project: [Psychoco: Psychometric Computing in R](http://www.jstatsoft.org/v48/). Here is a quick review.
+
+
+## Clinical prediction models
+<small>(May 2012)</small>
+
+<i class="fa fa-external-link fa-1x"></i> [Cochrane Prognosis Methods Group](http://prognosismethods.cochrane.org/our-publications)
+
+<i class="fa fa-external-link fa-1x"></i> [Reporting of prognostic markers: current problems and development of guidelines for evidence-based practice in the future](http://www.ncbi.nlm.nih.gov/pmc/articles/PMC2747576/)
+
+<i class="fa fa-external-link fa-1x"></i> [Reporting of prognostic studies of tumour markers: a review of published articles in relation to REMARK guidelines](http://www.nature.com/bjc/journal/v102/n1/full/6605462a.html)
+
+<i class="fa fa-external-link fa-1x"></i> [Rules of evidence for cancer molecular-marker discovery and validation](http://www.vailworkshop.org/files/2010/LibraryResources/Gonen%20References/Ransohoff%20DF_Rules%20of%20evidence%20for%20cancer%20molecular-marker%20discovery%20and%20validation.pdf)
+
+<i class="fa fa-external-link fa-1x"></i> [Primer: an evidence-based approach to prognostic markers](https://www.nature.com/articles/ncponc0287)
