@@ -117,11 +117,11 @@ Again, there are useful `plot` methods, including the one used here to summarize
 Finally, we could also directly use the [lavaan](http://cran.r-project.org/web/packages/lavaan/index.html) or [sem](http://cran.r-project.org/web/packages/sem/index.html) package and fit a traditional CFA/SEM model. In the latter case, there's also a convenient function called `plsm2sem()` that allows to onvert a `plsm` object to an object of class `mod` for usage with interfacing with `sem` methods.
 
 
-## Networks approach
+## Network approach
 
 The [qgraph](http://cran.r-project.org/web/packages/qgraph/index.html) package, which I already pointed to in an earlier post, [Psychometrics, measurement, and diagnostic medicine]({{< ref "/post/psychometrics-measurement-and-diagnostic-medicine.md" >}}).
 
-In particular, there are nice illustrations on the Big Five theory of personality traits, as measured by the NEOPI, on the dedicated website. Here is the example I like best, for analysing correlation matrices, which basically show (a) an association graph with circular or (b) spring layout, (c) a concentration graph with spring layout, and (d) a factorial graph with spring layout (but see
+In particular, there are nice illustrations on the Big Five theory of personality traits, as measured by the NEOPI, on the dedicated website. Here is the example I like best, for analysing correlation matrices, which basically show (1) an association graph with circular or (2) spring layout, (3) a concentration graph with spring layout, and (4) a factorial graph with spring layout (but see
 `help(qgraph.panel)`):  
 
 ![qg1](/img/20110224170255.png)

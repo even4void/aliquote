@@ -45,3 +45,5 @@ Total in 337 ms
 As you may expect, the symbol <i class="fa fa-chain-broken fa-1x"></i> means a broken link or lost ressources. I didn't check all links, but when I happen to find one that is broken, I simply add tag it as such.
 
 I usually put <i class="fa fa-external-link fa-1x"></i> at the beginning of an item in a long list of ressources, as in my monthly "tech review".
+
+[Highlight.js](https://highlightjs.org) support most of the computing language I use, including various Lisp flavours (Clojure, Clojure REPL, Lisp, Scheme), Mathematica, R, Stata
