@@ -10,7 +10,7 @@ title = "aliquote [Christophe Lalanne]"
 
 # Your copyright notice - appears in site footer.
 # To display a copyright symbol, type `&copy;`.
-copyright = "&copy; 2018 – Christophe Lalanne"
+copyright = "&copy; 2018 Christophe Lalanne"
 
 theme = "academic"
 enableEmoji = true
@@ -18,6 +18,7 @@ footnotereturnlinkcontents = "↩"
 ignoreFiles = ["_files$", "_cache$"]
 preserveTaxonomyNames = true
 paginate = 10
+# enableGitInfo = true
 
 # Enable comments by entering your Disqus shortname
 disqusShortname = "aliquote"
@@ -64,7 +65,7 @@ defaultContentLanguageInSubdir = false
   office_hours = ""
   phone = ""
   skype = ""
-  telegram = ""
+  telegram = "chlalanne"
 
   # Enable Keybase in Contact widget by entering your keybase.io username.
   keybase = "chlalanne"
@@ -146,7 +147,7 @@ defaultContentLanguageInSubdir = false
   #   https://sourcethemes.com/academic/post/writing-markdown-latex/#highlighting-options
   highlight = true
   highlight_languages = ["r", "python", "lisp", "clojure", "c", "stata", "latex"]
-  # highlight_style = "github"
+  highlight_style = "tomorrow"
 
   # Enable native social sharing buttons?
   sharing = true
