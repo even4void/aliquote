@@ -1,0 +1,80 @@
++++
+title = "A bag of tweets / September 2015"
+description = ""
+date = 2015-09-30T17:24:38+01:00
+draft = false
+tags = ["misc"]
+categories = ["tweet-bot"]
++++
+
+Here is the latest bag of tweets<sup>*</sup>, which covers September 2015.
+
+<!--more-->
+
+(*) These are interesting news that I found on Twitter and that I archive periodically.
+
+* ibogost: Processing 3.0 has been released: <https://t.co/94EN3wLqqs> (30 Sep)
+* lpachter: Terence Tao is about to write down probability theory <https://t.co/d0HsmZJJr3> (30 Sep)
+* YhatHQ: Sentiment Analysis With Word2vec | <http://t.co/vhf0IH1mdF> | #DL4J (25 Sep)
+* thosjleeper: Nobody likes mosaic plots. (Some results from a small-n study.) #dataviz #infoviz <http://t.co/zbuTUqcTM9> <http://t.co/ZEdERKqCTc> (25 Sep)
+* rasbt: Finally! ---> 'Writing "Python Machine Learning" - A Reflection on a Journey' <http://t.co/P1K71ih5P0> <http://t.co/mHbK1SZlGA> (25 Sep)
+* JennyBryan: Using Git + @github + @rstudio: 2015 @STAT545 guide for Mac, Windows, Linux <http://t.co/3ZsX4rn7mb> @daattali @BernhardKonrad @ksamuk #rstats (24 Sep)
+* DiegoKuonen: +1 RT @stephensenn: A rant of mine against statistical simplicity #Statistics #EBM <http://t.co/JitdRyj4sn> (24 Sep)
+* hadleywickham: Getting ready to release the next version of readr. Please try out the dev version! Changes at <https://t.co/RsuBtIyGvy> #rstats (23 Sep)
+* ucfagls: A practical guide & power analysis for GLMMs: detecting among treatment variation in random effects <http://t.co/jbIwjUkA7O> #ecology #stats (23 Sep)
+* simplystats: Data Analysis for the Life Sciences - a book completely written in R markdown <http://t.co/qVR2N9zkHS> (23 Sep)
+* YhatHQ: One to bookmark, folks! Data Science Glossary from @bobdc | <http://t.co/Y5VxaMSkPR> (23 Sep)
+* YhatHQ: Winning solution in the Grasp-and-Lift EEG Detection challenge | <http://t.co/qv0iFSetPx> | Code and documentation <http://t.co/mP64HZ7dfs> (22 Sep)
+* zentree: @deaneckles @kinggary @mgershoff @chlalanne It often is a symptom that you stopped modeling too early. I go farther <http://t.co/rgATH7f3LP> (22 Sep)
+* deaneckles: Does using robust SEs make analysts ignore huge model misspecifications? <http://t.co/wtQ1s9fwsv> @kinggary @zentree @mgershoff @chlalanne (22 Sep)
+* HNTweets: Fuzzy string matching using cosine similarity: <http://t.co/UGZAHS9Gc6> Comments: <https://t.co/7kxJkIfc2d> (21 Sep)
+* zentree: "Can You Say 'Heteroscedasticity' 3 Times Fast?" accounting for it in linear and nonlinear regression inference. <https://t.co/ULSSZd5il8> (20 Sep)
+* YhatHQ: #Statistics for Hackers | Great presentation from @jakevdp | <https://t.co/Cut7w2Iryy> <http://t.co/oeGwCF4ave> (19 Sep)
+* EMR_research: A design of experiments approach to validation sampling for logistic regression modeling with error-prone medical… <http://t.co/LzhXaqE5lI> (17 Sep)
+* YhatHQ: Free ebook (kindly provided by David Barber @ Cambridge) | <http://t.co/vlptlG48vv> | Bayesian Reasoning and Machine Learning (17 Sep)
+* pierredewet: DBeaver - I can't believe I haven't heard about this before now  <http://t.co/uuKF7gzSao> (16 Sep)
+* aflyax: Jupyter and conda for #Rstats <http://t.co/AlfV5xHXLA> (16 Sep)
+* aflyax: Building and Sharing R packages made easy with Anaconda <http://t.co/SOlKE7vEgg> (16 Sep)
+* YhatHQ: Handy, dandy guide to #AWS. | <http://t.co/K4Isoa34Nq> | Learn AWS services without feeling dumb. @awscloud (14 Sep)
+* MikeMcQuaid: Introducing Strap: an unopinionated, minimal tool to bootstrap your OS X development system: <https://t.co/tEUdgALqyW> (14 Sep)
+* Atabey_Kaygun: Clojure Machine Learning, Math & Statistical Libraries Collection <http://t.co/1lWqcHsGnF> (13 Sep)
+* rasbt: "The Fallacy of Placing Confidence in Confidence Intervals" -- not entirely through, but wow, a great manuscript! <https://t.co/ubYLKSZOsx> (13 Sep)
+* rasbt: "Modern Methods for Sentiment Analysis" - Word2Vec and Doc2Vec using #Python and gensim. Very well written! <http://t.co/HRRZ0KofXN> (13 Sep)
+* MicheleNuijten: "The prevalence of statistical reporting errors in psychology (1985-2013)" accepted @ Behavior Research Methods. PDF:<http://t.co/NtQYd7cFuL> (12 Sep)
+* djsmith42: One the niftiest resumes I've seen in a long time: <http://t.co/tszmhFc6d2> (11 Sep)
+* octonion: PostgreSQL Magic - <http://t.co/LGiL7JSkZJ> (11 Sep)
+* moklick: Useful tool! <https://t.co/VMofHjNi4F> creates realistic test data in CSV, JSON, SQL and Excel formats. via @chrtze #ddj (11 Sep)
+* nicebread303: This course material by @EJWagenmakers is fantastic. For my next #openscience course I will borrow at lot from him! <https://t.co/PsxiqX2q1Y> (11 Sep)
+* Aelkus: Free book on deep learning <http://t.co/WOdrgXNF7x> (11 Sep)
+* enjalot: visualizing map distortion with #d3js <http://t.co/Xu6UefsLgH> inspired by @currankelleher @syntagmatic @mbostock <http://t.co/ucelZaSmlY> (10 Sep)
+* siah: 19 Tips For Everyday Git Use <http://t.co/qfLDVxIoWY> (8 Sep)
+* robertstats: My slides on @Stata and @mcmc_stan for the #London users' group are now online <http://t.co/JlEYVB7Rqq> <http://t.co/EL4leA6Hg1> (8 Sep)
+* YhatHQ: Data Structure Visualization | <http://t.co/eYEKAqUtEq> (8 Sep)
+* DataWookie: #MonthOfJulia Day 9: Input and Output <http://t.co/MJBs3LZ52Z> <http://t.co/kj9gU72uN3> (8 Sep)
+* aflyax: immersivemath: Immersive Linear Algebra <http://t.co/bQyWnMJfe9> (8 Sep)
+* robertstats: The more I look at these slides, the more wonderful d3-jetpack & -starterkit become <http://t.co/KebDao4AAB> #d3js (7 Sep)
+* kaz_yos: magical syntax highlighting for LaTeX-mode buffers. LaTeX-mode のシンタックスハイライトを激しく <https://t.co/it5XO0qD7A> (6 Sep)
+* planetclojure: SICP Distilled Now Public <http://t.co/0wZUjRXVx1> (6 Sep)
+* Rbloggers: Analysing longitudinal data: Multilevel growth models (II) <http://t.co/unUxszG7VJ> #rstats (6 Sep)
+* rogierK: Use partial, not pairwise, correlations when estimating large-scale brain (e.g. fMRI) networks to improve inference <http://t.co/pMAJtjLwyl> (6 Sep)
+* scheidegger: Alright internet, time to get <http://t.co/hORA9VY4zI> integrated with ggplot, vega, or bokeh. (6 Sep)
+* karpathy: "Dead Code Should be Buried" <http://t.co/AxfZRRz8nB> by @honnibal on NLP tools & new Python library spaCy <http://t.co/C9f798R3aO> looks nice! (5 Sep)
+* stefanvdwalt: The colormap talk, now with guacamole <http://t.co/Ul1JgcSXSO> (5 Sep)
+* ellis2013nz: Defining a new transform with #rstats {scales} - John and Draper's modulus transform. <http://t.co/QLhzs2E2Bv <http://t.co/i6G0SFqRBr> (5 Sep)
+* LispDaily: New #Lisp book on the way? <https://t.co/gRQchgpIgW> (5 Sep)
+* fusaroli: Reproducibility project: A front row seat <http://t.co/AtXZaKxKyY> (4 Sep)
+* MarkusGesmann: Celebrating 4 years of blogging under <http://t.co/H5a4GmkRyP>. Most popular post: data.table rocks <http://t.co/NnT96EJmtB Thanks @MattDowle (3 Sep)
+* abresler: Forgot how amazing the html features are on @renkun_ken fantastic formattable package, check it out #rstats folks <https://t.co/Mg8WKNDTHw> (3 Sep)
+* YhatHQ: Making a beautiful R packa…err…rather a *bare-minimum* R package to stop copy/pasting like a goddamn luddite. <http://t.co/ptgND0guYv> @hspter (3 Sep)
+* rdpeng: The Art of Data Science (written with @eliza68) is finally done! Come and get your copy and send us feedback. <https://t.co/Jv6TMSqXNX> (3 Sep)
+* DiegoKuonen: Just finished slides for my #Business #Analytics course @ @UNIGEnews :) > <http://t.co/TZfQlZQ4rx> #Statistics #BigData <http://t.co/CSYf496pOs> (2 Sep)
+* juliabloggers: #MonthOfJulia Day 3: Variables and Data Types <http://t.co/VliMYq8LBH> #julialang (2 Sep)
+* AlxEtz: Just an example of the beautiful plots @JASPStats makes. <https://t.co/ao5nKLcTuq> <http://t.co/SBiiGt1FnN> (1 Sep)
+* hildabast: #Scicomm tips for interpreting adverse effects data: <http://t.co/IQ5pLIWRIa> (1 Sep)
+* holman: Just wrote quite a bit about how I built GitHub’s rolled-up conversation timeline’s backend: <https://t.co/38v4CaHLLx> (1 Sep)
+* DominoDataLab: Exciting news  ➟ Domino now supports Jupyter w/ R #Python & Julia kernels plus terminal access <http://t.co/jsS1bpk7ZR> #datascience #rstats (1 Sep)
+* ncasenmare: Just made a new prototype! An “interactive animation” about neurons: <http://t.co/q1yBVhx4gf> What do you think? <http://t.co/8xqzECyLQa> (1 Sep)
+* yokofakun: @yokofakun got it: <http://t.co/500dO4BJwJ> Building the graph of medicine from millions of clinical narratives (1 Sep)
+* juliabloggers: #MonthOfJulia Day 2: Development Environments <http://t.co/8zyua71sFi> #julialang (1 Sep)
+* zentree: "GEOSTAT 2015: a write-up". Lots of spatial stats/geostats goodness. <http://t.co/H9dXDU3GXf> #rstats (1 Sep)
+* statsforbios: Couple of nice tips. Don't use variables as fixed and random in mixed models. And partial residual plots. #rstats <http://t.co/arzN65KfbY> (1 Sep)

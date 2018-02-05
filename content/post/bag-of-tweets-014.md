@@ -1,0 +1,94 @@
++++
+title = "A bag of tweets / February 2012"
+description = ""
+date = 2012-02-27T10:38:40+01:00
+draft = false
+tags = ["misc"]
+categories = ["tweet-bot"]
++++
+
+Here is the latest bag of tweets<sup>*</sup>, which covers February 2012.
+
+<!--more-->
+
+(*) These are interesting news that I found on Twitter and that I archive periodically.
+
+* siah: Reading "Fast SVD for Large-Scale Matrices"  highly recommended <http://t.co/REMMndoH> (25 Feb)
+* StatFact: "The persistent topology of data" <http://t.co/5dSmhkeI> // applying computational algebraic topology to data analysis (24 Feb)
+* prometheia: "Nonlinear Principal Components and Long-Run Implications of Multivariate Diffusions." By Chen-Larsen-Scheinkman <http://t.co/dAY06a98> (24 Feb)
+* Biff_Bruise: RT @OECD_Stat: Try the future new version of OECD.Stat in beta with an improved user interface and dynamic graphs: <http://t.co/Fgfc3cHG> (24 Feb)
+* FGRibreau: Learn from Haskell - Functional, reusable JavaScript <http://t.co/QRgbMOiH> (24 Feb)
+* tomstafford: Received 14 June 1995; accepted 8 May 2006 Available online 8 October 2008
+Academic publishing is fantastically broken <http://t.co/e3ZmVipp> (24 Feb)
+* mbostock: @abhay There's a nice list of bitwise hacks here: <http://t.co/cGywqIbK> (24 Feb)
+* StatFact: Prediction: the Lasso vs. just using the top 10 predictors <http://t.co/XMMwz0Jx> (23 Feb)
+* ijuma: "Fast number crunching and fast time to market with Scala" <http://t.co/qV0ZZQZX> <http://t.co/mStyLfcH> (23 Feb)
+* albert_swart: Important discussion on false positives, model selection and overfitting in ML/NLP <https://t.co/crPleJ6b>  via @prismatic (23 Feb)
+* rob_aldridge: Interesting paper examining whether highly tweeted articles receive more citations <http://t.co/jGpy0i4x> (23 Feb)
+* sc_k: The case for open computer programs <http://t.co/EGCKi9Y3> (22 Feb)
+* tkb: The Open Data Handbook is out! Civil servants, journalists, activists, developers, researchers - take a peek: <http://t.co/4rTZbZyW> #opendata (22 Feb)
+* UnixToolTip: Better bash history <http://t.co/XNFqVP1t> (22 Feb)
+* leed0: interesting scripting language comparison table: <http://t.co/EGu0zRO4> (22 Feb)
+* daringfireball: Mountain Lion Details: <http://t.co/kxCdEh45> (22 Feb)
+* neilfws: polar histogram: pretty and useful <http://t.co/DnQmuiAq> (21 Feb)
+* JanWillemTulp: Recap of visual.ly's #d3js meetup, including slides and video <http://t.co/nERLWT0g> (21 Feb)
+* sushantsinha: Python code for pdf to text conversion. Tries pdftotext first and then calls tesseract/ocropus. Hides img format issues <http://t.co/ZRdShsKA> (21 Feb)
+* kdnuggets: Peter Norvig (Google Dir of Research): The Unreasonable Effectiveness of Data - must see for all #BigData miners <http://t.co/6EN0Kedk> (21 Feb)
+* lizardbill: Visualising Stack Overflow Tag Relationships <http://t.co/4l9IV0zj> (21 Feb)
+* mikedewar: Finally got all the examples in the new remake of #d3py working. Only x-axes so far but they're already looking pretty! <http://t.co/RIbSh9rr> (21 Feb)
+* siah: Online Python Tutor <http://t.co/K9R82KrH> (21 Feb)
+* berkeleymalagon: Cool read! A history of O'Reilly book animals. <http://t.co/MwBmNkC3> #tech #books #oreilly (20 Feb)
+* undunc: Excellent (downloadable) book on risk by Brit Med Assoc  <http://t.co/wNhf1Pvw>  For docs, but fine for everyone (20 Feb)
+* ChrisDiehl: Why We Created Julia <http://t.co/z2RAhrkt>  via @prismatic (20 Feb)
+* berndweiss: Shige's Research Blog  is one of the best one-sentence blogs I've ever seen <http://t.co/f7128fPh> #latex #rstats #stats #linux (20 Feb)
+* emacs_knight: From the blog - "Package Management in Emacs: The Good, the Bad and the Ugly" <http://t.co/x7gPGS56> (20 Feb)
+* emacs_knight: From the blog - "Color Theming in Emacs: Reloaded" <http://t.co/JcRNP5vQ> (20 Feb)
+* recology_: Problem 4 #rstats on OSX? @HackerNewsYC: Apple Removes X11 in OS X Mountain Lion, Shifts Support to Open Source XQuartz <http://t.co/kEi4Mmdk> (20 Feb)
+* debasishg: The Architecture of Open Source Applications: Berkeley DB chap is a must read  <http://t.co/K8FQrXly>  via @prismatic (19 Feb)
+* MonkScott: Results from a Semi-Supervised
+Feature Learning Competition: <http://t.co/P53Hb0eP> #machinelearning (18 Feb)
+* ramhiser: Flabbergasted! Ripley said "I am sorry" on #rstats help. <https://t.co/IUnYgOUZ> (18 Feb)
+* neilfws: Sweave for a book - A Sweave Wiki <http://t.co/WQTyShWn> #diigo (18 Feb)
+* TeXtip: How to create a crossword puzzle in LaTeX <http://t.co/kTe8EiW4> (18 Feb)
+* MathematicaTip: Usually you should increase WorkingPrecision and PrecisionGoal together: NIntegrate[x^x, {x, 0, 1}, PrecisionGoal->50, WorkingPrecision->60] (17 Feb)
+* drewconway: Many people asking for the code to go with Machine Learning for Hackers, @johnmyleswhite is hosting on his Github <http://t.co/HX4OpREa> (17 Feb)
+* sithburns: Apple Unveils Mac OS X Mountain Lion: So Long iChat, Hello Twitter [PREVIEW] <http://t.co/dcZs9ufk> (17 Feb)
+* BMJ_Open: Low self-rated health associated with increased mortality in those with #diabetes <http://t.co/GIQrdZZE> (17 Feb)
+* moclanmomo: Wolfram|Alpha Pro wants to  democratize data analysis <http://t.co/Nfdky66u> As long as they don't make it #FOSS, that is just marketing. (17 Feb)
+* wellcometrust: Computer programs may be able to identify individuals most at risk of anxiety and mood disorders. <http://t.co/xzBiCVTZ> (17 Feb)
+* druvus: How Identical are Identical Twins at sequence level? <http://t.co/uh63mipr> #sequencing #snp (17 Feb)
+* DataMiningTips: Weave, a "ridiculously powerful" open-source data visualization  <http://t.co/sNj35pwm> #kdnuggets (17 Feb)
+* Rbloggers: Generating Twitter Wordclouds in R (Prompted by an Open Learning Blogpost): 
+(This article was first pub... <http://t.co/9QAUEwCr> #rstats (17 Feb)
+* mathematicsprof: Leading statistician (John Marden) puts his excellent book on multivariable statistics online in pdf format.   <http://t.co/rlTCUcdb> (17 Feb)
+* statsepi: What #epidemiologists do. <http://t.co/XzxVTjCa> @Peter_Tennant @gingerly_onward @tinscience (16 Feb)
+* Elenina_M: NumPy / SciPy related tutorials at PyCon 2012 #pycon #python - <http://t.co/CkJqtRyn> (15 Feb)
+* signmagazine: Review: Understanding Measurement: Reliability by Patrick Meyer <http://t.co/c0ipS7sK> (14 Feb)
+* flowingdata: Interactive and animated word cloud <http://t.co/ZNZ3tLbP> (14 Feb)
+* jseabold: Making Grapical Models with PyDot (or why I'm cooking up a matplotlib solution) <http://t.co/aogAvyUl> [Blog post] (14 Feb)
+* JanWillemTulp: I wonder how much #Papaya, the #statistics lib for #Processing  <http://t.co/UKl52nnN> differs from #Apache Commons Math http://t.co/5YfUWGIi> (13 Feb)
+* stevengustafson: A list of 300 major algorithms <http://t.co/WUIjnj5G> from different domains #compsci #kd (12 Feb)
+* mbostock: Force-directed Voronoi/Delaunay. Use mousewheel to add/remove nodes. Wow! <http://t.co/QYAtKKTQ> by @cmanning88 (12 Feb)
+* vsbuffalo: `+` <- function(x, y) .Primitive('+')(.Primitive('+')(y, x), runif(1)) put that in your ~/.Rprofile. #lisplanguagelove (12 Feb)
+* GeneticsUpdate: Genetic risks for type 2 diabetes span multiple ethnicities  <http://t.co/XpwkyLBN> (11 Feb)
+* druvus: Python Data Analysis Library <http://t.co/5KYHmXGE> #r (11 Feb)
+* algoriffic: I agree wholeheartedly: Mathematica: A Love Story <http://t.co/ccrvdsak>  via @prismatic (11 Feb)
+* marksim: Just released the-much improved- 0.5.0 version of Omelettes - your database scrambler (for obfuscating sensitive data) <https://t.co/yC21PV1G> (11 Feb)
+* SmartTypes: only data with still unknown but learnable statistical or algorithmic regularities is truly interesting -- <http://t.co/2c4Q44vM> (11 Feb)
+* TeXtip: Why some people believe you should not use eqnarray <http://t.co/8Efp8LRt> (10 Feb)
+* JanWillemTulp: nice #dataviz work by @Periscopic <http://t.co/Gm6dL3Tr> nice touch that sound is being used again in the visualization! (10 Feb)
+* gd047: A Backstage Tour of #ggplot2 with Hadley Wickham. Presented: Wednesday, February 8, 2012 #rstats <http://t.co/mj2gemrL> (10 Feb)
+* planetpython: John Cook: Mixing R, Python, and Perl in 14 lines of code <http://t.co/0zeEyge1> (10 Feb)
+* SoutenonsLeMur: #Autism in #France: Support Statement Prof Anita Thapar, Clinical Professor of Child & Adolescent #Psychiatry, #Cardiff <http://t.co/q6IcR0W1> (9 Feb)
+* alexablag: Dear useRs, pls check out the package for reproducible report templates that @daroczig and I developed <http://t.co/I5OLimTk> #rstats (8 Feb)
+* dgmacarthur: "...publishers need academics more than academics need publishers" - great @economist piece: <http://t.co/b0QAnWoG> (7 Feb)
+* robertlayton: Bleeding edge #scikit-learn now has a parallel version of k-means. Pass a value to the n_jobs parameter to use multiple processors. #sklearn (7 Feb)
+* ChrisDiehl: Numeric Javascript, supporting numerical computations in JS <http://t.co/siUqVXVT>  via @prismatic (6 Feb)
+* lizardbill: #SICP 2.52: Levels of Language for Robust Design <http://t.co/e5elNEaM> (6 Feb)
+* tomstafford: Is anyone doing the sci-art of this? They should: Visual Image Reconstruction from Human Brain Activity <http://t.co/2pzA1n2A> (4 Feb)
+* kdnuggets: the Art of R Programming: lots of gems, including parallel R <http://t.co/N5Fvqadg> A Valentine gift for data scientists #datamining (4 Feb)
+* GaelVaroquaux: Label propagation for semi-supervised learning in @scikit_learn by Clay Woolam. Beautiful work <https://t.co/Uy9XnfR0> (2 Feb)
+* mja: Awesome looking short course in quantitative population genetics in Edinburgh this summer: <http://t.co/HZQxZ4g3> (2 Feb)
+* _onionesque: Interesting Manifesto: Machine learning is a cottage industry, not an engineering discipline. [...] <http://t.co/Hc6UMdWW> (1 Feb)
+* nytimeshealth: Op-Ed Contributor: Asperger’s History of Over-Diagnosis <http://t.co/DwqlJVbU> (1 Feb)
+* jrauser: Amazing visualizations of the molecular machines operating in your body right now: <http://t.co/xduyxt5H> (1 Feb)

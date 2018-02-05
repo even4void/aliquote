@@ -15,6 +15,8 @@ preview = true
 
 I just discovered the [minted](http://www.ctan.org/tex-archive/macros/latex/contrib/minted/) $\LaTeX$ package to highlight source code. Perfect! I never liked the [listings](http://www.ctan.org/tex-archive/macros/latex/contrib/listings/) package.
 
+<!--more-->
+
 Minted has been developed by [Konrad Rudolph](http://stackoverflow.com/questions/1966425/source-code-highlighting-in-latex/1985330#1985330). It relies on [Pygments](http://pygments.org/) which is easily installed using, e.g.,
 
 ```

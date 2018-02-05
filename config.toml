@@ -6,7 +6,7 @@
 baseurl = "https://aliquote.org/"
 
 # Title of your site
-title = "aliquote [Christophe Lalanne]"
+title = "aliquote"
 
 # Your copyright notice - appears in site footer.
 # To display a copyright symbol, type `&copy;`.
@@ -21,7 +21,7 @@ paginate = 10
 # enableGitInfo = true
 
 # Enable comments by entering your Disqus shortname
-disqusShortname = "aliquote"
+# disqusShortname = "aliquote"
 
 # Enable analytics by entering your Google Analytics tracking ID
 googleAnalytics = "UA-810771-1"

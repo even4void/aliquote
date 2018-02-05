@@ -1,16 +1,10 @@
 +++
 title = "Gmail seasonal cleaning"
-date = 2011-01-21T16:40:09+01:00
+description = ""
+date = 2011-01-21T09:07:26+01:00
 draft = false
-
 tags = ["misc"]
 categories = []
-
-[header]
-image = ""
-caption = ""
-preview = true
-
 +++
 
 I just finished cleaning up my Gmail account. The idea was to go back below the 50% size limit. I was lucky enough to find [FindBigMail](http://www.findbigmail.com/) to tag large messages, and removed old messages from various mailing-lists.

@@ -31,7 +31,7 @@ I took this winter cleaning to remove all emails from listservers from my Gmail 
 
 ![Gmail](/img/20121201113340.png)
 
-My last Gmail cleanup is now more than [one year old]({{< ref "/post/gmail-seasonal-cleaning.md" >}}). (I still don't like pie charts :-) I realized that it is a waste of time and HD space to susbcribe to 10+ listservers when you could simply browse them through simple CLI.
+My last Gmail cleanup is now more than [one year old]({{< ref "/post/cleaning-my-gmail.md" >}}). (I still don't like pie charts :-) I realized that it is a waste of time and HD space to susbcribe to 10+ listservers when you could simply browse them through simple CLI.
 
 And here how it looks under Emacs:
 

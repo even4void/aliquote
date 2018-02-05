@@ -1,0 +1,85 @@
++++
+title = "A bag of tweets / February 2015"
+description = ""
+date = 2015-02-27T17:24:38+01:00
+draft = false
+tags = ["misc"]
+categories = ["tweet-bot"]
++++
+
+Here is the latest bag of tweets<sup>*</sup>, which covers February 2015.
+
+<!--more-->
+
+(*) These are interesting news that I found on Twitter and that I archive periodically.
+
+* YhatHQ: Loving these visuals. This one is nobel laureates by time and category <https://t.co/7WoMcR76g9> <http://t.co/bVGMsbKlXT> (28 Feb)
+* DiegoKuonen: John Snow & Google Maps @freakonometrics > <http://t.co/c56yDhrqY6> #DataViz #RStats #ggmap #ggplot2 #Maps <http://t.co/ulvGI83yyu> (28 Feb)
+* bruce_swihart: @causalityblog @JennyBryan @chlalanne Might be easier to consider with a github repo r package:  <https://t.co/2xcmV1ABoV> (28 Feb)
+* ramhiser: TIL about M-x magit-blame-mode in #emacs. Mind blown. <http://t.co/gbo9StY7MA> #git (28 Feb)
+* cyrillerossant: IPython 3.0 about to be released... = my 100 cookbook recipes broken! PR here already <https://t.co/mxiaGdITkv> (28 Feb)
+* YhatHQ: Introduction to #python Economics Course - lectures by Kevin Sheppard of Oxford | <http://t.co/hOpu9sdPZR> (28 Feb)
+* UnixToolTip: Remove duplicate lines: awk '!a[$0]++' from <http://t.co/nD43nz8Ju4> (28 Feb)
+* arnicas: Fascinating email mining tool - <http://t.co/pTfLZuTKKb> (28 Feb)
+* msgbi: How gzip uses Huffman coding - Julia Evans <http://t.co/dmuqgUiCtp> #cs394 (27 Feb)
+* msgbi: Putting Apache Kafka To Use: A Practical Guide to Building a Stream Data Platform (Part 1) | Confluent <http://t.co/fkwN3goSiv> #data394 (27 Feb)
+* bio_mediocre: Awesome ipython notebook about heatmaps #python #dataviz <http://t.co/zx6tHstUmV> (27 Feb)
+* andyteucher: #rstats tip: after rendering a pdf from rmarkdown, run extrafont::embed_fonts() on the pdf so fonts travel with your doc! (27 Feb)
+* abresler: Some amazing #rstats-ness from @minebocek exploring #art #data via #ggplot2
+<https://t.co/8T9nR04ph5> // warning PDF (27 Feb)
+* TlkngMchns: Tensor factorization methods for learning latent variable models. Not only a tongue twister but a technique in ML! <http://t.co/yJlcqkumHu> (27 Feb)
+* fogus: "We have begun writing a complete pattern language for object-oriented programming." --> <http://t.co/Y6j7ItCrnr> (27 Feb)
+* hadleywickham: If you read one presentation about improving your #rstats workflow, it should be <https://t.co/50VqiBkNBB> by @jennybryan (27 Feb)
+* albertocairo: New online course: #dataviz and #infographics with D3.js <http://t.co/C7rywZR8oA> with @alignedleft <http://t.co/DLVLPwIius> (26 Feb)
+* modernscientist: @potatowire jq is awesome. Took me a bit to wrap my head around how it works, but very powerful. <https://t.co/K0DSfpe4Xh> (26 Feb)
+* lexnederbragt: Data management to support reproducible research. #arXiv <http://t.co/XHO9qSEW9k> (25 Feb)
+* reichlab: RT @BatesDmbates: @juliabloggers @Rbloggers Just posted <http://t.co/3jYogRsIz4> on running an embedded #rstats instance in #julialang (25 Feb)
+* lexnederbragt: @thorburn_fiona @mkramer Both switching to Mac or adjusting your PC possible (see <http://t.co/0sNNdBKqRf>) (25 Feb)
+* arnicas: This nice explanation of word2vec discusses use cases: <http://t.co/1h4How0WxD> #ml #nlp (25 Feb)
+* modernscientist: @tonyfischetti @jseabold In your tmux.conf, after loading plugin: set -g @resurrect-processes 'R ipython ssh' (25 Feb)
+* thosjleeper: I'm working on updating the rio package for better #rstats data I/O. Suggestions and feedback are welcome. <https://t.co/RUJI1Ujxla> (24 Feb)
+* JohnsonRob: I just discovered this great intro to markdown: <http://t.co/jovEzomNeO> #authorea #openscience #ResBaz (24 Feb)
+* twiecki: #PyMC 3 has a new home: <https://t.co/r4UJiCxxXd> as well as the a first documentation draft <http://t.co/dHGK3jfNZ4> #bayesian @fonnesbeck (24 Feb)
+* msgbi: <http://t.co/8t6lWTC28B> A Gentle Introduction to Algorithm Complexity Analysis #ai394 (23 Feb)
+* BestGit: How to #merge multiple #Git repositories into one retaining full history? Read about it in my blog: <http://t.co/RK8PikQDqH> #Git #development (23 Feb)
+* Persontyle: An introduction on how to make beautiful charts with #rstats & ggplot2 <http://t.co/tdmR0wcPpT> #dataviz #datascience <http://t.co/jCiiqRWbaA> (22 Feb)
+* jaykreps: Timeseries database @druidio is now Apache 2 licensed. <https://t.co/y7ylMdN6TT> (22 Feb)
+* treycausey: ICYMI, there are calibration plots in scikit-learn now. If you work on win probability models, you need this. <http://t.co/1OsjvXKbAX> (22 Feb)
+* rolandbouman: The debunking handbook: <http://t.co/W6yzB5VL4C> Essential reading. (22 Feb)
+* RDub2: My answer to What is an intuitive explanation of a decision tree? <http://t.co/B4BDV6mpVW> (21 Feb)
+* facetjs: facet.js is open under Apache 2 license. <http://t.co/fdxUtyoVh0> More docs, and tutorials coming soon. (21 Feb)
+* berndweiss: discovered the option output.lines for #knitr <http://t.co/nsFnLg4tVx> saved my day! #rstats (21 Feb)
+* tmcw: slides from my talk tonight at @dcjavascript: <http://t.co/bWSJZwk7Lq> resources: <https://t.co/jVqknndQ6l> <http://t.co/JeB4lVn0vF> (20 Feb)
+* iand: <http2 explained <http://t.co/xSTcEbYSzZ> (18 Feb)
+* DrBunsen: Neat project from @IonicaBizau—git-stat, a local git contributions calendar: <https://t.co/R8FnmEs8dm> <http://t.co/qNgKv7S2t6> (18 Feb)
+* randal_olson: Letter frequency in different languages. #dataviz Source: <http://t.co/a2sto57Wvv> <http://t.co/3imZeGdEhU> (17 Feb)
+* rasbt: Some asked how the decision regions were plotted: I uploaded a little convenience function: <https://t.co/ulAtjuvvhE> <http://t.co/kcKTZ6m96n> (15 Feb)
+* rstudiotips: Use RStudio on the web without running your own server with unofficial Amazon EC2 AMIs by @louisaslett: <http://t.co/9v442fY2Wt> #rstats (14 Feb)
+* tdhopper: Protip: Delete Words on iTerm2 <http://t.co/qJbbPtxm9c> (14 Feb)
+* aflyax: Lots of #MachineLearning lectures: <http://t.co/cFXt5Bfat2> (13 Feb)
+* __DataTau__: Principal component analysis explained visually: <http://t.co/yw8xtKaLs5> (13 Feb)
+* StatModeling: New post: Stan 2.6.0 Released <http://t.co/eKHgYbWrA9> (12 Feb)
+* rdpeng: New paper with @jtleek on reproducible research. <http://t.co/Kp9EZcWXgK> (11 Feb)
+* moorejh: #datascience #julialang RT @newsycbot: Quantitative Economics with #Julia [pdf] <http://t.co/CEhVLSNOFP> (10 Feb)
+* CompSciFact: Algorithms from The Book <http://t.co/vORS5Sw6Wt> (10 Feb)
+* fonnesbeck: @WillingCarol @fhwehbe Thanks. There wasn't any IPython computing for the talk, but the slides are here: <https://t.co/KHuTBzkEAb> (10 Feb)
+* mja: DISSECT: new massive genomic analysis tool for mixed linear models, PCA, GWAS from @roslininstitute <http://t.co/iiMFOo7SLC> (9 Feb)
+* rasbt: Jealous of everyone getting started with ML in Python. Now, there is an O'Reilly book for that :) “@sarah_guido: <http://t.co/CPSGdqvqQ1>” (9 Feb)
+* vdmitriyev: Made a tiny #python script that produces world clouds based on multiple fonts and masks, inspired by @rasbt <https://t.co/YFiwd0b8dx> #fw (9 Feb)
+* rasbt: My little  IPython/pandas notebook on "Tips and Tricks for Encoding Categorical Features in Classification Tasks": <http://t.co/AM4WiPkWMv> (9 Feb)
+* treycausey: Awesome walkthrough of Bayes factors with bonus Shiny apps to visualize. | What does a Bayes factor feel like?  <http://t.co/80VdDjju5k> (8 Feb)
+* randal_olson: Looking for serious discussion of #dataviz design, guides, tutorials, etc.? Head on over to <http://t.co/ETGcejeYPB> (8 Feb)
+* DrBunsen: Great tips on how to use vim as an IDE from @yogsototh: <http://t.co/iDCeGoX7Pg> Love the header image! <http://t.co/nbE9sB5zX4> (8 Feb)
+* wattenberg: Radial plots are so pretty yet so often the wrong choice. See @albertocairo's excellent redesign: <http://t.co/nA8k0rYWbP> (7 Feb)
+* msgbi: moreutils: basic Unix tools that ought to be better known <http://t.co/TVMjwJbNpT> (7 Feb)
+* louisdorard: I’m trying out Alternote beta preview (note-taking app with Evernote integration) Looks promising @AlternoteApp <http://t.co/v82qmdZ2og> (7 Feb)
+* mfenner: More than 50 PLOS papers mention Github in data availability statement introduced March 2014, slightly more than PDB: <http://t.co/J3SLtyK8Hp> (7 Feb)
+* hadleywickham: @rtelmore nope, at <http://t.co/AnI8yiO7TX> (6 Feb)
+* YvesMulkers: Reproducibility with Revolution R Open and the checkpoint package <http://t.co/HUJzKcEXA7> (5 Feb)
+* rmflight: .@JennyBryan here it is: <https://t.co/RREs6AOg7a> (5 Feb)
+* revodavid: Huge. RT @hadleywickham: haven: a package for loading SAS, Spss & Stata files into #rstats - <https://t.co/Zulg80pBaT> (3 Feb)
+* revodavid: History revealed in analysis of Paris street orientations: beautiful #DataViz done with R by @datagistips <http://t.co/kwhCnRnQOA> #rstats (3 Feb)
+* aflyax: #databases and #sql on Software Carpentry: <http://t.co/bv7nQLQJqb> (2 Feb)
+* aflyax: Programming with Python on Software Carpentry: <http://t.co/MXMOdi7zZN> #python #DataAnalytics (2 Feb)
+* aflyax: Gadfly, Splats, and Layers <http://t.co/byksVMdpmE> via @timothyrenner (2 Feb)
+* aflyax: "@mariarmestre: Doing linear regression in a Bayesian framework using pymc: <http://t.co/Bbn8LwPmc3>" (2 Feb)
