@@ -33,7 +33,7 @@ The sequential rejection principle states that if one hypothesis is rejected, th
 
 In the latest case (on the right), if AB is rejected, then it follows that both A and B critical levels are alpha x 2/5 since if AB is false, we know that at least one of A or B is false.
 
-The authors then illustrate their testing procedure using a small data set of SNPs, but basically it is what is implemented in the @globaltest@ R package. So, in what follows, I just try to mimic their example from the on-line help. It is to be noted that a permutation test is used to assess if the incorporation of structure information increases statistical power. I wonder how such resampling procedure might be tuned to handle large (real) data sets with 1M SNPs.
+The authors then illustrate their testing procedure using a small data set of SNPs, but basically it is what is implemented in the `globaltest` R package. So, in what follows, I just try to mimic their example from the on-line help. It is to be noted that a permutation test is used to assess if the incorporation of structure information increases statistical power. I wonder how such resampling procedure might be tuned to handle large (real) data sets with 1M SNPs.
 
 ```r
 library(globaltest)
@@ -84,7 +84,7 @@ A couple of references about non-mutually exclusive bayesian multiple testing:
 This talk focused on semi-supervised methods seeking local patterns in data, for cluster analysis or classification. The "bump hunting" framework allows to find regions in the feature space with relatively high or low values for the target variable, see e.g., [Bump Hunting in High-Dimensional Data](http://www-stat.stanford.edu/&#126;jhf/ftp/prim.pdf) <i class="fa fa-chain-broken fa-1x"></i>, from Friedman and Fisher. The original work is described here:
 Friedman, J.H. and Fisher, N.I. (1999). Bump-hunting for high dimensional data. **Statistics and Computing* *9*: 123-143.
 
-The [prim](http://cran.r-project.org/web/packages/prim/) package follows from this seminal work and allows to fit PRIM models (See its accompagnying vignettes, e.g., <i class="fa fa-file-pdf-o fa-1x"></i> [Using prim for bump hunting](http://cran.r-project.org/web/packages/prim/vignettes/prim-2d.pdf)). For instance, let's consider the @birthwt@ data, which comes from a study on risk factors associated with low infant birth weight.
+The [prim](http://cran.r-project.org/web/packages/prim/) package follows from this seminal work and allows to fit PRIM models (See its accompagnying vignettes, e.g., <i class="fa fa-file-pdf-o fa-1x"></i> [Using prim for bump hunting](http://cran.r-project.org/web/packages/prim/vignettes/prim-2d.pdf)). For instance, let's consider the `birthwt` data, which comes from a study on risk factors associated with low infant birth weight.
 
 ```r
 data(birthwt, package="MASS")
