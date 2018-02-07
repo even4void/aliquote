@@ -11,7 +11,7 @@ While I was polishing statistical analyses for a paper including several instrum
 
 The precision of Cronbach's alpha depends on the standard error of items intercorrelations, and its SE takes the form
 
-\[ \frac{\text{SD}(r)}{\sqrt{\left(1/2\times k\times (k-1)\right)-1}} \]
+$$ \frac{\text{SD}(r)}{\sqrt{\left(1/2\times k\times (k-1)\right)-1}} $$
 
 where SD(r) is the standard deviation of item intercorrelations and k is the number of items (Cortina, p. 100). It follows that if the intercorrelation matrix is constant, SE(α)=0.
 

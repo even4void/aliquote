@@ -1,5 +1,5 @@
 +++
-title = "Bayesian analysis With R"
+title = "Bayesian analysis with R"
 description = ""
 date = 2010-06-27T18:17:38+01:00
 draft = false

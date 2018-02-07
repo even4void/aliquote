@@ -9,6 +9,8 @@ categories = []
 
 Mostly draft versions of never ending blog posts...
 
+<!--more-->
+
 ## Many ways to fit a Rasch model
 <small>(December 2010)</small>
 

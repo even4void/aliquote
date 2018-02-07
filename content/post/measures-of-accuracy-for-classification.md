@@ -9,6 +9,8 @@ categories = []
 
 I just discovered a not so recent article providing an overview of measures of accuracy in predictive classification tasks. Specifically, this article focuses on the pros and cons of different measures of classification accuracy with a particular emphasis on percentage-, distance-, correlation-, and information-based indices for binary outcomes:
 
+<!--more-->
+
 Baldi, P., Brunak, S., Chauvin, Y., Andersen, C.A.F., and Nielsen, H., [Assessing the accuracy of prediction algorithms for classification: an overview]http://bioinformatics.oxfordjournals.org/content/16/5/412.abstract, Bioinformatics (2000) 16(5): 412-424.
 
 Here is the abstract:
