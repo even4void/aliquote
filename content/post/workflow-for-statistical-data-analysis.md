@@ -17,7 +17,7 @@ Few days ago, I came across Oliver Kirchkamp's <i class="fa fa-file-pdf-o fa-1x"
 
 ## For R users
 
-This is a very comprehensive textbook, with illustrations in R. I already dropped some words two years ago in [How to efficiently manage a statistical analysis project]({{< ref "/post/how-to-efficiently-manage-a-statistical-analysis-project.md" >}}). People with little knowledge of R can skip chapter 2 and go directly to chapter 3 which goes to the heart of the problem: How to create and manage a statistical project in R? 
+This is a very comprehensive textbook, with illustrations in R. I already dropped some words two years ago in [How to efficiently manage a statistical analysis project]({{< ref "/post/statistical-analysis-as-project-management.md" >}}). People with little knowledge of R can skip chapter 2 and go directly to chapter 3 which goes to the heart of the problem: How to create and manage a statistical project in R? 
 
 In few words, 
 
