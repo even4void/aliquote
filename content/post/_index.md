@@ -11,7 +11,3 @@ highlight = false
 # caption = "Credit: Pexels"
 
 +++
-
-{{% alert note %}}
-Beware this does not include the full archives of <https://aliquote.org/memos>. Old stuff is slowly being migrated on the new Hugo engine.
-{{% /alert %}}
