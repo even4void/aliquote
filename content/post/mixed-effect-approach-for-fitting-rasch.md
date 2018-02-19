@@ -2,7 +2,7 @@
 title = "Fitting Rasch model with R lme4"
 description = ""
 date = 2011-03-12T17:51:32+01:00
-draft = true
+draft = false
 tags = ["psychometrics", "rstats"]
 categories = []
 +++

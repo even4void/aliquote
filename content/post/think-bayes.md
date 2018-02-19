@@ -15,7 +15,7 @@ I first read *How to think like a computer scientist* (probably the Python versi
 
 > Most books on Bayesian statistics use mathematical notation and present ideas in terms of mathematical concepts like calculus. This book uses Python code instead of math, and discrete approximations instead of continuous mathematics. As a result, what would be an integral in a math book becomes a summation, and most operations on probability distributions are simple loops.
 
-But note that even if the author offers to tackle such problems from the perspective of computer science, statistical considerations remain an important part of the process, even if this yields "an approximate solution to a good model":[^1] 
+But note that even if the author offers to tackle such problems from the perspective of computer science, statistical considerations remain an important part of the process, even if this yields "an approximate solution to a good model":[^1]
 
 > I think it is important to include modeling as an explicit part of problem solving because it reminds us to think about modeling errors (that is, errors due to simplifications and assumptions of the model).
 
