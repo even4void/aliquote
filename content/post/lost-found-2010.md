@@ -11,7 +11,109 @@ Mostly draft versions of never ending blog posts...
 
 <!--more-->
 
+## Customizing iPython
+<small>(April 2010)</small>
+
+Although I used it as my default Python shell, I never read the complete documentation (as usual...). Now, I discovered that we can start iPython with different profile, with one being a complete numeric-oriented.
+
+```
+$ ipython -p numeric
+```
+
+Numeric and Gnuplot Python package are required. They can be installed from source, but in both case I had to manage the config files. For gnuplot, if like me you happen to install the dev version of late 2009 (Version 4.2 patchlevel 6, Sep 2009) to benefit from the interactive `x11` device (which was broken in the official release of Gnuplot 2.1), you will need to change the default terminal which is set to `'aqua'` in gp_macosx.py. Then you can byte compile the file then install the package as usual
+
+```
+$ python 
+>>> import py_compile 
+>>> py_compile.compile('gp_macosx.py') 
+>>> ^D
+$ sudo python setup.py install
+```
+
+Numeric is an old package for scientific computing. It has been superseded by Numpy since. However, it still includes useful features. To compile on a Mac, you will need to comment the redefinition of gettimeofday in `ranf.c`:
+
+```
+$ cd Packages/RNG/Src
+$ grep gettimeofday *.c
+```
+
+Also, set your `CFLAGS`	as `'-arch x86_64'` before launching 	
+
+```
+$ python setup.py build
+```
+
+## Dynamic visualization with GGobi
+<small>(April 2010)</small>
+
+I remember that two years ago, when I was reading Selvin's book, *Modern Applied Biostatistical Methods Using S-Plus*, 1998, I tried to reproduce his Fig. 2.26 (p. 108) which illustrates spinning visualization. I used a very dirty R script (<i class="fa fa-file-code-o fa-1x"></i> [spin_plot.R][spin_plot.R]) to generate 360/k figures (PNG) in a folder, then converted them to an animated frame (using [ImageMagick][ImageMagick], 20/100 sec. per frame, with infinite looping) using something like:
+
+```
+$ convert -delay 20 -loop 0 fig*.png spin_plot.gif
+$ display spin_plot.gif
+```
+
+The result is shown below, with data generated as `data <- replicate(3, rnorm(100))` in R.
+
+![](/img/spin_plot.gif)
+
+Now, we can do much better with [GGobi][GGobi] and Projection Pursuit.
+
+
+[spin_plot.R]: http://www.aliquote.org/pub/spin_plot.R
+[ImageMagick]: http://www.imagemagick.org "ImageMagick"
+[GGobi]: http://www.ggobi.org/ "GGobi"
+
+## Cross-cultural issues in quality of life studies
+<small>(April 2010)</small>
+
+I am just reading a new book on Health-related quality of life (HRQL), *Quality of Life Impairment in Schizophrenia, Mood and Anxiety Disorders*, edited by M.S. Ristner and A.G. Awad (Springer, 2007). It is not so recent but it is one of the unusually good review on HRQL studies and their applications in clinical settings or clinical trials. An older one is *Quality of Life and Pharmacoeconomics in Clinical Trials*, from B. Spilker (Lippincott Wiliams & Wilkins, 1995), but it's already 1,259 pages long!
+
+<u>FIXME</u>: Finish this draft
+
+The definition of *quality of life* as stated by the WHOQOL working group<sup>(1)</sup> is reproduced below:
+
+> Quality of life is an individuals' perceptions of their position in life in the context of the culture and value systems in which they live, and in relation to their goals, expectations, standards and concerns. It is a broad ranging concept affected in a complex way by the persons' physical health, psychological state, level of independence, social relationships and their relationship to salient features of their environment.
+
+We may be tempted to add those questions raised by Elkinton<sup>(2)</sup> some fourty years ago
+
+> How does the physician protect the proper quality of life of the individual patient? How can the quality of life be improved...? Into which programs of preventive and therapeutic medicine should the resources of society be put to achieve the maximum in health and quality of life for all members of that society?
+
+An historical account of HRQL research can be found in the review of Medina et al.<sup>(3)</sup>.
+
+From a psychological perspective, two questions (at least) are to be answered by the researcher: (1) what factors impact HRQL, and (2) what factors impact its subjective reporting.
+
+Now, the NIH has prescribed that all research projects about health disparities or epidemiological studies in general must include minorities to the extent that it seems appropriate to the study under consideration. The same applies in clinical trials, unless researchers are seeking a very homogeneous group of patients.
+
+In genetic epidemiology, for instance, it is common to consider "culture" a one of the main covariate. I quoted the term culture since we more often see words like ethnicity or ancestry in place of culture or even race. Following the IOM<sup>(4)</sup> definition, race encompasses inter-individuals variations at both the biological and behavioral level, but see Hernandez and Blazer<sup>(5)</sup> (Chapter 5) for an extended discussion on this topic.
+
+Shields et al.<sup>(6)</sup> recommend avoiding the term of race although race and ethnicity appear to bear some explanatory power when predicting disease risk (in mental or more common health problems):
+
+> (...) with the exception of the health disparities context, in which self-identified race remains a socially important metric, race should be avoided or used with caution and clarification, as its meaning encompasses both ancestry... and ethnicity (...)
+
+
+Chapter 4 (M. Bullinger, S. Schidt, and D. Naber) is entirely devoted to the development of health-related instruments across cultures. 
+
+The authors also make a clear distinction between functional impairments as reported in most HRQL instrument and the subjective consequences of these functional limitations. Moreover, "in order to fully capture the concept (of quality of life), health status measurements should be operationalized both via clinical information and self-reports, which is in line with the classical approach to health indicator research" (p. 70).
+
+Again, I have prepared a quick and dirty <i class="fa fa-file-code-o fa-1x"></i> [BibTeX file][BibTeX file] and its [HTMLized version][HTMLized version], holding the aforementioned references and moreover.
+
+
+	
+### References
+
+1. WHOQoL Group. Study protocol for the World Health Organization project to develop a quality of life assessment instrument (WHOQOL). *Quality of Life Research*, 1993, **2**: 153-159.
+2. Elkinton, JR. Medicine and the quality of life. *Annals of Internal Medicine*, 1966, **64(3)**: 711-714.
+3. Medina, A, Moreno, MJ, Segura, C, Lillo, R, and Dening, TR. Quality of life and medicine: a historical note. *History of Psychiatry*, 1996, **7(26)**: 225-229.
+4. IOM (Institute of Medicine). *The Unequal Burden of Cancer: An Assessment of NIH Research and Programs for Ethnic Minorities and the Medically Underserved*. Washington DC: National Academy Press, 1999.
+5. Hernandez, LM and Blazer, DG (Eds). *Genes, Behavior, and the Social Environment: Moving Beyond the Nature/Nurture Debate*. National Academies Press, 2006.
+6. Shields, A, Fortun, M, Hammonds, EM, King, PA, Lerman, C, Rapp, R, and Sullivan, PF. The use of race variables in genetic studies of complex traits and the goal of reducing health disparities: A transdisciplinary perspective. *American Psychologist*, 2005, **60(1)**: 77-103
+
+[BibTeX file]: http://www.aliquote.org/pub/HRQL_cross-cultures.bib
+[HTMLized version]: http://www.aliquote.org/pub/HRQL_cross-cultures.html
+
 ## Weighted vs. simple summated scale scores
+<small>(August 2010)</small>
 
 I just ran across this abstract:
 Weighted index explained more variance in physical function than an additively scored functional comorbidity scale, from Resnik, L., Gozalo, P., and Hart, D.L., in press in *Journal of Clinical Epidemiology*
