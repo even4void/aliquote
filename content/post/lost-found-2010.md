@@ -112,6 +112,91 @@ Again, I have prepared a quick and dirty <i class="fa fa-file-code-o fa-1x"></i>
 [BibTeX file]: http://www.aliquote.org/pub/HRQL_cross-cultures.bib
 [HTMLized version]: http://www.aliquote.org/pub/HRQL_cross-cultures.html
 
+## Visual psychophysics with Python
+<small>(June 2010)</small>
+
+I rediscovered the VisionEgg library which is a powerful Python package for building visual and auditory psychophysical experiments, among others. More generally, this can be viewed as a wrapper for Pygame.
+
+When I started my PhD, I was used to the [Psychophysics toolbox][Psychophysics toolbox] for MATLAB (but I haven't any Mac at that time) and it was pretty cool. I learned 3 or 4 years ago that most of my visual stimulations could be made thanks to Pygame but this is the end of the story: I never had to program any other experiment since then. Googling about the Psychtoolbox, I learned that it is now compatible with Octave (a great news since most of my old Matlab scripts never ran on [Octave][octave]!), but see the aforementioned wiki.
+
+Setup is quite straightforward, although compilation of `gl_qt.c` failed. Most of the demo scripts are running.
+
+![visionegg](/img/20100619212334.png)
+
+![grating](/img/20100619212608.png)
+
+
+### A note about PyQt
+
+To get a working Qt binding for Python, you will need the `PyQt4` which also depends on `sip`. Both packages can be downloaded from <http://www.riverbankcomputing.com/>. Note, however, that they must be compiled as 32 bits since no 64 bits Qt is actually available (it is planned for version 4.7).
+
+```
+$ python configure.py --arch i386
+$ make
+$ sudo make install
+$ file /System/Library/Frameworks/Python.framework/Versions/2.6/bin/sip
+/System/Library/Frameworks/Python.framework/Versions/2.6/bin/sip: Mach-O executable i386
+```
+
+For PyQt, just use
+
+```
+$ python configure.py --use-arch i386
+$ make
+```
+
+It's about 10' of compilation where a warning is issued at each step, *Support for this version of Mac OS X is still preliminary*. You should end up with something like
+
+```
+g++ -headerpad_max_install_names -arch i386 -single_module \
+  -dynamiclib -o libpythonplugin.dylib pluginloader.o \
+  moc_pluginloader.o  -F/Library/Frameworks -L/Library/Frameworks \
+  -framework Python -framework QtDesigner -framework QtScript \
+  -framework QtXml -framework QtGui -framework Carbon \
+  -framework AppKit -framework QtCore -lz -lm \
+  -framework ApplicationServices 
+```
+
+As can be seen, several tools are built at once (QtGui, QtHelp, QtMultimedia, QtNetwork, QtOpenGL, QtScript, QtScriptTools, QtSql, QtSvg, QtTest, QtWebKit, QtXml, QtXmlPatterns, phonon, QtAssistant, QtDesigner), all as Framework. After `make install`, many files will be installed in Python system-wide directories, as well as the `/Developer` directory (e.g. `libpythonplugin.dylib`).
+
+```python
+import sys
+from PyQt4 import QtGui
+app = QtGui.QApplication(sys.argv)
+btn = QtGui.QPushButton("Installation seems ok!")
+app.setMainWidget(btn)
+btn.show()
+app.exec_loop()
+```
+
+![pyqt](/img/20100619210813.png)
+
+
+
+[Psychophysics toolbox]: http://psychtoolbox.org/wikka.php?wakka=PsychtoolboxOverview
+[octave]: www.gnu.org/software/octave/
+
+## R/Qt, an overview
+<small>(July 2010)</small>
+
+Last year, I attended the DSC 2009 conference in Copenhagen (a very nice place!). Sarkar Deepayan had a talk about a newly designed graphical interface based on Qt. To illustrate the power of this glyph-based device, he showed how a scatterplot matrix of 100 random gaussian vectors renders very slowly through `lattice` compared to QT-based plot.
+
+Although not ready for production, the `qtpaint` package offers some visualization functionalities that I'd like to experiment. Obviously, the installation doesn't get right out of the box...
+
+Here is a couple of tricks I used to compile a 64-bits version of `qtpaint`.
+
+* Install Qt, not from binary package which is 32-bits only, but from source: `wget http://get.qt.nokia.com/qt/source/qt-everywhere-opensource-src-4.6.2.tar.gz` (153 Mb), then `./configure -arch x86_64; make` (I think a flag like `-cocoa` might also works) and `sudo make install`: the compilation takes about 3 hours (on a 2.8 GHz Core 2 Duo), so be patient :)
+* Download the SVN `qtinterfaces` bundle package from [Rforge][Rforge], e.g. `svn checkout svn://svn.r-forge.r-project.org/svnroot/qtinterfaces`
+* CMake ≥ 2.8.1, grab the source from [here][here], then `./bootstrap; make` and `sudo make install` upon completion (use `gcc` and `g++` to compile, not the `llvm` suite, e.g. `export CXX=g++; export CC=gcc`)
+* Build the R package `qtbase`, using `R CMD build qtbase` in the svn directory (go to `pkg/` from svn root directory)
+* Install the R package with `R CMD install qtbase_0.6-8.tar.gz`; this is also rather long and you will see several passes over the package components (smoke, etc.)
+
+Ok, it's a bit long when one's just want to give R/qt a try.
+
+[Rforge]: https://r-forge.r-project.org/projects/qtinterfaces/
+[here]: http://www.cmake.org/cmake/resources/software.html
+
+
 ## Weighted vs. simple summated scale scores
 <small>(August 2010)</small>
 
