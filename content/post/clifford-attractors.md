@@ -2,6 +2,7 @@
 title = "Clifford attractors"
 description = ""
 date = 2018-02-26T16:44:14+01:00
+lastmod = 2018-02-27T22:20:18+01:00
 draft = false
 tags = ["math", "dataviz"]
 categories = []
@@ -30,5 +31,40 @@ Below is the result (note that this graphic only includes 100,000 data points an
 ![Clifford attractor](/img/clifford.png)
 
 Of course, while digging on Google to find other interesting patterns and the math' behind them, I happened to find a [thread on Stack Exchange](https://mathematica.stackexchange.com/questions/159668/drawing-clifford-attractors-in-mathematica), with clever Mathematica code (be sure toc heck the linked thread too!).
+
+So, here is a simple [Processing](http://www.processing.org) script. Again, this uses only 100,000 data points but it is easily customizable. Moreover, we could adjust the opacity parameter (see `stroke(gray, opacity)`; here 50/255 ≈ 20%) as a function of the distance to the origin or of the neighborhood density, and so on.
+
+```java
+int n = 100000;
+float a = -1.24458046630025;
+float b = -1.25191834103316;
+float c = -1.81590817030519;
+float d = -1.90866735205054;
+float[] x;
+float[] y;
+float scale = 80;
+
+void setup() {
+  size(640, 640);
+  background(255);
+  stroke(10, 50);
+  x = new float[n];
+  y = new float[n];
+  x[0] = 0;
+  y[0] = 0;
+  for (int i = 1; i < n; i++) {
+    x[i] = sin(a*y[i-1]) + c*cos(a*x[i-1]);
+    y[i] = sin(b*x[i-1]) + d*cos(b*y[i-1]);
+  }
+} 
+
+void draw() {
+  for  (int i = 1; i < n; i++) {
+    point(x[i] * scale + width/2, y[i] * scale + height/2);
+  }
+}
+```
+
+![Clifford attractor using Processing](/img/clifford02.png)
 
 {{% music %}}London Grammar • *Truth is a beautiful thing*{{% /music %}}
