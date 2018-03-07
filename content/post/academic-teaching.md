@@ -22,7 +22,7 @@ preview = true
 
 Yesterday was my last day of academic teaching. 
 
-Although I keep doing in-house or company training (statistical computing only), I'm done with my [regular lectures]({{< ref "teaching.md" >}}) for this year. It was a long journey since October as I was in charge of 4 courses (around 90 hours in total), plus extra training for a private company. During the same period, I managed to work on two textbooks (basically related to this [course][cesam]) while working hard to get things done at my work.
+Although I keep doing in-house or company training (statistical computing only), I'm done with my regular lectures for this year. It was a long journey since October as I was in charge of 4 courses (around 90 hours in total), plus extra training for a private company. During the same period, I managed to work on two textbooks (basically related to this [course][cesam]) while working hard to get things done at my work.
 
 But why do I keep teaching a lot, even if I have a full-time position? First of all, I like teaching and interacting with students on practical examples. This is a truly rewarding experience to be able to discover a whole new interpretations or think of new analyzes. Moreover, this is a way to engage in new directions to answer a particular question which is not necessarily part of your area of expertise. Finally, [as for consulting]({{< ref "post/consulting.md" >}}), I "learn a lot, [and my] brain is maintained at a suitable level of activity."
 

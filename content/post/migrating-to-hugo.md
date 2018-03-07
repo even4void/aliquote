@@ -37,12 +37,4 @@ The immediate benefits from this new setup are multiple: (1) I can now revise my
 Total in 390 ms
 ```
 
-### Sidenote
-
-Some useful live flags that I set up for the blog:
-
-- <i class="fa fa-file-pdf-o fa-1x"></i> indicates a link pointing to a PDF file while <i class="fa fa-file-code-o fa-1x"></i> means a text file with some code
-- As you may expect, the symbol <i class="fa fa-chain-broken fa-1x"></i> means a broken link or lost ressources. I didn't check all links, but when I happen to find one that is broken, I simply tag it as such.
-- I usually put <i class="fa fa-external-link fa-1x"></i> at the beginning of an item in a long list of ressources, as in my monthly "tech review".
-
 {{% music %}}Two Door Cinema Club • *Beacon*{{% /music %}}
