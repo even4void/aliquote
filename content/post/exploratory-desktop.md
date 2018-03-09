@@ -2,25 +2,11 @@
 title = "Exploratory Desktop"
 date = 2018-01-21T14:04:43+01:00
 draft = true
-
-# Tags and categories
-# For example, use `tags = []` for no tags, or the form `tags = ["A Tag", "Another Tag"]` for one or more tags.
+toc = true
+autoCollapseToc = true
 tags = ["review", "software"]
 categories = []
-
-# Featured image
-# Place your image in the `static/img/` folder and reference its filename below, e.g. `image = "example.jpg"`.
-# Use `caption` to display an image caption.
-#   Markdown linking is allowed, e.g. `caption = "[Image credit](http://example.org)"`.
-# Set `preview` to `false` to disable the thumbnail in listings.
-[header]
-image = "headers/aOcWqRTfQ12uwr3wWevA_14401305508_804b300054_o.jpg"
-caption = ""
-preview = false
-
 +++
-
-{{% toc %}}
 
 Here's the January review of tech software. 
 
@@ -59,3 +45,12 @@ Using "pgloader", I happened to populate a PostgreSQL table using a custom [comm
     $ pgloader natl2016.load
 
 I should note that it is also possible to work on a sample of the dataset
+
+
+## Data munging
+
+
+## Statistical modeling
+
+
+## Reporting

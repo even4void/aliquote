@@ -1,0 +1,22 @@
+ressource {
+    padding: 3px;
+    border-radius: 4px;
+    color: #c7254e;
+    background: #f8f5ec;
+    font-family: Consolas, Monaco, Menlo, monospace;
+    font-size: 13px;
+}
+
+.icon-music:before { content: "\E911"; }
+.icon-file-pdf:before { content: "\EADF"; position: relative; top: 2px; }
+.icon-file-text2:before { content: "\E926"; position: relative; top: 2px; }
+.icon-file-zip:before { content: "\E92B"; position: relative; top: 2px; }
+.icon-rss:before { content: "\EA9B"; position: relative; top: 2px; }
+.icon-twitter:before { content: "\EA96"; position: relative; top: 2px; }
+.icon-github:before { content: "\EAB0"; position: relative; top: 2px; }
+.icon-stack-overflow:before { content: "\EAD0"; position: relative; top: 0px; }
+.icon-email:before { content: "\EA84"; position: relative; top: 2px; }
+.icon-right:before { content: "\EA42"; position: relative; top: 3px; }
+.icon-left:before { content: "\EA44"; position: relative; top: 3px; }
+.icon-up:before { content: "\EA41"; }
+.icon-close:before { content: "\EA80"; }
