@@ -1,5 +1,5 @@
 +++
-title = "Life in pictures / february 2018"
+title = "Life in pictures"
 description = ""
 date = 2018-02-07T20:55:38+01:00
 draft = false
