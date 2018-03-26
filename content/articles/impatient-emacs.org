@@ -1,0 +1,36 @@
+#+TITLE:        Emacs pour l'impatient
+#+AUTHOR:       Christophe Lalanne
+#+EMAIL:        ch.lalanne@gmail.com
+#+STARTUP:      align fold noindent hideblocks
+#+OPTIONS:      H:3 num:nil toc:2
+#+SEQ_TODO:     TODO(t) INPROGRESS(i) WAITING(w@) | DONE(d) CANCELED(c@)
+
+
+* Les bases de l'éditeur Emacs
+
+** Emacs en quelques mots
+
+Emacs est un éditeur de texte, voire un [[https://news.ycombinator.com/item?id=6291620][système d'exploitation à part entière]] diront certains. Des débats enflammés ont lieu régulièrement entre les partisans d'Emacs et ceux de Vi(m), un autre éditeur Unix versatile, tout comme on retrouve des discussions sans fin sur l'usage des taquets de tabulation ou des espaces pour l'indentation des blocs en Python. Et bien sûr, Richard Stallman et la FSF n'est jamais bien loin lorque l'on évoque le logiciel Emacs.
+
+#+BEGIN_QUOTE
+I spend most of my time editing in Emacs. I read and send mail with Emacs using M-x rmail and C-x m. I have no experience with any other email client programs. In principle I would be glad to know about other free email clients, but learning about them is not a priority for me and I don't have time.
+--- Richard Stallman, [[https://stallman.org/stallman-computing.html][How I do my computing]]
+#+END_QUOTE
+
+L'objet de ce document n'est pas d'arguer pour ou contre l'usage de Emacs pour réaliser des tâches plus ou moins complexes. Il n'est pas non plus question de fournir un manuel détaillé concernant l'utilisation d'Emacs et les [[http://ergoemacs.org/emacs/gnu_emacs_keybinding.html][milles et quelques raccourcis clavier]] dont dispose Emacs dans sa configuration de base. Pour cela, il est possible de consulter la [[https://www.gnu.org/software/emacs/tour/][documentation officielle]], les ouvrages publiés chez O'Reilly, par exemple [[http://shop.oreilly.com/product/9780596006488.do][Learning GNU Emacs]], ou les nombreux liens que l'on trouve sur internet : [[https://www.masteringemacs.org][Mastering Emacs]] ou [[http://ergoemacs.org/emacs/emacs.html][Practical Emacs Tutorial]] ; [[http://doc.norang.ca/org-mode.html][Org Mode - Organize Your Life In Plain Text!]] et [[http://ehneilsen.net/notebook/orgExamples/org-examples.html][Emacs org-mode examples and cookbook]] pour le mode org plus spécifiquement
+
+L'objet de ce document est somme tout assez modeste et on s'intéressera essentiellement à quelques "modes" spécifiques, en particulier ceux qui se révèlent le plus utile pour éditer efficacement des documents texte et interagir interactivement avec des shells ou des environnements de type {REPL|Read Eval Print Loop}. L'auteur utilise personnellement Emacs depuis une quinzaine d'années, en connaît le strict minimum pour éditer une grande variété de documents, et se contente la plupart du temps d'utiliser Emacs comme un excellent éditeur de texte [fn:1]. En guise d'illustration, la figure [[fig:emacs-screenshot]] permet de voir à quoi ressemble l'édition de ce document sous Emacs avec le [[https://orgmode.org][mode org]].
+
+#+CAPTION:   L'édition de ce document sous Emacs
+#+NAME:      fig:emacs-screenshot
+#+LABEL:     fig:emacs-screenshot
+#+ATTR_HTML: :width 640px
+#+ATTR_ORG:  :width 100
+[[/articles/impatient-emacs/fig-emacs-screenshot.png]]
+
+* Footnotes
+
+[fn:1] Bien entendu, il est possible de "déraper" et d'utiliser Emacs à la place de l'application Mail, du navigateur web Safari, du Finder et du Terminal, mais c'est une autre histoire.
+
+
+

@@ -2,7 +2,7 @@
 title = "Computer Age Statistical Inference"
 description = ""
 date = 2018-03-25T19:04:51+01:00
-draft = false
+draft = true
 tags = ["review", "statistics"]
 categories = []
 +++
