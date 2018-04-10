@@ -1,13 +1,13 @@
 ---
 title: "Reeder App"
-date: 2018-04-07T09:11:04+02:00
+date: 2018-04-08T09:11:04+02:00
 draft: false
 description: ""
 tags: ["misc", "apple"]
 categories: ["app-review"]
 ---
 
-Back to reading feeds. Here is a vrief review of the [Reeder app](http://reederapp.com).
+Back to reading feeds. Here is a brief review of the [Reeder app](http://reederapp.com).
 
 <!--more-->
 

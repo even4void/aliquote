@@ -3,7 +3,7 @@ title = "Recent readings on arXiv"
 date = 2018-01-10T10:32:06+01:00
 draft = false
 tags = ["readings", "statistics"]
-categories = []
+categories = ["arxiv-review"]
 +++
 What's going on on arXiv these days?
 
