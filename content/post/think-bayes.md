@@ -1,7 +1,7 @@
 +++
 title = "Think Bayes"
 description = ""
-date = 2018-02-13T09:34:55+01:00
+date = 2018-04-23T09:34:55+01:00
 draft = true
 tags = ["review", "bayesian", "python"]
 categories = []

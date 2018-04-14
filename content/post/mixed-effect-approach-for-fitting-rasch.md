@@ -17,11 +17,11 @@ Back to De Boeck's article. It all starts with the idea of applying an GLMM to t
 
 The Rasch model (RM) takes the form
 
-$$ \eta_{pi}=\theta_pX_{i0}+\sum_{i=1}^K\beta_iX_{ik} $$
+$$ \eta\_{pi}=\theta_pX\_{i0}+\sum\_{i=1}^K\beta_iX\_{ik} $$
 
-where i and p are indexes for items and persons, and X is the design matrix where $X_{ik} = 1$, if $i = k$ ($i=1, \dots, K)$, and $X_{i0} = 1$ for all items. The distribution of ability is gaussian with SD $σ_\theta$. In a simplified form, we find the well-known formulation of the RM as denoting an interactive effect of subject's ability and item difficulty on the logit scale:
+where i and p are indexes for items and persons, and X is the design matrix where $X\_{ik} = 1$, if $i = k$ ($i=1, \dots, K)$, and $X\_{i0} = 1$ for all items. The distribution of ability is gaussian with SD $σ_\theta$. In a simplified form, we find the well-known formulation of the RM as denoting an interactive effect of subject's ability and item difficulty on the logit scale:
 
-$$ \eta_{pi}=\theta_p+\beta_i $$
+$$ \eta\_{pi}=\theta_p+\beta_i $$
 
 Of course, we can use a different link function, such as the `probit` if we want the so-called normal ogive model.
 

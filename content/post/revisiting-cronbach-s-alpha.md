@@ -11,13 +11,13 @@ While I was polishing statistical analyses for a paper including several instrum
 
 The precision of Cronbach's alpha depends on the standard error of items intercorrelations, and its SE takes the form
 
-$$ \frac{\text{SD}(r)}{\sqrt{\left(1/2\times k\times (k-1)\right)-1}} $$
+$$ \frac{\text{SD}\(r\)}{\sqrt{\left(0.5\times k\times (k-1)\right)-1}} $$
 
-where SD(r) is the standard deviation of item intercorrelations and k is the number of items (Cortina, p. 100). It follows that if the intercorrelation matrix is constant, SE(α)=0.
+where $\text{SD}\(r\)$ is the standard deviation of item intercorrelations and k is the number of items (Cortina, p. 100). It follows that if the intercorrelation matrix is constant, $\text{SE}\(\alpha\)=0$.
 
 I don't really like the overuse of Cronbach's alpha, especially when it is not aknowledged as just a measure of the average between-item correlation. Cortina just nicely say that "precision of alpha, because it is a function of the spread of item correlations, reflects this range of correlations regardless of the source or sources of the range (e.g., measurement error or multidimensionality)". If the measurement instrument is clearly multidimensional, then it follows that the variance of intercorrelation matrix increases, and in turn SE(α). Cortina also points to usual values of alpha considered as absolute thresholds, e.g. α > 0.70 (I would add 0.90 for comparison at the individual level):
 
-> Another lesson to be learned from Green et al's(1977) Monte Carlo study is that alpha (either Cronbach's or standardized) is a function of the number of items in a scale. Although most who use alpha pay lip-service to this fact, it seems to be forgotten when interpreting alpha. Most recent studies that have used alpha imply that a given level, perhaps greater than .70, is adequate or inadequate without comparing it with the number of items in the scale. Any perusal of the recent literature in applied psychology supports this statement. This acceptance of α > .70 as adequate is implied by the fact that α > .70 usually goes uninterpreted. It is merely presented, and further scale modifications are seldom made. This is clearly an improper usage of the statistic.
+> Another lesson to be learned from Green et al's (1977) Monte Carlo study is that alpha (either Cronbach's or standardized) is a function of the number of items in a scale. Although most who use alpha pay lip-service to this fact, it seems to be forgotten when interpreting alpha. Most recent studies that have used alpha imply that a given level, perhaps greater than .70, is adequate or inadequate without comparing it with the number of items in the scale. Any perusal of the recent literature in applied psychology supports this statement. This acceptance of α > .70 as adequate is implied by the fact that α > .70 usually goes uninterpreted. It is merely presented, and further scale modifications are seldom made. This is clearly an improper usage of the statistic.
 
 A similar point was raised by Schmitt [2].
 

@@ -15,11 +15,11 @@ Much of this discussion is supported by [Agresti's book][book], *Categorical Dat
 
 Here, we shall focus on a more or less sophisticated way of assessing observers' preference in a ranking task, gathered from an article published by Tom Bramley in the *Journal of Applied Measurement* (2005, strong6(2)/strong: 202–223): [A Rank-Ordering Method for Equating Tests by Experts Judgment][A Rank-Ordering Method for Equating Tests by Experts Judgment]. According to Thurstone's paired comparisons model<sup>(1)</sup>, but see also [Wikipedia][Wikipedia], "pairs of object are compared with respect to a single attribute which is conceived as being represented in the judge's mind as a psychological latent trait." Following Bramley's notation, this is modeled as
 
-$$ \ln \left[\frac{P_{ij}}{1-P_{ij}}\right] = B_i - B_j, $$
+$$ \ln \left[\frac{P\_{ij}}{1-P\_{ij}}\right] = B_i - B_j, $$
 
 where $B_i$ and $B_j$ correspond to measures recorded for item $i$ and $j$, respectively. $P_{ij}$ can be conceived as the probability that item $i$ "beats" (i.e., is being ranked above than) item $j$ for any observer (it's just an odds). In contrast, with the Partial Credit Model (PCM), the model fitted is
 
-$$ \ln\left[P_{irk}/(1-P_{ir(k+1)})\right] = B_i - D_{rk}. $$
+$$ \ln\left[P\_{irk}/(1-P\_{ir(k+1)})\right] = B_i - D\_{rk}. $$
 
 Now, the model becomes an adjacent-category model where $B_i$ is the measure for item $i$ and $D_{rk}$ is the difficulty of scale category $k$ relative to category $k+1$ in ranking $r$.
 
@@ -27,11 +27,11 @@ Now, the model becomes an adjacent-category model where $B_i$ is the measure for
 
 If we consider a square table whose $K$ entries refer to the number of times category $a$ is preferred to category $b$, after emptying the main diagonal, the B-T Model can be expressed as
 
-$$ \log\frac{\Pi_{ab}}{\Pi_{ba}} = \beta_a - \beta_b, $$
+$$ \log\frac{\Pi\_{ab}}{\Pi\_{ba}} = \beta_a - \beta_b, $$
 
 where
 
-$$ \Pi_{ab} = \frac{\exp(\beta_a)}{\exp(\beta_a)-\exp(\beta_b)}, $$
+$$ \Pi\_{ab} = \frac{\exp(\beta_a)}{\exp(\beta_a)-\exp(\beta_b)}, $$
 
 is the probability that $a$ is preferred to $b$. It can be shown that the number $n_{ab}$ (people who prefer $a$ compared to $b$) follows a binomial distribution whose parameter is the above estimated probability.
 
