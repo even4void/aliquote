@@ -27,4 +27,6 @@ Whereas the preceding chapters focused on
 The book makes heavy use of the R statistical software, which is great since it is open source and the reader can follow along every example with no pain.
 
 
+[Do Statistical Methods Have an Expiration Date?](http://andrewgelman.com/2018/04/11/statistical-methods-expiration-date-talk-noon-mon-16-apr-university-pennsylvania/)
+
 {{% music %}}John Cale • *Fragments of a Rainy Season*{{% /music %}}

@@ -33,3 +33,5 @@ As a final word, here is a little gem from the very first pages of the book:
 > The age of a piece of code is the single greatest predictor of how long it will live.
 
 To sum up, maybe the take away message could be something like: Log everything (as raw data), measure twice, iterate.
+
+{{% music %}}The Kills • *Ash & Ice*{{% /music %}}
