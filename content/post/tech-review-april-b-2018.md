@@ -1,28 +1,36 @@
 ---
 title: "Tech Review / April 2018 (2)"
-date: 2018-04-13T13:11:05+02:00
-lastmod: 2018-04-13T13:11:05+02:00
-draft: true
+date: 2018-04-23T7:11:05+02:00
+draft: false
 description: ""
-tags: []
-categories: []
+tags: ["readings", "review"]
+categories: ["tech-review"]
 ---
 
-Here is the second part of the April technical review.
+Here is the second part of the [April technical review]({{< ref "/post/tech-review-april-2018.md" >}}).
 
 <!--more-->
 
 
 I mentioned in a [previous post]({{< ref "tech-review-march-2018.md" >}}) that Peter Norvig released his famous book, *Paradigms of Artificial Intelligence Programming*, recently. Now, I heard there are also experimental translation in [Python](https://github.com/aimacode/aima-python) and in [Haskell](https://github.com/chris-taylor/aima-haskell) (h/t [@Jose_A_Alonso](http://www.glc.us.es/~jalonso/vestigium/)). 
 
-Although I am quite happy with how the site goes by now, I came across a very nice Jekyll setup, [lanyon](https://github.com/poole/lanyon), with [base16 color scheme](https://github.com/chriskempson/base16). If you are after clean web pages, don't forget [Butterick’s
-practical typography](https://practicaltypography.com): there is so much to learn on choosing the right font and building well crafted documents, including [designing websites](https://practicaltypography.com/websites.html). Last but not least, it has been build using Racket and the [Pollen](https://pollenpub.com) publishing engine. Regarding color theme, I really like the [base16 color scheme](http://chriskempson.com/projects/base16/), and one of the theme I liked a lot for Emacs was Spacegray, which is based on base16. I discovered recently the [Nord theme](https://github.com/arcticicestudio) (there is also a [custom package](https://github.com/hlissner/emacs-doom-themes) for Emacs Doom, which is what I used actually), and I must admit I like it better. Color schemes are available for Vim and iTerm2 as well.
+Although I am quite happy with how the site goes by now, I came across a very nice Jekyll setup, [lanyon](https://github.com/poole/lanyon), with [base16 color scheme](https://github.com/chriskempson/base16). If you are after clean web pages, don't forget [Butterick’s practical typography](https://practicaltypography.com): there is so much to learn on choosing the right font and building well crafted documents, including [designing websites](https://practicaltypography.com/websites.html). Last but not least, it has been build using Racket and the [Pollen](https://pollenpub.com) publishing engine. Regarding color theme, I really like the [base16 color scheme](http://chriskempson.com/projects/base16/), and one of the theme I liked a lot for Emacs was Spacegray, which is based on base16. I also discovered recently the [Nord theme](https://github.com/arcticicestudio) (there is also a [custom package](https://github.com/hlissner/emacs-doom-themes) for Emacs Doom, which is what I used actually), and I must admit I like it a lot. Color schemes are available for Vim and iTerm2 as well.
 
-Do you know that [Algebric Topology](http://www.math.cornell.edu/~hatcher/AT/ATpage.html), by Allen Hatcher, is freely available? I really like what the author said on the homepage: "I have tried very hard to keep the price of the paperback version as low as possible." If you need more readings for the week end, and if you are working in the ML or AI world, the proceedings of Machine Learning Reserach from the *International Conference on Artificial Intelligence and Statistics* are [avalaible on the JMLR site](http://proceedings.mlr.press/v84/).
+Do you know that [Algebric Topology](http://www.math.cornell.edu/~hatcher/AT/ATpage.html), by Allen Hatcher, is freely available? I really like what the author said on the homepage: "I have tried very hard to keep the price of the paperback version as low as possible." If you need more readings for the week end, and if you are working in the ML or AI world, the proceedings of Machine Learning Research from the *International Conference on Artificial Intelligence and Statistics* are [avalaible on the JMLR site](http://proceedings.mlr.press/v84/). Or, of you are more versed into linear algebra, go check [Linear Algebra with Applications](https://openlibra.com/en/book/linear-algebra-with-applications), by W. Keith Nicholson; it is just free, and very complete.
 
 Twenty years. It's been more than 20 years that [Thomas Lumley](http://faculty.washington.edu/tlumley/) wrote an article in the *Journal of Statistical Software* to present an implementation of [Generalized Estimatin Equation Models in LispStat](https://www.jstatsoft.org/article/view/v001i03). Remember that [beautiful software](http://homepage.divms.uiowa.edu/~luke/xls/xlsinfo/xlsinfo.html) that Luke Tierney wrote for his PhD thesis? It is very likely that nobody uses this anymore, but I still have this little piece of code running on my Macbook. As Jan de Leeuw once said, "[(a)bandoning XLISP-STAT](https://www.jstatsoft.org/article/view/v013i07)" late in the 90's soon appeared as a necessity as S and then R were becoming the *lingua franca* of statistics, even if Lisp remain a nice PL on its own.
 
 > Learning a new programming language every once in a while is both necessary and refreshing. Professional programmers are sometimes advised to learn at least one new language each year. It is seldom pleasurable, however, to switch one’s main language, for the same reason why it is stressful to move to another country in the middle of one’s life. This must be one of the reasons why a language such as FORTRAN refuses to die. It does its job well, and people have no reason to switch. I was not so fortunate, since I had to give up PL/I in the seventies, APL in the eighties, and now Lisp in the nineties.
+
+We can't do data science in a GUI, still I do not believe my web browser is the best text editor ever. I came across a blog post discussing why Jupyter notebook is not an option when it comes to [write a scientific paper](https://www.oliversherouse.com/2018/04/17/notebooks_arent_papers.html) (with all honesty and glory, and the like). See also [Jupyter, Mathematica, and the Future of the Research Paper](https://paulromer.net/jupyter-mathematica-and-the-future-of-the-research-paper/), and the related [HN thread](https://news.ycombinator.com/item?id=16840692). In the meantime, I discovered [Codalab](https://worksheets.codalab.org) which let you build computational notebook in any language (via a Docker container). Here is what it looks like (h/t Lynn Cherny):
+
+{{ tweet 987972223016325120 }}
+
+I learned that there are many things that [VS Code can do](https://vscodecandothat.com), and also that Atom has been revamped, with [teletype](https://teletype.atom.io) and more [IDE-like features](https://ide.atom.io). I miss the ability to hack the editor using some old fashioned [Emacs lisp](https://github.com/chrisdone/elisp-guide), and [Magit](https://emacsair.me/2017/09/01/magit-walk-through/) of course, but I believe it still is the best option for people that do not want to invest much time in learning Vim or Emacs.
+
+[Probability Theory (For Scientists and Engineers)](https://betanalpha.github.io/assets/case_studies/probability_theory.html) is a new a tutorial written by Michael Betancourt. It relies on R and Stan. There is [more to see](https://betanalpha.github.io/writing/) on Michael's website, e.g. [Robust Statistical Workflow with RStan](https://betanalpha.github.io/assets/case_studies/rstan_workflow.html). By the way, if you haven't follow what is going on with the [brms](https://github.com/paul-buerkner/brms) R package, it now supports the [LOO model comparison and model weights](http://andrewgelman.com/2018/04/16/loo-2-0-loose/) approach to bayesian computation developed by Aki Vehtari and coll.
+
+While it is now well over, I keep reading some (advent of) code from people I follow. I enjoyed [listening to Joel Grus](https://www.youtube.com/watch?v=XVEP2d5esmY) who happened to use Python 3 for that matter. Lately, this was done using [Erlang by Fred Hebert](https://ferd.ca/advent-of-code-2017.html). 
 
 
 {{% music %}}The Cars • *Candy-O*{{% /music %}}
