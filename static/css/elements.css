@@ -18,6 +18,17 @@ input[type=submit] {padding:5px 15px; background:#f8f5ec; border:0 none;
     -webkit-border-radius: 5px;
     border-radius: 5px; }
 
+.post .post-content blockquote{
+    margin: 2em 0;
+    padding: 10px 20px;
+    position: relative;
+    color: rgba(52,73,94,.8);
+    background-color: rgba(192,91,77,.05);
+    border-left: 3px solid rgba(192,91,77,.3);
+    -webkit-box-shadow: 1px 0px 1px rgba(0,0,0,.125);
+    box-shadow: 1px 0px 1px rgba(0,0,0,.125)
+}
+
 .post .post-content code, .post .post-content pre {
     padding: 7px;
     font-size: 0.9em;
