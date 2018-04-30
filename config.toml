@@ -9,7 +9,7 @@ theme = "even"
 hasCJKLanguage = false
 paginate = 3            
 disqusShortname = ""    
-googleAnalytics = "UA-810771-1"
+googleAnalytics = ""
 copyright = ""     
 
 [author]                  
