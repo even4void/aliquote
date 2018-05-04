@@ -40,3 +40,5 @@ Other ressources of potential interest:
 - [The floating-point guide](http://floating-point-gui.de)
 - [Floating-point representation](http://www.toves.org/books/float/)
 - [Printing Floating-Point Numbers Quickly and Accurately with Integers](http://florian.loitsch.com/publications/dtoa-pldi2010.pdf) (PDF) --- or why 0.1 + 0.2 prints 0.3 in R (but not in Julia or Python)
+
+{{% music %}}Bill Callahan • *Sometimes I Wish We Were an Eagle*{{% /music %}}

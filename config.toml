@@ -104,7 +104,7 @@ copyright = ""
     alipay = "/path/to/your/alipay-qr-code.png"           # 支付宝二维码
 
   [params.social]                                         # 社交链接
-    a-email = "mailto:ch.lalanne@gmail.com"
+    a-email = "mailto:chl@aliquote.org"
     #b-stack-overflow = "https://stackoverflow.com/users/420055/chl"
     c-twitter = "https://twitter.com/chlalanne"
     # d-facebook = "http://localhost:1313"
