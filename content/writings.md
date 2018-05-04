@@ -8,9 +8,9 @@ comment = false
 mathjax = false
 +++
 
-Here is a list of things I like to work on when time allows. As you will guess pretty quickly, I can leave *those* things hanging out for years, but there is always a chance that this stuff will be finished someday. 
+Here is a list of things I like to work on when time allows. As you will guess pretty quickly, I can leave *those* things hanging out for years, but there is always a chance that this stuff will be finished someday. Note that these pages are a resurrection of my previous website, and I left a lot of materials behind. 
 
-Note that these pages are a resurrection of my previous website, and I left a lot of materials behind. If you are looking for my old teaching ressources, I am afraid you will have to go digging on [this old directory](https://aliquote.org/cours/) (and sorry, part of the <abbr title="Cascading Style Sheet">CSS</abbr> stylesheet is no longer in use).
+If you are looking for my old teaching ressources, almost everything should be on the [Teaching page](/teaching).
 
 ## Current work in progress
 
