@@ -65,6 +65,29 @@ input[type=submit] {padding:5px 15px; background:#f8f5ec; border:0 none;
     content: ""
 }
 
+.archive .archive-tweet {
+    padding: 3px 20px;
+    border-left: 1px solid #cacaca
+}
+
+.archive .archive-tweet p {
+    margin-top: 0em;
+    margin-bottom: 0em;
+}
+
+.archive .archive-tweet a {
+    color: #c05b4d
+}
+
+.archive .archive-tweet .archive-tweet-time {
+    margin-right: 10px;
+    color: #8a8a8a
+}
+
+.archive .archive-tweet:hover {
+    border-left: 3px solid #c05b4d;
+}
+
 .icon-music:before { content: "\E911"; }
 .icon-file-pdf:before { content: "\EADF"; position: relative; top: 2px; }
 .icon-file-text2:before { content: "\E926"; position: relative; top: 2px; }
