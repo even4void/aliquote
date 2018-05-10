@@ -75,8 +75,15 @@ input[type=submit] {padding:5px 15px; background:#f8f5ec; border:0 none;
     margin-bottom: 0em;
 }
 
-.archive .archive-tweet a {
-    color: #c05b4d
+.archive .archive-tweet a { color: #c05b4d }
+
+.archive .archive-tweet code { 
+    padding: 3px 5px;
+    border-radius: 4px;
+    color: #c7254e;
+    background: #f8f5ec;
+    font-size: 0.9em;
+    font-family: Consolas, Monaco, Menlo, monospace;
 }
 
 .archive .archive-tweet .archive-tweet-time {
@@ -84,9 +91,7 @@ input[type=submit] {padding:5px 15px; background:#f8f5ec; border:0 none;
     color: #8a8a8a
 }
 
-.archive .archive-tweet:hover {
-    border-left: 3px solid #c05b4d;
-}
+.archive .archive-tweet:hover { border-left: 3px solid #c05b4d }
 
 .icon-music:before { content: "\E911"; }
 .icon-file-pdf:before { content: "\EADF"; position: relative; top: 2px; }

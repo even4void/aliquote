@@ -5,4 +5,3 @@ draft: false
 type: "tweet"
 ---
 
-<!--more-->
