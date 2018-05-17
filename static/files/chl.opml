@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<opml version="1.0">
+	<head>
+		<title>Subscriptions - RSS</title>
+	</head>
+	<body>
+		<outline htmlUrl="https://arstechnica.com" title="Ars Technica" xmlUrl="http://feeds.arstechnica.com/arstechnica/index/" type="rss" text="Ars Technica"/>
+		<outline htmlUrl="https://kaygun.tumblr.com/" title="Atabey Kaygun" xmlUrl="https://kaygun.tumblr.com/rss" type="rss" text="Atabey Kaygun"/>
+		<outline htmlUrl="http://www.cpdiehl.org/" title="Chris Diehl" xmlUrl="http://www.cpdiehl.org/atom.xml" type="rss" text="Chris Diehl"/>
+		<outline htmlUrl="https://codeandculture.wordpress.com" title="Code and Culture" xmlUrl="http://codeandculture.wordpress.com/feed/" type="rss" text="Code and Culture"/>
+		<outline htmlUrl="http://corte.si" title="cortesi" xmlUrl="http://corte.si/rss.xml" type="rss" text="cortesi"/>
+		<outline htmlUrl="https://darrenjw.wordpress.com" title="Darren Wilkinson's research blog" xmlUrl="http://darrenjw.wordpress.com/feed/" type="rss" text="Darren Wilkinson's research blog"/>
+		<outline htmlUrl="http://www.datatau.com/" title="DataTau" xmlUrl="http://www.datatau.com/rss" type="rss" text="DataTau"/>
+		<outline htmlUrl="https://stuartsierra.com" title="Digital Digressions by Stuart Sierra" xmlUrl="http://stuartsierra.com/feed" type="rss" text="Digital Digressions by Stuart Sierra"/>
+		<outline htmlUrl="https://eagereyes.org" title="eagereyes" xmlUrl="http://eagereyes.org/rss.xml" type="rss" text="eagereyes"/>
+		<outline htmlUrl="https://eli.thegreenplace.net/" title="Eli Bendersky's website" xmlUrl="https://eli.thegreenplace.net/feeds/all.atom.xml" type="rss" text="Eli Bendersky's website"/>
+		<outline htmlUrl="http://www.evanmiller.org/" title="Evan Miller’s News" xmlUrl="http://www.evanmiller.org/news.xml" type="rss" text="Evan Miller’s News"/>
+		<outline htmlUrl="https://news.ycombinator.com/" title="Hacker News" xmlUrl="https://news.ycombinator.com/rss" type="rss" text="Hacker News"/>
+		<outline htmlUrl="http://www.ibm.com/developerworks/" title="IBM developerWorks : Open source" xmlUrl="http://www.ibm.com/developerworks/views/opensource/rss/libraryview.jsp?site_id=1&amp;contentarea_by=Open%20source&amp;topic_by=&amp;product_by=&amp;type_by=All%20Types&amp;search_by=&amp;industry_by=&amp;sort_by=Date&amp;series_title_by=" type="rss" text="IBM developerWorks : Open source"/>
+		<outline htmlUrl="http://irreal.org/blog" title="Irreal" xmlUrl="http://irreal.org/blog/?feed=rss2" type="rss" text="Irreal"/>
+		<outline htmlUrl="https://www.baty.net/" title="Jack Baty's Blog" xmlUrl="https://www.baty.net/index.xml" type="rss" text="Jack Baty's Blog"/>
+		<outline htmlUrl="https://www.johndcook.com/blog" title="John D. Cook" xmlUrl="http://feeds.feedburner.com/TheEndeavour" type="rss" text="John D. Cook"/>
+		<outline htmlUrl="http://www.johnmyleswhite.com" title="John Myles White" xmlUrl="http://www.johnmyleswhite.com/feed/" type="rss" text="John Myles White"/>
+		<outline htmlUrl="http://kottke.org/" title="kottke.org" xmlUrl="http://feeds.kottke.org/main" type="rss" text="kottke.org"/>
+		<outline htmlUrl="http://lambda-the-ultimate.org" title="Lambda the Ultimate - Programming Languages Weblog" xmlUrl="http://lambda-the-ultimate.org/rss.xml" type="rss" text="Lambda the Ultimate - Programming Languages Weblog"/>
+		<outline htmlUrl="http://www.lostgarden.com/" title="Lost Garden" xmlUrl="http://www.lostgarden.com/feeds/posts/default" type="rss" text="Lost Garden"/>
+		<outline htmlUrl="http://yaroslavvb.blogspot.com/" title="Machine Learning, etc" xmlUrl="http://yaroslavvb.blogspot.com/atom.xml" type="rss" text="Machine Learning, etc"/>
+		<outline htmlUrl="https://macwright.org" title="macwright.org" xmlUrl="https://macwright.org/rss.xml" type="rss" text="macwright.org"/>
+		<outline htmlUrl="http://meow.noopkat.com" title="meow machine" xmlUrl="http://meow.noopkat.com/rss/" type="rss" text="meow machine"/>
+		<outline htmlUrl="http://nullprogram.com" title="null program" xmlUrl="http://nullprogram.com/blog/index.rss" type="rss" text="null program"/>
+		<outline htmlUrl="http://www.paulgraham.com/" title="Paul Graham: Essays" xmlUrl="http://www.aaronsw.com/2002/feeds/pgessays.rss" type="rss" text="Paul Graham: Essays"/>
+		<outline htmlUrl="https://programmingpraxis.com" title="Programming Praxis" xmlUrl="http://programmingpraxis.com/feed/" type="rss" text="Programming Praxis"/>
+		<outline htmlUrl="https://radfordneal.wordpress.com" title="Radford Neal's blog" xmlUrl="http://radfordneal.wordpress.com/feed/" type="rss" text="Radford Neal's blog"/>
+		<outline htmlUrl="http://gigasquid.github.io/" title="Squid's Blog" xmlUrl="http://gigasquidsoftware.com/atom.xml" type="rss" text="Squid's Blog"/>
+		<outline htmlUrl="http://andrewgelman.com" title="Statistical Modeling, Causal Inference, and Social Science" xmlUrl="http://feeds.feedburner.com/StatisticalModelingCausalInferenceAndSocialScience" type="rss" text="Statistical Modeling, Causal Inference, and Social Science"/>
+		<outline htmlUrl="http://fharrell.com/" title="Statistical Thinking on Statistical Thinking" xmlUrl="http://fharrell.com/index.xml" type="rss" text="Statistical Thinking on Statistical Thinking"/>
+		<outline htmlUrl="http://blog.stephenwolfram.com" title="Stephen Wolfram Blog" xmlUrl="http://blog.stephenwolfram.com/feed/" type="rss" text="Stephen Wolfram Blog"/>
+		<outline htmlUrl="https://technomancy.us/" title="Technomancy" xmlUrl="http://technomancy.us/feed/atom.xml" type="rss" text="Technomancy"/>
+		<outline htmlUrl="http://shape-of-code.coding-guidelines.com" title="The Shape of Code" xmlUrl="http://shape-of-code.coding-guidelines.com/feed/" type="rss" text="The Shape of Code"/>
+		<outline htmlUrl="https://blog.stata.com" title="The Stata Blog" xmlUrl="http://blog.stata.com/feed/" type="rss" text="The Stata Blog"/>
+		<outline htmlUrl="http://bactra.org/weblog/" title="Three-Toed Sloth" xmlUrl="http://bactra.org/weblog/index.rss" type="rss" text="Three-Toed Sloth"/>
+		<outline htmlUrl="https://nsaunders.wordpress.com" title="What You're Doing Is Rather Desperate" xmlUrl="http://nsaunders.wordpress.com/feed/" type="rss" text="What You're Doing Is Rather Desperate"/>
+	</body>
+</opml>
