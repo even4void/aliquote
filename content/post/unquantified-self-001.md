@@ -3,7 +3,7 @@ title: "The unquantified self #1"
 date: 2018-05-03T08:03:59+02:00
 draft: false
 description: ""
-tags: ["misc"]
+tags: ["self"]
 categories: []
 ---
 
