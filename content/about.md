@@ -10,8 +10,8 @@ mathjax = false
 
 {{% headquote %}}
 < a•l•iquote |ˈalikwət|, noun />  
-<small>*Mathematics a quantity that can be divided into another an integral number of times. Origin late 16th cent.: from French aliquote, from Latin aliquot ‘some, so many,’ from alius ‘one of two’ + quot ‘how many.’*</small>
-[Changelog](/changelog/)
+<small>*Mathematics a quantity that can be divided into another an integral number of times. Origin late 16th cent.: from French aliquote, from Latin aliquot ‘some, so many,’ from alius ‘one of two’ + quot ‘how many.’*</small>  
+<small>[Changelog](/articles/changelog/)</small>
 {{% /headquote %}}
 
 You landed on my homepage, thanks for stopping by! 

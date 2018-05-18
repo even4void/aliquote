@@ -10,16 +10,16 @@ url = "/articles/changelog/"
 * [2018-05-04] Add [Teaching materials](/teaching/)
 * [2018-05-03] Remove Google Search
 * [2018-04-30] Remove Google Analytics
-* [2018-04-14] Add a [FAQ](/how-i-do/)
+* [2018-04-14] Add a [FAQ](/articles/how-i-do/)
 * [2018-03-09] Update HTML layout and CSS
 * [2018-03-07] Switch to the Even theme instead of Academic
 * [2018-02-23] Finish migrating old posts
-* [2018-01-21] `git init .`
 
-    ```
-    commit 316adb5e3d1ddce5d3d45419b0c035483616e361
-    Author: Christophe Lalanne <ch.lalanne@gmail.com>
-    Date:   Sun Jan 21 00:57:45 2018 +0100
+```
+% git log | tail -n 5
+commit 316adb5e3d1ddce5d3d45419b0c035483616e361
+Author: Christophe Lalanne <xxxx@xxxx.xxxx>
+Date:   Sun Jan 21 00:57:45 2018 +0100
 
-        Setup root directory with academic theme
-    ```
+    Setup root directory with academic theme
+```

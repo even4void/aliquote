@@ -33,7 +33,16 @@ I must admit that I was really disappointed by the recent buzz around RMS, but I
 
 Hack is a [typeface designed for source code](https://sourcefoundry.org/hack/). Should I try to replace Source Code or Fira Code? Not any time soon, but let us keep this in mind. Also, while [VimR](http://vimr.org) (not to be confused with the [NVim-R](https://github.com/jalvesaq/Nvim-R) plugin) has been refined and now use [neovim](https://neovim.io) instead of Macvim, I came across [Oni](https://onivim.github.io/oni-docs/#/), which is "a new kind of text editor." Think of it as a combination of nvim powered by node. Don't be afraid: There is also a [Rust version of Emacs](https://github.com/Wilfred/remacs)!
 
-Have you heard of the [Wes Anderson Palettes](https://wesandersonpalettes.tumblr.com)? There is an [R package](https://github.com/karthik/wesanderson/) for that, but I would love to see one for Stata.
+Have you heard of the [Wes Anderson Palettes](https://wesandersonpalettes.tumblr.com)? There is an [R package](https://github.com/karthik/wesanderson/) for that, but I would love to see one for Stata. Or you can visit the Rijksmuseum for free with the [rijkspalette](https://vankesteren.github.io/rijkspalette/):
+
+<div style="width:30px;height:30px;background:#A8402D;float:left"></div>
+<div style="width:30px;height:30px;background:#969D4C;float:left"></div>
+<div style="width:30px;height:30px;background:#B5BDAC;float:left"></div>
+<div style="width:30px;height:30px;background:#7D817A;float:left"></div>
+<div style="width:30px;height:30px;background:#336D7F;float:left"></div>
+<div style="width:30px;height:30px;background:#235B6D;float:left"></div>
+<div style="width:30px;height:30px;background:#303344;float:left"></div>
+<br />
 
 Here is an interesting post about the [dat project](https://datproject.org) by Tom MacWright: [So you want to decentralize your website](https://macwright.org/2017/07/20/decentralize-your-website.html).
 
