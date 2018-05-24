@@ -15,8 +15,8 @@ If you are looking for my old teaching ressources, almost everything should be o
 ## Current work in progress
 
 - **Stata modules**
-{{< ressource "stack-overflow" "/public/stata/" "www" >}}  
-*A series of standalone modules to learn a bit of Stata.*
+{{< ressource "stack-overflow" "/articles/mod-stata/" "www" >}}  
+*A series of standalone modules to learn a bit of Stata, for those who might be interested.* [in French]
 <progress max="100" value="5"></progress><small>5% completed</small>
     
 - **Statistics for Clinical Trials: Applications Using R**

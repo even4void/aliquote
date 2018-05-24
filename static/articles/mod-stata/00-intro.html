@@ -3,7 +3,7 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="fr" xml:lang="fr">
 <head>
-<!-- 2018-05-24 Jeu 17:48 -->
+<!-- 2018-05-24 Jeu 21:17 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Stata : un rapide tour d&rsquo;horizon</title>
@@ -86,16 +86,16 @@ for the JavaScript code in this tag.
 <h2>Table des matières</h2>
 <div id="text-table-of-contents">
 <ul>
-<li><a href="#org9c06387">Stata en quelques mots</a></li>
-<li><a href="#org51541c0">Prise en main de Stata</a>
+<li><a href="#org35fcb0c">Stata en quelques mots</a></li>
+<li><a href="#org3206686">Prise en main de Stata</a>
 <ul>
-<li><a href="#org20fcc7b">Un modèle de régression linéaire</a></li>
-<li><a href="#org6c13f2d">Visualiser et interpréter</a></li>
-<li><a href="#orgc466eb4">Synthétiser</a></li>
+<li><a href="#org6e7dc04">Un modèle de régression linéaire</a></li>
+<li><a href="#org3e78aac">Visualiser et interpréter</a></li>
+<li><a href="#orga844daa">Synthétiser</a></li>
 </ul>
 </li>
-<li><a href="#orgc34a261">Enregistrer son travail</a></li>
-<li><a href="#org401def8">Pour aller plus loin</a></li>
+<li><a href="#org5328f91">Enregistrer son travail</a></li>
+<li><a href="#orga952872">Pour aller plus loin</a></li>
 </ul>
 </div>
 </div>
@@ -103,9 +103,9 @@ for the JavaScript code in this tag.
 Ce document présente selon un angle très pragmatique une session de travail typique avec le logiciel Stata. Il ne s&rsquo;agit pas de couvrir toutes les fonctionnalités de Stata, ni de présenter en détails les principales commandes Stata, voire même la représentation interne des données sus Stata. Au contraire, l&rsquo;idée est d&rsquo;offrir un panorama de certaines fonctionnalités de Stata et comment organiser une session de travail simple avec comme objectif la réalisation d&rsquo;un modèle de régression linéaire.
 </p>
 
-<div id="outline-container-org9c06387" class="outline-2">
-<h2 id="org9c06387">Stata en quelques mots</h2>
-<div class="outline-text-2" id="text-org9c06387">
+<div id="outline-container-org35fcb0c" class="outline-2">
+<h2 id="org35fcb0c">Stata en quelques mots</h2>
+<div class="outline-text-2" id="text-org35fcb0c">
 <p>
 Stata est un logiciel d&rsquo;analyses statistiques développé dans les années 80 par une équipe de statisticiens américains, dont William Gould. À l&rsquo;origine, il s&rsquo;agissait esentiellement d&rsquo;un logiciel orienté vers le traitement des enquêtes et des séries chronologiques [<a href="#cox-2005-stata">2</a>], puis ses fonctionnalités se sont largement développées pour en faire à l&rsquo;heure actuelle un logiciel très performant dans de nombreux domaines d&rsquo;application, principalement le traitement des enquêtes [<a href="#kohler-2012-data-analy">4</a>], l&rsquo;économétrie [<a href="#baum-2006-introd-moder">1</a>] ou l&rsquo;épidémiologie [<a href="#juul-2014-introd-stata">3</a>]. Les ouvrages publiés par Stata Press incluent en général un ou deux chapitres de présentation des principales commandes Stata.
 </p>
@@ -124,13 +124,13 @@ En mode interactif, il y a deux manières de travailler avec Stata : en saisissa
 </div>
 </div>
 
-<div id="outline-container-org51541c0" class="outline-2">
-<h2 id="org51541c0">Prise en main de Stata</h2>
-<div class="outline-text-2" id="text-org51541c0">
+<div id="outline-container-org3206686" class="outline-2">
+<h2 id="org3206686">Prise en main de Stata</h2>
+<div class="outline-text-2" id="text-org3206686">
 </div>
-<div id="outline-container-org20fcc7b" class="outline-3">
-<h3 id="org20fcc7b">Un modèle de régression linéaire</h3>
-<div class="outline-text-3" id="text-org20fcc7b">
+<div id="outline-container-org6e7dc04" class="outline-3">
+<h3 id="org6e7dc04">Un modèle de régression linéaire</h3>
+<div class="outline-text-3" id="text-org6e7dc04">
 <p>
 Une fois Stata lancé, voici quelques commandes à saisir dans le panneau de commande. Il s&rsquo;agit du panneau central dans l&rsquo;interface Stata, de hauteur réduite et intitulé &laquo;&nbsp;Command&nbsp;&raquo;. Il est généralement situé en dessous du panneau de résultats (&laquo;&nbsp;Results&nbsp;&raquo;). Ce sont les seuls éléments de l&rsquo;interface graphique de Stata qui nous intéresseront dans ce tutoriel.  Ces trois commandes vont successivement charger un jeu de données fourni lors de l&rsquo;installation de Stata, produire un résumé numérique de deux variables, appelées <code>price</code> et <code>mpg</code>, et estimer les paramètres d&rsquo;un modèle de régression linéaire simple.
 </p>
@@ -140,6 +140,32 @@ summarize price mpg
 regress price mpg
 </pre>
 </div>
+
+<pre class="example">
+sysuse auto, clear
+(1978 Automobile Data)
+summarize price mpg
+
+    Variable |        Obs        Mean    Std. Dev.       Min        Max
+-------------+---------------------------------------------------------
+       price |         74    6165.257    2949.496       3291      15906
+         mpg |         74     21.2973    5.785503         12         41
+regress price mpg
+
+      Source |       SS           df       MS      Number of obs   =        74
+-------------+----------------------------------   F(1, 72)        =     20.26
+       Model |   139449474         1   139449474   Prob &gt; F        =    0.0000
+    Residual |   495615923        72  6883554.48   R-squared       =    0.2196
+-------------+----------------------------------   Adj R-squared   =    0.2087
+       Total |   635065396        73  8699525.97   Root MSE        =    2623.7
+
+------------------------------------------------------------------------------
+       price |      Coef.   Std. Err.      t    P&gt;|t|     [95% Conf. Interval]
+-------------+----------------------------------------------------------------
+         mpg |  -238.8943   53.07669    -4.50   0.000    -344.7008   -133.0879
+       _cons |   11253.06   1170.813     9.61   0.000     8919.088    13587.03
+------------------------------------------------------------------------------
+</pre>
 
 <p>
 Dans l&rsquo;exemple ci-dessus comme dans les suivants, on présentera systématiquement une commande ou une série de commandes suivi des résultats produits par Stata. Le deuxième encart reflète donc la sortie produite par Stata dans sa fenêtre &laquo;&nbsp;Results&nbsp;&raquo;, à l&rsquo;exception de l&rsquo;invite de commande Stata symbolisée par un point (&laquo;&nbsp;.&nbsp;&raquo;). Pour en revenir à l&rsquo;exemple précédent, deux choses sont remarquables : (1) les commandes Stata suivent l&rsquo;idée anglo-saxonne que l&rsquo;on peut se faire des actions que l&rsquo;on souhaite réaliser (<a href="https://www.stata.com/help.cgi?use" class="stata">use</a> pour utiliser et <a href="https://www.stata.com/help.cgi?sysuse" class="stata">sysuse</a> pour utiliser depuis le système, <a href="https://www.stata.com/help.cgi?summarize" class="stata">summarize</a> pour résumer, et <a href="https://www.stata.com/help.cgi?regress" class="stata">regress</a> pour régresser une variable sur une autre) ; (2) dans la majorité des cas, une commande produit un résultat, qu&rsquo;il s&rsquo;agisse de l&rsquo;affichage d&rsquo;un message ou d&rsquo;un résultat numérique mis en forme automatiquement par Stata.
@@ -153,6 +179,33 @@ Le jeu de données utilisé concerne un ensemble de voitures dont l&rsquo;une de
 </pre>
 </div>
 
+<pre class="example">
+describe
+
+Contains data from /Applications/Stata/ado/base/a/auto.dta
+  obs:            74                          1978 Automobile Data
+ vars:            12                          13 Apr 2016 17:45
+ size:         3,182                          (_dta has notes)
+-------------------------------------------------------------------------------
+              storage   display    value
+variable name   type    format     label      variable label
+-------------------------------------------------------------------------------
+make            str18   %-18s                 Make and Model
+price           int     %8.0gc                Price
+mpg             int     %8.0g                 Mileage (mpg)
+rep78           int     %8.0g                 Repair Record 1978
+headroom        float   %6.1f                 Headroom (in.)
+trunk           int     %8.0g                 Trunk space (cu. ft.)
+weight          int     %8.0gc                Weight (lbs.)
+length          int     %8.0g                 Length (in.)
+turn            int     %8.0g                 Turn Circle (ft.)
+displacement    int     %8.0g                 Displacement (cu. in.)
+gear_ratio      float   %6.2f                 Gear Ratio
+foreign         byte    %8.0g      origin     Car type
+-------------------------------------------------------------------------------
+Sorted by: foreign
+</pre>
+
 <p>
 Notons qu&rsquo;aucun nom de variable n&rsquo;est fourni après la commande <a href="https://www.stata.com/help.cgi?describe" class="stata">describe</a>, ce qui revient à considérer l&rsquo;ensemble des variables. Il serait équivalent de spécifier explicitement les variables à l&rsquo;aide de <code>describe make-foreign</code> ou <code>describe *</code>. La notion de variable et de liste de variables est centrale dans l&rsquo;utilisation de Stata qui est un langage essentiellement orienté variables (c&rsquo;est-à-dire les colonnes du tableau de données). Les commandes Stata possèdent généralement des options qui modifient leur comportement ou les résultats renvoyés dans la fenêtre de résultats. Dans le cas de <a href="https://www.stata.com/help.cgi?describe" class="stata">describe</a>, par exemple, l&rsquo;option <code>simple</code> permet de lister uniquement le nom des variables. Les options se placent après les paramètres principaux de la commande et d&rsquo;une virgule &laquo;&nbsp;,&nbsp;&raquo;. On écrirait donc <code>describe, simple</code>. Enfin, les commandes peuvent être abrégées à l&rsquo;aide du plus petit préfixe non ambigü, et le nom de commande abrégé apparaît souligné dans l&rsquo;aide en ligne de Stata (<code>help describe</code>). 
 </p>
@@ -165,6 +218,24 @@ Supposons que l&rsquo;on souhaite réaliser le même modèle de régression que 
 </pre>
 </div>
 
+<pre class="example">
+regress price mpg if foreign == 1
+
+      Source |       SS           df       MS      Number of obs   =        22
+-------------+----------------------------------   F(1, 20)        =     13.25
+       Model |  57534941.7         1  57534941.7   Prob &gt; F        =    0.0016
+    Residual |  86828271.1        20  4341413.55   R-squared       =    0.3985
+-------------+----------------------------------   Adj R-squared   =    0.3685
+       Total |   144363213        21   6874438.7   Root MSE        =    2083.6
+
+------------------------------------------------------------------------------
+       price |      Coef.   Std. Err.      t    P&gt;|t|     [95% Conf. Interval]
+-------------+----------------------------------------------------------------
+         mpg |  -250.3668   68.77435    -3.64   0.002    -393.8276    -106.906
+       _cons |   12586.95   1760.689     7.15   0.000     8914.217    16259.68
+------------------------------------------------------------------------------
+</pre>
+
 <p>
 La notion de filtres appliqués à l&rsquo;aide des qualificateurs <a href="https://www.stata.com/help.cgi?by" class="stata">by</a>, <a href="https://www.stata.com/help.cgi?if" class="stata">if</a> et <a href="https://www.stata.com/help.cgi?in" class="stata">in</a> est également centrale dans Stata puisque ceux-ci permettent de sélectionner un sous-ensemble d&rsquo;observations (les lignes du tableau de données) selon des conditions logiques. À ce titre, le symbole représetant l&rsquo;égalité logique est un double signe égal (<code>==</code>) alors que le signe égal simple est réservé à l&rsquo;opération d&rsquo;affectation. Il serait possible de réutiliser la même instruction pour estimer le modèle de régression pour les observations vérifiant la condition &laquo;&nbsp;foreign vaut 0&nbsp;&raquo;, mais plutôt que de copier/coller ou rappeller la même commande à l&rsquo;aide des flèches haut/bas du clavier dans la fenêtre de commande, il est préférable d&rsquo;utiliser le préfixe <a href="https://www.stata.com/help.cgi?by" class="stata">by</a> :
 </p>
@@ -172,6 +243,44 @@ La notion de filtres appliqués à l&rsquo;aide des qualificateurs <a href="http
 <pre class="src src-stata">by foreign, sort: regress price mpg
 </pre>
 </div>
+
+<pre class="example">
+by foreign, sort: regress price mpg
+
+-------------------------------------------------------------------------------
+-&gt; foreign = Domestic
+
+      Source |       SS           df       MS      Number of obs   =        52
+-------------+----------------------------------   F(1, 50)        =     17.05
+       Model |   124392956         1   124392956   Prob &gt; F        =    0.0001
+    Residual |   364801844        50  7296036.89   R-squared       =    0.2543
+-------------+----------------------------------   Adj R-squared   =    0.2394
+       Total |   489194801        51  9592054.92   Root MSE        =    2701.1
+
+------------------------------------------------------------------------------
+       price |      Coef.   Std. Err.      t    P&gt;|t|     [95% Conf. Interval]
+-------------+----------------------------------------------------------------
+         mpg |  -329.2551   79.74034    -4.13   0.000    -489.4183   -169.0919
+       _cons |   12600.54   1624.773     7.76   0.000     9337.085    15863.99
+------------------------------------------------------------------------------
+
+-------------------------------------------------------------------------------
+-&gt; foreign = Foreign
+
+      Source |       SS           df       MS      Number of obs   =        22
+-------------+----------------------------------   F(1, 20)        =     13.25
+       Model |  57534941.7         1  57534941.7   Prob &gt; F        =    0.0016
+    Residual |  86828271.1        20  4341413.55   R-squared       =    0.3985
+-------------+----------------------------------   Adj R-squared   =    0.3685
+       Total |   144363213        21   6874438.7   Root MSE        =    2083.6
+
+------------------------------------------------------------------------------
+       price |      Coef.   Std. Err.      t    P&gt;|t|     [95% Conf. Interval]
+-------------+----------------------------------------------------------------
+         mpg |  -250.3668   68.77435    -3.64   0.002    -393.8276    -106.906
+       _cons |   12586.95   1760.689     7.15   0.000     8914.217    16259.68
+------------------------------------------------------------------------------
+</pre>
 
 <p>
 Si l&rsquo;on souhaite obtenir les intervalles de confiance estimés pour nos paramètres à l&rsquo;aide d&rsquo;une technique de rééchantillonnage comme le bootstrap, il suffit de l&rsquo;indiquer à Stata à l&rsquo;aide du préfixe correspondant (<a href="https://www.stata.com/help.cgi?bootstrap:" class="stata">bootstrap:</a>) : la commande s&rsquo;écrit alors <code>bootstrap: regress price mpg</code>. Un autre préfixe possible est <a href="https://www.stata.com/help.cgi?bayes:" class="stata">bayes:</a> (à partir de Stata 15) et, dans ce cas, ce sont des intervalles de crédibilité qui seront calculés automatiquement par Stata. On remplacera la commande précédente par <code>bayes: regress price mpg</code>. Attention, il ne s&rsquo;agit pas d&rsquo;un préfixe comme le préfixe <a href="https://www.stata.com/help.cgi?by" class="stata">by</a> vu plus haut, mais d&rsquo;un préfixe pour les commandes d&rsquo;estimation.
@@ -189,9 +298,9 @@ On reconnaît le préfixe <a href="https://www.stata.com/help.cgi?by" class="sta
 </div>
 </div>
 
-<div id="outline-container-org6c13f2d" class="outline-3">
-<h3 id="org6c13f2d">Visualiser et interpréter</h3>
-<div class="outline-text-3" id="text-org6c13f2d">
+<div id="outline-container-org3e78aac" class="outline-3">
+<h3 id="org3e78aac">Visualiser et interpréter</h3>
+<div class="outline-text-3" id="text-org3e78aac">
 <p>
 Les instructions suivantes vont permettre de construire un diagramme de dispersion représentant la covariation des deux variables <code>price</code> et <code>mpg</code> et d&rsquo;y superposer la droite de régression. Les mots clé <a href="https://www.stata.com/help.cgi?graph" class="stata">graph</a> et <a href="https://www.stata.com/help.cgi?twoway" class="stata">twoway</a> peuvent être omis et le symbole <code>||</code> permet de superposer sur le même graphique plusieurs éléments. L&rsquo;ancienne syntaxe consistant à isoler les instructions graphiques entre parenthèses est également valide.
 </p>
@@ -211,7 +320,7 @@ graph export "fig-00-scatter-price-mpg.pdf", fontface(DroidSans) replace
 </div>
 
 
-<div id="orgc8323b8" class="figure">
+<div id="org2d5dde3" class="figure">
 <p><img src="./fig-00-scatter-price-mpg.png" alt="fig-00-scatter-price-mpg.png" width="640px" />
 </p>
 <p><span class="figure-number">Figure&nbsp;1&nbsp;: </span>Prix et vitesse des automobiles (ajustement linéaire)</p>
@@ -225,6 +334,27 @@ Le graphique précédent suggère qu&rsquo;une relation simplement linéaire ent
 regress price mpg mpg2 
 </pre>
 </div>
+
+<pre class="example">
+generate mpg2 = mpg * mpg
+regress price mpg mpg2
+
+      Source |       SS           df       MS      Number of obs   =        74
+-------------+----------------------------------   F(2, 71)        =     18.28
+       Model |   215835615         2   107917807   Prob &gt; F        =    0.0000
+    Residual |   419229781        71  5904644.81   R-squared       =    0.3399
+-------------+----------------------------------   Adj R-squared   =    0.3213
+       Total |   635065396        73  8699525.97   Root MSE        =    2429.9
+
+------------------------------------------------------------------------------
+       price |      Coef.   Std. Err.      t    P&gt;|t|     [95% Conf. Interval]
+-------------+----------------------------------------------------------------
+         mpg |  -1265.194   289.5443    -4.37   0.000    -1842.529   -687.8593
+        mpg2 |   21.36069   5.938885     3.60   0.001     9.518891    33.20249
+       _cons |   22716.48   3366.577     6.75   0.000     16003.71    29429.24
+------------------------------------------------------------------------------
+</pre>
+
 <p>
 Comme on le voit, la génération d&rsquo;une nouvelle variable ne pose pas de difficulté majeure et il n&rsquo;est même pas besoin de définir son type : Stata est capable d&rsquo;inférer que la variable <code>mpg2</code> est un nombre réel puisqu&rsquo;elle est construite à partir du produit d&rsquo;un nombre réel par lui même. La mise à jour du modèle linéaire est relativement simple puisqu&rsquo;il suffit d&rsquo;ajouter le nouveau prédicteur à la suite du prédicteur initial, <code>mpg</code>.
 </p>
@@ -239,7 +369,7 @@ graph export "fig-00-scatter-price-mpg2.pdf", fontface(DroidSans) replace
 </div>
 
 
-<div id="org7ceed3e" class="figure">
+<div id="org6031ac6" class="figure">
 <p><img src="./fig-00-scatter-price-mpg2.png" alt="fig-00-scatter-price-mpg2.png" width="640px" />
 </p>
 <p><span class="figure-number">Figure&nbsp;2&nbsp;: </span>Prix et vitesse des automobiles (ajustement quadratique)</p>
@@ -252,6 +382,13 @@ Les résultats calculés par Stata sont stockés en mémoire et sont disponibles
 <pre class="src src-stata">display %4.3f e(r2_a)
 </pre>
 </div>
+
+<pre class="example">
+display %4.3f e(r2_a)
+0.321
+
+</pre>
+
 <p>
 Un affichage plus complexe pourrait inclure un mélange de texte et de résultat numérique, comme par exemple <code>display "R2 = " %5.2f e(r2_a)*100 "%"</code>, et une utilisation plus avancée consisterait à définir une macro locale pour stocker le résultat d&rsquo;un tel calcul, de manière statique ou dynamique.
 </p>
@@ -275,7 +412,7 @@ graph export "fig-00-rvfplot-price-mpg2.pdf", fontface(DroidSans) replace
 </div>
 
 
-<div id="org2441445" class="figure">
+<div id="org4bb6ff2" class="figure">
 <p><img src="./fig-00-rvfplot-price-mpg2.png" alt="fig-00-rvfplot-price-mpg2.png" width="640px" />
 </p>
 <p><span class="figure-number">Figure&nbsp;3&nbsp;: </span>Prix et vitesse des automobiles (valeurs ajustées et résidus)</p>
@@ -294,21 +431,21 @@ graph export "fig-00-rvfplot-price-mpg2-b.pdf", fontface(DroidSans) replace
 </div>
 
 
-<div id="org6389226" class="figure">
+<div id="org73db75d" class="figure">
 <p><img src="./fig-00-rvfplot-price-mpg2-b.png" alt="fig-00-rvfplot-price-mpg2-b.png" width="640px" />
 </p>
 <p><span class="figure-number">Figure&nbsp;4&nbsp;: </span>Prix et vitesse des automobiles (valeurs ajustées et résidus)</p>
 </div>
 
 <p>
-Cette dernière série d&rsquo;instructions peut sembler un peu complexe lorsqu&rsquo;on n&rsquo;est pas familier avec la syntaxe Stata mais, en réalité, l&rsquo;idée est assez simple. On souhaite afficher l&rsquo;ensemble des observations à l&rsquo;aide de marqueurs comme dans la figure <a href="#org2441445">3</a> mais on souhaite annoter certains de ces points en indiquant le numéro d&rsquo;observation associé lorsque les résidus \(e_i = y_i - \hat{y}_i\) (<code>ei</code>) sont supérieurs à 2 en valeur absolue. Pour identifier ces observations avec des résidus élevés, on génère une nouvelle variable, <code>infl</code>, qui prendra la valeur <code>_n</code>, c&rsquo;est-à-dire le numéro de ligne, lorsque la condition est vérifiée. Cette variable est enseuite convertie au format chaîne de caractères et on remplace les valeurs manquantes (celles qui vérifient la condition \(\lvert e_i \rvert\le 2\)) par un espace afin d&rsquo;éviter l&rsquo;affichage d&rsquo;un point &laquo;&nbsp;.&nbsp;&raquo; dans le graphique.
+Cette dernière série d&rsquo;instructions peut sembler un peu complexe lorsqu&rsquo;on n&rsquo;est pas familier avec la syntaxe Stata mais, en réalité, l&rsquo;idée est assez simple. On souhaite afficher l&rsquo;ensemble des observations à l&rsquo;aide de marqueurs comme dans la figure <a href="#org4bb6ff2">3</a> mais on souhaite annoter certains de ces points en indiquant le numéro d&rsquo;observation associé lorsque les résidus \(e_i = y_i - \hat{y}_i\) (<code>ei</code>) sont supérieurs à 2 en valeur absolue. Pour identifier ces observations avec des résidus élevés, on génère une nouvelle variable, <code>infl</code>, qui prendra la valeur <code>_n</code>, c&rsquo;est-à-dire le numéro de ligne, lorsque la condition est vérifiée. Cette variable est enseuite convertie au format chaîne de caractères et on remplace les valeurs manquantes (celles qui vérifient la condition \(\lvert e_i \rvert\le 2\)) par un espace afin d&rsquo;éviter l&rsquo;affichage d&rsquo;un point &laquo;&nbsp;.&nbsp;&raquo; dans le graphique.
 </p>
 </div>
 </div>
 
-<div id="outline-container-orgc466eb4" class="outline-3">
-<h3 id="orgc466eb4">Synthétiser</h3>
-<div class="outline-text-3" id="text-orgc466eb4">
+<div id="outline-container-orga844daa" class="outline-3">
+<h3 id="orga844daa">Synthétiser</h3>
+<div class="outline-text-3" id="text-orga844daa">
 <p>
 Comme on peut le constater, les tableaux renvoyés par Stata dans la fenêtre de résultats sont relativement convenables pour une lecture à l&rsquo;écran. En revanche, dans le cas de la génération d&rsquo;un rapport structuré d&rsquo;analyses, cette solution est limitée. Heureusement, il existe plusieurs possibilités pour exporter des tableaux générés par Stata au format texte, HTML ou PDF. Dans le dernier cas, cela nécessite de disposer d&rsquo;un compilateur LATEX.
 </p>
@@ -338,6 +475,25 @@ Une fois stockés en mémoire, ces résultats d&rsquo;estimation peuvent être a
 </pre>
 </div>
 
+<pre class="example">
+estimates table m*, b(%7.2f) se(%7.2f) stats(N r2_a)
+
+----------------------------------
+    Variable |   m0        m1     
+-------------+--------------------
+         mpg | -238.89   -1265.19  
+             |   53.08    289.54  
+        mpg2 |             21.36  
+             |              5.94  
+       _cons | 11253.06   22716.48  
+             | 1170.81   3366.58  
+-------------+--------------------
+           N |      74        74  
+        r2_a |    0.21      0.32  
+----------------------------------
+                      legend: b/se
+</pre>
+
 <p>
 Les options ajoutées dans l&rsquo;instruction précédente permettent d&rsquo;ajouter les erreurs standard aux coefficients de régression, qui sont affichés par défaut avec <code>estimates table</code>, avec un formatage précis (7 positions réservées pour les chiffres dont deux décimales), ainsi que la taille de l&rsquo;échantillon et le coefficient \(R^2\) ajusté. Il ne reste plus qu&rsquo;à exporter ce tableau à l&rsquo;aide de <code>estout</code>. Voici une première ébauche :
 </p>
@@ -345,6 +501,25 @@ Les options ajoutées dans l&rsquo;instruction précédente permettent d&rsquo;a
 <pre class="src src-stata">estout m0 m1, cells(b se) stats(N r2_a)
 </pre>
 </div>
+
+<pre class="example">
+estout m0 m1, cells(b se) stats(N r2_a)
+
+--------------------------------------
+                       m0           m1
+                     b/se         b/se
+--------------------------------------
+mpg             -238.8943    -1265.194
+                 53.07669     289.5443
+mpg2                          21.36069
+                              5.938885
+_cons            11253.06     22716.48
+                 1170.813     3366.577
+--------------------------------------
+N                      74           74
+r2_a             .2087437     .3212682
+--------------------------------------
+</pre>
 
 <p>
 Comme on peut le constater, moyennant le formatage des nombres, il s&rsquo;agit à peu près du même résultat que celui produit par <code>estimates table</code>. 
@@ -383,9 +558,9 @@ Pour sauvegarder ce tableau au format texte, il suffira de rajouter <code>using 
 </div>
 </div>
 
-<div id="outline-container-orgc34a261" class="outline-2">
-<h2 id="orgc34a261">Enregistrer son travail</h2>
-<div class="outline-text-2" id="text-orgc34a261">
+<div id="outline-container-org5328f91" class="outline-2">
+<h2 id="org5328f91">Enregistrer son travail</h2>
+<div class="outline-text-2" id="text-org5328f91">
 <p>
 Pour sauvegarder tout ce travail, il suffit de créer un script de commandes Stata, appelé &laquo;&nbsp;do file&nbsp;&raquo;, qui est un simple fichier texte avec l&rsquo;extension &laquo;&nbsp;.do&nbsp;&raquo;. Voici un exemple de fichier, <code>session.do</code>, qui regroupe les principales commandes exploitées dans ce tutoriel :
 </p>
@@ -419,9 +594,9 @@ log close
 </div>
 </div>
 
-<div id="outline-container-org401def8" class="outline-2">
-<h2 id="org401def8">Pour aller plus loin</h2>
-<div class="outline-text-2" id="text-org401def8">
+<div id="outline-container-orga952872" class="outline-2">
+<h2 id="orga952872">Pour aller plus loin</h2>
+<div class="outline-text-2" id="text-orga952872">
 <p>
 On trouve de nombreux tutoriels sur internet (la plupart du temps en anglais). En voici quelques-un :
 </p>
