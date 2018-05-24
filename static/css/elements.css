@@ -106,3 +106,9 @@ input[type=submit] {padding:5px 15px; background:#f8f5ec; border:0 none;
 .icon-left:before { content: "\EA44"; position: relative; top: 3px; }
 .icon-up:before { content: "\EA41"; }
 .icon-close:before { content: "\EA80"; }
+
+progress {display:block;padding:0;margin-bottom:-10px}
+/*
+.progress[value] {}
+.progress[value]:after { content: attr(value); }
+*/
