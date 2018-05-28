@@ -17,13 +17,11 @@ If you are looking for my old teaching ressources, almost everything should be o
 - **Stata modules**
 {{< ressource "stack-overflow" "/articles/mod-stata/" "www" >}}  
 *A series of standalone modules to learn a bit of Stata, for those who might be interested.* [in French]
-<progress max="100" value="5"></progress><small>5% completed</small>
     
 - **Statistics for Clinical Trials: Applications Using R**
 {{< ressource "file-pdf" "/files/SAS2R.pdf" "PDF" >}}
 {{< ressource "github" "https://github.com/chlalanne/SAS2R" "GITHUB" >}}  
 *A short tutorial on using R to perform common statistical analysis à la SAS.*
-<progress max="100" value="20"></progress><small>20% completed</small>
     
 ## Past work mostly defunct
 

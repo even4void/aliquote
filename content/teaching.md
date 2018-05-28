@@ -68,8 +68,9 @@ Here are some of the material that is still available on this site, in chronolog
 13. **Méthodes psychométriques en qualité de vie**  (INSERM • Jun 2016)
     {{< ressource "stack-overflow" "https://bitbucket.org/chlalanne/eespe11" "www" >}}  
     *Yet another similar workshop on latent variable modeling.*
-
- 
+14. **Statistiques pour petits échantillons**
+    {{< ressource "stack-overflow" "https://bitbucket.org/chlalanne/ssample" "www" >}}  
+    *Some considerations regarding inferential statistics with small samples.*
       
       
       
