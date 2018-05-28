@@ -32,8 +32,8 @@ Here are some of the material that is still available on this site, in chronolog
     {{< ressource "stack-overflow" "/cours/2012_biomed/" "www" >}}  
     *A weekly scheduled tutorial on using R for biomedical researchers.*
 4. **Sélection de variables pour données irrégulières** (INSERM • Apr 2012)
-    {{< ressource "file-pdf" "/articles/slides/mva_clinres/mva_clinres.pdf" "Slides" >}}
-    {{< ressource "file-zip" "/articles/slides/mva_clinres/mva_clinres_Rcode.zip" "R code" >}}  
+    {{< ressource "file-pdf" "/cours/misc/mva_clinres/mva_clinres.pdf" "Slides" >}}
+    {{< ressource "file-zip" "/cours/misc/mva_clinres/mva_clinres_Rcode.zip" "R code" >}}  
     *One-shot talk about machine learning and the like in medical research.*
 5. **Atelier Statistique du Cogmaster** (ENS • Oct–Nov 2012 / 2013–2015)
     {{< ressource "stack-overflow" "/cours/2013_AS/" "www" >}}
@@ -57,7 +57,6 @@ Here are some of the material that is still available on this site, in chronolog
     {{< ressource "file-pdf" "/cours/misc/stats101_bw-nup.pdf" "Handout" >}}  
     *Introduction to basic medical statistics.*
 10. **Data mining avec R** (ESME Sudria • Fev-Mar 2015 / Nov–Dec 2017)
-    {{< ressource "stack-overflow" "/cours/2015_esme/" "www" >}}
     {{< ressource "stack-overflow" "https://bitbucket.org/chlalanne/rstats-esme" "www" >}}  
     *Lectures on machine learning, data mining and statistical computing with R.*
 11. **Les essais cliniques en pratique** (AP–HP • Sep 2015) 
