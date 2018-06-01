@@ -31,7 +31,7 @@ According to the post [Emacs, Email and Mu](http://ionrock.org/emacs-email-and-m
 
 However, it should be noted that there is another project, [html2text](https://github.com/aaronsw/html2text), which is purely written in Python, and works like a charm.
 
-Finally, I forgot to mention in my [preceding post](http://aliquote.org/memos/2013/05/31/using-mu-to-manage-e-mails) that we need some extra steps to setup the sending part. The following gists were useful to get `mu4e` sending email:
+Finally, I forgot to mention in my [preceding post](/post/using-mu-to-manage-e-mails/) that we need some extra steps to setup the sending part. The following gists were useful to get `mu4e` sending email:
 
 - [Building GnuTLS on Mac OS X](https://gist.github.com/morgant/1753095)
 - [Manage your email in emacs with mu4e](https://gist.github.com/areina/3879626)
