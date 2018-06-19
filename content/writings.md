@@ -15,7 +15,8 @@ If you are looking for my old teaching ressources, almost everything should be o
 ## Current work in progress
 
 - **Stata modules**
-{{< ressource "stack-overflow" "/articles/mod-stata/" "www" >}}  
+{{< ressource "stack-overflow" "/articles/stata-sk/" "www" >}}
+{{< ressource "github" "https://github.com/chlalanne/stata-sk" "GITHUB" >}}    
 *A series of standalone modules to learn a bit of Stata, for those who might be interested.* [in French]
     
 - **Statistics for Clinical Trials: Applications Using R**

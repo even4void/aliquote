@@ -11,9 +11,8 @@ I am slowly updating my latest textbook on using R in clinical trials. This is p
 
 <!--more-->
 
-When I came back to this little R companion to Dmitrienko et al's textbook on the *Analysis of Clinical Trials Using SAS* , I first checked what I did in the last commit. But, oh my! It was a few weeks after I started a long journey to the hospital. What a beautiful mixture that a burnout followed by a tragic accident badly handled! It then stopped all along. Now, I am back to finish the work, hopefully. I remain admiring the productivity of some people, like [Thomas Mailund](https://twitter.com/thomasmailund) who, despite life events, keep up the good work with publishing R books.
+When I came back to this little R companion to Dmitrienko et al's textbook on the *Analysis of Clinical Trials Using SAS* , I first checked what I did in the last commit. But, oh my! It was almost two years ago, and it is plain Sweave. Now, I am back to finish the work, hopefully. I remain admiring the productivity of some people, like [Thomas Mailund](https://twitter.com/thomasmailund) who, despite life events, keep up the good work with publishing R books.
 
 Still, it remains painful to read SAS code when we have such elegant alternative solutions like R or Stata, notwithsatnding the fact that I am no longer that interested in medical statistics. I am not super productive these days. I never was, but I know I will never be now. Anyway, here we are: I am slowly working on it again. The project is [still on GitHub](https://github.com/chlalanne/SAS2R).
 
 ![](/img/sas2r.png)
-

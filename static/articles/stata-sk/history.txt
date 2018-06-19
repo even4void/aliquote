@@ -1,0 +1,24 @@
+* 68489de (Mon, 18 Jun 2018 15:07:35 +0200, Christophe Lalanne) Fix missing def + Cosmit changes
+* f587572 (Mon, 18 Jun 2018 15:01:39 +0200, Christophe Lalanne) Add dataset + Update content
+* c807548 (Mon, 18 Jun 2018 10:46:34 +0200, Christophe Lalanne) Add a Makefile and update publishing policy
+* 9829d28 (Sun, 17 Jun 2018 21:08:56 +0200, Christophe Lalanne) Add a README + Update Task list
+* 876eb1b (Sun, 17 Jun 2018 21:04:57 +0200, Christophe Lalanne) Cleanup intermediate files
+* d1136c4 (Sun, 17 Jun 2018 20:56:01 +0200, Christophe Lalanne) Minor edits
+* fedac9e (Sun, 17 Jun 2018 18:08:57 +0200, Christophe Lalanne) Update Task list and project plans
+* 961a4e8 (Sun, 17 Jun 2018 17:59:21 +0200, Christophe Lalanne) Minor refactoring to fit with Spacemacs config
+* 1c56e0d (Thu, 24 May 2018 17:47:26 +0200, Christophe Lalanne) Clear cached file that I no longer want to track
+* 9ef5a9f (Thu, 24 May 2018 17:45:24 +0200, Christophe Lalanne) Update Stata commands active links
+* 9be4eb0 (Thu, 24 May 2018 17:39:04 +0200, Christophe Lalanne) Mostly CSS customizations + new logo
+* 1c71e57 (Sun, 20 May 2018 23:52:01 +0200, Christophe Lalanne) Minor edits
+* 2bca6b7 (Sun, 20 May 2018 09:48:55 +0200, Christophe Lalanne) Try to produce PDF output correctly
+* 4ce1df6 (Sat, 19 May 2018 19:18:44 +0200, Christophe Lalanne) Add next draft chapters
+* 1eece8f (Sat, 19 May 2018 10:46:11 +0200, Christophe Lalanne) Update main content for 00-intro
+* 79ca5fc (Sat, 19 May 2018 10:45:56 +0200, Christophe Lalanne) Add a deploy script + minor fix
+* be798c4 (Fri, 18 May 2018 18:27:51 +0200, Christophe Lalanne) That what we get when we forget about "git mv"!
+* e67fe03 (Fri, 18 May 2018 17:36:26 +0200, Christophe Lalanne) Update figure numbering scheme + quick fix of the CSS
+* f00af24 (Fri, 18 May 2018 07:45:14 +0200, Christophe Lalanne) Minor edits + update export options
+* acbedb0 (Thu, 17 May 2018 12:32:13 +0200, Christophe Lalanne) Add subsections and more stuff + update TODO
+* 950a2d4 (Wed, 16 May 2018 12:01:25 +0200, Christophe Lalanne) Add TODO and custom CSS
+* 6b96fad (Wed, 16 May 2018 08:23:08 +0200, Christophe Lalanne) Add more content + images and BibTeX
+* 5a70d77 (Tue, 15 May 2018 21:58:35 +0200, Christophe Lalanne) Update the intro file
+* 2a64406 (Tue, 15 May 2018 20:51:44 +0200, Christophe Lalanne) Init first repo and start tracking the intro file

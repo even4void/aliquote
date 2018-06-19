@@ -1,0 +1,22 @@
+---
+title: "Arxiv 02"
+date: 2018-05-17T08:42:46+02:00
+lastmod: 2018-05-17T08:42:46+02:00
+draft: true
+description: ""
+tags: []
+categories: []
+---
+
+<!--more-->
+
+[Variational Inference: A Review for Statisticians](https://arxiv.org/abs/1601.00670)
+
+[Automatic Differentiation in Machine Learning: a Survey](http://www.robots.ox.ac.uk/~gunes/assets/pdf/baydin-2018-ad-machinelearning.pdf)
+
+[An O(N) Sorting Algorithm: Machine Learning Sorting](https://arxiv.org/abs/1805.04272)
+
+[Modelling palaeoecological time series using generalized additive models](https://www.biorxiv.org/content/early/2018/05/15/322248)
+
+[Kernel Methods in Machine Learning](https://arxiv.org/abs/math/0701907v3)
+This is an old publication but I found it while looking to [Bernhard Schölkopf](http://is.tuebingen.mpg.de/person/bs)'s webpage on MPI.

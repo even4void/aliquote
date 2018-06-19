@@ -1,0 +1,371 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="fr" xml:lang="fr">
+<head>
+<!-- 2018-06-18 Lun 15:02 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Stata : gestion des données</title>
+<meta name="generator" content="Org mode" />
+<meta name="author" content="Christophe Lalanne" />
+<link rel="stylesheet" type="text/css" href="worg.css" />
+<script type="text/javascript">
+/*
+@licstart  The following is the entire license notice for the
+JavaScript code in this tag.
+
+Copyright (C) 2012-2018 Free Software Foundation, Inc.
+
+The JavaScript code in this tag is free software: you can
+redistribute it and/or modify it under the terms of the GNU
+General Public License (GNU GPL) as published by the Free Software
+Foundation, either version 3 of the License, or (at your option)
+any later version.  The code is distributed WITHOUT ANY WARRANTY;
+without even the implied warranty of MERCHANTABILITY or FITNESS
+FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
+
+As additional permission under GNU GPL version 3 section 7, you
+may distribute non-source (e.g., minimized or compacted) forms of
+that code without the copy of the GNU GPL normally required by
+section 4, provided you include this license notice and a URL
+through which recipients can access the Corresponding Source.
+
+
+@licend  The above is the entire license notice
+for the JavaScript code in this tag.
+*/
+<!--/*--><![CDATA[/*><!--*/
+ function CodeHighlightOn(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(null != target) {
+     elem.cacheClassElem = elem.className;
+     elem.cacheClassTarget = target.className;
+     target.className = "code-highlighted";
+     elem.className   = "code-highlighted";
+   }
+ }
+ function CodeHighlightOff(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(elem.cacheClassElem)
+     elem.className = elem.cacheClassElem;
+   if(elem.cacheClassTarget)
+     target.className = elem.cacheClassTarget;
+ }
+/*]]>*///-->
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 90,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 90,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 90},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
+</head>
+<body>
+<div id="content">
+<h1 class="title">Stata : gestion des données</h1>
+<div id="table-of-contents">
+<h2>Table des matières</h2>
+<div id="text-table-of-contents">
+<ul>
+<li><a href="#org42ae153">Gestion d&rsquo;un tableau de données</a>
+<ul>
+<li><a href="#org93b206a">Le format DTA</a></li>
+<li><a href="#org6a48b72">Type de variables</a></li>
+<li><a href="#org5efe4bd">Propriétés d&rsquo;un tableau Stata</a></li>
+</ul>
+</li>
+<li><a href="#org2f77674">Manipulation de variables</a>
+<ul>
+<li><a href="#org412edee">Syntaxe élémentaire des commandes Stata</a></li>
+<li><a href="#org9369dfa">Changement de mode de stockage et format</a></li>
+<li><a href="#org4cc961b">Recodage de variables</a></li>
+</ul>
+</li>
+<li><a href="#org22a3373">Tableaux de description avancés</a></li>
+<li><a href="#org05a6fd0">Pour aller plus loin</a></li>
+</ul>
+</div>
+</div>
+<p>
+Stata est reconnu pour faciliter la gestion et le recodage des données ainsi que l&rsquo;automatisation de tâches répétitives. 
+</p>
+
+<div id="outline-container-org42ae153" class="outline-2">
+<h2 id="org42ae153">Gestion d&rsquo;un tableau de données</h2>
+<div class="outline-text-2" id="text-org42ae153">
+</div>
+<div id="outline-container-org93b206a" class="outline-3">
+<h3 id="org93b206a">Le format DTA</h3>
+<div class="outline-text-3" id="text-org93b206a">
+<p>
+On a déjà vu un exemple de format natif Stata avec les données <a href="https://www.stata.com/help.cgi?auto" class="stata">auto</a> utilisées dans le <a href="./00-intro.html">chapitre précédent</a> pour illustrer les principes de base de Stata : il s&rsquo;agit des fichiers <code>DTA</code>. La spécification de ce type de fichier peut être consultée dans le manuel en ligne pour le mot clé <a href="https://www.stata.com/help.cgi?dta" class="stata">dta</a>. Il s&rsquo;agit d&rsquo;un format binaire qui a quelque peu évolué entre les versions 12, 13 et 14 de Stata. Si <a href="https://stattransfer.com">Stat/Transfer</a> permet de passer d&rsquo;un format à l&rsquo;autre sans problème, la librairie <code>foreign</code> de R (<code>read.dta</code>) ne permet de lire que les fichiers Stata 12 ou inférieurs et il est préférable d&rsquo;utiliser la librairie <a href="http://haven.tidyverse.org">haven</a> (<code>read_dta</code>) pour les versions 13 et plus. Cette librairie repose sur la librairie <a href="https://github.com/WizardMac/ReadStat">ReadStat</a>, également utilisable en ligne de commande.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org6a48b72" class="outline-3">
+<h3 id="org6a48b72">Type de variables</h3>
+<div class="outline-text-3" id="text-org6a48b72">
+<p>
+On distinguera essentiellement les nombres et les caractères, et par extension les chaînes de caractères. Les variables catégorielles sont représentées sont valeurs discrètes auxquelles on associe le plus souvent des étiquettes textuelles, encore appelée &laquo;&nbsp;label&nbsp;&raquo;.
+</p>
+
+<p>
+Le mode de stockage des variables numériques, qui s&rsquo;apparente à la précision de la variable numérique dans sa représentation machine, peut être de 5 types, par degré croissant de précision : <code>byte</code>, <code>int</code>, <code>long</code>, <code>double</code> et <code>float</code>. Par exemple, les variables de type <code>byte</code> permettent de représenter des nombres allant de -127 à 100 tandis que le type <code>long</code> correspond à un intervalle de valeurs de \([-2 147 483 647, 2 147 483 620]\). Le type <code>byte</code> est généralement utilisé pour le codage numérique des variables catégorielles (binaires ou à plusieurs niveaux). Il est préférable d&rsquo;utiliser le type <code>long</code>, voire <code>double</code>, ou alors des chaînes de caractères (<code>string</code>) pour coder les identifiants uniques d’une base de données.
+</p>
+
+<p>
+Dans le visualisateur/éditeur de données (<a href="https://www.stata.com/help.cgi?browse" class="stata">browse</a>), les variables numériques apparaissent en noir, les variables catégorielles en bleu et les chaînes de caractères en rouge.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org5efe4bd" class="outline-3">
+<h3 id="org5efe4bd">Propriétés d&rsquo;un tableau Stata</h3>
+<div class="outline-text-3" id="text-org5efe4bd">
+<p>
+Les données d&rsquo;illustration sont tirées de [<a href="#kohler-2012-data-analy">1</a>] et sont disponibles sur le <a href="https://www.stata-press.com/books/data-analysis-using-stata/">site de Stata Press</a>. Il est possible de télécharger les données directement depuis le site de Stata à l&rsquo;aide d&rsquo;une commande telle que <code>net from http://www.stata-press.com/data/kk3/</code>, suivie de <code>net install data</code>, ou alors d&rsquo;utiliser le fichier <code>gsoep09.dta</code> disponible dans le répertoire <code>data/</code> de ce projet. Le fichier DTA situé dans le répertoire <code>data/</code> correspond au fichier <code>data1.dta</code> dans l&rsquo;archive ZIP ou sur le site Stata.
+</p>
+
+<p>
+Voici les instructions permettant de charger les données en mémoire, en supposant que le répertoire de travail contienne bien un répertoire <code>data/</code> dans lequel se trouve le fichier <code>gsoep09.dta</code> :
+</p>
+
+<div class="org-src-container">
+<pre class="src src-stata">use data/gsoep09
+describe, short
+</pre>
+</div>
+
+<pre class="example">
+set more off
+use data/gsoep09
+(SOEP 2009 (Kohler/Kreuter))
+describe, short
+
+Contains data from data/gsoep09.dta
+  obs:         5,411                          SOEP 2009 (Kohler/Kreuter)
+ vars:            65                          13 Feb 2012 17:08
+ size:       568,155                          
+Sorted by: persnr
+</pre>
+
+<p>
+La commande <a href="https://www.stata.com/help.cgi?describe" class="stata">describe</a> permet de décrire le tableau de données. Parmi ses différentes options, <code>short</code> permet de limiter la description à l&rsquo;en-tête du tableau, c&rsquo;est-à-dire les informations relatives au nombre d&rsquo;observations et de variables et aux éventuelles annotations du tableau, tandis que <code>simple</code> permet de n&rsquo;affichier que la liste des variables.
+</p>
+
+<div class="org-src-container">
+<pre class="src src-stata">describe, simple
+</pre>
+</div>
+
+<pre class="example">
+describe, simple
+persnr       income       rooms        eqplif       pic          wor10
+hhnr2009     hhinc        renttype     eqpnrj       lsat         wor11
+state        hhsize       rent         hhtyp        wor01        wor12
+ybirth       hhsize0to14  reval        area1        wor02        sample
+sex          rel2head     eqphea       area2        wor03        intnr
+mar          ymove        eqpter       dvisits      wor04        hhnr
+edu          ybuild       eqpbas       heval        wor05        strata
+yedu         condit       eqpgar       hsat         wor06        psu
+voc          dsat         eqpalm       polint       wor07        dweight
+emp          size         eqpsol       pia          wor08        xweights
+egp          seval        eqpair       pib          wor09
+</pre>
+
+
+<p>
+Pour obtenir un aperçu des premières lignes du tableau, et en restreignant la liste des variables affichées, voici comment l&rsquo;on procéderait avec <a href="https://www.stata.com/help.cgi?list" class="stata">list</a> :
+</p>
+
+<div class="org-src-container">
+<pre class="src src-stata">list persnr-sex in 1/5
+</pre>
+</div>
+
+<pre class="example">
+list persnr-sex in 1/5
+
+     +-------------------------------------------------------+
+     | persnr   hhnr2009             state   ybirth      sex |
+     |-------------------------------------------------------|
+  1. |   8501         85   N-Rhein-Westfa.     1932     Male |
+  2. |   8502         85   N-Rhein-Westfa.     1939   Female |
+  3. |  15001        150   N-Rhein-Westfa.     1946     Male |
+  4. |  15002        150   N-Rhein-Westfa.     1953   Female |
+  5. |  18201     111373    Mecklenburg-V.     1969     Male |
+     +-------------------------------------------------------+
+</pre>
+
+<p>
+On reviendra en détail sur les listes de variables et le qualifieur <a href="https://www.stata.com/help.cgi?if" class="stata">if</a> dans les sections suivantes. En attendant, il suffit de savoir que l&rsquo;on peut indiquer une étendue de variables en indiquant le nom de la première variable séparé du nom de la dernière variable par un tiret et que l&rsquo;instruction <code>in 1/5</code> permet de ne lister que les observations allant de la ligne 1 à 5.
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org2f77674" class="outline-2">
+<h2 id="org2f77674">Manipulation de variables</h2>
+<div class="outline-text-2" id="text-org2f77674">
+</div>
+<div id="outline-container-org412edee" class="outline-3">
+<h3 id="org412edee">Syntaxe élémentaire des commandes Stata</h3>
+<div class="outline-text-3" id="text-org412edee">
+<p>
+De manière générale, les commandes Stata sont structurées de la manière suivante :
+</p>
+
+<pre class="example">
+[by varlist:] command [varlist] [=exp] [if exp] [in range] [weight] [using filename] [,options]
+</pre>
+</div>
+</div>
+
+<div id="outline-container-org9369dfa" class="outline-3">
+<h3 id="org9369dfa">Changement de mode de stockage et format</h3>
+<div class="outline-text-3" id="text-org9369dfa">
+<p>
+Quant au format, il s&rsquo;agit essentiellement de la précision afffichée des résultats numériques.
+</p>
+
+<div class="org-src-container">
+<pre class="src src-stata">generate age = 2009 - ybirth
+summarize age
+</pre>
+</div>
+
+<pre class="example">
+generate age = 2009 - ybirth
+summarize age
+
+    Variable |        Obs        Mean    Std. Dev.       Min        Max
+-------------+---------------------------------------------------------
+         age |      5,411    49.50712    18.12642         17        100
+
+</pre>
+
+<p>
+Les formats d&rsquo;affichage peuvent s&rsquo;appliquer localement lors de l&rsquo;utilisation de certaines commandes telles que <a href="https://www.stata.com/help.cgi?summarize" class="stata">summarize</a>. Par exemple, en appliquant un format limitant l&rsquo;affichage à 2 décimales, voici ce que la commande précédente donnerait :
+</p>
+
+<div class="org-src-container">
+<pre class="src src-stata">format age %5.2f
+summarize age, format
+</pre>
+</div>
+
+<pre class="example">
+format age %5.2f
+summarize age, format
+
+    Variable |        Obs        Mean    Std. Dev.       Min        Max
+-------------+---------------------------------------------------------
+         age |      5,411       49.51       18.13      17.00     100.00
+
+</pre>
+</div>
+</div>
+
+
+
+<div id="outline-container-org4cc961b" class="outline-3">
+<h3 id="org4cc961b">Recodage de variables</h3>
+<div class="outline-text-3" id="text-org4cc961b">
+<p>
+Par recodage, on entend la discrétisation d&rsquo;une variable numérique en variable catégorielle à plusieurs classes ou niveaux, ainsi que la transformation d&rsquo;une variable catégorielle (création ou agrégation de niveaux).
+</p>
+
+<div class="org-src-container">
+<pre class="src src-stata">xtile age4 = age, nq(4)
+tabulate age4
+</pre>
+</div>
+
+<pre class="example">
+xtile age4 = age, nq(4)
+tabulate age4
+
+4 quantiles |
+     of age |      Freq.     Percent        Cum.
+------------+-----------------------------------
+          1 |      1,410       26.06       26.06
+          2 |      1,395       25.78       51.84
+          3 |      1,255       23.19       75.03
+          4 |      1,351       24.97      100.00
+------------+-----------------------------------
+      Total |      5,411      100.00
+</pre>
+</div>
+</div>
+</div>
+
+
+<div id="outline-container-org22a3373" class="outline-2">
+<h2 id="org22a3373">Tableaux de description avancés</h2>
+</div>
+
+
+
+<div id="outline-container-org05a6fd0" class="outline-2">
+<h2 id="org05a6fd0">Pour aller plus loin</h2>
+<div class="outline-text-2" id="text-org05a6fd0">
+<p>
+[<a href="#mitchell-2010-data-manag">2</a>]</p>
+
+
+<div id="bibliography">
+<h2>Références</h2>
+
+<table>
+
+<tr valign="top">
+<td align="right" class="bibtexnumber">
+[<a name="kohler-2012-data-analy">1</a>]
+</td>
+<td class="bibtexitem">
+Ulrich Kohler and Frauke Kreuter.
+ <em>Data Analysis Using Stata</em>.
+ Stata Press, 3 edition, 2012.
+
+</td>
+</tr>
+
+
+<tr valign="top">
+<td align="right" class="bibtexnumber">
+[<a name="mitchell-2010-data-manag">2</a>]
+</td>
+<td class="bibtexitem">
+Michael&nbsp;N. Mitchell.
+ <em>Data Management Using Stata: A Practical Handbook</em>.
+ Stata Press, 2010.
+
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>
