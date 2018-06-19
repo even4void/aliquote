@@ -20,3 +20,6 @@ categories: []
 
 [Kernel Methods in Machine Learning](https://arxiv.org/abs/math/0701907v3)
 This is an old publication but I found it while looking to [Bernhard Schölkopf](http://is.tuebingen.mpg.de/person/bs)'s webpage on MPI.
+
+
+[Data2Vis: Automatic Generation of Data Visualizations Using Sequence to Sequence Recurrent Neural Networks](https://arxiv.org/abs/1804.03126)
