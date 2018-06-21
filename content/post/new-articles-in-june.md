@@ -66,4 +66,4 @@ The "Add-ons" part is just a custom `org-link` that allows to auto-link Stata co
 
 
 
-{{% music %}}Timber Timbre • *Cedar SHakes*{{% /music %}}
+{{% music %}}Timber Timbre • *Cedar Shakes*{{% /music %}}
