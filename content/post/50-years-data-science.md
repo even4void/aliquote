@@ -1,9 +1,9 @@
 ---
 title: "50 years of Data Science and a teaching program for future years"
-date: 2018-06-02T17:05:01+02:00
-draft: true
+date: 2018-06-21T16:05:01+02:00
+draft: false
 description: ""
-tags: ["statistics"]
+tags: ["statistics", "review"]
 categories: []
 ---
 I recently reread Kaplan's proposal to teach statistics to future statisticians, and if we trust the following two papers published in 2017, we should have a solid plan for teaching Data Science, or what it will be called in some years. I am no longer teaching, but I find this inspiring in any case.
@@ -12,7 +12,7 @@ I recently reread Kaplan's proposal to teach statistics to future statisticians,
 
 1. Donoho, D. (2017). [50 years of data science](https://www.tandfonline.com/doi/abs/10.1080/10618600.2017.1384734). *Journal of Computational and Graphical Statistics*, 26(4), 745–766.
 
-    I am a bit late at reviewing this article, and it has been largely debated on Twitter in the past months. However, I feel like it is interesting to discuss this article first as it brings some context and appetizer for understanding Kaplan's plan.
+    I have been a bit late at reading this article, and it has been largely debated on Twitter over the past months. However, I feel like it is an interesting read for anyone interested in statistics and to large extent data science. Moreover, I think it brings some context and appetizer for understanding Kaplan's plan.
 
     I like the fact that Donoho references former publications by John Tukey, who is often forgotten from beyond exploratory data analysis, but I was surprised to learn that the term "data science" was originally coined by William S. Cleveland no later than 2001 and by Jeff Wu in 1997. According to Jeff Wu in his 1997 [presentation on Data Science](http://www.isye.gatech.edu/∼jeffwu/Presentations/datascience.pdf) (PDF), statistical education should be more thoughly balanced between theoretical and applied statistics and other scientific fields, with a particular emphasis on large data (it is not yet called the big data era), bayesian priors, and computational algorithms. That all sounds good to me, but see how the second article below emphasizes those latter points.
 
@@ -20,31 +20,28 @@ I recently reread Kaplan's proposal to teach statistics to future statisticians,
 
     > One topic I was surprised to see the essay omit was the fact that so much data today is not in the nice "rectangular" — observations in rows, variables in equal numbers of columns — form that most methodology assumes. 
 
-    Indeed, it is time to realize that we can't think of large data, or even data at large, as well structured tabular entities like is the case of data frame. Paul Murrell discussed with particular care the variety of data sources, including XML and text input, in his book [Introduction to Data Technologies](https://www.stat.auckland.ac.nz/~paul/ItDT/).
+    Indeed, it is probably time to realize that we can't think of large data, or even *data* at large, as just well structured tabular entities like is the case of data frames. Paul Murrell discussed with particular care the variety of data sources, including XML and text input, in his book [Introduction to Data Technologies](https://www.stat.auckland.ac.nz/~paul/ItDT/).
 
 2. Kaplan, D. T. (2017). [Teaching stats for data science](https://peerj.com/preprints/3205/). *PeerJ Preprints*, 5: e3205v1.
 
-    So, what's the plan? Here are the ten building blocks that Kaplan believes are important to master
+    So, what's the plan? Here are the ten building blocks that Kaplan believes are important to master, with my comments next to some of them. I should note that [Exercises for Statistical Modeling: A Fresh Approach](http://project-mosaic-books.com/?page_id=13) by the same author is also a pretty good read.
 
-    1. Data tables
-    2. Data graphics
-    3. Model functions
-    4. Model training
-    5. Effect size and covariates 
-    6. Displays of distributions 
-    7. Bootstrap replication
-    8. Prediction error
-    9. Comparing models
-   10. Generalization and causality
+     1. **Data tables:** I agree that the idea of tidy data is an important concept, and [it goes beyond R](http://kbroman.org/dataorg/) as was discussed by Karl Broman some time ago. I have, however, always found it difficult to explain to students what a line in such reactangular data structure might be called: sometimes, we cannot speak of an observation because there may be repeated measures that are put on the same line (so-called wide format) with a common naming pattern such that reshaping from wide to long format can be easily done in any statistical package. It is also hard to say that each line represents an individual since the database may include data from countries, for example. Finally, I always ended up talking about line as statistical units. Not sure if this is standard practice, but at least it is easy to justify.
+     2. **Data graphics:** I like the idea of the Grammar of Graphics and [trellis displays](https://www.albany.edu/acc/courses/acc522fall2007/lecturenotes/trellisdisplay.examples.html) too. I noticed the author use the [ggformula](https://cran.r-project.org/web/packages/ggformula/index.html) package which allows to use [lattice](https://cran.r-project.org/web/packages/lattice/index.html)-like syntax to ggplot2 object. Not sure this is worth learning a new package when most of the functionalities are already available via `qplot()` for quick exploratory graphics or via the more consistent syntax for `geom_**()` and co. Anyway, my point is that ggplot2 is really great for building graphical displays with few commands, once you learned the basics, even if some people [still prefer base R graphics](https://simplystatistics.org/2016/02/11/why-i-dont-use-ggplot2/), which is also understandable. You will have to dig deeper to make effective displays ready to print or to embed in an automatic report.
+     3. **Model functions:** This is a nice idea, already available in `rms::Predict()` and related functions. Being able to make quick prediction, whether individual or by group, makes the statistical model more "palpable". Likewise, I think it is important to display not only fitted values but uncertainty estimates using asymptotic theory (estimation or prediction) or resampling methods as implemented in Gary King [clarify](https://gking.harvard.edu/clarify) package.
+     4. **Model training:** IMO, the approach proposed by the author is what originally [Zelig](https://cran.r-project.org) aimed for, or for Machine Learning specifically the [caret](https://cran.r-project.org/web/packages/lattice/index.html) package by Max Kuhn. I like the idea of using cubic or natural splines to allow for slight or larger deviation from the linearity assumption in a regression model. However, I think one then needs to explain to the students how to interpret the regression coefficients and how to construct individual or joint tests for the parameters.
+     5. Effect size and covariates; 6. Displays of distributions; 7. Bootstrap replication; 8. Prediction error; 9. Comparing models; 10. Generalization and causality
+     
+     The final words are very well put:
+     
+     > The operations to be applied each reflect a different part of the process of statistical thinking: modeling is about constructing a description from data, effect size is about summarizing that description, bootstrapping addresses the issue of precision, and cross-validation informs choices about what explanatory variables or model architectures should be used.
 
 
-Then the question arises as to which software to use to teach statistics, or data science or whatever. R seems like a natural candidate, or the *de factor* language as it has been called for a long time.
+    Overall, although I like the idea of establishing a division of labor in teaching statistics, with a particular emphasis on exploratory data analysis and predictive modeling, I would rather prefer the use of existing and well-tested packages like [Hmisc](https://cran.r-project.org/web/packages/Hmisc/index.html) and [rms](https://cran.r-project.org/web/packages/rms/index.html), which remain fully compatible with plain old R syntax and data frames. I really respect people who develop new R packages to make certain features easier to use. However, I believe that increasing the number of available packages on CRAN that all perform quite similar tasks does not help to identify the one you should investigate your time with. That being said, I understand that for teaching purpose it is best to use higher-order functions that perform a very specific task and that do not require too much effort to write. Let us hope that one day people will be considering `rms` like the second biggest contribution after `MASS`.
+     
+Then the question arises as to which software to use to teach statistics, or data science or whatever. R seems like a natural candidate, [despite its peculiarities for serious programmers](https://www.johndcook.com/blog/r_language_for_programmers/), or even the *de factor* language as it has been called for a long time. There is also Python and its stack of data-oriented packages (Pandas, statmodels, scikit-learn, PyMC, etc.). The R vs. Python debate seems to be over, and people started to realize that it is possible to use different software in a synergistic way. I have long been using R together with Mplus for psychometric modeling or Stata for biostatistical analysis, and a bunch of other tools. There really is no problem in using different technologies as long as you choose the best suited for the problem at hand (assuming you are also comfortable with using it of course). Stata is unfortunately not often mentioned among the candidates of choice. I believe this is because it is not free, nor open source, and that it has long been used by a small community more versed into econometrics and epidemiology. Interestingly, I found all three software mentioned in the following article: [Choosing statistical software packages for education in the social sciences](http://thomasdegraaff.nl/thomas/choosing-statistical-software-package-for-education-in-the-social-sciences/).
 
-There is also Python and its stack of data-oriented packages (Pandas, statmodels, scikit-learn, PyMC, etc.). 
+What else? In my view, Scala or Haskell are great languages for FP and data science, especially in the distributed era. They are among the best options for parallel computing or stream processing. There already are reliable data structures built-in. However, I feel like they are more used in production (or test driven development) than in everyday's life. Even if they come with sort of an REPL, they probbaly lack dedicated libraries for statistical computing and a motivated and vibrant community to develop such libraries. This is not to say that no one care about Scala or Haskell for data science nor that there doesn't exist anything useful. There are dozens of books that were already published on this topic and Darren Wilkinson wrote [great posts](https://darrenjw.wordpress.com) and evene organized [workshops](https://github.com/darrenjw/scala-course) on Scala specifically.
 
-In my view, Scala or Haskell are great for parallel computing or stream processing, and there are already reliable data structures built-in. However, I feel like they lack dedicated libraries for statistical computing and a motivated and vibrant community to develop such libraries. This is not to say that no one care about Scala or Haskell for data science. There are dozens of books that were already published on this topic and Darren Wilkinson wrote [great posts](https://darrenjw.wordpress.com) and evene organized [workshops](https://github.com/darrenjw/scala-course) on Scala specifically.
-
-What about Clojure or some variant of Scheme like Racket? Wait, but what?
-
-Clojure MXnet
-Clojure neanderthal
+What about Clojure or some variant of Scheme like Racket? Wait, but what? 
+Weren't we already [back to the future](https://rd.springer.com/chapter/10.1007%2F978-3-7908-2084-3_2) (see also this [more recent tribute](https://sigma.software/about/media/lisp-back-future-tribute-60th-anniversary))? There has been an early attempt at providing an R replacement for Clojure, namely [Incanter](http://incanter.org). Although the project is still maintained on Github, I don't see it evolving as much as it did several years ago when David Edgar Liebke was leading the project. There are many side-projects that evolve around data science or statistical computing, e.g. [Clojure MXNet](https://github.com/gigasquid/clojure-mxnet), [Neanderthal](https://neanderthal.uncomplicate.org) to name a few recent ones. Likewise, Racket Scheme looks like a promising alternative for building a full-featured statistical software, especially given the strong support for numerical computing via the (typed) [Math library](https://docs.racket-lang.org/math/) as well as [nice FFI](https://docs.racket-lang.org/foreign/index.html) which allows to embed existing C code at no cost (see, e.g., this project to provide [bindings for BLAS/LAPACK](https://github.com/farr/PLT-Racket-Linear-Algebra-Bindings)). Yet, none has emerged but who knows if those general-purpose functional languages won't succeed in replacing julia in the future.
