@@ -32,3 +32,7 @@ While I find myself comfortable with using Emacs all day long, I'm always fascin
 > I honestly don’t know if Racket and Haskell are worth their costs in complexity. At the end of the day, maybe what really matters is writing simple, consistent things that other people can understand.
 >
 > -- Alexis King on [lexi-lambda](https://lexi-lambda.github.io/blog/2016/08/11/climbing-the-infinite-ladder-of-abstraction/)
+
+
+
+MXNet is incubating as an Apache project and is yet another library for deep learning. Carin Meier is currently working on a [Clojure package](https://github.com/gigasquid/clojure-mxnet). See her [recent blog post](http://gigasquid.github.io/blog/2018/06/03/meet-clojure-mxnet-ndarray/) to learn more.

@@ -1,0 +1,820 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="fr" xml:lang="fr">
+<head>
+<!-- 2018-06-19 Mar 11:46 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Élements de base du langage R</title>
+<meta name="generator" content="Org mode" />
+<meta name="author" content="Christophe Lalanne" />
+<link rel="stylesheet" type="text/css" href="worg.css" />
+<script type="text/javascript">
+/*
+@licstart  The following is the entire license notice for the
+JavaScript code in this tag.
+
+Copyright (C) 2012-2018 Free Software Foundation, Inc.
+
+The JavaScript code in this tag is free software: you can
+redistribute it and/or modify it under the terms of the GNU
+General Public License (GNU GPL) as published by the Free Software
+Foundation, either version 3 of the License, or (at your option)
+any later version.  The code is distributed WITHOUT ANY WARRANTY;
+without even the implied warranty of MERCHANTABILITY or FITNESS
+FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
+
+As additional permission under GNU GPL version 3 section 7, you
+may distribute non-source (e.g., minimized or compacted) forms of
+that code without the copy of the GNU GPL normally required by
+section 4, provided you include this license notice and a URL
+through which recipients can access the Corresponding Source.
+
+
+@licend  The above is the entire license notice
+for the JavaScript code in this tag.
+*/
+<!--/*--><![CDATA[/*><!--*/
+ function CodeHighlightOn(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(null != target) {
+     elem.cacheClassElem = elem.className;
+     elem.cacheClassTarget = target.className;
+     target.className = "code-highlighted";
+     elem.className   = "code-highlighted";
+   }
+ }
+ function CodeHighlightOff(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(elem.cacheClassElem)
+     elem.className = elem.cacheClassElem;
+   if(elem.cacheClassTarget)
+     target.className = elem.cacheClassTarget;
+ }
+/*]]>*///-->
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 90,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 90,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 90},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
+</head>
+<body>
+<div id="content">
+<h1 class="title">Élements de base du langage R</h1>
+<div id="table-of-contents">
+<h2>Table des matières</h2>
+<div id="text-table-of-contents">
+<ul>
+<li><a href="#org375bb5c">Structure de données R</a>
+<ul>
+<li><a href="#org4bfd89e">Vecteurs et nombres</a></li>
+<li><a href="#org7dcfdf6">Manipulation des vecteurs</a></li>
+<li><a href="#orgf08949d">Traitement des valeurs manquantes</a></li>
+<li><a href="#org1f49760">Opérations arithmétiques usuelles</a></li>
+</ul>
+</li>
+<li><a href="#orgfd1e9c0">Data frames</a>
+<ul>
+<li><a href="#orgdccb2e5">Propriétés des data frame</a></li>
+<li><a href="#org53954c4">Sélection et indexation dans un data frame</a></li>
+</ul>
+</li>
+<li><a href="#org286dd20">Matrices</a></li>
+<li><a href="#orgdd14bd2">Générateurs de séquences</a>
+<ul>
+<li><a href="#org4c57550">Séquences régulières de nombre</a></li>
+<li><a href="#orgfd75e3b">Séquences de symboles avec motifs</a></li>
+<li><a href="#orgfd07982">Séquences de niveaux de facteurs</a></li>
+<li><a href="#org6022d50">Combinaisons et permutations</a></li>
+<li><a href="#org2dd0144">Nombres aléatoires</a></li>
+</ul>
+</li>
+<li><a href="#org9c1dd06">Exercices d&rsquo;application</a></li>
+</ul>
+</div>
+</div>
+<blockquote>
+<p>
+<i>Hans Ole Orka</i>: I try to reproduce the SAS proc reg stepwise model selection procedure in R. <i>Brian D. Ripley</i>: But why? If you want 1950s statistical methods why not use a 1960s package? There are enough problems with stepwise selection (see e.g. the book by Frank Harrell and many postings here) even with a well-defined criterion like AIC, but that is better than an ad hoc algorithm, especially one based on forwards selection. &#x2014; Hans Ole Orka and Brian D. Ripley, R-help (September 2007)
+</p>
+</blockquote>
+
+<div id="outline-container-org375bb5c" class="outline-2">
+<h2 id="org375bb5c">Structure de données R</h2>
+<div class="outline-text-2" id="text-org375bb5c">
+<p>
+R est un langage assez riche du point des structures de données que l&rsquo;on peut manipuler. Voici les principales structures de données, par ordre croissant (de gauche à droite) de complexité et de généralisation, qui nous intéresseront dans le cadre de cette présentation des éléments du langage R :
+</p>
+
+
+<div class="figure">
+<p><img src="img-01-df-04.png" alt="img-01-df-04.png" />
+</p>
+</div>
+
+<p>
+Les vecteurs sont des collections d&rsquo;éléments qui peuvent être utilisés pour représenter des variables statistiques (p. ex., des nombres représentant l&rsquo;âge arrondi à l&rsquo;entier d&rsquo;un ensemble de personnes ayant accepté de répondre à une enquête de consommation). Les matrices correspondent à la représentation mathématique que l&rsquo;on peut s&rsquo;en faire : il s&rsquo;agit d&rsquo;une structure à deux dimensions où chaque cellule, représentant le croisement d&rsquo;une ligne et d&rsquo;une colonne, contient une valeur. Il existe des matrices à plus de deux dimensions (appelées <i>array</i> dans la terminologie R). Les <i>data frames</i> constituent une des originalités de R, reprise dans de nombreux autres langages (Python, Mathematica, Julia), et permettent de représenter des collections de valeurs de différents types (p. ex., la même série d&rsquo;âges associées à la catégorie socio-professionnelle des répondants et leur tranche de revenus). Enfin, les listes constituent avec les vecteurs la seconde structure fondamentale de représentation des données sous R, et celles-ci ne se limitent pas à la représentation des variables au sens statistique du terme.
+</p>
+</div>
+
+<div id="outline-container-org4bfd89e" class="outline-3">
+<h3 id="org4bfd89e">Vecteurs et nombres</h3>
+<div class="outline-text-3" id="text-org4bfd89e">
+<p>
+L&rsquo;élément de base est ce que l&rsquo;on appelle un &laquo;&nbsp;vecteur&nbsp;&raquo; sous R : il s&rsquo;agit essentiellement d&rsquo;une structure permettant de collecter une liste d&rsquo;éléments, voire un seul élément (un scalaire est malgré tout représenté comme un vecteur de taille 1 sous R). Les structures plus complexes schématisées plus haut reposent toutes sur un stockage de l&rsquo;information sous forme de vecteurs. Il n&rsquo;existe pas dans les packages de base de R de structures de données telles que les dictionnaires de Python ou les tables de hachage de Java. 
+</p>
+
+<p>
+Les éléments contenus dans un vecteur sont tous du même type, par exemple des nombres entiers ou réels, des caractères ou des chaînes de caractère, des valeurs booléennes. R effectue une distinction entre le type ou la classe d&rsquo;un objet et son mode (de stockage) ; voir l&rsquo;aide en ligne correspondante pour <a href="https://www.rdocumentation.org/search?q=mode" class="rstats">mode</a>, <a href="https://www.rdocumentation.org/search?q=class" class="rstats">class</a> et <a href="https://www.rdocumentation.org/search?q=typeof" class="rstats">typeof</a>. On retiendra que les nombres sont de type <i>numeric.</i> Pour &laquo;&nbsp;forcer&nbsp;&raquo; la représentation d&rsquo;un nombre entier sous forme d&rsquo;entier (<i>integer</i>) on ajoute le suffixe <code>L</code> au nombre en question :
+</p>
+<div class="org-src-container">
+<pre class="src src-R">typeof(1)
+typeof(1L)
+</pre>
+</div>
+
+<pre class="example">
+[1] "double"
+[1] "integer"
+
+</pre>
+
+<p>
+Les nombres entiers sont représentés sur 32 bits, ce qui donne la valeur suivante pour le plus grand entier représentable en machine (<code>2^32/2 - 1</code>) :
+</p>
+<div class="org-src-container">
+<pre class="src src-R">.Machine$integer.max
+</pre>
+</div>
+
+<pre class="example">
+[1] 2147483647
+
+</pre>
+
+<p>
+Pour une précision sur 64 bits, il est nécessaire d&rsquo;utiliser soit le package <b>bit64</b> qui fournit la commande <a href="https://www.rdocumentation.org/search?q=as.integer64" class="rstats">as.integer64</a>, soit des libraries spécialisées telles que <a href="http://gmplib.org/">GMP</a> ou <a href="http://www.mpfr.org">MPFR</a> pour lesquelles il existe des packages R. Les cas limites se rencontrent généralement dans le cas d&rsquo;opérations sur les dates (2 147 483 647 jours permettent tout de même de réprésenter des écarts entre plusieurs centaines de décades) ou de calculs impliquant des nombres premiers ou des factorielles (là encore, il existe des alternatives numériques efficaces). 
+</p>
+
+<p>
+D&rsquo;autres informations sont stockées dans la variable globale <code>.Machine</code>, en particulier. R dispose des symboles <code>Inf</code> et <code>-Inf</code> pour désigner des valeurs numériques dépassant la capacité de représentation machine. Le symbole <code>NA</code> (<i>Not Available</i>) est réservé pour désigner les valeurs manquantes alors que <code>NaN</code> (<i>Not a Number</i>) s&rsquo;applique au cas des opérations numériques sur des nombres réels ou complexes qui ne sont pas définies sur le plan mathématique, typiquement \(\tfrac{0}{0}\) ou \(\tfrac{\infty}{\infty}\).
+</p>
+<div class="org-src-container">
+<pre class="src src-R">.Machine$double.xmax
+c(10^308, 10^309)
+10^309/(10^309+1)
+</pre>
+</div>
+
+<pre class="example">
+[1] 1.797693e+308
+[1] 1e+308    Inf
+[1] NaN
+
+</pre>
+</div>
+</div>
+
+
+<div id="outline-container-org7dcfdf6" class="outline-3">
+<h3 id="org7dcfdf6">Manipulation des vecteurs</h3>
+<div class="outline-text-3" id="text-org7dcfdf6">
+<p>
+Il est possible de créer des vecteurs de plusieurs manières, mais en règle générale la commande <a href="https://www.rdocumentation.org/search?q=c" class="rstats">c</a> permet de générer une liste de valeurs assez facilement, comme on vient de le voir dans l&rsquo;illustration précédente. Les autres solutions impliquent d&rsquo;utiliser, par exemple, <a href="https://www.rdocumentation.org/search?q=vector" class="rstats">vector</a> ou <a href="https://www.rdocumentation.org/search?q=numeric" class="rstats">numeric</a> dans le cas de listes de nombres (entiers ou réels). Voici un exemple de vecteur constitué de la suite des 10 premiers nombres entiers :
+</p>
+<div class="org-src-container">
+<pre class="src src-R">x &lt;- c(1, 2, 3, 4, 5, 6, 7, 8)
+print(x)
+</pre>
+</div>
+
+<pre class="example">
+[1] 1 2 3 4 5 6 7 8
+
+</pre>
+
+<p>
+Comme on l&rsquo;a déjà mentionné en <a href="./00-intro.html">introduction</a>, il n&rsquo;est pas nécessaire d&rsquo;utiliser <a href="https://www.rdocumentation.org/search?q=print" class="rstats">print</a> pour afficher le contenu d&rsquo;une variable, ici le vecteur appelé <code>x</code>, et l&rsquo;on peut très bien taper simplement le nom de la variable à l&rsquo;invite de commande R. Le nombre total d&rsquo;éléments (incluant les éventuelles valeurs manquantes, <code>NA</code>) correspond à la longueur du vecteur que l&rsquo;on obtient à l&rsquo;aide de la commande <a href="https://www.rdocumentation.org/search?q=length" class="rstats">length</a>. Ces commandes de concaténation peuvent être imnbriquées les unes dans les autres, comme dans l&rsquo;exemple suivant :
+</p>
+<div class="org-src-container">
+<pre class="src src-R">x &lt;- c(c(1, 2, 3), c(4, 5, 6), 7, 8)
+x
+</pre>
+</div>
+
+<pre class="example">
+[1] 1 2 3 4 5 6 7 8
+
+</pre>
+
+<p>
+Pour accéder aux éléments d&rsquo;un vecteur, il suffit d&rsquo;indiquer l&rsquo;indice de l&rsquo;élément, en se rappelant que le premier élément a pour indice 1 (et le dernier la valeur renvoyée par <a href="https://www.rdocumentation.org/search?q=length" class="rstats">length</a>). Voici un exemple, après avoir inversé l&rsquo;ordre des éléments à l&rsquo;aide de la commande <a href="https://www.rdocumentation.org/search?q=rev" class="rstats">rev</a>, qui permet d&rsquo;afficher le troisième élement contenu dans la nouvelle variable <code>x</code> :
+</p>
+<div class="org-src-container">
+<pre class="src src-R">x &lt;- rev(c(1, 2, 3, 4, 5, 6, 7, 8))
+x[3]
+</pre>
+</div>
+
+<pre class="example">
+[1] 6
+
+</pre>
+
+<p>
+Il s&rsquo;agit bien d&rsquo;une nouvelle variable puisque le contenu de l&rsquo;ancienne variable <code>x</code> a été remplacé par de nouvelles valeurs à l&rsquo;aide de l&rsquo;opérateur d&rsquo;assignation <code>&lt;-</code>. À noter que l&rsquo;on peut également utiliser le signe égal comme symbole d&rsquo;affectation (même s&rsquo;il est préférable de se cantonner à l&rsquo;usage du symbole classique) et que le symbole d&rsquo;affectation en forme de flèche peut s&rsquo;employer dans les deux directions : 
+</p>
+<div class="org-src-container">
+<pre class="src src-R">rev(c(1, 2, 3, 4, 5, 6, 7, 8)) -&gt; x
+y &lt;- x
+y
+</pre>
+</div>
+
+<pre class="example">
+[1] 8 7 6 5 4 3 2 1
+
+</pre>
+
+
+<p>
+Toujours avec le même exemple, on peut remplacer n&rsquo;importe quelle valeur contenue dans un vecteur par le même principe d&rsquo;extraction du i-eme élément. Ci-après, on remplace la troisième valeur par une valeur manquante :
+</p>
+<div class="org-src-container">
+<pre class="src src-R">x &lt;- c(1, 2, 3, 4, 5, 6, 7, 8)
+x[3] &lt;- NA
+x
+</pre>
+</div>
+
+<pre class="example">
+[1]  1  2 NA  4  5  6  7  8
+
+</pre>
+
+
+<div class="figure">
+<p><img src="img-01-seq-00.png" alt="img-01-seq-00.png" />
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgf08949d" class="outline-3">
+<h3 id="orgf08949d">Traitement des valeurs manquantes</h3>
+<div class="outline-text-3" id="text-orgf08949d">
+<p>
+La présence de valeurs manquantes dans un vecteur peut se vérifier à l&rsquo;aide de <a href="https://www.rdocumentation.org/search?q=is.na" class="rstats">is.na</a>. Cette commande renvoit les valeurs <code>TRUE</code> ou <code>FALSE</code> selon que la valeurs vaut <code>NA</code> ou non :
+</p>
+<div class="org-src-container">
+<pre class="src src-R">x &lt;- c(1, 2, 3, 4, 5, 6, 7, 8)
+x[3] &lt;- NA
+is.na(x)
+</pre>
+</div>
+
+<pre class="example">
+[1] FALSE FALSE  TRUE FALSE FALSE FALSE FALSE FALSE
+
+</pre>
+</div>
+</div>
+
+<div id="outline-container-org1f49760" class="outline-3">
+<h3 id="org1f49760">Opérations arithmétiques usuelles</h3>
+<div class="outline-text-3" id="text-org1f49760">
+<p>
+Un aspect intéressant des vecteurs R est que les opérations mathématiques usuelles (addition, multiplication, fonction trigonomoétriques, etc.) opèrent élément par élément. On parle de &laquo;&nbsp;calcul vectorisé&nbsp;&raquo; dans ce cas. En d&rsquo;autres termes, si l&rsquo;on souhaite augmenter toutes les valeurs contenues dans <code>x</code> d&rsquo;une unité, on écrira :
+</p>
+<div class="org-src-container">
+<pre class="src src-R">x &lt;- c(1, 2, 3, 4, 5, 6, 7, 8)
+x + 1
+</pre>
+</div>
+
+<pre class="example">
+[1] 2 3 4 5 6 7 8 9
+
+</pre>
+
+<p>
+De nombreuses commandes R permettent d&rsquo;effectuer des opérations arithmétiques du même type à partir de vecteur. En voici quelques exemples avec les commandes <a href="https://www.rdocumentation.org/search?q=sum" class="rstats">sum</a> et <a href="https://www.rdocumentation.org/search?q=cumsum" class="rstats">cumsum</a> :
+</p>
+<div class="org-src-container">
+<pre class="src src-R">x &lt;- c(1, 2, 3, 4, 5, 6, 7, 8)
+sum(x)
+cumsum(x)
+</pre>
+</div>
+
+<pre class="example">
+[1] 36
+[1]  1  3  6 10 15 21 28 36
+
+</pre>
+
+<p>
+On dispose donc à présent d&rsquo;une façon simple de compter les valeurs manquantes : <code>sum(is.na(x))</code> renverra en effet le nombre de valeurs manquantes puisque les booléens  <code>TRUE</code> ou <code>FALSE</code> prennent respectivement les valeurs 1 et 0.
+</p>
+<div class="org-src-container">
+<pre class="src src-R">x &lt;- c(1, NA, 3, 4, NA, NA, 7, 8)
+sum(is.na(x))
+</pre>
+</div>
+
+<pre class="example">
+[1] 3
+
+</pre>
+
+<p>
+Si l&rsquo;on souhaite connaître les indices des éléments valant <code>NA</code>, on utilisera la commande <a href="https://www.rdocumentation.org/search?q=which" class="rstats">which</a> :
+</p>
+<div class="org-src-container">
+<pre class="src src-R">x &lt;- c(1, NA, 3, 4, NA, NA, 7, 8)
+which(is.na(x))
+</pre>
+</div>
+
+<pre class="example">
+[1] 2 5 6
+
+</pre>
+
+<p>
+Quant aux calculs vectoriels, il est nécessaire d&rsquo;encadrer les opérateurs arithmétiques par le symbole <code>%</code>. <span class="sidenote">Si \(X=(1,2,3)\), \(X^TX=1 + 2^2 + 3^2=14\).</span> Considérons le produit vectoriel : si \(X\) est un vecteur ligne, alors \(X^T\) désigne le vecteur \(X\) transposé, soit un vecteur colonne constitué des mêmes éléments. Le produit \(X^TX\) se retrouve dans le calcul de l&rsquo;écart-type. L&rsquo;opération de multiplication réalisée à l&rsquo;aide de l&rsquo;opérateur <code>*</code> correspondrait à une multiplication élément par élément dans le cas de deux vecteurs de même longueur. Avec l&rsquo;opérateur <code>%*%</code>, on obtient le produit vectoriel :
+</p>
+<div class="org-src-container">
+<pre class="src src-R">X &lt;- c(1, 2, 3, 4, 5, 6, 7, 8)
+as.numeric(t(x) %*% x)
+</pre>
+</div>
+
+<p>
+L&rsquo;usage de <a href="https://www.rdocumentation.org/search?q=as.numeric" class="rstats">as.numeric</a> ci-dessus permet de forcer l&rsquo;affichage du résultat sous forme de nombre (au lieu d&rsquo;une matrice à une ligne et une colonne).
+</p>
+</div>
+</div>
+</div>
+
+
+<div id="outline-container-orgfd1e9c0" class="outline-2">
+<h2 id="orgfd1e9c0">Data frames</h2>
+<div class="outline-text-2" id="text-orgfd1e9c0">
+</div>
+<div id="outline-container-orgdccb2e5" class="outline-3">
+<h3 id="orgdccb2e5">Propriétés des data frame</h3>
+<div class="outline-text-3" id="text-orgdccb2e5">
+<p>
+L&rsquo;une des structures de données les plus riches sous R pour représenter des données statistiques est le <i>data frame</i>. Il s&rsquo;agit d&rsquo;une collection de listes de valeurs (techniquement, des vecteurs) arrangées en colonne. Une particularité est que les variables arrangées en colonnes peuvent être de différents types, par exemple des variables numériques et des facteurs. Cette structure de données permet d&rsquo;une certaine manière de rendre explicite l&rsquo;association conceptuelle entre plusieurs variables statistiques. À l&rsquo;image d&rsquo;une table dans une base de données, des informations de différentes nature collectées sur le même ensemble d&rsquo;unités sttaitsiques sont regroupées ensemble dans un même tableau.
+</p>
+
+<p>
+Les objets de type <i>data frame</i> sont essentiels pour les représentations graphiques et la modélisation, grâce en partie à la possibilité de représenter implicitement les niveaux des variables catégorielles. Les commandes permettant d&rsquo;importer des sources de données externes offrent généralement la possibilité de représenter les données sous forme de <i>data frame</i>. C&rsquo;est le cas, par exemple, des commandes <a href="https://www.rdocumentation.org/search?q=read.table" class="rstats">read.table</a>, <a href="https://www.rdocumentation.org/search?q=read.csv" class="rstats">read.csv</a> (ou l&rsquo;équivalent dans le package <b>readr,</b> <a href="https://www.rdocumentation.org/search?q=read_csv" class="rstats">read_csv</a>).
+</p>
+
+<p>
+Voici un exemple de <i>data frame</i> disponible dans le package <b>datasets</b> de R :
+</p>
+<div class="org-src-container">
+<pre class="src src-R">data(ToothGrowth)
+head(ToothGrowth)
+</pre>
+</div>
+
+<pre class="example">
+   len supp dose
+1  4.2   VC  0.5
+2 11.5   VC  0.5
+3  7.3   VC  0.5
+4  5.8   VC  0.5
+5  6.4   VC  0.5
+6 10.0   VC  0.5
+
+</pre>
+
+<p>
+Comme on peut le voir, l&rsquo;affichage des premières valeurs du tableau à l&rsquo;aide de la commande <a href="https://www.rdocumentation.org/search?q=head" class="rstats">head</a> suggère que ces trois variables ne sont pas toutes du même type. En particulier, la variable <code>supp</code> est un facteur, ce que l&rsquo;on peut confirmer en affichant la structure de ce <i>data frame</i> :
+</p>
+<div class="org-src-container">
+<pre class="src src-R">str(ToothGrowth)
+</pre>
+</div>
+
+<pre class="example">
+'data.frame':	60 obs. of  3 variables:
+ $ len : num  4.2 11.5 7.3 5.8 6.4 10 11.2 11.2 5.2 7 ...
+ $ supp: Factor w/ 2 levels "OJ","VC": 2 2 2 2 2 2 2 2 2 2 ...
+ $ dose: num  0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 ...
+
+</pre>
+
+<p>
+Il s&rsquo;agit de données collectées dans une étude sur la longueur des odontoblastes chez des cochons d&rsquo;inde soumis à deux types de traitement (<code>supp</code>) selon différents dosages (<code>dose</code>).
+</p>
+
+<p>
+Il est possible d&rsquo;accéder aux valeurs contenues dans un tableau de type <i>data frame</i> en travaillant à partir des variables (colonnes) ou des lignes (observations). EN utilisant la &laquo;&nbsp;notation matricielle&nbsp;&raquo;, on désignera le ou les numéros de ligne (i) suivi du ou des numéros de colonne (j) : <code>ToothGrowth[i,j]</code>. Voici un exemple de sélection de la valeur située en ligne 2 et colonne 1 :
+</p>
+<div class="org-src-container">
+<pre class="src src-R">ToothGrowth[2,1]
+</pre>
+</div>
+
+
+<div class="figure">
+<p><img src="img-01-df-01.png" alt="img-01-df-01.png" />
+</p>
+</div>
+
+<p>
+Lorsque l&rsquo;on ne spécifie aucun indice pour les lignes ou les colonnes, toutes les valeurs sont renvoyées :
+</p>
+<div class="org-src-container">
+<pre class="src src-R">ToothGrowth[2,]
+</pre>
+</div>
+
+
+<div class="figure">
+<p><img src="img-01-df-02.png" alt="img-01-df-02.png" />
+</p>
+</div>
+
+<p>
+Au lieu des numéros de ligne/colonne, il est également possible, et souvent plus commode, de sélectionner les variables à l&rsquo;aide de leur nom. D&rsquo;ailleurs, on pourrait garder la notation entre crochets et remplacer le numéro de colonne par le nom de la variable (entre quotes) correspondante, par exemple :
+</p>
+<div class="org-src-container">
+<pre class="src src-R">ToothGrowth[2,"len"]
+</pre>
+</div>
+<p>
+Mais comme les <i>data frames</i> héritent des propriétés plus générales des listes, on peut simplement préfixer le nom de la variable d&rsquo;intérêt par le nom du <i>data frame</i> suivi du symbole <code>$</code> comme suit :
+</p>
+<div class="org-src-container">
+<pre class="src src-R">ToothGrowth$len[2]
+</pre>
+</div>
+
+
+<div class="figure">
+<p><img src="img-01-df-03.png" alt="img-01-df-03.png" />
+</p>
+</div>
+
+<p>
+Parmi les caractéristiques particulières des data frames, on mentionnera la présence de <i>row names</i> qui permettent d&rsquo;identifier de manière unique les lignes du tableau. La commande <a href="https://www.rdocumentation.org/search?q=rownames" class="rstats">rownames</a> permet d&rsquo;extraire les identifiants de ligne (par défaut, des entiers consécutifs démarrant à 1 et représentés comme des caractères) tandis que <a href="https://www.rdocumentation.org/search?q=colnames" class="rstats">colnames</a>, ou dans le cas des data frames, <a href="https://www.rdocumentation.org/search?q=names" class="rstats">names</a> revoit le nom des colonnes, c&rsquo;est-à-dire les variables. Enfin, en tant que tableau rectangulaire, les data frames ont des dimensions, <a href="https://www.rdocumentation.org/search?q=nrow" class="rstats">nrow</a> et <a href="https://www.rdocumentation.org/search?q=ncol" class="rstats">ncol</a>, que l&rsquo;on peut résumer à l&rsquo;aide de la commande <a href="https://www.rdocumentation.org/search?q=dim" class="rstats">dim</a> :
+</p>
+
+<div class="org-src-container">
+<pre class="src src-R">dim(ToothGrowth)
+names(ToothGrowth)
+</pre>
+</div>
+
+<pre class="example">
+[1] 60  3
+[1] "len"  "supp" "dose"
+
+</pre>
+</div>
+</div>
+
+<div id="outline-container-org53954c4" class="outline-3">
+<h3 id="org53954c4">Sélection et indexation dans un data frame</h3>
+<div class="outline-text-3" id="text-org53954c4">
+<p>
+Il existe plusieurs manières de sélectionner des ensembles de valeurs dans un <i>data frame</i>. On peut tout à fait utiliser les indices des lignes et des colonnes (voire même les <i>row names</i> et les noms des variables) pour extraire des plages de valeurs, comme on l&rsquo;a vu plus haut. Un vecteur d&rsquo;indices tel que <code>c(2,4)</code> permettra, par exemple, de sélectionner certaines des valeurs d&rsquo;une variable à partir de leur position :
+</p>
+<div class="org-src-container">
+<pre class="src src-R">ToothGrowth$len[c(2,4)]
+</pre>
+</div>
+
+
+<div class="figure">
+<p><img src="img-01-seq-01.png" alt="img-01-seq-01.png" />
+</p>
+</div>
+
+<p>
+Et voici un exemple de sélection des valeurs d&rsquo;une variable (<code>supp</code>) selon les valeurs prises par une autre variable (<code>len &gt; 6</code>) :
+</p>
+<div class="org-src-container">
+<pre class="src src-R">ToothGrowth$supp[ToothGrowth$len &gt; 6]
+</pre>
+</div>
+
+
+<div class="figure">
+<p><img src="img-01-seq-02.png" alt="img-01-seq-02.png" />
+</p>
+</div>
+
+<p>
+R permet de combiner les filtres de sélection à l&rsquo;aide d&rsquo;opérateurs logiques : <code>&amp;</code> pour la conjonction (&laquo;&nbsp;et&nbsp;&raquo; logique) et <code>|</code> pour la disjonction (&laquo;&nbsp;ou&nbsp;&raquo; logique) ; l&rsquo;égalité logique est représentée par un double signe égal tandis que la négation logique s&rsquo;écrit <code>!=</code>. Ceci permet de combiner plusieurs expressions et d&rsquo;avoir des critères de sélection plus riches :
+</p>
+<div class="org-src-container">
+<pre class="src src-R">ToothGrowth[,ToothGrowth$len &gt; 10 &amp; ToothGrowth$dose &lt; 1]
+</pre>
+</div>
+
+
+<div class="figure">
+<p><img src="img-01-df-05.png" alt="img-01-df-05.png" />
+</p>
+</div>
+
+<p>
+On notera que, contrairement à la sélection à base d&rsquo;indices de ligne, la sélection sur critère (ou filtres) permet de s&rsquo;affranchir de l&rsquo;ordre des lignes en quelque sorte. Il est important de garder cette idée en tête même si, contrairement à Stata, les opérations de tri sont implicites sous R (p. ex., dans le cas de procédures d&rsquo;aggrégation), c&rsquo;est-à-dire que R ne modifie pas l&rsquo;ordre des lignes d&rsquo;un tableau à moins que l&rsquo;utilisateur le demande explicitement. En revanche, du fait de la nécessité de préfixer le nom des variables par le nom du data frame, la notation ci-dessus devient très vite assez lourde. 
+</p>
+
+<p>
+Pour remédier à cela, on peut utiliser la commande <a href="https://www.rdocumentation.org/search?q=subset" class="rstats">subset</a> dont la syntaxe est relativement simple : on indique le data frame sur lequel on souhaite travailler et dans lequel se trouve les variables d&rsquo;intérêt, comment sélectionner les lignes et comment sélectionner les colonnes. Ceci revient à effectuer une opération de sélection (des lignes) et de projection (des colonnes) en langage SQL :
+</p>
+
+
+<div class="figure">
+<p><img src="img-01-df-06.png" alt="img-01-df-06.png" />
+</p>
+</div>
+
+<p>
+Si l&rsquo;on souhaite renvoyer le contenu de la variable <code>dose</code> pour les seules observations qui vérifient la condition <code>len &gt; 8</code>, voici donc ce que l&rsquo;on écrirait :
+</p>
+<div class="org-src-container">
+<pre class="src src-R">subset(ToothGrowth, len &gt; 8, dose)
+</pre>
+</div>
+
+
+<div class="figure">
+<p><img src="img-01-df-07.png" alt="img-01-df-07.png" />
+</p>
+</div>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org286dd20" class="outline-2">
+<h2 id="org286dd20">Matrices</h2>
+<div class="outline-text-2" id="text-org286dd20">
+<p>
+Une autre structure assez utile est donnée par les objets de type <i>matrix</i>. Comme dans le cas des <i>data frames</i>, il s&rsquo;agit d&rsquo;une structure rectangulaire (ligne x colonne) mais constituée uniquement d&rsquo;éléments du même type. Contrairement à un <i>data frame</i> on ne peut pas représenter des variables de type facteur.
+</p>
+
+<p>
+Le produit de deux matrices, sous réserve de conformité du produit
+</p>
+<div class="org-src-container">
+<pre class="src src-R">
+</pre>
+</div>
+</div>
+</div>
+
+
+<div id="outline-container-orgdd14bd2" class="outline-2">
+<h2 id="orgdd14bd2">Générateurs de séquences</h2>
+<div class="outline-text-2" id="text-orgdd14bd2">
+</div>
+<div id="outline-container-org4c57550" class="outline-3">
+<h3 id="org4c57550">Séquences régulières de nombre</h3>
+<div class="outline-text-3" id="text-org4c57550">
+<p>
+La capacité de générer des séquences de nombres (entiers ou non) selon un motif régulier ou de manière aléatoire se révèle utile dans les cas où l&rsquo;on souhaite accéder aux éléments d&rsquo;un vecteur <i>via</i> une liste de valeurs pré-spécifiée ou pour construire des listes de randomisation, par exemple.
+</p>
+
+<p>
+La commande <a href="https://www.rdocumentation.org/search?q=seq" class="rstats">seq</a> permet de générer une séquence régulière de nombres, en indiquant la valeur de départ (<code>from=</code>) et la valeur d&rsquo;arrivée (<code>to=</code>), et éventuellement le pas de décalage (<code>by=</code>). L&rsquo;argument 
+</p>
+
+<div class="org-src-container">
+<pre class="src src-R">seq(1, 8)
+</pre>
+</div>
+
+<pre class="example">
+[1] 1 2 3 4 5 6 7 8
+
+</pre>
+
+<p>
+Pour ce genre de séquence de nombres entiers consécutils, on peut également utiliser la notation <code>1:8</code>. En revanche, il est possible de générer des motifs réguliers plus complexes avec <a href="https://www.rdocumentation.org/search?q=seq" class="rstats">seq</a>, comme par exemple des nombres espacés régulièrement ou des suites de nombres non entiers. En voici deux illustrations :
+</p>
+<div class="org-src-container">
+<pre class="src src-R">seq(1, 20, by = 2)
+</pre>
+</div>
+
+<pre class="example">
+[1]  1  3  5  7  9 11 13 15 17 19
+
+</pre>
+
+<div class="org-src-container">
+<pre class="src src-R">x &lt;- seq(1, 800, length.out = 15)
+round(x, 2)
+</pre>
+</div>
+
+<pre class="example">
+ [1]   1.00  58.07 115.14 172.21 229.29 286.36 343.43 400.50 457.57 514.64
+[11] 571.71 628.79 685.86 742.93 800.00
+
+</pre>
+</div>
+</div>
+
+
+<div id="outline-container-orgfd75e3b" class="outline-3">
+<h3 id="orgfd75e3b">Séquences de symboles avec motifs</h3>
+<div class="outline-text-3" id="text-orgfd75e3b">
+<p>
+La commande <a href="https://www.rdocumentation.org/search?q=rep" class="rstats">rep</a> permet de construire des séquences d&rsquo;éléments avec répétition. Considérons la séquence AB, que l&rsquo;on peut représenter à l&rsquo;aide du vecteur de caractères <code>c("A", "B")</code>. Une telle séquence peut représenter les groupes de traitement dans lesquels les unités statistiques doivent être allouées. On souhaite utiliser ce motif pour générer des séquences régulières de type AABB, ABAB. Voici un exemple d&rsquo;utilisation :
+</p>
+<div class="org-src-container">
+<pre class="src src-R">rep(c("A", "B"), 2)
+</pre>
+</div>
+
+
+<div class="figure">
+<p><img src="img-01-seq-03.png" alt="img-01-seq-03.png" />
+</p>
+</div>
+
+<div class="org-src-container">
+<pre class="src src-R">rep(c("A", "B"), c(2, 2))
+</pre>
+</div>
+
+
+<div class="figure">
+<p><img src="img-01-seq-04.png" alt="img-01-seq-04.png" />
+</p>
+</div>
+
+<p>
+Cette dernière formulation est équivalente à <code>rep(c("A", "B"), each=2)</code> puisque le nombre d&rsquo;éléments à générer est le même pour chaque motif. La commande <a href="https://www.rdocumentation.org/search?q=rep" class="rstats">rep</a> fonctionne de la même manière avec des nombres, des caractères ou les niveaux d&rsquo;un facteur.
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgfd07982" class="outline-3">
+<h3 id="orgfd07982">Séquences de niveaux de facteurs</h3>
+<div class="outline-text-3" id="text-orgfd07982">
+<p>
+Dans le cas d&rsquo;un plan d&rsquo;expérience, il est souvent utile de pouvoir générer des séquences de codes numériques ou de niveaux d&rsquo;un facteur.
+</p>
+
+<div class="org-src-container">
+<pre class="src src-R">gl(2, k = 2, len = 4, labels = c("A", "B"))
+</pre>
+</div>
+
+<pre class="example">
+[1] A A B B
+Levels: A B
+
+</pre>
+</div>
+</div>
+
+<div id="outline-container-org6022d50" class="outline-3">
+<h3 id="org6022d50">Combinaisons et permutations</h3>
+<div class="outline-text-3" id="text-org6022d50">
+<div class="org-src-container">
+<pre class="src src-R">x &lt;- 1:8
+sample(x)
+</pre>
+</div>
+
+<pre class="example">
+[1] 6 2 5 8 4 7 3 1
+
+</pre>
+
+<p>
+Une combinaison désigne un réarrangement de \(k\) éléments pris parmi \(n\). On note \({n \choose k}\) le nombre total de combinaisons possibles, que l&rsquo;on appelle également coefficient binomial, et on montre que cette quantité vaut :
+\[{n \choose k} = \frac{n(n-1)\dots(n-k+1)}{k(k-1)\dots 1}=\frac{n!}{(n-k)!k!}.\]
+</p>
+
+<p>
+Sous R, les commandes <a href="https://www.rdocumentation.org/search?q=choose" class="rstats">choose</a> et <a href="https://www.rdocumentation.org/search?q=combn" class="rstats">combn</a> renvoient, respectivement, le nombre total de combinaisons et la liste des combinaisons (arrangées en colonnes). Attention, cette dernière commande n&rsquo;est pas très efficace dans le cas des grands ensembles. Voici une illustration :
+</p>
+<div class="org-src-container">
+<pre class="src src-R">choose(3, 2)
+combn(1:3, 2)
+</pre>
+</div>
+
+<pre class="example">
+[1] 3
+     [,1] [,2] [,3]
+[1,]    1    1    2
+[2,]    2    3    3
+
+</pre>
+</div>
+</div>
+
+
+<div id="outline-container-org2dd0144" class="outline-3">
+<h3 id="org2dd0144">Nombres aléatoires</h3>
+<div class="outline-text-3" id="text-org2dd0144">
+<div class="org-src-container">
+<pre class="src src-R">set.seed(101)
+x &lt;- rnorm(1000)
+quantile(x)
+</pre>
+</div>
+
+<pre class="example">
+        0%        25%        50%        75%       100% 
+-3.1772097 -0.6917647 -0.0543911  0.5854619  3.1784893 
+
+</pre>
+
+<p>
+En anticipant sur le chapitre suivant qui discute des distributions de probabilités et des estimateurs, et sans se préoccuper des aspects graphiques spécifiques du package <b>ggplot2</b>, voici une application simple des commandes vues jusqu&rsquo;à présent :
+</p>
+
+<div class="org-src-container">
+<pre class="src src-R">library(ggplot2)
+library(hrbrthemes)
+set.seed(101)
+f &lt;- function(n) mean(rbinom(n, size = 1, prob = .5))
+n10  &lt;- seq(10, 10000, by = 10)
+n100 &lt;- seq(10, 10000, by = 100)
+r10  &lt;- sapply(n10, f)
+r100 &lt;- sapply(n100, f)
+
+fmt.num &lt;- scales::format_format(big.mark = " ", scientific = FALSE)
+fmt.pct &lt;- function(x) paste(x * 100, "%")
+
+p &lt;- ggplot(mapping = aes(x = n10, y = r10)) +
+  geom_line(col = grey(.7)) +
+  geom_line(aes(x = n100, y = r100), col = grey(.3), size =.8) +
+  scale_y_continuous(labels = fmt.pct) +
+  scale_x_continuous(labels = fmt.num, breaks = seq(0, 10000, by =2000))  +
+  labs(x = "Nombre de lancers", y = "Fréquence de l'événement “Face”") +
+  theme_ipsum(grid = "X", base_family = "Droid Sans", base_size = 11)
+ggsave("fig-01-binom-draws.png", width = 6, height = 4)
+</pre>
+</div>
+
+
+<div id="orgc4f3617" class="figure">
+<p><img src="./fig-01-binom-draws.png" alt="fig-01-binom-draws.png" width="640px" />
+</p>
+<p><span class="figure-number">Figure&nbsp;13&nbsp;: </span>Légende</p>
+</div>
+</div>
+</div>
+</div>
+
+
+
+<div id="outline-container-org9c1dd06" class="outline-2">
+<h2 id="org9c1dd06">Exercices d&rsquo;application</h2>
+<div class="outline-text-2" id="text-org9c1dd06">
+<p>
+Voici une série de petits exercices, de complexité variable, pour mettre en application les concepts présentés dans ce chapitre. Dans la plupart des cas, il sera nécessaire de consulter l&rsquo;aide en ligne pour la description des jeux de données.
+</p>
+
+<p>
+Les solutions sont proposées sous forme de notebook Jupyter mais il est tout à fait possible de travailler avec <a href="http://www.rstudio.com">RStudio</a> ou la console R directement.
+</p>
+
+<ol class="org-ol">
+<li>Avec le jeu de données <a href="https://www.rdocumentation.org/search?q=birthwt" class="rstats">birthwt</a> du package <b>MASS</b>, calculer (a) l&rsquo;âge moyen des mères ayant des antécédents d&rsquo;hypertension et un poids supérieur à 55 kg, (b) le nombre de cas ayant un poids inférieur à la norme pour lequels la mère est âgée de plus de 30 ans et fumait pendant le premier trimestre de grossesse.</li>
+
+<li>Avec le jeu de données <a href="https://www.rdocumentation.org/search?q=mtcars" class="rstats">mtcars</a></li>
+</ol>
+</div>
+</div>
+</div>
+</body>
+</html>

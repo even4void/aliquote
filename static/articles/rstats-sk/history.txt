@@ -1,0 +1,8 @@
+* aca0c73 (Tue, 19 Jun 2018 11:52:06 +0200, Christophe Lalanne) Add HTML output
+* 78bf4d6 (Tue, 19 Jun 2018 11:49:08 +0200, Christophe Lalanne) Yet another round of cleansing
+* 73e1963 (Tue, 19 Jun 2018 11:38:15 +0200, Christophe Lalanne) Update project structure + Add Makefile
+* d323ea4 (Tue, 29 May 2018 09:27:13 +0200, Christophe Lalanne) More work on the go
+* 51b38e9 (Mon, 28 May 2018 19:08:03 +0200, Christophe Lalanne) More stuff + add a TODO file
+* c2f74cd (Sat, 26 May 2018 15:54:21 +0200, Christophe Lalanne) Update content + Add CSS elements
+* fd75962 (Sat, 26 May 2018 13:49:17 +0200, Christophe Lalanne) Update CSS defaults + Add new file
+* c6adef3 (Fri, 25 May 2018 10:33:12 +0200, Christophe Lalanne) Setup new repository for R tutorials
