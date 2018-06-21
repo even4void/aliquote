@@ -1,5 +1,5 @@
 ---
-title: "50 years of Data Science and a teaching program for future years"
+title: "50 years of Data Science and beyond"
 date: 2018-06-21T16:05:01+02:00
 draft: false
 description: ""
