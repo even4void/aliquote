@@ -64,6 +64,4 @@ And here is what I have in `setup.el` in the case of Stata:
 
 The "Add-ons" part is just a custom `org-link` that allows to auto-link Stata commands to their online documentation on <http://www.stata.com>.
 
-
-
 {{% music %}}Timber Timbre • *Cedar Shakes*{{% /music %}}

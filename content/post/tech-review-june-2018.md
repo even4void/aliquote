@@ -36,3 +36,5 @@ It's been a while since I was writing Awk and Sed scripts every two or three day
 > -- Alexis King on [lexi-lambda](https://lexi-lambda.github.io/blog/2016/08/11/climbing-the-infinite-ladder-of-abstraction/)
 
 MXNet is incubating as an Apache project and is yet another library for deep learning. Carin Meier is currently working on a [Clojure package](https://github.com/gigasquid/clojure-mxnet). See her [recent blog post](http://gigasquid.github.io/blog/2018/06/03/meet-clojure-mxnet-ndarray/) to learn more.
+
+{{% music %}}The Veils • *The Runaway Found*{{% /music %}}
