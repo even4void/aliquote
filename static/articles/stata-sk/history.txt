@@ -1,3 +1,10 @@
+* 8e6d226 (Fri, 22 Jun 2018 23:33:02 +0200, Christophe Lalanne) More figures and table examples
+* 5b48d43 (Fri, 22 Jun 2018 16:53:24 +0200, Christophe Lalanne) Minor edits
+* 31abd1a (Fri, 22 Jun 2018 09:44:56 +0200, Christophe Lalanne) Add some words about table(s)
+* 712f128 (Tue, 19 Jun 2018 18:14:09 +0200, Christophe Lalanne) Update HTML output
+* 1476d36 (Tue, 19 Jun 2018 18:07:43 +0200, Christophe Lalanne) More content on variable manipulation
+* 9cb7aee (Mon, 18 Jun 2018 18:02:36 +0200, Christophe Lalanne) More on Stata format and variables recoding
+* 588d698 (Mon, 18 Jun 2018 15:25:22 +0200, Christophe Lalanne) Update task list
 * 68489de (Mon, 18 Jun 2018 15:07:35 +0200, Christophe Lalanne) Fix missing def + Cosmit changes
 * f587572 (Mon, 18 Jun 2018 15:01:39 +0200, Christophe Lalanne) Add dataset + Update content
 * c807548 (Mon, 18 Jun 2018 10:46:34 +0200, Christophe Lalanne) Add a Makefile and update publishing policy
