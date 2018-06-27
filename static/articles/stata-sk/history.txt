@@ -1,3 +1,8 @@
+* 0169049 (Wed, 27 Jun 2018 07:28:00 +0200, Christophe Lalanne) More content here and there + Minor fix
+* be7ef5f (Mon, 25 Jun 2018 18:18:55 +0200, Christophe Lalanne) Add discussion on drop/keep
+* 2a76627 (Mon, 25 Jun 2018 18:18:36 +0200, Christophe Lalanne) Fix package directory
+* 4a9e564 (Mon, 25 Jun 2018 17:53:14 +0200, Christophe Lalanne) Bump ELPA package version
+* 3313ab6 (Sat, 23 Jun 2018 09:42:51 +0200, Christophe Lalanne) Stata labels and placeholder for future description
 * 8e6d226 (Fri, 22 Jun 2018 23:33:02 +0200, Christophe Lalanne) More figures and table examples
 * 5b48d43 (Fri, 22 Jun 2018 16:53:24 +0200, Christophe Lalanne) Minor edits
 * 31abd1a (Fri, 22 Jun 2018 09:44:56 +0200, Christophe Lalanne) Add some words about table(s)
