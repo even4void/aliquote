@@ -1,10 +1,11 @@
 +++
 title = "The Changelog"
 date = 2018-05-17T00:00:00
-lastmod = 2018-05-17T00:00:00
+lastmod = 2018-06-30T00:00:00
 url = "/articles/changelog/"
 +++
 
+* [2018-06-29] Add [privacy](/privacy/) statements
 * [2018-05-17] Add a Changelog (this page)
 * [2018-05-09] Add a [micro-blog](/micro/)
 * [2018-05-04] Add [Teaching materials](/teaching/)
