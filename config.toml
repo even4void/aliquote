@@ -30,6 +30,11 @@ copyright = ""
   weight = 20
   identifier = "archives"
   url = "/post/"
+[[menu.main]]
+  name = "Micro"
+  weight = 30
+  identifier = "micro"
+  url = "/micro/"
 # [[menu.main]]
 #   name = "Tags"
 #   weight = 30
