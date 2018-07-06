@@ -14,7 +14,9 @@ Voici une collection de tutoriels pour apprendre Stata et comprendre comment ça
 
 1. Un aperçu rapide de Stata {{< ressource "stack-overflow" "./00-intro.html" "HTML" >}}
 2. La gestion des données avec Stata {{< ressource "stack-overflow" "./01-data.html" "HTML" >}}
-3. Packages utiles {{< ressource "stack-overflow" "./99-packages.html" "HTML" >}}
+3. Visualisation 
+4. Modélisation statistique {{< ressource "stack-overflow" "./03-glm.html" "HTML" >}}
+5. Packages utiles {{< ressource "stack-overflow" "./99-packages.html" "HTML" >}}
 
 
 [Github](https://github.com/chlalanne/stata-sk) • [Changelog](./history.txt)

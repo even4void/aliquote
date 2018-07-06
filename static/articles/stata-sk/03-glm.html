@@ -3,7 +3,7 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="fr" xml:lang="fr">
 <head>
-<!-- 2018-06-19 Mar 18:13 -->
+<!-- 2018-07-06 Ven 10:09 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Stata : modélisation statistique</title>
@@ -56,6 +56,28 @@ for the JavaScript code in this tag.
  }
 /*]]>*///-->
 </script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 90,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 90,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 90},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content">
@@ -64,7 +86,7 @@ for the JavaScript code in this tag.
 <h2>Table des matières</h2>
 <div id="text-table-of-contents">
 <ul>
-<li><a href="#org22cb432">Le modèle de régression linéaire simple</a></li>
+<li><a href="#org9b33f5c">Le modèle de régression linéaire simple</a></li>
 </ul>
 </div>
 </div>
@@ -73,19 +95,24 @@ Dans cet exposé, on s&rsquo;intéressera à la construction de modèles de rég
 </p>
 
 <p>
-Il existe un très bon ouvrage traitant du modèle linéaire généralisé, à présent dans sa quatrième édition et publié chez Stata Press : <a href="https://www.stata.com/bookstore/generalized-linear-models-and-extensions/">Generalized Linear Models and Extensions</a>, de Hardin &amp; Hilbe.
+Il existe un très bon ouvrage traitant du modèle linéaire généralisé, à présent dans sa quatrième édition et publié chez Stata Press : <a href="https://www.stata.com/bookstore/generalized-linear-models-and-extensions/">Generalized Linear Models and Extensions</a> de Hardin &amp; Hilbe.
 </p>
 
 <p>
-La mise en oeuvre d&rsquo;un modèle de régression a déjà été discutée brièvement dans le <a href="./00-intro.html">tutoriel d&rsquo;introduction à Stata</a>. Dans ce chapitre, on va s&rsquo;intéresser à l&rsquo;estimation des paramètres d&rsquo;un modèle de régression, à la sélection de modèle dans un cadre explicatif, au diagnostic du modèle, et à la prédiction ponctuelle ou par intervalles. On prendra pour base des données observationnelles issues d&rsquo;enquêtes ou d&rsquo;études cliniques transversales. Les séries chronologiques et les données longitudinales seront traitées dans des chapitres séparés<sup><a id="fnr.1" class="footref" href="#fn.1">1</a></sup>.
+La mise en oeuvre d&rsquo;un modèle de régression a déjà été discutée brièvement dans le <a href="./00-intro.html">tutoriel d&rsquo;introduction à Stata</a>. Dans ce chapitre, on va s&rsquo;intéresser à l&rsquo;estimation des paramètres d&rsquo;un modèle de régression, à la sélection de modèle dans un cadre explicatif, au diagnostic du modèle, et à la prédiction ponctuelle ou par intervalles. On prendra pour base des données observationnelles issues d&rsquo;enquêtes ou d&rsquo;études cliniques transversales. Les séries chronologiques et les données longitudinales seront traitées dans des chapitres séparés.
 </p>
 
-<div id="outline-container-org22cb432" class="outline-2">
-<h2 id="org22cb432">Le modèle de régression linéaire simple</h2>
-<div class="outline-text-2" id="text-org22cb432">
+<div id="outline-container-org9b33f5c" class="outline-2">
+<h2 id="org9b33f5c">Le modèle de régression linéaire simple</h2>
+<div class="outline-text-2" id="text-org9b33f5c">
 <p>
-Dans un premier temps, procédons à quelques rappels concernant la régression linéaire simple, la corrélation linéaire et le test de Student. Les notions connexes telles que les associations non linéaires ou les approches non paramétriques seront traitées ultérieurement. Dans ce premier exemple, on utilise <a href="https://www.stata.com/help.cgi?describe" class="stata">describe</a> est <span class="sidenote">here is a sidenote that may sapna multiple lines but remains aligned with insertion point in the body.</span>
+Dans un premier temps, procédons à quelques rappels concernant la régression linéaire simple, la corrélation linéaire et le test de Student. Les notions connexes telles que les associations non linéaires ou les approches non paramétriques seront traitées ultérieurement. 
 </p>
+
+<p>
+Les données d&rsquo;illustration peuvent être chargées directement depuis internet à l&rsquo;aide de la commande <a href="https://www.stata.com/help.cgi?webuse" class="stata">webuse</a>. Il s&rsquo;agit d&rsquo;une enquête épidémiologique rétrospective dans laquelle on s&rsquo;intéresse aux facteurs de risque d&rsquo;un bébé ayant un poids inférieur à la norme, selon les normes américaines des années 90. Ces données sont extensivement analysées dans l&rsquo;ouvrage de Hosmer &amp; Lemeshow [<a href="#hosmer-2000-applied-logis-regres">2</a>]. Au total, le tableau de données contient 11 variables, la variable réponse étant le poids des bébés (<code>bwt</code>) :
+</p>
+
 <div class="org-src-container">
 <pre class="src src-stata">webuse lbw
 describe, simple
@@ -100,21 +127,237 @@ describe, simple
 id     low    age    lwt    race   smoke  ptl    ht     ui     ftv    bwt
 
 </pre>
+
+<p>
+La relation entre le poids des bébés (en grammes) et le poids des mères (initialement en livres, converti en kilogrammes) est représentée dans la figure suivante sous la forme d&rsquo;un simple diagramme de dispersion. Pour faciliter la lecture, le poids des mères est converti en kilogrammes, sans modifier le mode de représentation de la variable :
+</p>
+
+<div class="org-src-container">
+<pre class="src src-stata">replace lwt = lwt / 2.204623, nopromote
+</pre>
+</div>
+
+<pre class="example">
+replace lwt = lwt / 2.204623, nopromote
+(189 real changes made)
+(189 values truncated because of storage type)
+
+</pre>
+
+<p>
+Ensuite, on utilise la commande <a href="https://www.stata.com/help.cgi?scatter" class="stata">scatter</a> pour construire le diagramme de dispersion :
+</p>
+
+<div class="org-src-container">
+<pre class="src src-stata">set scheme plotplain
+graph twoway scatter bwt lwt
+graph export "fig-03-scatter-bwt-lwt.pdf", fontface(DroidSans) replace
+</pre>
+</div>
+
+
+<div id="org1d231c2" class="figure">
+<p><img src="./fig-03-scatter-bwt-lwt.png" alt="fig-03-scatter-bwt-lwt.png" width="640px" />
+</p>
+<p><span class="figure-number">Figure&nbsp;1&nbsp;: </span>Relation entre le poids des bébés et le poids des mères</p>
+</div>
+
+<p>
+Il est tout à fait possible et largement recommendé de superposer une courbe loess [<a href="#cleveland-1979-robus-local">1</a>] sur le diagramme de dispersion précédent afin d&rsquo;évaluer visuellement les écarts à la linéarité concernant la relation entre ces deux variables. La commande <a href="https://www.stata.com/help.cgi?lowess" class="stata">lowess</a> peut être combinée à <a href="https://www.stata.com/help.cgi?scatter" class="stata">scatter</a> :
+</p>
+
+<div class="org-src-container">
+<pre class="src src-stata">graph twoway scatter bwt lwt || lowess bwt lwt, legend(off)
+graph export "fig-03-lowess-bwt-lwt.pdf", fontface(DroidSans) replace
+</pre>
+</div>
+
+
+<div id="orga1e3a4e" class="figure">
+<p><img src="./fig-03-lowess-bwt-lwt.png" alt="fig-03-lowess-bwt-lwt.png" width="640px" />
+</p>
+<p><span class="figure-number">Figure&nbsp;2&nbsp;: </span>Relation entre le poids des bébés et le poids des mères (courbe loess)</p>
+</div>
+
+<p>
+La corrélation entre ces deux variables s&rsquo;obtient grâce à <a href="https://www.stata.com/help.cgi?correlate" class="stata">correlate</a>. Notons que cette commande fonctionne avec deux variables ou une liste de variables de sorte qu&rsquo;elle pourra également être utilisée pour construire une matrice de corrélation :
+</p>
+
+<div class="org-src-container">
+<pre class="src src-stata">summarize bwt lwt
+correlate bwt lwt
+</pre>
+</div>
+
+<pre class="example">
+summarize bwt lwt
+
+    Variable |        Obs        Mean    Std. Dev.       Min        Max
+-------------+---------------------------------------------------------
+         bwt |        189    2944.286     729.016        709       4990
+         lwt |        189    58.34392    13.88108         36        113
+correlate bwt lwt
+(obs=189)
+
+             |      bwt      lwt
+-------------+------------------
+         bwt |   1.0000
+         lwt |   0.1863   1.0000
+</pre>
+
+<p>
+Voici une formulation simplifiée du modèle de régression linéaire. Soit \(y_i\) la réponse observée sur l&rsquo;individu \(i\), et \(x_i\) sa valeur
+observée pour le prédicteur \(x\). Le modèle de régression linéaire s&rsquo;écrit :
+\[y_i = \beta_0+\beta_1x_i+\varepsilon_i,\]
+où \(\beta_0\) représente l&rsquo;ordonnée à l&rsquo;origine (<i>intercept</i>) et \(\beta_1\) la pente (\emph{slope}) de la droite de régression, et
+\(\varepsilon_i\sim\mathcal{N}(0,\sigma^2)\) est un terme d&rsquo;erreur (résidus, supposés indépendants). En minimisant les différences quadratiques entre les valeurs observées et les valeurs prédites (principe des MCO), on peut estimer les coefficients de régression, \(\widehat\beta_0\) et \(\widehat\beta_1\) :
+\[\begin{array}{l}
+\widehat\beta_0 = \bar y - \widehat\beta_1\bar x\\
+\widehat\beta_1 = \sum(y_i-\bar y)(x_i-\bar x)/\sum(x_i-\bar x)^2\\
+\end{array}\]
+</p>
+
+<p>
+Sous \(H_0\), le rapport entre l&rsquo;estimé de la pente (\(\widehat\beta_1\), de variance \(\frac{\text{SSR}/(n-2)}{(n-1)s_x^2}\)) et son erreur standard suit une loi de Student à \((n-2)\) degrés de liberté.
+</p>
+
+<p>
+Les paramètres d&rsquo;un tel modèle de régression, \(\widehat\beta_0\) et \(\widehat\beta_1\), peuvent être estimés grâce à la commande <a href="https://www.stata.com/help.cgi?regress" class="stata">regress</a>, en indiquant la variable à prédire et la ou les variables explicatives. Pour un modèle de régression linéaire simple, on se retrouve donc avec l&rsquo;expression la plus simple qui soit :
+</p>
+
+<div class="org-src-container">
+<pre class="src src-stata">regress bwt lwt
+</pre>
+</div>
+
+<pre class="example">
+regress bwt lwt
+
+      Source |       SS           df       MS      Number of obs   =       189
+-------------+----------------------------------   F(1, 187)       =      6.72
+       Model |  3467517.36         1  3467517.36   Prob &gt; F        =    0.0103
+    Residual |  96447781.2       187  515763.536   R-squared       =    0.0347
+-------------+----------------------------------   Adj R-squared   =    0.0295
+       Total |  99915298.6       188  531464.354   Root MSE        =    718.17
+
+------------------------------------------------------------------------------
+         bwt |      Coef.   Std. Err.      t    P&gt;|t|     [95% Conf. Interval]
+-------------+----------------------------------------------------------------
+         lwt |   9.783793   3.773317     2.59   0.010     2.340054    17.22753
+       _cons |   2373.461    226.263    10.49   0.000     1927.105    2819.817
+------------------------------------------------------------------------------
+</pre>
+
+<p>
+Les résultats fournis par <a href="https://www.stata.com/help.cgi?regress" class="stata">regress</a> se composent de deux tableaux : le tableau d&rsquo;analyse de variance du modèle de régression, qui peut être supprimé via l&rsquo;option <code>noheader</code>, et le tableau des coefficients de régression. La ligne <code>_cons</code> désigne le terme d&rsquo;ordonnée à l&rsquo;origine, \(\widehat\beta_0\). Le résultat du test de Student associé à <code>lwt</code> (\(\widehat\beta_1\)) peut se retrouver manuellement une fois que l&rsquo;on a extrait les valeurs d&rsquo;intérêt :
+</p>
+
+<div class="org-src-container">
+<pre class="src src-stata">local tstat = _b[lwt] / _se[lwt]
+display "t = " %4.2f `tstat' " p = " %4.3f 2*ttail(187, `tstat')
+</pre>
+</div>
+
+<pre class="example">
+local tstat = _b[lwt] / _se[lwt]
+display "t = " %4.2f `tstat' " p = " %4.3f 2*ttail(187, `tstat')
+t = 2.59 p = 0.010
+
+</pre>
+
+
+<p>
+La commande <a href="https://www.stata.com/help.cgi?predict" class="stata">predict</a> permet non seulement de calculer les valeurs ajustées du modèle mais également les résidus du modèle ainsi que d&rsquo;autres statistiques utiles pour diagnostiquer la qualité d&rsquo;ajustement du modèle de régression. 
+</p>
+
+<div class="org-src-container">
+<pre class="src src-stata">predict double yhat
+predict double rs, rstudent
+summarize rs
+</pre>
+</div>
+
+<pre class="example">
+predict double yhat
+(option xb assumed; fitted values)
+predict double rs, rstudent
+summarize rs
+
+    Variable |        Obs        Mean    Std. Dev.       Min        Max
+-------------+---------------------------------------------------------
+          rs |        189   -.0010581    1.008052  -3.133601   2.961918
+
+</pre>
+
+<div class="org-src-container">
+<pre class="src src-stata">graph twoway kdensity rs
+graph export "fig-03-kdensity-rs.pdf", fontface(DroidSans) replace
+</pre>
+</div>
+
+
+<div id="orgc6396d9" class="figure">
+<p><img src="./fig-03-kdensity-rs.png" alt="fig-03-kdensity-rs.png" width="640px" />
+</p>
+<p><span class="figure-number">Figure&nbsp;3&nbsp;: </span>Distribution des résidus studentisés</p>
+</div>
+
+
+<p>
+Le graphique suivant est plus informatif car il resneigne à la fois sur la distribution des résidus et la corrélation entre les valeurs prédites par le modèle et ces derniers, qui selon l&rsquo;hypothèse du modèle doit être nulle.
+</p>
+
+<div class="org-src-container">
+<pre class="src src-stata">graph twoway scatter rs yhat, yline(0)
+graph export "fig-03-scatter-rs-yhat.pdf", fontface(DroidSans) replace
+</pre>
+</div>
+
+
+<div id="org5cb4493" class="figure">
+<p><img src="./fig-03-scatter-rs-yhat.png" alt="fig-03-scatter-rs-yhat.png" width="640px" />
+</p>
+<p><span class="figure-number">Figure&nbsp;4&nbsp;: </span>Relation entre valeurs ajustées et résidus</p>
+</div>
+
+
+
+<div id="bibliography">
+<h2>Références</h2>
+
+<table>
+
+<tr valign="top">
+<td align="right" class="bibtexnumber">
+[<a name="cleveland-1979-robus-local">1</a>]
+</td>
+<td class="bibtexitem">
+William&nbsp;S. Cleveland.
+ Robust locally weighted regression and smoothing scatterplots.
+ <em>Journal of the American Statistical Association</em>,
+  74(368):829–836, Dec 1979.
+[&nbsp;<a href="http://dx.doi.org/10.1080/01621459.1979.10481038">DOI</a>&nbsp;| 
+<a href="http://dx.doi.org/10.1080/01621459.1979.10481038">http</a>&nbsp;]
+
+</td>
+</tr>
+
+
+<tr valign="top">
+<td align="right" class="bibtexnumber">
+[<a name="hosmer-2000-applied-logis-regres">2</a>]
+</td>
+<td class="bibtexitem">
+David&nbsp;W. Hosmer and Stanley Lemeshow.
+ <em>Applied Logistic Regression</em>.
+ Wiley, 2000.
+
+</td>
+</tr>
+</table>
 </div>
 </div>
-<div id="footnotes">
-<h2 class="footnotes">Notes de bas de page: </h2>
-<div id="text-footnotes">
-
-<div class="footdef"><sup><a id="fn.1" class="footnum" href="#fnr.1">1</a></sup> <div class="footpara">Ceci est une note de bas de page que j&rsquo;aimerais faire apparaître dans la marge.</div></div>
-
-
 </div>
-</div></div>
-<div id="postamble" class="status">
-<p class="author">Auteur: Christophe Lalanne</p>
-<p class="date">Created: 2018-06-19 Mar 18:13</p>
-<p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
 </div>
 </body>
 </html>

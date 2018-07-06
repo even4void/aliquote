@@ -3,7 +3,7 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="fr" xml:lang="fr">
 <head>
-<!-- 2018-06-27 Mer 07:27 -->
+<!-- 2018-07-02 Lun 09:21 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Stata : gestion des données</title>
@@ -86,57 +86,57 @@ for the JavaScript code in this tag.
 <h2>Table des matières</h2>
 <div id="text-table-of-contents">
 <ul>
-<li><a href="#org317a06b">Gestion d&rsquo;un tableau de données</a>
+<li><a href="#orgab537b0">Gestion d&rsquo;un tableau de données</a>
 <ul>
-<li><a href="#orgeb51950">Le format DTA</a></li>
-<li><a href="#org76f87d6">Propriétés d&rsquo;un tableau Stata</a></li>
-<li><a href="#org31bdb68">Type de variables</a></li>
-<li><a href="#orgb88b5de">Variables et liste de variables</a></li>
+<li><a href="#orgbfb489e">Le format DTA</a></li>
+<li><a href="#orgffbfa00">Propriétés d&rsquo;un tableau Stata</a></li>
+<li><a href="#orga531a37">Type de variables</a></li>
+<li><a href="#orgec55307">Variables et liste de variables</a></li>
 </ul>
 </li>
-<li><a href="#orgec2bec7">Manipulation de variables</a>
+<li><a href="#org3b61d26">Manipulation de variables</a>
 <ul>
-<li><a href="#org155aaeb">Syntaxe élémentaire des commandes Stata</a></li>
-<li><a href="#org9f259a7">Création et mise à jour de variables</a></li>
-<li><a href="#orgf7c889d">Etiquette et annotation</a></li>
-<li><a href="#orga24692d">Changement de mode de stockage et format</a></li>
-<li><a href="#orgbaadb6c">Recodage de variables</a></li>
+<li><a href="#orgc3b3c3a">Syntaxe élémentaire des commandes Stata</a></li>
+<li><a href="#org7e25288">Création et mise à jour de variables</a></li>
+<li><a href="#org9a3fb4f">Etiquette et annotation</a></li>
+<li><a href="#org674f77b">Changement de mode de stockage et format</a></li>
+<li><a href="#org7452c12">Recodage de variables</a></li>
 </ul>
 </li>
-<li><a href="#orgcde7cff">Transformation d&rsquo;un tableau</a>
+<li><a href="#orga0f0d7e">Transformation d&rsquo;un tableau</a>
 <ul>
-<li><a href="#org2a19482">Sélection d&rsquo;observations et tri</a></li>
-<li><a href="#org9e97934">Optimisation de la taille mémoire</a></li>
-<li><a href="#org3bb3dc4">Agrégation</a></li>
-<li><a href="#org04f9dbe">Fusion de sources de données</a></li>
-<li><a href="#orgdcd9524">Mode de représentation rectangulaire</a></li>
+<li><a href="#orgc8ce5bf">Sélection d&rsquo;observations et tri</a></li>
+<li><a href="#org98fc72e">Optimisation de la taille mémoire</a></li>
+<li><a href="#orge50d4d5">Agrégation</a></li>
+<li><a href="#orgc097292">Fusion de sources de données</a></li>
+<li><a href="#org3260e25">Mode de représentation rectangulaire</a></li>
 </ul>
 </li>
-<li><a href="#org1cf423b">Tableaux de description avancés</a>
+<li><a href="#org129e3d1">Tableaux de description avancés</a>
 <ul>
-<li><a href="#org45c2c30">Les commandes tabulate et summarize</a></li>
-<li><a href="#orge8036e3">La commande tabstat</a></li>
-<li><a href="#org0e80385">La commande table</a></li>
-<li><a href="#orge8080a2">Analyses pondérées</a></li>
-<li><a href="#org8dcde6e">Commandes additionnelles</a></li>
-<li><a href="#org87b1607">Exportation des tableaux</a></li>
+<li><a href="#org1f62d76">Les commandes tabulate et summarize</a></li>
+<li><a href="#org6a6dc92">La commande tabstat</a></li>
+<li><a href="#org82039be">La commande table</a></li>
+<li><a href="#org9deeb2d">Analyses pondérées</a></li>
+<li><a href="#org1502374">Commandes additionnelles</a></li>
+<li><a href="#org73570c3">Exportation des tableaux</a></li>
 </ul>
 </li>
-<li><a href="#org1ad9abc">Pour aller plus loin</a></li>
+<li><a href="#orgc19d32e">Pour aller plus loin</a></li>
 </ul>
 </div>
 </div>
 <p>
-Stata est reconnu pour faciliter la gestion et le recodage des données ainsi que l&rsquo;automatisation de tâches répétitives. Ce chapitre a pour but de discuter les commandes essentielles permettant de manipuler des variables contenues dans un tableau de données. Une caractéristique de Stata est que le concept de variable est à prendre au sens statistique du terme.
+Stata est reconnu pour faciliter la gestion et le recodage des données ainsi que l&rsquo;automatisation de tâches répétitives. Ce chapitre a pour but de discuter les commandes essentielles permettant de manipuler des variables contenues dans un tableau de données. Une caractéristique de Stata est que le concept de variable est à prendre au sens statistique du terme, et non au sens informatique : Stata dispose de &laquo;&nbsp;macros&nbsp;&raquo; pour tout ce qui relève de la programmation, et ceci fait l&rsquo;objet d&rsquo;un autre chapitre.
 </p>
 
-<div id="outline-container-org317a06b" class="outline-2">
-<h2 id="org317a06b">Gestion d&rsquo;un tableau de données</h2>
-<div class="outline-text-2" id="text-org317a06b">
+<div id="outline-container-orgab537b0" class="outline-2">
+<h2 id="orgab537b0">Gestion d&rsquo;un tableau de données</h2>
+<div class="outline-text-2" id="text-orgab537b0">
 </div>
-<div id="outline-container-orgeb51950" class="outline-3">
-<h3 id="orgeb51950">Le format DTA</h3>
-<div class="outline-text-3" id="text-orgeb51950">
+<div id="outline-container-orgbfb489e" class="outline-3">
+<h3 id="orgbfb489e">Le format DTA</h3>
+<div class="outline-text-3" id="text-orgbfb489e">
 <p>
 On a déjà vu un exemple de format natif Stata avec les données <a href="https://www.stata.com/help.cgi?auto" class="stata">auto</a> utilisées dans le <a href="./00-intro.html">chapitre précédent</a> pour illustrer les principes de base de Stata : il s&rsquo;agit des fichiers <code>DTA</code>. La spécification de ce type de fichier peut être consultée dans le manuel en ligne pour le mot clé <a href="https://www.stata.com/help.cgi?dta" class="stata">dta</a>. Il s&rsquo;agit d&rsquo;un format binaire qui a quelque peu évolué entre les versions 12, 13 et 14 de Stata. Si <a href="https://stattransfer.com">Stat/Transfer</a> permet de passer d&rsquo;un format à l&rsquo;autre sans problème, le package <code>foreign</code> de R (<code>read.dta</code>) ne permet de lire que les fichiers Stata 12 ou inférieurs et il est préférable d&rsquo;utiliser le package <a href="http://haven.tidyverse.org">haven</a> (<code>read_dta</code>) pour les versions 13 et plus. Cette librairie repose sur la librairie <a href="https://github.com/WizardMac/ReadStat">ReadStat</a>, également utilisable en ligne de commande. Une autre solution consiste à utiliser le package <a href="https://cran.r-project.org/web/packages/readstata13/">readstata13</a>. Pour les utilisateurs de Python, le package <a href="https://pandas.pydata.org">Pandas</a> inclut un utilitaire pour la lecture de fichiers Stata (<code>from pandas.io.stata import StataReader</code>).
 </p>
@@ -156,9 +156,9 @@ Les nouvelles versions majeures de Stata sont publiées à peu près <a href="ht
 </div>
 
 
-<div id="outline-container-org76f87d6" class="outline-3">
-<h3 id="org76f87d6">Propriétés d&rsquo;un tableau Stata</h3>
-<div class="outline-text-3" id="text-org76f87d6">
+<div id="outline-container-orgffbfa00" class="outline-3">
+<h3 id="orgffbfa00">Propriétés d&rsquo;un tableau Stata</h3>
+<div class="outline-text-3" id="text-orgffbfa00">
 <p>
 Les données d&rsquo;illustration sont tirées de [<a href="#kohler-2012-data-analy">3</a>] et sont disponibles sur le <a href="https://www.stata-press.com/books/data-analysis-using-stata/">site de Stata Press</a>. Il est possible de télécharger les données directement depuis le site de Stata à l&rsquo;aide d&rsquo;une commande telle que <code>net from http://www.stata-press.com/data/kk3/</code>, suivie de <code>net install data</code>, ou alors d&rsquo;utiliser le fichier <code>gsoep09.dta</code> disponible dans le répertoire <code>data/</code> de ce projet. Le fichier DTA situé dans le répertoire <code>data/</code> correspond au fichier <code>data1.dta</code> dans l&rsquo;archive ZIP ou sur le site Stata.
 </p>
@@ -246,9 +246,9 @@ On reviendra en détail sur les listes de variables et le qualifieur <a href="ht
 </div>
 
 
-<div id="outline-container-org31bdb68" class="outline-3">
-<h3 id="org31bdb68">Type de variables</h3>
-<div class="outline-text-3" id="text-org31bdb68">
+<div id="outline-container-orga531a37" class="outline-3">
+<h3 id="orga531a37">Type de variables</h3>
+<div class="outline-text-3" id="text-orga531a37">
 <p>
 On distinguera essentiellement les nombres et les caractères, et par extension les chaînes de caractères. Les variables catégorielles sont représentées sont valeurs discrètes auxquelles on associe le plus souvent des étiquettes textuelles, encore appelée &laquo;&nbsp;label&nbsp;&raquo;.
 </p>
@@ -258,7 +258,7 @@ Le mode de stockage des variables numériques, qui s&rsquo;apparente à la préc
 </p>
 
 <p>
-Dans le visualisateur/éditeur de données (<a href="https://www.stata.com/help.cgi?browse" class="stata">browse</a>), les variables numériques apparaissent en noir, les variables catégorielles en bleu et les chaînes de caractères en rouge.
+Dans le visualisateur de données (<a href="https://www.stata.com/help.cgi?browse" class="stata">browse</a>), les variables numériques apparaissent en noir, les variables catégorielles en bleu et les chaînes de caractères en rouge. Bien qu&rsquo;il soit préférable de travailler exclusivement avec la console de commandes, la possibilité de visualiser les données à l&rsquo;aide d&rsquo;un tableur intégré est un grand plus de Stata. Notons que ce tableur est également accessible en mode édition.
 </p>
 
 <p>
@@ -381,16 +381,120 @@ sex                                                                      Gender
 </div>
 </div>
 
-<div id="outline-container-orgb88b5de" class="outline-3">
-<h3 id="orgb88b5de">Variables et liste de variables</h3>
-<div class="outline-text-3" id="text-orgb88b5de">
+
+<div id="outline-container-orgec55307" class="outline-3">
+<h3 id="orgec55307">Variables et liste de variables</h3>
+<div class="outline-text-3" id="text-orgec55307">
 <p>
-Un concept clé dans Stata est la possibilité de travailler avec une seule variable, comme on l&rsquo;a vu dans l&rsquo;expression <code>codebook sex</code>, ou avec plusieurs variables. Dans ce dernier cas, on parle de &laquo;&nbsp;varlist&nbsp;&raquo; et il est généralement utile de bien vérifier lorsque l&rsquo;on cherche de l&rsquo;aide si la commande accepte une seule, voire deux variables, ou bien une &laquo;&nbsp;varlist&nbsp;&raquo;. Voici comment on peut changer l&rsquo;ordre des variables avec <a href="https://www.stata.com/help.cgi?order" class="stata">order</a> et renommer des variables en bloc à l&rsquo;aide de <a href="https://www.stata.com/help.cgi?rename" class="stata">rename</a> :
+Un concept clé dans Stata est la possibilité de travailler avec une seule variable, comme on l&rsquo;a vu dans l&rsquo;expression <code>codebook sex</code>, ou avec plusieurs variables. Dans ce dernier cas, on parle de &laquo;&nbsp;varlist&nbsp;&raquo; et il est généralement utile de bien vérifier lorsque l&rsquo;on cherche de l&rsquo;aide si la commande accepte une seule, voire deux variables, ou bien une <a href="https://www.stata.com/help.cgi?varlist" class="stata">varlist</a>. 
+</p>
+
+<p>
+Pour spécifier une liste de variables, il suffit d&rsquo;indiquer les noms de variables en les séparant par un espace, comme dans l&rsquo;illustration suivante :
 </p>
 
 <div class="org-src-container">
-<pre class="src src-stata">order sex, before(ybirth)
-rename wor* q*
+<pre class="src src-stata">list wor01 wor02 wor03 in 5
+</pre>
+</div>
+
+<pre class="example">
+list wor01 wor02 wor03 in 5
+
+     +--------------------------------------------------------------+
+     |              wor01                wor02                wor03 |
+     |--------------------------------------------------------------|
+  5. | Somewhat concerned   Somewhat concerned   Somewhat concerned |
+     +--------------------------------------------------------------+
+
+</pre>
+
+<p>
+Il est également possible d&rsquo;indiquer le nom de la première variable et le nom de la dernière variable d&rsquo;une séquence de variables consécutives. Dans ce cas, le délimietur d&rsquo;étendue est le tiret :
+</p>
+
+<div class="org-src-container">
+<pre class="src src-stata">list wor01-wor03 in 5
+</pre>
+</div>
+
+<pre class="example">
+list wor01-wor03 in 5
+
+     +--------------------------------------------------------------+
+     |              wor01                wor02                wor03 |
+     |--------------------------------------------------------------|
+  5. | Somewhat concerned   Somewhat concerned   Somewhat concerned |
+     +--------------------------------------------------------------+
+
+</pre>
+
+<p>
+Les noms de variable peuvent être interpolés par Stata à l&rsquo;aide des symboles d&rsquo;expressions rationelles <code>?</code> (un seul caractère, n&rsquo;importe lequel parmi les caractères autorisés) et <code>*</code> (un ou plusieurs caractères). Voici deux exemples d&rsquo;utilisation :
+</p>
+
+<div class="org-src-container">
+<pre class="src src-stata">list wor0? in 5
+list wor* in 3
+</pre>
+</div>
+
+<pre class="example">
+list wor0? in 5
+
+     +--------------------------------------------------------------+
+  5. |              wor01 |              wor02 |              wor03 |
+     | Somewhat concerned | Somewhat concerned | Somewhat concerned |
+     |--------------------+--------------------+--------------------|
+     |              wor04 |              wor05 |              wor06 |
+     | Somewhat concerned | Somewhat concerned | Somewhat concerned |
+     |--------------------------------------------------------------|
+     |              wor07  |          wor08  |               wor09  |
+     | Somewhat concerned  | Very concerned  |  Somewhat concerned  |
+     +--------------------------------------------------------------+
+list wor* in 3
+
+     +--------------------------------------------------------------+
+  3. |              wor01 |              wor02 |              wor03 |
+     | Somewhat concerned | Somewhat concerned | Somewhat concerned |
+     |--------------------------------------------------------------|
+     |          wor04  |              wor05  |               wor06  |
+     | Very concerned  | Somewhat concerned  |  Somewhat concerned  |
+     |--------------------------------------------------------------|
+     |              wor07  |              wor08  |           wor09  |
+     | Somewhat concerned  | Somewhat concerned  |  Very concerned  |
+     |---------------------+---------------------+------------------|
+     |              wor10  |              wor11  |           wor12  |
+     | Somewhat concerned  | Somewhat concerned  |  Does not apply  |
+     +--------------------------------------------------------------+
+</pre>
+
+<p>
+Enfin, on peut combiner les différentes approches comme dans l&rsquo;exemple suivant :
+</p>
+
+<div class="org-src-container">
+<pre class="src src-stata">list persnr sex wor01-wor03 in 1
+</pre>
+</div>
+
+<pre class="example">
+list persnr sex wor01-wor03 in 1
+
+     +----------------------------------------------------------------------+
+     | persnr    sex            wor01                wor02            wor03 |
+     |----------------------------------------------------------------------|
+  1. |   8501   Male   Very concerned   Somewhat concerned   Very concerned |
+     +----------------------------------------------------------------------+
+
+</pre>
+
+<p>
+L&rsquo;usage de listes de variables facilite beaucoup de tâches qui pourrait apparaître fastidieuses autrement (lister explicitement une dizaine de variables) ou nécessiter de programmer une boucle (renommer un ensemble de variables). Voici par exemple comment renommer des variables en bloc à l&rsquo;aide de <a href="https://www.stata.com/help.cgi?rename" class="stata">rename</a> :
+</p>
+
+<div class="org-src-container">
+<pre class="src src-stata">rename wor* q*
 </pre>
 </div>
 
@@ -412,13 +516,13 @@ drop hhnr
 </div>
 
 
-<div id="outline-container-orgec2bec7" class="outline-2">
-<h2 id="orgec2bec7">Manipulation de variables</h2>
-<div class="outline-text-2" id="text-orgec2bec7">
+<div id="outline-container-org3b61d26" class="outline-2">
+<h2 id="org3b61d26">Manipulation de variables</h2>
+<div class="outline-text-2" id="text-org3b61d26">
 </div>
-<div id="outline-container-org155aaeb" class="outline-3">
-<h3 id="org155aaeb">Syntaxe élémentaire des commandes Stata</h3>
-<div class="outline-text-3" id="text-org155aaeb">
+<div id="outline-container-orgc3b3c3a" class="outline-3">
+<h3 id="orgc3b3c3a">Syntaxe élémentaire des commandes Stata</h3>
+<div class="outline-text-3" id="text-orgc3b3c3a">
 <p>
 De manière générale, les commandes Stata sont structurées de la manière suivante :
 </p>
@@ -492,12 +596,14 @@ Considérons à présent l&rsquo;âge des répondants, que l&rsquo;on peut recon
 
 <div class="org-src-container">
 <pre class="src src-stata">generate age = 2009 - ybirth
+order age, after(ybirth)
 summarize age
 </pre>
 </div>
 
 <pre class="example">
 generate age = 2009 - ybirth
+order age, after(ybirth)
 summarize age
 
     Variable |        Obs        Mean    Std. Dev.       Min        Max
@@ -505,6 +611,10 @@ summarize age
          age |      5,411    49.50712    18.12642         17        100
 
 </pre>
+
+<p>
+La commande <a href="https://www.stata.com/help.cgi?order" class="stata">order</a> permet de déplacer la position d&rsquo;une variables, ou plus généralement d&rsquo;une <a href="https://www.stata.com/help.cgi?varlist" class="stata">varlist</a>, en spécifiant en option la position relative par rapport à une variable déjà présente dans le tableau. Il est également possible d&rsquo;utiliser les options <code>first</code> ou <code>last</code> pour placer la ou les variables en première ou dernière position du tableau, respectivement.
+</p>
 
 <p>
 Voici comment résumer numériquement cette variable pour les seuls individus pour lesquels l&rsquo;information concernant le revenu est connue :
@@ -525,7 +635,7 @@ summarize age if !missing(income)
 </pre>
 
 <p>
-Enfin, il est éaglement possible de stratifier l&rsquo;analyse selon le sexe à l&rsquo;aide du préfixe <a href="https://www.stata.com/help.cgi?by" class="stata">by</a> :
+Enfin, il est également possible de stratifier l&rsquo;analyse selon le sexe à l&rsquo;aide du préfixe <a href="https://www.stata.com/help.cgi?by" class="stata">by</a> :
 </p>
 
 <div class="org-src-container">
@@ -558,9 +668,9 @@ Comme on peut le constater, il est impératif de trier les données selon la var
 </div>
 
 
-<div id="outline-container-org9f259a7" class="outline-3">
-<h3 id="org9f259a7">Création et mise à jour de variables</h3>
-<div class="outline-text-3" id="text-org9f259a7">
+<div id="outline-container-org7e25288" class="outline-3">
+<h3 id="org7e25288">Création et mise à jour de variables</h3>
+<div class="outline-text-3" id="text-org7e25288">
 <p>
 On a déjà vu un exemple de création de variable dans les illustrations précédentes avec la commande <a href="https://www.stata.com/help.cgi?generate" class="stata">generate</a>. Voici une utilisation plus avancée où l&rsquo;on construit une nouvelle variable à partir d&rsquo;une expression mathématique, le logarithme du revenu :
 </p>
@@ -577,7 +687,7 @@ generate lincome = log(income)
 </pre>
 
 <p>
-L&rsquo;expression ci-dessus correspond bien à la syntaxe discutée dans la <a href="#org155aaeb">section précédente</a>, <code>command [varlist] [=exp]</code>. Le résultat de cette instruction a généré de nombreuses valeurs manquantes, ce qui s&rsquo;explique par la présence de revenus annuels valant 0, valeur pour laquelle le logarithme n&rsquo;est pas défini, en plus des valeurs manquantes d&rsquo;origine pour lesquelles le logarithme n&rsquo;est pas non plus défini. Il y a au moins deux manières de pallier à ce problème : on peut remplacer l&rsquo;expression <code>log(income)</code> par <code>log(income+1)</code> (l&rsquo;ajout d&rsquo;une unité ne devrait pas modifier foncièrement les analyses de cette variable étant donnée l&rsquo;étendue des valeurs observées et la valeur de tendance centrale) ou alors on peut traiter les valeurs nulles de <code>income</code> comme des valeurs manquantes. Dans le second cas de figure, pour être à même de distinguer les valeurs manquantes d&rsquo;origine des valeurs imputées, il convient d&rsquo;utiliser un code de valeur manquante différent. Voici comment procéder :
+L&rsquo;expression ci-dessus correspond bien à la syntaxe discutée dans la <a href="#orgc3b3c3a">section précédente</a>, <code>command [varlist] [=exp]</code>. Le résultat de cette instruction a généré de nombreuses valeurs manquantes, ce qui s&rsquo;explique par la présence de revenus annuels valant 0, valeur pour laquelle le logarithme n&rsquo;est pas défini, en plus des valeurs manquantes d&rsquo;origine pour lesquelles le logarithme n&rsquo;est pas non plus défini. Il y a au moins deux manières de pallier à ce problème : on peut remplacer l&rsquo;expression <code>log(income)</code> par <code>log(income+1)</code> (l&rsquo;ajout d&rsquo;une unité ne devrait pas modifier foncièrement les analyses de cette variable étant donnée l&rsquo;étendue des valeurs observées et la valeur de tendance centrale) ou alors on peut traiter les valeurs nulles de <code>income</code> comme des valeurs manquantes. Dans le second cas de figure, pour être à même de distinguer les valeurs manquantes d&rsquo;origine des valeurs imputées, il convient d&rsquo;utiliser un code de valeur manquante différent. Voici comment procéder :
 </p>
 
 <div class="org-src-container">
@@ -632,7 +742,7 @@ graph export "fig-01-histogram-lincome.pdf", fontface(DroidSans) replace
 </div>
 
 
-<div id="orgd31bd92" class="figure">
+<div id="org2e42db7" class="figure">
 <p><img src="./fig-01-histogram-lincome.png" alt="fig-01-histogram-lincome.png" width="640px" />
 </p>
 <p><span class="figure-number">Figure&nbsp;1&nbsp;: </span>Distribution du log du revenu annuel (euros)</p>
@@ -641,9 +751,9 @@ graph export "fig-01-histogram-lincome.pdf", fontface(DroidSans) replace
 </div>
 
 
-<div id="outline-container-orgf7c889d" class="outline-3">
-<h3 id="orgf7c889d">Etiquette et annotation</h3>
-<div class="outline-text-3" id="text-orgf7c889d">
+<div id="outline-container-org9a3fb4f" class="outline-3">
+<h3 id="org9a3fb4f">Etiquette et annotation</h3>
+<div class="outline-text-3" id="text-org9a3fb4f">
 <p>
 Il est préférable de travailler avec des noms de variables court, en minuscules, et groupés par ordre logique dans le tableau. Cela facilite le travail de sélection de variable isolées ou de groupes de variables (<code>varlist</code>), leur insertion dans des commandes ou dans des structures de contrôle, par exemple des boucles <code>foreach</code>. Ceci dit, il est toujours plus pratique de donner un descriptif même succint de chacune des variables afin de pouvoir annoter automatiquement les axes des graphiques sur lesquels ces variables sont amenées à varier ou dans les tableaux de synthèse. C&rsquo;est d&rsquo;ailleurs une pratique assez courante dans le monde des enquêtes que d&rsquo;annoter systématiquement les différents items d&rsquo;un questionaire avec l&rsquo;intitulé de la question.
 </p>
@@ -753,9 +863,9 @@ Enfin, il est possible d&rsquo;annoter un tableau ou une variable à l&rsquo;aid
 </div>
 
 
-<div id="outline-container-orga24692d" class="outline-3">
-<h3 id="orga24692d">Changement de mode de stockage et format</h3>
-<div class="outline-text-3" id="text-orga24692d">
+<div id="outline-container-org674f77b" class="outline-3">
+<h3 id="org674f77b">Changement de mode de stockage et format</h3>
+<div class="outline-text-3" id="text-org674f77b">
 <p>
 Si la précision automatiquement choisie par Stata n&rsquo;est pas indispensable à l&rsquo;interprétation des résultats ou si l&rsquo;on souhaite simplement appliquer automatiquement un arrondi des valeurs, la commande <a href="https://www.stata.com/help.cgi?format" class="stata">format</a> permet de modifier le format d&rsquo;affichage global d&rsquo;une ou plusieurs variables. Notons que les formats d&rsquo;affichage peuvent également s&rsquo;appliquer localement lors de l&rsquo;utilisation de certaines commandes telles que <a href="https://www.stata.com/help.cgi?summarize" class="stata">summarize</a>. Par exemple, en appliquant un format limitant l&rsquo;affichage à 2 décimales, voici ce que la commande précédente donnerait :
 </p>
@@ -780,9 +890,9 @@ summarize age, format
 
 
 
-<div id="outline-container-orgbaadb6c" class="outline-3">
-<h3 id="orgbaadb6c">Recodage de variables</h3>
-<div class="outline-text-3" id="text-orgbaadb6c">
+<div id="outline-container-org7452c12" class="outline-3">
+<h3 id="org7452c12">Recodage de variables</h3>
+<div class="outline-text-3" id="text-org7452c12">
 <p>
 Par recodage, on entend la discrétisation d&rsquo;une variable numérique en variable catégorielle à plusieurs classes ou niveaux, ainsi que la transformation d&rsquo;une variable catégorielle (création ou agrégation de niveaux).
 </p>
@@ -873,13 +983,13 @@ Service class 1/2 |      1,093       35.40       35.40
 </div>
 
 
-<div id="outline-container-orgcde7cff" class="outline-2">
-<h2 id="orgcde7cff">Transformation d&rsquo;un tableau</h2>
-<div class="outline-text-2" id="text-orgcde7cff">
+<div id="outline-container-orga0f0d7e" class="outline-2">
+<h2 id="orga0f0d7e">Transformation d&rsquo;un tableau</h2>
+<div class="outline-text-2" id="text-orga0f0d7e">
 </div>
-<div id="outline-container-org2a19482" class="outline-3">
-<h3 id="org2a19482">Sélection d&rsquo;observations et tri</h3>
-<div class="outline-text-3" id="text-org2a19482">
+<div id="outline-container-orgc8ce5bf" class="outline-3">
+<h3 id="orgc8ce5bf">Sélection d&rsquo;observations et tri</h3>
+<div class="outline-text-3" id="text-orgc8ce5bf">
 <p>
 On a vu que la commande <a href="https://www.stata.com/help.cgi?drop" class="stata">drop</a> permet de supprimer une ou plusieurs variables dans un tableau de données. En réalité cette commande fonctionne également pour filtrer des observations, de même que <a href="https://www.stata.com/help.cgi?keep" class="stata">keep</a> qui permet, au contraire, de conserver des variables ou des observations. Dans l&rsquo;enquête socio-économique, supposons que l&rsquo;on souhaite ne conserver pour les analyses que les personnes majeures (<code>age &gt; 17</code>), il suffirait d&rsquo;utiliser l&rsquo;une de ces deux commandes. Par exemple :
 </p>
@@ -942,9 +1052,9 @@ summarize agediff
 
 
 
-<div id="outline-container-org9e97934" class="outline-3">
-<h3 id="org9e97934">Optimisation de la taille mémoire</h3>
-<div class="outline-text-3" id="text-org9e97934">
+<div id="outline-container-org98fc72e" class="outline-3">
+<h3 id="org98fc72e">Optimisation de la taille mémoire</h3>
+<div class="outline-text-3" id="text-org98fc72e">
 <p>
 La commande <a href="https://www.stata.com/help.cgi?compress" class="stata">compress</a> permet d&rsquo;optimiser le mode de stockage des variables. Cette commande n&rsquo;altère pas le contenu de la base de données et n&rsquo;induit aucune perte de précision.
 </p>
@@ -986,9 +1096,9 @@ On ne gagnera rien à compresser ce tableau dans la mesure où il est déjà opt
 </div>
 
 
-<div id="outline-container-org3bb3dc4" class="outline-3">
-<h3 id="org3bb3dc4">Agrégation</h3>
-<div class="outline-text-3" id="text-org3bb3dc4">
+<div id="outline-container-orge50d4d5" class="outline-3">
+<h3 id="orge50d4d5">Agrégation</h3>
+<div class="outline-text-3" id="text-orge50d4d5">
 <p>
 Par agrégation on entend le procédé qui consiste à réduire un ensemble d&rsquo;observations à une valeur unique, typiquement un indicateur de tendance centrale ou l&rsquo;effectif total, selon différentes variables de classification. Par exemple, dans cette enquête socio-économique, on pourrait vouloir calculer le revenu médian par &laquo;&nbsp;lander&nbsp;&raquo; (<code>state</code>) selon le sexe et la classe d&rsquo;âge. Voici une manière de procéder avec la commande <a href="https://www.stata.com/help.cgi?collapse" class="stata">collapse</a> :
 </p>
@@ -1053,9 +1163,9 @@ La commande <a href="https://www.stata.com/help.cgi?contract" class="stata">cont
 </div>
 </div>
 
-<div id="outline-container-org04f9dbe" class="outline-3">
-<h3 id="org04f9dbe">Fusion de sources de données</h3>
-<div class="outline-text-3" id="text-org04f9dbe">
+<div id="outline-container-orgc097292" class="outline-3">
+<h3 id="orgc097292">Fusion de sources de données</h3>
+<div class="outline-text-3" id="text-orgc097292">
 <p>
 merge
 </p>
@@ -1066,9 +1176,9 @@ append
 </div>
 </div>
 
-<div id="outline-container-orgdcd9524" class="outline-3">
-<h3 id="orgdcd9524">Mode de représentation rectangulaire</h3>
-<div class="outline-text-3" id="text-orgdcd9524">
+<div id="outline-container-org3260e25" class="outline-3">
+<h3 id="org3260e25">Mode de représentation rectangulaire</h3>
+<div class="outline-text-3" id="text-org3260e25">
 <p>
 fillin
 </p>
@@ -1081,13 +1191,13 @@ reshape
 </div>
 
 
-<div id="outline-container-org1cf423b" class="outline-2">
-<h2 id="org1cf423b">Tableaux de description avancés</h2>
-<div class="outline-text-2" id="text-org1cf423b">
+<div id="outline-container-org129e3d1" class="outline-2">
+<h2 id="org129e3d1">Tableaux de description avancés</h2>
+<div class="outline-text-2" id="text-org129e3d1">
 </div>
-<div id="outline-container-org45c2c30" class="outline-3">
-<h3 id="org45c2c30">Les commandes tabulate et summarize</h3>
-<div class="outline-text-3" id="text-org45c2c30">
+<div id="outline-container-org1f62d76" class="outline-3">
+<h3 id="org1f62d76">Les commandes tabulate et summarize</h3>
+<div class="outline-text-3" id="text-org1f62d76">
 <p>
 Comme discuté précédemment, le préfixe <a href="https://www.stata.com/help.cgi?by" class="stata">by</a> permet de répéter une même opération selon les valeurs prises par une ou plusieurs variables, de sorte que l&rsquo;instruction suivante permet de construire très rapidement des résumés descriptifs : (c&rsquo;est même en réalité la manière la plus rapide de calculer des statistiques simples)
 </p>
@@ -1114,6 +1224,21 @@ bysort sex: summarize income
 -------------+---------------------------------------------------------
       income |      1,664    19688.09    23330.87        163     612757
 </pre>
+
+
+<div class="org-src-container">
+<pre class="src src-stata">graph twoway histogram lincome, by(sex) bfcolor(dknavy) blcolor(none)
+graph export "fig-01-histogram-lincome-sex.pdf", fontface(DroidSans) replace
+</pre>
+</div>
+
+
+<div id="orgcfc268a" class="figure">
+<p><img src="./fig-01-histogram-lincome-sex.png" alt="fig-01-histogram-lincome-sex.png" width="640px" />
+</p>
+<p><span class="figure-number">Figure&nbsp;2&nbsp;: </span>Distribution du log du revenu annuel (euros) selon le sexe et la classe socio-économique</p>
+</div>
+
 
 <p>
 Cependant, le format de sortie ne se prête pas vraiment à une mise en forme avancée dans un rapport. On préférera donc pour l&rsquo;exportation utiliser <a href="https://www.stata.com/help.cgi?tabulate" class="stata">tabulate</a> avec l&rsquo;option <code>summarize</code> :
@@ -1145,23 +1270,23 @@ Un diagramme en points [<a href="#cleveland-1985-elemen-graph-data">1</a>], qui 
 
 <div class="org-src-container">
 <pre class="src src-stata">graph dot lincome, over(sex) over(egp3) ylabel(0(2)12) marker(1, ms(O)) ytitle("Log income")
-graph export "fig-02-bar-lincome-sex.pdf", fontface(DroidSans) replace
+graph export "fig-01-bar-lincome-sex.pdf", fontface(DroidSans) replace
 </pre>
 </div>
 
 
-<div id="org3fea4f1" class="figure">
-<p><img src="./fig-02-bar-lincome-sex.png" alt="fig-02-bar-lincome-sex.png" width="640px" />
+<div id="org3d561ce" class="figure">
+<p><img src="./fig-01-bar-lincome-sex.png" alt="fig-01-bar-lincome-sex.png" width="640px" />
 </p>
-<p><span class="figure-number">Figure&nbsp;2&nbsp;: </span>Distribution du log du revenu annuel (euros) selon le sexe et la classe socio-économique</p>
+<p><span class="figure-number">Figure&nbsp;3&nbsp;: </span>Distribution du log du revenu annuel (euros) selon le sexe et la classe socio-économique</p>
 </div>
 </div>
 </div>
 
 
-<div id="outline-container-orge8036e3" class="outline-3">
-<h3 id="orge8036e3">La commande tabstat</h3>
-<div class="outline-text-3" id="text-orge8036e3">
+<div id="outline-container-org6a6dc92" class="outline-3">
+<h3 id="org6a6dc92">La commande tabstat</h3>
+<div class="outline-text-3" id="text-org6a6dc92">
 <p>
 La commande <a href="https://www.stata.com/help.cgi?tabstat" class="stata">tabstat</a> permet au contraire de spécifier la liste des statistiques d&rsquo;intérêt via l&rsquo;option <code>stats</code>. La variable de stratification est indiquée dans l&rsquo;option <code>by</code> (il ne peut y en avoir qu&rsquo;une seule). Pour reproduire le résumé en 5 points de Tukey disponible sous R, on peut formuler la commande de la manière suivante :
 </p>
@@ -1196,23 +1321,23 @@ En guise de représentation graphique, il existe les diagrammes en forme de boî
 
 <div class="org-src-container">
 <pre class="src src-stata">graph box lincome, over(sex)
-graph export "fig-03-box-lincome-sex.pdf", fontface(DroidSans) replace
+graph export "fig-01-box-lincome-sex.pdf", fontface(DroidSans) replace
 </pre>
 </div>
 
 
-<div id="org6a009b6" class="figure">
-<p><img src="./fig-03-box-lincome-sex.png" alt="fig-03-box-lincome-sex.png" width="640px" />
+<div id="org45a3296" class="figure">
+<p><img src="./fig-01-box-lincome-sex.png" alt="fig-01-box-lincome-sex.png" width="640px" />
 </p>
-<p><span class="figure-number">Figure&nbsp;3&nbsp;: </span>Distribution du log du revenu annuel (euros) selon le sexe</p>
+<p><span class="figure-number">Figure&nbsp;4&nbsp;: </span>Distribution du log du revenu annuel (euros) selon le sexe</p>
 </div>
 </div>
 </div>
 
 
-<div id="outline-container-org0e80385" class="outline-3">
-<h3 id="org0e80385">La commande table</h3>
-<div class="outline-text-3" id="text-org0e80385">
+<div id="outline-container-org82039be" class="outline-3">
+<h3 id="org82039be">La commande table</h3>
+<div class="outline-text-3" id="text-org82039be">
 <p>
 La commande <a href="https://www.stata.com/help.cgi?table" class="stata">table</a> est beaucoup plus souple et elle permet non seulement de choisir les statistiques d&rsquo;intérêt mais également d&rsquo;utiliser jusqu&rsquo;à quatre variables de classification. Les statistiques d&rsquo;intérêt sont indiquées dans l&rsquo;option <code>content</code>. En l&rsquo;absence de contenu à résumer, <a href="https://www.stata.com/help.cgi?table" class="stata">table</a> se comporte comme <a href="https://www.stata.com/help.cgi?tabulate+twoway" class="stata">tabulate twoway</a>.
 </p>
@@ -1264,25 +1389,25 @@ Service class 1/2 |     11      10
 </div>
 
 
-<div id="outline-container-orge8080a2" class="outline-3">
-<h3 id="orge8080a2">Analyses pondérées</h3>
+<div id="outline-container-org9deeb2d" class="outline-3">
+<h3 id="org9deeb2d">Analyses pondérées</h3>
 </div>
 
-<div id="outline-container-org8dcde6e" class="outline-3">
-<h3 id="org8dcde6e">Commandes additionnelles</h3>
-</div>
-
-
-<div id="outline-container-org87b1607" class="outline-3">
-<h3 id="org87b1607">Exportation des tableaux</h3>
-</div>
+<div id="outline-container-org1502374" class="outline-3">
+<h3 id="org1502374">Commandes additionnelles</h3>
 </div>
 
 
+<div id="outline-container-org73570c3" class="outline-3">
+<h3 id="org73570c3">Exportation des tableaux</h3>
+</div>
+</div>
 
-<div id="outline-container-org1ad9abc" class="outline-2">
-<h2 id="org1ad9abc">Pour aller plus loin</h2>
-<div class="outline-text-2" id="text-org1ad9abc">
+
+
+<div id="outline-container-orgc19d32e" class="outline-2">
+<h2 id="orgc19d32e">Pour aller plus loin</h2>
+<div class="outline-text-2" id="text-orgc19d32e">
 <div id="bibliography">
 <h2>Références</h2>
 

@@ -1,3 +1,6 @@
+* 3653e69 (Fri, 6 Jul 2018 10:10:40 +0200, Christophe Lalanne) More stuff on linear regression
+* 5a3ed9a (Thu, 5 Jul 2018 22:07:08 +0200, Christophe Lalanne) Start working on GLMs because why not?!
+* 2ce309f (Mon, 2 Jul 2018 09:24:06 +0200, Christophe Lalanne) Minor edits on varlist + Fix figure naming scheme
 * 7b2d54d (Wed, 27 Jun 2018 16:22:30 +0200, Christophe Lalanne) Add review of additional packages
 * 0169049 (Wed, 27 Jun 2018 07:28:00 +0200, Christophe Lalanne) More content here and there + Minor fix
 * be7ef5f (Mon, 25 Jun 2018 18:18:55 +0200, Christophe Lalanne) Add discussion on drop/keep
