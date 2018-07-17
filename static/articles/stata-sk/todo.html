@@ -3,7 +3,7 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2018-07-02 Lun 09:22 -->
+<!-- 2018-07-13 Ven 20:47 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>&lrm;</title>
@@ -233,16 +233,18 @@ for the JavaScript code in this tag.
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents">
 <ul>
-<li><a href="#org11fd8d1">1. Structure</a></li>
-<li><a href="#org19364ac">2. <span class="todo TODO">TODO</span> project</a></li>
-<li><a href="#org51962cd">3. <span class="todo TODO">TODO</span> 00-intro</a></li>
-<li><a href="#org3d87fd7">4. <span class="todo TODO">TODO</span> 01-data</a></li>
-<li><a href="#org39a0e35">5. Notes</a></li>
+<li><a href="#org03a50eb">1. Structure</a></li>
+<li><a href="#org339da41">2. <span class="todo TODO">TODO</span> project</a></li>
+<li><a href="#org5932b2f">3. <span class="todo TODO">TODO</span> 00-intro</a></li>
+<li><a href="#org292dc3a">4. <span class="todo TODO">TODO</span> 01-data</a></li>
+<li><a href="#org778ec4d">5. <span class="todo TODO">TODO</span> 02-graphics</a></li>
+<li><a href="#orgada27aa">6. <span class="todo TODO">TODO</span> 03-glm</a></li>
+<li><a href="#orgda450a0">7. Notes</a></li>
 </ul>
 </div>
 </div>
-<div id="outline-container-org11fd8d1" class="outline-2">
-<h2 id="org11fd8d1"><span class="section-number-2">1</span> Structure</h2>
+<div id="outline-container-org03a50eb" class="outline-2">
+<h2 id="org03a50eb"><span class="section-number-2">1</span> Structure</h2>
 <div class="outline-text-2" id="text-1">
 <ul class="org-ul">
 <li><a href="./00-intro.html">./00-intro.html</a>: kickstarter</li>
@@ -260,8 +262,8 @@ for the JavaScript code in this tag.
 </div>
 </div>
 
-<div id="outline-container-org19364ac" class="outline-2">
-<h2 id="org19364ac"><span class="section-number-2">2</span> <span class="todo TODO">TODO</span> project</h2>
+<div id="outline-container-org339da41" class="outline-2">
+<h2 id="org339da41"><span class="section-number-2">2</span> <span class="todo TODO">TODO</span> project</h2>
 <div class="outline-text-2" id="text-2">
 <ul class="org-ul">
 <li class="on"><code>[X]</code> Clean up logo</li>
@@ -275,8 +277,8 @@ for the JavaScript code in this tag.
 </div>
 </div>
 
-<div id="outline-container-org51962cd" class="outline-2">
-<h2 id="org51962cd"><span class="section-number-2">3</span> <span class="todo TODO">TODO</span> 00-intro</h2>
+<div id="outline-container-org5932b2f" class="outline-2">
+<h2 id="org5932b2f"><span class="section-number-2">3</span> <span class="todo TODO">TODO</span> 00-intro</h2>
 <div class="outline-text-2" id="text-3">
 <ul class="org-ul">
 <li class="trans"><code>[-]</code> Fix LaTeX memoir layout</li>
@@ -287,8 +289,8 @@ for the JavaScript code in this tag.
 </div>
 </div>
 
-<div id="outline-container-org3d87fd7" class="outline-2">
-<h2 id="org3d87fd7"><span class="section-number-2">4</span> <span class="todo TODO">TODO</span> 01-data</h2>
+<div id="outline-container-org292dc3a" class="outline-2">
+<h2 id="org292dc3a"><span class="section-number-2">4</span> <span class="todo TODO">TODO</span> 01-data</h2>
 <div class="outline-text-2" id="text-4">
 <ul class="org-ul">
 <li class="on"><code>[X]</code> Find relevant datasets</li>
@@ -299,20 +301,34 @@ for the JavaScript code in this tag.
 </div>
 </div>
 
-<div id="outline-container-org39a0e35" class="outline-2">
-<h2 id="org39a0e35"><span class="section-number-2">5</span> Notes</h2>
-<div class="outline-text-2" id="text-5">
+<div id="outline-container-org778ec4d" class="outline-2">
+<h2 id="org778ec4d"><span class="section-number-2">5</span> <span class="todo TODO">TODO</span> 02-graphics</h2>
+</div>
+<div id="outline-container-orgada27aa" class="outline-2">
+<h2 id="orgada27aa"><span class="section-number-2">6</span> <span class="todo TODO">TODO</span> 03-glm</h2>
+</div>
+<div id="outline-container-orgda450a0" class="outline-2">
+<h2 id="orgda450a0"><span class="section-number-2">7</span> Notes</h2>
+<div class="outline-text-2" id="text-7">
 <p>
 ESS dataset: <a href="http://bit.ly/2K003rn">http://bit.ly/2K003rn</a>
 Stata weight round 1: <a href="http://bit.ly/2I2BsAg">http://bit.ly/2I2BsAg</a>
 ESS R package: <a href="https://github.com/ropensci/essurvey">https://github.com/ropensci/essurvey</a>
+</p>
+
+<p>
+twoway (function y = normalden(x), range(-4 4) lw(*2) lp(dash)) (function y = tden(2,x), range(-4 4) lw(*2)), ytitle(Density) xtitle(””) ysize(3) legend(order(2 ”t(2)” 1 ”normal”) col(1) ring(0) pos(11))
+</p>
+
+<p>
+See also <a href="https://stats.idre.ucla.edu/stata/faq/graph/njc-stata-plots/">https://stats.idre.ucla.edu/stata/faq/graph/njc-stata-plots/</a>
 </p>
 </div>
 </div>
 </div>
 <div id="postamble" class="status">
 <p class="author">Author: Christophe Lalanne</p>
-<p class="date">Created: 2018-07-02 Lun 09:22</p>
+<p class="date">Created: 2018-07-13 Ven 20:47</p>
 <p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
 </div>
 </body>
