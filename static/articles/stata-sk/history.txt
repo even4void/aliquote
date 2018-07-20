@@ -1,3 +1,5 @@
+* 6890682 (Wed, 18 Jul 2018 15:49:23 +0200, Christophe Lalanne) Minor edits + Split chapter in two parts
+* 68f09e2 (Wed, 18 Jul 2018 15:14:23 +0200, Christophe Lalanne) Add missing links
 * bbb2278 (Tue, 17 Jul 2018 19:00:59 +0200, Christophe Lalanne) Add some more regress applications + Update HTML+PNG output
 * eaaa3a8 (Fri, 13 Jul 2018 21:29:12 +0200, Christophe Lalanne) Minor edits
 * d02108b (Fri, 6 Jul 2018 22:17:27 +0200, Christophe Lalanne) More on linear regression
