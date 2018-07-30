@@ -11,7 +11,7 @@ Last day, I decided to embrace modern web technologies by switching to Hugo in o
 
 This was also a good opportunity to revise some content and check internal links. Indeed, since Dropbox removed their support for sharing live link in our Public folder, I was left with tons of broken image links (in fact, all of them). Moreover, a lot of draft posts were still living in my post box and never get published, even in draft mode. Finally, some old post were still written in Textile and needed to be updated to Markdown.
 
-Anyway, it was a funny experience to edit very old posts and re-read old setups, like a [Macbook Air]({{< ref "post/welcome-to-the-macbook-air.md" >}}), [OS X Lion]({{< ref "post/my-setup.md" >}}), a [Macbook Pro]({{< ref "/post/os-x-yosemite.md" >}}), or more recently [High Sierra]({{< ref "post/setup-2018.md" >}})
+Anyway, it was a funny experience to edit very old posts and re-read old setups, like a [Macbook Air]({{< ref "/post/welcome-to-the-macbook-air.md" >}}), [OS X Lion]({{< ref "/post/my-setup.md" >}}), a [Macbook Pro]({{< ref "/post/os-x-yosemite.md" >}}), or more recently [High Sierra]({{< ref "/post/setup-2018.md" >}})
 
 It took me some weeks of irregular work to get the updated website working again. I had to download and unfill pictures and images from my "Public" Dropbox which became useless (like Dropbox I would like to say). A dozens of posts needed to be converted from Textile to Markdown, or YAML header from old Markdown posts had to be cleaned up a bit.
 
