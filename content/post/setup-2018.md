@@ -20,7 +20,7 @@ preview = true
 
 +++
 
-It is time to give a brief overview of my setup although [things have not really changed]({{< ref "post/my-setup.md" >}}).
+It is time to give a brief overview of my setup although [things have not really changed]({{< ref "/post/my-setup.md" >}}).
 
 Well, I realize that I am now running High Sierra on a Macbook 12” Retina (8 Go RAM, sigh) and that Apple kindely continued to suppress things here and there. Last one was [telnet](https://forums.developer.apple.com/message/235897#235897) (but also ftp). I must admit that I did not experience much incompatibility issues or major crash when I switch over High Sierra two weeks ago, though.
 

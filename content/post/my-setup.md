@@ -22,7 +22,7 @@ preview = true
 
 I always enjoy reading [The Setup](http://usesthis.com/) from time to time. Here is mine.
 
-I try whenever possible to stick to basic text-based workflow and I don't like complex UIs or applications that eat up all my RAM. I am working on a Macbook Air that I [bought in 2010]({{< ref "post/welcome-to-the-macbook-air.md" >}}), and I stopped upgrading my OS at Lion. I didn't even bother updating to the latest 10.7.5. I only have 4 Go of RAM and most of the times that's just enough.
+I try whenever possible to stick to basic text-based workflow and I don't like complex UIs or applications that eat up all my RAM. I am working on a Macbook Air that I [bought in 2010]({{< ref "/post/welcome-to-the-macbook-air.md" >}}), and I stopped upgrading my OS at Lion. I didn't even bother updating to the latest 10.7.5. I only have 4 Go of RAM and most of the times that's just enough.
 
 ![OS X Lion](/img/20130610121428.png)
 

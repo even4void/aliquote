@@ -15,7 +15,7 @@ preview = true
 
 I installed [Yosemite](http://en.wikipedia.org/wiki/OS_X_Yosemite) last week on my fresh MacBook Pro, and I must say this is just whooo...
 
-As part of my series of [posts]({{< ref "post/os-x-leopard.md" >}}) on [OS X]({{< ref "post/os-x-lion.md" >}}) [updates]({{< ref "post/os-x-mavericks.md" >}}), here are my very first impressions on OS X 10.10. Note that I never tried any beta versions despite the big buzz surrounding its release, and I just installed the official release from the App Store. Here is how looks desktop as I am writing this post: 
+As part of my series of [posts]({{< ref "/post/os-x-leopard.md" >}}) on [OS X]({{< ref "/post/os-x-lion.md" >}}) [updates]({{< ref "/post/os-x-mavericks.md" >}}), here are my very first impressions on OS X 10.10. Note that I never tried any beta versions despite the big buzz surrounding its release, and I just installed the official release from the App Store. Here is how looks desktop as I am writing this post: 
 
 ![OS X Yosemite](/img/2014-11-04-13-14-09.png)
 <small>(And yes, I just tried the new release of TextMate 2.0 instead of writing in Emacs.)</small>
@@ -69,7 +69,7 @@ Now, when viewing Man pages I get the GNU version instead of the BSD one.
 
 ![Viewing GNU man pages](/img/2014-11-04-13-26-25.png)
 
-Otherwise, I installed a [bunch of software]({{< ref "post/useful-mac-apps-for-data-scientists.md" >}}) and picked up some nice configuration files from [Mathias Bynens' GitHub](https://github.com/mathiasbynens/dotfiles). In passing, I updated the default icon for Emacs once I saw this Tweet:
+Otherwise, I installed a [bunch of software]({{< ref "/post/useful-mac-apps-for-data-scientists.md" >}}) and picked up some nice configuration files from [Mathias Bynens' GitHub](https://github.com/mathiasbynens/dotfiles). In passing, I updated the default icon for Emacs once I saw this Tweet:
 
 {{< tweet 527983358081376258 >}} 
 
