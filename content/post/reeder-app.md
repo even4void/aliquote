@@ -1,6 +1,7 @@
 ---
 title: "Reeder App"
 date: 2018-04-08T09:11:04+02:00
+lastmod: 2018-09-15T09:47:56+02:00
 draft: false
 description: ""
 tags: ["misc", "apple"]
@@ -27,5 +28,7 @@ First of all, you don't have to start again from scratch and you can import the 
 - You can also change the default theme and switch to black or grey-black theme if this is more of your liking.
 
 After one week of using Reeder, I feel like I am done with web UIs, at least for the next few months.
+
+**Edit:** After several months, I still find this app very entertaining. The clean UI invites to stay focused on reading. The only thing I miss is the ability to highlight sentences or even selected part of a post, much like in Preview or other PDF apps.
 
 {{% music %}}Morcheeba • *Blood Like Lemonade*{{% /music %}}
