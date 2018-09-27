@@ -7,8 +7,6 @@ tags: ["misc"]
 categories: ["tweet-bot"]
 ---
 
-Time-stamp: <2018-09-21 11:16:06 chl>
-
 Here is the latest bag of tweets<sup>*</sup>, which covers August 2018.
 
 <!--more-->

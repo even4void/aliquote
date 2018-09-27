@@ -1,0 +1,159 @@
+---
+title: "A bag of tweets / Sep 2018"
+date: 2018-09-27T17:29:24+02:00
+draft: false
+description: ""
+tags: ["misc"]
+categories: ["tweet-bot"]
+---
+
+Here is the latest bag of tweets<sup>*</sup>, which covers September 2018.
+
+<!--more-->
+
+(*) These are interesting news that I found on Twitter and that I archive periodically. Note that I have slightly updated reporting and fetching methods so that you will get between 80 and 120 of my most recent favorites from my Twitter account (`@chlalanne`).
+
+
+- 2018-09-27 @ArtPicsChannel: Standing Woman in Kimono (Dame im Kimono), Gustav Klimt https://t.co/KwSaTeNsQu
+- 2018-09-03 @ArtPicsChannel: Circles in a Circle ~ Wassily Kandinsky https://t.co/ege9KA4ddw
+- 2018-09-26 @joavanschoren: Scikit-learn 0.20.0 is out 🎉 and ships with @open_ml integration 🥳. You can now pull thousands of shared datasets directly into your python projects with `datasets.fetch_openml`! Thanks to @amuellerml and @janvanrijn! https://t.co/DAOgyLWjki #MachineLearning #AI #openscience
+- 2018-09-26 @EffyVayena: Here is a new paper from our @EthicsPolicyLab on #MachineLearing #ethics #medicine https://t.co/8JBOaWJ8pb
+- 2018-09-26 @planetclojure: Just Juxt #42: Pascal's trapezoid (4clojure #147) https://t.co/u7imbmMqB8
+- 2018-09-03 @newsycombinator: An ode to Apple’s awful MacBook keyboard https://t.co/OVhAMQwBAT
+- 2018-09-02 @newsycombinator: An Introduction to Modern CMake https://t.co/c0ILp46m62
+- 2018-09-02 @newsycombinator: An Intensive Introduction to Cryptography https://t.co/SmfYOM6rY0
+- 2018-09-14 @newsycombinator: Interactive Git Cheatsheet with Visualisation https://t.co/vzsmzqHqMS;
+- 2018-09-14 @newsycombinator: A Fully Automated HTTPS Server Powered by Nginx, Let's Encrypt and Docker https://t.co/MnzPIdH01T
+- 2018-09-25 @newsycombinator: This is the most complete guide to finding anyone’s email https://t.co/yKon51ktC8
+- 2018-09-05 @newsycombinator: Latency Numbers Every Programmer Should Know https://t.co/5nfYNbn2ZJ
+- 2018-09-07 @newsycombinator: Medieval Fantasy City Generator https://t.co/vQAGRXGBOh
+- 2018-09-07 @newsycombinator: Introduction to Calculus with Derivatives https://t.co/aSvW1oM9DS
+- 2018-09-05 @newsycombinator: The Tools I Use to Write Books https://t.co/PJ9vbyC4fA
+- 2018-09-05 @newsycombinator: A First Course in Differential Equations for Scientists and Engineers https://t.co/ZAMvMTC7sk
+- 2018-09-09 @newsycombinator: XSV: A fast CSV command-line toolkit written in Rust https://t.co/mOpymyieQW
+- 2018-09-24 @mpmanti: Non-standard evaluation in #rstats is tricky. https://t.co/4CzFswLgr2
+- 2018-09-24 @wesmckinn: Exciting new project from @uwdata with browser-side crossfiltering on millions of records, powered by @ApacheArrow in JS https://t.co/dAoLJCfSPF
+- 2018-09-24 @jurafsky: Here's the Autumn 2018 release of draft chapters for Speech and Language Processing! Enjoy!   https://t.co/pjfZsYfJ5S
+- 2018-09-23 @matthew_d_green: Why I’m done with Google Chrome: https://t.co/K8CjeT6xen
+- 2018-09-23 @TilingBot: #Hyperbolic #tiling shown translating in the inverted Poincaré disk model. Rectified {8,3}. https://t.co/87wE7c288u
+- 2018-09-22 @Docker: [blog] Getting started with #Docker by @mhmpl https://t.co/QUyoOjA4pY
+- 2018-09-22 @oaggimenez: Whaaaaaat 🤪🤩, a brand new book on #spatial #modelling with #rstats and #inla #spde, and it's available online https://t.co/bvFEdBaUlZ ?!! 💯 Congrats and many thx to the authors! @eliaskrainski @precariobecario @BakkaHaakon A. Lenzi @d4niCC @dan_p_simpson @FinnLindgren H. Rue https://t.co/RkIBa8naAn
+- 2018-09-22 @VirolainenTuomo: Pretty cool that OCaml, of all things, seems to be getting traction. There's ReasonML (check out @anmonteiro90 's talk at SmallFP 2018: https://t.co/ixzIebZIRZ), and also some fresh tooling for scientific computing: https://t.co/osQnUsUI5D.
+- 2018-09-21 @_wilfredh: Good read on the early history of JSON, and how it became the ubiquitous format it is today: https://t.co/tb2pj4Fqlf
+- 2018-09-18 @_wilfredh: Emacs as a platform: https://t.co/aVeK88QtXW  Great overview of some of the Emacs killer apps!
+- 2018-09-05 @CompSciFact: Books for CS grad students https://t.co/KikhCzWTz5
+- 2018-09-03 @CompSciFact: Anatomy of a floating point number https://t.co/NrY1aIR2oH
+- 2018-09-21 @CompSciFact: 'In the beginning was the command line' by Neal Stephenson https://t.co/3iQmtiQL3A
+- 2018-09-02 @CompSciFact: Compiling dynamic programming languages https://t.co/jCQnWiCsc6
+- 2018-09-21 @carlcarrie: The mathematics of scalping as a trading tactic expressed in Mathematica / Wolfram CDF  https://t.co/X7xdCejZ2p
+- 2018-09-21 @ESteyerberg: @MaartenvSmeden discussing fascinating case studies of problematic Machine Learning / AI @lorentzcenter @bds_lumc https://t.co/ZrWB7Dr2kh
+- 2018-09-21 @binitamshah: Writing a Simple Operating System — from Scratch : https://t.co/xR4AmqmJRv (pdf || 77 pgs)   The little book about OS development : https://t.co/3dqFu6xQHK
+- 2018-09-20 @mbostock: An @observablehq port of Knuth’s literate program for computing prime numbers. https://t.co/gl0TvOwsr9
+- 2018-09-20 @ThomasMailund: Some notes on scoping rules and NSE in #Rstats https://t.co/3SFn3vn5xS
+- 2018-09-10 @ThomasMailund: Some thought on designing a markdown preprocessor https://t.co/C33sTqJc7j #Python
+- 2018-09-20 @7homaslin: Breaking News: Fields medalist Peter Scholze and the mathematician Jakob Stix have found a “serious, unfixable gap” within Shinichi Mochizuki's 500+ page claimed proof of the ABC conjecture. https://t.co/niQx1HQ76g via @QuantaMagazine
+- 2018-09-20 @MattDowle: If you use #rdatatable please star the mind-bogglingly-good rchk project by Tomas Kalibera on GitHub. Found and fixed 7 true memory faults in data.table 1.11.6 that we would not have without rchk. https://t.co/ezRfWKM6hB
+- 2018-09-19 @MattDowle: Patch release 1.11.6  #rdatatable now on CRAN in source form. Usually a few days for binaries to be available on all mirrors. NEWS file has all you need (some items are quite lengthy) :  https://t.co/zimY7t5WTU
+- 2018-09-20 @rlmcelreath: Okay, I've made a repo with a big friendly README that walks through a working example for how to set up @mcmc_stan 2.18.0 to use multithreading. I don't assume that you already know how to use cmdstan (rather than rstan). https://t.co/FGBwKbtYcP https://t.co/Amlzxz3035
+- 2018-09-14 @rlmcelreath: Jensen's inequality good for the brain: function of an average is not same as average of that function. Important also in statistics, is reason we summarize LAST. Want average predictions from whole posterior, not predictions from posterior mean. https://t.co/UEW2mgUli6
+- 2018-09-20 @smdiehl: Such a beautifully typeset book on Category Theory from @math3ma . https://t.co/vQqC3LUCJ8
+- 2018-09-20 @Iceland_jack: Take a look at @math3ma's "What is Applied Category Theory", a lot hiding in the margins!   https://t.co/8RH7VNaSpm https://t.co/JTTV3EjO4E
+- 2018-09-16 @Iceland_jack: recommended #Haskell reading:    Functional Programming with Overloading and Higher-Order Polymorphism (1995)  https://t.co/B2CTSJAjqH (#HaskellPDF)
+- 2018-09-20 @StatMLPapers: Machine Learning: Basic Principles. (arXiv:1805.05052v7 [cs.LG] UPDATED) https://t.co/g1UGiADcYr
+- 2018-09-19 @NadiehBremer: I'd love your input! 😃 I've been trying to come up with a way to visualize how ±500 dots can belong to any combination of 5 domains. Like a Venn diagram on steroids in a way. Which (very rough) option in the image works best for you? (see poll in next tweet, or just reply ^_^) https://t.co/9pSiEbXgCO
+- 2018-09-19 @waneella_: https://t.co/yrX1Kxg1Ig
+- 2018-09-11 @waneella_: https://t.co/4o8xF7idzs
+- 2018-09-19 @bradleyboehmke: Slides for my Interpretable Machine Learning with R presentation at last nights Cincinnati useR group.  Demos many packages (vip, pdp, lime, iml, DALEX) and covers feature importance, PDPs, ICE, Shap, and more.  #rstats #MachineLearning #DataScience #XAI https://t.co/v1CV1vrbPy
+- 2018-09-19 @mattdesl: In case you missed it...  A while back, I wrote "math-as-code", a cheat sheet that explains mathematical notation with code:  https://t.co/fXvnmwKRRG https://t.co/qo8lyb2Zl1
+- 2018-09-19 @blog_SLR: Et encore un article trop super génial ;-)  Faire ses cartes météo https://t.co/FNqV7mfinD via @hypothesesorg
+- 2018-09-19 @keratin7: Semantic code search by @github ML team. Another great example of how useful @fastdotai's implementations are. They use unsupervised pretraining on a domain corpus with AWD-LSTM and @GuggerSylvain's onecycle policy optimization.  cc: @jeremyphoward  https://t.co/mx8rhyh7Bj
+- 2018-09-01 @ErgoEmacs: for 11 years, starting in 2006, i tried to port/write all my text processing needs in emacs lisp. I thought emacs buffer datatype power is unbeatable. Gradually, i realized it's a mistake, since 2016. here's a account in 2012. https://t.co/ytO4AjxiSE read that first. Continued. https://t.co/RseRmrDlOa
+- 2018-09-19 @ErgoEmacs: #emacs vid is out https://t.co/Ujgzvey7wj recording of real world use of emacs. that's the point. You see how a person using emacs. 1st 20 min is about mwe log commands package. From 20m to end, about modifying a emacs lisp code. Elisp code shows beginning at 25:30.
+- 2018-09-19 @kdnuggets: You Aren’t So Smart: Cognitive Biases are Making Sure of It "But how do these cognitive biases relate to real life? Here are a few examples." https://t.co/QjrPYpm25J https://t.co/uXnmW0htSr
+- 2018-09-07 @kdnuggets: #NeuralNetworks and #DeepLearning: A Textbook This book covers both classical and modern models in deep learning. The book is intended to be a textbook for universities, and it covers the theoretical and algorithmic aspects of deep learning. https://t.co/aukudEDIDz https://t.co/8KaxJMkjac
+- 2018-09-19 @shephard_neil: I enjoyed looking at Xiao-Li Meng's extraordinary paper on big data and bias,  https://t.co/aUQH6nAVUv  Amazing journey by an imaginative scholar, who writes as well as he talks.
+- 2018-09-05 @revodavid: If you want to understand the inner workings of machine learning and deep learning models, @_brohrer_ has shared his *amazing* posts and videos here: https://t.co/smYb26aVW0
+- 2018-09-19 @revodavid: Is “data scientist” the new “programmer”? Interesting HN thread with lots of R-related discussion. (And the answer, for me at least, is yes. I'm a developer advocate who works mainly with data scientists.) https://t.co/Y0HHBfjQ8Z #rstats
+- 2018-09-18 @jim_savage_: Hey econometrics twitter: a friend is teaching ML to stats students and wants really cool examples of why OLS is worth knowing deeply.  - OLS as an orthogonalization tool (annihilator matrix/residualization)  - QR decomp reparameterization helpful in ML ... please volunteer more!
+- 2018-09-18 @bcantrill: Falling in love with Rust: https://t.co/ZvsCbwB2Dq
+- 2018-09-15 @jeremyjkun: Got my proof copy!! Time to fill it with red ink. https://t.co/DuEB5hw3Qu
+- 2018-09-18 @jeremyjkun: And this is exactly the difference between math and programming:  https://t.co/YFLicRGxXd
+- 2018-09-18 @olebegemann: Fantastic work by @xwu, who has compiled (nearly) everything there is to know about numbers in Swift: https://t.co/wvESatzoUr. So many intricate details and potential pitfalls!
+- 2018-09-10 @freakonometrics: "(Petite) histoire du hasard et de la simulation" https://t.co/9GmwZrzVPa avec Platon, Pythagore, des actuaires, des lancers de dés, des donjons et aussi des dragons.... https://t.co/rEmffMrlgH
+- 2018-09-18 @freakonometrics: Cours "analyse topologique des données" https://t.co/7OCMu88oKk par  Frédéric Chazal (pdf https://t.co/RPG8hewCGT) ht @recifs voir aussi https://t.co/gYYdnfEStN
+- 2018-09-14 @freakonometrics: How to (re)discover that a simple Cox model can do a  pretty good job  https://t.co/GftzW4x32n (actually better than random forrests, unless I misinterpret the graphs) but you know, for publication, it's better to say that you use "machine learning algorithms" https://t.co/hiXAfL4mZr
+- 2018-09-18 @AnythingRetro: The Revenge of Shinobi released in 1989. It's just an outstanding playable game. The controls are very nice and very responsive. It also has one of the most memorable boss battle encounters. A very solid platformer. And the music oh my god...AMAZING! #Shinobi #Sega #Retrogaming https://t.co/PV4SlsL6qx
+- 2018-09-18 @timgluz: Just found great open-access Linear Algreba book, with JuliaLang examples;  "Introduction to Applied Linear Algebra – Vectors, Matrices, and Least Squares"  https://t.co/LxfdpZoecD
+- 2018-09-18 @Heinonmatti: This is an amazing tutorial series by @SuzanBaert. If you use #rstats and/or are #tidyverse-curious, warmly recommend reading it while doing your next analysis!   https://t.co/gGSR2XDSxa
+- 2018-09-17 @paljasn: #MathGIF https://t.co/P32tgoFduA
+- 2018-09-17 @gigasquid: Rich Hickey on Datomic Ions at Clojure/NYC https://t.co/WBG0d5UuVx
+- 2018-09-17 @twostraws: Now that Swift 4.2 has shipped, Swift 5.0 is our next target. Learn what’s changing with hands-on examples:  - Interactive Xcode playground: https://t.co/EH4zYcsmim  - Article: https://t.co/ugnUi7Q6c7  - Compare changes across all versions: https://t.co/fCyhWJgMuI  #swiftlang
+- 2018-09-17 @nihilistspicer: Hey #econtwitter, which estimator are you? https://t.co/LcNKEsh8Ut
+- 2018-09-17 @bbrinck: @sjzara I wrote this 2 years ago to help new Clojurists pick a subset of Clojure features to get started. https://t.co/a8brkhfGas . A few updates to my recommendations: I now prefer spec over schema, multimethods over protocols, and I’m more reluctant to define records.
+- 2018-09-17 @Jose_A_Alonso: Free mathematics books. https://t.co/ME9DLnC7sh #eBooks #Math
+- 2018-09-03 @Jose_A_Alonso: A blog in pure Org/Lisp (A pamphlet for hackable website systems). ~ Pierre Neidhardt https://t.co/U94CqUctuA #Emacs #OrgMode
+- 2018-09-08 @Jose_A_Alonso: Goodbye VSCode, hello Emacs (again). ~ Bryan Willson Berry (@bryanwb) https://t.co/oDNeYRvRCN #Emacs #VSCode #JavaScript
+- 2018-09-13 @Jose_A_Alonso: Fun with typed type-level programming in PureScript. ~ CT Wu (@wu_ct) https://t.co/w98DHL4fyM #FunctionalProgramming #PureScript
+- 2018-09-03 @Jose_A_Alonso: Org-Mode is one of the most reasonable markup languages to use for text. ~ Karl Voit. https://t.co/jEMawzdZAM #Emacs #OrgMode
+- 2018-09-17 @clojuTRE: All the videos from #ClojuTRE and #SmallFPConf 2018 are now online: Enjoy! #clojure #clojurescript #ocaml #elm #kernelf #dhall #functionalprogramming   https://t.co/OD0MAZYwof https://t.co/S0FvyoGUTS
+- 2018-09-17 @larsen: I see Charles Petzold is retiring and planning to dedicate his time on writing about "various milestones in the historical foundations of computing". The Annotated Turing is a jewel, I'm looking forward to read the next one! https://t.co/lOrEoTKHfP
+- 2018-09-17 @hmemcpy: Proud to announce the release candidate of Category Theory for Programmers by @BartoszMilewski PDF! With tons of fixes and improvements to how images look, we're inching closer to the print version to be available soon!  Please report any issues you find! https://t.co/oku0bN38FW
+- 2018-09-03 @HNTweets: A practical guide to securing macOS: https://t.co/22bk2Jaw2P Comments: https://t.co/LUVhxDdutY
+- 2018-09-17 @HNTweets: The Rise and Demise of RSS: https://t.co/7y6LVcCaWE Comments: https://t.co/Ma8EDgBi0D
+- 2018-09-09 @HNTweets: You Should Use VS Code If You're a Python Developer: https://t.co/08lDSjpHl9 Comments: https://t.co/07d8nP5ifj
+- 2018-09-17 @stuarthalloway: "Today" I started porting Practical Common Lisp to #Clojure https://t.co/To1XIxbgzj
+- 2018-09-16 @EricMilgram: John Mount wrote the best article I've ever read about #rstats #metaprogramming "Macro Substitution in R"  I have programmed in R for just over 10 years, and coming from languages like C/C++, I love and hate it. R is maturing in a good way.  https://t.co/kYcIo890VT  @WinVectorLLC
+- 2018-09-16 @yudapearl: This paper just came to my attention (and I can't forgive myself for not seeing it earlier) https://t.co/BHbKcaWotl A friendly, comprehensive and unifying (no hangups) roadmap to epidemiological methodology. Highly recommended. #Bookofwhy #causalinference @EpiEllie @miquelporta
+- 2018-09-15 @FlohOfWoe: @nice_byte I don't use refcounting, but explicit release and shared 'generation handles' that can be checked whether the thing they reference still exist: https://t.co/dvszoxVAGW...
+- 2018-09-15 @gutt3r: I have created a nice theme for smart-model-line that fits the atom-atom-one-dark one. You can find it here: https://t.co/mRqHgLt1yf #emacs
+- 2018-09-15 @fermatslibrary: Individual dots moving along straight lines. 🧐 https://t.co/XisnRRpoTI
+- 2018-09-05 @fermatslibrary: The Chudnovsky formula, discovered by the Chudnovsky brothers in 1989, is one of the fastest methods for calculating the digits of π. The current world record is 22.4 trillion digits established in November 2016. https://t.co/4Op2vOuhJB
+- 2018-09-15 @BigDataGal: How To Build A Recommendation Engine in R | A Marketing Data Science Demo https://t.co/kz8FxOI5Hs #ai #iot #bigdata #automation #womenintech https://t.co/U058J1kTOO
+- 2018-09-14 @volkuleshov: Explaining some of the behavior of deep neural nets using older results from the 90s developed for boosting, support vector machines, etc. Cool stuff: https://t.co/Wn7cftAG4V https://t.co/3BlJjb3W2h
+- 2018-09-14 @cljds: The second instalment of Lambda Island's dive into kixi.stats covers data scrubbing with transducers, linear regression, model evaluation, and higher order reducing functions https://t.co/U2p6EvmEDW 👌 https://t.co/hSXNDQmton
+- 2018-09-14 @peterrowlett: Here’s a fun thing by @mscroggs. Function was 1/abs(x^3-x^7). What @RungeBot is doing is described in this blog post: https://t.co/FuTNEG1tWj https://t.co/ndI47hYFPU
+- 2018-09-14 @lemire: Faster 64-bit universal hashing using carry-less multiplications https://t.co/XuKdwPBmbc  (a few years old but a paper that I really like… source code: https://t.co/8bPW1aLl4p )
+- 2018-09-13 @ChadScherrer: I added a video to a @YouTube playlist https://t.co/XVKwQijNln Julia for Probabilistic Programming
+- 2018-09-11 @ChadScherrer: New blog post: "Julia for Probabilistic Metaprogramming" https://t.co/M9lBOqzXxA
+- 2018-09-13 @MrCaproni: Students were having trouble visualizing median in a histogram... Geogebra to the rescue! #cpsmathandme #geogebra @giohio https://t.co/wUd3N9Jen3
+- 2018-09-13 @mathematicsprof: Here's a nice online textbook on partial differential equations.  https://t.co/qWFMcQqnDv
+- 2018-09-13 @zim2918: https://t.co/vZtjt0dNpQ
+- 2018-09-11 @zim2918: Peony https://t.co/ZriNj9lcqD
+- 2018-09-13 @eddelbuettel: digest 0.6.17 on CRAN: more robustification Hash digests for arbitrary R objects https://t.co/Ef7OsivLN5 #rstats   Special thanks to Radford Neal for this one https://t.co/lJR29RZ89C
+- 2018-09-02 @eddelbuettel: And wonders sometimes happen overnight in Open Source:  wandbox,org now supports R -- currently released version R 3.5.1 as well as R-devel with nightly builds!    This. Is. Awesome.  #rstats https://t.co/whuBrF4Gfj
+- 2018-09-12 @carlislerainey: an example data wrangling workflow  https://t.co/1z8vCZA9EC
+- 2018-09-12 @alisdair_wood: Playing around with some ink and pens. https://t.co/qsnalGmXG5
+- 2018-09-11 @jakevdp: Interesting StackOverflow question... I'm entirely stumped. It appears for numpy arrays with ~10K elements, the mod operator is 2x slower than its manual computation. Why? https://t.co/nFEson2BHV https://t.co/wGlYLRDB76
+- 2018-09-11 @flowingdata: Recreation by @rougeux of an 1821 color guide, with interaction to make it more useable. Pretty. https://t.co/15LuihaTCB https://t.co/CfeWiYO03j
+- 2018-09-11 @scatterdemic: @FlohOfWoe You might be interested in includeos - https://t.co/5hUmB4gr6V
+- 2018-09-11 @johncarlosbaez: This amazing gif by Gábor Damásdi illustrates a result of Jakob Steiner.  If you can snugly fit some circles inside one circle and outside another, you can move them around while they stay touching!  They may need to change size, though.   The gif does this recursively.  (cont.) https://t.co/RR7G29EG2u
+- 2018-09-10 @epcjones: The unreasonable effectiveness of linear search: linear search can be faster than binary search for N &lt; 100: https://t.co/foIso5qiJ4 (I think the lesson is that for small N you should always do the simplest thing, even if it seems "inefficient")
+- 2018-09-09 @theohonohan: @shapr @sigfpe @karetnikovn There's some recent work which, if I understand this discussion correctly, tries to address these issues. Two reactive notebook projects are mentioned here: https://t.co/hlI9YFGmJp
+- 2018-09-09 @SVMBrown: https://t.co/7Qwn27j5z9 Weaver: A templating library for data
+- 2018-09-09 @dloss: Miller is like awk, sed, cut, join, and sort for name-indexed data such as CSV, TSV, and tabular JSON https://t.co/j5IrLSbXvp
+- 2018-09-09 @_ahungry: New blog post, Clojure is Cool: https://t.co/P993y7MYxA
+- 2018-09-09 @ml_review: A (Long) Peek into Reinforcement Learning By @lilianweng  https://t.co/NpKaSpFQ88 https://t.co/aaT7PPYcFU
+- 2018-09-08 @statsepi: "Artificial Intelligence" will "revolutionize" health care? https://t.co/868DrYPLXy || https://t.co/bJXvutg2FV https://t.co/JMe8unI8bE
+- 2018-09-08 @RainerJoswig: Need a Common #Lisp quick reference? See here: https://t.co/ckbOObT6HG
+- 2018-09-07 @twiecki: Still the most underused statistical technique. https://t.co/kulS4My11n
+- 2018-09-07 @joelgrus: Starting a new series of videos: #Livecoding an Autograd Library  If you're curious about how automatic differentiation works (or about what goes wrong when I try to implement it from a somewhat vague plan), check it out.  Part 1: Tensors and sums  https://t.co/TIJy1MbE3V
+- 2018-09-07 @mblum_g: Great post by @drob about using #NLP in #RStats to find out who wrote the anti-Trump New York Times op-ed. The answer is here https://t.co/kFtxO3GAWq HT @_ColinFay #MachineLearning #in
+- 2018-09-07 @tmorris_mrc: The Wizard @Crowther_MJ is presenting the incredible #Merlin engine for #Stata #LdnStataCon https://t.co/reMw53JSfI
+- 2018-09-06 @git_commands: git bisect -T REPOSITORY [-B CHANGESET]  Bisect and push all childless tags to your home directory
+- 2018-09-06 @iamtrask: Attention is one of the most important breakthroughs in the history of Deep Learning - and this @distillpub is definitively the best explanation of it I've seen.  For #100DaysOfMLCode challengers - try implementing an attention mechanism from scratch.  https://t.co/uOAMulnuoq
+- 2018-09-06 @harmenjanssen: Just a quick #git tip!  $ git log master.. will show all new commits on your current branch.  $ git log ..master will show all new commits on master since branching off.
+- 2018-09-05 @ken_rothman: @paulpharoah @Larry_Svenson @EricTopol @JAMA_current The problem with a p-value is that it confounds effect size with precision (https://t.co/RsyecQGn0O).  A CI separates the two:  effect size is given by the location of the CI on the parameter scale, and the distance between the lower and upper limit indicates the precision. https://t.co/iA2Am07exh
+- 2018-09-05 @cocoawithlove: A Farewell to StreamToMe: taking a once-successful app off the App Store.  https://t.co/WvKE3bVZDv  Not exactly the article I wanted to end my 8 month blogging drought but it's the one I have.
+- 2018-09-05 @ericmjl: I recently used #numba and some very detailed profiling to implemented a faster sparse block matrix creation routine using nothing but pure Python. I'm convinced #numba is an awesome tool to have in my toolkit! https://t.co/u2uPepq8eu #pydata @anacondainc @teoliphant
+- 2018-09-04 @johnregehr: periodic reminder that afaik there's only one good freely available introduction to static analysis and this is it: https://t.co/Soy4U4kx1I
+- 2018-09-04 @minsukkahng: Excited to announce GAN Lab! Interactive visualization to learn #GAN by @GoogleAI @gtcomputing, powered by @TensorFlow.js! Try in your browser https://t.co/reY9x5JrvD  Great collaboration with @nsthorat @polochau @viegasf @wattenberg! @ieeevis'18 paper: https://t.co/g5LrKCQdDf https://t.co/S5DSjotClx
+- 2018-09-04 @jedisct1: Practical Cryptography Engineering - A repository with practical code examples using libsodium, mbedTLS, cryptography and PyNaCl https://t.co/eiLAhoZyWo
+- 2018-09-04 @BayesDose: The original NUTS (No-U-Turn Sampler) paper by Matt Hoffman and Andrew Gelman demonstrates the efficiency of the NUTS sampler relative to Gibbs and Metropolis.  https://t.co/9xtfm2yGyq https://t.co/F73f8BoWUu
+- 2018-09-03 @mfikes: Playing around with native BigInts from ClojureScript with Chrome beta. See https://t.co/36WkNCHXAm https://t.co/7VYEcrM0Y3
+- 2018-09-03 @_onionesque: This (topics) course by Thorsten Joachims seems to have a good set of references to educate oneself on counterfactual machine learning https://t.co/gWcrDbsRHB
+- 2018-09-03 @yogthos: making RESTful services with #Clojure is as simple as  lein new luminus my-service +service cd my-service lein run  try Swagger at localhost:3000/swagger-ui  package &amp; run  lein uberjar java -Dconf=dev-config.edn -jar target/uberjar/my-service.jar  docs at https://t.co/eND1s00wZK
+- 2018-09-03 @sonniesedge: I'm sad to write this, but I gotta. 😢  https://t.co/IBhUJFH9m2
+- 2018-09-03 @MarijnJH: This may the most damning thing I've ever read on C++ (one of the world's top C++ experts feels he's unable to verify errata to his books a few years after he stopped focusing on the language) https://t.co/6RBwy1WHf0
+- 2018-09-03 @patrickc: The Art of Approximation in Science and Engineering taught me a lot when I first read it (https://t.co/cRx2cwOLXT; see section 2.1 to get a sense.) Thanks to @LauraDeming for introducing me to its biology equivalent: https://t.co/doJW0VDaTt.
+- 2018-09-03 @erwtokritos: Gaussian Processes for Dummies https://t.co/BrjjMdllZf
+- 2018-09-01 @GaelVaroquaux: Scipy lecture notes new release: an open online book (also in PDF) on the scientific and data ecosystem in Python https://t.co/tAJoR0iycr  Minor update, mostly fixing links, typos, and adding support for new package versions #pydata #scipy https://t.co/8jNZ6n2VSh
