@@ -69,7 +69,5 @@ Now, when viewing Man pages I get the GNU version instead of the BSD one.
 
 ![Viewing GNU man pages](/img/2014-11-04-13-26-25.png)
 
-Otherwise, I installed a [bunch of software]({{< ref "/post/useful-mac-apps-for-data-scientists.md" >}}) and picked up some nice configuration files from [Mathias Bynens' GitHub](https://github.com/mathiasbynens/dotfiles). In passing, I updated the default icon for Emacs once I saw this Tweet:
-
-{{< tweet 527983358081376258 >}} 
+Otherwise, I installed a [bunch of software]({{< ref "/post/useful-mac-apps-for-data-scientists.md" >}}) and picked up some nice configuration files from [Mathias Bynens' GitHub](https://github.com/mathiasbynens/dotfiles). In passing, I updated the default icon for Emacs once I saw [this Tweet](https://twitter.com/ahmadSeleem/status/527983358081376258?ref_src=twsrc%5Etfw).
 
