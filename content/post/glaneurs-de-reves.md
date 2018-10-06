@@ -32,3 +32,7 @@ Et pour mieux rebondir sur de tels quadrillages, quoi de mieux que le chapitre i
 > Souffle dessus, des chandelles, une étoile... Ce qu'on veut. Un compagnon. Une lune enregistrée que libre. Ou peut-être d'entendre de nouveau ainsi qu'on entendait enfant. Une musique -- curieuse, optimiste, aussi simple et furtive que l'appel du quadrille qui pénètre la nuit d'été. Des rondes de rire et de délice qui s'étendent. Tout le monde danse, danse et c'est tout.
 
 Outre un clin d'oeil aux voyelles de Rimbaud, le lecteur avisé y découvrira de nombreuses photos en noir et blanc qui donnent encore plus de profondeur au récit. Bref, un véritable ode à la liberté -- de rêver aussi !
+
+Hâte de lire le prochain, dans l'édition originale en anglais :
+
+![](/img/iu.jpeg)
