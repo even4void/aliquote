@@ -7,7 +7,7 @@ tags: ["apple"]
 categories: ["app-review"]
 ---
 
-[Timing](https://timingapp.com) is a lightweight application that helps to monitor and record all activity on your Mac. It is a perfect application for time tracking and project-based timesheets.
+[Timing](https://timingapp.com) is a lightweight application to monitor and record all activity on your Mac. It is a perfect application for time tracking and project-based timesheets.
 
 <!--more-->
 
