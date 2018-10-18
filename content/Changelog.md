@@ -19,7 +19,7 @@ url = "/articles/changelog/"
 ```
 % git log | tail -n 5
 commit 316adb5e3d1ddce5d3d45419b0c035483616e361
-Author: Christophe Lalanne <xxxx@xxxx.xxxx>
+Author: chl <xxxx@xxxx.xxxx>
 Date:   Sun Jan 21 00:57:45 2018 +0100
 
     Setup root directory with academic theme
