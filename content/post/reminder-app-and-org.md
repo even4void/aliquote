@@ -1,7 +1,7 @@
 ---
 title: "On standardizing the use of Reminder App and Org mode"
 date: 2018-10-21T13:22:18+02:00
-draft: true
+draft: false
 description: ""
 tags: ["apple", "emacs"]
 categories: []
@@ -22,7 +22,7 @@ Note that it also possible to send reminder from Apple Mail directly (although i
     [ ]	ECM is finally streaming, and I'm here to tell you what's good - Sound & Complete
     [ ]	Blogging with org-mode and ox-hugo // Shane Sveller
 
-Interesting, but we loose important metadata (hyperlinks, due dates, notes). While it is still possible to [Get a Spreadsheet of Tasks into Reminders.app](https://n8henrie.com/2014/05/how-to-get-a-spreadsheet-of-tasks-into-reminders-app/), using this handy [AppleScript program](https://gist.github.com/n8henrie/c3a5bf270b8200e33591),[^1] I found no easy way to go the other way around, that is to export Reminder tasks into another application. Now, I also use Emacs a lot, and as you may have already guessed, I manage various TODO lists with Org mode. The aforementioned action for web capture can easily be implemented in Emacs thanks to [this irreal gem](http://irreal.org/blog/?p=3726). However, getting a proper way to import, or better, syncronize Reminder items with an Org TODO list seems a lot trickier. From the [Apple Documentation Center](https://developer.apple.com/library/archive/documentation/DataManagement/Conceptual/EventKitProgGuide/Introduction/Introduction.html#//apple_ref/doc/uid/TP40004759-SW1), we know that Reminder data are stored in the same database than Calendar data, which is located under `~/Library/Calendars`. It is easy to lookup specific task with `grep` or `ack`. For instance, the first item displayed in the above list reads in iCal format as follows:
+Interesting, but we loose important metadata (hyperlinks, due dates, notes)! While it is still possible to [Get a Spreadsheet of Tasks into Reminders.app](https://n8henrie.com/2014/05/how-to-get-a-spreadsheet-of-tasks-into-reminders-app/), using this handy [AppleScript program](https://gist.github.com/n8henrie/c3a5bf270b8200e33591),[^1] I found no easy way to go the other way around, that is to export Reminder tasks into another application. Now, I also use Emacs a lot, and as you may have already guessed, I manage various TODO lists with Org mode. The aforementioned action for web capture can easily be implemented in Emacs thanks to [this irreal gem](http://irreal.org/blog/?p=3726). However, getting a proper way to import, or better, syncronize Reminder items with an Org TODO list seems a lot trickier. From the [Apple Documentation Center](https://developer.apple.com/library/archive/documentation/DataManagement/Conceptual/EventKitProgGuide/Introduction/Introduction.html#//apple_ref/doc/uid/TP40004759-SW1), we know that Reminder data are stored in the same database than Calendar data, which is located under `~/Library/Calendars`. It is easy to lookup specific task with `grep` or `ack`. For instance, the first item displayed in the above list reads in iCal format as follows:
 
     BEGIN:VCALENDAR
     VERSION:2.0
@@ -41,5 +41,6 @@ Interesting, but we loose important metadata (hyperlinks, due dates, notes). Whi
     END:VTODO
     END:VCALENDAR
 
+I guess it should not be too difficult to write a small Python script to process an Org file and write the corresponding VTODO items. However, I am still thinking about it. Wouldn't it be better to use AppleScript as suggested above instead of bothering with hashing values and Apple internals?
 
 [^1]: It was even possible at some point to use [Drafts 4](https://getdrafts.com) to [query a virtual folder](https://agiletortoise.zendesk.com/hc/en-us/articles/200634965-Reminders-Integration) in iOS Reminder. I didn't check if it is still working with Drafts 5.
