@@ -19,11 +19,6 @@ If you are looking for my old teaching ressources, almost everything should be o
 {{< ressource "github" "https://github.com/chlalanne/stata-sk" "github" >}}    
 *A series of standalone modules to learn a bit of Stata, for those who might be interested.* [in French]
 
-- **R Starter Kit**
-{{< ressource "stack-overflow" "/articles/rstats-sk/" "www" >}}
-{{< ressource "github" "https://github.com/chlalanne/rstats-sk" "github" >}}    
-*Same as above, just for R.* [in French]
-
 - **Statistics for Clinical Trials: Applications Using R**
 {{< ressource "file-pdf" "/files/SAS2R.pdf" "PDF" >}}
 {{< ressource "github" "https://github.com/chlalanne/SAS2R" "github" >}}  
