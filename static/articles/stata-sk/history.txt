@@ -1,3 +1,8 @@
+* dc94465 (Thu, 22 Nov 2018 11:09:40 +0100, Christophe Lalanne) Update dist + start chapter on graphics
+* bc89fba (Sat, 17 Nov 2018 08:58:26 +0100, Christophe Lalanne) Add detailed interaction testing
+* 3e41763 (Fri, 16 Nov 2018 19:33:38 +0100, Christophe Lalanne) Add some details regarding regression models
+* 2e125ed (Thu, 15 Nov 2018 20:21:43 +0100, Christophe Lalanne) Update checklist and outline
+* 74cc90b (Wed, 31 Oct 2018 08:28:43 +0100, Christophe Lalanne) Update package version + Minor edits
 * 6890682 (Wed, 18 Jul 2018 15:49:23 +0200, Christophe Lalanne) Minor edits + Split chapter in two parts
 * 68f09e2 (Wed, 18 Jul 2018 15:14:23 +0200, Christophe Lalanne) Add missing links
 * bbb2278 (Tue, 17 Jul 2018 19:00:59 +0200, Christophe Lalanne) Add some more regress applications + Update HTML+PNG output

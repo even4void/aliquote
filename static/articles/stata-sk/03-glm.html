@@ -3,7 +3,7 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="fr" xml:lang="fr">
 <head>
-<!-- 2018-07-18 Mer 15:49 -->
+<!-- 2018-11-21 Mer 21:07 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Stata : modélisation statistique (1)</title>
@@ -86,51 +86,52 @@ for the JavaScript code in this tag.
 <h2>Table des matières</h2>
 <div id="text-table-of-contents">
 <ul>
-<li><a href="#org70fad12">Le modèle de régression linéaire simple</a>
+<li><a href="#org3a70e4b">Le modèle de régression linéaire simple</a>
 <ul>
-<li><a href="#org0ae1c09">Un exemple de régression linéaire simple</a></li>
-<li><a href="#org3f01d71">Diagnostic du modèle</a></li>
-<li><a href="#org206a0a9">Cas de la régression sur une variable catégorielle</a></li>
-<li><a href="#orgca6b3cb">Lien avec le test de Student</a></li>
-<li><a href="#org95472d9">Traitement de la non linéarité</a></li>
-<li><a href="#org7ce67cd">Approche robuste</a></li>
+<li><a href="#orgb6086b0">Un exemple de régression linéaire simple</a></li>
+<li><a href="#org773f799">Diagnostic du modèle</a></li>
+<li><a href="#orgf7ac736">Approche bayésienne</a></li>
+<li><a href="#orgd0b8bc8">Cas de la régression sur une variable catégorielle</a></li>
+<li><a href="#orgfdc663d">Lien avec le test de Student</a></li>
+<li><a href="#org013290f">Traitement de la non linéarité</a></li>
+<li><a href="#org1a09f29">Approche robuste</a></li>
 </ul>
 </li>
-<li><a href="#orgea3ee27">La régression linéaire multiple</a>
+<li><a href="#org5840f71">La régression linéaire multiple</a>
 <ul>
-<li><a href="#orgd9b7c8c">Exemple de base</a></li>
-<li><a href="#orgd60717d">Diagnostic du modèle</a></li>
-<li><a href="#org2132e07">Tests joints et intervalles de confiance simultanés</a></li>
-<li><a href="#orgd3812eb">Spécification de contrastes</a></li>
-<li><a href="#org4358aaf">Comparaison de modèles emboîtés</a></li>
-<li><a href="#orgd9fafda">Ces des données en cluster</a></li>
+<li><a href="#orgd68d40a">Exemple de base</a></li>
+<li><a href="#orgf09a7b5">Diagnostic du modèle</a></li>
+<li><a href="#orgad4a55c">Tests joints et intervalles de confiance simultanés</a></li>
+<li><a href="#org5f6c7a4">Spécification de contrastes</a></li>
+<li><a href="#orgca0f01b">Comparaison de modèles emboîtés</a></li>
+<li><a href="#orge28b7cf">Ces des données en cluster</a></li>
 </ul>
 </li>
-<li><a href="#org6647504">Modèle linéaire et applications</a></li>
+<li><a href="#org1c3655c">Modèle linéaire et applications</a></li>
 </ul>
 </div>
 </div>
 <p>
-Dans cet exposé, on s&rsquo;intéressera à la construction de modèles de régression explicatifs ou prédictifs. La première partie se concentre sur le modèle linéaire et ses applications. La seconde partie porte sur le modèle liénaire généralisé. Il existe un très bon ouvrage traitant du modèle linéaire généralisé, à présent dans sa quatrième édition et publié chez Stata Press : <a href="https://www.stata.com/bookstore/generalized-linear-models-and-extensions/">Generalized Linear Models and Extensions</a> de Hardin &amp; Hilbe. Concernant la modélisation statistique en général, les ouvrages de Vittinghoff et coll. [<a href="#vittinghoff-2005-regres-method-biost">6</a>] et Dupont [<a href="#dupont-2009-statis-model">2</a>] couvrent l&rsquo;essentiel des notions présentées. Pour aller plus loin, le livre de Harrell [<a href="#harrell-2015-regres-model-strat">3</a>] demeure une référence en ce qui concerne les techniques biostatistiques modernes appliquées dans un contexte médical.
+Dans ce chapitre, on s&rsquo;intéressera à la construction de modèles de régression explicatifs ou prédictifs. La première partie se concentre sur le modèle linéaire et ses applications. La seconde partie porte sur le modèle linéaire généralisé. Il existe un très bon ouvrage traitant du modèle linéaire généralisé, à présent dans sa quatrième édition et publié chez Stata Press : <a href="https://www.stata.com/bookstore/generalized-linear-models-and-extensions/">Generalized Linear Models and Extensions</a> de Hardin &amp; Hilbe. Concernant la modélisation statistique en général, les ouvrages de Vittinghoff et coll. [<a href="#vittinghoff-2005-regres-method-biost">8</a>] et Dupont [<a href="#dupont-2009-statis-model">3</a>] couvrent l&rsquo;essentiel des notions présentées. Pour aller plus loin, le livre de Harrell [<a href="#harrell-2015-regres-model-strat">4</a>] demeure une référence en ce qui concerne les techniques biostatistiques modernes appliquées dans un contexte médical. Bien que reposant sur le logiciel R, la plupart des techniques discutées dans cet ouvrage sont disponibles sous Stata.
 </p>
 
 <p>
-La mise en oeuvre d&rsquo;un modèle de régression a déjà été discutée brièvement dans le <a href="./00-intro.html">tutoriel d&rsquo;introduction à Stata</a>. Dans ce chapitre, on va s&rsquo;intéresser à l&rsquo;estimation des paramètres d&rsquo;un modèle de régression linéaire, à la sélection de modèle dans un cadre explicatif, au diagnostic du modèle, et à la prédiction ponctuelle ou par intervalles. On prendra pour base des données observationnelles issues d&rsquo;enquêtes ou d&rsquo;études cliniques transversales. Les séries chronologiques et les données longitudinales seront traitées dans des chapitres séparés.
+La mise en oeuvre d&rsquo;un modèle de régression a déjà été discutée brièvement dans le <a href="./00-intro.html">tutoriel d&rsquo;introduction à Stata</a>. Dans ce chapitre, on va s&rsquo;intéresser à l&rsquo;estimation des paramètres d&rsquo;un modèle de régression linéaire, à la sélection du &laquo;&nbsp;meilleur&nbsp;&raquo; modèle dans un cadre explicatif, au diagnostic du modèle, et à la prédiction ponctuelle ou par intervalles. On prendra pour base des données observationnelles issues d&rsquo;enquêtes ou d&rsquo;études cliniques transversales. Les séries chronologiques et les données longitudinales seront traitées dans des chapitres séparés.
 </p>
 
-<div id="outline-container-org70fad12" class="outline-2">
-<h2 id="org70fad12">Le modèle de régression linéaire simple</h2>
-<div class="outline-text-2" id="text-org70fad12">
+<div id="outline-container-org3a70e4b" class="outline-2">
+<h2 id="org3a70e4b">Le modèle de régression linéaire simple</h2>
+<div class="outline-text-2" id="text-org3a70e4b">
 <p>
 Dans un premier temps, procédons à quelques rappels concernant la régression linéaire simple, la corrélation linéaire et le test de Student. Les notions connexes telles que les associations non linéaires ou les approches non paramétriques seront traitées ultérieurement. 
 </p>
 </div>
 
-<div id="outline-container-org0ae1c09" class="outline-3">
-<h3 id="org0ae1c09">Un exemple de régression linéaire simple</h3>
-<div class="outline-text-3" id="text-org0ae1c09">
+<div id="outline-container-orgb6086b0" class="outline-3">
+<h3 id="orgb6086b0">Un exemple de régression linéaire simple</h3>
+<div class="outline-text-3" id="text-orgb6086b0">
 <p>
-Les données d&rsquo;illustration peuvent être chargées directement depuis internet à l&rsquo;aide de la commande <a href="https://www.stata.com/help.cgi?webuse" class="stata">webuse</a>. Il s&rsquo;agit d&rsquo;une enquête épidémiologique rétrospective dans laquelle on s&rsquo;intéresse aux facteurs de risque d&rsquo;un bébé ayant un poids inférieur à la norme, selon les normes américaines des années 90. Ces données sont extensivement analysées dans l&rsquo;ouvrage de Hosmer &amp; Lemeshow [<a href="#hosmer-2000-applied-logis-regres">4</a>]. Au total, le tableau de données contient 11 variables, la variable réponse étant le poids des bébés (<code>bwt</code>) :
+Les données d&rsquo;illustration peuvent être chargées directement depuis internet à l&rsquo;aide de la commande <a href="https://www.stata.com/help.cgi?webuse" class="stata">webuse</a>. Il s&rsquo;agit d&rsquo;une enquête épidémiologique rétrospective dans laquelle on s&rsquo;intéresse aux facteurs de risque d&rsquo;un bébé ayant un poids inférieur à la norme, selon les normes américaines des années 90. Ces données sont extensivement analysées dans l&rsquo;ouvrage de Hosmer &amp; Lemeshow [<a href="#hosmer-2000-applied-logis-regres">5</a>]. Au total, le tableau de données contient 11 variables, la variable réponse étant le poids des bébés (<code>bwt</code>) :
 </p>
 
 <div class="org-src-container">
@@ -176,14 +177,18 @@ graph export "fig-03-scatter-bwt-lwt.pdf", fontface(DroidSans) replace
 </div>
 
 
-<div id="org4e6a3d0" class="figure">
+<div id="orge30378e" class="figure">
 <p><img src="./fig-03-scatter-bwt-lwt.png" alt="fig-03-scatter-bwt-lwt.png" width="640px" />
 </p>
 <p><span class="figure-number">Figure&nbsp;1&nbsp;: </span>Relation entre le poids des bébés et le poids des mères</p>
 </div>
 
 <p>
-Il est tout à fait possible et largement recommendé de superposer une courbe loess [<a href="#cleveland-1979-robus-local">1</a>] sur le diagramme de dispersion précédent afin d&rsquo;évaluer visuellement les écarts à la linéarité concernant la relation entre ces deux variables. La commande <a href="https://www.stata.com/help.cgi?lowess" class="stata">lowess</a> peut être combinée à <a href="https://www.stata.com/help.cgi?scatter" class="stata">scatter</a> :
+Il est tout à fait possible et largement recommendé de superposer une courbe loess [<a href="#cleveland-1979-robus-local">2</a>] sur le diagramme de dispersion précédent afin d&rsquo;évaluer visuellement les écarts à la linéarité concernant la relation entre ces deux variables. Une courbe loess, ou lowess (<i>locally weighted scatterplot smoothing</i>), fait partie de la famille des régressions polynomiales &laquo;&nbsp;locales&nbsp;&raquo;, c&rsquo;est-à-dire des modèles non-paramétriques de régression tenant compte du voisinage des observations, un peu à l&rsquo;image des techniques telles que les \(k\) plus proches voisins dans une tâche de classification (car l&rsquo;estimation est pondérée) ou les moyennes mobiles en séries chronologiques (car on définit une fenêtre de lissage que l&rsquo;on déplace sur l&rsquo;axe des \(x\)). Le poids de chaque observation est déterminé par sa distance par rapport au point sur lequel se centre la régression, et généralement la fonction de pondération utilisée est de type tri-cubique comme proposée par [<a href="#cleveland-1979-robus-local">2</a>], \((1 - (\text{dist}/\text{maxdist})^3)^3)\), ce qui revient à donner un poids maximal à l&rsquo;observation centrale, les observations les distantes plus de cette dernière contribuant le moins à la régression polynomiale. Stata autorise n&rsquo;importe quelle combinaison des options <code>mean</code> (utiliser la moyenne des observations, comme dans une moyenne mobile, au lieu des valeurs prédites par la régression) et <code>noweight</code> (l&rsquo;utilisation d&rsquo;une fonction de pondération tri-cubique ou non). À noter, il s&rsquo;agit d&rsquo;une approche quelque peu intensive sur le plan des calculs : pour \(n\) observations, \(n\) régressions sont réalisées.
+</p>
+
+<p>
+La commande <a href="https://www.stata.com/help.cgi?lowess" class="stata">lowess</a> peut être combinée à <a href="https://www.stata.com/help.cgi?scatter" class="stata">scatter</a> :
 </p>
 
 <div class="org-src-container">
@@ -193,7 +198,7 @@ graph export "fig-03-lowess-bwt-lwt.pdf", fontface(DroidSans) replace
 </div>
 
 
-<div id="org70c8732" class="figure">
+<div id="org78a0ad8" class="figure">
 <p><img src="./fig-03-lowess-bwt-lwt.png" alt="fig-03-lowess-bwt-lwt.png" width="640px" />
 </p>
 <p><span class="figure-number">Figure&nbsp;2&nbsp;: </span>Relation entre le poids des bébés et le poids des mères (courbe loess)</p>
@@ -287,9 +292,9 @@ t = 2.59 p = 0.010
 </div>
 </div>
 
-<div id="outline-container-org3f01d71" class="outline-3">
-<h3 id="org3f01d71">Diagnostic du modèle</h3>
-<div class="outline-text-3" id="text-org3f01d71">
+<div id="outline-container-org773f799" class="outline-3">
+<h3 id="org773f799">Diagnostic du modèle</h3>
+<div class="outline-text-3" id="text-org773f799">
 <p>
 La commande <a href="https://www.stata.com/help.cgi?predict" class="stata">predict</a> permet non seulement de calculer les valeurs ajustées du modèle mais également les résidus du modèle (\(e_i = \tilde y_i - y_i\)) ainsi que d&rsquo;autres statistiques utiles pour diagnostiquer la qualité d&rsquo;ajustement du modèle de régression. 
 </p>
@@ -325,10 +330,10 @@ graph export "fig-03-qnorm-r.pdf", fontface(DroidSans) replace
 </div>
 
 
-<div id="org586d448" class="figure">
+<div id="org83a290a" class="figure">
 <p><img src="./fig-03-qnorm-r.png" alt="fig-03-qnorm-r.png" width="640px" />
 </p>
-<p><span class="figure-number">Figure&nbsp;3&nbsp;: </span>Distribution des résidus studentisés</p>
+<p><span class="figure-number">Figure&nbsp;3&nbsp;: </span>Distribution des résidus simples</p>
 </div>
 
 <p>
@@ -342,7 +347,7 @@ graph export "fig-03-kdensity-rs.pdf", fontface(DroidSans) replace
 </div>
 
 
-<div id="orgf620de5" class="figure">
+<div id="org932ec41" class="figure">
 <p><img src="./fig-03-kdensity-rs.png" alt="fig-03-kdensity-rs.png" width="640px" />
 </p>
 <p><span class="figure-number">Figure&nbsp;4&nbsp;: </span>Distribution des résidus studentisés</p>
@@ -359,7 +364,7 @@ graph export "fig-03-scatter-rs-yhat.pdf", fontface(DroidSans) replace
 </div>
 
 
-<div id="orgdbad811" class="figure">
+<div id="org9b6f462" class="figure">
 <p><img src="./fig-03-scatter-rs-yhat.png" alt="fig-03-scatter-rs-yhat.png" width="640px" />
 </p>
 <p><span class="figure-number">Figure&nbsp;5&nbsp;: </span>Relation entre valeurs ajustées et résidus</p>
@@ -367,9 +372,63 @@ graph export "fig-03-scatter-rs-yhat.pdf", fontface(DroidSans) replace
 </div>
 </div>
 
-<div id="outline-container-org206a0a9" class="outline-3">
-<h3 id="org206a0a9">Cas de la régression sur une variable catégorielle</h3>
-<div class="outline-text-3" id="text-org206a0a9">
+<div id="outline-container-orgf7ac736" class="outline-3">
+<h3 id="orgf7ac736">Approche bayésienne</h3>
+<div class="outline-text-3" id="text-orgf7ac736">
+<p>
+Bien que l&rsquo;analyse bayésienne soit traitée dans un chapitre à part, on peut d&rsquo;ores et déjà jeter un oeil aux résultats fournis à l&rsquo;aide d&rsquo;une estimation bayésienne grâce au préfixe <a href="https://www.stata.com/help.cgi?bayes" class="stata">bayes</a> :
+</p>
+
+<div class="org-src-container">
+<pre class="src src-stata">bayes: regress bwt lwt
+</pre>
+</div>
+
+<pre class="example">
+bayes: regress bwt lwt
+  
+Burn-in ...
+Simulation ...
+
+Model summary
+------------------------------------------------------------------------------
+Likelihood: 
+  bwt ~ regress(xb_bwt,{sigma2})
+
+Priors: 
+  {bwt:lwt _cons} ~ normal(0,10000)                                        (1)
+         {sigma2} ~ igamma(.01,.01)
+------------------------------------------------------------------------------
+(1) Parameters are elements of the linear form xb_bwt.
+
+Bayesian linear regression                       MCMC iterations  =     12,500
+Random-walk Metropolis-Hastings sampling         Burn-in          =      2,500
+                                                 MCMC sample size =     10,000
+                                                 Number of obs    =        189
+                                                 Acceptance rate  =      .3298
+                                                 Efficiency:  min =      .1098
+                                                              avg =      .1337
+Log marginal likelihood = -1560.4853                          max =      .1701
+ 
+------------------------------------------------------------------------------
+             |                                                Equal-tailed
+             |      Mean   Std. Dev.     MCSE     Median  [95% Cred. Interval]
+-------------+----------------------------------------------------------------
+bwt          |
+         lwt |  43.58173   1.883094   .054077   43.53474   39.95648   47.16767
+       _cons |  284.3631   97.14963   2.93156   283.3922   93.44962    474.636
+-------------+----------------------------------------------------------------
+      sigma2 |  752743.4   82557.84   2001.82   746546.5   610273.4   933102.3
+------------------------------------------------------------------------------
+Note: Default priors are used for model parameters.
+</pre>
+</div>
+</div>
+
+
+<div id="outline-container-orgd0b8bc8" class="outline-3">
+<h3 id="orgd0b8bc8">Cas de la régression sur une variable catégorielle</h3>
+<div class="outline-text-3" id="text-orgd0b8bc8">
 <p>
 On a vu dans le chapitre sur la <a href="./01-data.html">gestion des données</a> comment représenter les variables catégorielles sous Stata : dans le cas des variables binaires, un codage sous forme de 0 et de 1 est parfaitement adéquat, tandis que dans le cas des variables à plus de deux modalités, on assigne à chaque niveau un code numérique en débutant à 1. Ainsi, pour une variable à trois modalités, le premier niveau sera représenté par la valeur 1 tandis que le troisième et dernier niveau prendra la valeur 3. On associera éventuellement des étiquettes à chacun des niveaux afin de mieux identifier les différentes classes.
 </p>
@@ -417,7 +476,7 @@ graph export "fig-03-box-bwt-smoke.pdf", fontface(DroidSans) replace
 </div>
 
 
-<div id="orgec1b2df" class="figure">
+<div id="org95507ae" class="figure">
 <p><img src="./fig-03-box-bwt-smoke.png" alt="fig-03-box-bwt-smoke.png" width="640px" />
 </p>
 <p><span class="figure-number">Figure&nbsp;6&nbsp;: </span>Relation entre poids des bébés et statut fumeur</p>
@@ -595,9 +654,9 @@ Margins      : asbalanced
 </div>
 
 
-<div id="outline-container-orgca6b3cb" class="outline-3">
-<h3 id="orgca6b3cb">Lien avec le test de Student</h3>
-<div class="outline-text-3" id="text-orgca6b3cb">
+<div id="outline-container-orgfdc663d" class="outline-3">
+<h3 id="orgfdc663d">Lien avec le test de Student</h3>
+<div class="outline-text-3" id="text-orgfdc663d">
 <p>
 La différence de moyennes utilisée pour former la statistique de test de Student et qui est rappelée dans la sortie de <a href="https://www.stata.com/help.cgi?ttest" class="stata">ttest</a> ci-dessous correspond strictement à la pente de la droite de régression estimée dans la section précédente :
 </p>
@@ -639,7 +698,7 @@ graph export "fig-03-stripplot-bwt-smoke.pdf", fontface(DroidSans) replace
 </div>
 
 
-<div id="org5da9dbe" class="figure">
+<div id="orgcce755f" class="figure">
 <p><img src="./fig-03-stripplot-bwt-smoke.png" alt="fig-03-stripplot-bwt-smoke.png" width="640px" />
 </p>
 <p><span class="figure-number">Figure&nbsp;7&nbsp;: </span>Relation entre poids des bébés et statut fumeur</p>
@@ -685,32 +744,253 @@ over         : race
 <p>
 L&rsquo;option <code>mcompare()</code> permet d&rsquo;adapter le type de statistique de test (Tukey, Dunnett), mais dans le cas du modèle de régression précédent il n&rsquo;y a pas lieu d&rsquo;appliquer de correction pour les tests multiples ou de modifier la statistique de test. La commande <a href="https://www.stata.com/help.cgi?pwmean" class="stata">pwmean</a> fournit les mêmes résultats et accepte les mêmes options que <a href="https://www.stata.com/help.cgi?pwcompare" class="stata">pwcompare</a>. La seule différence est qye cette dernière s&rsquo;utilise en tant que commande de post-estimation et sa syntaxe est plus souple dans le cas des modèles à plusieurs prédicteurs, incluant d&rsquo;éventuels termes d&rsquo;interaction.
 </p>
+
+<p>
+Voici une autre illustration, cette fois-ci avec les données d&rsquo;un essai clinique randomisé visant à évaluer l’effet de l’administration d’ibuprofène par voie intraveineuse sur la mortalité de patients en état septique sévère [<a href="#bernard-1997-effec-ibupr">1</a>]. Les données, disponibles dans le fichier <code>sepsis.dta</code>, sont largement exploitées dans l&rsquo;ouvrage de William Dupont [<a href="#dupont-2009-statis-model">3</a>]. Au total, le tableau de données est composé 22 variables dont 16 variables représentant une mesure de la température entre \(T_0\) et \(T_0 + 15 \times 2\) h, deux groupes de patients (&laquo;&nbsp;Placebo&nbsp;&raquo;, n = 231 et &laquo;&nbsp;Ibuprofène&nbsp;&raquo;, n = 224) et une mesure de morbidité (score APACHE). 
+</p>
+
+<div class="org-src-container">
+<pre class="src src-stata">use "data/sepsis.dta", replace
+describe, simple
+table treat, content(mean temp0 mean temp1 mean temp6) format(%5.1f)
+</pre>
+</div>
+
+<pre class="example">
+use "data/sepsis.dta", replace
+describe, simple
+id        apache    followup  temp2     temp5     temp8     temp11    temp14
+treat     o2del     temp0     temp3     temp6     temp9     temp12    temp15
+race      fate      temp1     temp4     temp7     temp10    temp13
+table treat, content(mean temp0 mean temp1 mean temp6) format(%5.1f)
+
+-------------------------------------------------
+Treatment | mean(temp0)  mean(temp1)  mean(temp6)
+----------+--------------------------------------
+  Placebo |       100.5        100.2         99.7
+Ibuprofen |       100.4         99.5         98.4
+-------------------------------------------------
+</pre>
+
+<p>
+Voici comment générer un aperçu des données individuelles sous forme longitudinale, limité à la période 0-6 heures :
+</p>
+
+<div class="org-src-container">
+<pre class="src src-stata">keep id treat temp0-temp6
+reshape long temp, i(id) j(hour)
+replace temp = (temp-32) / 1.8
+graph twoway (scatter temp hour, ms(none) lcol(gs15) connect(l)) (scatter temp hour if hour &lt; 2, ms(none) connect(l)), by(treat, legend(off)) xtitle(Time unit (x2 hours)) ytitle (Temperature (°C))
+graph export "fig-03-scatter-temp-hour.pdf", fontface(DroidSans) replace
+</pre>
+</div>
+
+
+<div id="orgb4aea2c" class="figure">
+<p><img src="./fig-03-scatter-temp-hour.png" alt="fig-03-scatter-temp-hour.png" width="640px" />
+</p>
+<p><span class="figure-number">Figure&nbsp;8&nbsp;: </span>Évolution de la température après la prise en charge dans les deux groupes de patients</p>
+</div>
+
+<p>
+Bien que la technique appropriée pour modéliser l&rsquo;évolution de la température entre \(T_0\) et \(T_1\) entre les deux groupes soit une analyse de covariance, voici en attendant les questions auxquelles il est possible de répondre à l&rsquo;aide de simples tests de Student. Premièrement, les deux groupes sont-ils comparables à \(T_0\) (\(H_0\) : <code>temp0(ibuprofène) = temp0(placebo)</code>) ? Voici l&rsquo;instruction Stata correspondante :
+</p>
+
+<div class="org-src-container">
+<pre class="src src-stata">ttest temp if hour == 0, by(treat)
+</pre>
+</div>
+
+<pre class="example">
+ttest temp if hour == 0, by(treat)
+
+Two-sample t test with equal variances
+------------------------------------------------------------------------------
+   Group |     Obs        Mean    Std. Err.   Std. Dev.   [95% Conf. Interval]
+---------+--------------------------------------------------------------------
+ Placebo |     231    38.05012    .0699302    1.062847    37.91233    38.18791
+Ibuprofe |     224    37.97862    .0793881    1.188173    37.82217    38.13507
+---------+--------------------------------------------------------------------
+combined |     455    38.01492    .0527696    1.125614    37.91122    38.11862
+---------+--------------------------------------------------------------------
+    diff |            .0714991    .1056147               -.1360564    .2790546
+------------------------------------------------------------------------------
+    diff = mean(Placebo) - mean(Ibuprofe)                         t =   0.6770
+Ho: diff = 0                                     degrees of freedom =      453
+
+    Ha: diff &lt; 0                 Ha: diff != 0                 Ha: diff &gt; 0
+ Pr(T &lt; t) = 0.7506         Pr(|T| &gt; |t|) = 0.4988          Pr(T &gt; t) = 0.2494
+</pre>
+
+<p>
+Deuxièmement, les deux groupes sont-ils comparables à \(T_1\) en terme d’évolution \((T_0-T_1)\) (\(H_0\) : <code>temp0−temp1(ibuprofène) = temp0−temp1(placebo)</code>) ?
+</p>
+
+<div class="org-src-container">
+<pre class="src src-stata">quietly: reshape wide
+gen difftemp = temp0 - temp1
+ttest difftemp, by(treat)
+</pre>
+</div>
+
+<pre class="example">
+quietly: reshape wide
+gen difftemp = temp0 - temp1
+(35 missing values generated)
+ttest difftemp, by(treat)
+
+Two-sample t test with equal variances
+------------------------------------------------------------------------------
+   Group |     Obs        Mean    Std. Err.   Std. Dev.   [95% Conf. Interval]
+---------+--------------------------------------------------------------------
+ Placebo |     212    .1733228    .0408455     .594719    .0928054    .2538403
+Ibuprofe |     208    .4913999    .0478614    .6902662    .3970417    .5857581
+---------+--------------------------------------------------------------------
+combined |     420    .3308467    .0323248    .6624603    .2673078    .3943856
+---------+--------------------------------------------------------------------
+    diff |            -.318077    .0628323               -.4415837   -.1945704
+------------------------------------------------------------------------------
+    diff = mean(Placebo) - mean(Ibuprofe)                         t =  -5.0623
+Ho: diff = 0                                     degrees of freedom =      418
+
+    Ha: diff &lt; 0                 Ha: diff != 0                 Ha: diff &gt; 0
+ Pr(T &lt; t) = 0.0000         Pr(|T| &gt; |t|) = 0.0000          Pr(T &gt; t) = 1.0000
+</pre>
+
+<p>
+Enfin, troisièment, on pourrait se demander s&rsquo;il y a une évolution significative entre \(T_0\) et \(T_1\) pour le groupe traité : il s&rsquo;agit cette fois d&rsquo;un test t pour données appariées. Voici le code correspondant :
+</p>
+
+<div class="org-src-container">
+<pre class="src src-stata">ttest temp0 == temp1 if treat == 1
+</pre>
+</div>
+
+<pre class="example">
+ttest temp0 == temp1 if treat == 1
+
+Paired t test
+------------------------------------------------------------------------------
+Variable |     Obs        Mean    Std. Err.   Std. Dev.   [95% Conf. Interval]
+---------+--------------------------------------------------------------------
+   temp0 |     208     38.0031    .0829791    1.196742    37.83951    38.16669
+   temp1 |     208     37.5117    .0714197    1.030029     37.3709     37.6525
+---------+--------------------------------------------------------------------
+    diff |     208    .4913999    .0478614    .6902662    .3970417    .5857581
+------------------------------------------------------------------------------
+     mean(diff) = mean(temp0 - temp1)                             t =  10.2672
+ Ho: mean(diff) = 0                              degrees of freedom =      207
+
+ Ha: mean(diff) &lt; 0           Ha: mean(diff) != 0           Ha: mean(diff) &gt; 0
+ Pr(T &lt; t) = 1.0000         Pr(|T| &gt; |t|) = 0.0000          Pr(T &gt; t) = 0.0000
+</pre>
+
+<p>
+Par une approche de régression simple, on obtiendrait essentiellement des réponses similaires. Voici déjà une commande permettant d&rsquo;estimer les paramètres du modèle dans les deux groupes :
+</p>
+
+<div class="org-src-container">
+<pre class="src src-stata">quietly: reshape long
+bysort treat: regress temp hour, noheader
+</pre>
+</div>
+
+<pre class="example">
+quietly: reshape long
+bysort treat: regress temp hour, noheader
+
+-------------------------------------------------------------------------------
+-&gt; treat = Placebo
+------------------------------------------------------------------------------
+        temp |      Coef.   Std. Err.      t    P&gt;|t|     [95% Conf. Interval]
+-------------+----------------------------------------------------------------
+        hour |   -.072687   .0138938    -5.23   0.000    -.0999401   -.0454339
+       _cons |   38.00192    .050157   757.66   0.000     37.90353     38.1003
+------------------------------------------------------------------------------
+
+-------------------------------------------------------------------------------
+-&gt; treat = Ibuprofen
+------------------------------------------------------------------------------
+        temp |      Coef.   Std. Err.      t    P&gt;|t|     [95% Conf. Interval]
+-------------+----------------------------------------------------------------
+        hour |  -.1675952   .0132796   -12.62   0.000    -.1936444   -.1415459
+       _cons |   37.72096    .047841   788.46   0.000     37.62712    37.81481
+------------------------------------------------------------------------------
+</pre>
+
+<p>
+À partir de là, on souhaite comparer les coefficients de régression entre les deux groupes. Pour cela, il y a deux approches possibles. D&rsquo;une part il est possible, et c&rsquo;est sans doute le plus simple, de reconnaître qu&rsquo;il s&rsquo;agit essentiellement d&rsquo;un test de l&rsquo;interaction entre les deux variables <code>hour</code> et <code>treat</code>. Dans ce cas, il suffit de générer le terme d&rsquo;interaction et de tester ses composantes directement :
+</p>
+
+<div class="org-src-container">
+<pre class="src src-stata">quietly: tabulate treat, gen(treat)
+generate treat1hour = treat1*hour
+generate treat2hour = treat2*hour
+quietly: regress temp treat1 treat2 treat1hour treat2hour
+test treat1hour treat2hour
+</pre>
+</div>
+
+<pre class="example">
+quietly: tabulate treat, gen(treat)
+generate treat1hour = treat1*hour
+generate treat2hour = treat2*hour
+quietly: regress temp treat1 treat2 treat1hour treat2hour
+test treat1hour treat2hour
+
+ ( 1)  treat1hour = 0
+ ( 2)  treat2hour = 0
+
+       F(  2,  2966) =   89.02
+            Prob &gt; F =    0.0000
+</pre>
+
+<p>
+Le test ci-dessus est un test simultané (2 degrés de liberté) pour la nullité des termes d&rsquo;interaction, tandis que le test ci-dessous permet d&rsquo;évaluer l&rsquo;égalité de ces deux termes :
+</p>
+
+<div class="org-src-container">
+<pre class="src src-stata">test treat1hour = treat2hour
+</pre>
+</div>
+
+<pre class="example">
+test treat1hour = treat2hour
+
+ ( 1)  treat1hour - treat2hour = 0
+
+       F(  1,  2966) =   24.33
+            Prob &gt; F =    0.0000
+
+</pre>
 </div>
 </div>
 
 
-<div id="outline-container-org95472d9" class="outline-3">
-<h3 id="org95472d9">Traitement de la non linéarité</h3>
-<div class="outline-text-3" id="text-org95472d9">
+<div id="outline-container-org013290f" class="outline-3">
+<h3 id="org013290f">Traitement de la non linéarité</h3>
+<div class="outline-text-3" id="text-org013290f">
 <p>
 Il existe plusieurs approches pour traiter le cas d&rsquo;une relation non linéaire entre la variable réponse et un prédicteur continu.
 </p>
 
 <p>
-Voici une illustration avec l&rsquo;âge de la mère :
+Revenons aux données sur les poids de naissance. Voici une illustration avec l&rsquo;âge de la mère :
 </p>
 
 <div class="org-src-container">
-<pre class="src src-stata">scatter bwt age || qfitci bwt age, legend(off)
+<pre class="src src-stata">clear all
+webuse lbw
+scatter bwt age || qfitci bwt age, legend(off)
 graph export "fig-03-scatter-bwt-age.pdf", fontface(DroidSans) replace
 </pre>
 </div>
 
 
-<div id="org6231eef" class="figure">
+<div id="org762b126" class="figure">
 <p><img src="./fig-03-scatter-bwt-age.png" alt="fig-03-scatter-bwt-age.png" width="640px" />
 </p>
-<p><span class="figure-number">Figure&nbsp;8&nbsp;: </span>Relation entre poids des bébés et âge de la mère</p>
+<p><span class="figure-number">Figure&nbsp;9&nbsp;: </span>Relation entre poids des bébés et âge de la mère</p>
 </div>
 
 <p>
@@ -744,7 +1024,11 @@ regress bwt age agesq
 </pre>
 
 <p>
-Voici une approche reposant sur des polynômes fractionnaires :
+L&rsquo;approche qui suit repose sur des polynômes fractionnaires, qui ont été largement développés et popularisés par Royston et coll. [<a href="#royston-1994-regres-using">7</a>]. L&rsquo;idée générale est de considérer des polynômes dont les exposants sont pris dans un ensemble prédéfini de valeurs \(P = {-2, -1, -0.5, 0, 0.5, 1, 2, 3}\), où par convention \(x^{(0)} = \ln(x)\). Un polynôme fractionnaire de degré \(m\) se construit comme \(\text{FPm} = \beta_0 + \sum_{j=1}^m \beta_jx^{(p_j)}\), où \(p_j \in P\). On notera que pour un polynôme de degré \(m\), une même puissance peut être répétée \(m\) fois.
+</p>
+
+<p>
+Stata 13 disposait de la commande <a href="https://www.stata.com/help.cgi?fracpoly" class="stata">fracpoly</a> mais désormais il est recommendé d&rsquo;utiliser les commandes <a href="https://www.stata.com/help.cgi?fp" class="stata">fp</a> (cas univarié) et <a href="https://www.stata.com/help.cgi?mfp" class="stata">mfp</a> (cas multivarié) qui permettent de construire automatiquement les termes d&rsquo;un ou plusieurs polynômes fractionnaires pour une variable numérique donnée. Voici un exemple d&rsquo;application sur la variable <code>age</code> :
 </p>
 
 <div class="org-src-container">
@@ -792,18 +1076,18 @@ graph export "fig-03-fpplot-bwt-age.pdf", fontface(DroidSans) replace
 </div>
 
 
-<div id="orgde2a0f0" class="figure">
+<div id="org36599f6" class="figure">
 <p><img src="./fig-03-fpplot-bwt-age.png" alt="fig-03-fpplot-bwt-age.png" width="640px" />
 </p>
-<p><span class="figure-number">Figure&nbsp;9&nbsp;: </span>Utilisation de polynômes fractionnaires pour la relation entre poids des bébés et âge de la mère</p>
+<p><span class="figure-number">Figure&nbsp;10&nbsp;: </span>Utilisation de polynômes fractionnaires pour la relation entre poids des bébés et âge de la mère</p>
 </div>
 </div>
 </div>
 
 
-<div id="outline-container-org7ce67cd" class="outline-3">
-<h3 id="org7ce67cd">Approche robuste</h3>
-<div class="outline-text-3" id="text-org7ce67cd">
+<div id="outline-container-org1a09f29" class="outline-3">
+<h3 id="org1a09f29">Approche robuste</h3>
+<div class="outline-text-3" id="text-org1a09f29">
 <p>
 <b>FIXME</b> Find a better illustration + provide more background
 </p>
@@ -823,10 +1107,10 @@ graph export "fig-03-scatter-bwt-lwt-race3.pdf", fontface(DroidSans) replace
 </div>
 
 
-<div id="org5dd43cb" class="figure">
+<div id="orgad1fe6f" class="figure">
 <p><img src="./fig-03-scatter-bwt-lwt-race3.png" alt="fig-03-scatter-bwt-lwt-race3.png" width="640px" />
 </p>
-<p><span class="figure-number">Figure&nbsp;10&nbsp;: </span>Relation entre poids des bébés et taille de la mère</p>
+<p><span class="figure-number">Figure&nbsp;11&nbsp;: </span>Relation entre poids des bébés et taille de la mère</p>
 </div>
 
 <p>
@@ -843,24 +1127,28 @@ predict yhols
 regress bwt lwt if race == 3
 
       Source |       SS           df       MS      Number of obs   =        67
--------------+----------------------------------   F(1, 65)        =      3.03
-       Model |  1528195.75         1  1528195.75   Prob &gt; F        =    0.0866
-    Residual |  32809977.2        65  504768.881   R-squared       =    0.0445
--------------+----------------------------------   Adj R-squared   =    0.0298
-       Total |    34338173        66  520275.348   Root MSE        =    710.47
+-------------+----------------------------------   F(1, 65)        =      3.11
+       Model |  1566727.54         1  1566727.54   Prob &gt; F        =    0.0826
+    Residual |  32771445.4        65  504176.084   R-squared       =    0.0456
+-------------+----------------------------------   Adj R-squared   =    0.0309
+       Total |    34338173        66  520275.348   Root MSE        =    710.05
 
 ------------------------------------------------------------------------------
          bwt |      Coef.   Std. Err.      t    P&gt;|t|     [95% Conf. Interval]
 -------------+----------------------------------------------------------------
-         lwt |   13.33073   7.661444     1.74   0.087    -1.970233    28.63169
-       _cons |   2085.349   422.0535     4.94   0.000      1242.45    2928.249
+         lwt |   6.133087   3.479153     1.76   0.083     -.815261    13.08143
+       _cons |   2067.861   426.5168     4.85   0.000     1216.048    2919.674
 ------------------------------------------------------------------------------
 predict yhols
 (option xb assumed; fitted values)
 </pre>
 
 <p>
-La commande <code>robreg</code> disponible dans le package du même nom (<code>ssc install moremata robreg</code>) permet d&rsquo;estimer les paramètres d&rsquo;un modèle linéaire en utilisant des M-estimateurs (Huber ou bisquare) [<a href="#jann-2010-robreg">5</a>]. La syntaxe est identique à celle de <a href="https://www.stata.com/help.cgi?regress" class="stata">regress</a> mais il faut faut préciser le type d&rsquo;estimateur après le nom de la commande : <code>robreg m</code> signifie par exemple une régression avec un estimateur de Huber tandis que <code>robreg s</code> indique à Stata d&rsquo;utiliser un S-estimateur. Un exemple d&rsquo;application est disponible dans [<a href="#vittinghoff-2005-regres-method-biost">6</a>] (<b>FIXME</b> check the reference carefully). Dans le cas présent, on utilisera l&rsquo;instruction suivante :
+La commande <code>robreg</code> disponible dans le package du même nom (<code>ssc install moremata robreg</code>) permet d&rsquo;estimer les paramètres d&rsquo;un modèle linéaire en utilisant des M-estimateurs (Huber ou bisquare) [<a href="#jann-2010-robreg">6</a>]. Dans le cas d&rsquo;une approche par M-estimation, les estimés des paramètres du modèle de régression sont obtenus en minimisant une fonction de coût, \(\rho\), reposant sur la valeur des résidus sur l&rsquo;ensemble des valeurs de \(X\). Spécifiquement, on recherche une fonction \(\rho(e) \ge 0\), symétrique et monotone, 
+</p>
+
+<p>
+La syntaxe est identique à celle de <a href="https://www.stata.com/help.cgi?regress" class="stata">regress</a> mais il faut faut préciser le type d&rsquo;estimateur après le nom de la commande : <code>robreg m</code> signifie par exemple une régression avec un estimateur de Huber tandis que <code>robreg s</code> indique à Stata d&rsquo;utiliser un S-estimateur. Un exemple d&rsquo;application est disponible dans [<a href="#vittinghoff-2005-regres-method-biost">8</a>] (<b>FIXME</b> check the reference carefully). Dans le cas présent, on utilisera l&rsquo;instruction suivante :
 </p>
 
 <div class="org-src-container">
@@ -880,49 +1168,48 @@ graph export "fig-03-scatter-bwt-lwt-race3-2.pdf", fontface(DroidSans) replace
 </div>
 
 
-<div id="orgc221295" class="figure">
+<div id="org32c48bd" class="figure">
 <p><img src="./fig-03-scatter-bwt-lwt-race3-2.png" alt="fig-03-scatter-bwt-lwt-race3-2.png" width="640px" />
 </p>
-<p><span class="figure-number">Figure&nbsp;11&nbsp;: </span>Estimation MCO versus M-estimateur</p>
+<p><span class="figure-number">Figure&nbsp;12&nbsp;: </span>Estimation MCO versus M-estimateur</p>
 </div>
 </div>
 </div>
 </div>
 
-
-<div id="outline-container-orgea3ee27" class="outline-2">
-<h2 id="orgea3ee27">La régression linéaire multiple</h2>
-<div class="outline-text-2" id="text-orgea3ee27">
+<div id="outline-container-org5840f71" class="outline-2">
+<h2 id="org5840f71">La régression linéaire multiple</h2>
+<div class="outline-text-2" id="text-org5840f71">
 </div>
-<div id="outline-container-orgd9b7c8c" class="outline-3">
-<h3 id="orgd9b7c8c">Exemple de base</h3>
-</div>
-
-<div id="outline-container-orgd60717d" class="outline-3">
-<h3 id="orgd60717d">Diagnostic du modèle</h3>
+<div id="outline-container-orgd68d40a" class="outline-3">
+<h3 id="orgd68d40a">Exemple de base</h3>
 </div>
 
-<div id="outline-container-org2132e07" class="outline-3">
-<h3 id="org2132e07">Tests joints et intervalles de confiance simultanés</h3>
+<div id="outline-container-orgf09a7b5" class="outline-3">
+<h3 id="orgf09a7b5">Diagnostic du modèle</h3>
 </div>
 
-<div id="outline-container-orgd3812eb" class="outline-3">
-<h3 id="orgd3812eb">Spécification de contrastes</h3>
+<div id="outline-container-orgad4a55c" class="outline-3">
+<h3 id="orgad4a55c">Tests joints et intervalles de confiance simultanés</h3>
 </div>
 
-<div id="outline-container-org4358aaf" class="outline-3">
-<h3 id="org4358aaf">Comparaison de modèles emboîtés</h3>
+<div id="outline-container-org5f6c7a4" class="outline-3">
+<h3 id="org5f6c7a4">Spécification de contrastes</h3>
+</div>
+
+<div id="outline-container-orgca0f01b" class="outline-3">
+<h3 id="orgca0f01b">Comparaison de modèles emboîtés</h3>
 </div>
 
 
-<div id="outline-container-orgd9fafda" class="outline-3">
-<h3 id="orgd9fafda">Ces des données en cluster</h3>
+<div id="outline-container-orge28b7cf" class="outline-3">
+<h3 id="orge28b7cf">Ces des données en cluster</h3>
 </div>
 </div>
 
-<div id="outline-container-org6647504" class="outline-2">
-<h2 id="org6647504">Modèle linéaire et applications</h2>
-<div class="outline-text-2" id="text-org6647504">
+<div id="outline-container-org1c3655c" class="outline-2">
+<h2 id="org1c3655c">Modèle linéaire et applications</h2>
+<div class="outline-text-2" id="text-org1c3655c">
 <div id="bibliography">
 <h2>Références</h2>
 
@@ -930,7 +1217,23 @@ graph export "fig-03-scatter-bwt-lwt-race3-2.pdf", fontface(DroidSans) replace
 
 <tr valign="top">
 <td align="right" class="bibtexnumber">
-[<a name="cleveland-1979-robus-local">1</a>]
+[<a name="bernard-1997-effec-ibupr">1</a>]
+</td>
+<td class="bibtexitem">
+G.&nbsp;R. Bernard, A.&nbsp;P. Wheeler, J.&nbsp;A. Russell, R.&nbsp;Schein, W.&nbsp;R. Summer, K.&nbsp;P.
+  Steinberg, W.&nbsp;J. Fulkerson, P.&nbsp;E. Wright, B.&nbsp;W. Christman, W.&nbsp;D. Dupont,
+  S.&nbsp;B. Higgins, and B.&nbsp;B. Swindell.
+ The effects of ibuprofen on the physiology and survival of patients
+  with sepsis. the ibuprofen in sepsis study group.
+ <em>New England Journal of Medicine</em>, 336(13):912--918, 1997.
+
+</td>
+</tr>
+
+
+<tr valign="top">
+<td align="right" class="bibtexnumber">
+[<a name="cleveland-1979-robus-local">2</a>]
 </td>
 <td class="bibtexitem">
 William&nbsp;S. Cleveland.
@@ -945,7 +1248,7 @@ William&nbsp;S. Cleveland.
 
 <tr valign="top">
 <td align="right" class="bibtexnumber">
-[<a name="dupont-2009-statis-model">2</a>]
+[<a name="dupont-2009-statis-model">3</a>]
 </td>
 <td class="bibtexitem">
 W.&nbsp;D. Dupont.
@@ -959,7 +1262,7 @@ W.&nbsp;D. Dupont.
 
 <tr valign="top">
 <td align="right" class="bibtexnumber">
-[<a name="harrell-2015-regres-model-strat">3</a>]
+[<a name="harrell-2015-regres-model-strat">4</a>]
 </td>
 <td class="bibtexitem">
 Frank&nbsp;E Harrell.
@@ -973,7 +1276,7 @@ Frank&nbsp;E Harrell.
 
 <tr valign="top">
 <td align="right" class="bibtexnumber">
-[<a name="hosmer-2000-applied-logis-regres">4</a>]
+[<a name="hosmer-2000-applied-logis-regres">5</a>]
 </td>
 <td class="bibtexitem">
 David&nbsp;W. Hosmer and Stanley Lemeshow.
@@ -986,7 +1289,7 @@ David&nbsp;W. Hosmer and Stanley Lemeshow.
 
 <tr valign="top">
 <td align="right" class="bibtexnumber">
-[<a name="jann-2010-robreg">5</a>]
+[<a name="jann-2010-robreg">6</a>]
 </td>
 <td class="bibtexitem">
 Ben Jann.
@@ -1001,7 +1304,21 @@ Ben Jann.
 
 <tr valign="top">
 <td align="right" class="bibtexnumber">
-[<a name="vittinghoff-2005-regres-method-biost">6</a>]
+[<a name="royston-1994-regres-using">7</a>]
+</td>
+<td class="bibtexitem">
+P.&nbsp;Royston and D.&nbsp;G. Altman.
+ Regression using fractional polynomials of continuous covariates:
+  Parsimonious parametric modelling.
+ <em>Applied Statistics</em>, 43(3):429--467, 1994.
+
+</td>
+</tr>
+
+
+<tr valign="top">
+<td align="right" class="bibtexnumber">
+[<a name="vittinghoff-2005-regres-method-biost">8</a>]
 </td>
 <td class="bibtexitem">
 E.&nbsp;Vittinghoff, D.&nbsp;V. Glidden, S.&nbsp;C. Shiboski, and C.&nbsp;E. McCulloch.

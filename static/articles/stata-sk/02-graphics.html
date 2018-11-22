@@ -3,7 +3,7 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="fr" xml:lang="fr">
 <head>
-<!-- 2018-07-02 Lun 09:21 -->
+<!-- 2018-11-22 Jeu 11:03 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Stata : fonctionnalités graphiques</title>
@@ -56,15 +56,268 @@ for the JavaScript code in this tag.
  }
 /*]]>*///-->
 </script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 90,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 90,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 90},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content">
 <h1 class="title">Stata : fonctionnalités graphiques</h1>
+<div id="table-of-contents">
+<h2>Table des matières</h2>
+<div id="text-table-of-contents">
+<ul>
+<li><a href="#org7fed28c">Introduction</a></li>
+<li><a href="#org9fcc746">Graphiques univariés de base</a>
+<ul>
+<li><a href="#org264f4d8">Histogrammes et courbes de densité</a></li>
+<li><a href="#orgc15fd3b">Diagrammes en barres et en points</a></li>
+</ul>
+</li>
+</ul>
 </div>
-<div id="postamble" class="status">
-<p class="author">Auteur: Christophe Lalanne</p>
-<p class="date">Created: 2018-07-02 Lun 09:21</p>
-<p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
+</div>
+
+<div id="outline-container-org7fed28c" class="outline-2">
+<h2 id="org7fed28c">Introduction</h2>
+<div class="outline-text-2" id="text-org7fed28c">
+<p>
+Stata dispose d’un excellent système graphique avec de nombreuses options de personnalisation. La référence reste l’ouvrage de Mitchell, actuellement dans sa 3e édition [<a href="#mitchell-2004-visual-guide">2</a>].
+</p>
+
+<p>
+Les commandes graphiques peuvent être utilisées pour décrire des données ou en tant que commandes de &laquo;&nbsp;post estimation&nbsp;&raquo; (par exemple, analyse en composantes principales, graphique de résidus).
+</p>
+
+<p>
+Les données qui serviront de base à la plupart des illustrations de ce chapitre portent sur une enquête socio-économique allemande réalisée en 2009 et décrite dans l&rsquo;ouvrage de Kohler &amp; Kreuter [<a href="#kohler-2012-data-analy">1</a>]. Les avriables d&rsquo;intérêt sont les suivantes : <code>ybirth</code> (année de naissance), <code>hhnr2009</code> (foyer résidentiel), <code>sex</code> (sexe), <code>mar</code> (statut marital), <code>edu</code> (niveau d’éducation), <code>yedu</code> (nombre d’années de formation), <code>voc</code> (niveau secondaire ou université), <code>emp</code> (type d’emploi), <code>egp</code> (catégorie socio professionnelle), <code>income</code> (revenus, en €), <code>size</code> (taille du logement), <code>hhsize</code> (nombre de personnes dans habitation).
+</p>
+
+<div class="org-src-container">
+<pre class="src src-stata">set scheme plotplain
+use data/gsoep09
+describe, short
+describe, simple
+</pre>
+</div>
+
+<pre class="example">
+set more off
+set scheme plotplain
+use data/gsoep09
+(SOEP 2009 (Kohler/Kreuter))
+describe, short
+
+Contains data from data/gsoep09.dta
+  obs:         5,411                          SOEP 2009 (Kohler/Kreuter)
+ vars:            65                          13 Feb 2012 17:08
+ size:       568,155                          
+Sorted by: persnr
+describe, simple
+persnr       income       rooms        eqplif       pic          wor10
+hhnr2009     hhinc        renttype     eqpnrj       lsat         wor11
+state        hhsize       rent         hhtyp        wor01        wor12
+ybirth       hhsize0to14  reval        area1        wor02        sample
+sex          rel2head     eqphea       area2        wor03        intnr
+mar          ymove        eqpter       dvisits      wor04        hhnr
+edu          ybuild       eqpbas       heval        wor05        strata
+yedu         condit       eqpgar       hsat         wor06        psu
+voc          dsat         eqpalm       polint       wor07        dweight
+emp          size         eqpsol       pia          wor08        xweights
+egp          seval        eqpair       pib          wor09
+</pre>
+
+<p>
+Voici un aperçu des données sous forme de listing des premières observations :
+</p>
+
+<div class="org-src-container">
+<pre class="src src-stata">list persnr-sex in 1/5
+</pre>
+</div>
+
+<pre class="example">
+list persnr-sex in 1/5
+
+     +-------------------------------------------------------+
+     | persnr   hhnr2009             state   ybirth      sex |
+     |-------------------------------------------------------|
+  1. |   8501         85   N-Rhein-Westfa.     1932     Male |
+  2. |   8502         85   N-Rhein-Westfa.     1939   Female |
+  3. |  15001        150   N-Rhein-Westfa.     1946     Male |
+  4. |  15002        150   N-Rhein-Westfa.     1953   Female |
+  5. |  18201     111373    Mecklenburg-V.     1969     Male |
+     +-------------------------------------------------------+
+</pre>
+</div>
+</div>
+
+
+
+<div id="outline-container-org9fcc746" class="outline-2">
+<h2 id="org9fcc746">Graphiques univariés de base</h2>
+<div class="outline-text-2" id="text-org9fcc746">
+</div>
+<div id="outline-container-org264f4d8" class="outline-3">
+<h3 id="org264f4d8">Histogrammes et courbes de densité</h3>
+<div class="outline-text-3" id="text-org264f4d8">
+<div class="org-src-container">
+<pre class="src src-stata">generate age = 2009 - ybirth
+summarize age
+</pre>
+</div>
+
+<pre class="example">
+generate age = 2009 - ybirth
+summarize age
+
+    Variable |        Obs        Mean    Std. Dev.       Min        Max
+-------------+---------------------------------------------------------
+         age |      5,411    49.50712    18.12642         17        100
+
+</pre>
+
+<p>
+Pour construire un histogramme de cette variable, on utilisera la commande <a href="https://www.stata.com/help.cgi?histogram" class="stata">histogram</a>, en précisant l&rsquo;option <code>freq</code> si l&rsquo;on souhaite afficher les effectifs (&laquo;&nbsp;fréquences&nbsp;&raquo; en anglais) plutôt que la densité :
+</p>
+
+<div class="org-src-container">
+<pre class="src src-stata">histogram age, xtitle("Age des participants")
+graph export "fig-02-histogram-age.pdf", fontface(DroidSans) replace
+</pre>
+</div>
+
+
+<div id="org404c36d" class="figure">
+<p><img src="./fig-02-histogram-age.png" alt="fig-02-histogram-age.png" width="640px" />
+</p>
+<p><span class="figure-number">Figure&nbsp;1&nbsp;: </span>Distribution de l&rsquo;âge des répondants</p>
+</div>
+
+<p>
+Notons que cette commande dispose de l&rsquo;option <code>by()</code> des commandes <a href="https://www.stata.com/help.cgi?twoway" class="stata">twoway</a> de sorte qu&rsquo;il est assez simple de tracer des histogrammes conditionnés sur les valeurs prise par une autre variable, comme illustré ci-après.
+</p>
+
+<div class="org-src-container">
+<pre class="src src-stata">label variable age "Age des participants"
+histogram age, bin(15) by(sex)
+graph export "fig-02-histogram-age-sex.pdf", fontface(DroidSans) replace
+</pre>
+</div>
+
+
+<div id="org8f68893" class="figure">
+<p><img src="./fig-02-histogram-age-sex.png" alt="fig-02-histogram-age-sex.png" width="640px" />
+</p>
+<p><span class="figure-number">Figure&nbsp;2&nbsp;: </span>Distribution de l&rsquo;âge des répondants selon le sexe</p>
+</div>
+</div>
+</div>
+
+
+
+
+<div id="outline-container-orgc15fd3b" class="outline-3">
+<h3 id="orgc15fd3b">Diagrammes en barres et en points</h3>
+<div class="outline-text-3" id="text-orgc15fd3b">
+<p>
+Bien qu&rsquo;il existe une commande graphique pour tracer des diagrammes en barres, <a href="https://www.stata.com/help.cgi?graph bar" class="stata">graph bar</a>, celle-ci s&rsquo;utilise généralement à partir de données agrégées (voir l&rsquo;option <code>yvars</code> avec <code>(stat)</code>). On utilise donc la même commande qu&rsquo;à la section précédente, <a href="https://www.stata.com/help.cgi?histogram" class="stata">histogram</a>, en spécifiant l&rsquo;option <code>discrete</code>, comme illustré ci-dessous :
+</p>
+
+<div class="org-src-container">
+<pre class="src src-stata">histogram edu, discrete freq addlabels
+graph export "fig-02-histogram-edu.pdf", fontface(DroidSans) replace
+</pre>
+</div>
+
+
+<div id="org545950e" class="figure">
+<p><img src="./fig-02-histogram-edu.png" alt="fig-02-histogram-edu.png" width="640px" />
+</p>
+<p><span class="figure-number">Figure&nbsp;3&nbsp;: </span>Distribution d&rsquo;effectifs selon les niveaux d&rsquo;éducation</p>
+</div>
+
+<p>
+Comme on peut le voir, la figure <a href="#org545950e">3</a> est loin d&rsquo;être parfaite. En particulier, les libellés de l&rsquo;axe des abscisses sont peu lisibles (à moins d&rsquo;ajouter une légende indiquant la correspondance entre les codes numériques et les étiquettes des niveaux de la variable <code>edu</code>), et les barres verticales sont juxtaposées de sorte qu&rsquo;avec l&rsquo;axe numérique il est facile de prendre ce diagramme pour un histogramme pour données continues. Voici une version qui corrige ces deux aspects, notamment grâce à l&rsquo;usage de <code>gap()</code> et une spécification plus poussée des étiquettes de l&rsquo;axe des x :
+</p>
+
+<div class="org-src-container">
+<pre class="src src-stata">histogram edu, discrete freq addlabels gap(10) xla(1/5, valuelabel noticks ang(45))
+graph export "fig-02-histogram-edu-v2.pdf", fontface(DroidSans) replace
+</pre>
+</div>
+
+
+<div id="orge395eee" class="figure">
+<p><img src="./fig-02-histogram-edu-v2.png" alt="fig-02-histogram-edu-v2.png" width="640px" />
+</p>
+<p><span class="figure-number">Figure&nbsp;4&nbsp;: </span>Distribution d&rsquo;effectifs selon les niveaux d&rsquo;éducation</p>
+</div>
+
+<p>
+Pour réaliser un tel diagramme en utilisant <a href="https://www.stata.com/help.cgi?graph bar" class="stata">graph bar</a>, il est nécessaire de travailler avec une variable auxiliaire dans laquelle on accumule les effectifs conditionnels.
+</p>
+
+<div class="org-src-container">
+<pre class="src src-stata">graph bar (count) persnr, over(edu) asyvars percent showyvars bargap(10) ytitle("Proportion") legend(off)
+</pre>
+</div>
+
+
+
+<div id="bibliography">
+<h2>Références</h2>
+
+<table>
+
+<tr valign="top">
+<td align="right" class="bibtexnumber">
+[<a name="kohler-2012-data-analy">1</a>]
+</td>
+<td class="bibtexitem">
+Ulrich Kohler and Frauke Kreuter.
+ <em>Data Analysis Using Stata</em>.
+ Stata Press, 3 edition, 2012.
+
+</td>
+</tr>
+
+
+<tr valign="top">
+<td align="right" class="bibtexnumber">
+[<a name="mitchell-2004-visual-guide">2</a>]
+</td>
+<td class="bibtexitem">
+Michael&nbsp;N Mitchell.
+ <em>A Visual Guide to Stata Graphics</em>.
+ Stata Press, 2004.
+
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+</div>
 </div>
 </body>
 </html>
