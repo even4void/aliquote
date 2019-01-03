@@ -3,13 +3,13 @@ title: "Stata plot of the week #1"
 date: 2019-01-02T14:00:30+01:00
 draft: false
 tags: ["stata"]
-categories: [""]
+categories: []
 ---
 Today, in this new Stata series, we are exploring a variation of small multiples where a separate trend line is highlighted in each subplot while background information is provided in dimmed grey. The final solution makes use of _separate, scatter, and graph combine_.
 
 <!--more-->
 
-The dataset we will use is composed of 144 observations on the monthly number of international airline passengers (in thousands) between 1949 and 1960. Such time-series dataset would be a perfect fit for a simple line plot, as illustrated below:
+The dataset we will use is composed of 144 observations on the monthly number of international airline passengers (in thousands) between 1949 and 1960. Such time-series dataset would be a perfect fit for a simple line plot, as illustrated below: (Note that I am using the [plotplain](https://danbischof.com/2016/10/14/stata-figure-schemes-latest-version-inclusion-in-statas-ssc-archive/) scheme.)
 
 ```{Stata}
 webuse air2
@@ -30,7 +30,6 @@ generate m = mod(t, 12)
 replace m = 12 if m == 0
 label define m 1 "Jan" 2 "Feb" 3 "Mar" 4 "Apr" 5 "May" 6 "Jun" 7 "Jul" 8 "Aug" 9 "Sep" 10 "Oct" 11 "Nov" 12 "Dec"
 label values m m
-scatter air y, by(m) c(l) m(none)
 ```
 
 Note that it would be possible to use the _creturn_ value `c(Mons)` to encode abbreviated month names. This basically allows us to draw yearly data by month as in the following example:
