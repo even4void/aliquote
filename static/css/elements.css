@@ -101,7 +101,12 @@ input[type=submit] {padding:5px 15px; background:#f8f5ec; border:0 none;
 
 .archive .archive-tweet a { color: #c05b4d }
 
-.archive .archive-tweet code { 
+.archive-tweet pre {
+  font-size: 0.8em;
+  font-family: Consolas, Monaco, Menlo, monospace;
+}
+
+.archive .archive-tweet code {
   padding: 3px 5px;
   border-radius: 4px;
   color: #c7254e;
