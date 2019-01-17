@@ -1,8 +1,7 @@
 ---
 title: "This week in Stata: Extended Regression Models"
-date: 2018-06-27T13:14:45+02:00
+date: 2019-07-18T13:14:45+02:00
 draft: true
-description: "The Stata Tutor series are short introduction to Stata features, with occasional comparison to other available software (R, Python, Stan, etc.)."
 tags: ["statistics", "stata"]
 categories: ["stata-tutor"]
 ---

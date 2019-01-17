@@ -18,23 +18,4 @@ Gradient descent is probably best known in Machine Learning applications since [
 
 Here is the final code: (also [available to download](/pub/gd-bwt.rkt))
 
-```Scheme
-(require csv-reading)
-(define descent (fun x &key (error 1.0d-5) 
-                           (rate 1.0d-2) 
-                           (max-steps 10000))
-  (let ((len (length x)))
-     (do* ((y x (map 'vector '- y step))
-           (step (map 'vector 
-                      (lambda (i) (* rate (nabla fun y (basis i len)))) 
-                      (range len))
-                 (map 'vector 
-                      (lambda (i) (* rate (nabla fun y (basis i len)))) 
-                      (range len)))
-           (n 0 (1+ n)))
-          ((or (< (norm step) error) 
-               (>= n max-steps)) 
-           (if (< n max-steps) y)))))
-```
-
 Note that you must install `csv-reading` first, e.g., using `raco pkg install csv-reading` at the prompt of your preferred shell.

@@ -104,6 +104,7 @@ input[type=submit] {padding:5px 15px; background:#f8f5ec; border:0 none;
 .archive-tweet pre {
   font-size: 0.8em;
   font-family: Consolas, Monaco, Menlo, monospace;
+  padding: 2px 7px;
 }
 
 .archive .archive-tweet code {
@@ -137,7 +138,9 @@ input[type=submit] {padding:5px 15px; background:#f8f5ec; border:0 none;
 .icon-up:before { content: "\EA41"; }
 .icon-close:before { content: "\EA80"; }
 
-progress {display:block;padding:0;margin-bottom:-10px}
+progress {display:block; padding:0; margin-bottom:-10px}
+
+/* iframe {height:60%; overflow:hidden; position:absolute} */
 /*
 .progress[value] {}
 .progress[value]:after { content: attr(value); }
