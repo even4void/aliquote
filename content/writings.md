@@ -16,23 +16,23 @@ If you are looking for my old teaching ressources, almost everything should be o
 
 - **Stata Starter Kit**
 {{< ressource "stack-overflow" "/articles/stata-sk/" "www" >}}
-{{< ressource "github" "https://github.com/chlalanne/stata-sk" "github" >}}    
+{{< ressource "github" "https://github.com/even4void/stata-sk" "github" >}}    
 *A series of standalone modules to learn a bit of Stata, for those who might be interested.* [in French]
 
 - **Statistics for Clinical Trials: Applications Using R**
 {{< ressource "file-pdf" "/files/SAS2R.pdf" "PDF" >}}
-{{< ressource "github" "https://github.com/chlalanne/SAS2R" "github" >}}  
+{{< ressource "github" "https://github.com/even4void/SAS2R" "github" >}}  
 *A short tutorial on using R to perform common statistical analysis à la SAS.*
     
 ## Past work mostly defunct
 
 - **A Visual Guide to R Graphics and Data Mungling**
 {{< ressource "file-pdf" "/files/vizRguide.pdf" "PDF" >}}
-{{< ressource "github" "https://github.com/chlalanne/vizRguide" "github" >}}  
+{{< ressource "github" "https://github.com/even4void/vizRguide" "github" >}}  
 *A small cookbook for [lattice](https://cran.r-project.org/package=lattice) and [ggplot2](https://cran.r-project.org/package=ggplot2) graphics.*
 
 - **R Companion to Montgomery's Design and Analysis of Experiments**
 {{< ressource "file-pdf" "/files/MDAE.pdf" "PDF" >}}
-{{< ressource "github" "https://github.com/chlalanne/dae-textbook" "github" >}}  
+{{< ressource "github" "https://github.com/even4void/dae-textbook" "github" >}}  
 *A handbook of statistical analysis specific to design of experiments using R.*
 

@@ -19,4 +19,4 @@ Voici une collection de tutoriels pour apprendre Stata et comprendre comment ça
 5. Packages utiles {{< ressource "stack-overflow" "./99-packages.html" "HTML" >}}
 
 
-[Github](https://github.com/chlalanne/stata-sk) • [Changelog](./history.txt)
+[Github](https://github.com/even4void/stata-sk) • [Changelog](./history.txt)

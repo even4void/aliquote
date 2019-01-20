@@ -26,6 +26,4 @@ url = "/articles/how-i-do/"
 : I consult my [Twitter account](https://twitter.com/chlalanne) two or three times a day; I read some articles on [arXiv](https://arxiv.org); I follow some cool and bright people on the internet (here is an [OPML](/files/chl.opml) file for your RSS reader if you like), especially their blog or GitHub accounts. Want some names? Here we go (in no particular order): [Evan Miller](http://www.evanmiller.org), [Tom MacWright](https://macwright.org), [John D Cook](https://www.johndcook.com/), [Atabey Kaygun](https://kaygun.tumblr.com), [John Myles White](http://www.johnmyleswhite.com), [Darren Wilkinson](https://www.staff.ncl.ac.uk/d.j.wilkinson/), [Dirk Eddelbuetel](http://dirk.eddelbuettel.com), [Peter Ellis](http://freerangestats.info), [Jan de Leeuw](http://gifi.stat.ucla.edu), [Frank Harrell](http://www.fharrell.com), [Seth Brown](http://www.drbunsen.org), [Ben Klemens](https://modelingwithdata.org), [Mike Bostock](https://bost.ocks.org/mike/), [Radford Neal](http://www.cs.toronto.edu/~radford/), [Jeffrey M Heer](https://homes.cs.washington.edu/~jheer/), [Peter Norvig](http://www.norvig.com), [Allen Downey](http://www.allendowney.com/wp/), [Jack Baty](http://baty.net), [Brett Terpstra](http://brettterpstra.com), [Eli Bendersky](https://eli.thegreenplace.net), [BSAG](https://www.rousette.org.uk).
 
 **Is there a photo of me somewhere**
-: Sure. Here you are!
-
-![](/img/chl.png "chl in 2012")
+: N/A (not anymore)
