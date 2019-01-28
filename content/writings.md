@@ -10,7 +10,7 @@ mathjax = false
 
 Here is a list of things I like to work on when time allows. As you will guess pretty quickly, I can leave *those* things hanging out for years, but there is always a chance that this stuff will be finished someday. Note that these pages are a resurrection of my previous website, and I left a lot of materials behind. 
 
-If you are looking for my old teaching ressources, almost everything should be on the [Teaching page](/teaching), and for the glory stuff, [here it is](/pubpwr).
+If you are looking for my old teaching ressources, almost everything should be on the Teaching page if you bookmarked it once in a while, and for the glory stuff, I mean the "publication" page, it will probably pop up at random time.
 
 ## Current work in progress
 

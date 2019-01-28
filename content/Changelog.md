@@ -5,6 +5,7 @@ lastmod = 2018-06-30T00:00:00
 url = "/articles/changelog/"
 +++
 
+* [2019-01-23] Further improvements to my digital anonymization strategy
 * [2018-06-29] Add [privacy](/privacy/) statements
 * [2018-05-17] Add a Changelog (this page)
 * [2018-05-09] Add a [micro-blog](/micro/)
