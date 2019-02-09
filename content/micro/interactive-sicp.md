@@ -5,4 +5,6 @@ draft: false
 type: "tweet"
 ---
 
-[Structure and Interpretation of Computer Programs Interactive Version](http://xuanji.appspot.com/isicp/). `#scheme`
+[Structure and Interpretation of Computer Programs Interactive Version](http://xuanji.appspot.com/isicp/). Together
+with [Composing Programs](http://www.composingprograms.com) I think this is one of the most beautiful interactive
+textbook I found on the internet in years. `#scheme` `#python`
