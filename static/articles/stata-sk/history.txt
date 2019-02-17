@@ -1,3 +1,15 @@
+* 5ee41f8 (Sun, 17 Feb 2019 12:03:24 +0100, chl) Cosmit changes to deploy locally
+* 14aa90e (Sun, 17 Feb 2019 10:44:09 +0100, chl) Minor edits
+* 2dbd22e (Sun, 17 Feb 2019 10:43:28 +0100, chl) More on data i/o
+* 48eedc8 (Thu, 14 Feb 2019 22:05:00 +0100, chl) Minor fix
+* 85ff5a8 (Thu, 14 Feb 2019 21:58:02 +0100, chl) More on loops
+* 8d0c3b4 (Thu, 14 Feb 2019 19:58:32 +0100, chl) More on local macros
+* 321d273 (Thu, 14 Feb 2019 08:16:46 +0100, chl) Add chapter 4
+* 7faff26 (Wed, 13 Feb 2019 21:41:10 +0100, chl) Check Stata 13 compliance
+* 53ab81a (Sun, 10 Feb 2019 21:27:29 +0100, chl) Tiny edits
+* f3940df (Sun, 10 Feb 2019 21:27:11 +0100, chl) Update package version number
+* 67bae3f (Sat, 9 Feb 2019 18:05:38 +0100, chl) Minor fixes + Add note about Stata 15
+* 091bb10 (Fri, 23 Nov 2018 11:08:11 +0100, Christophe Lalanne) More univariate graphics
 * dc94465 (Thu, 22 Nov 2018 11:09:40 +0100, Christophe Lalanne) Update dist + start chapter on graphics
 * bc89fba (Sat, 17 Nov 2018 08:58:26 +0100, Christophe Lalanne) Add detailed interaction testing
 * 3e41763 (Fri, 16 Nov 2018 19:33:38 +0100, Christophe Lalanne) Add some details regarding regression models
