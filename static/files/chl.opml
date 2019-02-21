@@ -4,6 +4,7 @@
 		<title>Subscriptions - Feedly</title>
 	</head>
 	<body>
+		<outline htmlUrl="https://www.michaelfiano.com" title="Homepage of Michael Fiano" xmlUrl="https://www.michaelfiano.com/rss.xml" type="rss" text="Homepage of Michael Fiano"/>
 		<outline title="Saved For Later" xmlUrl="aved for later" type="rss" text="Saved For Later"/>
 		<outline text="Reeder" title="Reeder">
 			<outline htmlUrl="http://lexi-lambda.github.io/index.html" title="Alexis King's Blog: Alexis King's Blog" xmlUrl="https://lexi-lambda.github.io/feeds/all.rss.xml" type="rss" text="Alexis King's Blog: Alexis King's Blog"/>
@@ -15,6 +16,7 @@
 			<outline htmlUrl="http://bitemyapp.com/" title="bitemyapp" xmlUrl="http://bitemyapp.com/atom.xml" type="rss" text="bitemyapp"/>
 			<outline htmlUrl="https://www.rousette.org.uk/" title="but she's a girl..." xmlUrl="https://www.rousette.org.uk/index.xml" type="rss" text="but she's a girl..."/>
 			<outline htmlUrl="https://bzg.fr/" title="bzg" xmlUrl="https://bzg.fr/index.xml" type="rss" text="bzg"/>
+			<outline htmlUrl="http://cachestocaches.com" title="CachesToCaches" xmlUrl="http://www.cachestocaches.com/feed/" type="rss" text="CachesToCaches"/>
 			<outline htmlUrl="https://www.cpdiehl.org/" title="Chris Diehl" xmlUrl="http://www.cpdiehl.org/atom.xml" type="rss" text="Chris Diehl"/>
 			<outline htmlUrl="http://chris.eidhof.nl/" title="Chris Eidhof" xmlUrl="http://chris.eidhof.nl//index.xml" type="rss" text="Chris Eidhof"/>
 			<outline htmlUrl="https://codeandculture.wordpress.com" title="Code and Culture" xmlUrl="http://codeandculture.wordpress.com/feed/" type="rss" text="Code and Culture"/>
@@ -46,12 +48,14 @@
 			<outline htmlUrl="http://yaroslavvb.blogspot.com/" title="Machine Learning, etc" xmlUrl="http://yaroslavvb.blogspot.com/atom.xml" type="rss" text="Machine Learning, etc"/>
 			<outline htmlUrl="https://macwright.org" title="macwright.org" xmlUrl="https://macwright.org/rss.xml" type="rss" text="macwright.org"/>
 			<outline htmlUrl="http://mbork.pl/Homepage" title="Marcin Borkowski: Homepage" xmlUrl="http://mbork.pl?action=rss" type="rss" text="Marcin Borkowski: Homepage"/>
+			<outline htmlUrl="http://blog.markwatson.com/" title="Mark Watson's artificial intelligence and machine learning blog" xmlUrl="http://blog.markwatson.com/feeds/posts/default" type="rss" text="Mark Watson's artificial intelligence and machine learning blog"/>
 			<outline htmlUrl="https://martinfowler.com" title="Martin Fowler" xmlUrl="https://martinfowler.com/feed.atom" type="rss" text="Martin Fowler"/>
 			<outline htmlUrl="https://meow.noopkat.com" title="meow machine" xmlUrl="http://meow.noopkat.com/rss/" type="rss" text="meow machine"/>
 			<outline htmlUrl="https://nullprogram.com" title="null program" xmlUrl="http://nullprogram.com/blog/index.rss" type="rss" text="null program"/>
 			<outline htmlUrl="https://oleb.net/blog/" title="Ole Begemann" xmlUrl="https://oleb.net/blog/atom.xml" type="rss" text="Ole Begemann"/>
 			<outline htmlUrl="http://www.paulgraham.com/" title="Paul Graham: Essays" xmlUrl="http://www.aaronsw.com/2002/feeds/pgessays.rss" type="rss" text="Paul Graham: Essays"/>
 			<outline htmlUrl="http://pragmaticemacs.com" title="Pragmatic Emacs" xmlUrl="http://pragmaticemacs.com/feed/" type="rss" text="Pragmatic Emacs"/>
+			<outline htmlUrl="https://www.allendowney.com/blog" title="Probably Overthinking It" xmlUrl="https://www.allendowney.com/blog/feed/" type="rss" text="Probably Overthinking It"/>
 			<outline htmlUrl="https://programmingisterrible.com/" title="programming is terrible" xmlUrl="https://programmingisterrible.com/rss" type="rss" text="programming is terrible"/>
 			<outline htmlUrl="https://programmingpraxis.com" title="Programming Praxis" xmlUrl="http://programmingpraxis.com/feed/" type="rss" text="Programming Praxis"/>
 			<outline htmlUrl="https://radfordneal.wordpress.com" title="Radford Neal's blog" xmlUrl="http://radfordneal.wordpress.com/feed/" type="rss" text="Radford Neal's blog"/>
@@ -61,6 +65,7 @@
 			<outline htmlUrl="http://stevelosh.com/" title="Steve Losh" xmlUrl="http://feeds2.feedburner.com/stevelosh" type="rss" text="Steve Losh"/>
 			<outline htmlUrl="https://multithreaded.stitchfix.com/" title="Stitch Fix Technology – Multithreaded" xmlUrl="https://multithreaded.stitchfix.com/feed.xml" type="rss" text="Stitch Fix Technology – Multithreaded"/>
 			<outline htmlUrl="https://technomancy.us/" title="Technomancy" xmlUrl="http://technomancy.us/feed/atom.xml" type="rss" text="Technomancy"/>
+			<outline htmlUrl="https://alex-hhh.github.io/index.html" title="The Blog of Alex Harsányi: The Blog of Alex Harsányi" xmlUrl="https://alex-hhh.github.io/feeds/all.rss.xml" type="rss" text="The Blog of Alex Harsányi: The Blog of Alex Harsányi"/>
 			<outline htmlUrl="http://calculist.org/" title="The Little Calculist" xmlUrl="http://calculist.org/feed.xml" type="rss" text="The Little Calculist"/>
 			<outline htmlUrl="http://shape-of-code.coding-guidelines.com" title="The Shape of Code" xmlUrl="http://shape-of-code.coding-guidelines.com/feed/" type="rss" text="The Shape of Code"/>
 			<outline htmlUrl="https://blog.stata.com" title="The Stata Blog" xmlUrl="http://blog.stata.com/feed/" type="rss" text="The Stata Blog"/>

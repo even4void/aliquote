@@ -3,7 +3,7 @@ title = "Recursive feature elimination coupled to SVM in R"
 description = ""
 date = 2011-05-22T12:42:15+01:00
 draft = false
-tags = ["rstats", "statistics"]
+tags = ["rstats", "statistics","bioinformatics"]
 categories = []
 +++
 

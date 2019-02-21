@@ -3,7 +3,7 @@ title = "Bioinformatics with Mac OS X"
 description = ""
 date = 2008-06-15T09:27:38+01:00
 draft = false
-tags = ["apple"]
+tags = ["apple","bioinformatics"]
 categories = []
 [[gallery_item]]
 album = "1"
