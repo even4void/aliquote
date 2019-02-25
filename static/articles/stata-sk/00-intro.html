@@ -3,7 +3,7 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="fr" xml:lang="fr">
 <head>
-<!-- 2019-02-17 Dim 11:53 -->
+<!-- 2019-02-23 Sam 17:16 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Stata : un rapide tour d&rsquo;horizon</title>
@@ -86,16 +86,16 @@ for the JavaScript code in this tag.
 <h2>Table des matières</h2>
 <div id="text-table-of-contents">
 <ul>
-<li><a href="#orgb651b64">Stata en quelques mots</a></li>
-<li><a href="#org6b56643">Prise en main de Stata</a>
+<li><a href="#org0d37f19">Stata en quelques mots</a></li>
+<li><a href="#org9c3c418">Prise en main de Stata</a>
 <ul>
-<li><a href="#orgf764314">Un modèle de régression linéaire</a></li>
-<li><a href="#orgc139969">Visualiser et interpréter</a></li>
-<li><a href="#orge7e2641">Synthétiser</a></li>
+<li><a href="#orgf45e35d">Un modèle de régression linéaire</a></li>
+<li><a href="#orgb1279a3">Visualiser et interpréter</a></li>
+<li><a href="#org6de6e34">Synthétiser</a></li>
 </ul>
 </li>
-<li><a href="#org6c0f927">Enregistrer son travail</a></li>
-<li><a href="#org90daa97">Pour aller plus loin</a></li>
+<li><a href="#org6f878d5">Enregistrer son travail</a></li>
+<li><a href="#org2a36475">Pour aller plus loin</a></li>
 </ul>
 </div>
 </div>
@@ -107,9 +107,9 @@ Ce document présente selon un angle très pragmatique une session de travail ty
 <b>Remarque :</b> Les commandes présentées dans les différents chapitres sont compatibles avec Stata 13, mais certaines commandes sont spécifiques de la version 15 qui introduit de nouveaux préfixes tels que <code>bayes:</code> et de nouvelles options graphiques, par exemple.
 </p>
 
-<div id="outline-container-orgb651b64" class="outline-2">
-<h2 id="orgb651b64">Stata en quelques mots</h2>
-<div class="outline-text-2" id="text-orgb651b64">
+<div id="outline-container-org0d37f19" class="outline-2">
+<h2 id="org0d37f19">Stata en quelques mots</h2>
+<div class="outline-text-2" id="text-org0d37f19">
 <p>
 Stata est un logiciel d&rsquo;analyses statistiques développé dans les années 80 par une équipe de statisticiens américains, dont William Gould. À l&rsquo;origine, il s&rsquo;agissait esentiellement d&rsquo;un logiciel orienté vers le traitement des enquêtes et des séries chronologiques [<a href="#cox-2005-stata">2</a>], puis ses fonctionnalités se sont largement développées pour en faire à l&rsquo;heure actuelle un logiciel très performant dans de nombreux domaines d&rsquo;application, principalement le traitement des enquêtes [<a href="#kohler-2012-data-analy">4</a>], l&rsquo;économétrie [<a href="#baum-2006-introd-moder">1</a>] ou l&rsquo;épidémiologie [<a href="#juul-2014-introd-stata">3</a>]. Les ouvrages publiés par Stata Press incluent en général un ou deux chapitres de présentation des principales commandes Stata.
 </p>
@@ -119,7 +119,7 @@ Une fois installé, le logiciel Stata est entièrement fonctionnel et dispose de
 </p>
 
 <p>
-Une autre caractéristique remarquable de Stata est la qualité de sa documentation. Pour la version 15, on dénombre pas moins 30 manuels en version PDF pour un total de 14791 pages.<sup><a id="fnr.1" class="footref" href="#fn.1">1</a></sup> Ces documents PDF sont accessibles depuis le menu d&rsquo;aide interne de Stata et se consulte généralement à l&rsquo;aide d&rsquo;Acrobat Reader, mais il est toujours possible de consulter le fichier d&rsquo;index &laquo;&nbsp;i.pdf&nbsp;&raquo; et de naviguer dans la documentation à partir de celui-ci. Pour bien débuter avec Stata, il est conseillé de lire le manuel [D] (Data management).
+Une autre caractéristique remarquable de Stata est la qualité de sa documentation. Pour la version 15, on dénombre pas moins 30 manuels en version PDF pour un total de 14791 pages.<sup><a id="fnr.1" class="footref" href="#fn.1">1</a></sup> Ces documents PDF sont accessibles depuis le menu d&rsquo;aide interne de Stata et se consulte généralement à l&rsquo;aide d&rsquo;Acrobat Reader, mais il est toujours possible de consulter le fichier d&rsquo;index &laquo;&nbsp;i.eps&nbsp;&raquo; et de naviguer dans la documentation à partir de celui-ci. Pour bien débuter avec Stata, il est conseillé de lire le manuel [D] (Data management).
 </p>
 
 <p>
@@ -128,13 +128,13 @@ En mode interactif, il y a deux manières de travailler avec Stata : en saisissa
 </div>
 </div>
 
-<div id="outline-container-org6b56643" class="outline-2">
-<h2 id="org6b56643">Prise en main de Stata</h2>
-<div class="outline-text-2" id="text-org6b56643">
+<div id="outline-container-org9c3c418" class="outline-2">
+<h2 id="org9c3c418">Prise en main de Stata</h2>
+<div class="outline-text-2" id="text-org9c3c418">
 </div>
-<div id="outline-container-orgf764314" class="outline-3">
-<h3 id="orgf764314">Un modèle de régression linéaire</h3>
-<div class="outline-text-3" id="text-orgf764314">
+<div id="outline-container-orgf45e35d" class="outline-3">
+<h3 id="orgf45e35d">Un modèle de régression linéaire</h3>
+<div class="outline-text-3" id="text-orgf45e35d">
 <p>
 Une fois Stata lancé, voici quelques commandes à saisir dans le panneau de commande. Il s&rsquo;agit du panneau central dans l&rsquo;interface Stata, de hauteur réduite et intitulé &laquo;&nbsp;Command&nbsp;&raquo;. Il est généralement situé en dessous du panneau de résultats (&laquo;&nbsp;Results&nbsp;&raquo;). Ce sont les seuls éléments de l&rsquo;interface graphique de Stata qui nous intéresseront dans ce tutoriel.  Ces trois commandes vont successivement charger un jeu de données fourni lors de l&rsquo;installation de Stata, produire un résumé numérique de deux variables, appelées <code>price</code> et <code>mpg</code>, et estimer les paramètres d&rsquo;un modèle de régression linéaire simple.
 </p>
@@ -303,9 +303,9 @@ On reconnaît le préfixe <a href="https://www.stata.com/help.cgi?by" class="sta
 </div>
 </div>
 
-<div id="outline-container-orgc139969" class="outline-3">
-<h3 id="orgc139969">Visualiser et interpréter</h3>
-<div class="outline-text-3" id="text-orgc139969">
+<div id="outline-container-orgb1279a3" class="outline-3">
+<h3 id="orgb1279a3">Visualiser et interpréter</h3>
+<div class="outline-text-3" id="text-orgb1279a3">
 <p>
 Les instructions suivantes vont permettre de construire un diagramme de dispersion représentant la covariation des deux variables <code>price</code> et <code>mpg</code> et d&rsquo;y superposer la droite de régression. Les mots clé <a href="https://www.stata.com/help.cgi?graph" class="stata">graph</a> et <a href="https://www.stata.com/help.cgi?twoway" class="stata">twoway</a> peuvent être omis et le symbole <code>||</code> permet de superposer sur le même graphique plusieurs éléments. L&rsquo;ancienne syntaxe consistant à isoler les instructions graphiques entre parenthèses est également valide.
 </p>
@@ -320,12 +320,12 @@ Voici donc pour le diagramme de dispersion et la droite de régression. L&rsquo;
 <div class="org-src-container">
 <pre class="src src-stata">set scheme plotplain
 graph twoway scatter price mpg || lfit price mpg 
-graph export "fig-00-scatter-price-mpg.pdf", fontface(DroidSans) replace
+graph export "fig-00-scatter-price-mpg.eps", fontface(DroidSans) replace
 </pre>
 </div>
 
 
-<div id="org381635a" class="figure">
+<div id="org7773156" class="figure">
 <p><img src="./fig-00-scatter-price-mpg.png" alt="fig-00-scatter-price-mpg.png" width="640px" />
 </p>
 <p><span class="figure-number">Figure&nbsp;1&nbsp;: </span>Prix et vitesse des automobiles (ajustement linéaire)</p>
@@ -369,12 +369,12 @@ Pour construire un graphique incluant la courbe d&rsquo;ajustement quadratique, 
 </p>
 <div class="org-src-container">
 <pre class="src src-stata">graph twoway scatter price mpg || qfit price mpg
-graph export "fig-00-scatter-price-mpg2.pdf", fontface(DroidSans) replace
+graph export "fig-00-scatter-price-mpg2.eps", fontface(DroidSans) replace
 </pre>
 </div>
 
 
-<div id="orga832a59" class="figure">
+<div id="org3fec9a2" class="figure">
 <p><img src="./fig-00-scatter-price-mpg2.png" alt="fig-00-scatter-price-mpg2.png" width="640px" />
 </p>
 <p><span class="figure-number">Figure&nbsp;2&nbsp;: </span>Prix et vitesse des automobiles (ajustement quadratique)</p>
@@ -412,12 +412,12 @@ Un simple diagramme de dispersion permettra ensuite d&rsquo;évaluer graphiqueme
 </p>
 <div class="org-src-container">
 <pre class="src src-stata">graph twoway scatter ei yhat, yline(0)
-graph export "fig-00-rvfplot-price-mpg2.pdf", fontface(DroidSans) replace
+graph export "fig-00-rvfplot-price-mpg2.eps", fontface(DroidSans) replace
 </pre>
 </div>
 
 
-<div id="orga8d354a" class="figure">
+<div id="orgf66cf0a" class="figure">
 <p><img src="./fig-00-rvfplot-price-mpg2.png" alt="fig-00-rvfplot-price-mpg2.png" width="640px" />
 </p>
 <p><span class="figure-number">Figure&nbsp;3&nbsp;: </span>Prix et vitesse des automobiles (valeurs ajustées et résidus)</p>
@@ -431,26 +431,26 @@ Pour rendre ce dernier graphique un peu plus informatif, on peut imaginer rajout
 tostring infl, replace
 replace infl = " " if infl == "."
 scatter ei yhat, yline(0) || scatter ei yhat, ms(none) mlab(infl) mlabpos(12) || lowess ei yhat, legend(off)
-graph export "fig-00-rvfplot-price-mpg2-b.pdf", fontface(DroidSans) replace
+graph export "fig-00-rvfplot-price-mpg2-b.eps", fontface(DroidSans) replace
 </pre>
 </div>
 
 
-<div id="orga1b0695" class="figure">
+<div id="org31247c4" class="figure">
 <p><img src="./fig-00-rvfplot-price-mpg2-b.png" alt="fig-00-rvfplot-price-mpg2-b.png" width="640px" />
 </p>
 <p><span class="figure-number">Figure&nbsp;4&nbsp;: </span>Prix et vitesse des automobiles (valeurs ajustées et résidus)</p>
 </div>
 
 <p>
-Cette dernière série d&rsquo;instructions peut sembler un peu complexe lorsqu&rsquo;on n&rsquo;est pas familier avec la syntaxe Stata mais, en réalité, l&rsquo;idée est assez simple. On souhaite afficher l&rsquo;ensemble des observations à l&rsquo;aide de marqueurs comme dans la figure <a href="#orga8d354a">3</a> mais on souhaite annoter certains de ces points en indiquant le numéro d&rsquo;observation associé lorsque les résidus \(e_i = y_i - \hat{y}_i\) (<code>ei</code>) sont supérieurs à 2 en valeur absolue. Pour identifier ces observations avec des résidus élevés, on génère une nouvelle variable, <code>infl</code>, qui prendra la valeur <code>_n</code>, c&rsquo;est-à-dire le numéro de ligne, lorsque la condition est vérifiée. Cette variable est enseuite convertie au format chaîne de caractères et on remplace les valeurs manquantes (celles qui vérifient la condition \(\lvert e_i \rvert\le 2\)) par un espace afin d&rsquo;éviter l&rsquo;affichage d&rsquo;un point &laquo;&nbsp;.&nbsp;&raquo; dans le graphique.
+Cette dernière série d&rsquo;instructions peut sembler un peu complexe lorsqu&rsquo;on n&rsquo;est pas familier avec la syntaxe Stata mais, en réalité, l&rsquo;idée est assez simple. On souhaite afficher l&rsquo;ensemble des observations à l&rsquo;aide de marqueurs comme dans la figure <a href="#orgf66cf0a">3</a> mais on souhaite annoter certains de ces points en indiquant le numéro d&rsquo;observation associé lorsque les résidus \(e_i = y_i - \hat{y}_i\) (<code>ei</code>) sont supérieurs à 2 en valeur absolue. Pour identifier ces observations avec des résidus élevés, on génère une nouvelle variable, <code>infl</code>, qui prendra la valeur <code>_n</code>, c&rsquo;est-à-dire le numéro de ligne, lorsque la condition est vérifiée. Cette variable est enseuite convertie au format chaîne de caractères et on remplace les valeurs manquantes (celles qui vérifient la condition \(\lvert e_i \rvert\le 2\)) par un espace afin d&rsquo;éviter l&rsquo;affichage d&rsquo;un point &laquo;&nbsp;.&nbsp;&raquo; dans le graphique.
 </p>
 </div>
 </div>
 
-<div id="outline-container-orge7e2641" class="outline-3">
-<h3 id="orge7e2641">Synthétiser</h3>
-<div class="outline-text-3" id="text-orge7e2641">
+<div id="outline-container-org6de6e34" class="outline-3">
+<h3 id="org6de6e34">Synthétiser</h3>
+<div class="outline-text-3" id="text-org6de6e34">
 <p>
 Comme on peut le constater, les tableaux renvoyés par Stata dans la fenêtre de résultats sont relativement convenables pour une lecture à l&rsquo;écran. En revanche, dans le cas de la génération d&rsquo;un rapport structuré d&rsquo;analyses, cette solution est limitée. Heureusement, il existe plusieurs possibilités pour exporter des tableaux générés par Stata au format texte, HTML ou PDF. Dans le dernier cas, cela nécessite de disposer d&rsquo;un compilateur LATEX. La version 15 de Stata embarque également des outils de reporting automatisés vers Microsft Word ou Excel, ainsi qu&rsquo;un <a href="https://www.stata.com/new-in-stata/markdown/">langage dérivé de Markdown</a>.
 </p>
@@ -561,9 +561,9 @@ Pour sauvegarder ce tableau au format texte, il suffira de rajouter les instruct
 </div>
 </div>
 
-<div id="outline-container-org6c0f927" class="outline-2">
-<h2 id="org6c0f927">Enregistrer son travail</h2>
-<div class="outline-text-2" id="text-org6c0f927">
+<div id="outline-container-org6f878d5" class="outline-2">
+<h2 id="org6f878d5">Enregistrer son travail</h2>
+<div class="outline-text-2" id="text-org6f878d5">
 <p>
 Pour sauvegarder tout ce travail, il suffit de créer un script de commandes Stata, appelé &laquo;&nbsp;do file&nbsp;&raquo;, qui est un simple fichier texte avec l&rsquo;extension &laquo;&nbsp;.do&nbsp;&raquo;. Voici un exemple de fichier, <code>session.do</code>, qui regroupe les principales commandes exploitées dans ce tutoriel :
 </p>
@@ -582,7 +582,7 @@ generate mpg2 = mpg*mpg
 
 /* EDA */
 graph twoway scatter price mpg || qfit price mpg
-graph export "fig-00-scatter-price-mpg2.pdf", eplace
+graph export "fig-00-scatter-price-mpg2.eps", eplace
 
 /* MOD */
 eststo: quietly regress price mpg
@@ -597,9 +597,9 @@ log close
 </div>
 </div>
 
-<div id="outline-container-org90daa97" class="outline-2">
-<h2 id="org90daa97">Pour aller plus loin</h2>
-<div class="outline-text-2" id="text-org90daa97">
+<div id="outline-container-org2a36475" class="outline-2">
+<h2 id="org2a36475">Pour aller plus loin</h2>
+<div class="outline-text-2" id="text-org2a36475">
 <p>
 On trouve de <a href="https://www.stata.com/links/resources-for-learning-stata/">nombreux tutoriels</a> sur internet (la plupart du temps en anglais). En voici quelques-uns qui méritent une mention spéciale pour la clarté du contenu ou la diversité des thèmes traités :
 </p>
