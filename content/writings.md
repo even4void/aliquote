@@ -8,9 +8,9 @@ comment = false
 mathjax = false
 +++
 
-Here is a list of things I like to work on when time allows. As you will guess pretty quickly, I can leave *those* things hanging out for years, but there is always a chance that this stuff will be finished someday. Note that these pages are a resurrection of my previous website, and I left a lot of materials behind. 
+Here is a list of things I like to work on when time allows. As you will guess pretty quickly, I can leave *those* things hanging out for years, but there is always a chance that this stuff will be finished someday. Note that these pages are a resurrection of my [previous website](/post/migrating-to-hugo/), and I left a lot of materials behind. 
 
-If you are looking for my old teaching ressources, almost everything should be on the Teaching page if you bookmarked it once in a while, and for the glory stuff, I mean the "publication" page, it will probably pop up at random time.
+If you are looking for my old teaching ressources, almost everything should be on the Teaching page if you bookmarked it once in a while, and for the glory stuff, I mean the "publication" page, it might pop up at random time.
 
 ## Current work in progress
 
@@ -22,9 +22,12 @@ If you are looking for my old teaching ressources, almost everything should be o
 - **Statistics for Clinical Trials: Applications Using R**
 {{< ressource "file-pdf" "/files/SAS2R.pdf" "PDF" >}}
 {{< ressource "github" "https://github.com/even4void/SAS2R" "github" >}}  
-*A short tutorial on using R to perform common statistical analysis à la SAS.*
+*A short tutorial on using R to perform common statistical analysis à la SAS.* [will probably end up in the Trash folder]
+
     
 ## Past work mostly defunct
+
+(I mean, don't expect a check from me.)
 
 - **A Visual Guide to R Graphics and Data Mungling**
 {{< ressource "file-pdf" "/files/vizRguide.pdf" "PDF" >}}

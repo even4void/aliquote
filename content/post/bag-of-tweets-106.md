@@ -1,7 +1,7 @@
 ---
 title: "A bag of tweets / Jan 2019"
 date: 2019-01-28T18:07:24+01:00
-draft: fale
+draft: false
 tags: ["misc"]
 categories: ["tweet-bot"]
 ---
