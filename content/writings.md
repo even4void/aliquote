@@ -12,7 +12,7 @@ Here is a list of things I like to work on when time allows. As you will guess p
 
 If you are looking for my old teaching ressources, almost everything should be on the Teaching page if you bookmarked it once in a while, and for the glory stuff, I mean the "publication" page, it might pop up at random time.
 
-## Current work in progress
+## Current work (so called [WIP](https://en.wikipedia.org/wiki/Work_in_process))
 
 - **Stata Starter Kit**
 {{< ressource "stack-overflow" "/articles/stata-sk/" "www" >}}
@@ -25,7 +25,7 @@ If you are looking for my old teaching ressources, almost everything should be o
 *A short tutorial on using R to perform common statistical analysis à la SAS.* [will probably end up in the Trash folder]
 
     
-## Past work mostly defunct
+## Past work (also called 'mostly defunct')
 
 (I mean, don't expect a check from me.)
 
