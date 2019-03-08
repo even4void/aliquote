@@ -2,7 +2,6 @@
 title: "On the Raise and Fall of Apple Products"
 date: 2018-05-21T20:30:16+02:00
 draft: false
-description: ""
 tags: ["apple"]
 categories: []
 ---
@@ -24,6 +23,9 @@ Unfortunately, it also happened that the `Makefile` was not ready for consumptio
 2. (compilation) I got some interesting errors in `xgv_mds.c` (the variable `point_is_dragging` was used in place of `point_is_dragged`)---this was highlighted by `clang` quite nicely. There were a lot more of issues than that, including problems with `return` statement or `static` declaration, and a redefinition of `psort` that I had already sorted out in the past.
 
 3. (linking) I never succeed in linking the whole stuff, partly because of the above complications (and how I did alter the original code) but also because of 32/64 bits issues that I was not able to sort out (and there was also dependency issues like Xmu which actually sits in `/opt/X11/lib` but was causing enough problem to prevent the linking stage to complete).
+
+
+![](/img/2018-04-17-21-51-17.png)
 
 -----
 
