@@ -57,7 +57,6 @@ ani.options(opt.ani)
 
 Videos will be written in a `tmp/` folder and can be copied back to the current directory. Here is how it looks for the example shown above.
 
-<OBJECT DATA="http://www.aliquote.org/articles/slides/mva_clinres/ridge.mov" TYPE="video/quicktime" TITLE="Demonstration of ridge regression" WIDTH=450 HEIGHT=450>
-<PARAM NAME=pluginspage VALUE="http://quicktime.apple.com/">
-<PARAM NAME=autoplay VALUE=true>
-</OBJECT>
+<video class="tab" controls>Your browser does not support the &lt;video&gt; tag.
+  <source src="/img/ridge.mov"/>
+</video>
