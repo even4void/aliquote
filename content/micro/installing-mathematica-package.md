@@ -10,4 +10,4 @@ Mathematica package properly failed miserably this morning. I ended up
 copying/pasting the wole archive into `~/Library/Mathematica/Applications`.
 Anyway, this worked and I am now able to plot phylogenetic trees!
 
-</img/2019-02-21-19-02-43.pngg>
+{{< figure src="/img/2019-02-21-19-02-43.png" >}}
