@@ -127,7 +127,9 @@ $ ffmpeg bagging.mpg bagging.mov
 
 Here is the result:
 
-<object width="480" height="480" classid="clsid:02bf25d5-8c17-4b23-bc80-d3488abddc6b"><br /> <param name="src" value="http://www.aliquote.org/pub/bagging.mov" /><embed src="http://www.aliquote.org/pub/bagging.mov" type="video/quicktime" width="480" height="480"></embed><br /> </object>
+<video class="tab" controls>Your browser does not support the &lt;video&gt; tag.
+  <source src="/pub/bagging.mov"/>
+</video>
 
 As can be seen, the cutoff considered for splitting each node varies from one trial to the other, but overall the tree structure appears to be relatively stable (well, this is also a school case). It should be noted that we didn't consider a random subset of the variables of interest when growing a tree, and that we don't collect class membership predicted on OOB data. Finally, we don't apply the permutation scheme used in RF to assess variable importance, so this really is a toy example, but it can be extended without any difficulties. In particular, there is a tree extractor in the `randomForest` package, see `help(getTree)`. Note that it is a raw data frame, so we still need to build a wrapper function around that information to produce an object of class `tree`.
 

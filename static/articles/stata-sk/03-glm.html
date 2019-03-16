@@ -3,7 +3,7 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="fr" xml:lang="fr">
 <head>
-<!-- 2019-02-23 Sam 17:17 -->
+<!-- 2019-02-24 Dim 09:26 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Stata : modélisation statistique (1)</title>
@@ -86,27 +86,27 @@ for the JavaScript code in this tag.
 <h2>Table des matières</h2>
 <div id="text-table-of-contents">
 <ul>
-<li><a href="#orgfd5840c">Le modèle de régression linéaire simple</a>
+<li><a href="#org4e272ae">Le modèle de régression linéaire simple</a>
 <ul>
-<li><a href="#org85765d5">Un exemple de régression linéaire simple</a></li>
-<li><a href="#org6442200">Diagnostic du modèle</a></li>
-<li><a href="#org57d6200">Cas de la régression sur une variable catégorielle</a></li>
-<li><a href="#org4388640">Lien avec le test de Student</a></li>
-<li><a href="#org3e80349">Traitement de la non linéarité</a></li>
-<li><a href="#org4182b2d">Approche robuste</a></li>
+<li><a href="#org6a14a79">Un exemple de régression linéaire simple</a></li>
+<li><a href="#orge882ae4">Diagnostic du modèle</a></li>
+<li><a href="#org7c0c515">Cas de la régression sur une variable catégorielle</a></li>
+<li><a href="#org0196dad">Lien avec le test de Student</a></li>
+<li><a href="#org673d075">Traitement de la non linéarité</a></li>
+<li><a href="#org6586834">Approche robuste</a></li>
 </ul>
 </li>
-<li><a href="#org70bf8aa">La régression linéaire multiple</a>
+<li><a href="#orgcbf32f6">La régression linéaire multiple</a>
 <ul>
-<li><a href="#orgbed7b1a">Exemple de base</a></li>
-<li><a href="#org3926c98">Diagnostic du modèle</a></li>
-<li><a href="#org3f5069b">Tests joints et intervalles de confiance simultanés</a></li>
-<li><a href="#orgd607ebd">Spécification de contrastes</a></li>
-<li><a href="#org35695c9">Comparaison de modèles emboîtés</a></li>
-<li><a href="#org69a7404">Ces des données en cluster</a></li>
+<li><a href="#orga8400ea">Exemple de base</a></li>
+<li><a href="#org8371239">Diagnostic du modèle</a></li>
+<li><a href="#org097367d">Tests joints et intervalles de confiance simultanés</a></li>
+<li><a href="#org33fcde0">Spécification de contrastes</a></li>
+<li><a href="#org82f2733">Comparaison de modèles emboîtés</a></li>
+<li><a href="#orgcd383a4">Ces des données en cluster</a></li>
 </ul>
 </li>
-<li><a href="#org24f52c1">Modèle linéaire et applications</a></li>
+<li><a href="#org9eb6b3d">Modèle linéaire et applications</a></li>
 </ul>
 </div>
 </div>
@@ -118,17 +118,17 @@ Dans ce chapitre, on s&rsquo;intéressera à la construction de modèles de rég
 La mise en oeuvre d&rsquo;un modèle de régression a déjà été discutée brièvement dans le <a href="./00-intro.html">tutoriel d&rsquo;introduction à Stata</a>. Dans ce chapitre, on va s&rsquo;intéresser à l&rsquo;estimation des paramètres d&rsquo;un modèle de régression linéaire, à la sélection du &laquo;&nbsp;meilleur&nbsp;&raquo; modèle dans un cadre explicatif, au diagnostic du modèle, et à la prédiction ponctuelle ou par intervalles. On prendra pour base des données observationnelles issues d&rsquo;enquêtes ou d&rsquo;études cliniques transversales. Les séries chronologiques et les données longitudinales seront traitées dans des chapitres séparés.
 </p>
 
-<div id="outline-container-orgfd5840c" class="outline-2">
-<h2 id="orgfd5840c">Le modèle de régression linéaire simple</h2>
-<div class="outline-text-2" id="text-orgfd5840c">
+<div id="outline-container-org4e272ae" class="outline-2">
+<h2 id="org4e272ae">Le modèle de régression linéaire simple</h2>
+<div class="outline-text-2" id="text-org4e272ae">
+</div>
+<div id="outline-container-org6a14a79" class="outline-3">
+<h3 id="org6a14a79">Un exemple de régression linéaire simple</h3>
+<div class="outline-text-3" id="text-org6a14a79">
 <p>
 Dans un premier temps, procédons à quelques rappels concernant la régression linéaire simple, la corrélation linéaire et le test de Student. Les notions connexes telles que les associations non linéaires ou les approches non paramétriques seront traitées ultérieurement. 
 </p>
-</div>
 
-<div id="outline-container-org85765d5" class="outline-3">
-<h3 id="org85765d5">Un exemple de régression linéaire simple</h3>
-<div class="outline-text-3" id="text-org85765d5">
 <p>
 Les données d&rsquo;illustration peuvent être chargées directement depuis internet à l&rsquo;aide de la commande <a href="https://www.stata.com/help.cgi?webuse" class="stata">webuse</a>. Il s&rsquo;agit d&rsquo;une enquête épidémiologique rétrospective dans laquelle on s&rsquo;intéresse aux facteurs de risque d&rsquo;un bébé ayant un poids inférieur à la norme, selon les normes américaines des années 90. Ces données sont extensivement analysées dans l&rsquo;ouvrage de Hosmer &amp; Lemeshow [<a href="#hosmer-2000-applied-logis-regres">5</a>]. Au total, le tableau de données contient 11 variables, la variable réponse étant le poids des bébés (<code>bwt</code>) :
 </p>
@@ -169,14 +169,14 @@ graph export "fig-03-scatter-bwt-lwt.eps", fontface(DroidSans) replace
 </div>
 
 
-<div id="org4314e6d" class="figure">
+<div id="org145156a" class="figure">
 <p><img src="./fig-03-scatter-bwt-lwt.png" alt="fig-03-scatter-bwt-lwt.png" width="640px" />
 </p>
 <p><span class="figure-number">Figure&nbsp;1&nbsp;: </span>Relation entre le poids des bébés et le poids des mères</p>
 </div>
 
 <p>
-Il est tout à fait possible et largement recommendé de superposer une courbe loess [<a href="#cleveland-1979-robus-local">2</a>] sur le diagramme de dispersion précédent afin d&rsquo;évaluer visuellement les écarts à la linéarité concernant la relation entre ces deux variables. Une courbe loess, ou lowess (<i>locally weighted scatterplot smoothing</i>), fait partie de la famille des régressions polynomiales &laquo;&nbsp;locales&nbsp;&raquo;, c&rsquo;est-à-dire des modèles non-paramétriques de régression tenant compte du voisinage des observations, un peu à l&rsquo;image des techniques telles que les \(k\) plus proches voisins dans une tâche de classification (car l&rsquo;estimation est pondérée) ou les moyennes mobiles en séries chronologiques (car on définit une fenêtre de lissage que l&rsquo;on déplace sur l&rsquo;axe des \(x\)). Le poids de chaque observation est déterminé par sa distance par rapport au point sur lequel se centre la régression, et généralement la fonction de pondération utilisée est de type tri-cubique comme proposée par [<a href="#cleveland-1979-robus-local">2</a>], \((1 - (\text{dist}/\text{maxdist})^3)^3)\), ce qui revient à donner un poids maximal à l&rsquo;observation centrale, les observations les plus distantes plus de cette dernière contribuant le moins à la régression polynomiale. Stata autorise n&rsquo;importe quelle combinaison des options <code>mean</code> (utiliser la moyenne des observations, comme dans une moyenne mobile, au lieu des valeurs prédites par la régression) et <code>noweight</code> (l&rsquo;utilisation d&rsquo;une fonction de pondération tri-cubique ou non). À noter qu&rsquo;il s&rsquo;agit d&rsquo;une approche quelque peu intensive sur le plan des calculs : pour \(n\) observations, \(n\) régressions sont réalisées.
+Il est tout à fait possible et largement recommendé de superposer une courbe loess [<a href="#cleveland-1979-robus-local">2</a>] sur le diagramme de dispersion précédent afin d&rsquo;évaluer visuellement les écarts à la linéarité concernant la relation entre ces deux variables. Une courbe &laquo;&nbsp;loess&nbsp;&raquo;, ou lowess (<i>locally weighted scatterplot smoothing</i>), fait partie de la famille des régressions polynomiales &laquo;&nbsp;locales&nbsp;&raquo;, c&rsquo;est-à-dire des modèles non-paramétriques de régression tenant compte du voisinage des observations, un peu à l&rsquo;image des techniques telles que les \(k\) plus proches voisins dans une tâche de classification (car l&rsquo;estimation est pondérée) ou les moyennes mobiles en séries chronologiques (car on définit une fenêtre de lissage que l&rsquo;on déplace sur l&rsquo;axe des \(x\)). Le poids de chaque observation est déterminé par sa distance par rapport au point sur lequel se centre la régression, et généralement la fonction de pondération utilisée est de type tri-cubique comme proposée par [<a href="#cleveland-1979-robus-local">2</a>], \((1 - (\text{dist}/\text{maxdist})^3)^3)\), ce qui revient à donner un poids maximal à l&rsquo;observation centrale, les observations les plus distantes plus de cette dernière contribuant le moins à la régression polynomiale. Stata autorise n&rsquo;importe quelle combinaison des options <code>mean</code> (utiliser la moyenne des observations, comme dans une moyenne mobile, au lieu des valeurs prédites par la régression) et <code>noweight</code> (l&rsquo;utilisation d&rsquo;une fonction de pondération tri-cubique ou non). À noter qu&rsquo;il s&rsquo;agit d&rsquo;une approche quelque peu intensive sur le plan des calculs : pour \(n\) observations, \(n\) régressions sont réalisées.
 </p>
 
 <p>
@@ -190,7 +190,7 @@ graph export "fig-03-lowess-bwt-lwt.eps", fontface(DroidSans) replace
 </div>
 
 
-<div id="org28d9fe4" class="figure">
+<div id="org45838a8" class="figure">
 <p><img src="./fig-03-lowess-bwt-lwt.png" alt="fig-03-lowess-bwt-lwt.png" width="640px" />
 </p>
 <p><span class="figure-number">Figure&nbsp;2&nbsp;: </span>Relation entre le poids des bébés et le poids des mères (courbe loess)</p>
@@ -225,9 +225,18 @@ correlate bwt lwt
 <p>
 Voici une formulation simplifiée du modèle de régression linéaire. Soit \(y_i\) la réponse observée sur l&rsquo;individu \(i\), et \(x_i\) sa valeur
 observée pour le prédicteur \(x\). Le modèle de régression linéaire s&rsquo;écrit :
+</p>
+
+<p>
 \[y_i = \beta_0+\beta_1x_i+\varepsilon_i,\]
+</p>
+
+<p>
 où \(\beta_0\) représente l&rsquo;ordonnée à l&rsquo;origine (<i>intercept</i>) et \(\beta_1\) la pente (<i>slope</i>) de la droite de régression, et
 \(\varepsilon_i\sim\mathcal{N}(0,\sigma^2)\) est un terme d&rsquo;erreur (résidus, supposés indépendants entre eux ainsi que de \(x\)). En minimisant les différences quadratiques entre les valeurs observées et les valeurs prédites (principe des MCO), on peut estimer les coefficients de régression, \(\widehat\beta_0\) et \(\widehat\beta_1\) :
+</p>
+
+<p>
 \[\begin{array}{l}
 \widehat\beta_0 = \bar y - \widehat\beta_1\bar x\\
 \widehat\beta_1 = \sum(y_i-\bar y)(x_i-\bar x)/\sum(x_i-\bar x)^2\\
@@ -300,9 +309,9 @@ display b[1,1]
 </div>
 </div>
 
-<div id="outline-container-org6442200" class="outline-3">
-<h3 id="org6442200">Diagnostic du modèle</h3>
-<div class="outline-text-3" id="text-org6442200">
+<div id="outline-container-orge882ae4" class="outline-3">
+<h3 id="orge882ae4">Diagnostic du modèle</h3>
+<div class="outline-text-3" id="text-orge882ae4">
 <p>
 La commande <a href="https://www.stata.com/help.cgi?predict" class="stata">predict</a> permet non seulement de calculer les valeurs ajustées du modèle mais également les résidus du modèle (\(e_i = \tilde y_i - y_i\)) ainsi que d&rsquo;autres statistiques utiles pour diagnostiquer la qualité d&rsquo;ajustement du modèle de régression. 
 </p>
@@ -338,7 +347,7 @@ graph export "fig-03-qnorm-r.eps", fontface(DroidSans) replace
 </div>
 
 
-<div id="org0d65a19" class="figure">
+<div id="org729101a" class="figure">
 <p><img src="./fig-03-qnorm-r.png" alt="fig-03-qnorm-r.png" width="640px" />
 </p>
 <p><span class="figure-number">Figure&nbsp;3&nbsp;: </span>Distribution des résidus simples</p>
@@ -355,7 +364,7 @@ graph export "fig-03-kdensity-rs.eps", fontface(DroidSans) replace
 </div>
 
 
-<div id="org29e0fc5" class="figure">
+<div id="orge2b0fe9" class="figure">
 <p><img src="./fig-03-kdensity-rs.png" alt="fig-03-kdensity-rs.png" width="640px" />
 </p>
 <p><span class="figure-number">Figure&nbsp;4&nbsp;: </span>Distribution des résidus studentisés</p>
@@ -372,7 +381,7 @@ graph export "fig-03-scatter-rs-yhat.eps", fontface(DroidSans) replace
 </div>
 
 
-<div id="org248a3b7" class="figure">
+<div id="org6078bd7" class="figure">
 <p><img src="./fig-03-scatter-rs-yhat.png" alt="fig-03-scatter-rs-yhat.png" width="640px" />
 </p>
 <p><span class="figure-number">Figure&nbsp;5&nbsp;: </span>Relation entre valeurs ajustées et résidus</p>
@@ -380,9 +389,9 @@ graph export "fig-03-scatter-rs-yhat.eps", fontface(DroidSans) replace
 </div>
 </div>
 
-<div id="outline-container-org57d6200" class="outline-3">
-<h3 id="org57d6200">Cas de la régression sur une variable catégorielle</h3>
-<div class="outline-text-3" id="text-org57d6200">
+<div id="outline-container-org7c0c515" class="outline-3">
+<h3 id="org7c0c515">Cas de la régression sur une variable catégorielle</h3>
+<div class="outline-text-3" id="text-org7c0c515">
 <p>
 On a vu dans le chapitre sur la <a href="./01-data.html">gestion des données</a> comment représenter les variables catégorielles sous Stata : dans le cas des variables binaires, un codage sous forme de 0 et de 1 est parfaitement adéquat, tandis que dans le cas des variables à plus de deux modalités, on assigne à chaque niveau un code numérique en débutant à 1. Ainsi, pour une variable à trois modalités, le premier niveau sera représenté par la valeur 1 tandis que le troisième et dernier niveau prendra la valeur 3. On associera éventuellement des étiquettes à chacun des niveaux afin de mieux identifier les différentes classes.
 </p>
@@ -429,7 +438,7 @@ graph export "fig-03-box-bwt-smoke.eps", fontface(DroidSans) replace
 </div>
 
 
-<div id="org9712af2" class="figure">
+<div id="org463c512" class="figure">
 <p><img src="./fig-03-box-bwt-smoke.png" alt="fig-03-box-bwt-smoke.png" width="640px" />
 </p>
 <p><span class="figure-number">Figure&nbsp;6&nbsp;: </span>Relation entre poids des bébés et statut fumeur</p>
@@ -606,9 +615,9 @@ Margins      : asbalanced
 </div>
 </div>
 
-<div id="outline-container-org4388640" class="outline-3">
-<h3 id="org4388640">Lien avec le test de Student</h3>
-<div class="outline-text-3" id="text-org4388640">
+<div id="outline-container-org0196dad" class="outline-3">
+<h3 id="org0196dad">Lien avec le test de Student</h3>
+<div class="outline-text-3" id="text-org0196dad">
 <p>
 La différence de moyennes utilisée pour former la statistique de test de Student et qui est rappelée dans la sortie de <a href="https://www.stata.com/help.cgi?ttest" class="stata">ttest</a> ci-dessous correspond strictement à la pente de la droite de régression estimée dans la section précédente :
 </p>
@@ -650,7 +659,7 @@ graph export "fig-03-stripplot-bwt-smoke.eps", fontface(DroidSans) replace
 </div>
 
 
-<div id="org699b453" class="figure">
+<div id="orga25f2bc" class="figure">
 <p><img src="./fig-03-stripplot-bwt-smoke.png" alt="fig-03-stripplot-bwt-smoke.png" width="640px" />
 </p>
 <p><span class="figure-number">Figure&nbsp;7&nbsp;: </span>Relation entre poids des bébés et statut fumeur</p>
@@ -738,7 +747,7 @@ graph export "fig-03-scatter-temp-hour.eps", fontface(DroidSans) replace
 </div>
 
 
-<div id="org679575d" class="figure">
+<div id="org9ca9582" class="figure">
 <p><img src="./fig-03-scatter-temp-hour.png" alt="fig-03-scatter-temp-hour.png" width="640px" />
 </p>
 <p><span class="figure-number">Figure&nbsp;8&nbsp;: </span>Évolution de la température après la prise en charge dans les deux groupes de patients</p>
@@ -917,9 +926,9 @@ test treat1hour = treat2hour
 </div>
 </div>
 
-<div id="outline-container-org3e80349" class="outline-3">
-<h3 id="org3e80349">Traitement de la non linéarité</h3>
-<div class="outline-text-3" id="text-org3e80349">
+<div id="outline-container-org673d075" class="outline-3">
+<h3 id="org673d075">Traitement de la non linéarité</h3>
+<div class="outline-text-3" id="text-org673d075">
 <p>
 Il existe plusieurs approches pour traiter le cas d&rsquo;une relation non linéaire entre la variable réponse et un prédicteur continu. Revenons aux données sur les poids de naissance pour illustrer avec l&rsquo;âge de la mère quelques-unes des approches possibles :
 </p>
@@ -937,7 +946,7 @@ graph export "fig-03-scatter-bwt-age.eps", fontface(DroidSans) replace
 </div>
 
 
-<div id="org387b8aa" class="figure">
+<div id="org72abd0d" class="figure">
 <p><img src="./fig-03-scatter-bwt-age.png" alt="fig-03-scatter-bwt-age.png" width="640px" />
 </p>
 <p><span class="figure-number">Figure&nbsp;9&nbsp;: </span>Relation entre poids des bébés et âge de la mère</p>
@@ -1057,7 +1066,7 @@ graph export "fig-03-fpplot-bwt-age.eps", fontface(DroidSans) replace
 </div>
 
 
-<div id="orgd49b5ab" class="figure">
+<div id="org3cf9628" class="figure">
 <p><img src="./fig-03-fpplot-bwt-age.png" alt="fig-03-fpplot-bwt-age.png" width="640px" />
 </p>
 <p><span class="figure-number">Figure&nbsp;10&nbsp;: </span>Utilisation de polynômes fractionnaires pour la relation entre poids des bébés et âge de la mère</p>
@@ -1065,9 +1074,9 @@ graph export "fig-03-fpplot-bwt-age.eps", fontface(DroidSans) replace
 </div>
 </div>
 
-<div id="outline-container-org4182b2d" class="outline-3">
-<h3 id="org4182b2d">Approche robuste</h3>
-<div class="outline-text-3" id="text-org4182b2d">
+<div id="outline-container-org6586834" class="outline-3">
+<h3 id="org6586834">Approche robuste</h3>
+<div class="outline-text-3" id="text-org6586834">
 <p>
 <b># FIXME</b> Find a better illustration + provide more background
 </p>
@@ -1083,7 +1092,7 @@ graph export "fig-03-scatter-bwt-lwt-race3.eps", fontface(DroidSans) replace
 </div>
 
 
-<div id="orgaa3b53d" class="figure">
+<div id="org9f16643" class="figure">
 <p><img src="./fig-03-scatter-bwt-lwt-race3.png" alt="fig-03-scatter-bwt-lwt-race3.png" width="640px" />
 </p>
 <p><span class="figure-number">Figure&nbsp;11&nbsp;: </span>Relation entre poids des bébés et taille de la mère</p>
@@ -1144,7 +1153,7 @@ graph export "fig-03-scatter-bwt-lwt-race3-2.eps", fontface(DroidSans) replace
 </div>
 
 
-<div id="org191ffa7" class="figure">
+<div id="org1846207" class="figure">
 <p><img src="./fig-03-scatter-bwt-lwt-race3-2.png" alt="fig-03-scatter-bwt-lwt-race3-2.png" width="640px" />
 </p>
 <p><span class="figure-number">Figure&nbsp;12&nbsp;: </span>Estimation MCO versus M-estimateur</p>
@@ -1153,39 +1162,48 @@ graph export "fig-03-scatter-bwt-lwt-race3-2.eps", fontface(DroidSans) replace
 </div>
 </div>
 
-<div id="outline-container-org70bf8aa" class="outline-2">
-<h2 id="org70bf8aa">La régression linéaire multiple</h2>
-<div class="outline-text-2" id="text-org70bf8aa">
-</div>
-<div id="outline-container-orgbed7b1a" class="outline-3">
-<h3 id="orgbed7b1a">Exemple de base</h3>
+
+<div id="outline-container-orgcbf32f6" class="outline-2">
+<h2 id="orgcbf32f6">La régression linéaire multiple</h2>
+<div class="outline-text-2" id="text-orgcbf32f6">
+<p>
+#TODO
+</p>
 </div>
 
-<div id="outline-container-org3926c98" class="outline-3">
-<h3 id="org3926c98">Diagnostic du modèle</h3>
+<div id="outline-container-orga8400ea" class="outline-3">
+<h3 id="orga8400ea">Exemple de base</h3>
 </div>
 
-<div id="outline-container-org3f5069b" class="outline-3">
-<h3 id="org3f5069b">Tests joints et intervalles de confiance simultanés</h3>
+<div id="outline-container-org8371239" class="outline-3">
+<h3 id="org8371239">Diagnostic du modèle</h3>
 </div>
 
-<div id="outline-container-orgd607ebd" class="outline-3">
-<h3 id="orgd607ebd">Spécification de contrastes</h3>
+<div id="outline-container-org097367d" class="outline-3">
+<h3 id="org097367d">Tests joints et intervalles de confiance simultanés</h3>
 </div>
 
-<div id="outline-container-org35695c9" class="outline-3">
-<h3 id="org35695c9">Comparaison de modèles emboîtés</h3>
+<div id="outline-container-org33fcde0" class="outline-3">
+<h3 id="org33fcde0">Spécification de contrastes</h3>
+</div>
+
+<div id="outline-container-org82f2733" class="outline-3">
+<h3 id="org82f2733">Comparaison de modèles emboîtés</h3>
+</div>
+
+<div id="outline-container-orgcd383a4" class="outline-3">
+<h3 id="orgcd383a4">Ces des données en cluster</h3>
+</div>
 </div>
 
 
-<div id="outline-container-org69a7404" class="outline-3">
-<h3 id="org69a7404">Ces des données en cluster</h3>
-</div>
-</div>
+<div id="outline-container-org9eb6b3d" class="outline-2">
+<h2 id="org9eb6b3d">Modèle linéaire et applications</h2>
+<div class="outline-text-2" id="text-org9eb6b3d">
+<p>
+#TODO
+</p>
 
-<div id="outline-container-org24f52c1" class="outline-2">
-<h2 id="org24f52c1">Modèle linéaire et applications</h2>
-<div class="outline-text-2" id="text-org24f52c1">
 <div id="bibliography">
 <h2>Références</h2>
 

@@ -3,7 +3,7 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="fr" xml:lang="fr">
 <head>
-<!-- 2018-07-07 Sam 10:47 -->
+<!-- 2019-02-24 Dim 09:27 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Stata : liste de modules utiles</title>
@@ -15,7 +15,7 @@
 @licstart  The following is the entire license notice for the
 JavaScript code in this tag.
 
-Copyright (C) 2012-2018 Free Software Foundation, Inc.
+Copyright (C) 2012-2019 Free Software Foundation, Inc.
 
 The JavaScript code in this tag is free software: you can
 redistribute it and/or modify it under the terms of the GNU
@@ -86,14 +86,14 @@ for the JavaScript code in this tag.
 <h2>Table des matières</h2>
 <div id="text-table-of-contents">
 <ul>
-<li><a href="#org6b7ab9f">Graphics</a>
+<li><a href="#org19dcd12">Graphics</a>
 <ul>
-<li><a href="#org4cf66fd">stripplot</a></li>
+<li><a href="#org191932f">stripplot</a></li>
 </ul>
 </li>
-<li><a href="#orge21053f">Reporting</a>
+<li><a href="#org7e6a1a6">Reporting</a>
 <ul>
-<li><a href="#orgbc0e8ef">fitstat</a></li>
+<li><a href="#org9713082">fitstat</a></li>
 </ul>
 </li>
 </ul>
@@ -101,13 +101,13 @@ for the JavaScript code in this tag.
 </div>
 
 
-<div id="outline-container-org6b7ab9f" class="outline-2">
-<h2 id="org6b7ab9f">Graphics</h2>
-<div class="outline-text-2" id="text-org6b7ab9f">
+<div id="outline-container-org19dcd12" class="outline-2">
+<h2 id="org19dcd12">Graphics</h2>
+<div class="outline-text-2" id="text-org19dcd12">
 </div>
-<div id="outline-container-org4cf66fd" class="outline-3">
-<h3 id="org4cf66fd">stripplot</h3>
-<div class="outline-text-3" id="text-org4cf66fd">
+<div id="outline-container-org191932f" class="outline-3">
+<h3 id="org191932f">stripplot</h3>
+<div class="outline-text-3" id="text-org191932f">
 <p>
 <code>ssc install stripplot</code>
 </p>
@@ -119,13 +119,13 @@ Voir aussi les autres <a href="https://stats.idre.ucla.edu/stata/faq/graph/njc-s
 </div>
 </div>
 
-<div id="outline-container-orge21053f" class="outline-2">
-<h2 id="orge21053f">Reporting</h2>
-<div class="outline-text-2" id="text-orge21053f">
+<div id="outline-container-org7e6a1a6" class="outline-2">
+<h2 id="org7e6a1a6">Reporting</h2>
+<div class="outline-text-2" id="text-org7e6a1a6">
 </div>
-<div id="outline-container-orgbc0e8ef" class="outline-3">
-<h3 id="orgbc0e8ef">fitstat</h3>
-<div class="outline-text-3" id="text-orgbc0e8ef">
+<div id="outline-container-org9713082" class="outline-3">
+<h3 id="org9713082">fitstat</h3>
+<div class="outline-text-3" id="text-org9713082">
 <p>
 La commande <a href="https://ideas.repec.org/c/boc/bocode/s407201.html">fitstat</a>, développée par les auteurs de <i>Regression Models for Categorical Dependent Variables Using Stata</i> [<a href="#scott-2001-regres-model">1</a>] fournit des indicateurs additionnels de qualité d&rsquo;ajustement d&rsquo;une large variété de modèles de régression. Elle est compatible avec 
 </p>
@@ -157,10 +157,10 @@ tabulate race, gen(irace)
       Total |        189      100.00
 logit low lwt irace2 irace3 ui, or nolog
 
-Logistic regression                             Number of obs     =        189
-                                                LR chi2(4)        =      15.15
-                                                Prob &gt; chi2       =     0.0044
-Log likelihood = -109.76147                     Pseudo R2         =     0.0646
+Logistic regression                               Number of obs   =        189
+                                                  LR chi2(4)      =      15.15
+                                                  Prob &gt; chi2     =     0.0044
+Log likelihood = -109.76147                       Pseudo R2       =     0.0646
 
 ------------------------------------------------------------------------------
          low | Odds Ratio   Std. Err.      z    P&gt;|z|     [95% Conf. Interval]
@@ -171,7 +171,6 @@ Log likelihood = -109.76147                     Pseudo R2         =     0.0646
           ui |   2.299748   .9819923     1.95   0.051     .9959037    5.310596
        _cons |   1.628981   1.399932     0.57   0.570      .302274    8.778724
 ------------------------------------------------------------------------------
-Note: _cons estimates baseline odds.
 fitstat
 
 Measures of Fit for logit of low
@@ -237,6 +236,9 @@ J.&nbsp;Scott&nbsp;Long and J.&nbsp;Freese.
  <em>Regression Models For Categorical Dependent Variables Using
   Stata</em>.
  Stata Press, 2001.
+<blockquote><font size="-1">
+Keywords: Stata
+</font></blockquote>
 
 </td>
 </tr>

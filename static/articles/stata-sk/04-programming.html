@@ -3,7 +3,7 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="fr" xml:lang="fr">
 <head>
-<!-- 2019-02-17 Dim 12:00 -->
+<!-- 2019-02-24 Dim 09:26 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Stata : programmation</title>
@@ -86,17 +86,17 @@ for the JavaScript code in this tag.
 <h2>Table des matières</h2>
 <div id="text-table-of-contents">
 <ul>
-<li><a href="#org55d1597">Programmation avec Stata</a>
+<li><a href="#orge0cdb55">Programmation avec Stata</a>
 <ul>
-<li><a href="#org8bc42a9">Les macros Stata</a></li>
-<li><a href="#org84a61b5">Macros locales</a></li>
-<li><a href="#orgaf8454a">Compteurs et boucles</a></li>
-<li><a href="#org83f4ba3">Les différents types de boucles</a></li>
-<li><a href="#org1b98c87">Structures de contrôle</a></li>
+<li><a href="#org913ccb9">Les macros Stata</a></li>
+<li><a href="#orgdeae5ff">Macros locales</a></li>
+<li><a href="#orgde3c8a5">Compteurs et boucles</a></li>
+<li><a href="#org17c456f">Les différents types de boucles</a></li>
+<li><a href="#orgf1b2434">Structures de contrôle</a></li>
 </ul>
 </li>
-<li><a href="#org8c1f1eb">Automatisation</a></li>
-<li><a href="#orga6375ab">Gestion d&rsquo;un package</a></li>
+<li><a href="#orgf4c2583">Automatisation</a></li>
+<li><a href="#orga08cf2a">Gestion d&rsquo;un package</a></li>
 </ul>
 </div>
 </div>
@@ -104,13 +104,13 @@ for the JavaScript code in this tag.
 Ce chapitre est consacré aux techniques de programmation avec le langage Stata, et dans une moindre mesure Mata. L&rsquo;ouvrage de référence demeure l&rsquo;ouvrage de Mitchell [<a href="#mitchell-2010-data-manag">mitchell-2010-data-manag</a>] pour tout ce qui relève de l&rsquo;automatisation à l&rsquo;aide de commandes Stata pour la gestion de données, ainsi que l&rsquo;ouvrage de Baum sur la programmation en elle-même [<a href="#baum-2009-introd-stata-progr">baum-2009-introd-stata-progr</a>]. Germán Rodríguez propose également un <a href="http://data.princeton.edu/stata/programming.html">excellent tutoriel</a> sur son site internet. Concernant la création de commande et l&rsquo;usage de Mata, l&rsquo;ouvrage de Bill Gould [<a href="#gould-2018-mata-book">gould-2018-mata-book</a>]. 
 </p>
 
-<div id="outline-container-org55d1597" class="outline-2">
-<h2 id="org55d1597">Programmation avec Stata</h2>
-<div class="outline-text-2" id="text-org55d1597">
+<div id="outline-container-orge0cdb55" class="outline-2">
+<h2 id="orge0cdb55">Programmation avec Stata</h2>
+<div class="outline-text-2" id="text-orge0cdb55">
 </div>
-<div id="outline-container-org8bc42a9" class="outline-3">
-<h3 id="org8bc42a9">Les macros Stata</h3>
-<div class="outline-text-3" id="text-org8bc42a9">
+<div id="outline-container-org913ccb9" class="outline-3">
+<h3 id="org913ccb9">Les macros Stata</h3>
+<div class="outline-text-3" id="text-org913ccb9">
 <p>
 Ce que l&rsquo;on appelle &laquo;&nbsp;variable&nbsp;&raquo; dans la plupart des langages de programmation correspond au terme &laquo;&nbsp;macro&nbsp;&raquo; dans le langage Stata. Une variable reste définie dans le sens statistique et donc correspond aux colonnes d&rsquo;un tableau de données. Quant aux &laquo;&nbsp;macros&nbsp;&raquo;, on en distingue <a href="http://www.stata.com/statalist/archive/2008-08/msg01258.html">plusieurs types</a>, selon leur nature ou leur portée.
 </p>
@@ -142,9 +142,9 @@ La command <a href="https://www.stata.com/help.cgi?summarize" class="stata">summ
 </div>
 </div>
 
-<div id="outline-container-org84a61b5" class="outline-3">
-<h3 id="org84a61b5">Macros locales</h3>
-<div class="outline-text-3" id="text-org84a61b5">
+<div id="outline-container-orgdeae5ff" class="outline-3">
+<h3 id="orgdeae5ff">Macros locales</h3>
+<div class="outline-text-3" id="text-orgdeae5ff">
 <p>
 Une macro locale se définit comme une expression : <code>local name [=] text</code>. Une macro locale permet de stocker sous forme de chaîne de caractères une expression (ou son résultat après évaluation dans le cas ou on utilise le signe =). Voici un exemple d&rsquo;utilisation :
 </p>
@@ -238,9 +238,9 @@ estimates table m*
 </div>
 </div>
 
-<div id="outline-container-orgaf8454a" class="outline-3">
-<h3 id="orgaf8454a">Compteurs et boucles</h3>
-<div class="outline-text-3" id="text-orgaf8454a">
+<div id="outline-container-orgde3c8a5" class="outline-3">
+<h3 id="orgde3c8a5">Compteurs et boucles</h3>
+<div class="outline-text-3" id="text-orgde3c8a5">
 <p>
 On rappelle que pour la sélection critériée d&rsquo;observation dans un tableau de données, le qualificateur <a href="https://www.stata.com/help.cgi?if" class="stata">if</a> est l&rsquo;un des plus utiles. Voici par exemple une instruction typique : <code>list [varlist] [if] [in] [, options]</code>, ainsi que quelques illustrations :
 </p>
@@ -288,9 +288,9 @@ Les instructions <a href="https://www.stata.com/help.cgi?inrange" class="stata">
 </div>
 </div>
 
-<div id="outline-container-org83f4ba3" class="outline-3">
-<h3 id="org83f4ba3">Les différents types de boucles</h3>
-<div class="outline-text-3" id="text-org83f4ba3">
+<div id="outline-container-org17c456f" class="outline-3">
+<h3 id="org17c456f">Les différents types de boucles</h3>
+<div class="outline-text-3" id="text-org17c456f">
 <p>
 En dehors des utilitaires classiques de branchement conditionnel (if/else) ou d’itération (while) détaillé dans la section suivante, Stata permet de construire des boucles à partir de nombres ou d’éléments d’une liste. Les deux commandes clés sont :
 </p>
@@ -435,9 +435,9 @@ Dans la même veine, on peut imaginer : le recodage en masse des niveaux d’un
 </div>
 </div>
 
-<div id="outline-container-org1b98c87" class="outline-3">
-<h3 id="org1b98c87">Structures de contrôle</h3>
-<div class="outline-text-3" id="text-org1b98c87">
+<div id="outline-container-orgf1b2434" class="outline-3">
+<h3 id="orgf1b2434">Structures de contrôle</h3>
+<div class="outline-text-3" id="text-orgf1b2434">
 <p>
 Les structures de branchement conditionnels telles qu&rsquo;une instruction if/else peuvent être utilisées directement à l&rsquo;intérieur d&rsquo;une boucle <a href="https://www.stata.com/help.cgi?foreach" class="stata">foreach</a>, par exemple, ou dans un script <i>do</i> de contrôle de qualité, en conjonction avec <a href="https://www.stata.com/help.cgi?assert" class="stata">assert</a>. Dans la majorité des cas, il convient toutefois de garder en tête la façon dont Stata facilite le travail sur les variables sans avoir à gérer soi-même les boucles d&rsquo;itération sur les observations (<a href="https://www.stata.com/help.cgi?by" class="stata">by</a>, <a href="https://www.stata.com/help.cgi?recode" class="stata">recode</a>, <a href="https://www.stata.com/help.cgi?egen" class="stata">egen</a>, etc.).
 </p>
@@ -466,12 +466,12 @@ Usage de <a href="https://www.stata.com/help.cgi?cond" class="stata">cond</a> [<
 </div>
 </div>
 
-<div id="outline-container-org8c1f1eb" class="outline-2">
-<h2 id="org8c1f1eb">Automatisation</h2>
+<div id="outline-container-orgf4c2583" class="outline-2">
+<h2 id="orgf4c2583">Automatisation</h2>
 </div>
 
-<div id="outline-container-orga6375ab" class="outline-2">
-<h2 id="orga6375ab">Gestion d&rsquo;un package</h2>
+<div id="outline-container-orga08cf2a" class="outline-2">
+<h2 id="orga08cf2a">Gestion d&rsquo;un package</h2>
 </div>
 </div>
 </body>
