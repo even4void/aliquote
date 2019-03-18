@@ -27,12 +27,12 @@ When you highlight some text in Preview, this type of annotation is recorded usi
 Trash  for f in *.pdf
 do
   if strings $f | grep /Highlight &>/dev/null; then
-    echo "$f has note"
+    echo "$f has note" ① 
   fi
 done
 ```
 
-So far, so good. We just need a way to tag all hits using a custom badge, yellow in this case. Some [hand-on](https://stackoverflow.com/questions/2435580/tagging-files-with-colors-in-os-x-finder-from-shell-scripts) [solutions](https://stackoverflow.com/questions/19720376/how-can-i-add-os-x-tags-to-files-programmatically) were proposed on SO, and one can also find some [command-line utility](https://github.com/jdberry/tag) (available on Homebrew) as well. I want to avoid Python or AppleScript as far as possible, so here is a quick one-liner instead:
+So far, so good. We just need a way to tag all hits using a custom badge, yellow in this case. Some [hand-on](https://stackoverflow.com/questions/2435580/tagging-files-with-colors-in-os-x-finder-from-shell-scripts) [solutions](https://stackoverflow.com/questions/19720376/how-can-i-add-os-x-tags-to-files-programmatically) were proposed on SO, and one can also find some [command-line utility](https://github.com/jdberry/tag) (available on Homebrew) as well. I want to avoid Python or AppleScript as far as possible, so here is a quick one-liner instead, which would obviously be inserted in place of ① above:
 
 ```shell
 Trash  xattr -w com.apple.metadata:_kMDItemUserTags '<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd"><plist version="1.0"><array><string>Notes</string></array></plist>' 377.pdf

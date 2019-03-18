@@ -6,4 +6,4 @@ type: "tweet"
 ---
 
 The number of projects hosted under the Apache Software Foundation never ceases
-to fascinate me. Now, there's [Jena](http://jena.apache.org), for the semantic web!
+to fascinate me. Today, I discovered [Jena](http://jena.apache.org) for the semantic web!
