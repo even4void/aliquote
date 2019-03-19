@@ -38,7 +38,7 @@ Note that it would be possible to use the _creturn_ value `c(Mons)` to encode ab
 scatter air y, by(m, note("")) c(l) m(none) xtitle("")
 ```
 
-![](/img/stata-plot-002.png)
+![](/img/stata-plot-002a.png)
 
 The above command could be simplified if we were to rely on time-series (or even panel-related) graphical commands in Stata, e.g.:
 
@@ -70,6 +70,6 @@ graph combine p1 p2 p3 p4 p5 p6 p7 p8 p9 p10 p11 p12, rows(3) cols(4)
 graph drop _all
 ```
 
-![](/img/stata-plot-003.png)
+![](/img/stata-plot-002b.png)
 
 The take-away message is that Stata is quite flexible in allowing a `by()` and an `over()` option for graphics. When one is not available (e.g., `over()` in `scatter`) or cannot be used in combination with other command, one could simply think of an alternate data structure and use `graph combine` as a replacement of the `by()` option for facetting.
