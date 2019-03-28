@@ -95,7 +95,6 @@ dim(weights)
 
 which means that our changes were recorded and saved on disk. There are many more options, like automatic recording of R history or synchronization of database during an R session. This approach is a bit like other file-hashing packages (e.g., <i class="fa fa-file-pdf-o fa-1x"></i> [SOAR](http://cran.r-project.org/web/packages/SOAR/vignettes/SOAR.pdf), `filehash`), however I find this package really convenient and easy to use. At the end of a session, you have a finalized database, with all track changes recorded on disk with time-stamps and intermediate results.
 
-## Notes
 
 [^1]: See also, from the same author: (1) <i class="fa fa-file-pdf-o fa-1x"></i> [Why should you become a Stata programmer?](http://fmwww.bc.edu/GStat/docs/StataProg.pdf), (2) <i class="fa fa-file-pdf-o fa-1x"></i> [Using Stata for data management and reproducible research](http://sites.uom.ac.mu/wtochair/attachments/article/3/MRUS1_BC29.slides.pdf).
 
