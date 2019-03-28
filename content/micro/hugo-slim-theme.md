@@ -5,5 +5,6 @@ draft: false
 type: "tweet"
 ---
 
-I like minimal theme, hence the HUgo them I choose laste year. However, I just
-found an even more minimalist theme: [slim](https://github.com/oblitum/hugo-theme-slim).
+I like minimal theme, hence the Hugo them I choose last year. However, I just
+found an even more minimalist theme:
+[slim](https://github.com/oblitum/hugo-theme-slim).
