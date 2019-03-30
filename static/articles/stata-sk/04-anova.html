@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="fr" xml:lang="fr">
+<head>
+<!-- 2019-03-30 Sam 20:17 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Stata : analyse de la variance</title>
+<meta name="generator" content="Org mode" />
+<meta name="author" content="Christophe Lalanne" />
+<link rel="stylesheet" type="text/css" href="worg.css" />
+<script type="text/javascript">
+/*
+@licstart  The following is the entire license notice for the
+JavaScript code in this tag.
+
+Copyright (C) 2012-2019 Free Software Foundation, Inc.
+
+The JavaScript code in this tag is free software: you can
+redistribute it and/or modify it under the terms of the GNU
+General Public License (GNU GPL) as published by the Free Software
+Foundation, either version 3 of the License, or (at your option)
+any later version.  The code is distributed WITHOUT ANY WARRANTY;
+without even the implied warranty of MERCHANTABILITY or FITNESS
+FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
+
+As additional permission under GNU GPL version 3 section 7, you
+may distribute non-source (e.g., minimized or compacted) forms of
+that code without the copy of the GNU GPL normally required by
+section 4, provided you include this license notice and a URL
+through which recipients can access the Corresponding Source.
+
+
+@licend  The above is the entire license notice
+for the JavaScript code in this tag.
+*/
+<!--/*--><![CDATA[/*><!--*/
+ function CodeHighlightOn(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(null != target) {
+     elem.cacheClassElem = elem.className;
+     elem.cacheClassTarget = target.className;
+     target.className = "code-highlighted";
+     elem.className   = "code-highlighted";
+   }
+ }
+ function CodeHighlightOff(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(elem.cacheClassElem)
+     elem.className = elem.cacheClassElem;
+   if(elem.cacheClassTarget)
+     target.className = elem.cacheClassTarget;
+ }
+/*]]>*///-->
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 90,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 90,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 90},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
+</head>
+<body>
+<div id="content">
+<h1 class="title">Stata : analyse de la variance</h1>
+<div id="table-of-contents">
+<h2>Table des matières</h2>
+<div id="text-table-of-contents">
+<ul>
+<li><a href="#org63a1033">Analyse de variance à un facteur</a></li>
+<li><a href="#org4abbc6c">Analyse de variance à deux facteurs</a></li>
+<li><a href="#orgf6aafa6">Analyse d&rsquo;un plan factoriel</a></li>
+</ul>
+</div>
+</div>
+<p>
+L&rsquo;analyse de variance (ANOVA), souvent retrouvée dans l&rsquo;exploitation d&rsquo;un plan d&rsquo;expérience, peut être dérivée dans la plupart des cas à partir des modèles de régression vus au chapitre 3 (et plus tard, aux chapitres 9 et 10). Toutefois, une présentation de la décomposition des sources de variance et du calcul des sommes de carré associées, indépendante de l&rsquo;approche de régression linéaire, est proposée dans ce chapitre, d&rsquo;autant que Stata dispose de commandes spécifiques pour les modèles d&rsquo;ANOVA, en particulier <a href="https://www.stata.com/help.cgi?oneway" class="stata">oneway</a> et <a href="https://www.stata.com/help.cgi?anova" class="stata">anova</a>.
+</p>
+
+<div id="outline-container-org63a1033" class="outline-2">
+<h2 id="org63a1033">Analyse de variance à un facteur</h2>
+<div class="outline-text-2" id="text-org63a1033">
+<p>
+Dans l&rsquo;exemple suivant, tiré de [<a href="#dupont-2009-statis-model">1</a>], on s&rsquo;intéresse à la relation entre l&rsquo;âge des participants à l&rsquo;étude au moment du diagostique et un polymorphisme de séquence. Les données sont disponibles dans le fichier <code>polymorphism.dta</code> :
+</p>
+
+<div class="org-src-container">
+<pre class="src src-stata">use data/polymorphism
+list in 1/5
+</pre>
+</div>
+
+<pre class="example">
+set more off
+use data/polymorphism
+list in 1/5
+
+     +---------------------+
+     | id   age   genotype |
+     |---------------------|
+  1. |  1    43    1.6/1.6 |
+  2. |  2    47    1.6/1.6 |
+  3. |  3    55    1.6/1.6 |
+  4. |  4    57    1.6/1.6 |
+  5. |  5    61    1.6/1.6 |
+     +---------------------+
+</pre>
+
+<p>
+Un résumé descriptif des données de groupe (ici défini par le type de polymorphisme) peut être obtenu très rapidement à l&rsquo;aide de <a href="https://www.stata.com/help.cgi?tabstat" class="stata">tabstat</a> :
+</p>
+
+<div class="org-src-container">
+<pre class="src src-stata">tabstat age, by(genotype) stat(mean sd n)
+</pre>
+</div>
+
+<pre class="example">
+tabstat age, by(genotype) stat(mean sd n)
+
+Summary for variables: age
+     by categories of: genotype (Genotype)
+
+genotype |      mean        sd         N
+---------+------------------------------
+ 1.6/1.6 |  64.64286  11.18108        14
+ 1.6/0.7 |  64.37931  13.25954        29
+ 0.7/0.7 |    50.375  10.63877        16
+---------+------------------------------
+   Total |  60.64407  13.49427        59
+----------------------------------------
+</pre>
+
+<p>
+Un résumé graphique de la distribution conditionnelle de l&rsquo;âge dans les trois groupes s&rsquo;obtient tout aussi simplement à l&rsquo;aide de <a href="https://www.stata.com/help.cgi?graph box" class="stata">graph box</a> :
+</p>
+
+<div class="org-src-container">
+<pre class="src src-stata">set scheme plotplain
+graph box age, over(genotype)
+graph export "fig-04-boxplot-age-genotype.eps", replace
+</pre>
+</div>
+
+
+<div id="orgafa3a20" class="figure">
+<p><img src="./fig-04-boxplot-age-genotype.png" alt="fig-04-boxplot-age-genotype.png" width="640px" />
+</p>
+<p><span class="figure-number">Figure&nbsp;1&nbsp;: </span>Distribution de l&rsquo;âge de diagnostic en fonction du polymorphisme</p>
+</div>
+</div>
+</div>
+
+
+
+<div id="outline-container-org4abbc6c" class="outline-2">
+<h2 id="org4abbc6c">Analyse de variance à deux facteurs</h2>
+</div>
+<div id="outline-container-orgf6aafa6" class="outline-2">
+<h2 id="orgf6aafa6">Analyse d&rsquo;un plan factoriel</h2>
+<div class="outline-text-2" id="text-orgf6aafa6">
+<div id="bibliography">
+<h2>Références</h2>
+
+<table>
+
+<tr valign="top">
+<td align="right" class="bibtexnumber">
+[<a name="dupont-2009-statis-model">1</a>]
+</td>
+<td class="bibtexitem">
+W.&nbsp;D. Dupont.
+ <em>Statistical Modeling for Biomedical Researchers</em>.
+ Cambridge University Press, 2nd edition, 2009.
+[&nbsp;<a href="http://biostat.mc.vanderbilt.edu/dupontwd/wddtext/index.html">.html</a>&nbsp;]
+
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>

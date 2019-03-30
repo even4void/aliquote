@@ -1,3 +1,5 @@
+* 34b7c30 (Sat, 30 Mar 2019 20:10:51 +0100, chl) Add intermediate chapter on ANOVA
+* 2bf3336 (Sat, 23 Mar 2019 08:46:02 +0100, chl) Minor update for the animated GIF
 * 53e18ea (Sat, 16 Mar 2019 11:24:50 +0100, chl) Add illustration on lowess
 * baaaa48 (Sun, 24 Feb 2019 09:34:31 +0100, chl) Minor fix for scratch buffer
 * a743fd9 (Sun, 24 Feb 2019 09:30:47 +0100, chl) Conditional graphics and graph combine
