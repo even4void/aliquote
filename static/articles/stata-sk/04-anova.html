@@ -3,7 +3,7 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="fr" xml:lang="fr">
 <head>
-<!-- 2019-03-30 Sam 20:17 -->
+<!-- 2019-03-31 Dim 19:29 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Stata : analyse de la variance</title>
@@ -86,21 +86,20 @@ for the JavaScript code in this tag.
 <h2>Table des matières</h2>
 <div id="text-table-of-contents">
 <ul>
-<li><a href="#org63a1033">Analyse de variance à un facteur</a></li>
-<li><a href="#org4abbc6c">Analyse de variance à deux facteurs</a></li>
-<li><a href="#orgf6aafa6">Analyse d&rsquo;un plan factoriel</a></li>
+<li><a href="#org6e5ba74">Analyse de variance à un facteur</a></li>
+<li><a href="#org1c74ab8">Analyse de variance à plusieurs facteurs</a></li>
 </ul>
 </div>
 </div>
 <p>
-L&rsquo;analyse de variance (ANOVA), souvent retrouvée dans l&rsquo;exploitation d&rsquo;un plan d&rsquo;expérience, peut être dérivée dans la plupart des cas à partir des modèles de régression vus au chapitre 3 (et plus tard, aux chapitres 9 et 10). Toutefois, une présentation de la décomposition des sources de variance et du calcul des sommes de carré associées, indépendante de l&rsquo;approche de régression linéaire, est proposée dans ce chapitre, d&rsquo;autant que Stata dispose de commandes spécifiques pour les modèles d&rsquo;ANOVA, en particulier <a href="https://www.stata.com/help.cgi?oneway" class="stata">oneway</a> et <a href="https://www.stata.com/help.cgi?anova" class="stata">anova</a>.
+L&rsquo;analyse de variance (ANOVA), souvent retrouvée dans l&rsquo;exploitation d&rsquo;un plan d&rsquo;expérience, peut être dérivée dans la plupart des cas à partir des modèles de régression vus au <a href="./03-glm.html">chapitre 3</a> (et plus tard, aux chapitres 9 et 10). Toutefois, une présentation de la décomposition des sources de variance et du calcul des sommes de carré associées, indépendante de l&rsquo;approche de régression linéaire, est proposée dans ce chapitre, d&rsquo;autant que Stata dispose de commandes spécifiques pour les modèles d&rsquo;ANOVA, en particulier <a href="https://www.stata.com/help.cgi?oneway" class="stata">oneway</a> et <a href="https://www.stata.com/help.cgi?anova" class="stata">anova</a>.
 </p>
 
-<div id="outline-container-org63a1033" class="outline-2">
-<h2 id="org63a1033">Analyse de variance à un facteur</h2>
-<div class="outline-text-2" id="text-org63a1033">
+<div id="outline-container-org6e5ba74" class="outline-2">
+<h2 id="org6e5ba74">Analyse de variance à un facteur</h2>
+<div class="outline-text-2" id="text-org6e5ba74">
 <p>
-Dans l&rsquo;exemple suivant, tiré de [<a href="#dupont-2009-statis-model">1</a>], on s&rsquo;intéresse à la relation entre l&rsquo;âge des participants à l&rsquo;étude au moment du diagostique et un polymorphisme de séquence. Les données sont disponibles dans le fichier <code>polymorphism.dta</code> :
+Dans l&rsquo;<a href="http://biostat.mc.vanderbilt.edu/dupontwd/wddtext/index.html">exemple suivant</a>, tiré de [<a href="#dupont-2009-statis-model">1</a>], on s&rsquo;intéresse à la relation entre l&rsquo;âge des participants à l&rsquo;étude au moment du diagostique et un polymorphisme de séquence. Les données sont disponibles dans le fichier <code>polymorphism.dta</code> :
 </p>
 
 <div class="org-src-container">
@@ -162,22 +161,263 @@ graph export "fig-04-boxplot-age-genotype.eps", replace
 </div>
 
 
-<div id="orgafa3a20" class="figure">
+<div id="orga073808" class="figure">
 <p><img src="./fig-04-boxplot-age-genotype.png" alt="fig-04-boxplot-age-genotype.png" width="640px" />
 </p>
 <p><span class="figure-number">Figure&nbsp;1&nbsp;: </span>Distribution de l&rsquo;âge de diagnostic en fonction du polymorphisme</p>
 </div>
-</div>
+
+<p>
+Il est également possible d&rsquo;afficher ces distributions sous forme d&rsquo;histogrammes d&rsquo;effectifs ou de fréquences, par exemple :
+</p>
+
+<div class="org-src-container">
+<pre class="src src-stata">histogram age, by(genotype, col(3)) freq
+graph export "fig-04-hist-age-genotype.eps", replace
+</pre>
 </div>
 
 
-
-<div id="outline-container-org4abbc6c" class="outline-2">
-<h2 id="org4abbc6c">Analyse de variance à deux facteurs</h2>
+<div id="orgbeb1bd6" class="figure">
+<p><img src="./fig-04-hist-age-genotype.png" alt="fig-04-hist-age-genotype.png" width="640px" />
+</p>
+<p><span class="figure-number">Figure&nbsp;2&nbsp;: </span>Distribution de l&rsquo;âge de diagnostic en fonction du polymorphisme</p>
 </div>
-<div id="outline-container-orgf6aafa6" class="outline-2">
-<h2 id="orgf6aafa6">Analyse d&rsquo;un plan factoriel</h2>
-<div class="outline-text-2" id="text-orgf6aafa6">
+
+<p>
+Le tableau d&rsquo;ANOVA peut être constuit à l&rsquo;aide de <a href="https://www.stata.com/help.cgi?oneway" class="stata">oneway</a> dans le cas où il n&rsquo;y a qu&rsquo;une seule avriable explicative. L&rsquo;option <code>tabulate</code> fournit exactement le même résumé numérique que la commande <a href="https://www.stata.com/help.cgi?tabstat" class="stata">tabstat</a> ci-dessus, tandis que l&rsquo;option <code>bonferonni</code> ajoute la comparaison de l&rsquo;ensemble des paires de moyennes avec une correction de Bonferroni pour les tests multiples. Si l&rsquo;on ne souhiate que ces derniers, il suffit d&rsquo;ajouter l&rsquo;option <code>noanova</code>, mais en règle générale il est préférable de réaliser le test d&rsquo;ensemble avant d&rsquo;examiner les tests spécifiques, sauf si l&rsquo;on a une hypothèse de recherche très particulière.
+</p>
+
+<div class="org-src-container">
+<pre class="src src-stata">oneway age genotype
+</pre>
+</div>
+
+<pre class="example">
+oneway age genotype
+
+                        Analysis of Variance
+    Source              SS         df      MS            F     Prob &gt; F
+------------------------------------------------------------------------
+Between groups      2315.73355      2   1157.86678      7.86     0.0010
+ Within groups      8245.79187     56   147.246283
+------------------------------------------------------------------------
+    Total           10561.5254     58   182.095266
+
+Bartlett's test for equal variances:  chi2(2) =   1.0798  Prob&gt;chi2 = 0.583
+</pre>
+
+<p>
+Voici le résultat des tests multiples:
+</p>
+
+<div class="org-src-container">
+<pre class="src src-stata">oneway age genotype, bonferroni noanova
+</pre>
+</div>
+
+<pre class="example">
+oneway age genotype, bonferroni noanova
+
+                  Comparison of Age at Diagnosis by Genotype
+                                (Bonferroni)
+Row Mean-|
+Col Mean |    1.6/1.6    1.6/0.7
+---------+----------------------
+ 1.6/0.7 |   -.263547
+         |      1.000
+         |
+ 0.7/0.7 |   -14.2679   -14.0043
+         |      0.007      0.001
+</pre>
+
+<p>
+On arriverait naturellement aux mêmes conclusions en construisant manuellement les tests de Student correspondants :
+</p>
+
+<div class="org-src-container">
+<pre class="src src-stata">quietly ttest age if genotype != 1, by(genotype)
+display r(p)*3
+</pre>
+</div>
+
+<pre class="example">
+quietly ttest age if genotype != 1, by(genotype)
+00228566
+</pre>
+
+
+<p>
+Il est généralement recommendé de vérifier les hypothèses du modèle, en particulier celle portant sur l&rsquo;égalité des variances parentes, de manière graphique. Notons que <a href="https://www.stata.com/help.cgi?oneway" class="stata">oneway</a> propose d&rsquo;office un test formel d&rsquo;égalité des variances (test de Bartlett). Le test de Levenne est disponible via la commande <a href="https://www.stata.com/help.cgi?robvar" class="stata">robvar</a> (statistique <code>W50</code>) :
+</p>
+
+<div class="org-src-container">
+<pre class="src src-stata">robvar age, by(genotype)
+</pre>
+</div>
+
+<pre class="example">
+robvar age, by(genotype)
+
+            |     Summary of Age at Diagnosis
+   Genotype |        Mean   Std. Dev.       Freq.
+------------+------------------------------------
+    1.6/1.6 |   64.642857   11.181077          14
+    1.6/0.7 |    64.37931   13.259535          29
+    0.7/0.7 |      50.375   10.638766          16
+------------+------------------------------------
+      Total |   60.644068   13.494268          59
+
+W0  =  0.83032671   df(2, 56)     Pr &gt; F = 0.44120161
+
+W50 =  0.60460508   df(2, 56)     Pr &gt; F = 0.54981692
+
+W10 =  0.79381598   df(2, 56)     Pr &gt; F = 0.45713722
+</pre>
+</div>
+</div>
+
+<div id="outline-container-org1c74ab8" class="outline-2">
+<h2 id="org1c74ab8">Analyse de variance à plusieurs facteurs</h2>
+<div class="outline-text-2" id="text-org1c74ab8">
+<p>
+La commande <a href="https://www.stata.com/help.cgi?oneway" class="stata">oneway</a> est limité au cas à un facteur explicatif. La commande <a href="https://www.stata.com/help.cgi?anova" class="stata">anova</a> est plus générale et couvre : les plans factoriels et emboîtés, les plans équilibrés ou non (cf. calcul des sommes de carrés), les mesures répétées, l’analyse de covariance. Dans le cas à un facteur à effet fixe, on retrouvera évidemment les mêmes résultats que plus haut :
+</p>
+
+<div class="org-src-container">
+<pre class="src src-stata">anova age genotype
+</pre>
+</div>
+
+<pre class="example">
+anova age genotype
+
+                           Number of obs =      59     R-squared     =  0.2193
+                           Root MSE      = 12.1345     Adj R-squared =  0.1914
+
+                  Source |  Partial SS    df       MS           F     Prob &gt; F
+              -----------+----------------------------------------------------
+                   Model |  2315.73355     2  1157.86678       7.86     0.0010
+                         |
+                genotype |  2315.73355     2  1157.86678       7.86     0.0010
+                         |
+                Residual |  8245.79187    56  147.246283   
+              -----------+----------------------------------------------------
+                   Total |  10561.5254    58  182.095266
+</pre>
+
+<p>
+Les comparaisons par paires de moyennes s’obtiennent à l’aide de <a href="https://www.stata.com/help.cgi?pwcompare" class="stata">pwcompare</a>, commande plus générale que <a href="https://www.stata.com/help.cgi?pwmean" class="stata">pwmean</a>. Les options de correction (<code>mcompare()</code>) incluent en plus : <code>tukey</code>, <code>snk</code>, <code>duncan</code> et <code>dunnett</code>.
+</p>
+
+<div class="org-src-container">
+<pre class="src src-stata">pwcompare genotype, cformat(%3.2f)
+</pre>
+</div>
+
+<pre class="example">
+pwcompare genotype, cformat(%3.2f)
+
+Pairwise comparisons of marginal linear predictions
+
+Margins      : asbalanced
+
+---------------------------------------------------------------------
+                    |                                 Unadjusted
+                    |   Contrast   Std. Err.     [95% Conf. Interval]
+--------------------+------------------------------------------------
+           genotype |
+1.6/0.7 vs 1.6/1.6  |      -0.26       3.95         -8.17        7.65
+0.7/0.7 vs 1.6/1.6  |     -14.27       4.44        -23.16       -5.37
+0.7/0.7 vs 1.6/0.7  |     -14.00       3.78        -21.57       -6.43
+---------------------------------------------------------------------
+</pre>
+
+<p>
+Voici un exemple de plan d&rsquo;expérience tiré de [<a href="#montgomery-2001-desig-analy-exper">2</a>]. On s&rsquo;intéresse à la fabrication d&rsquo;une batterie capable de fonctionner dans des conditions extrêmes de température. Cette étude comprend deux facteurs expérimentaux ayant trois niveaux chacun : la température (°F) et un paramètre lié au design de la batterie elle-même. Il s&rsquo;agit donc d&rsquo;un plan factoriel \(3^2\). Les données sont disponibles dans le fichier <code>battery.txt</code>.
+</p>
+
+<div class="org-src-container">
+<pre class="src src-stata">import delimited "data/battery.txt", delimiter("", collapse) varnames(1) clear
+list in 1/3
+</pre>
+</div>
+
+<pre class="example">
+ r
+(3 vars, 36 obs)
+list in 1/3
+
+     +----------------------------+
+     | life   material   temper~e |
+     |----------------------------|
+  1. |  130          1         15 |
+  2. |   74          1         15 |
+  3. |  155          1         15 |
+     +----------------------------+
+</pre>
+
+<p>
+Voici les résultats pour le modèle avec interaction :
+</p>
+
+<div class="org-src-container">
+<pre class="src src-stata">anova life material##temperature
+</pre>
+</div>
+
+<pre class="example">
+anova life material##temperature
+
+                           Number of obs =      36     R-squared     =  0.7652
+                           Root MSE      = 25.9849     Adj R-squared =  0.6956
+
+                  Source |  Partial SS    df       MS           F     Prob &gt; F
+    ---------------------+----------------------------------------------------
+                   Model |  59416.2222     8  7427.02778      11.00     0.0000
+                         |
+                material |  10683.7222     2  5341.86111       7.91     0.0020
+             temperature |  39118.7222     2  19559.3611      28.97     0.0000
+    material#temperature |  9613.77778     4  2403.44444       3.56     0.0186
+                         |
+                Residual |    18230.75    27  675.212963   
+    ---------------------+----------------------------------------------------
+                   Total |  77646.9722    35  2218.48492
+</pre>
+
+<p>
+Un graphique d&rsquo;interaction peut être constuit à l&rsquo;aide de <a href="https://www.stata.com/help.cgi?scatter" class="stata">scatter</a> comme suit la commande <a href="https://www.stata.com/help.cgi?marginplot" class="stata">marginplot</a> simplifierait grandement la tâche) :
+</p>
+
+<div class="org-src-container">
+<pre class="src src-stata">preserve
+collapse (mean) mean=life (sd) sd=life, by(material temperature)
+list in 1/3
+drop sd
+reshape wide mean, i(temperature) j(material)
+twoway connected mean* temperature, legend(label(1 "#1") label(2 "#2") label(3 "#3")) ytitle(Mean life)
+graph export "fig-04-scatter-life-battery.eps", replace
+restore
+</pre>
+</div>
+
+
+<div id="org1bc0861" class="figure">
+<p><img src="./fig-04-scatter-life-battery.png" alt="fig-04-scatter-life-battery.png" width="640px" />
+</p>
+<p><span class="figure-number">Figure&nbsp;3&nbsp;: </span>Distribution de l&rsquo;âge de diagnostic en fonction du polymorphisme</p>
+</div>
+
+
+<p>
+rcap et serrbar
+</p>
+
+<p>
+Des <a href="https://stats.idre.ucla.edu/stata/faq/how-can-i-do-power-and-robustness-analyses-for-factorial-anova-stata-11/">simulations de Monte Carlo</a> permettent évaluer la puissance statistique d&rsquo;un plan factoriel, en spécifiant les valeurs attendues pour les moyennes et variances dans chacune des conditions expérimentales. Il ne s&rsquo;agit donc pas d&rsquo;un calcul de puissance <i>a posteriori</i>.
+</p>
+
+
 <div id="bibliography">
 <h2>Références</h2>
 
@@ -191,7 +431,19 @@ graph export "fig-04-boxplot-age-genotype.eps", replace
 W.&nbsp;D. Dupont.
  <em>Statistical Modeling for Biomedical Researchers</em>.
  Cambridge University Press, 2nd edition, 2009.
-[&nbsp;<a href="http://biostat.mc.vanderbilt.edu/dupontwd/wddtext/index.html">.html</a>&nbsp;]
+
+</td>
+</tr>
+
+
+<tr valign="top">
+<td align="right" class="bibtexnumber">
+[<a name="montgomery-2001-desig-analy-exper">2</a>]
+</td>
+<td class="bibtexitem">
+Douglas&nbsp;C. Montgomery.
+ <em>Design and Analysis of Experiments</em>.
+ Wiley, 5 edition, 2001.
 
 </td>
 </tr>
