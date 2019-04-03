@@ -24,10 +24,14 @@ If you are looking for my old teaching ressources, almost everything should be o
 {{< ressource "github" "https://github.com/even4void/SAS2R" "github" >}}  
 *A short tutorial on using R to perform common statistical analysis à la SAS.* [will probably end up in the Trash folder]
 
-    
-## Past work (also called 'mostly defunct')
 
-(I mean, don't expect a check from me.)
+## Past work (also called mostly [defunct](https://en.wiktionary.org/wiki/defunct))
+
+(I mean, don't expect any check from me.)
+
+- **Introduction au logiciel R**
+{{< ressource "file-pdf" "/files/intro-r.pdf" "PDF" >}}  
+*An introduction to [R](https://cran.r-project.org/) for data manipulation and statistical computing.* [in French]
 
 - **A Visual Guide to R Graphics and Data Mungling**
 {{< ressource "file-pdf" "/files/vizRguide.pdf" "PDF" >}}
