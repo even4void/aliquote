@@ -5,7 +5,7 @@ draft: false
 tags: ["python", "emacs"]
 categories: []
 ---
-I tried [VS Code](https://code.visualstudio.com) during a few days for Python development. It looks like folks at Microsoft did a really great job at integrating so nicely Python into this IDE, which itself has greatly imporved over time.
+I tried [VS Code](https://code.visualstudio.com) during a few days for Python development. It looks like folks at Microsoft did a really great job at integrating so nicely Python into this IDE, which itself has greatly improved over time.
 
 <!--more-->
 
@@ -15,7 +15,7 @@ This is not the first time I try VS Code. Last one was two years ago, after I wa
 
 ![](/img/2019-04-08-18-57-43.png)
 
-If you are happy with working using plain text Python files, I believe that the MS [python package](https://marketplace.visualstudio.com/itemdetails?itemName=ms-python.python) is a great choice. You don't even need to install Anaconda--I'm using the latest homebrewed version of Python on my Mac, and it is works right out of the box. The autocomplete and intellisense features are gorgeous; You also get refactoring and linting for free. The built-in support for automatic indentation is good, although I managed to get into a situation where VS code was lost following an extra space in front of a `def` statement. Anyway, this is a really good package, which comes quite handy to navigate quickly between definitions and references, or access documentation on the fly. Just over a method and you get a nicely formatted popup window with all the details. Here's a little preview to give you an idea:
+If you are happy with working using plain text Python files, I believe that the MS [python package](https://marketplace.visualstudio.com/itemdetails?itemName=ms-python.python) is a great choice. You don't even need to install Anaconda--I'm using the latest homebrewed version of Python on my Mac, and it is works right out of the box. There's a beginning of support for working with Jupyter notebook as well, but nothing close to what was available in [Hydrogen](https://atom.io/packages/hydrogen) under Atom. The autocomplete and intellisense features are gorgeous; You also get refactoring and linting for free. The built-in support for automatic indentation is good, although I managed to get into a situation where VS code was lost following an extra space in front of a `def` statement. Anyway, this is a really good package, which comes quite handy to navigate quickly between definitions and references, or access documentation on the fly. Just over a method and you get a nicely formatted popup window with all the details. Here's a little preview to give you an idea:
 
 ![](/img/2019-04-08-19-03-24.png)
 

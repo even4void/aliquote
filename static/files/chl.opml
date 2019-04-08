@@ -30,13 +30,13 @@
 			<outline htmlUrl="http://www.drbunsen.org/" title="Dr. Bunsen Blog" xmlUrl="http://www.drbunsen.org/feed.xml" type="rss" text="Dr. Bunsen Blog"/>
 			<outline htmlUrl="https://eagereyes.org" title="eagereyes" xmlUrl="http://eagereyes.org/rss.xml" type="rss" text="eagereyes"/>
 			<outline htmlUrl="https://eli.thegreenplace.net/" title="Eli Bendersky's website" xmlUrl="https://eli.thegreenplace.net/feeds/all.atom.xml" type="rss" text="Eli Bendersky's website"/>
-			<outline htmlUrl="http://sachachua.com/blog/category/geek/emacs/" title="Emacs - Sacha Chua" xmlUrl="http://sachachua.com/blog/category/emacs/feed/" type="rss" text="Emacs - Sacha Chua"/>
+			<outline htmlUrl="https://sachachua.com/blog/category/geek/emacs/" title="Emacs - Sacha Chua" xmlUrl="http://sachachua.com/blog/category/emacs/feed/" type="rss" text="Emacs - Sacha Chua"/>
 			<outline htmlUrl="https://emacsair.me/" title="Emacsair" xmlUrl="https://emacsair.me/feed.xml" type="rss" text="Emacsair"/>
 			<outline htmlUrl="https://endlessparentheses.com/?source=rss" title="Endless Parentheses" xmlUrl="http://endlessparentheses.com/atom.xml" type="rss" text="Endless Parentheses"/>
 			<outline htmlUrl="http://www.evanmiller.org/" title="Evan Miller’s News" xmlUrl="http://www.evanmiller.org/news.xml" type="rss" text="Evan Miller’s News"/>
 			<outline htmlUrl="http://ferd.ca/" title="Ferd.ca" xmlUrl="https://ferd.ca/feed.rss" type="rss" text="Ferd.ca"/>
 			<outline htmlUrl="https://freakonometrics.hypotheses.org" title="Freakonometrics" xmlUrl="https://freakonometrics.hypotheses.org/feed" type="rss" text="Freakonometrics"/>
-			<outline htmlUrl="http://www.greghendershott.com/index.html" title="Greg Hendershott: Greg Hendershott" xmlUrl="https://www.greghendershott.com/feeds/all.rss.xml" type="rss" text="Greg Hendershott: Greg Hendershott"/>
+			<outline htmlUrl="https://rakhim.org/" title="Home on Rakhim.org" xmlUrl="https://rakhim.org/index.xml" type="rss" text="Home on Rakhim.org"/>
 			<outline htmlUrl="http://www.ibm.com/developerworks/" title="IBM Developer : Open source" xmlUrl="http://www.ibm.com/developerworks/views/opensource/rss/libraryview.jsp?site_id=1&amp;contentarea_by=Open%20source&amp;topic_by=&amp;product_by=&amp;type_by=All%20Types&amp;search_by=&amp;industry_by=&amp;sort_by=Date&amp;series_title_by=" type="rss" text="IBM Developer : Open source"/>
 			<outline htmlUrl="https://irreal.org/blog" title="Irreal" xmlUrl="http://irreal.org/blog/?feed=rss2" type="rss" text="Irreal"/>
 			<outline htmlUrl="https://www.baty.net/" title="Jack Baty" xmlUrl="https://www.baty.net/index.xml" type="rss" text="Jack Baty"/>
@@ -60,12 +60,14 @@
 			<outline htmlUrl="http://www.paulgraham.com/" title="Paul Graham: Essays" xmlUrl="http://www.aaronsw.com/2002/feeds/pgessays.rss" type="rss" text="Paul Graham: Essays"/>
 			<outline htmlUrl="https://politbistro.hypotheses.org" title="Polit’bistro : des politiques, du café" xmlUrl="https://politbistro.hypotheses.org/feed" type="rss" text="Polit’bistro : des politiques, du café"/>
 			<outline htmlUrl="http://fharrell.com/post/" title="Posts on Statistical Thinking" xmlUrl="http://fharrell.com/post/index.xml" type="rss" text="Posts on Statistical Thinking"/>
+			<outline htmlUrl="https://www.greghendershott.com/tags/all.rss.xml" title="Posts tagged &quot;all&quot;" xmlUrl="https://www.greghendershott.com/feeds/all.rss.xml" type="rss" text="Posts tagged &quot;all&quot;"/>
 			<outline htmlUrl="http://pragmaticemacs.com" title="Pragmatic Emacs" xmlUrl="http://pragmaticemacs.com/feed/" type="rss" text="Pragmatic Emacs"/>
 			<outline htmlUrl="https://www.allendowney.com/blog" title="Probably Overthinking It" xmlUrl="https://www.allendowney.com/blog/feed/" type="rss" text="Probably Overthinking It"/>
 			<outline htmlUrl="https://programmingisterrible.com/" title="programming is terrible" xmlUrl="https://programmingisterrible.com/rss" type="rss" text="programming is terrible"/>
 			<outline htmlUrl="https://programmingpraxis.com" title="Programming Praxis" xmlUrl="http://programmingpraxis.com/feed/" type="rss" text="Programming Praxis"/>
 			<outline htmlUrl="https://radfordneal.wordpress.com" title="Radford Neal's blog" xmlUrl="http://radfordneal.wordpress.com/feed/" type="rss" text="Radford Neal's blog"/>
 			<outline htmlUrl="http://gigasquid.github.io/" title="Squid's Blog" xmlUrl="http://gigasquidsoftware.com/atom.xml" type="rss" text="Squid's Blog"/>
+			<outline htmlUrl="https://standblog.org/blog/" title="Standblog" xmlUrl="https://standblog.org/blog/feed/atom" type="rss" text="Standblog"/>
 			<outline htmlUrl="http://fharrell.com/" title="Statistical Thinking on Statistical Thinking" xmlUrl="http://fharrell.com/index.xml" type="rss" text="Statistical Thinking on Statistical Thinking"/>
 			<outline htmlUrl="https://blog.stephenwolfram.com" title="Stephen Wolfram Blog" xmlUrl="http://blog.stephenwolfram.com/feed/" type="rss" text="Stephen Wolfram Blog"/>
 			<outline htmlUrl="http://stevelosh.com/" title="Steve Losh" xmlUrl="http://feeds2.feedburner.com/stevelosh" type="rss" text="Steve Losh"/>
@@ -76,6 +78,7 @@
 			<outline htmlUrl="http://shape-of-code.coding-guidelines.com" title="The Shape of Code" xmlUrl="http://shape-of-code.coding-guidelines.com/feed/" type="rss" text="The Shape of Code"/>
 			<outline htmlUrl="https://blog.stata.com" title="The Stata Blog" xmlUrl="http://blog.stata.com/feed/" type="rss" text="The Stata Blog"/>
 			<outline htmlUrl="https://mailund.github.io/r-programmer-blog/" title="The Working R Programmer" xmlUrl="https://mailund.github.io/r-programmer-blog/index.xml" type="rss" text="The Working R Programmer"/>
+			<outline htmlUrl="http://third-bit.com/feed.xml" title="Third Bit" xmlUrl="http://third-bit.com/feed.xml" type="rss" text="Third Bit"/>
 			<outline htmlUrl="http://bactra.org/weblog/" title="Three-Toed Sloth" xmlUrl="http://bactra.org/weblog/index.rss" type="rss" text="Three-Toed Sloth"/>
 			<outline htmlUrl="http://tonsky.me/" title="tonsky.me" xmlUrl="http://tonsky.me/blog/atom.xml" type="rss" text="tonsky.me"/>
 			<outline htmlUrl="https://twobithistory.org/" title="Two-Bit History" xmlUrl="https://twobithistory.org/feed.xml" type="rss" text="Two-Bit History"/>
