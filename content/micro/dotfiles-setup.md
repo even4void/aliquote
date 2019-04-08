@@ -6,4 +6,4 @@ type: "tweet"
 ---
 
 Recently, on BSAG's website: [Rethinking my dotfiles setup](https://www.rousette.org.uk/archives/rethinking-my-dotfiles-setup/). Every time it seems I
-learn a new thing about the open source world when reading her blog post.
+learn a new thing about the open source world when reading her blog posts.
