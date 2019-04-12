@@ -5,6 +5,6 @@ draft: false
 type: "tweet"
 ---
 
-[Visual Statistics. Use R!](https://cran.r-project.org) (PDF, 429 pp.) `#rstats`
+[Visual Statistics. Use R!](https://cran.r-project.org/doc/contrib/Shipunov-visual%5Fstatistics.pdf) (PDF, 429 pp.) `#rstats`
 
 {{< figure src="/img/2019-04-01-21-35-06.png" >}}
