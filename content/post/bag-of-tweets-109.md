@@ -1,0 +1,187 @@
+---
+title: "A bag of tweets / Apr 2019"
+date: 2019-04-24T21:14:37+02:00
+draft: false
+tags: ["misc"]
+categories: ["tweet-bot"]
+---
+Here is the latest bag of tweets<sup>*</sup>, which covers April 2019.
+
+<!--more-->
+
+(*) These are interesting news that I found on Twitter and that I archive periodically. Note that I have slightly updated reporting and fetching methods so that you will get between 80 and 120 of my most recent favorites from my Twitter account (`@even4void`).
+
+- 2019-04-01 @newsycombinator: Show HN: Stop googling sed/Awk. BSED: a simple, SQL-like syntax for text editing https://t.co/sfg0Rd7wLW
+- 2019-04-01 @newsycombinator: Git implemented in Rust https://t.co/KEMZGcSitn
+- 2019-04-01 @AchimZeileis: @JorisMeys @jonaslindeloev Also note that there are nice unifying frameworks for both parametric and nonparametric tests - without regression. E.g. the #rstats pkg "coin" combines _transformations_, _statistics_, and null _distributions_ yielding a Lego box of tests: https://t.co/0bdqL9a4Hr https://t.co/qfb5yHcmHx
+- 2019-04-01 @EikoFried: "Results suggest that early hypotheses about #depression candidate #genes were incorrect &amp; that the large number of associations reported in the depression candidate gene literature are likely to be false positives".  BOOM 🔥🔥🔥  https://t.co/95PA69Byr8 https://t.co/K5kH6dGwZO
+- 2019-04-01 @vsbuffalo: Was looking for a nice interval library in Python — bx-python a little too much for what I need, and pybedtools writes too many tempfiles to ship things off to bedtools, but I found interlaps by @brent_p. Quite a nice small alternative https://t.co/kjScufkHs3
+- 2019-04-02 @ProfCompMod: Much enjoyed first lecture this term on behalf of @EuropeanXFEL at University of Hamburg with a great interactive audience. All teaching materials are #OpenAccess https://t.co/RSsdsyvnAr, interactive textbook https://t.co/yf0pJxE0UM supported by @mybinderteam and @OpenDreamKit https://t.co/35L7XuZaH6
+- 2019-04-02 @olebegemann: Swift AST explorer by @k_katsumi is a fantastic tool for understanding how the Swift compiler parses source code: https://t.co/W4n1el2I3S
+- 2019-04-02 @moorejh: The mother of all USB hubs https://t.co/wqfw2yS13B #usb #computing #technology https://t.co/D0vio1bT0F
+- 2019-04-02 @_jgoertler: Our interactive article that explains visually how Gaussian processes work just went live at @distillpub. Here is the link: https://t.co/sqGsNO1HCT
+- 2019-04-02 @BrodieGaslam: Today my faith in my understanding of #rstats was briefly shaken.  I was trying to illustrate the relatively well known limitations of double precision arithmetic...   1/3 https://t.co/yqUXPHo1np
+- 2019-04-03 @dataandme: 👩‍💻 CRAN? BioConductor? GitHub? Local? pak has you covered… 📦 "pak: A Fresh Approach to R Package Installation"  @jimhester_  &amp; @GaborCsardi  https://t.co/EzeMREdWCy #rstats https://t.co/H2W862rPud
+- 2019-04-03 @hrbrmstr: Wicked Fast, Accurate Quantiles Using ‘t-Digests’ in #rstats with the {tdigest} Package https://t.co/Gdbja8vZk1
+- 2019-04-03 @Heinonmatti: Almost didn't read this thing by @AlxEtz because it had "omnibus" in the title, but glad I did because turns out it's a word I need to know. Also, the post was kinda fun and (to me) less technical than it sounds :)  https://t.co/CLffyGxoOX
+- 2019-04-03 @lapcatsoftware: New blog post "Safari link tracking can no longer be disabled":  https://t.co/e6bu7oXgjE
+- 2019-04-04 @dendibakh: I wrote an article showing how one can measure precise timing (in cycles) for basic blocks in the program using Linux Perf. https://t.co/VmlqcsuKSg #perf #performance #LBR #CPU https://t.co/eNmcFkDpeh
+- 2019-04-04 @BrodieGaslam: I've gotten completely side-tracked by precision issues in #rstats, and in this rabbit hole I realized that the precision improvement algorithm in `base::mean` is susceptible to pathological inputs.  In particular, inputs ordered by value are bad. https://t.co/i3YMgtP5xp
+- 2019-04-04 @kaz_yos: Random (formerly Virtual Laboratories in Probability and Statistics) is a website devoted to probability, mathematical statistics, and stochastic processes, and is intended for teachers and students of these subjects. Many of the elements are designed so https://t.co/51Rqros2s0
+- 2019-04-04 @kaz_yos: Welcome to Simul  Version control for Microsoft Word A superior alternative to sending Word documents back and forth via email and trying to track changes. We help you understand your document versions and enable more productive collaboration. https://t.co/OZ2B6lDfzD
+- 2019-04-04 @sol_prog: https://t.co/qJ4tgXrrZZ works really well for C and C++ remote development
+- 2019-04-04 @kaz_yos: "How to estimate the effect of treatment duration on survival outcomes using observational data" Clone &amp; Censor approach to compare treatment strategies that can only be determined over time after baseline. https://t.co/ZSNOu5tduf https://t.co/YQaLCplXGd
+- 2019-04-04 @cpsievert: 🎉A first draft of my new book,  "Interactive web-based data visualization with R, plotly, and shiny", is now available!  🎉  https://t.co/rCsZgwIo2d  For those of you familiar with the plotly book, there is a ton of new content, feedback welcome!  https://t.co/TmS8Tk2Wjn https://t.co/1e9hWFsAlU
+- 2019-04-04 @jashkenas: 🚨Cells in Observable  notebooks are now downloadable🚨(and, as always, dynamic!)  Data -&gt; CSV, JSON SVG -&gt; SVG, PNG Canvas -&gt; PNG https://t.co/axhXgfzn0Q
+- 2019-04-04 @zepidpy: Tutorials for IPTW and some diagnostics  https://t.co/fpU1xKq9sx
+- 2019-04-05 @pa_jachiet: Anonymisation : Histoire des définitions et méthodes, Illustrations sur les données de santé.  Voici le support d'une présentation donnée hier à Etalab https://t.co/I6o4bMyDyj Grand merci à l'audience ! CC-by-SA et ouverte en commentaires. N'hésitez pas ! https://t.co/K8nE0m8OKN
+- 2019-04-05 @strnr: 93% of paint splatters are valid Perl programs 🤣  https://t.co/KmPDskSqvm Paper: https://t.co/Vw9V34BaqG https://t.co/CpOGly84X7
+- 2019-04-05 @RainerJoswig: #lisp The latest CLISP from the Gitlab repository compiled under Ubuntu 18.04 on my brand new Nvidia Jetson nano 64bit ARM board without problems. CLISP was initially released 32 years ago.
+- 2019-04-05 @newsycombinator: Let’s Build a Simple Database (2017) https://t.co/CU5YWxL5bJ
+- 2019-04-05 @AllenDowney: Here's FiveThirtyEight trying one more time to explain probabilistic prediction:  https://t.co/wFG81o4XtG  I admire the effort, but Mr Silver has a hard time hiding his impatience with the rest of us.
+- 2019-04-05 @daforerog: Preparing next-generation scientists for biomedical big data: artificial intelligence approaches https://t.co/SFTiM3z6hH @moorejh
+- 2019-04-05 @strnr: #MachineLearning in Medicine https://t.co/0XRaAWdTG1 https://t.co/fb7GCLopop
+- 2019-04-05 @biorxiv_bioinfo: A generalization of partial least squares regression and correspondence analysis for categorical and mixed data: An application with ...  https://t.co/5HCjhlB2k1 #biorxiv_bioinfo
+- 2019-04-05 @kara_woo: This story is out in the open now, so I guess I might as well say that the unnamed employee in the DataCamp post was me.
+- 2019-04-05 @dgkeyes: Friendly reminder that my Getting Started with R course is available for free. #rstats https://t.co/ZdL5vEoQsR https://t.co/yQjtYuuM2x
+- 2019-04-05 @ledell: After *many months* of collective negotiating by the instructor community to demand more transparency &amp; accountability, they still did nothing.  Their public announcement is a response to a letter we sent to @DataCamp one day prior, signed by over 100 DataCamp instructors. https://t.co/9su0XCwuxV
+- 2019-04-06 @Jose_A_Alonso: Foundations of Data Science. ~ D. Wischik. https://t.co/ikkDym5Kni #DataScience
+- 2019-04-06 @HNTweets: Eisvogel: A clean pandoc LaTeX template with a focus on computer science: https://t.co/9cfZf0bqQC Comments: https://t.co/t8EG16AeqE
+- 2019-04-06 @MaartenvSmeden: @f2harrell @jim_savage_ @statsepi @stephensenn A tangent, also from @stephensenn: There is no reason to think that a drug that shows itself to be marginally effective in a general population is simply in want of an appropriate subpopulation in which it will perform spectacularly.  https://t.co/QInmgldAfL
+- 2019-04-06 @epenser: Youtube a-t-il abandonné ses créateurs de contenus ?  Read: https://t.co/tjB7qsfn2f
+- 2019-04-06 @Atabey_Kaygun: New post: "K-Means Implemented in Clojure" https://t.co/9wy9BargZe
+- 2019-04-07 @hrbrmstr: A Limited-but-Functional Couchbase Free Text Search &amp; Retrieval Un-package; or, “How I Abused Couchbase &amp; R to Perform Bulk IP Whois Full-text Searches” (a Cobbler’s Tale) https://t.co/DVtR5SZujF #rstats
+- 2019-04-07 @kaz_yos: Animation based on "What is the expectation maximization algorithm?" https://t.co/xrF6H5DZbM The analytically intractable bimodal incomplete-data likelihood is (locally) maximized by a series of tentative expected complete-data likelihoods. https://t.co/a5pnfrZtwG
+- 2019-04-07 @_ColinFay: 📓 Just added some content to the "Building Big Shiny Apps - A Workflow" online book, notably a chapter about using the {golem} package 🎉 https://t.co/2Z5SZy6jXn It's still a WIP but if you want to have a look, feel free :)  Any feedback welcome!  #RStats #RShiny https://t.co/r2FV3c5ixh
+- 2019-04-08 @newsycombinator: Please stop advertising VPNs as privacy and anonymity tools https://t.co/fCz8xu0SbQ
+- 2019-04-08 @TDataScience: Using Regular Expression in Genetics with Python https://t.co/bUimGj2wOT
+- 2019-04-08 @strnr: Moving beyond P values: Everyday data analysis with estimation plots https://t.co/uZg6VSiDGt #Rstats package: https://t.co/KWRu29dKF9 Python package: https://t.co/LwYBKDGjcO Web: https://t.co/2uKiHe2S0w https://t.co/iRc3o4Ngi3
+- 2019-04-08 @Harry_Stevens: I'm excited to introduce d3-regression, a JavaScript library that makes it easy to calculate statistical regressions! It does linear, quadratic, exponential, logarithmic, power law, and LOESS regressions. Introduction and tutorial: https://t.co/x8gCwXZrRV https://t.co/p3NsAOoqek
+- 2019-04-08 @strnr: Reverse GWAS: Using genetics to identify and model phenotypic subtypes https://t.co/WvseurjdPO https://t.co/SjwSU4QjtI
+- 2019-04-08 @f2harrell: The burden of demonstrating heterogeneity of treatment effect is on HTE proponents, and an example where a personalized efficacy estimate is worse than the overall average.  New blog article: https://t.co/CPSdywPbqd #StatThink
+- 2019-04-08 @vsbuffalo: Nested containment lists are quite a bit faster than interval trees for range overlap operations. Not quite fair as I'm comparing a Python implementation to a Cython one, but dropping in NCLS (https://t.co/PVZDqz2voA) lead to a ~30 fold speed up. Paper: https://t.co/3Fx9lgBxtT
+- 2019-04-08 @kaz_yos: How efficient is Stan compared to JAGS? A small test - Publicity - “To satisfy my own curiosity, I’ve been doing some comparisons of Stan and JAGS in terms of sampling efficiency (second per effective draw) for some simple hierarchical models. https://t.co/m0w6m9f7oR
+- 2019-04-09 @newsycombinator: Mathematics and Computation [pdf] https://t.co/fKrBmjlKOp
+- 2019-04-09 @thorstenball: I wrote a blog post about why I think it's important to learn new programming languages. Yes, even if you don't end up using them in production or at work.   👉 https://t.co/KpyoMhsk2t
+- 2019-04-09 @AntoineAugusti: How people working for the French government produce, publish and contribute to open source code?👩‍💻 I analysed all commits made on @GitHub since 2015 by people using a @*.gouv.fr email address. Discover the procedure and the results 📊👉 https://t.co/QlLpMsRLvh https://t.co/WNv1V1qjw1
+- 2019-04-09 @strnr: Consequences of PCA graphs, SNP codings, and PCA variants for elucidating population structure https://t.co/lPHoRmn70T https://t.co/sOKXRyTetH
+- 2019-04-09 @joshua_ulrich: @CMastication Tell them to do: git config --global branch.autosetuprebase always  It will save them from making a ton of confusing merge commits on master.
+- 2019-04-09 @strnr: Rethinking phylogenetic comparative methods https://t.co/hXLITCVIzC https://t.co/pqNoknAg3Z
+- 2019-04-09 @kaz_yos: Algorithms for weighted maximum likelihood parameter estimation - Cross Validated https://t.co/XxsqsuBVNp
+- 2019-04-09 @jlopezper: Can anyone suggest a good introductory book of Bayesian Statistics with #rstats?
+- 2019-04-09 @rafalab: Had Fisher suggested 0.005, instead of 0.05, as the arbitrary p-value cutoff to reject a null hypothesis, back in 1925, how would the world be different today?
+- 2019-04-10 @UnixToolTip: Org-mode markup deserves to be adopted beyond Emacs https://t.co/08SgDN7Ldt
+- 2019-04-10 @fermatslibrary: Here's a design in case you want to build an Irrational Numbers Wall Clock https://t.co/hi7kU0hexK
+- 2019-04-10 @dataandme: 🙌 Really nice side-by-side for dplyr &amp; #rdatatable syntax… "A data.table and dplyr tour" by atrebas  https://t.co/dT3cCBKD4G #rstats https://t.co/X1uje6N2rR
+- 2019-04-10 @CompSciFact: Summary of some of the math used in computer science https://t.co/TzPNk5WCdc
+- 2019-04-11 @sauer_sebastian: Learnt about this project yesterday at #RUserNürnberg. Great stuff ahead! https://t.co/gYp6c1PShh
+- 2019-04-11 @janhove: New blog post: "Before worrying about model assumptions, think about model relevance"  https://t.co/qBvsk2J3Zv https://t.co/kzC4yTUkh0
+- 2019-04-11 @kaz_yos: " Recently  Morris,  White and  Crowther published an excellent paper in Statistics in Medicine, freely available here, on how to plan and run simulation studies. The paper contains a wealth of useful guidance and advice on how to run simulation studies" https://t.co/EoSKdLT9d9
+- 2019-04-11 @vsbuffalo: Stumbled on this great article, "Ten Simple Rules for Better Figures" (https://t.co/tTtZQYqkNg). The first author, Nicolas Rougier, also created what is by far best numpy intro (https://t.co/DOkz5IUZXU)
+- 2019-04-11 @freakonometrics: "Econometrics and Machine Learning" https://t.co/2eacUcxwCU (is finally out)
+- 2019-04-12 @ben_j_lindsay: Wow, the performance metrics look really impressive! Definitely need to try this out some time https://t.co/QS3X4JbwZq
+- 2019-04-12 @captainsafia: Sometimes when switching to a branch to continue working on something, I like to see what files I was last editing so I can pick up from there.  This command lists the changed files in the most recent commit.  $ git show --name-only $(git rev-parse HEAD)
+- 2019-04-12 @ametaireau: Si comme moi vous utilisez le site (plein de pubs) https://t.co/n8V529UjFV pour avoir des infos sur les entreprises, il existe une alternative bien plus sympa :   https://t.co/PkKKii8qoN
+- 2019-04-12 @sol_prog: @capnramses I've used https://t.co/qJ4tgXrrZZ a few days ago. You basically install a modified version of vscode on your server (no need for X or other GUI support) and you connect to it through your browser. I was able to install the C and C++ extension from MS and debug with gdb.
+- 2019-04-12 @noamross: Please don't take or pay for my @DataCamp course. The company let its executive off the hook for sexual misconduct.  We can't change behavior without incentives, and for companies those incentives are financial. https://t.co/UlTFXdoI6B #python #rstats #datascience #MeToo
+- 2019-04-12 @NadiehBremer: Making a #dataviz for both desktop and mobile doesn't mean that the only two options you have are "scaling down" and "stacking vertically" →  You can also change layout by positioning the data differently. There's more overlap in code between these two than you might expect. https://t.co/1BaSVgXrBl
+- 2019-04-12 @hrbrmstr: I thought I'd write a quick post to help @noamross so he cld use #rstats vs icky browser tools to look at site meta tags &amp; headers. I def like helping Noam. More links to it will also help it get to the top of Google searches to help others, too. #protip  https://t.co/pvf9va3caD
+- 2019-04-13 @RainerJoswig: #scheme #lisp The Bibliography of Scheme-related Research https://t.co/W6WbFM8ML6 as a domain/site is gone. Content is now here: https://t.co/eZ5y2KR0ph Thanks to Reddit user amirouche!
+- 2019-04-13 @kaz_yos: Bayesian and Modern Statistics  Course material for STA 360/601  Instructor: Jeff Miller Spring 2015, Duke University Department of Statistical Science https://t.co/ALNhLqx2d5
+- 2019-04-13 @zenrhino: VS Code isn't my favorite non-R Studio editor (Vim FTMFW), but this is pretty awesome.   https://t.co/dzxxhDmRJu
+- 2019-04-13 @etiennejcb: #generative https://t.co/UwtMkvAK6V
+- 2019-04-13 @FarRider: rtemis - A great new package for advanced machine learning and visualization in R.   https://t.co/rYAMo8V91b  #DataScience #MachineLearning #rstats
+- 2019-04-13 @jbowayles: no matter how often i have to reach for python, usually to learn something new, i cannot help but slide right on over to #JuliaLang. This time probabilistic programming... PyMC3 -&gt; Turing.jl (https://t.co/MFcQbQkWPE) and Soss (https://t.co/Abi5945leU)
+- 2019-04-13 @etiennejcb: Here is an online random mandala generator (with source code written in p5.js). https://t.co/7rDLfuGsaW  Inspired by a formula used by @ozachou_g . Click to draw a new one, press key to save. (doesn't always work)
+- 2019-04-13 @Ladicle: @egrefen @orgmode_bot You can use posframe to display the pop-up candidates. Also, the awesome icons are inserted using all-the-icons. https://t.co/9R4SwohWXv
+- 2019-04-14 @CMastication: Being an asshole has consequences @datacamp ... people just won’t play with you any more once they figure out you’re mean and play dirty and hide your apology. You had a chance to fix this and you doubled down on being a jerk. You’re going to be a @HarvardBiz case study one day. https://t.co/gYckfDo4If
+- 2019-04-14 @rstudio: Just something pretty made with R by Antonio Sánchez, @aschinchon. More at https://t.co/17C0ozBlc1 https://t.co/sZgDfT9BDV
+- 2019-04-14 @Jose_A_Alonso: A primer on scientific programming with Python. ~ Hans Petter Langtangen. https://t.co/Y6wLevWAMb #eBook #Python #Programming
+- 2019-04-14 @newsycombinator: Quantum Algorithm Zoo https://t.co/eTBmpCbRxx
+- 2019-04-14 @introspection: “I never had a baseline sense of myself.” — The bitter pill 💊 by ⁦the @NewYorker⁩, beautiful article on pharmacology &amp; psychiatric treatments cc ⁦@vaughanbell⁩ ⁦@caimadja⁩ https://t.co/csVkpHGw7b
+- 2019-04-14 @0xAX: A Simple Guide to Containerization and How Docker Works - https://t.co/bVrJCfLFPJ
+- 2019-04-14 @gappy3000: Is there a text akin to Feynman's Lectures on Physics, but for Mathematics? Submit your entries.
+- 2019-04-14 @AllenDowney: Think Stats in Clojure.  Time for me to learn a new language? https://t.co/eI8ufQKWuL
+- 2019-04-15 @matloff: #rstats for YOU: We oft hear that vectorized ops are faster because they run at C-level, not R. What does this actually mean? Say we have x &lt;- y within a loop. 1/n
+- 2019-04-15 @R_Graph_Gallery: I just taught a 2 days course on #dataviz with #rstat. I share the course material in case it can help somebody:  https://t.co/eEVe9yGd2Y  Included: DataViz intro &amp; caveats, ggplot2, R Markdown, and Github intro https://t.co/WyGKZZhoCP
+- 2019-04-15 @thorstenball: Holy crap, I struck gold! Look at this:  https://t.co/b8O895DPiS
+- 2019-04-15 @thorstenball: This is really cool. I wish every language would have this, because it's usually one of the hardest things to find: https://t.co/htlfSztPBR
+- 2019-04-15 @gvwilson: An Exchange With DataCamp: https://t.co/JS2T6OQcKQ
+- 2019-04-15 @jonaslindeloev: The R syntax for mixed models, "y ~ 1 + a*b + (1|id)", has two origins. The fixed part is Wilkinson notation from 1973: https://t.co/GWbYGAStWX. The random part was introduced in the nlme package in the late 90s: https://t.co/BDiIoW2Khm. It doesn't have a name. 1/5
+- 2019-04-15 @amuellerml: In case you want to play around with dabl, I uploaded a notebook that allows you to explore several OpenML datasets, including some classical UCI datasets and some larger more recent datasets: https://t.co/DhMDihvyXT  At least the plotting functionality seems usable now.
+- 2019-04-15 @UnixToolTip: 'Don't ever, ever plan a backup strategy. Plan a restore strategy.' -- Paul Randal
+- 2019-04-15 @MarieDeclercq: Je vois beaucoup de photos tragiquement belles, mais celle-ci est particulière dingue. #NotreDame #Paris https://t.co/zBesZgipBj
+- 2019-04-15 @burntsushi5: ripgrep 11 is out! Featuring lots of bug fixes, better binary filtering UX and a hybrid regex engine mode! https://t.co/KL5IIznx9I
+- 2019-04-16 @newsycombinator: Why software projects take longer than you think – a statistical model https://t.co/eZL3h16ZT1
+- 2019-04-16 @EikoFried: Patrick Curran &amp; Dan Bauer have made available 170+ pages of #rstats lavaan introductions.   https://t.co/td5jYG4rkh https://t.co/9bZ2kK9OJ6
+- 2019-04-16 @hrbrmstr: @ma_salmon @noamross I believe @rdrrHQ's https://t.co/gWtoAfiFgp might be a viable alternative
+- 2019-04-16 @strnr: https://t.co/BmcGBUQTY2: Community curated #bioinformatics pipelines https://t.co/9RVh0pwiSW https://t.co/e3sKxt9qvP
+- 2019-04-16 @biorxiv_bioinfo: Benchmarking of alignment-free sequence comparison methods  https://t.co/SlV8Wig1SJ #biorxiv_bioinfo
+- 2019-04-16 @noamross: @cbahlai This paper: https://t.co/zCU4j77GkP (should be out this week, I think?), with @ericJpedersen, @millerdl, and @ucfagls, all of whom I first met on Twitter, has its origin in this stackexchange Q of mine: https://t.co/OIh9KJoOJ8
+- 2019-04-16 @juliasilge: NEW POST: Writing a letter to DataCamp #MeTooSTEM #MeToo #rstats #python  https://t.co/GELn0WrXAF
+- 2019-04-17 @Jose_A_Alonso: Basic Cheat Sheet for Python (PDF, Markdown and Jupyter Notebook). ~ Carlos Montecinos Geisse. https://t.co/PBqYCariFg #Python #Programming
+- 2019-04-17 @johnmyleswhite: It's always striking how many R fans think Ross Ihaka is just totally offbase with his criticisms of R -- and how many seem to not even know who he is: https://t.co/CWM83oKp8Z
+- 2019-04-17 @_inesmontani: Like many of you, I'm incredibly disappointed by DataCamp. I wanted to make a free version of my spaCy course so you don't have to sign up for their service – and ended up building my own interactive app. Powered by the awesome @mybinderteam &amp; @gatsbyjs 💖 https://t.co/2QOuDPoZEX
+- 2019-04-17 @palewire: ICYMI: The @uscensusbureau is developing open-source standards for its future data visualizations.  https://t.co/vzVsTy94if https://t.co/Zc3X0o59kP
+- 2019-04-17 @StatStas: #TIL that #rstats actually have variable labels... in the good old sense of label variable in Stata. https://t.co/otu55PY2sj
+- 2019-04-18 @carlcarrie: WIRED article outlines how mathematicians have discovered the fastest way to multiply large numbers...  https://t.co/BTGe10tHOY  | ...But, there yet may be another, even faster way...  https://t.co/Efn9QdTt26  #math https://t.co/NwsinL8MWa
+- 2019-04-18 @gvanrossum: Cool hack! https://t.co/EUIIT7DEBs
+- 2019-04-18 @carlcarrie: Good morning read:  There are many reasons why econometrics fail to work in finance (eg p-hacking, machine-learning-disentanglement) - this short, non-quantitative presentation by AQR's Marcos Lopez de Prado highlights why...  https://t.co/QDiMjVasde https://t.co/o3MQkmbdP0
+- 2019-04-18 @joshua_ulrich: Great post on the potential issues of manipulating R objects in C!  I'm sure @eddelbuettel would point out that Rcpp handles most (all?) of this for you (assuming you stick to it's API and don't call the R API directly).  #rstats #Rcpp https://t.co/Pp3T5LLrtH
+- 2019-04-18 @strnr: Write to stdout using readr's format_csv() https://t.co/idcWa18OvZ
+- 2019-04-18 @aphyr: I just can't say enough good things about @ztellman's libraries. Bifurcan turned out to have a fast, stackless implementation of the cycle-detection algorithm @meatcomputer and I have been struggling to write for a month. https://t.co/tqhAC4YtcX
+- 2019-04-18 @bodil: Well, I wrote a very long article about parser combinators in Rust. https://t.co/J5EivlyQ22
+- 2019-04-19 @tslumley: In which I now have two estimators for linear mixed models in survey data https://t.co/SvjUq14KmB
+- 2019-04-19 @ogrisel: Nice thread that explains how a French law of 2016 allows any  publicly funded (50% or more) research to be uploaded on online archives irrespective of limitations set by a contract with the journal editor (not retroactive and after a cool-down period of 6 or 12 months). https://t.co/SGB5NMOwOZ
+- 2019-04-19 @dumindu_nuwan: https://t.co/dok6HjHnjz got its 400th⭐ today. Have many things in my mind to improve @rustlang learning process. But, still I have to spend more time on practicing Go with my current job, even on weekends. Quite sad, because I missed RustCon Asia at this moment. #rustlang #rust https://t.co/310iSBSTQ5
+- 2019-04-19 @f2harrell: The fact that only 1/5th of #MachineLearning clinical prediction applications cared enough to attempt to estimate a calibration curve is striking. https://t.co/oRP98Yzwkg
+- 2019-04-19 @hadleywickham: Have you been trying the exercises in Advanced R? If so, you might like to know about the solutions manual by @malte_grosser and @henningsway: https://t.co/KwIYm5XVhM. They're getting ready to publish it, so now is great time to give feedback! #rstats https://t.co/3y5ubbTgi7
+- 2019-04-19 @SolomonKurz: The update to "Statistical Rethinking with brms, ggplot2, and the tidyverse" is live https://t.co/alBJXHKIrf!  Some of the major changes include:  Refitting all models with #brms 2.8.0 Adopting the seed argument in all brm() models Updated workflow for the WAIC and LOO  1/n
+- 2019-04-19 @nikitonsky: I’m a programmer, I build an adapter when I need one https://t.co/EsemmZaio2
+- 2019-04-19 @CRANPolicyWatch: New CRAN Repository Policy rev4040 posted, history at https://t.co/0wpgNcMUui #rstats
+- 2019-04-19 @chris__martin: answered a python SO question, my answer was  a = chain([1, 2], repeat(3))  and the accepted answer was  def inf3():     yield 1     yield 2     while True:         yield 3  a = inf3()  sigh I'll never understand python people
+- 2019-04-19 @borkdude: Clojure's new killer "app"?  https://t.co/pm24uiq8VK
+- 2019-04-19 @joelgrus: This solution is extremely clever, and I'd totally forgotten about it: https://t.co/teB0kBgteA
+- 2019-04-19 @CMastication: I’ve got 3 2011 Mac Minis I want to turn into basically web browsers for less technical family members. Apple has end-of-lifed these things, so no patches &amp; such. I’d like to turn them into “chrome books” ... is cloudready the best option? https://t.co/8wQnyIvose  Other ideas?
+- 2019-04-20 @mxsage: iannis xenakis / natasha barrett / elysia crampton 🎵 https://t.co/8swCc5mgwg
+- 2019-04-20 @HNTweets: Why Joy Division? Henry Rollins examines Jon Savage’s oral history of the band: https://t.co/XZUnVAQB3K Comments: https://t.co/0AcQfC2V5L
+- 2019-04-20 @jedisct1: RT @jpmens: "Storing HD photos in a relational database: recipe for an epic fail" https://t.co/QZqIdcOGPJ
+- 2019-04-20 @GCLinderman: For even the most complex datasets derived from highly non-linear processes, PCA/SVD is remarkably effective. This paper attempts to explain this by showing that many matrices can be approximated by a low-rank matrix, even if they are full-rank themselves. https://t.co/9zyq33pLwI https://t.co/h5gcQU2hkv
+- 2019-04-20 @FrancescoC: It is with great sadness that I share news of Joe Armstrong's passing away earlier today. Whilst he may no longer be with us, his work has laid the foundation which will be used by generations to come. RIP @joeerl, thank you for inspiring us all.
+- 2019-04-20 @newsycombinator: Joe Armstrong: The Mess We’re In https://t.co/5Y2NviU8c3
+- 2019-04-20 @newsycombinator: Canvas-sketch – A framework for making generative artwork https://t.co/njkGyIfjzt
+- 2019-04-20 @bodil: And those are my top Joe moments. Now excuse me, I'm going to have an Erlang: the Movie marathon in his memory.  Here's the extended director's cut with the Bjarne bit intact (it was cut out of the most popular version because Bjarne isn't really funny): https://t.co/3k8mA0k7mv
+- 2019-04-20 @strangeloop_stl: Joe Armstrong, @stephen_wolfram - City Museum, Strange Loop 2014 #rememberingjoe https://t.co/uQ8OXRmwik
+- 2019-04-21 @tslumley: I wrote a thing (and some code) about handling 'plausible values' in surveys https://t.co/sP4GEbZPWN
+- 2019-04-21 @davywtf: I put a webcam in a favicon you're welcome  Demo: https://t.co/AR0U1Hztu2 https://t.co/zt1xnfqcfC
+- 2019-04-21 @Jose_A_Alonso: A working mathematician’s guide to parsing. ~ Jeremy Kun (@jeremyjkun) | Math ∩ Programming https://t.co/ZKaKxx0xAr #Programming #LaTeX
+- 2019-04-21 @JuliaPirdzaska: « Aimer, c'est agir. » est le dernier mot écrit à la main par Victor Hugo trois jours avant sa mort. https://t.co/ArC6M1YnX9
+- 2019-04-21 @sharon000: Useful tips on how to spiff up an R Markdown document. #rstats by @R_Graph_Gallery  https://t.co/CPdAJHA3NH https://t.co/yDOBggCxQa
+- 2019-04-21 @danilobzdok: @f2harrell @xamat @TheWagRocks @DataSciFact On an alternative account, we argued that it is futile to put each analysis tool into a 'classical statistics' bucket or a 'machine learning' bucket. Instead, we advocate that modeling approaches are more usefully distinguished by the analysis goal! https://t.co/48Ygb405fJ
+- 2019-04-21 @CompSciFact: Joe Armstrong on hw to become a good programmer https://t.co/98MIPcIjpn
+- 2019-04-21 @jlouis666: https://t.co/yFTcTTKZe9 {'EXIT', joe, goodbye}.
+- 2019-04-21 @nedbat: Want italics in iTerm2? It’s more complicated than it should be, but this works: https://t.co/8me6tk0KyY with Monaco italics: https://t.co/IV73dQ1rcy
+- 2019-04-21 @statsepi: Evaluating a logistic regression based prediction tool in R https://t.co/IXIXOGVeaW Going ahead and posting this so I can start finding the errors. Shout out to @MaartenvSmeden for guidance.
+- 2019-04-21 @newsycombinator: Embracing Swift for Deep Learning https://t.co/uOjYRYH9ee
+- 2019-04-22 @MuinJKhoury: Again and again, because of new genomic findings, we keep debating population vs high risk approaches to disease prevention. We need both. As Goeffrey Rose once wrote, “the two approaches are not usually in competition.” https://t.co/Y6YoIqpAde https://t.co/qgkAIG4d02
+- 2019-04-22 @Atabey_Kaygun: Here is the github link for the code and data: https://t.co/618fsAGH26
+- 2019-04-22 @moorejh: How Many Genes Do Cells Need? Maybe Almost All of Them https://t.co/xDAUildCXR #genomics #genetics https://t.co/55n08Zn3zX
+- 2019-04-22 @f2harrell: @davecurtis314 @skathire @jflier @matthewherper @cecilejanssens @ATorkamani @cardiobrief @VPrasadMDMPH @DrMJoyner @EricTopol @stephensenn @mandl @ewanbirney @uk_biobank @VUMChealth And if anyone has a copy of that paper I'll critique it unbiasedly.  And everyone tempted to use BMI should review this: https://t.co/dL93f5M1Md
+- 2019-04-22 @hadleywickham: The R graphics cookbook is a great way to improve your visualisation skills, and it's now available online on for free! #rstats https://t.co/4a0oKkzYSy
+- 2019-04-23 @Harry_Stevens: d3-regression can now do polynomial regressions! Beware of overfitting with those higher-degree polynomials (they're also liable to kill your browser!). https://t.co/1mC6llZwRm #d3js #stats #dataviz https://t.co/8c6xuS8Kby
+- 2019-04-23 @newsycombinator: A book to learn R and Python in parallel for Data Science https://t.co/V17fqGtPI9
+- 2019-04-23 @ledell: Did you know that there's now a #Python version of the infamous #rstats data.table package? 📦 R data.table creator, @MattDowle, teamed with @h2oai colleague @pstetsenko to create Py @datatable.   @sudalairajkumar has a @kaggle notebook to get you started: https://t.co/fXbCCR85af https://t.co/dvmpQlsp1S
+- 2019-04-23 @newsycombinator: OpenShot – Open-Source Video Editor https://t.co/GKkCfyiW8v
+- 2019-04-23 @twiecki: Bambi (hierarchical GLMs with friendly syntax like bmrs with a #PyMC3 backend) has an updated website: https://t.co/MRFmr6YtGS By @talyarkoni
+- 2019-04-23 @olebegemann: TIL you can use dynamicCallable in Swift as a hacky syntax for creating stringly typed dictionaries without quotes and square brackets. The argument labels become the dictionary’s keys. 🤣 h/t @tony_allevato https://t.co/8aRemT5spR https://t.co/h49OFqmSUY
+- 2019-04-23 @kaz_yos: Don't Calculate Post-hoc Power Using Observed Estimate of Effect Size. - PubMed - NCBI https://t.co/fhhKuqWVqe
+- 2019-04-23 @JohnDCook: "I'm a professional, and a software developer, but not a professional software developer." https://t.co/jihxA9F7IT
+- 2019-04-23 @climagic: sudo strace -p 1205 # See syscalls of PID 1205. Processes don't have to be a black box, you can use strace (on Linux) to view the system calls made by a process, which may give some clue as to why it's misbehaving, where it is saving a file, etc.
+- 2019-04-23 @joelgrus: This is the most terrifying ML application I've seen in a while:  https://t.co/M047AVDLh9
+- 2019-04-23 @lapply: explor 0.3.5 (#rstats package for interactive exploration of PCA, CA and MCA results) is now on CRAN, with leader lines and automatic  placement for labels, and MCA biplots : https://t.co/u9goVweE1r https://t.co/uchW0GjCD4
+- 2019-04-23 @conjugateprior: Make your python function a command line application by annotation using click: https://t.co/zOuV0kpDjZ There's named arguments, default values, --help, confirmations, and everything.
+- 2019-04-24 @CompSciFact: Foundations of Databases  https://t.co/C2745Xf34X
+- 2019-04-24 @michael_chirico: #rstats Hot off the presses -- compressed fwrite directly to gz 🎉  Much thanks to @phchataignon for the PR to implement one of the most requested {data.table} features!!  Please give it a go and do report if you hit any issues 🤖  https://t.co/BVdzbzcY83
+- 2019-04-24 @joshua_ulrich: Another interesting and thoughtful thread from @matloff. Follow him to add pragmatic and balanced content to your daily #rstats consumption https://t.co/udWFRtMty4
+- 2019-04-24 @newsycombinator: Python in Visual Studio Code – April 2019 Release https://t.co/yy56PeOnKf
+- 2019-04-24 @freakonometrics: "Scant Evidence of Power Laws Found in Real-World Networks" https://t.co/gsqaOIVYEj https://t.co/kOiD3YY3i4
