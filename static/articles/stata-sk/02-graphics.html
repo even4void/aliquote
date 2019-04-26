@@ -3,7 +3,7 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="fr" xml:lang="fr">
 <head>
-<!-- 2019-03-30 Sam 20:19 -->
+<!-- 2019-04-26 Ven 20:38 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Stata : fonctionnalités graphiques</title>
@@ -86,22 +86,22 @@ for the JavaScript code in this tag.
 <h2>Table des matières</h2>
 <div id="text-table-of-contents">
 <ul>
-<li><a href="#org0afae41">Introduction</a></li>
-<li><a href="#orgb44d67f">Graphiques univariés de base</a>
+<li><a href="#orgac7863e">Introduction</a></li>
+<li><a href="#org4f0579b">Graphiques univariés de base</a>
 <ul>
-<li><a href="#orgf1904e3">Fonction de répartition et fractiles</a></li>
-<li><a href="#orgf211184">Histogrammes et courbes de densité</a></li>
-<li><a href="#org6fb2f2f">Diagrammes en barres et en points</a></li>
-<li><a href="#org30e53e0">Diagramme de dispersion</a></li>
+<li><a href="#orgfe34f4f">Fonction de répartition et fractiles</a></li>
+<li><a href="#orga959d46">Histogrammes et courbes de densité</a></li>
+<li><a href="#org26b9de2">Diagrammes en barres et en points</a></li>
+<li><a href="#orgf3e33c5">Diagramme de dispersion</a></li>
 </ul>
 </li>
-<li><a href="#org8ae7c56">Graphiques composites</a>
+<li><a href="#org27212c3">Graphiques composites</a>
 <ul>
-<li><a href="#org5b9c5f2">Représentations graphiques conditionnelles</a></li>
-<li><a href="#org8722917">Combinaison de sous-graphiques</a></li>
+<li><a href="#org677d2d6">Représentations graphiques conditionnelles</a></li>
+<li><a href="#org9c9c5ff">Combinaison de sous-graphiques</a></li>
 </ul>
 </li>
-<li><a href="#orga706c90">Commandes de post-estimation</a></li>
+<li><a href="#org2e0d3f5">Commandes de post-estimation</a></li>
 </ul>
 </div>
 </div>
@@ -113,9 +113,9 @@ Stata dispose d’un excellent système graphique avec de nombreuses options de
 Les commandes graphiques peuvent être utilisées pour décrire des données ou en tant que commandes de &laquo;&nbsp;post estimation&nbsp;&raquo; (par exemple, analyse en composantes principales, graphique de résidus).
 </p>
 
-<div id="outline-container-org0afae41" class="outline-2">
-<h2 id="org0afae41">Introduction</h2>
-<div class="outline-text-2" id="text-org0afae41">
+<div id="outline-container-orgac7863e" class="outline-2">
+<h2 id="orgac7863e">Introduction</h2>
+<div class="outline-text-2" id="text-orgac7863e">
 <p>
 Les données qui serviront de base à la plupart des illustrations de ce chapitre portent sur une enquête socio-économique allemande réalisée en 2009 et décrite dans l&rsquo;ouvrage de Kohler &amp; Kreuter [<a href="#kohler-2012-data-analy">4</a>]. Les avriables d&rsquo;intérêt sont les suivantes : <code>ybirth</code> (année de naissance), <code>hhnr2009</code> (foyer résidentiel), <code>sex</code> (sexe), <code>mar</code> (statut marital), <code>edu</code> (niveau d’éducation), <code>yedu</code> (nombre d’années de formation), <code>voc</code> (niveau secondaire ou université), <code>emp</code> (type d’emploi), <code>egp</code> (catégorie socio professionnelle), <code>income</code> (revenus, en €), <code>size</code> (taille du logement), <code>hhsize</code> (nombre de personnes dans habitation).
 </p>
@@ -186,13 +186,13 @@ list persnr-sex in 1/5
 </div>
 
 
-<div id="outline-container-orgb44d67f" class="outline-2">
-<h2 id="orgb44d67f">Graphiques univariés de base</h2>
-<div class="outline-text-2" id="text-orgb44d67f">
+<div id="outline-container-org4f0579b" class="outline-2">
+<h2 id="org4f0579b">Graphiques univariés de base</h2>
+<div class="outline-text-2" id="text-org4f0579b">
 </div>
-<div id="outline-container-orgf1904e3" class="outline-3">
-<h3 id="orgf1904e3">Fonction de répartition et fractiles</h3>
-<div class="outline-text-3" id="text-orgf1904e3">
+<div id="outline-container-orgfe34f4f" class="outline-3">
+<h3 id="orgfe34f4f">Fonction de répartition et fractiles</h3>
+<div class="outline-text-3" id="text-orgfe34f4f">
 <p>
 Considérons l&rsquo;âge des répondants qui peut être reconstruit à partir de l&rsquo;année de naissance (<code>ybirth</code>) et de l&rsquo;année de réalisation de l&rsquo;enquête (2009) :
 </p>
@@ -244,7 +244,7 @@ graph export "fig-02-quantile-age.eps", replace
 </div>
 
 
-<div id="org7625854" class="figure">
+<div id="org9a07b70" class="figure">
 <p><img src="./fig-02-quantile-age.png" alt="fig-02-quantile-age.png" width="640px" />
 </p>
 <p><span class="figure-number">Figure&nbsp;1&nbsp;: </span>Distribution des fractiles d&rsquo;âge</p>
@@ -263,7 +263,7 @@ graph export "fig-02-cumul-age.eps", replace
 </div>
 
 
-<div id="org18557db" class="figure">
+<div id="org373e9ad" class="figure">
 <p><img src="./fig-02-cumul-age.png" alt="fig-02-cumul-age.png" width="640px" />
 </p>
 <p><span class="figure-number">Figure&nbsp;2&nbsp;: </span>Fonction de répartition empirique de l&rsquo;âge</p>
@@ -280,7 +280,7 @@ graph export "fig-02-qnorm-age.eps", replace
 </div>
 
 
-<div id="org271a402" class="figure">
+<div id="orge3f2e60" class="figure">
 <p><img src="./fig-02-qnorm-age.png" alt="fig-02-qnorm-age.png" width="640px" />
 </p>
 <p><span class="figure-number">Figure&nbsp;3&nbsp;: </span>Diagramme quantile-quantile pour l&rsquo;âge</p>
@@ -288,9 +288,9 @@ graph export "fig-02-qnorm-age.eps", replace
 </div>
 </div>
 
-<div id="outline-container-orgf211184" class="outline-3">
-<h3 id="orgf211184">Histogrammes et courbes de densité</h3>
-<div class="outline-text-3" id="text-orgf211184">
+<div id="outline-container-orga959d46" class="outline-3">
+<h3 id="orga959d46">Histogrammes et courbes de densité</h3>
+<div class="outline-text-3" id="text-orga959d46">
 <p>
 Pour construire un histogramme de cette même variable (<code>age</code>), on utilisera la commande <a href="https://www.stata.com/help.cgi?histogram" class="stata">histogram</a>, en précisant l&rsquo;option <code>freq</code> si l&rsquo;on souhaite afficher les effectifs (&laquo;&nbsp;fréquences&nbsp;&raquo; en anglais) plutôt que la densité :
 </p>
@@ -302,7 +302,7 @@ graph export "fig-02-histogram-age.eps", replace
 </div>
 
 
-<div id="org7f34e53" class="figure">
+<div id="orgdc65dd0" class="figure">
 <p><img src="./fig-02-histogram-age.png" alt="fig-02-histogram-age.png" width="640px" />
 </p>
 <p><span class="figure-number">Figure&nbsp;4&nbsp;: </span>Distribution de l&rsquo;âge des répondants</p>
@@ -320,7 +320,7 @@ graph export "fig-02-histogram-age-sex.eps", replace
 </div>
 
 
-<div id="orgbd8f9d9" class="figure">
+<div id="orgf1a7b3e" class="figure">
 <p><img src="./fig-02-histogram-age-sex.png" alt="fig-02-histogram-age-sex.png" width="640px" />
 </p>
 <p><span class="figure-number">Figure&nbsp;5&nbsp;: </span>Distribution de l&rsquo;âge des répondants selon le sexe</p>
@@ -337,7 +337,7 @@ graph export "fig-02-kdensity-age.eps", replace
 </div>
 
 
-<div id="org5c39068" class="figure">
+<div id="org37c18d0" class="figure">
 <p><img src="./fig-02-kdensity-age.png" alt="fig-02-kdensity-age.png" width="640px" />
 </p>
 <p><span class="figure-number">Figure&nbsp;6&nbsp;: </span>Distribution de l&rsquo;âge des répondants</p>
@@ -357,7 +357,7 @@ restore
 </div>
 
 
-<div id="orge616e29" class="figure">
+<div id="org2a6de82" class="figure">
 <p><img src="./fig-02-dotplot-age.png" alt="fig-02-dotplot-age.png" width="640px" />
 </p>
 <p><span class="figure-number">Figure&nbsp;7&nbsp;: </span>Distribution de l&rsquo;âge selon le sexe</p>
@@ -365,9 +365,9 @@ restore
 </div>
 </div>
 
-<div id="outline-container-org6fb2f2f" class="outline-3">
-<h3 id="org6fb2f2f">Diagrammes en barres et en points</h3>
-<div class="outline-text-3" id="text-org6fb2f2f">
+<div id="outline-container-org26b9de2" class="outline-3">
+<h3 id="org26b9de2">Diagrammes en barres et en points</h3>
+<div class="outline-text-3" id="text-org26b9de2">
 <p>
 Bien qu&rsquo;il existe une commande graphique pour tracer des diagrammes en barres, <a href="https://www.stata.com/help.cgi?graph bar" class="stata">graph bar</a>, celle-ci s&rsquo;utilise généralement à partir de données agrégées (voir l&rsquo;option <code>yvars</code> avec <code>(stat)</code>). On utilise donc la même commande qu&rsquo;à la section précédente, <a href="https://www.stata.com/help.cgi?histogram" class="stata">histogram</a>, en spécifiant l&rsquo;option <code>discrete</code>, comme illustré ci-dessous :
 </p>
@@ -379,14 +379,14 @@ graph export "fig-02-histogram-edu.eps", replace
 </div>
 
 
-<div id="org24916d4" class="figure">
+<div id="org8913f32" class="figure">
 <p><img src="./fig-02-histogram-edu.png" alt="fig-02-histogram-edu.png" width="640px" />
 </p>
 <p><span class="figure-number">Figure&nbsp;8&nbsp;: </span>Distribution d&rsquo;effectifs selon les niveaux d&rsquo;éducation</p>
 </div>
 
 <p>
-Comme on peut le voir, la figure <a href="#org24916d4">8</a> est loin d&rsquo;être parfaite. En particulier, les libellés de l&rsquo;axe des abscisses sont peu lisibles (à moins d&rsquo;ajouter une légende indiquant la correspondance entre les codes numériques et les étiquettes des niveaux de la variable <code>edu</code>), et les barres verticales sont juxtaposées de sorte qu&rsquo;avec l&rsquo;axe numérique il est facile de prendre ce diagramme pour un histogramme pour données continues. Voici une version qui corrige ces deux aspects, notamment grâce à l&rsquo;usage de <code>gap()</code> et une spécification plus poussée des étiquettes de l&rsquo;axe des x :
+Comme on peut le voir, la figure <a href="#org8913f32">8</a> est loin d&rsquo;être parfaite. En particulier, les libellés de l&rsquo;axe des abscisses sont peu lisibles (à moins d&rsquo;ajouter une légende indiquant la correspondance entre les codes numériques et les étiquettes des niveaux de la variable <code>edu</code>), et les barres verticales sont juxtaposées de sorte qu&rsquo;avec l&rsquo;axe numérique il est facile de prendre ce diagramme pour un histogramme pour données continues. Voici une version qui corrige ces deux aspects, notamment grâce à l&rsquo;usage de <code>gap()</code> et une spécification plus poussée des étiquettes de l&rsquo;axe des x :
 </p>
 
 <div class="org-src-container">
@@ -396,7 +396,7 @@ graph export "fig-02-histogram-edu-v2.eps", replace
 </div>
 
 
-<div id="org341ef66" class="figure">
+<div id="org512c56f" class="figure">
 <p><img src="./fig-02-histogram-edu-v2.png" alt="fig-02-histogram-edu-v2.png" width="640px" />
 </p>
 <p><span class="figure-number">Figure&nbsp;9&nbsp;: </span>Distribution d&rsquo;effectifs selon les niveaux d&rsquo;éducation</p>
@@ -422,7 +422,7 @@ graph export "fig-02-catplot-edu.eps", replace
 </div>
 
 
-<div id="org4c09c47" class="figure">
+<div id="org79c3126" class="figure">
 <p><img src="./fig-02-catplot-edu.png" alt="fig-02-catplot-edu.png" width="640px" />
 </p>
 <p><span class="figure-number">Figure&nbsp;10&nbsp;: </span>Distribution d&rsquo;effectifs selon les niveaux d&rsquo;éducation</p>
@@ -439,7 +439,7 @@ graph export "fig-02-catplot-edu-v2.eps", replace
 </div>
 
 
-<div id="orgc42b762" class="figure">
+<div id="org56fe6d9" class="figure">
 <p><img src="./fig-02-catplot-edu-v2.png" alt="fig-02-catplot-edu-v2.png" width="640px" />
 </p>
 <p><span class="figure-number">Figure&nbsp;11&nbsp;: </span>Distribution selon les niveaux d&rsquo;éducation et le sexe (%)</p>
@@ -447,9 +447,9 @@ graph export "fig-02-catplot-edu-v2.eps", replace
 </div>
 </div>
 
-<div id="outline-container-org30e53e0" class="outline-3">
-<h3 id="org30e53e0">Diagramme de dispersion</h3>
-<div class="outline-text-3" id="text-org30e53e0">
+<div id="outline-container-orgf3e33c5" class="outline-3">
+<h3 id="orgf3e33c5">Diagramme de dispersion</h3>
+<div class="outline-text-3" id="text-orgf3e33c5">
 <p>
 Un diagramme de dispersion permet de représenter sous forme d&rsquo;un nuage de points la covariation entre deux séries numériques. 
 </p>
@@ -462,7 +462,7 @@ graph export "fig-02-scatter-age-income.eps", replace
 </div>
 
 
-<div id="org8b0efff" class="figure">
+<div id="org720354c" class="figure">
 <p><img src="./fig-02-scatter-age-income.png" alt="fig-02-scatter-age-income.png" width="640px" />
 </p>
 <p><span class="figure-number">Figure&nbsp;12&nbsp;: </span>Distribution jointe du revenu (log) et de l&rsquo;âge</p>
@@ -483,7 +483,7 @@ graph export "fig-02-loess-age-income.eps", replace
 </div>
 
 
-<div id="orgf2373a0" class="figure">
+<div id="org68555bc" class="figure">
 <p><img src="./fig-02-loess-age-income.png" alt="fig-02-loess-age-income.png" width="640px" />
 </p>
 <p><span class="figure-number">Figure&nbsp;13&nbsp;: </span>Distribution jointe du revenu (log) et de l&rsquo;âge</p>
@@ -511,7 +511,7 @@ restore
 </div>
 
 
-<div id="orgb74225f" class="figure">
+<div id="org7e590ee" class="figure">
 <p><img src="./fig-02-loess-age-dvisits.gif" alt="fig-02-loess-age-dvisits.gif" width="640px" />
 </p>
 <p><span class="figure-number">Figure&nbsp;14&nbsp;: </span>Influence du paramètre de lissage</p>
@@ -520,13 +520,13 @@ restore
 </div>
 </div>
 
-<div id="outline-container-org8ae7c56" class="outline-2">
-<h2 id="org8ae7c56">Graphiques composites</h2>
-<div class="outline-text-2" id="text-org8ae7c56">
+<div id="outline-container-org27212c3" class="outline-2">
+<h2 id="org27212c3">Graphiques composites</h2>
+<div class="outline-text-2" id="text-org27212c3">
 </div>
-<div id="outline-container-org5b9c5f2" class="outline-3">
-<h3 id="org5b9c5f2">Représentations graphiques conditionnelles</h3>
-<div class="outline-text-3" id="text-org5b9c5f2">
+<div id="outline-container-org677d2d6" class="outline-3">
+<h3 id="org677d2d6">Représentations graphiques conditionnelles</h3>
+<div class="outline-text-3" id="text-org677d2d6">
 <p>
 On entend par représentation graphique conditionnelle 
 </p>
@@ -542,7 +542,7 @@ graph export "fig-02-kdensity-age-sex.eps", replace
 </div>
 
 
-<div id="org45514a7" class="figure">
+<div id="org7e3cc66" class="figure">
 <p><img src="./fig-02-kdensity-age-sex.png" alt="fig-02-kdensity-age-sex.png" width="640px" />
 </p>
 <p><span class="figure-number">Figure&nbsp;15&nbsp;: </span>Distribution de l&rsquo;âge des répondants selon le sexe</p>
@@ -559,7 +559,7 @@ graph export "fig-02-kdensity-age-sex-v2.eps", replace
 </div>
 
 
-<div id="org2024cfb" class="figure">
+<div id="org3740071" class="figure">
 <p><img src="./fig-02-kdensity-age-sex-v2.png" alt="fig-02-kdensity-age-sex-v2.png" width="640px" />
 </p>
 <p><span class="figure-number">Figure&nbsp;16&nbsp;: </span>Distribution de l&rsquo;âge des répondants selon le sexe</p>
@@ -609,7 +609,7 @@ graph export "fig-02-box-age-egp.eps", replace
 </div>
 
 
-<div id="org0df2aa0" class="figure">
+<div id="org819c96c" class="figure">
 <p><img src="./fig-02-box-age-egp.png" alt="fig-02-box-age-egp.png" width="640px" />
 </p>
 <p><span class="figure-number">Figure&nbsp;17&nbsp;: </span>Distribution de l&rsquo;âge des répondants selon la classe socio-économique</p>
@@ -623,7 +623,7 @@ graph export "fig-02-dotplot-age-egp.eps", replace
 </div>
 
 
-<div id="org4de0a13" class="figure">
+<div id="org2be0af6" class="figure">
 <p><img src="./fig-02-dotplot-age-egp.png" alt="fig-02-dotplot-age-egp.png" width="640px" />
 </p>
 <p><span class="figure-number">Figure&nbsp;18&nbsp;: </span>Distribution de l&rsquo;âge des répondants selon la classe socio-économique</p>
@@ -635,9 +635,9 @@ Le package <a href="https://ideas.repec.org/c/boc/bocode/s433401.html">stripplot
 </div>
 </div>
 
-<div id="outline-container-org8722917" class="outline-3">
-<h3 id="org8722917">Combinaison de sous-graphiques</h3>
-<div class="outline-text-3" id="text-org8722917">
+<div id="outline-container-org9c9c5ff" class="outline-3">
+<h3 id="org9c9c5ff">Combinaison de sous-graphiques</h3>
+<div class="outline-text-3" id="text-org9c9c5ff">
 <p>
 Il n&rsquo;est parfois pas toujours possible de reposer sur les options <code>by()</code> ou <code>over()</code> afin de combiner des sous-graphiques comme on le souhaiterait. La commande <a href="https://www.stata.com/help.cgi?graph combine" class="stata">graph combine</a> permet d&rsquo;assembler n&rsquo;importe quel graphique sauvegardé en mémoire ou sur le disque (en format <code>gph</code>). Voici un exemple d&rsquo;utilisation avec une série chronologique disponible sur internet. Il s&rsquo;agit d&rsquo;un ensemble de 144 observations sur le volume mensuel de passagers sur les vols internationataux
 </p>
@@ -675,7 +675,7 @@ graph export "fig-02-scatter-air-time.eps", replace
 </div>
 
 
-<div id="org364173c" class="figure">
+<div id="org8ad7777" class="figure">
 <p><img src="./fig-02-scatter-air-time.png" alt="fig-02-scatter-air-time.png" width="640px" />
 </p>
 <p><span class="figure-number">Figure&nbsp;19&nbsp;: </span>Évolution du nombre mensuel de passagers entre 1949 et 1961</p>
@@ -715,7 +715,7 @@ graph export "fig-02-scatter-air-time-v2.eps", replace
 </div>
 
 
-<div id="orge64f19a" class="figure">
+<div id="orgbb290f4" class="figure">
 <p><img src="./fig-02-scatter-air-time-v2.png" alt="fig-02-scatter-air-time-v2.png" width="640px" />
 </p>
 <p><span class="figure-number">Figure&nbsp;20&nbsp;: </span>Évolution du nombre mensuel de passagers entre 1949 et 1961</p>
@@ -737,7 +737,7 @@ graph drop _all
 </div>
 
 
-<div id="org466af8c" class="figure">
+<div id="org0254ee5" class="figure">
 <p><img src="./fig-02-scatter-air-time-v3.png" alt="fig-02-scatter-air-time-v3.png" width="640px" />
 </p>
 <p><span class="figure-number">Figure&nbsp;21&nbsp;: </span>Évolution du nombre mensuel de passagers entre 1949 et 1961</p>
@@ -747,9 +747,9 @@ graph drop _all
 </div>
 
 
-<div id="outline-container-orga706c90" class="outline-2">
-<h2 id="orga706c90">Commandes de post-estimation</h2>
-<div class="outline-text-2" id="text-orga706c90">
+<div id="outline-container-org2e0d3f5" class="outline-2">
+<h2 id="org2e0d3f5">Commandes de post-estimation</h2>
+<div class="outline-text-2" id="text-org2e0d3f5">
 <div id="bibliography">
 <h2>Références</h2>
 

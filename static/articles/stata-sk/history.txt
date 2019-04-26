@@ -1,3 +1,7 @@
+* 366096c (Fri, 26 Apr 2019 21:08:57 +0200, chl) Minor edits
+* 5abbd51 (Mon, 15 Apr 2019 21:41:09 +0200, chl) Rewind ANOVA chapter structure
+* 53e0cab (Wed, 3 Apr 2019 15:59:43 +0200, chl) Add new chapter
+* 4517f28 (Mon, 1 Apr 2019 11:55:20 +0200, chl) Add new chapter
 * 28f2e32 (Sun, 31 Mar 2019 19:30:44 +0200, chl) Two-way ANOVA and new dataset
 * 34b7c30 (Sat, 30 Mar 2019 20:10:51 +0100, chl) Add intermediate chapter on ANOVA
 * 2bf3336 (Sat, 23 Mar 2019 08:46:02 +0100, chl) Minor update for the animated GIF
