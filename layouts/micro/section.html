@@ -3,7 +3,9 @@
 {{ define "content"}}
 {{- $paginator := .Paginate (where .Data.Pages.ByDate.Reverse "Type" "tweet") .Site.Params.archivePaginate }}
 <section id="archive" class="archive">
-
+<div class="archive-title">
+   ({{ T "archiveCounter" (len .Data.Pages) }})
+</div>
   {{- range $index, $element := $paginator.Pages -}}
     {{- $thisYear := $element.Date.Format "2006" }}
     {{- $lastElement := $index | add -1 | index $paginator.Pages }}
