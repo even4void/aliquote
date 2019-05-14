@@ -1,5 +1,5 @@
 ---
-title: "New"
+title: "New color theme"
 date: 2019-05-13T19:10:43+02:00
 draft: false
 type: "tweet"
