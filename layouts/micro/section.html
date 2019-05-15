@@ -3,6 +3,7 @@
 {{ define "content"}}
 {{- $paginator := .Paginate (where .Data.Pages.ByDate.Reverse "Type" "tweet") .Site.Params.archivePaginate }}
 <section id="archive" class="archive">
+  <img src="/img/cal-heatmap.png" width="600">
 <div class="archive-title">
    ({{ T "archiveCounter" (len .Data.Pages) }})
 </div>
