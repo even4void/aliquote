@@ -17,6 +17,8 @@ url = "/articles/changelog/"
 * [2018-03-07] Switch to the Even theme instead of Academic
 * [2018-02-23] Finish migrating old posts
 
+{{< figure src="/img/cal-heatmap.png" title="My own musings on the Micro blog over the years" >}}
+
 ```
 % git log | tail -n 5
 commit 316adb5e3d1ddce5d3d45419b0c035483616e361
