@@ -1,10 +1,10 @@
-+++
-title = "The Changelog"
-date = 2018-05-17T00:00:00
-lastmod = 2018-06-30T00:00:00
-url = "/articles/changelog/"
-+++
+---
+title: "The Changelog"
+date: 2018-05-17T00:00:00
+url: "/articles/changelog/"
+---
 
+* [2019-04-…] Minor fix to the design of the [Micro](/micro) blog
 * [2019-01-23] Further improvements to my digital anonymization strategy
 * [2018-06-29] Add [privacy](/privacy/) statements
 * [2018-05-17] Add a Changelog (this page)
