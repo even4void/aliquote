@@ -38,11 +38,13 @@
 			<outline htmlUrl="https://freakonometrics.hypotheses.org" title="Freakonometrics" xmlUrl="https://freakonometrics.hypotheses.org/feed" type="rss" text="Freakonometrics"/>
 			<outline htmlUrl="https://rakhim.org/" title="Home on Rakhim.org" xmlUrl="https://rakhim.org/index.xml" type="rss" text="Home on Rakhim.org"/>
 			<outline htmlUrl="http://www.ibm.com/developerworks/" title="IBM Developer : Open source" xmlUrl="http://www.ibm.com/developerworks/views/opensource/rss/libraryview.jsp?site_id=1&amp;contentarea_by=Open%20source&amp;topic_by=&amp;product_by=&amp;type_by=All%20Types&amp;search_by=&amp;industry_by=&amp;sort_by=Date&amp;series_title_by=" type="rss" text="IBM Developer : Open source"/>
+			<outline htmlUrl="https://inconvergent.net/" title="inconvergent" xmlUrl="https://inconvergent.net/atom.xml" type="rss" text="inconvergent"/>
 			<outline htmlUrl="https://irreal.org/blog" title="Irreal" xmlUrl="http://irreal.org/blog/?feed=rss2" type="rss" text="Irreal"/>
 			<outline htmlUrl="https://www.baty.net/" title="Jack Baty" xmlUrl="https://www.baty.net/index.xml" type="rss" text="Jack Baty"/>
 			<outline htmlUrl="https://micro.baty.net/" title="Jack Baty - the Microblog" xmlUrl="https://micro.baty.net/feed.xml" type="rss" text="Jack Baty - the Microblog"/>
 			<outline htmlUrl="https://www.baty.blog" title="Jack Baty's Weblog" xmlUrl="https://www.baty.blog/feed.rss" type="rss" text="Jack Baty's Weblog"/>
 			<outline htmlUrl="https://www.johndcook.com/blog" title="John D. Cook" xmlUrl="http://feeds.feedburner.com/TheEndeavour" type="rss" text="John D. Cook"/>
+			<outline htmlUrl="http://zerolib.com" title="John Jacobsen" xmlUrl="http://zerolib.com/feed.xml" type="rss" text="John Jacobsen"/>
 			<outline htmlUrl="http://www.johnmyleswhite.com" title="John Myles White" xmlUrl="http://www.johnmyleswhite.com/feed/" type="rss" text="John Myles White"/>
 			<outline htmlUrl="http://journal.stuffwithstuff.com/" title="journal.stuffwithstuff.com" xmlUrl="http://journal.stuffwithstuff.com/rss.xml" type="rss" text="journal.stuffwithstuff.com"/>
 			<outline htmlUrl="http://lambda-the-ultimate.org" title="Lambda the Ultimate - Programming Languages Weblog" xmlUrl="http://lambda-the-ultimate.org/rss.xml" type="rss" text="Lambda the Ultimate - Programming Languages Weblog"/>
@@ -54,12 +56,13 @@
 			<outline htmlUrl="http://blog.markwatson.com/" title="Mark Watson's artificial intelligence and machine learning blog" xmlUrl="http://blog.markwatson.com/feeds/posts/default" type="rss" text="Mark Watson's artificial intelligence and machine learning blog"/>
 			<outline htmlUrl="https://martinfowler.com" title="Martin Fowler" xmlUrl="https://martinfowler.com/feed.atom" type="rss" text="Martin Fowler"/>
 			<outline htmlUrl="https://mathematicaforprediction.wordpress.com" title="Mathematica for prediction algorithms" xmlUrl="https://mathematicaforprediction.wordpress.com/feed/" type="rss" text="Mathematica for prediction algorithms"/>
+			<outline htmlUrl="https://meltingasphalt.com" title="Melting Asphalt" xmlUrl="http://feeds.feedburner.com/MeltingAsphalt" type="rss" text="Melting Asphalt"/>
 			<outline htmlUrl="https://meow.noopkat.com" title="meow machine" xmlUrl="http://meow.noopkat.com/rss/" type="rss" text="meow machine"/>
 			<outline htmlUrl="https://nullprogram.com" title="null program" xmlUrl="http://nullprogram.com/blog/index.rss" type="rss" text="null program"/>
 			<outline htmlUrl="https://oleb.net/blog/" title="Ole Begemann" xmlUrl="https://oleb.net/blog/atom.xml" type="rss" text="Ole Begemann"/>
 			<outline htmlUrl="http://www.paulgraham.com/" title="Paul Graham: Essays" xmlUrl="http://www.aaronsw.com/2002/feeds/pgessays.rss" type="rss" text="Paul Graham: Essays"/>
 			<outline htmlUrl="https://politbistro.hypotheses.org" title="Polit’bistro : des politiques, du café" xmlUrl="https://politbistro.hypotheses.org/feed" type="rss" text="Polit’bistro : des politiques, du café"/>
-			<outline htmlUrl="http://fharrell.com/post/" title="Posts on Statistical Thinking" xmlUrl="http://fharrell.com/post/index.xml" type="rss" text="Posts on Statistical Thinking"/>
+			<outline htmlUrl="https://fharrell.com/post/" title="Posts on Statistical Thinking" xmlUrl="http://fharrell.com/post/index.xml" type="rss" text="Posts on Statistical Thinking"/>
 			<outline htmlUrl="https://www.greghendershott.com/tags/all.rss.xml" title="Posts tagged &quot;all&quot;" xmlUrl="https://www.greghendershott.com/feeds/all.rss.xml" type="rss" text="Posts tagged &quot;all&quot;"/>
 			<outline htmlUrl="http://pragmaticemacs.com" title="Pragmatic Emacs" xmlUrl="http://pragmaticemacs.com/feed/" type="rss" text="Pragmatic Emacs"/>
 			<outline htmlUrl="https://www.allendowney.com/blog" title="Probably Overthinking It" xmlUrl="https://www.allendowney.com/blog/feed/" type="rss" text="Probably Overthinking It"/>
@@ -68,7 +71,7 @@
 			<outline htmlUrl="https://radfordneal.wordpress.com" title="Radford Neal's blog" xmlUrl="http://radfordneal.wordpress.com/feed/" type="rss" text="Radford Neal's blog"/>
 			<outline htmlUrl="http://gigasquid.github.io/" title="Squid's Blog" xmlUrl="http://gigasquidsoftware.com/atom.xml" type="rss" text="Squid's Blog"/>
 			<outline htmlUrl="https://standblog.org/blog/" title="Standblog" xmlUrl="https://standblog.org/blog/feed/atom" type="rss" text="Standblog"/>
-			<outline htmlUrl="http://fharrell.com/" title="Statistical Thinking on Statistical Thinking" xmlUrl="http://fharrell.com/index.xml" type="rss" text="Statistical Thinking on Statistical Thinking"/>
+			<outline htmlUrl="https://fharrell.com/" title="Statistical Thinking on Statistical Thinking" xmlUrl="http://fharrell.com/index.xml" type="rss" text="Statistical Thinking on Statistical Thinking"/>
 			<outline htmlUrl="https://blog.stephenwolfram.com" title="Stephen Wolfram Blog" xmlUrl="http://blog.stephenwolfram.com/feed/" type="rss" text="Stephen Wolfram Blog"/>
 			<outline htmlUrl="http://stevelosh.com/" title="Steve Losh" xmlUrl="http://feeds2.feedburner.com/stevelosh" type="rss" text="Steve Losh"/>
 			<outline htmlUrl="https://multithreaded.stitchfix.com/" title="Stitch Fix Technology – Multithreaded" xmlUrl="https://multithreaded.stitchfix.com/feed.xml" type="rss" text="Stitch Fix Technology – Multithreaded"/>
