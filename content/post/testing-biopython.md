@@ -3,7 +3,7 @@ title = "Testing BioPython"
 description = ""
 date = 2008-07-27T19:22:47+01:00
 draft = false
-tags = ["python"]
+tags = ["python", "bioinformatics"]
 categories = []
 +++
 

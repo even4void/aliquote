@@ -3,7 +3,7 @@ title = "Archiving my responses on StackExchange"
 description = ""
 date = 2011-01-20T09:11:40+01:00
 draft = false
-tags = ["misc"]
+tags = ["misc", "tex"]
 categories = []
 [header]
 [[gallery_item]]
