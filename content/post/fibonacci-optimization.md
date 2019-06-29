@@ -14,7 +14,7 @@ Okay, so I spent more than an hour implementing different algorithms in Racket t
 
 The first algorithm I used was not optimized, and of course it will have a hard time to compute thousands of numbers in a decent time:
 
-```racket
+```scheme
 (define (fibo x)
   (define (fib-iter x a b)
     (if (= x 0)
@@ -27,7 +27,7 @@ Next, I look up some other (more efficient) algorithms, and I ended up with two 
 
 Here is my implementation of the later:
 
-```racket
+```scheme
 (define (fib n)
   (cond [(= n 0) 0]
         [(or (= n 1) (= n 2)) 1]
