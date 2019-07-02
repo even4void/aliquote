@@ -3,9 +3,10 @@ title: "On premature optimization"
 date: 2019-06-29T17:42:31+02:00
 draft: false
 description: ""
-tags: ["racket","scheme","math"]
+tags: ["racket", "scheme", "math"]
 categories: []
 ---
+
 In which I describe my journey in the land of Fibonacci numbers.
 
 <!--more-->
@@ -23,7 +24,7 @@ The first algorithm I used was not optimized, and of course it will have a hard 
   (fib-iter x 0 1))
 ```
 
-Next, I look up some other (more efficient) algorithms, and I ended up with two possible candidates: Fibonacci matrix multiplication and the fast doubling algorithm which is often used to compute the $n$-th term and its successor. (I know about Lucas numbers and the golden ratio too, but I wanted to try those specific algorithms.) 
+Next, I look up some other (more efficient) algorithms, and I ended up with two possible candidates: Fibonacci matrix multiplication and the fast doubling algorithm which is often used to compute the $n$-th term and its successor. (I know about Lucas numbers and the golden ratio too, but I wanted to try those specific algorithms.)
 
 Here is my implementation of the later:
 
@@ -39,9 +40,9 @@ Here is my implementation of the later:
 
 The idea behind this algorithm relies on the following two relations, with further simplications explained in [this post](https://chunminchang.github.io/blog/post/calculating-fibonacci-numbers-by-fast-doubling):
 
-$$ 
+$$
 \begin{array}{ll}
-F(2n)   &= F(n)\cdot\left( 2F(n+1)-F(n)\right) \\
+F(2n) &= F(n)\cdot\left( 2F(n+1)-F(n)\right) \cr
 F(2n+1) &= F(n)^2 + F(n+1)^2
 \end{array}
 $$
