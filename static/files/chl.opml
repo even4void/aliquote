@@ -33,6 +33,7 @@
 			<outline htmlUrl="https://stuartsierra.com" title="Digital Digressions by Stuart Sierra" xmlUrl="http://stuartsierra.com/feed" type="rss" text="Digital Digressions by Stuart Sierra"/>
 			<outline htmlUrl="https://can3p.github.io" title="Dmitry Petrov" xmlUrl="http://can3p.github.io/atom.xml" type="rss" text="Dmitry Petrov"/>
 			<outline htmlUrl="http://www.drbunsen.org/" title="Dr. Bunsen Blog" xmlUrl="http://www.drbunsen.org/feed.xml" type="rss" text="Dr. Bunsen Blog"/>
+			<outline htmlUrl="http://dustycloud.org/" title="DustyCloud Brainstorms" xmlUrl="http://dustycloud.org/blog/index.xml" type="rss" text="DustyCloud Brainstorms"/>
 			<outline htmlUrl="https://eagereyes.org" title="eagereyes" xmlUrl="http://eagereyes.org/rss.xml" type="rss" text="eagereyes"/>
 			<outline htmlUrl="https://eli.thegreenplace.net/" title="Eli Bendersky's website" xmlUrl="https://eli.thegreenplace.net/feeds/all.atom.xml" type="rss" text="Eli Bendersky's website"/>
 			<outline htmlUrl="http://gonsie.com/" title="Elsa Gonsiorowski" xmlUrl="https://www.gonsie.com/blorg/feed.xml" type="rss" text="Elsa Gonsiorowski"/>
