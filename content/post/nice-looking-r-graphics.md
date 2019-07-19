@@ -24,7 +24,7 @@ Here is an example of a beautiful R graphical display:
 The R code is available on <http://www.gradaanwr.net/content/ch12-ensemble-graphics-and-case-studies/>. This is certainly the next book I will order on [Amazon.com](http://www.amazon.com).
 
 
-While reading [Fibonacci Numbers in the Real World](http://lee-phillips.org/lispmath/), I also found a nice looking scatter plot (see Figure 1). I don't know which software was used to produce this graphic. Here is one way to get started and draw a similar scatter plot using R, where axis ticks are drawn inside the plotting region, and not outside, and with a fine grid added to the plot. I will use a data frame that can be found in the `MASS` package.
+While reading [Fibonacci Numbers in the Real World](http://lee-phillips.org/lispmath/), I also found a nice looking scatter plot (see Figure 1). I believe Gnuplot was used to produce this graphic. Here is one way to get started and draw a similar scatter plot using R, where axis ticks are drawn inside the plotting region, and not outside, and with a fine grid added to the plot. I will use a data frame that can be found in the `MASS` package.
 
 ```r
 with(birthwt, plot(lwt, bwt, panel.first = grid(nx = NULL, ny = NULL, lty = 1), 

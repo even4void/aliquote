@@ -21,7 +21,7 @@ RecurrenceTable[{a[n] == 0.5 a[n - 1] + 0.25 a[n - 2], a[0] == 0.25,
   a[1] == 0.125}, a, {n, 50}]
 ```
 
-![](/img/x34e7A2rz.png)
+![Mathematica plot](/img/x34e7A2rz.png)
 
 The corresponding probability generating function is also easily obtained using `GeneratingFunction`. Note that it is also possible to use `RSolve` instead of `RecurrenceTable`, as shown in the following example where we generate the first terms of the Fibonacci sequence:
 
