@@ -14,6 +14,7 @@
 			<outline htmlUrl="https://machinelearning.apple.com/" title="Apple Machine Learning Journal" xmlUrl="https://machinelearning.apple.com/feed.xml" type="rss" text="Apple Machine Learning Journal"/>
 			<outline htmlUrl="https://brandur.org" title="Articles - brandur.org" xmlUrl="https://brandur.org/articles.atom" type="rss" text="Articles - brandur.org"/>
 			<outline htmlUrl="https://kaygun.tumblr.com/" title="Atabey Kaygun" xmlUrl="https://kaygun.tumblr.com/rss" type="rss" text="Atabey Kaygun"/>
+			<outline htmlUrl="https://begriffs.com" title="begriffs.com" xmlUrl="https://begriffs.com/atom.xml" type="rss" text="begriffs.com"/>
 			<outline htmlUrl="http://notstatschat.netlify.com/" title="Biased and Inefficient" xmlUrl="https://notstatschat.rbind.io/index.xml" type="rss" text="Biased and Inefficient"/>
 			<outline htmlUrl="http://bitemyapp.com/" title="bitemyapp" xmlUrl="http://bitemyapp.com/atom.xml" type="rss" text="bitemyapp"/>
 			<outline htmlUrl="http://brendandawes.com/blog" title="Brendan Dawes Blog Feed" xmlUrl="http://brendandawes.com/blog/feed/" type="rss" text="Brendan Dawes Blog Feed"/>
