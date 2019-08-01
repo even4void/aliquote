@@ -6,7 +6,7 @@ tags: ["readings", "lisp", "scheme"]
 categories: []
 ---
 
-I just finished reading _The Little Schemer_, by Friedman and Felleisen. Here are some basic facts about a very simple yet useful data structures: lists.
+I just finished reading _The Little Schemer_, by Friedman and Felleisen. Here are some basic facts about very simple yet useful data structures: lists.
 
 <!--more-->
 
