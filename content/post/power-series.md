@@ -46,10 +46,10 @@ Back to our initial power series. for which the PGF reads:
 
 $$ \frac{1}{4} + \frac{1}{8}\theta + \frac{1}{8}\theta^2 + \frac{3}{32}\theta^3 + \frac{5}{64}\theta^4 + \mathcal{O}(\theta^5). $$
 
-Upon inspection of the above expression, we have $p_n = 2^{-(n+2)}F_{n+1}$, where $F_k$ is the $k$-th Fibonacci number. Note that the PGF of the reciprocal of this serie is $4-2\theta-\theta^2+\mathcal{O}(\theta^5)$, hence the PGF of $X$ can be written as:
+Upon inspection of the above expression, we have $p_n = 2^{-(n+2)}F\_{n+1}$, where $F_k$ is the $k$-th Fibonacci number. Note that the PGF of the reciprocal of this serie is $4-2\theta-\theta^2+\mathcal{O}(\theta^5)$, hence the PGF of $X$ can be written as:
 
 $$ A(\theta) = \mathbb{E}(\theta^X) = \frac{1}{4-2\theta-\theta^2}. $$
 
-The more I read on discrete math and Euler problems, the more I find Fibonacci number hanging around all over the place
+The more I read on discrete math and Euler problems, the more I find Fibonacci numbers hanging around all over the place
 
 [^1]: Small, C. _Expansions and Asymptotics for Statistics_. Chapman & Hall/CRC, 2010.
