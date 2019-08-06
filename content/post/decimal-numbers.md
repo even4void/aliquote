@@ -1,8 +1,8 @@
 ---
 title: "Decimal numbers"
-date: 2019-08-04T20:19:29+02:00
-draft: true
-tags: ["math"]
+date: 2019-08-06T20:19:29+02:00
+draft: false
+tags: ["math", "racket", "euler"]
 categories: []
 ---
 
@@ -28,6 +28,10 @@ Some interesting properties of decimal numbers follow. Let $\frac{a}{10^m}$ and 
 
 $$ \frac{a}{10^m} + \frac{b}{10^n} = \frac{10^{n-m}a+b}{10^n}\, \text{and}\, \frac{a}{10^m}\frac{b}{10^n} = \frac{ab}{10^{m+n}}. $$
 
+Quick application: Suppose you want to multiply 2.13 by 0.7; it is enough to compute $213\times 7=1491$ (in $\mathbb{N}$), and to add a comma to the right place which is determined by the value of the denominator $10^{(2+1)}$, whence the result 1.491.
+
+The other interesting property of decimal numbers is that we can quickly tell which one of two numbers is the bigger. Let us assume that we have two such numbers, $x$ and $y$, both positive or null. If $\lfloor x\rfloor < \lfloor y\rfloor$, then $x < y$. Moreover, if $0\le x < 1$ and $0\le y < 1$, $x$ and $y$ can be rewritten as $x=\overline{0.a_1\dots a_r}$ and $y=\overline{0.b_1\dots b_s}$. Let $m$ be the lowest integer $\ge 1$ such that $a_m\neq b_m$---which means that $a_i=b_i,\,\forall i<m$---then if $a_m<b_m$ we have $x<y$. To sum up: when comparing two decimal numbers, first compare their integer part, and if they are not equal then proceed with the decimal parts, $x-\lfloor x\rfloor$ and $y-\lfloor y\rfloor$, which are decimal numbers comprised between 0 and 1. What we just wrote in plain English can readily be translated into a recursive algorithm, obviously.
+
 A common pattern is to extract the fractional part of a number and to store each digit in a list. Basically, there are two ways to do this: either we convert the decimal number to a string, extract each digit as a character, and convert it back to a number; or we use a simple decomposition of the decimal number using base-10 quotient and remainder. Here is one way to do this using proper arithmetic in Racket:
 
 ```lisp
@@ -52,7 +56,7 @@ Note that `pi` is a built-in constant in Racket; other Scheme implementations ma
 
 A related task consists in applying [signed integer (truncating) division](https://stackoverflow.com/q/3602827), which can be defined as follows:[^2]
 
-$$ n \div d = \begin{cases}\lfloor \frac{n}{d}\rfloor, & \mbox{if } d \neq 0, nd\ge 0\cr \lceil \frac{n}{d} \rceil, & \mbox{if } d\neq 0, md < 0 \end{cases} $$
+$$ n \div d = \begin{cases}\lfloor \frac{n}{d}\rfloor, & \mbox{if } d \neq 0, nd\ge 0\cr \lceil \frac{n}{d} \rceil, & \mbox{if } d\neq 0, nd < 0 \end{cases} $$
 
 This is known as the `div` operator in many languages. Unfortunately, there is nothing like this in Scheme, so you will have to use a combination of `/` and `floor`.
 
