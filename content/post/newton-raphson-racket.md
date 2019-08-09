@@ -66,11 +66,11 @@ and to maximize this likelihood function we need to compute the score function--
 
 $$ \frac{\partial\ell}{\partial\beta} = \begin{bmatrix}\frac{\partial\ell}{\partial\beta_0} \cr \frac{\partial\ell}{\partial\beta_1} \cr \frac{\partial\ell}{\partial\beta_2} \end{bmatrix} = \underbrace{\boldsymbol{X}^T(y-\boldsymbol{p})}\_{\texttt{t(X) %*% (y - p)}}. $$
 
-We also need the second derivative, $\frac{\partial\ell}{\partial\beta_j\partial\beta_k}$, which can be written:
+We also need the second derivative, $\frac{\partial^2\ell}{\partial\beta_j\partial\beta_k}$, which can be written:
 
 $$ \frac{\partial}{\partial\beta\_k}\frac{\partial\ell(\beta)}{\partial\beta\_j} = \sum_{i=1}^n\left\\{x\_{ij}\left(y_i-\frac{\partial p_i(x_i,\beta)}{\partial\beta_k}\right) \right\\}. $$
 
-In matrix notation, we would write $\frac{\partial\ell}{\partial\beta^2} = -\boldsymbol{X}^T\boldsymbol{W}\boldsymbol{X}$ (see also the [blog cited](https://www.puzzlr.org/write-your-own-logistic-regression-function-in-r/) at the beginning of the post), where $\boldsymbol{W}$ is an $n$-by-$n$ diagnoal matrix where the $i$-th diagonal element equals $p_i(1-p_i)$, whence the code `XtX <- crossprod(X, diag(W) %*% X)`.
+In matrix notation, we would write $\frac{\partial^2\ell}{\partial\beta^2} = -\boldsymbol{X}^T\boldsymbol{W}\boldsymbol{X}$ (see also the [blog cited](https://www.puzzlr.org/write-your-own-logistic-regression-function-in-r/) at the beginning of the post), where $\boldsymbol{W}$ is an $n$-by-$n$ diagnoal matrix where the $i$-th diagonal element equals $p_i(1-p_i)$, whence the code `XtX <- crossprod(X, diag(W) %*% X)`.
 
 In the end, we would like to estimate the parameters of the logistic model fitted to the dataset shown below (observed and fitted values; see handout 3 in the [rstats-biostats](https://github.com/even4void/rstats-biostats) project for R code and a brief description of the data):
 
