@@ -31,7 +31,7 @@ log_reg <- function(X, y) {
 
 The Newton algorithm belongs to root finding methods, and it is usually employed with a univariate function, $f$, for which we want to find, say, its zeros or its maximum. In the above case, we seek the maximum of a given function--this is maximum likelihood theory after all. Recall that when we want to find an approximate root of $f(x)=0$, we usually start with a guess, say $x_n$, and we approximate $f(x)$ by its tangent line $f(x_n)+f'(x_n)(x-x_n)$. This is basically how Newton's method looks like, and this yields an improved guess, $x\_{n+1}=x_n-\frac{f(x_n)}{f'(x_n)}$, based on the root found for the tangent.[^1] It is pretty straightforwrad to write a little recursive solution to this problem, e.g. in Racket:
 
-```Lisp
+```lisp
 ;; f(x) = x^2 - 9
 (define (f x) (- (sqr x) 9))
 
@@ -78,7 +78,7 @@ In the end, we would like to estimate the parameters of the logistic model fitte
 
 Other than basic mathematical operators and functions, the most important piece of code we need is an equivalent of `crossprod`, the matrix [cross-product](https://en.wikipedia.org/wiki/Cross_product), and `solve`, which is used to solve a system of equations. Luckily, both procedures are available in [racket/math](https://docs.racket-lang.org/math/matrices.html). The instructions inside the R loop could thus be translated litteraly using untyped Racket as follows:
 
-```Lisp
+```lisp
 #lang racket
 (require math/matrix)
 

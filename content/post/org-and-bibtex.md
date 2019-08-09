@@ -6,6 +6,7 @@ description: ""
 tags: ["emacs"]
 categories: []
 ---
+
 The `ox-bibtex` package from the org contrib packages provides a good alternative to [org-ref](https://github.com/jkitchin/org-ref) for managing a a Bibtex bibliography.
 
 <!--more-->
@@ -14,9 +15,9 @@ The `ox-bibtex` package from the org contrib packages provides a good alternativ
 
 During the last few months, I became a huge fan of editing plain text document [using Org](/post/notes-taking-workflow/) instead of Markdown. Since I recently switched to [Doom Emacs](/post/doom-emacs/), I had to refactor some of my configuration files, and I decided to go without [org-ref](https://github.com/jkitchin/org-ref) as it adds an unnecessary package overload because of Helm. My default swiss army knife is now Ivy and Counsel. There are other options to manage Bibtex files in Emacs, including org-bibtex, but see this nice [screencast by Eric Schulte](https://vimeo.com/99167082). Of note, there is also an [interesting thread on Reddit](https://www.reddit.com/r/orgmode/comments/4z47ny/oxbibtex_vs_orgref/). The question is how to get the best of both worlds, namely HTML and PDF exports, with Org `cite:` only links.
 
-**TL;DR**  The key idea is to add these two lines anywhere in your configuration files (probably in an "after-load" statement):
+**TL;DR** The key idea is to add these two lines anywhere in your configuration files (probably in an "after-load" statement):
 
-```Lisp
+```lisp
 (require 'ox-bibtex)
 (setq org-latex-pdf-process '("latexmk -pdf -outdir=%o %f"))
 ```
@@ -31,5 +32,4 @@ A final note: If you want other than the default $\LaTeX$ export options, you li
 
 Compared to "org-ref", this may appear as an edulcorated version as we don't have the interaction between PDF files and Emacs buffers, Helm to lookup references in our Bibtex file or live `cite:` links. However, things are not so bad: (1) we can use org `cite:` instead of `\cite{}` command and this work for HTML and PDF output, and (2) it is easy to insert citation via "org-reftex" (`C-c C-x [`) or from [Ivy-bibtex](https://github.com/tmalsburg/helm-bibtex).
 
-{{% music %}}The Apartments • *No Song, No Spell, No Madrigal*{{% /music %}}
-
+{{% music %}}The Apartments • _No Song, No Spell, No Madrigal_{{% /music %}}

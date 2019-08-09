@@ -31,7 +31,7 @@ So, if we start in state A, we will have to wait $\exp(0.886)=2.425$ units of ti
 
 Here is a quick illustration using Mathematica:
 
-```Mathematica
+```mathematica
 Q = {{-0.886, 0.190, 0.633, 0.063}, {0.253, -0.696, 0.127,
     0.316}, {1.266, 0.190, -1.519, 0.063 }, {0.253, 0.949,
     0.127, -1.329}};
@@ -40,7 +40,7 @@ Total[Q, {2}]
 
 Note that I checked that the rows (or the "columns" in Mathematica parlance) sum to zero indeed. Even if Mathematica offers to correct for non-zero sum rows, it's better to check beforehand. I got `{0., 5.55112*10^-17, 0., 0.}`, which looks fine. Below, I define a continuous Markov random process and draw a sample of data using 100 iterations, assuming the initial state is A:
 
-```Mathematica
+```mathematica
 p = ContinuousMarkovProcess[{1, 0, 0, 0}, Q];
 data = RandomFunction[p, {0, 100}];
 ListStepPlot[data]
@@ -49,13 +49,13 @@ ListStepPlot[data]
 ![](/img/dna-cmrp.png)
 The stationnary distribution of this process can be computed with `StationaryDistribution[p]`, while `PDF[p[t], k] // PiecewiseExpand` will return the corresponding PDF. If we are interested in a particular state, this is readily available using any of these two commands. For instance, the probability that the long-run proportion of time the process is in state 2 is given by:
 
-```Mathematica
+```mathematica
 PDF[p[\[Infinity]], 2]
 ```
 
 According to our manual estimation, after the first iteration we will most likely end up in state 3 (G). We can ask Mathematica what is the distribution of the number of steps required for the process to pass from the initial state (A) to any other state for the first time:
 
-```Mathematica
+```mathematica
 Table[PDF[FirstPassageTimeDistribution[p, j], k], {j, {2, 3, 4}}];
 DiscretePlot[Evaluate[%], {k, 0, 10}, PlotRange -> {{0, 11}, {0, 0.7}},
   PlotLegends -> {"C", "G", "T"}]
@@ -101,7 +101,7 @@ $$(m-n)\frac{-24e^x}{1+3e^x} + n\frac{8e^x}{1-e^x} = 0.$$
 
 Mathematica gives me the solution `1 - (4 d)/(3 L)` for $x$:
 
-```Mathematica
+```mathematica
 Solve[d (8 x)/(1 - x) + (L - d) (-24 x)/(1 + 3 x) == 0, x]
 Simplify[%]
 ```
@@ -110,7 +110,7 @@ Solving for $t$ since we set $x = -8\mu t$, we get the estimate for the divergen
 
 Here is how I setup the basic parameters for simulating data obeying the Jukes and Cantor model:
 
-```Mathematica
+```mathematica
 bases = {"a", "c", "g", "t"};
 exon = {.25, .25, .25, .25};
 α = 0.001;
@@ -122,14 +122,14 @@ Q = {{1 - α, α/3, α/3, α/3}, {α/3, 1 - α, α/3, α/3}, {α/3, α/3,
 
 Note that it is important to not use `MatrixForm` at this step, otherwise we will get in trouble with matrix multiplication later. The rate is controlled by $\alpha$ and `s` is a random sequence of nucleotides. The distribution of nucleotide frequencies is close to the expected ones (1/4), and multiplying the transition matrix `Q` by the vector of observed frequencies `fb` yields an updated vector of frequencies. Here I got `{0.230027, 0.25, 0.27996, 0.240013}`:
 
-```Mathematica
+```mathematica
 fb = N[Tally[s][[All, 2]]/n, 6]
 Q.fb
 ```
 
 We can repeat the same process, say 10 times using `Nest`, and also display how the frequency of state A evolves over 10,000 iterations:
 
-```Mathematica
+```mathematica
 Nest[Function[x, Q.x], fb, 10]
 ListPlot[NestList[Function[x, Q.x], fb, 10000][[All, 1]],
   PlotRange -> {{0, 10000}, {0.23, 0.27}}]

@@ -16,7 +16,7 @@ $$ p_n = \frac{1}{2}p\_{n-1} + \frac{1}{4}p\_{n-2}. $$
 
 Using Mathematica, it is easy to verify the first terms of this recurrence:
 
-```Mathematica
+```mathematica
 RecurrenceTable[{a[n] == 0.5 a[n - 1] + 0.25 a[n - 2], a[0] == 0.25,
   a[1] == 0.125}, a, {n, 50}]
 ```
@@ -25,7 +25,7 @@ RecurrenceTable[{a[n] == 0.5 a[n - 1] + 0.25 a[n - 2], a[0] == 0.25,
 
 The corresponding probability generating function can also be obtained via `GeneratingFunction`. Note that it is also possible to use `RSolve` instead of `RecurrenceTable`, as shown in the following example where we generate the first terms of the Fibonacci sequence:
 
-```Mathematica
+```mathematica
 RecurrenceTable[{a[n] == a[n - 1] + a[n - 2], a[0] == 1,
   a[1] == 1}, a, {n, 10}]
 RSolve[{a[n] == a[n - 1] + a[n - 2], a[0] == 1, a[1] == 1}, a[n], n]
@@ -34,7 +34,7 @@ Table[a[n] /. First[%], {n, 10}]
 
 Or, equivalently:
 
-```Mathematica
+```mathematica
 GeneratingFunction[
   RSolve[{a[n] == a[n - 1] + a[n - 2], a[0] == 1, a[1] == 1}, a[n],
    n], n, x] // FullSimplify
