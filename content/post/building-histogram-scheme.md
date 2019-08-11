@@ -2,7 +2,7 @@
 title: "Building an histogram in Lisp"
 date: 2019-08-09T08:21:06+02:00
 draft: true
-tags: ["lisp", "statistics", "dataviz"]
+tags: ["lisp", "statistics"]
 categories: []
 ---
 
@@ -51,7 +51,7 @@ Note that it also with strings as well (try replacing the previous list of integ
                (binning rest :len (1- len)))))))
 ```
 
-There may be better alternatives to split the data into buckets, e.g. [`arnesi`](https://common-lisp.net/project/bese/arnesi.html)`:partition` or [`cl21`](https://github.com/cl21/cl21/blob/c36644f3b6ea4975174c8ce72de43a4524dd0696/src/core/sequence.lisp#L1243)`:partition-if`, as well as solutions to [split list into sublists](https://stackoverflow.com/q/47875185) discussed on SO. Note also that Alexandria provides an `emptyp` function. Finally, the `slice` function (adapted from [code available](https://stackoverflow.com/a/35534477) in Scheme) could be used to restrict the values to a specific range in the list, as when computing a trimmed mean, for instance. The above code works, at least the function returns the correct counts. Here is an example of use:
+There may be better alternatives to split the data into buckets, e.g. [`arnesi`](https://common-lisp.net/project/bese/arnesi.html)`:partition` or [`cl21`](https://github.com/cl21/cl21/blob/c36644f3b6ea4975174c8ce72de43a4524dd0696/src/core/sequence.lisp#L1243)`:partition-if`, as well as solutions to [split list into sublists](https://stackoverflow.com/q/47875185) discussed on SO. Note also that Alexandria provides an `emptyp` function. Finally, the `slice` function (adapted from [code available](https://stackoverflow.com/a/35534477) in Scheme) could be used to restrict the values to a specific range in the list, as when computing a trimmed mean, for instance. Even if it stands minimalistic the above code works, at least the function returns the correct counts. Here is an example of use:
 
 ```lisp
 > (binning '(1 2 3 4 5) :binsize 2)
@@ -60,23 +60,24 @@ There may be better alternatives to split the data into buckets, e.g. [`arnesi`]
 (2 1 1 1)
 ```
 
-However, we are lacking some critical information, namely the labels for each bucket counts, i.e. which range of values of `xs` correspond to each count. It would also be nice to compute an optimal number of bins automagically, e.g., using [Sturge's formula](https://en.wikipedia.org/wiki/Histogram#Sturges'_formula) or Scott's normal reference rule.[^1] After some updates, here is the code for the `binning` function:
+Please note that we are lacking some critical information, namely the labels for each bucket counts, i.e. which range of values of `xs` correspond to each count. It would also be nice to compute an optimal number of bins automagically, e.g., using [Sturge's formula](https://en.wikipedia.org/wiki/Histogram#Sturges'_formula) or Scott's normal reference rule.[^1] Here is one way to apply the latter (outside the function body, though), using a more realistic sample of size $n=100$ of random uniform or gaussian draws from the [GSLL package](https://common-lisp.net/project/gsll/):
 
 ```lisp
-(defun binning (xs)
-"Convert a sequence of numbers `xs' into k packets using Sturge's formula."
-  (let* ((len (1+ (ceiling (/ (log (length xs)) (log 2))))))
-    ))
+(ql:quickload "gsll")
+(defvar *rng* (gsl:make-random-number-generator gsl:+mt19937+ 0))
+(defparameter σ (coerce 1 'double-float))
+(defparameter xu (loop repeat 100 collect (gsl:sample *rng* :uniform)))
+(defparameter xn (loop repeat 100 collect (gsl:sample *rng* :gaussian :sigma σ)))
+(defparameter bins (1+ (ceiling (/ (log (length xu)) (log 2)))))
+(binning xu :len bins)
+(binning xn :len bins)
 ```
 
-Now, let's go test this function with a more realistic sample of values. Here is how we generate an artificial dataset of size $n=100$, based on random gaussian draws from the [GSLL package](https://common-lisp.net/project/gsll/):
+And here are the results I got when running this code in CCL REPL:
 
 ```lisp
-(ql:quickload "gsl")
-(defvar *rng* (gsl:make-random-number-generator gsl:+mt19937+ 0))
-(defvar μ 12)
-(defvar σ 2)
-(defvar x (gsl:sample *rng* :gaussian :sigma σ)))
+> (11 14 20 13 7 11 10 14)
+> (3 6 20 28 21 17 3 2)
 ```
 
 [^1]: The R statistical package uses Sturge's formula, meaning the default number of bins is computed as $\lceil \log_2(n)\rceil + 1$. Stata considers $\text{min}\left\{\sqrt{N},10\ln(N)/\ln(10)\right\}$, which is close. The [Freedman-Diaconis](https://en.wikipedia.org/wiki/Freedman–Diaconis_rule) rule is also quite robust, where the bin width is chosen as $h=2\text{IQR}n^{-1/3}$ (IQR, interquartile range), so that the number of bins is $(\text{max}-\text{min})/h$.
