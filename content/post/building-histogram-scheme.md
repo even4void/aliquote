@@ -1,7 +1,7 @@
 ---
 title: "Building an histogram in Lisp"
-date: 2019-08-09T08:21:06+02:00
-draft: true
+date: 2019-08-10T08:21:06+02:00
+draft: false
 tags: ["lisp", "statistics"]
 categories: []
 ---
@@ -16,11 +16,11 @@ Gnuplot has no histogram facilities, so you have to run your own implementation,
 
 ```lisp
 (ql:quickload "alexandria")
-(defvar *s* '(1 2 3 4 5 6 7 8 9))
-(shuffle *s*)
+(defparameter s '(1 2 3 4 5 6 7 8 9))
+(alexandria:shuffle s)
 ```
 
-Note that it also with strings as well (try replacing the previous list of integers with `"random string"`). Now, we need to design a little helper function that will discretize a continuous variable in $k$ buckets of data, if the list is non-empty of course. Here it is
+Note that it works with strings as well (try replacing the previous list of integers with `"random string"`). Now, we need to design a little helper function that will discretize a continuous variable in $k$ buckets of data, if the list is non-empty of course. Here it is
 
 ```lisp
 (defun emptyp (lst)
@@ -80,4 +80,4 @@ And here are the results I got when running this code in CCL REPL:
 > (3 6 20 28 21 17 3 2)
 ```
 
-[^1]: The R statistical package uses Sturge's formula, meaning the default number of bins is computed as $\lceil \log_2(n)\rceil + 1$. Stata considers $\text{min}\left\{\sqrt{N},10\ln(N)/\ln(10)\right\}$, which is close. The [Freedman-Diaconis](https://en.wikipedia.org/wiki/Freedman–Diaconis_rule) rule is also quite robust, where the bin width is chosen as $h=2\text{IQR}n^{-1/3}$ (IQR, interquartile range), so that the number of bins is $(\text{max}-\text{min})/h$.
+[^1]: The R statistical package uses Sturge's formula, meaning the default number of bins is computed as $\lceil \log_2(n)\rceil + 1$. Stata considers $\text{min}\left\\{\sqrt{N},10\ln(N)/\ln(10)\right\\}$, which is close. The [Freedman-Diaconis](https://en.wikipedia.org/wiki/Freedman–Diaconis_rule) rule is also quite robust, where the bin width is chosen as $h=2\text{IQR}n^{-1/3}$ (IQR, interquartile range), so that the number of bins is $(\text{max}-\text{min})/h$.

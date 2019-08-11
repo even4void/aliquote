@@ -3,7 +3,7 @@ title = "Scheme and Emacs"
 date = 2014-04-18T22:16:03+01:00
 draft = false
 
-tags = ["lisp", "apple"]
+tags = ["lisp", "apple", "emacs"]
 categories = []
 
 [header]
@@ -41,14 +41,11 @@ Finally, I recently learned about [Pyret](http://www.pyret.org/) (and, as a side
 
 > Pyret is a programming language designed to serve as an outstanding choice for programming education while exploring the confluence of scripting and functional programming.
 
-
 ### Sidenote
 
 Emacs 24.4 is available for OS X on <http://emacsformacosx.com/> (check the Nightlies builds), and it comes with [pretiffy](http://ergoemacs.org/emacs/emacs_pretty_lambda.html)[^1], see also [What's new in Emacs 24.4](http://www.masteringemacs.org/articles/2013/12/29/whats-new-in-emacs-24-4/).
 
 By the way, I learned that Emacs 24.3 suffers from a problem when rendering [sRGB color](http://goo.gl/whSihf), which explains why I got some strange problems with [powerline](https://github.com/jonathanchu/emacs-powerline).[^2]
 
-
 [^1]: I use <i class="fa fa-file-code-o fa-1x"></i> [`pretty-lambdada.el`](http://www.emacswiki.org/emacs/pretty-lambdada.el) at the moment.
-
 [^2]: [Other issues](https://github.com/jonathanchu/emacs-powerline/issues/11) came around when I used the solarized theme. Now, I switched to [gruber-darker](http://marmalade-repo.org/packages/gruber-darker-theme) theme, so it doesn't bother me anymore.
