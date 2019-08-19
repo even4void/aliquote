@@ -23,6 +23,8 @@ As noted on [Programming Praxis](https://programmingpraxis.com/2011/09/20/projec
 (largest-prime-factor 600851475143)
 ```
 
+Easy peasy, nothing but exploiting built-in functions. I should, however, note that the [`factorize`](https://docs.racket-lang.org/math/number-theory.html?q=number%20theory#%28def._%28%28lib._math%2Fnumber-theory..rkt%29._factorize%29%29) function first checks whether $n$ is large or not. In the latter case ($n>1000$), the [Pollard method](https://en.wikipedia.org/wiki/Pollard%27s_p_%E2%88%92_1_algorithm) is used.
+
 https://rosettacode.org/wiki/Miller–Rabin_primality_test#Common_Lisp
 https://github.com/sjl/euler/blob/master/src/primes.lisp
 https://programmingpraxis.com/contents/themes/#Prime%20Numbers
