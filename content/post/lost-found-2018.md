@@ -75,7 +75,7 @@ $$ f(x) = \frac{1}{\sqrt{2\pi\sigma^2}}\exp\left(\frac{-(x-\mu)^2}{2\sigma^2}\ri
 
 for $-\infty < x < \infty$, where $\mu$ and $\sigma^2$ denote the mean and variance of the distribution. In general, it is easier to consider a standard normal deviate $Z$, with $\mu=0$ and $\sigma=1$, since we can always use the transformation $X = \mu + \sigma Z$.
 
-> Zhang, R., & Leemis, L. M. (2012). [Rectangles algorithm for generating normal variates](http://bit.ly/2DbKZr0). Naval Research Logistics, 59(1), 1–6.
+**Reference:** Zhang, R., & Leemis, L. M. (2012). [Rectangles algorithm for generating normal variates](http://bit.ly/2DbKZr0). Naval Research Logistics, 59(1), 1–6.
 
 ## 2018-11-22
 
@@ -92,7 +92,7 @@ http://www.inf.fh-flensburg.de/lang/algorithmen/pattern/kmpen.htm
 
 Here is one solution in Scheme from [codecodex](http://www.codecodex.com/wiki/Knuth-Morris-Pratt_Algorithm_Examples#Scheme):
 
-```{scheme}
+```lisp
 (define (init-next p)
   (let* ((m (string-length p))
          (next (make-vector m 0)))
