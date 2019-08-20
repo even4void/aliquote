@@ -6,6 +6,7 @@
 	<body>
 		<outline title="Saved For Later" xmlUrl="aved for later" type="rss" text="Saved For Later"/>
 		<outline text="Reeder" title="Reeder">
+			<outline htmlUrl="http://writequit.org/" title="(:wq - Feed)" xmlUrl="https://writequit.org/posts.xml" type="rss" text="(:wq - Feed)"/>
 			<outline htmlUrl="https://alistapart.com" title="A List Apart: The Full Feed" xmlUrl="https://alistapart.com/main/feed/" type="rss" text="A List Apart: The Full Feed"/>
 			<outline htmlUrl="http://wiseodd.github.io/" title="Agustinus Kristiadi's Blog" xmlUrl="https://wiseodd.github.io/feed.xml" type="rss" text="Agustinus Kristiadi's Blog"/>
 			<outline htmlUrl="http://lexi-lambda.github.io/index.html" title="Alexis King's Blog: Alexis King's Blog" xmlUrl="https://lexi-lambda.github.io/feeds/all.rss.xml" type="rss" text="Alexis King's Blog: Alexis King's Blog"/>
@@ -44,6 +45,7 @@
 			<outline htmlUrl="http://gonsie.com/" title="Elsa Gonsiorowski" xmlUrl="https://www.gonsie.com/blorg/feed.xml" type="rss" text="Elsa Gonsiorowski"/>
 			<outline htmlUrl="https://sachachua.com/blog/category/geek/emacs/" title="Emacs - Sacha Chua" xmlUrl="http://sachachua.com/blog/category/emacs/feed/" type="rss" text="Emacs - Sacha Chua"/>
 			<outline htmlUrl="https://emacsair.me/" title="Emacsair" xmlUrl="https://emacsair.me/feed.xml" type="rss" text="Emacsair"/>
+			<outline htmlUrl="https://blog.regehr.org" title="Embedded in Academia" xmlUrl="https://blog.regehr.org/feed" type="rss" text="Embedded in Academia"/>
 			<outline htmlUrl="https://endlessparentheses.com/?source=rss" title="Endless Parentheses" xmlUrl="http://endlessparentheses.com/atom.xml" type="rss" text="Endless Parentheses"/>
 			<outline htmlUrl="http://www.evanmiller.org/" title="Evan Miller’s News" xmlUrl="http://www.evanmiller.org/news.xml" type="rss" text="Evan Miller’s News"/>
 			<outline htmlUrl="http://ferd.ca/" title="Ferd.ca" xmlUrl="https://ferd.ca/feed.rss" type="rss" text="Ferd.ca"/>
