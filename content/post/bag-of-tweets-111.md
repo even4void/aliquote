@@ -3,7 +3,7 @@ title: "A bag of tweets / June 2019"
 date: 2019-06-25T09:02:35+02:00
 draft: false
 tags: ["misc"]
-categories: ["tweet-bot"]
+categories: []
 ---
 
 Here is the latest bag of tweets<sup>\*</sup>, which covers June 2019.
@@ -14,15 +14,15 @@ Here is the latest bag of tweets<sup>\*</sup>, which covers June 2019.
 - 2019-06-01 @bit_loom: LOOM FOUR, SEED 1304863000, FOUR ITERATIONS OF PENROSE, MUTAGEN 787757174 https://t.co/N4h4dxdvwx
 - 2019-06-01 @RobCalver5: Some great #statistics handbooks coming out in paperback from @CRC_MathStats. https://t.co/tDQJpGUEmj
 - 2019-06-01 @hrbrmstr: Follow up: at least one person read the post :-) and requested rendered versions so I setup a weekly process to render all translations The Art of the Command Line to standalone HTML. Available at https://t.co/O6cCOxMtKe
-- 2019-06-01 @bradleyboehmke: Working on the model-based clustering chapter in Hands-on #MachineLearning with #rstats .  Very premature but its starting to take some form.  https://t.co/JPV4xHBeu3 https://t.co/Xmi9OGzyeW
+- 2019-06-01 @bradleyboehmke: Working on the model-based clustering chapter in Hands-on #MachineLearning with #rstats . Very premature but its starting to take some form. https://t.co/JPV4xHBeu3 https://t.co/Xmi9OGzyeW
 - 2019-06-01 @robert_trirop: @gabrielpeyre @sigfpe I tried it with a 100x100 matrix. Using the nearest points between each interpolation step for indexing works well, but is not reliable. https://t.co/izGKmaR4Cz
 - 2019-06-01 @k_llyi: Returned to Purely Functional Data Structures after learning how to write Common Lisp: https://t.co/6HFdECmEB1
 - 2019-06-01 @newsycombinator: Discrete Mathematics and Functional Programming https://t.co/Xa689joG72
 - 2019-06-01 @kaz_yos: “[another characterization of bootstrap] is very similar to a Dirichlet process which means that the connection between the Bayesian bootstrap and other Bayesian non-parametric methods is made clearer.” https://t.co/vuBTsXroGg
 - 2019-06-01 @kaz_yos: 36-708 Statistical Machine Learning, Spring 2018 https://t.co/X716XyBotO
 - 2019-06-02 @freakonometrics: "3h37 par jour d’espérance de vie de plus par jour", ça veut dire +15% d'espérance de vie à la naissance, et avec https://t.co/uPedDcWd89 c'est passer de 71 à 82 ans (aujourd'hui)... les ancêtres, c'était il y a 60 ans me semble-t-il #JusteParCuriosité https://t.co/3EbRV0X21b
-- 2019-06-02 @_ColinFay: #RStats &amp; databases nerds / users.  I'm working on putting together a Dockerfile with the whole stack of 📦 from the Database CRAN Task View &amp; with RStudio in it. So far, the packages &amp; the system requirements are installed💪 https://t.co/zj2qDJnjYg #Docker #DataBases
-- 2019-06-02 @bendhalpern: Probably one of the most auto-bookmarkable post I've seen in a while, regardless of skill level with git:  https://t.co/AHiFrH9bqY
+- 2019-06-02 @\_ColinFay: #RStats &amp; databases nerds / users. I'm working on putting together a Dockerfile with the whole stack of 📦 from the Database CRAN Task View &amp; with RStudio in it. So far, the packages &amp; the system requirements are installed💪 https://t.co/zj2qDJnjYg #Docker #DataBases
+- 2019-06-02 @bendhalpern: Probably one of the most auto-bookmarkable post I've seen in a while, regardless of skill level with git: https://t.co/AHiFrH9bqY
 - 2019-06-03 @newsycombinator: Major mode for editing S-Expression Markup Language files https://t.co/eorHYPoU4i
 - 2019-06-03 @newsycombinator: Foundations of Mathematics (2015) [pdf] https://t.co/1GU6xYZUmc
 - 2019-06-03 @phil_eaton: A reimplementation of the ulisp compiler in Rust. That's awesome!! The only way I learn is 1) copy-strip-simplify -ing someone's work or 2) by copy-port -ing someone's work to a new language. https://t.co/oaFal3Cknb
@@ -32,57 +32,57 @@ Here is the latest bag of tweets<sup>\*</sup>, which covers June 2019.
 - 2019-06-03 @twostraws: UIImage has a new initializer, UIImage(systemName:) that takes a string and returns one of over 1500 different system icons. Download the SF Symbols app and see them all here: https://t.co/isRgJ5K5nE https://t.co/Zl4Dq1iDLf
 - 2019-06-03 @pocmatos: Racket News issue 9 is here. Enjoy! https://t.co/NiZKBG7lUl @racketlang #racketnews
 - 2019-06-03 @aschinchon: New post available: Kites and Darts: the Penrose tiling https://t.co/vnNeHRtSvS #rstats #generative #maths #tidyverse https://t.co/gkm9qIUuBQ
-- 2019-06-04 @hrbrmstr: So: WARNING to ANYONE thinking of sinking a minimum of ~$7K USD into the new Mac Pro: IMO Apple SERIOUSLY signaled the end of macOS in 3-5 years from now. Unless you NEED this new system, buy a Linux box if your apps support it. They're going to screw you over in ≤ 5 years.
+- 2019-06-04 @hrbrmstr: So: WARNING to ANYONE thinking of sinking a minimum of ~\$7K USD into the new Mac Pro: IMO Apple SERIOUSLY signaled the end of macOS in 3-5 years from now. Unless you NEED this new system, buy a Linux box if your apps support it. They're going to screw you over in ≤ 5 years.
 - 2019-06-04 @newsycombinator: Aerc – An email client that runs in the terminal https://t.co/Zmnu7wm5aJ
 - 2019-06-04 @xah_lee: this is also why, the emacs that ships with Mac is gnu emacs 22, from year 2007. and Richard Stallman also forced emacs repo MELPA by hegemony to not support any packages using GPL v2. FSF has become a scum and irrelevant. https://t.co/KUmv2tgr68
 - 2019-06-04 @strnr: Now published in @GenomeBiology https://t.co/NGIktBMIDZ https://t.co/S0jLOFzYYB
 - 2019-06-04 @mxsage: sparse navigation https://t.co/YvHAy4m9ma
-- 2019-06-04 @_wilfredh: Ridiculous, brilliant and absurd: dynamically generating a keyboard layout based on the most common letters that you're typing right now! https://t.co/L3r0y4qMql
+- 2019-06-04 @\_wilfredh: Ridiculous, brilliant and absurd: dynamically generating a keyboard layout based on the most common letters that you're typing right now! https://t.co/L3r0y4qMql
 - 2019-06-05 @stuarthalloway: "#Clojure and #Erlang rocked it so hard that we introduced a new category for their awesomeness" #notarealquote https://t.co/kPMmdN0SkM
-- 2019-06-05 @yogthos: The Calva Journey Continues - Please Jack In  https://t.co/gwgFxpWnIz
-- 2019-06-05 @scicloj: A new library for #Clojure - #Python #Interoperability by Chris Nuernberger, opening so many possibilities!  https://t.co/1tAxoHZYdt  https://t.co/02CbTNi7uY
-- 2019-06-05 @NicholasStrayer: How to (&amp; how not to) parse 25TB of data using awk and #rstats. New long blog post on my recent journey setting up a query system for some #BigData generated for my lab. I sped up queries by 4,800 times using old-school simple techniques.  https://t.co/vTt67ALiPu #DataScience https://t.co/SyGENmQF0p
+- 2019-06-05 @yogthos: The Calva Journey Continues - Please Jack In https://t.co/gwgFxpWnIz
+- 2019-06-05 @scicloj: A new library for #Clojure - #Python #Interoperability by Chris Nuernberger, opening so many possibilities! https://t.co/1tAxoHZYdt https://t.co/02CbTNi7uY
+- 2019-06-05 @NicholasStrayer: How to (&amp; how not to) parse 25TB of data using awk and #rstats. New long blog post on my recent journey setting up a query system for some #BigData generated for my lab. I sped up queries by 4,800 times using old-school simple techniques. https://t.co/vTt67ALiPu #DataScience https://t.co/SyGENmQF0p
 - 2019-06-05 @CompSciFact: Mathematics for Computer Science https://t.co/ouOaiypAAT [339 page pdf]
 - 2019-06-05 @CompSciFact: How does Apple (privately) find your offline devices? https://t.co/aKfWNc8CgA
 - 2019-06-06 @bradleyboehmke: Illustrating decision boundaries almost always helps users grasp how different #MachineLearning algorithms behave. See more at https://t.co/JPV4xHBeu3 . #rstats https://t.co/WQad6OxtxP
-- 2019-06-07 @danielszmu: "You dig Scheme. The world is coded in C. You get both."  "And we will write simple interfaces to the best C libraries, making them feel all Schemy."  "The language we love, every library we could ever need."  https://t.co/LPiaOIo60E
+- 2019-06-07 @danielszmu: "You dig Scheme. The world is coded in C. You get both." "And we will write simple interfaces to the best C libraries, making them feel all Schemy." "The language we love, every library we could ever need." https://t.co/LPiaOIo60E
 - 2019-06-07 @strnr: Improved Standalone BLAST Databases and Programs: Now with Taxonomic Information (2018) https://t.co/DL6VwLmfuc https://t.co/W34hpK5mtg https://t.co/U91Qd1JskX
 - 2019-06-08 @inductivestep: VERY EXCITING DELIVERY https://t.co/93XQgl4Ikn
-- 2019-06-08 @juli_tkotz: A while ago, I came across this awesome paper by Fagerland (2012) that showed how the Wilcoxon test stops answering the question of equal medians when SDs differ - especially when data is skewed.  https://t.co/x3gCzI3063 4/9
+- 2019-06-08 @juli_tkotz: A while ago, I came across this awesome paper by Fagerland (2012) that showed how the Wilcoxon test stops answering the question of equal medians when SDs differ - especially when data is skewed. https://t.co/x3gCzI3063 4/9
 - 2019-06-09 @seandavis12: hub is an extension to command-line git that helps you do everyday @github tasks without ever leaving the terminal. Create repos, manipulate issues, perform releases, process pull requests, etc. https://t.co/1vrCNwZ6U7
-- 2019-06-09 @itcheeze: I wrote my first #clojure program!  https://t.co/Cvt0jccWqZ
+- 2019-06-09 @itcheeze: I wrote my first #clojure program! https://t.co/Cvt0jccWqZ
 - 2019-06-10 @Jose_A_Alonso: Functional programming for Web and mobile (A review of the current state of the art). ~ J. Wälter. https://t.co/lrr1sI2rZS #FunctionalProgramming
-- 2019-06-10 @John_B_Howard: Every Single Cognitive Bias in One Infographic  Lovely visualisation of biases that "can lead to us extrapolating information from the wrong sources, seeking to confirm existing beliefs, or failing to remember events the way they actually happened!" https://t.co/0ruXdVLv3V https://t.co/I0UtKFpYzs
+- 2019-06-10 @John_B_Howard: Every Single Cognitive Bias in One Infographic Lovely visualisation of biases that "can lead to us extrapolating information from the wrong sources, seeking to confirm existing beliefs, or failing to remember events the way they actually happened!" https://t.co/0ruXdVLv3V https://t.co/I0UtKFpYzs
 - 2019-06-10 @saidone: A little simulation of the "Airplane Probability Problem" - without loops or recursions - loving more and more every day the conciseness combined with simplicity of #Clojure https://t.co/AUD3esz3gL #Programming https://t.co/w9lEnVfip5
 - 2019-06-10 @newsycombinator: Screenshots from developers and Unix people (2002) https://t.co/USk74Xlddd
-- 2019-06-10 @BrodieGaslam: New post: can we compute group statistics faster with base #rstats than with #rdatatable?  Believe it or not, the answer is yes*!  https://t.co/kixrx4Z5VZ
-- 2019-06-10 @Quotes_PS: « On s’habitue facilement à la solitude. Il y a une jouissance à savoir qu’on est pauvre, qu’on est seul et que personne ne songe à nous. Cela simplifie la vie. »  Marguerite Yourcenar
-- 2019-06-10 @strnr: Awk to remove duplicates while preserving order (not sort|uniq):  awk '!visited[$0]++' your_file   https://t.co/DFpGSheltk
+- 2019-06-10 @BrodieGaslam: New post: can we compute group statistics faster with base #rstats than with #rdatatable? Believe it or not, the answer is yes\*! https://t.co/kixrx4Z5VZ
+- 2019-06-10 @Quotes_PS: « On s’habitue facilement à la solitude. Il y a une jouissance à savoir qu’on est pauvre, qu’on est seul et que personne ne songe à nous. Cela simplifie la vie. » Marguerite Yourcenar
+- 2019-06-10 @strnr: Awk to remove duplicates while preserving order (not sort|uniq): awk '!visited[$0]++' your_file https://t.co/DFpGSheltk
 - 2019-06-10 @jeroenhjanssens: @jeremystan I spent way too long thinking about this for my PhD thesis. And I spent even more time creating this figure in LaTeX/TikZ. https://t.co/WzDFeM2D4x https://t.co/WbPMGsz6r1
 - 2019-06-11 @jreuben1: An Algorithm for Comparing Similarity Between Two Trees https://t.co/zAhbRfrGAX
 - 2019-06-11 @reddit_lisp: #lisp A Common Lisp library for interfacing with the https://t.co/WaFAeo0cPz API and extra goodies | https://t.co/SmuMgfN0JF
-- 2019-06-11 @mattdesl: This book "Computational Drawing" by Carl Lostritto (@lostritto) looks great. 👀  → https://t.co/PxLXKOHLgP https://t.co/Y5LIsXc83e
+- 2019-06-11 @mattdesl: This book "Computational Drawing" by Carl Lostritto (@lostritto) looks great. 👀 → https://t.co/PxLXKOHLgP https://t.co/Y5LIsXc83e
 - 2019-06-11 @newsycombinator: Desktop Neo – rethinking the desktop interface for productivity https://t.co/OE953Y2YFE
 - 2019-06-11 @fermatslibrary: A Short History of Markov Chain Monte Carlo 👉 https://t.co/XHpyZcpBJE https://t.co/ZfTt8xlqBQ
-- 2019-06-11 @cutearguments: My newest post: https://t.co/1cgOxnUVtM  Inspired by line in @f2harrell presentation, I went back and looked at @matloff paper saying neural nets are essentially polynomial regression. I have a few concerns/questions about methods, while other critiques were mostly about theory
+- 2019-06-11 @cutearguments: My newest post: https://t.co/1cgOxnUVtM Inspired by line in @f2harrell presentation, I went back and looked at @matloff paper saying neural nets are essentially polynomial regression. I have a few concerns/questions about methods, while other critiques were mostly about theory
 - 2019-06-11 @drikerf: Loving Clojure(Script) more and more every day 😍 https://t.co/g6nUdX8rC7
-- 2019-06-11 @lemire: Performance speed limits  https://t.co/6Et5iy91n8  by @trav_downs   Highly recommended.
+- 2019-06-11 @lemire: Performance speed limits https://t.co/6Et5iy91n8 by @trav_downs Highly recommended.
 - 2019-06-12 @newsycombinator: Voilà turns Jupyter notebooks to standalone web applications https://t.co/Y1dSgZLvZN
 - 2019-06-12 @Jose_A_Alonso: Functional programming in OCaml. ~ Michael R. Clarkson. https://t.co/P9pIZKrlaL #eBook #FunctionalProgramming #OCaml
-- 2019-06-12 @nicolaskb: 💉📊 J'ai écrit pour @AlgorithmWatch un article sur l'état du système national des données de santé (SNDS). Comme ils ne l'ont traduit qu'en allemand, j'en fais un thread en français. 1/n  https://t.co/AwSdBvPSas
-- 2019-06-12 @justmarkham: 🐼🤹‍♂️ pandas trick:  Reverse column order in a DataFrame: df.loc[:, ::-1]  Reverse row order: df.loc[::-1]  Reverse row order and reset the index: df.loc[::-1].reset_index(drop=True)  Want more #pandastricks? Working on a video right now, stay tuned... 🎥  #Python #DataScience
+- 2019-06-12 @nicolaskb: 💉📊 J'ai écrit pour @AlgorithmWatch un article sur l'état du système national des données de santé (SNDS). Comme ils ne l'ont traduit qu'en allemand, j'en fais un thread en français. 1/n https://t.co/AwSdBvPSas
+- 2019-06-12 @justmarkham: 🐼🤹‍♂️ pandas trick: Reverse column order in a DataFrame: df.loc[:, ::-1] Reverse row order: df.loc[::-1] Reverse row order and reset the index: df.loc[::-1].reset_index(drop=True) Want more #pandastricks? Working on a video right now, stay tuned... 🎥 #Python #DataScience
 - 2019-06-12 @planetclojure: Billions of Random Numbers in a Blink of an Eye (by @draganrocks) https://t.co/z6ADa0zhBh
-- 2019-06-12 @matloff: #rstats I've been meaning for a while to write a point-by-point analysis of the R vs. Python debate. Here it is:  https://t.co/LdQsbzlaYm
+- 2019-06-12 @matloff: #rstats I've been meaning for a while to write a point-by-point analysis of the R vs. Python debate. Here it is: https://t.co/LdQsbzlaYm
 - 2019-06-13 @Jose_A_Alonso: Permutations and permutation groups in Common Lisp. ~ Robert Smith (@stylewarning). https://t.co/bkOpYKy3TQ #CommonLisp #Math
-- 2019-06-13 @thorstenball: I wrote React in TypeScript yesterday — in VSCode, which comes fully-loaded with "recommended plugins" when used in our repo.  It made me think: how much do the tools we use influence the code we write?
-- 2019-06-13 @GaelVaroquaux: Functional-Connectome Biomarkers with Machine Learning: slides for the #ohbm19 symposium on how do predictive connectivity models meet clinician’s needs?  This talk is a bit provocative and first sets visions, before bringing a few technical suggestions  https://t.co/e9KBgKclSK
+- 2019-06-13 @thorstenball: I wrote React in TypeScript yesterday — in VSCode, which comes fully-loaded with "recommended plugins" when used in our repo. It made me think: how much do the tools we use influence the code we write?
+- 2019-06-13 @GaelVaroquaux: Functional-Connectome Biomarkers with Machine Learning: slides for the #ohbm19 symposium on how do predictive connectivity models meet clinician’s needs? This talk is a bit provocative and first sets visions, before bringing a few technical suggestions https://t.co/e9KBgKclSK
 - 2019-06-13 @Jose_A_Alonso: Cultures of programming (Understanding the history of programming through controversies and technical artifacts). ~ T. Petricek, https://t.co/EYDSPCM3TW #Programming
 - 2019-06-13 @matloff: #rstats Nice to see so many people respond! Rather than reply individually to all, I'll make a few points in this thread. 1/n
 - 2019-06-14 @StephenPiment: Illustrating Group Theory: A Coloring Book https://t.co/b3y1BViwg5
 - 2019-06-14 @Dhabolt: New @PragProg Book: "Web Development with Clojure, Third Edition: Build Large, Maintainable Web Applications Interactively" by Dmitri Sotnikov @yogthos and Scot Brown @SVMBrown #clojure #java #FunctionalProgramming #WebDev https://t.co/R3IZsMds3e https://t.co/ZSK3Ex3GKI
 - 2019-06-14 @swetechevents: ClojureScript &amp; React: The unreasonable effectiveness of re-frame - sthlm.clj https://t.co/0SIvi3b3D8 #stockholm #techevents #sthlmtech
 - 2019-06-15 @newsycombinator: Lessons learned from rewriting code in my 10 years as a developer https://t.co/42lorshe33
-- 2019-06-15 @draganrocks: Soon. Numerical #LinearAlgebra for Programmers #CUDA #MKL #OpenCL #programming #GPU #Clojure #Java  https://t.co/g4Y5pblMv5 https://t.co/CsqlfGw2d5 https://t.co/Dn65UqQUGW
+- 2019-06-15 @draganrocks: Soon. Numerical #LinearAlgebra for Programmers #CUDA #MKL #OpenCL #programming #GPU #Clojure #Java https://t.co/g4Y5pblMv5 https://t.co/CsqlfGw2d5 https://t.co/Dn65UqQUGW
 - 2019-06-15 @newsycombinator: Comparing the Same Project in Rust, Haskell, C++, Python, Scala and OCaml https://t.co/DTazQqf5ea
 - 2019-06-16 @newsycombinator: Relearn CSS Layout: Every Layout https://t.co/63Zp5JjhHk
 - 2019-06-16 @newsycombinator: Show HN: Rga: ripgrep, but also search in PDFs, Office documents, zip, tar.gz https://t.co/tb2WMICZTf
@@ -94,17 +94,17 @@ Here is the latest bag of tweets<sup>\*</sup>, which covers June 2019.
 - 2019-06-18 @santinellival: There we go, I'm releasing my C #gamedev engine in the wild: https://t.co/JimeZRlBHJ #binocle #indiedev
 - 2019-06-18 @strnr: Dendrograms in R https://t.co/bWGP0lAyCM #rstats https://t.co/B6yIdoyCgL
 - 2019-06-18 @strnr: A technology-agnostic long-read analysis pipeline for transcriptome discovery and quantification https://t.co/rgOVy3cbKE https://t.co/AyqAA7kTt7 https://t.co/wju5krqdC2
-- 2019-06-18 @ucfagls: Recently I came across radian, a modern console for #rstats   Having used it for a few weeks, here are some thoughts https://t.co/FOr7sFyM0e https://t.co/iARzIoj5Lw
+- 2019-06-18 @ucfagls: Recently I came across radian, a modern console for #rstats Having used it for a few weeks, here are some thoughts https://t.co/FOr7sFyM0e https://t.co/iARzIoj5Lw
 - 2019-06-19 @bbatsov: CIDER's new documentation portal https://t.co/6dYWQZfCxl now features a powerful search powered by @algolia. Finding what you're looking for has never been easier!
 - 2019-06-19 @johnmyleswhite: I really respect this paper's attempt to categorize types of uncertainty and discuss whether a probabilistic approach is the most sensible: https://t.co/2RzPmp9W1i
 - 2019-06-19 @inconvergent: @RainerJoswig re. previous discussion on reading files. i've been looking around, but i was wondering if you had a tip on a good way to find positions of all spaces in a string. just so i don't start doing it in some bad way
 - 2019-06-19 @adamcchang: The new answer to a 77-year-old problem in data analysis, published today in @naturemethods. Instead of significance tests, use estimation graphics. Our software suite DABEST makes it easy for everyone to visualize effect sizes. https://t.co/UzwXJ7EUC5 https://t.co/VtxyY0xaRM
-- 2019-06-19 @nmancuso_: Figure 3 in https://t.co/GZ3lqAMnqh looks like a slam dunk on why we should be genotyping individuals across diverse populations. Such a great paper. https://t.co/Le35IGmMbj
-- 2019-06-19 @seandavis12: Just completed (hopefully) final version of the #bioc2019 workshop materials; 26 workshop packages with 607 dependent packages. All available via #docker image (and volume) and Amazon Machine Image.  https://t.co/59hjl9F36i Team of folks involved, not to mention workshop authors.
+- 2019-06-19 @nmancuso\_: Figure 3 in https://t.co/GZ3lqAMnqh looks like a slam dunk on why we should be genotyping individuals across diverse populations. Such a great paper. https://t.co/Le35IGmMbj
+- 2019-06-19 @seandavis12: Just completed (hopefully) final version of the #bioc2019 workshop materials; 26 workshop packages with 607 dependent packages. All available via #docker image (and volume) and Amazon Machine Image. https://t.co/59hjl9F36i Team of folks involved, not to mention workshop authors.
 - 2019-06-20 @tslumley: In which I draw a picture of the Wald, score, and likelihood ratio tests. https://t.co/WaI9QVWsMg
 - 2019-06-20 @matloff: #rstats In light of today's exchange betw. advocates of dplyr and data.table, I thought I'd take a look at my e-mail records. You may find this illuminating, esp. re my concern abt. an open source project being dominated by a commercial entity (however well-intentioned). 1/n
 - 2019-06-20 @Jose_A_Alonso: Implementing recursion with the Y combinator in any language. ~ Michele Riva. https://t.co/FPPGINzKca #LambdaCalculus #JavaScript #Haskell #Java #Racket #Python #C
 - 2019-06-20 @mxsage: all the way down https://t.co/XoqQH3xyip
-- 2019-06-20 @dask_dev: Blogpost on loading large stacks of image data using Dask Array.  https://t.co/K2BgGOSfeZ https://t.co/ZydjQMKDqF
+- 2019-06-20 @dask_dev: Blogpost on loading large stacks of image data using Dask Array. https://t.co/K2BgGOSfeZ https://t.co/ZydjQMKDqF
 - 2019-06-21 @newsycombinator: 33 Miniatures: Mathematical and Algorithmic Applications of Linear Algebra [pdf] https://t.co/BwYtrFY9An
 - 2019-06-21 @c_valenzuelab: Check out the new @ml5js website with some very cool new demos! 😍 https://t.co/KOkPdq5zUk

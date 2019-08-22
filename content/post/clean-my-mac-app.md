@@ -2,10 +2,10 @@
 title: "CleanMyMac App"
 date: 2018-10-09T10:44:27+02:00
 draft: false
-description: ""
-tags: ["apple"]
-categories: ["app-review"]
+tags: ["apple", "app", "review"]
+categories: []
 ---
+
 [CleanMyMac](https://macpaw.com/cleanmymac) is probably the only app you need if you want to stay organized with your Mac.
 
 <!--more-->
@@ -18,7 +18,7 @@ First of all, even if you can put all your shell commands into a chron job, init
 
 Note that it is possible to customize what will be removed during the cleaning stage--and I highly recommend to check those items beforehand, because it includes cleaning the Books app cache which simply means deleting all your local iBooks (or at least, this is what happened to me with the previous version of the app). In the last version of the software (serie X), there is an history of all the actions that were undertaken, so you can keep a trace of what you have been doing recently.
 
-There is also an uninstall tool that I find very useful since it will also delete auxiliary files, which are always a pain to find manually: 
+There is also an uninstall tool that I find very useful since it will also delete auxiliary files, which are always a pain to find manually:
 
 ![](/img/2018-10-09-10-54-45.png)
 

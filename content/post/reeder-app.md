@@ -1,11 +1,9 @@
 ---
 title: "Reeder App"
 date: 2018-04-08T09:11:04+02:00
-lastmod: 2018-09-15T09:47:56+02:00
 draft: false
-description: ""
-tags: ["misc", "apple"]
-categories: ["app-review"]
+tags: ["app", "review"]
+categories: []
 ---
 
 Back to reading feeds. Here is a brief review of the [Reeder app](http://reederapp.com).
@@ -18,7 +16,7 @@ However, I never really liked web application (especially the iPython notebook o
 
 ![The Reeder app](/img/2018-03-31-10-11-03.png)
 
-First of all, you don't have to start again from scratch and you can import the feeds you stored on Feedly without any problem. This also applies to other popular reader like Instapaper or Feedbin.  Unfortunately, there is no way to synchronize Medium articles at the time of this writing. Also, there is no iCloud syncing. Anyway, here are some of the benefits from using this tiny application instead of spending too much time opening dozens of tabs in your Safari (or Chrome or whatever) browser:
+First of all, you don't have to start again from scratch and you can import the feeds you stored on Feedly without any problem. This also applies to other popular reader like Instapaper or Feedbin. Unfortunately, there is no way to synchronize Medium articles at the time of this writing. Also, there is no iCloud syncing. Anyway, here are some of the benefits from using this tiny application instead of spending too much time opening dozens of tabs in your Safari (or Chrome or whatever) browser:
 
 - You can star and (un)mark as read all of your posts, and of course there is a little badge that indicates how many unread or starred items you have.
 - You can manage multiple sources, like Feedly and Feedbin, and each source will have a dedicated view panel.
@@ -31,4 +29,4 @@ After one week of using Reeder, I feel like I am done with web UIs, at least for
 
 **Edit:** After several months, I still find this app very entertaining. The clean UI invites to stay focused on reading. The only thing I miss is the ability to highlight sentences or even selected part of a post, much like in Preview or other PDF apps.
 
-{{% music %}}Morcheeba • *Blood Like Lemonade*{{% /music %}}
+{{% music %}}Morcheeba • _Blood Like Lemonade_{{% /music %}}

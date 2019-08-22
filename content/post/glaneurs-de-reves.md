@@ -1,11 +1,9 @@
 ---
 title: "Glaneurs de rêves"
 date: 2018-09-30T18:21:24+02:00
-lastmod: 2018-09-30T18:21:24+02:00
 draft: false
-description: ""
-tags: ["readings"]
-categories: ["fr"]
+tags: ["readings", "fr"]
+categories: []
 ---
 
 Des histoires vraies qui vous donnent envie d'inventer des contes fabriqués de toutes pièces.
@@ -14,10 +12,10 @@ Des histoires vraies qui vous donnent envie d'inventer des contes fabriqués de 
 
 Il y a quelques années j'ai lu avec beaucoup de plaisir [Just Kids](http://www.gallimard.fr/Catalogue/GALLIMARD/Folio/Folio/Just-Kids2) de Patti Smith. On y découvre, sous une forme autobiographique dont l'écriture ne laisse rien au hasard, l'univers dans lequel Mapplethorpe et elle ont évolué dans les années 70. Aujourd'hui, je me suis délecté de [Glaneurs de rêves](http://www.gallimard.fr/Catalogue/GALLIMARD/Folio/Folio/Glaneurs-de-reves), toujours autobiographique et tellement poignant sur le plan littéraire et artistique que je ne peux résister à la tentation d'en citer quelques passages :
 
-> Le plafond était un quadrillage  
-> une ligne enlevée, du muscle,  
-> une autre langue  
-> mais pas celle du langage 
+> Le plafond était un quadrillage
+> une ligne enlevée, du muscle,
+> une autre langue
+> mais pas celle du langage
 
 Et pour mieux rebondir sur de tels quadrillages, quoi de mieux que le chapitre intitulé "Quadrille" :
 

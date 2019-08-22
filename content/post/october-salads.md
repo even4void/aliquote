@@ -2,10 +2,10 @@
 title: "La vie en rond..."
 date: 2018-11-04T21:08:27+01:00
 draft: false
-description: ""
-tags: ["misc"]
-categories: ["fr"]
+tags: ["misc", "fr"]
+categories: []
 ---
+
 ... et en salades, ou autres gourmandises.
 
 <!--more-->

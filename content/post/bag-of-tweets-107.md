@@ -3,72 +3,73 @@ title: "A bag of tweets / Feb 2019"
 date: 2019-02-25T08:08:24+01:00
 draft: false
 tags: ["misc"]
-categories: ["tweet-bot"]
+categories: []
 ---
-Here is the latest bag of tweets<sup>*</sup>, which covers February 2019.
+
+Here is the latest bag of tweets<sup>\*</sup>, which covers February 2019.
 
 <!--more-->
 
-(*) These are interesting news that I found on Twitter and that I archive periodically. Note that I have slightly updated reporting and fetching methods so that you will get between 80 and 120 of my most recent favorites from my Twitter account (`@even4void`).
+(\*) These are interesting news that I found on Twitter and that I archive periodically. Note that I have slightly updated reporting and fetching methods so that you will get between 80 and 120 of my most recent favorites from my Twitter account (`@even4void`).
 
 - 2019-02-01 @freakonometrics: "Probabilistic Fondations of Econometrics" https://t.co/i9cMJxcyJm part 1 of a long series of posts on econometrics vs. machine learning
-- 2019-02-01 @choldgraf: WOW! Pandoc now supports reading / writing @ProjectJupyter notebooks!  It's a new feature so use it and break it and help make it better! https://t.co/CDu73jCER0 https://t.co/qMOqe7VEDl
+- 2019-02-01 @choldgraf: WOW! Pandoc now supports reading / writing @ProjectJupyter notebooks! It's a new feature so use it and break it and help make it better! https://t.co/CDu73jCER0 https://t.co/qMOqe7VEDl
 - 2019-02-01 @newsycombinator: Makefiles, Best Practices https://t.co/7U8ZvPxY1d
-- 2019-02-02 @MMz_: Maze generation in IClojure. Gist: https://t.co/qzxMqXtwq5 Code explanation: https://t.co/Ckb1vydhS6 #clojure #jupyter https://t.co/gbXTsLAWdm https://t.co/UK8jrRCerZ
-- 2019-02-02 @pierreyvesrevaz: #magnifique Quand des #livres anciens renferment des illustrations cachées  #art https://t.co/NVMSR5AfBE
-- 2019-02-02 @natedayta: Wow, did not know you can have a tableau-esq 📊 👷‍♂️experience directly in @rstudio with #esquisse! So freaking dope, adding this to my R-user conversion kit #rstats #zealot  https://t.co/u0r07cZOvP https://t.co/3TSeGChNWU
+- 2019-02-02 @MMz\_: Maze generation in IClojure. Gist: https://t.co/qzxMqXtwq5 Code explanation: https://t.co/Ckb1vydhS6 #clojure #jupyter https://t.co/gbXTsLAWdm https://t.co/UK8jrRCerZ
+- 2019-02-02 @pierreyvesrevaz: #magnifique Quand des #livres anciens renferment des illustrations cachées #art https://t.co/NVMSR5AfBE
+- 2019-02-02 @natedayta: Wow, did not know you can have a tableau-esq 📊 👷‍♂️experience directly in @rstudio with #esquisse! So freaking dope, adding this to my R-user conversion kit #rstats #zealot https://t.co/u0r07cZOvP https://t.co/3TSeGChNWU
 - 2019-02-02 @zim2918: https://t.co/4sKlwT4MpH
 - 2019-02-02 @newsycombinator: A Python Interpreter Written in Rust https://t.co/dXCLM0LPx0
 - 2019-02-02 @vsbuffalo: Most evidence that eating breakfast leads to weight loss was funded by cereal companies; in one case, Quaker even designed study and edited the manuscript! Meta-analysis (visual abstract below) supports idea that skipping breakfast leads to weight loss. https://t.co/0si0bCbIdA https://t.co/Eoz0z6ezUj
 - 2019-02-03 @newsycombinator: Consolas is now open source https://t.co/dLQt37C244
 - 2019-02-03 @strategist922: Papers, tools , and framewroks that used in Recommender System https://t.co/LDQSN47lMM
-- 2019-02-03 @clojuregrams: (defn palindrome? [s]  (or   (&lt; (count s) 2)   (and (= (first s) (last s))        (recur (subs s 1 (dec (count s)))))))
+- 2019-02-03 @clojuregrams: (defn palindrome? [s] (or (&lt; (count s) 2) (and (= (first s) (last s)) (recur (subs s 1 (dec (count s)))))))
 - 2019-02-03 @etiennejcb: https://t.co/vHyGpzXzyh
-- 2019-02-03 @_ColinFay: Here is something I will be eager to read once finished! "Mastering Shiny"  (Work in Progress for now)  https://t.co/22E2dx0CpV
-- 2019-02-03 @jetzajac: @clojuregrams faster: (defn palindrome?    ([s] (palindrome? s 0 (count s)))   ([s from to]    (or     (&lt; (- to from) 2)     (and (= (nth s from) (nth s (dec to)))          (recur s (inc from) (dec to))))))
+- 2019-02-03 @\_ColinFay: Here is something I will be eager to read once finished! "Mastering Shiny" (Work in Progress for now) https://t.co/22E2dx0CpV
+- 2019-02-03 @jetzajac: @clojuregrams faster: (defn palindrome? ([s] (palindrome? s 0 (count s))) ([s from to] (or (&lt; (- to from) 2) (and (= (nth s from) (nth s (dec to))) (recur s (inc from) (dec to))))))
 - 2019-02-03 @nickchk: @Giacomo_Mason @3firsts The gtools Stata suite, released recently, does help speed things up thankfully
-- 2019-02-03 @Quotes_PS: « Je n'attends plus rien de la vie qu'une suite de papiers à barbouiller de noir. Il me semble que je traverse une solitude sans fin, pour aller je ne sais où, et c'est moi qui suis tout à la fois le désert, le voyageur et le chameau. »  Gustave Flaubert Lettre à George Sand.
+- 2019-02-03 @Quotes_PS: « Je n'attends plus rien de la vie qu'une suite de papiers à barbouiller de noir. Il me semble que je traverse une solitude sans fin, pour aller je ne sais où, et c'est moi qui suis tout à la fois le désert, le voyageur et le chameau. » Gustave Flaubert Lettre à George Sand.
 - 2019-02-04 @CMastication: In case you were preparing for hosting a Super Bowl party tonight and missed the very brief academic econ language war, below is the summary. #rstats #python #stata The most amusing thing to me was that nobody even bothered to mention SAS. https://t.co/teFtziknes
 - 2019-02-04 @jepusto: Hey Econ tweeps arguing about R vs Stata. I did Stata during Undergrad, SAS + Stata as an analyst (pre-grad school), and then learned R. I’m a statistician so admittedly on the periphery of the flame wars, but here’s my two cents anyways...
 - 2019-02-04 @newsycombinator: Bye, Bye, Google https://t.co/8RHA6g0ZC6
 - 2019-02-04 @thorstenball: This is such a wonderful resource for someone who's knowledgable in one or more languages but wants to learn how the daily business is done: dependency management, tooling, code idioms, recommended libraries, etc. https://t.co/klhHvND8WQ I wish every language had this.
 - 2019-02-04 @asmeurer: The ampersand (&amp;) originated as a ligature of "e" and "t" (Latin "et" meaning "and"). https://t.co/ILI8WPIrgC https://t.co/ATMfBtdUw6
-- 2019-02-05 @dzj_evalparse: Lunar New Year Celebration 1st #rdatatable tip:  The j in dt[i, j, by] can be any R code including {} e.g.   library(data.table) carsdt = data.table(cars)  carsdt[speed &gt; 10, {   model = glm(dist ~ speed)   broom::tidy(model) }, by = dist &gt; 40]
+- 2019-02-05 @dzj_evalparse: Lunar New Year Celebration 1st #rdatatable tip: The j in dt[i, j, by] can be any R code including {} e.g. library(data.table) carsdt = data.table(cars) carsdt[speed &gt; 10, { model = glm(dist ~ speed) broom::tidy(model) }, by = dist &gt; 40]
 - 2019-02-05 @newsycombinator: Data Structure Visualizations https://t.co/roDF5RhLO3
-- 2019-02-05 @millerdl: my notes "Bayesian views of generalized additive modelling" (very mgcv focussed) are now on arXiv, comments welcome  https://t.co/Jok9Ysgq3E
+- 2019-02-05 @millerdl: my notes "Bayesian views of generalized additive modelling" (very mgcv focussed) are now on arXiv, comments welcome https://t.co/Jok9Ysgq3E
 - 2019-02-05 @newsycombinator: MIT Hacker Tools: a lecture series on programmer tools https://t.co/4OldEWno6f
 - 2019-02-05 @etiennejcb: https://t.co/od4rVLj6FG
 - 2019-02-05 @ApacheArrow: Interested in @rustlang and @ApacheArrow? We have just received a code donation of DataFusion, a native Rust query engine for analytics on Arrow columnar data https://t.co/foGja86Fda
 - 2019-02-05 @ApacheArrow: Python strings are notoriously memory-hungry. We did some work in @ApacheArrow 0.12 to reduce string memory use when using Arrow with pandas. Learn more about the technical details from @wesmckinn https://t.co/PMgZddQNrM
-- 2019-02-05 @climagic: tar tvf backup.tar | grep -v "/$" | wc -l  # Count the number of files, but not directories, stored in a tar file.
+- 2019-02-05 @climagic: tar tvf backup.tar | grep -v "/\$" | wc -l # Count the number of files, but not directories, stored in a tar file.
 - 2019-02-06 @f2harrell: My constant disappointment with the reliability of feature selection methods makes me think this 1984 paper on variable clustering and creating clinical summary indexes has stood the test of time: https://t.co/MwqWqwvBlz @califf001 https://t.co/eN1cQ35X19
 - 2019-02-06 @UnixToolTip: GNU Coreutils Cheat Sheet https://t.co/xxHQ0l97fV by @pkrumins
 - 2019-02-06 @Quotes_PS: https://t.co/j9e8IJrKDy
-- 2019-02-06 @mathisonian: Short new post on statistical power. Usually p-values get all the attention, but power is another important factor in experimental design.   Here's an interactive primer: https://t.co/2CaFicOPaG
+- 2019-02-06 @mathisonian: Short new post on statistical power. Usually p-values get all the attention, but power is another important factor in experimental design. Here's an interactive primer: https://t.co/2CaFicOPaG
 - 2019-02-06 @jeremyfreese: Regarding R vs. Stata debates, what I would love to see is race between fast &amp; fluent Stata users and fast &amp; fluent R users to perform bunch of ordinary data analysis tasks. I've always thought Stata folks will be (much?) faster but am open-minded that this is wrong/parochial.
-- 2019-02-06 @SolomonKurz: 1/n Someone asked me recently what resources I’d recommend for furthering one’s introduction to Bayesian statistics after going through @rlmcelreath's text (https://t.co/t9T2q6hGay) and my accompanying project (https://t.co/alBJXHKIrf).   Here are my thoughts:
+- 2019-02-06 @SolomonKurz: 1/n Someone asked me recently what resources I’d recommend for furthering one’s introduction to Bayesian statistics after going through @rlmcelreath's text (https://t.co/t9T2q6hGay) and my accompanying project (https://t.co/alBJXHKIrf). Here are my thoughts:
 - 2019-02-07 @gabrielpeyre: My book with Marco Cuturi on computational optimal transport has just been updated. https://t.co/1SsAjR2R5Y https://t.co/PYkmwJe3W0
-- 2019-02-07 @Quotes_PS: « La solitude prolongée assombrit et désenchante, elle répand l'effroi dans l'âme la plus forte. »  George Sand
+- 2019-02-07 @Quotes_PS: « La solitude prolongée assombrit et désenchante, elle répand l'effroi dans l'âme la plus forte. » George Sand
 - 2019-02-07 @stuarthalloway: "programmers use the REPL for all these tasks ... because they want a mix of automation and improvisation that can be provided neither by fully manual tools ... nor by fully automated ones" #Clojure https://t.co/SZoPLdxOV9
-- 2019-02-07 @timgluz: @RobStuttaford And I use the Monodraw -  https://t.co/Bvxg8c9ZMV  One can add graphs into doc-strings, readme and markdowns
+- 2019-02-07 @timgluz: @RobStuttaford And I use the Monodraw - https://t.co/Bvxg8c9ZMV One can add graphs into doc-strings, readme and markdowns
 - 2019-02-07 @andreabellavia: This is a great teaching tool to understand the consequences of left truncation on Kaplan-Meier. Borrowing for class! (credits to @NicholasStrayer ) #survival #teachingstats https://t.co/TONTGmDoQq https://t.co/5sZLgmN415
-- 2019-02-07 @CMastication: @_J_sinclair @hugobowne In my Airflow process I have a shell script that changes the working directory then runs a script. Each DAG calls the same shell script but calls it with a different reference R script.   I blogged about it here: https://t.co/uT39S8bprX Note that there's an addendum at the bottom https://t.co/7v6uhxZDtL
+- 2019-02-07 @CMastication: @\_J_sinclair @hugobowne In my Airflow process I have a shell script that changes the working directory then runs a script. Each DAG calls the same shell script but calls it with a different reference R script. I blogged about it here: https://t.co/uT39S8bprX Note that there's an addendum at the bottom https://t.co/7v6uhxZDtL
 - 2019-02-07 @HNTweets: Coroutines in C: https://t.co/f8o8EbbG4S Comments: https://t.co/YGGYGbM81i
-- 2019-02-08 @jd_wilko: @sergiouribe Maybe the following would be good introductions to start thinking about some of the ideas? https://t.co/FpDHIyMyKh  https://t.co/5v8ltu8Knx
+- 2019-02-08 @jd_wilko: @sergiouribe Maybe the following would be good introductions to start thinking about some of the ideas? https://t.co/FpDHIyMyKh https://t.co/5v8ltu8Knx
 - 2019-02-08 @statsmaths: Finally out! Excited to announce my new book on statistical learning with @kaneplusplus and Bryan Lewis on @CRCPress. Code, data, and sample chapters available at https://t.co/iGSWS77oXy #rstats https://t.co/ihAAcK5kmd
-- 2019-02-08 @klmr: #rstats tweeps: How do I define a function via the `function` function?  https://t.co/8hfIksGWo1 https://t.co/L2RgzPYE8M
+- 2019-02-08 @klmr: #rstats tweeps: How do I define a function via the `function` function? https://t.co/8hfIksGWo1 https://t.co/L2RgzPYE8M
 - 2019-02-08 @cezannecam: I remember her image from when I first took an image processing class! And now I'm just learning the history behind this photo and the woman behind it, wow https://t.co/eDcoiMgYJI
 - 2019-02-08 @me_coot: Earlier this week I was discussing Haskell's (or PureScript's) monadic IO, and I think I found a nice functional programming explanation that does not start with category theory, but the origin of FP: recursive functions: https://t.co/0gmtq6pxMO #haskell #purescript
-- 2019-02-09 @choldgraf: Woo jupyter-boook now has a CLI!  to get started (on *nix):  pip install jupyter-book jupyter-book create mynewbook --demo  https://t.co/CaPhQGvIgE
+- 2019-02-09 @choldgraf: Woo jupyter-boook now has a CLI! to get started (on \*nix): pip install jupyter-book jupyter-book create mynewbook --demo https://t.co/CaPhQGvIgE
 - 2019-02-09 @rlmcelreath: Homework solutions for week 6 of my Bayes course are up. I put effort into these assignment and the solutions. Most weeks involve integrated DAG and model definition exercises. https://t.co/nGR78VpPsp https://t.co/rV1hKyMb3C
 - 2019-02-09 @deaneckles: When asked to draw a regression line, my experience is people draw something closer to the PCA line. https://t.co/978t8lcKrn
-- 2019-02-09 @eddelbuettel: Came across 'demotivate', an interesting Stata command .  So I just "had to" port it to R on the commute home yesterday.  Find it in package dang on @GitHub.  #rstats #andIdontactuallyeverusedstatamyself /cc @FelipeOrjuelaR @KevinDenny https://t.co/iDMvtOjJgN
+- 2019-02-09 @eddelbuettel: Came across 'demotivate', an interesting Stata command . So I just "had to" port it to R on the commute home yesterday. Find it in package dang on @GitHub. #rstats #andIdontactuallyeverusedstatamyself /cc @FelipeOrjuelaR @KevinDenny https://t.co/iDMvtOjJgN
 - 2019-02-09 @kaz_yos: Bayesian Population Analysis using Stan https://t.co/TmSxIcQ8EX
 - 2019-02-09 @Jose_A_Alonso: Chemoinformatics and structural bioinformatics in OCaml. ~ F- Berenger, K.Y.J. Zhang, Y. Yamanishi. https://t.co/8MgVLLu4vt #OCaml #FunctionalProgramming
 - 2019-02-09 @hrbrmstr: Quick Hit: Speeding Up a Slow/Mundane Task with a Little Rcpp https://t.co/e2mAnSAWmf #rstats
-- 2019-02-10 @hrbrmstr: It's not exactly rocket-science to bypass macOS 10.14 restrictions:     ssh localhost ls ~/Library/Safari  It'll be cool to see how Jeff's bypass ends up working (I doubt it's the ssh trick as that's "designed behavior") // Spying on Safari in Mojave https://t.co/jhk0idV9pr
+- 2019-02-10 @hrbrmstr: It's not exactly rocket-science to bypass macOS 10.14 restrictions: ssh localhost ls ~/Library/Safari It'll be cool to see how Jeff's bypass ends up working (I doubt it's the ssh trick as that's "designed behavior") // Spying on Safari in Mojave https://t.co/jhk0idV9pr
 - 2019-02-10 @kaz_yos: "Laboratory exercises for teaching Bayesian modeling to ecologists and social scientists. Supported by the National Science Foundation, awards DBI-1052875 ad DEB-1145200." https://t.co/I0lmrDgy3h https://t.co/sfEoDcXSac https://t.co/wpqAu1Opai
-- 2019-02-10 @clojuregrams: (defn random-walk [start max-dist]  (let [rnd #(- (rand-int (* 2 max-dist))                max-dist)]   (iterate    #(+ % (rnd))    start)))
+- 2019-02-10 @clojuregrams: (defn random-walk [start max-dist] (let [rnd #(- (rand-int (* 2 max-dist)) max-dist)] (iterate #(+ % (rnd)) start)))
 - 2019-02-10 @Fuco1337: #emacs #blog #orgmode Speed up your review process with a hydra to dispatch refiles to specific locations https://t.co/xH8ZS5FRNQ
 - 2019-02-10 @kaz_yos: JOINT MODELING OF LONGITUDINAL AND TIME-TO-EVENT DATA: AN OVERVIEW on JSTOR https://t.co/FHUqRh4UrQ
 - 2019-02-10 @kaz_yos: (20) (PDF) Joint models for longitudinal and time-to-event data: A review of reporting quality with a view to meta-analysis https://t.co/eBUwCctQGk
@@ -77,68 +78,68 @@ Here is the latest bag of tweets<sup>*</sup>, which covers February 2019.
 - 2019-02-11 @pickover: Shiver in ecstasy. Mathematics. https://t.co/q48W3lpOJT
 - 2019-02-11 @Jose_A_Alonso: Bisecting floating point numbers in Julia. https://t.co/m4QqHZ8b3N #JuliaLang #Math
 - 2019-02-11 @SvenKnueppel: Just a reminder: descriptive tables do not need p-values!"Inferential measures such as standard errors and confidence intervals should not be used to describe the variability of characteristics, and significance tests should be avoided in descriptive tables"(STROBE) #epitwitter https://t.co/AiYSivgcGu
-- 2019-02-11 @klmr: It’s not just you: Google has gotten a lot worse recently.  https://t.co/noZj0VUY2X
+- 2019-02-11 @klmr: It’s not just you: Google has gotten a lot worse recently. https://t.co/noZj0VUY2X
 - 2019-02-11 @ThomasMailund: Making slides… Boyer-Moor-Horspool for tomorrow’s string algorithms. https://t.co/zQNsxxywEL
 - 2019-02-11 @Atabey_Kaygun: The computational notebook of the future https://t.co/o1kpS9rReN
 - 2019-02-12 @kaz_yos: GitHub - xiaodaigh/disk.frame: Fast disk-based parallelized data manipulation framework for larger-than-RAM data https://t.co/7mw9Nbx8gN
-- 2019-02-12 @freakonometrics: An overview of the NLP ecosystem in R (#nlproc #textasdata)  https://t.co/1LvoD7T1df (poke @3wen) https://t.co/TqzPlcdiGx
+- 2019-02-12 @freakonometrics: An overview of the NLP ecosystem in R (#nlproc #textasdata) https://t.co/1LvoD7T1df (poke @3wen) https://t.co/TqzPlcdiGx
 - 2019-02-12 @nikitonsky: At this point we can just replace Clojure’s PersistentTreeSet with my new DataScript implementation and significantly win on each operation. @cognitect are you interested? Should be portable to PersistentTreeMap too https://t.co/D5BfKrPRlM
-- 2019-02-12 @iLemming: @magit_emacs tip: you can selectively take things from a stash, simply press `a` - (magit-apply).   Sometimes though it won't work because of conflicts. Then you can force it to apply in 3-way merge by using universal argument `C-u a` or `SPC u a` in @spacemacs https://t.co/LeViqcQgbj
-- 2019-02-12 @aschinchon: library(tidyverse) data.frame(t=seq(1,100,by=.005)) %&gt;%    ggplot(aes(x=exp(-0.01*t)*sin(t*2.03+2.92)+exp(-0.01*t)*sin(t*3.01+0.59),              y=sin(t*3.06+0.89)+exp(-0*t)*sin(t*2+2.12))) +   geom_path()+   theme_void() +   coord_fixed() #rstats #tidyverse #creative #maths https://t.co/ixk60fP14R
+- 2019-02-12 @iLemming: @magit_emacs tip: you can selectively take things from a stash, simply press `a` - (magit-apply). Sometimes though it won't work because of conflicts. Then you can force it to apply in 3-way merge by using universal argument `C-u a` or `SPC u a` in @spacemacs https://t.co/LeViqcQgbj
+- 2019-02-12 @aschinchon: library(tidyverse) data.frame(t=seq(1,100,by=.005)) %&gt;% ggplot(aes(x=exp(-0.01*t)*sin(t*2.03+2.92)+exp(-0.01*t)*sin(t*3.01+0.59), y=sin(t*3.06+0.89)+exp(-0*t)*sin(t*2+2.12))) + geom_path()+ theme_void() + coord_fixed() #rstats #tidyverse #creative #maths https://t.co/ixk60fP14R
 - 2019-02-12 @zim2918: Questions https://t.co/Z7DyOh3yck
-- 2019-02-13 @groundwalkergmb: Ok so this is weird. Any C optimizer ppl know why adding the if in  if(len &gt; 0) {     double *ansptr = REAL(ans);     for(i = 0; i &lt; len; i++) {         ansptr[i] = (double) buf[i];     } }  Seems to dramatically speed it up? (len ~ 515) @wrathematics @eddelbuettel @MattDowle
-- 2019-02-13 @_wilfredh: Remacs has moved to its own GitHub organisation, to reflect the growing community! https://t.co/B8RDGefGjS  We have a whole bunch of friendly contributors :)
+- 2019-02-13 @groundwalkergmb: Ok so this is weird. Any C optimizer ppl know why adding the if in if(len &gt; 0) { double \*ansptr = REAL(ans); for(i = 0; i &lt; len; i++) { ansptr[i] = (double) buf[i]; } } Seems to dramatically speed it up? (len ~ 515) @wrathematics @eddelbuettel @MattDowle
+- 2019-02-13 @\_wilfredh: Remacs has moved to its own GitHub organisation, to reflect the growing community! https://t.co/B8RDGefGjS We have a whole bunch of friendly contributors :)
 - 2019-02-13 @Blouchtika: Bonjour. J'aimerais aujourd'hui m'adresser aux étudiant·e·s qui envisagent de faire une thèse, pour quelques faits qui dérangent.
 - 2019-02-13 @kaz_yos: REGRESSION MODELING STRATEGIES with Applications to Linear Models, Logistic and Ordinal Regression, and Survival Analysis https://t.co/5D9l0mlBjL https://t.co/jdUtm5eFMN
-- 2019-02-13 @BenVanCalster: Good to see our work on 'machine learning vs logistic regression' for clinical prediction models online in @JClinEpi! Thank you @GSCollins @ESteyerberg @jan_verbakel for the collaboration!  I found this discussion by @arjunmanrai interesting: https://t.co/yY8yDmG2Zd
+- 2019-02-13 @BenVanCalster: Good to see our work on 'machine learning vs logistic regression' for clinical prediction models online in @JClinEpi! Thank you @GSCollins @ESteyerberg @jan_verbakel for the collaboration! I found this discussion by @arjunmanrai interesting: https://t.co/yY8yDmG2Zd
 - 2019-02-13 @conjugateprior: I'm in a workshop on R by a long time Stata person. It's fascinating, and just a little bit horrifying... 1/n
 - 2019-02-14 @tmorris_mrc: @MyKo101AB @thomasp85 Another nice resource to help understand splines is the interactives here: https://t.co/iCXhFYYBKX By @pclambert123
-- 2019-02-14 @joelgrus: biggest changes:  * update to Python 3.6 (+ type annotations 😇) * new Deep Learning chapter * new Data Ethics [!] chapter * expand NLP chapter (word2vec + RNNs) * expand recsys chapter (matrix factorization) * cleaner code * better examples * no more map+filter+reduce+partial 💪
-- 2019-02-14 @IKosmidis_: v0.5.1 of my {brglm2} R package is out!   Mean/median bias reduction for adjacent category logit models for ordinal data + prediction + custom links + misclassification + many under-the-hood tweaks!  Vignettes: https://t.co/2CS2ycdV8a Wishes/Stars/Issues: https://t.co/NF2rzopk2v
+- 2019-02-14 @joelgrus: biggest changes: _ update to Python 3.6 (+ type annotations 😇) _ new Deep Learning chapter _ new Data Ethics [!] chapter _ expand NLP chapter (word2vec + RNNs) _ expand recsys chapter (matrix factorization) _ cleaner code _ better examples _ no more map+filter+reduce+partial 💪
+- 2019-02-14 @IKosmidis\_: v0.5.1 of my {brglm2} R package is out! Mean/median bias reduction for adjacent category logit models for ordinal data + prediction + custom links + misclassification + many under-the-hood tweaks! Vignettes: https://t.co/2CS2ycdV8a Wishes/Stars/Issues: https://t.co/NF2rzopk2v
 - 2019-02-14 @kaz_yos: Causal Inference Book Part I, Chapters 1-10 (updated 10 February 2019) Part II, Chapters 11-17 (updated 10 February 2019) Part III, Chapters 19-21 (updated 10 February 2019) https://t.co/4PMb7SGb1H
-- 2019-02-14 @iLemming: Do you use 'narrow' commands? narrow-to-region, narrow-to-defun? So what if you need a narrow view but still need to peek into other places in the same file?   Then `clone-indirect-buffer`. That way you can work with the second buffer like it's a completely separate file. https://t.co/pad1UNz5aY
-- 2019-02-14 @MarkusWinand: Just blogged: What’s new in PostgreSQL 11 https://t.co/3Q5q8A8uuj  • Window functions (taking the leadership) • Procedures • FETCH FIRST improvements • XPath improvements • Partitions • Parallel execution • JIT • Fast ADD COLUMN • Teaser: CREATE INDEX ... INCLUDE
+- 2019-02-14 @iLemming: Do you use 'narrow' commands? narrow-to-region, narrow-to-defun? So what if you need a narrow view but still need to peek into other places in the same file? Then `clone-indirect-buffer`. That way you can work with the second buffer like it's a completely separate file. https://t.co/pad1UNz5aY
+- 2019-02-14 @MarkusWinand: Just blogged: What’s new in PostgreSQL 11 https://t.co/3Q5q8A8uuj • Window functions (taking the leadership) • Procedures • FETCH FIRST improvements • XPath improvements • Partitions • Parallel execution • JIT • Fast ADD COLUMN • Teaser: CREATE INDEX ... INCLUDE
 - 2019-02-14 @magit_emacs: I have just released Transient, the successor to Magit-Popup! https://t.co/l3VWoFNCY7 😆
 - 2019-02-14 @CompSciFact: Floating point numbers are a leaky abstraction https://t.co/xDWVo6LsyJ
 - 2019-02-15 @LiborCapak: https://t.co/DFTGGlwhDg clojure-like lisp language
 - 2019-02-15 @kaz_yos: “Abstract We provide a geometric interpretation to Bayesian inference that allows us to introduce a natural measure of the level of agreement between priors, likelihoods, and posteriors. “ https://t.co/RSOu0adOue
 - 2019-02-15 @lapply: Spring is coming, time to refresh some documents : a (slightly) new version of my french introduction to #rstats and the #tidyverse is online. Typos, better exercises, and even a bit of dplyr 0.8.0 :  https://t.co/gPiyh9koRO
 - 2019-02-15 @f2harrell: @PWGTennant This one but I wish we had never used PS matching and instead had used PS logit spline covariate adjustment. https://t.co/MQrm1Me2k1
-- 2019-02-16 @KirkDBorne: Microsoft open sources examples and best practices for building recommendation systems, provided as #Jupyter notebooks: https://t.co/HJOp67LmNT HT @revodavid   #BigData #DataScience #Python #Coding #MachineLearning #RecSys #Algorithms https://t.co/w55auf34nP
+- 2019-02-16 @KirkDBorne: Microsoft open sources examples and best practices for building recommendation systems, provided as #Jupyter notebooks: https://t.co/HJOp67LmNT HT @revodavid #BigData #DataScience #Python #Coding #MachineLearning #RecSys #Algorithms https://t.co/w55auf34nP
 - 2019-02-16 @zim2918: Moonlight https://t.co/uesZAKUjCS
-- 2019-02-16 @thosjleeper: Hey #rstats folks: I'm looking to recruit someone to help maintain {cregg}, a package for conjoint analysis. If you're interested in survey-experimental data in the social sciences &amp; want to gain some dev experience with me as a mentor, please reach out.  https://t.co/V06nYinOy0
+- 2019-02-16 @thosjleeper: Hey #rstats folks: I'm looking to recruit someone to help maintain {cregg}, a package for conjoint analysis. If you're interested in survey-experimental data in the social sciences &amp; want to gain some dev experience with me as a mentor, please reach out. https://t.co/V06nYinOy0
 - 2019-02-16 @anecdatally: @NoahHaber @DrCristinaF @PWGTennant I think the short answer is, mahalanobis distance matching breaks down when X is high dimensional (many covariates). For the long answer, @Lizstuartdc has an excellent paper, which is also full of references: https://t.co/mL6YSDrbiW
-- 2019-02-16 @d_run: An Overview of Common Racket Data Structures - https://t.co/VSDTXtEZw3  #lisp #scheme #Racket #racketlang
+- 2019-02-16 @d_run: An Overview of Common Racket Data Structures - https://t.co/VSDTXtEZw3 #lisp #scheme #Racket #racketlang
 - 2019-02-16 @natashenka: This is still my favorite thing that has ever been posted on Stack Overflow https://t.co/39dwhRtu4J
 - 2019-02-16 @kaz_yos: Oh gitflow diligently removed the remote feature branch. It'll show up on the main branch shortly. https://t.co/OasJWFZW7k
-- 2019-02-17 @Quotes_PS: “Souffrant d'insomnie, j'échangerais un matelas de plumes contre un sommeil de plomb.”  Pierre Dac
+- 2019-02-17 @Quotes_PS: “Souffrant d'insomnie, j'échangerais un matelas de plumes contre un sommeil de plomb.” Pierre Dac
 - 2019-02-17 @kaz_yos: "IPW often will not result in valid inference if the missing-data pattern is nonmonotone, even if the data are missing at random. We describe a recently proposed approach to modeling nonmonotone missing-data mechanisms under missingness at random to use" https://t.co/3C9NNLCAFo
 - 2019-02-17 @freakonometrics: “Algebraic Theory of French Letters” https://t.co/KzS3moIkfa https://t.co/uhpuBoFHOl
 - 2019-02-17 @kaz_yos: This is a nice and thorough overview of joint modeling of longitudinal and time-to-event data. https://t.co/9kn9u0UNd4
 - 2019-02-17 @zepidpy: Tutorial now available for what I consider my greatest coding feat; the parametric (Monte-Carlo) g-formula https://t.co/GUbNqFnnZA
 - 2019-02-17 @kaz_yos: Bayesian Reasoning and Machine Learning The book is available in hardcopy from Cambridge University Press. The publishers have kindly agreed to allow the online version to remain freely accessible. https://t.co/VKR7vlMkQX
 - 2019-02-17 @newsycombinator: The Book of Secret Knowledge – A collection of lists, blogs, hacks https://t.co/SIfSihO8go
-- 2019-02-18 @tslumley: Would you use software that comes with ABSOLUTELY NO WARRANTY?  https://t.co/oq8NCJ1fRK
+- 2019-02-18 @tslumley: Would you use software that comes with ABSOLUTELY NO WARRANTY? https://t.co/oq8NCJ1fRK
 - 2019-02-18 @deevybee: Geneticists: can anyone point me to a critique of GWAS? I believe there are some experts who think it's given disappointing results- poor value for money- but I'm having difficulty tracking down a published paper making that case. thanks
-- 2019-02-18 @clojuregrams: ; clojure.core (defn butlast [s]  (loop [ret [] s s]   (if (next s)    (recur (conj ret (first s)) (next s))    (seq ret))))
+- 2019-02-18 @clojuregrams: ; clojure.core (defn butlast [s] (loop [ret [] s s] (if (next s) (recur (conj ret (first s)) (next s)) (seq ret))))
 - 2019-02-18 @bitfield: git-secrets is a tool to help prevent you from accidentally committing secrets like passwords or AWS credentials into a Git repo. It can work as a commit hook or a CI scanner, and you can add your own patterns or credentials to look for https://t.co/posKEfmkCv
 - 2019-02-18 @Atabey_Kaygun: I did the Bron-Kerbosch algorithm for my graph theory class. The jupyter notebook for the class (in #Clojure) is on my GitHub: https://t.co/Cpja13FjiJ
 - 2019-02-18 @kaz_yos: Algebra and the Missing Oxen | Elements of Evolutionary Anthropology https://t.co/SPwR69DmiZ
-- 2019-02-19 @Ivru: Quand ton prospect se fait gentiment retourner le cerveau par son équipe de devs  en qui, il a pas trop confiance. https://t.co/PiO2CGN0ew
+- 2019-02-19 @Ivru: Quand ton prospect se fait gentiment retourner le cerveau par son équipe de devs en qui, il a pas trop confiance. https://t.co/PiO2CGN0ew
 - 2019-02-19 @basibanget: Thank Excel! https://t.co/uR7aRfz8g9
-- 2019-02-19 @AnecdotesMaths: Un nombre premier de Sophie Germain est un nombre premier de la forme 2p + 1 où p est lui-même un nombre premier. Ex: 23 est un nombre premier de Sophie Germain car 23 =  2 × 11 + 1 et 11 est premier. On ne sait toujours pas s'il existe une infinité de tels nombres premiers.
+- 2019-02-19 @AnecdotesMaths: Un nombre premier de Sophie Germain est un nombre premier de la forme 2p + 1 où p est lui-même un nombre premier. Ex: 23 est un nombre premier de Sophie Germain car 23 = 2 × 11 + 1 et 11 est premier. On ne sait toujours pas s'il existe une infinité de tels nombres premiers.
 - 2019-02-19 @marcwouts: #Jupytext 1.0 was just released. Pair @ProjectJupyter notebooks to text files with a simple click in Jupyter. Convert notebooks to scripts (and back) on the command line. Or refactor notebooks with commands like "jupytext --pipe black"! https://t.co/TXFeNRHYU8 https://t.co/nUm9G3CvVq
 - 2019-02-20 @tarantulae: Amazing latex plots for CNNs https://t.co/i0atMKOhWl https://t.co/PR5MhUMKxE
 - 2019-02-20 @tmorris_mrc: Hear ye, hear ye! Errm, actually it’s not an announcement. I wondered if you’d like to join me on this Tweetorial about fractional polynomials? 👇 https://t.co/zUk895aS0C
-- 2019-02-20 @klmr: Regex in #rstats allow approximate matching:  grep('(Konrad){~2}', names)  finds all hits with at most two spelling errors.  See: https://t.co/gsr5OA9dfp, “Approximate matching settings” https://t.co/CMCjQiIJZh
+- 2019-02-20 @klmr: Regex in #rstats allow approximate matching: grep('(Konrad){~2}', names) finds all hits with at most two spelling errors. See: https://t.co/gsr5OA9dfp, “Approximate matching settings” https://t.co/CMCjQiIJZh
 - 2019-02-20 @AnecdotesMaths: Le nombre maximal de lignes d'un tableau Excel est 2²⁰, soit 1 048 576 lignes.
-- 2019-02-21 @GaelVaroquaux: New IPython is out.  Big deal: "%pip" and "%conda" magics to install new packages.  This is important to avoid confusions when installing across multiple interpreters. Will greatly help teaching. https://t.co/nn3IeX0WFp
+- 2019-02-21 @GaelVaroquaux: New IPython is out. Big deal: "%pip" and "%conda" magics to install new packages. This is important to avoid confusions when installing across multiple interpreters. Will greatly help teaching. https://t.co/nn3IeX0WFp
 - 2019-02-21 @bzg2: Vous avez une relation amour/haine à vos mails? Combinez la puissance des méthodes Inbox Zero et KonMari pour réparer votre vie électronique. #emails #inboxzero #konmari https://t.co/S27X9VZmoe
 - 2019-02-21 @hrbrmstr: This is an incompetently crafted, deliberately inflammatory, and seriously unhelpful portrayal of the research. Don't stop using password managers. // Use a password manager? New study reveals it may be worse than useless https://t.co/OSHWpdhbEZ
-- 2019-02-21 @nikitonsky: - Empty app - 1.5M loc  ok bye https://t.co/q3roVkrhEd
-- 2019-02-21 @ChristophMolnar: 2 years, 250 pages, 1,219 commits, and 78,480 words:   I am very proud to say that today I published the 1st edition of "Interpretable Machine Learning".  🎉🎉🎉  Web: https://t.co/s4tyZz3f3B Leanpub: https://t.co/OAIEB1YNzR https://t.co/6ewrYcgDdb
-- 2019-02-22 @eric_normandeau: I just subscribed to @exercism_io. A lot of languages are covered. I started the Bash, Python, and Rust tracks.  Take a look: Crowd-sourced code mentorship. Practice having thoughtful conversations about code. https://t.co/X34x32kYZA
-- 2019-02-23 @biorxiv_bioinfo: A comparison of three programming languages for a full-fledged next-generation sequencing tool  https://t.co/Wjfkmfr5zz #biorxiv_bioinfo
+- 2019-02-21 @nikitonsky: - Empty app - 1.5M loc ok bye https://t.co/q3roVkrhEd
+- 2019-02-21 @ChristophMolnar: 2 years, 250 pages, 1,219 commits, and 78,480 words: I am very proud to say that today I published the 1st edition of "Interpretable Machine Learning". 🎉🎉🎉 Web: https://t.co/s4tyZz3f3B Leanpub: https://t.co/OAIEB1YNzR https://t.co/6ewrYcgDdb
+- 2019-02-22 @eric_normandeau: I just subscribed to @exercism_io. A lot of languages are covered. I started the Bash, Python, and Rust tracks. Take a look: Crowd-sourced code mentorship. Practice having thoughtful conversations about code. https://t.co/X34x32kYZA
+- 2019-02-23 @biorxiv_bioinfo: A comparison of three programming languages for a full-fledged next-generation sequencing tool https://t.co/Wjfkmfr5zz #biorxiv_bioinfo
 - 2019-02-23 @R_Programming: Blog Post: Simplest and an extremely well-written tutorial on Caret Package in R #rstats #DataScience https://t.co/sKs8YTMbZN https://t.co/obyJOtDr16
 - 2019-02-23 @leland_mcinnes: Really enjoying the #mlprague conference. Slides for my talk on topological approaches to unsupervised learning problems can be found here: https://t.co/gt4wdufXPK
 - 2019-02-23 @rlmcelreath: Learned a lot from this preprint by @n8_upham et al on mammal diversification. Lots here for human evolution obsessed ppl like myself. Sure I could draw primate tree from memory, but Rodentia have a lot to teach us too. https://t.co/FxldPh9Y5M https://t.co/d0lvhFGXjt
@@ -146,6 +147,5 @@ Here is the latest bag of tweets<sup>*</sup>, which covers February 2019.
 - 2019-02-24 @marcin_mbork: A shell one-liner to convert a string to a QR code and display it: https://t.co/mjwVc9P8Dh
 - 2019-02-24 @Jose_A_Alonso: What’s the right way to QuickCheck floating-point routines? ~ Brent Yorgey. https://t.co/cUpXkHXXlB #Haskell
 - 2019-02-24 @kaz_yos: "The conventional approach to observational-data analysis is to apply statistical methods that assume a designed experiment or survey has been conducted. In other words, they assume that all unmodeled sources of variation are randomized under the design." https://t.co/kVOTYM91an https://t.co/lSkKkk0sUi
-- 2019-02-24 @danilobzdok: Fantastic blog-post by @f2harrell:  https://t.co/urP9tMivT9 https://t.co/vlT8tbBX8E
+- 2019-02-24 @danilobzdok: Fantastic blog-post by @f2harrell: https://t.co/urP9tMivT9 https://t.co/vlT8tbBX8E
 - 2019-02-24 @klmr: Beamer encourages bad slide design way more than PowerPoint ever has. …And so do other text based slide authoring tools. https://t.co/RHumPoOYVr
-

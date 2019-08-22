@@ -2,10 +2,10 @@
 title: "Quantifier la vie humaine"
 date: 2018-10-03T12:16:25+02:00
 draft: false
-description: ""
-tags: ["misc"]
-categories: ["fr"]
+tags: ["misc", "fr"]
+categories: []
 ---
+
 Lu dans la [dernière édition du Monde](https://www.lemonde.fr/idees/article/2018/09/29/chiffrer-le-prix-d-une-vie-humaine_5362088_3232.html) ce week-end.
 
 <!--more-->

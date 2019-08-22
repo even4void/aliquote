@@ -2,10 +2,8 @@
 title = "Exploratory Desktop"
 date = 2018-03-26T09:04:43+01:00
 draft = false
-toc = true
-autoCollapseToc = true
-tags = ["rstats"]
-categories = ["app-review"]
+tags = ["rstats", "app", "review"]
+categories = []
 +++
 
 In this brief review, I will talk about [Exploratory Desktop](https://exploratory.io), a fresh approach to building visual analytics and interactive dashboard. If you happen to be one of those cool kids who swear by [dplyr](http://dplyr.tidyverse.org), [pipe & co](https://www.tidyverse.org), this cool app is worth a look, even if, well, [we can't do data science in a GUI](https://www.meetup.com/fr-FR/acm-chicago/events/248060005/).
@@ -22,7 +20,6 @@ When you first launch Exploratory, it will install the latest R release and arou
 
 ![The initialization step](/img/2018-01-04-17-52-24.png)
 
-
 ## Let's get started: importing some data
 
 I have tried the hard way but it was too much a pain for this short review. See the [sidenote](#sidenote).
@@ -35,14 +32,13 @@ Once the data are imported in Exploratory, you are presented with a summary view
 
 ![](/img/2018-03-20-18-43-39.png)
 
-
 ## Data munging
 
-You have probably noticed the big "+" icon on the top menu bar. "The "+" sign stands for the main "Actions" menu. It allows to create a new action on the active dataset, e.g., operate on an existing variable or apply a group-wise operation on the full dataset. Actions are recorded as (analytical) *steps* in Exploratory Desktop, and they are displayed on the right vertical panel. 
+You have probably noticed the big "+" icon on the top menu bar. "The "+" sign stands for the main "Actions" menu. It allows to create a new action on the active dataset, e.g., operate on an existing variable or apply a group-wise operation on the full dataset. Actions are recorded as (analytical) _steps_ in Exploratory Desktop, and they are displayed on the right vertical panel.
 
 ![](/img/2018-03-25-19-58-06.png)
 
-As discussed above, Exploratory is built around the dplyr package, so don't be surprised if you find a lot of commands that are used in any dplyr tutorial. Recall that dplyr is basically organized around `group_by()` (to split data by group(s)), `summarise()` (to aggregate data), `mutate()` (to transform variable inline), `filter()` (to select observations/rows in a data table), `select() `(to select variables/columns), `arrange()` (to order variables/columns).
+As discussed above, Exploratory is built around the dplyr package, so don't be surprised if you find a lot of commands that are used in any dplyr tutorial. Recall that dplyr is basically organized around `group_by()` (to split data by group(s)), `summarise()` (to aggregate data), `mutate()` (to transform variable inline), `filter()` (to select observations/rows in a data table), `select()`(to select variables/columns), `arrange()` (to order variables/columns).
 
 ![](/img/2018-03-20-18-44-17.png)
 
@@ -72,10 +68,9 @@ Beside linear regression and the GLM, there are a few other models available at 
 
 I should note that it is also possible to add custom notes to each analytical steps, and to record the results in a separate [Markdown report file](https://blog.exploratory.io/an-introduction-to-simple-markdown-editor-for-notes-a665a4a18988).
 
-
 ## Conclusion
 
-That's it! If you want to try Exploratory Desktop, no regret, just do it. I am more of an [ESS](https://ess.r-project.org) guy, so I always have a hard time staying focused in a graphical user interface that soon or later call for custom user scripts or the use of external command-line tools. Hopefully, Exploratory allows to write R scripts directly instead of relying entorely on the menu driven UI. There is good support for data import/export and database connectors are ok as long as you don't have to work with  esoteric NoSQL backends. The ability to process GeoJSON data is a plus, as well. I never understood why this app has not (yet) get the credit it surely deserves.
+That's it! If you want to try Exploratory Desktop, no regret, just do it. I am more of an [ESS](https://ess.r-project.org) guy, so I always have a hard time staying focused in a graphical user interface that soon or later call for custom user scripts or the use of external command-line tools. Hopefully, Exploratory allows to write R scripts directly instead of relying entorely on the menu driven UI. There is good support for data import/export and database connectors are ok as long as you don't have to work with esoteric NoSQL backends. The ability to process GeoJSON data is a plus, as well. I never understood why this app has not (yet) get the credit it surely deserves.
 
 ### Sidenote
 
@@ -85,7 +80,7 @@ The data used throughout this review were fetched from the [National Bureau of E
 
 Here are some benchmarks using more (compared to base R `read.csv()` function) or less (default options for [data.table](http://r-datatable.com) and [readr](http://readr.tidyverse.org) were used) efficient approaches to load the data in CSV format right into R:
 
-- `data.table::fread()` takes 56 sec; `object.size()` gives me 4512.4 Mb 
+- `data.table::fread()` takes 56 sec; `object.size()` gives me 4512.4 Mb
 - `readr::read_csv()` takes 193 sec; `object.size()` gives me 4784.1 Mb (Python `pandas.read_csv()` is a winner of a little on that one with 163 sec)
 
 In comparison, loading the Stata file in Stata is almost instantaneous. Since Exploratory also accepts database connection, we could load the data into a dedicated PostgreSQL table and work from there. There are various ways to import CVS data into SQL. One approach is to use `COPY` (and I believe it is the faster option in our case), another approach relies on Python with, e.g., `csvsql` from [csvkit](http://csvkit.readthedocs.io/en/1.0.2/) or [Pandas](https://pandas.pydata.org)'s `to_sql()` utility. Yet another way is to use [pgloader](http://pgloader.readthedocs.io/en/latest/). Pure PostgreSQL solution require that we provide field specificatons (name and storage mode) for the table. Fortunately, the NBER provides a Stata dictionary that can be used to fill out the required information, pending some minor formatting issues that were handled using Perl.

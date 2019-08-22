@@ -2,9 +2,8 @@
 title: "Transmit App"
 date: 2018-09-28T10:55:50+02:00
 draft: false
-description: ""
-tags: ["apple"]
-categories: ["app-review"]
+tags: ["apple", "app", "review"]
+categories: []
 ---
 
 [Transmit](https://www.panic.com/transmit/) has been my de facto FTP client for several years now, except when I need to quickly send files over the internet in which case I still rely on ncftp.

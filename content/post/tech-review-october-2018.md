@@ -3,8 +3,9 @@ title: "Tech Review / October 2018"
 date: 2018-10-26T18:52:27+02:00
 draft: false
 tags: ["readings", "review"]
-categories: ["tech-review"]
+categories: []
 ---
+
 Here is the (not so) monthly tech newsletter for October. Please note that other link-only items are available in my latest [bag of tweets](/post/bag-of-tweets-103).
 
 <!--more-->
@@ -25,14 +26,14 @@ I read a few interesting blog posts recently:
 - [How to automate common tasks](https://blog.stata.com/2018/10/09/how-to-automate-common-tasks/) (Stata blog), or how to deal with scripting, do-file and ado programming in Stata.
 - [Practical Peer Review](http://bactra.org/weblog/practical-peer-review.html) (Three-Toed Sloth). What else to say?
 
-    > This is the importance of grasping, or really of making part of one's academic self, two truths about peer review.
-    >
-    > 1. The quality of peer review is generally abysmal.
-    > 2. Peer reviewers are better readers of your work than almost anyone else.
+  > This is the importance of grasping, or really of making part of one's academic self, two truths about peer review.
+  >
+  > 1. The quality of peer review is generally abysmal.
+  > 2. Peer reviewers are better readers of your work than almost anyone else.
 
 - [Statistically Efficient Ways to Quantify Added Predictive Value of New Measurements](http://fharrell.com/post/addvalue/) (Frank Harrell), a really thoughful discussion of predictive modeling with discrete outcomes.
 
-I just learned about [nextflow](https://www.nextflow.io) which enables scalable and reproducible scientific workflows using software containers (actually, [Docker](http://docker.io/) and [Singularity](http://singularity.lbl.gov/)). What is interesting is that it relies on the idea of Un*x interoperability between processes via pipes (something that we also found in Elixir or R, or even [Python](https://hackernoon.com/adding-a-pipe-operator-to-python-19a3aa295642)). While I have a hard time using pipes when writing R scripts, I can imagine the benefit of this approach in various settings, especially data processing workflow.
+I just learned about [nextflow](https://www.nextflow.io) which enables scalable and reproducible scientific workflows using software containers (actually, [Docker](http://docker.io/) and [Singularity](http://singularity.lbl.gov/)). What is interesting is that it relies on the idea of Un\*x interoperability between processes via pipes (something that we also found in Elixir or R, or even [Python](https://hackernoon.com/adding-a-pipe-operator-to-python-19a3aa295642)). While I have a hard time using pipes when writing R scripts, I can imagine the benefit of this approach in various settings, especially data processing workflow.
 
 A new Vega-based implementation of density maps, this time for multiclass problems, is available on Github. The first time I saw it, this reminded me of Hadley Wickham's work on [Embedded Plots](http://vita.had.co.nz/papers/embedded-plots.html) (or maybe, [Glyph Maps](http://vita.had.co.nz/papers/glyph-maps.html)).
 

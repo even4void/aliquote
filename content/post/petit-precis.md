@@ -2,12 +2,11 @@
 title: "Petit précis à déguster"
 date: 2018-09-20T09:50:48+02:00
 draft: false
-description: ""
-tags: ["readings", "math"]
-categories: ["fr"]
+tags: ["readings", "math", "fr"]
+categories: []
 ---
 
-À force de ne lire (et écrire) que des textes en anglais, j'avais fini par oublier le mot "précis" que l'on retrouve souvent dans les ouvrages scientifiques publiés en France. Le premier dictionnaire qui me tombe sous la main, en l'occurence le [Dictionnaire culturel en langue française](http://bit.ly/2Ox5pwt), m'indique que précis vient de *pressis* qui signifie résumé. D'autres termes fréquemment retrouvés dans les publications françaises sont abrégé, mémento ou encore aide-mémoire.
+À force de ne lire (et écrire) que des textes en anglais, j'avais fini par oublier le mot "précis" que l'on retrouve souvent dans les ouvrages scientifiques publiés en France. Le premier dictionnaire qui me tombe sous la main, en l'occurence le [Dictionnaire culturel en langue française](http://bit.ly/2Ox5pwt), m'indique que précis vient de _pressis_ qui signifie résumé. D'autres termes fréquemment retrouvés dans les publications françaises sont abrégé, mémento ou encore aide-mémoire.
 
 <!--more-->
 

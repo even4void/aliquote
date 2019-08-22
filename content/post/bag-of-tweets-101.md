@@ -4,50 +4,50 @@ date: 2018-08-31T10:33:37+02:00
 draft: false
 description: ""
 tags: ["misc"]
-categories: ["tweet-bot"]
+categories: []
 ---
 
-Here is the latest bag of tweets<sup>*</sup>, which covers August 2018.
+Here is the latest bag of tweets<sup>\*</sup>, which covers August 2018.
 
 <!--more-->
 
-(*) These are interesting news that I found on Twitter and that I archive periodically. Note that I have slightly updated reporting and fetching methods so that you will get between 80 and 120 of my most recent favorites from my Twitter account (`@chlalanne`).
+(\*) These are interesting news that I found on Twitter and that I archive periodically. Note that I have slightly updated reporting and fetching methods so that you will get between 80 and 120 of my most recent favorites from my Twitter account (`@chlalanne`).
 
 - 2018-08-28 @mbostock: Recreated a @jasondavies favorite, World Airports Voronoi, using @recifs new spherical Delaunay prototype! 😍 https://t.co/mMm1PouiFk
 - 2018-08-03 @mbostock: Deriving the nearest neighbor graph from the Delaunay triangulation. https://t.co/TWzwoDn7OB
 - 2018-08-08 @mbostock: If you like this, you might also like @jasondavies’ animation of a rapidly-exploring random tree. https://t.co/mKJp3IL6cq
 - 2018-08-03 @MattDowle: My slides from #JSM2018 yesterday now on the wiki https://t.co/lJtAp8R7eK #rdatatable https://t.co/VhFNXv7TOJ
-- 2018-08-22 @rlmcelreath: Still seeing researchers rejecting Bayes bc priors make them uncomfortable.  If you don't like priors, then don't use Bayes. But you must do something to control overfitting. And that something will act a lot like a prior.  https://t.co/FAZdcDS4B7
+- 2018-08-22 @rlmcelreath: Still seeing researchers rejecting Bayes bc priors make them uncomfortable. If you don't like priors, then don't use Bayes. But you must do something to control overfitting. And that something will act a lot like a prior. https://t.co/FAZdcDS4B7
 - 2018-08-17 @rlmcelreath: Some suggestions, but others may follow up with more/better. Stan case studies: https://t.co/EqynsUsPpf Read BDA3: https://t.co/KP4k3yf83C Stan manual model examples: https://t.co/WqVs7SZ4iG Stan forums contain lots of wisdom/examples: https://t.co/tpxAB7M3Es https://t.co/yetIg1OTSe
-- 2018-08-02 @bradleyboehmke: This latest tutorial reviews the iml #rstats package by @ChristophMolnar for #MachineLearning interpretability with @h2oai. Probably the most comprehensive pkg for global and local model-agnostic methods.  https://t.co/7aZ2vW7zG1
-- 2018-08-04 @mattdesl: Some nice early pen plotter &amp; computer artworks on exhibit in the V&amp;A in London right now. Many of the pieces are from the 1960s and 70s, including work by Vera Molnar, Georg Nees, Frieder Nake and others.  Only two rooms but great to see nonetheless. https://t.co/SeOfGqlnQ0
+- 2018-08-02 @bradleyboehmke: This latest tutorial reviews the iml #rstats package by @ChristophMolnar for #MachineLearning interpretability with @h2oai. Probably the most comprehensive pkg for global and local model-agnostic methods. https://t.co/7aZ2vW7zG1
+- 2018-08-04 @mattdesl: Some nice early pen plotter &amp; computer artworks on exhibit in the V&amp;A in London right now. Many of the pieces are from the 1960s and 70s, including work by Vera Molnar, Georg Nees, Frieder Nake and others. Only two rooms but great to see nonetheless. https://t.co/SeOfGqlnQ0
 - 2018-08-30 @revodavid: With BERT (https://t.co/ln1oYJRJw0), you can run R functions from Excel's formula bar. This and other great R/Excel tips from the guide by @alycolumbus https://t.co/4l6UqIgmjV #rstats https://t.co/VurjJLEzr7
-- 2018-08-04 @_wilfredh: Exploring JVM extensions to add proper reified generics to Java! You'll be able to distinguish List&lt;Integer&gt; from List&lt;String&gt; (i.e. not just type erasure).  https://t.co/lvqTcuTgBh
-- 2018-08-07 @_wilfredh: Excellent, interesting blog post on how Rust's cargo does version resolution, why it favours the latest compatible version, and the tradeoffs in this space.  https://t.co/oCbVonAOpN
-- 2018-08-25 @_wilfredh: Common Lisp is the only language where I've seen other languages implemented on top. Today I saw an awk implementation! https://t.co/YIqdv6MPov  Racket comes close (and has great tooling) but I've not seen anything like the Python implementation on CL.
-- 2018-08-22 @_wilfredh: Integers in Emacs Lisp are now arbitrary size, not just 32/64-bit! https://t.co/eN3NhEVDOl
-- 2018-08-27 @_wilfredh: Intriguing post by @Chis_Andrei exploring the use of unit tests to provide live examples of objects to demonstrate APIs. He even shows a notebook style UI and exploring related code!  https://t.co/QsgK3ip8YU
+- 2018-08-04 @\_wilfredh: Exploring JVM extensions to add proper reified generics to Java! You'll be able to distinguish List&lt;Integer&gt; from List&lt;String&gt; (i.e. not just type erasure). https://t.co/lvqTcuTgBh
+- 2018-08-07 @\_wilfredh: Excellent, interesting blog post on how Rust's cargo does version resolution, why it favours the latest compatible version, and the tradeoffs in this space. https://t.co/oCbVonAOpN
+- 2018-08-25 @\_wilfredh: Common Lisp is the only language where I've seen other languages implemented on top. Today I saw an awk implementation! https://t.co/YIqdv6MPov Racket comes close (and has great tooling) but I've not seen anything like the Python implementation on CL.
+- 2018-08-22 @\_wilfredh: Integers in Emacs Lisp are now arbitrary size, not just 32/64-bit! https://t.co/eN3NhEVDOl
+- 2018-08-27 @\_wilfredh: Intriguing post by @Chis_Andrei exploring the use of unit tests to provide live examples of objects to demonstrate APIs. He even shows a notebook style UI and exploring related code! https://t.co/QsgK3ip8YU
 - 2018-07-31 @olebegemann: Migrating an Objective-C class to Swift: a piecemeal approach. https://t.co/vgfxdGIZrg
-- 2018-08-05 @olebegemann: This explanation of monads by way of monoids by @_logicist was new to me: “a monad is a monoid lifted into the world of type constructors.” https://t.co/HU3UZeHKqy
+- 2018-08-05 @olebegemann: This explanation of monads by way of monoids by @\_logicist was new to me: “a monad is a monoid lifted into the world of type constructors.” https://t.co/HU3UZeHKqy
 - 2018-08-09 @olebegemann: I wrote another post about migrating an Objective-C class to Swift, discussing a great suggestion from @jegnux: why not use subclassing? https://t.co/9CSlsFle01
 - 2018-08-05 @olebegemann: I had a lot of fun (and learned a bunch) following @warrenm’s Writing a Modern Metal App from Scratch tutorial. Part 1: https://t.co/YoBYT071H5, part 2: https://t.co/9kzIclV7Ba. https://t.co/oad6J6pEpI
 - 2018-08-01 @olebegemann: Even if you’re not a @pointfreeco subscriber, it’s worth taking the 40 minutes to watch their (free) “A Tour of Point-Free” episode. Lots of great ideas and inspiration for writing safer code, taking advantage of playgrounds, etc. https://t.co/VY2DGmc61J
 - 2018-08-08 @freakonometrics: "The Statistical Sleuth (3rd edition) in R" https://t.co/NXPUuGUrTO by @askdrstats
 - 2018-08-07 @freakonometrics: "Econometric Methods for Program Evaluation" https://t.co/gPwGRhW69w
 - 2018-08-10 @gigasquid: Clojure Goal Unlocked: Check out the cool Clojure web docs for @ApacheMXNet https://t.co/fdHLBsLaOY https://t.co/37ltWVAUyM
-- 2018-08-19 @gigasquid: Super cool! Clojure @ApacheMXNet for musculoskeletal disease diagnosis by @magnetcoop  https://t.co/rjlsso7r0p
+- 2018-08-19 @gigasquid: Super cool! Clojure @ApacheMXNet for musculoskeletal disease diagnosis by @magnetcoop https://t.co/rjlsso7r0p
 - 2018-08-01 @Jose_A_Alonso: Making Haskell as fast as C: Imperative programming in Haskell. ~ Henri Verroken https://t.co/ePIAKxNKLG #Haskell
 - 2018-08-15 @Jose_A_Alonso: Cube composer: A puzzle game inspired by functional programming. ~ David Peter https://t.co/8ivBt6Qrx3 #FunctionalProgramming #PureScript #Game
 - 2018-08-16 @Jose_A_Alonso: Functional programming in Python (Creating transformation pipelines in Python). ~ Dennis Vriend (@dnvriend) https://t.co/TFLJBiWyjw #FunctionalProgramming #Python
 - 2018-08-19 @Jose_A_Alonso: Eliminating unstable tests in floating-point programs. ~ L. Titolo, C.A. Muñoz, M.A. Feliú, and M.M. Moscato. https://t.co/FGpkatgkDD #FormalVerification #PVS
 - 2018-08-01 @Jose_A_Alonso: An introduction to functional programming in JavaScript. ~ Matt Banz https://t.co/sP8f9POCYQ #FuncionalProgramming #JavaScript
 - 2018-08-10 @Jose_A_Alonso: An outsider's guide to statically typed functional programming. ~ Brian Marick (@marick) https://t.co/V4pKmBVkAV #FunctionalProgramming #Elm #PureScript
-- 2018-08-01 @Jose_A_Alonso: Two years of functional programming in JavaScript: lessons learned. ~ Victor Nakoryakov (@nkrkv_) https://t.co/oL59g9XIXD #FuncionalProgramming #JavaScript
+- 2018-08-01 @Jose*A_Alonso: Two years of functional programming in JavaScript: lessons learned. ~ Victor Nakoryakov (@nkrkv*) https://t.co/oL59g9XIXD #FuncionalProgramming #JavaScript
 - 2018-08-22 @Jose_A_Alonso: The conception, evolution, and application of functional programming languages. ~ Paul Hudak https://t.co/1dNElPTWEg #FunctionalProgramming via @developerhcnews
 - 2018-08-30 @Jose_A_Alonso: Is your research software correct? ~ Mike Croucher (@walkingrandomly) https://t.co/b4AepBlprU #Programming
 - 2018-08-23 @Jose_A_Alonso: Mathematics and programming - the easy languages to learn. ~ A. Egri-Nagy https://t.co/0v236KMmbS #Math #CompSci
 - 2018-08-26 @Jose_A_Alonso: Hedwig: a fast, type safe, declarative PureScript library for building web applications. ~ Utkarsh Kukreti https://t.co/VwJyuyk3Tc #PureScript
-- 2018-08-18 @Jose_A_Alonso: Exercises and notes from the Coursera Machine Learning Course by Andrew Ng. ~ Michael Chavinda (@_mchav) https://t.co/3wyedjmWUS #FunctionalProgramming #Haskell #MachineLearning
+- 2018-08-18 @Jose_A_Alonso: Exercises and notes from the Coursera Machine Learning Course by Andrew Ng. ~ Michael Chavinda (@\_mchav) https://t.co/3wyedjmWUS #FunctionalProgramming #Haskell #MachineLearning
 - 2018-08-22 @Jose_A_Alonso: How to get into Machine Learning for a Haskeller. ~ Dennis Gosnell (@cdepillabout) https://t.co/82nObv8NZ4 #Haskell #MachineLearning
 - 2018-08-01 @Jose_A_Alonso: Pros and cons of functional programming. ~ Iren Korkishko https://t.co/HTfUTLO8ei #FuncionalProgramming
 - 2018-08-06 @Jose_A_Alonso: An invitation to functional programming (for mathematicians). ~ Sonat Süer (@sonatsuer) https://t.co/0orttW6bES #FuncionalProgramming #Haskell
@@ -61,7 +61,7 @@ Here is the latest bag of tweets<sup>*</sup>, which covers August 2018.
 - 2018-08-22 @HNTweets: Introduction to Data Mining (Second Edition): https://t.co/ap52NY0HMz Comments: https://t.co/N696Zq05KK
 - 2018-08-25 @HNTweets: MIT 6.875 – Cryptography and Cryptanalysis – Spring 2018 Videos: https://t.co/Ph0ikD8fXd Comments: https://t.co/WFSeB0ipof
 - 2018-08-18 @HNTweets: Never patterns, exhaustive matching, and uninhabited types in Rust: https://t.co/o7oQhHCLux Comments: https://t.co/XwWdyxla7X
-- 2018-08-30 @HNTweets: The Unreasonable Effectiveness  of Quasirandom Sequences: https://t.co/7C6pPNeAn4 Comments: https://t.co/iUY8RuEH8c
+- 2018-08-30 @HNTweets: The Unreasonable Effectiveness of Quasirandom Sequences: https://t.co/7C6pPNeAn4 Comments: https://t.co/iUY8RuEH8c
 - 2018-08-28 @HNTweets: An introduction to the Julia language, part 1: https://t.co/7PuebZ17KR Comments: https://t.co/s1I3doxZzc
 - 2018-08-05 @volkuleshov: Christopher Bishop is publishing a new textbook! https://t.co/Zhv5t8buPN
 - 2018-08-17 @newsycombinator: Schism: A library of CRDT implementations of Clojure’s core data types https://t.co/olTPYWQTUp
@@ -87,29 +87,29 @@ Here is the latest bag of tweets<sup>*</sup>, which covers August 2018.
 - 2018-08-07 @newsycombinator: Where Vim Came From https://t.co/ZCjtQhdobL
 - 2018-08-15 @newsycombinator: Markov Chains Explained Visually (2014) https://t.co/IIRa8qMYsF
 - 2018-08-22 @lemire: Avoid lexicographical comparisons when testing for string equality https://t.co/FzuDhRkni1 cc @stolee
-- 2018-08-15 @lemire: Fast strongly universal 64-bit hashing everywhere!  https://t.co/5ykEPXkp7s #Java
+- 2018-08-15 @lemire: Fast strongly universal 64-bit hashing everywhere! https://t.co/5ykEPXkp7s #Java
 - 2018-08-27 @mathematicsprof: Here's a great tutorial on the real numbers from the Australian Mathematical Science Institute. https://t.co/etUrlVu7gD
-- 2018-08-20 @mathematicsprof: A great book, GEOMETRIC PROBABILITY, by the late American statistician Herbert Solomon.  https://t.co/4kN4jfhNIT
+- 2018-08-20 @mathematicsprof: A great book, GEOMETRIC PROBABILITY, by the late American statistician Herbert Solomon. https://t.co/4kN4jfhNIT
 - 2018-08-17 @zim2918: https://t.co/1HiC2RZf0o
 - 2018-08-16 @zim2918: Dark lines https://t.co/31sdEtVjkf
 - 2018-08-17 @zim2918: Black veil https://t.co/HF8o0zM09F
 - 2018-08-30 @zim2918: https://t.co/YRVllZKZk8
 - 2018-08-12 @zim2918: Dreaming together https://t.co/UWB9hpx0HQ
 - 2018-08-28 @zim2918: https://t.co/zuFu0VsxVl
-- 2018-08-07 @eddelbuettel: Gem of an answer by @MarkKlik about why his fst package outperforms simpler C/C++ approaches to R object to/from disk serialization (by some margin).   tl;dr:  chunk size matters!    https://t.co/7MHZQLin2c  #rstat #rcpp #fst
+- 2018-08-07 @eddelbuettel: Gem of an answer by @MarkKlik about why his fst package outperforms simpler C/C++ approaches to R object to/from disk serialization (by some margin). tl;dr: chunk size matters! https://t.co/7MHZQLin2c #rstat #rcpp #fst
 - 2018-08-08 @jakevdp: One of my favorite Python 3 builtins is functools.lru_cache(): with a simple decorator, repeated function calls become O(1) table lookups. https://t.co/ORphGWvkCz https://t.co/NmYVIxO9mE
-- 2018-08-10 @RainerJoswig: Long read about the interactive programming experience with #LISP, Erik Sandewall, 1978, PDF. It covers: interactive development, managed source code, residential structure editing, DSLs,  programmable software, various programming techniques, ...  https://t.co/qCMaOnfe0v
-- 2018-08-24 @joelgrus: slides for my "I Don't Like Notebooks" #JupyterCon talk:  https://t.co/30peBFwTbv
+- 2018-08-10 @RainerJoswig: Long read about the interactive programming experience with #LISP, Erik Sandewall, 1978, PDF. It covers: interactive development, managed source code, residential structure editing, DSLs, programmable software, various programming techniques, ... https://t.co/qCMaOnfe0v
+- 2018-08-24 @joelgrus: slides for my "I Don't Like Notebooks" #JupyterCon talk: https://t.co/30peBFwTbv
 - 2018-08-21 @mblum_g: #arXiv paper comparing 13 supervised #MachineLearning classification methods on 165 datasets shows the importance of hyperparameter tuning, which improves an algorithm’s accuracy by 3-5% (seems moderate to me). See https://t.co/We1oBQHY4k and https://t.co/GwWlOAL3KZ #in 2/2 https://t.co/L4F2yIdjLc
-- 2018-08-28 @iamtrask: This is the most extensive list of "From Scratch Machine Learning" I've ever seen - this is a golden resource if your learn like I do (by building things from scratch).  https://t.co/LcoPAQBULv
-- 2018-08-02 @iamtrask: Just came across an interesting theory on why Deep Learning generalizes so well, recently published.  https://t.co/YAeehnbKye  Background: https://t.co/0MYVhzeMXa
-- 2018-08-24 @iamtrask: I'm very excited to say that Grokking Deep Learning is finished!!!  5 new chapters (over 70 pages) will be sent out via MEAP very soon (~next week). Until then, you can check out the code for these chapters at the Github!!!   https://t.co/3KEfLNjvj5
-- 2018-08-28 @ken_rothman: @TimothyLash @TimothyLash on the connection between reproducibility problems and the (unhealthy) reliance on significance testing for interpretation: "Without discarding the culture of NHST... all other strategies for improving reproducibility will yield  marginal gains at best. https://t.co/OtvAcy2EMC
+- 2018-08-28 @iamtrask: This is the most extensive list of "From Scratch Machine Learning" I've ever seen - this is a golden resource if your learn like I do (by building things from scratch). https://t.co/LcoPAQBULv
+- 2018-08-02 @iamtrask: Just came across an interesting theory on why Deep Learning generalizes so well, recently published. https://t.co/YAeehnbKye Background: https://t.co/0MYVhzeMXa
+- 2018-08-24 @iamtrask: I'm very excited to say that Grokking Deep Learning is finished!!! 5 new chapters (over 70 pages) will be sent out via MEAP very soon (~next week). Until then, you can check out the code for these chapters at the Github!!! https://t.co/3KEfLNjvj5
+- 2018-08-28 @ken_rothman: @TimothyLash @TimothyLash on the connection between reproducibility problems and the (unhealthy) reliance on significance testing for interpretation: "Without discarding the culture of NHST... all other strategies for improving reproducibility will yield marginal gains at best. https://t.co/OtvAcy2EMC
 - 2018-08-27 @CompSciFact: Anatomy of a posit number, alternative to IEEE floating point https://t.co/SMcQDh3Uxu
 - 2018-08-19 @CompSciFact: (An ((Even Better) Lisp) Interpreter (in Python)) https://t.co/ZY2BpvdclN
 - 2018-08-30 @CompSciFact: Probability of secure hash function collisions https://t.co/N4CD1XDkso
 - 2018-08-10 @CompSciFact: Functional Bits: Lambda Calculus-based Algorithmic Information Theory https://t.co/Mlr1kSI3l0 [pdf]
-- 2018-08-21 @CompSciFact: In theory, you can program anything in lambda calculus. But in practice, it might take a LOT of code to do the simplest task. Example: fizz buzz in lambda calculus.  https://t.co/0dytWjB4dm
+- 2018-08-21 @CompSciFact: In theory, you can program anything in lambda calculus. But in practice, it might take a LOT of code to do the simplest task. Example: fizz buzz in lambda calculus. https://t.co/0dytWjB4dm
 - 2018-08-30 @CompSciFact: Large collection of bit twiddling hacks https://t.co/0gqg3TZ9hB
 - 2018-08-09 @CompSciFact: Enormous book on random number generation available for download https://t.co/XtLuBOGzGp
 - 2018-08-20 @CompSciFact: Clover: 4-bit Quantized Linear Algebra https://t.co/qqtQvyoLST
@@ -117,29 +117,29 @@ Here is the latest bag of tweets<sup>*</sup>, which covers August 2018.
 - 2018-08-16 @jedisct1: Eno - A modern plaintext data format, designed from the ground up for file-based content - simple, powerful and elegant https://t.co/ts5u4Oou5d
 - 2018-08-04 @jedisct1: Anatomy of a Random Number Generator https://t.co/YOP0QmBfS1
 - 2018-08-23 @jedisct1: cryptagraph is a tool for linear and differential cryptanalysis of block ciphers https://t.co/yDKbTCC8lA paper: https://t.co/sjVU7DRepH
-- 2018-08-01 @GaelVaroquaux: Sprint on scikit-learn, in Paris and Austin https://t.co/uMgNFbZ5YL  A small report, and some illustrations of the development process #python #pydate #scipy2018
-- 2018-08-29 @GaelVaroquaux: Notes for my @EuroSciPy tutorial on interpreting ML models: https://t.co/g9HmjjDQ1a  Compared to #PyDataLDN : more didactic, added cross-validation with non iid data.
+- 2018-08-01 @GaelVaroquaux: Sprint on scikit-learn, in Paris and Austin https://t.co/uMgNFbZ5YL A small report, and some illustrations of the development process #python #pydate #scipy2018
+- 2018-08-29 @GaelVaroquaux: Notes for my @EuroSciPy tutorial on interpreting ML models: https://t.co/g9HmjjDQ1a Compared to #PyDataLDN : more didactic, added cross-validation with non iid data.
 - 2018-08-04 @bodil: I've generally worried that SAT solvers were bulky, inconvenient and poorly integrated af, and usually not open source (and expensive at that). I'm really glad to see things like MiniSAT https://t.co/NW2Yd2jCAQ happening - now let's do one with great docs too! https://t.co/Mb6nL3TUr2
 - 2018-08-30 @bodil: It's still a hideous lump of black plastic like all its predecessors, but other than that, these are some seriously sweet specs. https://t.co/eeCmPATSQX
 - 2018-08-02 @bodil: Implementing it in Rust turned out to be considerably less awful than I'd expected. Everything I needed was already on https://t.co/nVChiqp9AG, the ecosystem is proving to be remarkably mature already. https://t.co/B18im1kDLX
-- 2018-08-30 @DuckDuckGo: Google is tracking you probably more than you think.   Our Founder &amp; CEO, @yegg, details the depths of their tracking, why they're doing it, &amp; how to reduce your Google footprint: https://t.co/ncP0TWczm6
+- 2018-08-30 @DuckDuckGo: Google is tracking you probably more than you think. Our Founder &amp; CEO, @yegg, details the depths of their tracking, why they're doing it, &amp; how to reduce your Google footprint: https://t.co/ncP0TWczm6
 - 2018-08-30 @ztellman: I wrote about the stupid problem I've been wrestling with all summer, and the small breakthrough I had at the end https://t.co/JkW9QanLPt
 - 2018-08-30 @fchollet: Max (@maxpumperla) has authored a book about using deep learning to play Go -- the code is open-source, and it uses Keras. Check it out: https://t.co/tiHGl1J4Fk
 - 2018-08-28 @f2harrell: New guest blog article by my colleague @DrewLevy on the importance of predictive performance metric choices when evaluating #MachineLearning algorithms in medicine: https://t.co/7zyBUprju2
-- 2018-08-19 @f2harrell: Statistical graphics resource suggestion of the day: I just stumbled upon the online #rstats plotly book.  Terrific methods for graph construction, use of html widgets, linking graphs, and more: https://t.co/KVnnZn6AgQ .  Highly recommend plotly graphics model for html reports.
+- 2018-08-19 @f2harrell: Statistical graphics resource suggestion of the day: I just stumbled upon the online #rstats plotly book. Terrific methods for graph construction, use of html widgets, linking graphs, and more: https://t.co/KVnnZn6AgQ . Highly recommend plotly graphics model for html reports.
 - 2018-08-29 @f2harrell: Excellent article by @ESteyerberg on why split-sample validation with small samples is not recommended: https://t.co/atrXbCRhcp
 - 2018-08-24 @f2harrell: Extremely important methods comparison: multiple different analyses of the same dataset https://t.co/zwRe80BvSq
 - 2018-08-29 @mblondel_ml: Duality between Dykstra’s algorithm and coordinate descent https://t.co/oJufSUz7DG Well known in optimization spheres but nice to have a (very well written) paper introducing this to the ML community.
 - 2018-08-28 @RosaCtrl: Why Functional Programming Matters by John Hughes explains why laziness is such a big deal and is quite accessible. You can download it here https://t.co/qCRN55SBhU https://t.co/eCNH1brczL
 - 2018-08-28 @AlgebraFact: Mathematical art based on algebraic surfaces https://t.co/Xl5jQJ74ZC
-- 2018-08-28 @AtomEditor: Atom 1.30 is out, with embedded languages supported in Tree Sitter and  the ability to check out pull requests in the GitHub package. Atom 1.31 Beta brings many community improvements to Tree View and migrates to GitHub's internal metrics pipeline. More at https://t.co/Oul6kYkULK https://t.co/NgcempCRc6
+- 2018-08-28 @AtomEditor: Atom 1.30 is out, with embedded languages supported in Tree Sitter and the ability to check out pull requests in the GitHub package. Atom 1.31 Beta brings many community improvements to Tree View and migrates to GitHub's internal metrics pipeline. More at https://t.co/Oul6kYkULK https://t.co/NgcempCRc6
 - 2018-08-28 @UnixToolTip: Hints for writing Unix tools https://t.co/qvm9q6GcSZ
 - 2018-08-28 @n_disorder: https://t.co/AsKEZ5GWSA
-- 2018-08-05 @carlcarrie: PANDAS for Python Deep Dive ebook  https://t.co/PrzpHcgokN  Really large Pdf (2600 pages) https://t.co/D3pss3DXEh
-- 2018-08-25 @carlcarrie: The Hitchiker’s Guide to Blockchains paper - Consensus Algorithms, extent of decentralization...     https://t.co/azHYIaXHnW https://t.co/7s6OgQ5xwn
-- 2018-08-14 @carlcarrie: Python Optimization and AI ebook   https://t.co/gK3EoqY3dR https://t.co/fr0WqUVdke
-- 2018-08-28 @carlcarrie: Ridge Regression applied to predicting mid prices of stock limit order books (and modeled using a ITCH #HFT data set)  https://t.co/F8orl8E8Lt  #ml paper (2017) https://t.co/9iYxobLL9c
-- 2018-08-28 @kaz_yos: A note on pseudo‐observations and left‐truncation  Mia K. Grand  Hein Putter Arthur Allignol  Per K. Andersen  https://t.co/Fhi0vp775z
+- 2018-08-05 @carlcarrie: PANDAS for Python Deep Dive ebook https://t.co/PrzpHcgokN Really large Pdf (2600 pages) https://t.co/D3pss3DXEh
+- 2018-08-25 @carlcarrie: The Hitchiker’s Guide to Blockchains paper - Consensus Algorithms, extent of decentralization... https://t.co/azHYIaXHnW https://t.co/7s6OgQ5xwn
+- 2018-08-14 @carlcarrie: Python Optimization and AI ebook https://t.co/gK3EoqY3dR https://t.co/fr0WqUVdke
+- 2018-08-28 @carlcarrie: Ridge Regression applied to predicting mid prices of stock limit order books (and modeled using a ITCH #HFT data set) https://t.co/F8orl8E8Lt #ml paper (2017) https://t.co/9iYxobLL9c
+- 2018-08-28 @kaz_yos: A note on pseudo‐observations and left‐truncation Mia K. Grand Hein Putter Arthur Allignol Per K. Andersen https://t.co/Fhi0vp775z
 - 2018-08-28 @julialang_news: MIT-created programming language Julia 1.0 debuts https://t.co/vccz5tIdCo #hackernews
 - 2018-08-02 @bitfield: “I invite you to come along with me on an exciting journey and spend the next ten minutes of your life learning about a piece of software nobody has used in the last decade.” https://t.co/7gAfwRyMeZ
 - 2018-08-27 @bitfield: “A design goal of Kakoune is to beat Vim at its own game, while providing a cleaner editing model. It’s possible to have text editing that is interactive, predictable, and fast at the same time.” The quest for a better code editor https://t.co/kGz0ssqItM https://t.co/43G9v1dPvF
@@ -148,57 +148,57 @@ Here is the latest bag of tweets<sup>*</sup>, which covers August 2018.
 - 2018-08-27 @stevelosh: It took a bunch of coast to coast flights and some weekends and I'm still not happy, but this is as done as it's ever gonna be: 10 kilowords on how and why you can and should learn Common Lisp: https://t.co/uMCxyfhZad
 - 2018-08-08 @DataSciFact: Estimating the chances of something that hasn't happened yet https://t.co/4eol0011kx
 - 2018-08-27 @DataSciFact: Computing mean, variance, skewness, and kurtosis in one pass through the data https://t.co/DqlbTXWtAg
-- 2018-08-26 @lisyarus: (1/n) A tiny thread about the function smoothstep(x) = 3 x^2 - 2 x^3, commonly used as a smooth alternative to linear interpolation.  It is the unique 3rd order polynomial satisfying f(0)=0, f(1)=1, f'(0)=f'(1)=0. Problems of this sort are called Hermite interpolation.
+- 2018-08-26 @lisyarus: (1/n) A tiny thread about the function smoothstep(x) = 3 x^2 - 2 x^3, commonly used as a smooth alternative to linear interpolation. It is the unique 3rd order polynomial satisfying f(0)=0, f(1)=1, f'(0)=f'(1)=0. Problems of this sort are called Hermite interpolation.
 - 2018-08-26 @binitamshah: Let's Build a Simple Database : Writing a sqlite clone from scratch in C : https://t.co/uhJZEv8N9p
 - 2018-08-25 @vamchale: https://t.co/yBcPTIoWCK
 - 2018-08-25 @spchamp: Some Lectures on Programming Languages - Kathleen Fisher, of Stanford U. and Tufts Univeristy (Medford, MA) https://t.co/v4E8IekLPS TFW wow. OK #Friday. #Haskell (??)
 - 2018-08-24 @djnavarro: Github gist: https://t.co/wa9c9IJMZt
 - 2018-08-24 @cmogle: For an infinitely better Twitter (timeline free from algorithmic interference) Bookmark this: filter:follows -filter:replies. https://t.co/E2gklce6yp.
-- 2018-08-24 @mathisonian: 🎼 BEAT BASICS  A new @idyll_lang audio interactive by UW undergrad Megan Vo. Get a feel for alternative musical time signatures 3/4 and 6/8 using rhythm wheels.   https://t.co/dZqf56xAk4 https://t.co/ayuIbOMczt
+- 2018-08-24 @mathisonian: 🎼 BEAT BASICS A new @idyll_lang audio interactive by UW undergrad Megan Vo. Get a feel for alternative musical time signatures 3/4 and 6/8 using rhythm wheels. https://t.co/dZqf56xAk4 https://t.co/ayuIbOMczt
 - 2018-08-24 @Matthieu_Bizien: Just discovered UMAP, which looks like significantly better than TSNE in terms of speed and usability https://t.co/oCehnDsikv
-- 2018-08-24 @ellis2013nz: Simulating complex #survey data with #rstats, and estimating relative risks.  Ignoring the sampling structure will give confidence intervals with below-advertised coverage.  But there's not much to choose between quasipoisson and quasibinomial families. https://t.co/ggwBz64Rvr https://t.co/c0XDRJtolb
-- 2018-08-23 @AllenDowney: I was reminded recently about Euclidea, which is an amazing online learning tool/game for developing geometric thinking.  https://t.co/DRHAZSQTVL
+- 2018-08-24 @ellis2013nz: Simulating complex #survey data with #rstats, and estimating relative risks. Ignoring the sampling structure will give confidence intervals with below-advertised coverage. But there's not much to choose between quasipoisson and quasibinomial families. https://t.co/ggwBz64Rvr https://t.co/c0XDRJtolb
+- 2018-08-23 @AllenDowney: I was reminded recently about Euclidea, which is an amazing online learning tool/game for developing geometric thinking. https://t.co/DRHAZSQTVL
 - 2018-08-23 @phil_eaton: How Clojure is compiled https://t.co/z5wa3019pm
-- 2018-08-23 @carnby: ¿Quieres cargar la CASEN 2017 en Python? Puedes cargar el archivo de SPSS (el .sav) con esta biblioteca: https://t.co/88bhfzY6p3  ¿Hasta cuándo van a seguir disponibilizando datos en plataformas cerradas?
-- 2018-08-23 @trebor74hr: https://t.co/JWgmZaJC5C source text for #book Computer Networks: A Systems Approach, available under Creative Commons  license. #devops
-- 2018-08-22 @trebor74hr: https://t.co/hY4O5MQj8V  Adding a pipe operator to #Python
+- 2018-08-23 @carnby: ¿Quieres cargar la CASEN 2017 en Python? Puedes cargar el archivo de SPSS (el .sav) con esta biblioteca: https://t.co/88bhfzY6p3 ¿Hasta cuándo van a seguir disponibilizando datos en plataformas cerradas?
+- 2018-08-23 @trebor74hr: https://t.co/JWgmZaJC5C source text for #book Computer Networks: A Systems Approach, available under Creative Commons license. #devops
+- 2018-08-22 @trebor74hr: https://t.co/hY4O5MQj8V Adding a pipe operator to #Python
 - 2018-08-16 @trebor74hr: Arctic is a high performance datastore for numeric data #python. It supports Pandas, numpy arrays and pickled objects out-of-the-box, with pluggable support for other data types and optional versioning. #mongodb https://t.co/nDfTik5mS3
-- 2018-08-09 @trebor74hr: https://t.co/UdMJPx43or Tweetable #Python - 128 puny python programs which pack a punch.  programs in this books fits in a single tweet (280 chars or less) and does something useful, powerful or fun.
-- 2018-08-23 @thorstenball: But, oh my holy recursion, someone actually updated the code and made it work with modern Scheme implementations (including Guile!)! Look at this:   https://t.co/yJjyC51UxB  There's even a Dockerfile!  Kinda related: is it okay to open a issue with "I love you! Thank you" in it?
-- 2018-08-23 @MMz_: I’m on a holiday, so I wrote a little maze generator ... On my phone ¯\_(ツ)_/¯ https://t.co/ERjudtLVSE #clojure #repl /cc @mfikes https://t.co/OkHQSUWoTX
-- 2018-08-22 @fommil: Functional Programming for Mortals is 100% complete!  I wrote the book because I wanted to read it. Therefore, I've made it "pay what you want".  Please retweet and spread the word! #fpmortals #scala #scalaz  Physical prints coming soon. Report bugs.  https://t.co/hDk8JYV39m
+- 2018-08-09 @trebor74hr: https://t.co/UdMJPx43or Tweetable #Python - 128 puny python programs which pack a punch. programs in this books fits in a single tweet (280 chars or less) and does something useful, powerful or fun.
+- 2018-08-23 @thorstenball: But, oh my holy recursion, someone actually updated the code and made it work with modern Scheme implementations (including Guile!)! Look at this: https://t.co/yJjyC51UxB There's even a Dockerfile! Kinda related: is it okay to open a issue with "I love you! Thank you" in it?
+- 2018-08-23 @MMz*: I’m on a holiday, so I wrote a little maze generator ... On my phone ¯\_(ツ)*/¯ https://t.co/ERjudtLVSE #clojure #repl /cc @mfikes https://t.co/OkHQSUWoTX
+- 2018-08-22 @fommil: Functional Programming for Mortals is 100% complete! I wrote the book because I wanted to read it. Therefore, I've made it "pay what you want". Please retweet and spread the word! #fpmortals #scala #scalaz Physical prints coming soon. Report bugs. https://t.co/hDk8JYV39m
 - 2018-08-22 @paulblaser: "What to Consider When Choosing Colors for Data Visualization" https://t.co/0TTmEzAwct
 - 2018-08-22 @daringfireball: Stephen Hackett’s Aqua Screenshot Library: https://t.co/uFmyaZbcHe
 - 2018-08-22 @RobCalver5: The Handbook of Approximate #Bayesian Computation co-edited by @ABC_Research just published through @CRC_MathStats. The editors did an amazing job; the book has 650+ pages of fantastic content across 21 chapters with 45+ contributors! https://t.co/pskvQhDrgT https://t.co/2Awo6ahP3y
-- 2018-08-21 @daniel_bilar: from @jhnhw  "for each i up to n, find prime factors of i. For each i, make binary vector w π(n) columns, 1=prime factor present, 0=absent &amp; stack into matrix.  Lay out w UMAP &amp; cosine similarity. https://t.co/WW84pWRJQE Filtering numbers by parity: even is green; odd is orange." https://t.co/50t4fsVbj4
-- 2018-08-14 @ledell: Looking for a tool for multidimensional outlier detection in #rstats?  HDoutliers R package by my @h2oai colleague Leland Wilkinson is a good solution. https://t.co/cfnCuSvlwl
-- 2018-08-21 @ledell: I wrote up a post on the "Different Flavors of AutoML"🍨 about the various types of #AutoML strategies/tools and what they're good for: https://t.co/wa7Q4o6xfx  #MachineLearning @h2oai https://t.co/eYQGZFENiU
-- 2018-08-21 @introspection: Looking at #evolution through the lens of dynamical systems and topology, it becomes easier to understand why DNA is not a program and why it’s actually a good news.  Reading old classics is so refreshing theoretically!  From: The geometry of evolution, Michael Conrad (1990) https://t.co/9YKbIn9UyW
+- 2018-08-21 @daniel_bilar: from @jhnhw "for each i up to n, find prime factors of i. For each i, make binary vector w π(n) columns, 1=prime factor present, 0=absent &amp; stack into matrix. Lay out w UMAP &amp; cosine similarity. https://t.co/WW84pWRJQE Filtering numbers by parity: even is green; odd is orange." https://t.co/50t4fsVbj4
+- 2018-08-14 @ledell: Looking for a tool for multidimensional outlier detection in #rstats? HDoutliers R package by my @h2oai colleague Leland Wilkinson is a good solution. https://t.co/cfnCuSvlwl
+- 2018-08-21 @ledell: I wrote up a post on the "Different Flavors of AutoML"🍨 about the various types of #AutoML strategies/tools and what they're good for: https://t.co/wa7Q4o6xfx #MachineLearning @h2oai https://t.co/eYQGZFENiU
+- 2018-08-21 @introspection: Looking at #evolution through the lens of dynamical systems and topology, it becomes easier to understand why DNA is not a program and why it’s actually a good news. Reading old classics is so refreshing theoretically! From: The geometry of evolution, Michael Conrad (1990) https://t.co/9YKbIn9UyW
 - 2018-08-21 @nhigham: My talk on Tricks and Tips in Numerical Computing - https://t.co/Z3y4sa8SrY
-- 2018-08-21 @pixelincolor: ᴊᴀᴘᴀɴ ʙʏ @lennsan_ https://t.co/jfyWQw4sNB
+- 2018-08-21 @pixelincolor: ᴊᴀᴘᴀɴ ʙʏ @lennsan\_ https://t.co/jfyWQw4sNB
 - 2018-08-21 @bbatsov: I cannot express how happy I am that finally have https://t.co/Wd144lqYLF in the Clojure ecosystem. Publishing API docs was a ridiculously complex and manual process and I'm happy that @martinklepsch finally solved this. All Clojure projects deserve beautiful API docs!
 - 2018-08-20 @BartoszMilewski: A new blog applying category theory to Haskell programming: https://t.co/vt8shGLjHu
 - 2018-08-05 @BartoszMilewski: How to make boring arithmetics exciting again: https://t.co/SfKQMTLdUu https://t.co/NGyi5xMaHh
 - 2018-08-20 @plexus: Super useful thing I've learned recently: if Emacs is locking up spinning at 100%, send it a SIGUSR2 event, and it'll interrupt what it was doing. `kill -USR2 $pid` or use F9 in htop.
 - 2018-08-20 @StephenPiment: Haskell from Scratch: A Beginner's Guide to #Haskell by @james_OWA Official opening. https://t.co/rTHLZCX1l8
-- 2018-08-20 @participha: Our book  Linguistic Bodies. The Continuity between Life and Language  is almost ready for the world!   Find out more @mitpress  https://t.co/UM33hjGvLO  #Enaction #Language #ParticipatorySenseMaking
+- 2018-08-20 @participha: Our book Linguistic Bodies. The Continuity between Life and Language is almost ready for the world! Find out more @mitpress https://t.co/UM33hjGvLO #Enaction #Language #ParticipatorySenseMaking
 - 2018-08-05 @tmcw: multiwriter dat, when it lands, will likely fix the key problems i encountered in last year's post about decentralizing a website with dat. the name isn't catchy but it's more or less the final puzzle piece to usefulness. https://t.co/qI4jd71g8E https://t.co/saIiSv0FX0
 - 2018-08-20 @tmcw: trying to nail those sweet, sweet font tweaks that make the 'san francisco' font shine via @apple’s precise and confusing instructions. has anyone mastered this? https://t.co/4lWeHzPIA2
 - 2018-08-10 @EmacsReddit: C++ Integration: rtags vs emacs-cquery vs irony-mode https://t.co/3nH5XJjjrb
 - 2018-08-19 @EmacsReddit: TIP: How do I synchronize my org files with my devices https://t.co/5ZYgDMzlNo
 - 2018-08-19 @MNoorFawi: Exploring Julia programming language in doing Data Science and Machine Learning . https://t.co/FlO710TlyB
 - 2018-08-19 @postgresql: Did you know that you can create your own aggregate functions (e.g. "avg") in @postgresql? @timClicks demonstrates creating custom aggregates for calculating geometric and harmonic means: https://t.co/9hAfS7L16t
-- 2018-08-19 @thebyrdlab: If you learn through seeing things, and if you're interested in probability &amp; statistics, enjoy this wonderful site  https://t.co/TbCRxP9fue
-- 2018-08-18 @dakami: (4**n+1)**n%4**n**2/n&amp;2**(2*n*n+n)/-~2**n&lt;1  Python2 Primality testing in 43 bytes.  From https://t.co/dBCecZGa7O and https://t.co/eCYpRlpvVb
-- 2018-08-18 @pstuffa: Thirty days / thirty #observablehq notebooks done! Thanks @observablehq for making such an awesome programming medium! Of course, I had to make an notebook about my thirty observable posts. I'm meta like that.   https://t.co/5u2vhq7Wb2
+- 2018-08-19 @thebyrdlab: If you learn through seeing things, and if you're interested in probability &amp; statistics, enjoy this wonderful site https://t.co/TbCRxP9fue
+- 2018-08-18 @dakami: (4**n+1)**n%4**n**2/n&amp;2**(2*n*n+n)/-~2**n&lt;1 Python2 Primality testing in 43 bytes. From https://t.co/dBCecZGa7O and https://t.co/eCYpRlpvVb
+- 2018-08-18 @pstuffa: Thirty days / thirty #observablehq notebooks done! Thanks @observablehq for making such an awesome programming medium! Of course, I had to make an notebook about my thirty observable posts. I'm meta like that. https://t.co/5u2vhq7Wb2
 - 2018-08-18 @BenSadeghi: Think Julia: How to Think Like a Computer Scientist https://t.co/89d8ClyC2Q #JuliaLang #eBook
 - 2018-08-17 @irr: In-depth: Functional programming in C++ https://t.co/e5WXYzlMEO
 - 2018-08-17 @eatingsecurity: USENIX is open access. If, like me, you couldn’t make it this year to the Security Symposium, you can still read all the papers and watch videos. https://t.co/AacGsDriI5 https://t.co/7yN67oRcQj
 - 2018-08-17 @JuliaHaaf: So, .@stephenrho and I gave this workshop on cognitive process models last week. We focus on multinomial processing tree and signal detection theory models. Both Bayesian and ML. Here are the materials in case someone is interested: https://t.co/WHeWNgYZHn
 - 2018-08-17 @AchimZeileis: sandwich 2.5-0 for #rstats out on CRAN https://t.co/EZTqZopFrg with enhanced object-oriented clustered covariances (for lm, glm, survreg, polr, hurdle, zeroinfl, betareg, ...) Reviews and bug reports improved both pkg &amp; manuscript/vignette. Thanks to all who provided feedback! https://t.co/prGF9qPJ5b
 - 2018-08-17 @gappy3000: "Extended Comparisons of Best Subset Selection, Forward Stepwise Selection, and the Lasso" tl;dr: use relaxed lasso (and probably elastic net) https://t.co/Vx86cZGEvi
-- 2018-08-16 @uwdata: CONGRATS @domoritz and co-authors on the InfoVis 2018 Best Paper Award!! 🏆📈  Formalizing Visualization Design Knowledge as Constraints: Actionable and Extensible Models in Draco: shareable design guidelines, formal reasoning, vis recommendation &amp; more! https://t.co/mHcuqZ1NIn
-- 2018-08-16 @ArtemYarulin: After almost two years of not touching Clojure I came back to it with an idea of using Kotlin as a main and an only development language, but use Clojure as a connected REPL for playing with Kotlin code. Surprisingly good pair   https://t.co/SFaP1NCMGS
+- 2018-08-16 @uwdata: CONGRATS @domoritz and co-authors on the InfoVis 2018 Best Paper Award!! 🏆📈 Formalizing Visualization Design Knowledge as Constraints: Actionable and Extensible Models in Draco: shareable design guidelines, formal reasoning, vis recommendation &amp; more! https://t.co/mHcuqZ1NIn
+- 2018-08-16 @ArtemYarulin: After almost two years of not touching Clojure I came back to it with an idea of using Kotlin as a main and an only development language, but use Clojure as a connected REPL for playing with Kotlin code. Surprisingly good pair https://t.co/SFaP1NCMGS
 - 2018-08-16 @benhamner: Nice overview from @netflix on how they built an internal platform around their use for Jupyter notebooks. This resonates with the direction we’re building out with @kaggle kernels https://t.co/nDOGxsqBSq
 - 2018-08-02 @benhamner: Publish your dataset on Kaggle, and our new Kaggle Kerneler bot will write an automatic exploratory analysis on it for you in Python, showing you how to load and get started on the data https://t.co/d3qwg4Z1OB https://t.co/gLyd7qdlxV
 - 2018-08-14 @benhamner: Extensive example using Prophet to forecast time series (in this case, item-level demand forecasting, which has complex seasonal and holiday effects) https://t.co/E4hV9UL6UM
@@ -206,27 +206,27 @@ Here is the latest bag of tweets<sup>*</sup>, which covers August 2018.
 - 2018-08-16 @arxiv_org: VizML: A Machine Learning Approach to Visualization Recommendation. https://t.co/CHmBjMPtQc https://t.co/gLR5XZsPBT
 - 2018-08-16 @Michielstock: A programming language for machine learning. https://t.co/UlOfrSRkBo
 - 2018-08-15 @lobsters: Typed Clojure in Theory and Practice https://t.co/PLrfcRHsTZ #pdf #clojure #formalmethods #plt https://t.co/oDq0qY67da
-- 2018-08-15 @c_valenzuelab: This is a quote from Borges, he is talking about a "thinking machine (not a machine that was able to think, but a machine that could be used for thinking)" that was invented by Raimundo Lullio, a thirteenth century  thinker. https://t.co/HJA6aQ9aMK
+- 2018-08-15 @c_valenzuelab: This is a quote from Borges, he is talking about a "thinking machine (not a machine that was able to think, but a machine that could be used for thinking)" that was invented by Raimundo Lullio, a thirteenth century thinker. https://t.co/HJA6aQ9aMK
 - 2018-08-15 @maartenzam: Cartography Playground, ‘a simple and interactive website for explaining cartographic algorithms, problems and other matters’ https://t.co/EnQjK16hya By Moritz Brunnengräber, via @flowingdata ‘ https://t.co/4qn8FLtAzs
-- 2018-08-14 @markcmarino: Gutenberg poetry project by @aparrish  #ELO18 https://t.co/rk8QCvvPi0
+- 2018-08-14 @markcmarino: Gutenberg poetry project by @aparrish #ELO18 https://t.co/rk8QCvvPi0
 - 2018-08-14 @ProbFact: Richard Stanley's 'Twelvefold Way' for combinatorics https://t.co/P3M1rzRAMO [pdf] https://t.co/LfGuKKg0iU
-- 2018-08-14 @old_sound: Recently read "A Programmable Programming Language" and not only it makes me want to try Racket, it left me thinking about several linguistic ideas I've been ponder wrt the development of human languages  https://t.co/86X8mWTwkv
-- 2018-08-14 @lambda_calculus: Re-reading @samth's "Logical Types for Untyped Languages" for the umpteenth time.  One of my favorite papers and an exemplar of good technical writing.  Always a joy.  https://t.co/DUSIeoCocn
-- 2018-08-14 @rauchg: We built `cgi-bin` as a service!  https://t.co/2ntVHMCNpp
+- 2018-08-14 @old_sound: Recently read "A Programmable Programming Language" and not only it makes me want to try Racket, it left me thinking about several linguistic ideas I've been ponder wrt the development of human languages https://t.co/86X8mWTwkv
+- 2018-08-14 @lambda_calculus: Re-reading @samth's "Logical Types for Untyped Languages" for the umpteenth time. One of my favorite papers and an exemplar of good technical writing. Always a joy. https://t.co/DUSIeoCocn
+- 2018-08-14 @rauchg: We built `cgi-bin` as a service! https://t.co/2ntVHMCNpp
 - 2018-08-14 @ChrisBeeley: I found this https://t.co/oQZ7k6oewK package for conducting one way ANOVA. It's a great idea. #rstats isn't very welcoming for noobs who want to do ANOVA. But there's so much great stuff, how do I remember it all? How will I remember it exists the next time I want to do ANOVA?
 - 2018-08-14 @pythonrulez: Beyond Numpy Arrays in Python https://t.co/ApEf8DOh4U
-- 2018-08-14 @ij_snow: Hey @BenLesh, we (@srcgraph) just open sourced codeintellify, our library that provides code intelligence in our web projects and I’ve been playing around with it. Would you be interested in a PR adding this to examples in the rxjs docs?  #RxJS https://t.co/sBjT7XGhlK
+- 2018-08-14 @ij_snow: Hey @BenLesh, we (@srcgraph) just open sourced codeintellify, our library that provides code intelligence in our web projects and I’ve been playing around with it. Would you be interested in a PR adding this to examples in the rxjs docs? #RxJS https://t.co/sBjT7XGhlK
 - 2018-08-14 @math3ma: Very happy to see Chelsea Walton's "An Invitation to Noncommutative Algebra" on the arXiv today! A brief tour of the subject aimed at advanced undergrad and beginning grad students: https://t.co/871GfKGAQM https://t.co/roWQ6gg54E
-- 2018-08-13 @_siejkowski: Never before have I documented any project so thoroughly 😇 Check out if interested in Swift dev tools ☺️  Overview of Sirius, code obfuscator for Swift: https://t.co/MPkzUOtly8  A guide on using Swift compiler for building developer tools (like Sirius): https://t.co/N1IUo4DugG
+- 2018-08-13 @\_siejkowski: Never before have I documented any project so thoroughly 😇 Check out if interested in Swift dev tools ☺️ Overview of Sirius, code obfuscator for Swift: https://t.co/MPkzUOtly8 A guide on using Swift compiler for building developer tools (like Sirius): https://t.co/N1IUo4DugG
 - 2018-08-13 @headinthebox: Currently reading: https://t.co/g9BixsWW38. Maybe a little too much like a manual for https://t.co/xpbWBNYpwI, but still a good introduction to the topic.
 - 2018-08-13 @uPicchini: new post on resources for SDEMEMs, aka stochastic differential equation mixed-effects models https://t.co/BFSgHmR75Z https://t.co/xFk5omULdM
 - 2018-08-12 @murrphh: I just published “Using react-vis from ClojureScript” https://t.co/7vEkVXpcrp
 - 2018-08-12 @dataiku: Differential privacy may hold the key to building more robust #ML model. Here's why. by @oreillymedia | https://t.co/UfaWYyU2rO https://t.co/UfaWYyU2rO
-- 2018-08-12 @perrystephenson: I analysed over 400,000 tweets about #rstats and wrote about what I learned: https://t.co/MbAbMWIc2A   I also learned about the first ever #rstats tweet (by @drewconway): https://t.co/4OCzGBg0Ti (don't worry, the second one was better)  #rcommunity https://t.co/7PM5bmM4RR
+- 2018-08-12 @perrystephenson: I analysed over 400,000 tweets about #rstats and wrote about what I learned: https://t.co/MbAbMWIc2A I also learned about the first ever #rstats tweet (by @drewconway): https://t.co/4OCzGBg0Ti (don't worry, the second one was better) #rcommunity https://t.co/7PM5bmM4RR
 - 2018-08-11 @natefaubion: I made something for lazy, higher-order functional programming in PureScript's type system. https://t.co/A1QxT5ev4o You should probably not use this.
 - 2018-08-10 @yomguy: ASDF (Advanced Scientific Data Format) is a next generation interchange format for scientific #data. Seems a really good extension of HDF5 with a hierarchical, human-readable #metadata format https://t.co/nnrrmQJL8L
-- 2018-08-10 @jwoLondon: Elm-vega 3 now available. Major update now has complete coverage of both Vega 4.2 and Vega-Lite 3.0.  Functional, declarative and expressive.  https://t.co/3L74rZDBjE  @vega_vis @elmlang https://t.co/wEpENZeXwh
-- 2018-08-01 @jwoLondon: @TarasNovak @vega_vis Yes, see https://t.co/7HCXqtWR1p  This uses elm-vega (think Altair for the Elm language) embedded into a markdown document in our #litvis literate visualization environment. DM me if you would like the actual JSON spec.
+- 2018-08-10 @jwoLondon: Elm-vega 3 now available. Major update now has complete coverage of both Vega 4.2 and Vega-Lite 3.0. Functional, declarative and expressive. https://t.co/3L74rZDBjE @vega_vis @elmlang https://t.co/wEpENZeXwh
+- 2018-08-01 @jwoLondon: @TarasNovak @vega_vis Yes, see https://t.co/7HCXqtWR1p This uses elm-vega (think Altair for the Elm language) embedded into a markdown document in our #litvis literate visualization environment. DM me if you would like the actual JSON spec.
 - 2018-08-10 @Aelkus: you: its so great how we can use computers to do large numerical calculations computer: its a little bit more complicated than that amigo https://t.co/EXbeNTMegl
 - 2018-08-09 @fonnesbeck: Exciting times. https://t.co/qkqRBF7zdL
 - 2018-08-09 @Atabey_Kaygun: Probability and Statistics Cookbook https://t.co/EhEcwttuzn
@@ -234,38 +234,38 @@ Here is the latest bag of tweets<sup>*</sup>, which covers August 2018.
 - 2018-08-09 @JuliaLanguage: Nick Higham - Tricks and Tips in Numerical Computing: https://t.co/Pic0R70l1a via @YouTube
 - 2018-08-08 @dbader_org: https://t.co/lrhabWLlDg is one of the largest Python community projects on GitHub. New contributors welcome!
 - 2018-08-08 @domoritz: @mbostock Oh, we are working on a fast labeling algorithm for scarterplots, line charts, and more in @vega_vis right now. Still WIP but promising. https://t.co/eQxKGhIcbT
-- 2018-08-08 @HaskellWorks: Using broadword programming techniques to exploit data-parallelism in the parsing of a CSV-like format. Doing so allows us to parse the text 8-bytes at a time instead of one byte at a time as a traditional parser would. #succinct #datastructure #haskell  https://t.co/IHO2gJKH62
+- 2018-08-08 @HaskellWorks: Using broadword programming techniques to exploit data-parallelism in the parsing of a CSV-like format. Doing so allows us to parse the text 8-bytes at a time instead of one byte at a time as a traditional parser would. #succinct #datastructure #haskell https://t.co/IHO2gJKH62
 - 2018-08-08 @vincic: Giving Visual Code a try for a month. First extension #emacs keymap. https://t.co/SdCYUOZRGL
-- 2018-08-07 @DiegoKuonen: "On the accuracy of linear regression routines in some data mining packages"  &gt; https://t.co/DgMPXW8fYv  #Algorithmic #Accuracy #LM #ANOVA #Statistics #DataScience #DataMining #IBMModeler #KNIME #Orange #Python #RapidMiner #Weka #XLMiner #Algorithms #Software #StRD #BigData https://t.co/vccjS1BwII
-- 2018-08-07 @idyll_lang: “Make your app stand out with interactive data driven stories”   Here’s a nice post by @lasnindrek introducing the carious features of Idyll  https://t.co/G3VrgB41MY
+- 2018-08-07 @DiegoKuonen: "On the accuracy of linear regression routines in some data mining packages" &gt; https://t.co/DgMPXW8fYv #Algorithmic #Accuracy #LM #ANOVA #Statistics #DataScience #DataMining #IBMModeler #KNIME #Orange #Python #RapidMiner #Weka #XLMiner #Algorithms #Software #StRD #BigData https://t.co/vccjS1BwII
+- 2018-08-07 @idyll_lang: “Make your app stand out with interactive data driven stories” Here’s a nice post by @lasnindrek introducing the carious features of Idyll https://t.co/G3VrgB41MY
 - 2018-08-07 @ApacheArrow: We've just released Apache Arrow 0.10.0, the biggest release yet with 4 months of work and nearly 500 issues closed. We've added 3 new languages to the project: Go, Ruby, and Rust. Read more https://t.co/i3mQp6vjMc
 - 2018-08-07 @ttscoff: Favorite Mac screensaver. Go.
-- 2018-08-07 @didierverna: #Quickref has just been open-sourced! Non intrusive automatic reference manual generator for Common #Lisp libraries.  Website: https://t.co/wpZcEqkfC4 Git repo: https://t.co/Zj5wDMkoyQ  Currently documenting 1588 libraries, and counting...
+- 2018-08-07 @didierverna: #Quickref has just been open-sourced! Non intrusive automatic reference manual generator for Common #Lisp libraries. Website: https://t.co/wpZcEqkfC4 Git repo: https://t.co/Zj5wDMkoyQ Currently documenting 1588 libraries, and counting...
 - 2018-08-07 @vesirin: How I gained commit access to the Homebrew project in 30 minutes: https://t.co/Kux7xG4fpj
-- 2018-08-07 @JorisMeys: This is insanely cool! David Anthoff showing how to use powerful "queryverse" tools in #JuliaLang . It looks like an updated and better version of #rstats tidyverse. One more thing on my to do list : check out how to get this in my own workflow.  https://t.co/xfo1E8JsvO
+- 2018-08-07 @JorisMeys: This is insanely cool! David Anthoff showing how to use powerful "queryverse" tools in #JuliaLang . It looks like an updated and better version of #rstats tidyverse. One more thing on my to do list : check out how to get this in my own workflow. https://t.co/xfo1E8JsvO
 - 2018-08-07 @zentree: "Do GPU-based Basic Linear Algebra Subprograms (BLAS) improve the performance of standard modeling techniques in #Rstats?" https://t.co/1usKqsF6nZ
 - 2018-08-07 @hyPiRion: Also friendly reminder, this is the case for binary search as well: https://t.co/VMkw9JrnNj https://t.co/7WM6NAcvIL
-- 2018-08-06 @paf31: I wrote a bit about how we've started using PureScript at @Lumi  https://t.co/KWnsrLJb5m
-- 2018-08-06 @ericnormand: 😎 Functional Programming Tip ∙ Clojure ✔︎  reduce is universal recursion.  Left image is calculating the count of a collection. Right image is looking for an element in a collection.  Practical? You be the judge! https://t.co/GiBel5JSmd
-- 2018-08-06 @ChrisRackauckas: A technical discussion about why #Numba and #Cython are not substitutes for #julialang: how they making different engineering tradeoffs and how that effects the #julialang's deeper structures. Search on Hacker News as well!  https://t.co/cC35lJe8E3
+- 2018-08-06 @paf31: I wrote a bit about how we've started using PureScript at @Lumi https://t.co/KWnsrLJb5m
+- 2018-08-06 @ericnormand: 😎 Functional Programming Tip ∙ Clojure ✔︎ reduce is universal recursion. Left image is calculating the count of a collection. Right image is looking for an element in a collection. Practical? You be the judge! https://t.co/GiBel5JSmd
+- 2018-08-06 @ChrisRackauckas: A technical discussion about why #Numba and #Cython are not substitutes for #julialang: how they making different engineering tradeoffs and how that effects the #julialang's deeper structures. Search on Hacker News as well! https://t.co/cC35lJe8E3
 - 2018-08-06 @alexelcu: Functional Programming Languages and the Pursuit of Laziness with Dr. Simon Peyton Jones https://t.co/ClCvr5mqV4
-- 2018-08-06 @dataandme: ⭐️, thorough code-through by @krstoffr "Estimating treatment effects and ICCs from (G)LMMs on the observed scale using Bayes, Pt 1: lognormal models"  https://t.co/5xUpiSrIlO #rstats #statistics #dataviz https://t.co/lwnzX4jDHI
+- 2018-08-06 @dataandme: ⭐️, thorough code-through by @krstoffr "Estimating treatment effects and ICCs from (G)LMMs on the observed scale using Bayes, Pt 1: lognormal models" https://t.co/5xUpiSrIlO #rstats #statistics #dataviz https://t.co/lwnzX4jDHI
 - 2018-08-05 @choldgraf: Yesterday I found out that there's a Jupyter plugin that detects dependencies between cells so they're automatically re-run if something changes down-steam. Cool! &lt;3 @stitchfix https://t.co/oBb1g1wNTc https://t.co/sd3CXLJvo0
 - 2018-08-05 @krstoffr: New blog! "Estimating treatment effects and ICCs from (G)LMMs on the observed scale using Bayes, Part 1: lognormal models" https://t.co/D9Io8yXK6q #rstats https://t.co/by8mnt7tpK
-- 2018-08-05 @fastml_extra: High-dimensional regression in practice: an empirical study of finite-sample prediction, variable selection and ranking: https://t.co/35ZOyjvcnt  R code: https://t.co/XWPVIWrQ9d
+- 2018-08-05 @fastml_extra: High-dimensional regression in practice: an empirical study of finite-sample prediction, variable selection and ranking: https://t.co/35ZOyjvcnt R code: https://t.co/XWPVIWrQ9d
 - 2018-08-05 @CoolSWEng: How I slashed a SQL query runtime from 380 hours to 12 with two Unix commands. https://t.co/9ud7vYhlh6
 - 2018-08-05 @RobinLinacre: I just published “Superfast authoring of open data websites using Observable and Vega-lite” https://t.co/O6ySG5FC8D @observablehq @vega_vis
-- 2018-08-05 @msantoro12: Hmmmm another one for vscode....  "My editor journey: sublime, vim, emacs, vscode" by @lucasprag https://t.co/oDzo420rWl
+- 2018-08-05 @msantoro12: Hmmmm another one for vscode.... "My editor journey: sublime, vim, emacs, vscode" by @lucasprag https://t.co/oDzo420rWl
 - 2018-08-04 @sonatsuer: First tweet after 8 years. I wrote this: https://t.co/haUKovtzlL
 - 2018-08-04 @0xAX: Build a VM step by step with #Rust - first part - https://t.co/FDuV2GpLEO
-- 2018-08-04 @samaaron: Hello lovely programming people!  Please watch the incredible SICP lecture series.   Any introductory programming course that starts by crossing out the phrase “computer science” is off to an amazing start in my book.  Your brain will never be the same...  https://t.co/DhEtq5AjzT
+- 2018-08-04 @samaaron: Hello lovely programming people! Please watch the incredible SICP lecture series. Any introductory programming course that starts by crossing out the phrase “computer science” is off to an amazing start in my book. Your brain will never be the same... https://t.co/DhEtq5AjzT
 - 2018-08-04 @thetimmyjose: Simple expression evaluator comparison between Haskell, Rust, and Common Lisp https://t.co/QubYGq0K2B
 - 2018-08-04 @KirkDBorne: [free 2600-page book] #Pandas – #Python Data Analysis Toolkit for #DataScience: https://t.co/MXJ2i40XDQ #BigData #MachineLearning #Coding #DataScientists https://t.co/6yVsWKdteI
 - 2018-08-03 @seandavis12: Turn a #github repo into a collection of interactive notebooks fronted by @rstudio or @ProjectJupyter. Thanks to @ctitusbrown for pointing out: https://t.co/E5oOVkGRHn https://t.co/vu9W0UJAs2
-- 2018-08-02 @iLemming: What I love about @spacemacs and @emacs in general, that it gives you multitude of ways to search for things, try this:  - open Dired - mark files by name, `% m` (the files you want to search in) - press `A`, it's bound to `dired-do-find-regexp` - type something  awesome, right? https://t.co/tJ9el89Dft
+- 2018-08-02 @iLemming: What I love about @spacemacs and @emacs in general, that it gives you multitude of ways to search for things, try this: - open Dired - mark files by name, `% m` (the files you want to search in) - press `A`, it's bound to `dired-do-find-regexp` - type something awesome, right? https://t.co/tJ9el89Dft
 - 2018-08-02 @mjskay: Very excited to announce that #tidybayes is now on #CRAN! Bayesian analysis + tidy data + geoms for @mcmc_stan, #brms, #rstanarm, #JAGS, #MCMCglmm, etc. Lots of API changes in this release to make terminology more consistent, check it out! https://t.co/r8rdhXM6CK #rstats
 - 2018-08-02 @MarkusGesmann: I wrote a little how to use domain knowledge to review prior distributions with #brms: https://t.co/mce7OKzfP3
 - 2018-08-01 @seanmonstar: warp: a web framework for Rust https://t.co/VBeYxuCOxi
-- 2018-08-01 @nsthorat: I am personally very excited about @ml5js. Like @p5xjs, it will make ML more accessible to a wider audience, without having to get bogged down with unnecessary jargon and complexity.  @shiffman’s video series, which assumes no ML knowledge, starts here: https://t.co/q3fPsGABc0
+- 2018-08-01 @nsthorat: I am personally very excited about @ml5js. Like @p5xjs, it will make ML more accessible to a wider audience, without having to get bogged down with unnecessary jargon and complexity. @shiffman’s video series, which assumes no ML knowledge, starts here: https://t.co/q3fPsGABc0
 - 2018-08-01 @neilfws: @MatterOfStats (1) I know you want to do this in R really :) and (2) yes https://t.co/Xpjboqx0Yh
 - 2018-08-01 @opencpu: Adding streaming support to #rstats mongolite. Streamed a DVD from HTTP into mongo at 40MB/s and read back to disk with 200MB/s. No significant memory/cpu usage at any point, only limit is disk/wifi IO. Very pleased with @MongoDB performance here. https://t.co/51XBurjilg

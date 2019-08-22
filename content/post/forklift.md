@@ -2,8 +2,8 @@
 title: "Forklift"
 date: 2018-06-27T07:44:45+02:00
 draft: false
-tags: ["apple"]
-categories: ["app-review"]
+tags: ["apple", "app", "review"]
+categories: []
 ---
 
 Here is a brief review of [Forklift](https://binarynights.com), a lightweight and pervasive app for file management.
@@ -14,7 +14,7 @@ There is already a very nice review on [Jack Baty's blog](https://www.baty.net/2
 
 ![](/img/2018-06-27-07-54-20.png)
 
-I've never made very sustained use of the Finder. However, I find it pretty convenient when it comes to visualize the hierarchical structure of certain folders, or just to preview some files using the <kbd>SPC</kbd> shortcut. Forklift allows you to edit known files without even opening them, which some users may find pretty useful (this even works when files are hosted on  a remote server). In any case, it is also possible to choose among distinct apps to open a file selected from one of the two panes.
+I've never made very sustained use of the Finder. However, I find it pretty convenient when it comes to visualize the hierarchical structure of certain folders, or just to preview some files using the <kbd>SPC</kbd> shortcut. Forklift allows you to edit known files without even opening them, which some users may find pretty useful (this even works when files are hosted on a remote server). In any case, it is also possible to choose among distinct apps to open a file selected from one of the two panes.
 
 Regarding the UI, Forklift remembers the current layout and locations so you will get back where you were when you launch it the next time. There are search and quick select facilities that allow to apply specific filter like file extension, tags or Spotlight `kind:` keywords. In addition to the dual pane view, Forklift supports tabs for browsing multiple directories at once. It is even possible to [replace Finder almost completely](https://binarynights.com/manual#fileviewer).
 
@@ -26,4 +26,4 @@ Things I haven't try yet: Forklift allows to delete applications and to apply cu
 
 Finally, Forklift comes with Apple Share button and also a dark mode which is definitely a game changer for dark theme users. For Emacs or Vim users, don't be afraid: you don't even need to use the mouse, everything is under keyboard control.
 
-{{% music %}}Divinyls • *Divinyls*{{% /music %}}
+{{% music %}}Divinyls • _Divinyls_{{% /music %}}

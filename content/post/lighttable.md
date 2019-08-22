@@ -2,15 +2,8 @@
 title = "Light Table and interactive live coding"
 date = 2014-04-25T22:15:52+01:00
 draft = false
-
-tags = ["apple"]
+tags = ["apple", "app", "review"]
 categories = []
-
-[header]
-image = ""
-caption = ""
-preview = true
-
 +++
 
 [LightTable](http://www.lighttable.com/) 0.6.2 has been released recently. It now supports Python and graphics can be embedded directly into the interactive console.
@@ -40,5 +33,4 @@ Note that diving into litterate programming with knitr requires a couple of addi
 As a sidenote, although I recommend to my students to use [RStudio](http://www.rstudio.com) when working with R, I think ST really is a good editor and this is what I would recommend to them in place of Emacs whose learning curve is certainly steeper.
 
 [^1]: This post is pretty old, and LighTable is now at version 0.6.5.
-
 [^2]: [Session](https://medium.com/p/1a12997a5f70) provides yet another "Live-Coding Environment for Clojure".

@@ -4,6 +4,7 @@ date: 2018-05-17T00:00:00
 url: "/articles/changelog/"
 ---
 
+- [2019-08-22] Massive retagging
 - [2019-08-09] Update a bit of CSS
 - [2019-04-30] Minor fix to the design of the [Micro](/micro) blog
 - [2019-01-23] Further improvements to my digital anonymization strategy

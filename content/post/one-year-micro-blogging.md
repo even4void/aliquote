@@ -2,9 +2,10 @@
 title: "One year micro-blogging"
 date: 2019-03-14T20:59:07+01:00
 draft: false
-tags: ["misc"]
+tags: ["misc", "micro"]
 categories: []
 ---
+
 One year micro-blogging (or so), and [still alive](/micro).
 
 <!--more-->

@@ -2,17 +2,15 @@
 title: "Tech Review / March 2018"
 date: 2018-03-19T09:03:24+01:00
 draft: false
-keywords: []
-description: ""
 tags: ["readings", "review"]
-categories: ["tech-review"]
+categories: []
 ---
 
 Some fresh news from Twitter and the internet without further ado.
 
 <!--more-->
 
-[How to Design Programs, Second Edition](http://www.htdp.org/2018-01-06/Book/) (MIT Press) is available online, together with Racket code. If Lisp is your thing, then go fetch [some Lisp code](https://github.com/norvig/paip-lisp) for Peter Norvig's falmous textbook, *Paradigms of Artificial Intelligence Programming*, on GitHub.
+[How to Design Programs, Second Edition](http://www.htdp.org/2018-01-06/Book/) (MIT Press) is available online, together with Racket code. If Lisp is your thing, then go fetch [some Lisp code](https://github.com/norvig/paip-lisp) for Peter Norvig's falmous textbook, _Paradigms of Artificial Intelligence Programming_, on GitHub.
 
 If you are after good tutorials on bayesian analysis and mixed-effects models, stop by [Michael Clark's website](http://m-clark.github.io/documents/). Surely you will learn something, and appreciate beautiful typography on the web.
 
@@ -41,7 +39,6 @@ John Skeet---remember that guy who accumulated [over 1,000,000 reputation points
 
 If you like Allen Downey textbooks (i.e., the "How to Think..." series), you will probably be interested in Ben Lauwens' [translation for Julia](https://benlauwens.github.io/ThinkJulia.jl/latest/chap01.html). This provides a great introduction to the core features of the Julia language.
 
-{{% music %}}Timber Timbre • *Hot Dreams*{{% /music %}}
+{{% music %}}Timber Timbre • _Hot Dreams_{{% /music %}}
 
 [^1]: See [Cats and Dogs With Cortex Redux](http://gigasquidsoftware.com/blog/2017/11/07/cats-and-dogs-with-cortex-redux/), by Carin Meier, for a Clojure version.
-

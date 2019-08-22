@@ -2,9 +2,8 @@
 title: "Tech Review / June 2018"
 date: 2018-06-22T6:40:51+02:00
 draft: false
-description: ""
 tags: ["readings", "review"]
-categories: ["tech-review"]
+categories: []
 ---
 
 The monthly tech newsletter is finally out! This is probably just the first part and I will add more fresh news in a few days.
@@ -31,10 +30,8 @@ Anyway, one of the updates worth mentioning is the fact that LaTeX now considers
 
 It's been a while since I was writing Awk and Sed scripts every two or three days to inspect and reshape data files or any sort of STDOUT. Hence, I was happy to find this [little intro on Awk](https://gregable.com/2010/09/why-you-should-know-just-little-awk.html) pop up in my Twitter timeline. On a related note, while I find myself comfortable with using Emacs all day long, I'm always fascinated by [those who build their work environment around](http://doc.rix.si/cce/cce.html).
 
-> I honestly don’t know if Racket and Haskell are worth their costs in complexity. At the end of the day, maybe what really matters is writing simple, consistent things that other people can understand.
->
-> -- Alexis King on [lexi-lambda](https://lexi-lambda.github.io/blog/2016/08/11/climbing-the-infinite-ladder-of-abstraction/)
+> I honestly don’t know if Racket and Haskell are worth their costs in complexity. At the end of the day, maybe what really matters is writing simple, consistent things that other people can understand. --- Alexis King on [lexi-lambda](https://lexi-lambda.github.io/blog/2016/08/11/climbing-the-infinite-ladder-of-abstraction/)
 
 MXNet is incubating as an Apache project and is yet another library for deep learning. Carin Meier is currently working on a [Clojure package](https://github.com/gigasquid/clojure-mxnet). See her [recent blog post](http://gigasquid.github.io/blog/2018/06/03/meet-clojure-mxnet-ndarray/) to learn more.
 
-{{% music %}}The Veils • *The Runaway Found*{{% /music %}}
+{{% music %}}The Veils • _The Runaway Found_{{% /music %}}

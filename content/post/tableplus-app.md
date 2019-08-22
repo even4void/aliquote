@@ -2,9 +2,10 @@
 title: "TablePlus App"
 date: 2019-01-28T13:41:00+01:00
 draft: false
-tags: ["apple","database"]
-categories: ["app-review"]
+tags: ["apple", "database", "app", "review"]
+categories: []
 ---
+
 Here is a quick review of [TablePlus](https://tableplus.io) which is a lightweight app that all Mac users should fell in love with when it comes to querying SQL databases.
 
 <!--more-->
@@ -24,5 +25,4 @@ To give you an idea, here are a few screenshots that I took during my last sessi
 ![Selection](/img/2019-01-28-13-39-25.png "Selection")
 ![SQL query](/img/2019-01-28-13-40-35.png "SQL query")
 
-I recently noticed that their [business plan](https://tableplus.io/pricing) has slightly evolved, otherwise it looks like a solid application for database management. I do  ot know what is included in the full-featured (aka not free) version, but for ordinary use the free edition should be largely enouig to perform basic operations.
-
+I recently noticed that their [business plan](https://tableplus.io/pricing) has slightly evolved, otherwise it looks like a solid application for database management. I do ot know what is included in the full-featured (aka not free) version, but for ordinary use the free edition should be largely enouig to perform basic operations.
