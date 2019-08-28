@@ -1,21 +1,21 @@
 baseURL = "https://aliquote.org/"
 languageCode = "en"
-defaultContentLanguage = "en"              
+defaultContentLanguage = "en"
 title = "aliquot"
 enableRobotsTXT = true
 enableEmoji = true
 theme = "even"
 
 hasCJKLanguage = false
-paginate = 3            
-disqusShortname = ""    
+paginate = 5
+disqusShortname = ""
 googleAnalytics = ""
-copyright = ""     
+copyright = ""
 
-[author]                  
+[author]
   name = "chl"
 
-[sitemap]                 
+[sitemap]
   changefreq = "weekly"
   priority = 0.5
   filename = "sitemap.xml"
@@ -55,26 +55,26 @@ copyright = ""
   version = "3.x"           # Used to give a friendly message when you have an incompatible update
   debug = false             # If true, load `eruda.min.js`. See https://github.com/liriliri/eruda
 
-  since = "2018"           
+  since = "2006"
 
-  logoTitle = "aliquote"   
+  logoTitle = "aliquote"
   keywords = ["statistical computing", "data visualization", "data hacking"]
   description = "< a quantity that can be divided into another a whole number of time />"
 
-  archivePaginate = 30
+  archivePaginate = 50
 
   dateFormatToUse = "2006-01-02"
 
   moreMeta = true
 
-  toc = true            
+  toc = true
   autoCollapseToc = true
-  fancybox = true       
-  mathjax = true       
+  fancybox = true
+  mathjax = true
   mathjaxEnableSingleDollar = true
 
-  postMetaInFooter = false  
-  linkToMarkDown = false   
+  postMetaInFooter = false
+  linkToMarkDown = false
   contentCopyright = '<a rel="license noopener" href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank">CC BY-NC-ND 4.0</a>'
 
 #  changyanAppid = ""        # Changyan app id             # 畅言
@@ -90,14 +90,14 @@ copyright = ""
   customCSS = ["gallery.css", "elements.css"]
   customJS = []
 
-  [params.publicCDN]    
+  [params.publicCDN]
     enable = false
     jquery = '<script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>'
     slideout = '<script src="https://cdn.jsdelivr.net/npm/slideout@1.0.1/dist/slideout.min.js" integrity="sha256-t+zJ/g8/KXIJMjSVQdnibt4dlaDxc9zXr/9oNPeWqdg=" crossorigin="anonymous"></script>'
     fancyboxJs = '<script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.js" integrity="sha256-XVLffZaxoWfGUEbdzuLi7pwaUJv1cecsQJQqGLe7axY=" crossorigin="anonymous"></script>'
     fancyboxCss = '<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.css" integrity="sha256-7TyXnr2YU040zfSP+rEcz29ggW4j56/ujTPwjMzyqFY=" crossorigin="anonymous">'
 
-  [params.busuanzi]    
+  [params.busuanzi]
     enable = false
     siteUV = true
     sitePV = true
