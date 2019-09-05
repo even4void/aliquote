@@ -10,7 +10,7 @@ Remember SVN, or even RCS? Before Git I have been a long-time user of the simple
 
 <!--more-->
 
-This morning, while I was putting some of my old notes into my Org directory ([quite painful](/micro/2019-09-05-15-37-38) upon reflection), I came across a short tutorial (in French) I wrote on RCS. I could not resits putting a little extract below. (Hence I convert it again, from Org to Markdown!)
+This morning, while I was putting some of my old notes into my Org directory ([quite painful](/micro/2019-09-05-15-37-38) upon reflection), I came across a short tutorial (in French) I wrote on RCS. I could not resits putting a little extract below. Note that it is also available on Github, but in case I change my mind and remove it from there in the future, here it is. (And yes, I converted it again, this time from Org to Markdown!)
 
 ---
 
