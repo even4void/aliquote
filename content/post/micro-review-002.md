@@ -1,10 +1,12 @@
 ---
-title: "Micro Review 002"
+title: "Micro review from September"
 date: 2019-09-04T18:47:59+02:00
 draft: true
-tags: []
+tags: ["readings"]
 categories: []
 ---
+
+Here is the monthly micro review of (not so) random links I found while browsing the interweb lately.
 
 <!--more-->
 
