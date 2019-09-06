@@ -18,13 +18,13 @@ Here is the monthly micro review of (not so) random links I found while browsing
 
 - [Notes on Interactive Computing Environments](http://blog.fogus.me/2019/04/03/notes-on-interactive-computing-environments/), by Fogus, is a short review of the book written by Barstow, Shrobe, and Sandewall in 1984. You will learn (or be reminded) about quite old software and PLs, and Fogus personal experience with them.
 
-> Your programming environments should be an active partner in the act of creating systems.
+      > Your programming environments should be an active partner in the act of creating systems.
 
 - [The history of Tetris randomizers](https://simon.lc/the-history-of-tetris-randomizers). Oh my, I was just remembered that tetris is more than 30 years old now. This post exposes a curated list of Tetris randomizers that were reverse engineered and documented over the years, emphasizing how they improved in terms of puzzle factor, flood prevention, and drought prevention. Apparently, most efforts have focused on the latter two points lately.
 
 - [pingouin](https://pingouin-stats.org) looks like a nice library to perform common statistical tests in Python. I didn't try it, TBH. But I will! It is a bit different from from scikit-stats, where the focus is more on building statistical models, apparently, but there are interesting features like reliability and circular statistics that are not so common in other Python statistical packages. Quoting the authors:
 
-> Pingouin is designed for users who want simple yet exhaustive stats functions.
+      > Pingouin is designed for users who want simple yet exhaustive stats functions.
 
 - [OpenBSD Is C Documentation](https://dev.to/apotheon/openbsd-is-c-documentation-3gd1): As I'm working as a bioinformatician now, I am sometimes tired of checking all related publications to understand the meaning of default parameters here and there in the tools I am supposed to use. Good documentation is the _clé du succès_ of a good software. You can learn a lot by studying the code available for free in your preferred \*nix system (think of `cat`, `shuffle`, `jot`, etc.). And if you're still versed into C, this post will explain why you should take a close look into the OpenBSD documntation.
 
