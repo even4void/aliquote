@@ -58,11 +58,11 @@ $$ x^{\star} = x^{(t)} - \frac{f'(x^{(t)})}{f''(x^{(t)})} = x^{(t)} + h^{(t)}, $
 
 where $h^{(t)}$ is a refinement to the current guess at step $t$, $x^{(t)}$. The updating equation for Newton-Raphson is then simply $x^{(t+1)}=x^{(t)}+h^{(t)}$, which is the very last line in the for loop in the R function above. (I don't know why the authors used the temporary variable `b_old`, BTW.) Note that $h^{(t)} = -\frac{f'(x^{(t)}}{f''(x^{(t)}}$. In this particular case, this optimization problem amounts to find the MLE $\hat\theta$, where $\theta$ is the parameter of interest in the statistical model, and $f$ is the likelihood function.[^2] It can be shown that the Newton's method has quadratic convergence, which means that the precision of the solution will usually double with each iteration.[^3]
 
-The logistic model can be written as $\log\left(\frac{p}{1-p}\right) = \beta_0 + \beta_1X_1+\beta_2X_2$, for two fixed predictors $X_1$ and $X2$. Individual probabilities $p_i$ ($i=1,\dots,n$) are a function of both vectors $x_i$ and $\beta$, and as formulated the model implies that $p_i=\frac{\exp(x_i^T\beta)}{1+\exp(x_i^T\beta)}$. It can be shown that the likelihood reads:
+The logistic model can be written as $\log\left(\frac{p}{1-p}\right) = \beta_0 + \beta_1X_1+\beta_2X_2$, for two fixed predictors $X_1$ and $X_2$. Individual probabilities $p_i$ ($i=1,\dots,n$) are a function of both the vectors $x_i$ and $\beta$, and as formulated above, the model implies that $p_i=\frac{\exp(x_i^T\beta)}{1+\exp(x_i^T\beta)}$. It can be shown that the likelihood reads:
 
 $$ \ell(\beta) = \sum_{i=1}^n\left\\{ y_i(x_i^T\beta) - \log\left(1+\exp(x_i^T\beta)\right) \right\\}, $$
 
-and to maximize this likelihood function we need to compute the score function--this is the variable `score` in the R code--which is the derivative of $\ell$ with respect to $\beta$ parameters (in this example, we only considered two predictors):
+and to maximize this likelihood function we need to compute the score function---this is the variable `score` in the R code---which is the derivative of $\ell$ with respect to $\beta$ parameters (in this example, we only considered two predictors):
 
 $$ \frac{\partial\ell}{\partial\beta} = \begin{bmatrix}\frac{\partial\ell}{\partial\beta_0} \cr \frac{\partial\ell}{\partial\beta_1} \cr \frac{\partial\ell}{\partial\beta_2} \end{bmatrix} = \underbrace{\boldsymbol{X}^T(y-\boldsymbol{p})}\_{\texttt{t(X) %*% (y - p)}}. $$
 
@@ -103,7 +103,7 @@ Other than basic mathematical operators and functions, the most important piece 
 (define delta (matrix-solve XtX score))
 ```
 
-This code yields excatly the same results as a first pass in the R loop of `log_reg`. Given how easy it is to go from a for loop to recursive function calls, these five steps can easily be wrapped into a proper function using local `let*` bindings. Note that there exist [various converters](https://docs.racket-lang.org/math/matrix_conversion.html) that help to go from list or vector to matrix that we could use instead, and more importantly, there is even a [data frame package](https://alex-hhh.github.io/2018/08/racket-data-frame.html) (developped by Alex Harsányi) which could further simplifies all the data mockup.
+This code yields exactly the same results as a first pass in the R loop of `log_reg`. Given how easy it is to go from a for loop to recursive function calls, these five steps can easily be wrapped into a proper function using local `let*` bindings. Note that there exist [various converters](https://docs.racket-lang.org/math/matrix_conversion.html) that help to go from list or vector to matrix that we could use instead, and more importantly, there is even a [data frame package](https://alex-hhh.github.io/2018/08/racket-data-frame.html) (developped by Alex Harsányi) which could further simplifies all the data mockup.
 
 And that's it! An interesting alternative would be to implement the [EM algorithm](https://arxiv.org/pdf/1306.0040.pdf) for logistic regression, proposed by Scott and Sun.
 
