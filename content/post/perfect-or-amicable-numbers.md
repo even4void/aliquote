@@ -56,7 +56,7 @@ Whence an amicable pair $(m,n)$ satisfies `(= m (divisor-sum n))` and `(= n (div
     (cons i peer)))
 ```
 
-List comprehension in Racket are really great, aren't they? FInally, a little `apply` can be used to perform the sreening step _per se_:
+List comprehension in Racket are really great, aren't they? FInally, a little `apply` can be used to find the sum of all amicable numbers under 10000:
 
 ```Lisp
 (define (pair-sum p)
