@@ -1,7 +1,7 @@
 ---
 title: "Micro review from September (2)"
-date: 2019-09-07T18:51:17+02:00
-draft: true
+date: 2019-09-14T08:51:17+02:00
+draft: false
 tags: ["readings"]
 categories: []
 ---
