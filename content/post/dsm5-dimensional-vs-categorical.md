@@ -2,15 +2,8 @@
 title = "Dimensions or categories?"
 date = 2011-08-24T11:39:10+01:00
 draft = false
-
 tags = ["readings", "psychometrics"]
-categories = []
-
-[header]
-image = ""
-caption = ""
-preview = true
-
+categories = ["2011"]
 +++
 
 Some further reading notes on the dimensional vs. categorical approaches to mental disorders.

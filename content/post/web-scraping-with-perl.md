@@ -1,15 +1,15 @@
 +++
 title = "Web scraping with Perl"
-description = ""
 date = 2010-04-04T08:49:55+01:00
-lastmod = 2010-05-14T08:49:55+01:00
 draft = false
 tags = ["perl"]
-categories = []
+categories = ["2010"]
 +++
 
 
 Since I need to get all ICD9 codes for my work, I decided to implement a lightweight web crawler in Perl, with the aims of parsing all codes found at [ICD9Data.com][ICD9Data.com].
+
+<!--more-->
 
 It seems that the [WWW-Mechanize][WWW-Mechanize] module provides all that is needed. In fact, I also realized that this technique may be extended to catch up anything on a website, which is called web scraping.
 

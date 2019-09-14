@@ -1,10 +1,9 @@
 +++
 title = "Interaction terms in nonlinear models"
-description = ""
 date = 2008-04-15T09:22:39+01:00
 draft = false
 tags = ["readings", "rstats", "stata"]
-categories = []
+categories = ["2008"]
 +++
 
 This discussion is primarily based on the following article, but see also<sup>(1,2)</sup>:

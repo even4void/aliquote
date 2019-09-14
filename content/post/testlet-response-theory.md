@@ -2,18 +2,13 @@
 title = "Testlet response theory"
 date = 2012-08-27T15:58:26+01:00
 draft = false
-
 tags = ["readings", "psychometrics"]
-categories = []
-
-[header]
-image = ""
-caption = ""
-preview = true
-
+categories = ["2012"]
 +++
 
 Here is a brief overview of [Testlet Response Theory and its Applications](http://bit.ly/NrooI5), by Wainer, Bradlow, and Wang (Cambridge University Press, 2007).
+
+<!--more-->
 
 This book provides a very nice introduction to true score (which focus on test scores) and item response (which focus on item scores) theory, and discusses the advantages of using testlets as the basis of measurement. I like such clear overview of main concepts which form the basis of one's field of study. No unnecessary maths, just facts, good references and supporting examples, and nice visual illustrations. Lastly, I enjoyed reading Chapter 2 of Jenkinson's *Measuring Health and Medical Outcomes* (UCL Press, 1994) which offers an historical overview of subjective health assessment. A <i class="fa fa-file-pdf-o fa-1x"></i> [review](http://www.aliquote.org/pub/Kaplan1996.pdf) of the book was published in *Quality of Life Research*.
 

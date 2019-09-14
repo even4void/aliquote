@@ -2,8 +2,8 @@
 title: "Dash App"
 date: 2018-04-25T9:14:06+02:00
 draft: false
-tags: ["app", "review"]
-categories: []
+tags: ["app", "review", "apple"]
+categories: ["2018"]
 ---
 
 Next in the series of Mac applications, here is a brief review of a fantastic native browser for online and offline documentation: [Dash](various). It is available for iOS and OS X, with a [long relation with AppStore](https://blog.kapeli.com), and although you have to pay for it, it is worth the bill.

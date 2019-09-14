@@ -2,18 +2,13 @@
 title = "Structural equation modeling with Stata"
 date = 2013-06-10T11:13:48+01:00
 draft = false
-
 tags = ["stata", "psychometrics"]
-categories = []
-
-[header]
-image = ""
-caption = ""
-preview = true
-
+categories = ["2013"]
 +++
 
 Stata 12 came with a module to perform Structural Equation Modeling. Like Amos, there is a SEM diagram builder and fancy dialog boxes but as always commands are directly returned on the command-line so it is not difficult to learn how to write your SEM model directly at Stata prompt or in a do file.
+
+<!--more-->
 
 Recently, a book on [Discovering Structural Equation Modeling Using Stata](http://bit.ly/XEgFWz) was published by Stata Press ([Alan C. Acock](http://health.oregonstate.edu/people/acock-alan), 2013). It is well written and introduces main concepts for factor analysis and structural equation modeling. Datasets and do-files used in the book can be downloaded from [Stata Press](http://www.stata-press.com/data/dsemus.html). Some tips about the [Stata 12 SEM package](https://sites.google.com/site/ifarwf/home/stata-12-sem-package) have been provided elsewhere. And of course, the UCLA server has already covered some good material about Stata SEM on their [Stata FAQ](http://www.ats.ucla.edu/stat/stata/faq/).
 

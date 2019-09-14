@@ -2,15 +2,8 @@
 title = "Biplots"
 date = 2012-02-25T16:49:22+01:00
 draft = false
-
 tags = ["psychometrics", "dataviz"]
-categories = []
-
-[header]
-image = ""
-caption = ""
-preview = true
-
+categories = ["2012"]
 +++
 
 I thougth it would be funny to relate how I came from a query about 'biplot displays in lisp' to statistical computing in R, using Google.

@@ -1,13 +1,14 @@
 +++
 title = "A bunch of paper on multivariate data analysis"
-description = ""
 date = 2011-01-28T22:10:09+01:00
 draft = false
 tags = ["readings", "psychometrics"]
-categories = []
+categories = ["2011"]
 +++
 
 Here is a stack of papers about multivariate data analysis (grabbed from a course by Gilbert Saporta that was helded in 2010, CNAM Paris) that I should (have) read.
+
+<!--more-->
 
 1. Jensen, D.R. and Ramirez, D.E. (2008). [Anomalies in the Foundations of Ridge Regression](http://arxiv.org/abs/math/0703551). *International Statistical Review*, 76(1), 89-105.
 2. Hyvarinen, A. and Oja, E. (2000). <i class="fa fa-file-pdf-o fa-1x"></i> [Independent component analysis: algorithms and applications](http://www.cs.helsinki.fi/u/ahyvarin/papers/NN00new.pdf). *Neural networks*, 13, 411-430.

@@ -1,10 +1,9 @@
 +++
 title = "Getting started with Slime"
-description = ""
 date = 2011-01-30T21:46:33+01:00
 draft = false
 tags = ["lisp", "emacs"]
-categories = []
+categories = ["2011"]
 +++
 
 [Slime](http://common-lisp.net/project/slime/) provides a complete environment for Lisp development with Emacs. It includes a minor mode that enhances lisp-mode, a common lisp debugger (SLDB), an REPL, and an inspector. It supports several CL implementation, including [CMUCL](http://www.cons.org/cmucl/), [SBCL](http://sbcl.sourceforge.net/), [Clozure CL](http://www.clozure.com/clozurecl.html), or [CLISP](http://www.gnu.org/software/clisp/).

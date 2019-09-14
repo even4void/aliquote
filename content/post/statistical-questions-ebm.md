@@ -2,18 +2,13 @@
 title = "Statistical questions in evidence-based medicine"
 date = 2014-04-04T20:00:49+01:00
 draft = false
-
 tags = ["review", "statistics"]
-categories = []
-
-[header]
-image = ""
-caption = ""
-preview = true
-
+categories = ["2014"]
 +++
 
 [Statistical questions in evidence-based medicine](http://www-users.york.ac.uk/~mb55/quest/questcon.htm) was written long ago by Martin Bland and Janet Peacock (Oxford University Press, 2000), but is is still full of good recommendations. It is a series of case-based questions and answers.
+
+<!--more-->
 
 It is supposed to serve as a companion to [*An introduction to Medical Statistics*](http://goo.gl/p2H9Nt). I personally bought the third edition of Indrayan's *Medical Biostatistics*, which I find very good, and I just ordered [*Medical Statistics in Clinical and Epidemiological Research*](http://goo.gl/Beuq8p), by Marit B. Veierød, Stian Lydersen and Petter Laake.
 

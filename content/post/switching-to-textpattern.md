@@ -1,13 +1,14 @@
 +++
 title = "Switching to Textpattern"
-description = ""
 date = 2010-09-12T22:10:30+01:00
 draft = false
 tags = ["misc"]
-categories = []
+categories = ["2010"]
 +++
 
 Again, I just moved my "blog" over a new managing system, in this case [Textpattern](http://textpattern.com/). I quote the term blog because this is not really a blog, but rather my *entrepôt à idées*.
+
+<!--more-->
 
 So why switching to a fully-featured blogging interface. In August I give [Posterous](http://posterous.com/) a try. Posterous is a nice idea for people who just need to store quotes or photos on a personal website. Since you can write your post and upload them by email, this is really the shortest path. However, there is actually no support for Javascript, whereas I was looking for a cleaner way to embed my LaTEX chunks, through, e.g., [jsMath](http://www.math.union.edu/~dpvc/jsMath/) or [MathJax](http://www.mathjax.org/) (actually, I am running the last one on my website). I must admit, however, that photos looks great on Posterous, with an auto-generated slimbox-like gallery. Embedding code chunks with syntax highlighting was also not so painful, thanks to [CodeRay](http://coderay.rubychan.de/).
 

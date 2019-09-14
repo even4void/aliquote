@@ -2,18 +2,13 @@
 title = "Leanpub: a new way to publish your textbook"
 date = 2015-04-30T23:05:41+01:00
 draft = false
-
 tags = ["misc"]
-categories = []
-
-[header]
-image = ""
-caption = ""
-preview = true
-
+categories = ["2015"]
 +++
 
 [Leanpub](https://leanpub.com) appears to be a great way to share or sell in-progress or final version of a textbook.
+
+<!--more-->
 
 The principle is quite simple: You write a book using Markdown, which you can store on Dropbox or GitHub, and it get formatted as PDF/EPUB on Leanpub website; you then propose a minimal price, and get your money each month via PayPal. Of course, you can offer your book for free. Regarding royalties, here is what we find on the [FAQ](https://leanpub.com/help/author_faq):
 

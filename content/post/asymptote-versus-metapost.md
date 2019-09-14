@@ -1,10 +1,9 @@
 +++
 title = "Asymptote and Metapost"
-description = ""
 date = 2011-01-18T09:26:51+01:00
 draft = false
-tags = ["tex", "dataviz"]
-categories = []
+tags = ["tex"]
+categories = ["2011"]
 +++
 
 I am planning to make a lot of illustrations for basic mathematical and statistical concepts, but I am still hesitating about the drawing program to choose. I know a bit of [Metapost](http://www.tug.org/metapost.html) and [Asymptote](http://asymptote.sourceforge.net/), but I am not clear about the pros and cons of each of the vector drawing language. Especially, I've heard that Asymptote is somewhat "superior" to Metapost.

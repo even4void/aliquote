@@ -3,7 +3,7 @@ title: "Tech Review / July 2019"
 date: 2019-07-26T20:50:32+02:00
 draft: false
 tags: ["readings", "review"]
-categories: []
+categories: ["2019"]
 ---
 
 A little review of my current Safari session since it is probably time to close all those tabs bookmarked on my iPhone.

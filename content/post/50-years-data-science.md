@@ -3,7 +3,7 @@ title: "50 years of Data Science and beyond"
 date: 2018-06-21T16:05:01+02:00
 draft: false
 tags: ["statistics", "review"]
-categories: []
+categories: ["2018"]
 ---
 
 I recently reread Kaplan's proposal to teach statistics to future statisticians, and if we trust the following two papers published in 2017, we should have a solid plan for teaching Data Science, or what it will be called in some years. I am no longer teaching, but I find this inspiring in any case.

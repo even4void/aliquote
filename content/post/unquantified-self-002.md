@@ -2,9 +2,8 @@
 title: "The unquantified self #2"
 date: 2018-06-18T22:23:32+02:00
 draft: false
-description: ""
 tags: ["self"]
-categories: []
+categories: ["2018"]
 ---
 
 Not much to say as an intro. This is just about me, I'm the one talking.

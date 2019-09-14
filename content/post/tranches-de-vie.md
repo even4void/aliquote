@@ -3,7 +3,7 @@ title: "Tranches de vie : des frigos"
 date: 2019-09-01T22:37:45+02:00
 draft: false
 tags: ["fr"]
-categories: []
+categories: ["2019"]
 ---
 
 Je prends sans cesse des photos de mon environnement devenu aussi proche que familier, mon appartement, et j'ai longtemps pensé tenir un carnet illustré dans lequel je commenterais ce que j'aimerais appeler des "tranches de vie". Évidemment je n'en ai jamais rien fait, alors voici au moins quelques-unes des dites photos.

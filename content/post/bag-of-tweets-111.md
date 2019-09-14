@@ -2,8 +2,8 @@
 title: "A bag of tweets / June 2019"
 date: 2019-06-25T09:02:35+02:00
 draft: false
-tags: ["misc"]
-categories: []
+tags: ["twitter"]
+categories: ["2019"]
 ---
 
 Here is the latest bag of tweets<sup>\*</sup>, which covers June 2019.

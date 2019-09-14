@@ -3,7 +3,7 @@ title: "What is Data Mining after all"
 date: 2019-02-18T20:42:22+01:00
 draft: false
 tags: ["statistics"]
-categories: []
+categories: ["2019"]
 ---
 It seems that not everyone agrees on what data mining is. Even on [Stack Exchange](https://stats.stackexchange.com/q/5026). I saw various definitions here and there over the past years. I put them here for the record.
 

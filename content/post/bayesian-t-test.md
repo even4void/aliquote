@@ -1,10 +1,9 @@
 +++
 title = "A bayesian t-test"
-description = ""
 date = 2010-08-22T17:59:45+01:00
 draft = false
 tags = ["statistics", "bayesian"]
-categories = []
+categories = ["2010"]
 +++
 
 Classical test of inference for two-group comparisons, like the t-test, often face the problem of small effect size or borderline significance. Moreover, the issue is not so clear when we cannot reject the null.

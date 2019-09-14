@@ -2,18 +2,13 @@
 title = "Work distraction-free OS X desktop"
 date = 2012-03-02T14:41:16+01:00
 draft = false
-
 tags = ["apple"]
-categories = []
-
-[header]
-image = ""
-caption = ""
-preview = true
-
+categories = ["2012"]
 +++
 
 [What they say](http://www.iterm2.com/#/section/features/full_screen): "Work distraction-free with absolutely nothing on the screen but your terminal." That's true.
+
+<!--more-->
 
 I've been using [iTerm](http://iterm.sourceforge.net/) as a replacement of default Apple Terminal program some years ago, then switched back to Console.App with OS 10.6. I'm back to [iTerm2](http://www.iterm2.com) which has a lot of [interesting features](http://www.iterm2.com/#/section/features). I do no really like Apple's fullscreen mode, except for reading PDF papers, or in some occasions browsing with Safari.App. One annoying feature of this fullscreen mode is that there's no way to get non-modal window behavior, which is particularly sad with [Apple Mail](https://discussions.apple.com/thread/3195461?start=45&tstart=0) or when using a Terminal that need to interact with external programs (typically R for statistical computing, or simply Gnuplot). However, when you just need to type shell commands or edit text files (yes, what else?!), iTerm2.App fullscreen mode is just great.
  

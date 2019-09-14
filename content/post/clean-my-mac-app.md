@@ -3,7 +3,7 @@ title: "CleanMyMac App"
 date: 2018-10-09T10:44:27+02:00
 draft: false
 tags: ["apple", "app", "review"]
-categories: []
+categories: ["2018"]
 ---
 
 [CleanMyMac](https://macpaw.com/cleanmymac) is probably the only app you need if you want to stay organized with your Mac.

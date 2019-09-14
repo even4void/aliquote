@@ -3,7 +3,7 @@ title: "Postico App"
 date: 2019-05-21T20:21:14+02:00
 draft: false
 tags: ["apple", "database", "app", "review"]
-categories: []
+categories: ["2019"]
 ---
 
 A few months ago, I discussed [TablePlus](/post/tableplus-app) which is a powerful application to manage your local databases. Here are a few words about [Postico](https://eggerapps.at/postico/), which I use with [Postgres App](https://postgresapp.com) (both applications are developed by the same guy) when I am not using `psql` in a Terminal.

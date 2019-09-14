@@ -2,10 +2,8 @@
 title: "Doom Emacs"
 date: 2018-04-11T21:47:21+02:00
 draft: false
-keywords: []
-description: ""
-tags: ["emacs", "apple"]
-categories: []
+tags: ["emacs"]
+categories: ["2018"]
 ---
 
 After [Spacemacs](http://spacemacs.org), I am currently experimenting with another variant of an evil-powered Emacs: [Doom Emacs](https://github.com/hlissner/doom-emacs). As far as I can tell, it is blazing fast and the default factory settings are well thought.

@@ -1,10 +1,9 @@
 +++
 title = "Around survey methodology and questionnaire design"
-description = ""
 date = 2008-03-24T21:24:09+01:00
 draft = false
 tags = ["readings"]
-categories = []
+categories = ["2008"]
 +++
 
 Recently, I read some books related to survey design and the way a questionnaire should be constructed so as to maximize the information we want to gain from it. Among others, I found Willis's book, *Cognitive Interviewing, A Tool for Improving Questionnaire Design*, 2005, well structured, though some topics are developed far from what I would qualify as a really concise overview. Other lectures included more statistical techniques oriented toward survey design and implementation. This includes a concise (but very dense!) book written by E. S. Lee and R. N. Forthofer, *Analyzing Complex Survey Data* (2006, Sage Publications).

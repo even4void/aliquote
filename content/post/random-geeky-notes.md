@@ -2,18 +2,13 @@
 title = "Some random geeky notes"
 date = 2013-09-03T23:02:11+01:00
 draft = false
-
 tags = ["misc"]
-categories = []
-
-[header]
-image = ""
-caption = ""
-preview = true
-
+categories = ["2013"]
 +++
 
 Here are some random geeky notes that have accumulated over the past few months on my desk.
+
+<!--more-->
 
 There are too many articles I have read and have to read to provide a semblance of summary here. Regarding books, my reading list is growing as well. Nevertheless, I've been happy with *Serious Stats*, by Thom Baguley, and *Statictics Applied to Clinical Studies*, by Cleophas and Zwinderman (bought on <http://www.springer.com>) as a complement to *Statictics Applied to Clinical Trials* by the same authors. I also enjoyed *Introduction to Psychometric Theory*, by Raykov and Marcoulides, since I was looking for a book relying on the [Mplus](http://www.statmodel.com/) software.
 

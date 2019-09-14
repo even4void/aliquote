@@ -1,13 +1,14 @@
 +++
 title = "So many programming languages"
-description = ""
 date = 2011-01-11T10:17:08+01:00
 draft = false
 tags = ["misc"]
-categories = []
+categories = ["2011"]
 +++
 
 This is a short overview of several programming languages that I play with when I have some time.
+
+<!--more-->
 
 I can remember that my very first programming language was Turbo Pascal; it was an introductory course taught to students enrolled in experimental psychology and the design of psychophysical experiments. Then, I used Matlab a lot during 3 to 4 years. It serves as a statistical package to analyse my data, but it was also a tool to construct visual stimuli and learn basic principles of image and signal processing. I even build a GUI for signal processing and data analysis. During my PhD, I started learning C and Java, while attending a lot of statistical courses. It was also the time I definitively switched to the R statistical package. I learned a little bit of Perl, and then discovered Python, which I mostly used like Bash until recently where I started to use it for some heavy computational statistical tasks.
 

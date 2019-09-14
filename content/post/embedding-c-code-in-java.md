@@ -1,10 +1,9 @@
 +++
 title = "Embedding C code in a Java app"
-description = ""
 date = 2008-07-13T18:50:36+01:00
 draft = false
 tags = ["clang"]
-categories = []
+categories = ["2008"]
 +++
 
 Suppose your employer ask you to develop a small application that has to be deployed to a wide range of researchers in the near future. Obviously, you're working in a Micro$oft environment (Yes, what else?) and you don't want to spend your time reading MS SDK, looking for a decent 32 bits compiler with a minimalist but useable EDI. Further, as you probably have other things to do during your daily job, this job will probably become your "homework"… and, of course, as you're a well educated people, you work at home on a Mac or a Linux workstation. It's time to learn how to wrap C and Java together in a small cross-platform application.

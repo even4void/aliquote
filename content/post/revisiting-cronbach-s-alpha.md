@@ -1,13 +1,14 @@
 +++
 title = "Revisiting Cronbach's alpha"
-description = ""
 date = 2010-09-22T12:49:07+01:00
 draft = false
 tags = ["psychometrics"]
-categories = []
+categories = ["2010"]
 +++
 
 While I was polishing statistical analyses for a paper including several instruments for neuropsychological assessment, I was puzzled by an article where authors reported using Cortina's standard error [1] for Cronbach's alpha. I usually give 95% confidence intervals computed by bootstrap (with BCA correction) and don't rely on asymptotic distribution for this particular statistic.
+
+<!--more-->
 
 The precision of Cronbach's alpha depends on the standard error of items intercorrelations, and its SE takes the form
 

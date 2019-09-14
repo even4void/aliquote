@@ -2,18 +2,13 @@
 title = "Why I am still using Emacs"
 date = 2015-08-15T15:11:20+01:00
 draft = false
-
 tags = ["emacs", "apple"]
-categories = []
-
-[header]
-image = ""
-caption = ""
-preview = true
-
+categories = ["2015"]
 +++
 
 Some months ago I noticed the release of a new text editor which was supposed to bring the best of both world, Emacs and Vim, but see [Spacemacs - First Impressions From an Emacs Driven Developer](http://jr0cket.co.uk/2015/08/spacemacs-first-impressions-from-an-emacs-driven-developer.html) for a recent review.
+
+<!--more-->
 
 ## Spacemacs
 

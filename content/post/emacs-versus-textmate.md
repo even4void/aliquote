@@ -1,10 +1,9 @@
 +++
 title = "Emacs versus Textmate"
-description = ""
 date = 2010-05-25T11:38:49+01:00
 draft = false
 tags = ["emacs", "apple"]
-categories = []
+categories = ["2010"]
 [[gallery_item]]
 album = "1"
 image = "20100702203401.png"

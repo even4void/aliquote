@@ -1,15 +1,16 @@
 +++
 title = "Three books on statistical methodology for RCTs"
-description = ""
 date = 2011-03-28T17:31:18+01:00
 draft = false
 tags = ["readings", "statistics"]
-categories = []
+categories = ["2011"]
 +++
 
 Here are three books on Statistical Methods for analyzing data coming from Clinical Trials, and a short review.
 
-<i class="fa fa-external-link fa-1x"></i> [Statistics Applied to Clinical Trials](http://www.springer.com/biomed/book/978-1-4020-9522-1)  
+<!--more-->
+
+[Statistics Applied to Clinical Trials](http://www.springer.com/biomed/book/978-1-4020-9522-1)  
 T.J. Cleophas, A.H. Zwinderman, T.F. Cleophas, and E.P. Cleophas
 (Springer, 2009) 
 
@@ -17,7 +18,7 @@ T.J. Cleophas, A.H. Zwinderman, T.F. Cleophas, and E.P. Cleophas
 
 Maybe my preferred textbook because it is composed of a lot of chapters (47 in the fourth edition) that cover a broad range of different issues that all have in common that they concentrate on specific aspects on statistical methods when analysing and interpreting results from RCTs. As such, this textbook don't follow a logical sequence from design and randomization, data collection, analysis, and reporting. It merely addresses various facets of statistical methodology for those doing clinical research or having to interpret their findings. I would say it is much in the spirit of *[Statistical Issues in Drug Development](http://eu.wiley.com/WileyCDA/WileyTitle/productCd-0470018771.html)*, by Stephen S. Senn (Wiley, 2008).
 
-<i class="fa fa-external-link fa-1x"></i> [Clinical Trials, A Methodological Perspective](http://eu.wiley.com/WileyCDA/WileyTitle/productCd-0471727814.html)  
+[Clinical Trials, A Methodological Perspective](http://eu.wiley.com/WileyCDA/WileyTitle/productCd-0471727814.html)  
 Steven Piantadosi (Wiley, 2005)
 
 > The author bases the revisions and updates on his own classroom experience, as well as feedback from students, instructors, and medical and statistical professionals involved in clinical trials. The Second Edition greatly expands its coverage, ranging from statistical principles to controversial topics, including alternative medicine and ethics. At the same time, it offers more pragmatic advice for issues such as selecting outcomes, sample size, analysis, reporting, and handling allegations of misconduct. Readers familiar with the First Edition will discover completely new chapters, including:
@@ -33,7 +34,7 @@ Steven Piantadosi (Wiley, 2005)
 
 This is a 500+ pages textbook which covers the basic principles of experimental design applied to clinical trials, and their statistical analysis. In fact, the first four chapters are devoted to clinical trials *per se*: RCTs as a scientific and well-founded of asserting the effect of treatments or drugs, some useful digressions about ethics, and an overview of the main use of RCTs (drug development, preventive medicine, complementary and alternative medicine, surgery, screening, and diagnostic trials). Chapter 5 is a review of basic statistical principle, with a discussion of the frequentist and bayesian approaches to statistical inference. In this respect, I always found that David Clayton made a very good job in his book, *[Statistical Models in Epidemiology](http://aje.oxfordjournals.org/content/141/2/182.extract)* (Oxford, 1993), based on the principle of Likelihood. Chapter 6 and 7 are more concerned with statistical design: planning (including specific experimental plans, like equivalence and noninferiority trials; factorial and crossover designs are treated in chapters 19 and 20), source of errors, and clinical *vs.* statistical biases. Considerations about power and sample size would have fit near here, but they are summarized in an entire chapter, for they are discussed at length in different designs (safety and activity stidues, comparative trials, and ES trials). As we know, randomization techniques are an important aspect for allocating patients to treatment in a way that will ensure safe conclusions: it is the purpose of chapter 13. Chapters 16 and 17 deal with the study of prognostic factors, while chapter 21 is about meta-analysis.
 
-<i class="fa fa-external-link fa-1x"></i> [Design and Analysis of Clinical Trials: Concepts and Methodologies](http://eu.wiley.com/WileyCDA/WileyTitle/productCd-0471249858.html)  
+[Design and Analysis of Clinical Trials: Concepts and Methodologies](http://eu.wiley.com/WileyCDA/WileyTitle/productCd-0471249858.html)  
 S.-C. Chow and J.-P. Liu (Wiley, 2004)
 
 > Design and Analysis of Clinical Trials, Second Edition provides both a comprehensive, unified presentation of principles and methodologies for various clinical trials, and a well-balanced summary of current regulatory requirements. This unique resource bridges the gap between clinical and statistical disciplines, covering both fields in a lucid and accessible manner. Thoroughly updated from its first edition, the Second Edition of Design and Analysis of Clinical Trials features new topics such as:

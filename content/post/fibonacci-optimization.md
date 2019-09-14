@@ -2,9 +2,8 @@
 title: "On premature optimization"
 date: 2019-06-29T17:42:31+02:00
 draft: false
-description: ""
 tags: ["racket", "scheme", "math", "euler"]
-categories: []
+categories: ["2019"]
 ---
 
 In which I describe my journey in the land of Fibonacci numbers.

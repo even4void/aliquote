@@ -1,10 +1,9 @@
 +++
 title = "Edinburgh"
-description = ""
 date = 2010-08-19T16:12:15+01:00
 draft = false
 tags = ["travels"]
-categories = []
+categories = ["2010"]
 [[gallery_item]]
 album = "1"
 image = "IMG_0010.JPG"

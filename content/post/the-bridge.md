@@ -2,10 +2,8 @@
 title: "The Bridge, Bron | Broen"
 date: 2018-04-05T09:04:34+02:00
 draft: false
-keywords: []
-description: ""
 tags: ["misc"]
-categories: []
+categories: ["2018"]
 ---
  
 I just finished watching The Bridge (1st season) last week. This is a great series.

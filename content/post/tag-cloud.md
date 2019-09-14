@@ -1,10 +1,9 @@
 +++
 title = "Visualizing data using tag cloud"
-description = ""
 date = 2010-04-17T18:04:50+01:00
 draft = false
 tags = ["dataviz", "rstats"]
-categories = []
+categories = ["2010"]
 [[gallery_item]]
 album = "1"
 image = "20100201231620.png"

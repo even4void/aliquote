@@ -2,18 +2,13 @@
 title = "Using Mu to manage e-mails"
 date = 2013-05-31T20:14:47+01:00
 draft = false
-
 tags = ["apple"]
-categories = []
-
-[header]
-image = ""
-caption = ""
-preview = true
-
+categories = ["2013"]
 +++
 
 Yet another attempt at installing [mu](http://www.djcbsoftware.nl/code/mu) to store my Gmail account locally and get better search features than Apple Spotlight.
+
+<!--more-->
 
 ## Mail.app does not use open standard formats
 

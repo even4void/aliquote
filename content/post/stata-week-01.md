@@ -3,7 +3,7 @@ title: "Stata and Extended Regression Models"
 date: 2019-01-25T13:14:45+02:00
 draft: false
 tags: ["statistics", "stata"]
-categories: []
+categories: ["2019"]
 ---
 
 Per Stata Corp. announcement back in 2017, [Extended Regression Models](https://www.stata.com/new-in-stata/extended-regression-models/) (ERM) are a class of models that encompasses linear regression, (ordered) probit model and interval regression. In what follows, I shall discuss what ERMs are good for, how they can be used in practice, and how they compare to other approaches to fitting multiple equation models.

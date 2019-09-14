@@ -3,7 +3,7 @@ title = "GSL shell and Julia"
 date = 2012-03-11T08:38:02+01:00
 draft = false
 tags = ["julia"]
-categories = []
+categories = ["2012"]
 +++
 
 There has been some buzz around a new language for numerical, and potentially statistical, computation: [Julia](http://julialang.org/). Another interesting project is [gsl-shell](http://www.nongnu.org/gsl-shell/) which offers interactive data analysis and visualization with GNU Scientific Library.

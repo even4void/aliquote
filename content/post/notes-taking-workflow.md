@@ -1,13 +1,16 @@
 +++
 title = "A text-based workflow for taking note"
-description = ""
 date = 2018-02-18T17:26:15+01:00
 draft = false
 tags = ["emacs", "apple"]
-categories = []
+categories = ["2018"]
 +++
 
-Over the years, I have been using various approaches to note taking on my Mac, especially to annotate articles or books I read, or just quickly write some reminders or archive snippets of code. None has definitely been satisfactory--the last iteration was a combination of a standard BibTeX file and hundreds of ebooks managed by [Papers](https://www.readcube.com/papers/) app, and I definitely need a more robust workflow. So, I decided to start again from scratch. Since I use (Space)macs[^1] for almost everything serious in my work, I set up a solution entirely based on two dedicated directories and a set of Markdown and Org files. I took inspiration from a very instructive [Reddit thread](https://www.reddit.com/r/emacs/comments/4gudyw/help_me_with_my_orgmode_workflow_for_notetaking/) in which one of the poster describes his setup to manage bibliographic entries using a combination of [Helm-bibtex](https://github.com/tmalsburg/helm-bibtex) and [org-ref](https://github.com/jkitchin/org-ref), and by another great blog post by Piotr Limanowski: [Reading for Programmers](https://codearsonist.com/reading-for-programmers).
+Over the years, I have been using various approaches to note taking on my Mac, especially to annotate articles or books I read, or just quickly write some reminders or archive snippets of code. None has definitely been satisfactory--the last iteration was a combination of a standard BibTeX file and hundreds of ebooks managed by [Papers](https://www.readcube.com/papers/) app, and I definitely need a more robust workflow. 
+
+<!--more-->
+
+So, I decided to start again from scratch. Since I use (Space)macs[^1] for almost everything serious in my work, I set up a solution entirely based on two dedicated directories and a set of Markdown and Org files. I took inspiration from a very instructive [Reddit thread](https://www.reddit.com/r/emacs/comments/4gudyw/help_me_with_my_orgmode_workflow_for_notetaking/) in which one of the poster describes his setup to manage bibliographic entries using a combination of [Helm-bibtex](https://github.com/tmalsburg/helm-bibtex) and [org-ref](https://github.com/jkitchin/org-ref), and by another great blog post by Piotr Limanowski: [Reading for Programmers](https://codearsonist.com/reading-for-programmers).
 
 I followed the instructions to initialise Helm-bibtex and org-ref, which basically amounts to define a few variables in my `.emacs`, as described on the Github links referenced above. For whatever reason we have to define the PDF directory and the BibTeX file twice, but this is something that I can live with. However, at some point I should really `setq` a constant filename to define the BibTeX file, since I only have once now. (Previously, I was exporting a separate bib file from Papers app to help differentiate entries coming from Papers and Emacs.)
 

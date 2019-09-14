@@ -3,7 +3,7 @@ title: "Visual Statistics – Use R!"
 date: 2019-04-12T19:30:13+02:00
 draft: false
 tags: ["review", "statistics", "rstats"]
-categories: []
+categories: ["2019"]
 ---
 "Let's not kid ourselves, the most widely used piece of software for statistics is Excel" (Brian Ripley). Now I believe that even biologists could learn R for good using this neat textbook written by Alexey Shipunov: [Visual Statistics--User R!](http://ashipunov.info/shipunov/software/r/r-en.htm)
 

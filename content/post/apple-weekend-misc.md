@@ -2,15 +2,8 @@
 title = "Apple weekend miscellanies"
 date = 2011-08-29T00:00:21+01:00
 draft = false
-
 tags = ["apple"]
-categories = []
-
-[header]
-image = ""
-caption = ""
-preview = true
-
+categories = ["2011"]
 +++
 
 Some weekend miscellanies on my Airbook.

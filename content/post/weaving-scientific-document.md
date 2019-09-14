@@ -2,18 +2,13 @@
 title = "Weaving scientific documents"
 date = 2011-04-25T09:03:39+01:00
 draft = false
-
 tags = ["tex", "stata", "rstats"]
-categories = []
-
-[header]
-image = ""
-caption = ""
-preview = true
-
+categories = ["2011"]
 +++
 
 Some notes about installing and testing [StatWeave](http://www.stat.uiowa.edu/~rlenth/StatWeave/) with R and Stata.
+
+<!--more-->
 
 [StatWeave](http://www.stat.uiowa.edu/~rlenth/StatWeave/) is yet another way to weave code chunks and text into a single document. The idea of interlacing code and doucmentation is borrowed from the famous <i class="fa fa-file-pdf-o fa-1x"></i> [web](http://www.literateprogramming.com/web.pdf) and [cweb](http://www-cs-faculty.stanford.edu/~uno/cweb.html) systems developed by D Knuth who also coined the term "literate programming". There is a draft article on [Lightweight Literate Programming](http://infohost.nmt.edu/~al/Literate-programming/draft/), which has evolved as an extended discussion of the following paper:
 

@@ -2,9 +2,8 @@
 title = "Emacs auto-completion for Python"
 date = 2013-02-11T11:54:58+01:00
 draft = false
-
 tags = ["emacs", "python"]
-categories = []
+categories = ["2013"]
 
 [header]
 image = ""

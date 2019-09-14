@@ -2,15 +2,8 @@
 title = "Using mu to manage e-mails (followup)"
 date = 2013-06-14T11:09:30+01:00
 draft = false
-
-tags = ["apple", "emacs"]
-categories = []
-
-[header]
-image = ""
-caption = ""
-preview = true
-
+tags = ["emacs"]
+categories = ["2013"]
 +++
 
 Here are further thoughts on managing IMAP accounts on a Mac without any GUI.

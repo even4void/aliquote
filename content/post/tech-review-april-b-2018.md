@@ -3,7 +3,7 @@ title: "Tech Review / April 2018 (2)"
 date: 2018-04-23T7:11:05+02:00
 draft: false
 tags: ["readings", "review"]
-categories: []
+categories: ["2018"]
 ---
 
 Here is the second part of the [April technical review]({{< ref "/post/tech-review-april-2018.md" >}}).

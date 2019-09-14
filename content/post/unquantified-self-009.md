@@ -3,7 +3,7 @@ title: "The unquantified self #9"
 date: 2019-07-18T20:17:29+02:00
 draft: false
 tags: ["self"]
-categories: []
+categories: ["2019"]
 ---
 
 Long time no see. Here are some news from the past already.

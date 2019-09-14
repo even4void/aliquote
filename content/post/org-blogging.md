@@ -1,10 +1,9 @@
 +++
 title = "Spacemacs and Hugo made easy"
-description = ""
 date = 2018-03-06T13:10:23+01:00
 draft = false
 tags = ["emacs"]
-categories = []
+categories = ["2018"]
 +++
 
 I am almost done with my new setup. This all starts with [refactoring my web site]({{< ref "/post/setup-2018.md" >}}) (Hugo backend), archiving and reorganizing my [text-based workflow]({{< ref "notes-taking-workflow.md" >}}), and finally blogging again after several months IDLE. 

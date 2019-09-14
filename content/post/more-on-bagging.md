@@ -1,13 +1,14 @@
 +++
 title = "More on bagging"
-description = ""
 date = 2011-03-20T17:39:19+01:00
 draft = false
 tags = ["readings", "statistics"]
-categories = []
+categories = ["2011"]
 +++
 
 Last day, I was reading some entries in the new *Encyclopedia of Machine Learning* (Springer, 2011), and I stumble upon the one on *bagging* (which is itself helded under the "ensemble learning" tag) which provides a very clean overview of bagging and ensemble learning methods.
+
+<!--more-->
 
 If you don't know the principle of this handbook, it just basically aims at offering a thorough overview of ML and AI-related techniques. Curiously, I didn't found any single definition of Machine Learning *per se*. <i class="fa fa-file-pdf-o fa-1x"></i> [Ensemble learning](http://www.cs.man.ac.uk/~gbrown/research/brown10ensemblelearning.pdf) techniques (PDF) were nicely reviewed by [Gavin Brown](http://www.cs.man.ac.uk/~gbrown/). Another instructive paper from the author is: <i class="fa fa-file-pdf-o fa-1x"></i> [Managing Diversity in Regression Ensembles](http://jmlr.csail.mit.edu/papers/volume6/brown05a/brown05a.pdf), JMLR (2005) 6: 1621-1650.
 

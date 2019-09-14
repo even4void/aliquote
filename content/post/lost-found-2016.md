@@ -2,18 +2,13 @@
 title = "lost+found 2016"
 date = 2018-01-21T19:28:46+01:00
 draft = false
-
 tags = ["misc", "emacs"]
-categories = []
-
-[header]
-image = ""
-caption = ""
-preview = true
-
+categories = ["2018"]
 +++
 
 Here are some draft notes, written in 2016, unfilled but not lost forever. With slight edits to accomodate a proper archive blog post.
+
+<!--more-->
 
 ## Docker
 <small>(August 2016)</small>

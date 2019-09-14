@@ -2,15 +2,8 @@
 title = "Interacting with Weka from Jython"
 date = 2012-09-20T21:28:08+01:00
 draft = false
-
-tags = ["python", "weka"]
-categories = []
-
-[header]
-image = ""
-caption = ""
-preview = true
-
+tags = ["python"]
+categories = ["2012"]
 +++
 
 I discovered a lovely feature: You can use [WEKA](http://www.cs.waikato.ac.nz/ml/weka/) directly with [Jython](http://www.jython.org) in a friendly interactive [REPL](http://en.wikipedia.org/wiki/Read–eval–print_loop).

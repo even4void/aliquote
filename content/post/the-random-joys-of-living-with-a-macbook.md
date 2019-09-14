@@ -2,18 +2,13 @@
 title = "The random joys of living with a Macbook"
 date = 2012-02-23T23:12:16+01:00
 draft = false
-
 tags = ["apple"]
-categories = []
-
-[header]
-image = ""
-caption = ""
-preview = true
-
+categories = ["2012"]
 +++
 
 Well done OS X AppStore! You just deleted my `/Developer` folder with all extra stuff I installed on top of your programs...
+
+<!--more-->
 
 I don't really understand what pleasure Apple might take in changing everything on my Mac everytime they release new software or new system. Now, they even don't ship `gcc` with the newly released Xcode. 
 

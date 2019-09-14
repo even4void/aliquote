@@ -2,8 +2,8 @@
 title: "ArXiving on May 2018"
 date: 2018-10-19T08:42:46+02:00
 draft: false
-tags: ["readings", "arxiv", "review"]
-categories: []
+tags: ["readings", "arxiv"]
+categories: ["2018"]
 ---
 
 Here is a quick overview of some papers from the ArXiv. (And yes it was supposed to be published in May, and yes it is partly incomplete.)

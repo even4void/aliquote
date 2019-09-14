@@ -1,13 +1,14 @@
 +++
 title = "Recursive feature elimination coupled to SVM in R"
-description = ""
 date = 2011-05-22T12:42:15+01:00
 draft = false
 tags = ["rstats", "statistics","bioinformatics"]
-categories = []
+categories = ["2011"]
 +++
 
 I recently wondered whether it is possible to apply Recursive Feature Selection with SVM in R.
+
+<!--more-->
 
 RFE+SVM is well described in the litterature. It has originally been proposed by Guyon and coworkers for gene selection, in [Gene Selection for Cancer Classification using Support Vector Machines](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.70.9598&rep=rep1&type=pdf) (*Machine Learning* (2002) 46(1)3), 389-422). Here are two more recent papers that show application of RFE+SVM in a similar context and discuss its performance as a wrapper method for feature selection:
 

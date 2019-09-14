@@ -2,19 +2,13 @@
 title = "Emacs Org-mode and literate programming"
 date = 2014-08-06T23:23:34+01:00
 draft = false
-
 tags = ["emacs", "rstats", "lisp"]
-categories = []
-
-[header]
-image = ""
-caption = ""
-preview = true
-
+categories = ["2014"]
 +++
 
 I've been using Emacs for editing and evaluating R code with [ESS](http://ess.r-project.org) for a long time now. I also like Emacs for editing statistical reports and compiling them using [knitr](http://yihui.name/knitr/) (and before that, [Sweave](http://www.stat.uni-muenchen.de/~leisch/Sweave/)), using plain $\LaTeX$ or just RMarkdown. Now, I'm getting interested in [org-mode](http://orgmode.org) as an alternative to [noweb](http://www.cs.tufts.edu/~nr/noweb/), which I previously used when looking for a way to integrate different programming languages (e.g., sh, sed, and R) into the same document.
 
+<!--more-->
 
 ## Literate programming
 

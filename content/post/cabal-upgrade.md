@@ -2,18 +2,11 @@
 title = "Cabal Upgrade"
 date = 2010-12-19T00:22:24+01:00
 draft = false
-
-tags = ["apple"]
-categories = []
-
-[header]
-image = ""
-caption = ""
-preview = true
-
+tags = ["apple", "haskell"]
+categories = ["2010"]
 +++
 
-Just a few notes about the defected cabal-install program in the latest Haskell latform, although it seems to be older than the latest release. So why spending two hours trying to solve this infamous `cabal: Codec.Compression.Zlib: incorrect header check`? Because I just want to try [pandoc](http://johnmacfarlane.net/pandoc/) : smile :
+Just a few notes about the defected cabal-install program in the latest Haskell platform, although it seems to be older than the latest release. So why spending two hours trying to solve this infamous `cabal: Codec.Compression.Zlib: incorrect header check`? Because I just want to try [pandoc](http://johnmacfarlane.net/pandoc/) : smile :
 
 Ok, I must admit it was not so hard to get things working, after googling a little bit and finding THE correct solution (among a lot of useless threads)--in fact, I spent two hours on that bug, more than two third of it being devoted to reading all those threads and tweaking my current install. Then, I found it: You just need to upgrade to the latest version of cabal (1.10) and cabal-install (which are probably patched). They can be found from the Darcs repository (yes, of course it needs a working darcs, that cannot compile from source unless you already have a working cabal-install program because of the many dependencies, so I choose an x86-64 binary from <http://darcs.net/>). The main problem stands from the package format which is not a tar.gz file as expected.
 

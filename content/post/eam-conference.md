@@ -2,9 +2,8 @@
 title = "Back from the VI EAM conference"
 date = 2014-07-29T11:29:13+01:00
 draft = false
-
 tags = ["travels"]
-categories = []
+categories = ["2014"]
 
 [header]
 image = ""

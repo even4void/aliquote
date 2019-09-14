@@ -2,9 +2,8 @@
 title: "Org-mode and blogging"
 date: 2018-10-27T19:27:04+02:00
 draft: false
-description: ""
 tags: ["emacs"]
-categories: []
+categories: ["2018"]
 ---
 
 Blogging with Emacs and org-mode: One can find many posts on that specific topic, but here I just wanted to highlight how [ox-hugo](https://ox-hugo.scripter.co) makes it so simple that you only need to have a single file to manage all your posts.

@@ -3,7 +3,7 @@ title: "The unquantified self #10"
 date: 2019-08-22T18:44:07+02:00
 draft: false
 tags: ["self"]
-categories: []
+categories: ["2019"]
 ---
 
 Latest news from the Summer here.

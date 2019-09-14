@@ -1,10 +1,9 @@
 +++
 title = "A recap' on the statistical analysis of RCTs"
-description = ""
 date = 2010-09-01T12:46:38+01:00
 draft = false
 tags = ["readings", "statistics"]
-categories = []
+categories = ["2010"]
 +++
 
 Although not really related to RCTs per se, this note is a summary of an article coming from [Statistical Methods in Medical Research](http://smm.sagepub.com/), 2010 vol. 19(4), which is a special issue on Primary Care studies.

@@ -2,9 +2,8 @@
 title: "Automated ML interpretation"
 date: 2018-06-19T7:40:12+02:00
 draft: false
-description: ""
 tags: ["statistics", "python"]
-categories: []
+categories: ["2018"]
 ---
 
 Today I noticed that there is now a Python package "to explain the output of any machine learning model": [SHAP](https://github.com/slundberg/shap).

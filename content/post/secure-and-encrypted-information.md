@@ -3,7 +3,7 @@ title = "Some solutions for secure and encrypted information"
 date = 2018-04-09T09:22:02+01:00
 draft = false
 tags = ["misc"]
-categories = []
+categories = ["2018"]
 +++
 
 Back in January, I came across a tweet saying "Protect yourself today." That sounds great!

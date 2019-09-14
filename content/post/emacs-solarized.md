@@ -2,15 +2,8 @@
 title = "Color schemes for Emacs and TeX"
 date = 2011-08-25T11:19:54+01:00
 draft = false
-
 tags = ["emacs"]
-categories = []
-
-[header]
-image = ""
-caption = ""
-preview = true
-
+categories = ["2011"]
 +++
 
 I lastly tried the [Solarized](http://ethanschoonover.com/solarized) color theme for Emacs which provides a nifty colorscheme (for light or dark backgrounds). This led me to wonder whether I could use this theme for highlighting code chunks in my $\LaTeX$ documents.

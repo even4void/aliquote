@@ -2,15 +2,8 @@
 title = "Factor analysis with categorical data"
 date = 2012-07-27T17:43:41+01:00
 draft = false
-
 tags = ["psychometrics"]
-categories = []
-
-[header]
-image = ""
-caption = ""
-preview = true
-
+categories = ["2012"]
 +++
 
 I often read questions on the use of Factor Analysis (FA) with categorical data, typically binary (yes/no) indicators or ordinal responses (e.g., Likert-type items). Here is a brief list of references that justify its use in this context, and provide comparison with other measurement models (mostly from the Item Response Theory literature).

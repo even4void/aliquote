@@ -1,10 +1,9 @@
 +++
 title = "Bioinformatics with Mac OS X"
-description = ""
 date = 2008-06-15T09:27:38+01:00
 draft = false
 tags = ["apple","bioinformatics"]
-categories = []
+categories = ["2008"]
 [[gallery_item]]
 album = "1"
 image = "20080620101315.png"

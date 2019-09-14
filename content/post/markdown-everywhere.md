@@ -2,15 +2,8 @@
 title = "Markdown everywhere"
 date = 2012-08-09T22:30:03+01:00
 draft = false
-
 tags = ["misc"]
-categories = []
-
-[header]
-image = ""
-caption = ""
-preview = true
-
+categories = ["2012"]
 +++
 
 The [Markdown](http://daringfireball.net/projects/markdown/) language has become the *de facto* lightweight markup language for text editing, and more.

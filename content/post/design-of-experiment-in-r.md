@@ -1,10 +1,9 @@
 +++
 title = "Design of experiment in R"
-description = ""
 date = 2011-05-28T12:41:42+01:00
 draft = false
 tags = ["rstats", "statistics"]
-categories = []
+categories = ["2011"]
 +++
 
 When I started writing my companion textbook for Montgomery's *Design and Analysis of Experiments*, there was not so much dedicated package available on CRAN.

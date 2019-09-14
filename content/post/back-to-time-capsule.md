@@ -2,15 +2,8 @@
 title = "Back to a Time Capsule"
 date = 2012-06-16T16:37:53+01:00
 draft = false
-
 tags = ["apple"]
-categories = []
-
-[header]
-image = ""
-caption = ""
-preview = true
-
+categories = ["2012"]
 +++
 
 The hard drive I used to backup my Macbook everyday day or so has crashed. Back to a Time Capsule and the joy of the first synchronization.

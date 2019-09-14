@@ -2,9 +2,8 @@
 title: "OS X Mojave"
 date: 2018-10-20T19:02:20+02:00
 draft: false
-description: ""
 tags: ["apple"]
-categories: []
+categories: ["2018"]
 ---
 
 Welcome to the next iteration of macOS! No more panther, leopard or tiger or other felines, it is all about dazzling landscapes nowadays. The dynamic wallpaper is blowing my mind, though.

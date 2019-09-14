@@ -2,15 +2,8 @@
 title = "Python for interactive scientific data visualization"
 date = 2013-05-15T11:17:42+01:00
 draft = false
-
 tags = ["python", "dataviz"]
-categories = []
-
-[header]
-image = ""
-caption = ""
-preview = true
-
+categories = ["2013"]
 +++
 
 Some random notes on recent 'pythonic peregrinations' on my Airbook.

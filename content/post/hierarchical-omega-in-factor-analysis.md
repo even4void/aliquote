@@ -2,15 +2,8 @@
 title = "Hierarchical Omega in factor analysis"
 date = 2013-02-10T15:10:17+01:00
 draft = false
-
 tags = ["readings", "psychometrics"]
-categories = []
-
-[header]
-image = ""
-caption = ""
-preview = true
-
+categories = ["2013"]
 +++
 
 While browsing questions related to psychometrics posted late in 2012 on Cross Validated, I noticed two questions dealing with hierarchical ω<sub>h</sub>.

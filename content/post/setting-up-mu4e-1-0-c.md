@@ -2,9 +2,8 @@
 title: "Setting Up Mu4e 1.0 C"
 date: 2018-06-01T09:59:21+02:00
 draft: false
-description: ""
-tags: ["emacs", "apple"]
-categories: []
+tags: ["emacs"]
+categories: ["2018"]
 ---
 Just when I thought I would be a reasonnable guy for 2018 and just keep processing my email with Apple Mail, I found myself reconfiguring Emacs to fetch and send some email using [mu4e](http://www.djcbsoftware.nl/code/mu/mu4e.html), now in version 1. 
 

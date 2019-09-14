@@ -2,15 +2,8 @@
 title = "Contemporary or modern psychometrics"
 date = 2011-12-11T17:49:36+01:00
 draft = false
-
 tags = ["psychometrics"]
-categories = []
-
-[header]
-image = ""
-caption = ""
-preview = true
-
+categories = ["2011"]
 +++
 
 That is certainly a minor issue of terminology, but what is best: "contemporary" or "modern" psychometrics?

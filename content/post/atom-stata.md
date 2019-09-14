@@ -1,11 +1,9 @@
 ---
 title: "Stata and Julia on Atom"
 date: 2018-09-19T19:36:16+02:00
-lastmod: 2018-09-19T19:36:16+02:00
 draft: false
-description: ""
 tags: ["stata", "julia"]
-categories: []
+categories: ["2018"]
 ---
 
 Regularly, I like to give [Atom](https://discourse.julialang.org/t/julia-1-0-support-just-landed-on-gadfly-master/14978) another try. This time, coupled to Hydrogen I found that Atom became a solid editor scientific computation and text editing.

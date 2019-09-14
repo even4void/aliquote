@@ -2,18 +2,13 @@
 title = "Some random notes"
 date = 2012-08-09T17:38:13+01:00
 draft = false
-
 tags = ["misc"]
-categories = []
-
-[header]
-image = ""
-caption = ""
-preview = true
-
+categories = ["2012"]
 +++
 
 Some random notes from holidays.
+
+<!--more-->
 
 - [Mountain Lion](http://arstechnica.com/apple/2012/07/os-x-10-8/) (OS X 10.8) is out. I didn't upgrade my system though. Among the major changes are updates to base programming languages (Python, Perl, Ruby). The rest looks like poor little cosmetic changes, with [iCloud](http://www.apple.com/icloud/) as a definitive replacement for mobile.me (previsouly dot mac). All mobile.me services have been stopped, including photos galleries and iDisk (and shared users iDisk). I still have a .mac email address, that I don't use much. Too much of benevolent contributions now depends on the infamous App Store. I don't plan to renew my annual subscription. *Apple, you just suck sometimes*.
 - I ordered a lot of books on psychometrics. Obviously, I won't have time to read them all before end of August, but I will try to review them whenever the opportunity arises. Here they are:

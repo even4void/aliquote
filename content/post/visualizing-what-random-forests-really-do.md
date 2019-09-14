@@ -2,18 +2,13 @@
 title = "Visualizing What Random Forests Really Do"
 date = 2011-02-25T12:42:26+01:00
 draft = false
-
 tags = ["statistics", "dataviz"]
-categories = []
-
-[header]
-image = ""
-caption = ""
-preview = true
-
+categories = ["2011"]
 +++
 
 Apart from summarizing some notes I took when reading articles and book chapters about RFs, I would like to show some simple way to graphically summarize how RFs work and what results they give.
+
+<!--more-->
 
 Some time ago, there was a [question](http://stats.stackexchange.com/questions/2344/best-way-to-present-a-random-forest-in-a-publication) on [stats.stackexchange.com](stats.stackexchange.com) about visualizing RFs output. Well, in essence the responses were that it is not very useful as a single unpruned tree is not informative about the overall results or classification performance. Yet, there may be some cases where showing how trees are built and how similar they are might be of interest, especially for the researcher or physician who isn't that used to ML techniques. Although I will not provide a working illustration to this specific question, we can still play with simple decision trees and shuffle the dataset onto which they are evaluated. In short, we can apply some sort of *bagging*.
 

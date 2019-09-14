@@ -2,15 +2,8 @@
 title = "Dicing With Death"
 date = 2012-12-09T15:28:16+01:00
 draft = false
-
 tags = ["readings", "statistics"]
-categories = []
-
-[header]
-image = ""
-caption = ""
-preview = true
-
+categories = ["2012"]
 +++
 
 I just finished reading a very nice book from Stephen Senn: *Dicing with death. Chance, Risk and Health* (Cambridge University Press, 2003). It is very nicely written; I am no expert in English but I found that the quality of the writing gives a special sense to statistical issues discussed in this book.

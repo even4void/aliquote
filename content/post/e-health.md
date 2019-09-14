@@ -2,15 +2,8 @@
 title = "EHealth, eTools and the like"
 date = 2013-07-10T11:03:57+01:00
 draft = false
-
 tags = ["database"]
-categories = []
-
-[header]
-image = ""
-caption = ""
-preview = true
-
+categories = ["2013"]
 +++
 
 Some months ago, I attended a conference that was held at the Cité Universitaire in Paris. It was about [e-tools and social networks for epidemiology](http://www.e4n.fr). The program and slides can be found on the website.

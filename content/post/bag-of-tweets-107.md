@@ -2,8 +2,8 @@
 title: "A bag of tweets / Feb 2019"
 date: 2019-02-25T08:08:24+01:00
 draft: false
-tags: ["misc"]
-categories: []
+tags: ["twitter"]
+categories: ["2019"]
 ---
 
 Here is the latest bag of tweets<sup>\*</sup>, which covers February 2019.

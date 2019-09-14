@@ -2,15 +2,8 @@
 title = "Formative vs Reflective Measurement"
 date = 2011-12-11T19:49:57+01:00
 draft = false
-
 tags = ["psychometrics"]
-categories = []
-
-[header]
-image = ""
-caption = ""
-preview = true
-
+categories = ["2011"]
 +++
 
 Lastly, I attended a talk by Hervé Guyon about PLS path modeling and the debate about formative *vs.* reflective measurement. 

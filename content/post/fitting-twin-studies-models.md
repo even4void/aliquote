@@ -2,15 +2,8 @@
 title = "Fitting genetic models for twin studies"
 date = 2011-12-10T17:58:11+01:00
 draft = false
-
-tags = ["statistics"]
-categories = []
-
-[header]
-image = ""
-caption = ""
-preview = true
-
+tags = ["statistics", "bioinformatics"]
+categories = ["2011"]
 +++
 
 In their 2008 paper entitled "Biometrical modeling of twin and family data using standard mixed

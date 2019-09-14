@@ -2,18 +2,13 @@
 title = "Methods for handling treatment switches"
 date = 2012-07-05T20:23:26+01:00
 draft = false
-
 tags = ["readings", "statistics"]
-categories = []
-
-[header]
-image = ""
-caption = ""
-preview = true
-
+categories = ["2012"]
 +++
 
 In a recent statistical seminar I attended, there was a discussion on statistical strategies to cope with treatment switching and the estimation of survival.
+
+<!--more-->
 
 The presentation went around slides from [Ian White](http://www.mrc-bsu.cam.ac.uk/People/IWhite.html) <i class="fa fa-chain-broken fa-1x"></i>:[^1]
 [Methods for handling treatment switching: rank-preserving structural nested failure time models, inverse- probability-of-censoring weighting, and marginal structural models](http://www.methodologyhubs.mrc.ac.uk/pdf/Ian%20White%20treatment%20switches%20workshop.pdf) <i class="fa fa-chain-broken fa-1x"></i>, which are taken from the [HTMR network workshop on Methods for adjusting for

@@ -3,7 +3,7 @@ title: "Prettify your Emacs"
 date: 2019-09-11T14:48:31+02:00
 draft: false
 tags: ["emacs"]
-categories: []
+categories: ["2019"]
 ---
 
 Here are a few tips to brighten up your symbols in Emacs.

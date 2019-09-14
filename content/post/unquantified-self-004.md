@@ -3,7 +3,7 @@ title: "The unquantified self #4"
 date: 2018-12-31T21:24:17+01:00
 draft: false
 tags: ["self"]
-categories: []
+categories: ["2018"]
 ---
 Winter here, this is the end of the year.
 <!--more-->

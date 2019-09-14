@@ -2,18 +2,13 @@
 title = "Mokken scale analysis"
 date = 2012-02-23T17:38:39+01:00
 draft = false
-
 tags = ["readings", "psychometrics"]
-categories = []
-
-[header]
-image = ""
-caption = ""
-preview = true
-
+categories = ["2012"]
 +++
 
 My recent lectures focus on *Mokken Scale Analysis* which is based on an item response model known as the monotone homogeneity model.
+
+<!--more-->
 
 Mokken scale analysis can be seen as a hierarchical scaling method where we make the assumption that there exist an underlying latent trait that explain covariation between item responses. As in other IRT models, items are thought to be orderable by 'difficulty' such that any individual who endorses a particular item should endorse one with a lower difficulty (as in [Guttman scaling](http://en.wikipedia.org/wiki/Guttman_scale), but perfectly ordered response patterns are rarely met in practice, especially in some fields of research). Individual scores are then computed as the rank of the highest endorsed item in this hierarchy, i.e. it is a simple total score (sum of positive responses). Unlike Guttman scaling, however, Mokken scaling relies on a probabilistic framework.[^1] The reproducibility of response patterns are typically assessed using a coefficient of reproducibility, a coefficient of scalability and/or Loevinger's coefficient of homogeneity.<sup>(1)</sup>
 

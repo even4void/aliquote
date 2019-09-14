@@ -3,7 +3,7 @@ title: "Not so random links from August"
 date: 2019-08-08T19:45:23+02:00
 draft: false
 tags: ["readings"]
-categories: []
+categories: ["2019"]
 ---
 
 Some not so random links found on Twitter or elsewhere that I haven't had time to put on the Micro section.

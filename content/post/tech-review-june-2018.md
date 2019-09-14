@@ -3,7 +3,7 @@ title: "Tech Review / June 2018"
 date: 2018-06-22T6:40:51+02:00
 draft: false
 tags: ["readings", "review"]
-categories: []
+categories: ["2018"]
 ---
 
 The monthly tech newsletter is finally out! This is probably just the first part and I will add more fresh news in a few days.

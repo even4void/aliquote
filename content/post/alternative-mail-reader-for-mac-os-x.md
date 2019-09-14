@@ -2,15 +2,8 @@
 title = "Alternative mail reader for Mac OS X"
 date = 2012-12-17T22:12:46+01:00
 draft = false
-
 tags = ["apple"]
-categories = []
-
-[header]
-image = ""
-caption = ""
-preview = true
-
+categories = ["2012"]
 +++
 
 I just gave a try to [MailMate](http://freron.com) to manage my emails on my Airbook.

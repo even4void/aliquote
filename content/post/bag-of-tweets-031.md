@@ -1,10 +1,9 @@
 +++
 title = "A bag of tweets / July 2013"
-description = ""
 date = 2013-07-30T17:24:36+01:00
 draft = false
-tags = ["misc"]
-categories = []
+tags = ["twitter"]
+categories = ["2013"]
 +++
 
 Here is the latest bag of tweets<sup>\*</sup>, which covers July 2013.

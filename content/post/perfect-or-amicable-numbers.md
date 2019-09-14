@@ -1,9 +1,9 @@
 ---
 title: "Perfect and amicable numbers"
-date: 2019-09-13T08:55:52+02:00
+date: 2019-09-12T08:55:52+02:00
 draft: false
 tags: ["math", "racket"]
-categories: []
+categories: ["2019"]
 ---
 
 In which we talk about perfect numbers and amicable pairs. This is somewhat related to problems raised on the Euler project and the Exercism coding track. This also once motivated the name of this site.

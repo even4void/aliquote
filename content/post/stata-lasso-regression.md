@@ -3,7 +3,7 @@ title: "Lasso Regression with Stata"
 date: 2019-01-17T09:25:42+01:00
 draft: false
 tags: ["stata","statistics"]
-categories: []
+categories: ["2019"]
 ---
 Here comes the time of lasso and elastic net regression with Stata.
 

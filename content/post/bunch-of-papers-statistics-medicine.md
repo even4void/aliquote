@@ -2,15 +2,8 @@
 title = "Latest reading list on medical statistics"
 date = 2012-04-15T08:34:31+01:00
 draft = false
-
 tags = ["readings", "statistics"]
-categories = []
-
-[header]
-image = ""
-caption = ""
-preview = true
-
+categories = ["2012"]
 +++
 
 A bunch of papers in early view from *Statistics in Medicine* suddenly came out in my Google feed reader. Way too many to tweet them all, so here is a brief list of papers I should read during my forthcoming week off.

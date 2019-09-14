@@ -1,32 +1,26 @@
 +++
 title = "Compiling Gnuplot on OS X"
-description = ""
 date = 2011-05-09T12:43:05+01:00
 draft = false
 tags = ["apple"]
-categories = []
-
+categories = ["2011"]
 [header]
 [[gallery_item]]
 album = "1"
 image = "20110509083144.png"
 caption = "x11"
-
 [[gallery_item]]
 album = "1"
 image = "20110509083221.png"
 caption = "aqua"
-
 [[gallery_item]]
 album = "1"
 image = "20110509083505.png"
 caption = "tikz"
-
 [[gallery_item]]
 album = "2"
 image = "20110510084812.png"
 caption = ""
-
 [[gallery_item]]
 album = "2"
 image = "20110510084533.png"

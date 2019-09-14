@@ -2,15 +2,8 @@
 title = "Cognitive diagnosis models"
 date = 2012-12-10T15:27:40+01:00
 draft = false
-
 tags = ["readings", "psychometrics"]
-categories = []
-
-[header]
-image = ""
-caption = ""
-preview = true
-
+categories = ["2012"]
 +++
 
 As its name suggests, a cognitive diagnosis model aims at "diagnosing" which skills examinees have or do not have. It has become very popular in recent years because it overcomes standard limitations of summated scale scores derived from classical test or item response theory.

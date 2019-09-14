@@ -3,7 +3,7 @@ title: "Modern Vim"
 date: 2019-05-03T20:38:43+02:00
 draft: true
 tags: ["review", "vim"]
-categories: []
+categories: ["2019"]
 ---
 Following my review of [Practical Vim](/post/practical-vim), here are some notes about *Modern Vim*, by xxx again.
 

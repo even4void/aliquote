@@ -2,15 +2,8 @@
 title = "From Beamer to Deckset"
 date = 2014-08-17T22:03:32+01:00
 draft = false
-
 tags = ["apple", "tex"]
-categories = []
-
-[header]
-image = ""
-caption = ""
-preview = true
-
+categories = ["2014"]
 +++
 
 Now that I [upgraded to Mavericks]({{< ref "/post/os-x-mavericks.md" >}}) (OS X 10.9), I decided to give a try to [Deckset](http://decksetapp.com) which I mentioned in a previous post on [Markdown and slideshow]({{< ref "/post/markdown-and-slideshow.md" >}}).

@@ -1,13 +1,14 @@
 +++
 title = "Testing BioPython"
-description = ""
 date = 2008-07-27T19:22:47+01:00
 draft = false
 tags = ["python", "bioinformatics"]
-categories = []
+categories = ["2008"]
 +++
 
 Following my previous posts on [Bioinformatics with Mac OS X]({{ ref "/post/bioinformatics-with-mac-osx.md" }}) and Installation of [Python scientific packages]({{ ref "/post/python-scientific-packages.md" }}), I just try the `BioPython` toolbox. BioPython is an open-source project, based on the same principle as the older [BioPerl][BioPerl] project.[^1] It aims at providing a unified interface to traditional methods for computational molecular biology. The question then arises as to whether it conflicts with the [Bioconductor][Bioconductor] or BioPerl initiative.
+
+<!--more-->
 
 In fact, the Bioconductor project provides a set of about 260 packages (as of July 2008) that enhance the core [R][R] software. Most of them are supposed to integrate a growing collection of statistical tools. It is a popular library for microarray analysis since it supports most formats and comes with many graphical tools. On the contrary, BioPerl or BioPython are thought to be used to manipulate data file, organize the information and be interfaced with other programming languages. Thus, they fulfill their role of universal scripting language and appear very complementary of R biobase. Whether to use Perl or Python is then a matter of taste.
 

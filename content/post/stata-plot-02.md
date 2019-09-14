@@ -3,7 +3,7 @@ title: "Stata plot of the week #2"
 date: 2019-02-24T19:42:18+01:00
 draft: false
 tags: ["stata","dataviz"]
-categories: []
+categories: ["2019"]
 ---
 Today we are going to customize a simple boxplot by overlaying individual data points.
 

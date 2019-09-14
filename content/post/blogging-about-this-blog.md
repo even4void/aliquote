@@ -1,10 +1,9 @@
 +++
 title = "Blogging about this blog (made with Jekyll)"
-description = ""
 date = 2010-04-15T17:39:14+01:00
 draft = false
 tags = ["misc"]
-categories = []
+categories = ["2010"]
 +++
 
 I've tried several blogging system since 2006, but none gave me entire satisfaction. The latest was Wordpress but I had to stop blogging 6 months after my first post (for reasons not related to blog, but anyway), and I never came back to it. Now, I just noticed that the management interface has been considerably enhanced and it is simply too much for my needs. Hence, I was looking for a static content generator and found [Jekyll][Jekyll].

@@ -2,18 +2,13 @@
 title = "Some useful Mac apps for data scientists"
 date = 2014-11-02T10:44:12+01:00
 draft = false
-
 tags = ["apple"]
-categories = []
-
-[header]
-image = ""
-caption = ""
-preview = true
-
+categories = ["2014"]
 +++
 
 Here are some Mac Apps that I found using more and more often.
+
+<!--more-->
 
 Although I'm still keeping a [text-based workflow]({{< ref "/post/my-setup.md" >}}), where I spend most of the days using Emacs and a terminal, I recently installed or reinstalled some nice Apps when I got my new Macbook Pro in July. These are mostly small packages that do one thing well and allows text-based approaches for many of them, as in [Unix philosophy](http://www.faqs.org/docs/artu/ch01s06.html).
 

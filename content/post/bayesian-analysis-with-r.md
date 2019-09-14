@@ -1,16 +1,14 @@
 +++
 title = "Bayesian analysis with R"
-description = ""
 date = 2010-06-27T18:17:38+01:00
 draft = false
 tags = ["readings", "rstats", "bayesian"]
-categories = []
+categories = ["2010"]
 [header]
 [[gallery_item]]
 album = "1"
 image = "20100627100818.png"
 caption = ""
-
 [[gallery_item]]
 album = "1"
 image = "20100627100829.png"

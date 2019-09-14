@@ -3,7 +3,7 @@ title: "On the Raise and Fall of Apple Products"
 date: 2018-05-21T20:30:16+02:00
 draft: false
 tags: ["apple"]
-categories: []
+categories: ["2018"]
 ---
 
 I was reminded by [a colleague of mine](https://github.com/briatte/) that it is harder to stand by Apple OSs than good old Un*x systems, unless you accept to upgrade frequently. I am even not speaking of security updates or OS minor version upgrade. I read somewhere that the Macbooks have a lifetime of about 4 years. This is not only about hardware: software may become obsolete soon or later.

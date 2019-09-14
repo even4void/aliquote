@@ -2,15 +2,8 @@
 title = "Backup Strategy"
 date = 2012-12-01T15:28:04+01:00
 draft = false
-
 tags = ["apple"]
-categories = []
-
-[header]
-image = ""
-caption = ""
-preview = true
-
+categories = ["2012"]
 +++
 
 I just updated my backup plans for my Macbook Air.

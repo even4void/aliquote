@@ -1,10 +1,9 @@
 +++
 title = "Switching to Biblatex"
-description = ""
 date = 2010-04-04T17:34:41+01:00
 draft = false
 tags = ["tex"]
-categories = []
+categories = ["2010"]
 +++
 tl;dr
 <!--more-->

@@ -2,25 +2,13 @@
 title = "Welcome to the Macbook Air"
 date = 2010-11-20T11:38:03+01:00
 draft = false
-
-# Tags and categories
-# For example, use `tags = []` for no tags, or the form `tags = ["A Tag", "Another Tag"]` for one or more tags.
 tags = ["apple", "misc"]
-categories = []
-
-# Featured image
-# Place your image in the `static/img/` folder and reference its filename below, e.g. `image = "example.jpg"`.
-# Use `caption` to display an image caption.
-#   Markdown linking is allowed, e.g. `caption = "[Image credit](http://example.org)"`.
-# Set `preview` to `false` to disable the thumbnail in listings.
-[header]
-image = ""
-caption = ""
-preview = true
-
+categories = ["2010"]
 +++
 
 I just got a [Macbook Air](http://www.apple.com/macbookair/). Whaouh, it's impressive! My preceding one was an 15” Macbook pro, but as I don't have to do intensive computational work anymore, I thought going to a smaller computer would not be so bad. However, I ordered it from the App Store to customize it with the latest handy features (2.13 GHz core duo and 4 Go RAM). I won't describe the specs of Airbook, but just summarize what I've installed so far. 
+
+<!--more-->
 
 ## The bare essentials
 

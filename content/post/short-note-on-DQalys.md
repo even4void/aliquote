@@ -1,13 +1,14 @@
 +++
 title = "QALYs and DALYs"
-description = ""
 date = 2011-01-11T10:04:07+01:00
 draft = false
 tags = ["readings"]
-categories = []
+categories = ["2011"]
 +++
 
 Here is a short note on DALYs and QALYs.
+
+<!--more-->
 
 I read some appers dealing with QALYs, which are Quality Adjusted Life Year. They are used in cost-effectiveness studies, or quality-of-life research, as a primary or secondary endpoint (or efficacy criterion). The [EQ-5D](http://www.euroqol.org/eq-5d/) questionnaire is one such tool to measure QALYs. It is a measure of the perceived utility of a medical treatment corresponding to a gain of one year of life. That way, it allows to combind the idea of a survival function with an indicator of quality of life. Quoting Wikipedia, "The QALY is based on the number of years of life that would be added by the intervention. Each year in perfect health is assigned the value of 1.0 down to a value of 0.0 for death." A good reference is: Prieto, L and Sacristán, JA (2003). [Problems and solutions in calculating quality-adjusted life years (QALYs)](http://www.hqlo.com/content/1/1/80) . *Health and Quality of Life Outcomes*, 1: 80.
 

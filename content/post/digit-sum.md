@@ -3,9 +3,8 @@ title: "Digit Sum"
 date: 2019-07-08T10:14:05+02:00
 lastmod: 2019-07-08T10:14:05+02:00
 draft: true
-description: ""
-tags: []
-categories: []
+tags: ["euler","math","scheme"]
+categories: ["2019"]
 ---
 
 A lot of Euler problems amount to find the sum of digits in a given numbers. The digit sum is easy to compute using Lisp or Scheme, provided you convert the number at hand into a list or as a string, then as ascii-decoded character: `(char->integer #\1)` returns 49 in Racket so it is quite easy to write a little helper function to convert any character into its corresponding integer value.
@@ -14,7 +13,7 @@ A lot of Euler problems amount to find the sum of digits in a given numbers. The
 
 However, if you prefer to keep working with numbers, here is a little function that will convert any number into a list of digits. It is then a matter of applying `foldr` or `apply` to this list to compute any quantity of interest, e.g., the sum of all digits:
 
-```scheme
+```Lisp
 (define (digits n)
   (if (zero? n)
       null
@@ -27,7 +26,7 @@ $$ \sum_{n=0}^{\lfloor\log_{10}x\rfloor}\frac{1}{10^n}(x\, \textrm{mod}\, 10^{n+
 
 This is widely used in checksum algorithms, for instance the Luhn number checksum, also called the mod-10 algorithm. Here it is in Scheme:
 
-```racket
+```Lisp
 (define (mod-10 x n)
   (- (modulo x (expt 10 (add1 n))) (modulo x (expt 10 n))))
 

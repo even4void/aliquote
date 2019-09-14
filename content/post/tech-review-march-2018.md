@@ -3,7 +3,7 @@ title: "Tech Review / March 2018"
 date: 2018-03-19T09:03:24+01:00
 draft: false
 tags: ["readings", "review"]
-categories: []
+categories: ["2018"]
 ---
 
 Some fresh news from Twitter and the internet without further ado.

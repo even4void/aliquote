@@ -2,9 +2,8 @@
 title: "The Competitive Programmer's Handbook"
 date: 2018-05-01T09:20:58+02:00
 draft: false
-description: ""
 tags: ["readings", "review", "python"]
-categories: []
+categories: ["2018"]
 ---
 
 I enjoyed reading the [Competitive Programmer's Handbook](https://cses.fi/book.html) (available online in PDF format). Here is a brief review with additional comments. 

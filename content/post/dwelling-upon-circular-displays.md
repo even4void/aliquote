@@ -1,10 +1,9 @@
 +++
 title = "Circular displays for contingency tables"
-description = ""
 date = 2011-01-14T09:55:55+01:00
 draft = false
 tags = ["dataviz"]
-categories = []
+categories = ["2011"]
 +++
 
 Here is an attempt at describing how circular displays, like those proposed by [Circos](http://mkweb.bcgsc.ca/circos/), work and how they can be used to summarize large cross-classification Tables. 

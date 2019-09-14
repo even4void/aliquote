@@ -1,13 +1,14 @@
 +++
 title = "Playing with TwitteR"
-description = ""
 date = 2011-06-25T12:41:24+01:00
 draft = false
-tags = ["rstats", "misc"]
-categories = []
+tags = ["rstats"]
+categories = ["2011"]
 +++
 
 [Some months ago]({{< ref "/post/playing-with-backupmytweets.md" >}}), I played with Un*x command-line tools to parse my tweets fetched from BackupMyTweets. Here is a more elegant to do so with R.
+
+<!--more-->
 
 Well, the code is rather simple and most of what we need is already available through the [twitteR](http://cran.r-project.org/web/packages/twitteR/index.html) package.
 

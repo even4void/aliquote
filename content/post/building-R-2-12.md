@@ -1,10 +1,9 @@
 +++
 title = "Building R 2.12 and Python 3.1 (development snapshot)"
-description = ""
 date = 2010-04-05T08:59:31+01:00
 draft = false
 tags = ["rstats", "python"]
-categories = []
+categories = ["2010"]
 +++
 
 Although I already installed the upcoming R 2.11, I decided to build the daily snapshot from scratch, this time not as a Framework version. It suffices to have a look at the configure option to see that... there are many ones! I installed many programs in my `/usr/local` (in line with ideas coming from Jan de Leeuw), but I never take any note of what I was doing. As a consequence, if I was to reinstall all the 18 Go of programming stuff I put in my `/usr/local`, it will take me one week again... Hence, I decided to now log on the main install on my Mac. Here, I used the following:

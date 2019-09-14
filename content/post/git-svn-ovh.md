@@ -1,10 +1,9 @@
 +++
 title = "Git, svn, Emacs and OVH"
-description = ""
 date = 2010-07-15T16:40:37+01:00
 draft = false
 tags = ["misc"]
-categories = []
+categories = ["2010"]
 [[gallery_item]]
 album = "1"
 image = "20100714113001.png"

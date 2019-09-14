@@ -2,9 +2,8 @@
 title: "On leaving social media altogether"
 date: 2018-10-06T21:43:57+02:00
 draft: false
-description: ""
 tags: ["misc"]
-categories: []
+categories: ["2018"]
 ---
 Last week I deleted my LinkedIn account, or rather I asked "them" to remove my profile ASAP since there is no instant deletion of user account. Note that you can still recover your account if you reconnect within 30 days or so.
 

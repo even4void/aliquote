@@ -2,18 +2,13 @@
 title = "R graphs cookbook"
 date = 2015-01-15T23:17:28+01:00
 draft = false
-
 tags = ["review", "rstats"]
-categories = []
-
-[header]
-image = ""
-caption = ""
-preview = true
-
+categories = ["2015"]
 +++
 
 I just finished reading the [R Graphs Cookbook](https://www.packtpub.com/big-data-and-business-intelligence/r-graphs-cookbook) (2nd ed.), by Jaynal Abedin and Hrishi V. Mittal, edited by [Packt Publishing](https://www.packtpub.com).
+
+<!--more-->
 
 <small> Not to be confused with the [R Graphics Cookbook](http://shop.oreilly.com/product/0636920023135.do), or its companion website, [Cookbook for R](http://www.cookbook-r.com).</small>
 

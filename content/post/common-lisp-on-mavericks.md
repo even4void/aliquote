@@ -2,15 +2,8 @@
 title = "Common Lisp on Mavericks"
 date = 2014-08-04T11:08:05+01:00
 draft = false
-
 tags = ["lisp", "apple"]
-categories = []
-
-[header]
-image = ""
-caption = ""
-preview = true
-
+categories = ["2014"]
 +++
 
 Here are some notes I took when setting up Emacs to run [SBCL](http://www.sbcl.org) on a fresh Macbook Pro powered by Homebrew.

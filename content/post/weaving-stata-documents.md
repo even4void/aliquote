@@ -2,19 +2,13 @@
 title = "Weaving Stata Documents"
 date = 2012-04-22T10:06:55+01:00
 draft = false
-
 tags = ["stata", "tex"]
-categories = []
-
-[header]
-image = ""
-caption = ""
-preview = true
-
+categories = ["2012"]
 +++
 
 [StatWeave](http://www.divms.uiowa.edu/~rlenth/StatWeave/) has been recently updated and it has become a powerful engine for weaving [Stata](http://www.stata.com) documents.
 
+<!--more-->
 
 ## StatWeave
 

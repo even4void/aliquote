@@ -3,7 +3,7 @@ title: "Emacs, 15 years later"
 date: 2019-05-13T20:24:05+02:00
 draft: false
 tags: ["emacs"]
-categories: []
+categories: ["2019"]
 ---
 
 I have been using Emacs almost daily for about 15 years. For the days without, I was probably just away from my computer or working full-time on a task for which no text editor was required.

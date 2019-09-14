@@ -2,18 +2,15 @@
 title = "Winter desk cleaning"
 date = 2013-02-10T12:08:51+01:00
 draft = false
-
 tags = ["readings"]
-categories = []
-
-[header]
-image = ""
-caption = ""
-preview = true
-
+categories = ["2013"]
 +++
 
-I have been quite busy during the last two months. This was in part due to writing teaching material, including an 11-week statistical computing course with R and Stata for a French university. As a matter of fact, it took me something like 70 hours to write 300 pages of exercices with solutions, and I am currently writing a 110-page long textbook which aims at introducing students to R and Stata for medical statistics. I can't release this work in the public domain, though. However, I expect to develop a similar open access course with other languages, probably Python, Mathematica and Lisp. What I found difficult for this course was to write self-assessment exercices with multiple-choice response options (to ease automatic grading on an online companion website). That was, however, a pleasant experience. I am secretly jealous of O'Reilly's [Try R](http://tryr.codeschool.com) and I am wondering if such an online toolkit wouldn't be the solution for ensuring students work regularly at home and keep typing code between two sessions.
+I have been quite busy during the last two months. This was in part due to writing teaching material, including an 11-week statistical computing course with R and Stata for a French university. As a matter of fact, it took me something like 70 hours to write 300 pages of exercices with solutions, and I am currently writing a 110-page long textbook which aims at introducing students to R and Stata for medical statistics. 
+
+<!--more-->
+
+I can't release this work in the public domain, though. However, I expect to develop a similar open access course with other languages, probably Python, Mathematica and Lisp. What I found difficult for this course was to write self-assessment exercices with multiple-choice response options (to ease automatic grading on an online companion website). That was, however, a pleasant experience. I am secretly jealous of O'Reilly's [Try R](http://tryr.codeschool.com) and I am wondering if such an online toolkit wouldn't be the solution for ensuring students work regularly at home and keep typing code between two sessions.
 
 My reading activity has significantly dropped out during this period, notwithstanding the fact that I have been sick for almost 3 weeks. I was still looking at Twitter feeds from time to time, and I noticed that [Prismatic](http://getprismatic.com) <i class="fa fa-chain-broken fa-1x"></i> often came to my rescue when nothing interesting in my Google feeds reader pop out. However, I started reading several books, and finished some.
 

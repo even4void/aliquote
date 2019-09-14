@@ -2,15 +2,8 @@
 title = "A modular configuration for Emacs"
 date = 2014-08-04T15:14:17+01:00
 draft = false
-
 tags = ["emacs", "apple"]
-categories = []
-
-[header]
-image = ""
-caption = ""
-preview = true
-
+categories = ["2014"]
 +++
 
 In this post I describe how I decided to organize by Emacs configuration files after having used for more than 10 years a monolithic `.emacs` file.

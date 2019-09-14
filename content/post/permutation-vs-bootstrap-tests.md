@@ -1,10 +1,9 @@
 +++
 title = "Permutation vs. bootstrap test of hypothesis"
-description = ""
 date = 2010-07-28T16:19:37+01:00
 draft = false
 tags = ["statistics"]
-categories = []
+categories = ["2010"]
 [[gallery_item]]
 album = "1"
 image = "20100808144303.png"
@@ -16,6 +15,8 @@ caption = ""
 +++
 
 Here are short notes I took when reading articles or books about permutation and bootstrap test of hypothesis. I like the introduction given by Phillip Good<sup>(1)</sup> in his textbook (pp. 7–10).
+
+<!--more-->
 
 > Shortly after I received my doctorate in statistics, I decided that if I really wanted to help bench scientists apply statistics I ought to become a scientist myself. So I went back to school to learn physiology and aging in cells raised in petri dishes.  
 > I soon learned there was a great deal more to an experiment than the random assignment of subjects to treatments. In general, 90% of experimental effort was spent mastering various arcane laboratory techniques, another 9% in developing new techniques to span the gap between what had been done and what I really wanted to do, and a mere 1% on the experiment itself. But the moment of truth came finally–—it had to if I were to publish and not perish–—and I succeeded in cloning human diploid fibroblasts in eight culture dishes: Four of these dishes were filled with a conventional nutrient solution and four held an experimental "life-extending" solution to which vitamin E had been added.  

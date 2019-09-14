@@ -3,7 +3,7 @@ title: "The unquantified self #5"
 date: 2019-02-22T20:23:18+01:00
 draft: false
 tags: ["self"]
-categories: []
+categories: ["2019"]
 ---
 Winter is over. And here are the evening news of a man in post-hibernation period.
 

@@ -2,18 +2,13 @@
 title = "OS X Yosemite"
 date = 2014-11-04T10:35:51+01:00
 draft = false
-
 tags = ["apple"]
-categories = []
-
-[header]
-image = ""
-caption = ""
-preview = true
-
+categories = ["2014"]
 +++
 
 I installed [Yosemite](http://en.wikipedia.org/wiki/OS_X_Yosemite) last week on my fresh MacBook Pro, and I must say this is just whooo...
+
+<!--more-->
 
 As part of my series of [posts]({{< ref "/post/os-x-leopard.md" >}}) on [OS X]({{< ref "/post/os-x-lion.md" >}}) [updates]({{< ref "/post/os-x-mavericks.md" >}}), here are my very first impressions on OS X 10.10. Note that I never tried any beta versions despite the big buzz surrounding its release, and I just installed the official release from the App Store. Here is how looks desktop as I am writing this post: 
 

@@ -1,10 +1,9 @@
 +++
 title = "Measures of accuracy for classification"
-description = ""
 date = 2010-12-03T17:36:54+01:00
 draft = false
 tags = ["readings", "statistics"]
-categories = []
+categories = ["2010"]
 +++
 
 I just discovered a not so recent article providing an overview of measures of accuracy in predictive classification tasks. Specifically, this article focuses on the pros and cons of different measures of classification accuracy with a particular emphasis on percentage-, distance-, correlation-, and information-based indices for binary outcomes:

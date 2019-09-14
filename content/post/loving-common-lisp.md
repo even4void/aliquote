@@ -3,7 +3,7 @@ title: "Loving Common Lisp"
 date: 2019-05-29T19:03:17+01:00
 draft: false
 tags: ["review", "readings", "lisp"]
-categories: []
+categories: ["2019"]
 ---
 
 Here is a quick review of _Loving Common Lisp_, by Mark Watson. I initially read an early draft version on Leanpub, but I found some time to (re)read the latest version available.

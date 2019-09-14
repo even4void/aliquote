@@ -3,7 +3,7 @@ title: "Micro review from September (2)"
 date: 2019-09-14T08:51:17+02:00
 draft: false
 tags: ["readings"]
-categories: []
+categories: ["2019"]
 ---
 
 Here is the monthly micro review of (not so) random links I found while browsing the interweb lately.

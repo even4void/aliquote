@@ -3,7 +3,7 @@ title: "Stata plot of the week #1"
 date: 2019-01-02T14:00:30+01:00
 draft: false
 tags: ["stata","dataviz"]
-categories: []
+categories: ["2019"]
 ---
 Today, in this new Stata series, we are exploring a variation of small multiples where a separate trend line is highlighted in each subplot while background information is provided in dimmed grey. The final solution makes use of _separate, scatter, and graph combine_.
 

@@ -1,13 +1,14 @@
 +++
 title = "Statistical Models for cross-classified data structures"
-description = ""
 date = 2008-05-15T08:54:26+01:00
 draft = false
 tags = ["statistics"]
-categories = []
+categories = ["2008"]
 +++
 
 The following discussion aims at describing statistical tools used to estimate the parameters of multilevel models. It is derived from an article published in *Methodology*<sup>(1)</sup>, part of which is briefly extended with additional references and some applications in educational testing.
+
+<!--more-->
 
 There are two main approaches to the estimation of statistical models for cross-classified data structures in the literature on multilevel models: [likelihood-based][likelihood-based] frequentist methods and [Markov Chain Monte Carlo][Markov Chain Monte Carlo], i.e. MCMC procedures, which are based on [Bayesian][Bayesian] statistics.<sup>(2)</sup>
 

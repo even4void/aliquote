@@ -2,15 +2,8 @@
 title = "Data cleaning techniques"
 date = 2015-10-14T17:11:47+01:00
 draft = false
-
 tags = ["statistics", "database"]
-categories = []
-
-[header]
-image = ""
-caption = ""
-preview = true
-
+categories = ["2015"]
 +++
 
 Here are some resources to learn data cleaning techniques.

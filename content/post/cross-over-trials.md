@@ -2,15 +2,8 @@
 title = "Dose finding studies and cross-over trials"
 date = 2013-02-24T11:44:29+01:00
 draft = false
-
 tags = ["readings", "statistics"]
-categories = []
-
-[header]
-image = ""
-caption = ""
-preview = true
-
+categories = ["2013"]
 +++
 
 Here are some notes on cross-over trials and within-patient titration in indirect assays.

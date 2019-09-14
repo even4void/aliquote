@@ -3,10 +3,12 @@ title = "Tech Review / January 2018"
 date = 2018-01-19T01:18:24+01:00
 draft = false
 tags = ["readings", "review"]
-categories = []
+categories = ["2018"]
 +++
 
 What's up on the internet in January?
+
+<!--more-->
 
 [Learning with Privacy at Scale](https://machinelearning.apple.com/2017/12/06/learning-with-privacy-at-scale.html)
 This one is taken from the Apple ML Journal. Basically, the article deals with local differential privacy which refers to the anonymization of personal data on the local computer directly, and not on the server (i.e., after the data have been uploaded). I was pleased to learn that everything is done in order to ensure that this does not impact the device bandwidth (I already know that we can opt in or not). In fact, Apple uses anonymized targeted events (e.g., user typing an emoji or listening to an audio file) that are transferred daily; IP information is removed once data reach the Apple restricted-access server, where aggregated statistics are computed and random samples of individual records are post-processed using dedicated algorithms.

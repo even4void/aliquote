@@ -3,7 +3,7 @@ title: "Decimal numbers"
 date: 2019-08-06T20:19:29+02:00
 draft: false
 tags: ["math", "racket", "euler"]
-categories: []
+categories: ["2019"]
 ---
 
 A lot of [Euler problems](https://aliquote.org/tags/euler/) can be solved or best understood using number theory or algebra. Decimal numbers also play a particular role in several of these challenges. Here are a few properties that may prove useful in thinking about some of Euler problems.

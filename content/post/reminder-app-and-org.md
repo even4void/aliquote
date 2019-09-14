@@ -2,9 +2,8 @@
 title: "On standardizing the use of Reminder App and Org mode"
 date: 2018-10-21T13:22:18+02:00
 draft: false
-description: ""
 tags: ["apple", "emacs"]
-categories: []
+categories: ["2018"]
 ---
 
 Since macOS Sierra, I found myself using the Reminder App more often than I did before. This is partly due to the fact that I cannot stand well organized when I rely on manual sticky notes, and it helps recording things I have to do along the week or for a project. On the one hand, the Reminder App is simple enough to meet the needs mentioned above; on the other hand, it lacks serious fucntionalities like being able to print items, synchronize with Calendar App, while it works pretty well with Fantastical, or a decent API to be used by other software.

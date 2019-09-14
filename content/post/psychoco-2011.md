@@ -2,18 +2,13 @@
 title = "Psychoco 2011"
 date = 2011-02-24T21:30:35+01:00
 draft = false
-
 tags = ["psychometrics", "rstats"]
-categories = []
-
-[header]
-image = ""
-caption = ""
-preview = true
-
+categories = ["2011"]
 +++
 
 I shamelessly realized I will be missing the [Psychoco 2011](http://uni-tuebingen.de/psychologie/psychoco/) <i class="fa fa-chain-broken fa-1x"></i> workshop. Here are some notes from the program about current research in psychometrics with R.
+
+<!--more-->
 
 ## Differential Item Functioning analysis
 

@@ -1,10 +1,9 @@
 +++
 title = "Dive into Ruby on Mac OS X"
-description = ""
 date = 2009-12-01T08:30:34+01:00
 draft = false
-tags = ["apple"]
-categories = []
+tags = ["apple", "ruby"]
+categories = ["2009"]
 +++
 
 I would like to be able to use different versions of Ruby without getting in trouble with load paths.

@@ -1,13 +1,14 @@
 +++
 title = "How to efficiently manage a statistical analysis project"
-description = ""
 date = 2010-09-25T19:40:11+01:00
 draft = false
 tags = ["statistics"]
-categories = []
+categories = ["2010"]
 +++
 
 As I always try to get things organized when I am working on a statistical project, and it happens to be hardly succeeded (here success is measured as the time it takes to me to come back to my analysis code one year later), I am looking for an efficient way to manage all the stuff that surround a statistical project.
+
+<!--more-->
 
 Ok, it should be agreed that everything must reside into the same directory. Now, the questions are: how do I organize this directory, how do I maintain a coherent view of successive version of R code, where to put the various notes I take when elaborating a new statistical approach, etc.
 

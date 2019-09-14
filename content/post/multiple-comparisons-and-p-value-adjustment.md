@@ -1,13 +1,14 @@
 +++
 title = "Multiple comparisons and p-value adjustment"
-description = ""
 date = 2008-07-27T19:23:05+01:00
 draft = false
 tags = ["statistics", "rstats"]
-categories = []
+categories = ["2008"]
 +++
 
 Some time ago, I wrote a tutorial on various procedures applied in a multiple comparisons framework, "Comparaisons multiples". It's in French and includes R source code: <i class="fa fa-file-pdf-o fa-1x"></i> [pdf tutorial][pdf tutorial], <i class="fa fa-file-code-o fa-1x"></i> [R code][R code], [htmlized R code][htmlized R code]. Now, I feel it's time to update a little bit these old notes with new material. This is motivated by my new interest toward bioinformatics and medical imaging that are both facing the n p and p-value correction problems.
+
+<!--more-->
 
 Multiple comparisons arise when one wants to compare more than two things at the same time (i.e. for the same dataset, in the same explanatory framework). Why do we have to adapt the usual test statistics? Because these multiple tests (of hypothesis) are generally not carried out in an independent way, thus leading to an inflation of the overall type I error rate. In other words, when faced with say 10 comparisons on the same data, the probability of falsely detecting a significant difference becomes greater than the classical 5% level. For a general introduction to multiple comparison procedure, the reader may be interested in sup(6)/sup. Other references are (5,7) and (8) (especially, Chapter 5) but the latter two are a bit more tricky…
 

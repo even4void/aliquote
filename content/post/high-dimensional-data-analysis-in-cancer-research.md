@@ -2,15 +2,8 @@
 title = "High-dimensional data analysis in cancer research"
 date = 2010-08-09T21:31:24+01:00
 draft = false
-
 tags = ["readings", "statistics"]
-categories = []
-
-[header]
-image = ""
-caption = ""
-preview = true
-
+categories = ["2010"]
 +++
 
 This is a recent book co-edited by Xiaochun Li and Ronghui Xu (Springer, 2009) about feature selection and model validation in the context of oncological studies. More precisely, the seven chapters cover (snip).

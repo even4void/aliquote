@@ -2,18 +2,13 @@
 title = "Notes on the ECM 2012 Conference"
 date = 2012-07-22T11:41:36+01:00
 draft = false
-
 tags = ["travels", "review"]
-categories = []
-
-[header]
-image = ""
-caption = ""
-preview = true
-
+categories = ["2012"]
 +++
 
-I'm just returning from the [ECM 2012 conference](http://www.ecm2012.com/) <i class="fa fa-chain-broken fa-1x"></i> that was held in Santiago de Compostela.
+I'm just returning from the [ECM 2012 conference](http://www.ecm2012.com/) that was held in Santiago de Compostela.
+
+<!--more-->
 
 As was the case for to the [preceding one]({{< ref "/post/back-from-the-iv-eam-conference.md" >}}), and in contrast to the annual conference from the Psychometric Society, this conference is generally more heavily oriented toward psychological applications, and less place is devoted to psychometric 'hard' methods, except for Friday's morning sessions. There was a workshop on applied IRT modeling with R, but I completely missed it.
 

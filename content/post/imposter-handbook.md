@@ -1,10 +1,9 @@
 +++
 title = "The Imposter Handbook"
-description = ""
 date = 2018-03-13T20:51:47+01:00
 draft = false
 tags = ["readings", "review"]
-categories = []
+categories = ["2018"]
 +++
 
 Here is a little gem that I came across a few weeks ago, thanks to Twitter:  

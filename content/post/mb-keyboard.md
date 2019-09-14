@@ -2,9 +2,8 @@
 title: "Is coffee soluble in a Macbook?"
 date: 2018-07-01T08:07:35+02:00
 draft: false
-description: ""
-tags: ["apple", "misc"]
-categories: []
+tags: ["apple"]
+categories: ["2018"]
 ---
 
 Last week, I spilled a cup of coffee (sweet, of course) on the keyboard of my Macbook 12″ and I had to spend the rest of the week with an external keyboard. It was a first, in both cases!

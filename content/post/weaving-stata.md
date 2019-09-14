@@ -2,18 +2,13 @@
 title = "Weaving Stata"
 date = 2014-11-15T09:58:51+01:00
 draft = false
-
 tags = ["stata"]
-categories = []
-
-[header]
-image = ""
-caption = ""
-preview = true
-
+categories = ["2014"]
 +++
 
 Here are some possibilities for [weaving](http://goo.gl/mZ11) Stata commands without much effort.
+
+<!--more-->
 
 I used to use [StatWeave](http://homepage.divms.uiowa.edu/~rlenth/StatWeave/), as described in [this post]({{< ref "/post/weaving-stata-documents.md" >}}). In essence, it is similar to [Sweave](http://www.statistik.lmu.de/~leisch/Sweave/) and you write code chunks with options, etc. A concise description is provided in <i class="fa fa-file-pdf-o fa-1x"></i> [these slides](http://www.stata.com/meeting/italy08/rising_2008.pdf). Although less sophisticated than Sweave or [knitr](http://yihui.name/knitr/), it provided enough features for me to write a full textbook for a course I teach at the university. There is also [dexy](http://www.dexy.it/) and its [Stata filter](http://www.dexy.it/ref/filters/stata.html), but I haven't investigated this much.
 

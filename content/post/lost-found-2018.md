@@ -3,7 +3,7 @@ title: "lost+found 2018"
 date: 2019-05-31T20:39:13+02:00
 draft: false
 tags: ["misc"]
-categories: []
+categories: ["2019"]
 ---
 
 After excavating unifinished or rough draft posts from last year (a quick `ack "draft\s?[:=] true" content/post/*.md` in the Hugo directory), we should now be ready for June.

@@ -2,9 +2,8 @@
 title: "Minor update on SAS2R"
 date: 2018-06-13T12:36:09+02:00
 draft: false
-description: ""
 tags: ["statistics", "rstats"]
-categories: []
+categories: ["2018"]
 ---
 
 I am slowly updating my latest textbook on using R in clinical trials. This is painful work but it has to be done.

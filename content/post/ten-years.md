@@ -2,9 +2,8 @@
 title: "Ten Years"
 date: 2018-05-22T06:44:23+02:00
 draft: false
-description: ""
 tags: ["misc"]
-categories: []
+categories: ["2018"]
 ---
 It's been ten years that this "blog" is up and running.
 

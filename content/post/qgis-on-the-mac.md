@@ -1,10 +1,9 @@
 +++
 title = "GIS on a Mac"
-description = ""
 date = 2011-01-23T09:01:07+01:00
 draft = false
 tags = ["apple", "dataviz"]
-categories = []
+categories = ["2011"]
 
 [header]
 [[gallery_item]]

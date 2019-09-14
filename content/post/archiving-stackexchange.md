@@ -1,16 +1,14 @@
 +++
 title = "Archiving my responses on StackExchange"
-description = ""
 date = 2011-01-20T09:11:40+01:00
 draft = false
-tags = ["misc", "tex"]
-categories = []
+tags = ["statistics", "tex"]
+categories = ["2011"]
 [header]
 [[gallery_item]]
 album = "1"
 image = "20110127165642.png"
 caption = ""
-
 [[gallery_item]]
 album = "1"
 image = "20110127165629.png"

@@ -3,7 +3,7 @@ title: "Stata plot of the week #3"
 date: 2019-03-31T19:25:28+01:00
 draft: false
 tags: ["stata","dataviz"]
-categories: []
+categories: ["2019"]
 ---
 Interaction charts are quite useful to assess the direction and magnitude of an interaction effect in the context of an analysis of variance. Here is one way to build an interaction plot in Stata, using built-in commands only.
 

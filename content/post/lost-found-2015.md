@@ -2,18 +2,13 @@
 title = "lost+found 2015"
 date = 2016-01-01T20:32:32+01:00
 draft = false
-
 tags = ["misc", "psychometrics", "rstats"]
-categories = []
-
-[header]
-image = ""
-caption = ""
-preview = true
-
+categories = ["2016"]
 +++
 
 Here are some draft notes, written in 2015, unfilled but not lost forever. With slight edits to accomodate a proper archive blog post.
+
+<!--more-->
 
 ## R and psychometrics
 <small>(February 2015)</small>

@@ -1,13 +1,16 @@
 +++
 title = "Quality of Life Psychometrics and Beyond"
-description = ""
 date = 2008-02-23T21:23:50+01:00
 draft = false
 tags = ["readings", "psychometrics"]
-categories = []
+categories = ["2008"]
 +++
 
-Recently, I start to read several articles on Quality of Life [Health and Quality of Life Outcomes][Health and Quality of Life Outcomes] is an open-access review providing provisional pdf of recent articles), as well as some recent books on this topic. This includes:
+Recently, I start to read several articles on Quality of Life [Health and Quality of Life Outcomes][Health and Quality of Life Outcomes] is an open-access review providing provisional pdf of recent articles), as well as some recent books on this topic. 
+
+<!--more-->
+
+This includes:
 
 - *Quality of Life. The assessment, analysis and interpretation of patient-reported outcomes*, by Peter M. Fayers and David Machin (Wiley, 2007)
 - *Statistical Methods for Quality of Life Studies. Design, Measurements and Analysis*, by Mounir Mesbah, Bernard F. Cole, and Mei-Ling Ting Lee (Kluwer Academic Publishers, 2002)

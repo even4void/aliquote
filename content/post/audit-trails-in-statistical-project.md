@@ -2,15 +2,8 @@
 title = "Audit trails and statistical project management"
 date = 2013-03-01T09:51:34+01:00
 draft = false
-
 tags = ["statistics", "rstats"]
-categories = []
-
-[header]
-image = ""
-caption = ""
-preview = true
-
+categories = ["2013"]
 +++
 
 In the context of a statistical project, "sanity checking" refers to the verification of raw data: whether they make sense, if there are any coding errors that are apparent from the range of data values, or if some data should be recoded or set as missing (Baum, CF, *An introduction to Stata programming*, Stata Press, 2009, p. 79).[^1]

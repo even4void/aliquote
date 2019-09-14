@@ -3,12 +3,14 @@ title: "Coin tossing experiment: Score and Wald tests"
 date: 2019-09-13T17:33:21+02:00
 draft: false
 tags: ["statistics"]
-categories: []
+categories: ["2019"]
 ---
 
-I was recently re-reading Polanski & Kimmel's nice book, _Bioinformatics_, where the very first chapters are dedicated to mathematical statistics. I have a French translation lying in one of the [obscure folder](/cours/stats_bioinfo/stats.pdf) of this website. Coin tossing experiments are a fun way to introduce some concepts related to mathematical statistics or hypothesis testing. Here is how the three common test statistics (Wald, Score and Likelihood Ratio) relate one to the other.
+I was recently re-reading Polanski & Kimmel's nice book, _Bioinformatics_, where the very first chapters are dedicated to mathematical statistics.
 
 <!--more-->
+
+I have a French translation lying in one of the [obscure folder](/cours/stats_bioinfo/stats.pdf) of this website. Coin tossing experiments are a fun way to introduce some concepts related to mathematical statistics or hypothesis testing. Here is how the three common test statistics (Wald, Score and Likelihood Ratio) relate one to the other.
 
 Let us first focus on estimating a parameter of interest, in this case the probability of observing a tail in a serie of independant draws. First, some notation. We will consider a random experiment composed of $n$ independant trials, where $\theta = \Pr(\text{''the result is tail''})$ is the parameter of interest. In other word, we would like to find a good estimator for the probability of observing such a result. We observe
 

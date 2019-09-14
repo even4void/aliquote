@@ -2,9 +2,8 @@
 title: "Goodbye Google"
 date: 2018-05-03T08:32:00+02:00
 draft: false
-description: ""
 tags: ["misc"]
-categories: []
+categories: ["2018"]
 ---
 
 Like many others, I left Google behind me. Long story short: I became more or less [concerned with privacy](https://spreadprivacy.com/privacy-simplified/) and I no longer have [any interest in Google products](https://macwright.org/2018/04/26/leaving-google.html). 

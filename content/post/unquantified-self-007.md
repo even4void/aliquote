@@ -3,7 +3,7 @@ title: "The unquantified self #7"
 date: 2019-05-01T20:40:56+02:00
 draft: false
 tags: ["self"]
-categories: []
+categories: ["2019"]
 ---
 Long time no see. Little update for the `#self` tag.
 

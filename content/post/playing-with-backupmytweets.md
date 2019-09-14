@@ -1,13 +1,14 @@
 +++
 title = "Playing with BackupMyTweets"
-description = ""
 date = 2011-01-17T13:42:24+01:00
 draft = false
 tags = ["dataviz", "misc"]
-categories = []
+categories = ["2011"]
 +++
 
 Lastly, I gave a try to [backupmytweets](http://backupmytweets.com/) to get an archive of my Twitter account ([@chlalanne](https://twitter.com/#!/chlalanne)).
+
+<!--more-->
 
 Everything went fine, and my tweets were available after a few days. What is annoying, however, is that I cannot download the data. I tried several times during the last two weeks, and I always end up with the following message:
 

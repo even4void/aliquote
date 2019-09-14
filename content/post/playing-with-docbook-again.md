@@ -2,18 +2,13 @@
 title = "Playing With Docbook Again"
 date = 2011-11-14T23:47:47+01:00
 draft = false
-
-tags = ["apple", "misc"]
-categories = []
-
-[header]
-image = ""
-caption = ""
-preview = true
-
+tags = ["apple"]
+categories = ["2011"]
 +++
 
 Some notes about installing DocBook tools on OS X Lion.
+
+<!--more-->
 
 I used to write my documents and slides almost exclusively with $\LaTeX$ and Context. Needless to say, this means tweaking default layout a lot (who said that $\LaTeX$ allows for a perfect separation between layout and content?!), so that for small-size documents I now tend to rely on [Pandoc](http://johnmacfarlane.net/pandoc/).
 

@@ -2,15 +2,8 @@
 title = "Markdown and slideshow"
 date = 2014-04-17T22:05:37+01:00
 draft = false
-
 tags = ["misc"]
-categories = []
-
-[header]
-image = ""
-caption = ""
-preview = true
-
+categories = ["2014"]
 +++
 
 I really like [Markdown](http://daringfireball.net/projects/markdown/syntax) for its simplicity and the fact that it allow to write text-based documents with very few requirements: You just need a text editor (mine is Emacs but this doesn't really matter).

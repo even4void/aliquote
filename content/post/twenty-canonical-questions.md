@@ -2,21 +2,16 @@
 title = "Twenty canonical questions in machine learning"
 date = 2013-11-07T22:52:22+01:00
 draft = false
-
 tags = ["readings", "statistics"]
-categories = []
-
-[header]
-image = ""
-caption = ""
-preview = true
-
+categories = ["2013"]
 +++
 
 Here are twenty canonical questions when using "learning machines", according
 to Malley and co-authors: 
 Malley, JD, Malley, KG, and Pajevic, S, *Statistical Learning for Biomedical
 Data*, Cambridge University Press (2011).
+
+<!--more-->
 
 1. Are there any over-arching insights as to why (or when) one learning
    machine or method might work, or when it might not?

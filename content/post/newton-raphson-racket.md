@@ -3,7 +3,7 @@ title: "Newton-Raphson algorithm in Racket"
 date: 2019-08-08T10:31:22+02:00
 draft: false
 tags: ["racket", "statistics"]
-categories: []
+categories: ["2019"]
 ---
 
 Here is an implementation of the Newton-Raphson algorithm in Racket Scheme.

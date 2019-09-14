@@ -3,8 +3,12 @@ title = "lost+found 2011"
 date = 2012-01-01T21:17:32+01:00
 draft = false
 tags = ["misc"]
-categories = []
+categories = ["2012"]
 +++
+
+Unfinished and very drafts posts from 2011.
+
+<!--more-->
 
 ## Switching font in $\LaTeX$
 <small>(January 2011)</small>

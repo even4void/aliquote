@@ -1,10 +1,9 @@
 +++
 title = "Computing intraclass correlation with R"
-description = ""
 date = 2011-04-29T17:14:22+01:00
 draft = false
 tags = ["psychometrics", "rstats"]
-categories = []
+categories = ["2011"]
 +++
 
 I always found Dave Garson's tutorial on [Reliability Analysis](http://faculty.chass.ncsu.edu/garson/PA765/reliab.htm) very interesting. However, all illustrations are with SPSS. Here is a friendly R version of some of these notes, especially for computing intraclass correlation.

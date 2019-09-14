@@ -1,13 +1,14 @@
 +++
 title = "Yet another interactive shell for numerical computing: Numeric Lua"
-description = ""
 date = 2011-01-31T21:39:58+01:00
 draft = false
 tags = ["apple"]
-categories = []
+categories = ["2011"]
 +++
 
 Here is a brief overview of how to manually install [Numeric Lua](http://numlua.luaforge.net/) on OS X.
+
+<!--more-->
 
 I compiled [Lua](http://www.lua.org/) 5.1 some months ago. My header files are in `/usr/local`:
 

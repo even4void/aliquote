@@ -2,18 +2,14 @@
 title = "Reproducible research with R"
 date = 2014-04-19T09:03:16+01:00
 draft = false
-
 tags = ["review", "rstats"]
-categories = []
-
-[header]
-image = ""
-caption = ""
-preview = true
-
+categories = ["2014"]
 +++
 
 I just finished reading two recent books in the R Series from Chapman & Hall: *Reproducible research with R and RStudio* ([Christopher Gandrud](http://christophergandrud.blogspot.fr/)), and *Dynamic documents with R and knitr* ([Yihui Xie](http://yihui.name/)).
+
+<!--more-->
+
 
 ![R books](/img/20140327104852.png)
 

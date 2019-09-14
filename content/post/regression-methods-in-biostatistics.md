@@ -1,13 +1,16 @@
 +++
 title = "Regression Methods in Biostatistics"
-description = ""
 date = 2008-02-10T21:23:07+01:00
 draft = false
 tags = ["review", "statistics"]
-categories = []
+categories = ["2008"]
 +++
 
-This book is about regression techniques commonly used when modelling continuous and/or binary outcomes in biomedical studies. Starting from the most basic techniques (but too often neglected, to my opinion) of exploratory and descriptive techniques (Chap. 2, graphical and numerical summaries), the authors devote an entire chapter (Chap. 3) to give the reader a clear overview of classical multivariate techniques used to characterize association between categorical and continuous variable (including censored data). Next, they provide an in-depth coverage of each of these methods in separate chapter.
+This book is about regression techniques commonly used when modelling continuous and/or binary outcomes in biomedical studies. 
+
+<!--more-->
+
+Starting from the most basic techniques (but too often neglected, to my opinion) of exploratory and descriptive techniques (Chap. 2, graphical and numerical summaries), the authors devote an entire chapter (Chap. 3) to give the reader a clear overview of classical multivariate techniques used to characterize association between categorical and continuous variable (including censored data). Next, they provide an in-depth coverage of each of these methods in separate chapter.
 This includes:
 
 - **Chapter 4: Linear regression.** Reviewing the basic properties of the multiple linear regression model; Testing for trend and association between multiple categorical predictors; Discussion about confounding, mediation and interaction (rarely found in other textbooks!); Checking model assumption (linearity, normality, homoskedasticity, outlying, transformation) and model fit.

@@ -1,13 +1,14 @@
 +++
-title = "How to get scientific Python's packages working on Mac OS X Leopard"
-description = ""
+title = "How to get scientific Python on Mac OS X Leopard"
 date = 2008-07-02T18:43:07+01:00
 draft = false
 tags = ["apple", "python"]
-categories = []
+categories = ["2008"]
 +++
 
 I was happy to be able to run all of the greatest of Python's package for numerical stuff before I moved on Leopard. Since I reinstalled all of my system, I didn't try to reinstall Python's packages with the built-in Python (2.5). While I was reading some posts on the web, I feel a little bit desperate about the installation failures that were reported for those using the 2.5 Framework.
+
+<!--more-->
 
 Note that numpy is already installed with Python 2.5, which is quite good. However, I'm interested in getting `scipy`, `matplotlib` and `pygame` working on Leopard, as they do previously on Mac OS X 10.4. Finally, I take the shorter route and install all using source packages, and all went fine. Now, Python works out of the box.
 

@@ -2,8 +2,8 @@
 title: "ArXiving on March 2018"
 date: 2018-04-10T07:41:19+02:00
 draft: false
-tags: ["readings", "arxiv", "review"]
-categories: []
+tags: ["readings", "arxiv"]
+categories: ["2018"]
 ---
 
 Let us celebrate this new Spring with some papers fetched from \*arXiv, not necessarily from the last weeks but at least in reverse chronological order in my Twitter timeline.

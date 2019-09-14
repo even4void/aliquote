@@ -2,15 +2,8 @@
 title = "Easy creation of videos with R"
 date = 2012-04-15T21:15:12+01:00
 draft = false
-
 tags = ["rstats", "dataviz"]
-categories = []
-
-[header]
-image = ""
-caption = ""
-preview = true
-
+categories = ["2012"]
 +++
 
 While preparing a talk due in three days or so, I thought it would be good to show some live demonstration of regularization techniques in regression with [ggplot2](http://had.co.nz/ggplot2/).

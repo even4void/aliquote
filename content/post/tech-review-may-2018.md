@@ -3,7 +3,7 @@ title: "Tech Review / May 2018"
 date: 2018-05-17T06:41:14+02:00
 draft: false
 tags: ["readings", "review"]
-categories: []
+categories: ["2018"]
 ---
 
 Yet another round of tech review for the past weeks. You have probably heard about it but this new post is also a way for me to close dozens of Safari bookmarks and archive some Twitter favs.

@@ -3,7 +3,7 @@ title: "The unquantified self #8"
 date: 2019-05-30T21:01:39+02:00
 draft: false
 tags: ["self"]
-categories: []
+categories: ["2019"]
 ---
 
 Some fresh news, probably expired already.

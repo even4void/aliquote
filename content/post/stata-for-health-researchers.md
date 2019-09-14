@@ -2,18 +2,13 @@
 title = "Stata for health researchers"
 date = 2015-05-29T22:44:26+01:00
 draft = false
-
 tags = ["review", "stata"]
-categories = []
-
-[header]
-image = ""
-caption = ""
-preview = true
-
+categories = ["2015"]
 +++
 
 Here is a quick review of the fourth edition of [An introduction to Stata for Health Researchers](http://www.stata.com/bookstore/introduction-stata-health-researchers/), by Svend Juul and Morten Frydenberg.
+
+<!--more-->
 
 I have several books from Stata Press (and I'd love getting more of them). I always found them very well written, and they generally offer a good balance between theory and application.
 There is a [companion website](http://ph.au.dk/uddannelse/software/) (other than material provided by Stata Press) as well. There is also some [comments to exercices](http://goo.gl/rvUn2I) for the present book.

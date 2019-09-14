@@ -2,18 +2,13 @@
 title = "Writing a Book"
 date = 2015-07-22T15:25:06+01:00
 draft = false
-
 tags = ["statistics", "rstats"]
-categories = []
-
-[header]
-image = ""
-caption = ""
-preview = true
-
+categories = ["2015"]
 +++
 
 I spent the last month working hard to finish my book on biomedical statistics using R.
+
+<!--more-->
 
 It has been a pleasuring experience since I wrote this book using Emacs, R, and git. In fact, I spent several days and nights with a screen looking like the one shown below (this is Homebrew Emacs in fullscreen mode):
 

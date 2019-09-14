@@ -2,9 +2,8 @@
 title = "Data science from scratch"
 date = 2015-07-26T19:58:55+01:00
 draft = false
-
 tags = ["review","python"]
-categories = []
+categories = ["2015"]
 +++
 
 Yet another quick review of a book I purchased recently on O'Reilly; _Data Science from Scratch_, by [Joel Grus](http://joelgrus.com). I will take advantage of this post to briefly review other related books.

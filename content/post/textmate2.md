@@ -2,15 +2,8 @@
 title = "Textmate 2"
 date = 2013-01-02T15:15:20+01:00
 draft = false
-
 tags = ["apple"]
-categories = []
-
-[header]
-image = ""
-caption = ""
-preview = true
-
+categories = ["2013"]
 +++
 
 Things have changed since the last time I used TextMate (that was probbaly two or three years ago). 

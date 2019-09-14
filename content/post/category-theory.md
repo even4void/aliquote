@@ -2,10 +2,8 @@
 title: "Category Theory"
 date: 2018-03-24T18:58:38+01:00
 draft: false
-keywords: []
-description: ""
 tags: ["readings", "haskell"]
-categories: []
+categories: ["2018"]
 ---
 
 I recently came across [Categories and Haskell]( https://github.com/jwbuurlage/category-theory-programmers), written by Jan-Willem Buurlage. This is supposed to be "an introduction to the mathematics behind modern functional programming", although to be honest it covers much more advanced topics in mathematics than I expected. But we are here to learn after all.

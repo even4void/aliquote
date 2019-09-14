@@ -2,15 +2,8 @@
 title = "Installing numpy+scipy on OS X Lion"
 date = 2011-07-24T22:45:48+01:00
 draft = false
-
 tags = ["python", "apple"]
-categories = []
-
-[header]
-image = ""
-caption = ""
-preview = true
-
+categories = ["2011"]
 +++
 
 After a fresh upgrade of my Macbook Air with OS X Lion, I'm left with the default system Python, but nothing of my old stuff in the System Library path.

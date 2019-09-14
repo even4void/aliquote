@@ -1,10 +1,9 @@
 +++
 title = "Using bootstrap in cluster analysis"
-description = ""
 date = 2011-05-22T12:42:43+01:00
 draft = false
 tags = ["statistics", "rstats"]
-categories = []
+categories = ["2011"]
 
 [header]
 [[gallery_item]]
@@ -19,6 +18,8 @@ caption = ""
 +++
 
 Lastly, I came again across a nice poster from Tom Nichols that was presented at the OHBM2010 conference. This was about <i class="fa fa-file-pdf-o fa-1x"></i> [Finding Distinct Genetic Factors that Influence Cortical Thickness](http://www2.warwick.ac.uk/fac/sci/statistics/staff/academic-research/nichols/presentations/ohbm2010/nichols-ohbm2010-CoheritabilityClustering.pdf), and the clustering method that was used was interesting.
+
+<!--more-->
 
 Apart from choosing the right metric, parametric bootstrap was used to assess the stability compactness and separation of clusters as measured with the silhouette width. The need for a validation procedure aims at addressing the following two issues in cluster analysis: (1) bias toward particular cluster properties, and (2) non-significance of results when there're no true clusters. A more complete review of cluster validation techniques is available in Handl et al. [1], see also [http://dbkgroup.org/handl/clustervalidation/](http://dbkgroup.org/handl/clustervalidation/). Basically, the authors established a distinction between three kind of criteria that we want to optimize to get a "good partitioning": *compactness* (small within-cluster variation), *connectedness* (neighbouring data belong to the same cluster), and *spatial separation* (must be combined with other criteria like compactness or balance of cluster sizes). As part of a large battery of internal measures of cluster validity (i.e., we do not use additional knowledge about the data, like some a priori on class labeling), they can be complemented with so-called *combination measures* (for example, assessing intra-cluster homogeneity and inter-cluster separation), like Dunn or Davies–Bouldin index, silhouette width, SD-validity index, etc., but also estimates of *predictive power* (self-consistency and stability of a partitioning), how well distance information are reproduced in the resulting partitions (e.g., cophenetic correlation and Hubert's Gamma statistic). Ultimately, there exist dedicated measures for correlated data, which has some obvious applications in genomic studies. Well, there's much more to read in this paper, especially the benchmark study.
 

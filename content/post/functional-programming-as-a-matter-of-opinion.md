@@ -2,9 +2,8 @@
 title: "Functional Programming as a Matter of Opinion"
 date: 2018-04-24T23:47:08+02:00
 draft: false
-description: ""
 tags: ["lisp"]
-categories: []
+categories: ["2018"]
 ---
 
 I was just reading a recent article in the *Communications of the ACM*, [Using Functions for Easier Programming](https://cacm.acm.org/magazines/2018/5/227202-using-functions-for-easier-programming/fulltext), and I found myself thinking about what "functional" refers to when we talk about our preferred functional PL. Is this because we do rely on pure functions and immutable data or just because we can embrace the functional paradigm, meaning we write mostly functions, use local bindings only, and use (tail-) recursion or map/reduce---optionally with a bit of memoization---almost everywhere? 

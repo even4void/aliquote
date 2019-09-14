@@ -1,10 +1,9 @@
 +++
 title = "Applications of Latent Trait and Latent Class Models in the Social Sciences"
-description = ""
 date = 2008-02-10T21:22:47+01:00
 draft = false
 tags = ["readings", "psychometrics"]
-categories = []
+categories = ["2008"]
 +++
 
 There is a printable on-line version of the book at the following address: <http://www.ipn.uni-kiel.de/aktuell/buecher/rostbuch/ltlc.htm>. This is really a great ressource for social scientists (which I am not) and those looking for practical applications of Item Response Theory and Latent Class Analysis.

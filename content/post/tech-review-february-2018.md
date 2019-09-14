@@ -3,7 +3,7 @@ title = "Tech Review / February 2018"
 date = 2018-02-24T22:16:39+01:00
 draft = false
 tags = ["readings", "review"]
-categories = []
+categories = ["2018"]
 +++
 
 What's up on the internet in February? Here is a collection of Safari saved tabs, Twitter favs and some byproduct of my lost memory.

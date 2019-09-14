@@ -3,7 +3,7 @@ title: "Bioinformatics Data Skills"
 date: 2019-03-21T10:26:19+01:00
 draft: false
 tags: ["readings", "review", "bioinformatics"]
-categories: []
+categories: ["2019"]
 ---
 
 Here are quick notes I took while reading [Bioinformatics Data Skills: Reproducible and Robust Research with Open Source Tools](http://shop.oreilly.com/product/0636920030157.do), by Vince Buffalo.

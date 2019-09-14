@@ -2,18 +2,13 @@
 title = "User-friendly statistical packages"
 date = 2012-09-27T21:27:49+01:00
 draft = false
-
-tags = ["statistics", "apple"]
-categories = []
-
-[header]
-image = ""
-caption = ""
-preview = true
-
+tags = ["statistics", "apple", "app"]
+categories = ["2012"]
 +++
 
 Here is a newcomer in the world of "user-friendly" statistical packages: [Wizard](http://wizard.evanmiller.org) (Mac only).
+
+<!--more-->
 
 This software features an all-in-one approach to data analysis and visualization: you start with a spreadsheet of your raw data, and you can ask for a description of it with two clicks (select a 'summary' button, and then select a variable. Several graphics are proposed, depending on the type of data, but sadly [pie charts](http://stats.stackexchange.com/q/8974/930) are offered as default for categorical data. Moreover, tests of adjustment to a theoretical probability distribution are automagically printed (the trial version just doesn't print associated p-values). That's not necessarily something that I would look at when first approaching a new dataset, and I would like to be able to display several variables at once.
 

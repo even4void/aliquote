@@ -2,18 +2,13 @@
 title = "OS X Mavericks"
 date = 2014-07-27T15:41:33+01:00
 draft = false
-
 tags = ["apple"]
-categories = []
-
-[header]
-image = ""
-caption = ""
-preview = true
-
+categories = ["2014"]
 +++
 
 Here it comes... I got a new MacBook Pro 13. After my longest streak with the [same laptop]({{< ref "/post/welcome-to-the-macbook-air.md">}}) (about 4 years), I decided to upgrade my work environment.
+
+<!--more-->
 
 Although the ideas I developed in a previous post on [my default setup]({{< ref "/post/my-setup.md" >}}) haven't changed very much--I am writing this post in Markdown using Emacs, as usual, I must admit I feel the need to upgrade my core system and get a new laptop with more capabilities. So I choose a MacBook Pro 13 Retina, core i7, with 16 Go RAM / 512 Go HD. Well, my first impressions are that it is blazing fast compared to any laptop I worked on in the past. This is not surprising since the 'best' machine I used to use always was some kind of core i2 MacBook Pro or Air.
 

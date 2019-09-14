@@ -1,13 +1,14 @@
 +++
 title = "Live coding"
 date = 2018-01-17T10:28:44+01:00
-lastmod = 2018-02-20T10:28:44+01:00
 draft = false
 tags = ["misc"]
-categories = []
+categories = ["2018"]
 +++
 
 Here comes the time of "live coding".
+
+<!--more-->
 
 My son and I were regularly following some French Youtubers playing Minecraft or other video games last year. This looks like a crazy life, but maybe living as a Youtuber is not so far to being a programmer. In any case, what is of interest to me is that the tools Youtubers actually use (Youtube, Twitch, Discord) are actually also used by some folks I follow in computer science. For instance, Swizec Teller, author of [Why programmer work at night](https://swizec.com/#books), has an account on [Youtube](https://www.youtube.com/user/TheSwizec) for live coding. Likewise, Stephen Wolfram, who recently discussed [computational essays](http://blog.stephenwolfram.com/2017/11/what-is-a-computational-essay/) on his weblog, created an [account on Twitch.tv](https://www.twitch.tv/wolfram) where we can watch live coding session with Mathematica (with a little bit of promotion for Mathematica, now called Wolfram Desktop).[^1] And, in fact, [LiveCoding.tv](https://www.livecoding.tv/) (now called LiveEdu.tv) is similar to Twitch but its target audience is programmers, not gamers. 
 

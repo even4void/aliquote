@@ -2,18 +2,13 @@
 title = "Practical psychiatric epidemiology"
 date = 2008-04-27T20:03:43+01:00
 draft = false
-
 tags = ["review"]
-categories = []
-
-[header]
-image = ""
-caption = ""
-preview = true
-
+categories = ["2008"]
 +++
 
 I just read *Practical Psychiatric Epidemiology*, from Prince, M., Stewart, R., Ford, T., and Hotopf, M. (Eds.) (Oxford, 2003).
+
+<!--more-->
 
 There is already a [review] in *The Bristish Journal of Psychiatry*, 186: 268 (2005). Hereafter, I would like to quote some of the main ideas of this nice textbook on research and methodological aspects of psychiatric epidemiology. Although this textbook is mostly dedicated to students in epidemiology or psychiatry (which I am not, of course), it contains a huge amount of useful references and advices to whom may be concerned with the analysis of comparative studies in the biomedical domain. The growing interest in genetic-related studies and the now available statistical methods to deal with large-scale surveys or quality of life studies allow for a deeper understanding and takings of mental health problems. These emerging issues in psychiatric epidemiology offer a new research area open to inter-disciplinary collaboration.
 

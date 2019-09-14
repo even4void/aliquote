@@ -1,10 +1,9 @@
 +++
 title = "Handling extreme response style"
-description = ""
 date = 2010-09-07T22:29:54+01:00
 draft = false
 tags = ["psychometrics"]
-categories = []
+categories = ["2010"]
 +++
 
 Following a response I gave on [stats.stackexchange.com](http://stats.stackexchange.com/) about the analysis of respondents who always answer the most extreme responses, I finally decided to investigate this topic with greater care.

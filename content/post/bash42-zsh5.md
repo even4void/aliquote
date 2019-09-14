@@ -2,15 +2,8 @@
 title = "Upgrading Bash and zsh on OS X"
 date = 2012-07-24T19:30:29+01:00
 draft = false
-
 tags = ["apple"]
-categories = []
-
-[header]
-image = ""
-caption = ""
-preview = true
-
+categories = ["2012"]
 +++
 
 Here is a brief description on how to update to newer versions of Bash and `zsh` on OS X.

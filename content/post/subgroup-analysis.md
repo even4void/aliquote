@@ -2,19 +2,13 @@
 title = "Subgroup Analysis"
 date = 2011-07-18T14:20:19+01:00
 draft = false
-
 tags = ["readings", "statistics"]
-categories = []
-
-[header]
-image = ""
-caption = ""
-preview = true
-
+categories = ["2011"]
 +++
 
 Here are four papers dealing with the reporting of subgroup analysis and using baseline data (and their pitfalls).
 
+<!--more-->
 
 There might be plenty of other papers on this topic available through Google, but these ones focus on RCTs and biomedical research. Below is just a few recap' of the critical points raised in these papers.
 

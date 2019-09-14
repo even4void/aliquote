@@ -1,13 +1,14 @@
 +++
 title = "Pretty printing statistical distribution tables"
-description = ""
 date = 2011-04-30T17:07:44+01:00
 draft = false
-tags = ["rstats"]
-categories = []
+tags = ["rstats","tex"]
+categories = ["2011"]
 +++
 
 Before using statistical software, we were teached to use standard tables for finding the quantile of a standard normal or a Student's t distribution, given a type 1 risk. Here is a way to quickly print them on a PDF file using R and $\LaTeX$.
+
+<!--more-->
 
 ## The R part
 

@@ -2,15 +2,8 @@
 title = "Happy TeXying"
 date = 2012-03-28T08:35:03+01:00
 draft = false
-
 tags = ["tex"]
-categories = []
-
-[header]
-image = ""
-caption = ""
-preview = true
-
+categories = ["2012"]
 +++
 
 As I do not really like default [Beamer](http://tug.ctan.org/pkg/beamer) themes[^1], I tend to rely on [Context](http://wiki.contextgarden.net/Main_Page) to build my slides. I've built a set of custom themes for use with Hans Hagen's `pre` [styles](http://wiki.contextgarden.net/Presentation_Styles) as well as Thomas Schmitz and [Aditya Mahajan](http://randomdeterminism.wordpress.com/)'s [simpleslides](http://modules.contextgarden.net/simpleslides). The latter caused me problem when I tried to recompile older slides.

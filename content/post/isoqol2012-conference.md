@@ -2,19 +2,13 @@
 title = "Notes on the ISOQOL 2012 conference"
 date = 2012-10-27T14:28:27+01:00
 draft = false
-
 tags = ["psychometrics", "travels"]
-categories = []
-
-[header]
-image = ""
-caption = ""
-preview = true
-
+categories = ["2012"]
 +++
 
 Here some are notes I took during the 19th annual conference of the [International Society for Quality of Life Research](http://www.isoqol.org) which was held in Budapest, Hungary.
 
+<!--more-->
 
 ![Budapest](/img/20121026133045.jpg)
 

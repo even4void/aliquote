@@ -3,8 +3,9 @@ title: "Processing large CSV files"
 date: 2019-03-05T21:05:18+01:00
 draft: false
 tags: ["python","database"]
-categories: []
+categories: ["2019"]
 ---
+
 Just when I thought I would be good with[ importing a large CSV file into Postgresl](/micro/working-with-large-data-files) using [csvkit](https://csvkit.readthedocs.io/en/1.0.3/), I realized that nothing was going as planned: It was taking lot of memory and it was going on far too long when I would like to avoid this kind of inconvenience by transferring a CSV file to a database.
 
 <!--more-->

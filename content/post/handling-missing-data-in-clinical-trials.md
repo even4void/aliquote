@@ -1,10 +1,9 @@
 +++
 title = "Handling missing data in clinical trials"
-description = ""
 date = 2008-02-23T21:23:28+01:00
 draft = false
 tags = ["readings"]
-categories = []
+categories = ["2008"]
 +++
 
 After co-authoring two very complete books on the use of mixed models for continuous and discrete outcomes<sup>(1,2)</sup>, G. Molenberghs offers the reader another great set of techniques for handling missing data in clinical study (RCT and observational data). Indeed, some of the datasets were already analysed in the preceding references. This really is a reference for every practician interested in the treatment of missing value. Extending the well-known book of Little and Rubin<sup>(3)</sup>, Missing Data in Clinical Studies puts a special emphasis on real-life case studies. Chapters 5, 6, 13, 25 and 26, among other, are dedicated to such practical case analysis.

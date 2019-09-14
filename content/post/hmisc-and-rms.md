@@ -2,9 +2,8 @@
 title: "The Hmisc and rms packages"
 date: 2013-11-24T19:32:50+02:00
 draft: false
-description: "A short overview of the wonderful Hmisc and rms R packages"
 tags: ["rstats"]
-categories: []
+categories: ["2013"]
 ---
 
 The [Hmisc][1] and [rms][2] packages provide a wide range of tools for data

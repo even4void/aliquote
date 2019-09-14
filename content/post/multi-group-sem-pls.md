@@ -2,9 +2,8 @@
 title = "Multi-Group comparison in Partial Least Squares Path Models"
 date = 2016-05-28T14:52:01+01:00
 draft = false
-
 tags = ["psychometrics", "rstats"]
-categories = []
+categories = ["2016"]
 
 [header]
 image = ""
@@ -35,6 +34,7 @@ caption = ""
 
 This post is about multi-group partial least squares path modeling (PLS-PM).
 
+<!--more-->
 
 There is already a useful list of references on this [blog post][blog]. As the author noticed, ensuring measurement invariance is often thought of as a prerequisite before dwelling into multi-group comparison, at least in the psychometric literature that I am familiar with. From a measurement perspective, this is easily understandable since we need to ensure that we are indeed measuring in a similar way the exact same construct in specific subpopulation. I am not sure this apply to more general SEM or PLS models which may include a mix of reflexive and formative indicators, but anyway we will consider that PLS-PM is used to answer the same kind of questions as factor analysis does in general, and that we are interested in PLS approaches because of their relaxed assumptions regarding data properties (sample size, distribution, etc.). A nice overview of PLS approaches in SEM is available in Monecke et Leisch, [semPLS: Structural Equation Modeling Using Partial Least Squares][paper] (JSS 2012, 48(3)). 
 

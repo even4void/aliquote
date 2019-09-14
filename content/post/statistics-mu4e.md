@@ -2,18 +2,13 @@
 title = "Collecting email usage statistics from mu"
 date = 2014-10-26T19:50:15+01:00
 draft = false
-
-tags = ["apple", "misc"]
-categories = []
-
-[header]
-image = ""
-caption = ""
-preview = true
-
+tags = ["misc"]
+categories = ["2014"]
 +++
 
 Since I am using [mu](http://www.djcbsoftware.nl/code/mu/) to manage my email locally, I decided to check some basic information about my email activity during the recent years.
+
+<!--more-->
 
 Personal analytics is gaining increased attention, and even Apple now provides iPhone users with the [iOS Health](https://www.apple.com/ios/whats-new/health/) App. However, I am more concerned with what information is available directly under my hands, namely my computer. I very much like Seth Brown's [Vim Croquet](http://www.drbunsen.org/vim-croquet/) or Stephen Wolfram's [blog post](http://blog.stephenwolfram.com/2012/03/the-personal-analytics-of-my-life/) in this respect. Indeed, they are using basic tools to analyze raw data stored on their computers. Regarding email activity, it is almost impossible to get useful statistics from Apple Mail, although some [alternate Mail clients]({{< ref "/post/alternative-mail-reader-for-mac-os-x.md" >}}) do provide some basic usage statistics. I use both Apple Mail and [mu4e](http://www.djcbsoftware.nl/code/mu/mu4e.html) under Emacs. At my office, I often have to fetch and process my emails through Gmail web interface. This is not very practical, but I have to live with that.
 

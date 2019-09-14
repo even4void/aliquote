@@ -2,15 +2,8 @@
 title = "Ensemble Methods in Data Mining"
 date = 2011-08-22T12:39:34+01:00
 draft = false
-
 tags = ["readings", "statistics"]
-categories = []
-
-[header]
-image = ""
-caption = ""
-preview = true
-
+categories = ["2011"]
 +++
 
 This is a short review of [Ensemble Methods in Data Mining](http://www.morganclaypool.com/doi/abs/10.2200/S00240ED1V01Y200912DMK002?journalCode=dmk), by G. Seni and J. Elder (Morgan & Claypool, 2010).

@@ -3,7 +3,7 @@ title: "Forklift"
 date: 2018-06-27T07:44:45+02:00
 draft: false
 tags: ["apple", "app", "review"]
-categories: []
+categories: ["2018"]
 ---
 
 Here is a brief review of [Forklift](https://binarynights.com), a lightweight and pervasive app for file management.

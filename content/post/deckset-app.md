@@ -2,8 +2,8 @@
 title: "Deckset App"
 date: 2018-05-11T12:19:06+02:00
 draft: false
-tags: ["app", "review"]
-categories: []
+tags: ["app", "review", "apple"]
+categories: ["2018"]
 ---
 
 Continuing on my series of posts on applications I like (and use most of the time), here is [Deckset](https://www.decksetapp.com), a simple yet effective application to build and deliver gorgeous slides.

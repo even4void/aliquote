@@ -1,10 +1,9 @@
 +++
 title = "Apple development tools, An overview"
-description = ""
 date = 2009-11-26T08:21:34+01:00
 draft = false
 tags = ["apple"]
-categories = []
+categories = ["2009"]
 +++
 
 Snow Leopard (SL) comes with two versions of gcc (4.0 and 4.2) once you've installed the Xcode package. It is, however, possible to compile the latest gcc version (4.5) as shown by J. De Leeuw and others. Check the SVN repository at <http://gcc.gnu.org/svn.html>. In this case, the complete [gcc suite][gcc suite] would provide front ends for C, C++, Objective-C, Fortran, Java, and Ada. Actually, I was not able to succeed in using the gcj compiler because of missing dependencies, in particular the Eclipse native compiler (ecj). The gfortran compiler works fine, but I also have a version of Fortran 77, mostly to ensure compatibility with old software and to compare both versions. In addition, the Developer tools include the [llvm suite][llvm suite] which is based on version 4.2 of gcc.

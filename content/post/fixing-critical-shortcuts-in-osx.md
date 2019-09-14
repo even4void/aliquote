@@ -2,15 +2,8 @@
 title = "Fixing some critical keyboard shortcuts in OS X terminal"
 date = 2014-08-13T22:58:51+01:00
 draft = false
-
-tags = ["apple"]
-categories = []
-
-[header]
-image = ""
-caption = ""
-preview = true
-
+tags = ["apple", "emacs"]
+categories = ["2014"]
 +++
 
 Here are some minor tweaks to default keyboard shortcuts in Apple Terminal.app and [iTerm](http://iterm2.com).

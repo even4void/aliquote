@@ -1,13 +1,14 @@
 +++
 title = "Time to lush"
-description = ""
 date = 2011-02-22T20:03:10+01:00
 draft = false
 tags = ["lisp"]
-categories = []
+categories = ["2011"]
 +++
 
 As part of my investigation on Lisp-based solutions for statistical computing (see also this [related post]({{< ref "/post/diving-into-lisp-for-statistical-computing.md" >}})), I am now trying to get a working installation of [Lush](http://lush.sourceforge.net/).
+
+<!--more-->
 
 I discovered Lush some time ago (two years at least) but only think of trying it more seriously after having reread Ross Ihaka's famous papers on the need of developing a new statistical programming language (after R). In <i class="fa fa-file-pdf-o fa-1x"></i> [Back to the Future: Lisp as a Base for a Statistical Computing System](http://www.stat.auckland.ac.nz/%7Eihaka/downloads/Compstat-2008.pdf), and the accompagnying <i class="fa fa-file-pdf-o fa-1x"></i> [slides](http://www.stat.auckland.ac.nz/%7Eihaka/downloads/Compstat-2008-Slides.pdf), he argued that he obtained better performance in Lisp with real and artificial datasets, compared to R or Python.[^1] I don't know what software they use, but I guess it is based on some derivative of Common Lisp (CL).
 

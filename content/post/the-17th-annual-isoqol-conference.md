@@ -2,18 +2,13 @@
 title = "The 17th annual ISOQOL conference"
 date = 2010-11-25T21:44:00+01:00
 draft = false
-
 tags = ["travels", "psychometrics"]
-categories = []
-
-[header]
-image = ""
-caption = ""
-preview = true
-
+categories = ["2010"]
 +++
 
 Back from the 17th annual [ISOQOL](http://www.isoqol.org/) conference, in London, where I had the occasion to present my ongoing work on the detection of DIF on an health-related quality of life questionnaire. The <i class="fa fa-file-pdf-o fa-1x"></i> [slides](http://www.aliquote.org/articles/science/isoqol_lalanne_2010.pdf) are available.
+
+<!--more-->
 
 The advantages of ISOQOL over [ISPOR](http://www.ispor.org/) conferences are that: (a) they tend to focus more on patients reported outcomes studies than cost-effectiveness studies, and (b) the pharmaceutical sponsoring/lobbying is far less glaring. 
 

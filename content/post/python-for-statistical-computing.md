@@ -1,13 +1,14 @@
 +++
 title = "Python for statistical computing"
-description = ""
 date = 2011-02-07T21:26:26+01:00
 draft = false
 tags = ["python", "statistics"]
-categories = []
+categories = ["2011"]
 +++
 
 Pursuant on my previous post on the use of Lisp for statistical computing, here are some links for statistics with Python.
+
+<!--more-->
 
 Most of the packages listed hereafter have been grabbed on [stats.stackexchange.com](http://stats.stackexchange.com) and [MetaOptimize](http://metaoptimize.com/qa/).
 

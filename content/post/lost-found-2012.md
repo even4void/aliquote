@@ -2,16 +2,13 @@
 title = "lost+found 2012"
 date = 2013-01-01T20:19:51+01:00
 draft = false
-
 tags = ["misc"]
-categories = []
-
-[header]
-image = ""
-caption = ""
-preview = true
-
+categories = ["2013"]
 +++
+
+Unfinished and drafts posts from 2012.
+
+<!--more-->
 
 ## Unidimensional scaling
 <small>(July 2012)</small>

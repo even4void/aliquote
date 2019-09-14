@@ -2,8 +2,8 @@
 title: "ArXiving on July 2019"
 date: 2019-07-28T17:42:46+02:00
 draft: false
-tags: ["readings", "arxiv", "review"]
-categories: []
+tags: ["readings", "arxiv"]
+categories: ["2019"]
 ---
 
 Here is a quick wrap up of my latest readings on arXiv. In no particular order, as usual.

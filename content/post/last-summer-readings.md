@@ -2,8 +2,8 @@
 title: "Functional Programming: A PragPub Anthology"
 date: 2019-03-10T09:34:34+01:00
 draft: false
-tags: ["readings", "review", "lisp", "clojure"]
-categories: []
+tags: ["readings", "clojure"]
+categories: ["2019"]
 ---
 Better late than never, here is a quick check of some of my technical readings from last Summer. Let's start with [Functional Programming: A PragPub Anthology](https://pragprog.com/book/ppanth/functional-programming-a-pragpub-anthology), by Michael Swaine and the PragPub writers.
 

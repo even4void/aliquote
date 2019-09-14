@@ -3,7 +3,7 @@ title: "Power series and Fibonacci sequence"
 date: 2019-07-31T09:07:29+02:00
 draft: false
 tags: ["math", "statistics"]
-categories: []
+categories: ["2019"]
 ---
 
 Here is a little fact about Fibonacci numbers and their relation to some power series.

@@ -2,15 +2,8 @@
 title = "Back from the IV EAM conference"
 date = 2010-07-27T11:41:24+01:00
 draft = false
-
 tags = ["travels", "review", "psychometrics"]
-categories = []
-
-[header]
-image = ""
-caption = ""
-preview = true
-
+categories = ["2010"]
 +++
 
 Back from the [IV EAM conference][IV EAM conference] <i class="fa fa-chain-broken fa-1x"></i> that was held in Postdam, near Berlin. The next one is planned in two years in Spain. In the mean time, I expect great publications coming up from some of the presenters.

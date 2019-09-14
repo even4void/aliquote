@@ -1,10 +1,9 @@
 +++
 title = "Paired preference models"
-description = ""
 date = 2008-05-05T19:38:38+01:00
 draft = false
 tags = ["psychometrics"]
-categories = []
+categories = ["2008"]
 +++
 
 Much of this discussion is supported by [Agresti's book][book], *Categorical Data Analysis* (Wiley, 2002), and the overwhelming work of [Laura Thompson][Laura Thompson] who adapted the analysis with S-PLUS and R. However, some methods are rather specific of Psychometrics like the Facets Model presented in the first section.

@@ -1,10 +1,9 @@
 +++
 title = "Cronbach's alpha yet again"
-description = ""
 date = 2011-06-25T12:41:07+01:00
 draft = false
 tags = ["readings", "psychometrics"]
-categories = []
+categories = ["2011"]
 +++
 
 As a complement to the references I gave in an earlier post on [Cronbach's alpha]({{< ref "/post/revisiting-cronbach-s-alpha.md" >}}), here are some further thoughts.

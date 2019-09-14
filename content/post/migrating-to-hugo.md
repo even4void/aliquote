@@ -1,13 +1,14 @@
 +++
 title = "Migrating to Hugo"
-description = "Some news about the new website"
 date = 2018-01-22T11:40:59+01:00
 draft = false
 tags = ["misc"]
-categories = []
+categories = ["2018"]
 +++
 
 Last day, I decided to embrace modern web technologies by switching to Hugo in order to manage my website in a more elegant manner. Up to now, I have been using a mix of Markdown and HTML files with custom CSS and site structure.
+
+<!--more-->
 
 This was also a good opportunity to revise some content and check internal links. Indeed, since Dropbox removed their support for sharing live link in our Public folder, I was left with tons of broken image links (in fact, all of them). Moreover, a lot of draft posts were still living in my post box and never get published, even in draft mode. Finally, some old post were still written in Textile and needed to be updated to Markdown.
 

@@ -1,13 +1,14 @@
 +++
 title = "Penalized likelihood regression"
-description = ""
 date = 2008-04-15T10:18:49+01:00
 draft = false
 tags = ["statistics"]
-categories = []
+categories = ["2008"]
 +++
 
 Recently, I was reading some posts on Google groups, and I found an interesting issue on stepwise selection for logistic regression which was raised on [Medstats](http://groups.google.com/group/MedStats). Frank Harrell provides extensive coverage of model selection in his most famous book *Regression Modeling Strategies* (Springer, 2001). He also wrote several articles on this topic, and several of them can be found on-line, e.g. [Regression Modeling and Validation Strategies](http://citeseer.ist.psu.edu/harrell97regression.html) (see also (5)).
+
+<!--more-->
 
 The following article highlights the use of Penalized Maximum Likelihood Estimation to predict binary outcomes: Moons KG, Donders AR, Steyerberg EW, Harrell FE. *J. Clin. Epidemiol.* 2004, 57(12): 1262-70. The abstract can be found on Medline and is reproduced below:
 

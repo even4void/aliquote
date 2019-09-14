@@ -2,15 +2,8 @@
 title = "Exploratory data mining and data cleaning"
 date = 2013-02-17T17:14:23+01:00
 draft = false
-
 tags = ["readings", "statistics"]
-categories = []
-
-[header]
-image = ""
-caption = ""
-preview = true
-
+categories = ["2013"]
 +++
 
 I just got my copy of *Exploratory Data Mining and Data Cleaning*, by Dasu and Johnson (Wiley, 2003).

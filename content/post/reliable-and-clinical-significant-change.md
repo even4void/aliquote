@@ -1,10 +1,9 @@
 +++
 title = "Reliable and clinically significant change"
-description = ""
 date = 2008-07-13T18:57:24+01:00
 draft = false
 tags = ["statistics"]
-categories = []
+categories = ["2008"]
 +++
 
 Again, looking at the [MedStats][MedStats] mailing-list I found an interesting discussion on how to [Define significant changes in neuropsychological tests][Define significant changes in neuropsychological tests]. The article that serves as a basic reference for this discussion is:

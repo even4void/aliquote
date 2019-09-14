@@ -2,18 +2,13 @@
 title = "ODBC drivers on Mac OS X"
 date = 2012-11-24T15:28:38+01:00
 draft = false
-
-tags = ["apple", "database"]
-categories = []
-
-[header]
-image = ""
-caption = ""
-preview = true
-
+tags = ["apple", "database", "stata"]
+categories = ["2012"]
 +++
 
 A brief survey of ODBC and database connectivity on Mac OS X, since I wanted to test ODBC drivers on Stata (see [How do I set up an ODBC Data Source Name for Stata on Mac or Linux/Unix?](http://www.stata.com/support/faqs/data-management/configuring-odbc/)).
+
+<!--more-->
 
 ## What is available on OS X?
 

@@ -2,18 +2,13 @@
 title = "Tmux and OS X"
 date = 2014-11-15T10:30:46+01:00
 draft = false
-
 tags = ["apple"]
-categories = []
-
-[header]
-image = ""
-caption = ""
-preview = true
-
+categories = ["2014"]
 +++
 
 I am sometimes using [tmux](http://tmux.sourceforge.net) as my default terminal multiplexer. Here are some notes on my current configuration.
+
+<!--more-->
 
 My configuration is rather simple, and it is mostly inspired from others' config files I found with little Googling. The default status bar is not quite bad, but I don't really like the green background and I prefer non-intrusive 'markers' to display information about my running processes. I ended up with the following customization for the status bar: (See also [here](https://github.com/JohnMurray/dotfiles/blob/master/.tmux.conf) and [here](http://stackoverflow.com/questions/9628435/tmux-status-bar-configuration).)
 

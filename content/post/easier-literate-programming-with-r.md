@@ -2,15 +2,8 @@
 title = "Easier literate programming with R"
 date = 2012-04-02T09:03:26+01:00
 draft = false
-
 tags = ["tex", "rstats"]
-categories = []
-
-[header]
-image = ""
-caption = ""
-preview = true
-
+categories = ["2012"]
 +++
 
 I have been using [Sweave](http://www.statistik.lmu.de/~leisch/Sweave/) over the past 5 or 6 years for processing my R documents, and I have been quite happy with this program. However, with the recent release of [knitr](http://yihui.name/knitr/) (already adopted on [UCLA Stat Computing](http://www.ats.ucla.edu/stat/r/code/) and on [Vanderbilt Biostatistics Wiki](http://biostat.mc.vanderbilt.edu/wiki/Main/KnitrHowto)) and all of its nice enhancements, I really need to get more familiar with it.

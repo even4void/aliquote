@@ -2,18 +2,13 @@
 title = "Scheme and Emacs"
 date = 2014-04-18T22:16:03+01:00
 draft = false
-
-tags = ["lisp", "apple", "emacs"]
-categories = []
-
-[header]
-image = ""
-caption = ""
-preview = true
-
+tags = ["apple", "emacs"]
+categories = ["2014"]
 +++
 
 For those who like to write Scheme without leaving Emacs, [Geiser](http://www.nongnu.org/geiser/) is probably the way to go.
+
+<!--more-->
 
 The [Racket guide for Emacs](http://docs.racket-lang.org/guide/Emacs.html) also recommends to install [Quack](http://www.neilvandyke.org/quack/), which I happened to try long ago for an [introductory course in programming for Bioinformatics](http://www.laurentbloch.org/MySpip3/spip.php?rubrique4) where we were using Scheme (I was using [Chicken Scheme](http://www.call-cc.org/) at that time).
 

@@ -2,8 +2,8 @@
 title: "Souvenir, souvenir"
 date: 2018-11-20T21:24:10+01:00
 draft: false
-tags: ["misc", "apple"]
-categories: []
+tags: ["misc"]
+categories: ["2018"]
 ---
 Happy birthday to you again...
 

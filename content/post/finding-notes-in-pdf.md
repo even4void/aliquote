@@ -3,7 +3,7 @@ title: "Finding and tagging annotated PDF files"
 date: 2019-03-17T17:18:13+01:00
 draft: false
 tags: ["apple"]
-categories: []
+categories: ["2019"]
 ---
 I have never been a big fond of AppleScript or Automator, even if I may have a few scripts lurking around there, notably one that takes care of migrating all the screenshots I take from my Desktop to the "Pictures" folder, after they got renamed following a more usable convention (`yyyy-mm-dd-hh-mm-ss.png`). 
 

@@ -3,7 +3,7 @@ title: "Goodbye Cross Validated"
 date: 2019-01-06T19:00:30+01:00
 draft: false
 tags: ["misc"]
-categories: []
+categories: ["2019"]
 ---
 A few days back, I left the moderator team at Stack Overflow. No worry, it is simply a personal decision that is more a matter of common sense than weariness of the Stack Exchange network.
 

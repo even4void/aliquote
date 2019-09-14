@@ -1,13 +1,14 @@
 +++
 title = "Three must-read papers on predictive modeling"
-description = ""
 date = 2011-04-28T17:14:35+01:00
 draft = false
 tags = ["readings", "statistics"]
-categories = []
+categories = ["2011"]
 +++
 
 Here are three papers (co)authored by [Frank Harrell](http://biostat.mc.vanderbilt.edu/wiki/Main/FrankHarrell) that I spent some time rereading recently.
+
+<!--more-->
 
 What is common to all three papers is that the authors emphasize the need for robustness in predictive modeling of clinical outcomes with multivariable models, with a particular accent on error estimation, model accuracy, power analysis.
 

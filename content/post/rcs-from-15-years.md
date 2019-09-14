@@ -3,7 +3,7 @@ title: "RCS 15 years later"
 date: 2019-09-05T19:09:07+02:00
 draft: false
 tags: ["misc", "fr"]
-categories: []
+categories: ["2019"]
 ---
 
 Remember SVN, or even RCS? Before Git I have been a long-time user of the simplest version control that was available on my Mac, namely [RCS](https://en.m.wikipedia.org/wiki/Revision_Control_System). Nowadays, I use mostly Git, but there were times where things were much simpler, yet robust, although we didn't have things such as Github and the like.

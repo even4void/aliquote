@@ -2,18 +2,13 @@
 title = "Julia"
 date = 2012-04-04T08:34:41+01:00
 draft = false
-
 tags = ["julia"]
-categories = []
-
-[header]
-image = ""
-caption = ""
-preview = true
-
+categories = ["2012"]
 +++
 
 Following my earlier post on [Julia and gsl-shell]({{< ref "/post/gsl-shell.md" >}}), I decided to familiarise myself with [Julia](http://julialang.org/).
+
+<!--more-->
 
 A lot of smart guys have recently blogged about Julia, see e.g. [Julia, I love You](http://www.johnmyleswhite.com/notebook/2012/03/31/julia-i-love-you/) by John Myles White. Even [Doug Bates](http://dmbates.blogspot.fr/) started to play with it, and in particular bring us with an easy way to call R's statistical distributions with Julia.
 

@@ -2,9 +2,8 @@
 title: "New tutorials"
 date: 2018-06-20T21:40:51+02:00
 draft: false
-description: ""
 tags: ["statistics", "emacs"]
-categories: []
+categories: ["2018"]
 ---
 
 I am working on two new series of tutorials, one using R and the other using Stata. The focus will be on biostatistical computing or computational statistics at a glance but this is just the beginning and I have no definitive idea how this will turn out. The projects can be watched on GitHub ([rstats-sk](https://github.com/chlalanne/rstats-sk) and [stata-sk](https://github.com/chlalanne/stata-sk)) or they are rendered online [on this site](/writings).

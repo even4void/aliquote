@@ -1,10 +1,9 @@
 +++
 title = "lost+found 2010"
-description = ""
 date = 2011-01-01T20:20:45+01:00
 draft = false
 tags = ["misc"]
-categories = []
+categories = ["2011"]
 +++
 
 Mostly draft versions of never ending blog posts...

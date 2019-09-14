@@ -2,9 +2,8 @@
 title: "The unquantified self #3"
 date: 2018-09-30T19:56:00+02:00
 draft: false
-description: ""
 tags: ["self"]
-categories: []
+categories: ["2018"]
 ---
 
 Surely we can say that the Summer is over but it has been quite pleasant this year. We still have beautiful days, even if it gets colder (at least for me).

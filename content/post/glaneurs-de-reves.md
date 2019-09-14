@@ -3,7 +3,7 @@ title: "Glaneurs de rêves"
 date: 2018-09-30T18:21:24+02:00
 draft: false
 tags: ["readings", "fr"]
-categories: []
+categories: ["2018"]
 ---
 
 Des histoires vraies qui vous donnent envie d'inventer des contes fabriqués de toutes pièces.

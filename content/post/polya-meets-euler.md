@@ -3,7 +3,7 @@ title: "From Polya to Euler problem"
 date: 2019-07-12T10:20:08+02:00
 draft: false
 tags: ["math", "euler", "racket"]
-categories: []
+categories: ["2019"]
 ---
 
 One of Euler problem asks to find the number of ways we can traverse a square lattice using only horizontal and vertical moves (think of the Manhattan distance).

@@ -3,7 +3,7 @@ title: "Building an histogram in Lisp"
 date: 2019-08-10T08:21:06+02:00
 draft: false
 tags: ["lisp", "statistics"]
-categories: []
+categories: ["2019"]
 ---
 
 This post is a rough attempt at constructing a proper histogram for a sequence of real values, usually stored as a list or vector in Common Lisp. With minor adapatation, it should work with Scheme dialects too.

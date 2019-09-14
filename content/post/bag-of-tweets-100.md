@@ -2,9 +2,8 @@
 title: "A bag of tweets / Jul 2018"
 date: 2018-07-24T12:28:41+02:00
 draft: false
-description: ""
-tags: ["misc"]
-categories: []
+tags: ["twitter"]
+categories: ["2018"]
 ---
 
 Here is the latest bag of tweets<sup>\*</sup>, which covers July 2018.

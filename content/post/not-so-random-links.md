@@ -3,7 +3,7 @@ title: "Not so random links from April"
 date: 2019-04-12T11:48:33+02:00
 draft: false
 tags: ["readings"]
-categories: []
+categories: ["2019"]
 ---
 
 Some not so random links--not posted on Twitter, nor on the Micro section.

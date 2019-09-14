@@ -1,10 +1,9 @@
 +++
 title = "Send email via Postfix"
-description = ""
 date = 2010-12-20T20:15:19+01:00
 draft = false
 tags = ["apple"]
-categories = []
+categories = ["2010"]
 +++
 
 I like sending brief email via the command line, because it really sucks to open a web browser just for writing 2 lines of text. On my old computer, I configured postfix to work with my gmail account. Now, I tried to replicate my config on my Airbook, but the SSL certificates used by Gmail have changed in the meantime, and although my configuration still works I end up with unwanted warnings in my `/var/log/mail.log`.

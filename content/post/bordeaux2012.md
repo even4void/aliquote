@@ -2,15 +2,8 @@
 title = "Back from the BoRdeaux conference"
 date = 2012-07-04T20:28:34+01:00
 draft = false
-
 tags = ["travels", "rstats"]
-categories = []
-
-[header]
-image = ""
-caption = ""
-preview = true
-
+categories = ["2012"]
 +++
 
 Here is a quick wrap up of the BoRdeaux conference.

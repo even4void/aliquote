@@ -2,18 +2,11 @@
 title = "GNU Emacs on OS X 10.7"
 date = 2012-06-16T15:13:04+01:00
 draft = false
-
 tags = ["apple", "emacs"]
-categories = []
-
-[header]
-image = ""
-caption = ""
-preview = true
-
+categories = ["2012"]
 +++
 
-I have been using [Aquamacs](http://aquamacs.org) for over 5 or 6 years now, but I recently decided to go back to a more simple version of Emacs, namely the latest build of [Emacs for OS X](http://emacsformacosx.com/).
+I have been using [Aquamacs](http://aquamacs.org) for over 5 or 6 years now, but I recently decided to go back to a simpler version of Emacs, namely the latest build of [Emacs for OS X](http://emacsformacosx.com/).
 
 Why? There are several reasons:
 

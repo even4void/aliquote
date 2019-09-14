@@ -2,9 +2,8 @@
 title = "Leopard, about 6 months later"
 date = 2008-05-04T10:38:56+01:00
 draft = false
-
 tags = ["apple"]
-categories = []
+categories = ["2008"]
 
 [header]
 image = ""
@@ -39,6 +38,8 @@ caption = ""
 +++
 
 I finally decided to switch to Mac OS X 10.5, aka Leopard, two days ago. It's impressive...
+
+<!--more-->
 
 Apart from the new UI (which was not my primary criteria), [Leopard](http://www.apple.com/fr/macosx/features/) comes with plenty of updates and new functionnalities. To name a few:
 

@@ -1,10 +1,9 @@
 +++
 title = "Bayesian analysis with Python"
-description = ""
 date = 2010-06-27T12:00:12+01:00
 draft = false
 tags = ["python", "bayesian"]
-categories = []
+categories = ["2010"]
 [[gallery_item]]
 album = "1"
 image = "20100627215508.png"

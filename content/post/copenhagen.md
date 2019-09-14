@@ -1,10 +1,9 @@
 +++
 title = "Copenhagen"
-description = ""
 date = 2009-07-16T23:28:15+01:00
 draft = false
 tags = ["travels"]
-categories = []
+categories = ["2009"]
 [[gallery_item]]
 album = "1"
 image = "IMG_0152.JPG"

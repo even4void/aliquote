@@ -2,9 +2,8 @@
 title: "Quadratic Equation and the Evil of Floating Point"
 date: 2018-04-29T17:42:18+02:00
 draft: false
-description: ""
 tags: ["clang", "math"]
-categories: []
+categories: ["2018"]
 ---
 
 Today I came across an interesting discussion of floating point arithmetic by John D Cook: [The quadratic formula and low-precision arithmetic](https://www.johndcook.com/blog/2018/04/28/quadratic-formula/). The take away message is: "when the linear coefficient b is large relative to the other coefficients, the quadratic formula can give wrong results when implemented in floating point arithmetic."

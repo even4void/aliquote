@@ -2,18 +2,13 @@
 title = "Interactive Data Visualization With Cranvas"
 date = 2012-10-27T14:28:50+01:00
 draft = false
-
 tags = ["rstats", "dataviz"]
-categories = []
-
-[header]
-image = ""
-caption = ""
-preview = true
-
+categories = ["2012"]
 +++
 
 One of the advantage of R over other popular statistical packages is that it now has "natural" support for interactive and dynamic data visualization. This is, for instance, something that is lacking with the Python ecosystem for scientific computing ([Mayavi](http://mayavi.sourceforge.net) or Enthought [Chaco](http://code.enthought.com/chaco/) are just too complex for what I have in mind).
+
+<!--more-->
 
 Some time ago, I started drafting some tutors on interactive graphics with R. The idea was merely to give an overview of existing packages for interactive and dynamic plotting, and it was supposed to be a three-part document: first part presents basic capabilities like `rgl`, `aplpack`, and `iplot` (aka Acinonyx)--this actually ended up as a very <i class="fa fa-file-pdf-o fa-1x"></i> [coarse draft](http://aliquote.org/pub/iplots.pdf); second part should present `ggobi` and its R interface; third and last part would be about the Qt interface, with `qtpaint` and `cranvas`. I hope I will find some time to finish this project as it might provide useful complements to my introductory statistical course on data visualization and statistics with R.
 

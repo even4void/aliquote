@@ -1,10 +1,9 @@
 +++
 title = "French localization with R under Mac OS X"
-description = ""
 date = 2008-05-13T19:59:23+01:00
 draft = false
 tags = ["apple", "rstats"]
-categories = []
+categories = ["2008"]
 +++
 
 Now that I'm working with the latest release of Mac OS X (10.5, aka Leopard), I again face the problem of the french localization of the [R][R] software. It should be noted that I mainly use R in a simple console (the Terminal), rather than the GUI distributed with R. I must say, however, that this GUI is by far the most elegant I saw: Windows GUI is a disaster (!), and there is no GUI available for Linux; in both cases, one can use [JGR][JGR] or similar add-on software. But as I feel most comfortable with the command line, I decide to keep this option.

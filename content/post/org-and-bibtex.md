@@ -2,9 +2,8 @@
 title: "Org and Bibtex"
 date: 2018-05-13T18:47:55+02:00
 draft: false
-description: ""
 tags: ["emacs"]
-categories: []
+categories: ["2018"]
 ---
 
 The `ox-bibtex` package from the org contrib packages provides a good alternative to [org-ref](https://github.com/jkitchin/org-ref) for managing a a Bibtex bibliography.

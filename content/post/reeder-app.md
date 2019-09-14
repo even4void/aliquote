@@ -2,8 +2,8 @@
 title: "Reeder App"
 date: 2018-04-08T09:11:04+02:00
 draft: false
-tags: ["app", "review"]
-categories: []
+tags: ["app", "review", "apple"]
+categories: ["2018"]
 ---
 
 Back to reading feeds. Here is a brief review of the [Reeder app](http://reederapp.com).

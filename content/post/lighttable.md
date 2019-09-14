@@ -3,10 +3,12 @@ title = "Light Table and interactive live coding"
 date = 2014-04-25T22:15:52+01:00
 draft = false
 tags = ["apple", "app", "review"]
-categories = []
+categories = ["2014"]
 +++
 
 [LightTable](http://www.lighttable.com/) 0.6.2 has been released recently. It now supports Python and graphics can be embedded directly into the interactive console.
+
+<!--more-->
 
 ![LightTable](/img/20140424222700.png)
 

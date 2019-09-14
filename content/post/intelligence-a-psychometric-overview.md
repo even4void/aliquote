@@ -1,13 +1,14 @@
 +++
 title = "Intelligence, the psychometric view"
-description = ""
 date = 2010-08-20T18:04:08+01:00
 draft = false
 tags = ["readings", "psychometrics"]
-categories = []
+categories = ["2010"]
 +++
 
 Following my previous post on [The New Psychometrics]({{< ref "/post/the-new-psychometrics.md" >}}) by Paul Kline, here is a review of *Intelligence, The Psychometric View*, first published in 1991. I must admit I read it in two days, partly because I was on holidays and spent much more time enjoying the sun and swimming pool near Bordeaux (France, 33), but also because it is so much well written that there is no need to retrace one's steps.
+
+<!--more-->
 
 Here a couple of quotes that I would like to comment on when I come back to this review. Emphasizes are mine.
 

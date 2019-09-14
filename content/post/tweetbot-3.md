@@ -3,7 +3,7 @@ title: "Tweetbot 3"
 date: 2018-06-10T08:23:38+02:00
 draft: false
 tags: ["misc", "app", "review"]
-categories: []
+categories: ["2018"]
 ---
 
 Since Twitter [withdrawned its native Twitter client](https://twitter.com/TwitterSupport/status/964635739517407232) from OS X a while back, I had to find a new application to replace this handy app, and I settled to [Tweetbot](https://tapbots.com/tweetbot/mac/).

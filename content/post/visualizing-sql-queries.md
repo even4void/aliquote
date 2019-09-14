@@ -2,18 +2,13 @@
 title = "Visualizing results from SQL queries"
 date = 2012-11-23T15:28:56+01:00
 draft = false
-
 tags = ["database", "apple"]
-categories = []
-
-[header]
-image = ""
-caption = ""
-preview = true
-
+categories = ["2012"]
 +++
 
 Most statistical or dedicated software can process data stored in SQL databases and plot results from specific queries. There are also custom applications that allow to display query results, like [DbVisualizer](http://www.dbvis.com).
+
+<!--more-->
 
 I recently installed a full-featured binary package of PostgreSQL, [Postgres.app](http://postgresapp.com), which I find particularly convenient to work with database on my Mac since it generally comes with an up to date Postgres system, as well as [PostGis](http://postgis.refractions.net) and [PLV8](http://code.google.com/p/plv8js/wiki/PLV8) (which I haven't explored yet). From the same author, there is also a nice GUI for querying and visualizing results as basic charts (actually, points or lines scatterplot, and donuts, i.e. much less features compared to [DbVisualizer](http://www.dbvis.com)): [Induction](http://inductionapp.com) <i class="fa fa-chain-broken fa-1x"></i>. The list of [upcoming features](https://github.com/Induction/Induction/blob/master/README.md#roadmap) <i class="fa fa-chain-broken fa-1x"></i> looks really impressive although I doubt all tasks will be completed tomorrow. Anyway, that's an interesting project because there are several connectors (PostgreSQL, Redis, sqlite and MongoDB) and it is just free.
 

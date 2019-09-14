@@ -1,13 +1,14 @@
 +++
 title = "Upgrading Context"
-description = ""
 date = 2010-04-03T08:43:45+01:00
 draft = false
-tags = ["tex", "apple"]
-categories = []
+tags = ["tex"]
+categories = ["2010"]
 +++
 
 For some time ago (in fact, since I initially upgraded [Texlive](http://tug.org/texlive/) to the 2009th grinding) I was stucked by repeated failures to "properly" compile tex documents with embedded metapost background. Properly here means that the compilation went fine but the colored backgrounds weren't there. After googling for a possible Metapost bug with the newly released ConTeXt engine, I just realized that the Texlive2009 distribution does not actually include a useable Mark IV engine.
+
+<!--more-->
 
 > The most important motivation for this page is that the TeX Live 2008 edition contains Mark IV, but it is only copied to the installed system, no post-install setup takes place at all. For this Tex Live release, the post-install setup has to be done manually. TeX Live 2009 does not come with a usable Mark IV at all because the luatex on the 2009 editions is too old. Instructions on how to deal with TeX Live 2009 will be added soon.
 -- <http://wiki.contextgarden.net/Running_Mark_IV>

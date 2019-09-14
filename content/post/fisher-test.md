@@ -1,10 +1,9 @@
 +++
 title = "Against the systematic use of Fisher's exact test"
-description = ""
 date = 2010-09-16T21:36:21+01:00
 draft = false
 tags = ["statistics"]
-categories = []
+categories = ["2010"]
 +++
 
 Here is an article published in *Statistics in Medicine* last year and that argues against the systematic use of Fisher's exact test. Since this is the test that is most of the times reported in clinical biostatistics and epidemiology articles, let's look at the rationale behind this claim.

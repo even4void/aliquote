@@ -3,7 +3,7 @@ title: "VS Code and Python"
 date: 2019-04-08T18:40:53+02:00
 draft: false
 tags: ["python", "emacs"]
-categories: []
+categories: ["2019"]
 ---
 I tried [VS Code](https://code.visualstudio.com) during a few days for Python development. It looks like folks at Microsoft did a really great job at integrating so nicely Python into this IDE, which itself has greatly improved over time.
 

@@ -2,18 +2,13 @@
 title = "The 6th CARME conference"
 date = 2011-02-12T16:53:37+01:00
 draft = false
-
 tags = ["travels", "psychometrics"]
-categories = []
-
-[header]
-image = ""
-caption = ""
-preview = true
-
+categories = ["2011"]
 +++
 
 Just a few words about the [6th CARME](http://carme2011.agrocampus-ouest.fr/) conference, on Correspondence Analysis and Related Methods. I only attended a few sessions, but it was a great opportunity to see what's actually going on with data analysis of tabular data.
+
+<!--more-->
 
 The conference was held on the Agrocampus in Rennes. I went in the same place two years ago for the [UseR! 2009](http://www.r-project.org/conferences/useR-2009/) conference (I found it too crowdy, but anyway there was really great stuff presented here). The fact is that some of the organizers are also those guys that develop the [FactoMineR](http://cran.r-project.org/web/packages/FactoMineR/index.html) package, which is a very useful R package. I used it a lot because it reminds me of the [SPAD](http://www.coheris.fr/en/page/produits/SPAD-data-mining.html) software. Other packages of interest are: [ade4](http://cran.r-project.org/web/packages/ade4/index.html), [anacor](http://cran.r-project.org/web/packages/anacor/index.html), [ca](http://cran.r-project.org/web/packages/ca/index.html), and [vegan](http://cran.r-project.org/web/packages/vegan/index.html). Also, as I am currently working on the Greenacre's book, *Multiple Correspondance Analysis and Related Methods* (Chapman & Hall/CRC, 2006), which summarizes the CARME 2003 conference, this conference was a good opportunity to sum up what I've already learned.
 

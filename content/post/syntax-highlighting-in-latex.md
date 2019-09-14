@@ -2,15 +2,8 @@
 title = "Syntax highlighting in Latex"
 date = 2010-12-26T11:22:17+01:00
 draft = false
-
 tags = ["tex"]
-categories = []
-
-[header]
-image = ""
-caption = ""
-preview = true
-
+categories = ["2010"]
 +++
 
 I just discovered the [minted](http://www.ctan.org/tex-archive/macros/latex/contrib/minted/) $\LaTeX$ package to highlight source code. Perfect! I never liked the [listings](http://www.ctan.org/tex-archive/macros/latex/contrib/listings/) package.

@@ -3,7 +3,7 @@ title: "DNA substitutions and Continuous Markov Random Process"
 date: 2019-02-26T19:16:05+01:00
 draft: false
 tags: ["statistics", "bioinformatics"]
-categories: []
+categories: ["2019"]
 ---
 
 Here is a little post about using Mathematica to study basic model of DNA substitutions, including the Jukes-Cantor model, and more generally likelihood-based phylogenetic tree inference.

@@ -1,10 +1,9 @@
 +++
 title = "Fall desk cleaning"
-description = ""
 date = 2010-12-27T20:12:31+01:00
 draft = false
 tags = ["readings"]
-categories = []
+categories = ["2010"]
 +++
 
 Here are a few papers dealing with genetic epidemiology that I should have read for a while.

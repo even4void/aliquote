@@ -1,13 +1,14 @@
 +++
 title = "Linear programming with GNU software"
-description = ""
 date = 2008-04-10T09:22:09+01:00
 draft = false
 tags = ["psychometrics"]
-categories = []
+categories = ["2008"]
 +++
 
 In my daily job, I'm involved in a project around adaptive testing. Basically, items are presented in an order that is dependent upon the estimated level of ability of the respondent. Parameters estimation can be done on the fly (time consuming) or can rely on more subtle computation based on overall test information and additional constraints (distributed content or thematics, etc.). Moreover, items can be collapsed into so-called items bundles. Taking into account such constraints during the building up of items sequence calls for linear programming ressources. However, it has been shown that linear programming models are not always applicable as some constraints cannot be satisfied simultaneously with some other constraints. Most of the initial work on tailored testing in educational measurement has been pioneered by [ETS][ETS] researchers<sup>(1,2)</sup>.
+
+<!--more-->
 
 Swanson and Stocking propose to use a weighted deviation model relying on LP with several constraints for the selection of items. Such constraints generally involve maximization of item information, restriction to selected topics or distributed content, minimization of item exposure, etc. In this view, these constraints shall be viewed as desirable properties rather than external conditions. Of course, bayesian techniques<sup>(3)</sup> have been proposed as well. An [on-line tutorial][on-line tutorial] is available on Lawrence M. Rudner's website. Note also that applications embedding a CAT approach don't restrict to education but also covered wide biomedical assessments<sup>(4)</sup>.
 

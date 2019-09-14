@@ -1,13 +1,14 @@
 +++
 title = "Web sharing, web syncing"
-description = ""
 date = 2010-08-09T16:15:07+01:00
 draft = false
 tags = ["apple"]
-categories = []
+categories = ["2010"]
 +++
 
 Here is a brief overview of the web sharing/syncing solutions I am actually using. Although I hold a Mac account with an iDisk allowing to store remotely my synced files, I found it somewhat slow (especially during upload). Moreover, it does not offer support for cloud computing with live documents, like e.g. [Box.net][Box.net]. But this one is very expensive if you want to get decent capabilities (check for yourself on their website).
+
+<!--more-->
 
 Now, what's about other options? 
 

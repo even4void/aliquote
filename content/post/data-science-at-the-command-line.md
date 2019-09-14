@@ -2,15 +2,8 @@
 title = "Data science at the command line"
 date = 2014-10-12T20:15:06+01:00
 draft = false
-
 tags = ["review"]
-categories = []
-
-[header]
-image = ""
-caption = ""
-preview = true
-
+categories = ["2014"]
 +++
 
 Here is a short review of [Data Science at the Command Line](http://datascienceatthecommandline.com), by [Jeroen Janssens](http://jeroenjanssens.com) (O'Reilly, 2014).

@@ -3,7 +3,7 @@ title: "Euler Problems 1-10"
 date: 2019-07-04T15:53:39+02:00
 draft: false
 tags: ["racket", "scheme", "math", "euler"]
-categories: []
+categories: ["2019"]
 ---
 
 I have been having fun recently solving the first Euler problems using Racket. Here are some notes I took when trying to solve the problem. Note that I do not reveal the solutions in this post nor some of the tips recommended on the site to improve naive algorithms. Oftentimes, brute force methods are enough to solve the problem. Regarding Racket code, mistakes are mine.

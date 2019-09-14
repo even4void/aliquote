@@ -2,18 +2,13 @@
 title = "lost+found 2014"
 date = 2015-01-01T20:30:55+01:00
 draft = false
-
 tags = ["misc", "stata", "psychometrics"]
-categories = []
-
-[header]
-image = ""
-caption = ""
-preview = true
-
+categories = ["2015"]
 +++
 
 Here are some draft notes, written in 2014, unfilled but not lost forever. With slight edits to accomodate a proper archive blog post.
+
+<!--more-->
 
 ## Stata for structural equation modeling
 <small>(October 2014)</small>

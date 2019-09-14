@@ -2,15 +2,8 @@
 title = "Customizing terminal emulator and the Like on OS X"
 date = 2012-07-21T19:31:52+01:00
 draft = false
-
 tags = ["apple"]
-categories = []
-
-[header]
-image = ""
-caption = ""
-preview = true
-
+categories = ["2012"]
 +++
 
 Some nifty customizations for my [CLI](http://en.wikipedia.org/wiki/Command-line_interface) environment.

@@ -3,7 +3,7 @@ title: "Prime numbers in Scheme"
 date: 2019-08-19T20:51:41+02:00
 draft: false
 tags: ["math", "euler", "scheme"]
-categories: []
+categories: ["2019"]
 ---
 
 As I said in a [previous post](/post/decimal-numbers/), a good number of Euler problems rely on number theory, henceforth prime numbers & Co.

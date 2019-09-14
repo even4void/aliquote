@@ -2,8 +2,8 @@
 title: "A bag of tweets / Nov 2018"
 date: 2018-11-25T10:58:04+01:00
 draft: false
-tags: ["misc"]
-categories: []
+tags: ["twitter"]
+categories: ["2018"]
 ---
 
 Here is the latest bag of tweets<sup>\*</sup>, which covers November 2018.

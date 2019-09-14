@@ -3,7 +3,7 @@ title: "Micro review from August"
 date: 2019-08-25T16:22:26+02:00
 draft: false
 tags: ["readings"]
-categories: []
+categories: ["2019"]
 ---
 
 Here is another micro review of random or not so random links I found while browsing the interweb lately.

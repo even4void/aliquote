@@ -3,7 +3,7 @@ title: "The unquantified self #6"
 date: 2019-03-18T20:37:47+01:00
 draft: false
 tags: ["self"]
-categories: []
+categories: ["2019"]
 ---
 Spring is not yet here, even if we believed it for a moment. But it will obviously not be long now. In the meantime let me continue my literary peregrinations on this blog.
 

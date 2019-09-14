@@ -2,18 +2,13 @@
 title = "Mendelian randomization"
 date = 2012-06-15T21:05:47+01:00
 draft = false
-
-tags = []
-categories = []
-
-[header]
-image = ""
-caption = ""
-preview = true
-
+tags = ["statistics"]
+categories = ["2012"]
 +++
 
 Some time ago, I proposed a paper on Mendelian randomisation for the Journal Club on [Cross Validated](http://stats.stackexchange.com/). Apparently, it fell to the water, but here are the main ideas from that paper.
+
+<!--more-->        
 
 The paper in question is freely available on *PLoS Medicine*:
 Sheehan NA, Didelez V, Burton PR, Tobin MD (2008). [Mendelian Randomisation and Causal Inference in Observational Epidemiology](http://www.plosmedicine.org/article/info%3adoi/10.1371/journal.pmed.0050177). PLoS Med 5(8): e177. doi:10.1371/journal.pmed.0050177

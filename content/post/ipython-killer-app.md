@@ -2,18 +2,13 @@
 title = "IPython 0.11, the new killer app"
 date = 2011-08-01T21:21:45+01:00
 draft = false
-
 tags = ["python"]
-categories = []
-
-[header]
-image = ""
-caption = ""
-preview = true
-
+categories = ["2011"]
 +++
 
 [IPython](http://ipython.org/) 0.11 has just been released. It's amazing how many new features are now available in this Python "comprehensive environment for interactive and exploratory computing".
+
+<!--more-->
 
 ## Installing on Mac OS X Lion
 

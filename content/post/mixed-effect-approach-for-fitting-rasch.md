@@ -1,13 +1,14 @@
 +++
 title = "Fitting Rasch model with R lme4"
-description = ""
 date = 2011-03-12T17:51:32+01:00
 draft = false
 tags = ["psychometrics", "rstats"]
-categories = []
+categories = ["2011"]
 +++
 
 The [last issue](http://www.jstatsoft.org/v39) of the *Journal of Statistical Software* features an article on [The Estimation of Item Response Models with the lmer Function from the lme4 Package in R](http://www.jstatsoft.org/v39/i12), by De Boeck and coll. As the title suggests, this article is about fitting IRT models with a mixed-effects model approach.
+
+<!--more-->
 
 This is an interesting article because I've been working on that some four years ago now. The code I produced at that time was based on the De Boeck's book: Paul De Boeck & Mark Wilson, *Explanatory Item Response Models: A Generalized Linear and Nonlinear Approach* (Springer, 2004).
 

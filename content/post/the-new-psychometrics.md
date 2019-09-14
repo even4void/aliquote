@@ -1,13 +1,16 @@
 +++
 title = "The New Psychometrics"
-description = ""
 date = 2010-05-13T18:07:21+01:00
 draft = false
 tags = ["readings", "psychometrics"]
-categories = []
+categories = ["2010"]
 +++
 
-I just read *The New Psychometrics. Science, Psychology and Measurement* from Paul Kline (Routledge, 1998) who made well-aknowledge contributions to a better understanding of standardized measurement in psyschological constructs. Although I somehow disagree with his claims regarding the usefulness of "modern" psychometrics (IRT), I was pleased to read his clear account of Factor Analysis (Chapter 3). Here is a recap' of his "criteria for sound factor analysis" (pp. 62-64):
+I just read *The New Psychometrics. Science, Psychology and Measurement* from Paul Kline (Routledge, 1998) who made well-aknowledge contributions to a better understanding of standardized measurement in psyschological constructs. 
+
+<!--more-->
+
+Although I somehow disagree with his claims regarding the usefulness of "modern" psychometrics (IRT), I was pleased to read his clear account of Factor Analysis (Chapter 3). Here is a recap' of his "criteria for sound factor analysis" (pp. 62-64):
 
 1. *Sampling of subjects*. It is essential in an exploratory factor analysis that a full range of subjects is sampled. If the sample is homogeneous for a factor, that factor will have little variance and thus not take up its proper place in the factor analysis. If, for example, in a study of personality, ann the subjects were bar staff or salespersons, who are likely to be highly extraverted, extraversion would be greatly attenuated.
 2. *Sampling of variables*. In an exploratory analysis it is also essential that the full range of variables is sampled. Thus in the field of abilities it is certain that many factors have yet to be identified, especially those of a practical kind, not easily testable with standard, current psychometric tests. Examples of these would be rapport with horses (as in jockeys) and a mason's skill at splitting bricks with a single blow.

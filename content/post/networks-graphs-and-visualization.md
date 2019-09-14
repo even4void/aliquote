@@ -1,10 +1,9 @@
 +++
 title = "Networks, graphs and visualization"
-description = ""
 date = 2008-05-19T09:10:49+01:00
 draft = false
 tags = ["dataviz"]
-categories = []
+categories = ["2008"]
 [[gallery_item]]
 album = "1"
 image = "20100418215136.png"
@@ -25,6 +24,8 @@ caption = ""
 
 
 Before talking about social networks or graph visualization, let's look at the article written by Matthew Bloch and Jonathan Corum for the New York Times (May 5, 2008): [Mapping the Human Diseasome][Mapping the Human Diseasome].
+
+<!--more-->
 
 {{< gallery album="1" >}}
 

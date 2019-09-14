@@ -1,16 +1,13 @@
 +++
 title = "Summary for the 31th ISBC conference"
-description = ""
 date = 2010-08-31T13:03:35+01:00
 draft = false
 tags = ["travels", "statistics"]
-categories = []
-
+categories = ["2010"]
 [[gallery_item]]
 album = "1"
 image = "20100831220206.png"
 caption = ""
-
 [[gallery_item]]
 album = "1"
 image = "20100831220217.png"
@@ -18,6 +15,8 @@ caption = ""
 +++
 
 Some notes I took during the 31th [ISBC conference](http://www.iscb2010.info/). I only attended the first two days, with sessions mostly oriented toward genetic epidemiology. An extra session around latent variable modeling was also present. This gives me the opportunity to summarize two aspects of statistical modeling that I actually like a lot, namely biometrics and psychometrics.
+
+<!--more-->
 
 ## The sequential rejection principle of familywise error control (A. Solari)
 

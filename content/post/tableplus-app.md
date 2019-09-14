@@ -3,7 +3,7 @@ title: "TablePlus App"
 date: 2019-01-28T13:41:00+01:00
 draft: false
 tags: ["apple", "database", "app", "review"]
-categories: []
+categories: ["2019"]
 ---
 
 Here is a quick review of [TablePlus](https://tableplus.io) which is a lightweight app that all Mac users should fell in love with when it comes to querying SQL databases.

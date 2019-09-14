@@ -3,7 +3,7 @@ title: "Tech Review / April 2018"
 date: 2018-04-06T09:04:34+02:00
 draft: false
 tags: ["readings", "review"]
-categories: []
+categories: ["2018"]
 ---
 
 Here is the new edition of my abridged Twitter timeline, RSS feeds and web musings.

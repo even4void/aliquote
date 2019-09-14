@@ -2,10 +2,8 @@
 title: "The Mature Optimization Handbook"
 date: 2018-04-12T07:40:33+02:00
 draft: false
-keywords: []
-description: ""
 tags: ["readings", "review"]
-categories: []
+categories: ["2018"]
 ---
 
 Yesterday day read was about "optimization", namely the [Mature Optimization Handbook](http://carlos.bueno.org/optimization/) written by Carlos Bueno. See also this [HN thread](https://news.ycombinator.com/item?id=6763683).

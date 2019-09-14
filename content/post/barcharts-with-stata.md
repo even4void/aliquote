@@ -2,15 +2,8 @@
 title = "Bar charts of counts in Stata"
 date = 2013-04-13T11:31:55+01:00
 draft = false
-
 tags = ["stata", "dataviz"]
-categories = []
-
-[header]
-image = ""
-caption = ""
-preview = true
-
+categories = ["2013"]
 +++
 
 The second part of my course on R and Stata has just started (four weeks to go). This is about Stata this time. First part of the course is about data management, descriptive statistics and basic test of association.

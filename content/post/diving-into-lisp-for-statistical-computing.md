@@ -2,15 +2,8 @@
 title = "Diving Into Lisp for Statistical Computing"
 date = 2011-02-05T16:53:10+01:00
 draft = false
-
 tags = ["lisp", "statistics"]
-categories = []
-
-[header]
-image = ""
-caption = ""
-preview = true
-
+categories = ["2011"]
 +++
 
 Well, it may seem like I feel either nostalgic of an era of statistical computing that I didn't ever know or a little bit crazy to go back to Lisp while R has become lingua franca in statistics, but a wistful smile let me think I have a lot to learn going back to the 90's and... `xlispstat` or Lisp Stat.

@@ -2,15 +2,8 @@
 title = "Working with tables and Pandoc"
 date = 2012-10-10T14:38:42+01:00
 draft = false
-
 tags = ["misc"]
-categories = []
-
-[header]
-image = ""
-caption = ""
-preview = true
-
+categories = ["2012"]
 +++
 
 A quick note on the latest development version of [Pandoc](http://johnmacfarlane.net/pandoc/) which remains by far one of the best software I've used.

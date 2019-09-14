@@ -3,7 +3,7 @@ title: "List processing and consing"
 date: 2019-07-29T08:39:56+02:00
 draft: false
 tags: ["readings", "lisp", "scheme"]
-categories: []
+categories: ["2019"]
 ---
 
 I just finished reading _The Little Schemer_, by Friedman and Felleisen. Here are some basic facts about very simple yet useful data structures: lists.

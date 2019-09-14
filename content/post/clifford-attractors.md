@@ -1,11 +1,9 @@
 +++
 title = "Clifford attractors"
-description = ""
 date = 2018-02-26T16:44:14+01:00
-lastmod = 2018-02-27T22:20:18+01:00
 draft = false
 tags = ["math", "dataviz"]
-categories = []
+categories = ["2018"]
 +++
 
 

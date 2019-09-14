@@ -2,18 +2,13 @@
 title = "Summer desk cleaning"
 date = 2011-08-21T22:00:01+01:00
 draft = false
-
 tags = ["misc"]
-categories = []
-
-[header]
-image = ""
-caption = ""
-preview = true
-
+categories = ["2011"]
 +++
 
 Here is the traditional post from the end of my working year.
+
+<!--more-->
 
 I just realized that it is the first time since 4 years that I didn't attend any conference during the Summer. Well, I was quite buzy in July, before being off for one month. I generally take the opportunity to find one or two conferences where we can go in family.  This should have been the [58th World Statistics ISI Congress](http://www.isi2011.ie/content/) <i class="fa fa-chain-broken fa-1x"></i> held in Dublin. Alas, this year I have to take care of my 17 yrs. old cat...
 

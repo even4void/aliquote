@@ -2,9 +2,8 @@
 title: "The unquantified self #1"
 date: 2018-05-03T08:03:59+02:00
 draft: false
-description: ""
 tags: ["self"]
-categories: []
+categories: ["2018"]
 ---
 
 Here is the monthly newletter from/to my self.

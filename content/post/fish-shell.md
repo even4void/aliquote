@@ -2,8 +2,8 @@
 title: "Enter the Fish shell"
 date: 2019-08-16T20:30:49+02:00
 draft: false
-tags: ["misc"]
-categories: []
+tags: ["misc", "apple"]
+categories: ["2019"]
 ---
 
 Recently I decided to switch to the Fish shell, after several years of zsh'ing everythings in a terminal on my Mac, mostly iTerm by the way. Here are some thoughts after some days of use.

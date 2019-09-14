@@ -3,7 +3,7 @@ title: "Emacs and Python 3"
 date: 2019-01-15T07:23:37+01:00
 draft: false
 tags: ["emacs","python"]
-categories: []
+categories: ["2019"]
 ---
 Fixing little annoying Emacs things in the morning is probably the best way to start the day. This is also known as procrastination.
 

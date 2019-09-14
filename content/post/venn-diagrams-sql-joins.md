@@ -1,13 +1,14 @@
 +++
 title = "Venn diagrams and SQL joins in R"
-description = ""
 date = 2011-01-07T10:27:48+01:00
 draft = false
 tags = ["rstats", "dataviz", "database"]
-categories = []
+categories = ["2011"]
 +++
 
 When browsing Tweeter feeds yesterday, I just noticed a post by J.D. Long (alias [@CMastication](http://twitter.com/CMastication)) referring to a nice way of illustrating [SQL joins statements with Venn diagrams](http://bit.ly/eMhJEp) by Jeff Atwood. So I wonder how it could be reproduced in R.
+
+<!--more-->
 
 I initially thought of hacking the [venneuler](http://cran.r-project.org/web/packages/venneuler/index.html) package. However, it happens that I really need a few things, so that I just wrote a wrapper function that takes care of drawing two spheres and shading the appropriate areas. The results actually looks like:
 

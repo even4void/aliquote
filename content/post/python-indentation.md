@@ -1,13 +1,16 @@
 +++
 title = "Python and significant indentation"
-description = ""
 date = 2010-04-17T17:58:11+01:00
 draft = false
 tags = ["python"]
-categories = []
+categories = ["2010"]
 +++
 
-I don't really like significant indentation, as implemented in [Python][Python]. A good starting point for discussion can be found here: http://www.secnetix.de/olli/Python/block_indentation.hawk, but for the time being I will rather focus on the way indentation pattern is checked within Python. It is worth remembering that both tabs and soft wrap will honor the definition of a correct indentation level. According to the reference documentation, but see also [PEP 8][PEP 8]:
+I don't really like significant indentation, as implemented in [Python][Python]. A good starting point for discussion can be found here: http://www.secnetix.de/olli/Python/block_indentation.hawk, but for the time being I will rather focus on the way indentation pattern is checked within Python. 
+
+<!--more-->
+
+It is worth remembering that both tabs and soft wrap will honor the definition of a correct indentation level. According to the reference documentation, but see also [PEP 8][PEP 8]:
 
 > Leading whitespace (spaces and tabs) at the beginning of a logical line is used to compute the indentation level of the line, which in turn is used to determine the grouping of statements. First, tabs are replaced (from left to right) by one to eight spaces such that the total number of characters up to and including the replacement is a multiple of eight (this is intended to be the same rule as used by Unix). The total number of spaces preceding the first non-blank character then determines the line’s indentation. Indentation cannot be split over multiple physical lines using backslashes; the whitespace up to the first backslash determines the indentation.
 >

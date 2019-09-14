@@ -2,18 +2,13 @@
 title = "Workflow for statistical data analysis"
 date = 2012-04-26T09:51:18+01:00
 draft = false
-
 tags = ["review", "statistics"]
-categories = []
-
-[header]
-image = ""
-caption = ""
-preview = true
-
+categories = ["2012"]
 +++
 
 Few days ago, I came across Oliver Kirchkamp's <i class="fa fa-file-pdf-o fa-1x"></i> [Workflow of statistical data analysis](http://www.kirchkamp.de/oekonometrie/pdf/wf-screen2.pdf) which provides essential tips and guidelines for managing not only data but the whole analysis flow (from getting raw data to publishing papers).
+
+<!--more-->
 
 ## For R users
 

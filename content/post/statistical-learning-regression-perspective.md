@@ -1,13 +1,14 @@
 +++
 title = "Statistical learning and regression"
-description = ""
 date = 2011-03-12T17:43:59+01:00
 draft = false
 tags = ["readings", "statistics"]
-categories = []
+categories = ["2011"]
 +++
 
 Here is a short review of *Statistical Learning from a Regression Perspective*, by Richard A. Berk (Springer, 2008).
+
+<!--more-->
 
 There already exist some good reviews of this book, including the one by [John Maindonald](http://www.jstatsoft.org/v29/b12/paper) in the *Journal of Statistical Software*. Also, some answers to the exercices proposed in this book were made available by [Brian Kriegler](http://www.crim.upenn.edu/faculty/profiles/statistical_learning.html). Richard A. Berk also co-authored a nice paper on <i class="fa fa-file-pdf-o fa-1x"></i> [Statistical Inference After Model Selection](http://www-stat.wharton.upenn.edu/%7Eberkr/selection%20copy.pdf).
 

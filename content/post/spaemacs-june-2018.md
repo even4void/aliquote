@@ -2,9 +2,8 @@
 title: "Spacemacs June 2018"
 date: 2018-06-12T19:33:34+02:00
 draft: false 
-description: ""
 tags: ["emacs"]
-categories: []
+categories: ["2018"]
 ---
 
 Unsurprisingly, I happened to reconfigure [Spacemacs](http://spacemacs.org) for Emacs 27, this time using the develop branch. Things have moved quite fast these later months. Most notably is the startup time, which is now well below the 7s that I was experiencing with the stable release last year. This, and the fact that I wanted something lighter motivated my move to Doom Emacs. I was quite happy with [Doom Emacs](https://github.com/hlissner/doom-emacs) but at some point I got tired of breaking changes in the develop branch. So, here we go: Back to Spacemacs in June 2018! Of course, I may come back to Doom Emacs in a little while. Who knows?

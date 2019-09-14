@@ -3,7 +3,7 @@ title: "Tech Review / October 2018"
 date: 2018-10-26T18:52:27+02:00
 draft: false
 tags: ["readings", "review"]
-categories: []
+categories: ["2018"]
 ---
 
 Here is the (not so) monthly tech newsletter for October. Please note that other link-only items are available in my latest [bag of tweets](/post/bag-of-tweets-103).

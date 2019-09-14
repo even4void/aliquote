@@ -2,18 +2,13 @@
 title = "Publishing on Github"
 date = 2014-08-17T21:42:26+01:00
 draft = false
-
 tags = ["misc"]
-categories = []
-
-[header]
-image = ""
-caption = ""
-preview = true
-
+categories = ["2014"]
 +++
 
 GitHub is not only for source code.
+
+<!--more-->
 
 ## Publishing on GitHub
 

@@ -3,7 +3,7 @@ title: "On getting into richer data structures"
 date: 2019-03-13T18:26:30+01:00
 draft: false
 tags: ["python"]
-categories: []
+categories: ["2019"]
 ---
 I spend most of my time programming in Python or Scheme these days. Here are some thoughts about Python after years of R for data scraping and wrangling.  
 

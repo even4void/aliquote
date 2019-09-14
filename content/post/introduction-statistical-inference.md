@@ -2,18 +2,13 @@
 title = "Kiefer's Introduction to statistical inference"
 date = 2011-12-05T18:02:13+01:00
 draft = false
-
 tags = ["readings", "statistics"]
-categories = []
-
-[header]
-image = ""
-caption = ""
-preview = true
-
+categories = ["2011"]
 +++
 
 I just received my copy of *Introduction to statistical inference*, by Jack C. Kiefer (Springer, 1987).[^1] After having read the first two chapters I wonder: How come I didn't start with that book when I was studying elementary statistics!
+
+<!--more-->
 
 I recently had to give a short series of lectures on statistics (at a very introductory level) where I started with an <i class="fa fa-file-pdf-o fa-1x"></i> [illustration of a coin tossing experiment](http://www.aliquote.org/cours/2011_health_measures/02-biostatistics_screen.pdf) (starting at slide #7). Well, now that I have read Kiefer's first chapter I feel like the take-away message was already there:
 

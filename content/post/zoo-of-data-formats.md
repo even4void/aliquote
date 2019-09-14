@@ -3,7 +3,7 @@ title: "Zoo of data formats"
 date: 2019-03-27T20:58:50+01:00
 draft: false
 tags: ["statistics"]
-categories: []
+categories: ["2019"]
 ---
 The more I read on data formats, the more I think it is getting difficult to arrive at a common data format. Each data analyst does his or her own thing, with his/her preferred statistical package
 
