@@ -132,12 +132,14 @@
 			<outline htmlUrl="https://alex-hhh.github.io/index.html" title="The Blog of Alex Harsányi: The Blog of Alex Harsányi" xmlUrl="https://alex-hhh.github.io/feeds/all.rss.xml" type="rss" text="The Blog of Alex Harsányi: The Blog of Alex Harsányi"/>
 			<outline htmlUrl="http://blog.cleancoder.com/" title="The Clean Code Blog" xmlUrl="http://blog.cleancoder.com/atom.xml" type="rss" text="The Clean Code Blog"/>
 			<outline htmlUrl="http://calculist.org/" title="The Little Calculist" xmlUrl="http://calculist.org/feed.xml" type="rss" text="The Little Calculist"/>
+			<outline htmlUrl="https://golem.ph.utexas.edu/category/" title="The n-Category Café" xmlUrl="https://golem.ph.utexas.edu/category/atom10.xml" type="rss" text="The n-Category Café"/>
 			<outline htmlUrl="http://shape-of-code.coding-guidelines.com" title="The Shape of Code" xmlUrl="http://shape-of-code.coding-guidelines.com/feed/" type="rss" text="The Shape of Code"/>
 			<outline htmlUrl="https://blog.stata.com" title="The Stata Blog" xmlUrl="http://blog.stata.com/feed/" type="rss" text="The Stata Blog"/>
 			<outline htmlUrl="https://mailund.github.io/r-programmer-blog/" title="The Working R Programmer" xmlUrl="https://mailund.github.io/r-programmer-blog/index.xml" type="rss" text="The Working R Programmer"/>
 			<outline htmlUrl="http://third-bit.com/feed.xml" title="Third Bit" xmlUrl="http://third-bit.com/feed.xml" type="rss" text="Third Bit"/>
 			<outline htmlUrl="https://thomashoneyman.com/" title="Thomas Honeyman" xmlUrl="https://thomashoneyman.com/index.xml" type="rss" text="Thomas Honeyman"/>
 			<outline htmlUrl="http://bactra.org/weblog/" title="Three-Toed Sloth" xmlUrl="http://bactra.org/weblog/index.rss" type="rss" text="Three-Toed Sloth"/>
+			<outline htmlUrl="https://www.parsonsmatt.org" title="To Overcome" xmlUrl="https://www.parsonsmatt.org/feed.xml" type="rss" text="To Overcome"/>
 			<outline htmlUrl="https://tonsky.me/" title="tonsky.me" xmlUrl="http://tonsky.me/blog/atom.xml" type="rss" text="tonsky.me"/>
 			<outline htmlUrl="https://leahneukirchen.org/trivium/" title="Trivium" xmlUrl="http://leahneukirchen.org/trivium/index.atom" type="rss" text="Trivium"/>
 			<outline htmlUrl="https://twobithistory.org/" title="Two-Bit History" xmlUrl="https://twobithistory.org/feed.xml" type="rss" text="Two-Bit History"/>
