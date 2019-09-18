@@ -20,11 +20,6 @@ copyright = ""
   priority = 0.5
   filename = "sitemap.xml"
 
-# [[menu.main]]             # config your menu              # 配置目录
-#   name = "Home"
-#   weight = 10
-#   identifier = "home"
-#   url = "/"
 [[menu.main]]
   name = "Archives"
   weight = 20
@@ -35,25 +30,10 @@ copyright = ""
   weight = 30
   identifier = "micro"
   url = "/micro/"
-# [[menu.main]]
-#   name = "Tags"
-#   weight = 30
-#   identifier = "tags"
-#   url = "/tags/"
-# [[menu.main]]
-#   name = "Writings"
-#   weight = 40
-#   identifier = "writings"
-#   url = "/writings/"
-# [[menu.main]]
-#   name = "Categories"
-#   weight = 40
-#   identifier = "categories"
-#   url = "/categories/"
 
 [params]
-  version = "3.x"           # Used to give a friendly message when you have an incompatible update
-  debug = false             # If true, load `eruda.min.js`. See https://github.com/liriliri/eruda
+  version = "3.x"
+  debug = false
 
   since = "2006"
 
@@ -77,16 +57,6 @@ copyright = ""
   linkToMarkDown = false
   contentCopyright = '<a rel="license noopener" href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank">CC BY-NC-ND 4.0</a>'
 
-#  changyanAppid = ""        # Changyan app id             # 畅言
-#  changyanAppkey = ""       # Changyan app key
-#  livereUID = ""            # LiveRe UID                  # 来必力
-  baidu_push = false        # baidu push                  # 百度
-  baidu_analytics = ""      # Baidu Analytics
-  baidu_verification = ""   # Baidu Verification
-  google_verification = ""  # Google_Verification         # 谷歌
-
-  # Link custom CSS and JS assets
-  #   (relative to /static/css and /static/js respectively)
   customCSS = ["gallery.css", "elements.css"]
   customJS = []
 
@@ -97,46 +67,8 @@ copyright = ""
     fancyboxJs = '<script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.js" integrity="sha256-XVLffZaxoWfGUEbdzuLi7pwaUJv1cecsQJQqGLe7axY=" crossorigin="anonymous"></script>'
     fancyboxCss = '<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.css" integrity="sha256-7TyXnr2YU040zfSP+rEcz29ggW4j56/ujTPwjMzyqFY=" crossorigin="anonymous">'
 
-  [params.busuanzi]
-    enable = false
-    siteUV = true
-    sitePV = true
-    pagePV = true
-
-  [params.reward]                                         # 文章打赏
-    enable = false
-    wechat = "/path/to/your/wechat-qr-code.png"           # 微信二维码
-    alipay = "/path/to/your/alipay-qr-code.png"           # 支付宝二维码
-
-  [params.social]                                         # 社交链接
+  [params.social]
     a-email = "mailto:chl@aliquote.org"
     #b-stack-overflow = "https://stackoverflow.com/users/420055/chl"
     c-twitter = "https://twitter.com/even4void"
-    # d-facebook = "http://localhost:1313"
-    # e-linkedin = "http://localhost:1313"
-    # f-google = "http://localhost:1313"
     g-github = "https://github.com/even4void"
-    # h-weibo = "http://localhost:1313"
-    # i-zhihu = "http://localhost:1313"
-    # j-douban = "http://localhost:1313"
-    # k-pocket = "http://localhost:1313"
-    # l-tumblr = "http://localhost:1313"
-    # m-instagram = "chlalanne"
-
-# 将下面这段配置取消注释可以使 hugo 生成 .md 文件
-# Uncomment these options to make hugo output .md files.
-#[mediaTypes]
-#  [mediaTypes."text/plain"]
-#    suffix = "md"
-#
-#[outputFormats.MarkDown]
-#  mediaType = "text/plain"
-#  isPlainText = true
-#  isHTML = false
-#
-#[outputs]
-#  home = ["HTML", "RSS"]
-#  page = ["HTML", "MarkDown"]
-#  section = ["HTML", "RSS"]
-#  taxonomy = ["HTML", "RSS"]
-#  taxonomyTerm = ["HTML"]
