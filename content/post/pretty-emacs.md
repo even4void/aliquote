@@ -22,7 +22,7 @@ Anyway, let's see how it goes. For the time being, I will definitely stay with m
 
 First, I removed `org-ref` --- I wasn't really using it, in fact I just need to be able to manage a BibTeX file (read search/edit/annotate), and I am now using Pandoc syntax to include references in Org document. For example, `@johndoe2011` should read "John Doe (2011). The infamous article that nobody reads. The fucking Journal, vol (#): pp" when exported as HTML or PDF. Otherwise, I don't really care since I can use `ivy-bibtex` and look for the reference. The same function (`ivy-bibtex`) allows me to find and open any BibTeX entry, to annotate it as well, or to insert a plain text reference or the bibtex key in my current buffer, be it an Org or a Markdown file. This is generally all I need to do, after all. Back to our subject, as I removed the `org-ref` package, I needed a way to highlight Pandoc-like citation in any Org file I am currently editing. Easy peasy, here is one way to do it: (and here is [another way](https://emacs.stackexchange.com/a/52390))
 
-```lisp
+```emacs-lisp
 (font-lock-add-keywords 'org-mode
                         '(("@[a-z]+.+?[^;,.]+" . font-lock-keyword-face)))
 ```
@@ -33,7 +33,7 @@ This is basically how it looks:
 
 I should note that I follow strict rules when generating BibTeX keys, which simplifies the construction of the above regex (which should stop whenever we encouter a semi-colon, a comma or a period):
 
-```lisp
+```emacs-lisp
 (setq bibtex-field-delimiters 'double-quotes
       bibtex-autokey-year-length 4
       bibtex-autokey-name-year-separator "-"
@@ -46,19 +46,7 @@ I should note that I follow strict rules when generating BibTeX keys, which simp
 
 Second, I don't really like the way `≤` and `≥` are rendered when using the patched Iosevka font. The symbols look too streched (horizontally), and I much prefer slanted version. As I said in my [earlier post](/post/enliven-your-emacs/), I updated the default list of symbols (`+pretty-code-iosevka-font-ligatures`) using basic `setq`. However, new settings will not override default settings, so I decided to manage the `+iosevka.el` file myself, and commented out the default values I didn't like. I know this is sort of a ugly hack, but this way I can keep things in control at the very least.
 
-The same happens for Magit nice `list-repository` utility. Why not adding some fancy Unicode character in place of plain text column headers?
-
-```lisp
-(setq magit-repolist-columns
-      '((""      25 magit-repolist-column-ident                  ())
-        ("     " 30 magit-repolist-column-version                ((:right-align t)))
-        ("⚡"        1 magit-repolist-column-dirty                  ())
-        (""        3 magit-repolist-column-branches                 ((:right-align t)))
-        (""       3 magit-repolist-column-stashes                  ((:right-align t)))
-        ("⤓"        3 magit-repolist-column-unpulled-from-upstream   ((:right-align t)))
-        ("⤒"        3 magit-repolist-column-unpushed-to-upstream     ((:right-align t)))
-        ("Path"    99 magit-repolist-column-path                   ())))
-```
+The same happens for Magit nice `list-repository` utility. Why not adding some fancy Unicode character in place of plain text column headers? A little `(setq magit-repolist-columns ...)`, and we are done.
 
 Also, I added some (ya)snippets for the git commit popup, namely `wip` (work in progress), `cos` (cosmit changes), `fix` (minor fix) and `doc` (add doc). Do we need any other headline when we wok-rk alone? This basically mimics what I already have as Git aliases in my Git config files. Very handy in any case.
 

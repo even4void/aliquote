@@ -1,7 +1,6 @@
 ---
 title: "The Changelog"
 date: 2018-05-17T00:00:00
-url: "/articles/changelog/"
 ---
 
 - [2019-09-13] Massive retagging (bis)

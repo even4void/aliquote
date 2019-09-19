@@ -1,17 +1,15 @@
 +++
 title = "About"
 date = 2018-01-20T00:00:00
-lastmod = 2018-01-20T00:00:00
 menu = "main"
-weight = 10
-comment = false
-mathjax = false
+weight = 1
+type = "page"
 +++
 
 {{% headquote %}}
 < a•l•iquote |ˈalikwət|, noun /><br>
 <small>_Mathematics a quantity that can be divided into another an integral number of times. Origin late 16th cent.: from French aliquote, from Latin aliquot ‘some, so many,’ from alius ‘one of two’ + quot ‘how many.’_</small><br>
-<small>[Changelog](/articles/changelog/) • [Privacy](/privacy/)</small>
+<small><a href="/changelog/">Changelog</a> • <a href="/privacy/">Privacy</a></small>
 {{% /headquote %}}
 
 You landed on my homepage, thanks for stopping by!

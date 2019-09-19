@@ -7,26 +7,6 @@ ressource {
   font-size: 13px;
 }
 
-/* Stack Overflow CSS design
-.post .post-content kbd {
-  -moz-border-radius: 3px;
-  -moz-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.2), 0 0 0 2px #fff inset;
-  -webkit-border-radius: 3px;
-  -webkit-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.2), 0 0 0 2px #fff inset;
-  background-color: #f7f7f7;
-  border: 1px solid  #ccc;
-  border-radius: 3px;
-  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.2), 0 0 0 2px #fff inset;
-  color: #333;
-  display: inline-block;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 11px;
-  line-height: 1.4;
-  margin: 0 0.1em;
-  padding: 0.1em 0.6em;
-  text-shadow: 0 1px 0 #fff;
-} */
-
 input[type="text"] {
   padding: 5px;
   border: 2px solid #f8f5ec;
@@ -58,15 +38,10 @@ input[type="submit"] {
   box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.125);
 }
 
-/* .post .post-content img { */
-/*   border: 1px solid; */
-/*   padding: 10px; */
-/* } */
-
 .post .post-content code,
 .post .post-content pre {
   padding: 7px;
-  font-size: 0.9em;
+  font-size: 13px;
   font-family: Consolas, Monaco, Menlo, monospace;
   background: transparent;
 }
@@ -74,20 +49,46 @@ input[type="submit"] {
 .post .post-content code {
   padding: 3px 5px;
   border-radius: 4px;
-  color: #c7254e;
-  background: #f8f5ec;
+  /* color: #c7254e; */
 }
 
-.post .post-content .highlight {
+.post .post-content figure.highlight {
+  margin: 1em 0;
+  border-radius: 5px;
+  overflow-x: auto;
+  -webkit-box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.125);
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.125);
+  position: relative;
+}
+
+.post .post-content figure.highlight table {
+  position: relative;
+}
+
+.post .post-content figure.highlight table:after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  padding: 2px 7px;
+  font-size: 13px;
+  font-weight: 700;
+  color: #b1b1b1;
+  background: transparent;
+  content: "Code";
+}
+
+.post .post-content .highlight > .chroma {
   margin: 1em 0;
   border-radius: 5px;
   overflow-x: auto;
   -webkit-box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.125);
   box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.125);
   position: relative;
+  background: transparent;
 }
 
-.post .post-content .highlight table:after {
+.post .post-content .highlight > .chroma table:after {
   position: absolute;
   top: 0;
   right: 0;
@@ -98,6 +99,10 @@ input[type="submit"] {
   color: #b1b1b1;
   background: transparent;
   content: "";
+}
+
+.post .post-content .highlight > .chroma.language-c > table:after {
+  content: "C";
 }
 
 .archive {

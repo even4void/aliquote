@@ -14,16 +14,16 @@ A _perfect number_ is a positive integer that is equal to the sum of its positiv
 
 It is quite easy to compute the sum of divisors using recursion or list comprehension in Python or Racket. Here is one way in Racket:
 
-```Lisp
+```racket
 (define (divisor-sum n)
   (for/sum ([i (in-range 1 (add1 (quotient n 2)))]
             #:when (zero? (remainder n i)))
-    i))
+     i))
 ```
 
 [Another solution](https://stackoverflow.com/a/23711209) involving a `fold/fold` form has been proposed on SO. Now, deciding on whether a given number is perfect or not is just a matter of a `cond`:
 
-```Lisp
+```racket
 (define (perfect? n)
   (let ([divs (divisor-sum n)])
     (cond [(= n divs) 'perfect]
@@ -33,7 +33,7 @@ It is quite easy to compute the sum of divisors using recursion or list comprehe
 
 What about amicable numbers, then? Since we already have `divisor-sum`, we can just use a simple test:
 
-```Lisp
+```racket
 (define (amicable? n)
   (define s (divisor-sum n))
   (and (not (= n s))
@@ -42,7 +42,7 @@ What about amicable numbers, then? Since we already have `divisor-sum`, we can j
 
 Whence an amicable pair $(m,n)$ satisfies `(= m (divisor-sum n))` and `(= n (divisor-sum m))`, provided $m\neq n$. If you substitute the preceding boolean return value with a sum, like suggested by [Chris Jester-Young](https://stackoverflow.com/a/23711209) over at SO, then you get "amicable peers" which allows to screen for amicable pairs in between predefined bounds:
 
-```Lisp
+{{< highlight racket "hl_lines=8-10" >}}
 (define (amicable-peer n)
   (define sum (divisor-sum n))
   (and (not (= n sum))
@@ -54,11 +54,11 @@ Whence an amicable pair $(m,n)$ satisfies `(= m (divisor-sum n))` and `(= n (div
               (peer (in-value (amicable-peer i)))
               #:when (and peer (<= m peer n) (< i peer)))
     (cons i peer)))
-```
+{{< /highlight >}}
 
 List comprehension in Racket are really great, aren't they? FInally, a little `apply` can be used to find the sum of all amicable numbers under 10000:
 
-```Lisp
+```racket
 (define (pair-sum p)
   (+ (car p) (cdr p)))
 

@@ -22,13 +22,13 @@ The R code is available on <http://www.gradaanwr.net/content/ch12-ensemble-graph
 While reading [Fibonacci Numbers in the Real World](http://lee-phillips.org/lispmath/), I also found a nice looking scatter plot (see Figure 1). I believe Gnuplot was used to produce this graphic. Here is one way to get started and draw a similar scatter plot using R, where axis ticks are drawn inside the plotting region, and not outside, and with a fine grid added to the plot. I will use a data frame that can be found in the `MASS` package.
 
 ```r
-with(birthwt, plot(lwt, bwt, panel.first = grid(nx = NULL, ny = NULL, lty = 1), 
+with(birthwt, plot(lwt, bwt, panel.first = grid(nx = NULL, ny = NULL, lty = 1),
                    tck = 0.02)
 ```
 
 Of note, when using `grid()` once a plot is done, the lines will be superimposed on the preceding graphical elements, which is not always convenient. This is the reason why I use `panel.first=` (see the help for `plot.default()`) since we do not need to use the option `type="n"` or call the same function (e.g., `hist()`) twice (with `add = TRUE` for the second call). It does not work with the formula interface, though.
 
-```r 
+```r
 p <- function(tck = 0.02, xlab = "", ylab = "") {
   grid(nx = NULL, ny = NULL, lty = 1)
   axis(1, tck = tck)
@@ -44,7 +44,7 @@ p <- function(tck = 0.02, xlab = "", ylab = "") {
   axis(3, at = minor.x, labels = FALSE, tck = tck/2)
   axis(4, at = minor.y, labels = FALSE, tck = tck/2)
   title(xlab = xlab, line = 2)
-  title(ylab = ylab, line = 3) 
+  title(ylab = ylab, line = 3)
   box()
 }
 ```
@@ -54,7 +54,7 @@ To draw minor ticks, there's the [Hmisc](https://cran.r-project.org/web/packages
 Anyway, the code can be used as follows (without paying much attention to axis labeling):
 
 ```r
-with(birthwt, plot(lwt/2.2, bwt, axes = FALSE, xlab = "", ylab = "", 
+with(birthwt, plot(lwt/2.2, bwt, axes = FALSE, xlab = "", ylab = "",
                    panel.first = p()))
 ```
 
@@ -63,12 +63,12 @@ How about a gray/white theme like the one used in *Graphical Data Analysis with 
 It is possible to set a specific background color when exporting a chart to a PNG file, but not the foreground color. Also, when using `par()`, the `fg=` parameter does not control axis color, so we need to set it to white as well.
 
 ```r
-opar <- par(mar = c(5, 6, 2, 2), mgp = c(3, .35, 0), 
-            cex.axis = .9, bg = "grey70", fg = "white", 
+opar <- par(mar = c(5, 6, 2, 2), mgp = c(3, .35, 0),
+            cex.axis = .9, bg = "grey70", fg = "white",
             col.axis = "white", col.lab = "white")
-with(birthwt, plot(lwt/2.2, bwt, axes = FALSE, 
+with(birthwt, plot(lwt/2.2, bwt, axes = FALSE,
                    xlab = "", ylab = "",
-                   panel.first = p(xlab = "Mother weight (kg)", 
+                   panel.first = p(xlab = "Mother weight (kg)",
                                    ylab = "Baby weight (g)")))
 par(opar)
 ```
@@ -92,22 +92,22 @@ p <- function(tck = 0.02, xlab = "", ylab = "") {
   minor.y <- minor.y[-length(minor.y)]
   abline(h = minor.y, v = minor.x, lty = 1, col = "grey95", lwd = 0.5)
   title(xlab = xlab, line = 2, col = "black")
-  title(ylab = ylab, line = 3, col = "black") 
+  title(ylab = ylab, line = 3, col = "black")
 }
 ```
 
 In what follows, I will also change the way x-ticks are built:
 
 ```r
-opar <- par(mar = c(5, 6, 2, 2), mgp = c(3, .35, 0), 
+opar <- par(mar = c(5, 6, 2, 2), mgp = c(3, .35, 0),
             yaxs = "i", xaxs = "i", cex.axis = .9,
-            bg = "grey90", fg = "black", 
+            bg = "grey90", fg = "black",
             col.axis = "grey50", col.lab = "grey50")
-with(birthwt, plot(lwt/2.2, bwt, axes = FALSE, pch = 16, 
+with(birthwt, plot(lwt/2.2, bwt, axes = FALSE, pch = 16,
                    col = rgb(.5, .5, .5, .5),
-                   xlim = c(32, 128), ylim = c(600, 5400), 
+                   xlim = c(32, 128), ylim = c(600, 5400),
                    xlab = "", ylab = "",
-                   panel.first = p(xlab = "Mother weight (kg)", 
+                   panel.first = p(xlab = "Mother weight (kg)",
                                    ylab = "Baby weight (g)")))
 par(opar)
 ```

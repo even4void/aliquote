@@ -1,74 +1,44 @@
 baseURL = "https://aliquote.org/"
 languageCode = "en"
-defaultContentLanguage = "en"
 title = "aliquot"
-enableRobotsTXT = true
-enableEmoji = true
-theme = "even"
+theme = "aliquote"
+paginate = 10
 
-hasCJKLanguage = false
-paginate = 5
-disqusShortname = ""
-googleAnalytics = ""
-copyright = ""
-
-[author]
-  name = "chl"
-
-[sitemap]
-  changefreq = "weekly"
-  priority = 0.5
-  filename = "sitemap.xml"
-
-[[menu.main]]
-  name = "Archives"
-  weight = 20
-  identifier = "archives"
-  url = "/post/"
-[[menu.main]]
-  name = "Micro"
-  weight = 30
-  identifier = "micro"
-  url = "/micro/"
+pygmentsUseClasses = true
+pygmentsStyle = "bw"
+pygmentsCodefences = true
+pygmentsCodefencesGuessSyntax = true
 
 [params]
-  version = "3.x"
-  debug = false
+	subtitle = "< a quantity that can be divided into another a whole number of time />"
+    mainSections = ["tweet"]
+	featherIconsCDN = true
 
-  since = "2006"
+[[menu.main]]
+name = "Articles"
+url = "/post"
+weight = 1
 
-  logoTitle = "aliquote"
-  keywords = ["statistical computing", "data visualization", "data hacking"]
-  description = "< a quantity that can be divided into another a whole number of time />"
+[[menu.main]]
+name = "Micro"
+url = "/micro"
+weight = 2
 
-  archivePaginate = 50
+[[params.social]]
+name = "Github"
+icon = "github"
+url = "https://github.com/even4void"
 
-  dateFormatToUse = "2006-01-02"
+[[params.social]]
+name = "Twitter"
+icon = "twitter"
+url = "https://twitter.com/even4void"
 
-  moreMeta = true
+[[params.social]]
+name = "RSS"
+icon = "rss"
+url = "/index.xml"
 
-  toc = true
-  autoCollapseToc = true
-  fancybox = true
-  mathjax = true
-  mathjaxEnableSingleDollar = true
-
-  postMetaInFooter = false
-  linkToMarkDown = false
-  contentCopyright = '<a rel="license noopener" href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank">CC BY-NC-ND 4.0</a>'
-
-  customCSS = ["gallery.css", "elements.css"]
-  customJS = []
-
-  [params.publicCDN]
-    enable = false
-    jquery = '<script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>'
-    slideout = '<script src="https://cdn.jsdelivr.net/npm/slideout@1.0.1/dist/slideout.min.js" integrity="sha256-t+zJ/g8/KXIJMjSVQdnibt4dlaDxc9zXr/9oNPeWqdg=" crossorigin="anonymous"></script>'
-    fancyboxJs = '<script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.js" integrity="sha256-XVLffZaxoWfGUEbdzuLi7pwaUJv1cecsQJQqGLe7axY=" crossorigin="anonymous"></script>'
-    fancyboxCss = '<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.css" integrity="sha256-7TyXnr2YU040zfSP+rEcz29ggW4j56/ujTPwjMzyqFY=" crossorigin="anonymous">'
-
-  [params.social]
-    a-email = "mailto:chl@aliquote.org"
-    #b-stack-overflow = "https://stackoverflow.com/users/420055/chl"
-    c-twitter = "https://twitter.com/even4void"
-    g-github = "https://github.com/even4void"
+[taxonomies]
+   tag = "tags"
+   category = "categories"
