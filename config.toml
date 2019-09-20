@@ -14,10 +14,18 @@ pygmentsCodefencesGuessSyntax = true
     mainSections = ["tweet"]
 	featherIconsCDN = true
 
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
+
 [[menu.main]]
 name = "Articles"
 url = "/post"
 weight = 1
+
+[[params.social]]
+name = "Search"
+icon = "search"
+url = "/search"
 
 [[params.social]]
 name = "Github"
@@ -28,6 +36,11 @@ url = "https://github.com/even4void"
 name = "Twitter"
 icon = "twitter"
 url = "https://twitter.com/even4void"
+
+[[params.social]]
+name = "Email"
+icon = "mail"
+url = "mailto:chl@aliquote.org"
 
 [[params.social]]
 name = "RSS"
