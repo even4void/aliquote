@@ -27,16 +27,16 @@ This is him, as seen by himself, when he was in primary school. I love it/him.
 I don't have much to say today. I am on vacation, by the way. I may post more regularly, or nothing at all. Let's see how it goes. After a few weeks of cooking asparagus, it's time for the tomato. It's summer time after all.
 
 ![](/img/IMG_0732.jpg)
-![](/img/IMG_0725.jpg)
-![](/img/IMG_0715.jpg)
-![](/img/IMG_0697.jpg)
 
-> Enlovés dans les draps défaits de la nuit
->
-> Nous passions notre temps à démêler le crin des étoiles.
->
-> Sans un bruit le jour reprise les pelotes après avoir scellé nos voix
->
+{{< fluid_imgs
+  "pure-u-1-3|/img/IMG_0725.jpg"
+  "pure-u-1-3|/img/IMG_0715.jpg"
+  "pure-u-1-3|/img/IMG_0697.jpg"
+>}}
+
+> Enlovés dans les draps défaits de la nuit<br>
+> Nous passions notre temps à démêler le crin des étoiles.<br>
+> Sans un bruit le jour reprise les pelotes après avoir scellé nos voix<br>
 > Nous qui désormais partageons la même ombre.
 
 {{% music %}}Bill Fay • _Who is the Sender?_{{% /music %}}

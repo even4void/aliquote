@@ -42,7 +42,7 @@ What about amicable numbers, then? Since we already have `divisor-sum`, we can j
 
 Whence an amicable pair $(m,n)$ satisfies `(= m (divisor-sum n))` and `(= n (divisor-sum m))`, provided $m\neq n$. If you substitute the preceding boolean return value with a sum, like suggested by [Chris Jester-Young](https://stackoverflow.com/a/23711209) over at SO, then you get "amicable peers" which allows to screen for amicable pairs in between predefined bounds:
 
-{{< highlight racket "hl_lines=8-10" >}}
+```racket
 (define (amicable-peer n)
   (define sum (divisor-sum n))
   (and (not (= n sum))
@@ -54,9 +54,9 @@ Whence an amicable pair $(m,n)$ satisfies `(= m (divisor-sum n))` and `(= n (div
               (peer (in-value (amicable-peer i)))
               #:when (and peer (<= m peer n) (< i peer)))
     (cons i peer)))
-{{< /highlight >}}
+```
 
-List comprehension in Racket are really great, aren't they? FInally, a little `apply` can be used to find the sum of all amicable numbers under 10000:
+List comprehensions in Racket are really great, aren't they? Finally, a little `apply` can be used to find the sum of all amicable numbers under 10000:
 
 ```racket
 (define (pair-sum p)

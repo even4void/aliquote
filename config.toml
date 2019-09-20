@@ -19,11 +19,6 @@ name = "Articles"
 url = "/post"
 weight = 1
 
-[[menu.main]]
-name = "Micro"
-url = "/micro"
-weight = 2
-
 [[params.social]]
 name = "Github"
 icon = "github"

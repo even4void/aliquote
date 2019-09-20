@@ -17,9 +17,10 @@ I have been quite calm regarding music and books later. Partly because of my wor
 
 I don't mind the wether, but if it could get warmer for more than 5 days, I would be happy at some point. I remember my outdoor lunches a few weeks ago, and then a cold snap. Not really funny.
 
-![](/img/IMG_0574.jpg)
-![](/img/IMG_0571.jpg)
-![](/img/IMG_0569.jpg)
-![](/img/IMG_0577.jpg)
+{{< fluid_imgs
+  "pure-u-1-2|/img/IMG_0574.jpg"
+  "pure-u-1-2|/img/IMG_0571.jpg"
+  "pure-u-1-2|/img/IMG_0569.jpg"
+  "pure-u-1-2|/img/IMG_0577.jpg" >}}
 
 What else? My desocialization phase has reached its peak: I hardly see anyone anymore. That's ok. I don't have any plan.

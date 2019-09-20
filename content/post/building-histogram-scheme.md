@@ -80,4 +80,4 @@ And here are the results I got when running this code in CCL REPL:
 > (3 6 20 28 21 17 3 2)
 ```
 
-[^1]: The R statistical package uses Sturge's formula, meaning the default number of bins is computed as $\lceil \log_2(n)\rceil + 1$. Stata considers $\text{min}\left\\{\sqrt{N},10\ln(N)/\ln(10)\right\\}$, which is close. The [Freedman-Diaconis](https://en.wikipedia.org/wiki/Freedman–Diaconis_rule) rule is also quite robust, where the bin width is chosen as $h=2\text{IQR}n^{-1/3}$ (IQR, interquartile range), so that the number of bins is $(\text{max}-\text{min})/h$.
+[^1]: The R statistical package uses Sturge's formula, meaning the default number of bins is computed as $\lceil \log_2(n)\rceil + 1$. Stata considers $\text{min}\left\\{\sqrt{N},10\ln(N)/\ln(10)\right\\}$, which is close. The [Freedman-Diaconis](https://en.wikipedia.org/wiki/Freedman–Diaconis_rule) rule is also quite robust, where the bin width is chosen as $h=2\times\text{IQR}\times n^{-\frac{1}{3}}$ (IQR, interquartile range), so that the number of bins is $(\text{max}-\text{min})/h$.

@@ -8,7 +8,7 @@ type = "page"
 
 {{% headquote %}}
 < a•l•iquote |ˈalikwət|, noun /><br>
-<small>_Mathematics a quantity that can be divided into another an integral number of times. Origin late 16th cent.: from French aliquote, from Latin aliquot ‘some, so many,’ from alius ‘one of two’ + quot ‘how many.’_</small><br>
+<small><em>Mathematics a quantity that can be divided into another an integral number of times. Origin late 16th cent.: from French aliquote, from Latin aliquot ‘some, so many,’ from alius ‘one of two’ + quot ‘how many.’</em></small><br>
 <small><a href="/changelog/">Changelog</a> • <a href="/privacy/">Privacy</a></small>
 {{% /headquote %}}
 

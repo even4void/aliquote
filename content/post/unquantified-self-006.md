@@ -17,10 +17,12 @@ Currently listening to a [nice playlist](https://itunes.apple.com/fr/playlist/ja
 
 I spent a lot of time cooking at home this month, mainly salads, served rice and spicy vegetables. I'm far from being a vegetarian or vegan guy, but I must admit that I've come to prefer this type of food with time. Below is a collection of screenshots taken from my home sweet home (1000 € per month, I believe this appartment and its kitchen, albeit lovely, deserves a special mention on this blog):
 
-![](/img/IMG_0598.jpg)
-![](/img/IMG_0574.jpg)
-![](/img/IMG_0577.jpg)
-![](/img/IMG_0571.jpg)
+{{< fluid_imgs
+  "pure-u-1-2|/img/IMG_0598.jpg"
+  "pure-u-1-2|/img/IMG_0574.jpg"
+  "pure-u-1-2|/img/IMG_0577.jpg"
+  "pure-u-1-2|/img/IMG_0571.jpg" >}}
+
 ![](/img/IMG_0569.jpg)
 
 My son and I are finally done with [The 100](https://www.imdb.com/title/tt2661044/), and (almost) [The Expanse](https://en.wikipedia.org/wiki/The_Expanse_(TV_series)). We may eventually switch to full movie at some point; I was thinking of series like [Terminator](https://fr.wikipedia.org/wiki/Terminator), [Matrix](https://en.wikipedia.org/wiki/The_Matrix), [HIghlander](https://en.wikipedia.org/wiki/Highlander_(film)), [Jason Bourne](https://en.wikipedia.org/wiki/Jason_Bourne), or [Taken](https://en.wikipedia.org/wiki/Taken_(film))--so that, you know, he get a minimum of knowledge about the films that rocked my youth, without getting too bored of course. I already watched the latest one three time in a rows, so I would prefer to start from the beginning of the list. I am almost done myself with [Occupied](https://en.wikipedia.org/wiki/Occupied). This was a great TV show. Don't know whta to watch next.
