@@ -1,10 +1,10 @@
-+++
-title = "About"
-date = 2018-01-20T00:00:00
-menu = "main"
-weight = 1
-type = "page"
-+++
+---
+title: "About"
+date: 2018-01-20T00:00:00
+menu: "main"
+weight: 1
+type: "page"
+---
 
 {{% headquote %}}
 < a•l•iquote |ˈalikwət|, noun /><br>

@@ -1,22 +1,10 @@
-+++
-title = "Bioinformatics with Mac OS X"
-date = 2008-06-15T09:27:38+01:00
-draft = false
-tags = ["apple","bioinformatics"]
-categories = ["2008"]
-[[gallery_item]]
-album = "1"
-image = "20080620101315.png"
-caption = ""
-[[gallery_item]]
-album = "1"
-image = "20080620101330.png"
-caption = ""
-[[gallery_item]]
-album = "1"
-image = "20080620101341.png"
-caption = ""
-+++
+---
+title: "Bioinformatics with Mac OS X"
+date: 2008-06-15T09:27:38+01:00
+draft: false
+tags: ["apple","bioinformatics"]
+categories: ["2008"]
+---
 
 Doing Bioinformatics on a Mac OS X isn't really difficult given the number of software that currently support this platform. Here are some useful links for the biocomputer scientist who likes efficient and fast programming language:
 
@@ -33,14 +21,17 @@ As computing skills aren't the sole competence required for Bioinformatics, I'd 
 - M. Moorhouse and P. Barry. *Bioinformatics, Biocomputing and Perl*. Wiley, 2004. 
 - C. Gibas and P. Jambeck. *Developing Bioinformatics Computer Skills*. O'Reilly, 2001.
 
-{{< gallery album="1" >}}
+{{< fluid_imgs
+  "pure-u-1-3|/img/20080620101315.png"
+  "pure-u-1-3|/img/20080620101330.png"
+  "pure-u-1-3|/img/20080620101341.png" >}}
 
-Additional material related to Moorhouse &amp; Barry's book can be found on the [companion website]. Vincent Zoonekynd also wrote some interesting notes, oriented toward the [algorithmic approach to Bioinformatics][algorithmic approach to Bioinformatics]. Two excellent books were also wrote about Perl and Bioinformatics (see also Tisdall's article [Beginning Bioinformatics][Beginning Bioinformatics]), namely :
+Additional material related to Moorhouse and Barry's book can be found on the [companion website]. Vincent Zoonekynd also wrote some interesting notes, oriented toward the [algorithmic approach to Bioinformatics][algorithmic approach to Bioinformatics]. Two excellent books were also wrote about Perl and Bioinformatics (see also Tisdall's article [Beginning Bioinformatics][Beginning Bioinformatics]), namely :
 
 - J. Tisdall. *Beginning Perl for Bioinformatics*. O'Reilly, 2001. 
 - J. Tisdall. *Mastering Perl for Bioinformatics*. O'Reilly, 2003.
 
-Working with such kind of data involves dedicated visualization techniques, in particular for viewing molecules or proteins in 3D. Fortunately, there are a lot of solutions, among which:
+Working with such kind of data involves dedicated visualization techniques, in particular for viewing molecules or proteins in 3D. Fortunately, there are a lot of solutions, including:
 
 - [RasMol][RasMol] and [OpenRasMol][OpenRasMol], the standard toolkit for molecular graphics visualization 
 - [emboss][emboss], an integrated package including several computational tools (sequence alignment, nucleotide sequence pattern analysis, etc.) 

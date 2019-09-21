@@ -1,10 +1,10 @@
-+++
-title = "EHealth, eTools and the like"
-date = 2013-07-10T11:03:57+01:00
-draft = false
-tags = ["database"]
-categories = ["2013"]
-+++
+---
+title: "EHealth, eTools and the like"
+date: 2013-07-10T11:03:57+01:00
+draft: false
+tags: ["database"]
+categories: ["2013"]
+---
 
 Some months ago, I attended a conference that was held at the Cité Universitaire in Paris. It was about [e-tools and social networks for epidemiology](http://www.e4n.fr). The program and slides can be found on the website.
 
@@ -19,6 +19,5 @@ Some weeks before, I was also looking for electronic data capture systems, and h
 - [GNU Health](http://health.gnu.org/) supports electronic medical record and information system more generally. Well, this GNU but I haven't browsed past the homepage.
 - [OpenEHR](http://www.openehr.org/) consists in "systems and tools for computing with health information at a semantic level, thus enabling true analytic functions like decision support, and research querying". It looks interesting, although it doesn't seem to provide ready-to-use solutions.
 - [OpenEMR](http://www.open-emr.org/) is free and it focus on electronic health records, with clinical decision support and patient management (billing, prescription, etc.)
-
 
 Regarding simple surveys, REDCap looks like a good alternative to [LimeSurvey](http://www.limesurvey.org/), in my opinion. Since it is free and allows to manage more complex database (biobank, cohort, etc.), I believe this would be my first choice if I had to recommend a flexible on-line management system.

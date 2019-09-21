@@ -1,16 +1,16 @@
-+++
-title = "Easier literate programming with R"
-date = 2012-04-02T09:03:26+01:00
-draft = false
-tags = ["tex", "rstats"]
-categories = ["2012"]
-+++
+---
+title: "Easier literate programming with R"
+date: 2012-04-02T09:03:26+01:00
+draft: false
+tags: ["tex", "rstats"]
+categories: ["2012"]
+---
 
 I have been using [Sweave](http://www.statistik.lmu.de/~leisch/Sweave/) over the past 5 or 6 years for processing my R documents, and I have been quite happy with this program. However, with the recent release of [knitr](http://yihui.name/knitr/) (already adopted on [UCLA Stat Computing](http://www.ats.ucla.edu/stat/r/code/) and on [Vanderbilt Biostatistics Wiki](http://biostat.mc.vanderbilt.edu/wiki/Main/KnitrHowto)) and all of its nice enhancements, I really need to get more familiar with it.
 
 In fact, there's a lot of goodies in [Yihui Xie](http://yihui.name/en/)'s `knitr`, including the automatic processing of graphics (no need to call `print()` to display a `lattice` object), local or global control of height/width for any figures, removal of R's prompt (R's output being nicely prefixed with comments), tidying and highlighting facilities, image cropping, use of `framed` or `listings` for embedding code chunk. 
 
-To overcome some of those lacking features in `Sweave`, I generally have to post-process my files using shell scripts or custom Makefile. For example, I am actually giving a course (in French) on introductory #rstats for biomedical research and I provide a <i class="fa fa-file-pdf-o fa-1x"></i> [series of exercices](http://www.aliquote.org/cours/2012_biomed/hw-sols.pdf) written with Sweave. I can easily manage my graphics to have the desired size using a combination of Sweave `Gin` and `lattice`'s `aspect=` argument. However, the latter means I have to crop my images afterwards. Moreover, I need to "cache" some of the computations and there's no command-line argument for that, unless you rely on [pgfSweave](http://code.cjb.net/pgfSweave.html). This leads to complicated stuff like
+To overcome some of those lacking features in `Sweave`, I generally have to post-process my files using shell scripts or custom Makefile. For example, I am actually giving a course (in French) on introductory #rstats for biomedical research and I provide a  [series of exercices](/cours/2012_biomed/hw-sols.pdf) written with Sweave. I can easily manage my graphics to have the desired size using a combination of Sweave `Gin` and `lattice`'s `aspect=` argument. However, the latter means I have to crop my images afterwards. Moreover, I need to "cache" some of the computations and there's no command-line argument for that, unless you rely on [pgfSweave](http://code.cjb.net/pgfSweave.html). This leads to complicated stuff like:
 
 ```
 $ R --no-save --no-restore -e "require(cacheSweave); setCacheDir('./cache'); \
@@ -20,9 +20,9 @@ $ ./hw_crop.sh
 $ xelatex hw-sols.tex
 ```
 
-where `hw_crop.sh` is a small Bash utility which calls TexLive `pdfcrop` program:
+Here, `hw_crop.sh` is a small Bash utility which calls TexLive `pdfcrop` program:
 
-```
+```sh
 #! /usr/bin/env bash
 for i in $(ls figs/*); do pdfcrop --margins 5 $i $i; done
 ```
@@ -37,7 +37,7 @@ knitr-input-child.Rnw knitr-minimal.Rnw
 knitr-input.Rnw       knitr-subfloats.Rnw
 ```
 
-I wrote a small <i class="fa fa-file-code-o fa-1x"></i> [Bash script](http://www.aliquote.org/pub/knitr) which basically takes care of the `Rnw->pdf` conversion, with either `xelatex` or `pdflatex` as a $\TeX$ backend. I will update it with more options (`bibtex`, batch mode, etc.) later. With the sample file below,
+I wrote a small [Bash script](/pub/knitr) which basically takes care of the `Rnw->pdf` conversion, with either `xelatex` or `pdflatex` as a $\TeX$ backend. I will update it with more options (`bibtex`, batch mode, etc.) later. Consider the sample file below:
 
 ```latex
 \documentclass[8pt,a4paper]{article}
@@ -58,19 +58,15 @@ ggplot(data=dfrm, aes(x, y)) + geom_point() + stat_smooth(method="lm")
 \end{document}
 ```
 
-and using
+Then, knit it to get the [following output](/pub/knitr_demo.pdf) (PDF):
 
 ```
 $ knitr -ql knitr1.Rnw
 ```
 
-I got the following output: ([PDF version](http://www.aliquote.org/pub/knitr_demo))
-
-![Knitr preview](/img/20120402200837.png)
-
 Other interesting features are:
 
-- We can use <i class="fa fa-file-code-o fa-1x"></i> [Markdown](https://github.com/yihui/knitr/blob/master/inst/examples/knitr-minimal.md) directly (see also [Knitr, Github, and a new phase for the lab notebook](http://www.carlboettiger.info/archives/4325)).
+- We can use [Markdown](https://github.com/yihui/knitr/blob/master/inst/examples/knitr-minimal.md) directly (see also [Knitr, Github, and a new phase for the lab notebook](http://www.carlboettiger.info/archives/4325)).
 - Snapshots from dynamic visualization (e.g., `rgl`, `ggobi`, or Yihui's `animate`) can be embedded easily.
 
 I wonder if all this good stuff would just work out of the box using Context [filter module](http://www.ctan.org/pkg/context-filter).

@@ -1,10 +1,10 @@
-+++
-title = "Clifford attractors"
-date = 2018-02-26T16:44:14+01:00
-draft = false
-tags = ["math", "dataviz"]
-categories = ["2018"]
-+++
+---
+title: "Clifford attractors"
+date: 2018-02-26T16:44:14+01:00
+draft: false
+tags: ["math", "dataviz"]
+categories: ["2018"]
+---
 
 
 I came across some nice visualization of Clifford attractors on Antonio Sánchez Chinchón's website, which is dedicated to experiments in R (mostly using ggplot): [Drawing 10 Million Points With ggplot: Clifford Attractors](https://fronkonstin.com/2017/11/07/drawing-10-million-points-with-ggplot-clifford-attractors/). Other graphics can be found on [Paul Bourke's website](http://paulbourke.net/fractals/clifford/). A [Javascript version](https://bl.ocks.org/gunn/87401cb547cc2ee5b5ec) is also available.

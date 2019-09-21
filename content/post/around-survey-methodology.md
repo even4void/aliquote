@@ -1,24 +1,28 @@
-+++
-title = "Around survey methodology and questionnaire design"
-date = 2008-03-24T21:24:09+01:00
-draft = false
-tags = ["readings"]
-categories = ["2008"]
-+++
+---
+title: "Around survey methodology and questionnaire design"
+date: 2008-03-24T21:24:09+01:00
+draft: false
+tags: ["readings"]
+categories: ["2008"]
+---
 
 Recently, I read some books related to survey design and the way a questionnaire should be constructed so as to maximize the information we want to gain from it. Among others, I found Willis's book, *Cognitive Interviewing, A Tool for Improving Questionnaire Design*, 2005, well structured, though some topics are developed far from what I would qualify as a really concise overview. Other lectures included more statistical techniques oriented toward survey design and implementation. This includes a concise (but very dense!) book written by E. S. Lee and R. N. Forthofer, *Analyzing Complex Survey Data* (2006, Sage Publications).
 
 Also, I've reviewed various articles related to survey methodology for large-scale educational assessments (see references (5) and ff.). Apart from focusing on the precision of the related estimators, an interesting issue arises when one wants to design effective sampling using a computer. Indeed, when conducting a survey, we have to sample the units without replacement, which is quite different from the usual asymptotic approach in behavioral studies where we mainly use random sampling with replacement (hence, assuming an infinite population).
 
-Before presenting some of the main issues discussed in Willis's book, the interested reader may refer to the [National Cancer Institute][National Cancer Institute] where some tutorials on Item Response Theory and Questionnaire Design are proposed. In fact, there is a short PDF article of Gordon Willis, [Cognitive Interviewing, A "How to" Guide][Cognitive Interviewing, A "How to" Guide]. I also found these PDF [guidelines][guidelines] on the Cooperative State Research, Education, and Extension Service. It's not too surprising to find such material since cognitive interviewing has been mainly developed in the context of medical or psychological assessment. Other references are given at the end of this post<sup>(1,2)</sup>. For a general overview of survey methodology, please refer to (13).
+Before presenting some of the main issues discussed in Willis's book, the interested reader may refer to the [National Cancer Institute][National Cancer Institute] where some tutorials on Item Response Theory and Questionnaire Design are proposed. In fact, there is a short PDF article of Gordon Willis, [Cognitive Interviewing, A "How to" Guide][Cognitive Interviewing, A "How to" Guide]. I also found these [guidelines][guidelines] (PDF) on the Cooperative State Research, Education, and Extension Service. It's not too surprising to find such material since cognitive interviewing has been mainly developed in the context of medical or psychological assessment. Other references are given at the end of this post<sup>(1,2)</sup>. For a general overview of survey methodology, please refer to (13).
 
 Hereafter, I propose a quick summary of Willis's book to help the reader understand what sits behind this sound wording. First, the book is intended to all questionnaire designers who are interested in how cognitive strategies might affect verbal or web responses.
 
-The following book might also be of potential interest for the questionnaire/survey designer: *Designing and Conducting Health Surveys: A Comprehensive Guide*, by Aday and Cornelius (2006). The TOC can be visualized here in PDF, and there is an online chapter excerpt (Chapter 1, in PDF) on Jossey-Bass website: [Thinking about topics for health surveys][Thinking about topics for health surveys].
+{{% alert note %}}
+Oups, it looks like this has yet to be written.
+{{% /alert %}}
+
+The following book might also be of potential interest for the questionnaire/survey designer: *Designing and Conducting Health Surveys: A Comprehensive Guide*, by Aday and Cornelius (2006). The TOC can be visualized here in PDF, and there is an online chapter excerpt (Chapter 1, available in PDF) on Jossey-Bass website: [Thinking about topics for health surveys][Thinking about topics for health surveys].
 
 Further, here is a general annotated bibliography on survey methodology (aims, methods, caveats, etc.), available as [BibTeX file][BibTeX file] or [HTML page][HTML page].
 
-There are several ways to implement on-line questionnaire. Indeed, various technologies have now become deployed over the internet, including usual html/PHP web form (static or dynamic), Perl CGI, Macromedia Flash, or even Java for mobile device. I will propose soon some kind of demonstrations of each of these tools one day...
+There are several ways to implement on-line questionnaire. Indeed, various technologies have now become deployed over the internet, including usual html/PHP web form (static or dynamic), Perl CGI, Macromedia Flash, or even Java for mobile device. I will eventually offer some kind of demonstrations of each of these tools one day...
 
 ### References
 
@@ -54,5 +58,5 @@ There are several ways to implement on-line questionnaire. Indeed, various techn
 [Cognitive Interviewing, A "How to" Guide]: http://appliedresearch.cancer.gov/areas/cognitive/interview.pdf
 [guidelines]: http://www.csrees.usda.gov/nea/food/pdfs/cog_interview.pdf
 [Thinking about topics for health surveys]: http://media.wiley.com/product_data/excerpt/05/07879756/0787975605.pdf
-[BibTeX file]: http://www.aliquote.org/pub/surveys.bib
-[HTML page]: http://www.aliquote.org/pub/surveys.html
+[BibTeX file]: /pub/surveys.bib
+[HTML page]: /pub/surveys.html

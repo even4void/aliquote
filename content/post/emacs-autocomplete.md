@@ -1,32 +1,10 @@
-+++
-title = "Emacs auto-completion for Python"
-date = 2013-02-11T11:54:58+01:00
-draft = false
-tags = ["emacs", "python"]
-categories = ["2013"]
-
-[header]
-image = ""
-caption = ""
-preview = true
-
-[[gallery_item]]
-album = "1"
-image = "20130211201329.png"
-caption = ""
-
-[[gallery_item]]
-album = "1"
-image = "20130211201042.png"
-caption = ""
-
-[[gallery_item]]
-album = "1"
-image = "20130211200954.png"
-caption = ""
-
-
-+++
+---
+title: "Emacs auto-completion for Python"
+date: 2013-02-11T11:54:58+01:00
+draft: false
+tags: ["emacs", "python"]
+categories: ["2013"]
+---
 
 Here are some notes on how to enable auto-completion for Emacs.
 
@@ -34,7 +12,7 @@ I already have [auto-complete](http://emacswiki.org/emacs/AutoComplete) installe
 
 Following a recent post by [John D Cook](http://www.johndcook.com/blog/2013/01/29/python-emacs-setup/), I decided to try to enhance my default Emacs setup for Python (which barely consists in `python-mode`, `ac-python` and some custom hooks for indentation and tabs/spaces management). I should note that I am currently using standard Python shell as inferior process because I wasn't able to configure Emacs to run [ipython](http://ipython.org) instead of standard Python. This may well be due to conflicting version of `python-mode` and `ipython.el`. With [ipython.el](https://raw.github.com/ipython/ipython/master/docs/emacs/ipython.el) from IPython distro, and the following in my `.emacs` :
 
-```lisp
+```emacs-lisp
 (require 'ipython)
 (setq ipython-command "/usr/local/bin/ipython")
 (setq py-python-command-args '("-pylab" "-colors" "LightBG"))
@@ -55,11 +33,11 @@ For the Python part, we just need to install `epc` and `jedi`:
 % sudo pip install jedi
 ```
 
-(I'm still using Apple Python, which actually is Python 2.7.1 (r271:86832, Jun 16 2011, 16:59:05).)
+<small>(I'm still using Apple Python, which actually is Python 2.7.1 (r271:86832, Jun 16 2011, 16:59:05).)</small>
 
 And, for Emacs, provided we are using [package.el](http://emacswiki.org/emacs/ELPA), we just have to `M-x package-list-packages` and then install `epc` and `jedi`. My package archives include <http://melpa.milkbox.net/packages/> which generally provides more up to date packages. I added the following to my `.emacs`:
 
-```lisp
+```emacs-lisp
 (require 'epc)
 (setq jedi:setup-keys t)
 (setq jedi:server-command '("python" "~/.emacs.d/elpa/jedi-20130210.1518/jediepcserver.py"))
@@ -68,9 +46,13 @@ And, for Emacs, provided we are using [package.el](http://emacswiki.org/emacs/EL
 (add-hook 'python-mode-hook 'jedi:setup)
 ```
 
-Below are some screenshots of `jedi.el` in action.
+Below are some screenshots of `jedi.el` in action:
 
-{{< gallery album="1" >}}
+![Jedi](/img/20130211201329.png)
+
+{{< fluid_imgs
+  "pure-u-1-2|/img/20130211201042.png"
+  "pure-u-1-2|/img/20130211200954.png" >}}
 
 On a related point, I took advantage of those updates to update my [nrepl](https://github.com/kingtim/nrepl.el) package for Clojure and install [ac-nrepl](https://github.com/purcell/ac-nrepl) which also comes with handy autocompletion and doc (`C-c C-d`) support.
 

@@ -1,18 +1,14 @@
-+++
-title = "Design of experiment in R"
-date = 2011-05-28T12:41:42+01:00
-draft = false
-tags = ["rstats", "statistics"]
-categories = ["2011"]
-+++
+---
+title: "Design of experiment in R"
+date: 2011-05-28T12:41:42+01:00
+draft: false
+tags: ["rstats", "statistics"]
+categories: ["2011"]
+---
 
-When I started writing my companion textbook for Montgomery's *Design and Analysis of Experiments*, there was not so much dedicated package available on CRAN.
+When I started writing my companion textbook for Montgomery's *Design and Analysis of Experiments*, there was not so much dedicated package available on CRAN. Now, I realize that there are a lot of very handy packages on CRAN. Most of them were released in 2010 and are listed in the corresponding Task View, [ExperimentalDesign](http://cran.r-project.org/web/views/ExperimentalDesign.html).
 
-
-Now, I realize that there are a lot of very handy packages on CRAN. Most of them were released in 2010 and are listed in the correspoding Task View, [ExperimentalDesign](http://cran.r-project.org/web/views/ExperimentalDesign.html).
-
-In the White Book (*Statistical Models in S*, Chambers & Hastie, 1992), section 5.2.3 pp. 169-175 is dedicated to full- and fractional factorial designs, with `fac.design` and `oa.design`. However, those two functions are not available in R, and we only have `expand.grid` (see Venables & Ripley, MASS 4th ed., pp. 167-169) which is not very useful for the purpose of generating fractional designs.
-
+In the so-called White Book (*Statistical Models in S*, Chambers & Hastie, 1992), section 5.2.3 pp. 169-175 is dedicated to full- and fractional factorial designs, with `fac.design` and `oa.design`. However, those two functions are not available in R, and we only have `expand.grid` (see Venables and Ripley, MASS 4th ed., pp. 167-169) which is not very useful for the purpose of generating fractional designs.
 
 Let's consider a 2<sup>5-2</sup> design, with the following generator: D=±AB and E=±AC. The corresponding design matrix can be easily found using the [BHH2](http://cran.r-project.org/web/packages/BHH2/index.html) package, which provides R functions and datasets from Box, Hunter and Hunter's book, *Statistics for Experimenters II* (Wiley, 2005):
 
@@ -21,16 +17,14 @@ library(BHH2)
 d52 <- ffDesMatrix(5, gen=list(c(4,1,2), c(5,1,3)))
 ```
 
-Or we can use 
+Or we could use:
 
 ```r
 library(FrF2)
 FrF2(8,5)
 ```
 
-Note that the [FrF2](http://cran.r-project.org/web/packages/FrF2/index.html) package has an [Rcmdr plugin](http://cran.r-project.org/web/packages/RcmdrPlugin.DoE/index.html) that facilitates its use.
-
-In both cases, we get
+Note that the [FrF2](http://cran.r-project.org/web/packages/FrF2/index.html) package has an [Rcmdr plugin](http://cran.r-project.org/web/packages/RcmdrPlugin.DoE/index.html) that facilitates its use. In both cases, we get:
 
 ```
    A  B  C  D  E

@@ -1,16 +1,16 @@
-+++
-title = "Customizing terminal emulator and the Like on OS X"
-date = 2012-07-21T19:31:52+01:00
-draft = false
-tags = ["apple"]
-categories = ["2012"]
-+++
+---
+title: "Customizing terminal applications on OS X"
+date: 2012-07-21T19:31:52+01:00
+draft: false
+tags: ["apple"]
+categories: ["2012"]
+---
 
 Some nifty customizations for my [CLI](http://en.wikipedia.org/wiki/Command-line_interface) environment.
 
 ## Colorized terminal
 
-I decided to change the look'n feel of my Terminal. I'm using iTerm2, instead of Terminal.app, and I was usually just printing the simplest shell prompt ever: `$`. I wanted to change this for a modern UTF-8 prompt, and after looking at this post on [Unix & Linux](http://unix.stackexchange.com/q/25903), I realized that awesome shell prompt do indeed exist. Other interesting discussions can be found by following these links:
+I decided to change the look'n feel of my Terminal. I'm using iTerm2, instead of Terminal.app, and I was usually just printing the simplest shell prompt ever: `$`. I wanted to change this for a modern UTF-8 prompt, and after looking at this post on [Unix & Linux](http://unix.stackexchange.com/q/25903), I realized that awesome shell prompts do indeed exist. Other interesting discussions can be found by following these links:
 
 - [8 Useful and Interesting Bash Prompts](http://bit.ly/MO0oJ9)
 - [Color Bash Prompt](http://bit.ly/O5bwV8)
@@ -38,7 +38,7 @@ There are many shells on OS X, see e.g.
 $ ls /usr/bin/*sh
 ```
 
-Older Mac systems were using `tcsh` as the default shell program. Bash was introduced when switching from OS X Jaguar to Panther, and is now the default shell program. Of course, they are never updated and you are left with the version that ships with OS X when you buy your computer. Well, we can compile newer version ourselves, unless we rely on some kind of external package manager like [port](http://www.macports.org/) or [brew](http://mxcl.github.com/homebrew/). I start to feel myself like a brontosaurus since I am always compiling everything by hand, but everything seems quite in order, so I don't feel too much off base.
+Older Mac systems were using `tcsh` as the default shell program. Bash was introduced when switching from OS X Jaguar to Panther, and it is now the default shell program. Of course, they are never updated and you are left with the version that ships with OS X when you buy your computer. However, we can compile newer version ourselves, unless we rely on some kind of external package manager like [port](http://www.macports.org/) or [brew](http://mxcl.github.com/homebrew/). I start to feel myself like a brontosaurus since I am always compiling everything by hand, but everything seems quite in order, so I don't feel too much off base.
 
 At the time of this writing, current version of `zsh` is 4.3.17, while I have
 
@@ -47,7 +47,7 @@ $ zsh --version
 zsh 4.3.11 (i386-apple-darwin11.0)
 ```
 
-I've always heard good things about [zsh](http://zsh.sourceforge.net/). A short introduction is available in this quite old post, [zsh: The last shell you’ll ever need!](http://bit.ly/Pq6Ruo). The [reference manual](http://bit.ly/LEbeW3) is however a must read first.
+I've always heard good things about [zsh](http://zsh.sourceforge.net/). A short introduction is available in this old post: [zsh: The last shell you’ll ever need!](http://bit.ly/Pq6Ruo). The [reference manual](http://bit.ly/LEbeW3) is, however, a must read first.
 
 Of course, there are lot of tutorials on internet, and as much tips and tricks we may want to try. First thing to do is, however, to customize the configuration file, `.zshrc`:
 

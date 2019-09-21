@@ -1,10 +1,10 @@
-+++
-title = "A modular configuration for Emacs"
-date = 2014-08-04T15:14:17+01:00
-draft = false
-tags = ["emacs", "apple"]
-categories = ["2014"]
-+++
+---
+title: "A modular configuration for Emacs"
+date: 2014-08-04T15:14:17+01:00
+draft: false
+tags: ["emacs", "apple"]
+categories: ["2014"]
+---
 
 In this post I describe how I decided to organize by Emacs configuration files after having used for more than 10 years a monolithic `.emacs` file.
 
@@ -17,12 +17,12 @@ Here is how looks my Emacs at the time I am writing this post (with [Gruber them
 ![Emacs with Gruber theme](/img/2014-07-27-14-43-49.png)
 
 {{% alert note %}}
-This is very much **work in progress** and things will probably change a little. I will eventually post this Emacs config files on GitHub.
+This is very much work in progress and things will probably change a little. I will eventually post this Emacs config files on GitHub.
 {{% /alert %}}
 
 ## A modular approach to package management
 
-In a [related post]({{< ref "/post/os-x-mavericks.md" >}}) I described how I configured my new MacBook Pro by using [Homebrew](http://brew.sh). This took me half a day before a trip to Utrecht. It took me a couple of hours to build a whole directory of Elisp files to manage my final Emacs configuration. Let's start by taking a look at what is finally included in my `~/.emacs.d` directory:
+In a [related post](/post/os-x-mavericks) I described how I configured my new MacBook Pro by using [Homebrew](http://brew.sh). This took me half a day before a trip to Utrecht. It took me a couple of hours to build a whole directory of Elisp files to manage my final Emacs configuration. Let's start by taking a look at what is finally included in my `~/.emacs.d` directory:
 
 ```
 % tree -d -L 1
@@ -41,7 +41,7 @@ README         cache          init.el        snippets       vendor
 auto-save-list elpa           modules        var
 ```
 
-The `init.el` file is quite simple: it consists in initializing Emacs package manager, define a series of required packages[^1] (if they are not installed, they will be installed when Emacs starts) and some specific directories, and finally launch Emacs daemon in order to ensure that we can connect to the running instance of Emacs through `emacsclient`.
+The `init.el` file is quite simple: it consists in initializing Emacs package manager, define a series of required packages (if they are not installed, they will be installed when Emacs starts) and some specific directories, and finally launch Emacs daemon in order to ensure that we can connect to the running instance of Emacs through `emacsclient`.[^1]
 
 ```lisp
 ;; Init package manager and set up ELPA repository
@@ -106,7 +106,7 @@ my-scheme.el  my-tex.el     my-ui.el      my-cc.el      my-ess.el
 my-lisp.el    my-osx.el     my-python.el  my-shell.el   my-text.el
 ```
 
-Autocomplete is enabled for most programming languages, and I make heavy use of Eldoc, Outline, and Ido/smex. All temporary or history files are saved in the `cache/` directory, which avoids to clutter my user directory or the `.emacs.d/` folder itself. Although I do not use [better-defaults](https://github.com/technomancy/better-defaults), I think I setup almost everything as suggested by Phil Hagelberg. I do not make use of Yas-snippet, but it is required by Python [elpy](https://github.com/jorgenschaefer/elpy/). At some point, I will probably remove this dependance. I'm quite happy with how things are working now. Regarding Lisp dialects (Common Lisp, Clojure, and Scheme), I have the following settings: <i class="fa fa-file-code-o fa-1x"></i> [my-lisp.el](https://aliquote.org/pub/my-lisp.el) and <i class="fa fa-file-code-o fa-1x"></i> [my-scheme](https://aliquote.org/pub/my-scheme.el). Note that I configured Slime in both cases (i.e., with SBCL and with Chicken Scheme). Finally, as can be noted in one of the first output above, I still have to manage how to put this `auto-save-list` folder into the right place (`cache/`), but that's a minor issue.
+Autocomplete is enabled for most programming languages, and I make heavy use of Eldoc, Outline, and Ido/smex. All temporary or history files are saved in the `cache/` directory, which avoids to clutter my user directory or the `.emacs.d/` folder itself. Although I do not use [better-defaults](https://github.com/technomancy/better-defaults), I think I setup almost everything as suggested by Phil Hagelberg. I do not make use of Yas-snippet, but it is required by Python [elpy](https://github.com/jorgenschaefer/elpy/). At some point, I will probably remove this dependance. I'm quite happy with how things are working now. Regarding Lisp dialects (Common Lisp, Clojure, and Scheme), I have the following settings:  [my-lisp.el](/pub/my-lisp.el) and [my-scheme](/pub/my-scheme.el). Note that I configured Slime in both cases (i.e., with SBCL and with Chicken Scheme). Finally, as can be noted in one of the first output above, I still have to manage how to put this `auto-save-list` folder into the right place (`cache/`), but that's a minor issue.
 
 
 At some point, I should probably give [Helm](http://tuhdo.github.io/helm-intro.html) a try. However, I do not really like when there's too much fuzzy completion. As long as I can keep it simple and have access to my favorite commands within few keystrokes, I'm happy with my current configuration.

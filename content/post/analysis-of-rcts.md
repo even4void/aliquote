@@ -1,10 +1,10 @@
-+++
-title = "A recap' on the statistical analysis of RCTs"
-date = 2010-09-01T12:46:38+01:00
-draft = false
-tags = ["readings", "statistics"]
-categories = ["2010"]
-+++
+---
+title: "A recap' on the statistical analysis of RCTs"
+date: 2010-09-01T12:46:38+01:00
+draft: false
+tags: ["readings", "statistics"]
+categories: ["2010"]
+---
 
 Although not really related to RCTs per se, this note is a summary of an article coming from [Statistical Methods in Medical Research](http://smm.sagepub.com/), 2010 vol. 19(4), which is a special issue on Primary Care studies.
 
@@ -19,7 +19,9 @@ Briefly, I shall focus on the following issues:
 
 ## Choice of the randomization method
 
-<u>TODO</u>: To be described here...
+{{% alert note %}}
+Oups, it looks like this has yet to be written.
+{{% /alert %}}
 
 
 ## Model fitting
@@ -30,19 +32,19 @@ If we consider an outcome Y, with expected value µ,and the link function g defi
 
 $$ g(\mu) = \eta = \beta_0 + \beta_1X + Z, $$
 
-with $\mathbb E(Z) = 0$ and \text{Var}(Z) = \sigma^2$, $Z$ independent of $X$, we have a CS model which measures the effect of $X$ variations on $Y$, while $Z$ is held constant. The variable $Z$ is just a random effect, and this amount to add an effect $Z_i$ to all outcomes belonging to the same cluster.
+with $\mathbb E(Z) = 0$ and $\text{Var}(Z) = \sigma^2$, $Z$ independent of $X$, we have a CS model which measures the effect of $X$ variations on $Y$, while $Z$ is held constant. The variable $Z$ is just a random effect, and this amount to add an effect $Z_i$ to all outcomes belonging to the same cluster.
 
 Then it can be shown that omitting the variable $Z$ yields a PA model,
 
-$$ \eta = \beta_0^\star + \beta_1^\starX, $$
+$$ \eta = \beta_0^{\star} + \beta_1^{\star}X, $$
 
 where we look at the average effect of $X$ over the range of $Z$, that is over all clusters. It should be noted that now errors are correlated but this can easily be accomodated when fitting the model. If we further assume that $\beta_1^\star \approx B\beta_1$, where $B$ stands for the bias factor, then Neuhaus and Jewell<sup>(1)</sup> show that $B = 1$ for linear and log-linear model; with $\mu = \text{logit}(\Pr(Y = 1 \mid X, Z))$ (logistic link), $B$ becomes:
 
-$$ B = 1 - \frac{\sigma_Z^2}{\mathbb E(\mu)(1-\mathbb E(\mu))} = 1 - \rho, $$
+$$ B = 1 - \frac{\sigma_Z^2}{\mathbb E(\mu)\big(1-\mathbb E(\mu)\big)} = 1 - \rho, $$
 
 where $\rho$ stands for the within-cluster correlation (assuming $\beta_1 = 0$). As $\rho$ is usually $< 0.01$ in community-based studies, using a marginal model should not yield strong biases, because in this case $0 < B < 1$ and regression coefficients from the PA model are just a little bit shrinked.
 
-How about estimation of model parameters? With a continuous outcome $y$, which is modeled as $y_{ij} = \beta_0 + \beta_1X_i + ν_{ij}$, where $ν_{ij} = Z_i + \varepsilon_{ij}$, we can think of $Z_i$ as nuisance parameters, and usual likelihood-based methods apply (using gaussian quadrature or Laplace approximation to eliminate the $Z_i$). Generally, we make the additional assumption of an exchangeable correlation structure, which amounts to consider that the variance-covariance matrix would remain the same if we exchange the within-cluster units.
+How about estimation of model parameters? With a continuous outcome $y$, which is modeled as $y\_{ij} = \beta_0 + \beta_1X_i + \nu\_{ij}$, where $\nu\_{ij} = Z_i + \varepsilon\_{ij}$, we can think of $Z_i$ as nuisance parameters, and usual likelihood-based methods apply (using gaussian quadrature or Laplace approximation to eliminate the $Z_i$). Generally, we make the additional assumption of an exchangeable correlation structure, which amounts to consider that the variance-covariance matrix would remain the same if we exchange the within-cluster units.
 
 It should be noted that we can also consider using a log-linear model which would give relative risks instead of odds-ratio.
 

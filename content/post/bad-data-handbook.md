@@ -1,10 +1,10 @@
-+++
-title = "Bad data handbook"
-date = 2014-11-02T13:38:13+01:00
-draft = false
-tags = ["review", "statistics"]
-categories = ["2014"]
-+++
+---
+title: "Bad data handbook"
+date: 2014-11-02T13:38:13+01:00
+draft: false
+tags: ["review", "statistics"]
+categories: ["2014"]
+---
 
 I just finished reading the *Bad Data Handbook*, edited by Q. Ethan McCallum (O'Reilly, 2013). This is a nice book with interesting chapters on data munging and data verification.
 

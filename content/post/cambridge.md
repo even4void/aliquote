@@ -1,37 +1,20 @@
-+++
-title = "Cambridge"
-date = 2009-07-28T23:36:10+01:00
-draft = false
-tags = ["travels"]
-categories = ["2009"]
-[[gallery_item]]
-album = "1"
-image = "IMG_0215.JPG"
-caption = ""
-[[gallery_item]]
-album = "1"
-image = "IMG_0223.JPG"
-caption = ""
-[[gallery_item]]
-album = "1"
-image = "IMG_0228.JPG"
-caption = ""
-[[gallery_item]]
-album = "1"
-image = "IMG_0229.JPG"
-caption = ""
-[[gallery_item]]
-album = "1"
-image = "IMG_0233.JPG"
-caption = ""
-[[gallery_item]]
-album = "1"
-image = "IMG_0235.JPG"
-caption = ""
-+++
+---
+title: "Cambridge"
+date: 2009-07-28T23:36:10+01:00
+draft: false
+tags: ["travels"]
+categories: ["2009"]
+---
 
-Some photos from St-John’s College, while attending the [16th International Meeting of Psychometric Society](http://www.psychometrics.ppsis.cam.ac.uk/news.31.htm) <i class="fa fa-chain-broken fa-1x"></i> in Cambridge.
+Some photos from St-John’s College, while attending the [16th International Meeting of Psychometric Society](http://www.psychometrics.ppsis.cam.ac.uk/news.31.htm) in Cambridge.
 
-<!--more-->
+![Cambridge](/img/IMG_0215.JPG)
 
-{{< gallery album="1" >}}
+{{< fluid_imgs
+  "pure-u-1-3|/img/IMG_0229.JPG"
+  "pure-u-1-3|/img/IMG_0223.JPG"
+  "pure-u-1-3|/img/IMG_0228.JPG" >}}
+<br>
+{{< fluid_imgs
+  "pure-u-1-2|/img/IMG_0233.JPG"
+  "pure-u-1-2|/img/IMG_0235.JPG" >}}

@@ -16,7 +16,7 @@ First of all, even if you can put all your shell commands into a chron job, init
 
 ![](/img/2018-10-09-10-54-24.png)
 
-Note that it is possible to customize what will be removed during the cleaning stage--and I highly recommend to check those items beforehand, because it includes cleaning the Books app cache which simply means deleting all your local iBooks (or at least, this is what happened to me with the previous version of the app). In the last version of the software (serie X), there is an history of all the actions that were undertaken, so you can keep a trace of what you have been doing recently.
+Note that it is possible to customize what will be removed during the cleaning stage--and I highly recommend to check those items beforehand, because it includes cleaning the Books app cache which simply means deleting all your local iBooks (or at least, this is what happened to me with the previous version of the app). In the last version of the software (series X), an history of all the actions that were undertaken has been added, so you can keep a trace of what you have been doing recently.
 
 There is also an uninstall tool that I find very useful since it will also delete auxiliary files, which are always a pain to find manually:
 
@@ -26,4 +26,4 @@ The latest release even features a nice utility: It is now possible to update al
 
 ![](/img/2018-10-09-10-44-06.png)
 
-Finally, there is an option to let CleanMyMac stay in the menu bar, with live information regarding RAM and disk usage or network up/down status. If you already purchased CleanMyMac 3, you will get a 50% discount to upgrade to the X version. Yep, everybody like skipping intermediate numbers between [0-9] and X :smile:
+Finally, there is an option to let CleanMyMac stay in the menu bar, with live information regarding RAM and disk usage or network up/down status. If you already purchased CleanMyMac 3, you will get a 50% discount to upgrade to the X version. It looks like folks are keen to skip intermediate numbers between [0-9] and X these days.

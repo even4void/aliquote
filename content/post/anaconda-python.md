@@ -1,18 +1,18 @@
-+++
-title = "Python for interactive scientific data visualization"
-date = 2013-05-15T11:17:42+01:00
-draft = false
-tags = ["python", "dataviz"]
-categories = ["2013"]
-+++
+---
+title: "Python for interactive scientific data visualization"
+date: 2013-05-15T11:17:42+01:00
+draft: false
+tags: ["python", "dataviz"]
+categories: ["2013"]
+---
 
-Some random notes on recent 'pythonic peregrinations' on my Airbook.
+Some random notes on my recent 'pythonic peregrinations' on my Airbook.
 
 Python packages management is really painful. My `/Library/Python/2.7/site-packages` is just a mess. This is probably due in part to the fact that I switched from `easy_install` to `pip` two years ago, but anyway there's a lot of useless stuff in there.
 
 ![Python site-packages](/img/20130413214446.png)
 
-I heard about [Bokeh](https://github.com/ContinuumIO/Bokeh), a new plotting library for Python. Basically, it ought to embed Wilkinson's Grammar of Graphics into the [d3js](http://d3js.org) framework. It is maintained by the same guys from Continuum Analytics who develop [Blaze](http://blaze.pydata.org) and [Anaconda](https://store.continuum.io/cshop/anaconda). In contrast to Enthought EPD[^1], it is
+I heard about [Bokeh](https://github.com/ContinuumIO/Bokeh), a new plotting library for Python. Basically, it ought to embed Wilkinson's Grammar of Graphics into the [d3js](http://d3js.org) framework. It is maintained by the same guys from Continuum Analytics who develop [Blaze](http://blaze.pydata.org) and [Anaconda](https://store.continuum.io/cshop/anaconda). In contrast to Enthought EPD,[^1] it is
 
 > completely free enterprise-ready Python distribution for large-scale data processing, predictive analytics, and scientific computing.
 

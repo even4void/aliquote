@@ -1,21 +1,20 @@
-+++
-title = "Dose finding studies and cross-over trials"
-date = 2013-02-24T11:44:29+01:00
-draft = false
-tags = ["readings", "statistics"]
-categories = ["2013"]
-+++
+---
+title: "Dose finding studies and cross-over trials"
+date: 2013-02-24T11:44:29+01:00
+draft: false
+tags: ["readings", "statistics"]
+categories: ["2013"]
+---
 
 Here are some notes on cross-over trials and within-patient titration in indirect assays.
 
-Most of my litterature review started with Senn's [textbook](http://www.senns.demon.co.uk/SIDD.html), *Statistical Issues in Drug Development* (Wiley, 2007, pp. 317-336). Contrary to *direct assays* where we know what we want to achieve, say a given response to treatment, and we adjust the dose until this goal is reached, in indirect assays individual response is studied as a function of the dose and a 'useful dose' is decided upon afterwards. Studies on dose finding are generally done through between- or within-subject design. In within-patient design--dose escalation or cross-over--doses are given in ascending order, keeping in mind that within-patient titration share most of the problems of cross-over trials (see below), with additional limitations (dose and period effects are confounded) unless there's a parallel placebo group or an intervening placebo treatment in the dose escalation sequence. In any case, there seems to be some agreement on the fact that within-patient designs (cross-over or dose escalation) usually perform better than any parallel-groups design.<sup>(1)</sup> However, the main difficulty with analyzing dose escalation studies is that it generally requires complex non-linear random-effects models which allow for drop-out to be used.
+Most of my literature review started with Senn's [textbook](http://www.senns.demon.co.uk/SIDD.html), *Statistical Issues in Drug Development* (Wiley, 2007, pp. 317-336). Contrary to *direct assays* where we know what we want to achieve, say a given response to treatment, and we adjust the dose until this goal is reached, in indirect assays individual response is studied as a function of the dose and a 'useful dose' is decided upon afterwards. Studies on dose finding are generally done through between- or within-subject design. In within-patient design--dose escalation or cross-over--doses are given in ascending order, keeping in mind that within-patient titration share most of the problems of cross-over trials (see below), with additional limitations (dose and period effects are confounded) unless there's a parallel placebo group or an intervening placebo treatment in the dose escalation sequence. In any case, there seems to be some agreement on the fact that within-patient designs (cross-over or dose escalation) usually perform better than any parallel-groups design.<sup>(1)</sup> However, the main difficulty with analyzing dose escalation studies is that it generally requires complex non-linear random-effects models which allow for drop-out to be used.
 
 In cross-over trials, patients are randomly allocated to a sequence of treatments where treatments are interleaved with (active or passive) wash-out periods. Such a design is typical of a design where subject is taken as his own control and cross-over trials are an example of a Latin square design where treatments appear only once in each period and in each sequence. A simple design is the AB/BA cross-over where the two treatments under study are administered in both order: A then B, or B then A. Carry-over effects are of much concerns in this approach, and even if different weighting schemes have been proposed to eliminate or render them innocuous it seems that the best is actually to take into account pharmacokinetic and pharmacological theories when devising wash-out period. In the special case of single-dose studies the wash-out period has been proven to be effective in general.<sup>(5)</sup>
 
-Some references are given in the References section, but here is one good textbook by Stephen Senn himself:
-Senn S. *Cross-over trials in clinical research* (2nd ed.). Chichester, England: John Wiley & Sons; 2002.
+Some references are given in the References section, but here is one good textbook by Stephen Senn himself: Senn S. *Cross-over trials in clinical research* (2nd ed.), Chichester, England: John Wiley & Sons; 2002.
 
-As has been said, a parallel-groups design can also be used in effective dose studies. Assuming 3 doses for the active group and a standard deviation of the outcome (e.g., pain score) of 45 points, with a minimal clinical important difference of 25 points, we would need 54 patients in each group to ensure 80% power. However, titration assays are often done in two-stage, with a first randomization of patients on dose sequence, and a second random allocation of patients to effective dose group or a placebo, see e.g. Davis (1992) and the following illustration.
+As has been suggested, a parallel-groups design can also be used in effective dose studies. Assuming 3 doses for the active group and a standard deviation of the outcome (e.g., pain score) of 45 points, with a minimal clinical important difference of 25 points, we would need 54 patients in each group to ensure 80% power. However, titration assays are often done in two-stage, with a first randomization of patients on dose sequence, and a second random allocation of patients to effective dose group or a placebo, see e.g. Davis (1992) and the following illustration.
 
 ![Two-stage randomization](/img/20130220114923.png)
 

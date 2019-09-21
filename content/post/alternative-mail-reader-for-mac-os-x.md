@@ -1,17 +1,17 @@
-+++
-title = "Alternative mail reader for Mac OS X"
-date = 2012-12-17T22:12:46+01:00
-draft = false
-tags = ["apple"]
-categories = ["2012"]
-+++
+---
+title: "Alternative mail reader for Mac OS X"
+date: 2012-12-17T22:12:46+01:00
+draft: false
+tags: ["apple", "app"]
+categories: ["2012"]
+---
 
 I just gave a try to [MailMate](http://freron.com) to manage my emails on my Airbook.
 
 There are some good overviews of alternative applications to Apple Mail here: 
 
-* [The Ultimate Mail Client for Mac OS X](http://bit.ly/UA4Xui) <i class="fa fa-chain-broken fa-1x"></i>
-* [The Best Email Client for Mac OS X](http://bit.ly/T2CAHI)
+- [The Ultimate Mail Client for Mac OS X](http://bit.ly/UA4Xui)
+- [The Best Email Client for Mac OS X](http://bit.ly/T2CAHI)
  
 I tried [Postbox](http://www.postbox-inc.com) a month ago but I gave up after one day: although it looks interesting in many respects (attachment via Dropbox, searching facilities, and responsiveness). It was supposed to be a good client for Gmail users because it is supposed to handle labels and virtual folders. However, I was unable to fetch all my Gmail messages after leaving the application run over 12 hours or so. On the plus side, the customer service is very cool and you get a full refund if you are not satisfied with the product.
 

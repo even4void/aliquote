@@ -1,10 +1,10 @@
-+++
-title = "Computer Age Statistical Inference"
-date = 2018-10-06T19:04:51+01:00
-draft = false
-tags = ["review", "statistics"]
-categories = ["2018"]
-+++
+---
+title: "Computer Age Statistical Inference"
+date: 2018-10-06T19:04:51+01:00
+draft: false
+tags: ["review", "statistics"]
+categories: ["2018"]
+---
 
 Back in March I started to review the latest book authored by [Bradley Efron](http://statweb.stanford.edu/~ckirby/brad/) and [Trevor Hastie](https://web.stanford.edu/~hastie/), *Computer Age Statistical Inference*. Since then I found that there are far better reviews than the one I could write right now, and it is probably time to close this post or just [let it go](https://www.rousette.org.uk/archives/getting-things-done-by-letting-things-go/). 
 

@@ -6,7 +6,7 @@ tags: ["readings", "arxiv"]
 categories: ["2018"]
 ---
 
-Let us celebrate this new Spring with some papers fetched from \*arXiv, not necessarily from the last weeks but at least in reverse chronological order in my Twitter timeline.
+Let us celebrate this new Spring with some papers fetched from arXiv, not necessarily from the last weeks but at least in reverse chronological order in my Twitter timeline.
 
 <!--more-->
 

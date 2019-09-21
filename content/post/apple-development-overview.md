@@ -1,10 +1,10 @@
-+++
-title = "Apple development tools, An overview"
-date = 2009-11-26T08:21:34+01:00
-draft = false
-tags = ["apple"]
-categories = ["2009"]
-+++
+---
+title: "Apple development tools, An overview"
+date: 2009-11-26T08:21:34+01:00
+draft: false
+tags: ["apple", "clang"]
+categories: ["2009"]
+---
 
 Snow Leopard (SL) comes with two versions of gcc (4.0 and 4.2) once you've installed the Xcode package. It is, however, possible to compile the latest gcc version (4.5) as shown by J. De Leeuw and others. Check the SVN repository at <http://gcc.gnu.org/svn.html>. In this case, the complete [gcc suite][gcc suite] would provide front ends for C, C++, Objective-C, Fortran, Java, and Ada. Actually, I was not able to succeed in using the gcj compiler because of missing dependencies, in particular the Eclipse native compiler (ecj). The gfortran compiler works fine, but I also have a version of Fortran 77, mostly to ensure compatibility with old software and to compare both versions. In addition, the Developer tools include the [llvm suite][llvm suite] which is based on version 4.2 of gcc.
 
@@ -15,7 +15,7 @@ export VERSIONER_PYTHON_PREFER_32_BIT=no
 export VERSIONER_PYTHON_VERSION=2.6 
 ```
 
-but see the man page on `python`. There is also an alternative solution which is [Enthought Python][Enthought Python], that comes with a lot of scientific packages bundled together. It should be sufficient for most numerical applications although it may be necessary to add additional package. The proper way to do is to patch the easy_install utility and use it under EPD; the sad way (but it works!) is to compile the package under Python 2.5 (which is actually the same version that comes with EPD) and move the compiled package into the EPD site-packages directory. Personally, I recompile everything in 64 bits, with the exception of MayaVi. However, I may still be able to use the EPD distribution through emacs with the enhanced Python mode and iPython. Add to your `.emacs` something like:
+See also the man page on `python`. There is also an alternative solution which is [Enthought Python][Enthought Python], that comes with a lot of scientific packages bundled together. It should be sufficient for most numerical applications although it may be necessary to add additional package. The proper way to do is to patch the easy_install utility and use it under EPD; the sad way (but it works!) is to compile the package under Python 2.5 (which is actually the same version that comes with EPD) and move the compiled package into the EPD site-packages directory. Personally, I recompile everything in 64 bits, with the exception of MayaVi. However, I may still be able to use the EPD distribution through emacs with the enhanced Python mode and iPython. Add to your `.emacs` something like:
 
 ```lisp 
 (setq ipython-command 
@@ -32,13 +32,13 @@ Ruby is available (version 1.8) but it is easy to update to version 1.9 in 64 bi
 $ gem install rails 
 ```
 
-but it is available as a standalone package if needed.
+Note that it is available as a standalone package if needed.
 
 The R statistical software can be installed from [CRAN][CRAN] website with the binary installer, which includes the R core packages, the Mac GUI and gfortran. Most experienced users would be interested in the Mac OS X [Developer's R version][Developer's R version]. Actually, I recompile the experimental R 2.11, without GUI support, but I cannot get a working Gtk system (most probably due to conflict with Cairo libraries).
 
 ### Creating shared libraries using gcc 
 
-For example, there is no getline function in the standard C files on Mac OS X. Although it could be replaced with `fgets` (less secure) or `fgetln`, which is defined in all BSD distributions. Suppose we are interested in using `getline`.
+For example, there is no `getline` function in the standard C files on Mac OS X. Although it could be replaced with `fgets` (less secure) or `fgetln`, which is defined in all BSD distributions. Suppose we are interested in using `getline`.
 
 First you need to create the object file
 

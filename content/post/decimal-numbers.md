@@ -10,11 +10,11 @@ A lot of [Euler problems](https://aliquote.org/tags/euler/) can be solved or bes
 
 <!--more-->
 
-As for a simple definition, we will say that a decimal number is a rational number which can be written in fractional form as $\tfrac{a}{10^n}$, $a \in \mathbb{Z}$ and $n \in \mathbb{N}$. Note that this set, $\mathbb{D}$, is a [subring](<https://en.wikipedia.org/wiki/Ring_(mathematics)#Subring>) of $\mathbb{Q}$, the set of rationals, which means that addition, substraction and product of two decimal numbers yield a decimal number. The main interest in decimal numbers lies in the fact that they can be written and manipulated using base-10 notation. Let $x=\frac{a}{10^n}$ be a decimal number, with $a > 0$ and $n \ge 0$. Since we can express $a$ using base-10 notation as:
+As for a simple definition, we will say that a decimal number is a rational number which can be written in fractional form as $\tfrac{a}{10^n}$, $a \in \mathbb{Z}$ and $n \in \mathbb{N}$. Note that this set, $\mathbb{D}$, is a [subring](<https://en.wikipedia.org/wiki/Ring_(mathematics)#Subring>) of $\mathbb{Q}$, the set of rationals, which means that addition, difference and product of two decimal numbers yield a decimal number. The main interest in decimal numbers lies in the fact that they can be written and manipulated using base-10 notation. Let $x=\frac{a}{10^n}$ be a decimal number, with $a > 0$ and $n \ge 0$. Since we can express $a$ using base-10 notation as:
 
 $$ a = \sum\_{i=0}^m = a_m \times 10^m + a\_{m-1} \times 10^{m-1} + \dots + a_1 \times 10 + a_0, $$
 
-with $m \ge 0$ and $0\le a_i\le 9$ ($a_m \neq 0$). A common shorthand is to write $a = \overline{a_m \dots a_0}$, following the notation used by Daniel Perrin.[^1] Hence, we can reexpress $x$ as
+with $m \ge 0$ and $0\le a_i\le 9$ ($a_m \neq 0$). A common shorthand is to write $a = \overline{a_m \dots a_0}$, following the notation used by Daniel Perrin.[^1] Hence, we can re-express $x$ as
 
 $$ x = \sum\_{i=0}^m = a_m \times 10^{m-n} + \dots + a\_{n+1} \times 10 + a_n + \frac{a\_{n-1}}{10} + \dots + \frac{a_0}{10^n}, $$
 
@@ -34,7 +34,7 @@ The other interesting property of decimal numbers is that we can quickly tell wh
 
 A common pattern is to extract the fractional part of a number and to store each digit in a list. Basically, there are two ways to do this: either we convert the decimal number to a string, extract each digit as a character, and convert it back to a number; or we use a simple decomposition of the decimal number using base-10 quotient and remainder. Here is one way to do this using proper arithmetic in Racket:
 
-```lisp
+```racket
 (define (digits x)
   (if (zero? x)
       null
@@ -46,7 +46,7 @@ A common pattern is to extract the fractional part of a number and to store each
 
 It turns out that the above procedure is easier to read and quite more efficient than converting character to number, although digits are given in reverse order. However, it is not difficult to `reverse` the list afterwards, or to adapt the code if timing is a critical element. You can then `apply`, `map` or `filter` the resulting list of digits at will. Here is a working example using a few decimals of $\pi$:
 
-```lisp
+```racket
 > (define x (inexact->exact (floor (* 1e9 (- pi (floor pi))))))
 > (digits x)
 '(3 5 6 2 9 5 1 4 1)

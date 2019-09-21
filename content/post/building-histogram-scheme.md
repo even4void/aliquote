@@ -6,13 +6,13 @@ tags: ["lisp", "statistics"]
 categories: ["2019"]
 ---
 
-This post is a rough attempt at constructing a proper histogram for a sequence of real values, usually stored as a list or vector in Common Lisp. With minor adapatation, it should work with Scheme dialects too.
+This post is a rough attempt at constructing a proper histogram for a sequence of real values, usually stored as a list or vector in Common Lisp. With minor adaptation, it should work with Scheme dialects too.
 
 <!--more-->
 
-[Histograms](https://en.wikipedia.org/wiki/Histogram) allow to visually depict the distribution of a continuous variable, and they should not be confused with other graphical displays that use bar-like representation, like barcharts. This kind of statistical plot expect a discretized variable as input, and in this post we are going to focus on this very specific aspect of binning for a continuous variable. From a purely statistical and technical viewpoint, the probability that a random variable (r.v.) $X$ lies in a specific interval can be represented using the cumulative distribution function, defined as $F(x)=\Pr(X\le x)$; its inverse corresponds to the quantile function. Another well-known estimator of the probability law of an r.v. is, of course, the density function, defined as $\Pr(a< X\le b)=\int_a^bf(t)dt$, and an histogram is nothing else than yet another estimator of the density of a continuous r.v.. More discussion is available on [Arthur Charpentier](https://freakonometrics.hypotheses.org/57221)'s excellent blog.
+[Histograms](https://en.wikipedia.org/wiki/Histogram) allow to visually depict the distribution of a continuous variable, and they should not be confused with other graphical displays that use bar-like representation, like bar charts. This kind of statistical plot expect a discretized variable as input, and in this post we are going to focus on this very specific aspect of binning for a continuous variable. From a purely statistical and technical viewpoint, the probability that a random variable (r.v.) $X$ lies in a specific interval can be represented using the cumulative distribution function, defined as $F(x)=\Pr(X\le x)$; its inverse corresponds to the quantile function. Another well-known estimator of the probability law of an r.v. is, of course, the density function, defined as $\Pr(a< X\le b)=\int_a^bf(t)dt$, and an histogram is nothing else than yet another estimator of the density of a continuous r.v.. More discussion is available on [Arthur Charpentier](https://freakonometrics.hypotheses.org/57221)'s excellent blog.
 
-Gnuplot has no histogram facilities, so you have to run your own implementation, as I did in one of my [previous posts](/post/ten-years/), but see also these [SO](https://stackoverflow.com/a/5948573) [answers](https://stackoverflow.com/a/9279630) of mine. However, R or Stata provide ready-to-use implementations of this statistical estimator as `hist` (or better, `MASS:truehist`) and <u>`hist`</u>`ogram`. In this post, I am going to explore Common Lisp utilities to work on sequences of integer or real numbers. Indeed, Lisp comes with a class of objects, called _sequences_, which can be lists, vectors or strings. The [iterate](https://www.common-lisp.net/project/iterate/) or [Alexandria](https://github.com/keithj/alexandria) packages are two among many of the packages that provide utilities to manipulate such objects. For instance, using Alexandria it is quite easy to get a permuted series of values stored in a list:
+Gnuplot has no histogram facilities, so you have to run your own implementation, as I did in one of my [previous posts](/post/ten-years/), but see also these [SO](https://stackoverflow.com/a/5948573) [answers](https://stackoverflow.com/a/9279630) of mine. However, R or Stata provide ready-to-use implementations of this statistical estimator as `hist` (or better, `MASS:truehist`) and `histogram`. In this post, I am going to explore Common Lisp utilities to work on sequences of integer or real numbers. Indeed, Lisp comes with a class of objects, called _sequences_, which can be lists, vectors or strings. The [iterate](https://www.common-lisp.net/project/iterate/) or [Alexandria](https://github.com/keithj/alexandria) packages are two among many of the packages that provide utilities to manipulate such objects. For instance, using Alexandria it is quite easy to get a permuted series of values stored in a list:
 
 ```lisp
 (ql:quickload "alexandria")
@@ -20,7 +20,7 @@ Gnuplot has no histogram facilities, so you have to run your own implementation,
 (alexandria:shuffle s)
 ```
 
-Note that it works with strings as well (try replacing the previous list of integers with `"random string"`). Now, we need to design a little helper function that will discretize a continuous variable in $k$ buckets of data, if the list is non-empty of course. Here it is
+Note that it also works with strings (try replacing the previous list of integers with `"random string"`). Now, we need to design a little helper function that will discretize a continuous variable in $k$ buckets of data, if the list is non-empty of course. Here it is
 
 ```lisp
 (defun emptyp (lst)
@@ -60,7 +60,7 @@ There may be better alternatives to split the data into buckets, e.g. [`arnesi`]
 (2 1 1 1)
 ```
 
-Please note that we are lacking some critical information, namely the labels for each bucket counts, i.e. which range of values of `xs` correspond to each count. It would also be nice to compute an optimal number of bins automagically, e.g., using [Sturge's formula](https://en.wikipedia.org/wiki/Histogram#Sturges'_formula) or Scott's normal reference rule.[^1] Here is one way to apply the latter (outside the function body, though), using a more realistic sample of size $n=100$ of random uniform or gaussian draws from the [GSLL package](https://common-lisp.net/project/gsll/):
+Please note that we are lacking some critical information, namely the labels for each bucket counts, i.e. the range of values of `xs` corresponding to each count. It would also be nice to compute an optimal number of bins automagically, e.g., using [Sturge's formula](https://en.wikipedia.org/wiki/Histogram#Sturges'_formula) or Scott's normal reference rule.[^1] Here is one way to apply the latter (outside the function body, though), using a more realistic sample of size $n=100$ of random uniform or gaussian draws from the [GSLL package](https://common-lisp.net/project/gsll/):
 
 ```lisp
 (ql:quickload "gsll")
