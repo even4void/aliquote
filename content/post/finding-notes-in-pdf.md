@@ -5,6 +5,7 @@ draft: false
 tags: ["apple"]
 categories: ["2019"]
 ---
+
 I have never been a big fond of AppleScript or Automator, even if I may have a few scripts lurking around there, notably one that takes care of migrating all the screenshots I take from my Desktop to the "Pictures" folder, after they got renamed following a more usable convention (`yyyy-mm-dd-hh-mm-ss.png`). 
 
 <!--more-->
@@ -17,13 +18,13 @@ Using Automator, I was able to query one or more PDF files to get the annotation
 
 By the way, a convenient function to add to your bash or zsh profile to always use the right tool is given below:
 
-```zsh
+```sh
 function locate { mdfind "kMDItemDisplayName == '$@'wc"; }
 ```
 
 When you highlight some text in Preview, this type of annotation is recorded using the keyword `/Highlight` in the PDF file. It is then easy to look for such pattern using simple command-line instructions. Here is a little test in a temporary directory full of PDFs and other files that I will have to sort out one day:
 
-```shell
+```
 Trash  for f in *.pdf
 do
   if strings $f | grep /Highlight &>/dev/null; then
@@ -34,12 +35,12 @@ done
 
 So far, so good. We just need a way to tag all hits using a custom badge, yellow in this case. Some [hand-on](https://stackoverflow.com/questions/2435580/tagging-files-with-colors-in-os-x-finder-from-shell-scripts) [solutions](https://stackoverflow.com/questions/19720376/how-can-i-add-os-x-tags-to-files-programmatically) were proposed on SO, and one can also find some [command-line utility](https://github.com/jdberry/tag) (available on Homebrew) as well. I want to avoid Python or AppleScript as far as possible, so here is a quick one-liner instead, which would obviously be inserted in place of ① above:
 
-```shell
+```
 Trash  xattr -w com.apple.metadata:_kMDItemUserTags '<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd"><plist version="1.0"><array><string>Notes</string></array></plist>' 377.pdf
 ```
 
 This assumes that you already defined the tag and its color (yellow, remember?). The key lies in using `xattr` of course, which happens to be way more complicated than I initially thought due to the fact that we need to pass a complete XML Plist, but hopefully this was all simplified when I read [Brett Terpstra](https://brettterpstra.com/2017/08/22/tagging-files-from-the-command-line/)'s post on the very same topic:
 
-> (...) I sometimes implement more “down and dirty” techniques in scripts.
+> I sometimes implement more “down and dirty” techniques in scripts.
 
 So do I, but less effectively, apparently.

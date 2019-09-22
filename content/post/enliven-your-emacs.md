@@ -14,7 +14,7 @@ As I am using Doom Emacs, there is now a nice option to use Iosevka with full su
 
 Now, if you want to add some custom symbols in the `prettify-symbols-alist` variable like, e.g., Eric Kaschalk did ([Mathematical notation in Emacs](http://www.modernemacs.com/post/prettify-mode/)), you could simply use his approach or the one below (which is what I used to use in Spacemacs a few months ago):
 
-```Lisp
+```emacs-Lisp
 (defun my/pretty-symbols ()
   (setq prettify-symbols-alist
           '(("lambda" . 955)
@@ -34,8 +34,7 @@ Most of the above has become useless since `modules/ui/pretty-code/+iosevka.el` 
 
 Here is finally what I added to my `config.el` file:
 
-```Lisp
-;; -- pretty-code ------------------------------------------------------------
+```emacs-lisp
 ;; Best with custom Iosevka font. See, e.g., https://is.gd/L67AoR
 (setq +pretty-code-enabled-modes '(emacs-lisp-mode org-mode clojure-mode
                                    latex-mode scheme-mode racket-mode ess-r-mode))
@@ -72,8 +71,9 @@ Overall, I found that my daily log book looks much prettier now.
 
 ![](/img/2019-09-11-15-36-04.png)
 
-Likewise, here is some R code stolen from the [magrittr](https://magrittr.tidyverse.org) website and the pipe chapter of [R for data science](https://r4ds.had.co.nz/pipes.html) -- which doesn't mean I became a fan of using pipes in R, but let's pretend we have a decent unicode replacement for `%>%`, `%T>`, and the like:
+Likewise, here is some R code stolen from the [magrittr](https://magrittr.tidyverse.org) website and the pipe chapter of [R for data science](https://r4ds.had.co.nz/pipes.html) -- which doesn't mean I became a fan of using pipes in R, but let's pretend we have a decent unicode replacement for `%>%`, `%T>%`, and the like:[^2]
 
 ![](/img/2019-09-11-15-40-16.png)
 
 [^1]: I also found a similar suggestion on [SO](https://emacs.stackexchange.com/a/33402).
+[^2]: I'm reluctant to use arrow-like operators from Haskell.

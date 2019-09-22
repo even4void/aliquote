@@ -9,10 +9,12 @@
   {{ if ge $itemCount 2 }}
   <div class="{{ index $items 0 }}">
     <div style="padding: 0 .2em">
+      <a href="{{ index $items 1 }}" target="_blank">
       <img
         class="pure-img-responsive"
         src="{{ index $items 1 }}"
         alt="{{ if ge $itemCount 3 }}{{ index $items 2 }}{{ else }}{{ "" }}{{ end }}">
+      </a>
     </div>
   </div>
   {{ end }}

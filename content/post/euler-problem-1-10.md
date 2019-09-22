@@ -2,7 +2,7 @@
 title: "Euler Problems 1-10"
 date: 2019-07-04T15:53:39+02:00
 draft: false
-tags: ["racket", "scheme", "math", "euler"]
+tags: ["racket", "math", "euler"]
 categories: ["2019"]
 ---
 

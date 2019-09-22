@@ -1,14 +1,12 @@
-+++
-title = "Fall desk cleaning"
-date = 2010-12-27T20:12:31+01:00
-draft = false
-tags = ["readings"]
-categories = ["2010"]
-+++
+---
+title: "Fall desk cleaning"
+date: 2010-12-27T20:12:31+01:00
+draft: false
+tags: ["readings", "bioinformatics"]
+categories: ["2010"]
+---
 
-Here are a few papers dealing with genetic epidemiology that I should have read for a while.
-
-<!--more-->
+Here are a few papers dealing with genetic epidemiology that I should have read for a while:
 
 - Johnson et al., [Accounting for multiple comparisons in a genome- wide association study (GWAS)](http://www.biomedcentral.com/1471-2164/11/724), *BMC Genomics* 2010, 11:724
 - Wang, [Direct assessment of multiple testing correction in case-control association studies with related individuals](http://dx.doi.org/10.1002%2Fgepi.20555), *Genetic Epidemiology* 2010 35(1):70

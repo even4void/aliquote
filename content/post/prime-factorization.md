@@ -14,7 +14,7 @@ As I said in a [previous post](/post/decimal-numbers/), a good number of Euler p
 
 As noted on [Programming Praxis](https://programmingpraxis.com/2011/09/20/project-euler-problem-3/), most of the problems offered on the Euler project will exceed 32-bits arithmetic for integers, so you have to rely on external libraries (e.g., [gmp](https://gmplib.org)) or don't bother at all and use PLs supporting large integers, such as Python, Lisp or Scheme. On the same blog post, you will find a nice algorithm to find the factors of a given input number $n$. In fact, [Problem 3](https://projecteuler.net/problem=3) from the Euler project asks us to find the largest prime factor of the number 600851475143. That's quite an easy task in Racket since there is a submodule related to number theory in the [math](https://docs.racket-lang.org/math/index.html?q=math) module:
 
-```lisp
+```racket
 (require math)
 
 (define (largest-prime-factor x)
@@ -31,7 +31,7 @@ Common Lisp code is available on [Rosetta](https://rosettacode.org/wiki/Millerâ€
 
 Here is a simple version of fast modular exponentiation in Scheme available on the [Community Scheme Wiki](http://community.schemewiki.org/?sicp-ex-1.27): (Note that this is also available in the [online version](https://mitpress.mit.edu/sites/default/files/sicp/full-text/book/book-Z-H-11.html#%_sec_1.2.6) of the SICP.)
 
-```lisp
+```scheme
 (define (square x) (* x x))
 
 (define (expmod base exp m)
@@ -46,7 +46,7 @@ Here is a simple version of fast modular exponentiation in Scheme available on t
 
 Therefrom, it is quite easy to implement Fermat primality test:
 
-```lisp
+```scheme
 (define (fermat-test n)
   (define (test a)
     (= (expmod a n n) a))

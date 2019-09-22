@@ -33,7 +33,7 @@ Matplot.plot(M)
 
 ### Sidenote
 
-As of June, the 27th, there are problem with the `gp` package (`gp_submodel.py` isn't in the source distribution, nor does it commes from the Universal installer through pypi). This is discussed on one [Google group][Google group] thread. I happened to setup a working version of PyMC by downloading the source from the [Github repository][Github repository] and compiling from scratch, with the following commands:
+As of June, the 27th, there are problem with the `gp` package (`gp_submodel.py` isn't in the source distribution, nor does it comes from the Universal installer through [pipy][pipy]). This is discussed on one [Google group][Google group] thread. I happened to setup a working version of PyMC by downloading the source from the [Github repository][Github repository] and compiling from scratch, with the following commands:
 
 ```
 $ export LDFLAGS="-Wall -lgfortran -undefined dynamic_lookup -bundle -arch x86_64"
@@ -46,6 +46,6 @@ $ sudo python setup.py install
 
 [Bayesian analysis with R]: bayesian-analysis-with-R.html
 [PyMC]: http://code.google.com/p/pymc/
-[pipy]: http:// pypi.python.org/
+[pipy]: http://pypi.python.org/
 [Google group]: http://groups.google.com/group/pymc/browse_thread/thread/1585b7f9f33cf6d?pli=1
 [Github repository]: http://github.com/pymc-devs/pymc

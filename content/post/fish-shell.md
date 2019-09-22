@@ -2,7 +2,7 @@
 title: "Enter the Fish shell"
 date: 2019-08-16T20:30:49+02:00
 draft: false
-tags: ["misc", "apple"]
+tags: ["apple"]
 categories: ["2019"]
 ---
 

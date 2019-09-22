@@ -1,16 +1,12 @@
-+++
-title = "Ensemble Methods in Data Mining"
-date = 2011-08-22T12:39:34+01:00
-draft = false
-tags = ["readings", "statistics"]
-categories = ["2011"]
-+++
+---
+title: "Ensemble Methods in Data Mining"
+date: 2011-08-22T12:39:34+01:00
+draft: false
+tags: ["readings", "statistics"]
+categories: ["2011"]
+---
 
-This is a short review of [Ensemble Methods in Data Mining](http://www.morganclaypool.com/doi/abs/10.2200/S00240ED1V01Y200912DMK002?journalCode=dmk), by G. Seni and J. Elder (Morgan & Claypool, 2010).
-
-I won't get over the whole textbook, but rather summarize the introductory chapter which provides a nice overview of how ensemble methods work and why they are interesting from a predictive perspective.
-
-![book](/img/20110819123038.png)
+This is a short review of [Ensemble Methods in Data Mining](http://www.morganclaypool.com/doi/abs/10.2200/S00240ED1V01Y200912DMK002?journalCode=dmk), by G. Seni and J. Elder (Morgan & Claypool, 2010). I won't get over the whole textbook, but rather summarize the introductory chapter which provides a nice overview of how ensemble methods work and why they are interesting from a predictive perspective.
 
 As it is well known, there is a large variety of DM algorithms whose predictive accuracy depends on the problem at hand. Choosing the right algorithm (we might even call this model selection, provided we were to test several of them one against the other) is then a matter of knowledge. However, "there is a way to improve model accuracy that is easier and more powerful than judicious algorithm selection: one can gather models into ensembles."
 
@@ -51,20 +47,20 @@ The conclusion of all studies done in this field of research is that generally "
 
 ### References
 
-1. Breiman, L. (1996). Bagging predictors. *Machine Learning*, **26(2)**: 123-140.
+1. Breiman, L. (1996). Bagging predictors. *Machine Learning*, 26(2): 123-140.
 2. Ho, T.K. (1995). Random Decision Forests. 3rd Intl. *Conference on Document Analysis and Recognition*, 278-282.
 3. Breiman, L. (2001). *Random Forests, random features*. Berkeley: University of California.
 4. Freund, Y. and Shapire, R.E. (1996). Experiments with a new boosting algorithm. *Machine Learning: Proceedings of the 13th International Conference*, 148-156.
 5. Friedman, J. (1999). *Stochastic Gradient Boosting*. Statistics, Stanford University.
-6. Friedman, J. (2001). Greedy function approximation: the gradient boosting machine. *Annals of Statistics*, **29(2)**: 1189-1232.
-7. Ivakhenko, A.G. (1968). The group method of data handling–A rival of the method of stochastic approximation. *Soviet Automatic Control*, **3**: 43-71.
+6. Friedman, J. (2001). Greedy function approximation: the gradient boosting machine. *Annals of Statistics*, 29(2): 1189-1232.
+7. Ivakhenko, A.G. (1968). The group method of data handling–A rival of the method of stochastic approximation. *Soviet Automatic Control*, 3: 43-71.
 8. Barron, R.L., Mucciardi, A.N., Cook, A.N., Craig, J.N., and Barron, A.R. (1984). Adaptive learning networks: Development and application in the United States of algorithms related to GMDH. In *Self-Organizing Methods in Modeling: GMDH Type Algorithms*, S.J. Farlow (ed.), pp. 25-65. New York: Marcel Dekker.
 9. Elder, J.F. and Brown, D.E. (2000). Induction and polynomial networks. In *Network Models for Control and Processing*. M.D. Fraser (ed.), pp. 143-198. Portland: Intellect.
-10. Wolpert, D. (1992). Stacked Generalization. *Neural Networks*, **5**: 241-259.
-11. Tibshirani, R. (1996). Regression shrinkage and selection via the lasso. *Journal of the Royal Society B*, **58**: 267-288.
+10. Wolpert, D. (1992). Stacked Generalization. *Neural Networks*, 5: 241-259.
+11. Tibshirani, R. (1996). Regression shrinkage and selection via the lasso. *Journal of the Royal Society B*, 58: 267-288.
 12. Breiman, L., Friedman, J.H., Olshen, R., and Stone, C. (1993). *Classification and Regression Trees*. Chapman & Hall/CRC.
-13. Efron, B., Hastie, T., Johnstone, I., and Tinshirani, R. (2004). Least Angle Regression. *Annals of Statistics*, **32(2)**: 407-499.
+13. Efron, B., Hastie, T., Johnstone, I., and Tinshirani, R. (2004). Least Angle Regression. *Annals of Statistics*, 32(2): 407-499.
 14. Friedman, J. and Popescu, B.E. (2004). *Gradient directed regularization for linear regression and classification*. Statistics, Stanford University.
 15. Friedman, J.H. (2008). *Fast sparse regression and classification*. Statistics, Stanford University.
 16. Zou, H. and Hastie, T. (2005). Regularization and Variable Selection via the Elastic Net. *SIAM workshop on Variable Selection*. Newport Beach, CA.
-17. Ye, J. (1998). On measuring and correcting the effects of data maining and model selection. *Journal of the American Statistical Association*, **93(441)**: 120-131.
+17. Ye, J. (1998). On measuring and correcting the effects of data maining and model selection. *Journal of the American Statistical Association*, 93(441): 120-131.

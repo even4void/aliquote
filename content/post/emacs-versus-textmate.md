@@ -1,26 +1,18 @@
-+++
-title = "Emacs versus Textmate"
-date = 2010-05-25T11:38:49+01:00
-draft = false
-tags = ["emacs", "apple"]
-categories = ["2010"]
-[[gallery_item]]
-album = "1"
-image = "20100702203401.png"
-caption = ""
-[[gallery_item]]
-album = "1"
-image = "20100702203412.png"
-caption = ""
-[[gallery_item]]
-album = "1"
-image = "20100702203450.png"
-caption = ""
-+++
+---
+title: "Emacs versus Textmate"
+date: 2010-05-25T11:38:49+01:00
+draft: false
+tags: ["emacs", "apple"]
+categories: ["2010"]
+---
 
 Yes, it seems like another post about the best editor for the Mac. I spent two months using Textmate as my main editor for various stuff, but mainly tex and R editing. I always used Emacs before, but I decided to give Textmate a try, juste once again. Note that I am using the MacOSized version of Emacs, namely [Aquamacs][Aquamacs].
 
-{{< gallery album="1" >}}
+{{< fluid_imgs
+  "pure-u-1-2|/img/20100702203401.png"
+  "pure-u-1-2|/img/20100702203412.png" >}}
+
+![Textmate](/img/20100702203450.png)
 
 Hereafter, I enumerate useful functionalities that are expected when using a text editor for coding or text editing (I emphasized the conjunction because my own texts mostly are in text or tex mode). For keybinding, I use the convention from Emacs and Textmate communities, where <kbd>M</kbd> means the meta or escape (<kbd>⎋</kbd>) key, <kbd>C</kbd> the control (<kbd>⌃</kbd>) key and <kbd>A</kbd> the alt (<kbd>⌥</kbd>) key.
 
