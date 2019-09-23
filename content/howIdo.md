@@ -1,9 +1,8 @@
-+++
-title = "How I do"
-date = 2018-01-20T00:00:00
-lastmod = 2018-01-20T00:00:00
-url = "/articles/how-i-do/"
-+++
+---
+title: "How I do"
+date: 2018-01-20T00:00:00
+url: "/articles/how-i-do/"
+---
 
 ## How do I... (but not why)
 

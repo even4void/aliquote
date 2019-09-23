@@ -5,7 +5,8 @@ theme = "aliquote"
 paginate = 10
 enableRobotsTXT = true
 
-pygmentsUseClasses = false
+# disable
+pygmentsUseClasses = true
 pygmentsStyle = "bw"
 pygmentsCodefences = true
 pygmentsCodefencesGuessSyntax = true
