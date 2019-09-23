@@ -1,8 +1,8 @@
-+++
-title = "Modules Stata"
-date = 2018-05-24T00:00:00
-url = "/articles/stata-sk/"
-+++
+---
+title: "Modules Stata"
+date: 2018-05-24T00:00:00
+url: "/articles/stata-sk/"
+---
 
 ## Stata modules 
 
@@ -12,13 +12,13 @@ Here is a collection of tutorials and recipes to learn Stata and getter a better
 
 Voici une collection de tutoriels pour apprendre Stata et comprendre comment ça se passe sous le capot. Tout a été testé avec Stata 15 sur Mac OS X dans un premier temps, puis Stata 13 MP et, hormis les commandes spécifiques de la dernière version (p. ex., `bayes:`), tout devrait fonctionner avec Stata 13 ou 14. Ces pages ont été rédigées avec le [mode Org](https://orgmode.org) sous Emacs.
 
-1. Un aperçu rapide de Stata {{< ressource "stack-overflow" "./00-intro.html" "HTML" >}}
-2. La gestion des données avec Stata {{< ressource "stack-overflow" "./01-data.html" "HTML" >}}
-3. Exploration des données et visualisations graphiques {{< ressource "stack-overflow" "./02-graphics.html" "HTML" >}}
-4. Modélisation statistique {{< ressource "stack-overflow" "./03-glm.html" "HTML" >}}
-5. Analyse de variance et plans d'expérience {{< ressource "stack-overflow" "./04-anova.html" "HTML" >}}
-6. Programmation {{< ressource "stack-overflow" "./05-programming.html" "HTML" >}}
-7. Packages utiles {{< ressource "stack-overflow" "./99-packages.html" "HTML" >}}
+1. [Un aperçu rapide de Stata](./00-intro.html) 
+2. [La gestion des données avec Stata](./01-data.html)
+3. [Exploration des données et visualisations graphiques](./02-graphics.html)
+4. [Modélisation statistique](./03-glm.html)
+5. [Analyse de variance et plans d'expérience](./04-anova.html)
+6. [Programmation](./05-programming.html)
+7. [Packages utiles](./99-packages.html)
 
 
 [Github](https://github.com/even4void/stata-sk) • [Changelog](./history.txt)
