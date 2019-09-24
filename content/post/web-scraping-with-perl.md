@@ -1,29 +1,23 @@
-+++
-title = "Web scraping with Perl"
-date = 2010-04-04T08:49:55+01:00
-draft = false
-tags = ["perl"]
-categories = ["2010"]
-+++
+---
+title: "Web scraping with Perl"
+date: 2010-04-04T08:49:55+01:00
+draft: false
+tags: ["perl"]
+categories: ["2010"]
+---
 
 
-Since I need to get all ICD9 codes for my work, I decided to implement a lightweight web crawler in Perl, with the aims of parsing all codes found at [ICD9Data.com][ICD9Data.com].
+Since I needed the list of all ICD9 codes for my work, I decided to implement a lightweight web crawler in Perl, with the aims of parsing all codes found at [ICD9Data.com][ICD9Data.com].
 
-<!--more-->
-
-It seems that the [WWW-Mechanize][WWW-Mechanize] module provides all that is needed. In fact, I also realized that this technique may be extended to catch up anything on a website, which is called web scraping.
+It seems that the [WWW-Mechanize][WWW-Mechanize] module provides all what I needed. In fact, I also realized that this technique may be extended to catch up anything on a website, which is called web scraping.
 
 
-> Web scraping is the process of automatically collecting Web information. Web scraping is a field with active developments sharing a common goal with the semantic Web vision, an ambitious initiative that still requires breakthroughs in text processing, semantic understanding, artificial intelligence and human-computer interactions. Web scraping, instead, favors practical solutions based on existing technologies even though some solutions are entirely ad hoc.
-> -- <http://en.wikipedia.org/wiki/Web_scraping>
+> Web scraping is the process of automatically collecting Web information. Web scraping is a field with active developments sharing a common goal with the semantic Web vision, an ambitious initiative that still requires breakthroughs in text processing, semantic understanding, artificial intelligence and human-computer interactions. Web scraping, instead, favors practical solutions based on existing technologies even though some solutions are entirely ad hoc. --- <http://en.wikipedia.org/wiki/Web_scraping>
 
 
-The final result will be available on my website soon.
-
-While reading the on-line Perl receipes, I took the occasion to adapt one example script to download all ConTeXt manuals from the [PRAGMA][PRAGMA] website. However, I just realized that almost all manuals are available in tex format at http://context.aanhet.net/svn/.
+The final result will be available on my website soon. While reading the on-line Perl receipes, I took the occasion to adapt one example script to download all ConTeXt manuals from the [PRAGMA][PRAGMA] website. However, I just realized that almost all manuals are available in $\TeX$ format at http://context.aanhet.net/svn/.
 
 ### Update
-
 
 I found in Berman's *Perl Programming for Medicine and Biology* (2007, Jones and Bartlett Publishers) another Perl script that the author suggested for collecting the ICD codes from the UMLS metathesaurus (Chapter 5). The [UMLS][UMLS] metathesaurus is actually the largest medical nomenclature, and it includes more than 100 different biomedical vocabularies with about 6 million term records. These term records are in a file named MRCONSO which is available at no cost, provided you first register on UML website. Here is an example of what it looks like:
 

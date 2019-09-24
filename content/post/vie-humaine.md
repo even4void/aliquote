@@ -8,8 +8,6 @@ categories: ["2018"]
 
 Lu dans la [dernière édition du Monde](https://www.lemonde.fr/idees/article/2018/09/29/chiffrer-le-prix-d-une-vie-humaine_5362088_3232.html) ce week-end.
 
-<!--more-->
-
 > Dans les années 1960, on suggéra d'utiliser plutôt une estimation des salaires nets perçus au cours d'une vie de pilote, supposés refléter l'utilité matérielle dudit métier. Ce n'était pas satisfaisant. (...) Le problème piqua l'attention de Thomas Schelling, spécialiste de la modélisation économique des conflits qui obtint le prix Nobel en 2005, et de son étudiant Jack Carlson, lui-même ancien pilote militaire. Se fondant sur son expérience, ce dernier proposa d'inférer des améliorations apportées par son ex-employeur au système d'éjection des avions B-58 la valeur que celui-ci donnait à la vie de son personnel : la mise au point d'un tel système coûtait 80 000 dollars et permettait d'augmenter la probabilité de survie de quelques points.
 
 Je trouve le raisonnement et la méthode de quantification assez étranges (bien qu'originaux, il faut en convenir) et j'ai du mal à raccrocher tout cela à quelque chose de tangible. Pourquoi ne pas considérer le coût total que représentent les soins médicaux prodigués à une personne ayant subi un grave accident ou, plus simplement, une personne en fin de vie afin, justement, de les maintenir en vie ?

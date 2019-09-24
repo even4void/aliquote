@@ -8,8 +8,6 @@ categories: ["2019"]
 
 Some fresh news, probably expired already.
 
-<!--more-->
-
 It's already the end of May. I didn't see the time pass, or rather yes, but just because of this throbbing fatigue that nails me in my couch as soon as I get home from work. It's okay, I don't have any plans anyway. I spent a good part of my time building a website (Python+Flask+Postresql) for work, at my own pace. I never thought I'd find myself being so slow at times. But when I have dizziness or hypotension lurking around, there's no need to look for the slightest bug in a file, I'm just going into a freefall (in my head, as well as physically). I can cope with that too. The job is okay, I don't mind not being a statistican anymore. I'm definitely done with medical statistics in any case. Also, I mean, I probably have only a few years left so that I can't really get attached--and I should not. I always loved working as a computer scientist, so in a way this bioinformatics job is almost perfect under the circumstances.
 
 Other than that, I managed to read a few books anyway, and to watch a few movies--in several stages, each time, because I'm at the end of my life in the evening after two beers! My son and I enjoyed watching the last season of _The Walking Dead_, and we are now busy with the latest season of _Game of Thrones_. This should not take a long time since the producers decided to shorten it to 6 episodes, if I understand correctly. Next one on the radar is _The 100_, season 5.

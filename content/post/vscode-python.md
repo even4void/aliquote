@@ -5,9 +5,8 @@ draft: false
 tags: ["python", "emacs"]
 categories: ["2019"]
 ---
-I tried [VS Code](https://code.visualstudio.com) during a few days for Python development. It looks like folks at Microsoft did a really great job at integrating so nicely Python into this IDE, which itself has greatly improved over time.
 
-<!--more-->
+I tried [VS Code](https://code.visualstudio.com) during a few days for Python development. It looks like folks at Microsoft did a really great job at integrating so nicely Python into this IDE, which itself has greatly improved over time.
 
 What's up with Emacs or Spacemacs? I have been using the LSP mode for dealing with projects. It works effectively, but I sometimes find it not as responsive as I would like it. Not that I am working on big projects mot of the day, quite the opposite (a few dozens of files generally), but depending on MELPA updates, I'm facing unstable or unresponsive behavior from time to time. So I decided on Thursady to give another try to VS Code, after having stopped using Atom a few months ago. That we need 800 Mo of RAM for a text editor in idle mode is a lot more than I can tolerate for my MacBook; plus there's no way to get a terminal for real, and I think I have gone through all [Bodil Stoke](https://github.com/bodil/ohai-atom)'s proposals before I realized that configuring an editor using JS is just a crazy thing. Still, I love the design and look'n feel of Atom, and I miss the [Hydrogen](https://atom.io/packages/hydrogen) package. 
 

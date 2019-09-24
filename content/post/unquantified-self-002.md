@@ -8,11 +8,9 @@ categories: ["2018"]
 
 Not much to say as an intro. This is just about me, I'm the one talking.
 
-<!--more-->
-
 I've spent some good time with Apple Music. Here is a lovely playlist from the ECM Records:
 
-<iframe src="https://tools.applemusic.com/embed/v1/playlist/pl.2be32369b46d4c7ea419141a34295e6b?country=fr" height="380px" width="60%" frameborder="0"></iframe>
+<iframe src="https://tools.applemusic.com/embed/v1/playlist/pl.2be32369b46d4c7ea419141a34295e6b?country=fr" height="380px" width="100%" frameborder="0"></iframe>
 
 I've heard about [Roon](https://www.baty.net/2018/the-roon-music-player-is-awesome/) but iTunes relayed on my amp is enough for me right now.
 

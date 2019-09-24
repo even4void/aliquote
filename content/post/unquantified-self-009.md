@@ -8,8 +8,6 @@ categories: ["2019"]
 
 Long time no see. Here are some news from the past already.
 
-<!--more-->
-
 I have been pretty busy with daily work, except the last few weeks where I was almost done with ongoing projects. Although my main programming activities were in Python, I took some time to use Common Lisp again, and to learn more seriously Racket and OCaml. Next on the radar is Clojure, of course. However, this does not mean I had so much time to rest since I also started a new anti-hypertensive treatment after my annual hospitalization day, which resulted in a drop in blood pressure to 9/5 and severe hyperkalemia that needed to be urgently corrected. Nothing but happiness the last three days!
 
 We didn't waste any time with the TV series, my son and I, and we are now on the _Chernobyl_ series after a few detours on trilogies dating back about ten years (_John Wick_, _Taken_, _Jason Bourne_), [as planned](/post/unquantified-self-006/). A picture is worth thousand words:

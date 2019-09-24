@@ -1,16 +1,12 @@
-+++
-title = "Yet another interactive shell for numerical computing: Numeric Lua"
-date = 2011-01-31T21:39:58+01:00
-draft = false
-tags = ["apple"]
-categories = ["2011"]
-+++
+---
+title: "Yet another interactive shell for numerical computing"
+date: 2011-01-31T21:39:58+01:00
+draft: false
+tags: ["apple"]
+categories: ["2011"]
+---
 
-Here is a brief overview of how to manually install [Numeric Lua](http://numlua.luaforge.net/) on OS X.
-
-<!--more-->
-
-I compiled [Lua](http://www.lua.org/) 5.1 some months ago. My header files are in `/usr/local`:
+Here is a brief overview of how to manually install [Numeric Lua](http://numlua.luaforge.net/) on OS X. I compiled [Lua](http://www.lua.org/) 5.1 some months ago. My header files are in `/usr/local`:
 
 ```
 $ find /usr/local/include/ -name "*lua*"
@@ -20,7 +16,7 @@ $ find /usr/local/include/ -name "*lua*"
 /usr/local/include//lualib.h
 ```
 
-There exists a [binary version](http://luabinaries.luaforge.net/) of Lua, but also a [Framework version](http://www.frykholm.se/luaframework.html).
+There exists a [binary version](http://luabinaries.luaforge.net/) for Lua, but also a [Framework version](http://www.frykholm.se/luaframework.html).
 
 Installation of `num-lua` went file after "some" modifications for OS X.
 
@@ -34,7 +30,7 @@ make
 sudo make install
 ```
 
-This doesn't work on OS X. The standard installation instruction for a linux architecture won't work because of a number of separate issues; the main critical fixes are:
+This doesn't work on OS X. The standard installation instruction for a Linux architecture won't work because of a number of separate issues; the main critical fixes are:
 
 - we need to replace `f77` by `gfortran`;
 - the `-lg2c` flag is not appropriate with `gfortran` (because it only works with `f77`).;
@@ -42,35 +38,33 @@ This doesn't work on OS X. The standard installation instruction for a linux arc
 
 The last trick is to link to the BLAS and LAPACK routines, which on OS X means to link against the [Accelerate framework](http://developer.apple.com/performance/accelerateframework.html).[^1]
 
-The main steps are thus to correct the Fortran and BLAS/LAPACK stuff in the `lib/` directory. In particular, we ask not to generate `libblas.a` and `liblapack.a`, although I suspect using `make noblas` would work. I was inspired by the patches available for the Macports version of num-lua. Here are my own patch files: <i class="fa fa-file-code-o fa-1x"></i> [num-lua_patch.tar.gz](http://www.aliquote.org/pub/num-lua_patch.tar.gz).
+The main steps are thus to correct the Fortran and BLAS/LAPACK stuff in the `lib/` directory. In particular, we ask not to generate `libblas.a` and `liblapack.a`, although I suspect using `make noblas` would work. I was inspired by the patches available for the Macports version of `num-lua`. Here are my own patch files: [num-lua_patch.tar.gz](/pub/num-lua_patch.tar.gz).
 
-The problem was then that lua was not able to find `luarng.so`, which got installed in `/usr/local/lib` while default search path was `/usr/local/lib/lua/5.1/`. This is because the path were not correct in the `Makefile`. Let's go with the quick and dirty way (I shall correct the `Makefile` later):
+The problem was then that Lua was not able to find `luarng.so`, which got installed in `/usr/local/lib` while default search path was `/usr/local/lib/lua/5.1/`. This is because the path were not correct in the `Makefile`. Let's go with the quick and dirty way (I shall correct the `Makefile` later):
 
 ```
 $ sudo mv /usr/local/lib/lua*.so /usr/local/lib/lua/5.1/
 ```
 
-Then, another problem emerged: I have a 64-bit `lua`, but I compiled `num-lua` as 32-bits only. So, I recompiled everything, removing the `-m32` flag when calling `gcc`.
+Then, another problem emerged: I have a 64-bit `lua`, but I compiled `num-lua` as 32-bits only. So, I recompiled everything, removing the `-m32` flag when calling `gcc`. Soon I ran into trouble with `luaspfun`:
 
-Ok, then I ran again in trouble with `luaspfun`:
-
-```
+```lua
 require "numlua"
 ```
 
-gives me
+The above gives me:
 
 ```
 dlopen(/usr/local/lib/lua/5.1/luaspfun.so, 2): Symbol not found: _cdfbet_
 ```
 
-However, 
+However, the following works:
 
 ```
 require "luarng"
 ```
 
-works. Way cool, it seems that it likely comes from the Fortran code... On closer inspection, it looks like there's a problem with `lib/dcdflib/cdfbet.f` because `cdfbet.o` appears as `Mach-O object i386`. So the problem is that `gfortran` compiled everything in 32-bit mode! I added the `-m64` switch to get a `Mach-O 64-bit object x86_64`.
+Way cool, it seems that it likely comes from the Fortran code... On closer inspection, it looks like there's a problem with `lib/dcdflib/cdfbet.f` because `cdfbet.o` appears as `Mach-O object i386`. So the problem is that `gfortran` compiled everything in 32-bit mode! I added the `-m64` switch to get a `Mach-O 64-bit object x86_64`.
 
 Now it works, except for `spfun`:
 
@@ -100,9 +94,7 @@ Lua 5.1.4  Copyright (C) 1994-2008 Lua.org, PUC-Rio
  SLATEC     INITDS     Chebyshev series too         1         1         1
 ```
 
-Well, I have no idea of what's going on. My best bet is that there still is a problem with the fortran code.
-
-Other pieces of code seems to work, so I will investigate this later (I already spent one hour to get compilation and installation to work...).
+Well, I have no idea of what's going on. My best bet is that there still is a problem with the fortran code. Other pieces of code seems to work, so I will investigate this later (I already spent one hour to get compilation and installation to work...):
 
 ```
 $ lua

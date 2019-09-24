@@ -1,18 +1,16 @@
-+++
-title = "Why I am still using Emacs"
-date = 2015-08-15T15:11:20+01:00
-draft = false
-tags = ["emacs", "apple"]
-categories = ["2015"]
-+++
+---
+title: "Why I am still using Emacs"
+date: 2015-08-15T15:11:20+01:00
+draft: false
+tags: ["emacs", "apple"]
+categories: ["2015"]
+---
 
 Some months ago I noticed the release of a new text editor which was supposed to bring the best of both world, Emacs and Vim, but see [Spacemacs - First Impressions From an Emacs Driven Developer](http://jr0cket.co.uk/2015/08/spacemacs-first-impressions-from-an-emacs-driven-developer.html) for a recent review.
 
-<!--more-->
-
 ## Spacemacs
 
-I tried [Spacemacs](https://github.com/syl20bnr/spacemacs) yesterday and I must say this should be great for people used to Vim modal approach to interacting with buffer and text. However, I feel like it is too much for Emacs users (even with the [Holy mode](https://github.com/syl20bnr/spacemacs/blob/master/doc/DOCUMENTATION.org#holy)), and I stand on my [custom settings]({{< ref "/post/a-modular-configuration-for-emacs.md" >}}). These are certainly not the best ones, but this configuration suits my needs and that's all that matters after all! I should probably update my configuration with the [use-package macro](https://github.com/jwiegley/use-package), which allows lazy loading of packages among (so many) other things, but I do not have much time at the moment. This is indeed another great advantage of Spacemacs: it is super fast!
+I tried [Spacemacs](https://github.com/syl20bnr/spacemacs) yesterday and I must say this should be great for people used to Vim modal approach to interacting with buffer and text. However, I feel like it is too much for Emacs users (even with the [Holy mode](https://github.com/syl20bnr/spacemacs/blob/master/doc/DOCUMENTATION.org#holy)), and I stand on my [custom settings](/post/a-modular-configuration-for-emacs). These are certainly not the best ones, but this configuration suits my needs and that's all that matters after all! I should probably update my configuration with the [use-package macro](https://github.com/jwiegley/use-package), which allows lazy loading of packages among (so many) other things, but I do not have much time at the moment. This is indeed another great advantage of Spacemacs: it is super fast!
 
 I must admit that the Spacemacs UI is really well designed, especially the [modeline](https://github.com/syl20bnr/spacemacs/blob/master/doc/DOCUMENTATION.org#mode-line), and the concept of general and private layers. The core packages are available in [spacemacs/package.el](https://github.com/syl20bnr/spacemacs/blob/master/spacemacs/packages.el); as can be seen, the authors choose some of the best packages around the ones available on MELPA. Regarding Spacemacs modeline, I found a lot of discussion on the internet (e.g., on [reddit](https://www.reddit.com/r/emacs/comments/36qo2l/i_tried_to_copy_the_spacemacs_powerline_theme_my/)) because people seem to enjoy a lot its look-and-feel. I even found [one implementation](https://github.com/ashutoshrishi/emacs-personal/blob/master/personal/theming.el) of Spacemacs modeline, although it is likely that a dedicated package will be release by the Spacemacs team in the near future.
 
@@ -23,11 +21,11 @@ Since I am not a Vim user, I cannot tell whether Spacemacs can lead Vim users to
 
 ## Some updates
 
-Why am I still using Emacs? Well, I guess this is always the [same story]({{< ref "/post/writing-a-book.md" >}})…
+Why am I still using Emacs? Well, I guess this is always the [same story](/post/writing-a-book).
 
 I decided to use [company](http://company-mode.github.io) and get ride of auto-complete. I am aware of the [pros and cons](https://github.com/company-mode/company-mode/issues/68) but I wanted to give it a try really. I also decided to use [Helm](https://emacs-helm.github.io/helm/) in addition to [ido](http://emacswiki.org/emacs/InteractivelyDoThings). It can be used together with `company`, [dash](https://github.com/areina/helm-dash) (be sure to use the built-in `eww` browser instead of default OS application) and [projectile](http://batsov.com/projectile/). I also added [neotree](https://github.com/jaypei/emacs-neotree) (with `ascii` theme) and [anzu](https://github.com/syohex/emacs-anzu). I enabled [flycheck](http://www.flycheck.org) globally and added R support via [lintr](https://github.com/jimhester/lintr) (in fact, this is managed by ESS directly, so we just need to install the R package). I customized the flycheck modeline by following [Sebastian Wiesner](http://www.lunaryorn.com/2014/07/30/new-mode-line-support-in-flycheck.html)'s example. I also found a pretty low-contrast theme: [apropospriate](https://github.com/waymondo/apropospriate-theme).
 
-Finally, I upgrade Emacs to the latest development version (this was required to get projectile to work anyway, see [this issue](https://github.com/bbatsov/projectile/issues/780)).
+Finally, I upgrade Emacs to the latest development version (this was required to get projectile to work anyway, see [this issue](https://github.com/bbatsov/projectile/issues/780)):
 
 ```
 % brew install emacs --HEAD --use-git-head --with-cocoa --srgb
@@ -38,7 +36,7 @@ GNU Emacs 25.0.50.1
 I noticed that Homebrew now provides a direct link for running emacs in a Terminal (`/usr/local/Cellar/emacs/HEAD/bin`), although I am still using this little Bash script (`/usr/local/bin/emacs`):
 
 ```
-#!/bin/bash
+#!/usr/bin/env bash
 exec /usr/local/Cellar/emacs/HEAD/Emacs.app/Contents/MacOS/Emacs -nw  "$@"
 ```
 
@@ -46,9 +44,9 @@ Here is how my Emacs looks like by now:
 
 ![Emacs look'n feel](/img/emacs.png)
 
-My modeline is much less developped but I am happy with it. Here is what I have in some of my configuration files:
+My modeline is much less developed but I am happy with it. Here is what I have in some of my configuration files:
 
-```lisp
+```emacs-lisp
 (require 'powerline)
 (powerline-vim-theme)
 (global-anzu-mode +1)

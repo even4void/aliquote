@@ -1,14 +1,12 @@
-+++
-title = "Weaving Stata Documents"
-date = 2012-04-22T10:06:55+01:00
-draft = false
-tags = ["stata", "tex"]
-categories = ["2012"]
-+++
+---
+title: "Weaving Stata Documents"
+date: 2012-04-22T10:06:55+01:00
+draft: false
+tags: ["stata", "tex"]
+categories: ["2012"]
+---
 
 [StatWeave](http://www.divms.uiowa.edu/~rlenth/StatWeave/) has been recently updated and it has become a powerful engine for weaving [Stata](http://www.stata.com) documents.
-
-<!--more-->
 
 ## StatWeave
 
@@ -23,30 +21,29 @@ twoway (scatter gp100m disp) (line g_hat disp, sort), by(foreign)
 
 The [STATWEAVE Users’ Manual](http://www.divms.uiowa.edu/~rlenth/StatWeave/StatWeave-manual.pdf) has more informations on running and customizing StatWeave. I think it should not be too difficult to create language-specific files for, e.g. [Julia](https://julialang.org/) or [gsl-shell](http://www.nongnu.org/gsl-shell/).
 
-
 ## Context filter
 
-Nowadays, the Context [filter](https://github.com/adityam/filter) module allows to call external programs, like R, pandoc, or Asymptote, and insert their results into our $\TeX$ document. That's really awesome because it means that we can build dynamic documents that keep in sync with accompanying code or simulation, à la Sweave. There are nice demos in the `tests/` directory in the abobe Github repository.
+Nowadays, the Context [filter](https://github.com/adityam/filter) module allows to call external programs, like R, Pandoc, or Asymptote, and insert their results into our $\TeX$ document. That's really awesome because it means that we can build dynamic documents that keep in sync with accompanying code or simulation, à la Sweave. There are nice demos in the `tests/` directory in the aforementioned Github repository.
 
 I tested the R weaving option, and it works quite well although I noticed two minor points: (a) a `proc.time()` command is issued at the end of each R chunk, and (b) we have to explicitly ask to save graphics before embedding them in our document. The first issue is easily solved by modifying the `filtercommand`:
 
-```latex
+```
 filtercommand={R CMD BATCH -q --no-timing %
   --\externalfilterparameter{mode} %
   \externalfilterinputfile\space \externalfilteroutputfile}
 ```
 
-Adding `--no-timing` will ensure R will exit without printing elapsed time. I added another option, `--\externalfilterparameter{mode}`, which allows to write things like
+Adding `--no-timing` will ensure R will exit without printing elapsed time. I added another option, `--\externalfilterparameter{mode}`, which allows to write things like what is shown below:
 
-```latex
+```context
 \startR[mode=slave]
 summary(x)
 \stopR
 ```
 
-to get results returned by R only (well, it's a bit crappy but it works). The second issue should easily be solved by saving all graphics into a single PDF file, and using `\externalfigure` command with a `page=` option. This is what I use with <span class="latex">LaT<sub>e</sub>X</span> and it works quite well. So, we could add something like
+to get results returned by R only (well, it's a bit crappy but it works). The second issue should easily be solved by saving all graphics into a single PDF file, and using `\externalfigure` command with a `page=` option. This is what I use with <span class="latex">LaT<sub>e</sub>X</span> and it works quite well. So, we could add something like this:
 
-```latex
+```context
 \startR[read=no]
 pdf("figs.pdf")
 \stopR
@@ -54,9 +51,7 @@ pdf("figs.pdf")
 
 at the beginning of our document, and a `dev.off()` command at the end. This way, we just have to call `\externalfigure` while incrementing page number after each call.
 
-What about Stata?
-
-A basic filter would look like
+What about Stata? A basic filter would look like:
 
 ```
 $ stata -q -b do \externalfilterinputfile
@@ -65,7 +60,9 @@ $ stata -q -b do \externalfilterinputfile
 which tells Stata to process `\externalfilterinputfile` `do` file in batch mode. Again, there are some caveats with the above command: it will leave something like `end of do file` as well as a leading Stat prompt (`.`) at the end of the Stata code chunk.
 
 I wrote a small Bash script to post-process Stata `do` file available as a Gist: 
-{{< gist chlalanne 2439496 >}}
+
+{{< gist even4void 2439496 >}}
+
 It has few options: keep only results (i.e., remove Stata commands), and/or tidy up the log file by removing extra blank lines. If the `do` file includes `-graph export-` commands, they are removed as well. (Almost everything is done with `sed`.)
 
 ```
@@ -96,9 +93,7 @@ I defined the following filter:
     continue=yes]
 ```
 
-For an unknown reason, it works for printing Stata code and results, but it fails rendering images.
-
-So, the following piece of code does not generate an EPS picture
+For an unknown reason, it works for printing Stata code and results, but it fails rendering images. So, the following piece of code will not generate an EPS picture:
 
 ```latex
 \startStata
@@ -109,7 +104,7 @@ graph export mpg.eps
 \stopStata
 ```
 
-while processing a `do` file just happens to work:
+However, processing a `do` file just happens to work:
 
 ```latex
 \processStatafile[output=auto.log,option=tidy]{auto.do}

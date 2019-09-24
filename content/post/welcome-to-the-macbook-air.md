@@ -1,14 +1,12 @@
-+++
-title = "Welcome to the Macbook Air"
-date = 2010-11-20T11:38:03+01:00
-draft = false
-tags = ["apple", "misc"]
-categories = ["2010"]
-+++
+---
+title: "Welcome to the Macbook Air"
+date: 2010-11-20T11:38:03+01:00
+draft: false
+tags: ["apple"]
+categories: ["2010"]
+---
 
 I just got a [Macbook Air](http://www.apple.com/macbookair/). Whaouh, it's impressive! My preceding one was an 15” Macbook pro, but as I don't have to do intensive computational work anymore, I thought going to a smaller computer would not be so bad. However, I ordered it from the App Store to customize it with the latest handy features (2.13 GHz core duo and 4 Go RAM). I won't describe the specs of Airbook, but just summarize what I've installed so far. 
-
-<!--more-->
 
 ## The bare essentials
 
@@ -39,7 +37,7 @@ $ sudo make install
 
 Actually, I didn't install the [UFMPACK](http://www.cise.ufl.edu/research/sparse/umfpack/) (if it happens I need to do sparse algebra, I will reinstall `scipy`, but for the moment that's fine).
 
-For `numpy`, I just ran
+For `numpy`, I just ran:
 
 ```
 $ python setup.py build --fcompiler=gnu95
@@ -48,13 +46,13 @@ $ sudo python setup.py install
 
 Everything went fine, except that now I have two versions of `numpy`, at two different places! The original one (very old) is in `/System/Library/Frameworks/Python.framework/Versions/2.6/Extras/lib/python/numpy`, while the one I just compiled is in `/Library/Python/2.6/site-packages/numpy`. This would cause problem as `scipy` needs `numpy >= 1.4` (as it happens to me, obviously). Again, I don't want to modify the built-in distribution, so I just add the updated `site-package` to the `PYTHONPATH`, like this (in my `.profile`):
 
-```
+```bash
 export PYTHONPATH=/Library/Python/2.6/site-packages:${PYTHONPATH}
 ```
 
 The problem is that it will only works for me, not as root. So I also need to add `Defaults env_keep += "PYTHONPATH"` to the `sudoers` file (`sudo visudo` at the bash prompt).
 
-Then, I proceed with `scipy` the usual way
+Then, I proceed with `scipy` the usual way:
 
 ```
 $ python setup.py build
@@ -76,22 +74,20 @@ Type "help", "copyright", "credits" or "license" for more information.
 0.8.0
 ```
 
-Then , I need to install [Matplotlib](http://matplotlib.sourceforge.net/). I just correct a typo in `make.osx`, and then
+Then , I need to install [Matplotlib](http://matplotlib.sourceforge.net/). I just correct a typo in `make.osx`, and finally:
 
 ```
 $ sudo make -f make.osx fetch deps mpl_build mpl_install
 ```
 
-which download and install [zlib](http://www.zlib.net/) (1.2.3), [libpng](http://www.libpng.org/pub/png/libpng.html) (1.2.39), [freetype2](http://www.freetype.org/freetype2/index.html) (2.3.11), then [pytz](http://pytz.sourceforge.net/). Maybe I need to come back to this install if I want to use the Qt or Cairo backends. Just a little test to check that it works:
+The above step download and install [zlib](http://www.zlib.net/) (1.2.3), [libpng](http://www.libpng.org/pub/png/libpng.html) (1.2.39), [freetype2](http://www.freetype.org/freetype2/index.html) (2.3.11), then [pytz](http://pytz.sourceforge.net/). Maybe I need to come back to this install if I want to use the Qt or Cairo backends. Just a little test to check that it works:
 
-```
+```python
 >>> import pylab as pl
 >>> x = pl.randn(10000)
 >>> pl.hist(x, 100)
 ```
 
-Ok, that sounds good.
+Ok, that sounds good. Finally, to work more conveniently, I need [ipython](http://ipython.scipy.org/moin/), and the installation did go like a charm (`build` and `install` from the `setup.py` file). So the preceding example can be reproduced with little effort, thanks to `ipython -pylab`.
 
-Finally, to work more conveniently, I need [ipython](http://ipython.scipy.org/moin/), and the installation did go like a charm (`build` and `install` from the `setup.py` file). So the preceding example can be reproduced with little effort, thanks to `ipython -pylab`.
-
-That's it (for the moment...)
+That's it!

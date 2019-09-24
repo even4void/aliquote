@@ -8,8 +8,6 @@ categories: ["2019"]
 
 Je prends sans cesse des photos de mon environnement devenu aussi proche que familier, mon appartement, et j'ai longtemps pensé tenir un carnet illustré dans lequel je commenterais ce que j'aimerais appeler des "tranches de vie". Évidemment je n'en ai jamais rien fait, alors voici au moins quelques-unes des dites photos.
 
-<!--more-->
-
 Je pose ça là, c'est-à-dire ce qui traîne depuis près de deux ans dans mon album iPhotos (l'application ne s'appelle plus comme ça depuis bien plus longtemps, mais quà cela ne tienne, je préfère l'ancien nom de toute façon).
 
 Alors voilà un frigo rempli de légumes, datant de janvier 2017. Plein hiver, donc nécessairement des légumes pour réaliser des soupes, des tourtes aux légumes et des potées. J'achetais encore à l'époque beaucoup d'accompagnement déjà prêts (p.ex., purée et salade), pour les jours où j'avais la flemme de me préparer à manger. Je sortais de l'hôpital, une fois de plus, donc j'avais re-rempli mon frigo. De cette époque, je retiendrai surtout le boeuf bourguignon et les tourtes aux poireaux et épinards.

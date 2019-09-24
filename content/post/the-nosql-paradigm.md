@@ -1,14 +1,12 @@
-+++
-title = "Overview of next gen database"
-date = 2011-01-18T09:23:58+01:00
-draft = false
-tags = ["database"]
-categories = ["2011"]
-+++
+---
+title: "Overview of next gen database"
+date: 2011-01-18T09:23:58+01:00
+draft: false
+tags: ["database"]
+categories: ["2011"]
+---
 
-The NoSQL paradigm isn't a way to work with a database without havinf to connect to a server. It is merely a term coined to reflect new "non-relational" models for organizing data, through a distributed architecture (it is not mandatory, though), and it should not be confoudend with the existing software [NoSQL](http://www.strozzi.it/cgi-bin/CSA/tw7/I/en_US/nosql/).
-
-<!--more-->
+The NoSQL paradigm isn't a way to work with a database without having to connect to a server. It is merely a term coined to reflect new "non-relational" models for organizing data, through a distributed architecture (it is not mandatory, though), and it should not be confused with the existing software [NoSQL](http://www.strozzi.it/cgi-bin/CSA/tw7/I/en_US/nosql/).
 
 According to [http://nosql-database.org/](http://nosql-database.org/), NoSQL is
 

@@ -1,34 +1,24 @@
-+++
-title = "Visualizing data using tag cloud"
-date = 2010-04-17T18:04:50+01:00
-draft = false
-tags = ["dataviz", "rstats"]
-categories = ["2010"]
-[[gallery_item]]
-album = "1"
-image = "20100201231620.png"
-caption = ""
-[[gallery_item]]
-album = "1"
-image = "20100201231726.png"
-caption = ""
-[[gallery_item]]
-album = "1"
-image = "20100201231754"
-caption = ""
-[[gallery_item]]
-album = "1"
-image = "20100201231853.png"
-caption = ""
-+++
+---
+title: "Visualizing data using tag cloud"
+date: 2010-04-17T18:04:50+01:00
+draft: false
+tags: ["dataviz", "rstats"]
+categories: ["2010"]
+---
 
 Tag cloud consists in a layered plot of words where font size is proportional to word's frequency. The challenge is to arrange each element in a coherent and elegant layout. Nowadays, tag clouding is available in many SDKs, including [Google Viz. API][Google Viz. API], see [WordCloud][WordCloud]. However, few offer the quality that is found using on-line generator like [Many Eyes][Many Eyes] or [Wordle][Wordle].
 
 Here are some examples I've built myself, although I've tried many layouts and fonts.
 
-{{< gallery album="1" >}}
+{{< fluid_imgs
+  "pure-u-1-2|/img/20100201231620.png"
+  "pure-u-1-2|/img/20100201231726.png" >}}
+<br>
+{{< fluid_imgs
+  "pure-u-1-2|/img/20100201231754.png"
+  "pure-u-1-2|/img/20100201231853.png" >}}
 
-Recently, I came across the website of Yihui Xie (who creates the [R][R] `animation` package) and its wonderful tag could in Flash: <http://yihui.name/en/2009/06/creating-tag-cloud-using-r-and-flash-javascript-swfobject/>.
+Recently, I came across the website of Yihui Xie (who creates the [R][R] `animation` package) and its wonderful [tag could in Flash](http://yihui.name/en/2009/06/creating-tag-cloud-using-r-and-flash-javascript-swfobject/).
 
 Here are the solutions I tested within [R][R]. First, using the `cloud()` function in the `snippets` package (available on [R-Forge][R-Forge]).
 
@@ -46,7 +36,7 @@ cloud(wt, col = col.br(wt, fit=TRUE))
 
 ![](/img/20100417113155.png)
 
-Then I tried to arrange the (x,y) layout, by randomly assigning words to distinct spatial locations.
+Then I tried to arrange the (x,y) layout, by randomly assigning words to distinct spatial locations. I also tried a 3D layout, where words lie on a sphere:
 
 ```r
 library(ggplot2)
@@ -61,12 +51,10 @@ p + geom_text(fontfamily='Fontin') + xlim(c(-.2,1.2)) + ylim(c(-.2,1.2)) +
     legend.position="none")
 ```
 
-![](/img/20100429184529.png)
-
-I also tried a 3D layout, where words lie on a sphere. 
-
-![](/img/3Dwordle.gif)
-
+<br>
+{{< fluid_imgs
+  "pure-u-1-2|/img/20100429184529.png"
+  "pure-u-1-2|/img/3Dwordle.gif" >}}
 
 Graphics and animation rely on the `rgl` package. Color palette reflects actual word's frequency and the (x,y,z) coordinates are computed very crudely using this function:
 
@@ -100,7 +88,7 @@ while it intersects any of the previously placed words
 
 Here is a short and lighter implementation using [Nodebox][Nodebox].
 
-Finally, I realized that there is a huge amount of discussion on how to best represent tags, or more generally how tagging information can be used to display useful information about web traffic, text content, but see this [post][post] on <http://www.smashingmagazine.com>. In the same vein, such approach may be used to reproduce Ishihara's plates, but see [Ishihara color test][Ishihara color test].
+Finally, I realized that there is a huge amount of discussion on how to best represent tags, or more generally how tagging information can be used to display useful information about web traffic, text content, but see this [post][post]. In the same vein, such approach may be used to reproduce Ishihara's plates, but see [Ishihara color test][Ishihara color test].
 
 ![](/img/20090327171538.png)
 

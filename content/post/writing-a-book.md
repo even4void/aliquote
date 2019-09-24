@@ -1,25 +1,24 @@
-+++
-title = "Writing a Book"
-date = 2015-07-22T15:25:06+01:00
-draft = false
-tags = ["statistics", "rstats"]
-categories = ["2015"]
-+++
+---
+title: "Writing a Book"
+date: 2015-07-22T15:25:06+01:00
+draft: false
+tags: ["statistics", "rstats"]
+categories: ["2015"]
+---
 
-I spent the last month working hard to finish my book on biomedical statistics using R.
-
-<!--more-->
-
-It has been a pleasuring experience since I wrote this book using Emacs, R, and git. In fact, I spent several days and nights with a screen looking like the one shown below (this is Homebrew Emacs in fullscreen mode):
+I spent the last month working hard to finish my book on biomedical statistics using R. It has been a pleasuring experience since I wrote this book using Emacs, R, and git. In fact, I spent several days and nights with a screen looking like the one shown below (this is Homebrew Emacs in fullscreen mode):
 
 ![Writing a book using Emacs](/img/emacs-book.png)
 
-Of course there are many things to fix and I'm not totally happy with the book as it stands. I think it would have been much easier to write this book five years ago. Now, there are so many good books on R that it is a very challenging task to write a new one. I have only one excuse: This book was written for students enrolled in a course on staistical computing using R, Stata and SAS. Book price should not exceed 10 € in electronic format, so I think this is a good deal for them.
+Of course there are many things to fix and I'm not totally happy with the book as it stands. I think it would have been much easier to write this book five years ago. Now, there are so many good books on R that it is a very challenging task to write a new one. I have only one excuse: This book was written for students enrolled in a course on statistical computing using R, Stata and SAS. Book price should not exceed 10 € in electronic format, so I think this is a good deal for them.
 
-As discussed in this recent blog post, [Emacs for data science](http://www.insightdatascience.com/blog/emacs_for_data_science.html), there are many editors available for various programming languages, or simply for text editing. In the past I often found myself lurking at other built-in editors or IDE with the hope that they could facilitate my daily work. This was never the case because soon or later I realized that I was always missing some of Emacs functionalities, including: powerful key bindings for text manipulation and moving around text in a buffer, working on multiple buffers with different mode at the same time, dedicated shell buffers, ESS for R processing, and so much more. Personally, I was quite happy with a shell and R running together in Emacs. To date, I never see a decent text editor that offer that flexibility (I cannot speak of vi(m) since I only know two shortcuts, `!:q` and `dd`).
+{{% alert note %}}
+The book has been published in 2016! See the [companion website](https://github.com/biostatsante/R).
+{{% /alert %}}
+
+As discussed in this recent blog post, [Emacs for data science](http://www.insightdatascience.com/blog/emacs_for_data_science.html), there are many editors available for various programming languages, or simply for text editing. In the past I often found myself lurking at other built-in editors or IDE with the hope that they could facilitate my daily work. This was never the case because soon or later I realized that I was always missing some of Emacs functionalities, including: powerful key bindings for text manipulation and moving around text in a buffer, working on multiple buffers with different mode at the same time, dedicated shell buffers, ESS for R processing, and so much more. Personally, I was quite happy with a shell and R running together in Emacs. To date, I never see a decent text editor that offers such flexibility (I cannot speak of vi(m) since I only know two shortcuts, `:q!` and `dd`).
 
 Another nice post on writing a book using Emacs can be found on [masteringemacs.org](https://www.masteringemacs.org): [How to write a book in Emacs](https://www.masteringemacs.org/article/how-to-write-a-book-in-emacs), by Mickey Petersen. I doubt I will have the chance to proofread the book using `ediff`, but at least I won't have to bother with MS Word track changes since the book was written in plain LaTeX. The Wiley French template was probably written early in the 90s, with no support for unicode, such that I gave up using my knitr master file and rewrote everything, which means converting my unicode text to Latin-1 (please, never again!) and putting my R code into simple verbatim environments.
-
 
 Note that in the mean time, [magit](https://github.com/magit/magit) has been updated to version 2.1 and it really rocks. Since I update my Emacs packages from various sources, including marmalade, I don't necessarily rely on stable versions. Here are my current settings, as confirmed by `M-x magit-version gives me`:
 
@@ -51,8 +50,3 @@ The last commits returned by `glog` (`git log --oneline --decorate --color --gra
 ```
 
 Indeed, I only used Git to record my progress in writing this textbook, and usually I worked on one chapter at a time. I usually do the same for my lecture notes, which are hosted on Bitbucket.
-
-
-{{% alert note %}}
-The book has been published in 2016! See the [companion website](https://github.com/biostatsante/R).
-{{% /alert %}}

@@ -8,8 +8,6 @@ categories: ["2019"]
 
 Latest news from the Summer here.
 
-<!--more-->
-
 Days have been pretty quite because I was on holidays during the last five weeks, half time ill but that's ok, I'm used to being in a second state now. The hot weather didn't help---we reached 42°C one day!---and, anyway, I didn't really want to program on my computer anymore so I took some rest. I'm back pushing to Github and reading a lot of articles on genetics and functional programming. I could almost enjoy it if I weren't so tired when I get back at home after day job. But let's not dwell on these bad thoughts, I'm not often optimistic lately. I have a new office, BTW.
 
 ![office](/img/IMG_0792.jpg)

@@ -1,14 +1,12 @@
-+++
-title = "Tmux and OS X"
-date = 2014-11-15T10:30:46+01:00
-draft = false
-tags = ["apple"]
-categories = ["2014"]
-+++
+---
+title: "Tmux and OS X"
+date: 2014-11-15T10:30:46+01:00
+draft: false
+tags: ["apple"]
+categories: ["2014"]
+---
 
-I am sometimes using [tmux](http://tmux.sourceforge.net) as my default terminal multiplexer. Here are some notes on my current configuration.
-
-<!--more-->
+I am sometimes using [Tmux](http://tmux.sourceforge.net) as my default terminal multiplexer. Here are some notes on my current configuration.
 
 My configuration is rather simple, and it is mostly inspired from others' config files I found with little Googling. The default status bar is not quite bad, but I don't really like the green background and I prefer non-intrusive 'markers' to display information about my running processes. I ended up with the following customization for the status bar: (See also [here](https://github.com/JohnMurray/dotfiles/blob/master/.tmux.conf) and [here](http://stackoverflow.com/questions/9628435/tmux-status-bar-configuration).)
 
@@ -43,4 +41,4 @@ And here is a little screenshot that shows how it looks on my desktop:
 
 ![tmux](/img/2014-11-12-17-23-15.png)
 
-I should note that [iTerm2](http://iterm2.com), which is the Terminal I am using since several years, already provides split panes, autocomplete, powerful search features, session history and window management, as well as mouse action (focus, copy/paste, smart selection, etc.). So why bother with tmux after all? Well, the only thing that iTerm is currently missing is the ability to keep running in the backgroun when the application is closed (accidently or not). In any case, iTerm offers nice integration with tmux. [The Text Triumvirate](http://www.drbunsen.org/the-text-triumvirate/), by Seth Brown, is also definitely a good read.
+I should note that [iTerm2](http://iterm2.com), which is the Terminal I am using since several years, already provides split panes, autocomplete, powerful search features, session history and window management, as well as mouse action (focus, copy/paste, smart selection, etc.). So why bother with Tmux after all? Well, the only thing that iTerm is currently missing is the ability to keep running in the background when the application is closed (accidentally or not). In any case, iTerm offers nice integration with Tmux. [The Text Triumvirate](http://www.drbunsen.org/the-text-triumvirate/), by Seth Brown, is also definitely a good read.

@@ -1,18 +1,16 @@
-+++
-title = "Time to lush"
-date = 2011-02-22T20:03:10+01:00
-draft = false
-tags = ["lisp"]
-categories = ["2011"]
-+++
+---
+title: "Time to lush"
+date: 2011-02-22T20:03:10+01:00
+draft: false
+tags: ["lisp"]
+categories: ["2011"]
+---
 
-As part of my investigation on Lisp-based solutions for statistical computing (see also this [related post]({{< ref "/post/diving-into-lisp-for-statistical-computing.md" >}})), I am now trying to get a working installation of [Lush](http://lush.sourceforge.net/).
+As part of my investigation on Lisp-based solutions for statistical computing (see also this [related post](/post/diving-into-lisp-for-statistical-computing)), I am now trying to get a working installation of [Lush](http://lush.sourceforge.net/).
 
-<!--more-->
+I discovered Lush some time ago (two years at least) but only think of trying it more seriously after having reread Ross Ihaka's famous papers on the need of developing a new statistical programming language (after R). In [Back to the Future: Lisp as a Base for a Statistical Computing System](http://www.stat.auckland.ac.nz/%7Eihaka/downloads/Compstat-2008.pdf) (PDF), and the accompanying [slides](http://www.stat.auckland.ac.nz/%7Eihaka/downloads/Compstat-2008-Slides.pdf) (PDF), he argued that he obtained better performance in Lisp with real and artificial datasets, compared to R or Python.[^1] I don't know what software they use, but I guess it is based on some derivative of Common Lisp (CL).
 
-I discovered Lush some time ago (two years at least) but only think of trying it more seriously after having reread Ross Ihaka's famous papers on the need of developing a new statistical programming language (after R). In <i class="fa fa-file-pdf-o fa-1x"></i> [Back to the Future: Lisp as a Base for a Statistical Computing System](http://www.stat.auckland.ac.nz/%7Eihaka/downloads/Compstat-2008.pdf), and the accompagnying <i class="fa fa-file-pdf-o fa-1x"></i> [slides](http://www.stat.auckland.ac.nz/%7Eihaka/downloads/Compstat-2008-Slides.pdf), he argued that he obtained better performance in Lisp with real and artificial datasets, compared to R or Python.[^1] I don't know what software they use, but I guess it is based on some derivative of Common Lisp (CL).
-
-I spent some time figuring out how to get a fully working Lush system, including compiled C code. For the moment, it failed for the Function Compilation part, that is everything related to `dhc-make`. I was initially thinking this was a problem related to "architecture" management under OS X, but it appears this is more serious than this. According to this thread, [Problems with Lush in OsX Snow Leopard](http://sourceforge.net/projects/lush/forums/forum/106861/topic/3535253),
+I spent some time figuring out how to get a fully working Lush system, including compiled C code. For the moment, it failed for the Function Compilation part, that is everything related to `dhc-make`. I was initially thinking this was a problem related to "architecture" management under OS X, but it appears this is more serious than this. According to this thread, [Problems with Lush in OS X Snow Leopard](http://sourceforge.net/projects/lush/forums/forum/106861/topic/3535253):
 
 > the Lush dynamic loader is built around `libbfd`, which doesn't support `Mach-O`. So the Lush dynamic loader doesn't work, and the compiler is rendered useless. Library files that don't have a "dhc-make" (no compiled code) will load fine, but those that do will crash.
 
@@ -97,16 +95,13 @@ A window like the one shown below should pop up on the screen.
 
 To build a 32-bits version, we need to adjust `CFLAGS` and `CXXFLAGS` (`-arch i386`) or directly pass the `m32` flag to gcc. In my case, I generated both versions but then only installed the 64-bits executable in `/usr/local` with `make install` (with root privileges).
 
-I'm afraid I won't be able to test the OpenGL and GSL binding, and most of other things that were very exciting from the documentation. Likewise, the Machine Learning package doesn't work. Trying something like
+I'm afraid I won't be able to test the OpenGL and GSL binding, and most of other things that were very exciting from the documentation. Likewise, the Machine Learning package doesn't work. Trying something like the example below results in a GASP error (`dyld: dyld std::terminate()`):
 
 ```lisp
 (libload "svm/libsvm")
 ```
 
-results in a GASP error (`dyld: dyld std::terminate()`).
-
-Not all packages use `dhc-make`, though. For example, I successfully
-reproduced the on-line example with the built-in plotting facilities:
+Not all packages use `dhc-make`, though. For example, I successfully reproduced the on-line example with the built-in plotting facilities:
 
 ```lisp
 ? (libload "libplot/plotter")
@@ -119,5 +114,5 @@ reproduced the on-line example with the built-in plotting facilities:
 
 ![](/img/20110222134253.png)
 
-[^1]: See also <i class="fa fa-file-pdf-o fa-1x"></i> [R: Lessons Learned, Directions for the Future](http://www.stat.auckland.ac.nz/%7Eihaka/downloads/JSM-2010.pdf) (JSM, 2010, <i class="fa fa-file-pdf-o fa-1x"></i> [slides](http://www.stat.auckland.ac.nz/%7Eihaka/downloads/JSM-Talk.pdf)).
+[^1]: See also [R: Lessons Learned, Directions for the Future](http://www.stat.auckland.ac.nz/%7Eihaka/downloads/JSM-2010.pdf) (JSM, 2010, and these [slides](http://www.stat.auckland.ac.nz/%7Eihaka/downloads/JSM-Talk.pdf)).
 

@@ -1,34 +1,30 @@
-+++
-title = "Weaving scientific documents"
-date = 2011-04-25T09:03:39+01:00
-draft = false
-tags = ["tex", "stata", "rstats"]
-categories = ["2011"]
-+++
+---
+title: "Weaving scientific documents"
+date: 2011-04-25T09:03:39+01:00
+draft: false
+tags: ["tex", "stata", "rstats"]
+categories: ["2011"]
+---
 
 Some notes about installing and testing [StatWeave](http://www.stat.uiowa.edu/~rlenth/StatWeave/) with R and Stata.
 
-<!--more-->
+[StatWeave](http://www.stat.uiowa.edu/~rlenth/StatWeave/) is yet another way to weave code chunks and text into a single document. The idea of interlacing code and doucmentation is borrowed from the famous [web](http://www.literateprogramming.com/web.pdf) (PDF) and [cweb](http://www-cs-faculty.stanford.edu/~uno/cweb.html) systems developed by D Knuth who also coined the term "literate programming". There is a draft article on [Lightweight Literate Programming](http://infohost.nmt.edu/~al/Literate-programming/draft/), which has evolved as an extended discussion of the following paper: Allan Stavely, Lynda Walsh, and John Shipman. “Lightweight Literate Programming: a Documentation Practice”. Technical Communication. Vol. 55. No. 1. 23-37. February 2008.
 
-[StatWeave](http://www.stat.uiowa.edu/~rlenth/StatWeave/) is yet another way to weave code chunks and text into a single document. The idea of interlacing code and doucmentation is borrowed from the famous <i class="fa fa-file-pdf-o fa-1x"></i> [web](http://www.literateprogramming.com/web.pdf) and [cweb](http://www-cs-faculty.stanford.edu/~uno/cweb.html) systems developed by D Knuth who also coined the term "literate programming". There is a draft article on [Lightweight Literate Programming](http://infohost.nmt.edu/~al/Literate-programming/draft/), which has evolved as an extended discussion of the following paper:
-
-> Allan Stavely, Lynda Walsh, and John Shipman. “Lightweight Literate Programming: a Documentation Practice”. Technical Communication. Vol. 55. No. 1. 23-37. February 2008.
-
-For R, we already have [Sweave](http://www.stat.uni-muenchen.de/~leisch/Sweave/) and its variants, but see the CRAN Task View on [Reproducible Research](http://cran.r-project.org/web/views/ReproducibleResearch.html). I used it a lot for preparing my courses (handouts and slides with beamer). But, in the meantime, I rediscovered [noweb](http://www.cs.tufts.edu/~nr/noweb/) which is closer to the web software, and more general in some sense. I know [Luke Tiernay](http://www.cs.uiowa.edu/~luke/) is using it for documenting his [R projects](http://www.cs.uiowa.edu/~luke/R/), and I once found a very pretty document by Jason Catena using Tufte LaTeX class together with noweb, [Study Haskell](https://dl.dropbox.com/u/502901/haskell.pdf).
+For R, we already have [Sweave](http://www.stat.uni-muenchen.de/~leisch/Sweave/) and its variants, but see the CRAN Task View on [Reproducible Research](http://cran.r-project.org/web/views/ReproducibleResearch.html). I used it a lot for preparing my courses (handouts and slides with beamer). But, in the meantime, I rediscovered [noweb](http://www.cs.tufts.edu/~nr/noweb/) which is closer to the web software, and more general in some sense. I know [Luke Tiernay](http://www.cs.uiowa.edu/~luke/) is using it for documenting his [R projects](http://www.cs.uiowa.edu/~luke/R/), and I once found a very pretty document by Jason Catena using the Tufte LaTeX class together with noweb, [Study Haskell](https://dl.dropbox.com/u/502901/haskell.pdf).
  
-I grabbed the statweave jar file a long ago, but never tried it for real. Now, following a question on [tex.stackexchange.com](http://tex.stackexchange.com/questions/16398/problem-in-statweave) I reinstalled it and try to process some R and Stata document. Well, I don't think I'd pushed it to the limits, but at first sight it is quite straightforward to get a running PDF in few commands. What I like is that it works with Stata on my Mac.[^1]
+I grabbed the Statweave jar file a long ago, but never tried it for real. Now, following a question on [tex.stackexchange.com](http://tex.stackexchange.com/questions/16398/problem-in-statweave) I reinstalled it and try to process some R and Stata document. Well, I don't think I'd pushed it to the limits, but at first sight it is quite straightforward to get a running PDF in few commands. What I like is that it works with Stata on my Mac.[^1]
 
-Here is a sample R document
+Here is a sample R document:
 
 ![rdoc](/img/20110422183131.png)
 
-and here is one with Stata commands
+And here is one with Stata commands embedded:
 
 ![statadoc](/img/20110425170528.png)
 
-The idea is as simple as that of Sweave: you include code chunks in a dedicated environment (here, it starts with `\begin{XXcode}` and stops with `\end{XXcode}`, where `XX` stands for the foreign language). The Stata example reads
+The idea is as simple as that of Sweave: you include code chunks in a dedicated environment (here, it starts with `\begin{XXcode}` and stops with `\end{XXcode}`, where `XX` stands for the foreign language). The Stata example simply reads:
 
-```
+```latex
 \documentclass{article}
 \usepackage{Statweave}
 \begin{document}

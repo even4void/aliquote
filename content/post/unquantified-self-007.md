@@ -7,8 +7,6 @@ categories: ["2019"]
 ---
 Long time no see. Little update for the `#self` tag.
 
-<!--more-->
-
 Today, I'm particularly happy because I'll be spending another evening with my son and we will probably watch [Game of Thrones](https://en.wikipedia.org/wiki/Game_of_Thrones). I also bought the latest season of [The Walking Dead](https://en.wikipedia.org/wiki/The_Walking_Dead_(TV_series)) so we shouldn't be left out of TV shows for the coming weeks. And of course I look forward to [The Expanse](https://en.wikipedia.org/wiki/The_Expanse_(TV_series)) (Season 3) coming on the iTunes store. Public holidays are ending, but we will hopefully find time to watch them all! In the meantime, we also watched all five [Jason Bourne](https://en.wikipedia.org/wiki/Jason_Bourne) movies, as well as [The Matrix](https://en.wikipedia.org/wiki/The_Matrix).
 
 On my end, I'm getting used to a new life in a research lab. I've spent 15 years outside, so it took a longer time than initially expected. Plus, I have to deal with unexpected effects of my illness, as well as long-lasting side-effects of my medication. Nothing really interesting, just to say. Either way, I'm really lucky I ended up there since people are really friendly and welcoming. I hope I will be able to stay for some months or even years in this lab before the disease recovers.
@@ -19,7 +17,9 @@ I don't mind the wether, but if it could get warmer for more than 5 days, I woul
 
 {{< fluid_imgs
   "pure-u-1-2|/img/IMG_0574.jpg"
-  "pure-u-1-2|/img/IMG_0571.jpg"
+  "pure-u-1-2|/img/IMG_0571.jpg" >}}
+<br>
+{{< fluid_imgs
   "pure-u-1-2|/img/IMG_0569.jpg"
   "pure-u-1-2|/img/IMG_0577.jpg" >}}
 
