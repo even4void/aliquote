@@ -1,31 +1,10 @@
-+++
-title = "GIS on a Mac"
-date = 2011-01-23T09:01:07+01:00
-draft = false
-tags = ["apple", "dataviz"]
-categories = ["2011"]
-
-[header]
-[[gallery_item]]
-album = "1"
-image = "20110124090727.png"
-caption = ""
-
-[[gallery_item]]
-album = "1"
-image = "/20110124090441.png"
-caption = ""
-
-[[gallery_item]]
-album = "1"
-image = "/20110124104659.png"
-caption = ""
-
-[[gallery_item]]
-album = "1"
-image = "20110124105052.png"
-caption = ""
-+++
+---
+title: "GIS on a Mac"
+date: 2011-01-23T09:01:07+01:00
+draft: false
+tags: ["apple", "dataviz"]
+categories: ["2011"]
+---
 
 I decided to install a GIS software, just to be able to explore some spatial clustering models, play with the visualization of geographical information, and also because of the limited resources available in R.
 
@@ -75,11 +54,17 @@ Well, the whole installation only took 10 min or so. I now have to look at the v
 
 To test that Qgis is working, we need data. There are some map available on the GRASS website (e.g., the spearfish data) or on the [FreeGIS Database](http://www.freegis.org/geo-data.en.html).
 
-Geographical databases are assumed to be intalled locally. An example is to put all things in your home directory, under a specific root. I use `~/db/` and put the `spearfish60` data in here.
+Geographical databases are assumed to be installed locally. An example is to put all things in your home directory, under a specific root. I use `~/db/` and put the `spearfish60` data in here.
 
-Here are some screenshots I took during this session. I follow the setps from this excellent [visual guide](http://grass.bologna.enea.it/tutorial/01-tutorial/).
+Here are some screenshots I took during this session. I follow the steps from this excellent [visual guide](http://grass.bologna.enea.it/tutorial/01-tutorial/).
 
-{{< gallery album="1" >}}
+{{< fluid_imgs
+  "pure-u-1-2|/img/20110124090727.png"
+  "pure-u-1-2|/img/20110124105052.png" >}}
+<br>
+{{< fluid_imgs
+  "pure-u-1-2|/img/20110124104659.png"
+  "pure-u-1-2|/img/20110124090441.png" >}}
 
 [^1]: From what I seem to remember, I probably installed a standalone version of Qgis when I was playing with geographical map some time ago.
 

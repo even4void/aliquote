@@ -1,32 +1,22 @@
-+++
-title = "Summary for the 31th ISBC conference"
-date = 2010-08-31T13:03:35+01:00
-draft = false
-tags = ["travels", "statistics"]
-categories = ["2010"]
-[[gallery_item]]
-album = "1"
-image = "20100831220206.png"
-caption = ""
-[[gallery_item]]
-album = "1"
-image = "20100831220217.png"
-caption = ""
-+++
+---
+title: "Summary for the 31th ISBC conference"
+date: 2010-08-31T13:03:35+01:00
+draft: false
+tags: ["travels", "statistics"]
+categories: ["2010"]
+---
 
 Some notes I took during the 31th [ISBC conference](http://www.iscb2010.info/). I only attended the first two days, with sessions mostly oriented toward genetic epidemiology. An extra session around latent variable modeling was also present. This gives me the opportunity to summarize two aspects of statistical modeling that I actually like a lot, namely biometrics and psychometrics.
 
-<!--more-->
-
-## The sequential rejection principle of familywise error control (A. Solari)
+## The sequential rejection principle of family-wise error control (A. Solari)
 
 In the context of GWAS, where we usually work with 500,000 SNPs or more, and where each SNP represents one hypothesis to test, the nominal p-value would have to be set to 1e-7. Even if SNPs are grouped by chromosomal region, we still have very low p-value (p < 𝛂 / # regions tested). There is thus a compromise between an increase in power (by working at a higher level than single unit, e.g., region or chromosome) and an increase in statement. However, the problem with region-based testing is that if H0 is to be rejected, we cannot say in turn which of its SNP(s) is/are implicated in the uncovered association.
 
-There comes graph-structured hypothesis, whereby hypotheses are arranged in a tree structure based on (1) prior biological knowledge (Fig 1a), (2) logical relationship (Fig 1b), or (3) a data driven principle (e.g. linkage disiquilibrium).
+There comes graph-structured hypothesis, whereby hypotheses are arranged in a tree structure based on (1) prior biological knowledge (Fig 1a), (2) logical relationship (Fig 1b), or (3) a data driven principle (e.g. linkage disequilibrium).
 
 ![](/img/20100831214719.png)
 
-The sequential rejection principle states that if one hypothesis is rejected, then we might update the reamining ones and set a new critical level for unrejected hypothesis. Goeman and Solari<sup>(1)</sup> use this method throughout their inheritance procedure, but basically it derives from Meinshausen&#8217;s procedure<sup>(2)</sup>: if hypothesis are arranged in a tree, criticals levels are found to be equal to alpha * # letters / # leaves. Figure 2 shows an example of how hypotheses and critical levels are processed.
+The sequential rejection principle states that if one hypothesis is rejected, then we might update the remaining ones and set a new critical level for un-rejected hypothesis. Goeman and Solari<sup>(1)</sup> use this method throughout their inheritance procedure, but basically it derives from Meinshausen's procedure:<sup>(2)</sup> if hypothesis are arranged in a tree, critical levels are found to be equal to alpha * # letters / # leaves. Figure 2 shows an example of how hypotheses and critical levels are processed.
 
 ![](/img/20100831215539.png)
 
@@ -44,9 +34,11 @@ sp <- sampleplot(gt[1], plot = FALSE)
 plot(sort(sp))
 ```
 
-{{< gallery album="1" >}}
+{{< fluid_imgs
+  "pure-u-1-2|/img/20100831220206.png"
+  "pure-u-1-2|/img/20100831220217.png" >}}
 
-The above pictures show the influence of individual samples on the test result, but see the accompanying <i class="fa fa-file-pdf-o fa-1x"></i> [vignette](http://www.bioconductor.org/packages/2.0/bioc/vignettes/globaltest/inst/doc/GlobalTest.pdf) for more information.
+The above pictures show the influence of individual samples on the test result, but see the accompanying [vignette](http://www.bioconductor.org/packages/2.0/bioc/vignettes/globaltest/inst/doc/GlobalTest.pdf) (PDF) for more information.
 
 ## Bayesian adjustment for multiplicity (J. Berger)
 
@@ -56,16 +48,16 @@ He gave a nice talk about problem frequently encountered in the USA with the res
 - there is actually a 70% of failure rates in phase III, whereas it was 20% 10 years ago;
 - reports where 30% of phase III successes are observed actually failed to replicate.
 
-This motivating illustrations shouod alert the reader that too many RCTs failed to reach a statisfactory level of evidence, and this may largely due to problem with multiple comparisons. Bayesian analysis deals with adjustment for multiplicity of testing solely through the assignement of prior probabilities to models or hypotheses.
+This motivating illustrations should alert the reader that too many RCTs failed to reach a satisfactory level of evidence, and this may largely due to problem with multiple comparisons. Bayesian analysis deals with adjustment for multiplicity of testing solely through the assignment of prior probabilities to models or hypotheses.
 
 If we note $X_i \sim N(\mu; 1)$, $i = 1, \dots, m$, a set of predictors, whose correlation is $\rho$, then two cases can be distinguished based on the value of $\rho$:
 
-- if $\rho = 0$ (independent case), then we can set the critical level at $\alpha / m$ (Bonferroni method);
+- if $\rho = 0$ (independent case), then we can set the critical level at $\alpha / m$ (Bonferonni method);
 - if $\rho > 0$, it can be shown that
 
 $$ \alpha = \Pr(\max_i X_i > K \mid \mu_1 = \dots = \mu_m = 0) = \mathbb E^Z\left[1-\Phi\left( \frac{K - \sqrt{\rho}Z}{\sqrt{1 - \rho}}\right)^m\right], $$
 
-where $Z$ and $\Phi$ refer to the standard normal density and CDF. When $\rho = 0$, it approximates the Bonferroni solution, and
+where $Z$ and $\Phi$ refer to the standard normal density and CDF. When $\rho = 0$, it approximates the Bonferonni solution, and
 
 $$ \alpha\underset{p\to 1}\rightarrow 1-\Phi(K). $$
 
@@ -80,10 +72,10 @@ A couple of references about non-mutually exclusive bayesian multiple testing:
 
 ## Local sparse bump hunting for finding groups in high-dimensional data (J.-E. Dazard)
 
-This talk focused on semi-supervised methods seeking local patterns in data, for cluster analysis or classification. The "bump hunting" framework allows to find regions in the feature space with relatively high or low values for the target variable, see e.g., [Bump Hunting in High-Dimensional Data](http://www-stat.stanford.edu/&#126;jhf/ftp/prim.pdf) <i class="fa fa-chain-broken fa-1x"></i>, from Friedman and Fisher. The original work is described here:
+This talk focused on semi-supervised methods seeking local patterns in data, for cluster analysis or classification. The "bump hunting" framework allows to find regions in the feature space with relatively high or low values for the target variable, see e.g., [Bump Hunting in High-Dimensional Data](http://www-stat.stanford.edu/&#126;jhf/ftp/prim.pdf), from Friedman and Fisher. The original work is described here:
 Friedman, J.H. and Fisher, N.I. (1999). Bump-hunting for high dimensional data. **Statistics and Computing* *9*: 123-143.
 
-The [prim](http://cran.r-project.org/web/packages/prim/) package follows from this seminal work and allows to fit PRIM models (See its accompagnying vignettes, e.g., <i class="fa fa-file-pdf-o fa-1x"></i> [Using prim for bump hunting](http://cran.r-project.org/web/packages/prim/vignettes/prim-2d.pdf)). For instance, let's consider the `birthwt` data, which comes from a study on risk factors associated with low infant birth weight.
+The [prim](http://cran.r-project.org/web/packages/prim/) package follows from this seminal work and allows to fit PRIM models (See its accompanying vignettes, e.g., [Using prim for bump hunting](http://cran.r-project.org/web/packages/prim/vignettes/prim-2d.pdf)). For instance, let's consider the `birthwt` data, which comes from a study on risk factors associated with low infant birth weight.
 
 ```r
 data(birthwt, package="MASS")
@@ -101,26 +93,26 @@ Here is the resulting bounding box found by the PRIM algorithm:
 
 ![](/img/20100903140638.png)
 
-Turning back to the talk, the author presents an algorithm for Local Sparse Bump Hunting (LSBH) which I roughly summarize as: (1) use CART for partitioning the input space, (2) use (local) sPCA followed by a rotation, and a test for identifying local, which, if positive, is followed by PRIM, (3) aggregation of the results. This does not make any MVN assumption. In short, LSBH is a combination of greedy and patient methods, going recursively and locally. It should be available as an R package (lshb).
+Turning back to the talk, the author presents an algorithm for Local Sparse Bump Hunting (LSBH) which I roughly summarize as: (1) use CART for partitioning the input space, (2) use (local) sPCA followed by a rotation, and a test for identifying local, which, if positive, is followed by PRIM, (3) aggregation of the results. This does not make any MVN assumption. In short, LSBH is a combination of greedy and patient methods, going recursively and locally. It should be available as an R package (`lshb`).
 
-## Identifying snp interactions by cluster-localized sparse logistic regression (H. Binder)
+## Identifying SNP interactions by cluster-localized sparse logistic regression (H. Binder)
 
 The author is interested in studying main and epistatic effects in genomic studies, especially SNPs data. Here, the data set under consideration was composed of 312,624 SNPs genotyped on N=1272 patients (336 cases, 936 controls) in a clinical trial on urinary bladder cancer.
 
-[Harald Binder](http://www.imbi.uni-freiburg.de/biom/index.php?showEmployee=binderh) has already made great work in the domain of boosting regression and localized classification, especially
+[Harald Binder](http://www.imbi.uni-freiburg.de/biom/index.php?showEmployee=binderh) has already made great work in the domain of boosting regression and localized classification, especially:
 
 1. Tutz, G. and Binder, H. (2007). Boosting ridge regression. *Computational Statistics & Data Analysis* *51*: 6044-6059.
 2. Tutz, G. and Binder, H. (2005). Localized classification. *Statistics and Computing* *15*: 155-166.
 
 He also worked on GAMs and a nice review is available online: [Fitting Generalized Additive Models: A Comparison of Methods](http://www.fdm.uni-freiburg.de/publications-preprints/preprints/papers/pre93.pdf). He also authored the [GAMBoost](http://cran.r-project.org/web/packages/GAMBoost/) package.
 
-Here the talk deals with sparse regression modeling where we first make use of a clustering approach to identify covariates locally unimportant for prediction, then we fit a final local model. In short, it relies on a sparse fit by componentwise lokelihood-based boosting, where the number of boosting steps is chosen by 10-fold CV. This extends the work from Friedman and Meulman (2004) who presented a distance-based algorithm to cluster attribute value data (JRSS B *66(4)*: 815-849). A preprint of this article is available [here](http://www-stat.stanford.edu/~jhf/ftp/cosa.pdf) <i class="fa fa-chain-broken fa-1x"></i> .
+Here the talk deals with sparse regression modeling where we first make use of a clustering approach to identify covariates locally unimportant for prediction, then we fit a final local model. In short, it relies on a sparse fit by component-wise likelihood-based boosting, where the number of boosting steps is chosen by 10-fold CV. This extends the work from Friedman and Meulman (2004) who presented a distance-based algorithm to cluster attribute value data (JRSS B *66(4)*: 815-849). A preprint of this article is available [here](http://www-stat.stanford.edu/~jhf/ftp/cosa.pdf) (PDF).
 
-The R package SNPLClust should implement this statistical framework soon.
+The R package `SNPLClust` should implement this statistical framework soon.
 
 ## Detection of epistatic interactions in schizophrenic children (I. Ruczinski)
 
-The slides are available on Ruczinski's website, <http://biostat.jhsph.edu/~iruczins> <i class="fa fa-chain-broken fa-1x"></i>.
+The slides are available on Ruczinski's website, <http://biostat.jhsph.edu/~iruczins>.
 
 Ingo Ruczinski has made great effort for developing the use of logic regression in epidemiological studies, with a particular emphasis on SNP data. Among the R packages he authored, there are:
 
@@ -130,16 +122,16 @@ Ingo Ruczinski has made great effort for developing the use of logic regression 
 
 ## Estimating the number of true discoveries in a genome-wide association study (Y. Pawitan)
 
-Although schizophrenia is a highly heritable disease (60-70% of heritability), there are still no known major genes. The author describes a case-control study (N=6909, fine mapping) based on the [International Schizophrenia Consortium](http://pngu.mgh.harvard.edu/isc/) <i class="fa fa-chain-broken fa-1x"></i>, which originally included 780k SNPs subsequently pruned to a set of almost independent 74,062 SNPs (based on LD).
+Although schizophrenia is a highly heritable disease (60-70% of heritability), there are still no known major genes. The author describes a case-control study (N=6909, fine mapping) based on the [International Schizophrenia Consortium](http://pngu.mgh.harvard.edu/isc/), which originally included 780k SNPs subsequently pruned to a set of almost independent 74,062 SNPs (based on LD).
 
-The problem with GWAS is that we expect very few true associations, so most significant results are false positives. The FDR is usually about 100%, so it is not an interesting measure. The idea is rather to estimate the number of true discoveries $S(c) = R(c)-mc$, where $m$ is the number of SNPs, and $R(c)$ is the number of SNPs where $p < c$. In this case, $mc$ is approximately the number of top SNPs. The question then arises as to how we get a confidence band for $S(c)$. Using a permutation test (based on case/control labels) yields a p-value, but not CIs. However, CIs can be derived from the percentile of $S^\star(c)$, if we assume a logical requirement of monotonicity. But, it generates a substantial bias (of the same order as the signal if the signal is small), given that
+The problem with GWAS is that we expect very few true associations, so most significant results are false positives. The FDR is usually about 100%, so it is not an interesting measure. The idea is rather to estimate the number of true discoveries $S\(c\) = R\(c\)-mc$, where $m$ is the number of SNPs, and $R\(c\)$ is the number of SNPs where $p < c$. In this case, $mc$ is approximately the number of top SNPs. The question then arises as to how we get a confidence band for $S\(c\)$. Using a permutation test (based on case/control labels) yields a p-value, but not CIs. However, CIs can be derived from the percentile of $S^\star\(c\)$, if we assume a logical requirement of monotonicity. But, it generates a substantial bias (of the same order as the signal if the signal is small), given that
 
-$$ \mathbb E S(c)=m^{1/2}\mathbb E \big(\sup_{x<c}B(x)\big)\approx 0.798(mc)^{1/2} $$
+$$ \mathbb E S\(c\)=m^{\frac{1}{2}}\mathbb E \big(\sup_{x<c}B(x)\big)\approx 0.798(mc)^{\frac{1}{2}} $$
 
 For example, with $mc = 400$ top SNPs, the bias would be about 16.
 
 I cannot remember why I noted the following reference, but the number of subjects (>100,000) used to highlight novel loci associated to plasma lipids looks impressive:
-Teslovich, T.M., Musunuru, K., Smith, A.V., et al. (2010). [Biological, clinical and population relevance of 95 loci for blood lipids](http://genepi.qimr.edu.au/contents/p/staff/Teslovich_etal_NATURE_Aug_2010.pdf) <i class="fa fa-chain-broken fa-1x"></i>. **Nature* *466*: 707-713.
+Teslovich, T.M., Musunuru, K., Smith, A.V., et al. (2010). [Biological, clinical and population relevance of 95 loci for blood lipids](http://genepi.qimr.edu.au/contents/p/staff/Teslovich_etal_NATURE_Aug_2010.pdf) (PDF), **Nature* *466*: 707-713.
 
 ## A marginal global two-sample test for multivariate (high-dimensional) binary data (U. Mansmann)
 
@@ -149,7 +141,7 @@ Basically, he derived a statistic looking like $\sum_{i=1}^pT_i = U^tWU$.
 
 with $T_i$ distributed as a $\chi^2$ at every single item (crossed by gender). The idea was then to replace the component-wise $\chi^2$ by a component-wise logistic regression, and to apply an LR test on model with and without the interaction term.
 
-Simulated correlated multivariate binary data were generated with the [bindata](http://cran.r-project.org/web/packages/bindata/index.html) package. Hierarchical testing of variable importance follows the Meinshausen's method, already discussed at the top of this page. The following picture is taken from Hummel et al.<sup>(1)</sup> and itshows results from the focus level procedure that determined a subgraph of the GO with a controlled number of falsely rejected null hypotheses.
+Simulated correlated multivariate binary data were generated with the [bindata](http://cran.r-project.org/web/packages/bindata/index.html) package. Hierarchical testing of variable importance follows the Meinshausen's method, already discussed at the top of this page. The following picture is taken from Hummel et al.<sup>(1)</sup> and it shows results from the focus level procedure that determined a subgraph of the GO with a controlled number of falsely rejected null hypotheses.
 
 ![](/img/20100904110331.png)
 
@@ -175,9 +167,9 @@ One way to answer this question is to use Graphical Models. A good starting poin
 
 When $p > n$, the covariance matrix is ill-conditioned or singular, so it calls for penalized regression. Basically, we fit p regression models and look at the partial correlation coefficient defined as
 
-$$ \rho_{ij\cdot z}=\text{sign}(\beta_{ij})\sqrt{\beta_{ij}\beta_{ji}} $$
+$$ \rho\_{ij\cdot z}=\text{sign}(\beta\_{ij})\sqrt{\beta\_{ij}\beta\_{ji}} $$
 
-which is ≠ 0 if $\text{sign}(\beta_{ij})=\text{sign}(\beta_{ji})$. This is a smooth approximation to the L0 penalty. So, we start fitting a model with L1 penalty, then we use its final estimates as starting points for L0 penalization. The whole procedure is encompassed within a cross-validation procedure. Results on simulated random or structured networks are compared to existing methods such as PLS,<sup>(2)</sup> L1 regression,<sup>(3)</sup> adjusted-L1 regression,<sup>(4)</sup> and PCIT.<sup>(5)</sup>
+which is $\neq 0$ iff $\text{sign}(\beta\_{ij})=\text{sign}(\beta_{ji})$. This is a smooth approximation to the L0 penalty. So, we start fitting a model with L1 penalty, then we use its final estimates as starting points for L0 penalization. The whole procedure is encompassed within a cross-validation procedure. Results on simulated random or structured networks are compared to existing methods such as PLS,<sup>(2)</sup> L1 regression,<sup>(3)</sup> adjusted-L1 regression,<sup>(4)</sup> and PCIT.<sup>(5)</sup>
 
 Overall, the results showed that PLS and PCIT generate many false positives, and that both aL1 and L0 returned the highest precision. L0 tend to create large bias in terms of MSE. In conclusion, the aL1 method seems to be the best method.
 	

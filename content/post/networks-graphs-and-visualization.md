@@ -1,36 +1,18 @@
-+++
-title = "Networks, graphs and visualization"
-date = 2008-05-19T09:10:49+01:00
-draft = false
-tags = ["dataviz"]
-categories = ["2008"]
-[[gallery_item]]
-album = "1"
-image = "20100418215136.png"
-caption = ""
-[[gallery_item]]
-album = "1"
-image = "20100418215902.png"
-caption = ""
-[[gallery_item]]
-album = "2"
-image = "20100418221523.png"
-caption = ""
-[[gallery_item]]
-album = "2"
-image = "20100418221559.png"
-caption = ""
-+++
-
+---
+title: "Networks, graphs and visualization"
+date: 2008-05-19T09:10:49+01:00
+draft: false
+tags: ["dataviz"]
+categories: ["2008"]
+---
 
 Before talking about social networks or graph visualization, let's look at the article written by Matthew Bloch and Jonathan Corum for the New York Times (May 5, 2008): [Mapping the Human Diseasome][Mapping the Human Diseasome].
 
-<!--more-->
+{{< fluid_imgs
+  "pure-u-1-2|/img/20100418215136.png"
+  "pure-u-1-2|/img/20100418215902.png" >}}
 
-{{< gallery album="1" >}}
-
-Surprisingly, this gives a very clear picture of the links between various disorders, mostly of genetic origin. This original scientific work, entitled [The human disease network][The human disease network], has been published in PNAS and the abstract is reproduced below:
-Goh, K., Cusick, M.E., Valle, D., Childs, B., Vidal, M., and Barabasi, A-L (2007). [The human disease network](http://www.pnas.org/content/104/21/8685.full.pdf+html). *Proceedings of the National Academy of Sciences*, **104(21)**, 8685–8690.
+Surprisingly, this gives a very clear picture of the links between various disorders, mostly of genetic origin. This original scientific work, entitled [The human disease network][The human disease network], has been published in PNAS and the abstract is reproduced below: Goh, K., Cusick, M.E., Valle, D., Childs, B., Vidal, M., and Barabasi, A-L (2007). [The human disease network](http://www.pnas.org/content/104/21/8685.full.pdf+html). *Proceedings of the National Academy of Sciences*, *104(21)*, 8685–8690.
 
 > A network of disorders and disease genes linked by known disorder–gene associations offers a platform to explore in a single graph-theoretic framework all known phenotype and disease gene associations, indicating the common genetic origin of many diseases. Genes associated with similar disorders show both higher likelihood of physical interactions between their products and higher expression profiling similarity for their transcripts, supporting the existence of distinct disease-specific functional modules. We find that essential human genes are likely to encode hub proteins and are expressed widely in most tissues. This suggests that disease genes also would play a central role in the human interactome. In contrast, we find that the vast majority of disease genes are nonessential and show no tendency to encode hub proteins, and their expression pattern indicates that they are localized in the functional periphery of the network. A selection-based model explains the observed difference between essential and disease genes and also suggests that diseases caused by somatic mutations should not be peripheral, a prediction we confirm for cancer genes.
 
@@ -38,14 +20,13 @@ Another example of spatial representation of a connected network is the now well
 
 ![](/img/20100418221053.png)
 
-Also, on [Flickr][Flickr] one can found a very [big network][big network] including only people
-with at least 50 or 10 mutual contacts. By not allowing overlaps between the
-nodes, the network is spread out, and relationships are made clearer. There
-are four very distinct clusters for the first case (50 mutuals friends).
+Also, on [Flickr][Flickr] one can found a very [big network][big network] including only people with at least 50 or 10 mutual contacts. By not allowing overlaps between the nodes, the network is spread out, and relationships are made clearer. There are four very distinct clusters for the first case (50 mutuals friends).
 
-{{< gallery album="2" >}}
+{{< fluid_imgs
+  "pure-u-1-2|/img/20100418221523.png"
+  "pure-u-1-2|/img/20100418221559.png" >}}
 
-[Processing][Processing] is an open-source programming language and environment allowing for dynamic graphics. I have to give it a try. It will probably save time doing some sophisticated animation of 3D data with [Python][Python] and [Pygame][Pygame]… I also heard about [Prefuse][Prefuse], which seems basically to provide similar functionalities, albeit for Java programming.
+[Processing][Processing] is an open-source programming language and environment allowing for dynamic graphics. I have to give it a try. It will probably save time doing some sophisticated animation of 3D data with [Python][Python] and [Pygame][Pygame]. I also heard about [Prefuse][Prefuse], which seems basically to provide similar functionalities, albeit for Java programming.
 
 ### Additional references
 

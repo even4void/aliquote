@@ -1,22 +1,12 @@
-+++
-title = "Git, svn, Emacs and OVH"
-date = 2010-07-15T16:40:37+01:00
-draft = false
-tags = ["misc"]
-categories = ["2010"]
-[[gallery_item]]
-album = "1"
-image = "20100714113001.png"
-caption = ""
-[[gallery_item]]
-album = "1"
-image = "20100714113010.png"
-caption = ""
-+++
+---
+title: "Git, svn, Emacs and OVH"
+date: 2010-07-15T16:40:37+01:00
+draft: false
+tags: ["misc"]
+categories: ["2010"]
+---
 
 I happened to setup Git and SVN to work with my web hosting service, [Ovh][Ovh]. This is quite cool because Hosting solutiosn proposed on [GitHub][GitHub] or [Beanstalk][Beanstalk] are not so cheap (if you're interested in having access to private repositories).
-
-<!--more-->
 
 As usual, I found very useful information on the web, especially:
 
@@ -57,8 +47,9 @@ test the connexion
 
 and here are the pictures I took from my SVN GUI ([Versions]):
 
-{{< gallery album="1" >}}
-
+{{< fluid_imgs
+  "pure-u-1-2|/img/20100714113001.png"
+  "pure-u-1-2|/img/20100714113010.png" >}}
 
 ## Git
 
@@ -82,7 +73,7 @@ $ mv post-update.sample post-update
 $ chmod a+x post-update
 ```
 
-Now, upload `prj_test.git` to your server (through ftp), then
+Now, upload `prj_test.git` to your server (through ftp), then:
 
 ```
 $ git clone ssh://login@hostname.tld/~/prj_test.git

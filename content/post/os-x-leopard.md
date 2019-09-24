@@ -1,47 +1,12 @@
-+++
-title = "Leopard, about 6 months later"
-date = 2008-05-04T10:38:56+01:00
-draft = false
-tags = ["apple"]
-categories = ["2008"]
+---
+title: "Leopard, about 6 months later"
+date: 2008-05-04T10:38:56+01:00
+draft: false
+tags: ["apple"]
+categories: ["2008"]
+---
 
-[header]
-image = ""
-caption = ""
-preview = true
-
-[[gallery_item]]
-album = "1"
-image = "20100417230917.png"
-caption = ""
-
-[[gallery_item]]
-album = "1"
-image = "20100417230930.png"
-caption = ""
-
-[[gallery_item]]
-album = "1"
-image = "20100417230950.png"
-caption = ""
-
-[[gallery_item]]
-album = "1"
-image = "20100417231007.png"
-caption = ""
-
-[[gallery_item]]
-album = "1"
-image = "20100417231021.png"
-caption = ""
-
-+++
-
-I finally decided to switch to Mac OS X 10.5, aka Leopard, two days ago. It's impressive...
-
-<!--more-->
-
-Apart from the new UI (which was not my primary criteria), [Leopard](http://www.apple.com/fr/macosx/features/) comes with plenty of updates and new functionnalities. To name a few:
+I finally decided to switch to Mac OS X 10.5, aka Leopard, two days ago. It's impressive. Apart from the new UI (which was not my primary criteria), [Leopard](http://www.apple.com/fr/macosx/features/) comes with plenty of updates and new functionalities. To name a few:
 
 - a new look and feel: relying more an more on [Aqua][Aqua] and [Quartz][Quartz] than ever
 - a new Terminal, supporting UTF-8 and with tabbing support
@@ -57,7 +22,14 @@ From the daily user perspective, it should be noteworthy that Mac OS X now inclu
 
 and the Finder has been improved.
 
-{{< gallery album="1" >}}
+{{< fluid_imgs
+  "pure-u-1-2|/img/20100417230917.png"
+  "pure-u-1-2|/img/20100417230930.png" >}}
+<br>
+{{< fluid_imgs
+  "pure-u-1-3|/img/20100417230950.png"
+  "pure-u-1-3|/img/20100417231007.png"
+  "pure-u-1-3|/img/20100417231021.png" >}}
 
 What else? The Spotlight indexing and searching crawler is now fully integrated into the Finder, which becomes itself the core interface for navigating through the file system (although I still prefer the command line). The whole icon design has been redrawn, keeping the organization of the file system unaffected. [Fink][Fink] is as easier to install as before and provides several add-ons, especially those open-source free software that I like: [asciidoc][asciidoc], [graphviz] [graphviz], [gnuplot][gnuplot], [subversion][subversion], etc.
 
