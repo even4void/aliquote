@@ -8,8 +8,6 @@ categories: ["2019"]
 
 I have been using Emacs almost daily for about 15 years. For the days without, I was probably just away from my computer or working full-time on a task for which no text editor was required.
 
-<!--more-->
-
 Well, I started using Emacs on the recommendations of my colleague [Christophe Pallier](http://pallier.org/), who also encouraged me to use R more regularly. At that time, I would not have imagined how much important these tools would be in my daily job. Now, I know, even if I barely use R anymore these days. So, let me thank you again, Christophe! Of course, I've tried many [other text editors](/post/emacs-versus-textmate/), and well, I'm [still using Emacs](/post/why-i-am-still-using-emacs/) after all those years, although I must admit VS Code is a [great editor](/post/vscode-python/) for coding as well.
 
 During the past few days, I have spent some time rebuilding from scratch my Emacs config. It happened because of some sort of procrastination religion that I discreetly practice every 2 or 3 months, and also because I was looking for a faster and ubiquitous way to use Emacs anytime, anywhere, from a simple terminal. Indeed, following my recent move, I spend more time using a shell and CLI-oriented tools than I was beforehand. I have been using Spacemacs for a few months now, and even if it works quite well when launched as `-nw` (i.e., when it is launched in a terminal rather than using the GUI), its startup time is barely acceptable -- unless you launch it once, and make use of Emacs server facilities afterwards. Nope, I wanted something like Vim, or NVim since it is the Vim falvour I am currently being using, and I also spent some time configuring my NVim the way I like it to be. This is it, btw:

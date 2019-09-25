@@ -8,8 +8,6 @@ categories: ["2019"]
 
 In which I describe my journey in the land of Fibonacci numbers.
 
-<!--more-->
-
 I spent more than an hour implementing different algorithms in Racket that compute the $n$-th term of the Fibonacci sequence. Why? Because I'm solving Euler problems in my spare time, and I misread Problem 2 statement such that I tried to sum up the even values of the first 4,000,000 Fibonacci terms, instead of restricting the sum to values not exceeding 4,000,000. Huh!
 
 The first algorithm I used was not optimized, and of course it will have a hard time to compute thousands of numbers in a decent time:

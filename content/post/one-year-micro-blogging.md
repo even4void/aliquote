@@ -2,13 +2,11 @@
 title: "One year micro-blogging"
 date: 2019-03-14T20:59:07+01:00
 draft: false
-tags: ["misc", "micro"]
+tags: ["this", "micro"]
 categories: ["2019"]
 ---
 
 One year micro-blogging (or so), and [still alive](/micro).
-
-<!--more-->
 
 Initially, I just thought I would put all the links I find on the internet or on Twitter in a single place. I have an [org-capture](https://orgmode.org/manual/Capture.html) template to store links I visit on my web browser (Safari), in the spirit of this nice [blog post](https://irreal.org/blog/?p=3726) found on Irreal, and that's all fine since I generally just want to bookmark web pages in a plain text file. Sometimes, I add some comment or cross-links, but that's really all. Inspired by the [Micro.blog](https://micro.blog) project that I learned about from [Jack Baty](https://www.baty.net), my intended distance from Twitter, and one of my other desperate attempts to escape these depressive moods, I decided last year to set up a [new section](http://aliquote.org/articles/changelog/) on this website. It soon became a medium of choice to publish short idea or comment on some of the links I found on the internet, myself or via people I still follow in the blogosphere.
 
@@ -16,7 +14,7 @@ Nothing new, everybody who likes to write a little will know that we need a way 
 
 A quick check indicates that I am approaching the 500th micro-post:
 
-```shell
+```
 aliquote master ✗ abdb045 23h25m ◒ ♯  ls content/micro | wc -l
      483
 ```

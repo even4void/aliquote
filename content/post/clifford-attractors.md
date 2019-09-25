@@ -9,8 +9,6 @@ categories: ["2018"]
 
 I came across some nice visualization of Clifford attractors on Antonio Sánchez Chinchón's website, which is dedicated to experiments in R (mostly using ggplot): [Drawing 10 Million Points With ggplot: Clifford Attractors](https://fronkonstin.com/2017/11/07/drawing-10-million-points-with-ggplot-clifford-attractors/). Other graphics can be found on [Paul Bourke's website](http://paulbourke.net/fractals/clifford/). A [Javascript version](https://bl.ocks.org/gunn/87401cb547cc2ee5b5ec) is also available.
 
-<!--more--> 
-
 [Peter de Jong attractors](http://paulbourke.net/fractals//peterdejong/) are relevant too and can be found on the same website. For a more general discussion, see [Strange Attractors: Creating Patterns in Chaos](http://sprott.physics.wisc.edu/sa.htm), by Julien C. Sprott.
 
 Clifford attractors are defined by the following recurrence equations:

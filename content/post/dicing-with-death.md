@@ -14,6 +14,6 @@ Here, Stephen Senn originally tackles common paradoxes in probability, significa
 
 A final quote:
 
-> **Statistics are and statistics is**
+> Statistics are and statistics is
 >
 > Statistics, singular, contrary to the popular perception, is not really about facts; it is about how we know, or suspect, or believe, that something is a fact. Because knowing about things involves counting and measuring them, then, it is true, that statistics plural are part of the concern of statistics singular, which is the science of quantitative reasoning. This science has much more in common with philosophy (in particular epistemology) than it does with accounting. Statisticians are applied philosophers. Philosophers argue how many angels can dance on the head of a needle; statisticians **count** them. Or rather, count how many can **probably** dance. Probability is the heart of the matter, the heart of all matter if the quantum physicists can be believed. As far as the statistician is concerned this is true, whether the world is strictly deterministic as Einstein believed or whether there is a residual ineluctable indeterminacy. We can predict nothing with certainty but we can predict how uncertain our predictions will be, on average that is. Statistics is the science that tells us how.

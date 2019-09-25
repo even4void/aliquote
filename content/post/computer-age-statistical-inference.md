@@ -8,8 +8,6 @@ categories: ["2018"]
 
 Back in March I started to review the latest book authored by [Bradley Efron](http://statweb.stanford.edu/~ckirby/brad/) and [Trevor Hastie](https://web.stanford.edu/~hastie/), *Computer Age Statistical Inference*. Since then I found that there are far better reviews than the one I could write right now, and it is probably time to close this post or just [let it go](https://www.rousette.org.uk/archives/getting-things-done-by-letting-things-go/). 
 
-<!--more-->
-
 > Statistics is the science of learning from experience, particularly experience that arrives a little bit at a time.
 
 Together with the [Elements of Statistical Learning](https://web.stanford.edu/~hastie/ElemStatLearn/) or an [Introduction to Statistical Learning](http://www-bcf.usc.edu/~gareth/ISL/), this is another great reference for applied researchers. The present book shares a similar spirit in that it offers a deep review of modern techniques of statistical inference, especially in Part 2, but it also covers more "classical" techniques like generalized linear and time to event models. Note that the book has also been made [available in PDF format](https://web.stanford.edu/~hastie/CASI/) for free. 

@@ -8,8 +8,6 @@ categories: ["2018"]
 
 I recently came across [Categories and Haskell]( https://github.com/jwbuurlage/category-theory-programmers), written by Jan-Willem Buurlage. This is supposed to be "an introduction to the mathematics behind modern functional programming", although to be honest it covers much more advanced topics in mathematics than I expected. But we are here to learn after all.
 
-<!--more-->
-
 As I am playing a bit with Haskell these days, I thought it could be a useful book to add to my long reading list. Indeed, I am currently reading [Haskell programming from first principles](http://haskellbook.com), by Allen & Moronuki, and I planned to review this very nice book soon or later. For the moment, let's dive into the essence of categories.
 
 I am particularly interested in Category Theory in relation to functional programming. Actually, Haskell and Scala are frequently discussed in the context of category theory, see, e.g., [An introduction to category theory and functional programming for scalable statistical modeling and computation](http://www.mas.ncl.ac.uk/~ndjw1/docs/djw-ctfp.pdf) (PDF), by Darren Wilkinson, in the case of Scala. By the way, these slides already provide a nice introduction to the topic at hand, notwithstanding the arguments made by the author against the use of the R software for statistical computing although I understand the idea --- anyway, take a look at [Darren Wilkinson's website](https://www.staff.ncl.ac.uk/d.j.wilkinson/): it is full of useful stuff for statistical programmers, and I always learn a lot by reading [his research blog](https://darrenjw.wordpress.com).

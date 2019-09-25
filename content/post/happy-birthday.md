@@ -2,12 +2,10 @@
 title: "Souvenir, souvenir"
 date: 2018-11-20T21:24:10+01:00
 draft: false
-tags: ["misc"]
+tags: ["self"]
 categories: ["2018"]
 ---
 Happy birthday to you again...
-
-<!--more-->
 
 While I was poking around in my old files, I found this little gem:
 

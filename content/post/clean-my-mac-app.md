@@ -8,8 +8,6 @@ categories: ["2018"]
 
 [CleanMyMac](https://macpaw.com/cleanmymac) is probably the only app you need if you want to stay organized with your Mac.
 
-<!--more-->
-
 I have always been a bit reluctant with "magic cleaner" of any kind. I have tried some of them in the past. First, it is hard to tell what they really do and it is often easier to let the system automatically cleanup things as it is supposed to be done, and oftentimes those apps do not offer much more than what is readily available in a Terminal (`sudo purge` to reclaim unused RAM, `sudo periodic daily weekly monthly` to remove temporary caches and files, etc.). So, why CleanMyMac?
 
 First of all, even if you can put all your shell commands into a chron job, init script, or whatever, it is hard to beat a native app that provides you with a nice UI and lots of handy utilities. Indeed, CleanMyMac includes several components. The main task is probably to analyze the whole system in order to delete unused files, delete caches, or execute scheduled maintenance scripts. If this is a first try, when you launch CleanMyMac you will probably end up with several Go's of additional free space on your HD time (useless settings or cache data, localization files, temporary folders) and a slight performance boost. This is well summarized by the Summary View that sits at the top of the left menu bar:

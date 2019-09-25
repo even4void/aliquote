@@ -8,7 +8,7 @@ categories: ["2011"]
 
 Some further reading notes on the dimensional vs. categorical approaches to mental disorders.
 
-I just uploaded a BibTeX file as [gist 1106828](https://gist.github.com/1106828) on github. An htmlized version is available here: [dsm5_minimal.html](/pub/dsm5_minimal.html). It is all about the revised version of the Diagnostic and Statistical Manual of Mental Disorders (DSM). Most of these papers come from the references list available on [dsm5.org](http://www.dsm5.org).
+I just uploaded a BibTeX file as [gist 1106828](https://gist.github.com/1106828) on Github. An htmlized version is available here: [dsm5_minimal.html](/pub/dsm5_minimal.html). It is all about the revised version of the Diagnostic and Statistical Manual of Mental Disorders (DSM). Most of these papers come from the references list available on [dsm5.org](http://www.dsm5.org).
 
 As a follow-up to a previous post on [Psychometrics, measurement, and diagnostic medicine](/post/psychometrics-measurement-and-diagnostic-medicine), here is a good article describing why a dimensional approach to the assessment and diagnosis of personality disorders is necessary in place of the well-established but controversial categorical approach: [Assessment and diagnosis of personality disorder: Perennial issues and an emerging reconceptualization](http://www.ncbi.nlm.nih.gov/pubmed/16903806), by Lee A. Clark, *Annual Review of Psychology*, 2007, *58*: 227-257. 
 

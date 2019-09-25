@@ -8,8 +8,6 @@ categories: ["2019"]
 
 Fixing little annoying Emacs things in the morning is probably the best way to start the day. This is also known as procrastination.
 
-<!--more-->
-
 This morning I was annoyed by the fact that my new shiny Emacs modeline was actually displaying Python 2.7 while I am using Python 3 since at least 3 years now. Everything worked as expected though: I am still able to launch a Python REPL and I get my current IPython environment; likewise if I send a buffer to the Python inferior process the right version of Python is used. I should note that I am not using [Anaconda](https://www.anaconda.com) (or [pipenv](https://pipenv.readthedocs.io/en/latest/), or whatever) as I prefer to rely on bare bone Python installed via Homebrew (even if it keeps insisting with installing and updating `python@2` for some libraries I once installed). And I am using the recommended settings for [flycheck](https://github.com/flycheck) and `python-mode`, namely:
 
 ```emacs-lisp

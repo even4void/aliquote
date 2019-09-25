@@ -8,8 +8,6 @@ categories: ["2019"]
 
 A lot of [Euler problems](https://aliquote.org/tags/euler/) can be solved or best understood using number theory or algebra. Decimal numbers also play a particular role in several of these challenges. Here are a few properties that may prove useful in thinking about some of Euler problems.
 
-<!--more-->
-
 As for a simple definition, we will say that a decimal number is a rational number which can be written in fractional form as $\tfrac{a}{10^n}$, $a \in \mathbb{Z}$ and $n \in \mathbb{N}$. Note that this set, $\mathbb{D}$, is a [subring](<https://en.wikipedia.org/wiki/Ring_(mathematics)#Subring>) of $\mathbb{Q}$, the set of rationals, which means that addition, difference and product of two decimal numbers yield a decimal number. The main interest in decimal numbers lies in the fact that they can be written and manipulated using base-10 notation. Let $x=\frac{a}{10^n}$ be a decimal number, with $a > 0$ and $n \ge 0$. Since we can express $a$ using base-10 notation as:
 
 $$ a = \sum\_{i=0}^m = a_m \times 10^m + a\_{m-1} \times 10^{m-1} + \dots + a_1 \times 10 + a_0, $$

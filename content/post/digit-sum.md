@@ -8,8 +8,6 @@ categories: ["2019"]
 
 A lot of Euler problems amount to find the sum of digits in a given numbers. The digit sum is easy to compute using Lisp or Scheme, provided you convert the number at hand into a list or as a string, then as ascii-decoded character: `(char->integer #\1)` returns 49 in Racket so it is quite easy to write a little helper function to convert any character into its corresponding integer value.
 
-<!--more-->
-
 However, if you prefer to keep working with numbers, here is a little function that will convert any number into a list of digits. It is then a matter of applying `foldr` or `apply` to this list to compute any quantity of interest, e.g., the sum of all digits:
 
 ```scheme

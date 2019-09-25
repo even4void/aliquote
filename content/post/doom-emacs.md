@@ -8,8 +8,6 @@ categories: ["2018"]
 
 After [Spacemacs](http://spacemacs.org), I am currently experimenting with another variant of an evil-powered Emacs: [Doom Emacs](https://github.com/hlissner/doom-emacs). As far as I can tell, it is blazing fast and the default factory settings are well thought.
 
-<!--more-->
-
 The installation went well and I was able to run Emacs in 10' or so. A few hours later, I was done with additional configuration using a private module. There would remain many things to add but I think I am done for tonight. At least, I can edit Markdown and Org files, with literate programming enabled in case I need to evaluate Stata, Python or Lisp code (without [ESS](https://ess.r-project.org)).
 
 I found that all those minor edits were easier compared to Spacemacs. This is probably because we do not have to worry about accumulating custom settings in a large `init.el` file. Indeed, it is possible to separate key bindings, package options and "`setq` stuff" in different places --- `init.el`, `config.el`, `packages.el`, and `autoload/` --- which all sit in a private directory. Even if this environment relies heavily on evil, I find myself using Emacs key bindings more often than (e)Vi(l) ones, but I guess this is just a compromise between that little RSI syndrome that some people complain about and the cognitive flexibility required to switch from 15 years of Emacs habits to modal editing.

@@ -2,7 +2,7 @@
 title: "Blogging about this Jekyll blog"
 date: 2010-04-15T17:39:14+01:00
 draft: false
-tags: ["misc", "ruby", "perl"]
+tags: ["this", "ruby", "perl"]
 categories: ["2010"]
 ---
 

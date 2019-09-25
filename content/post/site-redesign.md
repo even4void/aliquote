@@ -2,7 +2,7 @@
 title: "Site redesign"
 date: 2019-09-22T11:38:07+02:00
 draft: false
-tags: ["misc"]
+tags: ["this"]
 categories: ["2019"]
 ---
 

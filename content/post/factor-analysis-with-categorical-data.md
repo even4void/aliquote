@@ -9,7 +9,7 @@ categories: ["2012"]
 I often read questions on the use of Factor Analysis (FA) with categorical data, typically binary (yes/no) indicators or ordinal responses (e.g., Likert-type items). Here is a brief list of references that justify its use in this context, and provide comparison with other measurement models (mostly from the Item Response Theory literature).
 
 Usually, my first thought when someone ask whether we can use exploratory or confirmatory FA on dichotomous or polytomous items is a paper by Jan de Leeuw:
-Takane and de Leeuw, <i class="fa fa-file-pdf-o fa-1x"></i> [On the relationship between item response theory and factor analysis of discretized variables](http://takane.brinkster.net/Yoshio/p026.pdf), *Psychometrika* (1987) 52(3):393.
+Takane and de Leeuw, [On the relationship between item response theory and factor analysis of discretized variables](http://takane.brinkster.net/Yoshio/p026.pdf), *Psychometrika* (1987) 52(3):393.
 
 Basically, this paper demonstrates that Bock's marginal likelihood method for a two-parameter IRT model with gaussian errors ('normal ogive model') is equivalent to traditional factor analysis for categorical data, in case of dichotomous (Christoffersson, 1975) and ordered polytomous items (Muthén, 1984). Generalization to the case of unordered polytomous items is also discussed in Section 4. The "taxonomy of data for the IRT and FA models" (Table 1, p. 403) encompasses a wide range of models and applications:
 

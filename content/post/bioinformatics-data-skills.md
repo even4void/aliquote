@@ -8,8 +8,6 @@ categories: ["2019"]
 
 Here are quick notes I took while reading [Bioinformatics Data Skills: Reproducible and Robust Research with Open Source Tools](http://shop.oreilly.com/product/0636920030157.do), by Vince Buffalo.
 
-<!--more-->
-
 ![](/img/bioinformatics-data-skills.jpg)
 
 Note that there is a dedicated [Github repository](https://github.com/vsbuffalo/bds-files) as well as a companion website on Vince Buffalo's [website](http://vincebuffalo.org/book/).

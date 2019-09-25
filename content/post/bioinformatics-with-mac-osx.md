@@ -8,8 +8,6 @@ categories: ["2008"]
 
 Doing Bioinformatics on a Mac OS X isn't really difficult given the number of software that currently support this platform. Here are some useful links for the biocomputer scientist who likes efficient and fast programming language:
 
-<!--more-->
-
 - [Beginning Python for Bioinformatics][Beginning Python for Bioinformatics]
 - [Ruby Bioinformatics code][Ruby Bioinformatics code]
 - [Beginning Bioinformatics for Perl Programmers][Beginning Bioinformatics for Perl Programmers]

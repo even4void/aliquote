@@ -8,8 +8,6 @@ categories: ["2019"]
 
 Recently I decided to switch to the Fish shell, after several years of zsh'ing everythings in a terminal on my Mac, mostly iTerm by the way. Here are some thoughts after some days of use.
 
-<!--more-->
-
 I have been an happy Zsh user for several years, and zsh has been my main shell on my last three laptops. I used the nice [Oh-my-zsh](https://ohmyz.sh) framework to add plugins and themes, although I ended up building my own PS1 prompt since none of those provided by the existing themes was to my liking. My `.zshrc` config file evolved over time, but I never took the time required to update it to the latest updates of Zsh or Oh-my-zsh. All I did was to remove several plugins that I was barely using, notwithstanding the fact that sometimes there were some conflicts between aliases or functions defined in there and shell builtins or other config files (e.g., `.gitconfig`).
 
 ![](/img/2019-08-16-20-03-46.png)

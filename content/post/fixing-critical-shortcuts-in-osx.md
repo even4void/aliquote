@@ -1,10 +1,10 @@
-+++
-title = "Fixing some critical keyboard shortcuts in OS X terminal"
-date = 2014-08-13T22:58:51+01:00
-draft = false
-tags = ["apple", "emacs"]
-categories = ["2014"]
-+++
+---
+title: "Fixing some critical keyboard shortcuts in OS X terminal"
+date: 2014-08-13T22:58:51+01:00
+draft: false
+tags: ["apple", "emacs"]
+categories: ["2014"]
+---
 
 Here are some minor tweaks to default keyboard shortcuts in Apple Terminal.app and [iTerm](http://iterm2.com).
 
@@ -16,7 +16,7 @@ The other one is for iTerm specifically: I deleted the <kbd>⌘ W</kbd> shortcut
 
 For Emacs I have the following in one of my Elisp config file:
 
-```lisp
+```emacs-lisp
 (when (eq system-type 'darwin)
   (require 'exec-path-from-shell)
   (exec-path-from-shell-initialize)

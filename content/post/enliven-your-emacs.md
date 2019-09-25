@@ -8,8 +8,6 @@ categories: ["2019"]
 
 Here are a few tips to brighten up your symbols in Emacs.
 
-<!--more-->
-
 As I am using Doom Emacs, there is now a nice option to use Iosevka with full support for ligatures. Note, however, that you will need to install a [patched version of Iosevka](https://github.com/hlissner/doom-emacs/issues/695), which may not harm your system or other configuration: I use the standard Inziu Iosevka CL in a terminal, and the patched Iosevka in GUI Emacs. Once the font is installed, it is just a matter of adding `(pretty + iosevka)` to your `init.el` to get `pretiffy-mode` in all programming modes, with correct ligatures. The same option is available for Fira Code but I haven't tested it, though.
 
 Now, if you want to add some custom symbols in the `prettify-symbols-alist` variable like, e.g., Eric Kaschalk did ([Mathematical notation in Emacs](http://www.modernemacs.com/post/prettify-mode/)), you could simply use his approach or the one below (which is what I used to use in Spacemacs a few months ago):

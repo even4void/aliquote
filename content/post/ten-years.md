@@ -2,12 +2,12 @@
 title: "Ten Years"
 date: 2018-05-22T06:44:23+02:00
 draft: false
-tags: ["misc"]
+tags: ["this"]
 categories: ["2018"]
 ---
 It's been ten years that this "blog" is up and running.
 
-When I first set up my blogging system, I gave it another name (I didn't like the termn "blog" or "weblog" at that time): "Memos." This section has gone now that the site has been redesigned, but I always liked this title better because it gives a more accurate picture of what all this stuff really is: Just a bunch of ideas jumbled together, for the most part, and several log entries to keep a record of my adventures with my many Macbooks. Originally, it looked like this (as of November 2017 from the [Way Back Machine](https://web.archive.org/web/*/http://aliquote.org/memos)):
+When I first set up my blogging system, I gave it another name (I didn't like the termn "blog" or "weblog" at that time): "Memos." This section has gone now that the site has been redesigned, but I always liked this title better because it gives a more accurate picture of what all this stuff really is: Just a bunch of ideas jumbled together, for the most part, and several log entries to keep a record of my adventures with my many Macbook. Originally, it looked like this (as of November 2017 from the [Way Back Machine](https://web.archive.org/web/*/http://aliquote.org/memos)):
 
 ![](/img/2018-05-22-08-01-43.png)
 

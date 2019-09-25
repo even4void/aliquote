@@ -8,8 +8,6 @@ categories: ["2018"]
 
 Continuing on my series of posts on applications I like (and use most of the time), here is [Deckset](https://www.decksetapp.com), a simple yet effective application to build and deliver gorgeous slides.
 
-<!--more-->
-
 I already discussed Decket [a while ago](/post/from-beamer-to-deckset) while I was in the process of migrating a set of slides from $\LaTeX$ + Beamer to Markdown. That was initially just to try how viable such an option would be in the long term. I have since used Deckset to build short presentations and even complete courses more than once. Now that the Deckset team added support for footer, footnotes and tables, the application should suit the needs of most users. Moreover, in the last update I got from Deckset team, it was also easy to [define a specific theme](https://docs.decksetapp.com/English.lproj/Customization/01-configuration-commands.html) (among those offered by Deckset) in the document header. One of the most interesting feature of Deckset is that you can easily manage to put pictures, movies or single text on a plain page, bypassing the default structure of your slide deck if any. That is something that I really miss when using Markdown + Beamer since this would require to add extra inline $\LaTeX$ commands.
 
 A few pictures are worth than thousand words. When you launch Deckset, you get sort of a drawer where you can see all your recent files. You can pick one and it will be displayed in a dedicated window, or you can just edit your Markdown file directly from your preferred editor.

@@ -8,8 +8,6 @@ categories: ["2019"]
 
 I have never been a big fond of AppleScript or Automator, even if I may have a few scripts lurking around there, notably one that takes care of migrating all the screenshots I take from my Desktop to the "Pictures" folder, after they got renamed following a more usable convention (`yyyy-mm-dd-hh-mm-ss.png`). 
 
-<!--more-->
-
 Now I believe I really suck at using Automator for good since I wasn't able to build a simple script to automagically tag all PDF files that contain annotation (specifically, text highlight) in a specific folder. And so, here is my trying to get the work done using a Terminal instead.
 
 The rationale is as follows: I keep all my PDF files in a dedicated folder, with an associated BibTeX file as well as an org file, `papers.org` where I put some notes using Emacs, mostly as [described here](/post/notes-taking-workflow/). Usually, I add a dedicated tag to each PDF file for which there exists some king of note in my org file. Thoses notes may be just links or snippets of code, or even single quotes, and they are not as rich as I would like them to be (think of [Reading for Programmers](https://codearsonist.com/reading-for-programmers)). The process is cumbersome since I have to review my latest additions and tag the files accordingly, and I would like to automate this process. Moreover, I need a way to adapt this workflow to also handle those papers where I only highlight some pieces of text without even storing anything in my org file. Ideally, I would like all PDF file to be tagged with a yellow sticker when they include some highlighted text, and I guess I can easily manage the rest of the process (auto-tagging the papers reviewed in my org file) from Emacs directly. 

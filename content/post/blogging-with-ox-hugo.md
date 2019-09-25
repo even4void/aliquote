@@ -8,8 +8,6 @@ categories: ["2018"]
 
 Blogging with Emacs and Org: One can find many posts on that specific topic, but here I just wanted to highlight how [ox-hugo](https://ox-hugo.scripter.co) makes it so simple that you only need to have a single file to manage all your posts.
 
-<!--more-->
-
 Note that this only applies to my [micro posts](/micro). For standard posts like this one, I am still creating each new file via the command line using Hugo. This means that I will now have to write my posts using either Markdown (this post) or Org (micro posts), but that is not a big issue since I am quite comfortable with both markup language. Notice also that I published a [few](/post/notes-taking-workflow) [other](/post/migrating-to-hugo) [posts](/post/org-blogging) on how I do manage this blog, but as you may have guessed my writing workflow is subject to intermittent changes.
 
 So for now, rather than creating new micro posts using Hugo from the command line, I just have one Org file which basically looks like the one shown in the screenshot below:

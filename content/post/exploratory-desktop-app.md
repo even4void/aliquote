@@ -8,8 +8,6 @@ categories: ["2018"]
 
 In this brief review, I will talk about [Exploratory Desktop](https://exploratory.io), a fresh approach to building visual analytics and interactive dashboard. If you happen to be one of those cool kids who swear by [dplyr](http://dplyr.tidyverse.org), [pipe & co](https://www.tidyverse.org), this cool app is worth a look, even if, well, [we can't do data science in a GUI](https://www.meetup.com/fr-FR/acm-chicago/events/248060005/).
 
-<!--more-->
-
 I have been following the development of Exploratory since its inception, or when the very first beta was released. It is continuously updated and it has smoothly evolved toward a full-featured UI for exploratory and, more recently, explanatory data analysis. For the latest news (version 4.2), see the [blog post](https://blog.exploratory.io/exploratory-v4-2-released-dashboard-new-analytics-new-charts-and-more-ee5d8aab1adc) from Exploratory team. Kan Nishida, the founder of Exploratory, is regularly posting [tutorials and hot release news on Medium](https://blog.exploratory.io/@kanaugust).
 
 ![](/img/2018-03-26-22-08-29.png)

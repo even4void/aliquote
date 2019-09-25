@@ -8,8 +8,6 @@ categories: ["2019"]
 
 It seems that not everyone agrees on what data mining is. Even on [Stack Exchange](https://stats.stackexchange.com/q/5026). I saw various definitions here and there over the past years. I put them here for the record.
 
-<!--more-->
-
 Here are some definitions I found in books or course material from renowned authors:
 
 > Statisticians were the first to use the term "data mining." Originally, "data mining" or "data dredging" was a derogatory term referring to attempts to extract information that was not supported by the data. (...) Today, "data mining" has taken on a positive meaning. Now, statisticians view data mining as the construction of a statistical model, that is, an underlying distribution from which the visible data is drawn. --- Leskovec, Rajaraman & Ullman. [Mining Massive Datasets](http://mmds.org)
