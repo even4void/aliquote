@@ -2,19 +2,20 @@
 title: "On leaving social media altogether"
 date: 2018-10-06T21:43:57+02:00
 draft: false
-tags: ["misc"]
+tags: ["self"]
 categories: ["2018"]
 ---
-Last week I deleted my LinkedIn account, or rather I asked "them" to remove my profile ASAP since there is no instant deletion of user account. Note that you can still recover your account if you reconnect within 30 days or so.
 
-<!--more-->
+Last week I deleted my LinkedIn account, or rather I asked "them" to remove my profile ASAP since there is no instant deletion of user account. Note that you can still recover your account if you reconnect within 30 days or so.
 
 I don't really care if it is 30 or 40, I just wanted to remove my account (I should note that this failed when I tried this from my iPhone during my first attempt).
 The story in a few screenshots:
 
 ![](/img/2018-10-01-21-03-44.png)
-![](/img/2018-10-01-21-04-12.png)
-![](/img/2018-10-01-21-05-25.png)
+
+{{< fluid_imgs
+  "pure-u-1-2|/img/2018-10-01-21-04-12.png"
+  "pure-u-1-2|/img/2018-10-01-21-05-25.png" >}}
 
 I would like to thank Marion M. for letting me join in back in 2007. I have no news and I will miss her, but not LinkedIn.
 

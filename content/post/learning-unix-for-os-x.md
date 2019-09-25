@@ -1,14 +1,12 @@
-+++
-title = "Learning Unix for OS X"
-date = 2018-02-19T21:37:25+01:00
-draft = false
-tags = ["review", "apple"]
-categories = ["2018"]
-+++
+---
+title: "Learning Unix for OS X"
+date: 2018-02-19T21:37:25+01:00
+draft: false
+tags: ["review", "apple"]
+categories: ["2018"]
+---
 
 *Learning Unix for OS X*, from the O'Reilly collection, is a book I read long ago but that I forgot to review in time. Here are some words about it.
-
-<!--more-->
 
 ![](/img/9781449332310.gif)
 

@@ -5,9 +5,8 @@ draft: false
 tags: ["readings", "clojure"]
 categories: ["2019"]
 ---
-Better late than never, here is a quick check of some of my technical readings from last Summer. Let's start with [Functional Programming: A PragPub Anthology](https://pragprog.com/book/ppanth/functional-programming-a-pragpub-anthology), by Michael Swaine and the PragPub writers.
 
-<!--more-->
+Better late than never, here is a quick check of some of my technical readings from last Summer. Let's start with [Functional Programming: A PragPub Anthology](https://pragprog.com/book/ppanth/functional-programming-a-pragpub-anthology), by Michael Swaine and the PragPub writers.
 
 I did not read the full book, but only the chapters I was interested in. Among the 5 different functional PLs discussed in the book--Scala, Haskell, Clojure, Elixir, and Swift (pending a single chapter on Lua)--I mostly focused on Clojure, Elixir, and Swift, knowing that I would probably never have any use of Elixir. I only went through the chapters about Scala. I like the way the authors lay the subject basis for the functional approach to programming when they say that it is all about functions, immutability, and above all "it's a way of thinking." 
 
@@ -24,9 +23,6 @@ I don't know anything about Elixir, except what I read here and there, especiall
 > That's the driving force behind the new hybrid languages: we want to be able to minimize mutability, but it's a mutable world.
 
 The chapters on Swift were interesting, especially the one on functions<sup>[^2]</sup> and methods (Chapter 25), but I think I learned more from other books, probably because they were more focused on problems I tackle at work (e.g., [Classic Computer Science Problems in Swift](https://www.manning.com/books/classic-computer-science-problems-in-swift); see also, [High Performance Numeric Programming with Swift: Explorations and Reflections](https://news.ycombinator.com/item?id=18876759)). Anyway, I believe Swift is a nice language and I'd like to have time to invest some time digging into it a bit more. Again, Evan Miller has an [interesting review](https://www.evanmiller.org/swift-impressions.html) on the language (see also the [update here](https://www.evanmiller.org/things-that-bother-me-about-swift.html)). And of course, there's all the nice stuff put by [Chris Eidhof](http://chris.eidhof.nl) and [Ole Begemann](https://oleb.net).
-
-
-
 
 
 [^1]: [Concurreny](https://clojure.org/about/concurrent_programming) refers to programs that run multiples processes or threads. Eli Bendersky has a nice post on [Launching Linux threads and processes with clone](https://eli.thegreenplace.net/2018/launching-linux-threads-and-processes-with-clone/).

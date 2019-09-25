@@ -1,16 +1,14 @@
-+++
-title = "Interacting with Weka from Jython"
-date = 2012-09-20T21:28:08+01:00
-draft = false
-tags = ["python"]
-categories = ["2012"]
-+++
+---
+title: "Interacting with Weka from Jython"
+date: 2012-09-20T21:28:08+01:00
+draft: false
+tags: ["python"]
+categories: ["2012"]
+---
 
 I discovered a lovely feature: You can use [WEKA](http://www.cs.waikato.ac.nz/ml/weka/) directly with [Jython](http://www.jython.org) in a friendly interactive [REPL](http://en.wikipedia.org/wiki/Read–eval–print_loop).
 
-<!--more-->
-
-Until now, I always prefered running weka from the command line. For example, the following command fits Random Trees to the `iris` dataset:
+Until now, I always preferred running Weka from the command line. For example, the following command fits Random Trees to the `iris` dataset:
 
 ```
 $ weka weka.classifiers.trees.RandomTree -t iris.arff -i
@@ -48,19 +46,16 @@ The `-i` switch ensures results are displayed on the command line. Here, `weka` 
 alias weka='java -Xmx512m -classpath $CLASSPATH:weka.jar'
 ```
 
-This approach is comparable to the use of the `Simple CLI` that is available in weka GUI, although the latter allows for classnames completion.
+This approach is comparable to the use of the `Simple CLI` that is available in weka GUI, although the latter allows for classnames completion:
 
 ![weka](/img/20120920130015.png)
 
-Online help is also a plus. E.g., when you type
+Online help is also a plus. E.g., at the Simple CLI prompt, you can get a list of all available option for this classifier:
+:
 
 ```
 > java weka.classifiers.trees.J48 -h
-```
 
-at the Simple CLI prompt, you get a list of all available option for this classifier:
-
-```
 Options specific to weka.classifiers.trees.J48:
 
 -U

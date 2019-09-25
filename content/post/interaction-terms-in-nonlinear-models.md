@@ -1,19 +1,16 @@
-+++
-title = "Interaction terms in nonlinear models"
-date = 2008-04-15T09:22:39+01:00
-draft = false
-tags = ["readings", "rstats", "stata"]
-categories = ["2008"]
-+++
+---
+title: "Interaction terms in nonlinear models"
+date: 2008-04-15T09:22:39+01:00
+draft: false
+tags: ["readings", "rstats", "stata"]
+categories: ["2008"]
+---
 
-This discussion is primarily based on the following article, but see also<sup>(1,2)</sup>:
-Ai, C. and Norton, E.C. (2003). <i class="fa fa-file-pdf-o fa-1x"></i> [Interaction terms in logit and probit models](http://www.unc.edu/~enorton/AiNorton.pdf). *Economics Letters*, **80**: 123-129.
-
-<!--more-->
+This discussion is primarily based on the following article, but see also:<sup>(1,2)</sup> Ai, C. and Norton, E.C. (2003). [Interaction terms in logit and probit models](http://www.unc.edu/~enorton/AiNorton.pdf). *Economics Letters*, *80*: 123-129.
 
 > The magnitude of the interaction effect in nonlinear models does not equal the marginal effect of the interaction term, can be of opposite sign, and its statistical significance is not calculated by standard software. We present the correct way to estimate the magnitude and standard errors of the interaction effect in nonlinear models.
 
-The main ideas of this article is that both the test and interpretation of an interaction term in a GLM are done in the wrong way. Instead of interpreting the true interaction coefficient, discussion often relies on the marginal effect of the interaction term. What are marginal effect? In this context, it means that an interaction between two factors should be combined with the main effects marginal to that interaction<sup>(6,8)</sup>. Using the notation of the authors, the interaction effect is the cross derivative of the expected value of $y$:
+The main ideas of this article is that both the test and interpretation of an interaction term in a GLM are done in the wrong way. Instead of interpreting the true interaction coefficient, discussion often relies on the marginal effect of the interaction term. What are marginal effect? In this context, it means that an interaction between two factors should be combined with the main effects marginal to that interaction.<sup>(6,8)</sup> Using the notation of the authors, the interaction effect is the cross derivative of the expected value of $y$:
 
 $$ \frac{\partial \Phi(\cdot)}{\partial x\_1 \partial x\_2} = \underbrace{\beta\_{12}\Phi'(\cdot)}\_{\text{marginal effect}} \hskip-2ex + (\beta\_1 + \beta\_{12})(\beta\_2 + \beta\_{12}x\_1)\Phi''(\cdot). $$
 
@@ -45,7 +42,7 @@ par(opar)
 
 ![](/img/20080414223544.png)
  
-The above figure could hardly be interpreted as is because we need to consider both marginal (not shown) and conditional (these plots) distributions at the same time. However, we can run a reduced (compared to that used in (5)) model including colour, age and sex, as well as colour × age. This is done as follows:
+The above figure could hardly be interpreted as is because we need to consider both marginal (not shown) and conditional (these plots) distributions at the same time. However, we can run a reduced (compared to that used in (5)) model including color, age and sex, as well as color × age. This is done as follows:
 
 ```r
 arrests.glm <- glm(released ~ colour + age + sex + colour:age,
@@ -69,14 +66,14 @@ and here is the resulting output:
   <td>0.853219</td>
   <td>0.241020</td>
   <td>3.540</td>
-  <td>0.0004 ***</td>
+  <td>0.0004 **</td>
   </tr>
   <tr>
   <td>colourWhite</td>
   <td>1.645338</td>
   <td>0.241690</td>
   <td>6.808</td>
-  <td>9.92e-12 ***</td>
+  <td>9.92e-12 **</td>
   </tr>
   <tr>
   <td>age</td>
@@ -97,14 +94,16 @@ and here is the resulting output:
   <td>-0.037299</td>
   <td>0.009362</td>
   <td>-3.984</td>
-  <td>6.78e-05 ***</td>
+  <td>6.78e-05 **</td>
   </tr>
   </tbody>
 </table>
 
-At first glance, the model seems quite satisfactory and no deviations from standard assumptions are noticed (see next Figure).
+At first glance, the model seems quite satisfactory and no deviations from standard assumptions are noticed (see next Figure, left).
 
-![](/img/20080414225804.png)
+{{< fluid_imgs
+  "pure-u-1-2|/img/20080414225804.png"
+  "pure-u-1-2|/img/20080414232436.png" >}}
 
 Now, we can get an ANOVA-like summary by issuing:<sup>(5)</sup>
 
@@ -113,7 +112,7 @@ library(car)
 Anova(arrests.glm)
 ```
 
-The results are shown below:
+The results are shown below (see also figure above, right):
 
 ```
 Anova Table (Type II tests)   
@@ -125,24 +124,21 @@ sex           1.325  1    0.24962
 colour:age   16.479  1  4.918e-05
 ```
 
-![](/img/20080414232436.png)
-
 Note that the vertical axis is labelled on the probability scale (i.e., the response scale) while the estimated effects are plotted on the scale of the linear predictor. The 95% (pointwise) confidence interval is wider at the extreme values of the age variable.
-
 Now, we can proceed to the estimation of the interaction effect using the method proposed by Ai and Norton.
 
 ### References
 
 1. Ai, C. and Norton, E.C. (2000). <a href="http://citeseer.ist.psu.edu/ai00interaction.html">Interaction terms in nonlinear models</a>. Unpublished draft manuscript.
-2. Norton, E.C., Wang, H., and Ai, C. (2004). <a href="http://www.unc.edu/~enorton/NortonWangAi.pdf">Computing interaction effects and standard errors in logit and probit models</a>. *The Stata Journal*, **4(2)**, 154-167.
+2. Norton, E.C., Wang, H., and Ai, C. (2004). <a href="http://www.unc.edu/~enorton/NortonWangAi.pdf">Computing interaction effects and standard errors in logit and probit models</a>. *The Stata Journal*, *4(2)*, 154-167.
 3. Hoetker, G. (2003). <a href="http://www.business.uiuc.edu/Working_Papers/papers/03-0100.pdf">Confounded coefficients: Accurately comparing logit and probit coefficients across groups</a>. *College of Business Working Papers*, University of Illinois.
 4. Berry, W.D., Esarey, J., and Rubin, J.H. (2007). <a href="http://polmeth.wustl.edu/retrieve.php?id=692">Testing for interaction in binary logit and probit models: Is a product term essential?</a> *Working Papers of the Society for Political Methodology*.
-5. Fox, J. (2003). <a href="http://www.jstatsoft.org/v08/i15/paper">Effect displays in R for generalized linear models</a>.* Journal of Statistical Software*, **8(15)**, 18 pp.
+5. Fox, J. (2003). <a href="http://www.jstatsoft.org/v08/i15/paper">Effect displays in R for generalized linear models</a>.* Journal of Statistical Software*, *8(15)*, 18 pp.
 6. Fox, J. (1987). Effect displays for generalized linear models. In Clogg, C.C. (Ed.), *Sociological Methodology 1987*, pp. 347-361. American Sociological Association, Washington DC.
-7. Rabe-Hesketh, S., Skrondal, A., and Pickles, A. (2001). <a href="http://www.gllamm.org/gllamerr.pdf">Maximum likelihood estimation of generalized linear models with covariate measurement errors</a>. *The Stata Journal*, **1(1)**, 26 pp.
+7. Rabe-Hesketh, S., Skrondal, A., and Pickles, A. (2001). <a href="http://www.gllamm.org/gllamerr.pdf">Maximum likelihood estimation of generalized linear models with covariate measurement errors</a>. *The Stata Journal*, *1(1)*, 26 pp.
 8. Bouyer, J., Hémon, D., Cordier, S., Derriennic, F., Stücker, I., Stengel, B., and Clavel, J. (1995). *Épidémiologie, Principes et méthodes quantitatives*. Éditions INSERM.
 9. Chen, C.-H., Härdle, W., and Unwin, A. (Eds.) (2008). *Handbook of Data Visualization*. Springer Verlag. 
-10. Tomz, M., Wittenberg, J., and King, G. (2003). <a href="http://www.jstatsoft.org/v08/i01/paper">Clarify: Software for interpreting and presenting statistical results</a>. *Journal of Statistical Software*, **8(1)**, 29 pp.
+10. Tomz, M., Wittenberg, J., and King, G. (2003). <a href="http://www.jstatsoft.org/v08/i01/paper">Clarify: Software for interpreting and presenting statistical results</a>. *Journal of Statistical Software*, *8(1)*, 29 pp.
 
 [PDF version]: http://www.aliquote.org/pub/003-interaction.pdf
 [Stata]: http://www.stata.com/ "Stata"

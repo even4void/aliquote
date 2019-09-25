@@ -11,8 +11,6 @@ transformation, aggregated visual and numerical summaries, and enhanced R's
 output for most common biostatistical models (linear regression, logistic or
 Cox regression).
 
-<!--more-->
-
 ## Data preparation
 
 Text-based data file (comma- or tab-delimited files) can be imported using

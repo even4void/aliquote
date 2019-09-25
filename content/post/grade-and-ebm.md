@@ -1,12 +1,12 @@
-+++
-title = "GRADE and evidence-based medicine"
-date = 2010-09-02T12:35:52+01:00
-draft = false
-tags = ["readings"]
-categories = ["2010"]
-+++
+---
+title: "GRADE and evidence-based medicine"
+date: 2010-09-02T12:35:52+01:00
+draft: false
+tags: ["readings"]
+categories: ["2010"]
+---
 
-I just came across a recent article published in PLoS Medicine, [Challenges in Developing Evidence-Based Recommendations Using the GRADE Approach: The Case of Mental, Neurological, and Substance Use Disorders](http://www.plosmedicine.org/article/info%3Adoi%2F10.1371%2Fjournal.pmed.1000322?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+plosmedicine%2FNewArticles+(PLoS+Medicine%3A+New+Articles)) (Barbui et al., 2010, PLoS Med 7(8): e1000322), where the WHO describes the route they took to develop their model intervention guide in the context of the [mental health Gap Action Programme](http://www.who.int/mental_health/mhgap/en/index.html) (mhGAP).
+I just came across a recent article published in PLoS Medicine, [Challenges in Developing Evidence-Based Recommendations Using the GRADE Approach: The Case of Mental, Neurological, and Substance Use Disorders](http://www.plosmedicine.org/article/info%3Adoi%2F10.1371%2Fjournal.pmed.1000322) (Barbui et al., 2010, PLoS Med 7(8): e1000322), where the WHO describes the route they took to develop their model intervention guide in the context of the [mental health Gap Action Programme](http://www.who.int/mental_health/mhgap/en/index.html) (mhGAP).
 
 The idea is to provide recommendations for mental, neurological, and substance use disorders, which are responsible for 14% of the global burden of disease worldwide. They rely on the GRADE approach.<sup>(1)</sup>
 

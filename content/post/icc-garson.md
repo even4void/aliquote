@@ -1,17 +1,16 @@
-+++
-title = "Computing intraclass correlation with R"
-date = 2011-04-29T17:14:22+01:00
-draft = false
-tags = ["psychometrics", "rstats"]
-categories = ["2011"]
-+++
+---
+title: "Computing intraclass correlation with R"
+date: 2011-04-29T17:14:22+01:00
+draft: false
+tags: ["psychometrics", "rstats"]
+categories: ["2011"]
+---
 
 I always found Dave Garson's tutorial on [Reliability Analysis](http://faculty.chass.ncsu.edu/garson/PA765/reliab.htm) very interesting. However, all illustrations are with SPSS. Here is a friendly R version of some of these notes, especially for computing intraclass correlation.
 
-
 ## Background
 
-They are different versions of the intraclass correlation coefficient (ICC), that reflect distinct ways of accounting for raters or items variance in overall variance, following <i class="fa fa-file-pdf-o fa-1x"></i> [Shrout and Fleiss (1979)](http://dionysus.psych.wisc.edu/Lit/Articles/ShroutP1979a.pdf) <i class="fa fa-chain-broken fa-1x"></i> (cases 1 to 3 in Table 1):
+They are different versions of the intraclass correlation coefficient (ICC), that reflect distinct ways of accounting for raters or items variance in overall variance, following [Shrout and Fleiss (1979)](http://dionysus.psych.wisc.edu/Lit/Articles/ShroutP1979a.pdf) cases 1 to 3 in Table 1):
 
 - *One-way random effects model*: each item is rated by different raters who are considered as sampled from a larger pool of potential raters, hence they are treated as random effects; the ICC is then interpreted as the % of total variance accounted for by subjects/items variance. This is called the consistency ICC.
 - *Two-way random effects model*: both factors--raters and items/subjects--are viewed as random effects, and we have two variance components (or mean squares) in addition to the residual variance; we further assume that raters assess all items/subjects; the ICC gives in this case the % of variance attributable to raters + items/subjects.
@@ -23,7 +22,7 @@ They are called ICC(1,1), ICC(2,1), and ICC(3,1) when we have only one rating fo
 
 There are many ways to get ICC estimates, including [psy](http://cran.r-project.org/web/packages/psy/index.html) (`icc`), [psych](http://cran.r-project.org/web/packages/psych/index.html) (`ICC`), or [irr](http://cran.r-project.org/web/packages/irr/index.html) (`icc`). I will use the latter one.
 
-I fetched the data from [here](http://dist.stat.tamu.edu/pub/Database/spss_data/) <i class="fa fa-chain-broken fa-1x"></i> , which looks like a general repository for SPSS example dataset that I don't have. Let's go with the `tv-survey.sav` dataset which D. Garson used when describing ICC. Quoting his words, 
+I fetched the data from [here](http://dist.stat.tamu.edu/pub/Database/spss_data/) <i class="fa fa-chain-broken fa-1x"></i> , which looks like a general repository for SPSS example dataset that I don't have. Let's go with the `tv-survey.sav` dataset which D. Garson used when describing ICC. Quoting his words:
 
 > Some 906 respondents were asked if they would watch a particular show for....
 > 
@@ -37,7 +36,7 @@ I fetched the data from [here](http://dist.stat.tamu.edu/pub/Database/spss_data/
 > 
 > where answers were coded 0=No or 1=Yes.
 
-I happen to load the data and recode them as binary variable as follows:
+I happened to load the data and recode them as binary variable as follows:
 
 ```r
 > library(foreign)
@@ -55,7 +54,7 @@ I happen to load the data and recode them as binary variable as follows:
 > tv.num <- sapply(tv, function(x) as.numeric(x)-1)
 ```
 
-Then, computing ICC for "Singles Measures" is kust a matter of running
+Then, computing ICC for "Singles Measures" is just a matter of running:
 
 ```r
 > library(irr)
@@ -76,7 +75,7 @@ Then, computing ICC for "Singles Measures" is kust a matter of running
   0.064 < ICC < 0.448
 ```
 
-The default settings correspond to the so-called "consistency" ICC, that is ICC computed from a one-way ANOVA where raters are considered as random effects (henece, representative of a larger pool of raters). But D. Garson also showed ICC for "Average measures", which means that we consider the unit of analysis to be the mean of several ratings. This is readily obtain with
+The default settings correspond to the so-called "consistency" ICC, that is ICC computed from a one-way ANOVA where raters are considered as random effects (henece, representative of a larger pool of raters). But D. Garson also showed ICC for "Average measures", which means that we consider the unit of analysis to be the mean of several ratings. This is readily obtained using the following instruction:
 
 ```
 > icc(t(tv.num), unit="average")
@@ -132,7 +131,7 @@ SS nonadd = 8.0218509  df = 1
 F (1,20) = 7.8345468   Pr > F: .01108091
 ```
 
-while in R, using the file <i class="fa fa-file-code-o fa-1x"></i> [rb4a.dat](http://www.aliquote.org/pub/rb4a.dat), we have
+In R, using the file [rb4a.dat](/pub/rb4a.dat), we have:
 
 ```r
 > rb4a <- read.table("rb4a.dat", header=T, colClasses=c("numeric","factor","factor"))
@@ -164,9 +163,7 @@ Residuals     20 20.4781  1.0239
 Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1 
 ```
 
-It is important not to forget to treat `a` and `s` as factors!
-
-Let's see it in action.
+It is important not to forget to treat `a` and `s` as factors. Let's see it in action:
 
 ```r
 > library(reshape)
@@ -245,7 +242,7 @@ Tukey's test here confirms that there's no interaction. To find the correspondin
   0.342 < ICC < 0.946
 ```
 
-The second example discussed by Lahey et al. include an interaction effect (the last column from Table 2 was changed to negatively correlate with the others). Let's go with it. 
+The second example discussed by Lahey et al. include an interaction effect (the last column from Table 2 was changed to negatively correlate with the others). Let's go with it:
 
 ```r
 > tab4 <- matrix(c(9,6,8,7,10,6,
@@ -298,7 +295,7 @@ Mean Sq2
 7.986111 
 ```
 
-(By the way, there is a typo in Lahey et al's Table 5: the corresponding DF for the between targets effect should read 5, not 3.)
+<small>(By the way, there is a typo in Lahey et al's Table 5: the corresponding DF for the between targets effect should read 5, not 3.)</small>
 
 Now, what's interesting is that the ICC is negative, but Tukey's test failed to recover the significant interaction, while clearly Rater 4 is at variance with others' ratings:
 
@@ -322,7 +319,7 @@ This might also be shown visually, where Target have been reordered by their mea
 
 In conclusion, the characteristic root test of the interaction might provide an interesting alternative to Tukey's test when there's no main effect [2,3]. I'm not aware of any available R implementation. I should write one. Other relevant papers are listed in the References below.
 
-## References
+### References
  
 1. Lahey, M.A., Downey, R.G., and Saal, F.E. (1983). Intraclass Correlations: There's More There Than Meets the Eye. *Psychological Bulletin*, *93(3)*, 586-595.
 2. Johnson, D.E. and Graybill, F.A. (1972). An analysis of a two-way model with interaction and no replication. *Journal of the American Statistical Association*, *67*, 862-868.
@@ -334,9 +331,9 @@ In conclusion, the characteristic root test of the interaction might provide an 
 8. Bartko, J.J. (1976). <i class="fa fa-file-pdf-o fa-1x"></i> [On Various Intraclass Correlation Reliability Coefficients](http://www.unt.edu/rss/class/Jon/MiscDocs/Bartko_1976.pdf). *Psychological Bulletin*, *83(5)*, 762-765.
 
 
-## Sidenote
+### Sidenote
 
-For the second dataset, the SAV file I used was `GSS93 subset.sav`. and I happen lo load it into R as follows:
+For the second dataset, the SAV file I used was `GSS93 subset.sav`. and I happened lo load it into R as follows:
 
 ```r
 > gss <- read.spss("GSS93 subset.sav", to.data.frame=T)
@@ -352,7 +349,7 @@ Then, to compute Cronbach's alpha and item-scale statistics, I used:
 > alpha(gss.it.num)
 ```
 
-which gives
+This gives:
 
 ```r 
  raw_alpha std.alpha G6(smc) average_r mean  sd
@@ -373,9 +370,7 @@ PADEG  1207 0.74  0.59   0.48  1.9 1.19
 MADEG  1352 0.73  0.58   0.48  1.8 0.94
 ```
 
-which are in close agreement with the results reported by Dave Garson. 
-
-Now, fitting an ANOVA model and applying the Tukey's test yields:
+This is in close agreement with the results reported by Dave Garson. Now, fitting an ANOVA model and applying the Tukey's test yields:
 
 ```r
 > gss.it.num.long <- melt(gss.it.num)
@@ -403,9 +398,7 @@ Residuals     3368 3213.7     1.0
 Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1 
 ```
 
-Again, this is pretty close to what Dave Garson reported on his website, with the right degrees of freedom.
-
-The syntax used for obtaining the above result was:
+Again, this is pretty close to what Dave Garson reported on his website, with the right degrees of freedom. The syntax used for obtaining the above result was:
 
 ```r
 > gss.it.num.long.noNA <- melt(na.omit(gss.it.num))

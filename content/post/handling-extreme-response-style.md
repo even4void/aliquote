@@ -1,12 +1,12 @@
-+++
-title = "Handling extreme response style"
-date = 2010-09-07T22:29:54+01:00
-draft = false
-tags = ["psychometrics"]
-categories = ["2010"]
-+++
+---
+title: "Handling extreme response style"
+date: 2010-09-07T22:29:54+01:00
+draft: false
+tags: ["psychometrics"]
+categories: ["2010"]
+---
 
-Following a response I gave on [stats.stackexchange.com](http://stats.stackexchange.com/) about the analysis of respondents who always answer the most extreme responses, I finally decided to investigate this topic with greater care.
+Following a response I gave on [stats.stackexchange.com](http://stats.stackexchange.com/) about the analysis of respondents who always answer the most extreme responses, I finally decided to investigate the topic of *extreme response style* with greater care.
 
 See the [full thread](http://stats.stackexchange.com/questions/2374/likert-scales-analysis). My main points were that FA applies for attitude items as it does for other kind of measurement instrument, although treating Likert items as continuous data is a long-standing debate. Other models (IRT, SEM, etc.) apply as well. Now, the fact that some respondents may systematically highlight an extreme response style, that is they always select the response categories on the extreme of the scale (e.g., "totally agree" or "totally disagree"), may strongly bias items parameters (whether it be loadings or difficulty).
 
@@ -22,16 +22,9 @@ Likewise, [unfolding models](http://www.psychology.gatech.edu/unfolding/publicat
 
 ## Detecting perfect scores
 
-Hereafter, I am interested in showing how a subsample of "extreme respondents" might impact the quality of the underlying scale. I shall assume a unidimensional construct, for the sake of simplicity. But it should easily extend to the case of multi-scale questionnaire. Rather than simulating response to Likert item (not so easy, in fact), I will just use data on attitude to the environment, included in the ltm package. The data set (N=291) is comprised of a set of six items coded on a three-point scale:<sup>(11)</sup>
+Hereafter, I am interested in showing how a subsample of "extreme respondents" might impact the quality of the underlying scale. I shall assume a unidimensional construct, for the sake of simplicity. But it should easily extend to the case of multi-scale questionnaire. Rather than simulating response to Likert item (not so easy, in fact), I will just use data on attitude to the environment, included in the ltm package. The data set (N=291) is comprised of a set of six items coded on a three-point scale: (1) LeadPetrol Lead from petrol, (2) RiverSea River and sea pollution, (3) RadioWaste Transport and storage of radioactive waste, (4) AirPollution Air pollution, (5) Chemicals Transport and disposal of poisonous chemicals, (6) Nuclear Risks from nuclear power station.<sup>(11)</sup>
 
-> 1. LeadPetrol Lead from petrol.
-> 2. RiverSea River and sea pollution.
-> 3. RadioWaste Transport and storage of radioactive waste.
-> 4. AirPollution Air pollution.
-> 5. Chemicals Transport and disposal of poisonous chemicals.
-> 6. Nuclear Risks from nuclear power station.
-
-which I happen to load as follows:
+I happen to load the data as follows:
 
 ```r
 data(Environment, package="ltm")
@@ -46,9 +39,11 @@ Env.num <- sapply(Environment, as.numeric)
 Env.num[ers.subj, ] <- 2
 ```
 
-We can check that the scale is unidimensional, which would otherwise not motivate the use of an unidimensional IRT model. This is roughly checked from the distribution of the eigenvalue computed through an PCA, where we superimposed those coming from random data. The picture below clearly suggest that unidimensionality holds.
+We can check that the scale is unidimensional, which would otherwise not motivate the use of an unidimensional IRT model. This is roughly checked from the distribution of the eigenvalue computed through an PCA, where we superimposed those coming from random data. The picture below (left panel) clearly suggest that unidimensionality holds.
 
-![](/img/20100912170857.png)
+{{< fluid_imgs
+  "pure-u-1-2|/img/20100912170857.png"
+  "pure-u-1-2|/img/20100912175539.png" >}}
 
 I initially thought of estimating person parameters using the eRm package<sup>(12)</sup> because it has a nice interface and offers several model to handle polytomous items (partial credit and rating scale models). However, estimation is based on CML and person parameters are not computed for so-called zero or perfect scores. Hence, I have to rely on MML and I choose to base my analysis on the Graded Response Model (GRM), with items considered as equally discriminant (constrained GRM).
 
@@ -58,22 +53,20 @@ theta.est <- factor.scores(grm.fit)
 plot(residuals(grm.fit)[,“Resid”])
 ```
 
-Now, let’s look at the residuals of the fitted model, and especially at those response patterns like [3,3,3,3,3,3] (or, equivalently, a total score of 18). It appears that the value for this specific response pattern (highlighted in red in the figure below) is quite extreme, with a residual > 9.5.
+Now, let’s look at the residuals of the fitted model (figure above, right), and especially at those response patterns like [3,3,3,3,3,3] (or, equivalently, a total score of 18). It appears that the value for this specific response pattern (highlighted in red in the figure below) is quite extreme, with a residual > 9.5.
 
-![](/img/20100912175539.png)
-
-Another example can be found in the MischPsycho package which includes a function called `cheat()` that allows to detect unexpected (too similar) response patterns.
+Another example can be found in the `MischPsycho` package which includes a function called `cheat()` that allows to detect unexpected (too similar) response patterns.
 
 ## References
 
-1. Hamilton, D.L. (1968). [Personality attributes associated with extreme response style](http://www.psych.umn.edu/faculty/waller/classes/meas08/Readings/Hamilton1968.pdf) <i class="fa fa-chain-broken fa-1x"></i>. Psychological Bulletin, 69(3): 192–203.
+1. Hamilton, D.L. (1968). [Personality attributes associated with extreme response style](http://www.psych.umn.edu/faculty/waller/classes/meas08/Readings/Hamilton1968.pdf). Psychological Bulletin, 69(3): 192–203.
 2. Greanleaf, E.A. (1992). Measuring extreme response style. Public Opinion Quaterly, 56(3): 328-351.
 3. de Jong, M.G., Steenkamp, J.B.E.M., Fox, J.-P., and Baumgartner, H. (2008). Using Item Response Theory to Measure Extreme Response Style in Marketing Research: A Global Investigation. Journal of marketing research, 45(1): 104–115.
-4. Morren, M., Gelissen, J., and Vermunt, J.K. (2009). [Dealing with extreme response style in cross-cultural research: A restricted latent class factor analysis approach](http://spitswww.uvt.nl/~vermunt/morren2009.pdf) <i class="fa fa-chain-broken fa-1x"></i>.
+4. Morren, M., Gelissen, J., and Vermunt, J.K. (2009). [Dealing with extreme response style in cross-cultural research: A restricted latent class factor analysis approach](http://spitswww.uvt.nl/~vermunt/morren2009.pdf).
 5. Moors, G. (2003). Diagnosing Response Style Behavior by Means of a Latent-Class Factor Approach. Socio-Demographic Correlates of Gender Role Attitudes and Perceptions of Ethnic Discrimination Reexamined. Quality & Quantity, 37(3): 277–302.
 6. de Jong, M.G. Steenkamp J.B., Fox, J.P., and Baumgartner, H. (2008). Item Response Theory to Measure Extreme Response Style in Marketing Research: A Global Investigation. Journal of Marketing Research, 45(1): 104–115.
 7. Javaras, K.N. and Ripley, B.D. (2007). An “Unfolding” Latent Variable Model for Likert Attitude Data. JASA, 102(478): 454–463.
-8. Slides from Moustaki, Knott and Mavridis, [Methods for detecting outliers in latent variable models](http://www.rcec.nl/Publicaties/Downloads%2025ste%20IRT%20workshop/Irini%20Moustaki.pdf) <i class="fa fa-chain-broken fa-1x"></i>.
+8. Slides from Moustaki, Knott and Mavridis, [Methods for detecting outliers in latent variable models](http://www.rcec.nl/Publicaties/Downloads%2025ste%20IRT%20workshop/Irini%20Moustaki.pdf).
 9. Eid, M. and Zickar, M.J. (2007). Detecting response styles and faking in personality and organizational assessments by Mixed Rasch Models. In von Davier, M. and Carstensen, C.H. (Eds.), Multivariate and Mixture Distribution Rasch Models, pp. 255–270, Springer.
 10. Holden, R.R. and Book, A.S. (2009). Using hybrid Rasch-latent class modeling to improve the detection of fakers on a personality inventory. Personality and Individual Differences, 47(3): 185–190.
 11. Brook, L., Taylor, B. and Prior, G. (1991) British Social Attitudes, 1990, Survey. London: SCPR.

@@ -1,14 +1,14 @@
-+++
-title = "Hierarchical Omega in factor analysis"
-date = 2013-02-10T15:10:17+01:00
-draft = false
-tags = ["readings", "psychometrics"]
-categories = ["2013"]
-+++
+---
+title: "Hierarchical Omega in factor analysis"
+date: 2013-02-10T15:10:17+01:00
+draft: false
+tags: ["readings", "psychometrics"]
+categories: ["2013"]
+---
 
 While browsing questions related to psychometrics posted late in 2012 on Cross Validated, I noticed two questions dealing with hierarchical ω<sub>h</sub>.
 
-These questions come from the use of [William Revelle](http://www.personality-project.org/revelle.html)'s [psych](http://cran.r-project.org/web/packages/psych/) package, which offers a very nice toolkit for serious psychometrics, especially work related to factor analysis. Just take a look at some of his <i class="fa fa-file-pdf-o fa-1x"></i> [Psychology 454](http://personality-project.org/revelle/syllabi/454.syllabus.pdf) syllabus to get an idea of what's available in `psych`.
+These questions come from the use of [William Revelle](http://www.personality-project.org/revelle.html)'s [psych](http://cran.r-project.org/web/packages/psych/) package, which offers a very nice toolkit for serious psychometrics, especially work related to factor analysis. Just take a look at some of his [Psychology 454](http://personality-project.org/revelle/syllabi/454.syllabus.pdf) syllabus (PDF) to get an idea of what's available in `psych`.
 
 The ω<sub>h</sub> measure was popularized by Zinbarg, Revelle and coll few years ago. In my answer to this question on Cross Validated, [Omega vs. alpha reliability](http://stats.stackexchange.com/q/39182/930), I neglected to mention that Cronbach's alpha originated in the work of Guttman (as λ<sub>3</sub>), as pointed out by McDonald (p. 92), although this is something I mentioned in an [earlier answer](http://stats.stackexchange.com/a/11846) of mine. Again, William Revelle offer some nice readings on [Psychometric Theory](http://personality-project.org/revelle/syllabi/405.syllabus.html), including [Reliability Theory](http://bit.ly/XvL7ke) (starting p. 44 ff). I haven't use ω<sub>h</sub> myself but it is clear that classical measures of internal consistency suffer from many drawbacks (especially in relation to unidimensionality and equal loadings assumption, as found in my [other posts](/tags/psychometrics) or in several articles<sup>(4,5)</sup>) which are largely ignored in several papers dealing with the validation of health questionnaires that I happen to read.
 

@@ -2,13 +2,11 @@
 title: "Glaneurs de rêves"
 date: 2018-09-30T18:21:24+02:00
 draft: false
-tags: ["readings", "fr"]
+tags: ["fr"]
 categories: ["2018"]
 ---
 
 Des histoires vraies qui vous donnent envie d'inventer des contes fabriqués de toutes pièces.
-
-<!--more-->
 
 Il y a quelques années j'ai lu avec beaucoup de plaisir [Just Kids](http://www.gallimard.fr/Catalogue/GALLIMARD/Folio/Folio/Just-Kids2) de Patti Smith. On y découvre, sous une forme autobiographique dont l'écriture ne laisse rien au hasard, l'univers dans lequel Mapplethorpe et elle ont évolué dans les années 70. Aujourd'hui, je me suis délecté de [Glaneurs de rêves](http://www.gallimard.fr/Catalogue/GALLIMARD/Folio/Folio/Glaneurs-de-reves), toujours autobiographique et tellement poignant sur le plan littéraire et artistique que je ne peux résister à la tentation d'en citer quelques passages :
 
