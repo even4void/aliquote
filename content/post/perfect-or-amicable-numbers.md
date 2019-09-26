@@ -8,8 +8,6 @@ categories: ["2019"]
 
 In which we talk about perfect numbers and amicable pairs. This is somewhat related to problems raised on the Euler project and the Exercism coding track. This also once motivated the name of this site.
 
-<!--more-->
-
 A _perfect number_ is a positive integer that is equal to the sum of its positive divisors, excluding the number itself, which also means such a number is equal to its [aliquot sum](https://en.wikipedia.org/wiki/Aliquot_sum). Perfect numbers can further be classified as deficient or abundant, and in [many other ways](https://en.wikipedia.org/wiki/Perfect_number). What really matters, though, is that all even perfect numbers can be expressed as $N=2^{p-1}(2^p-1)$, where $p$ is a prime number for which $2^p-1$ is a [Mersenne prime](http://mathworld.wolfram.com/MersennePrime.html). Finally, [amicable numbers](https://en.wikipedia.org/wiki/Amicable_numbers) are also interesting since they involved [proper divisors](http://djm.cc/amicable.html): indeed, they are defined so that the sum of the proper divisors of each is equal to the other number. They also form an aliquot sequence of period 2.
 
 It is quite easy to compute the sum of divisors using recursion or list comprehension in Python or Racket. Here is one way in Racket:

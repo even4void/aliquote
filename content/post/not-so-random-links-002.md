@@ -8,8 +8,6 @@ categories: ["2019"]
 
 Some not so random links found on Twitter or elsewhere that I haven't had time to put on the Micro section.
 
-<!--more-->
-
 - [Migrating from Gmail to FastMail](https://www.keithbradnam.com/blog/2013/10/14/migrating-from-gmail-to-fastmail-part-2.html) (part 2): My Gmail became my very own garbage account, where almost every incoming mail is guaranteed to end up in the trash can, and I am aware many others switched over Fastmail or Proton, or are running their own mail server. I was surprised to learn that such move did occur as soon as 2013, as exemplified in this interesting blog post.
 
 - Unfortunately, I lost the reference on Twitter, but I happened to see this link a few days ago: [Normal samples ith linear constraints and given variances](http://fisher.utstat.toronto.edu/dfraser/documents/5.pdf) (PDF, 4 pp.). The author describes an algorithm to generate normal variates $x_1, x_2,\dots, x_n$ satisfying $k$ linear and independant relations $\sum\_{j=1}^n a\_{pj}x_j=0$ ($p=n-k+1,\dots,n$) with a given variance structure $\text{var}(x_i)=v_i$, $i=1,2,\dots,n$.

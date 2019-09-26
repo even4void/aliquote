@@ -8,8 +8,6 @@ categories: ["2019"]
 
 Here is a quick review of _Loving Common Lisp_, by Mark Watson. I initially read an early draft version on Leanpub, but I found some time to (re)read the latest version available.
 
-<!--more-->
-
 If you are new to Common Lisp, I would recommend to first try the excellent blog post written by Steve Losh, [A Road to Common Lisp](http://stevelosh.com/blog/2018/08/a-road-to-common-lisp/). Don't miss it, it's very well written, like many other posts by the same author. I would also recommend the [Common Lisp Cookbook](https://lispcookbook.github.io/cl-cookbook/). There are plenty of additional resources to learn Lisp, either from a pragmatic viewpoint -- [Atabey Kaygun](https://web.itu.edu.tr/kaygun/) writes a lot of math/stat-related algorithm using CL on his Tumblr -- or from a more formal perspective: O'Reilly has a lot of dedicated textbooks targeting the "modern Lisp", aka Clojure, and I particularly love the one written by [Carin Meier](http://gigasquidsoftware.com). If you want to stick with CL, strictly, then [Practical Common Lisp](http://www.gigamonkeys.com/book/) is probably the best way to go.
 
 > Lisp is not just a language; it is also a programming environment and runtime environment.

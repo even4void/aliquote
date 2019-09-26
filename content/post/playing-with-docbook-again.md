@@ -1,25 +1,23 @@
-+++
-title = "Playing With Docbook Again"
-date = 2011-11-14T23:47:47+01:00
-draft = false
-tags = ["apple"]
-categories = ["2011"]
-+++
+---
+title: "Playing With Docbook Again"
+date: 2011-11-14T23:47:47+01:00
+draft: false
+tags: ["apple"]
+categories: ["2011"]
+---
 
 Some notes about installing DocBook tools on OS X Lion.
 
-<!--more-->
-
 I used to write my documents and slides almost exclusively with $\LaTeX$ and Context. Needless to say, this means tweaking default layout a lot (who said that $\LaTeX$ allows for a perfect separation between layout and content?!), so that for small-size documents I now tend to rely on [Pandoc](http://johnmacfarlane.net/pandoc/).
 
-Lastly, I tried to use Pandoc for outputing [DocBook](http://www.docbook.org/) document which I find pretty convenient for web display. It's been almost three years now since the latest time I wrote xml files. Pandoc is already very helpful for $\LaTeX$ (with or without the `xetex` backend), and I even created basic templates for writing Beamer slides in Markdown. For DocBook, I can produce a fairly decent output using [xsltproc](http://xmlsoft.org/XSLT/xsltproc2.html) which comes with OS X. In the `Makefile` for a tutorial on exploratory data analysis with R, I put something like
+Lastly, I tried to use Pandoc for outputing [DocBook](http://www.docbook.org/) document which I find pretty convenient for web display. It's been almost three years now since the latest time I wrote xml files. Pandoc is already very helpful for $\LaTeX$ (with or without the `xetex` backend), and I even created basic templates for writing Beamer slides in Markdown. For DocBook, I can produce a fairly decent output using [xsltproc](http://xmlsoft.org/XSLT/xsltproc2.html) which comes with OS X. In the `Makefile` for a tutorial on exploratory data analysis with R, I put something like:
 
 ```
 xsltproc --xinclude --stringparam html.stylesheet docbook-xsl.css -o eda_r.html \
   http://docbook.sourceforge.net/release/xsl/current/html/docbook.xsl eda_r.xml
 ```
 
-and it works like a charm. However, I would like to use [xmlto](http://cyberelk.net/tim/software/xmlto/) which is built around `xsltproc` but handles everything in a smoother way. 
+It works like a charm. However, I would like to use [xmlto](http://cyberelk.net/tim/software/xmlto/) which is built around `xsltproc` but handles everything in a smoother way. 
 
 ## Installing the pre-requisites
 
@@ -27,7 +25,7 @@ We need to install `gettext` and `getopt` (with support for `--longoptions`, con
 
 First of all, get the latest source tarball of `gettext` from GNU website.
 
-To compile `gettext` 0.18.1.1, you have to run the classical
+To compile `gettext` 0.18.1.1, you have to run the classical combo:
 
 ```
 $ ./configure
@@ -36,7 +34,7 @@ $ make check
 $ sudo make install
 ```
 
-although I had to patch `gettext-tools/gnulib-lib/stpncpy.c` as follows:
+I had to patch `gettext-tools/gnulib-lib/stpncpy.c` as follows:
 
 ```
  #ifndef weak_alias
@@ -45,7 +43,7 @@ although I had to patch `gettext-tools/gnulib-lib/stpncpy.c` as follows:
  #endif
 ```
 
-Then, go forward with `getopt`, which is available at http://software.frodo.looijaard.name/getopt/.
+Then, go forward with `getopt`, which is available at <http:/software.frodo.looijaard.name/getopt/>:
 
 ```
 $ wget http://software.frodo.looijaard.name/getopt/files/getopt-1.1.4.tar.gz
@@ -53,11 +51,7 @@ $ tar xzvf getopt-1.1.4.tar.gz
 $ cd getopt-1.1.4
 ```
 
-In the `Makefile`, update the `LDFLAGS` so it reads `LDFLAGS=-lintl` (which is used for internationalization support in other packages). Then, simply run
-
-(An alternative would be to type directly `LDFLAGS="-lintl" make -e`.)
-
-Yes, that's a bunch of external dependencies for a small program that basically acts as a wrapper around [xsltproc](http://xmlsoft.org/XSLT/xsltproc2.html)...
+In the `Makefile`, update the `LDFLAGS` so it reads `LDFLAGS=-lintl` (which is used for internationalization support in other packages). An alternative would be to type directly `LDFLAGS="-lintl" make -e`. Yes, that's a bunch of external dependencies for a small program that basically acts as a wrapper around [xsltproc](http://xmlsoft.org/XSLT/xsltproc2.html).
 
 Now, we can install `xmlto`. Before that, we need to install the Docbook stylesheets, as well as DocBook 4.2 files. This is well explained [here](https://wincent.com/wiki/Installing_Git_1.5.2.3_on_Mac_OS_X_Tiger) and I follow those instructions. Basically, this means to:
 
@@ -87,7 +81,7 @@ Now, we can install `xmlto`. Before that, we need to install the Docbook stylesh
       'file:///usr/local/share/docbook/xml/4.4/catalog.xml' --create /etc/xml/catalog
     ``` 
     
-which results in `/etc/xml/catalog` reading like this:
+This results in `/etc/xml/catalog` now reading like this:
 
 ```
 $ less /etc/xml/catalog 
@@ -101,7 +95,7 @@ $ less /etc/xml/catalog
 </catalog>
 ```
 
-That's all.
+That's it!
 
 ## Testing the installation
 

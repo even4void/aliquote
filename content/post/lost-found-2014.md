@@ -1,29 +1,25 @@
-+++
-title = "lost+found 2014"
-date = 2015-01-01T20:30:55+01:00
-draft = false
-tags = ["misc", "stata", "psychometrics"]
-categories = ["2015"]
-+++
+---
+title: "lost+found 2014"
+date: 2015-01-01T20:30:55+01:00
+draft: false
+tags: ["this", "stata", "psychometrics"]
+categories: ["2015"]
+---
 
-Here are some draft notes, written in 2014, unfilled but not lost forever. With slight edits to accomodate a proper archive blog post.
-
-<!--more-->
+Here are some draft notes, written in 2014, unfilled but not lost forever. With slight edits to accommodate a proper archive blog post.
 
 ## Stata for structural equation modeling
 <small>(October 2014)</small>
 
 As Mplus syntax often appears a bit cryptic to carry out basic operations in Confirmatory Factor Analysis (CFA), I decided to write out some of the notes I took when using Mplus for recent psychometric studies.
 
-In what follows, I will use data described and analysed in Acock's Stata textbook, [Discovering Structural Equation Modeling Using Stata](http://goo.gl/TJ1W8y). Why this book? Essentially because it provides a ready-to-use dataset [describe it here], and the author discusses several applications of CFA models, including tests for measurement invariance, without much technical details. For those interested in a more rigorous approach, I can recommend *Structural Equation Modeling. Applications Using Mplus*, by Wang & Wang (2012, Wiley).
-
-<u>FIXME</u>: provide URL to 2014-07-02-book-review
+In what follows, I will use data described and analyzed in Acock's Stata textbook, [Discovering Structural Equation Modeling Using Stata](http://goo.gl/TJ1W8y). Why this book? Essentially because it provides a ready-to-use dataset [describe it here], and the author discusses several applications of CFA models, including tests for measurement invariance, without much technical details. For those interested in a more rigorous approach, I can recommend *Structural Equation Modeling. Applications Using Mplus*, by Wang & Wang (2012, Wiley).
 
 ### Multigroup analysis
 
 In this post, I am interested in assessing weak and strong measurement invariance using Stata and Mplus. Both are popular statistical packages, and although these are commercial software they are worth their price, IMHO. Mplus includes more estimators than Stata, but probably we could [tweak Stata commands to mimic Mplus](http://www.stata.com/statalist/archive/2013-01/msg00083.html).
 
-A tutorial on multi-group CFAs with Stata can be found on the UCLA server: [How can I check measurement invariance using the sem command?](http://www.ats.ucla.edu/stat/stata/faq/invariance.htm). Basically, measurement invariance can be assessed by fitting several nested models, where we impose additional constraints at each stage:
+A tutorial on multi-group CFAs with Stata can be found on the UCLA server: [How can I check measurement invariance using the `sem` command?](http://www.ats.ucla.edu/stat/stata/faq/invariance.htm). Basically, measurement invariance can be assessed by fitting several nested models, where we impose additional constraints at each stage:
 
 1. (M1) all parameters free 
 2. (M2) metric (pattern) invariance -- loadings are invariant
@@ -32,15 +28,15 @@ A tutorial on multi-group CFAs with Stata can be found on the UCLA server: [How 
 5. (M5) strict invariance plus factor means are invariant
 6. (M6) strict invariance plus factor means & variances are invariant
 
-Configural invariance is usually assessed using M1, the idea being to check that the hypothetized factor structure holds in all groups. It is also used as a reference (or baseline) model against which other models wil be tested. Model M2 is the first step to demonstrate weak measurement invariance, that is M1 holds (i.e., factor loadings are as expected in all groups) but in addition loadings are equal in all subpopulations. We only allow item intercepts to differ between subgroups. Model M3 is used to test strong measurement invariance where in addition to loadings we impose that item intercepts are equal in all groups. A more constrained model, M4, also adds the constraint of equal errors of measurement. This model, and models M5-M6 are generally too strong, and hard to verify; after all, we only have one sample, and many researchers would be quite happy with demonstrating that strong measurement invariance is verified. [add reference]
+Configural invariance is usually assessed using M1, the idea being to check that the hypothesized factor structure holds in all groups. It is also used as a reference (or baseline) model against which other models will be tested. Model M2 is the first step to demonstrate weak measurement invariance, that is M1 holds (i.e., factor loadings are as expected in all groups) but in addition loadings are equal in all subpopulations. We only allow item intercepts to differ between subgroups. Model M3 is used to test strong measurement invariance where in addition to loadings we impose that item intercepts are equal in all groups. A more constrained model, M4, also adds the constraint of equal errors of measurement. This model, and models M5-M6 are generally too strong, and hard to verify; after all, we only have one sample, and many researchers would be quite happy with demonstrating that strong measurement invariance is verified. [add reference]
 
-To get the dataset under Stata, we write
+To get the dataset under Stata, we write:
 
 ```stata
 . use http://www.stata-press.com/data/dsemus/multgrp_cfa.dta
 ```
 
-To create a standalone text file we will use the handy Stata progam [Stata2mplus](http://www.ats.ucla.edu/stat/stata/faq/stata2mplus.htm), which allows to convert Stata data file to Mplus input file. This is easier than using Stata built-in converters since it will recode missing values, remove header, and select the correct field delimiter:
+To create a standalone text file we will use the handy Stata program [Stata2mplus](http://www.ats.ucla.edu/stat/stata/faq/stata2mplus.htm), which allows to convert Stata data file to Mplus input file. This is easier than using Stata built-in converters since it will recode missing values, remove header, and select the correct field delimiter:
 
 ```stata
 . stata2mplus using multgrp_cfa
@@ -349,20 +345,20 @@ From [Statalist](http://www.stata.com/statalist/archive/2011-11/msg00596.html), 
 - Rindskopf, D., & Rose, T. (1988). Some theory and applications of confirmatory second-order factor analysis. *Multivariate Behavioral Research*, *23(1)*, 51-67.
 - Chen, F.F., West, S.G., & Sousa, K.H. (2006). [A Comparison of Bifactor and Second-Order Models of Quality of Life](http://www.researchgate.net/publication/228369180_A_comparison_of_bifactor_and_second-order_models_of_quality_of_life/file/79e4150aaad4e77775.pdf). *Multivariate Behavioral Research*, *41(2)*, 189–225.
 - Chen, F.F., Hayes, A., Carver, C.S., Laurenceau, J.-P., Zhang, Z. (2012). [Modeling General and Specific Variance in Multifaceted Constructs: A Comparison of the Bifactor Model to Other Approaches](http://www.psy.miami.edu/faculty/ccarver/documents/12_Chen_JP_Bifactor.pdf). *Journal of Personality*, *80(1)*, 219-251.
-- Landsheer, J.A. (2010). The specification of causal models with Tetrad IV: a review. *Structural Equation Modeling*, *17(4)*, 703-711. http://www.phil.cmu.edu/projects/tetrad/
-- Zheng, Z.E., & Pavlou, P.A. (2010). Toward a Causal Interpretation from Observational Data: A New Bayesian Networks Method for Structural Models with Latent Variables. *Information Systems Research*, *21(2)*, 365-391. http://www.utdallas.edu/~ericz/ISR09.pdf
-- Xu, L. (2010). Machine learning problems from optimization perspective. Journal of Global Optimization, 47, 369–401. http://www.cse.cuhk.edu.hk/~lxu/papers/journal/ml-opt10.pdf
-- Tu, S., & Xu, L. (2011a). Parameterizations make different model selections: Empirical findings from factor analysis. Frontiers of Electrical and Electronic Engineering in China, 6(2), 256–274. http://www.cse.cuhk.edu.hk/~lxu/papers/journal/11FEE-tsk-two.pdf
+- Landsheer, J.A. (2010). [The specification of causal models with Tetrad IV: a review](http://www.phil.cmu.edu/projects/tetrad/). *Structural Equation Modeling*, *17(4)*, 703-711. 
+- Zheng, Z.E., & Pavlou, P.A. (2010). [Toward a Causal Interpretation from Observational Data: A New Bayesian Networks Method for Structural Models with Latent Variables](http://www.utdallas.edu/~ericz/ISR09.pdf). *Information Systems Research*, *21(2)*, 365-391.
+- Xu, L. (2010). [Machine learning problems from optimization perspective](http://www.cse.cuhk.edu.hk/~lxu/papers/journal/ml-opt10.pdf). Journal of Global Optimization, 47, 369–401. 
+- Tu, S., & Xu, L. (2011a). [Parameterizations make different model selections: Empirical findings from factor analysis](http://www.cse.cuhk.edu.hk/~lxu/papers/journal/11FEE-tsk-two.pdf). Frontiers of Electrical and Electronic Engineering in China, 6(2), 256–274. 
 - Tu, S., & Xu, L. (2011b). An investigation of several typical model selection criteria for detecting the number of signals. Frontiers of Electrical and Electronic Engineering in China, 6(2), 245–255. http://www.cse.cuhk.edu.hk/~lxu/papers/journal/11FEE-tsk-sev.pdf ;
-- Xu, L. (2011). Codimensional matrix pairing perspective of BYY harmony learning: hierarchy of bilinear systems, joint decomposition of data-covariance, and applications of network biology. Frontiers of Electrical and Electronic Engineering in China, 6(1), 86–119. http://www.cse.cuhk.edu.hk/~lxu/papers/journal/byy11.pdf
+- Xu, L. (2011). [Codimensional matrix pairing perspective of BYY harmony learning: hierarchy of bilinear systems, joint decomposition of data-covariance, and applications of network biology](http://www.cse.cuhk.edu.hk/~lxu/papers/journal/byy11.pdf). Frontiers of Electrical and Electronic Engineering in China, 6(1), 86–119. 
 
 Here are some other references:
 
-- Liu, T., Dai, H., and Zhao, Y. (2012). [Comparison of Full-Information and Limited-Information Methods for Bi-Factor Model](http://goo.gl/vXj6Zh) <i class="fa fa-chain-broken fa-1x"></i>. *Advances in information Sciences and Service Sciences (AISS)*, 4(11), 11-18.
+- Liu, T., Dai, H., and Zhao, Y. (2012). [Comparison of Full-Information and Limited-Information Methods for Bi-Factor Model](http://goo.gl/vXj6Zh). *Advances in information Sciences and Service Sciences (AISS)*, 4(11), 11-18.
 - Chen, F.F., Sousa, K.H., and West, S.G. (2005). [Testing Measurement Invariance of Second-Order Factor Models](http://goo.gl/XuGrJx). *Structural Equation Modeling*, 12(3), 471-492.
 - Resie, S.P, Moore, T.M., and Haviland, M.G. (2010). [Bifactor Models and Rotations: Exploring the Extent to which Multidimensional Data Yield Univocal Scale Scores](http://www.ncbi.nlm.nih.gov/pmc/articles/PMC2981404/). *Journal of Personality Assessement*, *92(6)*, 544–559.
 
-In an older post, I talked about [formative vs. reflective measurement]({{< ref "/post/formative-vs-reflective-measurement.md" >}}). Here are some <i class="fa fa-file-pdf-o fa-1x"></i> [slides](http://goo.gl/61qNvi) that contain a lot more references.
+In an older post, I talked about [formative vs. reflective measurement](/post/formative-vs-reflective-measurement). Here are some [slides](http://goo.gl/61qNvi) that contain a lot more references.
 
 
 ## Book review

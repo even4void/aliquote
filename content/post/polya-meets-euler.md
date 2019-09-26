@@ -8,8 +8,6 @@ categories: ["2019"]
 
 One of Euler problem asks to find the number of ways we can traverse a square lattice using only horizontal and vertical moves (think of the Manhattan distance).
 
-<!--more-->
-
 Interestingly, while a brute-force approach might help to find a working solution in [more or less](http://code.jasonbhill.com/python/project-euler-problem-15/) decent time, this problem amounts to a problem of combinatorics. Pólya proposed a similar problem, where the task is to spell out "abracadabra" by traversing the following pattern, assuming the starting position is at the top most A:<sup>[^1]</sup>
 
          A

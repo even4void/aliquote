@@ -1,27 +1,25 @@
-+++
-title = "Psychoco 2011"
-date = 2011-02-24T21:30:35+01:00
-draft = false
-tags = ["psychometrics", "rstats"]
-categories = ["2011"]
-+++
+---
+title: "Psychoco 2011"
+date: 2011-02-24T21:30:35+01:00
+draft: false
+tags: ["psychometrics", "rstats"]
+categories: ["2011"]
+---
 
 I shamelessly realized I will be missing the [Psychoco 2011](http://uni-tuebingen.de/psychologie/psychoco/) <i class="fa fa-chain-broken fa-1x"></i> workshop. Here are some notes from the program about current research in psychometrics with R.
-
-<!--more-->
 
 ## Differential Item Functioning analysis
 
 Several packages have been released on CRAN since two years or so. This includes:
 
 - [difR](http://cran.r-project.org/web/packages/difR/index.html), from D. Magis and coll., that allows to test for uniform and non-uniform DIF effects in the case of dichotomous items. In its current stage, ten methods are implemented: Mantel-Haenszel, Standardization, Breslow-Day, Logistic regression, Lord’s chi-square test, Raju’s area, Likelihood-ratio test, Generalized Mantel-Haenszel, Generalized logistic regression, Generalized Lord’s chi-square test
-- [psychotree](http://cran.r-project.org/web/packages/psychotree/index.html), from Carolin Strobl and coll. (after [cparty](http://cran.r-project.org/web/packages/cparty/index.html)) which implements a new graphical tree-based method to present DIF results based on M-Fluctuation Tests<sup>(1)</sup>, but see the accompagnying vignette <i class="fa fa-file-pdf-o fa-1x"></i> [Using the raschtree function for detecting differential item functioning in the Rasch model](http://cran.r-project.org/web/packages/psychotree/vignettes/raschtree.pdf).
-- [lordif](http://cran.r-project.org/web/packages/lordif/index.html), by Seung W. Choi, that allows to test for DIF in polytomous items within an hybrid ordinal logistic regression framework; it is not reported in the workshop program but this is the one I used in the DIF study I presented at the [ISOQOL 2010]({{< ref "/post/the-17th-annual-isoqol-conference.md" >}}) conference.
+- [psychotree](http://cran.r-project.org/web/packages/psychotree/index.html), from Carolin Strobl and coll. (after [cparty](http://cran.r-project.org/web/packages/cparty/index.html)) which implements a new graphical tree-based method to present DIF results based on M-Fluctuation Tests<sup>(1)</sup>, but see the accompanying vignette [Using the raschtree function for detecting differential item functioning in the Rasch model](http://cran.r-project.org/web/packages/psychotree/vignettes/raschtree.pdf).
+- [lordif](http://cran.r-project.org/web/packages/lordif/index.html), by Seung W. Choi, that allows to test for DIF in polytomous items within an hybrid ordinal logistic regression framework; it is not reported in the workshop program but this is the one I used in the DIF study I presented at the [ISOQOL 2010](/post/the-17th-annual-isoqol-conference) conference.
 
 Some further references:
 
-1. Magis, D., Beland, S., Tuerlinckx, F., and De Boeck, P. (2010). <i class="fa fa-file-pdf-o fa-1x"></i> [A general framework and an R pack- age for the detection of dichotomous differential item functioning](http://ppw.kuleuven.be/okp/_pdf/Magis2010AGFAA.pdf). *Behavior Research Methods*, 42, 847-862.
-2. Strobl, C., Kopf, J., and Zeileis A (2010). [A New Method for Detecting Differential Item Functioning in the Rasch Model]( http://epub.ub.uni-muenchen.de/11915/). Technical Report 92, Department of Statistics, Ludwig-Maximilians--Universität München.
+1. Magis, D., Beland, S., Tuerlinckx, F., and De Boeck, P. (2010). [A general framework and an R pack- age for the detection of dichotomous differential item functioning](http://ppw.kuleuven.be/okp/_pdf/Magis2010AGFAA.pdf). *Behavior Research Methods*, 42, 847-862.
+2. Strobl, C., Kopf, J., and Zeileis A (2010). [A New Method for Detecting Differential Item Functioning in the Rasch Model](http://epub.ub.uni-muenchen.de/11915/). Technical Report 92, Department of Statistics, Ludwig-Maximilians--Universität München.
 3. Teresi, J.A., Ocepek-Welikson, K., Kleinman, M., Eimicke, J.P., Crane, P.K., Jones, R.N., Lai, J-S., Choi, S.W., Hays, R.D., Reeve, B.B., Reise, S.P., Pilkonis, P.A., and Cella, D. (2009). Analysis of differential item functioning in the depression item bank from the Patient Reported Outcome Measurement Information System (PROMIS): An item response theory approach. *Psychology Science Quarterly*, 51 (2), 148-180.
 
 The interest of the `psychotree` approach is that DIF can be detected between groups of subjects created by more than one covariate. Moreover, the Rasch tree method searches for the value corresponding to the strongest parameter change and splits the sample at that value. Let's work through the simulated dataset included in the `psychotree` package.
@@ -45,9 +43,9 @@ There's now the [catR](http://cran.r-project.org/web/packages/catR/index.html) p
 
 ## PLS path modeling 
 
-I am familiar with the [RGCCA](http://cran.r-project.org/web/packages/RGCCA/index.html) and [plspm](http://cran.r-project.org/web/packages/plspm/index.html) packages for generalized CCA, regularized PLS and PLS path mdoeling, but now I discovered that there is also [semPLS](http://cran.r-project.org/web/packages/semPLS/index.html) (A. Monecke).
+I am familiar with the [RGCCA](http://cran.r-project.org/web/packages/RGCCA/index.html) and [plspm](http://cran.r-project.org/web/packages/plspm/index.html) packages for generalized CCA, regularized PLS and PLS path modeling, but now I discovered that there is also [semPLS](http://cran.r-project.org/web/packages/semPLS/index.html) (A. Monecke).
 
-Let's compare their respective output to a common dataset, anmely the `mobi` data, which comes from an European customer satisfaction index (ECSI) adapted to the mobile phone market, see Tenenhaus et al.<sup>(2)</sup>.
+Let's compare their respective output to a common dataset, namely the `mobi` data, which comes from a European customer satisfaction index (ECSI) adapted to the mobile phone market, see Tenenhaus et al.<sup>(2)</sup>.
 
 Applying the model is as simple as
 
@@ -69,7 +67,7 @@ levelplot(ECSImobi$M, cuts=1, col.regions=c("white","black"),
           xlab="", ylab="", colorkey=FALSE, 
           scales=list(x=list(rot=45)))
 ```
-(idem for `ECSImobi$M`)
+<small>(Idem for `ECSImobi$M`.)</small>
 
 There are a lot of outputs, among which we find
 
@@ -109,14 +107,14 @@ Again, there are useful `plot` methods, including the one used here to summarize
 
 ![path2](/img/20110224165315.png)
 
-Finally, we could also directly use the [lavaan](http://cran.r-project.org/web/packages/lavaan/index.html) or [sem](http://cran.r-project.org/web/packages/sem/index.html) package and fit a traditional CFA/SEM model. In the latter case, there's also a convenient function called `plsm2sem()` that allows to onvert a `plsm` object to an object of class `mod` for usage with interfacing with `sem` methods.
+Finally, we could also directly use the [lavaan](http://cran.r-project.org/web/packages/lavaan/index.html) or [sem](http://cran.r-project.org/web/packages/sem/index.html) package and fit a traditional CFA/SEM model. In the latter case, there's also a convenient function called `plsm2sem()` that allows to convert a `plsm` object to an object of class `mod` for usage with interfacing with `sem` methods.
 
 
 ## Network approach
 
-The [qgraph](http://cran.r-project.org/web/packages/qgraph/index.html) package, which I already pointed to in an earlier post, [Psychometrics, measurement, and diagnostic medicine]({{< ref "/post/psychometrics-measurement-and-diagnostic-medicine.md" >}}).
+The [qgraph](http://cran.r-project.org/web/packages/qgraph/index.html) package, which I already pointed to in an earlier post, [Psychometrics, measurement, and diagnostic medicine](/post/psychometrics-measurement-and-diagnostic-medicine).
 
-In particular, there are nice illustrations on the Big Five theory of personality traits, as measured by the NEOPI, on the dedicated website. Here is the example I like best, for analysing correlation matrices, which basically show (1) an association graph with circular or (2) spring layout, (3) a concentration graph with spring layout, and (4) a factorial graph with spring layout (but see
+In particular, there are nice illustrations on the Big Five theory of personality traits, as measured by the NEOPI, on the dedicated website. Here is the example I like best, for analyzing correlation matrices, which basically show (1) an association graph with circular or (2) spring layout, (3) a concentration graph with spring layout, and (4) a factorial graph with spring layout (but see
 `help(qgraph.panel)`):  
 
 ![qg1](/img/20110224170255.png)
@@ -169,9 +167,9 @@ What does this model actually do in practical terms?
 
 Such models are not available in [lme4](http://cran.r-project.org/web/packages/lme4/index.html) at the moment, but we could use any IRT model that allows to cope with polytomous items. I should provide an example (e.g. with `LPCM()` from the [eRm](http://cran.r-project.org/web/packages/eRm/index.html) package?).
 
-## References
+### References
 
 1. Zeileis, A. and Hornik, K. (2007). Generalized M-Fluctuation Tests for Parameter Instability. Statistica Neerlandica, 61(4), 488–508.
-2. Tenenhaus, M., Vinzi, V.E., Chatelin, Y.-M. and Lauro, C. (2005). <i class="fa fa-file-pdf-o fa-1x"></i> [PLS path modeling](http://www.stat.uni-muenchen.de/institut/ag/leisch/teaching/msl0910/PLS_path_modeling.pdf).  *Computational Statistics & Data Analysis*, 48, 159-205.
+2. Tenenhaus, M., Vinzi, V.E., Chatelin, Y.-M. and Lauro, C. (2005). [PLS path modeling](http://www.stat.uni-muenchen.de/institut/ag/leisch/teaching/msl0910/PLS_path_modeling.pdf). *Computational Statistics & Data Analysis*, 48, 159-205.
 3. McCullagh, P. (1980). Regression models for ordinal data. *Journal of the Royal Society, Series B*, 42, 109-142.
-4. Liu, I. and Agresti, A. (2005). <i class="fa fa-file-pdf-o fa-1x"></i> [The analysis of ordered categorical data: An overview and a survey of recent developments](http://petra.euitio.uniovi.es/~i1770184/Archivos/t141/Test_agresti.pdf). *Sociedad de Estadística e Investigación Operativa*, 15(1), 1-73.
+4. Liu, I. and Agresti, A. (2005). [The analysis of ordered categorical data: An overview and a survey of recent developments](http://petra.euitio.uniovi.es/~i1770184/Archivos/t141/Test_agresti.pdf). *Sociedad de Estadística e Investigación Operativa*, 15(1), 1-73.

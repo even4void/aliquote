@@ -1,14 +1,12 @@
-+++
-title = "lost+found 2016"
-date = 2018-01-21T19:28:46+01:00
-draft = false
-tags = ["misc", "emacs"]
-categories = ["2018"]
-+++
+---
+title: "lost+found 2016"
+date: 2017-01-21T19:28:46+01:00
+draft: false
+tags: ["this", "emacs"]
+categories: ["2017"]
+---
 
 Here are some draft notes, written in 2016, unfilled but not lost forever. With slight edits to accomodate a proper archive blog post.
-
-<!--more-->
 
 ## Docker
 <small>(August 2016)</small>
@@ -68,26 +66,29 @@ Everything seems to work right out of the box. A quick check allowed me to confi
 
 Some key features are highlighted below:
 
-- **Emacs editing mode:** Of course, I stay on holy mode, because I know nothing about Vim and I don't want to learn a new set of key habits (especially modal interaction with my text editor). So I know that I can find everything with `M-x`, as before, but that I now benefit from `M-m` and `Esc-m`, and much more thanks to [Helm][helm] and [which key][which-key], but see my next point.
+- *Emacs editing mode:* Of course, I stay on holy mode, because I know nothing about Vim and I don't want to learn a new set of key habits (especially modal interaction with my text editor). So I know that I can find everything with `M-x`, as before, but that I now benefit from `M-m` and `Esc-m`, and much more thanks to [Helm][helm] and [which key][which-key], but see my next point.
 
-- **Helm and which key:** I think Spacemacs is just an incredible idea (for Emacs users at least) because it offers a great UI while maintaining availbale key bindings. You don't need to learn anything except that you just want to forget about your `.emacs` or `init.el` config file, and replace it with `.spacemacs` (or [something else][emacsd] if you like). Now, you get additional pleasure: `M-m` (so-called [leader key][leader]) will trigger a dedicated Helm mini-buffer
+- *Helm and which key:* I think Spacemacs is just an incredible idea (for Emacs users at least) because it offers a great UI while maintaining availbale key bindings. You don't need to learn anything except that you just want to forget about your `.emacs` or `init.el` config file, and replace it with `.spacemacs` (or [something else][emacsd] if you like). Now, you get additional pleasure: `M-m` (so-called [leader key][leader]) will trigger a dedicated Helm mini-buffer
 
     ![Spacemacs and which-key](/img/2016-05-05-12-26-28.png)
     
     Beside Helm completion mini-buffer, Spacemacs also provide so-called micro states, which allows to perform quick repetitive action, e.g. dealing with buffers, by simple key presses.
 
-- **Documentation:** The documentation is, well, just great. Everything comes as [Org][org]-formatted files, and it is readily available *via* `M-m h SPC` (or, we can just press the `F1` key to get a series of help-related commands).
+- *Documentation:* The documentation is, well, just great. Everything comes as [Org][org]-formatted files, and it is readily available *via* `M-m h SPC` (or, we can just press the `F1` key to get a series of help-related commands).
 
-- **Layers:** I really like the concept of layers: packages are loaded on demand and can be updated very easily.
+- *Layers:* I really like the concept of layers: packages are loaded on demand and can be updated very easily.
 
-- **Gorgeous themes:** just add `themes-megapack` to your configuration layer and you get some 100 dark or light themes for Emacs, but see this [online gallery][themes] for an overview. I personally use the [atom-one-dark-theme][one-dark] (with [Source Code Pro][source-code], 13pt), and this can be added to the 'additional packages' layer.
+- *Gorgeous themes:* just add `themes-megapack` to your configuration layer and you get some 100 dark or light themes for Emacs, but see this [online gallery][themes] for an overview. I personally use the [atom-one-dark-theme][one-dark] (with [Source Code Pro][source-code], 13pt), and this can be added to the 'additional packages' layer.
 
-- **Syntax checking and spell checking:** They are available via simple 'Toggle' (`M-m t s` or `S`)
+- *Syntax checking and spell checking:* They are available via simple 'Toggle' (`M-m t s` or `S`)
 
-- **Workspace and layouts:** A combination of latest Spacemacs persp-based layout and eye-browse
+- *Workspace and layouts:* A combination of latest Spacemacs persp-based layout and eye-browse
 
-- **Update packages and Spacemacs:**
+- *Update packages and Spacemacs:*
 
+{{% alert note %}}
+Oups, it looks like this has yet to be written.
+{{% /alert %}}
 
 [^1]: And then with Python 3.5, which was installed as the default Python interpreter by conda, because I use [offlineimap][offlineimap] to fetch my email on my local HD (and [process them with mu4e][mu4e]) and it is not compatible with Python 3.5, sigh. Maybe I should just switch to [mbsync][mbsync] or [imapfw][imapfw], which might replace offlineimap at some point.
 
@@ -119,6 +120,6 @@ Some key features are highlighted below:
 [one-dark]: https://github.com/jonathanchu/atom-one-dark-theme
 [source-code]: https://github.com/adobe-fonts/source-code-pro
 [offlineimap]: https://github.com/OfflineIMAP/offlineimap
-[mu4e]: {{< ref "/post/using-mu-to-manage-e-mails.md" >}}
+[mu4e]: /post/using-mu-to-manage-e-mails
 [imapfw]: http://imapfw.offlineimap.org
 [mbsync]: http://isync.sourceforge.net

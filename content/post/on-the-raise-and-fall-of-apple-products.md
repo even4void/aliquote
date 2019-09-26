@@ -8,8 +8,6 @@ categories: ["2018"]
 
 I was reminded by [a colleague of mine](https://github.com/briatte/) that it is harder to stand by Apple OSs than good old Un*x systems, unless you accept to upgrade frequently. I am even not speaking of security updates or OS minor version upgrade. I read somewhere that the Macbooks have a lifetime of about 4 years. This is not only about hardware: software may become obsolete soon or later.
 
-<!--more-->
-
 In the present case, the problem arose when trying to [install Pandoc on old release of OS X](https://github.com/jgm/pandoc/issues/4661).
 Such peculiarities can waste a lot of your time. This happened to me recently when trying to reinstall [xgobi](https://github.com/ggobi/xgobi). I got it working on my old Macbook running El Capitan, so I thought I would resurrect my old X11 habits on my current Macbook. It is clear now that I will have to rely on GGobi only. I started writing a post back in April but I am probably better leaving it as the following rough draft. The title was: "On Compiling Xgobi 20 Years Later."
 

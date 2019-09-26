@@ -2,15 +2,13 @@
 title = "Playing with TwitteR"
 date = 2011-06-25T12:41:24+01:00
 draft = false
-tags = ["rstats"]
+tags = ["rstats", "twitter"]
 categories = ["2011"]
 +++
 
-[Some months ago]({{< ref "/post/playing-with-backupmytweets.md" >}}), I played with Un*x command-line tools to parse my tweets fetched from BackupMyTweets. Here is a more elegant to do so with R.
+[Some months ago](/post/playing-with-backupmytweets), I played with Un*x command-line tools to parse my tweets fetched from BackupMyTweets. Here is a more elegant to do so with R.
 
-<!--more-->
-
-Well, the code is rather simple and most of what we need is already available through the [twitteR](http://cran.r-project.org/web/packages/twitteR/index.html) package.
+Well, the code is rather simple and most of what we need is already available through the [twitteR](http://cran.r-project.org/web/packages/twitteR/index.html) package:
 
 ```r
 library(twitteR)
@@ -29,7 +27,7 @@ my.tags <- lapply(my.tweets, function(x) try(find.tag(x), silent=TRUE))
 sort(table(unlist(my.tags)), decr=TRUE)
 ```
 
-To get the number of records I have, 
+To get the number of records I have:
 
 ```r
 me <- getUser("@chlalanne")

@@ -8,8 +8,6 @@ categories: ["2018"]
 
 Yesterday day read was about "optimization", namely the [Mature Optimization Handbook](http://carlos.bueno.org/optimization/) written by Carlos Bueno. See also this [HN thread](https://news.ycombinator.com/item?id=6763683).
 
-<!--more-->
-
 I should note that the book is nicely typesetted and can be viewed in full-screen mode on a Mac---I really like this since it is often hard to read a PDF book using two-page layout on a 12 inch monitor with default font setting (usually, 8 to 13 pt). 
 
 I really like the opening quote from Don Knuth (in [Structured programming with go to statements](http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.103.6084)), probably well known from experienced programmers:

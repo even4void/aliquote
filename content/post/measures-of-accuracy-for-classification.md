@@ -1,16 +1,13 @@
-+++
-title = "Measures of accuracy for classification"
-date = 2010-12-03T17:36:54+01:00
-draft = false
-tags = ["readings", "statistics"]
-categories = ["2010"]
-+++
+---
+title: "Measures of accuracy for classification"
+date: 2010-12-03T17:36:54+01:00
+draft: false
+tags: ["readings", "statistics"]
+categories: ["2010"]
+---
 
 I just discovered a not so recent article providing an overview of measures of accuracy in predictive classification tasks. Specifically, this article focuses on the pros and cons of different measures of classification accuracy with a particular emphasis on percentage-, distance-, correlation-, and information-based indices for binary outcomes:
-
-<!--more-->
-
-Baldi, P., Brunak, S., Chauvin, Y., Andersen, C.A.F., and Nielsen, H., [Assessing the accuracy of prediction algorithms for classification: an overview]http://bioinformatics.oxfordjournals.org/content/16/5/412.abstract, Bioinformatics (2000) 16(5): 412-424.
+Baldi, P., Brunak, S., Chauvin, Y., Andersen, C.A.F., and Nielsen, H., [Assessing the accuracy of prediction algorithms for classification: an overview](http://bioinformatics.oxfordjournals.org/content/16/5/412.abstract), Bioinformatics (2000) 16(5): 412-424.
 
 Here is the abstract:
 
@@ -85,8 +82,6 @@ $$ C=\frac{\text{TP}-N\bar d\bar m}{N\sqrt{\bar d\bar m(1-\bar d)(1-\bar m)}}. $
 And since d&#772;=(TP+FN)/N, and m&#772;=(TP+FP)/2, we finally have
 
 $$ C=\frac{\text{TP}\times\text{TN}-\text{FP}\times\text{FN}}{\sqrt{(\text{TP}+\text{FN})(\text{TP}+\text{FP})(\text{TN}+\text{FP})(\text{TN}+\text{FN})}}. $$
-
-
 
 As for other interesting references, I would suggest the following articles:
 

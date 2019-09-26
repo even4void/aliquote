@@ -1,14 +1,12 @@
-+++
-title = "Yet another gray theme for R base graphics"
-date = 2015-07-25T19:49:53+01:00
-draft = false
-tags = ["rstats", "dataviz"]
-categories = ["2015"]
-+++
+---
+title: "Yet another gray theme for R base graphics"
+date: 2015-07-25T19:49:53+01:00
+draft: false
+tags: ["rstats", "dataviz"]
+categories: ["2015"]
+---
 
 Among things I like with R is that if you are not happy with default settings, e.g. for graphics, then you can usually update some parameters or make your own plotting function.
-
-<!--more-->
 
 For instance, Karl Broman proposed his own theme for base R graphics, with a grey background for the main plotting region (à la `ggplot2`). He even uploaded a [full package](https://cran.r-project.org/web/packages/broman/) to CRAN; see the `grayplot()` function.
 

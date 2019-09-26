@@ -8,8 +8,6 @@ categories: ["2019"]
 
 Here is the monthly micro review of (not so) random links I found while browsing the interweb lately.
 
-<!--more-->
-
 - [Patch Workflow With Mutt - 2019](http://kroah.com/log/blog/2019/08/14/patch-workflow-with-mutt-2019/). Even if I am not using Mutt for reading/writing emails (and I no longer have that many emails to read/write these days), I always find interesting to read others' approach to email processing. This is a good read, full of interesting ideas (and not only re. GTD). In the same spirit, I like reading posts about Emacs and Org. Soon or later, they will end up on [Irreal blog](https://irreal.org/blog/), so I just have to check my RSS feeds from time to time. Or I may happen to find ones myself, e.g., [A Daily Journal in Org Mode](http://zerolib.com/journaling-procedure.html). John Jacobsen's website and Github repository is full of good ideas and tips that I like to read when I have some free time. And guess what? This site was done using Org mode (and [a bit of Clojure](https://github.com/eigenhombre/organa)). This site is not just about programming (e.g., [l.26-97](https://github.com/eigenhombre/rosalind/blob/master/src/rosalind/core.clj) if you ever try to solve [Rosalind](http://rosalind.info/) problems), though; see, e.g.: [Reflections on a Year of Daily Memory Drawings](http://zerolib.com/daily-composition-lessons-learned.html)---lovely, isn't it?
 
 - [Thoughts on Racket2](https://beautifulracket.com/appendix/thoughts-on-racket2.html). A few weeks ago I mentioned some hot news from the latest Racket conf, namely the fact that the next-gen Racket (aka Racket2?) will probably be parenthesis-free. Matthew Butterick has a much more detailed overview of the points raised by Matthew Flatt, and he has some very on the point thoughts on the future of Lisp languages.
@@ -30,7 +28,7 @@ Here is the monthly micro review of (not so) random links I found while browsing
 
       > Plain text can certainly have a reputation for looking lazy or cheap, but I feel this is mostly perpetuated in the design and marketing communities. I can assure you that your average day-to-day users are much less opinionated about your email campaign design than you are. Look to satisfy your customers’ needs before your own.
 
-**Blog rolling**:
+*Blog rolling*:
 
 - [How UTF-8 works](http://feedproxy.google.com/~r/TheEndeavour/~3/zpg4Q-hjzDo/), on John Cook's blog: Nice exposition of UTF-8 internals; see also the related post: [Excel, R and Unicode](http://feedproxy.google.com/~r/TheEndeavour/~3/RrngOUWdZoU/).
 - Some useful tips and tricks on [brace expansion in Bash/Zsh](https://leancrew.com/all-this/2019/09/brace-yourself-im-in-an-expansive-mood/), by Dr. Drang.

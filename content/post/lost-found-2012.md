@@ -1,14 +1,12 @@
-+++
-title = "lost+found 2012"
-date = 2013-01-01T20:19:51+01:00
-draft = false
-tags = ["misc"]
-categories = ["2013"]
-+++
+---
+title: "lost+found 2012"
+date: 2013-01-01T20:19:51+01:00
+draft: false
+tags: ["this"]
+categories: ["2013"]
+---
 
 Unfinished and drafts posts from 2012.
-
-<!--more-->
 
 ## Unidimensional scaling
 <small>(July 2012)</small>
@@ -19,10 +17,9 @@ Basically, scaling models may be used to scale persons, stimuli, or both. Likert
 
 ### Thurstone scaling
 
-Thurstone is well known for his [law of comparative judgment](http://en.wikipedia.org/wiki/Law_of_comparative_judgment) whereby each individual makes a discrimination or response involving a judgment as to the relative degree of prestige of each occupation, where we assume that the distribution of all *discriminal processes* aroused by any stimulus will be normal wrt. modal discriminal process on the psychological continuum. For more information, see
-Thurstone, L.L. (1994). [A law of comparative judgment](http://bit.ly/SMiXCO). *Psychological Review*, 101(2), 266-270.
+Thurstone is well known for his [law of comparative judgment](http://en.wikipedia.org/wiki/Law_of_comparative_judgment) whereby each individual makes a discrimination or response involving a judgment as to the relative degree of prestige of each occupation, where we assume that the distribution of all *discriminal processes* aroused by any stimulus will be normal wrt. modal discriminal process on the psychological continuum. For more information, see Thurstone, L.L. (1994). [A law of comparative judgment](http://bit.ly/SMiXCO). *Psychological Review*, 101(2), 266-270.
 
-According to this law, the degree to which any two stimuli can be discriminated is a direct function of the difference in their status as reagrds the attribute in question. For instance,
+According to this law, the degree to which any two stimuli can be discriminated is a direct function of the difference in their status as regards the attribute in question. For instance,
 
 This has led to developing three distinct methods of scaling: paired comparisons, successive intervals, and equal-appearing intervals.
 
@@ -43,34 +40,34 @@ Here is Edwards's list of desirable characteristics for attitude items:
 (Edwards, A. (1957). *Techniques of attitude scale construction*. Englewood
 Cliffs, NJ: Prentice-Hall.)
 
-
-
 ### Likert scaling
-<small>(null & void)</small>
+
+{{% alert note %}}
+Oups, it looks like this has yet to be written.
+{{% /alert %}}
 
 ### Guttman model
 
 Contrary to Likert scaling, the purpose of Guttman scaling is to scale both respondents and questionnaire items, in relation to a given attitude.
 
 ### Unfolding theory
-<small>(null & void)</small>
+
+{{% alert note %}}
+Oups, it looks like this has yet to be written.
+{{% /alert %}}
 
 
 ## Pyschoco and JSS
 <small>(June 2012)</small>
 
-Last year I posted a note on the [Psychoco conference]({{< ref "/post/psychoco-2011.md" >}}). The official website is [here](http://eeecon.uibk.ac.at/psychoco/). There is now a special issue in the *Journal of Statistical Software* about this project: [Psychoco: Psychometric Computing in R](http://www.jstatsoft.org/v48/). Here is a quick review.
+Last year I posted a note on the [Psychoco conference](/post/psychoco-2011). The official website is [here](http://eeecon.uibk.ac.at/psychoco/). There is now a special issue in the *Journal of Statistical Software* about this project: [Psychoco: Psychometric Computing in R](http://www.jstatsoft.org/v48/). Here is a quick review.
 
 
 ## Clinical prediction models
 <small>(May 2012)</small>
 
-<i class="fa fa-external-link fa-1x"></i> [Cochrane Prognosis Methods Group](http://prognosismethods.cochrane.org/our-publications)
-
-<i class="fa fa-external-link fa-1x"></i> [Reporting of prognostic markers: current problems and development of guidelines for evidence-based practice in the future](http://www.ncbi.nlm.nih.gov/pmc/articles/PMC2747576/)
-
-<i class="fa fa-external-link fa-1x"></i> [Reporting of prognostic studies of tumour markers: a review of published articles in relation to REMARK guidelines](http://www.nature.com/bjc/journal/v102/n1/full/6605462a.html)
-
-<i class="fa fa-external-link fa-1x"></i> [Rules of evidence for cancer molecular-marker discovery and validation](http://www.vailworkshop.org/files/2010/LibraryResources/Gonen%20References/Ransohoff%20DF_Rules%20of%20evidence%20for%20cancer%20molecular-marker%20discovery%20and%20validation.pdf)
-
-<i class="fa fa-external-link fa-1x"></i> [Primer: an evidence-based approach to prognostic markers](https://www.nature.com/articles/ncponc0287)
+- [Cochrane Prognosis Methods Group](http://prognosismethods.cochrane.org/our-publications)
+- [Reporting of prognostic markers: current problems and development of guidelines for evidence-based practice in the future](http://www.ncbi.nlm.nih.gov/pmc/articles/PMC2747576/)
+- [Reporting of prognostic studies of tumour markers: a review of published articles in relation to REMARK guidelines](http://www.nature.com/bjc/journal/v102/n1/full/6605462a.html)
+- [Rules of evidence for cancer molecular-marker discovery and validation](http://www.vailworkshop.org/files/2010/LibraryResources/Gonen%20References/Ransohoff%20DF_Rules%20of%20evidence%20for%20cancer%20molecular-marker%20discovery%20and%20validation.pdf)
+- [Primer: an evidence-based approach to prognostic markers](https://www.nature.com/articles/ncponc0287)

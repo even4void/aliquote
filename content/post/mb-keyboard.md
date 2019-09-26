@@ -8,8 +8,6 @@ categories: ["2018"]
 
 Last week, I spilled a cup of coffee (sweet, of course) on the keyboard of my Macbook 12″ and I had to spend the rest of the week with an external keyboard. It was a first, in both cases!
 
-<!--more-->
-
 I already spilled some beer on the function keys a year ago. Apart from a few and less responsive sticky touches it had no other consequences. This time, however, the keyboard simply stopped working, except the power button and the track pad. Hopefully, I had no difficulty to connect a bluetooth [Magick Keyboard](https://apple.co/2IG51bj). The magick keyboard is really great. I love the particular feel of the keys and its size is almost identical to the Macbook in-built keyboard so I don't really need to readjust the position of my hands. I will keep this option for the case I am working at home.
 
 ![](/img/IMG_0224.jpg)

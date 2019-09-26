@@ -8,9 +8,7 @@ categories: ["2019"]
 
 I just finished reading _The Little Schemer_, by Friedman and Felleisen. Here are some basic facts about very simple yet useful data structures: lists.
 
-<!--more-->
-
-First of all, this is a very nice book for people interested in Lisp, Scheme, or functional programming to a larger extent. It is very different from SICP in that it focus on basic building blocks (`car`, `cdr`, `cons`, `eq`, etc.) and use a very pragmatic approach to understanding the structuration and interpretation of forms and s-expr. The penultimate goal of this book (4th ed., after the original _Little Lisper_) is to learn to think in a functional way. The ten commandments are worth keeping in mind for that very specific purpose:
+First of all, this is a very nice book for people interested in Lisp, Scheme, or functional programming to a larger extent. It is very different from SICP in that it focus on basic building blocks (`car`, `cdr`, `cons`, `eq`, etc.) and use a very pragmatic approach to understanding the structure and interpretation of forms and s-expr. The penultimate goal of this book (4th ed., after the original _Little Lisper_) is to learn to think in a functional way. The ten commandments are worth keeping in mind for that very specific purpose:
 
 1. When recurring on a list of atoms, `lat`, ask two questions about it: `(null? lat)` and `else`. When recurring on a number, `n`, ask two questions about it: `(zero? n)` and `else`. When recurring on a list of s-expr, `l`, ask three questions about it: `(null? l)`, `(atom? (car l))`, and `else`.
 2. Use `cons` to build lists.
@@ -24,7 +22,7 @@ First of all, this is a very nice book for people interested in Lisp, Scheme, or
 9. Abstract common patterns with a new function.
 10. Build functions to collect more than one value at a time.
 
-Rules 1 and 4 mostly ressemble safe guards we would use in any programming language, and the other rules also apply even in imperative languages. However, in this post I am only interested in rule 2: using `cons` to build list. LISP stands for LISt Processing, right? And indeed, lists and sequences are the most useful data structures in Lisp or Scheme dialects, inasmuch as we don't need vectors. A cons cell is just a record holding two values, much like a pair as in `(1 . 2)`. Note that it is different from `(list 1 2)`, which in fact is composed of two cons cells, where the first cons cell contains 1 and a pointer to the second cons cell (same for the second cons, except that it includes `nil` to signal the end of the list). So, to add an element in front of a list, you will just be consing it as in the following example:
+Rules 1 and 4 mostly resemble safe guards we would use in any programming language, and the other rules also apply even in imperative languages. However, in this post I am only interested in rule 2: using `cons` to build list. LISP stands for LISt Processing, right? And indeed, lists and sequences are the most useful data structures in Lisp or Scheme dialects, inasmuch as we don't need vectors. A cons cell is just a record holding two values, much like a pair as in `(1 . 2)`. Note that it is different from `(list 1 2)`, which in fact is composed of two cons cells, where the first cons cell contains 1 and a pointer to the second cons cell (same for the second cons, except that it includes `nil` to signal the end of the list). So, to add an element in front of a list, you will just be consing it as in the following example:
 
 ```lisp
 (cons 1 (list 2 3 4))

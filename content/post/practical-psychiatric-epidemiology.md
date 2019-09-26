@@ -1,21 +1,19 @@
-+++
-title = "Practical psychiatric epidemiology"
-date = 2008-04-27T20:03:43+01:00
-draft = false
-tags = ["review"]
-categories = ["2008"]
-+++
+---
+title: "Practical psychiatric epidemiology"
+date: 2008-04-27T20:03:43+01:00
+draft: false
+tags: ["review"]
+categories: ["2008"]
+---
 
 I just read *Practical Psychiatric Epidemiology*, from Prince, M., Stewart, R., Ford, T., and Hotopf, M. (Eds.) (Oxford, 2003).
 
-<!--more-->
-
-There is already a [review] in *The Bristish Journal of Psychiatry*, 186: 268 (2005). Hereafter, I would like to quote some of the main ideas of this nice textbook on research and methodological aspects of psychiatric epidemiology. Although this textbook is mostly dedicated to students in epidemiology or psychiatry (which I am not, of course), it contains a huge amount of useful references and advices to whom may be concerned with the analysis of comparative studies in the biomedical domain. The growing interest in genetic-related studies and the now available statistical methods to deal with large-scale surveys or quality of life studies allow for a deeper understanding and takings of mental health problems. These emerging issues in psychiatric epidemiology offer a new research area open to inter-disciplinary collaboration.
+There is already a [review] in *The British Journal of Psychiatry*, 186: 268 (2005). Hereafter, I would like to quote some of the main ideas of this nice textbook on research and methodological aspects of psychiatric epidemiology. Although this textbook is mostly dedicated to students in epidemiology or psychiatry (which I am not, of course), it contains a huge amount of useful references and advices to whom may be concerned with the analysis of comparative studies in the biomedical domain. The growing interest in genetic-related studies and the now available statistical methods to deal with large-scale surveys or quality of life studies allow for a deeper understanding and takings of mental health problems. These emerging issues in psychiatric epidemiology offer a new research area open to inter-disciplinary collaboration.
 
 Basically, psychiatric epidemiology is concerned with the study of prognosis and treatment of psychiatric disorders. Contrary to more classical [epidemiology][epidemiology], study on mental health related pathology does not always involve biological events or signals, thus emphasizing the need to build questionnaire or dedicated interview that might lead to some useable manifest variables. With this in mind, some of this work has more to do with usual psychometrics (i.e. the science of the measurement of mental phenomena). Generally speaking, work related to health care aims at answering three kind of question:
 
 - What is going on? Only history taking, examination and diagnosis allow the practician to deal with such a question.
-- Why? Answer to this question may be provided by aetiological research based on transversal or longitudinal studies.
+- Why? Answer to this question may be provided by etiological research based on transversal or longitudinal studies.
 - What do we do about it? Answer to this question relies on intervention studies, including RCTs, but is obviously associated with some ethical problems.
 
 These topics are treated at length in Section 2 of the textbook, which we will resume in a few paragraphs. Further, quoting Eaton (1986) cited on page 5:
@@ -24,7 +22,7 @@ These topics are treated at length in Section 2 of the textbook, which we will r
 
 This is just to say that psychiatric epidemiology has to be distinguished from classical epidemiological in the way data can be collected and inference may be drawn. Indeed, it is not very easy to design a study where we deliberately manipulate risk factors, nor when we decide to continue a study that would affect someone's welfare. Thus, studies are mainly of observational nature per se, and there we run into problems related to confounding or mediating effects that are often not easily solvable.
 
-Section 1 is mainly devoted to the history of psychatric epidemiology and the new tools developed so far. Most of these statistical apparatus grow on measurement theory which put emphasis on validity and reliability of the measurement of mental processes. Such topics are dealt at length by G. Dunn in his textbook *Statistics in Psychiatry*. Additionally, case-control and cohort studies have provided much more interesting results than cross-sectional surveys developed in the eighteen century. These kind of study design are discussed in the next section, but see below. Cross-cultural issues are discussed in a separate chapter: V. Patel mainly points to the comparability of psychiatric disorders measurement in different countries whose social and cultural setting may interfere with a direct and clear-cut interpretation of the results.
+Section 1 is mainly devoted to the history of psychiatric epidemiology and the new tools developed so far. Most of these statistical apparatus grow on measurement theory which put emphasis on validity and reliability of the measurement of mental processes. Such topics are dealt at length by G. Dunn in his textbook *Statistics in Psychiatry*. Additionally, case-control and cohort studies have provided much more interesting results than cross-sectional surveys developed in the eighteen century. These kind of study design are discussed in the next section, but see below. Cross-cultural issues are discussed in a separate chapter: V. Patel mainly points to the comparability of psychiatric disorders measurement in different countries whose social and cultural setting may interfere with a direct and clear-cut interpretation of the results.
 
 Section 2 reviews the basic experimental design used to assess or uncover significant marker of mental disorders. As shown in the next figure, this includes: cross-sectional, case-control and cohort or longitudinal studies, randomized clinical trials, and post-hoc or meta-analysis. In short, the design and analysis of a study aims at maximizing the precision and validity of its findings. Avoiding bias or confounding effect is thus the primary goal of any epidemiologist, especially because most of the studies under consideration are observational per se. Strict control over experimental factors or exposure, like in an RCT, are thus generally lacking.
 
@@ -107,7 +105,7 @@ Probably the most well-known designs are the Case-control and Cohort design stud
 
 In either case, we need to ensure the proper recording of the data, as well as appropriate statistical analysis. While the former may be facilitate with dedicated software[^1], care must be taken when analyzing data gathered through complex sampling frame, like stratified sampling with unequal sampling weights or cluster sampling. Such designs call for specialized software like SAS or Stata, though SPSS now has some survey design capabilities (since version 15). S.J. Pocock gives a nice overview of clinical trials and how to manage them: <i class="fa fa-file-pdf-o fa-1x"></i> [When to stop a clinical trial][When to stop a clinical trial].
 
-Section 3 puts emphasis on the reading of data, in particular on the relevance of causality in the interpretation of a significant association between symptoms, biological or genetical markers, and disturbed behavior or mental trouble. This is probably the most interesting aspect of such studies, and obvisouly the harder one... Many software are available for study comparison, also known as meta-analysis (e.g. [Revman][Revman]), but read the chapter [Software for meta-analysis and publications bias] of *Publication Bias in Meta-Analysis: Prevention, Assessment and Adjustments*, H. Rothstein, A.J. Sutton, and M. Borenstein (Wiley, 2005). There is also this interesting article in JAMA, [Meta-analysis of Observational Studies in Epidemiology], and BMJ, [Investigating and dealing with publication and other biases in meta-analysis][Investigating and dealing with publication and other biases in meta-analysis], written by J.A.C. Sterne and coll. Both are available on-line.
+Section 3 puts emphasis on the reading of data, in particular on the relevance of causality in the interpretation of a significant association between symptoms, biological or genetical markers, and disturbed behavior or mental trouble. This is probably the most interesting aspect of such studies, and obviously the harder one... Many software are available for study comparison, also known as meta-analysis (e.g. [Revman][Revman]), but read the chapter [Software for meta-analysis and publications bias] of *Publication Bias in Meta-Analysis: Prevention, Assessment and Adjustments*, H. Rothstein, A.J. Sutton, and M. Borenstein (Wiley, 2005). There is also this interesting article in JAMA, [Meta-analysis of Observational Studies in Epidemiology], and BMJ, [Investigating and dealing with publication and other biases in meta-analysis][Investigating and dealing with publication and other biases in meta-analysis], written by J.A.C. Sterne and coll. Both are available on-line.
 
 The fundamental question when interpreting research findings is to consider what observations “mean” and what can be inferred from them. The [CONSORT statement][CONSORT statement] also provides useful guidelines for reporting results gained through RCTs. The diagram below illustrates the checking process that every critical reviewer may follow in order to ensure that a correct inference can be done based on the observed results.
 
@@ -117,11 +115,11 @@ Robert Stewart offers in Chapter 13 an extensive discussion around causal pathwa
 
 ![Hill 1965](/img/20080501202234.png)
 
-Causation, or causality interpretation, are by far the most difficult aspects of epidemiological research. Cohort and cross-sectional studies might both lead to confoundig effects for example. Another set of criteria has been proposed by H.B. Asher in *Causal Modeling* (Sage, 1976), as cited by S. Menard (*Longitudinal Research*, Sage University Paper 76, 1991):
+Causation, or causality interpretation, are by far the most difficult aspects of epidemiological research. Cohort and cross-sectional studies might both lead to confounding effects for example. Another set of criteria has been proposed by H.B. Asher in *Causal Modeling* (Sage, 1976), as cited by S. Menard (*Longitudinal Research*, Sage University Paper 76, 1991):
 
 - The phenomena or variables in question must covary, as indicated for example by differences between experimental and control groups or by nonzero correlation between the two variables.
 - The relationship must not be attributable to any other variable or set of variables, i.e., it must not be spurious, but must persist even when other variables are controlled, as indicated for example by successful randomization in an experimental design (no difference between experimental and control groups prior to treatment) or by a nonzero partial correlation between two variables with other variable held constant.
-- The supposed cause must precede or be simultnaeous with the supposed effect in time, as indicated by the change in the cause occuring no later than the associated change in the effect.
+- The supposed cause must precede or be simultaneous with the supposed effect in time, as indicated by the change in the cause occurring no later than the associated change in the effect.
 
 While the first two criteria can easily be checked using a cross-sectional or time-ordered cross-sectional study, the latter can only be assessed with longitudinal data, except for biological or genetic characteristics for which temporal order can be assume without longitudinal data. Of course, the situation becomes more complex in case of a non-recursive causal relationship. To catch up some of the most useful concepts, here is a brief illustration of the main cause-effect relationships one may encounter in an observational study:
 
@@ -142,7 +140,7 @@ Here are some useful links about actual survey or health related information sys
 - [CONSORT, Transparent Reporting of Trials][CONSORT, Transparent Reporting of Trials]
 
 Finally, I have compiled some of the most relevant bibliography entries (to my
-opinion, of course) in the following HTMLized [BibTeX file] [BibTeX file], or just get the source <i class="fa fa-file-code-o fa-1x"></i> [PEP.bib][PEP.bib].
+opinion, of course) in the following HTMLized [BibTeX file] [BibTeX file], or just get the source [PEP.bib][PEP.bib].
 
 ### Remark
 
@@ -166,7 +164,7 @@ When I am looking for some large-scale (aggregated or not) dataset, I usually se
 [Investigating and dealing with publication and other biases in meta-analysis]: http://www.bmj.com/cgi/content/full/323/7304/101
 [CONSORT statement]: http://bmj.bmjjournals.com/cgi/content/full/313/7057/570
 [The environment and disease: association or causation?]: http://www.aliquote.org/pub/Hill_1965.pdf
-[social epidemiology]: /post/methods-in-social-epidemiology.md
+[social epidemiology]: /post/methods-in-social-epidemiology
 [Eurostat]: http://ec.europa.eu/eurostat/
 [World Health Organization]: http://www.who.int/en/
 [Global Health Atlas]: http://www.who.int/globalatlas/
@@ -175,5 +173,5 @@ When I am looking for some large-scale (aggregated or not) dataset, I usually se
 [Medical algorithms]: http://www.medal.org/visitor/login.aspx
 [Publications Bias]: http://www.meta-analysis.com/pages/pub_bias.html
 [CONSORT, Transparent Reporting of Trials]: http://www.consort-statement.org/
-[BibTeX file]: https://aliquote.org/pub/PEP.html
-[PEP.bib]: https://aliquote.org/pub/PEP.bib
+[BibTeX file]: /pub/PEP.html
+[PEP.bib]: /pub/PEP.bib

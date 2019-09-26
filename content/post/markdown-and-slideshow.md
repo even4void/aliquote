@@ -1,36 +1,35 @@
-+++
-title = "Markdown and slideshow"
-date = 2014-04-17T22:05:37+01:00
-draft = false
-tags = ["misc"]
-categories = ["2014"]
-+++
+---
+title: "Markdown and slideshow"
+date: 2014-04-17T22:05:37+01:00
+draft: false
+tags: ["misc"]
+categories: ["2014"]
+---
 
 I really like [Markdown](http://daringfireball.net/projects/markdown/syntax) for its simplicity and the fact that it allow to write text-based documents with very few requirements: You just need a text editor (mine is Emacs but this doesn't really matter).
 
+Long ago, I wrote a little post entitled [Markdown everywhere](/post/markdown-everywhere), when I started evolving from old typesetting habits ($\LaTeX$ or Context) to more simplified markup languages (before Markdown, I used to use [Asciidoc](http://www.methods.co.nz/asciidoc/)). For more elaborated ideas on combining $\TeX$ and Markdown, please see [How I stopped worrying and started using Markdown like $\TeX$](http://randomdeterminism.wordpress.com/2012/06/01/how-i-stopped-worring-and-started-using-markdown-like-tex/). I still like $\TeX$-based documents, because it offers so much flexibility and great rendering options; here is an <i class="fa fa-file-pdf-o fa-1x"></i> [example](http://www.aliquote.org/cours/misc/gee/gee_tutor-fa3ce81.pdf) with a custom Context template. Now, it is clear that Markdown gained enough popularity to come in various flavors as the main texting tools in several software, e.g., the R statistical software.
 
-Long ago, I wrote a little post entitled [Markdown everywhere]({{< ref "/post/markdown-everywhere.md" >}}), when I started evolving from old typesetting habits ($\LaTeX$ or Context) to more simplified markup languages (before Markdown, I used to use [Asciidoc](http://www.methods.co.nz/asciidoc/)). For more elaborated ideas on combining $\TeX$ and Markdown, please see [How I stopped worrying and started using Markdown like $\TeX$](http://randomdeterminism.wordpress.com/2012/06/01/how-i-stopped-worring-and-started-using-markdown-like-tex/). I still like $\TeX$-based documents, because it offers so much flexibility and great rendering options; here is an <i class="fa fa-file-pdf-o fa-1x"></i> [example](http://www.aliquote.org/cours/misc/gee/gee_tutor-fa3ce81.pdf) with a custom Context template. Now, it is clear that Markdown gained enough popularity to come in various flavours as the main texting tools in several software, e.g., the R statistical software.
-
-There are a number of great review of available software to edit and process Markdown files. For exemple, here are two recent articles I found with little Googling:
+There are a number of great review of available software to edit and process Markdown files. For example, here are two recent articles I found with little Googling:
 
 - [78 Tools for Writing and Previewing Markdown](http://mashable.com/2013/06/24/markdown-tools/)
 - [35+ Markdown Apps for the Mac](http://mac.appstorm.net/roundups/productivity-roundups/35-markdown-apps-for-the-mac/) for the Mac more specifically
 
 But see [What is Markdown?](http://whatismarkdown.com/) to learn more about.
 
-Recently, I heard about [Deckset](http://www.decksetapp.com/), which looks like a really great tool to publish nice looking slides using Markdown only. Unfortunately it appears that is is [only available](https://twitter.com/decksetapp/status/456534972648550400) for OS X 10.9, while I choose to stay at 10.7 ([long ago]({{< ref "/post/my-setup.md" >}}) again). I know how easy it is to produce [Beamer slides](http://johnmacfarlane.net/pandoc/demo/example9/producing-slide-shows-with-pandoc.html) with Pandoc and Markdown, the advantage being that we are not restricted to HTML+JS output. 
+Recently, I heard about [Deckset](http://www.decksetapp.com/), which looks like a really great tool to publish nice looking slides using Markdown only. Unfortunately it appears that is is [only available](https://twitter.com/decksetapp/status/456534972648550400) for OS X 10.9, while I choose to stay at 10.7 ([long ago](/post/my-setup) again). I know how easy it is to produce [Beamer slides](http://johnmacfarlane.net/pandoc/demo/example9/producing-slide-shows-with-pandoc.html) with Pandoc and Markdown, the advantage being that we are not restricted to HTML+JS output. 
 
-Hopefully, this is not the only solution and here are a couple of links about standalone apps or wrappers.
+Hopefully, this is not the only solution and there are a couple of links about standalone apps or wrappers.
 
-<i class="fa fa-external-link fa-1x"></i> [Markdown to Slide Presentation](http://caseywatts.github.io/2012/12/12/markdown_to_slide_presentation/): reviews some HTML frameworks, see also [Roundup of HTML-Based Slide Deck Toolkits](http://www.impressivewebs.com/html-slidedeck-toolkits/).
+- [Markdown to Slide Presentation](http://caseywatts.github.io/2012/12/12/markdown_to_slide_presentation/): reviews some HTML frameworks, see also [Roundup of HTML-Based Slide Deck Toolkits](http://www.impressivewebs.com/html-slidedeck-toolkits/).
 
-<i class="fa fa-external-link fa-1x"></i> [Swipe](http://beta.swipe.to/markdown/): offers an online hosting solution (akin to [Rpubs](https://rpubs.com/) or [NBViewer](http://nbviewer.ipython.org/) except that you write your slides online).
+- [Swipe](http://beta.swipe.to/markdown/): offers an online hosting solution (akin to [Rpubs](https://rpubs.com/) or [NBViewer](http://nbviewer.ipython.org/) except that you write your slides online).
 
-<i class="fa fa-external-link fa-1x"></i> [Markdown Presenter](https://github.com/jsakamoto/MarkdownPresenter): a minimalist wrapper around [Showdown.js](https://github.com/coreyti/showdown).
+- [Markdown Presenter](https://github.com/jsakamoto/MarkdownPresenter): a minimalist wrapper around [Showdown.js](https://github.com/coreyti/showdown).
 
-<i class="fa fa-external-link fa-1x"></i> [Remark](https://github.com/gnab/remark): another in-browser, markdown-driven slideshow, see <http://remarkjs.com/>.
+- [Remark](https://github.com/gnab/remark): another in-browser, markdown-driven slideshow, see <http://remarkjs.com/>.
 
-<i class="fa fa-external-link fa-1x"></i> [Landslide](https://github.com/adamzap/landslide): a Python-based slideshow system, which Chris Fonnesbeck was using for one of his course:
+- [Landslide](https://github.com/adamzap/landslide): a Python-based slideshow system, which Chris Fonnesbeck was using for one of his course:
 
 {{< tweet 382960381607809024 >}}
 

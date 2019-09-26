@@ -1,14 +1,12 @@
-+++
-title = "OS X El Capitan"
-date = 2015-10-14T19:47:41+01:00
-draft = false
-tags = ["apple"]
-categories = ["2015"]
-+++
+---
+title: "OS X El Capitan"
+date: 2015-10-14T19:47:41+01:00
+draft: false
+tags: ["apple"]
+categories: ["2015"]
+---
 
 I am always reluctant to download pre-release version when OS X get updated. So I waited for the final version of El Capitan in App Store.
-
-<!--more-->
 
 - Apple Mail finally became a useable application in fullscreen mode: You can now start writing a message and go back to your inbox without having to close the editor window.
 - It is now possible to have two fullscreen applications side by side ('split view' mode), and Spaces has been improved in many ways. Since I use [Moom](https://manytricks.com/moom/) to manage my windows and desktop, I don't see much difference, but I guess those little pixels lost in normal mode may be of importance for some people.

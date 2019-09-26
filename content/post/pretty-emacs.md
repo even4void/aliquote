@@ -8,8 +8,6 @@ categories: ["2019"]
 
 Lately I have spent a fair amount of time tweaking my (Doom) Emacs config to make it look the way I want it to.
 
-<!--more-->
-
 > I care about how my editor looks because I stare at it all day. How could I not care deeply about how it looks? --- [Jack Baty](https://www.baty.net/2019/how-my-editor-looks-is-important-to-me/)
 
 I do care as well, especially since I spend nearly 70% of my "computing time" in front of this editor.

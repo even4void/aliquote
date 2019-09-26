@@ -1,16 +1,14 @@
-+++
-title = "Welcome OS X Lion"
-date = 2011-07-24T10:39:41+01:00
-draft = false
-tags = ["apple"]
-categories = ["2011"]
-+++
+---
+title: "Welcome OS X Lion"
+date: 2011-07-24T10:39:41+01:00
+draft: false
+tags: ["apple"]
+categories: ["2011"]
+---
 
 As a lot of Apple users, I upgraded my OS when Lion became available through AppStore. A lot of UI improvements are noticeable, but also a lot of software upgrade behind the scene.
 
-<!--more-->
-
-About UI changes specifically, one can take a look at, e.g. [OS X Lion Interface Tweaks](http://www.usabilitypost.com/2011/03/01/simpler-ui-in-lion/), for some pointers. It seems to me that the new windows design (rounded corner, resizeable by corner and edge, etc.) now resemble the Fedora look-and-feel I was used to some years ago. I didn't check, though. Also, most applications can now sit in full-screen mode, together with other applications in standard mode.
+About UI changes specifically, one can take a look at, e.g. [OS X Lion Interface Tweaks](http://www.usabilitypost.com/2011/03/01/simpler-ui-in-lion/), for some pointers. It seems to me that the new windows design (rounded corner, resizable by corner and edge, etc.) now resemble the Fedora look-and-feel I was used to some years ago. I didn't check, though. Also, most applications can now sit in full-screen mode, together with other applications in standard mode.
 
 Besides, there are some significant software updates.
 

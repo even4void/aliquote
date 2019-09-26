@@ -1,29 +1,26 @@
-+++
-title = "Mokken scale analysis"
-date = 2012-02-23T17:38:39+01:00
-draft = false
-tags = ["readings", "psychometrics"]
-categories = ["2012"]
-+++
+---
+title: "Mokken scale analysis"
+date: 2012-02-23T17:38:39+01:00
+draft: false
+tags: ["readings", "psychometrics"]
+categories: ["2012"]
+---
 
 My recent lectures focus on *Mokken Scale Analysis* which is based on an item response model known as the monotone homogeneity model.
 
-<!--more-->
-
 Mokken scale analysis can be seen as a hierarchical scaling method where we make the assumption that there exist an underlying latent trait that explain covariation between item responses. As in other IRT models, items are thought to be orderable by 'difficulty' such that any individual who endorses a particular item should endorse one with a lower difficulty (as in [Guttman scaling](http://en.wikipedia.org/wiki/Guttman_scale), but perfectly ordered response patterns are rarely met in practice, especially in some fields of research). Individual scores are then computed as the rank of the highest endorsed item in this hierarchy, i.e. it is a simple total score (sum of positive responses). Unlike Guttman scaling, however, Mokken scaling relies on a probabilistic framework.[^1] The reproducibility of response patterns are typically assessed using a coefficient of reproducibility, a coefficient of scalability and/or Loevinger's coefficient of homogeneity.<sup>(1)</sup>
 
-More discussion can be found in, e.g., Sijtsma and Verweij<sup>(2)</sup> or Mokkan and Lewis<sup>(3)</sup>. The use of Mokken scale analysis is largely found in patient outcome research, ranging from psychiatric or clinical research<sup>(4-6)</sup> to health-related quality of life.<sup>(7,8)</sup>
+More discussion can be found in, e.g., Sijtsma and Verweij<sup>(2)</sup> or Mokkan and Lewis.<sup>(3)</sup> The use of Mokken scale analysis is largely found in patient outcome research, ranging from psychiatric or clinical research<sup>(4-6)</sup> to health-related quality of life.<sup>(7,8)</sup>
 
 In practice, Mokken scaling is attracting because it is supposed to require lower sample size compare to traditional IRT model. This is perhaps discussed in Mokken's book but I don't have it and I was unable to find a single paper on sample size requirement for Mokken scale analysis.
 
-Andries van der Ark has a [lot of papers](http://spitswww.uvt.nl/~avdrark/research/research.htm) on this topic, including an upcoming paper for the [Journal of Statitical Software](http://www.jstatsoft.org/):
-Van der Ark, L. A. (in press). New developments in Mokken scale analysis in R. *Journal of Statistical Software*.
+Andries van der Ark has a [lot of papers](http://spitswww.uvt.nl/~avdrark/research/research.htm) on this topic, including an upcoming paper for the [Journal of Statistical Software](http://www.jstatsoft.org/): Van der Ark, L. A. (in press). New developments in Mokken scale analysis in R. *Journal of Statistical Software*.
 
-I don't have access to the preprint at the time I'm writing these notes, but I guess it is sort of a follow-up on his earlier paper, [Mokken Scale Analysis in R](http://www.jstatsoft.org/v20/i11/) (JSS 2007, 20(11)). There is even an on-line tutorial on <i class="fa fa-file-pdf-o fa-1x"></i> [Getting started with Mokken scale analysis in R](http://spitswww.uvt.nl/~avdrark/research/mokkenstart.pdf).
+I don't have access to the preprint at the time I'm writing these notes, but I guess it is sort of a follow-up on his earlier paper, [Mokken Scale Analysis in R](http://www.jstatsoft.org/v20/i11/) (JSS 2007, 20(11)). There is even an on-line tutorial on [Getting started with Mokken scale analysis in R](http://spitswww.uvt.nl/~avdrark/research/mokkenstart.pdf) (PDF).
 
 Here are some other links to papers that I found useful (and mostly available as PDFs).
 
-1. van Abswoude, A.A.H. et al. <i class="fa fa-file-pdf-o fa-1x"></i> [Mokken Scale Analysis Using Hierarchical Clustering Procedures](http://spitswww.uvt.nl/~vermunt/abswoude2004.pdf). *Applied Psychological Measurement*, 28(5):332–354, 2004.
+1. van Abswoude, A.A.H. et al. [Mokken Scale Analysis Using Hierarchical Clustering Procedures](http://spitswww.uvt.nl/~vermunt/abswoude2004.pdf). *Applied Psychological Measurement*, 28(5):332–354, 2004.
 2. Andries van der Ark, L. et al. [Mokken scale analysis for dichotomous items using marginal models](http://arno.uvt.nl/show.cgi?fid=80557). *Psychometrika*, 73(2):183-208, 2008.
 3. Sijtsma, K. et al. [Mokken scale analysis for polychotomous items: theory, a computer program and an empirical application](http://arno.uvt.nl/show.cgi?fid=81040). *Quality & Quantity*, 24:173-188, 1990.
 

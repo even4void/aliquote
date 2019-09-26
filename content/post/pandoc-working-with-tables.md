@@ -1,14 +1,14 @@
-+++
-title = "Working with tables and Pandoc"
-date = 2012-10-10T14:38:42+01:00
-draft = false
-tags = ["misc"]
-categories = ["2012"]
-+++
+---
+title: "Working with tables and Pandoc"
+date: 2012-10-10T14:38:42+01:00
+draft: false
+tags: ["misc", "haskell", "rstats"]
+categories: ["2012"]
+---
 
 A quick note on the latest development version of [Pandoc](http://johnmacfarlane.net/pandoc/) which remains by far one of the best software I've used.
 
-Working with Tables in [MultiMarkdown](https://github.com/fletcher/MultiMarkdown/wiki/MultiMarkdown-Syntax-Guide) or [Pandoc](http://johnmacfarlane.net/pandoc/demo/example19/Tables.html) isn't fancy at all if you are to write them by hand. Hopefully, some editors like Emacs or Vim allow to simplify things a bit. For short statistical PDF reports which I now tend to write in Markdown since 4 months or so, I'm missing the ability to have Tables written in plain text, as produced with Emacs [Table mode](http://emacswiki.org/emacs/TableMode) or [orgtbl](http://orgmode.org/manual/Built_002din-table-editor.html),<sup>(a)</sup> and converted automagically in a basic `tabular` ($\LaTeX$) or `table` (Context). That may just be because I was really working with an old version of Pandoc.
+Working with Tables in [MultiMarkdown](https://github.com/fletcher/MultiMarkdown/wiki/MultiMarkdown-Syntax-Guide) or [Pandoc](http://johnmacfarlane.net/pandoc/demo/example19/Tables.html) isn't fancy at all if you are to write them by hand. Hopefully, some editors like Emacs or Vim allow to simplify things a bit. For short statistical PDF reports which I now tend to write in Markdown since 4 months or so, I'm missing the ability to have Tables written in plain text, as produced with Emacs [Table mode](http://emacswiki.org/emacs/TableMode) or [orgtbl](http://orgmode.org/manual/Built_002din-table-editor.html), and converted automagically in a basic `tabular` ($\LaTeX$) or `table` (Context). That may just be because I was really working with an old version of Pandoc.
 
 After googling a bit, I discovered that Pandoc now offers some support for `orgtbl` [tables with pipes](https://github.com/jgm/pandoc/issues/260). Of course that means I need to update my current version of Pandoc (1.9.3, it was in fact compiled from the latest [development snapshot]({{< ref "/post/work-distraction-free-os-x-desktop.md" >}}) available at that time), i.e. reinstalling everything. Why everything? Because it appears that the development version (yes, that's so good to live on the bleeding edge :-) now requires `cabal-dev` which is used to maintains sandboxed build environments (much like Python [virtualenv](http://www.virtualenv.org/en/latest/index.html)). So I started to `git pull` my old repository and followed instructions on [Pandoc wiki](http://bit.ly/SS1Prj). Guess what: that didn't work! When calling
 

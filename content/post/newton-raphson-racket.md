@@ -8,8 +8,6 @@ categories: ["2019"]
 
 Here is an implementation of the Newton-Raphson algorithm in Racket Scheme.
 
-<!--more-->
-
 Our goal is to implement a toy example of logistic regression, where the parameters of the statistical model are estimated using Newton-Raphson iterative algorithm. This approach basically looks [like this](https://gist.github.com/dirkschumacher/7acfb6f9a72bb940634d8f9e9c867dd0) in R: (For more details, please refer to the following blog post: [Write your own logistic regression function in R](https://www.puzzlr.org/write-your-own-logistic-regression-function-in-r/).)
 
 ```r
@@ -29,9 +27,9 @@ log_reg <- function(X, y) {
 }
 ```
 
-The Newton algorithm belongs to root finding methods, and it is usually employed with a univariate function, $f$, for which we want to find, say, its zeros or its maximum. In the above case, we seek the maximum of a given function--this is maximum likelihood theory after all. Recall that when we want to find an approximate root of $f(x)=0$, we usually start with a guess, say $x_n$, and we approximate $f(x)$ by its tangent line $f(x_n)+f'(x_n)(x-x_n)$. This is basically how Newton's method looks like, and this yields an improved guess, $x\_{n+1}=x_n-\frac{f(x_n)}{f'(x_n)}$, based on the root found for the tangent.[^1] It is pretty straightforwrad to write a little recursive solution to this problem, e.g. in Racket:
+The Newton algorithm belongs to root finding methods, and it is usually employed with a univariate function, $f$, for which we want to find, say, its zeros or its maximum. In the above case, we seek the maximum of a given function--this is maximum likelihood theory after all. Recall that when we want to find an approximate root of $f(x)=0$, we usually start with a guess, say $x_n$, and we approximate $f(x)$ by its tangent line $f(x_n)+f'(x_n)(x-x_n)$. This is basically how Newton's method looks like, and this yields an improved guess, $x\_{n+1}=x_n-\frac{f(x_n)}{f'(x_n)}$, based on the root found for the tangent.[^1] It is pretty straightforward to write a little recursive solution to this problem, e.g. in Racket:
 
-```lisp
+```racket
 ;; f(x) = x^2 - 9
 (define (f x) (- (sqr x) 9))
 
@@ -48,11 +46,11 @@ The Newton algorithm belongs to root finding methods, and it is usually employed
 (display (newton 0.1 f fp))
 ```
 
-Now, suppose we are interested in finding the maximum of a given function, $f(x)$. Let us assume that $f'$ is continuously differentiable, and that $f''(x^{\star})\neq 0$, with $x^{\star}$ the root we are looking for. Maximising $f$ amounts to find the root of $f'(x)$, which is depicted in the next picture, and at each step we will approximate $f'(x^{\star})$ with the linear Taylor expansion $f'(x^{\star})\approx f'(x^{(t)}) + \left(x^{\star}-x^{(t)}\right)f''(x^{(t)})$ ($=0$).
+Now, suppose we are interested in finding the maximum of a given function, $f(x)$. Let us assume that $f'$ is continuously differentiable, and that $f''(x^{\star})\neq 0$, with $x^{\star}$ the root we are looking for. Maximizing $f$ amounts to find the root of $f'(x)$, which is depicted in the next picture, and at each step we will approximate $f'(x^{\star})$ with the linear Taylor expansion $f'(x^{\star})\approx f'(x^{(t)}) + \left(x^{\star}-x^{(t)}\right)f''(x^{(t)})$ ($=0$).
 
 ![2019-08-08-07-34-04](/img/2019-08-08-07-34-04.png)
 
-As can be seen, the derivative $f'$ is approximated by its tangent at $x^{(t)}$, so that we willl approximate its root by the root of the tangent line (highlighted as a black dot in the above picture). Hence, we have:
+As can be seen, the derivative $f'$ is approximated by its tangent at $x^{(t)}$, so that we will approximate its root by the root of the tangent line (highlighted as a black dot in the above picture). Hence, we have:
 
 $$ x^{\star} = x^{(t)} - \frac{f'(x^{(t)})}{f''(x^{(t)})} = x^{(t)} + h^{(t)}, $$
 
@@ -76,9 +74,9 @@ In the end, we would like to estimate the parameters of the logistic model fitte
 
 ![2019-08-06-10-02-00](/img/2019-08-06-10-02-00.png)
 
-Other than basic mathematical operators and functions, the most important piece of code we need is an equivalent of `crossprod`, the matrix [cross-product](https://en.wikipedia.org/wiki/Cross_product), and `solve`, which is used to solve a system of equations. Luckily, both procedures are available in [racket/math](https://docs.racket-lang.org/math/matrices.html). The instructions inside the R loop could thus be translated litteraly using untyped Racket as follows:
+Other than basic mathematical operators and functions, the most important piece of code we need is an equivalent of `crossprod`, the matrix [cross-product](https://en.wikipedia.org/wiki/Cross_product), and `solve`, which is used to solve a system of equations. Luckily, both procedures are available in [racket/math](https://docs.racket-lang.org/math/matrices.html). The instructions inside the R loop could thus be translated literally using untyped Racket as follows:
 
-```lisp
+```racket
 #lang racket
 (require math/matrix)
 
@@ -108,5 +106,5 @@ This code yields exactly the same results as a first pass in the R loop of `log_
 And that's it! An interesting alternative would be to implement the [EM algorithm](https://arxiv.org/pdf/1306.0040.pdf) for logistic regression, proposed by Scott and Sun.
 
 [^1]: This method can be used to solve, e.g., $x^2=a$ (which is to say $f(x) = x^2-a$), that is to find the square root $x=\sqrt{a}$, $a>0$. An even older method would consider a first guess, $x_1>0$, and iterate with the following approximation: $x\_{n+1}=\frac{1}{2}\left(x_n+\frac{a}{x_n}\right)$.
-[^2]: Still in the case of an MLE problem, replacing $-f''(\theta^{(t)})$ in the denominator with the expected Fisher information evaluated at $\theta^{(t)}$, $I(\theta^{(t)})$, yields the Fisher scoring method, which has the same asymptotic properties as Newton's method, although the latter works generally better to refine the last estimates.
+[^2]: Still in the case of an MLE problem, replacing $-f''(\theta^{(t)})$ in the denominator with the expected Fisher information evaluated at $\theta^{(t)}$, $I(\theta^{(t)})$, yields the Fisher scoring method, which has the same asymptotic properties as Newton's method, although the latter works generally better to refine the last estimates. For a more specific case, see this old post of mine on [penalized regression](/post/penalized-likelihood-regression).
 [^3]: Givens, G.H. and Hoeting, J.A. _Computational Statistics_ (2nd ed.), Wiley, 2013.

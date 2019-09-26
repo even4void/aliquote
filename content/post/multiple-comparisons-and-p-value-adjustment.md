@@ -1,21 +1,19 @@
-+++
-title = "Multiple comparisons and p-value adjustment"
-date = 2008-07-27T19:23:05+01:00
-draft = false
-tags = ["statistics", "rstats"]
-categories = ["2008"]
-+++
+---
+title: "Multiple comparisons and p-value adjustment"
+date: 2008-07-27T19:23:05+01:00
+draft: false
+tags: ["statistics", "rstats"]
+categories: ["2008"]
+---
 
-Some time ago, I wrote a tutorial on various procedures applied in a multiple comparisons framework, "Comparaisons multiples". It's in French and includes R source code: <i class="fa fa-file-pdf-o fa-1x"></i> [pdf tutorial][pdf tutorial], <i class="fa fa-file-code-o fa-1x"></i> [R code][R code], [htmlized R code][htmlized R code]. Now, I feel it's time to update a little bit these old notes with new material. This is motivated by my new interest toward bioinformatics and medical imaging that are both facing the n p and p-value correction problems.
+Some time ago, I wrote a tutorial on various procedures applied in a multiple comparisons framework, "Comparaisons multiples". It's in French and includes R source code: [pdf tutorial][pdf tutorial], [R code][R code], [htmlized R code][htmlized R code]. Now, I feel it's time to update a little bit these old notes with new material. This is motivated by my new interest toward bioinformatics and medical imaging that are both facing the n p and p-value correction problems.
 
-<!--more-->
-
-Multiple comparisons arise when one wants to compare more than two things at the same time (i.e. for the same dataset, in the same explanatory framework). Why do we have to adapt the usual test statistics? Because these multiple tests (of hypothesis) are generally not carried out in an independent way, thus leading to an inflation of the overall type I error rate. In other words, when faced with say 10 comparisons on the same data, the probability of falsely detecting a significant difference becomes greater than the classical 5% level. For a general introduction to multiple comparison procedure, the reader may be interested in sup(6)/sup. Other references are (5,7) and (8) (especially, Chapter 5) but the latter two are a bit more tricky…
+Multiple comparisons arise when one wants to compare more than two things at the same time (i.e. for the same dataset, in the same explanatory framework). Why do we have to adapt the usual test statistics? Because these multiple tests (of hypothesis) are generally not carried out in an independent way, thus leading to an inflation of the overall type I error rate. In other words, when faced with say 10 comparisons on the same data, the probability of falsely detecting a significant difference becomes greater than the classical 5% level. For a general introduction to multiple comparison procedure, the reader may be interested in sup(6)/sup. Other references are (5,7) and (8) (especially, Chapter 5) but the latter two are a bit more tricky.
 
 Actually, there are two main packages that can handle multiple comparison, both relying on a different view of the type I error:
 
 - `multcomp` (R [vignette][vignette]), for "Simultaneous tests and confidence intervals for general linear hypotheses in parametric models, including linear, generalized linear, linear mixed effects, and survival models." 
-- `multtest` (see Dudoit and van der Laan<sup>(7)</sup>, and a series of talks here: [1][1], [2][2], [3][3]), for "Non-parametric bootstrap and permutation resampling-based multiple testing procedures for controlling the family-wise error rate (FWER), generalized family-wise error rate (gFWER), tail probability of the proportion of false positives (TPPFP), and false discovery rate (FDR). Single-step and step-wise methods are implemented. Tests based on a variety of t- and F-statistics (including t-statistics based on regression parameters from linear and survival models) are included. Results are reported in terms of adjusted p-values, confidence regions and test statistic cutoffs. The procedures are directly applicable to identifying differentially expressed genes in DNA microarray experiments."
+- `multtest` (see Dudoit and van der Laan,<sup>(7)</sup> and a series of talks here: [1][1], [2][2], [3][3]), for "Non-parametric bootstrap and permutation resampling-based multiple testing procedures for controlling the family-wise error rate (FWER), generalized family-wise error rate (gFWER), tail probability of the proportion of false positives (TPPFP), and false discovery rate (FDR). Single-step and step-wise methods are implemented. Tests based on a variety of t- and F-statistics (including t-statistics based on regression parameters from linear and survival models) are included. Results are reported in terms of adjusted p-values, confidence regions and test statistic cutoffs. The procedures are directly applicable to identifying differentially expressed genes in DNA microarray experiments."
 
 Interestingly, the former is attached to the *Social Sciences* Task View while the latter is on [Bioconductor][Bioconductor].
 
@@ -79,14 +77,14 @@ Multiple R-squared: 0.7425,	Adjusted R-squared: 0.7196
 F-statistic: 32.43 on 4 and 45 DF,  p-value: 9.819e-13
 ```
 
-This is quite informative but it just says that all treatment differ from the baseline which is usually not what we're interested in. Here, the Intercept represents the mean response for 20mg at once.
+This is quite informative but it just says that all treatment differ from the baseline which is usually not what we're interested in. Here, the Intercept represents the mean response for 20mg at once:
 
 ```r
 with(cholesterol, mean(response[as.numeric(trt)==1]))
 [1] 5.78197
 ```
 
-We might be interested in which pairs of means (without consideration for the internal data structure, that is 3 different dosages + 2 classical drugs) are significatively different. This calls for something the Tukey HSD procedure which gives
+We might be interested in which pairs of means (without consideration for the internal data structure, that is 3 different dosages + 2 classical drugs) are significatively different. This calls for something the Tukey HSD procedure which gives:
 
 ```r
 lm1.hsd <- TukeyHSD(lm1)
@@ -128,16 +126,11 @@ par(opar)
 
 Now, we see that 7 pairs of difference of means out of 10 are different from 0 at the 5% level. Lower bound of 95% CI is always 1.
 
-With the `multcomp` package,
+With the `multcomp` package, we have:
 
 ```r
 lm1.hsd2 <- glht(lm1, linfct = mcp(trt = "Tukey"))
 summary(lm1.hsd2)
-```
-
-we have
-
-```r
 Simultaneous Tests for General Linear Hypotheses
 
 Multiple Comparisons of Means: Tukey Contrasts
@@ -161,9 +154,9 @@ Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’
 (Adjusted p values reported -- single-step method)
 ```
 
-As can be seen, we obtain the same result. There is also a `plot` method that displays difference of means in a more convenient way (see `?plot.glht`.
+As can be seen, we obtain the same result. There is also a `plot` method that displays difference of means in a more convenient way (see `?plot.glht`).
 
-The main interface to `glht()` is the option `linfct`, which stands for linear function in the (G)LM framework. Any contrast can be passed directly (as a vector or matrix) to `glht()` or one can choose among those already constructed with the `contrMat()` function. Available contrasts coding are: Dunnett, Tukey, Sequen, AVE, Changepoint, Williams, Marcus, McDermott, UmbrellaWilliams, GrandMean. They all are referenced from Bretz et al.<sup>(4)</sup>.
+The main interface to `glht()` is the option `linfct`, which stands for linear function in the (G)LM framework. Any contrast can be passed directly (as a vector or matrix) to `glht()` or one can choose among those already constructed with the `contrMat()` function. Available contrasts coding are: Dunnett, Tukey, Sequen, AVE, Changepoint, Williams, Marcus, McDermott, UmbrellaWilliams, GrandMean. They all are referenced from Bretz et al.<sup>(4)</sup>
 
 As for R default contrast coding scheme (i.e., treatment contrast), the default contrasts are Dunnett contrast, that is all k-1 comparisons are done with reference to the baseline, taken as the first level of the unordered factor.
 
@@ -329,7 +322,7 @@ Another class of useful contrasts is the Grand Mean model.
  
 ## Using multtest
 
-Here, we take a different approach to the correction for Type I error rate inflation. As explained in Dudoit, S. and van der Laansup(7)/sup (Section 2.8), we only consider the control of Type I error under the true parameter values (or the true generating distribution, in the case of simulated data). Furthermore, this is not a strong control over the error rate (ER) as the proposed methodology doesn't control the supremum of the Type I ER over parameter values satisfying all 2supM/sup possible subsets of null hypotheses.
+Here, we take a different approach to the correction for Type I error rate inflation. As explained in Dudoit, S. and van der Laan (Section 2.8),<sup>(7)</sup> we only consider the control of Type I error under the true parameter values (or the true generating distribution, in the case of simulated data). Furthermore, this is not a strong control over the error rate (ER) as the proposed methodology doesn't control the supremum of the Type I ER over parameter values satisfying all 2supM/sup possible subsets of null hypotheses.
 
 The functions `mt.rawp2adjp()` and `mt.plot()` are by far the most useful routines for computing and displaying adjusted p-values. Let's look at the example given in `?mt.rawp2adjp`.
 
@@ -365,7 +358,7 @@ mt.plot(allp, teststat, plottype="pvsr", proc=procs, leg=c(80,0.4),
 
 False Discovery Rate (FDR) is tightly linked to the preliminary example used when talking about the multtest package. In fact, when we plotted the adjusted p-values against the number of rejected hypotheses, we were already talking about the proportion of correct rejection of the null hypothesis. Here, "correct" means that the significant tests of hypothesis really reflects the reality, that is the true population parameters.
 
-## References
+### References
 
 1. Feise, R.J. (2002). <a href="http://www.pubmedcentral.nih.gov/articlerender.fcgi?artid=117123">Do multiple outcome measures require p-value adjustment?</a> *BMC Medical Research Methodology*, **2**: 8.
 2. Westfall, P.H., Tobias, R.D., Rom, D., Wolﬁnger, R.D., and Hochberg, Y. (1999). *Multiple Comparisons and Multiple Tests Using the SAS System*. Cary, NC: SAS Institute Inc., page 153.
@@ -377,9 +370,9 @@ False Discovery Rate (FDR) is tightly linked to the preliminary example used whe
 8. Christensen, R. (2002). *Plane Answers to Complex Questions, The Theory of Linear Models* (3rd Ed.). Springer.
 9. Falissard, B. (2005). *Comprendre et utiliser les statistiques dans les sciences de la vie* (2nd Ed.). Masson.  
 
-[pdf tutorial]: http://www.aliquote.org/cours/2006_cogmaster_A4/cours/05_comp_mult.pdf
-[R code]: http://www.aliquote.org/cours/2006_cogmaster_A4/cours/05_comp_mult.R
-[htmlized R code]: http://www.aliquote.org/cours/2006_cogmaster_A4/cours/05_comp_mult.html
+[pdf tutorial]: /cours/2006_cogmaster_A4/cours/05_comp_mult.pdf
+[R code]: /cours/2006_cogmaster_A4/cours/05_comp_mult.R
+[htmlized R code]: /cours/2006_cogmaster_A4/cours/05_comp_mult.html
 [vignette]: http://cran.r-project.org/web/packages/multcomp/vignettes/generalsiminf.pdf
 [1]: http://www.stat.berkeley.edu/~sandrine/Docs/Talks/MHT/mhtI.pdf
 [2]: http://www.stat.berkeley.edu/~sandrine/Docs/Talks/MHT/mhtII.pdf

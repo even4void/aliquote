@@ -6,9 +6,7 @@ tags: ["readings"]
 categories: ["2019"]
 ---
 
-Some not so random links--not posted on Twitter, nor on the Micro section.
-
-<!--more-->
+Some not so random links --- not posted on Twitter, nor on the Micro section.
 
 - Alex Hayes has a nice [GH repository](https://github.com/alexpghayes/over-it) covering basic cheatsheet for one- and tow-sample hypothesis tests, along with a very brief introduction to the principle of statistical testing.
 
@@ -18,9 +16,9 @@ Some not so random links--not posted on Twitter, nor on the Micro section.
 
        ![](/img/2019-04-12-11-58-38.png)
 
-- [Bayesian Analysis: A CRC Press FreeBook](https://www.crcpress.com/go/bayesian_analysis_a_crc_press_freebook). Be sure to grab your copy of you haven't done before. The book is 200-page long and includes six chapters from independant textbooks (from CRC Press of course): prior distributions, markov chain monte carlo, specifying bayesian models, hierarchical linear models, nonparametric models, and model criticism and selection.
+- [Bayesian Analysis: A CRC Press FreeBook](https://www.crcpress.com/go/bayesian_analysis_a_crc_press_freebook). Be sure to grab your copy of you haven't done before. The book is 200-page long and includes six chapters from independent textbooks (from CRC Press of course): prior distributions, Markov Chain Monte Carlo, specifying bayesian models, hierarchical linear models, nonparametric models, and model criticism and selection.
 
-- Since my [last incursion](/post/vscode-python/) into VS Code, I've been looking around and I found this [website](https://vscodecandothat.com), where one can learn some tips and tricks about VS Code. I am sure there are better sites for collecting ressources on VS Code, especially on Github, but in case you like short live coding videos, here you are.
+- Since my [last incursion](/post/vscode-python/) into VS Code, I've been looking around and I found this [website](https://vscodecandothat.com), where one can learn some tips and tricks about VS Code. I am sure there are better sites for collecting resources on VS Code, especially on Github, but in case you like short live coding videos, here you are.
 
 - Sander Greenland has a nice article in the BMJ on [Sparse data bias: a problem hiding in plain sight](https://www.bmj.com/content/352/bmj.i1981). Basically, the authors recommend the use of penalized regression models to account for low event per variable situations, which are common in epidemiological studies.
 

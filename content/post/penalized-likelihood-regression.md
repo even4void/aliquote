@@ -1,28 +1,26 @@
-+++
-title = "Penalized likelihood regression"
-date = 2008-04-15T10:18:49+01:00
-draft = false
-tags = ["statistics"]
-categories = ["2008"]
-+++
+---
+title: "Penalized likelihood regression"
+date: 2008-04-15T10:18:49+01:00
+draft: false
+tags: ["statistics"]
+categories: ["2008"]
+---
 
 Recently, I was reading some posts on Google groups, and I found an interesting issue on stepwise selection for logistic regression which was raised on [Medstats](http://groups.google.com/group/MedStats). Frank Harrell provides extensive coverage of model selection in his most famous book *Regression Modeling Strategies* (Springer, 2001). He also wrote several articles on this topic, and several of them can be found on-line, e.g. [Regression Modeling and Validation Strategies](http://citeseer.ist.psu.edu/harrell97regression.html) (see also (5)).
-
-<!--more-->
 
 The following article highlights the use of Penalized Maximum Likelihood Estimation to predict binary outcomes: Moons KG, Donders AR, Steyerberg EW, Harrell FE. *J. Clin. Epidemiol.* 2004, 57(12): 1262-70. The abstract can be found on Medline and is reproduced below:
 
 > BACKGROUND AND OBJECTIVE: There is growing interest in developing prediction models. The accuracy of such models when applied in new patient samples is commonly lower than estimated from the development sample. This may be because of differences between the samples and/or because the developed model was overfitted (too optimistic). Various methods, including bootstrapping techniques exist for afterwards shrinking the regression coefficients and the model’s discrimination and calibration for overoptimism. Penalized maximum likelihood estimation (PMLE) is a more rigorous method because adjustment for overfitting is directly built into the model development, instead of relying on shrinkage afterwards. PMLE has been described mainly in the statistical literature and is rarely applied to empirical data. Using empirical data, we illustrate the use of PMLE to develop a prediction model. METHODS: The accuracy of the final PMLE model will be contrasted with the final models derived by ordinary stepwise logistic regression without and with shrinkage afterwards. The potential advantages and disadvantages of PMLE over the other two strategies are discussed. RESULTS: PMLE leads to smaller prediction errors, provides for model reduction to a user-defined degree, and may differently shrink each predictor for overoptimism without sacrificing much discriminative accuracy of the model. CONCLUSION: PMLE is an easily applicable and promising method to directly adjust clinical prediction models for overoptimism.
 
-### So, what is PMLE exactly?
+## So, what is PMLE exactly?
 
-First of all, let’s talk about standard MLE. The reader may recall that an ML estimate is the value that maximizes the likelihhod function given the sample of observations. In the case of linear or binomial regression, any OLS estimate (intercept or slope) coincides with the ML estimate. For the latter case, this results from the fact that estimating the proportion of binary outcome (coded as 0/1) is equivalent to computing its arithmetic mean. Usually, ML estimates are found by maximizing the log-likelihood (or minimizing the likelihood, but working with the log-likelihood is often computationally easier). We first compute the partial derivatives of the likelihood function, with respect to each of the parameter of interest, and find those values that zero these expressions; checking the sign of the second derivatives ensures that this is a a global optimum, and not a local one. On the contrary, OLS estimates are found by solving a system of linear relations, subject to minimizing the mean square error. It is more an algebric technique that can be applied to any linear combination of predictors with identically distributed errors. However, more robust methods are available, such as quantile regression, resistant regression, MM-estimator,<sup>(2)</sup> etc. OLS and ML procedures are well documented in most classical textbook, so I will not go further onto these topics.
+First of all, let’s talk about standard MLE. The reader may recall that an ML estimate is the value that maximizes the likelihood function given the sample of observations. In the case of linear or binomial regression, any OLS estimate (intercept or slope) coincides with the ML estimate. For the latter case, this results from the fact that estimating the proportion of binary outcome (coded as 0/1) is equivalent to computing its arithmetic mean. Usually, ML estimates are found by maximizing the log-likelihood (or minimizing the likelihood, but working with the log-likelihood is often computationally easier). We first compute the partial derivatives of the likelihood function, with respect to each of the parameter of interest, and find those values that zero these expressions; checking the sign of the second derivatives ensures that this is a a global optimum, and not a local one. On the contrary, OLS estimates are found by solving a system of linear relations, subject to minimizing the mean square error. It is more an algebraic technique that can be applied to any linear combination of predictors with identically distributed errors. However, more robust methods are available, such as quantile regression, resistant regression, MM-estimator,<sup>(2)</sup> etc. OLS and ML procedures are well documented in most classical textbook, so I will not go further onto these topics.
 
 Penalized MLE is another way to find the estimates of regression coefficients for the case of categorical predictor(s), without fitting noise in the data (Harrell, p. 207). It shall not be confused with Weighted MLE whereby each observation or case (and not the predictors) is weighted depending on some available characteristics. Other widely used approaches are shrinkage technique such as ridge regression, e.g. (6,7). Following Harrell, one wish to maximize the PMLE given by:
 
 $$ \log L – \frac{1}{2}\lambda\sum_{i=1}^p(s_i\beta_i)^2, $$
 
-where $L$ denotes the usual likelihood function and $\lambda$ is a penalty factor. The scale factors $s_1, s_2,\dots, s_i$ can be viewed as the shrinkage related factors *per se*. Indeed, one can assign scale constant of zero for parameters for which no shrinkage is desired. Scaling by standard deviation is a good choice when predictor are continuous and enter linearly in the model. Otherwise, and in particular with dummy coding of predictor (in this case, SD is simply $\sqrt{d(1-d)}$, where $d$ is the mean of the binary variable), it might lead to severe distorsion of the shrinkage correction. Scale factors are not needed if we work with standardized data, but we loose the possibility of interpreting the $\beta$s on the link scale.
+where $L$ denotes the usual likelihood function and $\lambda$ is a penalty factor. The scale factors $s_1, s_2,\dots, s_i$ can be viewed as the shrinkage related factors *per se*. Indeed, one can assign scale constant of zero for parameters for which no shrinkage is desired. Scaling by standard deviation is a good choice when predictor are continuous and enter linearly in the model. Otherwise, and in particular with dummy coding of predictor (in this case, SD is simply $\sqrt{d(1-d)}$, where $d$ is the mean of the binary variable), it might lead to severe distortion of the shrinkage correction. Scale factors are not needed if we work with standardized data, but we loose the possibility of interpreting the $\beta$s on the link scale.
 
 Maximization of the above equation is usually done via Newton-Raphson algorithm.[^1] Other details are covered in Harrell (pp. 208-209), in particular how to compute the corresponding degrees of freedom as well as the variance-covariance matrix and a modified AIC. The following is a short snippet from Harrell (pp. 209-210) illustrating PLME analysis with simulated data in R:
 
@@ -51,7 +49,7 @@ and the plots are shown in the next figure.
 
 ![](/img/20080406190322.png)
 
-As can be seen, in the left panel, all parameters are shrinked by the same amount a: when df get smaller (i.e. penalty factor gets larger), the regression fit gets flatter and confidence band (dotted curves) become narrower. However, in the right panel, only the cubic spline terms that are nonlinear in X1 are shrinked. Further, as the amount of shrinkage increases (lower df), the fits become more linear and closer to the true regression line (straight dotted line). The stepPlr package provides additional functions for PLME. In particular, the `step.plr()` function implements L2 penalized logistic regression along with the stepwise variable selection procedure.<sup>(13)</sup> Hereafter, I reproduce some of the example code found in the R on-line help.
+As can be seen, in the left panel, all parameters are shrinked by the same amount a: when df get smaller (i.e. penalty factor gets larger), the regression fit gets flatter and confidence band (dotted curves) become narrower. However, in the right panel, only the cubic spline terms that are nonlinear in X1 are shrinked. Further, as the amount of shrinkage increases (lower df), the fits become more linear and closer to the true regression line (straight dotted line). The `stepPlr` package provides additional functions for PLME. In particular, the `step.plr()` function implements L2 penalized logistic regression along with the stepwise variable selection procedure.<sup>(13)</sup> Hereafter, I reproduce some of the example code found in the R on-line help.
 
 ```r
 n <- 100
@@ -65,13 +63,13 @@ First, all predictors appear to be uncorrelated with each other. This was to be 
 
 $$ 
 \begin{array}{ll} 
-Y & = -0.12434 – 0.22440X_1 + 0.03806X_2 + 0.02807X_3 + 0.10409X_4 \\
-  &\phantom{{=}} -0.31475X_5 + 0.03531X_6 – 0.05032X_7 + 0.06048X_8 \\ 
-  &\phantom{{=}-0.12} -0.06450X_9 + 0.04051X_{10}
+Y & = -0.12434 – 0.22440X_1 + 0.03806X_2 + 0.02807X_3 + 0.10409X_4 \newline
+  &\phantom{{=}} -0.31475X_5 + 0.03531X_6 – 0.05032X_7 + 0.06048X_8 \newline
+  &\phantom{{=}} -0.06450X_9 + 0.04051X\_{10}
 \end{array}
 $$
 
-Null deviance is estimated to be 137.99 (99 df), while residual deviance is 133.43 (89.9 df). Of course, you will probably obtain different results since it depends on the state of your random generator. If we were to select a more parcimonious variable subset, we might use
+Null deviance is estimated to be 137.99 (99 df), while residual deviance is 133.43 (89.9 df). Of course, you will probably obtain different results since it depends on the state of your random generator. If we were to select a more parsimonious variable subset, we might use
 
 ```r
 step.plr(x,y)
@@ -79,7 +77,7 @@ step.plr(x,y)
 
 The output indicates that $X_1$, $X_4$ and $X_9\cdot X_1$ have to be included in the final model (Residual deviance now becomes 119.57 on 96 df).
 
-### Why stepwise model selection isn’t a good idea?
+## Why stepwise model selection isn’t a good idea?
 
 There are basically three widely used techniques for model selection: forward selection, backward elimination, and stepwise selection. The later can be described in terms of the two other approaches, in particular for the stopping rules:
 
@@ -104,9 +102,9 @@ See also [these posts](http://www.pitt.edu/~wpilib/statfaq/regrfaq.html) compile
 
 > If stepwise selection must be used, a global test of no regression should be made before proceeding, simultaneously testing all candidate predictors and having degrees of freedom equal to the number of candidate variables (plus any nonlinear or interaction terms). If this global test is not significant, selection of individually significant predictors is usually not warranted.
 
-However, when a serious background suggests that some of the variables should be present in the model, stepwise selection could be of interest, though it doesn’t provide a “conservative” way to assess the contribution of a given variable to the model. We are generally looking for a parcimonious model, including primary variables of interest and some other influential factors. In epidemiology, for example, sex, age or tobacco consumption are mandatory variables when modeling some forms of cancer. It would be unbelievable not to include them in a model! With this respect, backward and forward procedures aren’t very recommended when there are plenty of variables since they don’t offer the choice to specify a subset of variables of interest which have to be conserved during the whole selection process.
+However, when a serious background suggests that some of the variables should be present in the model, stepwise selection could be of interest, though it doesn’t provide a “conservative” way to assess the contribution of a given variable to the model. We are generally looking for a parsimonious model, including primary variables of interest and some other influential factors. In epidemiology, for example, sex, age or tobacco consumption are mandatory variables when modeling some forms of cancer. It would be unbelievable not to include them in a model! With this respect, backward and forward procedures aren’t very recommended when there are plenty of variables since they don’t offer the choice to specify a subset of variables of interest which have to be conserved during the whole selection process.
 
-As proposed by (10), Least Angle Regression<sup>(11)</sup> and the Lasso<sup>(7)</sup> techniques offer better alternatives to classical automated selection procedures. Instead of stepwise variable selection algorithm, using methods such as full-model fits or data-reduction ensure a better approach to large-scale model assessment. In particular, the selection of less complex models that are more in agreement with subject matter knowledge should be favored. The Lasso technique is a penalized estimation technique in which the estimated regression coefficients are constrained so that the sum of their scaled absolute values falls below some constant $k$ chosen by cross-validation. Although computationally demanding, this technique offers a way to constrain some regression coefficient to be exactly zero while shrinking the remaining coefficients toward zero. There are several examples of its use in (6), as well as in the R software (see the ElemStatLearn package).
+As proposed by (10), Least Angle Regression<sup>(11)</sup> and the Lasso<sup>(7)</sup> techniques offer better alternatives to classical automated selection procedures. Instead of stepwise variable selection algorithm, using methods such as full-model fits or data-reduction ensure a better approach to large-scale model assessment. In particular, the selection of less complex models that are more in agreement with subject matter knowledge should be favored. The Lasso technique is a penalized estimation technique in which the estimated regression coefficients are constrained so that the sum of their scaled absolute values falls below some constant $k$ chosen by cross-validation. Although computationally demanding, this technique offers a way to constrain some regression coefficient to be exactly zero while shrinking the remaining coefficients toward zero. There are several examples of its use in (6), as well as in the R software (see the `ElemStatLearn` package).
 
 
 ### References
@@ -127,5 +125,5 @@ As proposed by (10), Least Angle Regression<sup>(11)</sup> and the Lasso<sup>(7)
 
 
 
-[^1]: The [Newton-Raphson algorithm](http://en.wikipedia.org/wiki/Newton%27s_method) is a well-known technique used in numerical analysis when one wants to find the zero(s) of a function taking real values. Basically, the function f is linearized on some point x (most often with the its tangent line) and the root of this linearization (i.e. the intercept between the tangent line and the x-axis) is taken as the root of the function. This point is then used as the starting point for a new approximation. Obvisously, we have to give a starting value or initial guess. Convergence will be quicker if it isn’t too far away from the root of f(x). See also Press, W.P., Flannery, B.P., Teukolsky, S.A., and Vetterling, W.T. (1992). *Numerical Recipes in C*. Cambridge University Press (sections 9.4 and 9.6).
+[^1]: The [Newton-Raphson algorithm](http://en.wikipedia.org/wiki/Newton%27s_method) is a well-known technique used in numerical analysis when one wants to find the zero(s) of a function taking real values. Basically, the function f is linearized on some point x (most often with the its tangent line) and the root of this linearization (i.e. the intercept between the tangent line and the x-axis) is taken as the root of the function. This point is then used as the starting point for a new approximation. Obviously, we have to give a starting value or initial guess. Convergence will be quicker if it isn’t too far away from the root of f(x). See also Press, W.P., Flannery, B.P., Teukolsky, S.A., and Vetterling, W.T. (1992). *Numerical Recipes in C*. Cambridge University Press (sections 9.4 and 9.6).
 

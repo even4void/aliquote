@@ -6,9 +6,11 @@ tags: ["statistics", "emacs"]
 categories: ["2018"]
 ---
 
-I am working on two new series of tutorials, one using R and the other using Stata. The focus will be on biostatistical computing or computational statistics at a glance but this is just the beginning and I have no definitive idea how this will turn out. The projects can be watched on GitHub ([rstats-sk](https://github.com/chlalanne/rstats-sk) and [stata-sk](https://github.com/chlalanne/stata-sk)) or they are rendered online [on this site](/writings).
+I am working on two new series of tutorials, one using R and the other using Stata. The focus will be on biostatistical computing or computational statistics at a glance but this is just the beginning and I have no definitive idea how this will turn out. The projects can be watched on GitHub ([rstats-sk](https://github.com/even4void/rstats-sk) and [stata-sk](https://github.com/even4void/stata-sk)) or they are rendered online [on this site](/writings).
 
-<!--more-->
+{{% alert note %}}
+Of note, the `rstats-sk` project has been abandoned.
+{{% /alert %}}
 
 When I think about it I can't help but smile at the idea that my business has resumed on GitHub even though Microsoft has taken the lead. Anyway, I hope to be able to write enough material by the end of the Summer.
 
@@ -18,15 +20,15 @@ Regarding the format, this time I choose to use Org instead of Markdown (not muc
 
 Then comes the Makefile, because I don't want to have to export all Org files one at a time and keep them in sync with my static blogging engine. Currently, I am using a very basic Makefile [grabbed from StackOverflow](https://stackoverflow.com/a/22091045). There are further refinements to add, especially regarding the cleaning of intermediate files, but overall it is quite working. There are little subtleties with using [org-babel](https://orgmode.org/worg/org-contrib/babel/) for Stata code: besides the minor annoyance of replicating the input commands in the output block, it is not possible to generate PNG files and a default font family is chosen because the Terminal exec file says this is how it should be. Rob Hicks has some tricks to [customize ob-stata.el](http://rlhick.people.wm.edu/posts/stata-and-literate-programming-in-emacs-org-mode.html) but I don't want to spend too much time in updating my packages repository. (BTW, I did try his workaround at some point and it works really great.) 
 
-One nice thing about Emacs is that you can use it wihtout any shebang: Right now, I am just asking to run Emacs in batch mode and load a custom init file with default setting for R or Stata. So basically, you just need to have org-mode, which comes with Emacs in almost all system-wide install, [ESS](https://ess.r-project.org) and ox-bibtex. Here is the magic invocation:
+One nice thing about Emacs is that you can use it without any shebang: Right now, I am just asking to run Emacs in batch mode and load a custom init file with default setting for R or Stata. So basically, you just need to have org-mode, which comes with Emacs in almost all system-wide install, [ESS](https://ess.r-project.org) and `ox-bibtex`. Here is the magic invocation:
 
-```bash
+```
 emacs --batch -l setup.el $< -f org-html-export-to-html --kill
 ```
 
 And here is what I have in `setup.el` in the case of Stata:
 
-```lisp
+```emacs-lisp
 ;; FIXME Find a way to make the following independant of ELPA versioning
 (add-to-list 'load-path "~/.emacs.d/elpa/27.0/develop/org-plus-contrib-20180514")
 (add-to-list 'load-path "~/.emacs.d/elpa/27.0/develop/htmlize-20180412.1244")

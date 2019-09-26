@@ -1,14 +1,12 @@
-+++
-title = "Fitting Rasch model with R lme4"
-date = 2011-03-12T17:51:32+01:00
-draft = false
-tags = ["psychometrics", "rstats"]
-categories = ["2011"]
-+++
+---
+title: "Fitting Rasch model with R lme4"
+date: 2011-03-12T17:51:32+01:00
+draft: false
+tags: ["psychometrics", "rstats"]
+categories: ["2011"]
+---
 
-The [last issue](http://www.jstatsoft.org/v39) of the *Journal of Statistical Software* features an article on [The Estimation of Item Response Models with the lmer Function from the lme4 Package in R](http://www.jstatsoft.org/v39/i12), by De Boeck and coll. As the title suggests, this article is about fitting IRT models with a mixed-effects model approach.
-
-<!--more-->
+The [last issue](http://www.jstatsoft.org/v39) of the *Journal of Statistical Software* features an article on [The Estimation of Item Response Models with the `lmer` function from the `lme4` Package in R](http://www.jstatsoft.org/v39/i12), by De Boeck and coll. As the title suggests, this article is about fitting IRT models with a mixed-effects model approach.
 
 This is an interesting article because I've been working on that some four years ago now. The code I produced at that time was based on the De Boeck's book: Paul De Boeck & Mark Wilson, *Explanatory Item Response Models: A Generalized Linear and Nonlinear Approach* (Springer, 2004).
 
@@ -26,7 +24,7 @@ $$ \eta\_{pi}=\theta_p+\beta_i $$
 
 Of course, we can use a different link function, such as the `probit` if we want the so-called normal ogive model.
 
-A general formula interface for such a model under lme4 reads
+A general formula interface for such a model under `lme4` reads
 
 ```r
 lmer(resp ~ -1 + it + (1|id), family=binomial("logit"))
@@ -38,9 +36,9 @@ More interestingly, De Boeck's et al. then give detailed explanations on how to 
 
 Here is a short memo of common R notation for the main models used in psychometric research.
 
-- Item covariates, i.e. the linear logistic test model (LLTM) with ot without an added error term (which allows for imperfect predictions and seems more realistic in many situations). The general R syntax for this kind of model is `-1 + i1 + i2 + (1 | id)`, and the error term is added as `+ (1 | item)`, which means that we assume an homoscedastic effect.
+- Item covariates, i.e. the linear logistic test model (LLTM) with or without an added error term (which allows for imperfect predictions and seems more realistic in many situations). The general R syntax for this kind of model is `-1 + i1 + i2 + (1 | id)`, and the error term is added as `+ (1 | item)`, which means that we assume an homoscedastic effect.
 - Item partitioning, that is considering a multidimensional model instead of a single latent trait as in the RM. This means modifying the design matrix, $X$, so that it becomes a (P x I) x K matrix (in long format) with $K = I + K^\star$, where $K^\star$ is the number of binary item partition covariates. Of note, partition can correspond to a nesting or crossing structure. More importantly, "a multidimensional model for a crossed item design is not identified unless restrictions are imposed on the model. For example, the model is again identified if the correlations between the dimensions referring to different partitions are fixed to zero." (p. 13) A model with two groups of items would read `-1 + item + (1 + i1 + i2 | id)`.
-- Person covariates, as commonly found in the latent rxegression Rasch model can be fitted easily, assuming two kind of covariance structure (homo- or heteroscedastic). The general syntax is `-1 + item + p1 + (1 | id)` (or `-1 + item + p1 + (-1 + p1 | id)`, under the heteroscedasticity asumption).
+- Person covariates, as commonly found in the latent regression Rasch model can be fitted easily, assuming two kind of covariance structure (homo- or heteroscedastic). The general syntax is `-1 + item + p1 + (1 | id)` (or `-1 + item + p1 + (-1 + p1 | id)`, under the heteroscedasticity assumption).
 - Person partitioning, also known as multilevel models when talking about nested structure. The syntax is rather simple: `-1 + item + (1 | id) + (1 | group)`.
 - Person-by-item covariates, which mainly concern differential effect functioning, local dependency models, and dynamic model. The latter is useful for modeling learning effect, for example. In all three cases, we need to build an "extended" design matrix.
 

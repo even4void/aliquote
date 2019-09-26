@@ -8,8 +8,6 @@ categories: ["2018"]
 
 Welcome to the next iteration of macOS! No more panther, leopard or tiger or other felines, it is all about dazzling landscapes nowadays. The dynamic wallpaper is blowing my mind, though.
 
-<!--more-->
-
 ![](/img/2018-09-25-21-24-41.png)
 
 I was a bit nervous when upgrading as I was aware of rumours when betas were released some months ago. However, as with previous final releases (Sierra and High Sierra), there was no surprise or sort of lost stuff after the upgrade was complete (apart from the removal of Safari extensions among others). The long awaited dark mode is, well, dark, really dark for some apps--mainly those where you expect to be essentially reading or writing text like Calendar or Mail. Of course, it is still possible to switch between dark and light mode according to our mood or when we really need a light background, but in practice I believe it is better to choose one and to stick to it. Note that Apple Mail offers a nice comprise between dark UI mode and a light background for the preview panel.

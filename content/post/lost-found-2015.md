@@ -1,14 +1,12 @@
-+++
-title = "lost+found 2015"
-date = 2016-01-01T20:32:32+01:00
-draft = false
-tags = ["misc", "psychometrics", "rstats"]
-categories = ["2016"]
-+++
+---
+title: "lost+found 2015"
+date: 2016-01-01T20:32:32+01:00
+draft: false
+tags: ["this", "psychometrics", "rstats"]
+categories: ["2016"]
+---
 
-Here are some draft notes, written in 2015, unfilled but not lost forever. With slight edits to accomodate a proper archive blog post.
-
-<!--more-->
+Here are some draft notes, written in 2015, unfilled but not lost forever. With slight edits to accommodate a proper archive blog post.
 
 ## R and psychometrics
 <small>(February 2015)</small>
@@ -23,7 +21,7 @@ The [sirt](http://cran.r-project.org/web/packages/sirt/index.html) package provi
 
 Regarding multidimensional IRT fitting, Reckase provides some discussion of NOHARM (which is required by `sirt`) and TESTFACT, but see this [presentation](http://www.psychometrics.cam.ac.uk/uploads/documents/document-uploads-in-2014/multidimensional-item-response-theory) from the Psychometrics Center in Cambridge. The `sirt` also allows to call Conquest, but as NOHARM this is a Windows-only software.
 
-**References**: Reckase, M.D. (2009). *Multidimensional Item Response Theory*. Springer.
+*References*: Reckase, M.D. (2009). *Multidimensional Item Response Theory*. Springer.
 
 Other packages to discuss: `extracat`, `cacIRT`, `irtProb`, `irtrees`, `IRTShiny`, `sirt`.
 

@@ -8,8 +8,6 @@ categories: ["2019"]
 
 Here is the monthly micro review of (not so) random links I found while browsing the interweb lately.
 
-<!--more-->
-
 - [Announcing the optics library](https://www.well-typed.com/blog/2019/09/announcing-the-optics-library/). I must say I'm no expert at Haskell or category theory, yet I keep reading [articles and books](/post/category-theory/) on those topics. This Haskell package is all about defining and using [lenses](https://en.wikibooks.org/wiki/Haskell/Lenses_and_functional_references) (also known as [functional references](https://www.schoolofhaskell.com/school/to-infinity-and-beyond/pick-of-the-week/a-little-lens-starter-tutorial)), traversals, prisms and other [optic kinds](https://medium.com/@gcanti/introduction-to-optics-lenses-and-prisms-3230e73bfcfe).
 
 - [The Emacs Lisp Style Guide](https://github.com/bbatsov/emacs-lisp-style-guide/blob/master/README.md). At least, there's now a short and concise cheatsheet for Elisp!
@@ -34,7 +32,7 @@ Here is the monthly micro review of (not so) random links I found while browsing
 
 - [Robust Arithmetic in Computational Geometry](https://observablehq.com/@mourner/non-robust-arithmetic-as-art) is a playground about numeric robustness issues in computational geometry, dealing almost exclusively with orientation tests (how to decide whether a point lie lies to the left or to the right of a line). This is based on an older project in JS which is available on Github: [Robust arithmetic in JavaScript](https://github.com/mikolalysenko/robust-arithmetic-notes), but I really enjoy browsing Observable notebooks from time to time.
 
-**Interesting posts** that I've read lately:
+*Interesting posts* that I've read lately:
 
 - [Recently](https://macwright.org/2019/09/02/recently.html) by Tom MacWright, especially his thoughts on the [Enigma machine](https://observablehq.com/@tmcw/enigma-machine) that he published on Observable.
 - [The path of least resilience: Using Vim templates](http://brendandawes.com/blog/vim-templates), I use Vim occasionally, which means for quick editing tasks (i.e., when I know I will only have to type some text, like my micro posts or some shell scripts, or even some Python code), but I'm definitely an Emacs user; that being said, I always like to see how folks manage to get things done with their preferred text editor.

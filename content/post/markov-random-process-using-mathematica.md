@@ -8,8 +8,6 @@ categories: ["2019"]
 
 Here is a little post about using Mathematica to study basic model of DNA substitutions, including the Jukes-Cantor model, and more generally likelihood-based phylogenetic tree inference.
 
-<!--more-->
-
 ## Warming up
 
 Say we are interested in comparing the genome of two species, assuming they have a common ancestor, which should be the case, at least for eukaryotes. For various reasons, DNA substitutions occur over time on the genome and the two species may look different at a certain point in time when comparing the pairwise alignment of their sequences. However, not all substitutions are equally likely and, for example, we may assume the following transition matrix, $Q$, which I took from this [nice tutorial](https://molevol.mbl.edu/images/1/1a/WoodsHole2012_1.pdf) (PDF):

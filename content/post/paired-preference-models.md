@@ -1,14 +1,12 @@
-+++
-title = "Paired preference models"
-date = 2008-05-05T19:38:38+01:00
-draft = false
-tags = ["psychometrics"]
-categories = ["2008"]
-+++
+---
+title: "Paired preference models"
+date: 2008-05-05T19:38:38+01:00
+draft: false
+tags: ["psychometrics"]
+categories: ["2008"]
+---
 
 Much of this discussion is supported by [Agresti's book][book], *Categorical Data Analysis* (Wiley, 2002), and the overwhelming work of [Laura Thompson][Laura Thompson] who adapted the analysis with S-PLUS and R. However, some methods are rather specific of Psychometrics like the Facets Model presented in the first section.
-
-<!--more-->
 
 ## The psychometrician's way: Thurstone Model and the Partial Credit Model
 
@@ -20,7 +18,7 @@ where $B_i$ and $B_j$ correspond to measures recorded for item $i$ and $j$, resp
 
 $$ \ln\left[P\_{irk}/(1-P\_{ir(k+1)})\right] = B_i - D\_{rk}. $$
 
-Now, the model becomes an adjacent-category model where $B_i$ is the measure for item $i$ and $D_{rk}$ is the difficulty of scale category $k$ relative to category $k+1$ in ranking $r$.
+Now, the model becomes an adjacent-category model where $B_i$ is the measure for item $i$ and $D\_{rk}$ is the difficulty of scale category $k$ relative to category $k+1$ in ranking $r$.
 
 ## The Bradley-Terry Model for paired preferences
 
@@ -34,7 +32,7 @@ $$ \Pi\_{ab} = \frac{\exp(\beta_a)}{\exp(\beta_a)-\exp(\beta_b)}, $$
 
 is the probability that $a$ is preferred to $b$. It can be shown that the number $n_{ab}$ (people who prefer $a$ compared to $b$) follows a binomial distribution whose parameter is the above estimated probability.
 
-The R package BradleyTerry includes the necessary code to carry out the test of such model. D. Firth also wrote an article in the *Journal of Statistical Software* (2005, 12(1)), [Bradley-Terry Models in R][Bradley-Terry Models in R]. As an exemple, let's consider the data on baseball season in the Eastern Division (Agresti, 2nd edition, p. 437) which are summarized in the following table. Values in parentheses represent SAS fit of B-T model.
+The R package BradleyTerry includes the necessary code to carry out the test of such model. D. Firth also wrote an article in the *Journal of Statistical Software* (2005, 12(1)), [Bradley-Terry Models in R][Bradley-Terry Models in R]. As an example, let's consider the data on baseball season in the Eastern Division (Agresti, 2nd edition, p. 437) which are summarized in the following table. Values in parentheses represent SAS fit of B-T model.
 
 <table border="0">
 <tbody>
@@ -164,7 +162,7 @@ summary(bb.BT2)
 ```
 
 Finally, we might represent the data using a matrix-like representation, where
-each cell reflect the actual frequency of wons, as suggested below. A more interesting plot would be to show the estimated probability, which is left as an exercise to the reader.
+each cell reflect the actual frequency of wins, as suggested below. A more interesting plot would be to show the estimated probability, which is left as an exercise to the reader.
 
 ```r
 library(lattice)

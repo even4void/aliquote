@@ -1,18 +1,16 @@
-+++
-title = "Emacs Org-mode and literate programming"
-date = 2014-08-06T23:23:34+01:00
-draft = false
-tags = ["emacs", "rstats", "lisp"]
-categories = ["2014"]
-+++
+---
+title: "Emacs Org-mode and literate programming"
+date: 2014-08-06T23:23:34+01:00
+draft: false
+tags: ["emacs", "rstats", "clojure"]
+categories: ["2014"]
+---
 
 I've been using Emacs for editing and evaluating R code with [ESS](http://ess.r-project.org) for a long time now. I also like Emacs for editing statistical reports and compiling them using [knitr](http://yihui.name/knitr/) (and before that, [Sweave](http://www.stat.uni-muenchen.de/~leisch/Sweave/)), using plain $\LaTeX$ or just RMarkdown. Now, I'm getting interested in [org-mode](http://orgmode.org) as an alternative to [noweb](http://www.cs.tufts.edu/~nr/noweb/), which I previously used when looking for a way to integrate different programming languages (e.g., sh, sed, and R) into the same document.
 
-<!--more-->
-
 ## Literate programming
 
-I've long been interested by literate programming (LP), and I wrote some posts about [different]({{< ref "/post/weaving-scientific-document.md" >}}) [aspects]({{< ref "/post/easier-literate-programming-with-r.md" >}}) of [LP]({{< ref "/post/reproducible-research-with-r.md" >}}). I've seen an increased interest in LP and reproducible research this year (see, e.g., Roger Peng's blog posts or handouts on Coursera and elsewhere). At some point, it get even mixed up with the new kid on the block: Data Science, which really does mean nothing to me since I consider myself as a data scientist as soon as I have to clean and process data coming from medical research. (If this has to do with "big data" or the "computer scientist *vs.* statistician debate", I'm not really interested in that: After all, we are data slaves and we must deal with that.)
+I've long been interested by literate programming (LP), and I wrote some posts about [different](/post/weaving-scientific-document) [aspects](/post/easier-literate-programming-with-r) of [LP](/post/reproducible-research-with-r). I've seen an increased interest in LP and reproducible research this year (see, e.g., Roger Peng's blog posts or handouts on Coursera and elsewhere). At some point, it get even mixed up with the new kid on the block: Data Science, which really does mean nothing to me since I consider myself as a data scientist as soon as I have to clean and process data coming from medical research. (If this has to do with "big data" or the "computer scientist *vs.* statistician debate", I'm not really interested in that: After all, we are data slaves and we must deal with that.)
 
 
 ## R and knitr
@@ -22,7 +20,11 @@ There are so many good tutorials and posts on R + knitr that I feel too lazy to 
 - [R Markdown — Dynamic Documents for R](http://rmarkdown.rstudio.com)
 - [Writing reproducible reports in R with markdown, knitr and pandoc](http://nicercode.github.io/guides/reports/)
 
-The updated RMarkdown (v2, brought to you by <http://www.rstudio.com>) now relies on [Pandoc](http://johnmacfarlane.net/pandoc/) to build HTML, PDF, or even DOCX documents. They all are standalone documents, meaning that you don't have to provide a separate folder with figures in the case of HTML, for example. This is pretty good. I've been using [knitr](http://yihui.name/knitr/) for two years now, and I updated my statistical workflow to build custom reports based on knitr. I also wrote [some custom Elisp](https://gist.github.com/chlalanne/7403341) <i class="fa fa-file-code-o fa-1x"></i> file to edit/build RMarkdown files under Emacs. It should not be too difficult to update this code in order to make use of RStudio `rmarkdown::render()` instead of `knitr::knit()`. Furthermore, [as discussed on GitHub](https://github.com/rstudio/rmarkdown/issues/17), it is possible to define custom renderer, for example in, e.g., our `~/.Rprofile`:
+The updated RMarkdown (v2, brought to you by <http://www.rstudio.com>) now relies on [Pandoc](http://johnmacfarlane.net/pandoc/) to build HTML, PDF, or even DOCX documents. They all are standalone documents, meaning that you don't have to provide a separate folder with figures in the case of HTML, for example. This is pretty good. I've been using [knitr](http://yihui.name/knitr/) for two years now, and I updated my statistical workflow to build custom reports based on knitr. I also wrote [some custom Elisp](https://gist.github.com/even4void/7403341) file to edit/build RMarkdown files under Emacs:
+
+{{< gist even4void 7403341 >}}
+
+It should not be too difficult to update this code in order to make use of RStudio `rmarkdown::render()` instead of `knitr::knit()`. Furthermore, [as discussed on GitHub](https://github.com/rstudio/rmarkdown/issues/17), it is possible to define custom renderer, for example in, e.g., our `~/.Rprofile`:
 
 ```r
 my_render <- function(input, encoding) {

@@ -1,20 +1,18 @@
-+++
-title = "Notes on the ECM 2012 Conference"
-date = 2012-07-22T11:41:36+01:00
-draft = false
-tags = ["travels", "review"]
-categories = ["2012"]
-+++
+---
+title: "Notes on the ECM 2012 Conference"
+date: 2012-07-22T11:41:36+01:00
+draft: false
+tags: ["travels", "review"]
+categories: ["2012"]
+---
 
 I'm just returning from the [ECM 2012 conference](http://www.ecm2012.com/) that was held in Santiago de Compostela.
 
-<!--more-->
-
-As was the case for to the [preceding one]({{< ref "/post/back-from-the-iv-eam-conference.md" >}}), and in contrast to the annual conference from the Psychometric Society, this conference is generally more heavily oriented toward psychological applications, and less place is devoted to psychometric 'hard' methods, except for Friday's morning sessions. There was a workshop on applied IRT modeling with R, but I completely missed it.
+As was the case for to the [preceding one](/post/back-from-the-iv-eam-conference), and in contrast to the annual conference from the Psychometric Society, this conference is generally more heavily oriented toward psychological applications, and less place is devoted to psychometric 'hard' methods, except for Friday's morning sessions. There was a workshop on applied IRT modeling with R, but I completely missed it.
 
 Niels Smits talked about the use of ordinal regression in place of traditional IRT models in computerized adaptive testing from the perspective of automatic classification. The general idea was to generalize the techniques proposed to handle binary decision (e.g., at risk *vs.* not at risk) to multiple categories. This in turn calls for finding method to obtain scale score probabilities with Likert-type items. Usually, the proportional odds model works quite well in this situation, and it is less demanding in terms of assumptions (unidimensionality, indicator variables, etc.). Basically, a simple way to understand the approach is to reverse the standard view point: instead of working with $\Pr(Y\le j)$, we work with $\Pr(Y=j\mid x=x_i)$, where $x_i$ stands for the location of a given individual on the latent trait. An illustration with real data collected on the CES-D scale (20 0-3 items) was also given. It should be noted that the author also use this instrument to develop a computerized adaptive version (see references at the end).
 
-José Muñiz provided two nice presentations on computerized adaptive testing for the assessment of schizotypy and the estimation of reliability in personality tests with missing values. What was interesting during the first talk is the fact that assessing such clinical sample invariably lead to assymmetrical distribution in response scores. In other words, almost everybody is going well, and this is a big challenge for psychometric models. I do not know if much research has been done in this filed, but I suspect this would be good to write something about best practices to handle such extreme cases. More generally, this study relies on the "psychometric high-risk paradigm" (see, e.g., [Psychometric high-risk paradigm, perceptual aberrations, and schizotypy: an update](http://1.usa.gov/NEWHIa)) and considers there is a 'psychosis continuum' (whereby an individual might evolve from personality traits disorder to psychosis). The authors use the CAT algorithm from Walker (2010), considering an estimation error < 0.32. In this particular study, however, CAT didn't prove very convincing with respect to the number of items retained in final version (40% reduction with binary items[^1], less than 40% reduction with Likert-type items). Relying on a [shadow-tests strategy](http://bit.ly/Qn1Qrx) may be an alternative to the simple CAT algorithm. 
+José Muñiz provided two nice presentations on computerized adaptive testing for the assessment of schizotypy and the estimation of reliability in personality tests with missing values. What was interesting during the first talk is the fact that assessing such clinical sample invariably lead to asymmetrical distribution in response scores. In other words, almost everybody is going well, and this is a big challenge for psychometric models. I do not know if much research has been done in this filed, but I suspect this would be good to write something about best practices to handle such extreme cases. More generally, this study relies on the "psychometric high-risk paradigm" (see, e.g., [Psychometric high-risk paradigm, perceptual aberrations, and schizotypy: an update](http://1.usa.gov/NEWHIa)) and considers there is a 'psychosis continuum' (whereby an individual might evolve from personality traits disorder to psychosis). The authors use the CAT algorithm from Walker (2010), considering an estimation error < 0.32. In this particular study, however, CAT didn't prove very convincing with respect to the number of items retained in final version (40% reduction with binary items[^1], less than 40% reduction with Likert-type items). Relying on a [shadow-tests strategy](http://bit.ly/Qn1Qrx) may be an alternative to the simple CAT algorithm. 
 A good overview of CAT is available in one of the PARE publications: [A Framework for the Development of Computerized Adaptive Tests](http://bit.ly/NEXngr).[^2]
 
 The second talk was oriented toward practitioners, hence the focus on SPSS imputation methods. The idea is that most of the times biostatisticians do not focus on the quality of the instrument(s) on which data are collected. However, there are almost always some missing data (that we can just ignore or replace with "invented" ones). So the idea is to study the influence of missingness on estimated psychometric parameters, like reliability, validity, differential item functioning, or item functions. This work was concerned with the effect of missing values on reliability measures. For large sample (about 3,000 individuals), SPSS imputation based on ML covariance matrix appears to give the best results.

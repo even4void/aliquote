@@ -1,14 +1,12 @@
-+++
-title = "lost+found 2011"
-date = 2012-01-01T21:17:32+01:00
-draft = false
-tags = ["misc"]
-categories = ["2012"]
-+++
+---
+title: "lost+found 2011"
+date: 2012-01-01T21:17:32+01:00
+draft: false
+tags: ["this"]
+categories: ["2012"]
+---
 
 Unfinished and very drafts posts from 2011.
-
-<!--more-->
 
 ## Switching font in $\LaTeX$
 <small>(January 2011)</small>
@@ -24,9 +22,9 @@ in the preamble of your $\LaTeX$ file. There is also the `cm-super` package whos
 
 > The CM-Super package contains Type 1 fonts converted from METAFONT fonts and covers entire EC/TC, EC Concrete, EC Bright and LH fonts (Computer Modern font families). All European and Cyrillic writings are covered. Each Type 1 font program contains ALL glyphs from the following standard LaTeX font encodings: T1, TS1, T2A, T2B, T2C, X2, and also Adobe StandardEncoding (585 glyphs per non-SC font and 468 glyphs per SC font), and could be reencoded to any of these encodings using standard dvips or pdftex facilities (the corresponding support files are also included).
 
-Now, $\LaTeX$ has revolutionized the way we can chnage the default font for Serif, Sans Serif, and Monospace families. See [XeTeX on the Web](http://www.tug.org/xetex/).
+Now, $\LaTeX$ has revolutionized the way we can change the default font for Serif, Sans Serif, and Monospace families. See [XeTeX on the Web](http://www.tug.org/xetex/).
 
-It is Not only easy to switch defaut fonts in a $\LaTeX$ document, but also within a $\TeX$ or Context document. In what follows, I shall describe some simple commands to change fonts in each case.
+It is Not only easy to switch default fonts in a $\LaTeX$ document, but also within a $\TeX$ or Context document. In what follows, I shall describe some simple commands to change fonts in each case.
 
 ### $\LaTeX$
 
@@ -104,7 +102,7 @@ and the result is shown below.
 
 ### Context
 
-The default font used when typesetting in Context is Latin-modern. However, it is possible to use OTF or Type 1 font (with mkii and mkiv).
+The default font used when typesetting in Context is Latin-modern. However, it is possible to use OTF or Type 1 font (with `mkii` and `mkiv`).
 
 Font handling usually proceeds from so-called [Typescripts](http://wiki.contextgarden.net/TypeScripts).
 
@@ -128,7 +126,6 @@ According to the American Association of University Presses, Minion, ITC New Bas
 - <http://www.tug.dk/FontCatalogue/dayroms/>
 - <http://www.ctan.org/tex-archive/help/Catalogue/entries/kpfonts.html>
 - Daniel Rhatigan, [Three typefaces for Mathematics](vhttp://www.typeculture.com/academic_resource/articles_essays/pdfs/tc_article_47.pdf)
-
 
 
 ## Outlier detection
@@ -215,7 +212,7 @@ pairs(iris[,-5], col=ifelse(outl>68.78, "red", "black"))
 
 ### Malahanobis outlier detection 
 
-This time, we use the [mvoutlier](http://cran.r-project.org/web/packages/mvoutlier/index.html) and the `chisq.plot()` function that will plot the ordered robust mahalanobis distances of the data against the quantiles of the χ<sup>2</sup> distribution.
+This time, we use the [mvoutlier](http://cran.r-project.org/web/packages/mvoutlier/index.html) and the `chisq.plot()` function that will plot the ordered robust Mahalanobis distances of the data against the quantiles of the χ<sup>2</sup> distribution.
 
 ```r
 library(mvoutlier)
@@ -234,9 +231,7 @@ chisq.plot(iris[,1:4])
 
 ### PVM
 
-An alternative way to go with distributed computing or virtualization on OS X is to use pvm
-
-There are detailed instructions in a README file but something went wrong for me (and I guess, it applies to everyone with a Mac). So, here is how to compile pvm3:
+An alternative way to go with distributed computing or virtualization on OS X is to use `pvm`. There are detailed instructions in a README file but something went wrong for me (and I guess, it applies to everyone with a Mac). So, here is how to compile pvm3:
 
 1. Set an environment variable for the place you want pvm to live in; I choose `export PVM_ROOT=/usr/local/share/pvm3`.
 2. If you decide to put pvm3 in a non writable directory (as above), change permission accordingly (e.g., `sudo chown username /usr/local/share/pvm3`).

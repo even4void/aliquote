@@ -1,10 +1,10 @@
-+++
-title = "Markdown everywhere"
-date = 2012-08-09T22:30:03+01:00
-draft = false
-tags = ["misc"]
-categories = ["2012"]
-+++
+---
+title: "Markdown everywhere"
+date: 2012-08-09T22:30:03+01:00
+draft: false
+tags: ["misc"]
+categories: ["2012"]
+---
 
 The [Markdown](http://daringfireball.net/projects/markdown/) language has become the *de facto* lightweight markup language for text editing, and more.
 
@@ -22,7 +22,7 @@ What's more?
   
 There are certainly lots of other applications I am not aware of.
 
-I like plain text files: these are files that do not weigh heavy on a HD, they can be visulaized with any text editor or pager, they are easy to send by email, etc. I used to use Emacs for writing almost everything, and of course there is good support for [Markdown](http://jblevins.org/projects/markdown-mode/) and [Pandoc](http://wwwuser.gwdg.de/~jkremer/pandoc-mode.html). For rendering purpose, I found a nice application (Mac-only): [Marked](http://markedapp.com/). It's worth its price! For a free alternative, take a look at [Mou](http://mouapp.com/). My basic setup at the moment consists in typing my text in Emacs while I have an open Marked preview next to it, as shown below. Simplicity matters.
+I like plain text files: these are files that do not weigh heavy on a HD, they can be visualized with any text editor or pager, they are easy to send by email, etc. I used to use Emacs for writing almost everything, and of course there is good support for [Markdown](http://jblevins.org/projects/markdown-mode/) and [Pandoc](http://wwwuser.gwdg.de/~jkremer/pandoc-mode.html). For rendering purpose, I found a nice application (Mac-only): [Marked](http://markedapp.com/). It's worth its price! For a free alternative, take a look at [Mou](http://mouapp.com/). My basic setup at the moment consists in typing my text in Emacs while I have an open Marked preview next to it, as shown below. Simplicity matters.
 
 ![Markdown and Marked.app](/img/20120809114509.png)
 
