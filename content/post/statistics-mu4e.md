@@ -1,16 +1,14 @@
-+++
-title = "Collecting email usage statistics from mu"
-date = 2014-10-26T19:50:15+01:00
-draft = false
-tags = ["misc"]
-categories = ["2014"]
-+++
+---
+title: "Collecting email usage statistics from mu"
+date: 2014-10-26T19:50:15+01:00
+draft: false
+tags: ["misc"]
+categories: ["2014"]
+---
 
 Since I am using [mu](http://www.djcbsoftware.nl/code/mu/) to manage my email locally, I decided to check some basic information about my email activity during the recent years.
 
-<!--more-->
-
-Personal analytics is gaining increased attention, and even Apple now provides iPhone users with the [iOS Health](https://www.apple.com/ios/whats-new/health/) App. However, I am more concerned with what information is available directly under my hands, namely my computer. I very much like Seth Brown's [Vim Croquet](http://www.drbunsen.org/vim-croquet/) or Stephen Wolfram's [blog post](http://blog.stephenwolfram.com/2012/03/the-personal-analytics-of-my-life/) in this respect. Indeed, they are using basic tools to analyze raw data stored on their computers. Regarding email activity, it is almost impossible to get useful statistics from Apple Mail, although some [alternate Mail clients]({{< ref "/post/alternative-mail-reader-for-mac-os-x.md" >}}) do provide some basic usage statistics. I use both Apple Mail and [mu4e](http://www.djcbsoftware.nl/code/mu/mu4e.html) under Emacs. At my office, I often have to fetch and process my emails through Gmail web interface. This is not very practical, but I have to live with that.
+Personal analytics is gaining increased attention, and even Apple now provides iPhone users with the [iOS Health](https://www.apple.com/ios/whats-new/health/) App. However, I am more concerned with what information is available directly under my hands, namely my computer. I very much like Seth Brown's [Vim Croquet](http://www.drbunsen.org/vim-croquet/) or Stephen Wolfram's [blog post](http://blog.stephenwolfram.com/2012/03/the-personal-analytics-of-my-life/) in this respect. Indeed, they are using basic tools to analyze raw data stored on their computers. Regarding email activity, it is almost impossible to get useful statistics from Apple Mail, although some [alternate Mail clients](/post/alternative-mail-reader-for-mac-os-x) do provide some basic usage statistics. I use both Apple Mail and [mu4e](http://www.djcbsoftware.nl/code/mu/mu4e.html) under Emacs. At my office, I often have to fetch and process my emails through Gmail web interface. This is not very practical, but I have to live with that.
 
 The [mu cheatsheet](http://www.djcbsoftware.nl/code/mu/cheatsheet.html) contains useful queries. For example, to find all messages that include an image as attachment, we can use:
 
@@ -58,7 +56,7 @@ $ echo '1836 / 3974' | bc -l | xargs printf "%1.2f\n"
 0,46
 ```
 
-This suggests that my expectations were quite right, and I am currently processing about half of my incoming emails with my iPHone. (The above command filters out irrelevant mailing software, like Sparrow or MailMate that I tried once a while.)
+This suggests that my expectations were quite right, and I am currently processing about half of my incoming emails with my iPhone. (The above command filters out irrelevant mailing software, like Sparrow or MailMate that I tried once a while.)
 
 Regarding my reply rate, here is what I got using:
 
@@ -73,7 +71,7 @@ $ echo '5165 / 7747' | bc -l | xargs printf "%1.2f\n"
 
 Hence, two thirds of my outgoing emails are in reply to incoming messages.
 
-Regarding question 3, I will limit myself to folders I keep in sync on my HD. Indeed, since Gmail has its own conception of IMAP folders (labels are mapped to IMAP mailboxes, which means that a message can appear in more than one mailbox -- in particular, the `[Gmail]/All Mail` mailbox will duplicate all messages that have archived under specific labels), I decided to fetch only labelled messages (all my messages get a label, whether it be by automatic rules or manual settings), and only specific mailboxes.
+Regarding question 3, I will limit myself to folders I keep in sync on my HD. Indeed, since Gmail has its own conception of IMAP folders (labels are mapped to IMAP mailboxes, which means that a message can appear in more than one mailbox --- in particular, the `[Gmail]/All Mail` mailbox will duplicate all messages that have archived under specific labels), I decided to fetch only labelled messages (all my messages get a label, whether it be by automatic rules or manual settings), and only specific mailboxes.
 
 ```
 $ ls Maildir
@@ -102,8 +100,7 @@ $ mu find --sortfield=date --fields="d" date:8y..1d | \
   uniq -c | awk '{print $2 " " $1}' > 1.dat
 ```
 
-To plot them, I used R with the following program: (The ugly stuff for date conversion is there because I couldn't make R understand how date were stored as `%Y-%b` in my `FR_UTF8` locale)
-
+To plot them, I used R with the following program: 
 ```r
 d <- read.table("1.dat", header = FALSE)
 d$V1 <- paste(d$V1, "15", sep = "-")
@@ -115,11 +112,13 @@ p <- ggplot(data = d, aes(x = Time, y = Emails)) + geom_line() +
 p + theme_bw()
 ```
 
+<small>(The ugly stuff for date conversion is there because I couldn't make R understand how date were stored as `%Y-%b` in my `FR_UTF8` locale.)</small>
+
 ![Email usage over time](/img/ts-emails-year.png)
 
 So clearly, my email activity has seriously increased past 2008, that is two years after I got my PhD (part of this may be explained by the fact that I decided to only use my Gmail account for professional use, and no more MS Exchange as I did during 2006-2008.)
 
-Finally, the same command can easily be updated to get the same summary statistics, aggregated quaterly by year, for some of my mailboxes as shown below:
+Finally, the same command can easily be updated to get the same summary statistics, aggregated quarterly by year, for some of my mailboxes as shown below:
 
 ```
 $ mu find --sortfield=date --fields="d m" date:8y..1d | \

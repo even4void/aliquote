@@ -1,20 +1,16 @@
-+++
-title = "Python and significant indentation"
-date = 2010-04-17T17:58:11+01:00
-draft = false
-tags = ["python"]
-categories = ["2010"]
-+++
+---
+title: "Python and significant indentation"
+date: 2010-04-17T17:58:11+01:00
+draft: false
+tags: ["python"]
+categories: ["2010"]
+---
 
-I don't really like significant indentation, as implemented in [Python][Python]. A good starting point for discussion can be found here: http://www.secnetix.de/olli/Python/block_indentation.hawk, but for the time being I will rather focus on the way indentation pattern is checked within Python. 
-
-<!--more-->
+I don't really like significant indentation, as implemented in [Python][Python]. A good starting point for discussion can be found [here](http://www.secnetix.de/olli/Python/block_indentation.hawk), but for the time being I will rather focus on the way indentation pattern is checked within Python. 
 
 It is worth remembering that both tabs and soft wrap will honor the definition of a correct indentation level. According to the reference documentation, but see also [PEP 8][PEP 8]:
 
-> Leading whitespace (spaces and tabs) at the beginning of a logical line is used to compute the indentation level of the line, which in turn is used to determine the grouping of statements. First, tabs are replaced (from left to right) by one to eight spaces such that the total number of characters up to and including the replacement is a multiple of eight (this is intended to be the same rule as used by Unix). The total number of spaces preceding the first non-blank character then determines the line’s indentation. Indentation cannot be split over multiple physical lines using backslashes; the whitespace up to the first backslash determines the indentation.
->
-> - http://docs.python.org/reference/lexical_analysis.html#indentation
+> Leading whitespace (spaces and tabs) at the beginning of a logical line is used to compute the indentation level of the line, which in turn is used to determine the grouping of statements. First, tabs are replaced (from left to right) by one to eight spaces such that the total number of characters up to and including the replacement is a multiple of eight (this is intended to be the same rule as used by Unix). The total number of spaces preceding the first non-blank character then determines the line’s indentation. Indentation cannot be split over multiple physical lines using backslashes; the whitespace up to the first backslash determines the indentation. --- [Python lexical analysis](http://docs.python.org/reference/lexical_analysis.html#indentation)
 
 For example, the following snippet is correctly indented:
 
@@ -45,7 +41,7 @@ About balancing indentation, a colleague of mine lets me realize that in fact Py
   ..
 ```
 
-Here is a short solution to the *balanced parentheses* problem. This is taken litterally from Miller and Ranum, *Problem Solving with Algorithms and Data Structures using Python*, 2006. The complete <i class="fa fa-file-code-o fa-1x"></i> [source code][source code] can be downloaded.
+Here is a short solution to the *balanced parentheses* problem. This is taken literally from Miller and Ranum, *Problem Solving with Algorithms and Data Structures using Python*, 2006. The complete [source code][source code] can be downloaded.
 
 ```python
 class Stack:
@@ -109,4 +105,4 @@ Obviously, this code can be adapted to count the number of spaces without much e
 
 [Python]: http://www.python.org "Python" 
 [PEP 8]: http://www.python.org/dev/peps/pep-0008/ "PEP 8"
-[source code]: http://www.aliquote.org/pub/par_checker.py
+[source code]: /pub/par_checker.py

@@ -1,16 +1,14 @@
-+++
-title = "Syntax highlighting in Latex"
-date = 2010-12-26T11:22:17+01:00
-draft = false
-tags = ["tex"]
-categories = ["2010"]
-+++
+---
+title: "Syntax highlighting in Latex"
+date: 2010-12-26T11:22:17+01:00
+draft: false
+tags: ["tex"]
+categories: ["2010"]
+---
 
 I just discovered the [minted](http://www.ctan.org/tex-archive/macros/latex/contrib/minted/) $\LaTeX$ package to highlight source code. Perfect! I never liked the [listings](http://www.ctan.org/tex-archive/macros/latex/contrib/listings/) package.
 
-<!--more-->
-
-Minted has been developed by [Konrad Rudolph](http://stackoverflow.com/questions/1966425/source-code-highlighting-in-latex/1985330#1985330). It relies on [Pygments](http://pygments.org/) which is easily installed using, e.g.,
+Minted has been developed by [Konrad Rudolph](http://stackoverflow.com/questions/1966425/source-code-highlighting-in-latex/1985330#1985330). It relies on [Pygments](http://pygments.org/) which is easily installed using, e.g.:
 
 ```
 $ sudo easy_install Pygments
@@ -27,7 +25,7 @@ Here is a short example of rendering R and Python code:
 
 ![Screenshot2](/img/2010-12-26-18-18-00.png)
 
-The source file is here: <i class="fa fa-file-code-o fa-1x"></i>  [test_minted.tex](http://www.aliquote.org/pub/test_minted.tex). To compile, just run:
+The source file is here: [test_minted.tex](/pub/test_minted.tex). To compile, just run:
 
 ```
 $ xelatex -shell-escape test_minted.tex

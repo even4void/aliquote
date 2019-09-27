@@ -1,14 +1,12 @@
-+++
-title = "Publishing on Github"
-date = 2014-08-17T21:42:26+01:00
-draft = false
-tags = ["misc"]
-categories = ["2014"]
-+++
+---
+title: "Publishing on Github"
+date: 2014-08-17T21:42:26+01:00
+draft: false
+tags: ["misc"]
+categories: ["2014"]
+---
 
 GitHub is not only for source code.
-
-<!--more-->
 
 ## Publishing on GitHub
 
@@ -32,7 +30,5 @@ Interestingly, there is now an R package that allows to use inline bibliographic
 2014-04-30-bag-of-tweets-040.md:* jbryer: New Rgitbook #Rstats package
 available <http://t.co/xLZw5fYgwr> @GitBookIO (22 Apr)
 ```
-
-
 
 [^1]: For what is worth, the current master branch will not work on OS X with the latest node.js/npm programs. This is because in `checkForGitbook.R` there is an instruction that reads `if(system('npm', ignore.stdout=TRUE) != 0)`, which clearly doesn't work with node.js > 0.10 (`system()` will return 1 in this case). Several patches were proposed but none have been integrated in Jason Bryer's branch. So, I installed `renkun-ken/Rgitbook` version, which [fixed the issue](http://git.io/1zLC0A).

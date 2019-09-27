@@ -5,9 +5,8 @@ draft: false
 tags: ["emacs"]
 categories: ["2018"]
 ---
-Just when I thought I would be a reasonnable guy for 2018 and just keep processing my email with Apple Mail, I found myself reconfiguring Emacs to fetch and send some email using [mu4e](http://www.djcbsoftware.nl/code/mu/mu4e.html), now in version 1. 
 
-<!--more-->
+Just when I thought I would be a reasonable guy for 2018 and just keep processing my email with Apple Mail, I found myself reconfiguring Emacs to fetch and send some email using [mu4e](http://www.djcbsoftware.nl/code/mu/mu4e.html), now in version 1. 
 
 ![](/img/2018-06-01-11-36-01.png)
 
@@ -48,4 +47,4 @@ Other useful tips & tricks can be found in the following blog posts:
 
 {{% music %}}Tom Waits • *The Asylum Years*{{% /music %}}
 
-[^1]: I still haven't figured out how to make `org-mu4e-compose-org-mode` play well with the rest of my configuration when hooked under `mu4e-compose-mode-hook` (`C-c C-c` in message view does not send the message but remains binded its Org-specific counterpart), and I have to dig further.
+[^1]: I still haven't figured out how to make `org-mu4e-compose-org-mode` play well with the rest of my configuration when hooked under `mu4e-compose-mode-hook` (`C-c C-c` in message view does not send the message but remains bound to its Org-specific counterpart), and I have to dig further.

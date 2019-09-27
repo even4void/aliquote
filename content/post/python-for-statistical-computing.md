@@ -1,16 +1,12 @@
-+++
-title = "Python for statistical computing"
-date = 2011-02-07T21:26:26+01:00
-draft = false
-tags = ["python", "statistics"]
-categories = ["2011"]
-+++
+---
+title: "Python for statistical computing"
+date: 2011-02-07T21:26:26+01:00
+draft: false
+tags: ["python", "statistics"]
+categories: ["2011"]
+---
 
-Pursuant on my previous post on the use of Lisp for statistical computing, here are some links for statistics with Python.
-
-<!--more-->
-
-Most of the packages listed hereafter have been grabbed on [stats.stackexchange.com](http://stats.stackexchange.com) and [MetaOptimize](http://metaoptimize.com/qa/).
+Pursuant on my previous post on the use of Lisp for statistical computing, here are some links for statistics with Python. Most of the packages listed hereafter have been grabbed on [stats.stackexchange.com](http://stats.stackexchange.com) and [MetaOptimize](http://metaoptimize.com/qa/).
 
 The two core packages obviously are [NumPy](http://numpy.scipy.org/) and [SciPy](http://scipy.org/), which provides infrastructure for handling N-dimensional array object, tools for doing numerical stuff à la Matlab. Combined to [Matplotlib](http://matplotlib.sourceforge.net/), we have a complete scientific numerical platform. The `SciPy` package already includes some common routines for statistical analysis, but see the [Cookbook](http://scipy.org/Cookbook) which collates some worked examples of commonly-done tasks.
 
@@ -36,6 +32,6 @@ Of course, there also are some full-featured application, like [Orange](http://o
 
 > an open-source scientific workflow and provenance management system developed at the University of Utah that provides support for data exploration and visualization. Whereas workflows have been traditionally used to automate repetitive tasks, for applications that are exploratory in nature, such as simulations, data analysis and visualization, very little is repeated---change is the norm. As an engineer or scientist generates and evaluates hypotheses about data under study, a series of different, albeit related, workflows are created while a workflow is adjusted in an interactive process. VisTrails was designed to manage these rapidly-evolving workflows.
 
-Finally, [Mayavi](http://mayavi.sourceforge.net/) is great for data visualization, especially in 3D. It relies on [VTK](http://www.vtk.org/). It is included in the Enthought flavoured version of Python, together with [Chaco](http://code.enthought.com/chaco/) for 2D plotting. To get an idea, look at Travis Vaught's nice screencast in [Multidimensional Data Visualization in Python - Mixing Chaco and Mayavi](http://travisvaught.blogspot.com/2009/08/multidimensional-data-visualization-in.html).
+Finally, [Mayavi](http://mayavi.sourceforge.net/) is great for data visualization, especially in 3D. It relies on [VTK](http://www.vtk.org/). It is included in the Enthought flavoured version of Python, together with [Chaco](http://code.enthought.com/chaco/) for 2D plotting. To get an idea, look at Travis Vaught's nice screencast in [Multidimensional Data Visualization in Python -- Mixing Chaco and Mayavi](http://travisvaught.blogspot.com/2009/08/multidimensional-data-visualization-in.html).
 
 Useful enhanced shells for Python include [IPython](http://ipython.scipy.org/moin/), [IEP](http://code.google.com/p/iep/), [Spyder](http://packages.python.org/spyder/). And if you like syntax highlighting in your console, then [bpython](http://bpython-interpreter.org/) is just fine (and it works like a charm on OS X).

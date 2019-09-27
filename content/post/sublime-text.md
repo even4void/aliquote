@@ -1,14 +1,12 @@
-+++
-title = "Sublime Text"
-date = 2012-08-26T15:19:53+01:00
-draft = false
-tags = ["apple"]
-categories = ["2012"]
-+++
+---
+title: "Sublime Text"
+date: 2012-08-26T15:19:53+01:00
+draft: false
+tags: ["apple", "app"]
+categories: ["2012"]
+---
 
 [Sublime Text](http://www.sublimetext.com) is one of the latest killer app on OS X, although it is also a powerful cross-platform text editor. But, that just ain't to be a text editor, right?
-
-<!--more-->
 
 I am a huge fan of [GNU Emacs](http://www.gnu.org/software/emacs/), so why writing about another text editor? For OS X users, there has been [Textmate](http://macromates.com) which has not kept its promises to update, so to speak. It is now on [Github](https://github.com/textmate/textmate), but see also [Textmate 2 and why you shouldn’t rewrite your code](http://kerr.io/textmate-2-and-why-you-shouldnt-rewrite-your-code/). There was also [smultron](http://www.peterborgapps.com/smultron/), [fraise](https://github.com/jfmoy/Fraise), and now [chocolate](http://chocolatapp.com). Want more funny stuff for HTML dev? Check out [Coda](https://panic.com/coda/). All that to say that it is a matter of taste... and leverage. As always, simplicity matters, but you need to feel confident with your preferred text editor.
 

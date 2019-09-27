@@ -5,9 +5,8 @@ draft: false
 tags: ["stata","dataviz"]
 categories: ["2019"]
 ---
-Today, in this new Stata series, we are exploring a variation of small multiples where a separate trend line is highlighted in each subplot while background information is provided in dimmed grey. The final solution makes use of _separate, scatter, and graph combine_.
 
-<!--more-->
+Today, in this new Stata series, we are exploring a variation of small multiples where a separate trend line is highlighted in each subplot while background information is provided in dimmed grey. The final solution makes use of _separate, scatter, and graph combine_.
 
 The dataset we will use is composed of 144 observations on the monthly number of international airline passengers (in thousands) between 1949 and 1960. Such time-series dataset would be a perfect fit for a simple line plot, as illustrated below: (Note that I am using the [plotplain](https://danbischof.com/2016/10/14/stata-figure-schemes-latest-version-inclusion-in-statas-ssc-archive/) scheme.)
 

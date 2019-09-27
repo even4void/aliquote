@@ -2,17 +2,15 @@
 title: "TablePlus App"
 date: 2019-01-28T13:41:00+01:00
 draft: false
-tags: ["apple", "database", "app", "review"]
+tags: ["apple", "database", "app"]
 categories: ["2019"]
 ---
 
 Here is a quick review of [TablePlus](https://tableplus.io) which is a lightweight app that all Mac users should fell in love with when it comes to querying SQL databases.
 
-<!--more-->
-
 ![Open dialog box](/img/2019-01-28-17-50-39.png "Open dialog box")
 
-I discovered this app several months ago and I never used it for real, except for testing a toy example before one of my latest course. TablePlus, in the spirit of [Postico](https://eggerapps.at/postico/) or [Induction](https://github.com/pothibo/Induction) (RIP), is a minimalist frontend to MySQL where you can vizualise and query your records in just a few clicks. Although I primarily use a terminal to interact with my local SQL server (yes, I know, OVH does not allow remote connection and I'm reduced to making dump of my databases to work on them locally!), I found that TablePlus does things right. Compared to PHPMyAdmin, which I used on remote servers, TablePlus is a native and quite responsive app, which helps to focus on the data tables rather than the UI.
+I discovered this app several months ago and I never used it for real, except for testing a toy example before one of my latest course. TablePlus, in the spirit of [Postico](https://eggerapps.at/postico/) or [Induction](https://github.com/pothibo/Induction) (RIP), is a minimalist frontend to MySQL where you can visualize and query your records in just a few clicks. Although I primarily use a terminal to interact with my local SQL server (yes, I know, OVH does not allow remote connection and I'm reduced to making dump of my databases to work on them locally!), I found that TablePlus does things right. Compared to PHPMyAdmin, which I used on remote servers, TablePlus is a native and quite responsive app, which helps to focus on the data tables rather than the UI.
 
 TablePlus works with standard SQL databases (MySQL, Postgres and SQLite) but it also supports NoSQL backends such as Redis, Cassandra, or Vertica. I only tested it with SQLite and MySQL databases.
 
@@ -22,7 +20,8 @@ Below is a list of nice features, but you will probably learn more by following 
 
 To give you an idea, here are a few screenshots that I took during my last session (on real data):
 
-![Selection](/img/2019-01-28-13-39-25.png "Selection")
-![SQL query](/img/2019-01-28-13-40-35.png "SQL query")
+{{< fluid_imgs
+  "pure-u-1-2|/img/2019-01-28-13-39-25.png"
+  "pure-u-1-2|/img/2019-01-28-13-40-35.png" >}}
 
-I recently noticed that their [business plan](https://tableplus.io/pricing) has slightly evolved, otherwise it looks like a solid application for database management. I do ot know what is included in the full-featured (aka not free) version, but for ordinary use the free edition should be largely enouig to perform basic operations.
+I recently noticed that their [business plan](https://tableplus.io/pricing) has slightly evolved, otherwise it looks like a solid application for database management. I do not know what is included in the full-featured (aka not free) version, but for ordinary use the free edition should be largely enough to perform basic operations.

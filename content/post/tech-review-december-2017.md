@@ -8,8 +8,6 @@ categories = ["2017"]
 
 Here are some interesting links I keep opened in my web browser for a while in December.
 
-<!--more-->
-
 [How to Write a Git Commit Message](https://chris.beams.io/posts/git-commit/)
 This is a well-known article regarding the annotation of your current work or contribution in a version control system. As I tend to work mostly alone, I don't have a strong need for Git except that it helps me to keep a trace of my workflow and it is quite useful to archive different version or deliverable of my work. I guess I could simply rely on a separate Changelog file, which are so easy to manage under Emacs (`C-x 4 a`). So, how to write a great commit message? Here are the seven rules that re discussed at length in this article:
 

@@ -1,18 +1,16 @@
-+++
-title = "R Pipes and Co"
-date = 2015-04-30T22:54:20+01:00
-draft = false
-tags = ["rstats"]
-categories = ["2015"]
-+++
+---
+title: "R Pipes and Co."
+date: 2015-04-30T22:54:20+01:00
+draft: false
+tags: ["rstats"]
+categories: ["2015"]
+---
 
 The R language is rapidly changing. I am afraid I'm still teaching R like I learned and liked it 10 years ago (but I was already [aware of `replicate()` long ago](http://wp.me/p1MjYA-xN) :smile:) although I try to keep myself regularly informed of what's new on CRAN.
 
-<!--more-->
+It sticks in my head for two or three years now: Should I just stop teaching how to use `lattice` graphics and switch to [ggplot2](http://ggplot2.org)? If you are wondering why this causes me some problems, this is just because once students understand the advantage of using R formulae and the [split-apply-combine](http://www.jstatsoft.org/v40/i01/) strategy with `aggregate()` (and not [plyr](http://plyr.had.co.nz)) for statistical modeling and data aggregation you are almost done. The same R formulae can be used directly with, e.g., `xyplot()`, with minor variations for grouping or conditioning variables. Moreover, the same formulae are in use in the wonderful [Hmisc](/post/hmisc-and-rms) package (which is why, after all, I don't really need the `plyr` package).
 
-It stucks in my head for two or three years now: Should I just stop teaching how to use `lattice` graphics and switch to [ggplot2](http://ggplot2.org)? If you are wondering why this causes me some problems, this is just because once students understand the advantage of using R formulae and the [split-apply-combine](http://www.jstatsoft.org/v40/i01/) strategy with `aggregate()` (and not [plyr](http://plyr.had.co.nz)) for statistical modeling and data aggregation you are almost done. The same R formulae can be used directly with, e.g., `xyplot()`, with minor variations for grouping or conditioning variables. Moreover, the same formulae are in use in the wonderful [Hmisc](http://aliquote.org/articles/tech/hmisc/hmisc.html) package (which is why, after all, I don't really need the `plyr` package).
-
-When I stumbled upon this [nice tutorial](https://ramnathv.github.io/pycon2014-r/visualize/base_graphics.html), I could not help but think that `lattice::xyplot` already provides most of these functionnalities (especially grouped regression lines) with very few options, e.g.
+When I stumbled upon this [nice tutorial](https://ramnathv.github.io/pycon2014-r/visualize/base_graphics.html), I could not help but think that `lattice::xyplot` already provides most of these functionalities (especially grouped regression lines) with very few options, e.g.
 
 ```r
 xyplot(lifeExp ~ gdpPercap, data = d, groups = continent, type = c("p", "r"),

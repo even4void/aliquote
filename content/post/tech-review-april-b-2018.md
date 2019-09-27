@@ -8,8 +8,6 @@ categories: ["2018"]
 
 Here is the second part of the [April technical review]({{< ref "/post/tech-review-april-2018.md" >}}).
 
-<!--more-->
-
 I mentioned in a [previous post]({{< ref "tech-review-march-2018.md" >}}) that Peter Norvig released his famous book, _Paradigms of Artificial Intelligence Programming_, recently. Now, I heard there are also experimental translation in [Python](https://github.com/aimacode/aima-python) and in [Haskell](https://github.com/chris-taylor/aima-haskell) (h/t [@Jose_A_Alonso](http://www.glc.us.es/~jalonso/vestigium/)).
 
 Although I am quite happy with how the site goes by now, I came across a very nice Jekyll setup, [lanyon](https://github.com/poole/lanyon), with [base16 color scheme](https://github.com/chriskempson/base16). If you are after clean web pages, don't forget [Butterick’s practical typography](https://practicaltypography.com): there is so much to learn on choosing the right font and building well crafted documents, including [designing websites](https://practicaltypography.com/websites.html). Last but not least, it has been build using Racket and the [Pollen](https://pollenpub.com) publishing engine. Regarding color theme, I really like the [base16 color scheme](http://chriskempson.com/projects/base16/), and one of the theme I liked a lot for Emacs was Spacegray, which is based on base16. I also discovered recently the [Nord theme](https://github.com/arcticicestudio) (there is also a [custom package](https://github.com/hlissner/emacs-doom-themes) for Emacs Doom, which is what I used actually), and I must admit I like it a lot. Color schemes are available for Vim and iTerm2 as well.

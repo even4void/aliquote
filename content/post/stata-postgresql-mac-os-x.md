@@ -1,14 +1,12 @@
-+++
-title = "ODBC drivers on Mac OS X"
-date = 2012-11-24T15:28:38+01:00
-draft = false
-tags = ["apple", "database", "stata"]
-categories = ["2012"]
-+++
+---
+title: "ODBC drivers on Mac OS X"
+date: 2012-11-24T15:28:38+01:00
+draft: false
+tags: ["apple", "database", "stata"]
+categories: ["2012"]
+---
 
 A brief survey of ODBC and database connectivity on Mac OS X, since I wanted to test ODBC drivers on Stata (see [How do I set up an ODBC Data Source Name for Stata on Mac or Linux/Unix?](http://www.stata.com/support/faqs/data-management/configuring-odbc/)).
-
-<!--more-->
 
 ## What is available on OS X?
 
@@ -39,7 +37,7 @@ DSN                              | Driver
 myodbc5                          | /usr/local/lib/libmyodbc5w.so           
 ```
 
-For PostgreSQL, things were supposed to be a bit more complicated if we refer to this blog post: [ODBC on OSX 10.7 for Postgresql is broke……a suggested fix](http://www.feeny.org/odbc-on-osx-for-postgresql-is-broke-a-suggested-fix/). But wait, aren't we all working on a BSD platform with all GNU tools? I first tried to compile `psqlodbc-09.01.0200` from PostgreSQL [File browser](http://www.postgresql.org/ftp/odbc/versions/src/).
+For PostgreSQL, things were supposed to be a bit more complicated if we refer to this blog post: [ODBC on OSX 10.7 for Postgresql is broken: a suggested fix](http://www.feeny.org/odbc-on-osx-for-postgresql-is-broke-a-suggested-fix/). But wait, aren't we all working on a BSD platform with all GNU tools? I first tried to compile `psqlodbc-09.01.0200` from PostgreSQL [File browser](http://www.postgresql.org/ftp/odbc/versions/src/).
 
 ```
 $ ./configure --with-iodbc
@@ -65,7 +63,7 @@ psqlodbc                         | /usr/local/lib/psqlodbcw.so
 
 ## A little test
 
-Using the example from my [last post]({{< ref "/post/visualizing-sql-queries.md" >}}), I first imported the `auto.txt` dataset into MySQL. I have probably an outdated version (`Server version: 5.5.18 MySQL Community Server (GPL)`) but that's another issue. I happened to record the dataset as follows:
+Using the example from my [last post](/post/visualizing-sql-queries), I first imported the `auto.txt` dataset into MySQL. I have probably an outdated version (`Server version: 5.5.18 MySQL Community Server (GPL)`) but that's another issue. I happened to record the dataset as follows:
 
 ```sql
 mysql> CREATE DATABASE datasets;
@@ -86,7 +84,6 @@ How about R with the [RODBC](http://cran.r-project.org/web/packages/RODBC/index.
 
 ![](/img/20121124000019.png)
 
-Next adventures in "Data Land": Connect from Emacs on my Airbook to a SAS server installed on another Mac running some Windows flavour (probably XP) installed on a USB key through Virtual Box!  
-(I don't really like the idea, but I have to use SAS for a course...)
+Next adventures in "Data Land": Connect from Emacs on my Airbook to a SAS server installed on another Mac running some Windows flavor (probably XP) installed on a USB key through Virtual Box! (I don't really like the idea, but I have to use SAS for a course.)
 
 Not tested (probably because I don't see any point in using SQL Server or other Microsoft technology, let alone Excel): [Accessing MSSQL databases from Excel 2011 on Mac OS X 10.7 Lion](http://asmiler.blogspot.fr/2011/10/accessing-mssql-databases-from-excel.html).

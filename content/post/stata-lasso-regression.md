@@ -2,17 +2,16 @@
 title: "Lasso Regression with Stata"
 date: 2019-01-17T09:25:42+01:00
 draft: false
-tags: ["stata","statistics"]
+tags: ["stata", "statistics"]
 categories: ["2019"]
 ---
-Here comes the time of lasso and elastic net regression with Stata.
 
-<!--more-->
+Here comes the time of lasso and elastic net regression with Stata.
 
 While ridge estimators have been available for quite a long time now ([`ridgereg`](https://ideas.repec.org/c/boc/bocode/s457347.html)), the class of estimators developped by [Friedman, Hastie and Tibshirani](https://www.jstatsoft.org/article/view/v033i01) has long been missing in Stata. It looks like it is now available in the [elasticregress](https://ideas.repec.org/c/boc/bocode/s458397.html) package (also [available on GitHub](https://github.com/wilburtownsend/elasticregress)), at least for linear models.
 
 
-Here is a toy example, inspired from a [previous talk](/cours/misc/mva_clinres/mva_clinres.pdf) I gave on the topic. Basically, the ridge or L2 penalty consists in shrinking parameter estimates toward zero in order to stabilize their variance. The amount of shrinkage is controlled by the penalty parameter, $\lambda$, such that it is possible to make the estimates tend towards 0 by using a very high lambda value as demonstrated below using a polynomial model of order $k$: The yellow points are the observed values and the blue ones are predictions from this model with varying amount of shrinkage.
+Here is a toy example, inspired from a [previous talk](/cours/misc/mva_clinres/mva_clinres.pdf) (PDF) I gave on the topic. Basically, the ridge or L2 penalty consists in shrinking parameter estimates toward zero in order to stabilize their variance. The amount of shrinkage is controlled by the penalty parameter, $\lambda$, such that it is possible to make the estimates tend towards 0 by using a very high lambda value as demonstrated below using a polynomial model of order $k$: The yellow points are the observed values and the blue ones are predictions from this model with varying amount of shrinkage.
 
 <iframe src="/img/ridge.mov" width="640" height="380" frameborder="0"></iframe>
 

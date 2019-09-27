@@ -8,10 +8,9 @@ categories: ["2019"]
 
 Per Stata Corp. announcement back in 2017, [Extended Regression Models](https://www.stata.com/new-in-stata/extended-regression-models/) (ERM) are a class of models that encompasses linear regression, (ordered) probit model and interval regression. In what follows, I shall discuss what ERMs are good for, how they can be used in practice, and how they compare to other approaches to fitting multiple equation models.
 
-<!--more-->
-
-**Important notice: Currently in draft mode**  
-(I no longer have a working version of Stata 15 and I am not in a position to go any further at this time. I will take it back as soon as possible.)
+{{% alert note %}}
+I no longer have a working version of Stata 15 and I am not in a position to go any further at this time. I will take it back as soon as possible.
+{{% /alert %}}
 
 You will find a [series of short videos](https://www.youtube.com/watch?v=bPhNq6RYd-I) by Chuck Huber who highlights the idea of ERMs on Youtube. And of course, there is the Stata [ERM] manual, [available on-line](https://www.stata.com/manuals/erm.pdf) (PDF), where as always you will find about 50 pages of extended discussion on ERMs and how they are implemented in Stata.
 

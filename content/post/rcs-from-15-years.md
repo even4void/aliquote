@@ -8,8 +8,6 @@ categories: ["2019"]
 
 Remember SVN, or even RCS? Before Git I have been a long-time user of the simplest version control that was available on my Mac, namely [RCS](https://en.m.wikipedia.org/wiki/Revision_Control_System). Nowadays, I use mostly Git, but there were times where things were much simpler, yet robust, although we didn't have things such as Github and the like.
 
-<!--more-->
-
 This morning, while I was putting some of my old notes into my Org directory ([quite painful](/micro/2019-09-05-15-37-38) upon reflection), I came across a short tutorial (in French) I wrote on RCS. I could not resits putting a little extract below. Note that it is also available on Github, but in case I change my mind and remove it from there in the future, here it is. (And yes, I converted it again, this time from Org to Markdown!)
 
 ---

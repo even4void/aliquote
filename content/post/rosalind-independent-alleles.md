@@ -8,8 +8,6 @@ categories: ["2019"]
 
 One of the [Rosalind](http://rosalind.info/) problems deals with Mendel's second law according to which traits are inherited independently one of each other. 
 
-<!--more-->
-
 Let us assume we have two heterozygous organisms with genotypes Aa and Bb. Such independant assortment implies that the probability of an aa BB offspring is equal to $\Pr(\text{aa})\times\Pr(\text{BB})=\frac{1}{4}\times\frac{1}{4}=\frac{1}{16}$. The value $\frac{1}{4}$ comes from the fact that the probability of any offspring of this subtype is evenly the same for each crossing:
 
 |        |  AB   |  Ab   |  aB   |  ab   |

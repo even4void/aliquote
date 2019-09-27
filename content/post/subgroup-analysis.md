@@ -1,33 +1,29 @@
-+++
-title = "Subgroup Analysis"
-date = 2011-07-18T14:20:19+01:00
-draft = false
-tags = ["readings", "statistics"]
-categories = ["2011"]
-+++
+---
+title: "Subgroup Analysis"
+date: 2011-07-18T14:20:19+01:00
+draft: false
+tags: ["readings", "statistics"]
+categories: ["2011"]
+---
 
-Here are four papers dealing with the reporting of subgroup analysis and using baseline data (and their pitfalls).
-
-<!--more-->
-
-There might be plenty of other papers on this topic available through Google, but these ones focus on RCTs and biomedical research. Below is just a few recap' of the critical points raised in these papers.
+Here are four papers dealing with the reporting of subgroup analysis and using baseline data (and their pitfalls). There might be plenty of other papers on this topic available through Google, but these ones focus on RCTs and biomedical research. Below is just a few recap' of the critical points raised in these papers.
 
 ## A brief overview
 
 Wang et al.<sup>(1)</sup> provide general guidelines for reporting subgroup analysis. Based on their insert p. 2193, here are those recommendations for researchers intending to publish results from subgroup analysis (strict copy/paste):
 
-* [Abstract] Present subgroup results in the Abstract only if the subgroup analyses were based on a primary study outcome, if they were prespecified, and if they were interpreted in light of the totality of prespecified subgroup analyses undertaken.
+* [Abstract] Present subgroup results in the Abstract only if the subgroup analyses were based on a primary study outcome, if they were pre-specified, and if they were interpreted in light of the totality of pre-specified subgroup analyses undertaken.
 
 * [Methods]
   
-  * Indicate the number of prespecified subgroup analyses that were performed and the number of prespecified subgroup analyses that are reported. Distinguish a specific subgroup analysis of special interest, such as that in the article by Sacks et al., from the multiple subgroup analyses typically done to assess the consistency of a treatment effect among various patient characteristics, such as those in the article by Jackson et al. For each reported analysis, indicate the end point that was assessed and the statistical method that was used to assess the heterogeneity of treatment differences.
+  * Indicate the number of pre-specified subgroup analyses that were performed and the number of pre-specified subgroup analyses that are reported. Distinguish a specific subgroup analysis of special interest, such as that in the article by Sacks et al., from the multiple subgroup analyses typically done to assess the consistency of a treatment effect among various patient characteristics, such as those in the article by Jackson et al. For each reported analysis, indicate the end point that was assessed and the statistical method that was used to assess the heterogeneity of treatment differences.
   * Indicate the number of post hoc subgroup analyses that were performed and the number of post hoc subgroup analyses that are reported. For each reported analysis, indicate the end point that was assessed and the statistical method used to assess the heterogeneity of treatment differences. Detailed descriptions may require a supplementary appendix.
   
   * Indicate the potential effect on type I errors (false positives) due to multiple subgroup analyses and how this effect is addressed. If formal adjustments for multiplicity were used, describe them; if no formal adjustment was made, indicate the magnitude of the problem informally, as done by Jackson et al.
 
 * [Results] When possible, base analyses of the heterogeneity of treatment effects on tests for interaction, and present them along with effect estimates (including confidence intervals) within each level of each baseline covariate analyzed. A forest plot is an effective method for presenting this information.
 
-* [Discussion] Avoid overinterpretation of subgroup differences. Be properly cautious in appraising their credibility, acknowledge the limitations, and provide supporting or contradictory data from other studies, if any.
+* [Discussion] Avoid over-interpretation of subgroup differences. Be properly cautious in appraising their credibility, acknowledge the limitations, and provide supporting or contradictory data from other studies, if any.
 
 The papers that are referenced above are:
 
@@ -48,7 +44,7 @@ According to these authors, baseline data might be used for subgroup analyses, c
 Let us concentrate on the last two issues.
 
 *Covariate adjustment* aims (1) to achieve the most appropriate p-value for the treatment difference, (2) to achieve an unbiased estimate and confidence interval for the magnitude of treatment difference in outcome, or (3) to improve the precision of the estimated treatment difference, thus increasing the statistical power of the trial.
-Most importantly, what really matters is to adjust for the appropraite covariates (p. 2927).
+Most importantly, what really matters is to adjust for the appropriate covariates (p. 2927).
 
 On the other hand, *baseline comparability* aims (1) to describe the baseline characteristics of the sample of patients included, (2) to demonstrate that the randomization has worked well by achieving well balanced treatment groups at baseline, (3) to add credibility to the trial results, specifically encouraging confidence in unadjusted outcome analyses as being without any serious bias, or (4) to identify any unlucky imbalances between treatment groups that may have arisen by chance.
 
@@ -69,19 +65,18 @@ On a related note, the use of pre-post data is discussed in *Statistical Issues 
 The take-home message from Cronbach's paper is essentially that using chnage scores obeys a precise research question (this was originally framed into problems like learning or growth, which are in essence multidimensional aspects of individual developement). Gains or differences scores were primarily used (pp. 77-78):
 
 1. To provide a dependent variable in an experiment on instruction, persuasion, or some other attempt to change behavior or beliefs.
-2. To provide a measure of growth rate or learning rate that is to be predicted, as a wayof answering the question, What kinds of persons grow (learn) fastest? Here, the change measure is a criterion variable in a correlational study.
+2. To provide a measure of growth rate or learning rate that is to be predicted, as a way of answering the question, What kinds of persons grow (learn) fastest? Here, the change measure is a criterion variable in a correlational study.
 3. To provide an indicator of deviant development, as a basis for identifying individuals to be given special treatment or to be studied clinically.
-4. To provide an indicator of a construct that is thought to have significancein a certain theoretical network. The indicator may be used as an independent variable, covariate, dependent variable, etc. 
+4. To provide an indicator of a construct that is thought to have significance in a certain theoretical network. The indicator may be used as an independent variable, covariate, dependent variable, etc. 
 
 Cronbach sum up the above as follows (p. 78):
 
-> There appears to be no need to use measures of change as dependent variables and no virtue in using them. If one is testing the null hypothesis that two treatments have the same effect, the essential question is whether posttest Y∞	scores[^1] vary from group to group. Assuming that errors of measurement of F are random, F is an entirely suitable dependent variable.
+> There appears to be no need to use measures of change as dependent variables and no virtue in using them. If one is testing the null hypothesis that two treatments have the same effect, the essential question is whether posttest Y scores[^1] vary from group to group. Assuming that errors of measurement of F are random, F is an entirely suitable dependent variable.
 
 Last unrelated note, Kim-Kang and Weiss<sup>(8)</sup> provides a nice overview of the measurement of individual change in light of IRT models. Another discussion might be found on [rasch.org](http://www.rasch.org/rmt) Transactions, [Raw Score Nonlinearity Obscures Growth](http://www.rasch.org/rmt/rmt182a.htm).
 
 
-
-## References
+### References
 
 1. Wang, R, Lagakos, SW, Ware, JH, Hunter, DJ, and Drazen JM (2007). [Statistics in Medicine — Reporting of Subgroup Analyses in Clinical Trials](http://rds.epi-ucsf.org/ticr/syllabus/courses/7/2009/02/03/Lecture/readings/WangThe%20new%20england%20journal%20of%20medicine2007.pdf). *The New England Journal of Medicine*, 357(21): 2189-2194.
 2. Lagakos, SW (2006). [The Challenge of Subgroup Analyses — Reporting without Distorting](http://www.kfshrcj.org/NR/rdonlyres/446B3BB6-6942-4E8C-AABF-6BE43D28E192/1135/StatisticsandMedicineSubgroupAnalyses.pdf). *The New England Journal of Medicine*, 354(16): 1667-1669.

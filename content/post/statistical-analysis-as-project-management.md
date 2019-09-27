@@ -1,20 +1,18 @@
-+++
-title = "How to efficiently manage a statistical analysis project"
-date = 2010-09-25T19:40:11+01:00
-draft = false
-tags = ["statistics"]
-categories = ["2010"]
-+++
+---
+title: "How to efficiently manage a statistical analysis project"
+date: 2010-09-25T19:40:11+01:00
+draft: false
+tags: ["statistics", "rstats"]
+categories: ["2010"]
+---
 
 As I always try to get things organized when I am working on a statistical project, and it happens to be hardly succeeded (here success is measured as the time it takes to me to come back to my analysis code one year later), I am looking for an efficient way to manage all the stuff that surround a statistical project.
-
-<!--more-->
 
 Ok, it should be agreed that everything must reside into the same directory. Now, the questions are: how do I organize this directory, how do I maintain a coherent view of successive version of R code, where to put the various notes I take when elaborating a new statistical approach, etc.
 
 I am now exploring various solutions for project management I found while browsing StackOverflow and BioStar (as suggested in response to a question on the [stats.stackexchange](http://stats.stackexchange.com/) Q&A website). Here is a brief list of what I found interesting. Of course, I install everything on my Mac, and now I need to test then but it looks quite interesting at first sight.
 
-First, separating source code from a $\TeX$ified report appears mandatory, unless you really want to embed your R code within a templating or typesetting system. From my experience, it only works for small scale project. Otherwsie, it rapidly becomes very messy to organize all the studd, especially dependencies.
+First, separating source code from a $\TeX$ified report appears mandatory, unless you really want to embed your R code within a templating or typesetting system. From my experience, it only works for small scale project. Otherwise, it rapidly becomes very messy to organize all the stuff, especially dependencies.
 
 For reporting with clean PDF or HTML output, there are [Sweave](http://www.stat.uni-muenchen.de/~leisch/Sweave/) and [brew](http://cran.r-project.org/web/packages/brew/index.html). For the latest, you have to write a template file and analysis might be cycled over different data sets; this is very convenient when you have to report statistics per country, for instance. I am most familiar with Sweave that I used for preparing textbook, course notes or results from interim analysis. By the way, I just found [noweb](http://www.cs.tufts.edu/~nr/noweb/) really wonderful, as it is not limited to R files. I use it when I have to consider more than one programming language (e.g. bash or ruby + R or python).
 

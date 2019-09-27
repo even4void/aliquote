@@ -1,34 +1,30 @@
-+++
-title = "How to get scientific Python on Mac OS X Leopard"
-date = 2008-07-02T18:43:07+01:00
-draft = false
-tags = ["apple", "python"]
-categories = ["2008"]
-+++
+---
+title: "How to get scientific Python on Mac OS X Leopard"
+date: 2008-07-02T18:43:07+01:00
+draft: false
+tags: ["apple", "python"]
+categories: ["2008"]
+---
 
 I was happy to be able to run all of the greatest of Python's package for numerical stuff before I moved on Leopard. Since I reinstalled all of my system, I didn't try to reinstall Python's packages with the built-in Python (2.5). While I was reading some posts on the web, I feel a little bit desperate about the installation failures that were reported for those using the 2.5 Framework.
 
-<!--more-->
-
-Note that numpy is already installed with Python 2.5, which is quite good. However, I'm interested in getting `scipy`, `matplotlib` and `pygame` working on Leopard, as they do previously on Mac OS X 10.4. Finally, I take the shorter route and install all using source packages, and all went fine. Now, Python works out of the box.
+Note that `numpy` is already installed with Python 2.5, which is quite good. However, I'm interested in getting `scipy`, `matplotlib` and `pygame` working on Leopard, as they do previously on Mac OS X 10.4. Finally, I take the shorter route and install all using source packages, and all went fine. Now, Python works out of the box.
 
 ## Installing SciPy
 
 I used the [SciPy Superpack][SciPy Superpack] which provides the core packages: `NumPy`, `SciPy`, `Matplotlib`, `iPython` and `PyMC`. The installer also contains a GFortran compiler.
 
-Note that after the installation, you have to launch a new shell session to allow for path update. Otherwise, Python won't find the new packages. To test, just enter in the shell
+Note that after the installation, you have to launch a new shell session to allow for path update. Otherwise, Python won't find the new packages. To test, just enter in the shell:
 
 ```
 >>> from scipy import *
 ```
 
-If you don't see any message like
+If you don't see any message like the following one, then it should be ok:
 
 ```
 from scipy import * Traceback (most recent call last):
 ```
-
-it should be ok.
 
 ## Installing Pygame
 
@@ -39,7 +35,7 @@ stuff.
 
 To test the installation, just go in the examples directory (in the downloaded
 archive), and test the `stars.py` and `sound.py` examples. You should get
-something like that
+something like that:
 
 ```
 $ python stars.py
@@ -61,7 +57,7 @@ but I cannot capture them in a snapshot :-).
 ![](/img/20100418213844.png)
 	
 Now, what's up? There are plenty of examples on how to use NumPy and SciPy, as
-well as Matplolib. For instance, the following snippet (<i class="fa fa-file-code-o fa-1x"></i> [specgram.py][specgram.py])
+well as Matplolib. For instance, the following snippet ([specgram.py][specgram.py])
 
 ``` python
 #!/usr/bin/env python
@@ -99,5 +95,5 @@ For further readings, I would recommend:
 	
 [SciPy Superpack]: http://macinscience.org/?page_id=6
 [MacCompile]: http://pygame.org/wiki/MacCompile
-[specgram.py]: http://www.aliquote.org/pub/specgram.py
+[specgram.py]: /pub/specgram.py
 [online complements]: http://folk.uio.no/hpl/scripting/

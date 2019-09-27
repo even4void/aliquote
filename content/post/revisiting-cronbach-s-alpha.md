@@ -1,22 +1,20 @@
-+++
-title = "Revisiting Cronbach's alpha"
-date = 2010-09-22T12:49:07+01:00
-draft = false
-tags = ["psychometrics"]
-categories = ["2010"]
-+++
+---
+title: "Revisiting Cronbach's alpha"
+date: 2010-09-22T12:49:07+01:00
+draft: false
+tags: ["psychometrics"]
+categories: ["2010"]
+---
 
 While I was polishing statistical analyses for a paper including several instruments for neuropsychological assessment, I was puzzled by an article where authors reported using Cortina's standard error [1] for Cronbach's alpha. I usually give 95% confidence intervals computed by bootstrap (with BCA correction) and don't rely on asymptotic distribution for this particular statistic.
 
-<!--more-->
-
-The precision of Cronbach's alpha depends on the standard error of items intercorrelations, and its SE takes the form
+The precision of Cronbach's alpha depends on the standard error of items intercorrelations, and its SE takes the form:
 
 $$ \frac{\text{SD}\(r\)}{\sqrt{\left(0.5\times k\times (k-1)\right)-1}} $$
 
 where $\text{SD}\(r\)$ is the standard deviation of item intercorrelations and k is the number of items (Cortina, p. 100). It follows that if the intercorrelation matrix is constant, $\text{SE}\(\alpha\)=0$.
 
-I don't really like the overuse of Cronbach's alpha, especially when it is not aknowledged as just a measure of the average between-item correlation. Cortina just nicely say that "precision of alpha, because it is a function of the spread of item correlations, reflects this range of correlations regardless of the source or sources of the range (e.g., measurement error or multidimensionality)". If the measurement instrument is clearly multidimensional, then it follows that the variance of intercorrelation matrix increases, and in turn SE(α). Cortina also points to usual values of alpha considered as absolute thresholds, e.g. α > 0.70 (I would add 0.90 for comparison at the individual level):
+I don't really like the overuse of Cronbach's alpha, especially when it is not acknowledged as just a measure of the average between-item correlation. Cortina just nicely say that "precision of alpha, because it is a function of the spread of item correlations, reflects this range of correlations regardless of the source or sources of the range (e.g., measurement error or multidimensionality)". If the measurement instrument is clearly multidimensional, then it follows that the variance of intercorrelation matrix increases, and in turn SE(α). Cortina also points to usual values of alpha considered as absolute thresholds, e.g. α > 0.70 (I would add 0.90 for comparison at the individual level):
 
 > Another lesson to be learned from Green et al's (1977) Monte Carlo study is that alpha (either Cronbach's or standardized) is a function of the number of items in a scale. Although most who use alpha pay lip-service to this fact, it seems to be forgotten when interpreting alpha. Most recent studies that have used alpha imply that a given level, perhaps greater than .70, is adequate or inadequate without comparing it with the number of items in the scale. Any perusal of the recent literature in applied psychology supports this statement. This acceptance of α > .70 as adequate is implied by the fact that α > .70 usually goes uninterpreted. It is merely presented, and further scale modifications are seldom made. This is clearly an improper usage of the statistic.
 
@@ -26,7 +24,7 @@ Below, I show how Cronbach's α evolves as the number of items, the average item
 
 ![](/img/20100924210640.png)
 
-As can be seen, lower internal consistencies are found for low number of items, low average item correlation, and when there is no unidimensionality. I happened to produce a similar plot as follows (it needs <i class="fa fa-file-code-o fa-1x"></i> `cronbach_alpha.R`, which may be download as [Gist 595886](http://gist.github.com/595886)):
+As can be seen, lower internal consistencies are found for low number of items, low average item correlation, and when there is no unidimensionality. I happened to produce a similar plot as follows (it needs `cronbach_alpha.R`, which may be download as [Gist 595886](http://gist.github.com/595886)):
 
 ```r
 library(lattice)
@@ -76,12 +74,12 @@ A recent paper published in *Health and Quality of Life Outcomes* even suggests 
 
 ### References
 
-1. Cortina, J.M. (1993). <i class="fa fa-file-pdf-o fa-1x"></i> [What Is Coefficient Alpha? An Examination of Theory and Applications](http://psychweb.psy.umt.edu/denis/datadecision/front/cortina*alpha.pdf). *Journal of Applied Psychology*, *78(1)*, 98-104.
-2. Schmitt, N. (1996). <i class="fa fa-file-pdf-o fa-1x"></i> [Uses and Abuses of Coefficient Alpha](http://socrates.berkeley.edu/~maccoun/PP279*Schmitt.pdf). *Psychological Assessment*, *8(4)*, 350-353.
+1. Cortina, J.M. (1993). [What Is Coefficient Alpha? An Examination of Theory and Applications](http://psychweb.psy.umt.edu/denis/datadecision/front/cortina*alpha.pdf). *Journal of Applied Psychology*, *78(1)*, 98-104.
+2. Schmitt, N. (1996). [Uses and Abuses of Coefficient Alpha](http://socrates.berkeley.edu/~maccoun/PP279*Schmitt.pdf). *Psychological Assessment*, *8(4)*, 350-353.
 3. Feldt, L.S. (1990). The sampling theory for the intraclass reliability coefficient. *Applied Measurement in Education*, *3*, 361-367.
 4. Feldt, L.S., Woodruff, D.J., and Salih, F.A. (1987). Statistical inference for coefficient alpha. *Applied Psychological Measurement*, *11*, 93-103.
 5. Charter, R.A. and Feldt, L.S. (1996). Testing the equality of two alpha coefficients. *Perceptual and Motor Skills*, *82*, 763-738.
-6. Duhachek, A. and Iacobucci, D. (2004). <i class="fa fa-file-pdf-o fa-1x"></i> [Alpha’s Standard Error (ASE): An Accurate and Precise Confidence Interval Estimate](http://marketing.wharton.upenn.edu/ideas/pdf/Iacobucci/methodological/jap-alpha-wadam-in-jap.pdf). *Journal of Applied Psychology*, *89(5)*, 792-808.
-7. Iacobucci, D. and Duhachek, A. (2003). <i class="fa fa-file-pdf-o fa-1x"></i> [Advancing Alpha: Measuring Reliability With Confidence](http://www.owen.vanderbilt.edu/vanderbilt/data/research/2190full.pdf). *Journal of Consumer Psychology*, *13(4)*, 478-487.
-8. Shevlin, M., Miles, J.N.V., Davies, M.N.O., and Walker, S. (2000). <i class="fa fa-file-pdf-o fa-1x"></i> [Coefficient alpha: a useful indicator of reliability?](http://www.jeremymiles.co.uk/mestuff/publications/p6.pdf). *Personality and Individual Differences*, *28*, 229-237.
+6. Duhachek, A. and Iacobucci, D. (2004). [Alpha’s Standard Error (ASE): An Accurate and Precise Confidence Interval Estimate](http://marketing.wharton.upenn.edu/ideas/pdf/Iacobucci/methodological/jap-alpha-wadam-in-jap.pdf). *Journal of Applied Psychology*, *89(5)*, 792-808.
+7. Iacobucci, D. and Duhachek, A. (2003). [Advancing Alpha: Measuring Reliability With Confidence](http://www.owen.vanderbilt.edu/vanderbilt/data/research/2190full.pdf). *Journal of Consumer Psychology*, *13(4)*, 478-487.
+8. Shevlin, M., Miles, J.N.V., Davies, M.N.O., and Walker, S. (2000). [Coefficient alpha: a useful indicator of reliability?](http://www.jeremymiles.co.uk/mestuff/publications/p6.pdf). *Personality and Individual Differences*, *28*, 229-237.
 9. Fong, D.Y.T., Ho, S.Y., and Lam, T.H. (2010). [Evaluation of internal reliability in the presence of inconsistent responses](http://www.hqlo.com/content/8/1/27). *Health and Quality of Life Outcomes*, *8*,27.

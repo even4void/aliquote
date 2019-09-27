@@ -5,9 +5,8 @@ draft: false
 tags: ["python"]
 categories: ["2019"]
 ---
-I spend most of my time programming in Python or Scheme these days. Here are some thoughts about Python after years of R for data scraping and wrangling.
 
-<!--more-->
+I spend most of my time programming in Python or Scheme these days. Here are some thoughts about Python after years of R for data scraping and wrangling.
 
 I am not going to speak about high-level programming with classes and decorators or whatever, neither am I interested in the domain-specific versus generic language debate. John D. Cook gave an [excellent talk](https://www.youtube.com/watch?v=6S9r_YbqHy8&feature=youtu.be) on this years ago. Let's face it: R is great for statistical computing when your data conforms or can be transformed to conform to the expected model, and few commercial packages offer as many statistical estimators and techniques for mining and visualizing multidimensional data. Sometimes a more general programming language, like Python or Scheme, may be more malleable, though.
 
@@ -21,7 +20,7 @@ Surely, having richer data structures at hand offers new horizons. Being able to
 
 <small>(The `keys = str(keys).replace("'", "")` instruction is here to ensure that column names are unquoted when they are sent to PostgreSQL.)</small>
 
-I still find a bit confusing that deleting an item from a dictionnary or a list may be accomplished either using methods (`.pop()`) or what ressemble functions but are in fact just keywords (`del`). Both approaches have the same computational complexity, but `pop` returns its item while `del` allows to use slice. I tend to think as `pop` ([without `push`](https://bit.ly/2CmEeAx), though) the way Perl does, and more generally how stacks work, even if we can "pop" an element at any position.
+I still find a bit confusing that deleting an item from a dictionary or a list may be accomplished either using methods (`.pop()`) or what resemble functions but are in fact just keywords (`del`). Both approaches have the same computational complexity, but `pop` returns its item while `del` allows to use slice. I tend to think as `pop` ([without `push`](https://bit.ly/2CmEeAx), though) the way Perl does, and more generally how stacks work, even if we can "pop" an element at any position.
 
 List comprehensions and generators are probably the best functionality available in Python, compared to R or MATLAB/Octave (which I used to use for some years before R). Some math functions like `sum` are even capable of dealing with iterable objects derived from a generator expression (e.g., `x*x for x in range(10)`, which is equivalent to `map(lambda x: x*x, range(10))` if we were to rely on a lambda function). When iterating once or when lazy evaluation is of concern, generators prove to be very elegant. I believe that was one of the reasons for [people's enthusiasm](http://python3porting.com/improving.html) with regard to Python 3 itself, after new packages like  [itertools](https://bit.ly/2TIEq7g).
 

@@ -8,8 +8,6 @@ categories: ["2018"]
 
 Here is the new edition of my abridged Twitter timeline, RSS feeds and web musings.
 
-<!--more-->
-
 [Now Desktop](https://zeit.co/download) is a tiny app that let you monitor your [now](https://zeit.co/now) tasks. If you don't know what now is, think of it as a gentle tool to deploy serverless applications, much like a combination of AWS Lambda and Heroku, with command-line tools and desktop notifications. You can deploy intermediate builds which facilitate team collaboration and you can always use an alias to get your own URL. Unlike Heroku, you won't have access to hosted computing ressources, but for live rendering of Javascript applications or Docker container it looks like a good candidate.
 
 In case you still work with Common Lisp, the [Common Lisp Standard Draft](http://cvberry.com/tech_writings/notes/common_lisp_standard_draft.html) is available as a paginated PDF (1356 pages). Clearly, this is some big stuff, even for a lightweight reader such as OS X Preview, but it may replace the [Hyperspec](http://www.lispworks.com/documentation/HyperSpec/Front/index.htm) which is more about 2,300 HTML pages.

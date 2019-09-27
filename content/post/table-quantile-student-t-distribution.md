@@ -1,14 +1,12 @@
-+++
-title = "Pretty printing statistical distribution tables"
-date = 2011-04-30T17:07:44+01:00
-draft = false
-tags = ["rstats","tex"]
-categories = ["2011"]
-+++
+---
+title: "Pretty printing statistical distribution tables"
+date: 2011-04-30T17:07:44+01:00
+draft: false
+tags: ["rstats","tex"]
+categories: ["2011"]
+---
 
-Before using statistical software, we were teached to use standard tables for finding the quantile of a standard normal or a Student's t distribution, given a type 1 risk. Here is a way to quickly print them on a PDF file using R and $\LaTeX$.
-
-<!--more-->
+Before using statistical software, we learned to use standard tables for finding the quantile of a standard normal or a Student's t distribution, given a type 1 risk. Here is a way to quickly print them on a PDF file using R and $\LaTeX$.
 
 ## The R part
 
@@ -22,7 +20,7 @@ for (i in seq_along(pp))
   res[,i] <- qt(p=pp[i], df=dof, lower.tail=F)
 ```
 
-Then, we just have to export this table as a standalone `tex` file.
+Then, we just have to export this table as a standalone `tex` file:
 
 ```r
 library(xtable)

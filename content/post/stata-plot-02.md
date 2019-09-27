@@ -5,9 +5,8 @@ draft: false
 tags: ["stata","dataviz"]
 categories: ["2019"]
 ---
-Today we are going to customize a simple boxplot by overlaying individual data points.
 
-<!--more-->
+Today we are going to customize a simple boxplot by overlaying individual data points.
 
 Note that there's a few pieces of code lying around on the [UCLA website](https://stats.idre.ucla.edu/stata/code/creating-and-extending-boxplots-using-twoway-graphs/), but we are going to proceed in a different way. Note also that [stripplot](https://ideas.repec.org/c/boc/bocode/s433401.html) offers a lot of functionality, including a [variation](https://www.statalist.org/forums/forum/general-stata-discussion/general/6918-varying-box-plots) of the idea discussed here. And the built-in `dotplot` command comes close to what we would like to do, except that it is not a `twoway` command.
 

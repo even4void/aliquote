@@ -8,8 +8,6 @@ categories: ["2019"]
 
 It tooks a while but I finally made it: I redesigned the website few days ago. I am more than happy with the new design: it remains minimalistic but easier to manage, and a lot of old stuff has been cleaned up along the way.
 
-<!--more-->
-
 The previous design was derived from the [even theme](https://themes.gohugo.io/hugo-theme-even/). It has served me well during the past two years, but over time I found it hard to maintain in a decent state. Hugo changed a lot in later releases, leading to [pesky errors](/micro/hugo-update.md) with old Go statements. I ended up freazing my Hugo program to the latest version that was actually working with my current settings, but I knew this would not last forever. Three days ago, I decided to upgrade Hugo to the last version available in Homebrew tap, and update the Even theme with the newly released one. I fixed things here and there, and just gave up as soon as I realized that I wanted to build my own package. Most importantlty, I wanted to fix annoying things like image displays, preformatted code blocks and syntax highlighting, Hugo pagination (which was actually too large).
 
 While browsing existing Hugo themes and frameworks, I came across the [Ezhil](https://github.com/vividvilla/ezhil) theme. This was just what I was looking for to get started: A sober theme, with minimal CSS and div layout. I worked on it a bit, and finally ended up with the slightly altered version you are currently browsing. Overall, this is mostly Ezhil, but with different structured views, and above all new fonts.

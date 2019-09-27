@@ -1,16 +1,14 @@
-+++
-title = "So many programming languages"
-date = 2011-01-11T10:17:08+01:00
-draft = false
-tags = ["misc"]
-categories = ["2011"]
-+++
+---
+title: "So many programming languages"
+date: 2011-01-11T10:17:08+01:00
+draft: false
+tags: ["misc"]
+categories: ["2011"]
+---
 
 This is a short overview of several programming languages that I play with when I have some time.
 
-<!--more-->
-
-I can remember that my very first programming language was Turbo Pascal; it was an introductory course taught to students enrolled in experimental psychology and the design of psychophysical experiments. Then, I used Matlab a lot during 3 to 4 years. It serves as a statistical package to analyse my data, but it was also a tool to construct visual stimuli and learn basic principles of image and signal processing. I even build a GUI for signal processing and data analysis. During my PhD, I started learning C and Java, while attending a lot of statistical courses. It was also the time I definitively switched to the R statistical package. I learned a little bit of Perl, and then discovered Python, which I mostly used like Bash until recently where I started to use it for some heavy computational statistical tasks.
+I can remember that my very first programming language was Turbo Pascal; it was an introductory course taught to students enrolled in experimental psychology and the design of psychophysical experiments. Then, I used Matlab a lot during 3 to 4 years. It serves as a statistical package to analyze my data, but it was also a tool to construct visual stimuli and learn basic principles of image and signal processing. I even build a GUI for signal processing and data analysis. During my PhD, I started learning C and Java, while attending a lot of statistical courses. It was also the time I definitively switched to the R statistical package. I learned a little bit of Perl, and then discovered Python, which I mostly used like Bash until recently where I started to use it for some heavy computational statistical tasks.
 
 Now, a lot of more or less "esoteric" languages has emerged, not that they are necessarily very new but since I'm not a true computer scientist I'm not always up to date. Among those languages that I wish I had time to learn more, there are: [Ruby](http://ruby-lang.org/), [Scala](http://www.scala-lang.org/), [Haskell](http://www.haskell.org/haskellwiki/Haskell), [Lua](http://www.lua.org/), [Clojure](http://clojure.org/), and a lot of stuff around Lisp ([clisp](http://www.gnu.org/software/clisp/), [Chicken](http://www.call-cc.org/), [CMUCL](http://www.cons.org/cmucl/), [SBCL](http://sbcl.sourceforge.net/), [Clozure CL](http://www.clozure.com/clozurecl.html), [Lush](http://lush.sourceforge.net/)).
 
@@ -25,7 +23,7 @@ Here is a concise [Cheat sheet](http://anyall.org/scalacheat/), and here is a di
 
 ## Haskell
 
-I discovered [Haskell](http://www.haskell.org/) three or four years ago when reading [Vincent Zoonekynd](http://zoonek.free.fr)'s blog ([here](http://zoonek.free.fr/blosxom/Linux/2007-01-01_Haskell.html)). I initially thought it was something to do fun things in mathematics, and never came back to it until recently when I came across this interesting paper on functional programming for information visualization and visual analytics: <i class="fa fa-file-pdf-o fa-1x"></i> [Beautiful Code, Compelling Evidence](http://www.renci.org/wp-content/pub/tutorials/BeautifulCode.pdf), by J. R. Heard. There is a nice illustration with annotated code on the use of circular displays based on OpenGL (that I also discussed in a [preceding post]({{< ref "/post/dwelling-upon-circular-displays.md" >}})).
+I discovered [Haskell](http://www.haskell.org/) three or four years ago when reading [Vincent Zoonekynd](http://zoonek.free.fr)'s blog ([here](http://zoonek.free.fr/blosxom/Linux/2007-01-01_Haskell.html)). I initially thought it was something to do fun things in mathematics, and never came back to it until recently when I came across this interesting paper on functional programming for information visualization and visual analytics: <i class="fa fa-file-pdf-o fa-1x"></i> [Beautiful Code, Compelling Evidence](http://www.renci.org/wp-content/pub/tutorials/BeautifulCode.pdf), by J. R. Heard. There is a nice illustration with annotated code on the use of circular displays based on OpenGL (that I also discussed in a [preceding post](/post/dwelling-upon-circular-displays)).
 
 ![](/img/20110213110747.png)
 
@@ -39,7 +37,7 @@ I've started to learn Clojure, because of the rise of [Incanter](http://incanter
 
 [R. Mark Volkmann](http://java.ociweb.com/mark/clojure/) did a good job at exposing the main ideas of Clojure in [Clojure - Functional Programming for the JVM](http://java.ociweb.com/mark/clojure/article.html). On a related point, I also like <i class="fa fa-file-pdf-o fa-1x"></i> [From Lisp to Clojure/Incanter and R](http://files.meetup.com/1406240/From%20Lisp%20to%20Clojure-Incanter%20and%20R.pdf), by [Shane Conway](http://www.statalgo.com), because it offers a comparative view of Clojure and R approaches. A lot of other discussions may be found on [Stack Overflow](http://stackoverflow.com/questions/tagged/clojure). Actually, I'm still in the process of learning the language.
 
-A bunch of free ressources on Clojure:
+A bunch of free resources on Clojure:
 
 - <http://clojure.org/>
 - [ClojureDocs](http://clojuredocs.org/)
@@ -75,9 +73,9 @@ groovy -e "println 'Hello ' + args[0]" World
 
 ## Lua
 
-Well, [Lua](http://www.lua.org/) is a lightweight programming language very useful for automating tasks and interacting with the oerating system. According to the documentation, it is robust, fast, portable, embeddable, and powerful yet remaining simple when implementing classes and inheritance. I initially came across this language through Context because the MkIV implementation relies on it, and more generally the [LuaTeX](http://www.luatex.org/) engine (but see, e.g, <i class="fa fa-file-pdf-o fa-1x"></i> [ConTEXt MkIV: Going UTF](http://www.tug.org/TUGboat/Articles/tb28-3/tb90hagen.pdf), by Hans Hagen).
+Well, [Lua](http://www.lua.org/) is a lightweight programming language very useful for automating tasks and interacting with the operating system. According to the documentation, it is robust, fast, portable, embeddable, and powerful yet remaining simple when implementing classes and inheritance. I initially came across this language through Context because the MkIV implementation relies on it, and more generally the [LuaTeX](http://www.luatex.org/) engine (but see, e.g, [ConTEXt MkIV: Going UTF](http://www.tug.org/TUGboat/Articles/tb28-3/tb90hagen.pdf), by Hans Hagen).
 
-In [another post](yet-another-interactive-shell-for-numerical-calculus-numeric-lua), I described how to install [Numeric Lua](http://numlua.luaforge.net/), which offers some convenient numerical functions, on the Mac.
+In [another post](/post/yet-another-interactive-prompt-for-calculus/), I described how to install [Numeric Lua](http://numlua.luaforge.net/), which offers some convenient numerical functions, on the Mac.
 
 Some good tutorials to get started with Lua are listed below:
 

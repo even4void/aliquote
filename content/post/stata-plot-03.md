@@ -5,13 +5,13 @@ draft: false
 tags: ["stata","dataviz"]
 categories: ["2019"]
 ---
-Interaction charts are quite useful to assess the direction and magnitude of an interaction effect in the context of an analysis of variance. Here is one way to build an interaction plot in Stata, using built-in commands only.
 
-<!--more-->
+Interaction charts are quite useful to assess the direction and magnitude of an interaction effect in the context of an analysis of variance. Here is one way to build an interaction plot in Stata, using built-in commands only.
 
 The data we will be using come from Montgomery's Design of Experiments: This is basically a $3^2$ factorial design where we study the effect of temperature (°F) and a design parameter with three possible choices. The aim is to design a battery for use in a device subjected to extreme variations of temperature. I struggled to build an interaction plot for these data while writting my [Stata tutorials](/articles/stata-sk/) lately, so I thought it would be a good idea to summarize how I came to a working solution.
 
 Here are the [data](/pub/battery.txt) that we can load into Stata using the folllowing instruction:
+
 ```Stata
 import delimited "battery.txt", delimiter("", collapse) varnames(1)
 list in 1/3
