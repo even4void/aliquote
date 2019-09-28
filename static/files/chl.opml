@@ -61,6 +61,7 @@
 			<outline htmlUrl="https://www.tfeb.org/fragments/index.html" title="Fragments: Fragments" xmlUrl="https://tfeb.org/fragments/feeds/all.rss.xml" type="rss" text="Fragments: Fragments"/>
 			<outline htmlUrl="https://freakonometrics.hypotheses.org" title="Freakonometrics" xmlUrl="https://freakonometrics.hypotheses.org/feed" type="rss" text="Freakonometrics"/>
 			<outline htmlUrl="https://shapeshed.com/" title="George Ornbo" xmlUrl="https://shapeshed.com/atom.xml" type="rss" text="George Ornbo"/>
+			<outline htmlUrl="http://gregoryszorc.com/blog" title="Gregory Szorc's Digital Home" xmlUrl="https://gregoryszorc.com/blog/feed" type="rss" text="Gregory Szorc's Digital Home"/>
 			<outline htmlUrl="http://www.lihaoyi.com/" title="Haoyi's Programming Blog" xmlUrl="http://www.lihaoyi.com/feed" type="rss" text="Haoyi's Programming Blog"/>
 			<outline htmlUrl="http://www.philipzucker.com" title="Hey There Buddo!" xmlUrl="http://www.philipzucker.com/feed/" type="rss" text="Hey There Buddo!"/>
 			<outline htmlUrl="https://rakhim.org/" title="Home on Rakhim.org" xmlUrl="https://rakhim.org/index.xml" type="rss" text="Home on Rakhim.org"/>
@@ -120,6 +121,7 @@
 			<outline htmlUrl="https://www.nayuki.io/" title="Project Nayuki" xmlUrl="https://www.nayuki.io/rss20.xml" type="rss" text="Project Nayuki"/>
 			<outline htmlUrl="https://racket-news.com/index.html" title="Racket News: Racket News" xmlUrl="https://racket-news.com/feeds/all.rss.xml" type="rss" text="Racket News: Racket News"/>
 			<outline htmlUrl="https://radfordneal.wordpress.com" title="Radford Neal's blog" xmlUrl="http://radfordneal.wordpress.com/feed/" type="rss" text="Radford Neal's blog"/>
+			<outline htmlUrl="https://scriptingosx.com" title="Scripting OS X" xmlUrl="https://scriptingosx.com/feed/" type="rss" text="Scripting OS X"/>
 			<outline htmlUrl="http://blog.fogus.me" title="Send More Paramedics" xmlUrl="http://blog.fogus.me/feed/" type="rss" text="Send More Paramedics"/>
 			<outline htmlUrl="https://serokell.io/blog" title="Serokell Blog" xmlUrl="https://serokell.io/blog.rss.xml" type="rss" text="Serokell Blog"/>
 			<outline htmlUrl="http://gigasquid.github.io/" title="Squid's Blog" xmlUrl="http://gigasquidsoftware.com/atom.xml" type="rss" text="Squid's Blog"/>
