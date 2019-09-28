@@ -132,6 +132,7 @@
 			<outline htmlUrl="https://multithreaded.stitchfix.com/" title="Stitch Fix Technology – Multithreaded" xmlUrl="https://multithreaded.stitchfix.com/feed.xml" type="rss" text="Stitch Fix Technology – Multithreaded"/>
 			<outline htmlUrl="https://technomancy.us/" title="Technomancy" xmlUrl="http://technomancy.us/feed/atom.xml" type="rss" text="Technomancy"/>
 			<outline htmlUrl="https://alex-hhh.github.io/index.html" title="The Blog of Alex Harsányi: The Blog of Alex Harsányi" xmlUrl="https://alex-hhh.github.io/feeds/all.rss.xml" type="rss" text="The Blog of Alex Harsányi: The Blog of Alex Harsányi"/>
+			<outline htmlUrl="https://floooh.github.com/" title="The Brain Dump" xmlUrl="https://floooh.github.com/feed.xml" type="rss" text="The Brain Dump"/>
 			<outline htmlUrl="http://blog.cleancoder.com/" title="The Clean Code Blog" xmlUrl="http://blog.cleancoder.com/atom.xml" type="rss" text="The Clean Code Blog"/>
 			<outline htmlUrl="http://calculist.org/" title="The Little Calculist" xmlUrl="http://calculist.org/feed.xml" type="rss" text="The Little Calculist"/>
 			<outline htmlUrl="https://golem.ph.utexas.edu/category/" title="The n-Category Café" xmlUrl="https://golem.ph.utexas.edu/category/atom10.xml" type="rss" text="The n-Category Café"/>
