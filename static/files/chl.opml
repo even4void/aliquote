@@ -140,6 +140,7 @@
 			<outline htmlUrl="https://golem.ph.utexas.edu/category/" title="The n-Category Café" xmlUrl="https://golem.ph.utexas.edu/category/atom10.xml" type="rss" text="The n-Category Café"/>
 			<outline htmlUrl="http://shape-of-code.coding-guidelines.com" title="The Shape of Code" xmlUrl="http://shape-of-code.coding-guidelines.com/feed/" type="rss" text="The Shape of Code"/>
 			<outline htmlUrl="https://blog.stata.com" title="The Stata Blog" xmlUrl="http://blog.stata.com/feed/" type="rss" text="The Stata Blog"/>
+			<outline htmlUrl="https://blog.plover.com" title="The Universe of Discourse" xmlUrl="https://blog.plover.com/index.rss" type="rss" text="The Universe of Discourse"/>
 			<outline htmlUrl="https://mailund.github.io/r-programmer-blog/" title="The Working R Programmer" xmlUrl="https://mailund.github.io/r-programmer-blog/index.xml" type="rss" text="The Working R Programmer"/>
 			<outline htmlUrl="http://third-bit.com/feed.xml" title="Third Bit" xmlUrl="http://third-bit.com/feed.xml" type="rss" text="Third Bit"/>
 			<outline htmlUrl="https://thomashoneyman.com/" title="Thomas Honeyman" xmlUrl="https://thomashoneyman.com/index.xml" type="rss" text="Thomas Honeyman"/>
