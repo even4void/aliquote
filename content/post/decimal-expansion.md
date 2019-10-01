@@ -9,3 +9,4 @@ categories: []
 https://projecteuler.net/problem=26
 http://mathworld.wolfram.com/DecimalExpansion.html
 https://stackoverflow.com/questions/1315595/algorithm-for-detecting-repeating-decimals
+https://artofmemory.com/wiki/Decimal_Representation_of_Fractions
