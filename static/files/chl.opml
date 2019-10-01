@@ -37,6 +37,7 @@
 			<outline htmlUrl="https://codeandculture.wordpress.com" title="Code and Culture" xmlUrl="http://codeandculture.wordpress.com/feed/" type="rss" text="Code and Culture"/>
 			<outline htmlUrl="http://corte.si" title="cortesi" xmlUrl="http://corte.si/rss.xml" type="rss" text="cortesi"/>
 			<outline htmlUrl="https://lemire.me/blog" title="Daniel Lemire's blog" xmlUrl="https://lemire.me/blog/feed/" type="rss" text="Daniel Lemire's blog"/>
+			<outline htmlUrl="https://danielmiessler.com" title="Daniel Miessler" xmlUrl="https://danielmiessler.com/feed/" type="rss" text="Daniel Miessler"/>
 			<outline htmlUrl="https://darrenjw.wordpress.com" title="Darren Wilkinson's research blog" xmlUrl="http://darrenjw.wordpress.com/feed/" type="rss" text="Darren Wilkinson's research blog"/>
 			<outline htmlUrl="https://dataorigami.net/blogs/napkin-folding" title="DataOrigami - Napkin Folding" xmlUrl="https://dataorigami.net/blogs/napkin-folding.atom" type="rss" text="DataOrigami - Napkin Folding"/>
 			<outline htmlUrl="http://www.madore.org/~david/weblog/" title="David Madore's WebLog" xmlUrl="http://www.madore.org/~david/weblog/weblog.rss" type="rss" text="David Madore's WebLog"/>
@@ -149,6 +150,7 @@
 			<outline htmlUrl="https://www.parsonsmatt.org" title="To Overcome" xmlUrl="https://www.parsonsmatt.org/feed.xml" type="rss" text="To Overcome"/>
 			<outline htmlUrl="http://tomasp.net" title="Tomas Petricek - Languages and tools, open-source, philosophy of science and F# coding" xmlUrl="http://tomasp.net/rss.xml" type="rss" text="Tomas Petricek - Languages and tools, open-source, philosophy of science and F# coding"/>
 			<outline htmlUrl="https://tonsky.me/" title="tonsky.me" xmlUrl="http://tonsky.me/blog/atom.xml" type="rss" text="tonsky.me"/>
+			<outline htmlUrl="https://tech.tonyballantyne.com" title="Tony Ballantyne Tech" xmlUrl="https://tech.tonyballantyne.com/feed/" type="rss" text="Tony Ballantyne Tech"/>
 			<outline htmlUrl="https://www.travishinkelman.com/" title="Travis Hinkelman on Travis Hinkelman" xmlUrl="https://www.travishinkelman.com/index.xml" type="rss" text="Travis Hinkelman on Travis Hinkelman"/>
 			<outline htmlUrl="https://leahneukirchen.org/trivium/" title="Trivium" xmlUrl="http://leahneukirchen.org/trivium/index.atom" type="rss" text="Trivium"/>
 			<outline htmlUrl="https://twobithistory.org/" title="Two-Bit History" xmlUrl="https://twobithistory.org/feed.xml" type="rss" text="Two-Bit History"/>
