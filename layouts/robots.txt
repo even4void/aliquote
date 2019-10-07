@@ -1,0 +1,3 @@
+User-agent: *
+Disallow: /cours/*
+Disallow: /tmp/*
