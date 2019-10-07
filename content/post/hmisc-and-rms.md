@@ -31,7 +31,6 @@ library(Hmisc)
 ## help(package = Hmisc)
 ```
 
-
 In what follows, we will be using `birthwt` data set from the `MASS`
 package. The low birth weight study is one of the datasets used throughout
 Hosmer and Lemeshow's textbook on Applied Logistic Regression (2000, Wiley,
@@ -48,7 +47,6 @@ below:
 data(birthwt, package = "MASS")
 ## help(birthwt)
 ```
-
 
 In this data set there is no missing observations, but let introduce
 some `NA` values. Note that variable names are relatively short and poorly
@@ -83,8 +81,8 @@ list.tree(birthwt)  ## equivalent to str(birthwt)
 ##  birthwt = list 10 (24584 bytes)( data.frame )
 ## .  low = integer 189= category (2 levels)( factor )= No No No No No No ...
 ## .  age = integer 189( labelled )= 19 33 20 21 NA 21 ...
-## . A  label = character 1= Mother age 
-## . A  units = character 1= years 
+## . A  label = character 1= Mother age
+## . A  units = character 1= years
 ## .  lwt = double 189= 82.727 70.455 47.727 ...
 ## .  race = integer 189= category (3 levels)( factor )= Black Other White ...
 ## .  smoke = integer 189= category (2 levels)( factor )= No No Yes Yes Yes ...
@@ -93,17 +91,16 @@ list.tree(birthwt)  ## equivalent to str(birthwt)
 ## .  ui = integer 189= category (2 levels)( factor )= Yes No No Yes Yes ...
 ## .  ftv = integer 189= 0 3 1 2 0 0 1 1 ...
 ## .  bwt = integer 189( labelled )= 2523 2551 2557 2594 ...
-## . A  label = character 1= Baby weight 
-## . A  units = character 1= grams 
-## A  row.names = character 189= 85 86 87 88 89 91 92  ... 
+## . A  label = character 1= Baby weight
+## . A  units = character 1= grams
+## A  row.names = character 189= 85 86 87 88 89 91 92  ...
 ## A  label = character 1= Hosmer & Lemeshow's lo
 ```
-
 
 The last command, `list.tree()`, offers a convenient replacement for R's
 `str()`, and in addition to variable type and a list of the first
 observation for each variable it will display `Hmisc` labels associated to
-them. 
+them.
 
 The `contents()` command offers a quick summary of data format and missing
 values, and it provides a list of labels associated to variables treated as
@@ -114,9 +111,9 @@ contents(birthwt)
 ```
 
 ```
-## 
+##
 ## Data frame:birthwt	189 observations and 10 variables    Maximum # NAs:5
-## 
+##
 ##            Labels Units Levels Storage NAs
 ## low                          2 integer   0
 ## age    Mother age years        integer   1
@@ -128,7 +125,7 @@ contents(birthwt)
 ## ui                           2 integer   0
 ## ftv                            integer   5
 ## bwt   Baby weight grams        integer   0
-## 
+##
 ## +--------+-----------------+
 ## |Variable|Levels           |
 ## +--------+-----------------+
@@ -141,7 +138,6 @@ contents(birthwt)
 ## +--------+-----------------+
 ```
 
-
 Another useful command is `describe()`, which gives detailed summary
 statistics for each variable in a given data frame. It can be printed as
 HTML, or as PDF (by using the `latex()` backend), and in the latter case
@@ -152,81 +148,80 @@ describe(birthwt, digits = 3)
 ```
 
 ```
-## birthwt 
-## 
+## birthwt
+##
 ##  10  Variables      189  Observations
 ## ---------------------------------------------------------------------------
-## low 
-##       n missing  unique 
-##     189       0       2 
-## 
-## No (130, 69%), Yes (59, 31%) 
+## low
+##       n missing  unique
+##     189       0       2
+##
+## No (130, 69%), Yes (59, 31%)
 ## ---------------------------------------------------------------------------
-## age : Mother age [years] 
-##       n missing  unique    Mean     .05     .10     .25     .50     .75 
-##     188       1      24    23.3      16      17      19      23      26 
-##     .90     .95 
-##      31      32 
-## 
-## lowest : 14 15 16 17 18, highest: 33 34 35 36 45 
+## age : Mother age [years]
+##       n missing  unique    Mean     .05     .10     .25     .50     .75
+##     188       1      24    23.3      16      17      19      23      26
+##     .90     .95
+##      31      32
+##
+## lowest : 14 15 16 17 18, highest: 33 34 35 36 45
 ## ---------------------------------------------------------------------------
-## lwt 
-##       n missing  unique    Mean     .05     .10     .25     .50     .75 
-##     189       0      75      59    42.9    45.3    50.0    55.0    63.6 
-##     .90     .95 
-##    77.3    85.5 
-## 
+## lwt
+##       n missing  unique    Mean     .05     .10     .25     .50     .75
+##     189       0      75      59    42.9    45.3    50.0    55.0    63.6
+##     .90     .95
+##    77.3    85.5
+##
 ## lowest :  36.4  38.6  40.5  40.9  41.4
-## highest:  97.7 104.1 106.8 109.5 113.6 
+## highest:  97.7 104.1 106.8 109.5 113.6
 ## ---------------------------------------------------------------------------
-## race 
-##       n missing  unique 
-##     189       0       3 
-## 
-## White (96, 51%), Black (26, 14%), Other (67, 35%) 
+## race
+##       n missing  unique
+##     189       0       3
+##
+## White (96, 51%), Black (26, 14%), Other (67, 35%)
 ## ---------------------------------------------------------------------------
 ## smoke
-##       n missing  unique 
-##     189       0       2 
-## 
-## No (115, 61%), Yes (74, 39%) 
+##       n missing  unique
+##     189       0       2
+##
+## No (115, 61%), Yes (74, 39%)
 ## ---------------------------------------------------------------------------
-## ptl 
-##       n missing  unique    Mean 
-##     189       0       4   0.196 
-## 
-## 0 (159, 84%), 1 (24, 13%), 2 (5, 3%), 3 (1, 1%) 
+## ptl
+##       n missing  unique    Mean
+##     189       0       4   0.196
+##
+## 0 (159, 84%), 1 (24, 13%), 2 (5, 3%), 3 (1, 1%)
 ## ---------------------------------------------------------------------------
-## ht 
-##       n missing  unique 
-##     189       0       2 
-## 
-## No (177, 94%), Yes (12, 6%) 
+## ht
+##       n missing  unique
+##     189       0       2
+##
+## No (177, 94%), Yes (12, 6%)
 ## ---------------------------------------------------------------------------
-## ui 
-##       n missing  unique 
-##     189       0       2 
-## 
-## No (161, 85%), Yes (28, 15%) 
+## ui
+##       n missing  unique
+##     189       0       2
+##
+## No (161, 85%), Yes (28, 15%)
 ## ---------------------------------------------------------------------------
-## ftv 
-##       n missing  unique    Mean 
-##     184       5       6   0.799 
-## 
+## ftv
+##       n missing  unique    Mean
+##     184       5       6   0.799
+##
 ##            0  1  2 3 4 6
 ## Frequency 97 46 29 7 4 1
 ## %         53 25 16 4 2 1
 ## ---------------------------------------------------------------------------
-## bwt : Baby weight [grams] 
-##       n missing  unique    Mean     .05     .10     .25     .50     .75 
-##     189       0     131    2945    1801    2038    2414    2977    3487 
-##     .90     .95 
-##    3865    3997 
-## 
-## lowest :  709 1021 1135 1330 1474, highest: 4167 4174 4238 4593 4990 
+## bwt : Baby weight [grams]
+##       n missing  unique    Mean     .05     .10     .25     .50     .75
+##     189       0     131    2945    1801    2038    2414    2977    3487
+##     .90     .95
+##    3865    3997
+##
+## lowest :  709 1021 1135 1330 1474, highest: 4167 4174 4238 4593 4990
 ## ---------------------------------------------------------------------------
 ```
-
 
 Of course, it is also possible to describe only a subset of the data or
 specific data.
@@ -234,7 +229,6 @@ specific data.
 ```r
 describe(subset(birthwt, select = c(age, race, bwt, low)))
 ```
-
 
 `Hmisc` has several helper functions to work with categorical variables,
 like `dropUnusedLevels()` to remove missing levels or `Cs()` to convert
@@ -248,8 +242,8 @@ table(cut2(birthwt$lwt, g = 4))
 ```
 
 ```
-## 
-## [36.4, 50.9) [50.9, 55.5) [55.5, 64.1) [64.1,113.6] 
+##
+## [36.4, 50.9) [50.9, 55.5) [55.5, 64.1) [64.1,113.6]
 ##           53           43           46           47
 ```
 
@@ -258,11 +252,10 @@ table(cut2(birthwt$age, g = 3, levels.mean = TRUE))
 ```
 
 ```
-## 
-## 18.074 23.091 30.019 
+##
+## 18.074 23.091 30.019
 ##     68     66     54
 ```
-
 
 Using `levels.mean=TRUE` will return class center, instead of class
 intervals.
@@ -270,7 +263,7 @@ intervals.
 There are also a bunch of command dedicated to variables clustering,
 analysis of missing patterns, or simple (`impute()`) or multiple
 (`aregImpute()`, `transcan()`) imputation methods. Here is how we would
-impute missing values with the median in the case of a continuous variable: 
+impute missing values with the median in the case of a continuous variable:
 
 ```r
 lwt <- birthwt$lwt
@@ -280,21 +273,18 @@ summary(lwt.i)
 ```
 
 ```
-## 
+##
 ##  10 values imputed to 55
 ```
 
 ```
-##    Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+##    Min. 1st Qu.  Median    Mean 3rd Qu.    Max.
 ##    36.4    50.0    55.0    59.0    63.6   114.0
 ```
-
 
 Missing observations will be marked with an asterisk when we print the whole
 object in R. To use the mean instead of the median, we just have to add the
 `fun=mean` option.
-
-
 
 ## Visual and numerical summaries
 
@@ -309,29 +299,27 @@ where each chunk is defined based on factor levels. The results are stored
 in a matrix, which can easily be coerced to a data frame (`as.data.frame()`
 or `Hmisc::matrix2dataFrame()`).
 
-*Remark:* Some of the results are shown via the `prn()` command.
-
+_Remark:_ Some of the results are shown via the `prn()` command.
 
 ```r
-f <- function(x, na.opts = TRUE) c(mean = mean(x, na.rm = na.opts), sd = sd(x, 
+f <- function(x, na.opts = TRUE) c(mean = mean(x, na.rm = na.opts), sd = sd(x,
     na.rm = na.opts))
 out <- with(birthwt, summarize(bwt, race, f))
 ```
 
 ```
-## 
+##
 ## Average baby weight by ethnicity   out
-## 
+##
 ##    race  bwt    sd
 ## 3 White 3103 727.9
 ## 1 Black 2720 638.7
 ## 2 Other 2805 722.2
 ```
 
-
 Contrary to `aggregate()`, this command provides multiway data structure in
 case we ask to compute more than one quantity, as the following command will
-confirm: 
+confirm:
 
 ```r
 dim(out)  ## should have 3 columns
@@ -348,7 +336,6 @@ dim(aggregate(bwt ~ race, data = birthwt, f))
 ```
 ## [1] 3 2
 ```
-
 
 Summarizing multivariate responses or predictors is also possible, with
 either `summarize()` or `mApply()`. Of course, any built-in functions, such
@@ -368,7 +355,6 @@ with(birthwt, summarize(bwt, llist(race, smoke), f))
 ## 4 Other   Yes 2757 810.0
 ```
 
-
 The second command, `bystats()`, (or `bystats2()` for two-way tabular
 output) allows to describe with any custom or built-in function one or
 multiple outcome by two explanatory variables, or even more. Sample size and
@@ -379,9 +365,9 @@ with(birthwt, bystats(cbind(bwt, lwt), smoke, race))
 ```
 
 ```
-## 
-##  Mean of cbind(bwt, lwt) by smoke 
-## 
+##
+##  Mean of cbind(bwt, lwt) by smoke
+##
 ##             N  bwt   lwt
 ## No White   44 3429 63.11
 ## Yes White  52 2827 57.41
@@ -397,9 +383,9 @@ with(birthwt, bystats2(lwt, smoke, race))
 ```
 
 ```
-## 
-##  Mean of lwt by smoke 
-## 
+##
+##  Mean of lwt by smoke
+##
 ## +----+
 ## |N   |
 ## |Mean|
@@ -415,7 +401,6 @@ with(birthwt, bystats2(lwt, smoke, race))
 ## |   |60.02|66.73|54.55|59.01|
 ## +---+-----+-----+-----+-----+
 ```
-
 
 The third and last command is `summary.formula()`, which can be abbreviated
 as `summary()` as long as formula is used to describe variables
@@ -441,7 +426,7 @@ summary(bwt ~ race + ht + lwt, data = birthwt)
 
 ```
 ## Baby weight    N=189
-## 
+##
 ## +-------+------------+---+----+
 ## |       |            |N  |bwt |
 ## +-------+------------+---+----+
@@ -466,9 +451,9 @@ summary(cbind(lwt, age) ~ race + bwt, data = birthwt, method = "cross")
 ```
 
 ```
-## 
-##  mean by race, bwt 
-## 
+##
+##  mean by race, bwt
+##
 ## +-------+
 ## |N      |
 ## |Missing|
@@ -506,7 +491,7 @@ summary(low ~ race + ht, data = birthwt, fun = table)
 
 ```
 ## low    N=189
-## 
+##
 ## +-------+-----+---+---+---+
 ## |       |     |N  |No |Yes|
 ## +-------+-----+---+---+---+
@@ -522,16 +507,16 @@ summary(low ~ race + ht, data = birthwt, fun = table)
 ```
 
 ```r
-out <- summary(low ~ race + age + ui, data = birthwt, method = "reverse", overall = TRUE, 
+out <- summary(low ~ race + age + ui, data = birthwt, method = "reverse", overall = TRUE,
     test = TRUE)
 print(out, prmsd = TRUE, digits = 2)
 ```
 
 ```
-## 
-## 
+##
+##
 ## Descriptive Statistics by low
-## 
+##
 ## +------------------+---+----------------------------+----------------------------+----------------------------+----------------------------+
 ## |                  |N  |No                          |Yes                         |Combined                    |  Test                      |
 ## |                  |   |(N=130)                     |(N=59)                      |(N=189)                     |Statistic                   |
@@ -548,10 +533,8 @@ print(out, prmsd = TRUE, digits = 2)
 ## +------------------+---+----------------------------+----------------------------+----------------------------+----------------------------+
 ```
 
-
 Note also that tabular output can be converted to graphical displays by
 using `plot()` like in, e.g.,
-
 
 ```r
 plot(out, which = "categorical")
@@ -577,9 +560,9 @@ d <- with(birthwt, summarize(bwt, race, f))
 ```
 
 ```
-## 
+##
 ## Summary statistics (Mean +/- SE) by group   d
-## 
+##
 ##    race  bwt  lwr  upr
 ## 3 White 3103 3028 3177
 ## 1 Black 2720 2594 2845
@@ -587,26 +570,23 @@ d <- with(birthwt, summarize(bwt, race, f))
 ```
 
 ```r
-xYplot(Cbind(bwt, lwr, upr) ~ numericScale(race, label = "Ethnicity"), data = d, 
-    type = "b", keys = "lines", ylim = range(apply(d[, 3:4], 2, range)) + c(-1, 
+xYplot(Cbind(bwt, lwr, upr) ~ numericScale(race, label = "Ethnicity"), data = d,
+    type = "b", keys = "lines", ylim = range(apply(d[, 3:4], 2, range)) + c(-1,
         1) * 100, scales = list(x = list(at = 1:3, labels = levels(d$race))))
 ```
-
 
 An easier (also shorter) solution is to rely on `lattice` extra commands, like
 
 ```r
 library(latticeExtra)
-segplot(race ~ lwr + upr, data = d, centers = bwt, horizontal = FALSE, draw.bands = FALSE, 
+segplot(race ~ lwr + upr, data = d, centers = bwt, horizontal = FALSE, draw.bands = FALSE,
     ylab = "Baby weight (g)")
 ```
 
 ![](/img/segplot.png)
 
-
 although `xYplot()` is very handy when processing model predictions
 generated by `ols()` or `lrm()`, as we will discuss below.
-
 
 `Hmisc` provides automatic labelling of curves or levels of grouping factor,
 which are used as in standard lattice graphics (`groups=`), without the need
@@ -614,14 +594,12 @@ to rely on the [directlabels][11] package.
 
 ```r
 d <- with(birthwt, summarize(bwt, llist(race, smoke), f))
-xYplot(Cbind(bwt, lwr, upr) ~ numericScale(race), groups = smoke, data = d, 
-    type = "l", keys = "lines", method = "alt bars", ylim = c(2200, 3600), scales = list(x = list(at = 1:3, 
+xYplot(Cbind(bwt, lwr, upr) ~ numericScale(race), groups = smoke, data = d,
+    type = "l", keys = "lines", method = "alt bars", ylim = c(2200, 3600), scales = list(x = list(at = 1:3,
         labels = levels(d$race))))
 ```
 
 ![](/img/directlabels.png)
-
-
 
 ## Model fitting and diagnostic
 
@@ -633,8 +611,8 @@ strategies and to handle higher-order terms (polymonial or restricted cubic
 splines) or ordered catgeorical predictors, see online
 `help(rms.trans)`. The definitive guide to regression modeling using `rms` is
 
-> Harrell, F.E., Jr (2001). *Regression Modeling Strategies, With Applications
-> to Linear Models, Logistic Regression, and Survival Analysis*. Springer.
+> Harrell, F.E., Jr (2001). Regression Modeling Strategies, With Applications
+> to Linear Models, Logistic Regression, and Survival Analysis. Springer.
 
 The companion website is [BIOS 330: Regression Modeling Strategies][12].
 
@@ -652,44 +630,42 @@ m
 ```
 
 ```
-## 
+##
 ## Linear Regression Model
-## 
+##
 ## ols(formula = bwt ~ age + race + ftv, data = birthwt, x = TRUE)
-## 
+##
 ## Frequencies of Missing Values Due to Each Variable
-##  bwt  age race  ftv 
-##    0    1    0    5 
-## 
-## 
-##                   Model Likelihood     Discrimination    
-##                      Ratio Test           Indexes        
-## Obs        183    LR chi2     10.37    R2       0.055    
-## sigma 725.0771    d.f.            4    R2 adj   0.034    
-## d.f.       178    Pr(> chi2) 0.0347    g      192.508    
-## 
+##  bwt  age race  ftv
+##    0    1    0    5
+##
+##
+##                   Model Likelihood     Discrimination
+##                      Ratio Test           Indexes
+## Obs        183    LR chi2     10.37    R2       0.055
+## sigma 725.0771    d.f.            4    R2 adj   0.034
+## d.f.       178    Pr(> chi2) 0.0347    g      192.508
+##
 ## Residuals
-## 
-## Baby weight [grams] 
-##        Min         1Q     Median         3Q        Max 
-## -2132.2374  -499.8035     0.9503   520.4314  1759.2352 
-## 
+##
+## Baby weight [grams]
+##        Min         1Q     Median         3Q        Max
+## -2132.2374  -499.8035     0.9503   520.4314  1759.2352
+##
 ##            Coef      S.E.     t     Pr(>|t|)
-## Intercept  2957.5528 261.1681 11.32 <0.0001 
-## age           5.7498  10.5102  0.55 0.5850  
-## race=Black -373.3901 163.1956 -2.29 0.0233  
-## race=Other -295.6800 120.0166 -2.46 0.0147  
+## Intercept  2957.5528 261.1681 11.32 <0.0001
+## age           5.7498  10.5102  0.55 0.5850
+## race=Black -373.3901 163.1956 -2.29 0.0233
+## race=Other -295.6800 120.0166 -2.46 0.0147
 ## ftv          14.4698  51.8045  0.28 0.7803
 ```
-
 
 Note that, contrary to `lm()`, the `summary()` method (or more precisely,
 `summary.rms()`) does something else. With `ols()` it will print a summary
 of the effect of each factor. It requires, however, that the user create a
 `datadist` object to store values for the predictors entering the
 model, and that object must be available in the current namespace. So, the
-preceding example becomes: 
-
+preceding example becomes:
 
 ```r
 d <- datadist(birthwt)
@@ -699,15 +675,14 @@ summary(m)
 ```
 
 ```
-##              Effects              Response : bwt 
-## 
+##              Effects              Response : bwt
+##
 ##  Factor             Low High Diff. Effect  S.E.   Lower 0.95 Upper 0.95
-##  age                19  26    7      40.25  73.57 -103.95    184.45    
-##  ftv                 0   1    1      14.47  51.80  -87.07    116.00    
-##  race - Black:White  1   2   NA    -373.39 163.20 -693.25    -53.53    
+##  age                19  26    7      40.25  73.57 -103.95    184.45
+##  ftv                 0   1    1      14.47  51.80  -87.07    116.00
+##  race - Black:White  1   2   NA    -373.39 163.20 -693.25    -53.53
 ##  race - Other:White  1   3   NA    -295.68 120.02 -530.91    -60.45
 ```
-
 
 Effect size measures can also be displayed graphically using the
 corresponding `plot` method:
@@ -727,15 +702,14 @@ summary(m, race = "Other", age = median(birthwt$age))
 ```
 
 ```
-##              Effects              Response : bwt 
-## 
+##              Effects              Response : bwt
+##
 ##  Factor             Low High Diff. Effect S.E.   Lower 0.95 Upper 0.95
-##  age                19  26    7     40.25  73.57 -103.95    184.4     
-##  ftv                 0   1    1     14.47  51.80  -87.07    116.0     
-##  race - White:Other  3   1   NA    295.68 120.02   60.45    530.9     
+##  age                19  26    7     40.25  73.57 -103.95    184.4
+##  ftv                 0   1    1     14.47  51.80  -87.07    116.0
+##  race - White:Other  3   1   NA    295.68 120.02   60.45    530.9
 ##  race - Black:Other  3   2   NA    -77.71 169.55 -410.02    254.6
 ```
-
 
 A more conventional ANOVA table for the regression can be obtained using
 `anova()`.
@@ -745,16 +719,15 @@ anova(m)
 ```
 
 ```
-##                 Analysis of Variance          Response: bwt 
-## 
-##  Factor     d.f. Partial SS MS      F    P     
+##                 Analysis of Variance          Response: bwt
+##
+##  Factor     d.f. Partial SS MS      F    P
 ##  age          1    157346    157346 0.30 0.5850
 ##  race         2   4529519   2264760 4.31 0.0149
 ##  ftv          1     41017     41017 0.08 0.7803
 ##  REGRESSION   4   5454889   1363722 2.59 0.0381
 ##  ERROR      178  93581138    525737
 ```
-
 
 Measures of influence are available with the `which.influence()` command,
 and it returns observations that are above a certain threshold with respect
@@ -768,13 +741,13 @@ which.influence(m)
 ```
 ## $Intercept
 ## [1] 117 130 131 133
-## 
+##
 ## $age
 ## [1] 110 127 130 131 133 141
-## 
+##
 ## $race
 ## [1] 106 110 131 133 134 138
-## 
+##
 ## $ftv
 ## [1]  68 110 133
 ```
@@ -784,10 +757,9 @@ vif(m)
 ```
 
 ```
-##        age race=Black race=Other        ftv 
+##        age race=Black race=Other        ftv
 ##      1.092      1.130      1.132      1.056
 ```
-
 
 Model predictions are carried out the R's way, using `fitted()`, or
 `rms::Predict`. The latter offers additional control over adjustment factor
@@ -796,12 +768,11 @@ frame as in `predict()`. It also handles 95% confidence intervals smoothly.
 
 ```r
 p <- Predict(m, age = seq(20, 35, by = 5), race, ftv = 1)
-xYplot(Cbind(yhat, lower, upper) ~ age | race, data = p, layout = c(3, 1), method = "filled bands", 
+xYplot(Cbind(yhat, lower, upper) ~ age | race, data = p, layout = c(3, 1), method = "filled bands",
     type = "l", col.fill = gray(0.95))
 ```
 
 ![](/img/predict.png)
-
 
 Logistic regression is handled by the `lrm()` function, and it works almost
 in the same way, except that it provides more convenient output than R's
@@ -822,7 +793,6 @@ confidence intervals, or likelihhod ratio test.
 [12]: http://biostat.mc.vanderbilt.edu/wiki/Main/CourseBios330
 [13]: http://cran.r-project.org/web/packages/effects
 
-
 <!---
 
 
@@ -835,7 +805,7 @@ Il existe un très bon tutoriel sur \verb|Hmisc| (anciennement
 \verb|Design|), \emph{An Introduction to S and the Hmisc and Design Libraries; CF
 Alzola and FE Harrell} (PDF, 310 pages), disponible à l'adresse suivante :
 \url{http://biostat.mc.vanderbilt.edu/Hmisc}. On y trouvera également
-d'autres resources documentaires. 
+d'autres resources documentaires.
 
 La référence bibliographique concernant le package \verb|rms| est :
 \begin{quote}

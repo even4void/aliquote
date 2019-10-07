@@ -6,7 +6,7 @@ tags: ["bioinformatics", "statistics", "rstats"]
 categories: ["2019"]
 ---
 
-Lately, I started taking some notes on Next Generation Sequence analysis, more specifically RNA-Seq data. Most of my textbooks are currently outdated, especially the one on Bioconductor: _Bioinformatics and Computational Biology Solutions Using R and Bioconductor_, by Gentleman and coll. The last time I was doing genomic statistics RNA-Seq was in 2009-2010 and NGS was just becoming the new way of analysis big data in biology.
+Lately, I started taking some notes on Next Generation Sequence analysis, more specifically RNA-Seq data. Most of my textbooks are currently outdated, especially the one on Bioconductor: _Bioinformatics and Computational Biology Solutions Using R and Bioconductor_, by Gentleman and coll. The last time I was doing genomic statistics was in 2009-2010 and NGS was just becoming the new way of analysis big data in biology.
 
 All in one, RNA-Seq consists in a series of extraction, preprocessing and statistical analysis, namely: DNA extraction from a sample, DNA sequencing, Alignment of sequencing reads to a reference genome, Basic exploratory data analysis, Identification of genomic variants (SNPs, small insertions and deletions), Gene quantification (i.e., statistics on count data). But see the following picture which highlights a typical workflow using R :[^1]
 
