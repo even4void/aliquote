@@ -23,7 +23,6 @@
 			<outline htmlUrl="http://notstatschat.netlify.com/" title="Biased and Inefficient" xmlUrl="https://notstatschat.rbind.io/index.xml" type="rss" text="Biased and Inefficient"/>
 			<outline htmlUrl="http://bitemyapp.com/" title="bitemyapp" xmlUrl="http://bitemyapp.com/atom.xml" type="rss" text="bitemyapp"/>
 			<outline htmlUrl="https://www.hillelwayne.com/post/" title="Blog on Hillel Wayne" xmlUrl="https://www.hillelwayne.com/post/index.xml" type="rss" text="Blog on Hillel Wayne"/>
-			<outline htmlUrl="https://bradleytaunt.com/" title="Bradley Taunt" xmlUrl="https://bradleytaunt.com/atom.xml" type="rss" text="Bradley Taunt"/>
 			<outline htmlUrl="http://brendandawes.com/blog" title="Brendan Dawes Blog Feed" xmlUrl="http://brendandawes.com/blog/feed/" type="rss" text="Brendan Dawes Blog Feed"/>
 			<outline htmlUrl="https://brettterpstra.com" title="BrettTerpstra.com - The Mad Science of Brett Terpstra" xmlUrl="http://brett.trpstra.net/brettterpstra" type="rss" text="BrettTerpstra.com - The Mad Science of Brett Terpstra"/>
 			<outline htmlUrl="https://www.rousette.org.uk/" title="but she's a girl..." xmlUrl="https://www.rousette.org.uk/index.xml" type="rss" text="but she's a girl..."/>
@@ -66,6 +65,7 @@
 			<outline htmlUrl="http://www.lihaoyi.com/" title="Haoyi's Programming Blog" xmlUrl="http://www.lihaoyi.com/feed" type="rss" text="Haoyi's Programming Blog"/>
 			<outline htmlUrl="http://www.philipzucker.com" title="Hey There Buddo!" xmlUrl="http://www.philipzucker.com/feed/" type="rss" text="Hey There Buddo!"/>
 			<outline htmlUrl="https://rakhim.org/" title="Home on Rakhim.org" xmlUrl="https://rakhim.org/index.xml" type="rss" text="Home on Rakhim.org"/>
+			<outline htmlUrl="http://hongchao.me/hongchao.me" title="Hongchao's Notes" xmlUrl="http://hongchao.me/feed.xml" type="rss" text="Hongchao's Notes"/>
 			<outline htmlUrl="http://fanhuan.github.io" title="Huan Fan" xmlUrl="http://fanhuan.github.io/en/feed/" type="rss" text="Huan Fan"/>
 			<outline htmlUrl="http://www.ibm.com/developerworks/" title="IBM Developer : Open source" xmlUrl="http://www.ibm.com/developerworks/views/opensource/rss/libraryview.jsp?site_id=1&amp;contentarea_by=Open%20source&amp;topic_by=&amp;product_by=&amp;type_by=All%20Types&amp;search_by=&amp;industry_by=&amp;sort_by=Date&amp;series_title_by=" type="rss" text="IBM Developer : Open source"/>
 			<outline htmlUrl="https://inconvergent.net" title="inconvergent" xmlUrl="https://inconvergent.net/atom.xml" type="rss" text="inconvergent"/>
@@ -106,6 +106,7 @@
 			<outline htmlUrl="https://ngoldbaum.github.io/" title="Nathan Goldbaum" xmlUrl="https://ngoldbaum.github.io/index.xml" type="rss" text="Nathan Goldbaum"/>
 			<outline htmlUrl="https://nullprogram.com" title="null program" xmlUrl="http://nullprogram.com/blog/index.rss" type="rss" text="null program"/>
 			<outline htmlUrl="https://oleb.net/blog/" title="Ole Begemann" xmlUrl="https://oleb.net/blog/atom.xml" type="rss" text="Ole Begemann"/>
+			<outline htmlUrl="https://www.eidel.io" title="Oliver Eidel - Articles" xmlUrl="https://www.eidel.io/feed.xml" type="rss" text="Oliver Eidel - Articles"/>
 			<outline htmlUrl="https://www.xarg.org/" title="Open Source is Everything" xmlUrl="https://feeds.feedburner.com/exarg" type="rss" text="Open Source is Everything"/>
 			<outline htmlUrl="http://www.paulgraham.com/" title="Paul Graham: Essays" xmlUrl="http://www.aaronsw.com/2002/feeds/pgessays.rss" type="rss" text="Paul Graham: Essays"/>
 			<outline htmlUrl="https://www.pvk.ca/" title="Paul Khuong: some Lisp" xmlUrl="https://www.pvk.ca/atom.xml" type="rss" text="Paul Khuong: some Lisp"/>
@@ -154,11 +155,13 @@
 			<outline htmlUrl="https://www.travishinkelman.com/" title="Travis Hinkelman on Travis Hinkelman" xmlUrl="https://www.travishinkelman.com/index.xml" type="rss" text="Travis Hinkelman on Travis Hinkelman"/>
 			<outline htmlUrl="https://leahneukirchen.org/trivium/" title="Trivium" xmlUrl="http://leahneukirchen.org/trivium/index.atom" type="rss" text="Trivium"/>
 			<outline htmlUrl="https://twobithistory.org/" title="Two-Bit History" xmlUrl="https://twobithistory.org/feed.xml" type="rss" text="Two-Bit History"/>
+			<outline htmlUrl="https://uglyduck.ca/" title="Ugly Duck" xmlUrl="https://bradleytaunt.com/atom.xml" type="rss" text="Ugly Duck"/>
 			<outline htmlUrl="https://usesthis.com/" title="Uses This" xmlUrl="https://usesthis.com/feed.atom" type="rss" text="Uses This"/>
 			<outline htmlUrl="https://vis4.net/blog/" title="vis4.net" xmlUrl="https://vis4.net/blog/atom.xml" type="rss" text="vis4.net"/>
 			<outline htmlUrl="https://vxlabs.com/" title="vxlabs" xmlUrl="https://vxlabs.com/index.xml" type="rss" text="vxlabs"/>
 			<outline htmlUrl="https://weinholt.se" title="weinholt.se" xmlUrl="https://weinholt.se/feed.xml" type="rss" text="weinholt.se"/>
 			<outline htmlUrl="https://nsaunders.wordpress.com" title="What You're Doing Is Rather Desperate" xmlUrl="http://nsaunders.wordpress.com/feed/" type="rss" text="What You're Doing Is Rather Desperate"/>
+			<outline htmlUrl="https://www.williamyaoh.com" title="William Yao's Haskell Musings" xmlUrl="https://williamyaoh.com/feed.atom" type="rss" text="William Yao's Haskell Musings"/>
 			<outline htmlUrl="https://www.with-emacs.com/" title="with-emacs" xmlUrl="https://with-emacs.com/rss.xml" type="rss" text="with-emacs"/>
 			<outline htmlUrl="http://manuel-uberti.github.io" title="{{ site.title | xml_escape }}" xmlUrl="https://manuel-uberti.github.io/feed.xml" type="rss" text="{{ site.title | xml_escape }}"/>
 			<outline htmlUrl="https://lthms.xyz" title="~lthms" xmlUrl="https://lthms.xyz/rss" type="rss" text="~lthms"/>
