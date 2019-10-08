@@ -28,7 +28,7 @@ def nth(iterable, n, default=None):
 
 This time, using almost the same construct we just recreated the `nth` procedure, available in many Lisp flavors. The `None` default value stands for the `end=` argument in `itertools.islice`, so we are just building an infinite stream of data, starting onward at `n`.
 
-> With few exceptions, functional programming allows you to write more concise and efficient code. --- Julien Danjou
+> With few exceptions, functional programming allows you to write more concise and efficient code. 
 
 What does it means exactly? Julien Danjou argues that a functional approach to Python programming is helpful in tems of modularity, brevity, concurrency and testability, the latter two deriving from the very first principle of FP: the input to output flow occurs without the function keeping state or modifying anything not reflected in the return value. In Python, [iterators](https://stackoverflow.com/q/9884132) and generators --- in which the state of the function is saved as a stack reference, while [yield](https://stackoverflow.com/q/231767) acts as a simple `return` statement --- are two of the most interesting features of the languages, in my view. Instead of building a whole list of items, consider using generator whenever possible since they act as lazy lists.
 
