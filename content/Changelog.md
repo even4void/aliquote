@@ -20,6 +20,8 @@ date: 2018-05-17T00:00:00
 - [2018-03-07] Switch to the Even theme instead of Academic
 - [2018-02-23] Finish migrating old posts
 
+An even older Changelog can be found [here](/Changelog).
+  
         % git log | tail -n 5
         commit 316adb5e3d1ddce5d3d45419b0c035483616e361
         Author: chl <xxxx@xxxx.xxxx>
