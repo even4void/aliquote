@@ -23,6 +23,7 @@
 			<outline htmlUrl="https://begriffs.com" title="begriffs.com" xmlUrl="https://begriffs.com/atom.xml" type="rss" text="begriffs.com"/>
 			<outline htmlUrl="http://notstatschat.netlify.com/" title="Biased and Inefficient" xmlUrl="https://notstatschat.rbind.io/index.xml" type="rss" text="Biased and Inefficient"/>
 			<outline htmlUrl="http://bitemyapp.com/" title="bitemyapp" xmlUrl="http://bitemyapp.com/atom.xml" type="rss" text="bitemyapp"/>
+			<outline htmlUrl="https://liorpachter.wordpress.com" title="Bits of DNA" xmlUrl="https://liorpachter.wordpress.com/feed/" type="rss" text="Bits of DNA"/>
 			<outline htmlUrl="https://www.hillelwayne.com/post/" title="Blog on Hillel Wayne" xmlUrl="https://www.hillelwayne.com/post/index.xml" type="rss" text="Blog on Hillel Wayne"/>
 			<outline htmlUrl="https://skerritt.blog/" title="Brandon's Blog" xmlUrl="https://skerritt.blog/rss/" type="rss" text="Brandon's Blog"/>
 			<outline htmlUrl="http://brendandawes.com/blog" title="Brendan Dawes Blog Feed" xmlUrl="http://brendandawes.com/blog/feed/" type="rss" text="Brendan Dawes Blog Feed"/>
@@ -37,6 +38,7 @@
 			<outline htmlUrl="https://chris-martin.org//" title="Chris Martin" xmlUrl="https://chris-martin.org/rss.xml" type="rss" text="Chris Martin"/>
 			<outline htmlUrl="https://chrispenner.ca/atom.xml" title="Chris Penner" xmlUrl="https://chrispenner.ca/atom.xml" type="rss" text="Chris Penner"/>
 			<outline htmlUrl="https://codeandculture.wordpress.com" title="Code and Culture" xmlUrl="http://codeandculture.wordpress.com/feed/" type="rss" text="Code and Culture"/>
+			<outline htmlUrl="https://gilkalai.wordpress.com" title="Combinatorics and more" xmlUrl="https://gilkalai.wordpress.com/feed/" type="rss" text="Combinatorics and more"/>
 			<outline htmlUrl="http://corte.si" title="cortesi" xmlUrl="http://corte.si/rss.xml" type="rss" text="cortesi"/>
 			<outline htmlUrl="https://lemire.me/blog" title="Daniel Lemire's blog" xmlUrl="https://lemire.me/blog/feed/" type="rss" text="Daniel Lemire's blog"/>
 			<outline htmlUrl="https://danielmiessler.com" title="Daniel Miessler" xmlUrl="https://danielmiessler.com/feed/" type="rss" text="Daniel Miessler"/>
@@ -78,6 +80,7 @@
 			<outline htmlUrl="http://www.informatimago.com/blog" title="Informatimago" xmlUrl="http://www.informatimago.com/blog/feed.xml" type="rss" text="Informatimago"/>
 			<outline htmlUrl="http://irkenkitties.com/" title="Irken Kitties" xmlUrl="https://safiire.github.io/atom.xml" type="rss" text="Irken Kitties"/>
 			<outline htmlUrl="https://irreal.org/blog" title="Irreal" xmlUrl="http://irreal.org/blog/?feed=rss2" type="rss" text="Irreal"/>
+			<outline htmlUrl="https://blogs.princeton.edu/imabandit" title="I’m a bandit" xmlUrl="https://blogs.princeton.edu/imabandit/feed/" type="rss" text="I’m a bandit"/>
 			<outline htmlUrl="https://micro.baty.net/" title="Jack Baty - the Microblog" xmlUrl="https://micro.baty.net/feed.xml" type="rss" text="Jack Baty - the Microblog"/>
 			<outline htmlUrl="https://www.baty.net/" title="Jack Baty's weblog" xmlUrl="https://www.baty.net/index.xml" type="rss" text="Jack Baty's weblog"/>
 			<outline htmlUrl="https://www.baty.blog" title="Jack Baty's Weblog" xmlUrl="https://www.baty.blog/feed.rss" type="rss" text="Jack Baty's Weblog"/>
@@ -106,6 +109,7 @@
 			<outline htmlUrl="https://martinfowler.com" title="Martin Fowler" xmlUrl="https://martinfowler.com/feed.atom" type="rss" text="Martin Fowler"/>
 			<outline htmlUrl="https://jeremykun.com" title="Math ∩ Programming" xmlUrl="https://jeremykun.com/feed/" type="rss" text="Math ∩ Programming"/>
 			<outline htmlUrl="https://mathematicaforprediction.wordpress.com" title="Mathematica for prediction algorithms" xmlUrl="https://mathematicaforprediction.wordpress.com/feed/" type="rss" text="Mathematica for prediction algorithms"/>
+			<outline htmlUrl="https://mattbaker.blog" title="Matt Baker's Math Blog" xmlUrl="https://mattbaker.blog/feed/" type="rss" text="Matt Baker's Math Blog"/>
 			<outline htmlUrl="http://matt.might.net/" title="Matt Might's blog" xmlUrl="http://matt.might.net/articles/feed.rss" type="rss" text="Matt Might's blog"/>
 			<outline htmlUrl="https://meltingasphalt.com" title="Melting Asphalt" xmlUrl="http://feeds.feedburner.com/MeltingAsphalt" type="rss" text="Melting Asphalt"/>
 			<outline htmlUrl="https://meow.noopkat.com" title="meow machine" xmlUrl="http://meow.noopkat.com/rss/" type="rss" text="meow machine"/>
@@ -137,6 +141,8 @@
 			<outline htmlUrl="https://scriptingosx.com" title="Scripting OS X" xmlUrl="https://scriptingosx.com/feed/" type="rss" text="Scripting OS X"/>
 			<outline htmlUrl="http://blog.fogus.me" title="Send More Paramedics" xmlUrl="http://blog.fogus.me/feed/" type="rss" text="Send More Paramedics"/>
 			<outline htmlUrl="https://serokell.io/blog" title="Serokell Blog" xmlUrl="https://serokell.io/blog.rss.xml" type="rss" text="Serokell Blog"/>
+			<outline htmlUrl="https://simplystatistics.org/index.xml" title="Simply Statistics" xmlUrl="https://simplystatistics.org/index.xml" type="rss" text="Simply Statistics"/>
+			<outline htmlUrl="https://slashdot.org/" title="Slashdot" xmlUrl="http://rss.slashdot.org/Slashdot/slashdotMain" type="rss" text="Slashdot"/>
 			<outline htmlUrl="http://gigasquid.github.io/" title="Squid's Blog" xmlUrl="http://gigasquidsoftware.com/atom.xml" type="rss" text="Squid's Blog"/>
 			<outline htmlUrl="https://standblog.org/blog/" title="Standblog" xmlUrl="https://standblog.org/blog/feed/atom" type="rss" text="Standblog"/>
 			<outline htmlUrl="https://fharrell.com/" title="Statistical Thinking on Statistical Thinking" xmlUrl="http://fharrell.com/index.xml" type="rss" text="Statistical Thinking on Statistical Thinking"/>
@@ -150,6 +156,7 @@
 			<outline htmlUrl="https://alex-hhh.github.io/index.html" title="The Blog of Alex Harsányi: The Blog of Alex Harsányi" xmlUrl="https://alex-hhh.github.io/feeds/all.rss.xml" type="rss" text="The Blog of Alex Harsányi: The Blog of Alex Harsányi"/>
 			<outline htmlUrl="https://floooh.github.com/" title="The Brain Dump" xmlUrl="https://floooh.github.com/feed.xml" type="rss" text="The Brain Dump"/>
 			<outline htmlUrl="http://blog.cleancoder.com/" title="The Clean Code Blog" xmlUrl="http://blog.cleancoder.com/atom.xml" type="rss" text="The Clean Code Blog"/>
+			<outline htmlUrl="http://blog.thegrandlocus.com/" title="The Grand Locus" xmlUrl="http://feeds.feedburner.com/TheGrandLocus?format=xml" type="rss" text="The Grand Locus"/>
 			<outline htmlUrl="http://calculist.org/" title="The Little Calculist" xmlUrl="http://calculist.org/feed.xml" type="rss" text="The Little Calculist"/>
 			<outline htmlUrl="https://golem.ph.utexas.edu/category/" title="The n-Category Café" xmlUrl="https://golem.ph.utexas.edu/category/atom10.xml" type="rss" text="The n-Category Café"/>
 			<outline htmlUrl="http://shape-of-code.coding-guidelines.com" title="The Shape of Code" xmlUrl="http://shape-of-code.coding-guidelines.com/feed/" type="rss" text="The Shape of Code"/>
