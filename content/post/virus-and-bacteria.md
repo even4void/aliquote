@@ -28,6 +28,6 @@ for t in range(100):
         print(t, pop)
 ```
 
-As you can see, it will stop at $t=50$ and the numbers are growing very fast. The second to last step corresponds to the case where there are exactly the number of virus is half that of bacteria:
+As you can see, it will stop at $t=50$ and the numbers are growing very fast. The second to last step corresponds to the case where the number of virus is half that of bacteria:
 
 ![virus-and-bacteria](/img/virus-and-bacteria.png)

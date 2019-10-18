@@ -134,7 +134,6 @@
 			<outline htmlUrl="https://f.briatte.org/r/" title="R / Notes" xmlUrl="https://f.briatte.org/r/rss" type="rss" text="R / Notes"/>
 			<outline htmlUrl="https://racket-news.com/index.html" title="Racket News: Racket News" xmlUrl="https://racket-news.com/feeds/all.rss.xml" type="rss" text="Racket News: Racket News"/>
 			<outline htmlUrl="https://radfordneal.wordpress.com" title="Radford Neal's blog" xmlUrl="http://radfordneal.wordpress.com/feed/" type="rss" text="Radford Neal's blog"/>
-			<outline htmlUrl="http://scripting.com/" title="Scripting News" xmlUrl="http://scripting.com/rss.xml" type="rss" text="Scripting News"/>
 			<outline htmlUrl="https://scriptingosx.com" title="Scripting OS X" xmlUrl="https://scriptingosx.com/feed/" type="rss" text="Scripting OS X"/>
 			<outline htmlUrl="http://blog.fogus.me" title="Send More Paramedics" xmlUrl="http://blog.fogus.me/feed/" type="rss" text="Send More Paramedics"/>
 			<outline htmlUrl="https://serokell.io/blog" title="Serokell Blog" xmlUrl="https://serokell.io/blog.rss.xml" type="rss" text="Serokell Blog"/>
