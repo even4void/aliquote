@@ -36,6 +36,7 @@
 			<outline htmlUrl="https://changelog.com/posts" title="Changelog" xmlUrl="https://changelog.com/posts/feed" type="rss" text="Changelog"/>
 			<outline htmlUrl="https://www.cpdiehl.org/" title="Chris Diehl" xmlUrl="http://www.cpdiehl.org/atom.xml" type="rss" text="Chris Diehl"/>
 			<outline htmlUrl="http://chris.eidhof.nl/" title="Chris Eidhof" xmlUrl="http://chris.eidhof.nl//index.xml" type="rss" text="Chris Eidhof"/>
+			<outline htmlUrl="http://v4.chriskrycho.com/" title="Chris Krycho" xmlUrl="https://v4.chriskrycho.com/feed.xml" type="rss" text="Chris Krycho"/>
 			<outline htmlUrl="https://chris-martin.org//" title="Chris Martin" xmlUrl="https://chris-martin.org/rss.xml" type="rss" text="Chris Martin"/>
 			<outline htmlUrl="https://chrispenner.ca/atom.xml" title="Chris Penner" xmlUrl="https://chrispenner.ca/atom.xml" type="rss" text="Chris Penner"/>
 			<outline htmlUrl="https://codeandculture.wordpress.com" title="Code and Culture" xmlUrl="http://codeandculture.wordpress.com/feed/" type="rss" text="Code and Culture"/>
