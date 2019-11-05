@@ -36,6 +36,11 @@ name = "Articles"
 url = "/post"
 weight = 1
 
+[[menu.main]]
+name = "Now"
+url = "/now"
+weight = 50
+
 [[params.social]]
 name = "Search"
 icon = "search"
