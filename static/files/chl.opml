@@ -10,6 +10,7 @@
 			<outline htmlUrl="https://www.0xroy.me/" title="0xroy’s notes" xmlUrl="https://www.0xroy.me/feed.xml" type="rss" text="0xroy’s notes"/>
 			<outline htmlUrl="https://2ality.com/" title="2ality – JavaScript and more" xmlUrl="http://feeds.feedburner.com/2ality?format=xml" type="rss" text="2ality – JavaScript and more"/>
 			<outline htmlUrl="https://alistapart.com" title="A List Apart: The Full Feed" xmlUrl="https://alistapart.com/main/feed/" type="rss" text="A List Apart: The Full Feed"/>
+			<outline htmlUrl="https://blog.smola.org/" title="Adventures in Data Land" xmlUrl="https://blog.smola.org/rss" type="rss" text="Adventures in Data Land"/>
 			<outline htmlUrl="http://wiseodd.github.io/" title="Agustinus Kristiadi's Blog" xmlUrl="https://wiseodd.github.io/feed.xml" type="rss" text="Agustinus Kristiadi's Blog"/>
 			<outline htmlUrl="http://lexi-lambda.github.io/index.html" title="Alexis King's Blog: Alexis King's Blog" xmlUrl="https://lexi-lambda.github.io/feeds/all.rss.xml" type="rss" text="Alexis King's Blog: Alexis King's Blog"/>
 			<outline htmlUrl="https://aliquote.org/" title="aliquot" xmlUrl="https://aliquote.org/index.xml" type="rss" text="aliquot"/>
@@ -92,7 +93,7 @@
 			<outline htmlUrl="https://www.baty.blog" title="Jack Baty's Weblog" xmlUrl="https://www.baty.blog/feed.rss" type="rss" text="Jack Baty's Weblog"/>
 			<outline htmlUrl="https://jakemccrary.com/" title="Jake McCrary" xmlUrl="https://feeds.feedburner.com/JakeMccrarysMusings" type="rss" text="Jake McCrary"/>
 			<outline htmlUrl="http://jakob.space/jakob.space" title="Jakob's Personal Webpage" xmlUrl="http://jakob.space/feed.xml" type="rss" text="Jakob's Personal Webpage"/>
-			<outline title="James Sinclair" xmlUrl="https://jrsinclair.com/index.rss" type="rss" text="James Sinclair"/>
+			<outline htmlUrl="http://jrsinclair.com" title="James Sinclair" xmlUrl="https://jrsinclair.com/index.rss" type="rss" text="James Sinclair"/>
 			<outline htmlUrl="https://jlelse.blog/" title="jlelse's Blog" xmlUrl="https://jlelse.blog/index.xml" type="rss" text="jlelse's Blog"/>
 			<outline htmlUrl="https://www.johndcook.com/blog" title="John D. Cook" xmlUrl="http://feeds.feedburner.com/TheEndeavour" type="rss" text="John D. Cook"/>
 			<outline htmlUrl="http://zerolib.com" title="John Jacobsen" xmlUrl="http://zerolib.com/feed.xml" type="rss" text="John Jacobsen"/>
@@ -107,6 +108,7 @@
 			<outline htmlUrl="http://www.lostgarden.com/" title="Lost Garden" xmlUrl="http://www.lostgarden.com/feeds/posts/default" type="rss" text="Lost Garden"/>
 			<outline htmlUrl="http://newartisans.com" title="Lost in Technopolis" xmlUrl="http://newartisans.com/rss.xml" type="rss" text="Lost in Technopolis"/>
 			<outline htmlUrl="https://blog.poisson.chat" title="Lysxia's blog" xmlUrl="https://blog.poisson.chat/rss.xml" type="rss" text="Lysxia's blog"/>
+			<outline htmlUrl="https://francisbach.com" title="Machine Learning Research Blog" xmlUrl="https://francisbach.com/feed/" type="rss" text="Machine Learning Research Blog"/>
 			<outline htmlUrl="http://yaroslavvb.blogspot.com/" title="Machine Learning, etc" xmlUrl="http://yaroslavvb.blogspot.com/atom.xml" type="rss" text="Machine Learning, etc"/>
 			<outline htmlUrl="https://macwright.org" title="macwright.org" xmlUrl="https://macwright.org/rss.xml" type="rss" text="macwright.org"/>
 			<outline htmlUrl="https://blog.nelhage.com/" title="Made of Bugs" xmlUrl="https://blog.nelhage.com/atom.xml" type="rss" text="Made of Bugs"/>
@@ -138,7 +140,7 @@
 			<outline htmlUrl="http://danielsz.github.io" title="Perfumed Nightmare" xmlUrl="https://danielsz.github.io/atom.xml" type="rss" text="Perfumed Nightmare"/>
 			<outline htmlUrl="http://plasmasturm.org/" title="plasmasturm.org" xmlUrl="http://plasmasturm.org/feed" type="rss" text="plasmasturm.org"/>
 			<outline htmlUrl="https://pointersgonewild.com" title="Pointers Gone Wild" xmlUrl="https://pointersgonewild.com/feed/" type="rss" text="Pointers Gone Wild"/>
-			<outline htmlUrl="https://politbistro.hypotheses.org" title="Polit’bistro : des politiques, du café" xmlUrl="https://politbistro.hypotheses.org/feed" type="rss" text="Polit’bistro : des politiques, du café"/>
+			<outline htmlUrl="https://politbistro.hypotheses.org" title="Polit’bistro : de la science politique et du café" xmlUrl="https://politbistro.hypotheses.org/feed" type="rss" text="Polit’bistro : de la science politique et du café"/>
 			<outline htmlUrl="https://fharrell.com/post/" title="Posts on Statistical Thinking" xmlUrl="http://fharrell.com/post/index.xml" type="rss" text="Posts on Statistical Thinking"/>
 			<outline htmlUrl="https://www.greghendershott.com/tags/all.rss.xml" title="Posts tagged &quot;all&quot;" xmlUrl="https://www.greghendershott.com/feeds/all.rss.xml" type="rss" text="Posts tagged &quot;all&quot;"/>
 			<outline htmlUrl="http://pragmaticemacs.com" title="Pragmatic Emacs" xmlUrl="http://pragmaticemacs.com/feed/" type="rss" text="Pragmatic Emacs"/>
