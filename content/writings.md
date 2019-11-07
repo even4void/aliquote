@@ -1,5 +1,5 @@
 ---
-title: "Writings"
+title: "Archives"
 date: 2018-01-20T00:00:00
 menu: "main"
 weight: 40
