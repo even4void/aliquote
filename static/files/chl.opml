@@ -84,6 +84,7 @@
 			<outline htmlUrl="http://www.ibm.com/developerworks/" title="IBM Developer : Open source" xmlUrl="http://www.ibm.com/developerworks/views/opensource/rss/libraryview.jsp?site_id=1&amp;contentarea_by=Open%20source&amp;topic_by=&amp;product_by=&amp;type_by=All%20Types&amp;search_by=&amp;industry_by=&amp;sort_by=Date&amp;series_title_by=" type="rss" text="IBM Developer : Open source"/>
 			<outline htmlUrl="https://inconvergent.net" title="inconvergent" xmlUrl="https://inconvergent.net/atom.xml" type="rss" text="inconvergent"/>
 			<outline htmlUrl="https://increment.com" title="Increment" xmlUrl="https://increment.com/feed.xml" type="rss" text="Increment"/>
+			<outline htmlUrl="https://inessential.com/" title="inessential.com" xmlUrl="https://inessential.com/xml/rss.xml" type="rss" text="inessential.com"/>
 			<outline htmlUrl="http://www.informatimago.com/blog" title="Informatimago" xmlUrl="http://www.informatimago.com/blog/feed.xml" type="rss" text="Informatimago"/>
 			<outline htmlUrl="http://irkenkitties.com/" title="Irken Kitties" xmlUrl="https://safiire.github.io/atom.xml" type="rss" text="Irken Kitties"/>
 			<outline htmlUrl="https://irreal.org/blog" title="Irreal" xmlUrl="http://irreal.org/blog/?feed=rss2" type="rss" text="Irreal"/>
@@ -191,6 +192,7 @@
 			<outline htmlUrl="https://tyler.io" title="tyler.io" xmlUrl="https://tyler.io/feed/" type="rss" text="tyler.io"/>
 			<outline htmlUrl="https://uglyduck.ca/" title="Ugly Duck" xmlUrl="https://bradleytaunt.com/atom.xml" type="rss" text="Ugly Duck"/>
 			<outline htmlUrl="https://usesthis.com/" title="Uses This" xmlUrl="https://usesthis.com/feed.atom" type="rss" text="Uses This"/>
+			<outline htmlUrl="http://blog.veitheller.de/" title="Veit's Blog" xmlUrl="https://blog.veitheller.de/feed.rss" type="rss" text="Veit's Blog"/>
 			<outline htmlUrl="https://www.jimhester.com/post/" title="Videos / Posts on Jim Hester" xmlUrl="https://www.jimhester.com/post/index.xml" type="rss" text="Videos / Posts on Jim Hester"/>
 			<outline htmlUrl="https://vincent.demeester.fr/" title="Vincent Demeester" xmlUrl="https://vincent.demeester.fr/index.xml" type="rss" text="Vincent Demeester"/>
 			<outline htmlUrl="https://vis4.net/blog/" title="vis4.net" xmlUrl="https://vis4.net/blog/atom.xml" type="rss" text="vis4.net"/>
