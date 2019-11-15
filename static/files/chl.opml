@@ -145,6 +145,7 @@
 			<outline htmlUrl="https://travisdowns.github.io/" title="Performance Matters" xmlUrl="https://travisdowns.github.io/feed.xml" type="rss" text="Performance Matters"/>
 			<outline htmlUrl="http://danielsz.github.io" title="Perfumed Nightmare" xmlUrl="https://danielsz.github.io/atom.xml" type="rss" text="Perfumed Nightmare"/>
 			<outline htmlUrl="http://plasmasturm.org/" title="plasmasturm.org" xmlUrl="http://plasmasturm.org/feed" type="rss" text="plasmasturm.org"/>
+			<outline htmlUrl="https://blog.ploeh.dk" title="ploeh blog" xmlUrl="https://blog.ploeh.dk/rss.xml" type="rss" text="ploeh blog"/>
 			<outline htmlUrl="https://pointersgonewild.com" title="Pointers Gone Wild" xmlUrl="https://pointersgonewild.com/feed/" type="rss" text="Pointers Gone Wild"/>
 			<outline htmlUrl="https://politbistro.hypotheses.org" title="Polit’bistro : de la science politique et du café" xmlUrl="https://politbistro.hypotheses.org/feed" type="rss" text="Polit’bistro : de la science politique et du café"/>
 			<outline htmlUrl="https://fharrell.com/post/" title="Posts on Statistical Thinking" xmlUrl="http://fharrell.com/post/index.xml" type="rss" text="Posts on Statistical Thinking"/>
