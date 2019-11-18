@@ -24,6 +24,7 @@
 			<outline htmlUrl="https://brandur.org" title="Articles - brandur.org" xmlUrl="https://brandur.org/articles.atom" type="rss" text="Articles - brandur.org"/>
 			<outline htmlUrl="https://kaygun.tumblr.com/" title="Atabey Kaygun" xmlUrl="https://kaygun.tumblr.com/rss" type="rss" text="Atabey Kaygun"/>
 			<outline htmlUrl="https://begriffs.com" title="begriffs.com" xmlUrl="https://begriffs.com/atom.xml" type="rss" text="begriffs.com"/>
+			<outline htmlUrl="https://werd.io/content/posts/" title="Ben Werdmüller" xmlUrl="https://werd.io/content/posts/?_t=rss" type="rss" text="Ben Werdmüller"/>
 			<outline htmlUrl="http://notstatschat.netlify.com/" title="Biased and Inefficient" xmlUrl="https://notstatschat.rbind.io/index.xml" type="rss" text="Biased and Inefficient"/>
 			<outline htmlUrl="http://bitemyapp.com/" title="bitemyapp" xmlUrl="http://bitemyapp.com/atom.xml" type="rss" text="bitemyapp"/>
 			<outline htmlUrl="https://liorpachter.wordpress.com" title="Bits of DNA" xmlUrl="https://liorpachter.wordpress.com/feed/" type="rss" text="Bits of DNA"/>
