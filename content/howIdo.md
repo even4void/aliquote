@@ -1,10 +1,8 @@
 ---
-title: "How I do"
+title: "How do I"
 date: 2018-01-20T00:00:00
 url: "/articles/how-i-do/"
 ---
-
-## How do I... (but not why)
 
 *How do I build this site*
 : I like speed so I use [Hugo](https://gohugo.io) and a modified version of the [even theme](https://themes.gohugo.io/hugo-theme-even/). A lot of cool guys are using the Academic theme, but I don't like to do like everyone (the same applies when using default Beamer templates), and it doesn't look that pretty, IMHO. Previously, I was editing the site using custom handcrafted <abbr title="Hypertext Markup Language">HTML</abbr> files. That was painful but I kept everything under control. Now this is all about HTML5, CSS3, SASS, FontAwesome, etc. I am getting older and I have less time to play with new technologies. This is it. The old site is dead. Long live the new site!
