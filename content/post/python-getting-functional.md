@@ -63,3 +63,10 @@ And this is my code (in Racket):
 See, there's no loop, nor any complex control structure (except maybe list comprehension in the case of Python). Above all, you may recall that most operations in FP are just a combination of `map`, `apply` and/or `filter` (or `reduce`), you're almost done since Python has you covered. Some examples of use, especially regarding `map` and `filter`, are discussed by Julien Danjou.
 
 In passing, I learned about `first.first` which might prove very handy when working with stack- or heap-like data structures. Other interesting `itertools` functions (chapter 8): `acumulate(iterable[,func])` returns a series of accumulated sums of items from iterables; `chain(*iterables)` iterates over multiple iterables, one after another, without building an intermediate list of all items; `combinations(iterable,r)` generates all combinations of length `r` from the given iterable; `compress(data,selectors)` applies a Boolean mask from selectors to data and returns only the values from data where the corresponding element of selectors is `True`; `count(start,step)` generates an endless sequence of values, starting with start and incrementing step at a time with each call; `cycle(iterable)` loops repeatedly over the values in iterable; `repeat(elem[,n])` repeats an element ntimes; `dropwhile(predicate,iterable)` filters elements of an iterable starting from the beginning until predicateis False; groupby(iterable,keyfunc) creates an iterator that groups items by the result returned by the `keyfunc()` function; `permutations(iterable[,r])` returns successive `r`­length permutations of the items in iterable; `product(*iterables)` returns an iterable of the Cartesian product of iterables without using a nested for loop; `takewhile(predicate,iterable)` returns elements of an iterable starting from the beginning until predicate is `False`. And of course, there's the `functools` [partial](https://stackoverflow.com/q/15331726) function.
+
+{{% alert note %}}
+Little update from November. I just noticed the following code from Joel Grus on Twitter and I couldn't resist adding it here.
+{{% /alert %}}
+
+{{< tweet 1198253069160472576 >}}
+
