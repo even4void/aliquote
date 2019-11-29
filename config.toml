@@ -14,6 +14,9 @@ pygmentsCodefencesGuessSyntax = true
 [blackfriday]
     fractions = false
 
+[markup.goldmark.renderer]
+    unsafe= true
+
 [sitemap]
     changefreq = "weekly"
     priority = 0.5
