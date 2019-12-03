@@ -136,6 +136,7 @@
 			<outline htmlUrl="https://meow.noopkat.com" title="meow machine" xmlUrl="http://meow.noopkat.com/rss/" type="rss" text="meow machine"/>
 			<outline htmlUrl="http://metaredux.com/" title="Meta Redux" xmlUrl="http://metaredux.com/feed.xml" type="rss" text="Meta Redux"/>
 			<outline htmlUrl="https://mjtsai.com/blog" title="Michael Tsai" xmlUrl="https://mjtsai.com/blog/feed/" type="rss" text="Michael Tsai"/>
+			<outline htmlUrl="http://adventures.michaelfbryan.com/" title="Michael-F-Bryan" xmlUrl="http://adventures.michaelfbryan.com/index.xml" type="rss" text="Michael-F-Bryan"/>
 			<outline htmlUrl="https://beepb00p.xyz" title="Mildly entertaining" xmlUrl="https://beepb00p.xyz/rss.xml" type="rss" text="Mildly entertaining"/>
 			<outline htmlUrl="https://ekaschalk.github.io/" title="Modern Emacs on Modern Emacs" xmlUrl="https://ekaschalk.github.io/index.xml" type="rss" text="Modern Emacs on Modern Emacs"/>
 			<outline htmlUrl="https://morgenthum.dev" title="morgenthum.dev - software development and architecture" xmlUrl="https://morgenthum.dev/rss.xml" type="rss" text="morgenthum.dev - software development and architecture"/>
@@ -173,6 +174,7 @@
 			<outline htmlUrl="https://scriptingosx.com" title="Scripting OS X" xmlUrl="https://scriptingosx.com/feed/" type="rss" text="Scripting OS X"/>
 			<outline htmlUrl="http://blog.fogus.me" title="Send More Paramedics" xmlUrl="http://blog.fogus.me/feed/" type="rss" text="Send More Paramedics"/>
 			<outline htmlUrl="https://serokell.io/blog" title="Serokell Blog" xmlUrl="https://serokell.io/blog.rss.xml" type="rss" text="Serokell Blog"/>
+			<outline htmlUrl="http://simonwillison.net/" title="Simon Willison's Weblog" xmlUrl="https://simonwillison.net/atom/everything/" type="rss" text="Simon Willison's Weblog"/>
 			<outline htmlUrl="https://simplystatistics.org/index.xml" title="Simply Statistics" xmlUrl="https://simplystatistics.org/index.xml" type="rss" text="Simply Statistics"/>
 			<outline htmlUrl="http://gigasquid.github.io/" title="Squid's Blog" xmlUrl="http://gigasquidsoftware.com/atom.xml" type="rss" text="Squid's Blog"/>
 			<outline htmlUrl="https://standblog.org/blog/" title="Standblog" xmlUrl="https://standblog.org/blog/feed/atom" type="rss" text="Standblog"/>
