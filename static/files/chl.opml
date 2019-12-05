@@ -6,6 +6,7 @@
 	<body>
 		<outline title="Saved For Later" xmlUrl="aved for later" type="rss" text="Saved For Later"/>
 		<outline text="Reeder" title="Reeder">
+			<outline htmlUrl="https://bitemyapp.com" title="bitemyapp.com" xmlUrl="https://bitemyapp.com/rss.xml" type="rss" text="bitemyapp.com"/>
 			<outline htmlUrl="http://writequit.org/" title="(:wq - Feed)" xmlUrl="https://writequit.org/posts.xml" type="rss" text="(:wq - Feed)"/>
 			<outline htmlUrl="https://www.0xroy.me/" title="0xroy’s notes" xmlUrl="https://www.0xroy.me/feed.xml" type="rss" text="0xroy’s notes"/>
 			<outline htmlUrl="https://2ality.com/" title="2ality – JavaScript and more" xmlUrl="http://feeds.feedburner.com/2ality?format=xml" type="rss" text="2ality – JavaScript and more"/>
@@ -32,6 +33,7 @@
 			<outline htmlUrl="https://liorpachter.wordpress.com" title="Bits of DNA" xmlUrl="https://liorpachter.wordpress.com/feed/" type="rss" text="Bits of DNA"/>
 			<outline htmlUrl="http://blog.vmchale.com/" title="blog" xmlUrl="http://blog.vmchale.com/atom" type="rss" text="blog"/>
 			<outline htmlUrl="https://www.hillelwayne.com/post/" title="Blog on Hillel Wayne" xmlUrl="https://www.hillelwayne.com/post/index.xml" type="rss" text="Blog on Hillel Wayne"/>
+			<outline htmlUrl="https://ma.ttias.be/blog/" title="Blogpost archive by Mattias Geniar on ma.ttias.be" xmlUrl="https://ma.ttias.be/blog/index.xml" type="rss" text="Blogpost archive by Mattias Geniar on ma.ttias.be"/>
 			<outline htmlUrl="https://skerritt.blog/" title="Brandon's Blog" xmlUrl="https://skerritt.blog/rss/" type="rss" text="Brandon's Blog"/>
 			<outline htmlUrl="http://brendandawes.com/blog" title="Brendan Dawes Blog Feed" xmlUrl="http://brendandawes.com/blog/feed/" type="rss" text="Brendan Dawes Blog Feed"/>
 			<outline htmlUrl="https://brettterpstra.com" title="BrettTerpstra.com - The Mad Science of Brett Terpstra" xmlUrl="http://brett.trpstra.net/brettterpstra" type="rss" text="BrettTerpstra.com - The Mad Science of Brett Terpstra"/>
