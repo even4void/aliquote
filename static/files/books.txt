@@ -501,7 +501,7 @@
 * Magnus Mills, Retenir les bêtes (10/18)
 * Jean-Christophe Rufin, Check-point (Folio)
 * Françoise Sagan, Le garde du coeur (Presses Pocket) [#]
-* Françoise Sagan, Les merveileux nuages (Presses Pocket) [#]
+* Françoise Sagan, Les merveilleux nuages (Presses Pocket) [#]
 * Herbjørg Wassmo, Le pire des silences (10/18)
 * Muriel Barbery, L'élégance du hérisson (Gallimard)
 * Piero Chiara, Le 28 octobre (La fosse aux ours)
@@ -509,5 +509,7 @@
 * Françoise Nyssen, Plaisir et nécessité (Stock)
 * Viviane Cerf, La dame aux nénuphars (Des femmes)
 * Sara Lövestam, Chacun sa vérité (Pocket)
+* Françoise Sagan, Avec mon meilleur souvenir (Folio) [#]
+* Françoise Sagan, Dans un mois, dans un an (Presses Pocket) [#]
 
 [#] Déjà lu par le passé.

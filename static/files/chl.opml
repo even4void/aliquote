@@ -203,6 +203,7 @@
 			<outline htmlUrl="https://mailund.github.io/r-programmer-blog/" title="The Working R Programmer" xmlUrl="https://mailund.github.io/r-programmer-blog/index.xml" type="rss" text="The Working R Programmer"/>
 			<outline htmlUrl="https://thomashoneyman.com/" title="Thomas Honeyman" xmlUrl="https://thomashoneyman.com/index.xml" type="rss" text="Thomas Honeyman"/>
 			<outline htmlUrl="http://thorstenball.com/" title="Thorsten Ball" xmlUrl="https://thorstenball.com/atom.xml" type="rss" text="Thorsten Ball"/>
+			<outline htmlUrl="https://irrlab.com" title="thoughts…" xmlUrl="https://irrlab.com/feed/" type="rss" text="thoughts…"/>
 			<outline htmlUrl="http://bactra.org/weblog/" title="Three-Toed Sloth" xmlUrl="http://bactra.org/weblog/index.rss" type="rss" text="Three-Toed Sloth"/>
 			<outline htmlUrl="https://www.parsonsmatt.org" title="To Overcome" xmlUrl="https://www.parsonsmatt.org/feed.xml" type="rss" text="To Overcome"/>
 			<outline htmlUrl="http://tomasp.net" title="Tomas Petricek - Languages and tools, open-source, philosophy of science and F# coding" xmlUrl="http://tomasp.net/rss.xml" type="rss" text="Tomas Petricek - Languages and tools, open-source, philosophy of science and F# coding"/>
