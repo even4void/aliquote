@@ -7,6 +7,7 @@
 		<outline title="Saved For Later" xmlUrl="aved for later" type="rss" text="Saved For Later"/>
 		<outline text="Reeder" title="Reeder">
 			<outline htmlUrl="https://bitemyapp.com" title="bitemyapp.com" xmlUrl="https://bitemyapp.com/rss.xml" type="rss" text="bitemyapp.com"/>
+			<outline title="-" xmlUrl="index.rss" type="rss" text="-"/>
 			<outline htmlUrl="http://writequit.org/" title="(:wq - Feed)" xmlUrl="https://writequit.org/posts.xml" type="rss" text="(:wq - Feed)"/>
 			<outline htmlUrl="https://www.0xroy.me/" title="0xroy’s notes" xmlUrl="https://www.0xroy.me/feed.xml" type="rss" text="0xroy’s notes"/>
 			<outline htmlUrl="https://2ality.com/" title="2ality – JavaScript and more" xmlUrl="http://feeds.feedburner.com/2ality?format=xml" type="rss" text="2ality – JavaScript and more"/>
@@ -110,6 +111,7 @@
 			<outline htmlUrl="http://www.johnmyleswhite.com" title="John Myles White" xmlUrl="http://www.johnmyleswhite.com/feed/" type="rss" text="John Myles White"/>
 			<outline htmlUrl="http://journal.stuffwithstuff.com/" title="journal.stuffwithstuff.com" xmlUrl="http://journal.stuffwithstuff.com/rss.xml" type="rss" text="journal.stuffwithstuff.com"/>
 			<outline htmlUrl="https://www.snellman.net/blog/" title="Juho Snellman's Weblog" xmlUrl="https://www.snellman.net/blog/rss-index.xml" type="rss" text="Juho Snellman's Weblog"/>
+			<outline htmlUrl="http://jvns.ca" title="Julia Evans" xmlUrl="https://jvns.ca/atom.xml" type="rss" text="Julia Evans"/>
 			<outline htmlUrl="http://kottke.org/" title="kottke.org" xmlUrl="http://feeds.kottke.org/main" type="rss" text="kottke.org"/>
 			<outline htmlUrl="http://david.monniaux.free.fr/dotclear/index.php/" title="La vie est mal configurée" xmlUrl="http://david.monniaux.free.fr/dotclear/index.php/feed/atom" type="rss" text="La vie est mal configurée"/>
 			<outline htmlUrl="https://lambdaisland.com/" title="Lambda Island" xmlUrl="https://lambdaisland.com/feeds/episodes.atom?2019-07-22T09:41:53.235Z" type="rss" text="Lambda Island"/>
@@ -170,6 +172,7 @@
 			<outline htmlUrl="https://f.briatte.org/r/" title="R / Notes" xmlUrl="https://f.briatte.org/r/rss" type="rss" text="R / Notes"/>
 			<outline htmlUrl="https://racket-news.com/index.html" title="Racket News: Racket News" xmlUrl="https://racket-news.com/feeds/all.rss.xml" type="rss" text="Racket News: Racket News"/>
 			<outline htmlUrl="https://radfordneal.wordpress.com" title="Radford Neal's blog" xmlUrl="http://radfordneal.wordpress.com/feed/" type="rss" text="Radford Neal's blog"/>
+			<outline htmlUrl="https://www.benrady.com/" title="Radyology" xmlUrl="https://www.benrady.com/atom.xml" type="rss" text="Radyology"/>
 			<outline htmlUrl="https://rambo.codes/" title="Rambo.codes" xmlUrl="https://rambo.codes/feed.xml" type="rss" text="Rambo.codes"/>
 			<outline htmlUrl="http://morrick.me" title="Riccardo Mori" xmlUrl="http://morrick.me/feed" type="rss" text="Riccardo Mori"/>
 			<outline htmlUrl="https://www.hanselman.com/blog/" title="Scott Hanselman's Blog" xmlUrl="http://feeds.hanselman.com/ScottHanselman" type="rss" text="Scott Hanselman's Blog"/>
