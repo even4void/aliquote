@@ -157,6 +157,7 @@
 			<outline htmlUrl="https://www.pvk.ca/" title="Paul Khuong: some Lisp" xmlUrl="https://www.pvk.ca/atom.xml" type="rss" text="Paul Khuong: some Lisp"/>
 			<outline htmlUrl="https://travisdowns.github.io/" title="Performance Matters" xmlUrl="https://travisdowns.github.io/feed.xml" type="rss" text="Performance Matters"/>
 			<outline htmlUrl="http://danielsz.github.io" title="Perfumed Nightmare" xmlUrl="https://danielsz.github.io/atom.xml" type="rss" text="Perfumed Nightmare"/>
+			<outline htmlUrl="http://planspace.org/" title="plan ➔ space" xmlUrl="https://planspace.org/rss.xml" type="rss" text="plan ➔ space"/>
 			<outline htmlUrl="http://plasmasturm.org/" title="plasmasturm.org" xmlUrl="http://plasmasturm.org/feed" type="rss" text="plasmasturm.org"/>
 			<outline htmlUrl="https://blog.ploeh.dk" title="ploeh blog" xmlUrl="https://blog.ploeh.dk/rss.xml" type="rss" text="ploeh blog"/>
 			<outline htmlUrl="https://pointersgonewild.com" title="Pointers Gone Wild" xmlUrl="https://pointersgonewild.com/feed/" type="rss" text="Pointers Gone Wild"/>
