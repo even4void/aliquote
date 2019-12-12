@@ -26,6 +26,10 @@ J'ai finalement retrouvé le texte [traduit en anglais](https://www.poetryfounda
 
 > Heaven has shores for our flights out of life and the corpse need need not make itself over at dawn.
 
+Et puis, il y a Cocteau, dans *Avec mon meilleur souvenir* :
+
+> la folle mer qui brise au bord ses coupes.
+
 Je partage un grand nombre de ces références, que j'ai augmenté d'auteurs plus contemporains et divergents. Mais j'aime l'écriture de Sagan, ce style non pas inimitable mais qui accompagne si bien les scènes de vie de tous les jours où baignent des personnages effrayants de solitude et à la recherche d'amours sans limite. Ceci étant, lire Sagan c'est me replonger dans tout un univers parallèle d'autres lectures, que j'associe de près ou de loin, directement ou indirectement, à ces romans et pièces de théâtre que je lisais au sortir de l'adolescence. C'est revoir l'armoire à livres de mon enfance et les bibliothèques qui se sont succédées dans les différents appartements que j'ai occupés.
 
 ![](/img/IMG_0839.jpg)
