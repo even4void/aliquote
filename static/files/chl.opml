@@ -13,6 +13,7 @@
 			<outline htmlUrl="https://2ality.com/" title="2ality – JavaScript and more" xmlUrl="http://feeds.feedburner.com/2ality?format=xml" type="rss" text="2ality – JavaScript and more"/>
 			<outline htmlUrl="https://lpalmieri.com/" title="A (machine) learning journal" xmlUrl="https://lpalmieri.com/index.xml" type="rss" text="A (machine) learning journal"/>
 			<outline htmlUrl="https://alistapart.com" title="A List Apart: The Full Feed" xmlUrl="https://alistapart.com/main/feed/" type="rss" text="A List Apart: The Full Feed"/>
+			<outline htmlUrl="http://funcall.blogspot.com/" title="Abstract Heresies" xmlUrl="http://funcall.blogspot.com/feeds/posts/default?alt=rss" type="rss" text="Abstract Heresies"/>
 			<outline htmlUrl="https://blog.smola.org/" title="Adventures in Data Land" xmlUrl="https://blog.smola.org/rss" type="rss" text="Adventures in Data Land"/>
 			<outline htmlUrl="http://wiseodd.github.io/" title="Agustinus Kristiadi's Blog" xmlUrl="https://wiseodd.github.io/feed.xml" type="rss" text="Agustinus Kristiadi's Blog"/>
 			<outline htmlUrl="http://lexi-lambda.github.io/index.html" title="Alexis King's Blog: Alexis King's Blog" xmlUrl="https://lexi-lambda.github.io/feeds/all.rss.xml" type="rss" text="Alexis King's Blog: Alexis King's Blog"/>
@@ -43,6 +44,7 @@
 			<outline htmlUrl="https://cestlaz.github.io/" title="C'est la Z" xmlUrl="https://cestlaz.github.io/rss.xml" type="rss" text="C'est la Z"/>
 			<outline htmlUrl="http://cachestocaches.com" title="CachesToCaches" xmlUrl="http://www.cachestocaches.com/feed/" type="rss" text="CachesToCaches"/>
 			<outline htmlUrl="https://changelog.com/posts" title="Changelog" xmlUrl="https://changelog.com/posts/feed" type="rss" text="Changelog"/>
+			<outline htmlUrl="http://blog.binchen.org/" title="Chen's blog" xmlUrl="https://blog.binchen.org/rss.xml" type="rss" text="Chen's blog"/>
 			<outline htmlUrl="https://chrisalbon.com/" title="Chris Albon" xmlUrl="https://chrisalbon.com/index.xml" type="rss" text="Chris Albon"/>
 			<outline htmlUrl="https://www.cpdiehl.org/" title="Chris Diehl" xmlUrl="http://www.cpdiehl.org/atom.xml" type="rss" text="Chris Diehl"/>
 			<outline htmlUrl="http://chris.eidhof.nl/" title="Chris Eidhof" xmlUrl="http://chris.eidhof.nl//index.xml" type="rss" text="Chris Eidhof"/>
@@ -158,6 +160,7 @@
 			<outline htmlUrl="https://travisdowns.github.io/" title="Performance Matters" xmlUrl="https://travisdowns.github.io/feed.xml" type="rss" text="Performance Matters"/>
 			<outline htmlUrl="http://danielsz.github.io" title="Perfumed Nightmare" xmlUrl="https://danielsz.github.io/atom.xml" type="rss" text="Perfumed Nightmare"/>
 			<outline htmlUrl="http://planspace.org/" title="plan ➔ space" xmlUrl="https://planspace.org/rss.xml" type="rss" text="plan ➔ space"/>
+			<outline htmlUrl="http://planet.lisp.org/" title="Planet Lisp" xmlUrl="http://planet.lisp.org/rss20.xml" type="rss" text="Planet Lisp"/>
 			<outline htmlUrl="http://plasmasturm.org/" title="plasmasturm.org" xmlUrl="http://plasmasturm.org/feed" type="rss" text="plasmasturm.org"/>
 			<outline htmlUrl="https://blog.ploeh.dk" title="ploeh blog" xmlUrl="https://blog.ploeh.dk/rss.xml" type="rss" text="ploeh blog"/>
 			<outline htmlUrl="https://pointersgonewild.com" title="Pointers Gone Wild" xmlUrl="https://pointersgonewild.com/feed/" type="rss" text="Pointers Gone Wild"/>
