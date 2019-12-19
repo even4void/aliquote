@@ -87,6 +87,13 @@ int isort(int *lst, int len);
 lib.isort(lst, 100)
 ```
 
-No need to bother declaring the return type, you'll get the value returned by `isort` (an integer indicating the number of swap operations required for the given list).
+No need to bother declaring the return type, you'll get the value returned by `isort` (an integer indicating the number of swap operations required for the given list). If you want to get the updated value of `lst`, you likely want to map the returned value to a Python variable, e.g.:
+
+```python
+a = ffi.new("int[100]")
+a[0:100] = lst
+lib.isort(a, 100)
+list(a[0:10])
+```
 
 Of note, the [Racket code](https://rosettacode.org/wiki/Sorting_algorithms/Insertion_sort) available on Rosetta appears like an outsider among the two other competitors (at least when it is not compiled), with the following timing: 0.60 real / 0.49 user / 0.10 sys.
