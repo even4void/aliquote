@@ -22,7 +22,7 @@
 			<outline htmlUrl="http://amitp.blogspot.com/" title="Amit's Thoughts" xmlUrl="http://amitp.blogspot.com/feeds/posts/default" type="rss" text="Amit's Thoughts"/>
 			<outline htmlUrl="https://blog.klipse.tech//" title="An interactive journey into functional programming with Yehonathan Sharvit" xmlUrl="https://blog.klipse.tech//feed.xml" type="rss" text="An interactive journey into functional programming with Yehonathan Sharvit"/>
 			<outline htmlUrl="https://leancrew.com/all-this/" title="And now it’s all this" xmlUrl="https://leancrew.com/all-this/feed/" type="rss" text="And now it’s all this"/>
-			<outline htmlUrl="https://andrewpwheeler.wordpress.com" title="Andrew Wheeler" xmlUrl="https://andrewpwheeler.wordpress.com/feed/" type="rss" text="Andrew Wheeler"/>
+			<outline htmlUrl="https://andrewpwheeler.com" title="Andrew Wheeler" xmlUrl="https://andrewpwheeler.wordpress.com/feed/" type="rss" text="Andrew Wheeler"/>
 			<outline htmlUrl="https://machinelearning.apple.com/" title="Apple Machine Learning Journal" xmlUrl="https://machinelearning.apple.com/feed.xml" type="rss" text="Apple Machine Learning Journal"/>
 			<outline htmlUrl="https://ar.al/" title="Aral Balkan" xmlUrl="https://ar.al/index.xml" type="rss" text="Aral Balkan"/>
 			<outline htmlUrl="http://rushter.com/blog/" title="Artem Golubin" xmlUrl="https://rushter.com/blog/feed/" type="rss" text="Artem Golubin"/>
@@ -53,6 +53,7 @@
 			<outline htmlUrl="https://chrispenner.ca/atom.xml" title="Chris Penner" xmlUrl="https://chrispenner.ca/atom.xml" type="rss" text="Chris Penner"/>
 			<outline htmlUrl="https://codeandculture.wordpress.com" title="Code and Culture" xmlUrl="http://codeandculture.wordpress.com/feed/" type="rss" text="Code and Culture"/>
 			<outline htmlUrl="https://gilkalai.wordpress.com" title="Combinatorics and more" xmlUrl="https://gilkalai.wordpress.com/feed/" type="rss" text="Combinatorics and more"/>
+			<outline htmlUrl="https://lisptips.com/" title="Common Lisp Tips" xmlUrl="https://lisptips.com/rss" type="rss" text="Common Lisp Tips"/>
 			<outline htmlUrl="http://corte.si" title="cortesi" xmlUrl="http://corte.si/rss.xml" type="rss" text="cortesi"/>
 			<outline htmlUrl="https://lemire.me/blog" title="Daniel Lemire's blog" xmlUrl="https://lemire.me/blog/feed/" type="rss" text="Daniel Lemire's blog"/>
 			<outline htmlUrl="https://danielmiessler.com" title="Daniel Miessler" xmlUrl="https://danielmiessler.com/feed/" type="rss" text="Daniel Miessler"/>
@@ -232,6 +233,7 @@
 			<outline htmlUrl="https://nsaunders.wordpress.com" title="What You're Doing Is Rather Desperate" xmlUrl="http://nsaunders.wordpress.com/feed/" type="rss" text="What You're Doing Is Rather Desperate"/>
 			<outline htmlUrl="https://www.williamyaoh.com" title="William Yao's Haskell Musings" xmlUrl="https://williamyaoh.com/feed.atom" type="rss" text="William Yao's Haskell Musings"/>
 			<outline htmlUrl="https://www.with-emacs.com/" title="with-emacs" xmlUrl="https://with-emacs.com/rss.xml" type="rss" text="with-emacs"/>
+			<outline htmlUrl="https://lispblog.xach.com/" title="Zach Beane Common Lisp" xmlUrl="https://lispblog.xach.com/rss" type="rss" text="Zach Beane Common Lisp"/>
 			<outline htmlUrl="http://manuel-uberti.github.io" title="{{ site.title | xml_escape }}" xmlUrl="https://manuel-uberti.github.io/feed.xml" type="rss" text="{{ site.title | xml_escape }}"/>
 			<outline htmlUrl="https://lthms.xyz" title="~lthms" xmlUrl="https://lthms.xyz/rss" type="rss" text="~lthms"/>
 		</outline>
