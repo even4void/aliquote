@@ -1,7 +1,7 @@
 ---
 title: "Decimal expansion and coprimes"
 date: 2019-12-25T08:42:43+02:00
-draft: true
+draft: false
 tags: ["math", "euler"]
 categories: ["2019"]
 ---
@@ -11,6 +11,10 @@ One of Euler problems deals with [reciprocal cycles](https://projecteuler.net/pr
 As mentioned on the [Racket docs](https://docs.racket-lang.org/math/number-theory.html#%28def._%28%28lib._math%2Fnumber-theory..rkt%29._coprime~3f%29%29), a set of integers is considered coprime if their greatest common divisor is 1. To put it in other words, any prime number that divides one does not divide the other.[^1] In the case 10 and a given integer are coprime, finding their unit-group order will help finding the subsequent
 
 
+
+I happened to find a very nice solution in Mathematica, by [Nayuki](https://www.nayuki.io/page/project-euler-solutions):[^2]
+
+![](/img/2019-12-24-17-03-16.png)
 
 There's more to see: The following fraction has 2997 recurring decimals!
 
@@ -27,6 +31,7 @@ Indeed, you will successively find all 3-decimal numbers from 000 to 999, until 
 According to [Wikipedia](https://en.wikipedia.org/wiki/Repeating_decimal), a *proper prime* is a prime *p* which ends in the digit 1 in base 10 and whose reciprocal in base 10 has a repetend (i.e., repeating decimal segment) with length *p* − 1. Each digit appears in the repetend the same number of times, (*p*-1)/10. A prime is a proper prime if and only if it is a [full reptend prime](https://en.wikipedia.org/wiki/Full_reptend_prime) and congruent to 1 mod 10. What is interesting is that if this prime number is also *safe*, that is a prime of the form 2*p* + 1 where *p* is also a prime, then 1/*p* will produce a [stream](https://oeis.org/A000353) of *p* − 1 pseudo-random digits.
 
 [^1]: Another interesting discussion on the use of [modular arithmetic](https://codereview.stackexchange.com/a/52510) in testing the divisibility of a given number is available on Code Review.
+[^2]: There's also a GMP-based C version available on [Github](https://github.com/eagletmt/project-euler-c/blob/master/20-29/problem26.c).
 
 <!---
 http://mathworld.wolfram.com/DecimalExpansion.html

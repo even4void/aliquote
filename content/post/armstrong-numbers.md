@@ -32,7 +32,6 @@ There are only 89 such numbers in base 10, and this is OEIS sequence [A005188](h
 The above program works well for querying some numbers, but what if we want to generate the full sequence? The largest of these 89 numbers is
 
 <center>115,132,219,018,763,992,565,095,597,973,971,522,401.</center>
-
 This is well above the limit of unsigned long long in C. So we will probably need the GMP library, and a more efficient screening algorithm. Here is one, from [Rosetta](https://rosettacode.org/wiki/Narcissistic_decimal_number/C). It runs in less than 15 s on my Macbook (1,3 GHz Intel Core m7), if we suppress the output: ([source code](/pub/armstrong-gmp.c))
 
 ```shell
@@ -43,8 +42,6 @@ This is well above the limit of unsigned long long in C. So we will probably nee
 ```
 
 ![](/img/armstrong.png)
-
-<small>The complete command was: `gnuplot -p -e "set terminal png size 800, 400; set output 'armstrong.png'; set logscale y; set key off; plot '<cat' w p lc rgb '#0060ad'"`.</small>
 
 > Thank God that number theory is unsullied by any application. --- Leonard Dickson
 
