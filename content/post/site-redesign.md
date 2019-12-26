@@ -18,13 +18,11 @@ Here is what is under the hood:
 
 - I added [purecss](https://purecss.io) to manage the positioning and resizing of images on blog posts. The idea comes from the [blackburn](https://github.com/yoshiharuyamashita/blackburn) theme. This allowed me to replace my old "gallery" shortcode (probably inherited from the Academic theme, that I tried first when I set up the new blog) by a much simpler construct. To put two images side by side (assuming the media screen is large enough), I now use: (Note that I omitted the enclosing brackets, `{{` and `}}`, in order to avoid proper rendering of the shortcode.)
 
-      ```
-      < fluid_imgs
-        "pure-u-1-2|/img/xxx.png"
-        "pure-u-1-2|/img/xxx.png" >
-      ```
+  ```html
+  < fluid_imgs "pure-u-1-2|/img/xxx.png" "pure-u-1-2|/img/xxx.png" >
+  ```
 
-      If I want to display three images, then `pure-u-1-3` will do it. I just altered the original code to add an enclosing `<a href` so that we can still access the original image without lossing too much quality (and get the correct sizing). In some cases, images become quite tiny, especially on mobile device. There are certainly a lot of other nifty CSS tricks in this library, but I haven't explore it in depth.
+  If I want to display three images, then `pure-u-1-3` will do it. I just altered the original code to add an enclosing `<a href` so that we can still access the original image without lossing too much quality (and get the correct sizing). In some cases, images become quite tiny, especially on mobile device. There are certainly a lot of other nifty CSS tricks in this library, but I haven't explore it in depth.
 
 - I changed the default fonts. As there is no way to use a Google API to import fonts, I have uploaded a subset of the IBM Plex fonts in WOFF format on my server. I keep control as much as I can, you know. The original idea came from [BSAG](https://www.rousette.org.uk/about/).
 
@@ -32,17 +30,19 @@ Here is what is under the hood:
 
 - Typesetting mathematical expressions using MathJax is always fun, except when you have to escape underscores followed by bracket. Yes, it sucks, but the version of MathJax I am presently using (2.7.2) just works, while most recent ones would require more hacks than I'm willing to accept. In case you wonder, I just added the following requests in my footer partial:
 
-      ```
-      <script type="text/javascript">
-        window.MathJax = {
-          tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]},
-          showProcessingMessages: false,
-          messageStyle: 'none'
-        };
-      </script>
-      <script type="text/javascript" async
-        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_CHTML">
-      </script>
-      ```
+  ```html
+  <script type="text/javascript">
+    window.MathJax = {
+      tex2jax: { inlineMath: [["$", "$"], ["\\(", "\\)"]] },
+      showProcessingMessages: false,
+      messageStyle: "none"
+    };
+  </script>
+  <script
+    type="text/javascript"
+    async
+    src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_CHTML"
+  ></script>
+  ```
 
 Hopefully, nothing will change for the reader. This is juts that the homepage is now set to point to the flux of my micro-posts, instead of the summary view I used to use beforehand. All posts are listed in reverse chronological order, without any preview of any kind. I just report the publication date and word count. The RSS feed remains the same, but I may eventually remove micro-posts from it since RSS readers may suffer from such noisy activity.
