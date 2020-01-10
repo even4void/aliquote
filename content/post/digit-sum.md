@@ -14,13 +14,13 @@ However, if you prefer to keep working with numbers, here is a little function t
 (define (digits n)
   (if (zero? n)
       null
-      (cons (remainder n 10) (digits (quotient n 10))))
+      (cons (remainder n 10) (digits (quotient n 10)))))
 ```
 
 A more general formula to compute the digit sum of $x$ in base $b=10$ is:
 
-$$ 
-\sum\_{n=0}^{\lfloor\log_{10}x\rfloor}\frac{1}{10^n}(x\, \textrm{mod}\, 10^{n+1}-x\, \textrm{mod}\, 10^n). 
+$$
+\sum\_{n=0}^{\lfloor\log_{10}x\rfloor}\frac{1}{10^n}(x\, \textrm{mod}\, 10^{n+1}-x\, \textrm{mod}\, 10^n).
 $$
 
 This is widely used in checksum algorithms, for instance the Luhn number checksum, also called the mod-10 algorithm. Here it is in Scheme:
@@ -30,7 +30,7 @@ This is widely used in checksum algorithms, for instance the Luhn number checksu
   (- (modulo x (expt 10 (add1 n))) (modulo x (expt 10 n))))
 
 (define (digit-sum x)
-  (for/list ([i (in-range (ceiling ((log x 10))))])
+  (for/list ([i (in-range (ceiling (log x 10)))])
     (* (/ 1 10) (mod-10 x i))))
 ```
 
