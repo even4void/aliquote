@@ -6,7 +6,7 @@ tags: ["racket"]
 categories: ["2020"]
 ---
 
-One of [Rosalind](http://rosalind.info/problems/maj/) problems deals with finding the "majority element" of a vector, which is defined a the value that appears in more than half of the entries. Note that this is a little different from what we usually call the mode in statistics. This is a pretty simple task to run using, e.g., Python or R. 
+One of [Rosalind](http://rosalind.info/problems/maj/) problems deals with finding the "majority element" of a vector, which is defined as the value that appears in more than half of the entries. Note that this is a little different from what we usually call the mode in statistics. This is a pretty simple task to run using, e.g., Python or R. 
 
 Here is a solution in Python: 
 
@@ -27,7 +27,7 @@ def maj(lst):
         return -1
 ```
 
-We could probably use numpy and/or scipy as well, but let's keep it simple, but I really like the `Counter` idiom in Python, which allows to keep a record of the item index that is being processed much like `enumerate` does. I missed this in Racket. It is quite easy to tabulate a list of values using a `for/list` pattern, e.g. as in the following code:
+We could probably use numpy and/or scipy as well, but let's keep it simple. I really like the `Counter` idiom in Python, which allows to keep a record of the item index that is being processed much like `enumerate` does. I missed this in Racket. It is quite easy to tabulate a list of values using a `for/list` pattern, as the following code illustrates:
 
 ```racket
 (define (counter x lst)
@@ -40,7 +40,9 @@ We could probably use numpy and/or scipy as well, but let's keep it simple, but 
 (apply max (for/list ([i (remove-duplicates items)]) (counter i items)))
 ```
 
-If we want to return both the item value and the associated counts, there are two options: either we rely on a hash table, or we need to carry out values and counts together, like Python's `enumerate`; this could be something like replacing `(counter i items)` with `(list i (counter i items))`, but we will need to update the function used when calling `apply` because `max` will not accept a tuple of values. Here is a little example of using a hash instead of plain lists:
+If we want to return both the item value and the associated counts, there are two options (and probably more): either we rely on a hash table, or we return a list (or a pair) of values and counts, like Python's `enumerate`; this could be something like replacing `(counter i items)` with `(list i (counter i items))`, but we will need to update the function used when calling `apply` because `max` will not accept a tuple of values. 
+
+Here is a little example of using a hash instead of plain lists:
 
 ```racket
 ;; Credit: https://stackoverflow.com/a/5741004
