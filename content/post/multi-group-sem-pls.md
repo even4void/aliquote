@@ -6,18 +6,18 @@ tags: ["psychometrics", "rstats"]
 categories: ["2016"]
 ---
 
-This post is about multi-group partial least squares path modeling (PLS-PM). There is already a useful list of references on this [blog post][blog]. As the author noticed, ensuring measurement invariance is often thought of as a prerequisite before dwelling into multi-group comparison, at least in the psychometric literature that I am familiar with. From a measurement perspective, this is easily understandable since we need to ensure that we are indeed measuring in a similar way the exact same construct in specific subpopulation. 
+This post is about multi-group partial least squares path modeling (PLS-PM). There is already a useful list of references on this [blog post][blog]. As the author noticed, ensuring measurement invariance is often thought of as a prerequisite before dwelling into multi-group comparison, at least in the psychometric literature that I am familiar with. From a measurement perspective, this is easily understandable since we need to ensure that we are indeed measuring in a similar way the exact same construct in specific subpopulation.
 
-I am not sure this apply to more general SEM or PLS models which may include a mix of reflexive and formative indicators, but anyway we will consider that PLS-PM is used to answer the same kind of questions as factor analysis does in general, and that we are interested in PLS approaches because of their relaxed assumptions regarding data properties (sample size, distribution, etc.). A nice overview of PLS approaches in SEM is available in Monecke et Leisch, [semPLS: Structural Equation Modeling Using Partial Least Squares][paper] (JSS 2012, 48(3)). 
+I am not sure this apply to more general SEM or PLS models which may include a mix of reflexive and formative indicators, but anyway we will consider that PLS-PM is used to answer the same kind of questions as factor analysis does in general, and that we are interested in PLS approaches because of their relaxed assumptions regarding data properties (sample size, distribution, etc.). A nice overview of PLS approaches in SEM is available in Monecke et Leisch, [semPLS: Structural Equation Modeling Using Partial Least Squares][paper] (JSS 2012, 48(3)).
 
 In the aforementioned blog, I found two references that deal with multi-group comparison issues in the context of PLS-PM. Both are available as PDFs:
 
-1. Chin, W. W., Mills, A. M., Steel, D. J., & Schwarz, A. (2012). [Multi-group invariance testing: An illustrative comparison of PLS permutation and covariance-based SEM invariance analysis][chin12]. *7th International Conference on Partial Least Squares and Related Methods*, May 19-22, 2012, Houston.
+1. Chin, W. W., Mills, A. M., Steel, D. J., & Schwarz, A. (2012). [Multi-group invariance testing: An illustrative comparison of PLS permutation and covariance-based SEM invariance analysis][chin12]. _7th International Conference on Partial Least Squares and Related Methods_, May 19-22, 2012, Houston.
 2. Visinescu, L. (2012). [PLS group comparison: A proposal for relaxing measurement invariance assumptions][visinescu12]. 7th International Conference on Partial Least Squares and Related Methods, May 19-22, 2012, Houston.
 
-The [*Handbook of Partial Least Squares*][pls-handbook], edited by Esposito Vinzi et coll., further includes several chapters dedicated to multi-group comparison using permutation-based approaches. 
+The [_Handbook of Partial Least Squares_][pls-handbook], edited by Esposito Vinzi et coll., further includes several chapters dedicated to multi-group comparison using permutation-based approaches.
 
-In the R packages [semPLS][semPLS] and [plspm][plspm] the authors offer bootstrap and/or permutation-based procedures to assess the significance of path coefficients in single or multi-group settings. I should note that there is also a general purpose package for multi-group analysis on CRAN: [multigroup][multigroup]. Since I am mostly using factor analysis or item response models, I generally rely on [lavaan][lavaan] and [semTools][semTools] for multi-group comparisons. 
+In the R packages [semPLS][sempls] and [plspm][plspm] the authors offer bootstrap and/or permutation-based procedures to assess the significance of path coefficients in single or multi-group settings. I should note that there is also a general purpose package for multi-group analysis on CRAN: [multigroup][multigroup]. Since I am mostly using factor analysis or item response models, I generally rely on [lavaan][lavaan] and [semTools][semtools] for multi-group comparisons.
 
 Back to PLS models, Gaston Sanchez (author of [plspm][plspm]) provides some illustration of multi-group comparison in his handbook, [PLS Path Modeling with R][plspm-handbook], using resampling methods (bootstrap t-test and permutation). The `plspm::plspm.groups()` function simplify the task since it allows the user to specify a PLS model (inner and outer blocks, modes) and a grouping factor. However, it is assumed that we are interested in inspecting and comparing each parameter estimates in different subsamples, which of course is what generally matters. But what if we are only interested in assessing the model as a whole, at the level of model parameters (and not other indices of model quality like RMSEA, BIC or whatever)?
 
@@ -39,21 +39,18 @@ The above simulations just confirm that with a larger sample size we are more li
 
 The same resampling strategy could be applied to estimate number of subjects needed to reach a certain statistical power, but in fact the [simsem][simsem] package does that particularly well.
 
-
 [^1]: In this case, it may be more interesting to take the square of the regression coefficients before combining them using the geometric mean.
-
-
 
 [blog]: https://ckummer.wordpress.com/2014/04/06/research-note-multi-group-comparison-in-partial-least-squares-pls-path-modelling/
 [paper]: https://www.jstatsoft.org/article/view/v048i03
 [chin12]: http://www.plsconference.com/Slides/PLS2012%20(Chin,%20Mills,%20Steel,%20Schwarz).pdf
 [visinescu12]: http://www.plsconference.com/Slides/PLS%20Group%20Comparison.pdf
 [pls-handbook]: http://www.springer.com/us/book/9783540328254
-[semPLS]: https://cran.r-project.org/web/packages/semPLS/index.html
+[sempls]: https://cran.r-project.org/web/packages/semPLS/index.html
 [plspm]: https://cran.r-project.org/web/packages/plspm/index.html
 [multigroup]: https://cran.r-project.org/web/packages/multigroup/index.html
 [lavaan]: http://lavaan.ugent.be
-[semTools]: https://cran.r-project.org/web/packages/semTools/index.html
+[semtools]: https://cran.r-project.org/web/packages/semTools/index.html
 [plspm-handbook]: http://gastonsanchez.com/PLS_Path_Modeling_with_R.pdf
 [simsem]: https://cran.r-project.org/web/packages/simsem/index.html
-[gist]: https://gist.github.com/chlalanne/58bc59ba459d622d3a530f700bfc697d
+[gist]: https://gist.github.com/even4void/58bc59ba459d622d3a530f700bfc697d
