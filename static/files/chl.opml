@@ -94,7 +94,9 @@
 			<outline htmlUrl="https://bphogan.com/" title="Home on bphogan.com" xmlUrl="https://bphogan.com/index.xml" type="rss" text="Home on bphogan.com"/>
 			<outline htmlUrl="https://rakhim.org/" title="Home on Rakhim.org" xmlUrl="https://rakhim.org/index.xml" type="rss" text="Home on Rakhim.org"/>
 			<outline htmlUrl="http://hongchao.me/hongchao.me" title="Hongchao's Notes" xmlUrl="http://hongchao.me/feed.xml" type="rss" text="Hongchao's Notes"/>
+			<outline htmlUrl="http://www.howardism.org/" title="Howardism" xmlUrl="http://www.howardism.org/index.xml" type="rss" text="Howardism"/>
 			<outline htmlUrl="http://fanhuan.github.io" title="Huan Fan" xmlUrl="http://fanhuan.github.io/en/feed/" type="rss" text="Huan Fan"/>
+			<outline htmlUrl="http://hypercritical.co/" title="Hypercritical" xmlUrl="http://hypercritical.co/feeds/main" type="rss" text="Hypercritical"/>
 			<outline htmlUrl="http://www.ibm.com/developerworks/" title="IBM Developer : Open source" xmlUrl="http://www.ibm.com/developerworks/views/opensource/rss/libraryview.jsp?site_id=1&amp;contentarea_by=Open%20source&amp;topic_by=&amp;product_by=&amp;type_by=All%20Types&amp;search_by=&amp;industry_by=&amp;sort_by=Date&amp;series_title_by=" type="rss" text="IBM Developer : Open source"/>
 			<outline htmlUrl="https://inconvergent.net" title="inconvergent" xmlUrl="https://inconvergent.net/atom.xml" type="rss" text="inconvergent"/>
 			<outline htmlUrl="https://increment.com" title="Increment" xmlUrl="https://increment.com/feed.xml" type="rss" text="Increment"/>
@@ -104,8 +106,8 @@
 			<outline htmlUrl="https://irreal.org/blog" title="Irreal" xmlUrl="http://irreal.org/blog/?feed=rss2" type="rss" text="Irreal"/>
 			<outline htmlUrl="https://blogs.princeton.edu/imabandit" title="I’m a bandit" xmlUrl="https://blogs.princeton.edu/imabandit/feed/" type="rss" text="I’m a bandit"/>
 			<outline htmlUrl="https://micro.baty.net/" title="Jack Baty - the Microblog" xmlUrl="https://micro.baty.net/feed.xml" type="rss" text="Jack Baty - the Microblog"/>
+			<outline htmlUrl="https://www.baty.net/" title="Jack Baty on Jack Baty's weblog" xmlUrl="https://www.baty.net/index.xml" type="rss" text="Jack Baty on Jack Baty's weblog"/>
 			<outline htmlUrl="https://baty.blog/" title="Jack Baty's Blog" xmlUrl="https://www.baty.blog/feed.rss" type="rss" text="Jack Baty's Blog"/>
-			<outline htmlUrl="https://www.baty.net/" title="Jack Baty's weblog" xmlUrl="https://www.baty.net/index.xml" type="rss" text="Jack Baty's weblog"/>
 			<outline htmlUrl="https://jacobian.org/" title="Jacob Kaplan-Moss: Writing" xmlUrl="https://jacobian.org/atom/entries/" type="rss" text="Jacob Kaplan-Moss: Writing"/>
 			<outline htmlUrl="https://jakemccrary.com/" title="Jake McCrary" xmlUrl="https://feeds.feedburner.com/JakeMccrarysMusings" type="rss" text="Jake McCrary"/>
 			<outline htmlUrl="http://jakob.space/jakob.space" title="Jakob's Personal Webpage" xmlUrl="http://jakob.space/feed.xml" type="rss" text="Jakob's Personal Webpage"/>
@@ -139,6 +141,7 @@
 			<outline htmlUrl="https://marco.org/" title="Marco.org" xmlUrl="http://marco.org/rss" type="rss" text="Marco.org"/>
 			<outline htmlUrl="http://blog.markwatson.com/" title="Mark Watson's artificial intelligence and machine learning blog" xmlUrl="http://blog.markwatson.com/feeds/posts/default" type="rss" text="Mark Watson's artificial intelligence and machine learning blog"/>
 			<outline htmlUrl="https://martinfowler.com" title="Martin Fowler" xmlUrl="https://martinfowler.com/feed.atom" type="rss" text="Martin Fowler"/>
+			<outline htmlUrl="https://martinheinz.dev/rss.xml" title="Martin Heinz's Blog" xmlUrl="https://martinheinz.dev/rss/" type="rss" text="Martin Heinz's Blog"/>
 			<outline htmlUrl="https://jeremykun.com" title="Math ∩ Programming" xmlUrl="https://jeremykun.com/feed/" type="rss" text="Math ∩ Programming"/>
 			<outline htmlUrl="https://mathematicaforprediction.wordpress.com" title="Mathematica for prediction algorithms" xmlUrl="https://mathematicaforprediction.wordpress.com/feed/" type="rss" text="Mathematica for prediction algorithms"/>
 			<outline htmlUrl="https://mattbaker.blog" title="Matt Baker's Math Blog" xmlUrl="https://mattbaker.blog/feed/" type="rss" text="Matt Baker's Math Blog"/>
@@ -197,7 +200,7 @@
 			<outline htmlUrl="https://fharrell.com/" title="Statistical Thinking on Statistical Thinking" xmlUrl="http://fharrell.com/index.xml" type="rss" text="Statistical Thinking on Statistical Thinking"/>
 			<outline htmlUrl="http://www.stephendiehl.com" title="Stephen Diehl" xmlUrl="http://www.stephendiehl.com/feed.rss" type="rss" text="Stephen Diehl"/>
 			<outline htmlUrl="https://writings.stephenwolfram.com" title="Stephen Wolfram Blog" xmlUrl="http://blog.stephenwolfram.com/feed/" type="rss" text="Stephen Wolfram Blog"/>
-			<outline htmlUrl="http://stevelosh.com/" title="Steve Losh" xmlUrl="http://feeds2.feedburner.com/stevelosh" type="rss" text="Steve Losh"/>
+			<outline htmlUrl="https://stevelosh.com/" title="Steve Losh" xmlUrl="http://feeds2.feedburner.com/stevelosh" type="rss" text="Steve Losh"/>
 			<outline htmlUrl="http://stevenrosenberg.net/blog/music/guitar/" title="Steven Rosenberg" xmlUrl="http://stevenrosenberg.net/blog/index.rss2" type="rss" text="Steven Rosenberg"/>
 			<outline htmlUrl="https://multithreaded.stitchfix.com/" title="Stitch Fix Technology – Multithreaded" xmlUrl="https://multithreaded.stitchfix.com/feed.xml" type="rss" text="Stitch Fix Technology – Multithreaded"/>
 			<outline htmlUrl="https://stratechery.com" title="Stratechery by Ben Thompson" xmlUrl="http://stratechery.com/feed/" type="rss" text="Stratechery by Ben Thompson"/>
