@@ -13,8 +13,8 @@ I believe we can safely forget about the winter for the time being and enjoy the
 ![From Twitter](/img/0176.jpg)
 
 I came across the above pic via Twitter (can't find the link, tho); sometimes I miss Paris, especially wandering the streets at night.
- 
-I didn't read much in April, partly because I was doing other unimportant stuff but also because I get tired after I had to start yet a new treatment. I added a few other readings to [my list](/files/books.txt).
+
+I didn't read much in April, partly because I was doing other unimportant stuff but also because I get tired after I had to start yet a new treatment. I added a few other readings to [my list](/files/books.org).
 
 > Dommage que je te tutoie, je vous aurais dit des choses que je n'ose pas te dire. --- Jean-Marie Laclavetine, Et j'ai su que ce trésor était pour moi
 

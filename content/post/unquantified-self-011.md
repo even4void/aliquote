@@ -26,6 +26,6 @@ Besides, I now spend most of my day using a Terminal and Emacs, just a Terminal 
 
 > I like my editor. It fits my needs perfectly, and I can customize everything how I need it. --- [Leah Neukirchen](https://leahneukirchen.org/blog/archive/2007/03/the-day-editors-became-handaxes.html)
 
-Other than that, while I happened to read a [lot of books](/files/books.txt) during the Summer holidays, I have less time now unfortunately. However, I managed to re-read Anaïs Nin, a lot of small novels and short stories that I often find in a public book case near my work. I also listened to a lot of music, almost daily. No need for [Roon](https://roonlabs.com), iTunes has been getting better the last few months:
+Other than that, while I happened to read a [lot of books](/files/books.org) during the Summer holidays, I have less time now unfortunately. However, I managed to re-read Anaïs Nin, a lot of small novels and short stories that I often find in a public book case near my work. I also listened to a lot of music, almost daily. No need for [Roon](https://roonlabs.com), iTunes has been getting better the last few months:
 
 ![itunes](/img/2019-09-09-12-08-45.png)
