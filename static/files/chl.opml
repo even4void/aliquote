@@ -107,7 +107,7 @@
 			<outline htmlUrl="https://blogs.princeton.edu/imabandit" title="I’m a bandit" xmlUrl="https://blogs.princeton.edu/imabandit/feed/" type="rss" text="I’m a bandit"/>
 			<outline htmlUrl="https://micro.baty.net/" title="Jack Baty - the Microblog" xmlUrl="https://micro.baty.net/feed.xml" type="rss" text="Jack Baty - the Microblog"/>
 			<outline htmlUrl="https://www.baty.net/" title="Jack Baty on Jack Baty's weblog" xmlUrl="https://www.baty.net/index.xml" type="rss" text="Jack Baty on Jack Baty's weblog"/>
-			<outline htmlUrl="https://baty.blog/" title="Jack Baty's Blog" xmlUrl="https://www.baty.blog/feed.rss" type="rss" text="Jack Baty's Blog"/>
+			<outline htmlUrl="https://jack.baty.net/" title="Jack Baty's Blog" xmlUrl="https://www.baty.blog/feed.rss" type="rss" text="Jack Baty's Blog"/>
 			<outline htmlUrl="https://jacobian.org/" title="Jacob Kaplan-Moss: Writing" xmlUrl="https://jacobian.org/atom/entries/" type="rss" text="Jacob Kaplan-Moss: Writing"/>
 			<outline htmlUrl="https://jakemccrary.com/" title="Jake McCrary" xmlUrl="https://feeds.feedburner.com/JakeMccrarysMusings" type="rss" text="Jake McCrary"/>
 			<outline htmlUrl="http://jakob.space/jakob.space" title="Jakob's Personal Webpage" xmlUrl="http://jakob.space/feed.xml" type="rss" text="Jakob's Personal Webpage"/>
@@ -118,6 +118,7 @@
 			<outline htmlUrl="http://www.johnmyleswhite.com" title="John Myles White" xmlUrl="http://www.johnmyleswhite.com/feed/" type="rss" text="John Myles White"/>
 			<outline htmlUrl="http://journal.stuffwithstuff.com/" title="journal.stuffwithstuff.com" xmlUrl="http://journal.stuffwithstuff.com/rss.xml" type="rss" text="journal.stuffwithstuff.com"/>
 			<outline htmlUrl="https://www.snellman.net/blog/" title="Juho Snellman's Weblog" xmlUrl="https://www.snellman.net/blog/rss-index.xml" type="rss" text="Juho Snellman's Weblog"/>
+			<outline htmlUrl="https://julesh.com" title="Jules Hedges" xmlUrl="https://julesh.com/feed/" type="rss" text="Jules Hedges"/>
 			<outline htmlUrl="http://jvns.ca" title="Julia Evans" xmlUrl="https://jvns.ca/atom.xml" type="rss" text="Julia Evans"/>
 			<outline htmlUrl="https://julien.danjou.info/" title="Julien Danjou" xmlUrl="https://julien.danjou.info/rss/" type="rss" text="Julien Danjou"/>
 			<outline htmlUrl="http://kottke.org/" title="kottke.org" xmlUrl="http://feeds.kottke.org/main" type="rss" text="kottke.org"/>
@@ -189,6 +190,7 @@
 			<outline htmlUrl="https://www.benrady.com/" title="Radyology" xmlUrl="https://www.benrady.com/atom.xml" type="rss" text="Radyology"/>
 			<outline htmlUrl="https://rambo.codes/" title="Rambo.codes" xmlUrl="https://rambo.codes/feed.xml" type="rss" text="Rambo.codes"/>
 			<outline htmlUrl="http://morrick.me" title="Riccardo Mori" xmlUrl="http://morrick.me/feed" type="rss" text="Riccardo Mori"/>
+			<outline htmlUrl="http://blog.rongarret.info/" title="Rondam Ramblings" xmlUrl="http://blog.rongarret.info/feeds/posts/default" type="rss" text="Rondam Ramblings"/>
 			<outline htmlUrl="https://www.hanselman.com/blog/" title="Scott Hanselman's Blog" xmlUrl="http://feeds.hanselman.com/ScottHanselman" type="rss" text="Scott Hanselman's Blog"/>
 			<outline htmlUrl="https://scriptingosx.com" title="Scripting OS X" xmlUrl="https://scriptingosx.com/feed/" type="rss" text="Scripting OS X"/>
 			<outline htmlUrl="http://blog.fogus.me" title="Send More Paramedics" xmlUrl="http://blog.fogus.me/feed/" type="rss" text="Send More Paramedics"/>
