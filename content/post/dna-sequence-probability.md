@@ -1,7 +1,7 @@
 ---
 title: "Finding a DNA sequence in a genome"
 date: 2020-01-31T13:29:06+01:00
-draft: true
+draft: false
 tags: ["bioinformatics"]
 categories: ["2020"]
 ---
