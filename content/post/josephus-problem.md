@@ -1,7 +1,7 @@
 ---
 title: "Josephus Problem"
-date: 2020-01-29T20:27:54+01:00
-draft: true
+date: 2020-01-30T20:27:54+01:00
+draft: false
 tags: ["math"]
 categories: ["2020"]
 ---
@@ -31,15 +31,13 @@ In[1]:= With[{n = 40}, 2 (n - 2^Floor[Log2[n]]) + 1]
 Out[1]= 17
 ```
 
-There is also a nice discussion of radix 2 representations of _n_ and $J(n)$, where it is shown that $J(n)$ is obtained by performing a one-bit cyclic shift left. This is [RotateLeft](https://mathematica.stackexchange.com/a/33598) in Mathematica.
+There is also a nice discussion of radix 2 representations of _n_ and $J(n)$, where it is shown that $J(n)$ is obtained by performing a one-bit cyclic shift left, which happens to be a [RotateLeft](https://mathematica.stackexchange.com/a/33598) in Mathematica. There used to be a `Josephus` function in Mathematica, in the _Combinatorica_ package, but it's now part of the Wolfram language itself. Given the natural recursion involved, it is, however, not difficult to write a proper function in Scheme:
 
-Later, the authors introduce the _repertoire method_, whereby we accumulate special cases with known answers and combine them altogether to obtain the general case. You will need as many special cases as there are independant parameters. Exercise 16 asks us to use this approach to solve the following recurrence relations:
+```scheme
+(define (josephus n m)
+    (if (= n 1)
+      1
+      (+ (modulo (+ (josephus (- n 1) m) m -1) n) 1)))
 
-$$
-\begin{array}{rcl}
-g(1)    & = & \alpha\cr
-g(2n+j) & = & 3g(n) + \gamma n + \beta_j, \quad \text{for}\, j=0, 1\, \text{and}\, n\ge 1
-\end{array}
-$$
-
-https://blog.wakatta.jp/blog/2012/01/14/concrete-mathematics-repertoire-method/
+(josephus 40 2)
+```
