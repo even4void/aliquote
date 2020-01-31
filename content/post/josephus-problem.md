@@ -15,14 +15,14 @@ The authors decided to eliminate every _second_ remaining person until only one 
 $$
 \begin{array}{rcl}
 J(1)      & = & 1\cr
-J(2n)     & = & 2J(n)-1,\quad \text{for}\, n \ge 1\cr
-J(2n + 1) & = & 2J(n) + 1,\quad \text{for}\, n\ge 1
+J(2n)     & = & 2J(n)-1,\quad \text{for}\\, n \ge 1\cr
+J(2n + 1) & = & 2J(n) + 1,\quad \text{for}\\, n\ge 1
 \end{array}
 $$
 
 Note that $J(n)$ is not defined in term of $J(n-1)$, but there's more to see. It can be seen that $J(n)$ is an increasing odd sequence that restarts with $J(n) = 1$ as soon as _n_ is a power of 2. This yields the following theorem:
 
-$$\text{If}\, n=2^m+l\,\text{and}\, 0\le l \le 2^m,\, \text{then}\, J(n) = 2l+1.$$
+$$\text{If}\\, n=2^m+l\\,\text{and}\\, 0\le l \le 2^m,\\, \text{then}\\, J(n) = 2l+1.$$
 
 This yields an explicit expression for $J(n)$, by the way: $J(n) = 2(n-2^{\lfloor\log_2(n)\rfloor})+1$. Using Mathematica, indeed we can confirm that $J(40)=17$ (p. 9, 2nd ed.):
 
