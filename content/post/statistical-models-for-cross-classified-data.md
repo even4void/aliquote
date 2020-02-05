@@ -37,7 +37,7 @@ In contrast to the ML approach, the MCMC method not only gives a point estimate 
 7. Díaz, M.M. and Ones, V.G. (2005). <a href="http://www.emis.de/journals/RCE/V28/V28_1_63MonteroGuerra.pdf">Estimating multilevel models for categorical data via generalized least squares</a>. *Revista Colombiana de Estadística*, *28(1)*, 63-76.
 8. Goldstein, H. (1987). *Multilevel Models in Educational and Social Research*. London: Griffin.
 9. Hox, J.J. (2002). *Multilevel Analysis: Techniques and Applications*. Mahwah, NJ: Erlbaum.
-10. Raudenbush, S.W. (1993). A crossed random effects model for unbalanced data with applications in cross-sectional and longitudinal research.* Journal of Educational Statistics*, *18*, 321-349.
+10. Raudenbush, S.W. (1993). A crossed random effects model for unbalanced data with applications in cross-sectional and longitudinal research. *Journal of Educational Statistics*, *18*, 321-349.
 11. McCulloch, C.E. and Searle, S.R. (2001). *Generalized, Linear, and Mixed Models*. New York: Wiley.
 12. Casella, G. and George, E.I. (1992). Explaining the Gibbs sampler. *The American Statistician*, *46*, 167-174.
 13. Chib, S. and Greenberg, E. (1995). <a href="http://allman.rhon.itam.mx/~lnieto/index_archivos/Chib&amp;Greenberg1995.pdf">Understanding the Metropolis-Hastings algorithm</a>. *The American Statistician*, *49*, 327-335.
@@ -45,7 +45,7 @@ In contrast to the ML approach, the MCMC method not only gives a point estimate 
 15. Efron, B. and Tibshirani, R.J. (1993). *An introduction to the bootstrap*. New York: Chapman and Hall.
 16. Browne, W.J. and Draper, D. (2006). <a href="http://ba.stat.cmu.edu/journal/2006/vol01/issue03/draper2.pdf">A comparison of Bayesian and likelihood-based methods for fitting multilevel models</a>. *Bayesian Analysis*, *3*, 473-514.
 
-[^1]: Note that there are also other option to keep in line with more traditional software, e.g., [SAS[(http://www.estat.us/id38.html) or SPSS.
+[^1]: Note that there are also other option to keep in line with more traditional software, e.g., [SAS](http://www.estat.us/id38.html) or SPSS.
 
 
 [likelihood-based]: http://en.wikipedia.org/wiki/Likelihood_principle "Wikipedia"
