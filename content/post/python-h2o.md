@@ -16,4 +16,9 @@ Finally, [plotly](https://plot.ly/python/) is a handy replacement for [matplotli
 
 Since I'm doing quite a lot of stuff in Python these days, why not take a closer look at the data mining stack available there? I will probably write separate posts to highlight what features I find particularly useful (or not) and some of the workflows built upon these tools.
 
+{{% alert note %}}
+<small>[2020-02-25]</small><br>
+A more classical review of the Python data stack has been published recently by Sebastian Raschka and coll. on ArXiv, see [Machine Learning in Python: Main developments and technology trends in data science, machine learning, and artificial intelligence](https://arxiv.org/abs/2002.04803).
+{{% /alert %}}
+
 [^1]: ![everything's tidy](/img/2020-01-28-20-54-54.png)

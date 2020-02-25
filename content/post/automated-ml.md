@@ -20,3 +20,8 @@ There is an arXiv paper right there: [Consistent Individualized Feature Attribut
 
 This was also a good opportunity to try the [treeinterpreter](https://github.com/andosa/treeinterpreter) package which is quite nicely illustrated in the following blog post: [Interpreting random forests](http://blog.datadive.net/interpreting-random-forests/).
 Finally, there is also [DALEX](https://github.com/pbiecek/DALEX/), which is an R package influenced by LIME that also focuses on Random Forest and XGBoost.
+
+{{% alert note %}}
+<small>[2020-02-25]</small><br>
+A recent review of the Python data stack present some the automated approaches commonly developed in ML: [Machine Learning in Python: Main developments and technology trends in data science, machine learning, and artificial intelligence](https://arxiv.org/abs/2002.04803). See also [AutoML: A Survey of the State-of-the-Art](https://arxiv.org/abs/1908.00709).
+{{% /alert %}}
