@@ -194,7 +194,7 @@
 			<outline htmlUrl="https://racket-news.com/index.html" title="Racket News: Racket News" xmlUrl="https://racket-news.com/feeds/all.rss.xml" type="rss" text="Racket News: Racket News"/>
 			<outline htmlUrl="https://radfordneal.wordpress.com" title="Radford Neal's blog" xmlUrl="http://radfordneal.wordpress.com/feed/" type="rss" text="Radford Neal's blog"/>
 			<outline htmlUrl="https://www.benrady.com/" title="Radyology" xmlUrl="https://www.benrady.com/atom.xml" type="rss" text="Radyology"/>
-			<outline htmlUrl="https://rambo.codes/" title="Rambo.codes" xmlUrl="https://rambo.codes/feed.xml" type="rss" text="Rambo.codes"/>
+			<outline htmlUrl="https://rambo.codes" title="Rambo Codes" xmlUrl="https://rambo.codes/feed.xml" type="rss" text="Rambo Codes"/>
 			<outline htmlUrl="http://morrick.me" title="Riccardo Mori" xmlUrl="http://morrick.me/feed" type="rss" text="Riccardo Mori"/>
 			<outline htmlUrl="http://blog.rongarret.info/" title="Rondam Ramblings" xmlUrl="http://blog.rongarret.info/feeds/posts/default" type="rss" text="Rondam Ramblings"/>
 			<outline htmlUrl="https://rud.is/b" title="rud.is" xmlUrl="https://rud.is/b/feed/" type="rss" text="rud.is"/>
@@ -256,6 +256,7 @@
 			<outline htmlUrl="https://nsaunders.wordpress.com" title="What You're Doing Is Rather Desperate" xmlUrl="http://nsaunders.wordpress.com/feed/" type="rss" text="What You're Doing Is Rather Desperate"/>
 			<outline htmlUrl="https://www.williamyaoh.com" title="William Yao's Haskell Musings" xmlUrl="https://williamyaoh.com/feed.atom" type="rss" text="William Yao's Haskell Musings"/>
 			<outline htmlUrl="https://www.with-emacs.com/" title="with-emacs" xmlUrl="https://with-emacs.com/rss.xml" type="rss" text="with-emacs"/>
+			<outline title="Worklog of Christian Tietze" xmlUrl="https://christiantietze.de/feed.atom" type="rss" text="Worklog of Christian Tietze"/>
 			<outline htmlUrl="http://www.linusakesson.net/" title="www.linusakesson.net" xmlUrl="http://www.linusakesson.net/rssfeed.php" type="rss" text="www.linusakesson.net"/>
 			<outline htmlUrl="https://lispblog.xach.com/" title="Zach Beane Common Lisp" xmlUrl="https://lispblog.xach.com/rss" type="rss" text="Zach Beane Common Lisp"/>
 			<outline htmlUrl="http://manuel-uberti.github.io" title="{{ site.title | xml_escape }}" xmlUrl="https://manuel-uberti.github.io/feed.xml" type="rss" text="{{ site.title | xml_escape }}"/>
