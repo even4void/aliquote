@@ -44,7 +44,7 @@ When translated to a raw string, we get "I'm killing your brain like a poisonous
 Here is a solution in Racket:
 
 ```racket
-(require net/sha1)
+(require file/sha1)
 (require net/base64)
 (define s "49276d206b696c6c696e6720796f757220627261696e206c696b65206120706f69736f6e6f7573206d757368726f6f6d")
 (base64-encode (hex-string->bytes s))
