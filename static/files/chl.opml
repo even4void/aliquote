@@ -70,6 +70,7 @@
 			<outline htmlUrl="https://defn.io/" title="defn.io" xmlUrl="https://defn.io/index.xml" type="rss" text="defn.io"/>
 			<outline htmlUrl="https://sivers.org/" title="Derek Sivers" xmlUrl="https://sivers.org/en.atom" type="rss" text="Derek Sivers"/>
 			<outline htmlUrl="https://stuartsierra.com" title="Digital Digressions by Stuart Sierra" xmlUrl="http://stuartsierra.com/feed" type="rss" text="Digital Digressions by Stuart Sierra"/>
+			<outline htmlUrl="https://www.spinellis.gr/blog" title="Diomidis D. Spinellis Web Log" xmlUrl="https://www.spinellis.gr/blog/dds-blog-rss.xml" type="rss" text="Diomidis D. Spinellis Web Log"/>
 			<outline htmlUrl="https://dmerej.info/blog/" title="dmerej's blog" xmlUrl="https://dmerej.info/blog/index.xml" type="rss" text="dmerej's blog"/>
 			<outline htmlUrl="https://can3p.github.io" title="Dmitry Petrov" xmlUrl="http://can3p.github.io/atom.xml" type="rss" text="Dmitry Petrov"/>
 			<outline htmlUrl="http://www.drbunsen.org/" title="Dr. Bunsen Blog" xmlUrl="http://www.drbunsen.org/feed.xml" type="rss" text="Dr. Bunsen Blog"/>
@@ -169,6 +170,7 @@
 			<outline htmlUrl="https://oli.me.uk/" title="Oliver Caldwell's blog" xmlUrl="https://oli.me.uk/feed.xml" type="rss" text="Oliver Caldwell's blog"/>
 			<outline htmlUrl="https://www.eidel.io" title="Oliver Eidel - Articles" xmlUrl="https://www.eidel.io/feed.xml" type="rss" text="Oliver Eidel - Articles"/>
 			<outline htmlUrl="https://kieranhealy.org/blog/" title="on kieranhealy.org" xmlUrl="https://kieranhealy.org/blog/index.xml" type="rss" text="on kieranhealy.org"/>
+			<outline htmlUrl="https://openfolder.sh" title="Open Folder" xmlUrl="https://feedpress.me/tnb" type="rss" text="Open Folder"/>
 			<outline htmlUrl="https://www.xarg.org/" title="Open Source is Everything" xmlUrl="https://feeds.feedburner.com/exarg" type="rss" text="Open Source is Everything"/>
 			<outline htmlUrl="http://www.paulgraham.com/" title="Paul Graham: Essays" xmlUrl="http://www.aaronsw.com/2002/feeds/pgessays.rss" type="rss" text="Paul Graham: Essays"/>
 			<outline htmlUrl="https://www.pvk.ca/" title="Paul Khuong: some Lisp" xmlUrl="https://www.pvk.ca/atom.xml" type="rss" text="Paul Khuong: some Lisp"/>
@@ -208,6 +210,7 @@
 			<outline htmlUrl="http://www.cs.rice.edu/~ogilvie/" title="Species and Gene Evolution" xmlUrl="http://www.cs.rice.edu/~ogilvie/feed.xml" type="rss" text="Species and Gene Evolution"/>
 			<outline htmlUrl="http://gigasquid.github.io/" title="Squid's Blog" xmlUrl="http://gigasquidsoftware.com/atom.xml" type="rss" text="Squid's Blog"/>
 			<outline htmlUrl="https://standblog.org/blog/" title="Standblog" xmlUrl="https://standblog.org/blog/feed/atom" type="rss" text="Standblog"/>
+			<outline htmlUrl="https://statisticalhorizons.com" title="Statistical Horizons" xmlUrl="https://statisticalhorizons.com/feed" type="rss" text="Statistical Horizons"/>
 			<outline htmlUrl="https://fharrell.com/" title="Statistical Thinking on Statistical Thinking" xmlUrl="http://fharrell.com/index.xml" type="rss" text="Statistical Thinking on Statistical Thinking"/>
 			<outline htmlUrl="http://www.stephendiehl.com" title="Stephen Diehl" xmlUrl="http://www.stephendiehl.com/feed.rss" type="rss" text="Stephen Diehl"/>
 			<outline htmlUrl="https://writings.stephenwolfram.com" title="Stephen Wolfram Blog" xmlUrl="http://blog.stephenwolfram.com/feed/" type="rss" text="Stephen Wolfram Blog"/>
