@@ -34,11 +34,10 @@ m.jc = optim.pml(m, optNni = TRUE)
 logLik(m.jc)  # 'log Lik.' -6451.672 (df=77)
 ```
 
-Where do these degrees of freedom come from and how do we define the likelihood of a tree after all? Of course, the likelihood here stands for the probability that such a tree would have generated the data presented in the sequence under the chosen model. If we make the assumption that each site evolves independently, we can compute separately the likelihood at each site and add them up. For each site, its likelihood is defined as the sum of the probabilities of every possible ancestral states, which conform to the Jukes-Cantor substitution model (equiprobable substitutions and equiprobable base frequencies).
+Where do these degrees of freedom come from and how do we define the likelihood of a tree after all? Of course, the likelihood here stands for the probability that such a tree would have generated the data presented in the sequence under the chosen model. If we make the assumption that each site evolves independently, we can compute separately the likelihood at each site and add them up. For each site, its likelihood is defined as the sum of the probabilities of every possible ancestral states, which conform to the Jukes-Cantor substitution model (equiprobable substitutions and equiprobable base frequencies). Basically, this amounts to compute conditional likelihood (starting from the tip of the tree down to the common ancestral root). It [can be shown](https://scholarship.claremont.edu/cgi/viewcontent.cgi?article=1047&context=scripps_theses) that for any node $x$, whose immediate descendants are tips $y$ and $z$, $L_s^{(x)}$ amounts to:
 
-$$ \mathcal{L} = \prod_{j=1}^m \left[ \sum_z C_j(x, root)\cdot P(x) \right] $$
+$$ L_s^{(x)} = \sum_{S=1}^4 \left[ \left(\sum_{S_y=1}^4 P_{S_xS_y}(v_y)L_{S_y}^{(y)} \right) \left(\sum_{S_z=1}^4 P_{S_xS_z}(v_z)L_{S_z}^{(z)} \right) \right]. $$
 
-https://www.cs.tau.ac.il/~rshamir/algmb/00/scribe00/html/lec08/node24.html
 https://www.biostars.org/p/179195/
 
 [^1]: When only aligned sequences are available, we need to use `format = "fasta"` and convert the data to binary DNA fromat using, e.g., `ape::as.DNAbin()`.
