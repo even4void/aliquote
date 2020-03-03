@@ -59,6 +59,7 @@
 			<outline htmlUrl="https://gilkalai.wordpress.com" title="Combinatorics and more" xmlUrl="https://gilkalai.wordpress.com/feed/" type="rss" text="Combinatorics and more"/>
 			<outline htmlUrl="https://lisptips.com/" title="Common Lisp Tips" xmlUrl="https://lisptips.com/rss" type="rss" text="Common Lisp Tips"/>
 			<outline htmlUrl="http://corte.si" title="cortesi" xmlUrl="http://corte.si/rss.xml" type="rss" text="cortesi"/>
+			<outline htmlUrl="https://danluu.com/atom/index.xml" title="Dan Luu" xmlUrl="https://danluu.com/atom.xml" type="rss" text="Dan Luu"/>
 			<outline htmlUrl="https://lemire.me/blog" title="Daniel Lemire's blog" xmlUrl="https://lemire.me/blog/feed/" type="rss" text="Daniel Lemire's blog"/>
 			<outline htmlUrl="https://danielmiessler.com" title="Daniel Miessler" xmlUrl="https://danielmiessler.com/feed/" type="rss" text="Daniel Miessler"/>
 			<outline htmlUrl="https://daringfireball.net/" title="Daring Fireball" xmlUrl="https://daringfireball.net/feeds/main" type="rss" text="Daring Fireball"/>
@@ -202,7 +203,7 @@
 			<outline htmlUrl="https://www.benrady.com/" title="Radyology" xmlUrl="https://www.benrady.com/atom.xml" type="rss" text="Radyology"/>
 			<outline htmlUrl="https://rambo.codes" title="Rambo Codes" xmlUrl="https://rambo.codes/feed.xml" type="rss" text="Rambo Codes"/>
 			<outline htmlUrl="http://morrick.me" title="Riccardo Mori" xmlUrl="http://morrick.me/feed" type="rss" text="Riccardo Mori"/>
-			<outline htmlUrl="http://www.robinsloan.com/blog" title="Robin's blog" xmlUrl="https://feeds.feedburner.com/robinsloan" type="rss" text="Robin's blog"/>
+			<outline htmlUrl="https://www.robinsloan.com/notes/" title="Robin's blog" xmlUrl="https://feeds.feedburner.com/robinsloan" type="rss" text="Robin's blog"/>
 			<outline htmlUrl="http://blog.rongarret.info/" title="Rondam Ramblings" xmlUrl="http://blog.rongarret.info/feeds/posts/default" type="rss" text="Rondam Ramblings"/>
 			<outline htmlUrl="https://rud.is/b" title="rud.is" xmlUrl="https://rud.is/b/feed/" type="rss" text="rud.is"/>
 			<outline htmlUrl="https://www.hanselman.com/blog/" title="Scott Hanselman's Blog" xmlUrl="http://feeds.hanselman.com/ScottHanselman" type="rss" text="Scott Hanselman's Blog"/>
