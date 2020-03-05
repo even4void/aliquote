@@ -9,6 +9,7 @@
 			<outline htmlUrl="https://bitemyapp.com" title="bitemyapp.com" xmlUrl="https://bitemyapp.com/rss.xml" type="rss" text="bitemyapp.com"/>
 			<outline title="-" xmlUrl="index.rss" type="rss" text="-"/>
 			<outline title="-" xmlUrl="http:&amp;#x2F;&amp;#x2F;cliffle.com&amp;#x2F;rss.xml" type="rss" text="-"/>
+			<outline htmlUrl="https://reconlearn.org/" title="reconlearn.org" xmlUrl="https://reconlearn.org/index.xml" type="rss" text="reconlearn.org"/>
 			<outline htmlUrl="http://writequit.org/" title="(:wq - Feed)" xmlUrl="https://writequit.org/posts.xml" type="rss" text="(:wq - Feed)"/>
 			<outline htmlUrl="https://www.0xroy.me/" title="0xroy’s notes" xmlUrl="https://www.0xroy.me/feed.xml" type="rss" text="0xroy’s notes"/>
 			<outline htmlUrl="https://2ality.com/" title="2ality – JavaScript and more" xmlUrl="http://feeds.feedburner.com/2ality?format=xml" type="rss" text="2ality – JavaScript and more"/>
@@ -208,6 +209,7 @@
 			<outline htmlUrl="https://rud.is/b" title="rud.is" xmlUrl="https://rud.is/b/feed/" type="rss" text="rud.is"/>
 			<outline htmlUrl="https://www.hanselman.com/blog/" title="Scott Hanselman's Blog" xmlUrl="http://feeds.hanselman.com/ScottHanselman" type="rss" text="Scott Hanselman's Blog"/>
 			<outline htmlUrl="https://scriptingosx.com" title="Scripting OS X" xmlUrl="https://scriptingosx.com/feed/" type="rss" text="Scripting OS X"/>
+			<outline title="sean cassidy" xmlUrl="https://www.seancassidy.me/atom.xml" type="rss" text="sean cassidy"/>
 			<outline htmlUrl="http://blog.fogus.me" title="Send More Paramedics" xmlUrl="http://blog.fogus.me/feed/" type="rss" text="Send More Paramedics"/>
 			<outline htmlUrl="https://serokell.io/blog" title="Serokell Blog" xmlUrl="https://serokell.io/blog.rss.xml" type="rss" text="Serokell Blog"/>
 			<outline htmlUrl="http://simonwillison.net/" title="Simon Willison's Weblog" xmlUrl="https://simonwillison.net/atom/everything/" type="rss" text="Simon Willison's Weblog"/>
