@@ -10,6 +10,7 @@
 			<outline title="-" xmlUrl="index.rss" type="rss" text="-"/>
 			<outline title="-" xmlUrl="http:&amp;#x2F;&amp;#x2F;cliffle.com&amp;#x2F;rss.xml" type="rss" text="-"/>
 			<outline htmlUrl="https://reconlearn.org/" title="reconlearn.org" xmlUrl="https://reconlearn.org/index.xml" type="rss" text="reconlearn.org"/>
+			<outline title="-" xmlUrl="../feed.xml" type="rss" text="-"/>
 			<outline htmlUrl="http://writequit.org/" title="(:wq - Feed)" xmlUrl="https://writequit.org/posts.xml" type="rss" text="(:wq - Feed)"/>
 			<outline htmlUrl="https://www.0xroy.me/" title="0xroy’s notes" xmlUrl="https://www.0xroy.me/feed.xml" type="rss" text="0xroy’s notes"/>
 			<outline htmlUrl="https://2ality.com/" title="2ality – JavaScript and more" xmlUrl="http://feeds.feedburner.com/2ality?format=xml" type="rss" text="2ality – JavaScript and more"/>
@@ -93,6 +94,7 @@
 			<outline htmlUrl="http://ferd.ca/" title="Ferd.ca" xmlUrl="https://ferd.ca/feed.rss" type="rss" text="Ferd.ca"/>
 			<outline htmlUrl="https://blog.filippo.io/" title="Filippo.io" xmlUrl="https://blog.filippo.io/rss/" type="rss" text="Filippo.io"/>
 			<outline htmlUrl="https://www.tfeb.org/fragments/index.html" title="Fragments: Fragments" xmlUrl="https://tfeb.org/fragments/feeds/all.rss.xml" type="rss" text="Fragments: Fragments"/>
+			<outline htmlUrl="http://fmnt.info/" title="Francesco Montanari" xmlUrl="http://fmnt.info/feed/atom.xml" type="rss" text="Francesco Montanari"/>
 			<outline htmlUrl="https://freakonometrics.hypotheses.org" title="Freakonometrics" xmlUrl="https://freakonometrics.hypotheses.org/feed" type="rss" text="Freakonometrics"/>
 			<outline htmlUrl="http://freerangestats.info" title="free range statistics" xmlUrl="http://freerangestats.info/feed.xml" type="rss" text="free range statistics"/>
 			<outline htmlUrl="http://www.geekabyte.io/" title="geekAbyte" xmlUrl="https://www.geekabyte.io/feeds/posts/default" type="rss" text="geekAbyte"/>
@@ -166,6 +168,7 @@
 			<outline htmlUrl="https://ekaschalk.github.io/" title="Modern Emacs on Modern Emacs" xmlUrl="https://ekaschalk.github.io/index.xml" type="rss" text="Modern Emacs on Modern Emacs"/>
 			<outline htmlUrl="https://morgenthum.dev" title="morgenthum.dev - software development and architecture" xmlUrl="https://morgenthum.dev/rss.xml" type="rss" text="morgenthum.dev - software development and architecture"/>
 			<outline htmlUrl="http://www.mostlymaths.net/" title="Mostly Maths" xmlUrl="https://www.mostlymaths.net/feeds/posts/default" type="rss" text="Mostly Maths"/>
+			<outline htmlUrl="http://notes.eatonphil.com/" title="My notes" xmlUrl="http://notes.eatonphil.com/rss.xml" type="rss" text="My notes"/>
 			<outline htmlUrl="https://ngoldbaum.github.io/" title="Nathan Goldbaum" xmlUrl="https://ngoldbaum.github.io/index.xml" type="rss" text="Nathan Goldbaum"/>
 			<outline htmlUrl="https://nedbatchelder.com/blog" title="Ned Batchelder's blog" xmlUrl="https://nedbatchelder.com/blog/rss.xml" type="rss" text="Ned Batchelder's blog"/>
 			<outline htmlUrl="https://nibblestew.blogspot.com/" title="Nibble Stew - a gathering of development thoughts" xmlUrl="https://nibblestew.blogspot.com/feeds/posts/default" type="rss" text="Nibble Stew - a gathering of development thoughts"/>
@@ -203,6 +206,7 @@
 			<outline htmlUrl="https://racket-news.com/index.html" title="Racket News: Racket News" xmlUrl="https://racket-news.com/feeds/all.rss.xml" type="rss" text="Racket News: Racket News"/>
 			<outline htmlUrl="https://radfordneal.wordpress.com" title="Radford Neal's blog" xmlUrl="http://radfordneal.wordpress.com/feed/" type="rss" text="Radford Neal's blog"/>
 			<outline htmlUrl="https://www.benrady.com/" title="Radyology" xmlUrl="https://www.benrady.com/atom.xml" type="rss" text="Radyology"/>
+			<outline htmlUrl="https://blog.jessfraz.com/" title="Ramblings from Jessie" xmlUrl="https://blog.jessfraz.com/index.xml" type="rss" text="Ramblings from Jessie"/>
 			<outline htmlUrl="https://rambo.codes" title="Rambo Codes" xmlUrl="https://rambo.codes/feed.xml" type="rss" text="Rambo Codes"/>
 			<outline htmlUrl="http://morrick.me" title="Riccardo Mori" xmlUrl="http://morrick.me/feed" type="rss" text="Riccardo Mori"/>
 			<outline htmlUrl="https://www.robinsloan.com/notes/" title="Robin's blog" xmlUrl="https://feeds.feedburner.com/robinsloan" type="rss" text="Robin's blog"/>
