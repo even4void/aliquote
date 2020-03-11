@@ -26,9 +26,9 @@ pygmentsCodefencesGuessSyntax = true
   name = "chl"
 
 [params]
-	subtitle = "< a quantity that can be divided into another a whole number of time />"
+    subtitle = "< a quantity that can be divided into another a whole number of time />"
     mainSections = ["tweet"]
-	featherIconsCDN = true
+    featherIconsCDN = true
     wc = true
 
 [outputs]
