@@ -91,7 +91,7 @@ In the above statement, `none-none-none-raxml_default` means that we use no alig
 
 ![raxml-tree](/img/OG0000007_a.fa.final_tree.png)
 
-We can compare this tree with the one built by Orthofinder using `ete3 compare`. We will first need to match the labels in both trees:
+As can be seen, there's some room for improvement since the alignment appears quite bad. That being said, we can still compare this tree with the one built by Orthofinder using `ete3 compare`. We will first need to match the labels in both trees:
 
 ```shell
 $ cd OG0000007
