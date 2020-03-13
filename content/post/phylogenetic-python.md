@@ -1,7 +1,7 @@
 ---
 title: "Phylogenetic analysis using Python"
 date: 2020-03-11T20:29:05+01:00
-draft: true
+draft: false
 tags: ["bioinformatics", "python"]
 categories: ["2020"]
 ---
@@ -37,7 +37,7 @@ A tree in Newick format should also be available in the `Species_Tree/` subdirec
 $ ete3 view -t Species_Tree/SpeciesTree_rooted.txt
 ```
 
-![](/img/2020-03-12-10-08-17.png)
+![species-tree](/img/2020-03-12-10-08-17.png)
 
 Note, however, that is the "final" species tree, and not gene trees that could potentially be produced on aligned sequences (but see the `Gene_Trees` subdirectory). Fortunately, all orthologous sequences are available in Fasta format in the `Single_Copy_Orthologue_Sequences` subdirectory. Two examples of such a gene tree are shown below (click to enlarge).
 
@@ -76,7 +76,7 @@ MAEQKRDYYEVLGITPDADQ
 MAKQDFYKILGVEKSASLTE
 ```
 
-We can perform a multiple alignment of those sequences using MAFFT, and build a tree directly using ETE3 and the Fasttree workflow:
+We can perform a multiple alignment of those sequences using MAFFT, and build a tree directly using ETE3 and the Fasttree or RaxML workflow:
 
 ```shell
 $ mafft OG0000007.fa > OG0000007_a.fa
@@ -89,7 +89,7 @@ $ ete3 view -t OG0000007/OG0000007_a.fa.final_tree.nw
 
 In the above statement, `none-none-none-raxml_default` means that we use no aligner, no trimmer, no (model) tester, and the RaxML utility with default settings. Here's the output of our manual tree reconstruction:
 
-![](/img/OG0000007_a.fa.final_tree.png)
+![raxml-tree](/img/OG0000007_a.fa.final_tree.png)
 
 We can compare this tree with the one built by Orthofinder using `ete3 compare`. We will first need to match the labels in both trees:
 
@@ -99,9 +99,6 @@ $ cp ../../Gene_Trees/OG0000007_tree.txt .
 $ gsed -i 's/|/-/g' OG0000007_tree.txt
 $ gsed -i -E 's/Mycoplasma_[a-z]+_//g' OG0000007_tree.txt
 $ ete3 compare -t none-none-none-raxml_default/OG0000007_a.fa.final_tree.nw -r OG0000007_tree.txt
-source          | ref             | E.size  | nRF     | RF      | maxRF   | src-br+ | ref-br+ | subtre+ | treekoD
-==============+ | ==============+ | ======+ | ======+ | ======+ | ======+ | ======+ | ======+ | ======+ | ======+
-(..)l_default/+ | (..)            | 11      | 0.89    | 16.00   | 18.00   | 0.11    | 0.11    | 1       | NA
 ```
 
 [^1]: Jaime Huerta-Cepas, Joaquín Dopazo and Toni Gabaldón. [ETE: a Python Environment for Tree Exploration](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2820433/). _BMC Bioinformatics_ 2010, 11:24.

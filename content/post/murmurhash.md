@@ -1,7 +1,7 @@
 ---
 title: "Murmurhash"
 date: 2020-03-12T12:07:48+01:00
-draft: true
+draft: false
 tags: ["scheme", "clang"]
 categories: ["2020"]
 ---
@@ -42,6 +42,33 @@ Here is what I got using R, which also implements MurmurHash3 for 32/128 bit (x8
 
 This also happens to be 1,498,610,893 in decimal notation.
 
-Now, let's write some Scheme wrapper to use this little C procedure:
+Now, let's write some Scheme wrapper to use this little C procedure, while trying to handle [C types](http://wiki.call-cc.org/man/4/Foreign%20type%20specifiers) correctly: an `uint_8` is an unsigned char, or a foreign `blob` in case it is just a pointer, while an `uint32_t` corresponds to an unsigned int (4 bytes). And so, we get the following piece of code:
+
+```scheme
+(import (chicken foreign)
+        (chicken format))
+
+#>
+  extern uint32_t murmur3_32(const uint8_t* key, size_t len, uint32_t seed);
+<#
+
+(define m32 (foreign-lambda unsigned-int32 "murmur3_32" blob size_t unsigned-int32))
+
+(printf "~A " (m32 "murmur" 6 101))
+```
+
+But first, we need to compile the core [C functions](/pub/lib-m32.c) (no need for a shared library, though):
+
+```shell
+$ cc -c lib-m32.c
+$ csc -o m32 lib-m32.o m32.scm
+```
+
+And finally:
+
+```shell
+$ ./m32
+1498610893
+```
 
 [^1]: Edgar, R. C. (2020). [URMAP, an ultra-fast read mapper](https://www.biorxiv.org/content/10.1101/2020.01.12.903351v1). bioRxiv
