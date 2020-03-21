@@ -1,4 +1,3 @@
-# -*- ispell-dictionary: "french" -*-
 
 * 2013
 - Haruki Murakami, 1Q84 Tome 3 (Belfond)
