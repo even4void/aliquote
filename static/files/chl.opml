@@ -209,6 +209,7 @@
 			<outline htmlUrl="https://blog.jessfraz.com/" title="Ramblings from Jessie" xmlUrl="https://blog.jessfraz.com/index.xml" type="rss" text="Ramblings from Jessie"/>
 			<outline htmlUrl="https://rambo.codes" title="Rambo Codes" xmlUrl="https://rambo.codes/feed.xml" type="rss" text="Rambo Codes"/>
 			<outline htmlUrl="http://morrick.me" title="Riccardo Mori" xmlUrl="http://morrick.me/feed" type="rss" text="Riccardo Mori"/>
+			<outline htmlUrl="https://robjhyndman.com/" title="Rob J Hyndman" xmlUrl="http://feeds.feedburner.com/ProfessorRobJHyndman" type="rss" text="Rob J Hyndman"/>
 			<outline htmlUrl="https://www.robinsloan.com/notes/" title="Robin's blog" xmlUrl="https://feeds.feedburner.com/robinsloan" type="rss" text="Robin's blog"/>
 			<outline htmlUrl="http://blog.rongarret.info/" title="Rondam Ramblings" xmlUrl="http://blog.rongarret.info/feeds/posts/default" type="rss" text="Rondam Ramblings"/>
 			<outline htmlUrl="https://rud.is/b" title="rud.is" xmlUrl="https://rud.is/b/feed/" type="rss" text="rud.is"/>
@@ -230,11 +231,13 @@
 			<outline htmlUrl="http://stevenrosenberg.net/blog/music/guitar/" title="Steven Rosenberg" xmlUrl="http://stevenrosenberg.net/blog/index.rss2" type="rss" text="Steven Rosenberg"/>
 			<outline htmlUrl="https://multithreaded.stitchfix.com/" title="Stitch Fix Technology – Multithreaded" xmlUrl="https://multithreaded.stitchfix.com/feed.xml" type="rss" text="Stitch Fix Technology – Multithreaded"/>
 			<outline htmlUrl="https://stratechery.com" title="Stratechery by Ben Thompson" xmlUrl="http://stratechery.com/feed/" type="rss" text="Stratechery by Ben Thompson"/>
+			<outline htmlUrl="http://www.strchr.com" title="strchr.com updates" xmlUrl="https://www.strchr.com/?feed=/" type="rss" text="strchr.com updates"/>
 			<outline htmlUrl="https://technomancy.us/" title="Technomancy" xmlUrl="http://technomancy.us/feed/atom.xml" type="rss" text="Technomancy"/>
 			<outline htmlUrl="https://tapoueh.org/" title="The Art of PostgreSQL" xmlUrl="https://tapoueh.org/index.xml" type="rss" text="The Art of PostgreSQL"/>
 			<outline htmlUrl="https://alex-hhh.github.io/index.html" title="The Blog of Alex Harsányi: The Blog of Alex Harsányi" xmlUrl="https://alex-hhh.github.io/feeds/all.rss.xml" type="rss" text="The Blog of Alex Harsányi: The Blog of Alex Harsányi"/>
 			<outline htmlUrl="https://floooh.github.com/" title="The Brain Dump" xmlUrl="https://floooh.github.com/feed.xml" type="rss" text="The Brain Dump"/>
 			<outline htmlUrl="http://blog.cleancoder.com/" title="The Clean Code Blog" xmlUrl="http://blog.cleancoder.com/atom.xml" type="rss" text="The Clean Code Blog"/>
+			<outline htmlUrl="https://thedorkweb.substack.com" title="The Dork Web" xmlUrl="https://thedorkweb.substack.com/feed/" type="rss" text="The Dork Web"/>
 			<outline htmlUrl="https://chris-said.io/" title="The File Drawer" xmlUrl="https://chris-said.io/atom.xml" type="rss" text="The File Drawer"/>
 			<outline htmlUrl="http://blog.thegrandlocus.com/" title="The Grand Locus" xmlUrl="http://feeds.feedburner.com/TheGrandLocus?format=xml" type="rss" text="The Grand Locus"/>
 			<outline htmlUrl="http://calculist.org/" title="The Little Calculist" xmlUrl="http://calculist.org/feed.xml" type="rss" text="The Little Calculist"/>
@@ -247,6 +250,7 @@
 			<outline htmlUrl="https://mailund.github.io/r-programmer-blog/" title="The Working R Programmer" xmlUrl="https://mailund.github.io/r-programmer-blog/index.xml" type="rss" text="The Working R Programmer"/>
 			<outline htmlUrl="https://thomashoneyman.com/" title="Thomas Honeyman" xmlUrl="https://thomashoneyman.com/index.xml" type="rss" text="Thomas Honeyman"/>
 			<outline htmlUrl="http://thorstenball.com/" title="Thorsten Ball" xmlUrl="https://thorstenball.com/atom.xml" type="rss" text="Thorsten Ball"/>
+			<outline htmlUrl="https://meyerweb.com/eric/thoughts" title="Thoughts From Eric" xmlUrl="https://meyerweb.com/eric/thoughts/rss2/full" type="rss" text="Thoughts From Eric"/>
 			<outline htmlUrl="https://irrlab.com" title="thoughts…" xmlUrl="https://irrlab.com/feed/" type="rss" text="thoughts…"/>
 			<outline htmlUrl="http://bactra.org/weblog/" title="Three-Toed Sloth" xmlUrl="http://bactra.org/weblog/index.rss" type="rss" text="Three-Toed Sloth"/>
 			<outline htmlUrl="https://www.parsonsmatt.org" title="To Overcome" xmlUrl="https://www.parsonsmatt.org/feed.xml" type="rss" text="To Overcome"/>
@@ -277,7 +281,7 @@
 			<outline htmlUrl="https://christiantietze.de/" title="Worklog of Christian Tietze" xmlUrl="https://christiantietze.de/feed.atom" type="rss" text="Worklog of Christian Tietze"/>
 			<outline htmlUrl="http://www.linusakesson.net/" title="www.linusakesson.net" xmlUrl="http://www.linusakesson.net/rssfeed.php" type="rss" text="www.linusakesson.net"/>
 			<outline htmlUrl="https://lispblog.xach.com/" title="Zach Beane Common Lisp" xmlUrl="https://lispblog.xach.com/rss" type="rss" text="Zach Beane Common Lisp"/>
-			<outline htmlUrl="http://manuel-uberti.github.io" title="{{ site.title | xml_escape }}" xmlUrl="https://manuel-uberti.github.io/feed.xml" type="rss" text="{{ site.title | xml_escape }}"/>
+			<outline htmlUrl="https://www.manueluberti.eu" title="{{ site.title | xml_escape }}" xmlUrl="https://manuel-uberti.github.io/feed.xml" type="rss" text="{{ site.title | xml_escape }}"/>
 			<outline htmlUrl="https://lthms.xyz" title="~lthms" xmlUrl="https://lthms.xyz/rss" type="rss" text="~lthms"/>
 		</outline>
 	</body>
