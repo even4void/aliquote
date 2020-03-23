@@ -151,6 +151,7 @@
 			<outline htmlUrl="https://macwright.org" title="macwright.org" xmlUrl="https://macwright.org/rss.xml" type="rss" text="macwright.org"/>
 			<outline htmlUrl="https://blog.nelhage.com/" title="Made of Bugs" xmlUrl="https://blog.nelhage.com/atom.xml" type="rss" text="Made of Bugs"/>
 			<outline htmlUrl="https://www.manton.org/" title="Manton Reece" xmlUrl="https://www.manton.org/feed.xml" type="rss" text="Manton Reece"/>
+			<outline htmlUrl="http://brooker.co.za/blog/" title="Marc Brooker's Blog" xmlUrl="http://brooker.co.za/blog/rss.xml" type="rss" text="Marc Brooker's Blog"/>
 			<outline htmlUrl="http://mbork.pl/Homepage" title="Marcin Borkowski: Homepage" xmlUrl="http://mbork.pl?action=rss" type="rss" text="Marcin Borkowski: Homepage"/>
 			<outline htmlUrl="https://marco.org/" title="Marco.org" xmlUrl="http://marco.org/rss" type="rss" text="Marco.org"/>
 			<outline htmlUrl="http://blog.markwatson.com/" title="Mark Watson's artificial intelligence and machine learning blog" xmlUrl="http://blog.markwatson.com/feeds/posts/default" type="rss" text="Mark Watson's artificial intelligence and machine learning blog"/>
