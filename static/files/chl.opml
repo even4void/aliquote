@@ -157,6 +157,7 @@
 			<outline htmlUrl="http://blog.markwatson.com/" title="Mark Watson's artificial intelligence and machine learning blog" xmlUrl="http://blog.markwatson.com/feeds/posts/default" type="rss" text="Mark Watson's artificial intelligence and machine learning blog"/>
 			<outline htmlUrl="https://martinfowler.com" title="Martin Fowler" xmlUrl="https://martinfowler.com/feed.atom" type="rss" text="Martin Fowler"/>
 			<outline htmlUrl="https://martinheinz.dev/rss.xml" title="Martin Heinz's Blog" xmlUrl="https://martinheinz.dev/rss/" type="rss" text="Martin Heinz's Blog"/>
+			<outline title="Martin Thoma" xmlUrl="https://martin-thoma.com/feeds/index.xml" type="rss" text="Martin Thoma"/>
 			<outline htmlUrl="https://jeremykun.com" title="Math ∩ Programming" xmlUrl="https://jeremykun.com/feed/" type="rss" text="Math ∩ Programming"/>
 			<outline htmlUrl="https://mathematicaforprediction.wordpress.com" title="Mathematica for prediction algorithms" xmlUrl="https://mathematicaforprediction.wordpress.com/feed/" type="rss" text="Mathematica for prediction algorithms"/>
 			<outline htmlUrl="https://mattbaker.blog" title="Matt Baker's Math Blog" xmlUrl="https://mattbaker.blog/feed/" type="rss" text="Matt Baker's Math Blog"/>
