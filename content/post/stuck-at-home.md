@@ -8,7 +8,7 @@ categories: ["2020"]
 
 I'm stuck at home because of the thing you all know. I would not normally regard this as something very cumbersome since I spend most of my time at home anyway, and I used to work at home a lot. However, I got a new position last year, and I had to get used to working in a lab all day. Now I find it hard to motivate myself to work alone at home. No worry, this is just me and once I'll find a side project that keep me busy, I will soon get back to professional work.
 
-Second case in point is that I now have to schedule groceries in a very digilent way: I need to buy enough for 10 or 15 days, and I must avoid the crowd, because I don't give a lot of my skin if I catch something right now, considering the state of hospital emergencies in this country (aggravated ischemic cardiomyopathies could become quite a big deal, at anytime).
+Second case in point is that I now have to schedule groceries in a very digilent way: I need to buy enough for 10 or 15 days, and I must avoid the crowd, because I don't give a lot of my skin if I catch something right now, considering the state of hospital emergencies in this country (and given that my current condition could become quite a big deal, at anytime).
 
 That being said, I'm fine. I'm with my son for the quarantine, he's doing good and I happily spend most of time helping him with his homeworks, cooking and reading (lot of) books. Luckily we have plenty of TV shows to watch. We already finished Season 6 of [The 100](<https://en.wikipedia.org/wiki/The_100_(TV_series)>), and we will probably get back to the [Black List](<https://en.wikipedia.org/wiki/The_Blacklist_(TV_series)>) this evening (3 seasons left, plus some remaining episodes from Season 4).
 
