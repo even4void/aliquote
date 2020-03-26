@@ -1,6 +1,6 @@
 ---
 title: "Now"
-date: 2020-02-24T09:46:00+01:00
+date: 2020-03-26T07:46:00+01:00
 url: "/now"
 type: "now"
 ---
@@ -9,14 +9,18 @@ I stopped posting or bookmarking on Twitter, and became a ghost, almost everywhe
 
 ---
 
-I am (still) learning about fungi genetics while trying to improve my bioinformatics skills. At a paceful rate, of course. After 10 years of medical statistics, it quite hurts but I like the idea. It's good that I can exploit my technical knowledge in a new domain, while being supported by good scientists. In a nutshell, back to the lab after 15 years in roaming mode.
+I am (still) diving into bioinformatics using Python and whatever nifty command-line tools I can find to perform {D|R}NA mapping, genome assembly and phylogenetic tree reconstruction using bayesian approaches. At a paceful rate, of course. Medical statistics are way behind but I'm keeping an eye out.
 
 Top activities of the moment:
 
-- Recent [reads](/files/books.txt) include Georges Perec, Rimbaud but I am still re-reading several of the old books I used to like a lot when I was 20.
-- No more design stuff for the website: I like it as it is (I may add a dark mode at some point). I shall concentrate on adding new content more or less regularly.
-- Diving into population genetics and bayesian phylogenetic tree reconstruction.
-- Cooking.
+- Recent [reads](/files/books.txt) include lot of stuff, because I'm working at home and Twitter is too depressing these days.
+- Still learning about population genetics and bayesian phylogenetic tree reconstruction. Also Graph theory, Django, Docker, H2O, and modern C.
+- Enjoying Lisp and Scheme more and more. Yet a lot to learn.
+- 53 days uptime, mostly Emacs and a web browser, thousands of micro-posts --- Macbook 12″ from 2016 still alive.
+
+  ![](/img/2020-03-26-08-26-45.png)
+
+- Cooking (unchanged).
 
 {{< fluid_imgs "pure-u-1-3|/img/IMG_0848.jpg"
                "pure-u-1-3|/img/IMG_0876.jpg"

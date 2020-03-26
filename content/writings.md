@@ -11,18 +11,21 @@ If you are looking for my old teaching ressources, almost everything should be o
 
 ## Current work (so called [wip](https://en.wikipedia.org/wiki/Work_in_process))
 
-I yet have to find something to write, you know something that will last forever -- but never ending. In the meantime, check my Github in case you find something of potential interest.
+I yet have to find something to write, you know something that will last forever --- but never ending. In the meantime, check my Github in case you find something of potential interest.
 
 ## Past work (also called mostly [defunct](https://en.wiktionary.org/wiki/defunct))
 
 - [Stata Starter Kit](/articles/stata-sk/) (HTML, #fr)<br>
   _A series of standalone modules to learn a bit of Stata, for those who might be interested._
 
+- [Introduction au logiciel Stata](/files/intro-stata.pdf) (PDF, #fr)<br>
+  _An introduction to Stata for data manipulation and statistical computing._
+
 - [Statistics for Clinical Trials: Applications Using R](/files/SAS2R.pdf) (PDF)<br>
   _A short tutorial on using R to perform common statistical analysis à la SAS._
 
 - [Introduction au logiciel R](/files/intro-r.pdf) (PDF, #fr)<br>
-  _An introduction to [R](https://cran.r-project.org/) for data manipulation and statistical computing._
+  _An introduction to R for data manipulation and statistical computing._
 
 - [A Visual Guide to R Graphics and Data Mungling](/files/vizRguide.pdf) (PDF)<br>
   _A small cookbook for [lattice](https://cran.r-project.org/package=lattice) and [ggplot2](https://cran.r-project.org/package=ggplot2) graphics._
