@@ -25,7 +25,7 @@
 			<outline htmlUrl="http://amitp.blogspot.com/" title="Amit's Thoughts" xmlUrl="http://amitp.blogspot.com/feeds/posts/default" type="rss" text="Amit's Thoughts"/>
 			<outline htmlUrl="https://blog.klipse.tech//" title="An interactive journey into functional programming with Yehonathan Sharvit" xmlUrl="https://blog.klipse.tech//feed.xml" type="rss" text="An interactive journey into functional programming with Yehonathan Sharvit"/>
 			<outline htmlUrl="https://leancrew.com/all-this/" title="And now it’s all this" xmlUrl="https://leancrew.com/all-this/feed/" type="rss" text="And now it’s all this"/>
-			<outline title="AndreGarzia.com: AndreGarzia.com" xmlUrl="https://andregarzia.com/feeds/all.rss.xml" type="rss" text="AndreGarzia.com: AndreGarzia.com"/>
+			<outline htmlUrl="https://andregarzia.com/index.html" title="AndreGarzia.com: AndreGarzia.com" xmlUrl="https://andregarzia.com/feeds/all.rss.xml" type="rss" text="AndreGarzia.com: AndreGarzia.com"/>
 			<outline htmlUrl="https://andrewpwheeler.com" title="Andrew Wheeler" xmlUrl="https://andrewpwheeler.wordpress.com/feed/" type="rss" text="Andrew Wheeler"/>
 			<outline htmlUrl="https://annoying.technology/" title="Annoying Technology" xmlUrl="https://annoying.technology/index.xml" type="rss" text="Annoying Technology"/>
 			<outline htmlUrl="https://machinelearning.apple.com/" title="Apple Machine Learning Journal" xmlUrl="https://machinelearning.apple.com/feed.xml" type="rss" text="Apple Machine Learning Journal"/>
@@ -216,6 +216,7 @@
 			<outline htmlUrl="https://www.robinsloan.com/notes/" title="Robin's blog" xmlUrl="https://feeds.feedburner.com/robinsloan" type="rss" text="Robin's blog"/>
 			<outline htmlUrl="http://blog.rongarret.info/" title="Rondam Ramblings" xmlUrl="http://blog.rongarret.info/feeds/posts/default" type="rss" text="Rondam Ramblings"/>
 			<outline htmlUrl="https://rud.is/b" title="rud.is" xmlUrl="https://rud.is/b/feed/" type="rss" text="rud.is"/>
+			<outline htmlUrl="https://sagegerard.com" title="SageGerard.com" xmlUrl="https://sagegerard.com/index.rss.xml" type="rss" text="SageGerard.com"/>
 			<outline htmlUrl="https://www.hanselman.com/blog/" title="Scott Hanselman's Blog" xmlUrl="http://feeds.hanselman.com/ScottHanselman" type="rss" text="Scott Hanselman's Blog"/>
 			<outline htmlUrl="https://scriptingosx.com" title="Scripting OS X" xmlUrl="https://scriptingosx.com/feed/" type="rss" text="Scripting OS X"/>
 			<outline htmlUrl="https://www.seancassidy.me/" title="sean cassidy" xmlUrl="https://www.seancassidy.me/atom.xml" type="rss" text="sean cassidy"/>
@@ -236,6 +237,7 @@
 			<outline htmlUrl="https://stratechery.com" title="Stratechery by Ben Thompson" xmlUrl="http://stratechery.com/feed/" type="rss" text="Stratechery by Ben Thompson"/>
 			<outline htmlUrl="http://www.strchr.com" title="strchr.com updates" xmlUrl="https://www.strchr.com/?feed=/" type="rss" text="strchr.com updates"/>
 			<outline htmlUrl="https://technomancy.us/" title="Technomancy" xmlUrl="http://technomancy.us/feed/atom.xml" type="rss" text="Technomancy"/>
+			<outline htmlUrl="https://toroid.org/etc" title="The Advisory Boar" xmlUrl="https://toroid.org/etc/index.atom" type="rss" text="The Advisory Boar"/>
 			<outline htmlUrl="https://tapoueh.org/" title="The Art of PostgreSQL" xmlUrl="https://tapoueh.org/index.xml" type="rss" text="The Art of PostgreSQL"/>
 			<outline htmlUrl="https://alex-hhh.github.io/index.html" title="The Blog of Alex Harsányi: The Blog of Alex Harsányi" xmlUrl="https://alex-hhh.github.io/feeds/all.rss.xml" type="rss" text="The Blog of Alex Harsányi: The Blog of Alex Harsányi"/>
 			<outline htmlUrl="https://floooh.github.com/" title="The Brain Dump" xmlUrl="https://floooh.github.com/feed.xml" type="rss" text="The Brain Dump"/>
