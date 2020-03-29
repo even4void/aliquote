@@ -1,7 +1,7 @@
 ---
 title: "ArXiving on March 2020"
-date: 2020-03-28T20:19:25+01:00
-draft: true
+date: 2020-03-29T08:19:25+01:00
+draft: false
 tags: ["readings", "arxiv"]
 categories: ["2020"]
 ---
@@ -23,3 +23,11 @@ I've read several papers or arXiv reviews on probabilistic programming (PP) late
 **Related threads:** [A tour of probabilistic programming language APIs](https://colcarroll.github.io/ppl-api/), [Probabilistic programming with Monad-Bayes](/micro/2019-09-23-10-41-10/).
 
 ## A Survey of Deep Learning for Scientific Discovery [arXiv:2003.11755v1](https://arxiv.org/abs/2003.11755v1)
+
+This review is structured along two ideas: to provide an overview of many widely used deep learning models, spanning visual (CNNs), sequential (RNNs) and graph structured data, associated tasks (image segmentation, super-resolution, sequence to sequence mappings and many others) and different training methods, and to highlight techniques that use deep learning (DL) with less data (e.g., self-supervision or semi-supervised learning) and better interpret these complex models. In my own view, DL is a useful technique when some kind of regularities can be exploited in the data --- including bias if any, and when the training size is large. This generally holds in the case of pattern recognition tasks like NLP or image processing, but I remain sceptical about the application of this type of model in tasks for which more traditional supervised methods (e.g., logistic regression) would be just as suitable. There are also lot of links regarding tutorials and software, that are not necessarily limited to DL.
+
+![](/img/2020-03-29-09-00-19.png)
+
+## Reinforcement Learning in Economics and Finance [arXiv:2003.10014v1](https://arxiv.org/abs/2003.10014)
+
+I have no competency in finance, and I barely have notions in economics, but I always enjoy reading one of Arthur Charpentier's review, for they are always very picky and highly anchored in historical considerations. The last one I read was about [Machine Learning](https://arxiv.org/abs/1708.06992), and it was really englightening. I am in the middle of the present review, and I already learned a lot on the parallel between traditional ML and RL with respect to loss (regret) minimizaetion, bandits, dynamic programming, or even [Thompson sampling](https://en.wikipedia.org/wiki/Thompson_sampling) strategy.
