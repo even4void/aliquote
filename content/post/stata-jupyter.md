@@ -32,9 +32,11 @@ Available kernels:
 
 That being said, the usual thing to do is to run Jupyter in your preferred terminal, like we did for years with IPython (which still works fine by the way), using, e.g., `jupyter console` (which is equivalent to `jupyter-console)` or `jupyter qtconsole` if you want a more capable console, which allows among other things to display graphics inside the terminal. You can specify a different kernel using `jupyter console --kernel stata` (or `--kernel ir` for [R](https://irkernel.github.io/running/)), provided you installed the [Stata kernel](https://kylebarron.dev/stata_kernel/). Here is a little illustration when a Qt console is launched as `jupyter qtconsole --kernel stata --no-banner`:
 
-![](/img/2020-03-31-20-02-16.png)
+{{< fluid_imgs "pure-u-1-2|/img/2020-04-01-10-06-49.png" >}}
 
-Of note, you will need Stata 14+ to display graphics in the QT console as there's no PNG or SVG backend in earlier versions of Stata. Regarding Jupyter in standard console mode, you don't really need a colorized prompt, so let's go for a [simple prompt](https://github.com/jupyter/jupyter_console/issues/156).[^1] In the end, our incanting command should look like this:
+Autocompletion is available for some optional command arguments, which is pretty nice, as shown on the left in the above screenshots. There are also some ["magic" commands](https://kylebarron.dev/stata_kernel/using_stata_kernel/magics/) (e.g., `%help` or `%locals`), but not everything is actually working in the QT console. Of note, you will need Stata 14+ to display graphics in the QT console as there's no PNG or SVG backend in earlier versions of Stata.
+
+Regarding Jupyter in standard console mode, you don't really need a colorized prompt, so let's go for a [simple prompt](https://github.com/jupyter/jupyter_console/issues/156).[^1] In the end, our incanting command should look like this:
 
 ```shell
 $ jupyter console --simple-prompt --kernel stata
