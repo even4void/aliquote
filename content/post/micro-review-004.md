@@ -38,7 +38,7 @@ _Blog rolling_:
 
 - [Computational survivalist](http://feedproxy.google.com/~r/TheEndeavour/~3/FlB6bwZIEcA/). The last point is very well put:
 
-      > I’m more sympathetic to minimalism than survivalism. You can be more productive by learning to use a small set of tools well than by hacking away with a large set of tools you hardly know how to use.
+  > I’m more sympathetic to minimalism than survivalism. You can be more productive by learning to use a small set of tools well than by hacking away with a large set of tools you hardly know how to use.
 
 - [Combining automatically factor levels with trees](https://freakonometrics.hypotheses.org/58446). It's getting rarer that I read posts on R, the language. However, from time to time I came across some posts I used to like, you know, those posts where you get both the code and some pretty figures around.
 
