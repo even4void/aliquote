@@ -62,6 +62,7 @@
 			<outline htmlUrl="https://codeandculture.wordpress.com" title="Code and Culture" xmlUrl="http://codeandculture.wordpress.com/feed/" type="rss" text="Code and Culture"/>
 			<outline htmlUrl="https://gilkalai.wordpress.com" title="Combinatorics and more" xmlUrl="https://gilkalai.wordpress.com/feed/" type="rss" text="Combinatorics and more"/>
 			<outline htmlUrl="https://lisptips.com/" title="Common Lisp Tips" xmlUrl="https://lisptips.com/rss" type="rss" text="Common Lisp Tips"/>
+			<outline htmlUrl="https://lispnews.wordpress.com" title="Common Lisp Weekly News" xmlUrl="https://lispnews.wordpress.com/feed/" type="rss" text="Common Lisp Weekly News"/>
 			<outline htmlUrl="http://corte.si" title="cortesi" xmlUrl="http://corte.si/rss.xml" type="rss" text="cortesi"/>
 			<outline htmlUrl="https://danluu.com/atom/index.xml" title="Dan Luu" xmlUrl="https://danluu.com/atom.xml" type="rss" text="Dan Luu"/>
 			<outline htmlUrl="https://lemire.me/blog" title="Daniel Lemire's blog" xmlUrl="https://lemire.me/blog/feed/" type="rss" text="Daniel Lemire's blog"/>
@@ -141,7 +142,7 @@
 			<outline htmlUrl="http://lambda-the-ultimate.org" title="Lambda the Ultimate - Programming Languages Weblog" xmlUrl="http://lambda-the-ultimate.org/rss.xml" type="rss" text="Lambda the Ultimate - Programming Languages Weblog"/>
 			<outline htmlUrl="https://leahneukirchen.org/blog" title="leah blogs" xmlUrl="https://leahneukirchen.org/blog/index.atom" type="rss" text="leah blogs"/>
 			<outline htmlUrl="https://alhassy.github.io/" title="Life &amp; Computing Science" xmlUrl="https://alhassy.github.io/feed.xml" type="rss" text="Life &amp; Computing Science"/>
-			<outline title="Lisp, the Universe and Everything" xmlUrl="http://lisp-univ-etc.blogspot.com/feeds/posts/default/-/en" type="rss" text="Lisp, the Universe and Everything"/>
+			<outline htmlUrl="http://lisp-univ-etc.blogspot.com/search/label/en" title="Lisp, the Universe and Everything" xmlUrl="http://lisp-univ-etc.blogspot.com/feeds/posts/default/-/en" type="rss" text="Lisp, the Universe and Everything"/>
 			<outline htmlUrl="https://lisper.in/" title="Lisper.in" xmlUrl="https://lisper.in/feed.xml" type="rss" text="Lisper.in"/>
 			<outline htmlUrl="http://www.lispology.com/show?JHE" title="Lispology" xmlUrl="http://www.lispology.com/rss?JHE+3" type="rss" text="Lispology"/>
 			<outline htmlUrl="http://www.lostgarden.com/" title="Lost Garden" xmlUrl="http://www.lostgarden.com/feeds/posts/default" type="rss" text="Lost Garden"/>
@@ -201,6 +202,7 @@
 			<outline htmlUrl="https://www.travishinkelman.com/posts/" title="Posts on Travis Hinkelman" xmlUrl="https://www.travishinkelman.com/post/index.xml" type="rss" text="Posts on Travis Hinkelman"/>
 			<outline htmlUrl="https://www.greghendershott.com/tags/all.rss.xml" title="Posts tagged &quot;all&quot;" xmlUrl="https://www.greghendershott.com/feeds/all.rss.xml" type="rss" text="Posts tagged &quot;all&quot;"/>
 			<outline htmlUrl="http://pragmaticemacs.com" title="Pragmatic Emacs" xmlUrl="http://pragmaticemacs.com/feed/" type="rss" text="Pragmatic Emacs"/>
+			<outline htmlUrl="https://www.leeholmes.com/blog" title="Precision Computing" xmlUrl="https://www.leeholmes.com/blog/feed/" type="rss" text="Precision Computing"/>
 			<outline htmlUrl="https://www.allendowney.com/blog" title="Probably Overthinking It" xmlUrl="https://www.allendowney.com/blog/feed/" type="rss" text="Probably Overthinking It"/>
 			<outline htmlUrl="https://programmingisterrible.com/" title="programming is terrible" xmlUrl="https://programmingisterrible.com/rss" type="rss" text="programming is terrible"/>
 			<outline htmlUrl="https://programmingpraxis.com" title="Programming Praxis" xmlUrl="http://programmingpraxis.com/feed/" type="rss" text="Programming Praxis"/>
