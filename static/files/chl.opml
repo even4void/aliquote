@@ -63,6 +63,7 @@
 			<outline htmlUrl="https://gilkalai.wordpress.com" title="Combinatorics and more" xmlUrl="https://gilkalai.wordpress.com/feed/" type="rss" text="Combinatorics and more"/>
 			<outline htmlUrl="https://lisptips.com/" title="Common Lisp Tips" xmlUrl="https://lisptips.com/rss" type="rss" text="Common Lisp Tips"/>
 			<outline htmlUrl="https://lispnews.wordpress.com" title="Common Lisp Weekly News" xmlUrl="https://lispnews.wordpress.com/feed/" type="rss" text="Common Lisp Weekly News"/>
+			<outline htmlUrl="https://groups.google.com/d/forum/comp.lang.lisp" title="comp.lang.lisp" xmlUrl="https://groups.google.com/forum/feed/comp.lang.lisp/topics/rss.xml?num=15" type="rss" text="comp.lang.lisp"/>
 			<outline htmlUrl="http://corte.si" title="cortesi" xmlUrl="http://corte.si/rss.xml" type="rss" text="cortesi"/>
 			<outline htmlUrl="https://danluu.com/atom/index.xml" title="Dan Luu" xmlUrl="https://danluu.com/atom.xml" type="rss" text="Dan Luu"/>
 			<outline htmlUrl="https://lemire.me/blog" title="Daniel Lemire's blog" xmlUrl="https://lemire.me/blog/feed/" type="rss" text="Daniel Lemire's blog"/>
@@ -121,7 +122,7 @@
 			<outline htmlUrl="https://blogs.princeton.edu/imabandit" title="I’m a bandit" xmlUrl="https://blogs.princeton.edu/imabandit/feed/" type="rss" text="I’m a bandit"/>
 			<outline htmlUrl="https://micro.baty.net/" title="Jack Baty - the Microblog" xmlUrl="https://micro.baty.net/feed.xml" type="rss" text="Jack Baty - the Microblog"/>
 			<outline htmlUrl="https://www.baty.net/" title="Jack Baty on Jack Baty's weblog" xmlUrl="https://www.baty.net/index.xml" type="rss" text="Jack Baty on Jack Baty's weblog"/>
-			<outline htmlUrl="https://www.baty.blog" title="Jack Baty's Weblog" xmlUrl="https://www.baty.blog/feed.rss" type="rss" text="Jack Baty's Weblog"/>
+			<outline htmlUrl="https://www.copingmechanism.com" title="Jack Baty's Coping Mechanism" xmlUrl="https://www.baty.blog/feed.rss" type="rss" text="Jack Baty's Coping Mechanism"/>
 			<outline htmlUrl="https://jacobian.org/" title="Jacob Kaplan-Moss: Writing" xmlUrl="https://jacobian.org/atom/entries/" type="rss" text="Jacob Kaplan-Moss: Writing"/>
 			<outline htmlUrl="https://jakemccrary.com/" title="Jake McCrary" xmlUrl="https://feeds.feedburner.com/JakeMccrarysMusings" type="rss" text="Jake McCrary"/>
 			<outline htmlUrl="http://jakob.space/jakob.space" title="Jakob's Personal Webpage" xmlUrl="http://jakob.space/feed.xml" type="rss" text="Jakob's Personal Webpage"/>
@@ -209,6 +210,7 @@
 			<outline htmlUrl="https://www.nayuki.io/" title="Project Nayuki" xmlUrl="https://www.nayuki.io/rss20.xml" type="rss" text="Project Nayuki"/>
 			<outline htmlUrl="https://f.briatte.org/r/" title="R / Notes" xmlUrl="https://f.briatte.org/r/rss" type="rss" text="R / Notes"/>
 			<outline htmlUrl="https://rpsychologist.com/" title="R Psychologist" xmlUrl="https://feeds.feedburner.com/RPsychologist" type="rss" text="R Psychologist"/>
+			<outline htmlUrl="https://groups.google.com/d/forum/r-sig-mac" title="R Special Interest Group on Mac Development" xmlUrl="https://groups.google.com/forum/feed/r-sig-mac/topics/rss.xml?num=15" type="rss" text="R Special Interest Group on Mac Development"/>
 			<outline htmlUrl="https://racket-news.com/index.html" title="Racket News: Racket News" xmlUrl="https://racket-news.com/feeds/all.rss.xml" type="rss" text="Racket News: Racket News"/>
 			<outline htmlUrl="https://radfordneal.wordpress.com" title="Radford Neal's blog" xmlUrl="http://radfordneal.wordpress.com/feed/" type="rss" text="Radford Neal's blog"/>
 			<outline htmlUrl="https://www.benrady.com/" title="Radyology" xmlUrl="https://www.benrady.com/atom.xml" type="rss" text="Radyology"/>
@@ -237,6 +239,7 @@
 			<outline htmlUrl="https://stevelosh.com/" title="Steve Losh" xmlUrl="http://feeds2.feedburner.com/stevelosh" type="rss" text="Steve Losh"/>
 			<outline htmlUrl="http://stevenrosenberg.net/blog/music/guitar/" title="Steven Rosenberg" xmlUrl="http://stevenrosenberg.net/blog/index.rss2" type="rss" text="Steven Rosenberg"/>
 			<outline htmlUrl="https://multithreaded.stitchfix.com/" title="Stitch Fix Technology – Multithreaded" xmlUrl="https://multithreaded.stitchfix.com/feed.xml" type="rss" text="Stitch Fix Technology – Multithreaded"/>
+			<outline htmlUrl="https://stjepang.github.io/" title="Stjepan’s blog" xmlUrl="https://stjepang.github.io/feed.xml" type="rss" text="Stjepan’s blog"/>
 			<outline htmlUrl="https://stratechery.com" title="Stratechery by Ben Thompson" xmlUrl="http://stratechery.com/feed/" type="rss" text="Stratechery by Ben Thompson"/>
 			<outline htmlUrl="http://www.strchr.com" title="strchr.com updates" xmlUrl="https://www.strchr.com/?feed=/" type="rss" text="strchr.com updates"/>
 			<outline htmlUrl="https://technomancy.us/" title="Technomancy" xmlUrl="http://technomancy.us/feed/atom.xml" type="rss" text="Technomancy"/>
@@ -283,6 +286,7 @@
 			<outline htmlUrl="https://weinholt.se" title="weinholt.se" xmlUrl="https://weinholt.se/feed.xml" type="rss" text="weinholt.se"/>
 			<outline htmlUrl="https://www.wezm.net/v2" title="Wesley Moore" xmlUrl="https://www.wezm.net/feed/" type="rss" text="Wesley Moore"/>
 			<outline htmlUrl="https://nsaunders.wordpress.com" title="What You're Doing Is Rather Desperate" xmlUrl="http://nsaunders.wordpress.com/feed/" type="rss" text="What You're Doing Is Rather Desperate"/>
+			<outline htmlUrl="https://terrytao.wordpress.com" title="What's new" xmlUrl="https://terrytao.wordpress.com/feed/" type="rss" text="What's new"/>
 			<outline htmlUrl="https://willschenk.com/" title="Will Schenk" xmlUrl="https://willschenk.com/feed.xml" type="rss" text="Will Schenk"/>
 			<outline htmlUrl="https://www.williamyaoh.com" title="William Yao's Haskell Musings" xmlUrl="https://williamyaoh.com/feed.atom" type="rss" text="William Yao's Haskell Musings"/>
 			<outline htmlUrl="https://www.with-emacs.com/" title="with-emacs" xmlUrl="https://with-emacs.com/rss.xml" type="rss" text="with-emacs"/>
@@ -291,6 +295,7 @@
 			<outline htmlUrl="https://lispblog.xach.com/" title="Zach Beane Common Lisp" xmlUrl="https://lispblog.xach.com/rss" type="rss" text="Zach Beane Common Lisp"/>
 			<outline htmlUrl="https://www.manueluberti.eu" title="{{ site.title | xml_escape }}" xmlUrl="https://manuel-uberti.github.io/feed.xml" type="rss" text="{{ site.title | xml_escape }}"/>
 			<outline htmlUrl="https://lthms.xyz" title="~lthms" xmlUrl="https://lthms.xyz/rss" type="rss" text="~lthms"/>
+			<outline htmlUrl="https://reader.tymoon.eu/" title="妖怪世捨て人" xmlUrl="https://tymoon.eu/api/reader/atom" type="rss" text="妖怪世捨て人"/>
 		</outline>
 	</body>
 </opml>
