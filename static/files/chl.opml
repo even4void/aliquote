@@ -127,6 +127,7 @@
 			<outline htmlUrl="https://jakemccrary.com/" title="Jake McCrary" xmlUrl="https://feeds.feedburner.com/JakeMccrarysMusings" type="rss" text="Jake McCrary"/>
 			<outline htmlUrl="http://jakob.space/jakob.space" title="Jakob's Personal Webpage" xmlUrl="http://jakob.space/feed.xml" type="rss" text="Jakob's Personal Webpage"/>
 			<outline htmlUrl="http://jrsinclair.com" title="James Sinclair" xmlUrl="https://jrsinclair.com/index.rss" type="rss" text="James Sinclair"/>
+			<outline htmlUrl="https://www.jefftk.com/p" title="Jeff Kaufman's Writing" xmlUrl="https://www.jefftk.com/news.rss" type="rss" text="Jeff Kaufman's Writing"/>
 			<outline htmlUrl="https://gustedt.wordpress.com" title="Jens Gustedt's Blog" xmlUrl="https://gustedt.wordpress.com/feed/" type="rss" text="Jens Gustedt's Blog"/>
 			<outline htmlUrl="https://jlelse.blog/" title="jlelse's Blog" xmlUrl="https://jlelse.blog/index.xml" type="rss" text="jlelse's Blog"/>
 			<outline htmlUrl="https://www.johndcook.com/blog" title="John D. Cook" xmlUrl="http://feeds.feedburner.com/TheEndeavour" type="rss" text="John D. Cook"/>
@@ -254,6 +255,7 @@
 			<outline htmlUrl="http://calculist.org/" title="The Little Calculist" xmlUrl="http://calculist.org/feed.xml" type="rss" text="The Little Calculist"/>
 			<outline htmlUrl="https://blog.acolyer.org" title="the morning paper" xmlUrl="https://blog.acolyer.org/feed/" type="rss" text="the morning paper"/>
 			<outline htmlUrl="https://golem.ph.utexas.edu/category/" title="The n-Category Café" xmlUrl="https://golem.ph.utexas.edu/category/atom10.xml" type="rss" text="The n-Category Café"/>
+			<outline htmlUrl="https://eamonnsullivan.co.uk/" title="The one thing necessary" xmlUrl="https://eamonnsullivan.co.uk/feed.xml" type="rss" text="The one thing necessary"/>
 			<outline htmlUrl="http://shape-of-code.coding-guidelines.com" title="The Shape of Code" xmlUrl="http://shape-of-code.coding-guidelines.com/feed/" type="rss" text="The Shape of Code"/>
 			<outline htmlUrl="https://blog.stata.com" title="The Stata Blog" xmlUrl="http://blog.stata.com/feed/" type="rss" text="The Stata Blog"/>
 			<outline htmlUrl="http://third-bit.com/" title="The Third Bit" xmlUrl="http://third-bit.com/feed.xml" type="rss" text="The Third Bit"/>
