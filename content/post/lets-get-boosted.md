@@ -10,4 +10,6 @@ There has been a renewed interest in [Boosting](https://en.wikipedia.org/wiki/Bo
 
 Boosting tree models have a number of advantages, indeed. [^1] They are (quite) easy to setup and to interpret, they deal with continuous and categorical predictors (or monotonic transformations thereof) whether there are missing values or not, they are not that much sensitive to outliers compared to other supervised learning approaches, and they can capture simple or higher-order interactions between features. They, however, suffer from higher variance and lack of stability (like almost any tree-based models) and have poorer predictive performance compared to, say, well regularized linear or GLM models.
 
+The lead article is of course the one written by [Hastie](https://web.stanford.edu/~hastie/ElemStatLearn/) and [coll.](https://projecteuclid.org/euclid.aos/1013203451) in 2001, but see one of Hastie's [talk](https://web.stanford.edu/~hastie/TALKS/boost.pdf) (given at MIT in 2003). The H20 team also has a nice [summary of the algorithm](http://docs.h2o.ai/h2o/latest-stable/h2o-docs/data-science/gbm.html). Briefly, the idea is
+
 [^1]: Murphy, P., Kevin. 2012. [_Machine Learning: A Probabilistic Perspective_](https://www.cs.ubc.ca/~murphyk/MLbook/). Cambridge, Massachusetts London, England: The MIT Press.
