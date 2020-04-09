@@ -21,6 +21,7 @@
 			<outline htmlUrl="http://wiseodd.github.io/" title="Agustinus Kristiadi's Blog" xmlUrl="https://wiseodd.github.io/feed.xml" type="rss" text="Agustinus Kristiadi's Blog"/>
 			<outline htmlUrl="http://lexi-lambda.github.io/index.html" title="Alexis King's Blog: Alexis King's Blog" xmlUrl="https://lexi-lambda.github.io/feeds/all.rss.xml" type="rss" text="Alexis King's Blog: Alexis King's Blog"/>
 			<outline htmlUrl="https://aliquote.org/" title="aliquot" xmlUrl="https://aliquote.org/index.xml" type="rss" text="aliquot"/>
+			<outline htmlUrl="https://alternativebit.fr/posts/" title="AlternativeBit" xmlUrl="https://alternativebit.fr/posts/index.xml" type="rss" text="AlternativeBit"/>
 			<outline htmlUrl="http://xenodium.com" title="Alvaro Ramirez's notes" xmlUrl="http://xenodium.com/rss.xml" type="rss" text="Alvaro Ramirez's notes"/>
 			<outline htmlUrl="http://amitp.blogspot.com/" title="Amit's Thoughts" xmlUrl="http://amitp.blogspot.com/feeds/posts/default" type="rss" text="Amit's Thoughts"/>
 			<outline htmlUrl="https://blog.klipse.tech//" title="An interactive journey into functional programming with Yehonathan Sharvit" xmlUrl="https://blog.klipse.tech//feed.xml" type="rss" text="An interactive journey into functional programming with Yehonathan Sharvit"/>
@@ -149,6 +150,7 @@
 			<outline htmlUrl="http://www.lispology.com/show?JHE" title="Lispology" xmlUrl="http://www.lispology.com/rss?JHE+3" type="rss" text="Lispology"/>
 			<outline htmlUrl="http://www.lostgarden.com/" title="Lost Garden" xmlUrl="http://www.lostgarden.com/feeds/posts/default" type="rss" text="Lost Garden"/>
 			<outline htmlUrl="http://newartisans.com" title="Lost in Technopolis" xmlUrl="http://newartisans.com/rss.xml" type="rss" text="Lost in Technopolis"/>
+			<outline htmlUrl="https://lukeplant.me.uk/" title="Luke Plant's home page" xmlUrl="https://lukeplant.me.uk/blog/atom/index.xml" type="rss" text="Luke Plant's home page"/>
 			<outline htmlUrl="https://blog.poisson.chat" title="Lysxia's blog" xmlUrl="https://blog.poisson.chat/rss.xml" type="rss" text="Lysxia's blog"/>
 			<outline htmlUrl="https://hunch.net" title="Machine Learning (Theory)" xmlUrl="https://hunch.net/?feed=rss2" type="rss" text="Machine Learning (Theory)"/>
 			<outline htmlUrl="https://francisbach.com" title="Machine Learning Research Blog" xmlUrl="https://francisbach.com/feed/" type="rss" text="Machine Learning Research Blog"/>
@@ -209,6 +211,7 @@
 			<outline htmlUrl="https://programmingisterrible.com/" title="programming is terrible" xmlUrl="https://programmingisterrible.com/rss" type="rss" text="programming is terrible"/>
 			<outline htmlUrl="https://programmingpraxis.com" title="Programming Praxis" xmlUrl="http://programmingpraxis.com/feed/" type="rss" text="Programming Praxis"/>
 			<outline htmlUrl="https://www.nayuki.io/" title="Project Nayuki" xmlUrl="https://www.nayuki.io/rss20.xml" type="rss" text="Project Nayuki"/>
+			<outline htmlUrl="http://www.sumsar.net/" title="Publishable Stuff" xmlUrl="http://sumsar.net/atom.xml" type="rss" text="Publishable Stuff"/>
 			<outline htmlUrl="https://f.briatte.org/r/" title="R / Notes" xmlUrl="https://f.briatte.org/r/rss" type="rss" text="R / Notes"/>
 			<outline htmlUrl="https://rpsychologist.com/" title="R Psychologist" xmlUrl="https://feeds.feedburner.com/RPsychologist" type="rss" text="R Psychologist"/>
 			<outline htmlUrl="https://groups.google.com/d/forum/r-sig-mac" title="R Special Interest Group on Mac Development" xmlUrl="https://groups.google.com/forum/feed/r-sig-mac/topics/rss.xml?num=15" type="rss" text="R Special Interest Group on Mac Development"/>
@@ -220,6 +223,7 @@
 			<outline htmlUrl="http://morrick.me" title="Riccardo Mori" xmlUrl="http://morrick.me/feed" type="rss" text="Riccardo Mori"/>
 			<outline htmlUrl="https://robjhyndman.com/" title="Rob J Hyndman" xmlUrl="http://feeds.feedburner.com/ProfessorRobJHyndman" type="rss" text="Rob J Hyndman"/>
 			<outline htmlUrl="https://www.robinsloan.com/notes/" title="Robin's blog" xmlUrl="https://feeds.feedburner.com/robinsloan" type="rss" text="Robin's blog"/>
+			<outline htmlUrl="http://ro-che.info/articles/" title="Roman Cheplyaka" xmlUrl="https://ro-che.info/articles/rss.xml" type="rss" text="Roman Cheplyaka"/>
 			<outline htmlUrl="http://blog.rongarret.info/" title="Rondam Ramblings" xmlUrl="http://blog.rongarret.info/feeds/posts/default" type="rss" text="Rondam Ramblings"/>
 			<outline htmlUrl="https://rud.is/b" title="rud.is" xmlUrl="https://rud.is/b/feed/" type="rss" text="rud.is"/>
 			<outline htmlUrl="https://sagegerard.com" title="SageGerard.com" xmlUrl="https://sagegerard.com/index.rss.xml" type="rss" text="SageGerard.com"/>
