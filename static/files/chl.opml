@@ -133,7 +133,8 @@
 			<outline htmlUrl="https://jlelse.blog/" title="jlelse's Blog" xmlUrl="https://jlelse.blog/index.xml" type="rss" text="jlelse's Blog"/>
 			<outline htmlUrl="https://www.johndcook.com/blog" title="John D. Cook" xmlUrl="http://feeds.feedburner.com/TheEndeavour" type="rss" text="John D. Cook"/>
 			<outline htmlUrl="http://zerolib.com" title="John Jacobsen" xmlUrl="http://zerolib.com/feed.xml" type="rss" text="John Jacobsen"/>
-			<outline htmlUrl="http://www.johnmyleswhite.com" title="John Myles White" xmlUrl="http://www.johnmyleswhite.com/feed/" type="rss" text="John Myles White"/>
+			<outline htmlUrl="https://www.johnmyleswhite.com" title="John Myles White" xmlUrl="http://www.johnmyleswhite.com/feed/" type="rss" text="John Myles White"/>
+			<outline htmlUrl="https://joshbradley.me/" title="Josh Bradley | Marketer, Engineer, Analyst on Josh Bradley | Marketer, Coder, Analyst" xmlUrl="https://joshbradley.me/index.xml" type="rss" text="Josh Bradley | Marketer, Engineer, Analyst on Josh Bradley | Marketer, Coder, Analyst"/>
 			<outline htmlUrl="http://journal.stuffwithstuff.com/" title="journal.stuffwithstuff.com" xmlUrl="http://journal.stuffwithstuff.com/rss.xml" type="rss" text="journal.stuffwithstuff.com"/>
 			<outline htmlUrl="https://www.snellman.net/blog/" title="Juho Snellman's Weblog" xmlUrl="https://www.snellman.net/blog/rss-index.xml" type="rss" text="Juho Snellman's Weblog"/>
 			<outline htmlUrl="https://julesh.com" title="Jules Hedges" xmlUrl="https://julesh.com/feed/" type="rss" text="Jules Hedges"/>
@@ -153,6 +154,7 @@
 			<outline htmlUrl="https://lukeplant.me.uk/" title="Luke Plant's home page" xmlUrl="https://lukeplant.me.uk/blog/atom/index.xml" type="rss" text="Luke Plant's home page"/>
 			<outline htmlUrl="https://blog.poisson.chat" title="Lysxia's blog" xmlUrl="https://blog.poisson.chat/rss.xml" type="rss" text="Lysxia's blog"/>
 			<outline htmlUrl="https://hunch.net" title="Machine Learning (Theory)" xmlUrl="https://hunch.net/?feed=rss2" type="rss" text="Machine Learning (Theory)"/>
+			<outline htmlUrl="https://blog.ml.cmu.edu" title="Machine Learning Blog | ML@CMU | Carnegie Mellon University" xmlUrl="https://blog.ml.cmu.edu/feed/" type="rss" text="Machine Learning Blog | ML@CMU | Carnegie Mellon University"/>
 			<outline htmlUrl="https://francisbach.com" title="Machine Learning Research Blog" xmlUrl="https://francisbach.com/feed/" type="rss" text="Machine Learning Research Blog"/>
 			<outline htmlUrl="http://yaroslavvb.blogspot.com/" title="Machine Learning, etc" xmlUrl="http://yaroslavvb.blogspot.com/atom.xml" type="rss" text="Machine Learning, etc"/>
 			<outline htmlUrl="https://macwright.org" title="macwright.org" xmlUrl="https://macwright.org/rss.xml" type="rss" text="macwright.org"/>
@@ -194,6 +196,7 @@
 			<outline htmlUrl="https://www.pvk.ca/" title="Paul Khuong: some Lisp" xmlUrl="https://www.pvk.ca/atom.xml" type="rss" text="Paul Khuong: some Lisp"/>
 			<outline htmlUrl="https://travisdowns.github.io/" title="Performance Matters" xmlUrl="https://travisdowns.github.io/feed.xml" type="rss" text="Performance Matters"/>
 			<outline htmlUrl="http://danielsz.github.io" title="Perfumed Nightmare" xmlUrl="https://danielsz.github.io/atom.xml" type="rss" text="Perfumed Nightmare"/>
+			<outline htmlUrl="https://phaazon.net/blog" title="phaazon.net blog" xmlUrl="https://phaazon.net/blog/feed" type="rss" text="phaazon.net blog"/>
 			<outline htmlUrl="http://planspace.org/" title="plan ➔ space" xmlUrl="https://planspace.org/rss.xml" type="rss" text="plan ➔ space"/>
 			<outline htmlUrl="http://planet.lisp.org/" title="Planet Lisp" xmlUrl="http://planet.lisp.org/rss20.xml" type="rss" text="Planet Lisp"/>
 			<outline htmlUrl="http://plasmasturm.org/" title="plasmasturm.org" xmlUrl="http://plasmasturm.org/feed" type="rss" text="plasmasturm.org"/>
@@ -203,7 +206,6 @@
 			<outline htmlUrl="https://0x0f0f0f.github.io/posts/" title="Posts on 0x0f0f0f" xmlUrl="https://0x0f0f0f.github.io/posts/index.xml" type="rss" text="Posts on 0x0f0f0f"/>
 			<outline htmlUrl="https://www.monicaalexander.com/posts/" title="Posts on Monica Alexander" xmlUrl="https://www.monicaalexander.com/posts/index.xml" type="rss" text="Posts on Monica Alexander"/>
 			<outline htmlUrl="https://fharrell.com/post/" title="Posts on Statistical Thinking" xmlUrl="http://fharrell.com/post/index.xml" type="rss" text="Posts on Statistical Thinking"/>
-			<outline htmlUrl="https://www.travishinkelman.com/posts/" title="Posts on Travis Hinkelman" xmlUrl="https://www.travishinkelman.com/post/index.xml" type="rss" text="Posts on Travis Hinkelman"/>
 			<outline htmlUrl="https://www.greghendershott.com/tags/all.rss.xml" title="Posts tagged &quot;all&quot;" xmlUrl="https://www.greghendershott.com/feeds/all.rss.xml" type="rss" text="Posts tagged &quot;all&quot;"/>
 			<outline htmlUrl="http://pragmaticemacs.com" title="Pragmatic Emacs" xmlUrl="http://pragmaticemacs.com/feed/" type="rss" text="Pragmatic Emacs"/>
 			<outline htmlUrl="https://www.leeholmes.com/blog" title="Precision Computing" xmlUrl="https://www.leeholmes.com/blog/feed/" type="rss" text="Precision Computing"/>
