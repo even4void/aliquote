@@ -29,6 +29,8 @@ I've been keeping so much bookmarks in Safari on my iPhone that I definitely nee
 
   > This journey in the collaborative publishing has started with the unreasonable request from a well-known publisher to make us pay 20,000 euros for an open access book that we (the editors), would have had to handle from A to Z (choose the chapters, find the authors, get the contracts signed, format the manuscript etc ...). It did not seem right, so we asked the colleagues that already had shown interest in writing a chapter for our book, to trust us.
 
+Expect a few more pointers in a next post.
+
 > You are a software developer? And sometimes you need to use cryptography in your daily job, like hashes, encryption or digital signatures? And you think cryptography is complex and full of math and it is for nerds only? No, this is not true, every developer can learn how to use cryptographic algorithms. This book will show you how: with code examples and hands-on coding experience, with less math and more practice. --- [Practical cryptography for developers](https://cryptobook.nakov.com).
 
 {{% music %}}Meltemi • _Alboran Trio_{{% /music %}}
