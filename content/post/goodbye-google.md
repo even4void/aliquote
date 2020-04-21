@@ -2,7 +2,7 @@
 title: "Goodbye Google"
 date: 2018-05-03T08:32:00+02:00
 draft: false
-tags: ["misc"]
+tags: ["self"]
 categories: ["2018"]
 ---
 
