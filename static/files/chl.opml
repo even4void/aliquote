@@ -43,6 +43,7 @@
 			<outline htmlUrl="http://bitemyapp.com/" title="bitemyapp" xmlUrl="http://bitemyapp.com/atom.xml" type="rss" text="bitemyapp"/>
 			<outline htmlUrl="https://liorpachter.wordpress.com" title="Bits of DNA" xmlUrl="https://liorpachter.wordpress.com/feed/" type="rss" text="Bits of DNA"/>
 			<outline htmlUrl="http://blog.vmchale.com/" title="blog" xmlUrl="http://blog.vmchale.com/atom" type="rss" text="blog"/>
+			<outline htmlUrl="https://byorgey.wordpress.com" title="blog :: Brent -&gt; [String]" xmlUrl="https://byorgey.wordpress.com/feed/" type="rss" text="blog :: Brent -&gt; [String]"/>
 			<outline htmlUrl="https://www.hillelwayne.com/post/" title="Blog on Hillel Wayne" xmlUrl="https://www.hillelwayne.com/post/index.xml" type="rss" text="Blog on Hillel Wayne"/>
 			<outline htmlUrl="https://ma.ttias.be/blog/" title="Blogpost archive by Mattias Geniar on ma.ttias.be" xmlUrl="https://ma.ttias.be/blog/index.xml" type="rss" text="Blogpost archive by Mattias Geniar on ma.ttias.be"/>
 			<outline htmlUrl="https://kieranhealy.org/blog/" title="Blogs on kieranhealy.org" xmlUrl="https://kieranhealy.org/blog/index.xml" type="rss" text="Blogs on kieranhealy.org"/>
