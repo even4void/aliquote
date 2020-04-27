@@ -2,7 +2,7 @@
 title: Gaussian elimination
 date: 2020-03-24 18:41:28
 draft: false
-tags: ["math", "racket"]
+tags: ["math", "mathematica", "racket"]
 categories: ["2020"]
 ---
 

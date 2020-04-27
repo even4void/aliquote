@@ -2,7 +2,7 @@
 title: "Clifford attractors"
 date: 2018-02-26T16:44:14+01:00
 draft: false
-tags: ["math", "dataviz"]
+tags: ["math", "dataviz", "mathematica"]
 categories: ["2018"]
 ---
 
@@ -54,7 +54,7 @@ void setup() {
     x[i] = sin(a*y[i-1]) + c*cos(a*x[i-1]);
     y[i] = sin(b*x[i-1]) + d*cos(b*y[i-1]);
   }
-} 
+}
 
 void draw() {
   for  (int i = 1; i < n; i++) {

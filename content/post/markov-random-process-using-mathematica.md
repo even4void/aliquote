@@ -2,7 +2,7 @@
 title: "DNA substitutions and Continuous Markov Random Process"
 date: 2019-02-26T19:16:05+01:00
 draft: false
-tags: ["statistics", "bioinformatics"]
+tags: ["statistics", "bioinformatics", "mathematica"]
 categories: ["2019"]
 ---
 

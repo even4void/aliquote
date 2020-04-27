@@ -2,7 +2,7 @@
 title: "On computing Pi"
 date: 2019-11-10T09:48:11+01:00
 draft: false
-tags: ["math"]
+tags: ["math", "mathematica"]
 categories: ["2019"]
 ---
 
@@ -17,13 +17,13 @@ Let's try it in a Fish shell:
 3.14159265356
 ```
 
-Of note, the `scale` parameter is quite important when a [high precision](https://www.johndcook.com/blog/2019/10/29/computing-pi-with-bc/) is required. 
+Of note, the `scale` parameter is quite important when a [high precision](https://www.johndcook.com/blog/2019/10/29/computing-pi-with-bc/) is required.
 
 Another well-known formula, at least for $\LaTeX$ aficionado, is the following continued fraction, due to Brouncker:
 
 $$ \frac{4}{\pi} = 1 + \frac{1^2}{2 + \frac{3^2}{2 + \frac{5^2}{2 + \dots}}} $$
 
-Of course, many [more](http://mathworld.wolfram.com/PiFormulas.html) [approximations](http://mathworld.wolfram.com/PiApproximations.html) are available. Although Melzak notes that no hyperexponentially fast procedure[^2] appears to be known for computing $\pi$, there does exist [efficient algorithms](https://www.johndcook.com/blog/2011/03/14/algorithm-record-pi-calculation/) to compute $\pi$ to *n* exact figures. A short snippet of Python code is available in the case of the [Chudnovsky algorithm](https://en.wikipedia.org/wiki/Chudnovsky_algorithm), which remains the most efficient algorithm at the time of this writing. Scheme code is available on [Programming Praxis](https://programmingpraxis.com/2013/06/14/the-digits-of-pi-again/). Other iterative algorithms, like [Borwein's algorithm](https://en.wikipedia.org/wiki/Borwein%27s_algorithm), are also simple to implement in languages that offer support for large integers. 
+Of course, many [more](http://mathworld.wolfram.com/PiFormulas.html) [approximations](http://mathworld.wolfram.com/PiApproximations.html) are available. Although Melzak notes that no hyperexponentially fast procedure[^2] appears to be known for computing $\pi$, there does exist [efficient algorithms](https://www.johndcook.com/blog/2011/03/14/algorithm-record-pi-calculation/) to compute $\pi$ to *n* exact figures. A short snippet of Python code is available in the case of the [Chudnovsky algorithm](https://en.wikipedia.org/wiki/Chudnovsky_algorithm), which remains the most efficient algorithm at the time of this writing. Scheme code is available on [Programming Praxis](https://programmingpraxis.com/2013/06/14/the-digits-of-pi-again/). Other iterative algorithms, like [Borwein's algorithm](https://en.wikipedia.org/wiki/Borwein%27s_algorithm), are also simple to implement in languages that offer support for large integers.
 
 Note that this is only if you are interested in computing $\pi$ to a large number of decimal places since most PLs will provide you with built-in constants for $\pi$ or $\pi/2$. E.g., in C (using `clang` on macOS) $\pi$ is stored as a constant in `math.h`: `#define M_PI 3.14159265358979323846264338327950288`. This file is actually located under the command-line tools directory, that can be located using, e.g., `echo "#include <math.h>" | gcc -v -x c -`. Racket provides a double-precision flonum for $\pi$, but fractional approximations are used in various place the [math](https://github.com/racket/math/) library (e.g., 14488038916154245685/4611686018427387904 = 3.141592653589793).
 
