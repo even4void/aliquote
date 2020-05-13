@@ -8,7 +8,7 @@ categories: ["2020"]
 
 Once again, a lot of bookmarks have been piling up all over my computer. Needless to say, the fact that Apple removed the possibility we earlier had to access our iPhone Safari tabs from our Macbook directly does not make it any easier. Anyway, here we go with a short list of interesting links I found while browsing the interweb lately.
 
-- Inrestingly, while I spent yet another fair amount of time customizing the way my Emacs looks I came across some very nice configurations, including the one proposed by Nicolas Rougier for en [elegant emacs](https://github.com/rougier/elegant-emacs) (via Reddit), and that of [Andrey Orst](https://github.com/andreyorst/dotfiles/tree/master/.config/emacs). There is also [this bundle](https://emacs.nasy.moe). For Doom specific settings, see [this one](https://github.com/tecosaur/emacs-config/blob/master/config.org) too.
+- Interestingly, while I spent yet another fair amount of time customizing the way my Emacs looks I came across some very nice configurations, including the one proposed by Nicolas Rougier for en [elegant emacs](https://github.com/rougier/elegant-emacs) (via Reddit), and that of [Andrey Orst](https://github.com/andreyorst/dotfiles/tree/master/.config/emacs). There is also [this bundle](https://emacs.nasy.moe). For Doom specific settings, see [this one](https://github.com/tecosaur/emacs-config/blob/master/config.org) too.
 
 - I mentioned some [alternatives to dplyr](/micro/2020-04-24-12-23-04/) using base R. Here is one for Python, as an alternative to Pandas, I guess: [siuba](https://github.com/machow/siuba/blob/master/README.md), scrappy data analysis, with seamless support for pandas and SQL.
 
