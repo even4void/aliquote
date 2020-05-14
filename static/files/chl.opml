@@ -31,6 +31,7 @@
 			<outline htmlUrl="https://leancrew.com/all-this/" title="And now it’s all this" xmlUrl="https://leancrew.com/all-this/feed/" type="rss" text="And now it’s all this"/>
 			<outline htmlUrl="https://andregarzia.com/index.html" title="AndreGarzia.com: AndreGarzia.com" xmlUrl="https://andregarzia.com/feeds/all.rss.xml" type="rss" text="AndreGarzia.com: AndreGarzia.com"/>
 			<outline htmlUrl="https://andrewpwheeler.com" title="Andrew Wheeler" xmlUrl="https://andrewpwheeler.wordpress.com/feed/" type="rss" text="Andrew Wheeler"/>
+			<outline htmlUrl="https://andreyorst.gitlab.io/" title="Andrey Orst" xmlUrl="https://andreyorst.gitlab.io/feed.xml" type="rss" text="Andrey Orst"/>
 			<outline htmlUrl="https://annoying.technology/" title="Annoying Technology" xmlUrl="https://annoying.technology/index.xml" type="rss" text="Annoying Technology"/>
 			<outline htmlUrl="https://machinelearning.apple.com/" title="Apple Machine Learning Journal" xmlUrl="https://machinelearning.apple.com/feed.xml" type="rss" text="Apple Machine Learning Journal"/>
 			<outline htmlUrl="https://ar.al/" title="Aral Balkan" xmlUrl="https://ar.al/index.xml" type="rss" text="Aral Balkan"/>
@@ -68,6 +69,7 @@
 			<outline htmlUrl="https://chrispenner.ca/atom.xml" title="Chris Penner" xmlUrl="https://chrispenner.ca/atom.xml" type="rss" text="Chris Penner"/>
 			<outline htmlUrl="https://codeandculture.wordpress.com" title="Code and Culture" xmlUrl="http://codeandculture.wordpress.com/feed/" type="rss" text="Code and Culture"/>
 			<outline htmlUrl="https://gilkalai.wordpress.com" title="Combinatorics and more" xmlUrl="https://gilkalai.wordpress.com/feed/" type="rss" text="Combinatorics and more"/>
+			<outline htmlUrl="http://40ants.com/lisp-project-of-the-day/" title="Common Lisp Project of the Day" xmlUrl="http://40ants.com/lisp-project-of-the-day/rss.xml" type="rss" text="Common Lisp Project of the Day"/>
 			<outline htmlUrl="https://lisptips.com/" title="Common Lisp Tips" xmlUrl="https://lisptips.com/rss" type="rss" text="Common Lisp Tips"/>
 			<outline htmlUrl="https://lispnews.wordpress.com" title="Common Lisp Weekly News" xmlUrl="https://lispnews.wordpress.com/feed/" type="rss" text="Common Lisp Weekly News"/>
 			<outline htmlUrl="https://groups.google.com/d/forum/comp.lang.lisp" title="comp.lang.lisp" xmlUrl="https://groups.google.com/forum/feed/comp.lang.lisp/topics/rss.xml?num=15" type="rss" text="comp.lang.lisp"/>
@@ -204,6 +206,7 @@
 			<outline htmlUrl="https://oleb.net/blog/" title="Ole Begemann" xmlUrl="https://oleb.net/blog/atom.xml" type="rss" text="Ole Begemann"/>
 			<outline htmlUrl="https://oli.me.uk/" title="Oliver Caldwell's blog" xmlUrl="https://oli.me.uk/feed.xml" type="rss" text="Oliver Caldwell's blog"/>
 			<outline htmlUrl="https://www.eidel.io" title="Oliver Eidel - Articles" xmlUrl="https://www.eidel.io/feed.xml" type="rss" text="Oliver Eidel - Articles"/>
+			<outline htmlUrl="https://www.tbray.org/ongoing/" title="ongoing by Tim Bray" xmlUrl="https://www.tbray.org/ongoing/ongoing.atom" type="rss" text="ongoing by Tim Bray"/>
 			<outline htmlUrl="https://openfolder.sh" title="Open Folder" xmlUrl="https://feedpress.me/tnb" type="rss" text="Open Folder"/>
 			<outline htmlUrl="https://www.xarg.org/" title="Open Source is Everything" xmlUrl="https://feeds.feedburner.com/exarg" type="rss" text="Open Source is Everything"/>
 			<outline htmlUrl="http://www.paulgraham.com/" title="Paul Graham: Essays" xmlUrl="http://www.aaronsw.com/2002/feeds/pgessays.rss" type="rss" text="Paul Graham: Essays"/>
@@ -252,6 +255,7 @@
 			<outline htmlUrl="https://serokell.io/blog" title="Serokell Blog" xmlUrl="https://serokell.io/blog.rss.xml" type="rss" text="Serokell Blog"/>
 			<outline htmlUrl="http://simonwillison.net/" title="Simon Willison's Weblog" xmlUrl="https://simonwillison.net/atom/everything/" type="rss" text="Simon Willison's Weblog"/>
 			<outline htmlUrl="https://simplystatistics.org/index.xml" title="Simply Statistics" xmlUrl="https://simplystatistics.org/index.xml" type="rss" text="Simply Statistics"/>
+			<outline htmlUrl="https://so.nwalsh.com/" title="so…" xmlUrl="https://so.nwalsh.com/feed.rss" type="rss" text="so…"/>
 			<outline htmlUrl="http://www.cs.rice.edu/~ogilvie/" title="Species and Gene Evolution" xmlUrl="http://www.cs.rice.edu/~ogilvie/feed.xml" type="rss" text="Species and Gene Evolution"/>
 			<outline htmlUrl="http://gigasquid.github.io/" title="Squid's Blog" xmlUrl="http://gigasquidsoftware.com/atom.xml" type="rss" text="Squid's Blog"/>
 			<outline htmlUrl="https://standblog.org/blog/" title="Standblog" xmlUrl="https://standblog.org/blog/feed/atom" type="rss" text="Standblog"/>
