@@ -2,7 +2,7 @@
 title: "Handy command-line utilities"
 date: 2020-05-15T08:55:35+02:00
 draft: false
-tags: ["misc"]
+tags: ["misc", "emacs"]
 categories: ["2020"]
 ---
 

@@ -2,7 +2,7 @@
 title: "Wolfram Engine and Jupyter"
 date: 2020-04-24T12:04:01+02:00
 draft: false
-tags: ["mathematica"]
+tags: ["mathematica", "emacs"]
 categories: ["2020"]
 ---
 
