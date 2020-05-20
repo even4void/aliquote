@@ -106,12 +106,12 @@
 			<outline htmlUrl="https://ericlippert.com" title="Fabulous adventures in coding" xmlUrl="https://ericlippert.com/feed/" type="rss" text="Fabulous adventures in coding"/>
 			<outline htmlUrl="https://fangpenlin.com/" title="Fang-Pen's coding note" xmlUrl="https://fangpenlin.com/feed.xml" type="rss" text="Fang-Pen's coding note"/>
 			<outline htmlUrl="https://www.sacrideo.us/" title="Fastidious Elegance" xmlUrl="https://www.sacrideo.us/rss/" type="rss" text="Fastidious Elegance"/>
+			<outline htmlUrl="https://people.gnome.org/~federico/blog/" title="Federico's Blog" xmlUrl="https://people.gnome.org/~federico/blog/feeds/atom.xml" type="rss" text="Federico's Blog"/>
 			<outline htmlUrl="http://ferd.ca/" title="Ferd.ca" xmlUrl="https://ferd.ca/feed.rss" type="rss" text="Ferd.ca"/>
 			<outline htmlUrl="https://blog.filippo.io/" title="Filippo.io" xmlUrl="https://blog.filippo.io/rss/" type="rss" text="Filippo.io"/>
 			<outline htmlUrl="https://flowing.systems/" title="flowing → systems" xmlUrl="https://flowing.systems/feed.xml" type="rss" text="flowing → systems"/>
 			<outline htmlUrl="http://stefanoborini.com/" title="Fly, Crash, Raise Exception" xmlUrl="http://stefanoborini.com/feed.xml" type="rss" text="Fly, Crash, Raise Exception"/>
 			<outline htmlUrl="https://www.tfeb.org/fragments/index.html" title="Fragments: Fragments" xmlUrl="https://tfeb.org/fragments/feeds/all.rss.xml" type="rss" text="Fragments: Fragments"/>
-			<outline htmlUrl="https://framasoft.org" title="Framasoft - Toute l'actualité" xmlUrl="https://rss.framasoft.org/" type="rss" text="Framasoft - Toute l'actualité"/>
 			<outline htmlUrl="http://fmnt.info/" title="Francesco Montanari" xmlUrl="http://fmnt.info/feed/atom.xml" type="rss" text="Francesco Montanari"/>
 			<outline htmlUrl="https://freakonometrics.hypotheses.org" title="Freakonometrics" xmlUrl="https://freakonometrics.hypotheses.org/feed" type="rss" text="Freakonometrics"/>
 			<outline htmlUrl="http://freerangestats.info" title="free range statistics" xmlUrl="http://freerangestats.info/feed.xml" type="rss" text="free range statistics"/>
@@ -209,6 +209,7 @@
 			<outline htmlUrl="https://www.tbray.org/ongoing/" title="ongoing by Tim Bray" xmlUrl="https://www.tbray.org/ongoing/ongoing.atom" type="rss" text="ongoing by Tim Bray"/>
 			<outline htmlUrl="https://openfolder.sh" title="Open Folder" xmlUrl="https://feedpress.me/tnb" type="rss" text="Open Folder"/>
 			<outline htmlUrl="https://www.xarg.org/" title="Open Source is Everything" xmlUrl="https://feeds.feedburner.com/exarg" type="rss" text="Open Source is Everything"/>
+			<outline htmlUrl="https://www.parsonsmatt.org" title="Overcoming Software" xmlUrl="https://www.parsonsmatt.org/feed.xml" type="rss" text="Overcoming Software"/>
 			<outline htmlUrl="http://www.paulgraham.com/" title="Paul Graham: Essays" xmlUrl="http://www.aaronsw.com/2002/feeds/pgessays.rss" type="rss" text="Paul Graham: Essays"/>
 			<outline htmlUrl="https://www.pvk.ca/" title="Paul Khuong: some Lisp" xmlUrl="https://www.pvk.ca/atom.xml" type="rss" text="Paul Khuong: some Lisp"/>
 			<outline htmlUrl="https://travisdowns.github.io/" title="Performance Matters" xmlUrl="https://travisdowns.github.io/feed.xml" type="rss" text="Performance Matters"/>
@@ -293,7 +294,6 @@
 			<outline htmlUrl="https://meyerweb.com/eric/thoughts" title="Thoughts From Eric" xmlUrl="https://meyerweb.com/eric/thoughts/rss2/full" type="rss" text="Thoughts From Eric"/>
 			<outline htmlUrl="https://irrlab.com" title="thoughts…" xmlUrl="https://irrlab.com/feed/" type="rss" text="thoughts…"/>
 			<outline htmlUrl="http://bactra.org/weblog/" title="Three-Toed Sloth" xmlUrl="http://bactra.org/weblog/index.rss" type="rss" text="Three-Toed Sloth"/>
-			<outline htmlUrl="https://www.parsonsmatt.org" title="To Overcome" xmlUrl="https://www.parsonsmatt.org/feed.xml" type="rss" text="To Overcome"/>
 			<outline htmlUrl="http://tomasp.net" title="Tomas Petricek - Languages and tools, open-source, philosophy of science and F# coding" xmlUrl="http://tomasp.net/rss.xml" type="rss" text="Tomas Petricek - Languages and tools, open-source, philosophy of science and F# coding"/>
 			<outline htmlUrl="https://tonsky.me/" title="tonsky.me" xmlUrl="http://tonsky.me/blog/atom.xml" type="rss" text="tonsky.me"/>
 			<outline htmlUrl="https://tech.tonyballantyne.com" title="Tony Ballantyne Tech" xmlUrl="https://tech.tonyballantyne.com/feed/" type="rss" text="Tony Ballantyne Tech"/>
@@ -307,7 +307,7 @@
 			<outline htmlUrl="https://usesthis.com/" title="Uses This" xmlUrl="https://usesthis.com/feed.atom" type="rss" text="Uses This"/>
 			<outline htmlUrl="http://varianceexplained.org" title="Variance Explained" xmlUrl="http://varianceexplained.org/feed.xml" type="rss" text="Variance Explained"/>
 			<outline htmlUrl="http://blog.veitheller.de/" title="Veit's Blog" xmlUrl="https://blog.veitheller.de/feed.rss" type="rss" text="Veit's Blog"/>
-			<outline htmlUrl="https://www.jimhester.com/post/" title="Videos / Posts on Jim Hester" xmlUrl="https://www.jimhester.com/post/index.xml" type="rss" text="Videos / Posts on Jim Hester"/>
+			<outline htmlUrl="https://jimhester.com/post/" title="Videos / Posts on Jim Hester" xmlUrl="https://www.jimhester.com/post/index.xml" type="rss" text="Videos / Posts on Jim Hester"/>
 			<outline htmlUrl="https://vis4.net/blog/" title="vis4.net" xmlUrl="https://vis4.net/blog/atom.xml" type="rss" text="vis4.net"/>
 			<outline htmlUrl="https://vxlabs.com/" title="vxlabs" xmlUrl="https://vxlabs.com/index.xml" type="rss" text="vxlabs"/>
 			<outline htmlUrl="http://www.walkingrandomly.com" title="Walking Randomly" xmlUrl="http://feeds.feedburner.com/WalkingRandomly" type="rss" text="Walking Randomly"/>
