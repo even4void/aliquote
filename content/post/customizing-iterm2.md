@@ -11,8 +11,8 @@ I'm back to zsh after several months [using Fish](/post/fish-shell). I took this
 ```shell
 local dir_info_color="%B"
 local dir_info="%{$dir_info_color%}%(5~|%-1~/.../%2~|%4~)%{$reset_color%}"
-local promptnormal="%(?.$fg_bold[green].$fg_bold[red])λ %{$reset_color%}"
-local promptjobs="%(?.$fg_bold[yellow].$fg_bold[red])λ %{$reset_color%}"
+local promptnormal="%(?.%{$fg_bold[green]%}.%{$fg_bold[red]%})λ %{$reset_color%}"
+local promptjobs="%(?.%{$fg_bold[yellow]%}.%{$fg_bold[red]%})λ %{$reset_color%}"
 
 PROMPT='${dir_info}$(git_prompt_info) %(1j.$promptjobs.$promptnormal)'
 ```
@@ -39,9 +39,9 @@ fi
 if [ $timer ]; then
     toc=$(($SECONDS - $timer))
     if [ ${toc} -ge 5 ]; then
-    export RPROMPT="%F{blue}${remote} %F{cyan}${toc}s %{$reset_color%}"
+      export RPROMPT="%F{cyan}${toc}s %F{blue}${remote}% {$reset_color%}"
     else
-    export RPROMPT="%F{blue}${remote} %{$reset_color%}"
+      export RPROMPT="%F{blue}${remote} %{$reset_color%}"
     fi
     unset timer
 fi
