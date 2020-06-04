@@ -17,8 +17,6 @@ local promptjobs="%(?.%{$fg_bold[yellow]%}.%{$fg_bold[red]%})λ %{$reset_color%}
 PROMPT='${dir_info}$(git_prompt_info) %(1j.$promptjobs.$promptnormal)'
 ```
 
-![zsh](/img/loop1.gif)
-
 With quarantine and all., I had to strenghten my "work from home" setup. I have a remote access to the computers at my lab, and I wanted to customize my terminal a bit. In my case, this is iTerm2 but this should apply to any terminal. What I really wanted was to add some useful information to my prompt, without adding too much of a mess on the existing one. It is worth noting the following only makes use of the right prompt. With many (pseudo-)terminals arranged in panes or in separate windows, it often becomes hard to remember which ones are connected via ssh. Here is what I have in my zsh config file for managing the right prompt:
 
 ```shell
@@ -79,6 +77,8 @@ set -g status-left ""
 
 This way, I have a list of the active and inactive windows (on the left), the name of the session, the user and the server name (on the right).
 
-![tmux](/img/loop2.gif)
+<video class="tab" controls>
+  <source src="/img/tmuxing.mp4"/>
+</video>
 
 [^1]: There are many custom prompt setup available on the web, and [Fabrice Niessen](https://github.com/fniessen/shell-leuven) wrote a nice one for zsh or bash.
