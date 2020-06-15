@@ -3,6 +3,7 @@ title: "The Changelog"
 date: 2018-05-17T00:00:00
 ---
 
+- [2020-06-15] Replace Twitter with Matrix for DM
 - [2019-09-19] Site redesign (CSS, search engine, fonts)
 - [2019-09-13] Massive retagging (bis)
 - [2019-08-22] Massive retagging
@@ -21,7 +22,7 @@ date: 2018-05-17T00:00:00
 - [2018-02-23] Finish migrating old posts
 
 An even older Changelog can be found [here](/Changelog).
-  
+
         % git log | tail -n 5
         commit 316adb5e3d1ddce5d3d45419b0c035483616e361
         Author: chl <xxxx@xxxx.xxxx>
