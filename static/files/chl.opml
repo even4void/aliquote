@@ -105,6 +105,7 @@
 			<outline htmlUrl="https://blog.yossarian.net" title="ENOSUCHBLOG" xmlUrl="http://blog.yossarian.net/feed.xml" type="rss" text="ENOSUCHBLOG"/>
 			<outline htmlUrl="http://evanjones.ca/" title="Evan Jones - Software Engineer | Computer Scientist" xmlUrl="https://www.evanjones.ca/index.rss" type="rss" text="Evan Jones - Software Engineer | Computer Scientist"/>
 			<outline htmlUrl="http://www.evanmiller.org/" title="Evan Miller’s News" xmlUrl="http://www.evanmiller.org/news.xml" type="rss" text="Evan Miller’s News"/>
+			<outline title="Étienne Deparis" xmlUrl="https://etienne.depar.is/feeds/index.xml" type="rss" text="Étienne Deparis"/>
 			<outline htmlUrl="https://ericlippert.com" title="Fabulous adventures in coding" xmlUrl="https://ericlippert.com/feed/" type="rss" text="Fabulous adventures in coding"/>
 			<outline htmlUrl="https://fangpenlin.com/" title="Fang-Pen's coding note" xmlUrl="https://fangpenlin.com/feed.xml" type="rss" text="Fang-Pen's coding note"/>
 			<outline htmlUrl="https://www.sacrideo.us/" title="Fastidious Elegance" xmlUrl="https://www.sacrideo.us/rss/" type="rss" text="Fastidious Elegance"/>
@@ -150,6 +151,7 @@
 			<outline htmlUrl="https://www.johndcook.com/blog" title="John D. Cook" xmlUrl="http://feeds.feedburner.com/TheEndeavour" type="rss" text="John D. Cook"/>
 			<outline htmlUrl="http://zerolib.com" title="John Jacobsen" xmlUrl="http://zerolib.com/feed.xml" type="rss" text="John Jacobsen"/>
 			<outline htmlUrl="http://www.johnmyleswhite.com" title="John Myles White" xmlUrl="http://www.johnmyleswhite.com/feed/" type="rss" text="John Myles White"/>
+			<outline htmlUrl="https://jmtd.net/log/" title="Jonathan Dowland's Weblog" xmlUrl="https://jmtd.net/log/index.atom" type="rss" text="Jonathan Dowland's Weblog"/>
 			<outline htmlUrl="https://blog.josephmorag.com/" title="Joseph Morag" xmlUrl="https://blog.josephmorag.com/index.xml" type="rss" text="Joseph Morag"/>
 			<outline htmlUrl="https://joshbradley.me/" title="Josh Bradley | Marketer, Engineer, Analyst on Josh Bradley | Marketer, Coder, Analyst" xmlUrl="https://joshbradley.me/index.xml" type="rss" text="Josh Bradley | Marketer, Engineer, Analyst on Josh Bradley | Marketer, Coder, Analyst"/>
 			<outline htmlUrl="https://jcs.org/" title="joshua stein" xmlUrl="https://jcs.org/rss" type="rss" text="joshua stein"/>
@@ -302,7 +304,7 @@
 			<outline htmlUrl="https://irrlab.com" title="thoughts…" xmlUrl="https://irrlab.com/feed/" type="rss" text="thoughts…"/>
 			<outline htmlUrl="http://bactra.org/weblog/" title="Three-Toed Sloth" xmlUrl="http://bactra.org/weblog/index.rss" type="rss" text="Three-Toed Sloth"/>
 			<outline htmlUrl="http://tomasp.net" title="Tomas Petricek - Languages and tools, open-source, philosophy of science and F# coding" xmlUrl="http://tomasp.net/rss.xml" type="rss" text="Tomas Petricek - Languages and tools, open-source, philosophy of science and F# coding"/>
-			<outline title="Tomas Vik" xmlUrl="https://blog.viktomas.com/index.xml" type="rss" text="Tomas Vik"/>
+			<outline htmlUrl="https://blog.viktomas.com/" title="Tomas Vik" xmlUrl="https://blog.viktomas.com/index.xml" type="rss" text="Tomas Vik"/>
 			<outline htmlUrl="https://tonsky.me/" title="tonsky.me" xmlUrl="http://tonsky.me/blog/atom.xml" type="rss" text="tonsky.me"/>
 			<outline htmlUrl="https://tech.tonyballantyne.com" title="Tony Ballantyne Tech" xmlUrl="https://tech.tonyballantyne.com/feed/" type="rss" text="Tony Ballantyne Tech"/>
 			<outline htmlUrl="https://www.travishinkelman.com/" title="Travis Hinkelman" xmlUrl="https://www.travishinkelman.com/index.xml" type="rss" text="Travis Hinkelman"/>
@@ -328,7 +330,7 @@
 			<outline htmlUrl="https://www.with-emacs.com/" title="with-emacs" xmlUrl="https://with-emacs.com/rss.xml" type="rss" text="with-emacs"/>
 			<outline htmlUrl="https://christiantietze.de/" title="Worklog of Christian Tietze" xmlUrl="https://christiantietze.de/feed.atom" type="rss" text="Worklog of Christian Tietze"/>
 			<outline htmlUrl="http://www.linusakesson.net/" title="www.linusakesson.net" xmlUrl="http://www.linusakesson.net/rssfeed.php" type="rss" text="www.linusakesson.net"/>
-			<outline title="Yet Another Technical Blog" xmlUrl="http://www.mycpu.org/feed.xml" type="rss" text="Yet Another Technical Blog"/>
+			<outline htmlUrl="http://www.mycpu.org" title="Yet Another Technical Blog" xmlUrl="http://www.mycpu.org/feed.xml" type="rss" text="Yet Another Technical Blog"/>
 			<outline htmlUrl="https://lispblog.xach.com/" title="Zach Beane Common Lisp" xmlUrl="https://lispblog.xach.com/rss" type="rss" text="Zach Beane Common Lisp"/>
 			<outline htmlUrl="https://lthms.xyz" title="~lthms" xmlUrl="https://lthms.xyz/rss" type="rss" text="~lthms"/>
 			<outline htmlUrl="https://reader.tymoon.eu/" title="妖怪世捨て人" xmlUrl="https://tymoon.eu/api/reader/atom" type="rss" text="妖怪世捨て人"/>

@@ -28,7 +28,7 @@ def nth(iterable, n, default=None):
 
 This time, using almost the same construct we just recreated the `nth` procedure, available in many Lisp flavors. The `None` default value stands for the `end=` argument in `itertools.islice`, so we are just building an infinite stream of data, starting onward at `n`.
 
-> With few exceptions, functional programming allows you to write more concise and efficient code. 
+> With few exceptions, functional programming allows you to write more concise and efficient code.
 
 What does it means exactly? Julien Danjou argues that a functional approach to Python programming is helpful in tems of modularity, brevity, concurrency and testability, the latter two deriving from the very first principle of FP: the input to output flow occurs without the function keeping state or modifying anything not reflected in the return value. In Python, [iterators](https://stackoverflow.com/q/9884132) and generators --- in which the state of the function is saved as a stack reference, while [yield](https://stackoverflow.com/q/231767) acts as a simple `return` statement --- are two of the most interesting features of the languages, in my view. Instead of building a whole list of items, consider using generator whenever possible since they act as lazy lists.
 
@@ -65,8 +65,6 @@ See, there's no loop, nor any complex control structure (except maybe list compr
 In passing, I learned about `first.first` which might prove very handy when working with stack- or heap-like data structures. Other interesting `itertools` functions (chapter 8): `acumulate(iterable[,func])` returns a series of accumulated sums of items from iterables; `chain(*iterables)` iterates over multiple iterables, one after another, without building an intermediate list of all items; `combinations(iterable,r)` generates all combinations of length `r` from the given iterable; `compress(data,selectors)` applies a Boolean mask from selectors to data and returns only the values from data where the corresponding element of selectors is `True`; `count(start,step)` generates an endless sequence of values, starting with start and incrementing step at a time with each call; `cycle(iterable)` loops repeatedly over the values in iterable; `repeat(elem[,n])` repeats an element ntimes; `dropwhile(predicate,iterable)` filters elements of an iterable starting from the beginning until predicateis False; groupby(iterable,keyfunc) creates an iterator that groups items by the result returned by the `keyfunc()` function; `permutations(iterable[,r])` returns successive `r`­length permutations of the items in iterable; `product(*iterables)` returns an iterable of the Cartesian product of iterables without using a nested for loop; `takewhile(predicate,iterable)` returns elements of an iterable starting from the beginning until predicate is `False`. And of course, there's the `functools` [partial](https://stackoverflow.com/q/15331726) function.
 
 {{% alert note %}}
-Little update from November. I just noticed the following code from Joel Grus on Twitter and I couldn't resist adding it here.
+<small>[2020-06-19]</small><br>
+I originally cited a tweet by Joel Grus, which has been deleted. Its ID was 1198253069160472576.
 {{% /alert %}}
-
-{{< tweet 1198253069160472576 >}}
-
