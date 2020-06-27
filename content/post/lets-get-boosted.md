@@ -14,5 +14,7 @@ The lead article is of course the one written by [Hastie](https://web.stanford.e
 
 In what follows, I'm going to use a dataset from the medical literature to fit a GBM using Python, with the help of the H2O package then using Spark (MLlib precisely).
 
+https://archive.ics.uci.edu/ml/datasets/Arcene
+
 [^1]: More or less since I started drafting this post in April, 2020.
 [^2]: Murphy, P., Kevin. 2012. [_Machine Learning: A Probabilistic Perspective_](https://www.cs.ubc.ca/~murphyk/MLbook/). Cambridge, Massachusetts London, England: The MIT Press.
