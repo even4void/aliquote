@@ -67,12 +67,14 @@
 			<outline htmlUrl="http://v4.chriskrycho.com/" title="Chris Krycho" xmlUrl="https://v4.chriskrycho.com/feed.xml" type="rss" text="Chris Krycho"/>
 			<outline htmlUrl="https://chris-martin.org//" title="Chris Martin" xmlUrl="https://chris-martin.org/rss.xml" type="rss" text="Chris Martin"/>
 			<outline htmlUrl="https://chrispenner.ca/atom.xml" title="Chris Penner" xmlUrl="https://chrispenner.ca/atom.xml" type="rss" text="Chris Penner"/>
+			<outline htmlUrl="https://chris-said.io/" title="Chris Said" xmlUrl="https://chris-said.io/atom.xml" type="rss" text="Chris Said"/>
 			<outline htmlUrl="https://codeandculture.wordpress.com" title="Code and Culture" xmlUrl="http://codeandculture.wordpress.com/feed/" type="rss" text="Code and Culture"/>
 			<outline htmlUrl="https://gilkalai.wordpress.com" title="Combinatorics and more" xmlUrl="https://gilkalai.wordpress.com/feed/" type="rss" text="Combinatorics and more"/>
 			<outline htmlUrl="http://40ants.com/lisp-project-of-the-day/" title="Common Lisp Project of the Day" xmlUrl="http://40ants.com/lisp-project-of-the-day/rss.xml" type="rss" text="Common Lisp Project of the Day"/>
 			<outline htmlUrl="https://lisptips.com/" title="Common Lisp Tips" xmlUrl="https://lisptips.com/rss" type="rss" text="Common Lisp Tips"/>
 			<outline htmlUrl="https://lispnews.wordpress.com" title="Common Lisp Weekly News" xmlUrl="https://lispnews.wordpress.com/feed/" type="rss" text="Common Lisp Weekly News"/>
 			<outline htmlUrl="https://groups.google.com/d/forum/comp.lang.lisp" title="comp.lang.lisp" xmlUrl="https://groups.google.com/forum/feed/comp.lang.lisp/topics/rss.xml?num=15" type="rss" text="comp.lang.lisp"/>
+			<outline htmlUrl="https://rakhim.org/" title="Computable Multiverse" xmlUrl="https://rakhim.org/index.xml" type="rss" text="Computable Multiverse"/>
 			<outline htmlUrl="https://www.copingmechanism.com" title="Coping Mechanism" xmlUrl="https://www.baty.blog/feed.rss" type="rss" text="Coping Mechanism"/>
 			<outline htmlUrl="http://corte.si" title="cortesi" xmlUrl="http://corte.si/rss.xml" type="rss" text="cortesi"/>
 			<outline htmlUrl="https://dan.lousqui.fr/" title="Dan Lousqui" xmlUrl="https://dan.lousqui.fr/all.rss.xml" type="rss" text="Dan Lousqui"/>
@@ -105,7 +107,7 @@
 			<outline htmlUrl="https://blog.yossarian.net" title="ENOSUCHBLOG" xmlUrl="http://blog.yossarian.net/feed.xml" type="rss" text="ENOSUCHBLOG"/>
 			<outline htmlUrl="http://evanjones.ca/" title="Evan Jones - Software Engineer | Computer Scientist" xmlUrl="https://www.evanjones.ca/index.rss" type="rss" text="Evan Jones - Software Engineer | Computer Scientist"/>
 			<outline htmlUrl="http://www.evanmiller.org/" title="Evan Miller’s News" xmlUrl="http://www.evanmiller.org/news.xml" type="rss" text="Evan Miller’s News"/>
-			<outline title="Étienne Deparis" xmlUrl="https://etienne.depar.is/feeds/index.xml" type="rss" text="Étienne Deparis"/>
+			<outline htmlUrl="https://etienne.depar.is/a-ecrit" title="Étienne Deparis" xmlUrl="https://etienne.depar.is/feeds/index.xml" type="rss" text="Étienne Deparis"/>
 			<outline htmlUrl="https://ericlippert.com" title="Fabulous adventures in coding" xmlUrl="https://ericlippert.com/feed/" type="rss" text="Fabulous adventures in coding"/>
 			<outline htmlUrl="https://fangpenlin.com/" title="Fang-Pen's coding note" xmlUrl="https://fangpenlin.com/feed.xml" type="rss" text="Fang-Pen's coding note"/>
 			<outline htmlUrl="https://www.sacrideo.us/" title="Fastidious Elegance" xmlUrl="https://www.sacrideo.us/rss/" type="rss" text="Fastidious Elegance"/>
@@ -124,7 +126,6 @@
 			<outline htmlUrl="http://www.lihaoyi.com/" title="Haoyi's Programming Blog" xmlUrl="http://www.lihaoyi.com/feed" type="rss" text="Haoyi's Programming Blog"/>
 			<outline htmlUrl="https://www.philipzucker.com" title="Hey There Buddo!" xmlUrl="http://www.philipzucker.com/feed/" type="rss" text="Hey There Buddo!"/>
 			<outline htmlUrl="https://bphogan.com/" title="Home on bphogan.com" xmlUrl="https://bphogan.com/index.xml" type="rss" text="Home on bphogan.com"/>
-			<outline htmlUrl="https://rakhim.org/" title="Home on Rakhim.org" xmlUrl="https://rakhim.org/index.xml" type="rss" text="Home on Rakhim.org"/>
 			<outline htmlUrl="http://hongchao.me/hongchao.me" title="Hongchao's Notes" xmlUrl="http://hongchao.me/feed.xml" type="rss" text="Hongchao's Notes"/>
 			<outline htmlUrl="http://www.howardism.org/" title="Howardism" xmlUrl="http://www.howardism.org/index.xml" type="rss" text="Howardism"/>
 			<outline htmlUrl="http://fanhuan.github.io" title="Huan Fan" xmlUrl="http://fanhuan.github.io/en/feed/" type="rss" text="Huan Fan"/>
@@ -281,12 +282,12 @@
 			<outline htmlUrl="http://neugierig.org/software/blog/" title="Tech Notes" xmlUrl="http://neugierig.org/software/blog/atom.xml" type="rss" text="Tech Notes"/>
 			<outline htmlUrl="https://technomancy.us/" title="Technomancy" xmlUrl="http://technomancy.us/feed/atom.xml" type="rss" text="Technomancy"/>
 			<outline htmlUrl="https://toroid.org/etc" title="The Advisory Boar" xmlUrl="https://toroid.org/etc/index.atom" type="rss" text="The Advisory Boar"/>
+			<outline htmlUrl="https://joshrollinswrites.com/" title="The Art of Not Asking Why" xmlUrl="https://joshrollinswrites.com/index.xml" type="rss" text="The Art of Not Asking Why"/>
 			<outline htmlUrl="https://tapoueh.org/" title="The Art of PostgreSQL" xmlUrl="https://tapoueh.org/index.xml" type="rss" text="The Art of PostgreSQL"/>
 			<outline htmlUrl="https://alex-hhh.github.io/index.html" title="The Blog of Alex Harsányi: The Blog of Alex Harsányi" xmlUrl="https://alex-hhh.github.io/feeds/all.rss.xml" type="rss" text="The Blog of Alex Harsányi: The Blog of Alex Harsányi"/>
 			<outline htmlUrl="https://floooh.github.com/" title="The Brain Dump" xmlUrl="https://floooh.github.com/feed.xml" type="rss" text="The Brain Dump"/>
 			<outline htmlUrl="http://blog.cleancoder.com/" title="The Clean Code Blog" xmlUrl="http://blog.cleancoder.com/atom.xml" type="rss" text="The Clean Code Blog"/>
 			<outline htmlUrl="https://thedorkweb.substack.com" title="The Dork Web" xmlUrl="https://thedorkweb.substack.com/feed/" type="rss" text="The Dork Web"/>
-			<outline htmlUrl="https://chris-said.io/" title="The File Drawer" xmlUrl="https://chris-said.io/atom.xml" type="rss" text="The File Drawer"/>
 			<outline htmlUrl="http://blog.thegrandlocus.com/" title="The Grand Locus" xmlUrl="http://feeds.feedburner.com/TheGrandLocus?format=xml" type="rss" text="The Grand Locus"/>
 			<outline htmlUrl="http://calculist.org/" title="The Little Calculist" xmlUrl="http://calculist.org/feed.xml" type="rss" text="The Little Calculist"/>
 			<outline htmlUrl="https://blog.acolyer.org" title="the morning paper" xmlUrl="https://blog.acolyer.org/feed/" type="rss" text="the morning paper"/>
@@ -318,7 +319,9 @@
 			<outline htmlUrl="http://varianceexplained.org" title="Variance Explained" xmlUrl="http://varianceexplained.org/feed.xml" type="rss" text="Variance Explained"/>
 			<outline htmlUrl="http://blog.veitheller.de/" title="Veit's Blog" xmlUrl="https://blog.veitheller.de/feed.rss" type="rss" text="Veit's Blog"/>
 			<outline htmlUrl="https://jimhester.com/post/" title="Videos / Posts on Jim Hester" xmlUrl="https://www.jimhester.com/post/index.xml" type="rss" text="Videos / Posts on Jim Hester"/>
+			<outline htmlUrl="https://vincent.bernat.ch/en" title="Vincent Bernat" xmlUrl="https://vincent.bernat.ch/en/blog/atom.xml" type="rss" text="Vincent Bernat"/>
 			<outline htmlUrl="https://vis4.net/blog/" title="vis4.net" xmlUrl="https://vis4.net/blog/atom.xml" type="rss" text="vis4.net"/>
+			<outline htmlUrl="https://blog.vivekhaldar.com/" title="Vivek Haldar" xmlUrl="https://blog.vivekhaldar.com/rss" type="rss" text="Vivek Haldar"/>
 			<outline htmlUrl="https://vxlabs.com/" title="vxlabs" xmlUrl="https://vxlabs.com/index.xml" type="rss" text="vxlabs"/>
 			<outline htmlUrl="http://www.walkingrandomly.com" title="Walking Randomly" xmlUrl="http://feeds.feedburner.com/WalkingRandomly" type="rss" text="Walking Randomly"/>
 			<outline htmlUrl="https://weinholt.se" title="weinholt.se" xmlUrl="https://weinholt.se/feed.xml" type="rss" text="weinholt.se"/>
