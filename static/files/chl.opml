@@ -231,6 +231,7 @@
 			<outline htmlUrl="https://openfolder.sh" title="Open Folder" xmlUrl="https://feedpress.me/tnb" type="rss" text="Open Folder"/>
 			<outline htmlUrl="https://www.xarg.org/" title="Open Source is Everything" xmlUrl="https://feeds.feedburner.com/exarg" type="rss" text="Open Source is Everything"/>
 			<outline htmlUrl="https://www.parsonsmatt.org" title="Overcoming Software" xmlUrl="https://www.parsonsmatt.org/feed.xml" type="rss" text="Overcoming Software"/>
+			<outline title="Owoga" xmlUrl="https://owoga.com/rss/" type="rss" text="Owoga"/>
 			<outline htmlUrl="http://www.paulgraham.com/" title="Paul Graham: Essays" xmlUrl="http://www.aaronsw.com/2002/feeds/pgessays.rss" type="rss" text="Paul Graham: Essays"/>
 			<outline htmlUrl="https://www.pvk.ca/" title="Paul Khuong: some Lisp" xmlUrl="https://www.pvk.ca/atom.xml" type="rss" text="Paul Khuong: some Lisp"/>
 			<outline htmlUrl="https://travisdowns.github.io/" title="Performance Matters" xmlUrl="https://travisdowns.github.io/feed.xml" type="rss" text="Performance Matters"/>
