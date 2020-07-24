@@ -1,6 +1,6 @@
 ---
 title: "Lets get boosted"
-date: 2020-04-08T13:44:39+01:00
+date: 2020-07-24T08:44:39+01:00
 draft: true
 tags: ["statistics", "python"]
 categories: ["2020"]
@@ -12,9 +12,14 @@ Boosting tree models have a number of advantages, indeed.[^2] They are (quite) e
 
 The lead article is of course the one written by [Hastie](https://web.stanford.edu/~hastie/ElemStatLearn/) and [coll.](https://projecteuclid.org/euclid.aos/1013203451) in 2001, but see one of Hastie's [talk](https://web.stanford.edu/~hastie/TALKS/boost.pdf) (given at MIT in 2003). The H20 team also has a nice [summary of the algorithm](http://docs.h2o.ai/h2o/latest-stable/h2o-docs/data-science/gbm.html). Briefly, the idea is
 
-In what follows, I'm going to use a dataset from the medical literature to fit a GBM using Python, with the help of the H2O package then using Spark (MLlib precisely).
+In what follows, I'm going to use a dataset from the [medical literature](http://biostat.mc.vanderbilt.edu/wiki/Main/DataSets) to fit a GBM using Python, with the help of the H2O package then using Spark (MLlib precisely).[^3]
 
-https://archive.ics.uci.edu/ml/datasets/Arcene
+import h2o
+from h2o.estimators import H2OGradientBoostingEstimator
+h2o.init()
+
+stroke = h2o.import_file()
 
 [^1]: More or less since I started drafting this post in April, 2020.
 [^2]: Murphy, P., Kevin. 2012. [_Machine Learning: A Probabilistic Perspective_](https://www.cs.ubc.ca/~murphyk/MLbook/). Cambridge, Massachusetts London, England: The MIT Press.
+[^3]: Originally, I thought about using a data set from _Statistical Learning for Biomedical Data_ (Malley, Malley & Pajevic, Cambridge University Press, 2011), where the authors used Random Forest using subsampling to account for class imbalance. Unfortunately, I realized that the "Stroke-A dataset" is not in the public domain.
