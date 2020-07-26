@@ -773,11 +773,15 @@ xYplot(Cbind(yhat, lower, upper) ~ age | race, data = p, layout = c(3, 1), metho
 ```
 
 ![](/img/predict.png)
-
 Logistic regression is handled by the `lrm()` function, and it works almost
 in the same way, except that it provides more convenient output than R's
 `glm()`, especially in terms of adjusted odds-ratio, partial effects,
 confidence intervals, or likelihhod ratio test.
+
+{{% alert note %}}
+<small>[2020-07-26]</small><br>
+A very comprehensive introduction to Frank Harrell's packages has been published recently: [An Introduction to the Harrell“verse”: Predictive Modeling using the Hmisc and rms Packages](https://www.nicholas-ollberding.com/post/an-introduction-to-the-harrell-verse-predictive-modeling-using-the-hmisc-and-rms-packages/).
+{{% /alert %}}
 
 [1]: http://cran.r-project.org/web/packages/Hmisc
 [2]: http://cran.r-project.org/web/packages/rms
@@ -792,31 +796,3 @@ confidence intervals, or likelihhod ratio test.
 [11]: http://cran.r-project.org/web/packages/directlabels
 [12]: http://biostat.mc.vanderbilt.edu/wiki/Main/CourseBios330
 [13]: http://cran.r-project.org/web/packages/effects
-
-<!---
-
-
-
-
-
-
-\section*{Pour aller plus loin}
-Il existe un très bon tutoriel sur \verb|Hmisc| (anciennement
-\verb|Design|), \emph{An Introduction to S and the Hmisc and Design Libraries; CF
-Alzola and FE Harrell} (PDF, 310 pages), disponible à l'adresse suivante :
-\url{http://biostat.mc.vanderbilt.edu/Hmisc}. On y trouvera également
-d'autres resources documentaires.
-
-La référence bibliographique concernant le package \verb|rms| est :
-\begin{quote}
-  Harrell, F.E., Jr (2001). \emph{Regression Modeling Strategies, With
-  Applications to Linear Models, Logistic Regression, and Survival Analysis.}
-  Springer. (600 pages)
-\end{quote}
-Le cours en ligne suivant repose cet ouvrage et fournit l'essentiel des
-idées dans un document PDF :
-\url{http://biostat.mc.vanderbilt.edu/wiki/Main/CourseBios330}. Le livre
-\emph{Clinical Prediction Models} de E.W. Steyerberg repose en partie sur le
-package \verb|rms| et constitue un bon complément à l'ouvrage ci-dessus. Le
-site companion du livre est : \url{http://www.clinicalpredictionmodels.org}.
--->
