@@ -1,7 +1,7 @@
 ---
 title: "August in review"
-date: 2020-08-02T16:19:53+02:00
-draft: true
+date: 2020-08-04T07:19:53+02:00
+draft: false
 tags: ["readings"]
 categories: ["2020"]
 ---
