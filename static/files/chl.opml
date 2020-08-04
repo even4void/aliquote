@@ -78,6 +78,7 @@
 			<outline htmlUrl="https://cestlaz.github.io/" title="C'est la Z" xmlUrl="https://cestlaz.github.io/rss.xml" type="rss" text="C'est la Z"/>
 			<outline htmlUrl="http://cachestocaches.com" title="CachesToCaches" xmlUrl="http://www.cachestocaches.com/feed/" type="rss" text="CachesToCaches"/>
 			<outline htmlUrl="http://www.cxhernandez.com/" title="Carlos Xavier Hernández" xmlUrl="http://cxhernandez.com/feed.xml" type="rss" text="Carlos Xavier Hernández"/>
+			<outline htmlUrl="https://blog.carlosgaldino.com/" title="carlosgaldino" xmlUrl="https://blog.carlosgaldino.com/atom.xml" type="rss" text="carlosgaldino"/>
 			<outline htmlUrl="https://changelog.com/posts" title="Changelog" xmlUrl="https://changelog.com/posts/feed" type="rss" text="Changelog"/>
 			<outline htmlUrl="http://blog.binchen.org/" title="Chen's blog" xmlUrl="https://blog.binchen.org/rss.xml" type="rss" text="Chen's blog"/>
 			<outline htmlUrl="https://chrisalbon.com/" title="Chris Albon" xmlUrl="https://chrisalbon.com/index.xml" type="rss" text="Chris Albon"/>
@@ -218,6 +219,7 @@
 			<outline htmlUrl="http://adventures.michaelfbryan.com/" title="Michael-F-Bryan" xmlUrl="http://adventures.michaelfbryan.com/index.xml" type="rss" text="Michael-F-Bryan"/>
 			<outline htmlUrl="https://ekaschalk.github.io/" title="Modern Emacs on Modern Emacs" xmlUrl="https://ekaschalk.github.io/index.xml" type="rss" text="Modern Emacs on Modern Emacs"/>
 			<outline htmlUrl="https://morgenthum.dev" title="morgenthum.dev - software development and architecture" xmlUrl="https://morgenthum.dev/rss.xml" type="rss" text="morgenthum.dev - software development and architecture"/>
+			<outline htmlUrl="https://www.mortens.dev/" title="Morten's Dev" xmlUrl="https://www.mortens.dev/feeds/all.atom.xml" type="rss" text="Morten's Dev"/>
 			<outline htmlUrl="http://www.mostlymaths.net/" title="Mostly Maths" xmlUrl="https://www.mostlymaths.net/feeds/posts/default" type="rss" text="Mostly Maths"/>
 			<outline htmlUrl="https://mostlymaths.net/" title="mostlymaths.net" xmlUrl="https://mostlymaths.net/index.xml" type="rss" text="mostlymaths.net"/>
 			<outline htmlUrl="http://notes.eatonphil.com/" title="My notes" xmlUrl="http://notes.eatonphil.com/rss.xml" type="rss" text="My notes"/>
@@ -229,6 +231,7 @@
 			<outline htmlUrl="http://archive.casouri.co.uk/note" title="Notes" xmlUrl="https://archive.casouri.cat/note/rss.xml" type="rss" text="Notes"/>
 			<outline htmlUrl="https://nullprogram.com" title="null program" xmlUrl="http://nullprogram.com/blog/index.rss" type="rss" text="null program"/>
 			<outline htmlUrl="https://vfoley.xyz/" title="Occasionally sane" xmlUrl="https://vfoley.xyz/index.xml" type="rss" text="Occasionally sane"/>
+			<outline title="okmij.org" xmlUrl="http://okmij.org/ftp/rss.xml" type="rss" text="okmij.org"/>
 			<outline htmlUrl="https://oleb.net/blog/" title="Ole Begemann" xmlUrl="https://oleb.net/blog/atom.xml" type="rss" text="Ole Begemann"/>
 			<outline htmlUrl="https://oli.me.uk/" title="Oliver Caldwell's blog" xmlUrl="https://oli.me.uk/feed.xml" type="rss" text="Oliver Caldwell's blog"/>
 			<outline htmlUrl="https://www.eidel.io" title="Oliver Eidel - Articles" xmlUrl="https://www.eidel.io/feed.xml" type="rss" text="Oliver Eidel - Articles"/>
@@ -302,6 +305,7 @@
 			<outline htmlUrl="http://www.strchr.com" title="strchr.com updates" xmlUrl="https://www.strchr.com/?feed=/" type="rss" text="strchr.com updates"/>
 			<outline htmlUrl="http://neugierig.org/software/blog/" title="Tech Notes" xmlUrl="http://neugierig.org/software/blog/atom.xml" type="rss" text="Tech Notes"/>
 			<outline htmlUrl="https://technomancy.us/" title="Technomancy" xmlUrl="http://technomancy.us/feed/atom.xml" type="rss" text="Technomancy"/>
+			<outline htmlUrl="http://techsnuffle.com" title="TechSnuffle" xmlUrl="http://techsnuffle.com/feed.xml" type="rss" text="TechSnuffle"/>
 			<outline htmlUrl="https://toroid.org/etc" title="The Advisory Boar" xmlUrl="https://toroid.org/etc/index.atom" type="rss" text="The Advisory Boar"/>
 			<outline htmlUrl="https://joshrollinswrites.com/" title="The Art of Not Asking Why" xmlUrl="https://joshrollinswrites.com/index.xml" type="rss" text="The Art of Not Asking Why"/>
 			<outline htmlUrl="https://tapoueh.org/" title="The Art of PostgreSQL" xmlUrl="https://tapoueh.org/index.xml" type="rss" text="The Art of PostgreSQL"/>
