@@ -6,9 +6,9 @@ tags: ["emacs", "tex"]
 categories: ["2020"]
 ---
 
-I've been using Pandoc as my [main backend](/post/org-workflow/) for exporting Org documents to PDF, mainly because it was convenient way to manage bibliographic entries using Markdown markup. It is pretty nice and easy to setup. Moreover, it works with HTML output too using a template indicated either in the document header or using `org-pandoc-options-for-html5`. Problem is that it does not work with Babel, or at least I couldn't export the block results (mostly R, Lisp and Python code) at some point, and I switched back to the default HTML or PDF exporter. First off, unless you give it a proper CSS file, you won't get much from the HTML exporter. Same for the PDF output: the default Latex class is basically the "article" format. In both cases, without Pandoc it becomes harder to manage bibliographic entries and I'm looking for a lightweight solution whereby we do not have to use header options or inline Latex commands. I don't mind writing `\cite` commands, though.
+I've been using Pandoc as my [main backend](/post/org-workflow/) for exporting Org documents to PDF, mainly because it was convenient way to manage bibliographic entries using Markdown markup. It is pretty nice and easy to setup. Moreover, it works with HTML output too using a template indicated either in the document header or using `org-pandoc-options-for-html5`. Problem is that it does not work with Babel, or at least I couldn't export the block results (mostly R, Lisp and Python code) at some point, and I switched back to the default HTML or PDF exporter. First off, unless you give it a proper CSS file, you won't get much from the HTML exporter. Same for the PDF output: the default Latex class is basically the "article" format. In both cases, without Pandoc it becomes harder to manage bibliographic entries and I'm looking for a lightweight solution whereby we do not have to use header options or inline Latex commands. I want my Org file to look as mauch as possible like an Org file, without extra markup. I don't mind writing `\cite` commands, though.
 
-I have used `org-ref` [in the past](/post/notes-taking-workflow/), but I wanted a simpler solution, which also does not involve [ox-bibtex](/post/org-and-bibtex/) which I found too limited. Furthermore, this time I was interested in using the Tufte handout template.
+I have used `org-ref` [in the past](/post/notes-taking-workflow/), but I wanted a simpler solution, which also does not involve [ox-bibtex](/post/org-and-bibtex/) which I found too limited. Furthermore, this time I was interested in using the Tufte handout template. I used it some years ago for my handout before looking for more standard layout with nice typographic rendering. I am aware of the [Tufte Org Mode](https://github.com/tsdye/tufte-org-mode), and I should probably be using the [ebib](http://joostkremers.github.io/ebib/) package as well. But I'm happy with my minimal setup which relies on `ivy-bibtex`. As I said in previous posts, Ivy really is a booster in my workflow, especially when taking notes, for I can quickly navigate into my file system or project, à la [fzf](https://github.com/junegunn/fzf), while having my Bibtex database available at any time. Also I don't mind if I don't get all the features from Tufte handout, like unnumbered margin notes.
 
 Here is what I finally ended up adding my init file:
 
@@ -19,6 +19,7 @@ Here is what I finally ended up adding my init file:
                   "\\documentclass[nobib]{tufte-handout}
                    \\usepackage[style=authoryear-comp,autocite=footnote]{biblatex}
                    \\addbibresource{/Users/chl/org/references.bib}
+                   --%<--- snip --->%--
                    \\usepackage{nicefrac}
                    \\usepackage{units}
                    [NO-DEFAULT-PACKAGES]
@@ -30,9 +31,9 @@ Here is what I finally ended up adding my init file:
                   ("\\subparagraph{%s}" . "\\subparagraph*{%s}"))))
 ```
 
-This defines a new template where we define the main document class and the packages we want to use. In this case, we do not want the default packages but we allow to define additional settings via a header option like `#+LATEX_EXTRA:`. Also, it is worth noting that the `nobib` option for the document class is recommended to avoid `biblatex` clashes with the `natbib` package. (I tried setting `natbib=true` in the options for the `biblatex` package, but it didn't work.)
+This defines a new template where we define the main document class and the packages we want to use. In this case, we do not want the default packages but we allow to define additional settings via a header option like `#+LATEX_EXTRA:`. Also, it is worth noting that the `nobib` option for the document class is the [right way](https://tex.stackexchange.com/a/45949) to avoid `biblatex` clashes with the `natbib` package. (I tried setting `natbib=true` in the options for the `biblatex` package, but it didn't work.)
 
-Next, we just have to define this template as our default Latex class and indicate how to compile the file(s). We can use either `texi2pdf` or `latexmk`. I use both most of the times, and no longer bother with `pdflatex` or `lualatex`.
+Next, we just have to define this template as our default Latex class and indicate how to compile the file(s). We can use either `texi2pdf` or `latexmk`. I use either one depending on my mood, and I no longer have to bother with multiple runs of `pdflatex` or `lualatex`.
 
 ```emacs-lisp
 (font-lock-add-keywords 'org-mode
