@@ -18,4 +18,9 @@ When in GUI mode, I have a lot of keybindings involving the command key on my Ma
 
 Overall, I'm starting to appreciate Evil mode, especially motion, visual mode, and the `z` and `g` prefixes. I'm still learning, though. at this point, I would say I use 50% of Vim keybindings, in addition to `which-key` shortcuts, when I'm not simply moving around using the arrow keys with or without the `fn` key (yes I know, this is bad, we have `hjkl` and `C-u`/`C-d`). However, I tend to be slowly moving to using Vim keybindings exclusively, especially when running Emacs in a Terminal.
 
+{{% alert note %}}
+<small>[2020-08-16]</small><br>
+Doom Emacs now includes [specific settings](https://github.com/hlissner/doom-emacs/tree/develop/modules/os/tty) for running Emacs in a Terminal.
+{{% /alert %}}
+
 [^1]: Unfortunately, I don't remember where exactly I got mine, but this was on Stack Overflow a few years ago.

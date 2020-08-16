@@ -18,7 +18,7 @@ Again, there are probably many other great tools, including those I've once inst
 
 {{% alert note %}}
 <small>[2020-08-15]</small><br>
-See also [Another macOS setup](http://aungthurhahein.github.io/Another-MacOS-Setup/) for related recommendations.
+See also [Rewritten in Rust: Modern Alternatives of Command-Line Tools](https://zaiste.net/posts/shell-commands-rust/) for related recommendations.
 {{% /alert %}}
 
 Regarding Emacs, there are a few packages that I could not live without. They are all bundled with Doom Emacs, of course, but these are the ones that come to my mind when I think of what I used the most in Emacs, apart from Org, [ESS](https://ess.r-project.org), [markdown-mode](http://jblevins.org/projects/markdown-mode/) and [mu4e](https://www.djcbsoftware.nl/code/mu/mu4e.html). This includes [ivy-bibtex](https://github.com/tmalsburg/helm-bibtex) (to manage my bibliographic entries and [reading notes](/post/notes-taking-workflow/) --- and yes, I now prefer Ivy to Helm), [git-gutter](https://github.com/emacsorphanage/git-gutter) ([magit](https://magit.vc) does not count, right?), [lsp-mode](https://github.com/emacs-lsp/lsp-mode) (mainly for Python, C and Rust) and [sly](https://github.com/joaotavora/sly) as a replacement to Slime for Lisp stuff.
