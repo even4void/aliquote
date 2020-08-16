@@ -1,1 +1,2 @@
 ErrorDocument 404 /404.html
+Redirect /articles/tech/dae/dae.pdf /pub/MDAE.pdf
