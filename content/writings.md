@@ -7,28 +7,61 @@ weight: 40
 
 Here is a list of things I like to work on when time allows. As you will guess pretty quickly, I can leave _those_ things hanging out for years, but there is always a chance that this stuff will be finished someday. Note that these pages are a resurrection of my [previous website](/post/migrating-to-hugo/), and I left a lot of materials behind.
 
-If you are looking for my old teaching ressources, almost everything remains available on the Teaching page if you bookmarked it once in a while.
+If you are looking for my old teaching ressources, almost everything remains available on the Teaching page if you bookmarked it once in a while, but most links are below.
 
-## Current work (so called [wip](https://en.wikipedia.org/wiki/Work_in_process))
+I yet have to find something to write, you know something that will last forever --- but never ending. In the meantime, check my Github in case you find something of potential interest, or see the following remnants of my former life:
 
-I yet have to find something to write, you know something that will last forever --- but never ending. In the meantime, check my Github in case you find something of potential interest.
-
-## Past work (also called mostly [defunct](https://en.wiktionary.org/wiki/defunct))
-
-- [Stata Starter Kit](/articles/stata-sk/) (HTML, #fr)<br>
-  _A series of standalone modules to learn a bit of Stata, for those who might be interested._
-
-- [Introduction au logiciel Stata](/pub/intro-stata.pdf) (PDF, #fr)<br>
-  _An introduction to Stata for data manipulation and statistical computing._
-
-- [Statistics for Clinical Trials: Applications Using R](/pub/SAS2R.pdf) (PDF)<br>
-  _A short tutorial on using R to perform common statistical analysis à la SAS._
-
-- [Introduction au logiciel R](/pub/intro-r.pdf) (PDF, #fr)<br>
-  _An introduction to R for data manipulation and statistical computing._
-
-- [A Visual Guide to R Graphics and Data Mungling](/pub/vizRguide.pdf) (PDF)<br>
-  _A small cookbook for [lattice](https://cran.r-project.org/package=lattice) and [ggplot2](https://cran.r-project.org/package=ggplot2) graphics._
-
-- [R Companion to Montgomery's Design and Analysis of Experiments](/pub/MDAE.pdf) (PDF)<br>
-  _A handbook of statistical analysis specific to design of experiments using R._
+<small>
+<table border="0">
+<tbody>
+<tr>
+<td><em>Title</em></td>
+<td><em>Date</em></td>
+<td><em>Lang</em></td>
+<td><em>Status</em></td>
+<td><em>Type</em></td>
+</tr>
+<tr><td><a href="/pub/vim101.pdf">Vim 101</a></td><td>Aug 2020</td><td>en</td><td>todo</td><td>PDF</td></tr>
+<tr><td><a href="/pub/SAS2R.pdf">Statistics for Clinical Trials: Applications Using R</a></td><td>Mar 2020</td><td>en</td><td>todo</td><td>PDF</td></tr>
+<tr><td><a href="/pub/ngs.pdf">RNA-Seq workshop</a></td><td>Feb 2020</td><td>en</td><td>done</td><td>PDF</td></tr>
+<tr><td><a href="https://github.com/even4void/rstats-ssample">Statistiques pour petits échantillons</a></td><td>May 2018</td><td>fr</td><td>done</td><td>PDF</td></tr>
+<tr><td><a href="/articles/stata-sk">Stata Starter Kit</a></td><td>Sep 2019</td><td>fr</td><td>todo</td><td>HTML</td></tr>
+<tr><td><a href="https://github.com/even4void/rstats-biostats">Méthodes biostatistiques</a></td><td>June 2018</td><td>fr</td><td>done</td><td>PDF</td></tr>
+<tr><td><a href="https://github.com/even4void/EESPE11">Méthodes psychométriques en qualité de vie</a></td><td>Jun 2016</td><td>fr</td><td>done</td><td>PDF</td></tr>
+<tr><td><a href="https://github.com/even4void/Stata101">Stata 101</a></td><td>May 2016</td><td>fr</td><td>done</td><td>PDF</td></tr>
+<tr><td><a href="/pub/psychometrics_up13.pdf"> Méthodes psychométriques en psychiatrie</a></td><td>Feb 2016</td><td>fr</td><td>done</td><td>PDF</td></tr>
+<tr><td><a href="http://even4void.github.io/seminr/">Analyse multivariée et modèles à variables latentes</a></td><td>Jan 2016</td><td>fr</td><td>done</td><td>HTML</td></tr>
+<tr><td><a href="/cours/supelec">Biostatistiques avancées avec R</a></td><td>Oct 2015</td><td>fr</td><td>done</td><td>PDF</td></tr>
+<tr><td><a href="/cours/misc/lalanne_apramen_2015.pdf">Les essais cliniques en pratique</a></td><td>Sep 2015</td><td>fr</td><td>done</td><td>PDF</td></tr>
+<tr><td><a href="/pub/vizRguide.pdf">A Visual Guide to R Graphics and Data Mungling</a></td><td>Apr 2015</td><td>en</td><td>canc</td><td>PDF</td></tr>
+<tr><td><a href="/pub/intro-stata.pdf">Introduction au logiciel Stata</a></td><td>Mar 2015</td><td>fr</td><td>done</td><td>PDF</td></tr>
+<tr><td><a href="/pub/intro-r.pdf">Introduction au logiciel R</a></td><td>Feb 2015</td><td>fr</td><td>done</td><td>PDF</td></tr>
+<tr><td><a href="https://github.com/even4void/rstats-esme">Data Mining avec R</a></td><td>Feb 2015</td><td>fr</td><td>done</td><td>PDF</td></tr>
+<tr><td><a href="/pub/RStudio.pdf">RStudio tips</a></td><td>Oct 2014</td><td>en</td><td>canc</td><td>PDF</td></tr>
+<tr><td><a href="/cours/misc/stats101.pdf">Introduction aux statistiques médicales</a></td><td>Oct 2014</td><td>fr</td><td>done</td><td>PDF</td></tr>
+<tr><td><a href="/cours/misc/reliability.pdf">Concordance et fidélité de mesure</a></td><td>Sep 2014</td><td>fr</td><td>done</td><td>PDF</td></tr>
+<tr><td><a href="/cours/misc/mooc/">Introduction au langage R</a></td><td>Apr 2014</td><td>fr</td><td>done</td><td>PDF</td></tr>
+<tr><td><a href="/pub/MDAE.pdf">R Companion to Montgomery's Design and Analysis of Experiments</a></td><td>Dec 2012</td><td>en</td><td>canc</td><td>PDF</td></tr>
+<tr><td><a href="/cours/2013_AS/">Atelier Statistique du Cogmaster</a></td><td>Oct 2012</td><td>fr</td><td>done</td><td>PDF</td></tr>
+<tr><td><a href="/cours/misc/gee/">Analyzing correlated data<a></td><td>Apr 2012</td><td>en</td><td>canc</td><td>PDF</td></tr>
+<tr><td><a href="/cours/misc/mva_clinres">Sélection de variables pour données irrégulières</a></td><td>Apr 2012</td><td>fr</td><td>done</td><td>PDF</td></tr>
+<tr><td><a href="/cours/2012_biomed/">Introduction à #rstats pour la recherche biomédicale</a></td><td>Feb 2012</td><td>fr</td><td>done</td><td>PDF</td></tr>
+<tr><td><a href="/cours/misc/glm/">GLM: Theory and applications in the Life science</a></td><td>Dec 2011</td><td>en</td><td>done</td><td>PDF</td></tr>
+<tr><td><a href="/cours/2011_health_measures/">Introductory lectures on Statistics for Health Measurement</a></td><td>Sep 2011</td><td>en</td><td>done</td><td>PDF</td></tr>
+<tr><td><a href="/pub/iplots.pdf">A visual tour of interactive graphics with R</a></td><td>Mar 2011</td><td>en</td><td>canc</td><td>PDF</td></tr>
+<tr><td><a href="/cours/psychometrics/">Psychometrics</a></td><td>Feb 2010</td><td>en</td><td>canc</td><td>PDF</td></tr>
+<tr><td><a href="/cours/misc/Lalanne_Cogiter_2009.pdf">Analyse des données génétiques</a></td><td>Nov 2009</td><td>fr</td><td>done</td><td>PDF</td></tr>
+<tr><td><a href="/pub/contrasts.txt">Contrastes sous R</a></td><td>May 2008</td><td>fr</td><td>done</td><td>TXT</td></tr>
+<tr><td><a href="/pub/MABMUSPlus/gallery">A collection of plots from Selvin's book on S+</a></td><td>Feb 2009</td><td>en</td><td>done</td><td>HTML</td></tr>
+<tr><td><a href="/cours/stats_bioinfo">Statistiques inférentielles</a></td><td>Dec 2008</td><td>fr</td><td>done</td><td>PDF</td></tr>
+<tr><td><a href="/pub/MDLD.pdf">Models for Discrete Longitudinal Data</a></td><td>Nov 2007</td><td>en</td><td>canc</td><td>PDF</td></tr>
+<tr><td><a href="/cours/2007_cogmaster_B4/">Modèles probabilistes et théorie de l'information</a></td><td>??? 2007</td><td>fr</td><td>done</td><td>PDF</td></tr>
+<tr><td><a href="/cours/2006_cogmaster_B4/">Modèles probabilistes en sciences cognitives</a></td><td>??? 2006</td><td>fr</td><td>done</td><td>PDF</td></tr>
+<tr><td><a href="/pub/tips.txt">Trucs et astuces Linux</a></td><td>??? 2006</td><td>fr</td><td>done</td><td>TXT</td></tr>
+<tr><td><a href="/cours/2005_iut/">Introduction aux sciences cognitives</a></td><td>??? 2005</td><td>fr</td><td>done</td><td>PDF</td></tr>
+<tr><td><a href="/cours/2004_cim/">Statistiques appliquées à l'exprimentation humaine</a></td><td>??? 2004</td><td>fr</td><td>done</td><td>PDF</td></tr>
+<tr><td><a href="/pub/Combinatoire.ps">Analyse combinatoire</a></td><td>Apr 2003</td><td>fr</td><td>done</td><td>PS</td></tr>
+<tr><td><a href="/pub/Matrices.ps">Analyse matricielle</a></td><td>Apr 2003</td><td>fr</td><td>done</td><td>PS</td></tr>
+</tbody>
+</table>
+</small>
