@@ -24,8 +24,8 @@ I yet have to find something to write, you know something that will last forever
 <tr><td><a href="/pub/vim101.pdf">Vim 101</a></td><td>Aug 2020</td><td>en</td><td>todo</td><td>PDF</td></tr>
 <tr><td><a href="/pub/SAS2R.pdf">Statistics for Clinical Trials: Applications Using R</a></td><td>Mar 2020</td><td>en</td><td>todo</td><td>PDF</td></tr>
 <tr><td><a href="/pub/ngs.pdf">RNA-Seq workshop</a></td><td>Feb 2020</td><td>en</td><td>done</td><td>PDF</td></tr>
-<tr><td><a href="https://github.com/even4void/rstats-ssample">Statistiques pour petits échantillons</a></td><td>May 2018</td><td>fr</td><td>done</td><td>PDF</td></tr>
 <tr><td><a href="/articles/stata-sk">Stata Starter Kit</a></td><td>Sep 2019</td><td>fr</td><td>todo</td><td>HTML</td></tr>
+<tr><td><a href="https://github.com/even4void/rstats-ssample">Statistiques pour petits échantillons</a></td><td>May 2018</td><td>fr</td><td>done</td><td>PDF</td></tr>
 <tr><td><a href="https://github.com/even4void/rstats-biostats">Méthodes biostatistiques</a></td><td>June 2018</td><td>fr</td><td>done</td><td>PDF</td></tr>
 <tr><td><a href="https://github.com/even4void/EESPE11">Méthodes psychométriques en qualité de vie</a></td><td>Jun 2016</td><td>fr</td><td>done</td><td>PDF</td></tr>
 <tr><td><a href="https://github.com/even4void/Stata101">Stata 101</a></td><td>May 2016</td><td>fr</td><td>done</td><td>PDF</td></tr>
