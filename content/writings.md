@@ -21,7 +21,8 @@ I yet have to find something to write, you know something that will last forever
 <td><em>Status</em></td>
 <td><em>Type</em></td>
 </tr>
-<tr><td><a href="/pub/vim101.pdf">Vim 101</a></td><td>Aug 2020</td><td>en</td><td>todo</td><td>PDF</td></tr>
+<tr><td><a href="/pub/vim-101.pdf">Vim 101</a></td><td>Aug 2020</td><td>en</td><td>todo</td><td>PDF</td></tr>
+<tr><td><a href="/pub/impatient-emacs.pdf">Emacs pour l'impatient</a></td><td>Feb 2020</td><td>fr</td><td>todo</td><td>PDF</td></tr>
 <tr><td><a href="/pub/SAS2R.pdf">Statistics for Clinical Trials: Applications Using R</a></td><td>Mar 2020</td><td>en</td><td>todo</td><td>PDF</td></tr>
 <tr><td><a href="/pub/ngs.pdf">RNA-Seq workshop</a></td><td>Feb 2020</td><td>en</td><td>done</td><td>PDF</td></tr>
 <tr><td><a href="/articles/stata-sk">Stata Starter Kit</a></td><td>Sep 2019</td><td>fr</td><td>todo</td><td>HTML</td></tr>
