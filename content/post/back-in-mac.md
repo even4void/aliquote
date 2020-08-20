@@ -14,16 +14,16 @@ A collection of screenshots of scientific utilities taken long ago (< 2010) on o
 "pure-u-1-3|/pub/ggobi.png" >}}
 
 {{< fluid_imgs
-"pure-u-1-3|/pub/gnuplot.png"
-"pure-u-1-3|/pub/Grace.png"
-"pure-u-1-3|/pub/ggobi.png" >}}
+"pure-u-1-3|/pub/screenshots/gnuplot.png"
+"pure-u-1-3|/pub/screenshots/Grace.png"
+"pure-u-1-3|/pub/screenshots/ggobi.png" >}}
 
 {{< fluid_imgs
-"pure-u-1-3|/pub/Haskell.png"
-"pure-u-1-3|/pub/imaxima.png"
-"pure-u-1-3|/pub/lush.png" >}}
+"pure-u-1-3|/pub/screenshots/Haskell.png"
+"pure-u-1-3|/pub/screenshots/imaxima.png"
+"pure-u-1-3|/pub/screenshots/lush.png" >}}
 
 {{< fluid_imgs
-"pure-u-1-3|/pub/pspp.png"
-"pure-u-1-3|/pub/plotutils.png"
-"pure-u-1-3|/pub/xgobi.png" >}}
+"pure-u-1-3|/pub/screenshots/pspp.png"
+"pure-u-1-3|/pub/screenshots/plotutils.png"
+"pure-u-1-3|/pub/screenshots/xgobi.png" >}}
