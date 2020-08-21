@@ -9,9 +9,9 @@ categories: ["2020"]
 A collection of screenshots of scientific utilities taken long ago (< 2010) on one of my older Macbook.
 
 {{< fluid_imgs
-"pure-u-1-3|/pub/Emacs_iPython.png"
-"pure-u-1-3|/pub/maxima.png"
-"pure-u-1-3|/pub/ggobi.png" >}}
+"pure-u-1-3|/pub/screenshots/Emacs_iPython.png"
+"pure-u-1-3|/pub/screenshots/maxima.png"
+"pure-u-1-3|/pub/screenshots/ggobi.png" >}}
 
 {{< fluid_imgs
 "pure-u-1-3|/pub/screenshots/gnuplot.png"
