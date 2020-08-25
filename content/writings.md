@@ -25,6 +25,7 @@ I yet have to find something to write, you know something that will last forever
 <tr><td><a href="/pub/impatient-emacs.pdf">Emacs pour l'impatient</a></td><td>Feb 2020</td><td>fr</td><td>todo</td><td>PDF</td></tr>
 <tr><td><a href="/pub/ngs.pdf">RNA-Seq workshop</a></td><td>Feb 2020</td><td>en</td><td>done</td><td>PDF</td></tr>
 <tr><td><a href="/articles/stata-sk">Stata Starter Kit</a></td><td>Sep 2019</td><td>fr</td><td>todo</td><td>WWW</td></tr>
+<tr><td><a href="/cours/2019_meta/">Méta-analyses avec R</a></td><td> Mar 2019</td><td>fr</td><td>done</td><td>WWW</td></tr>
 <tr><td><a href="/pub/papers.pdf">Reading notes</a></td><td>Jan 2019</td><td>en</td><td>todo</td><td>PDF</td></tr>
 <tr><td><a href="https://github.com/even4void/rstats-ssample">Statistiques pour petits échantillons</a></td><td>May 2018</td><td>fr</td><td>done</td><td>PDF</td></tr>
 <tr><td><a href="https://github.com/even4void/rstats-biostats">Méthodes biostatistiques</a></td><td>Jun 2018</td><td>fr</td><td>done</td><td>PDF</td></tr>
@@ -32,7 +33,7 @@ I yet have to find something to write, you know something that will last forever
 <tr><td><a href="/pub/SAS2R.pdf">Statistics for Clinical Trials: Applications Using R</a></td><td>Jun 2016</td><td>en</td><td>todo</td><td>PDF</td></tr>
 <tr><td><a href="https://github.com/even4void/Stata101">Stata 101</a></td><td>May 2016</td><td>fr</td><td>done</td><td>PDF</td></tr>
 <tr><td><a href="/cours/2016_Canceropole">Analyse de données biomédicales avec R</a></td><td>Mar 2016</td><td>fr</td><td>done</td><td>PDF</td></tr>
-<tr><td><a href="/pub/psychometrics_up13.pdf"> Méthodes psychométriques en psychiatrie</a></td><td>Feb 2016</td><td>fr</td><td>done</td><td>PDF</td></tr>
+<tr><td><a href="/cours/psychometrics_up13.pdf"> Méthodes psychométriques en psychiatrie</a></td><td>Feb 2016</td><td>fr</td><td>done</td><td>PDF</td></tr>
 <tr><td><a href="http://even4void.github.io/seminr/">Analyse multivariée et modèles à variables latentes</a></td><td>Jan 2016</td><td>fr</td><td>done</td><td>WWW</td></tr>
 <tr><td><a href="/cours/2015_INVS">Gestion de données avancées avec R</a></td><td>Nov 2015</td><td>fr</td><td>done</td><td>PDF</td></tr>
 <tr><td><a href="/cours/supelec">Biostatistiques avec R</a></td><td>Oct 2015</td><td>fr</td><td>done</td><td>PDF</td></tr>
