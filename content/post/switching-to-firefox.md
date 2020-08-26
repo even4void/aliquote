@@ -1,0 +1,19 @@
+---
+title: "Switching to Firefox"
+date: 2020-08-26T08:57:26+02:00
+draft: false
+tags: ["apple"]
+categories: ["2020"]
+---
+
+I recently installed the Developer Edition of Firefox (80, updated to 81.0b2 after a few hours of use), and this is the first time I use something else than Safari. So far it's been a refreshing experience. Of course, I know that Safari is better, like is the Finder or Mail.app or whatever that ships with your Macbook, because these applications are so tightly integrated into the system and optimized like no other apps. Anyway, as I don't plan to upgrade my OS any time soon (and probably never; when the OS die, I'll switch to a BSD distro), and I deactivate most system updates, Safari will soon or later become out of date, both in terms of security and with regard to web standards and developer tools. I don't write a lot of HTML and CSS but I sometimes need to build some websites for work. Having some good development tools at hand is always a good idea. Safari's development tools were always enough for what I usually have to do, but I feel that I will be involved in more fine-tuned projects in the next few years, so better to have the best tools available --- and no, sorry but not so sorry, using Chrome is not an option.
+
+What I learned is that continuity works even of Firefox is not installed on my iPhone, which is great actually since we cannot redefine the default browser on iOS --- and Firefox isn't a great pretender on iOS either. I cannot manage my passwords using system Keychain, and I don't want to use other password manager so I had to fill in my passwords for every sites that require authentification, which is quite boring. However, this allows me to save some additional passwords in my GPG-encrypted personal manager so that I won't depend on Keychain if I switch to a different OS. I can now watch webm videos in my browser, which was not possible with Safari (despite Apple's claims that Safari is good at reading web video). The builtin PDF viewer is also great. Adblocking and tracker filters are good actually, I just added the DuckDuckGo Essentials and HTTPS Everywhere plugins, but I'm sure there are other interesting plugins.
+
+In passing I also reinstalled Skim.app to preview PDF documents. Not that Preview isn't a good fit but there's a little annoying feature of Safari that I'll be struggling with for the past few months: You definitely cannot force Preview to open in full-screen mode (i.e., maximized on screen, not in a different space). I even added a shortcut in my Zsh config to open PDF from the command-line using Skim:
+
+```shell
+alias -s pdf="open -a skim"
+```
+
+Now I'm happily having only two opened applications on my Macbook (not counting Finder which I don't use but don't want to hide): Kitty terminal and Firefox. And most importantly, there are no more Apple-specific applications that are part of my workflow anymore. I could switch to a Linux or BSD distro and I wouldn't miss anything essential for my daily work. The true BSD era has probably reached an end years ago, I don't know if Big Sur or the ARM arch will provide a [renewed interest](http://morrick.me/archives/8945) in macOS, or what it will even be called in few years. However, I feel like this all come to an end as far as I'm concerned. I really loved the design of OS X, I like the Mojave OS and my current setup, but I'm tired of losing little by little old useful features after each new upgrade. That's it: I'll stay on Mojave as long as I can, and then I quit.

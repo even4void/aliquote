@@ -3,7 +3,9 @@ title: "The Changelog"
 date: 2018-05-17T00:00:00
 ---
 
+[2020-08-20] Update the Archives page<br>
 [2020-06-15] Replace Twitter with Matrix for DM<br>
+[2019-09-22] Add a [Now](/now) page<br>
 [2019-09-19] Site redesign (CSS, search engine, fonts)<br>
 [2019-09-13] Massive retagging (bis)<br>
 [2019-08-22] Massive retagging<br>
