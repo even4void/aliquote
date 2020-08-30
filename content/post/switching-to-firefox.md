@@ -2,7 +2,7 @@
 title: "Switching to Firefox"
 date: 2020-08-26T08:57:26+02:00
 draft: false
-tags: ["apple"]
+tags: ["apple", "app"]
 categories: ["2020"]
 ---
 
