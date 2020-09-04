@@ -14,11 +14,7 @@ While browsing [Joshua Stein](https://jcs.org/)'s website, I noticed he has some
 
 While looking for tiling WMs available for macOS, which was quickly solved after all since there aren't so many, I found that only Amethyst was offering a full native app. I did try it a little while ago, but I found it of little help. I reinstalled it yesterday and it completely changed my mind. First, the app is tiny and works right out of the box: no configuration needed, it sits in the menu bar and we can update the settings within a few mouse clicks, it has all sort of built-in layout with predefined shortcuts that are easy to grasp (the main modifier key combination is <alt>-<shift>, while Kitty uses <ctrl>-<shift>: this is quite handy).
 
-Below is a screenshot of my current desktop: Emacs and Vim, side by side, using an almost consistent duotone-like color theme for both.
-
-![amethyst](/img/2020-09-03-13-57-08.png)
-
-Next one is a preview of the tall layout, with a main window on the left and everything arranged in row on the right:
+Below is screenshot of the "tall layout", with a main window on the left and everything arranged in row on the right:
 
 ![amethyst-tall](/img/2020-09-03-14-12-44.png)
 
