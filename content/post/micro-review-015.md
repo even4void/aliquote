@@ -22,11 +22,11 @@ A little bit early, but I wanted to record recent bookmarks from my RSS reader a
 
 - I'm lagging behind regarding Kubernetes and Co. This recent article highlight the benefit of using [k3s](https://k3s.io) to run a [single-node Kubernetes cluster without virtualization or a container registry](https://notes.eatonphil.com/a-single-node-kubernetes-cluster-without-virtualization-or-a-container-registry.html).
 
-- I subscribed to a few RSS feeds that deal almosyt exclusively with Haskell or related functional PLs (ML, OCaml). Now I learned that there's a [Haskell Planetarium](https://haskell.pl-a.net), which I find quite handy for other-than-blog feeds.
+- I subscribed to a few RSS feeds that deal almost exclusively with Haskell or related functional PLs (ML, OCaml). Now I learned that there's a [Haskell Planetarium](https://haskell.pl-a.net), which I find quite handy for other-than-blog feeds.
 
-- Haki Benita provides some useful tips in his recent post [Some SQL Tricks of an Application DBA](https://hakibenita.com/sql-tricks-application-dba), especially reagrding the use of indexes.
+- Haki Benita provides some useful tips in his recent post [Some SQL Tricks of an Application DBA](https://hakibenita.com/sql-tricks-application-dba), especially regarding the use of indexes.
 
-- For Python developement, I use almost exclusively use Emacs and its LSP packages, and I have Blake and Flake8 set as the default programs for linting and formatting. Sometimes I think it might be a better idea to delegate those tasks to specific task in a Makefile, but it is also possible to rely on Git hooks, see [Automate Python workflow using pre-commits: black and flake8](https://ljvmiranda921.github.io/notebook/2018/06/21/precommits-using-black-and-flake8/ "
+- For Python development, I use almost exclusively use Emacs and its LSP packages, and I have Blake and Flake8 set as the default programs for linting and formatting. Sometimes I think it might be a better idea to delegate those tasks to specific task in a Makefile, but it is also possible to rely on Git hooks, see [Automate Python workflow using pre-commits: black and flake8](https://ljvmiranda921.github.io/notebook/2018/06/21/precommits-using-black-and-flake8/ "
 ").
 
 - Even if this is not my day job, I love reading about compiler, debugger and operating systems. This post [Writing a file system from scratch in Rust](https://blog.carlosgaldino.com/writing-a-file-system-from-scratch-in-rust.html) provides a clear overview of file systems, i.e. how directories and files are represented, and how indirect pointers can be used.
