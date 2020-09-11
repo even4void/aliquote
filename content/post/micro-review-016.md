@@ -26,4 +26,10 @@ Here's the monthly review of interesting things I found while browsing Hacker Ne
 
 - A few days ago I learned that there's now a Clojure dataframe library that runs on Spark: [geni](https://github.com/zero-one-group/geni). It seems to be a pretty serious project, nicely illustrated and with lot of documentation.
 
+- If you're interested in TUI and cli environments, you're likely to appreciate the following blog post: [everything you ever wanted to know about terminals](https://xn--rpa.cc/irl/term.html). It provides a deep review of [ncurses](https://invisible-island.net/ncurses/announce.html) and ASCII escape codes, with illustrations in C.
+
+- [What Clojure spec is and what you can do with it](https://www.pixelated-noise.com/blog/2020/09/10/what-spec-is/). It's been a long time since I've written a script in Clojure. Last year I decided to work with Clojurescript, and then I switched to more traditional Javascript. In the meantime I got interested in Racket and Typescript. But as I still find so many interesting articles about Clojure after more than 10 years of technology watch, I think I should really get into it, especially as it seems to me at the moment the only real candidate language for data science.
+
+- Some free discrete maths textbooks by [Ed Bender](http://www.math.ucsd.edu/~ebender/).
+
 [^1]: The main reason I use Neovim on my macbook, beyond its native speed for quick editing of text files, is because (1) I wanted to be more familiar with Vim keybindings for using Emacs with Evil mode more efficiently, and (2) I only use Vim on the Ubuntu workstations I manage to administer at work.
