@@ -14,6 +14,12 @@ Since I lifted my Emacs packages and remove `ox-pandoc`, I'm left with basic HTM
 "pure-u-1-2|/img/2020-09-18-17-22-23.png"
 "pure-u-1-2|/img/2020-09-18-17-22-33.png" >}}
 
+So far so good. There are still things I'm working on, but for the moment it's usable. Regarding tables, I devised a simple scheme to make them look close to booktabs-style table in Latex. Here is a comparison of HTML (left) and PDF (right) rendering:[^1]
+
+{{< fluid_imgs
+"pure-u-1-2|/img/2020-09-19-16-15-50.png"
+"pure-u-1-2|/img/2020-09-19-16-27-44.png" >}}
+
 I was also wondering whether this stylesheet could be used with RMarkdown-like document --- I don't really know how we would call this when we are using Org babel: ROrg? BabelR? Several [years ago](/post/org-mode-literate/) I was already thinking of replacing RMarkdown with Org, and now I am about to replace everything Markdown with Org.
 
 So I quickly rewrote one of my old Markdown [handout](https://github.com/even4void/rstats-biostats/blob/master/handout/practical01.Rmd) in Org format. I used Pandoc to convert the original Md file into an Org file, which I edited afterwards. This means replacing `BEGIN_EXAMPLE` with `BEGIN_SRC` where appropriate and adding a bit of options to process each chunk. In org, we can define a global header that will apply to all SRC block, then refine individual ones with additional options. This is particularly useful to mimic part of [knitr](https://yihui.org/knitr/) setup.
@@ -40,3 +46,5 @@ pre.src {
 ```
 
 The final output is [here](/pub/practical01.html) ([source](/pub/practical01.org) file). Now the only thing left is to implement my custom [Beamer template](/post/latex-beamer-21-century/) in Org.
+
+[^1]: I know [booktabs](https://www.ctan.org/pkg/booktabs/) use different line heights for the header (i.e., the top line is thicker), but it's quite difficult to replicate this behavior in CSS unless we are sure we have a footer: In this case we don't need to apply a `table tr:last-child` rule to manage the bottom line of the Table since it could be handled by etting a `border-top` property in the `tfoot` rule.
