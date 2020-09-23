@@ -10,6 +10,11 @@ The Wilcoxon-Mann-Whitney test, or simply the Mann-Whitney (MW) test for SPSS, S
 
 > The literature is not unanimous about the definitions of the Wilcoxon rank sum and Mann-Whitney tests. The two most common definitions correspond to the sum of the ranks of the first sample with the minimum value subtracted or not: R subtracts and S-PLUS does not, giving a value which is larger by m(m+1)/2 for a first sample of size m. (It seems Wilcoxon's original paper used the unadjusted sum of the ranks but subsequent tables subtracted the minimum.)
 
+{{% alert note %}}
+<small>[2020-09-23]</small><br>
+See also [Violation of Proportional Odds is Not Fatal](https://www.fharrell.com/post/po/) to learn more about the connection between the MW test and the proportional odds model.
+{{% /alert %}}
+
 The MW test is also available in Stata as [ranksum](https://www.stata.com/help.cgi?ranksum), and in Python scipy as [stats.mannwhitneyu](https://docs.scipy.org/doc/scipy/reference/generated/scipy.stats.mannwhitneyu.html). It is recommended to Python users to "use (it) only when the number of observation in each sample is > 20 and you have 2 independent samples of ranks," though Mann & Whitney computed tables for the probability of _U_ for sample size ≤ 8, while Lehmann reported that the actual efficiency of the MW test is close to Pitman's Asymptotic Relative Efficiency (ARE) evne in the case where n = 5 (in both samples).[^4] To approximate sample size required for the MW test, one could start with estimating the sample size for an equivalent $t$-test and then adjust the sample size based on the ARE of the MW test.[^5] For instance, assuming a normal distribution the ARE of the MW test relative to Student _t_-test is 3/π = 0.955,[^6] which means you can simply take the optimal n for a _t_-test and divide it by this value. More elaborated formula have been proposed, though, including the use of [exemplary dataset](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2796701/). Finally, regarding power, Lehman notes (p. 81) that:
 
 > When nothing is known about the shape of the distribution, and particularly for distributions whose tails are very much heavier than those of the normal distribution (...), the Wilcoxon test may be considerably more efficient than the _t_-test.
