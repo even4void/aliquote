@@ -171,6 +171,7 @@
 *** [[http://pragmaticemacs.com/feed/][Pragmatic Emacs]]                                                          :emacs:
 *** [[https://joshrollinswrites.com/index.xml][The Art of Not Asking Why]]                                                :emacs:org:
 *** [[https://with-emacs.com/rss.xml][with-emacs]]                                                               :emacs:
+*** [[https://ag91.github.io/blog/][Where parallels cross]]                                                    :emacs:
 *** [[https://christiantietze.de/feed.atom][Worklog of Christian Tietze]]                                              :emacs:apple:
 *** [[http://www.mycpu.org/feed.xml][Yet Another Technical Blog]]                                               :emacs:clang:compiler:
 ** Maths                                                                      :maths:
