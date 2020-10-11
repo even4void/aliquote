@@ -1,77 +1,96 @@
-* 366096c (Fri, 26 Apr 2019 21:08:57 +0200, chl) Minor edits
-* 5abbd51 (Mon, 15 Apr 2019 21:41:09 +0200, chl) Rewind ANOVA chapter structure
-* 53e0cab (Wed, 3 Apr 2019 15:59:43 +0200, chl) Add new chapter
-* 4517f28 (Mon, 1 Apr 2019 11:55:20 +0200, chl) Add new chapter
-* 28f2e32 (Sun, 31 Mar 2019 19:30:44 +0200, chl) Two-way ANOVA and new dataset
-* 34b7c30 (Sat, 30 Mar 2019 20:10:51 +0100, chl) Add intermediate chapter on ANOVA
-* 2bf3336 (Sat, 23 Mar 2019 08:46:02 +0100, chl) Minor update for the animated GIF
-* 53e18ea (Sat, 16 Mar 2019 11:24:50 +0100, chl) Add illustration on lowess
-* baaaa48 (Sun, 24 Feb 2019 09:34:31 +0100, chl) Minor fix for scratch buffer
-* a743fd9 (Sun, 24 Feb 2019 09:30:47 +0100, chl) Conditional graphics and graph combine
-* 4cabf93 (Sat, 23 Feb 2019 18:41:44 +0100, chl) Mostly cosmit changes + get rid of structured template expansion
-* d833022 (Sat, 23 Feb 2019 17:41:42 +0100, chl) Delete output files in dist/
-* aefbd70 (Sat, 23 Feb 2019 17:36:30 +0100, chl) Update gph format (PDF->EPS) and publishing settings
-* 4b08c5c (Sat, 23 Feb 2019 17:35:54 +0100, chl) More univariate graphics
-* 5ee41f8 (Sun, 17 Feb 2019 12:03:24 +0100, chl) Cosmit changes to deploy locally
-* 14aa90e (Sun, 17 Feb 2019 10:44:09 +0100, chl) Minor edits
-* 2dbd22e (Sun, 17 Feb 2019 10:43:28 +0100, chl) More on data i/o
-* 48eedc8 (Thu, 14 Feb 2019 22:05:00 +0100, chl) Minor fix
-* 85ff5a8 (Thu, 14 Feb 2019 21:58:02 +0100, chl) More on loops
-* 8d0c3b4 (Thu, 14 Feb 2019 19:58:32 +0100, chl) More on local macros
-* 321d273 (Thu, 14 Feb 2019 08:16:46 +0100, chl) Add chapter 4
-* 7faff26 (Wed, 13 Feb 2019 21:41:10 +0100, chl) Check Stata 13 compliance
-* 53ab81a (Sun, 10 Feb 2019 21:27:29 +0100, chl) Tiny edits
-* f3940df (Sun, 10 Feb 2019 21:27:11 +0100, chl) Update package version number
-* 67bae3f (Sat, 9 Feb 2019 18:05:38 +0100, chl) Minor fixes + Add note about Stata 15
-* 091bb10 (Fri, 23 Nov 2018 11:08:11 +0100, Christophe Lalanne) More univariate graphics
-* dc94465 (Thu, 22 Nov 2018 11:09:40 +0100, Christophe Lalanne) Update dist + start chapter on graphics
-* bc89fba (Sat, 17 Nov 2018 08:58:26 +0100, Christophe Lalanne) Add detailed interaction testing
-* 3e41763 (Fri, 16 Nov 2018 19:33:38 +0100, Christophe Lalanne) Add some details regarding regression models
-* 2e125ed (Thu, 15 Nov 2018 20:21:43 +0100, Christophe Lalanne) Update checklist and outline
-* 74cc90b (Wed, 31 Oct 2018 08:28:43 +0100, Christophe Lalanne) Update package version + Minor edits
-* 6890682 (Wed, 18 Jul 2018 15:49:23 +0200, Christophe Lalanne) Minor edits + Split chapter in two parts
-* 68f09e2 (Wed, 18 Jul 2018 15:14:23 +0200, Christophe Lalanne) Add missing links
-* bbb2278 (Tue, 17 Jul 2018 19:00:59 +0200, Christophe Lalanne) Add some more regress applications + Update HTML+PNG output
-* eaaa3a8 (Fri, 13 Jul 2018 21:29:12 +0200, Christophe Lalanne) Minor edits
-* d02108b (Fri, 6 Jul 2018 22:17:27 +0200, Christophe Lalanne) More on linear regression
-* 1819efe (Fri, 6 Jul 2018 20:13:01 +0200, Christophe Lalanne) Add section headers
-* 3653e69 (Fri, 6 Jul 2018 10:10:40 +0200, Christophe Lalanne) More stuff on linear regression
-* 5a3ed9a (Thu, 5 Jul 2018 22:07:08 +0200, Christophe Lalanne) Start working on GLMs because why not?!
-* 2ce309f (Mon, 2 Jul 2018 09:24:06 +0200, Christophe Lalanne) Minor edits on varlist + Fix figure naming scheme
-* 7b2d54d (Wed, 27 Jun 2018 16:22:30 +0200, Christophe Lalanne) Add review of additional packages
-* 0169049 (Wed, 27 Jun 2018 07:28:00 +0200, Christophe Lalanne) More content here and there + Minor fix
-* be7ef5f (Mon, 25 Jun 2018 18:18:55 +0200, Christophe Lalanne) Add discussion on drop/keep
-* 2a76627 (Mon, 25 Jun 2018 18:18:36 +0200, Christophe Lalanne) Fix package directory
-* 4a9e564 (Mon, 25 Jun 2018 17:53:14 +0200, Christophe Lalanne) Bump ELPA package version
-* 3313ab6 (Sat, 23 Jun 2018 09:42:51 +0200, Christophe Lalanne) Stata labels and placeholder for future description
-* 8e6d226 (Fri, 22 Jun 2018 23:33:02 +0200, Christophe Lalanne) More figures and table examples
-* 5b48d43 (Fri, 22 Jun 2018 16:53:24 +0200, Christophe Lalanne) Minor edits
-* 31abd1a (Fri, 22 Jun 2018 09:44:56 +0200, Christophe Lalanne) Add some words about table(s)
-* 712f128 (Tue, 19 Jun 2018 18:14:09 +0200, Christophe Lalanne) Update HTML output
-* 1476d36 (Tue, 19 Jun 2018 18:07:43 +0200, Christophe Lalanne) More content on variable manipulation
-* 9cb7aee (Mon, 18 Jun 2018 18:02:36 +0200, Christophe Lalanne) More on Stata format and variables recoding
-* 588d698 (Mon, 18 Jun 2018 15:25:22 +0200, Christophe Lalanne) Update task list
-* 68489de (Mon, 18 Jun 2018 15:07:35 +0200, Christophe Lalanne) Fix missing def + Cosmit changes
-* f587572 (Mon, 18 Jun 2018 15:01:39 +0200, Christophe Lalanne) Add dataset + Update content
-* c807548 (Mon, 18 Jun 2018 10:46:34 +0200, Christophe Lalanne) Add a Makefile and update publishing policy
-* 9829d28 (Sun, 17 Jun 2018 21:08:56 +0200, Christophe Lalanne) Add a README + Update Task list
-* 876eb1b (Sun, 17 Jun 2018 21:04:57 +0200, Christophe Lalanne) Cleanup intermediate files
-* d1136c4 (Sun, 17 Jun 2018 20:56:01 +0200, Christophe Lalanne) Minor edits
-* fedac9e (Sun, 17 Jun 2018 18:08:57 +0200, Christophe Lalanne) Update Task list and project plans
-* 961a4e8 (Sun, 17 Jun 2018 17:59:21 +0200, Christophe Lalanne) Minor refactoring to fit with Spacemacs config
-* 1c56e0d (Thu, 24 May 2018 17:47:26 +0200, Christophe Lalanne) Clear cached file that I no longer want to track
-* 9ef5a9f (Thu, 24 May 2018 17:45:24 +0200, Christophe Lalanne) Update Stata commands active links
-* 9be4eb0 (Thu, 24 May 2018 17:39:04 +0200, Christophe Lalanne) Mostly CSS customizations + new logo
-* 1c71e57 (Sun, 20 May 2018 23:52:01 +0200, Christophe Lalanne) Minor edits
-* 2bca6b7 (Sun, 20 May 2018 09:48:55 +0200, Christophe Lalanne) Try to produce PDF output correctly
-* 4ce1df6 (Sat, 19 May 2018 19:18:44 +0200, Christophe Lalanne) Add next draft chapters
-* 1eece8f (Sat, 19 May 2018 10:46:11 +0200, Christophe Lalanne) Update main content for 00-intro
-* 79ca5fc (Sat, 19 May 2018 10:45:56 +0200, Christophe Lalanne) Add a deploy script + minor fix
-* be798c4 (Fri, 18 May 2018 18:27:51 +0200, Christophe Lalanne) That what we get when we forget about "git mv"!
-* e67fe03 (Fri, 18 May 2018 17:36:26 +0200, Christophe Lalanne) Update figure numbering scheme + quick fix of the CSS
-* f00af24 (Fri, 18 May 2018 07:45:14 +0200, Christophe Lalanne) Minor edits + update export options
-* acbedb0 (Thu, 17 May 2018 12:32:13 +0200, Christophe Lalanne) Add subsections and more stuff + update TODO
-* 950a2d4 (Wed, 16 May 2018 12:01:25 +0200, Christophe Lalanne) Add TODO and custom CSS
-* 6b96fad (Wed, 16 May 2018 08:23:08 +0200, Christophe Lalanne) Add more content + images and BibTeX
-* 5a70d77 (Tue, 15 May 2018 21:58:35 +0200, Christophe Lalanne) Update the intro file
-* 2a64406 (Tue, 15 May 2018 20:51:44 +0200, Christophe Lalanne) Init first repo and start tracking the intro file
+* 79583d0 (Sun, 11 Oct 2020 12:21:53 +0200, chl) Minor fix
+* 4d87003 (Sun, 11 Oct 2020 12:20:40 +0200, chl) Update chapter 3 to new format
+* 9d9b547 (Sun, 11 Oct 2020 12:03:16 +0200, chl) wip
+* c9bd68c (Sun, 11 Oct 2020 11:22:19 +0200, chl) Update chapter 4 to new format
+* a2be8c2 (Sun, 11 Oct 2020 10:43:41 +0200, chl) Minor fix
+* f7b3a99 (Sun, 11 Oct 2020 10:43:29 +0200, chl) Update chapter 2 to new format
+* 28ec3e1 (Sun, 11 Oct 2020 09:07:03 +0200, chl) Update chapter 1 to new format
+* b555a2f (Sun, 11 Oct 2020 08:43:58 +0200, chl) Fix typo
+* 7d5b82f (Sun, 11 Oct 2020 08:43:34 +0200, chl) Update and fix automated build stuff
+* 04a1746 (Sat, 10 Oct 2020 19:17:06 +0200, chl) Update Makefile and cleanup dist
+* d24b138 (Sat, 10 Oct 2020 17:12:37 +0200, chl) Switch to jupyter-stata with new CSS design
+* ad20b52 (Fri, 17 Apr 2020 20:19:49 +0200, chl) ↻ wip
+* 2c8399a (Thu, 16 Apr 2020 18:36:03 +0200, chl) New export format (con't)
+* ae9e84a (Wed, 15 Apr 2020 23:24:19 +0200, chl) Update git ignore rules
+* 02593a6 (Wed, 15 Apr 2020 23:22:48 +0200, chl) Temporary workaround for Pandoc 2.8 PDF output
+* 6acc4ad (Wed, 15 Apr 2020 17:27:19 +0200, chl) ✓ Minor fix
+* e785da5 (Wed, 15 Apr 2020 17:26:11 +0200, chl) Update to new export settings
+* cd17618 (Wed, 15 Apr 2020 08:31:45 +0200, chl) Update to new export format (org-pandoc)
+* b603536 (Fri, 4 Oct 2019 15:46:35 +0200, chl) Cleanup
+* 269691b (Fri, 26 Apr 2019 21:08:57 +0200, chl) Minor edits
+* bfe339c (Mon, 15 Apr 2019 21:41:09 +0200, chl) Rewind ANOVA chapter structure
+* dce841c (Wed, 3 Apr 2019 15:59:43 +0200, chl) Add new chapter
+* f43f807 (Mon, 1 Apr 2019 11:55:20 +0200, chl) Add new chapter
+* 0462a8b (Sun, 31 Mar 2019 19:30:44 +0200, chl) Two-way ANOVA and new dataset
+* 6b59107 (Sat, 30 Mar 2019 20:10:51 +0100, chl) Add intermediate chapter on ANOVA
+* 73308ee (Sat, 23 Mar 2019 08:46:02 +0100, chl) Minor update for the animated GIF
+* cccfefd (Sat, 16 Mar 2019 11:24:50 +0100, chl) Add illustration on lowess
+* 811135f (Sun, 24 Feb 2019 09:34:31 +0100, chl) Minor fix for scratch buffer
+* a493c52 (Sun, 24 Feb 2019 09:30:47 +0100, chl) Conditional graphics and graph combine
+* e181689 (Sat, 23 Feb 2019 18:41:44 +0100, chl) Mostly cosmit changes + get rid of structured template expansion
+* 3e3ea66 (Sat, 23 Feb 2019 17:41:42 +0100, chl) Delete output files in dist/
+* cf4251b (Sat, 23 Feb 2019 17:36:30 +0100, chl) Update gph format (PDF->EPS) and publishing settings
+* 7b02ea0 (Sat, 23 Feb 2019 17:35:54 +0100, chl) More univariate graphics
+* 771313a (Sun, 17 Feb 2019 12:03:24 +0100, chl) Cosmit changes to deploy locally
+* 3bf01fa (Sun, 17 Feb 2019 10:44:09 +0100, chl) Minor edits
+* cbea2c3 (Sun, 17 Feb 2019 10:43:28 +0100, chl) More on data i/o
+* f217580 (Thu, 14 Feb 2019 22:05:00 +0100, chl) Minor fix
+* 42810bb (Thu, 14 Feb 2019 21:58:02 +0100, chl) More on loops
+* c750c8f (Thu, 14 Feb 2019 19:58:32 +0100, chl) More on local macros
+* aa29256 (Thu, 14 Feb 2019 08:16:46 +0100, chl) Add chapter 4
+* 532cea1 (Wed, 13 Feb 2019 21:41:10 +0100, chl) Check Stata 13 compliance
+* c253adf (Sun, 10 Feb 2019 21:27:29 +0100, chl) Tiny edits
+* d50faad (Sun, 10 Feb 2019 21:27:11 +0100, chl) Update package version number
+* 0e29c7a (Sat, 9 Feb 2019 18:05:38 +0100, chl) Minor fixes + Add note about Stata 15
+* 692afee (Fri, 23 Nov 2018 11:08:11 +0100, chl) More univariate graphics
+* 6e9a0e2 (Thu, 22 Nov 2018 11:09:40 +0100, chl) Update dist + start chapter on graphics
+* 4ecce4e (Sat, 17 Nov 2018 08:58:26 +0100, chl) Add detailed interaction testing
+* 4ce1b59 (Fri, 16 Nov 2018 19:33:38 +0100, chl) Add some details regarding regression models
+* 3049ae3 (Thu, 15 Nov 2018 20:21:43 +0100, chl) Update checklist and outline
+* 0ead4db (Wed, 31 Oct 2018 08:28:43 +0100, chl) Update package version + Minor edits
+* 367c0ec (Wed, 18 Jul 2018 15:49:23 +0200, chl) Minor edits + Split chapter in two parts
+* 268b6ee (Wed, 18 Jul 2018 15:14:23 +0200, chl) Add missing links
+* d56e305 (Tue, 17 Jul 2018 19:00:59 +0200, chl) Add some more regress applications + Update HTML+PNG output
+* cd67aaf (Fri, 13 Jul 2018 21:29:12 +0200, chl) Minor edits
+* a6c4401 (Fri, 6 Jul 2018 22:17:27 +0200, chl) More on linear regression
+* 7f6e5a6 (Fri, 6 Jul 2018 20:13:01 +0200, chl) Add section headers
+* 9f70ebc (Fri, 6 Jul 2018 10:10:40 +0200, chl) More stuff on linear regression
+* 2c6ae60 (Thu, 5 Jul 2018 22:07:08 +0200, chl) Start working on GLMs because why not?!
+* f84b94d (Mon, 2 Jul 2018 09:24:06 +0200, chl) Minor edits on varlist + Fix figure naming scheme
+* 8ba86a7 (Wed, 27 Jun 2018 16:22:30 +0200, chl) Add review of additional packages
+* 5d349fe (Wed, 27 Jun 2018 07:28:00 +0200, chl) More content here and there + Minor fix
+* bf6cd55 (Mon, 25 Jun 2018 18:18:55 +0200, chl) Add discussion on drop/keep
+* 691ad94 (Mon, 25 Jun 2018 18:18:36 +0200, chl) Fix package directory
+* 9abcb23 (Mon, 25 Jun 2018 17:53:14 +0200, chl) Bump ELPA package version
+* a146806 (Sat, 23 Jun 2018 09:42:51 +0200, chl) Stata labels and placeholder for future description
+* 260512c (Fri, 22 Jun 2018 23:33:02 +0200, chl) More figures and table examples
+* d80f887 (Fri, 22 Jun 2018 16:53:24 +0200, chl) Minor edits
+* f417f33 (Fri, 22 Jun 2018 09:44:56 +0200, chl) Add some words about table(s)
+* d0dfb65 (Tue, 19 Jun 2018 18:14:09 +0200, chl) Update HTML output
+* 5b4fd10 (Tue, 19 Jun 2018 18:07:43 +0200, chl) More content on variable manipulation
+* 38e9678 (Mon, 18 Jun 2018 18:02:36 +0200, chl) More on Stata format and variables recoding
+* 6a1467a (Mon, 18 Jun 2018 15:25:22 +0200, chl) Update task list
+* edda0b4 (Mon, 18 Jun 2018 15:07:35 +0200, chl) Fix missing def + Cosmit changes
+* 073369d (Mon, 18 Jun 2018 15:01:39 +0200, chl) Add dataset + Update content
+* 73fecfa (Mon, 18 Jun 2018 10:46:34 +0200, chl) Add a Makefile and update publishing policy
+* f3f3c5f (Sun, 17 Jun 2018 21:08:56 +0200, chl) Add a README + Update Task list
+* 28a9880 (Sun, 17 Jun 2018 21:04:57 +0200, chl) Cleanup intermediate files
+* 027a63a (Sun, 17 Jun 2018 20:56:01 +0200, chl) Minor edits
+* b173621 (Sun, 17 Jun 2018 18:08:57 +0200, chl) Update Task list and project plans
+* bc006be (Sun, 17 Jun 2018 17:59:21 +0200, chl) Minor refactoring to fit with Spacemacs config
+* 46ce368 (Thu, 24 May 2018 17:47:26 +0200, chl) Clear cached file that I no longer want to track
+* 4579d32 (Thu, 24 May 2018 17:45:24 +0200, chl) Update Stata commands active links
+* 9155429 (Thu, 24 May 2018 17:39:04 +0200, chl) Mostly CSS customizations + new logo
+* fa28f51 (Sun, 20 May 2018 23:52:01 +0200, chl) Minor edits
+* 1835d23 (Sun, 20 May 2018 09:48:55 +0200, chl) Try to produce PDF output correctly
+* 6137ce5 (Sat, 19 May 2018 19:18:44 +0200, chl) Add next draft chapters
+* d906be0 (Sat, 19 May 2018 10:46:11 +0200, chl) Update main content for 00-intro
+* a55c531 (Sat, 19 May 2018 10:45:56 +0200, chl) Add a deploy script + minor fix
+* 8217272 (Fri, 18 May 2018 18:27:51 +0200, chl) That what we get when we forget about "git mv"!
+* 8e4decd (Fri, 18 May 2018 17:36:26 +0200, chl) Update figure numbering scheme + quick fix of the CSS
+* e55a83d (Fri, 18 May 2018 07:45:14 +0200, chl) Minor edits + update export options
+* 8c9db5c (Thu, 17 May 2018 12:32:13 +0200, chl) Add subsections and more stuff + update TODO
+* aaa8286 (Wed, 16 May 2018 12:01:25 +0200, chl) Add TODO and custom CSS
+* f00a870 (Wed, 16 May 2018 08:23:08 +0200, chl) Add more content + images and BibTeX
+* 73b1659 (Tue, 15 May 2018 21:58:35 +0200, chl) Update the intro file
+* 82f6a92 (Tue, 15 May 2018 20:51:44 +0200, chl) Init first repo and start tracking the intro file
