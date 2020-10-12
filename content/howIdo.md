@@ -26,6 +26,6 @@ _Is there a photo of me somewhere_
 : N/A (not anymore). Unless you're looking for my Gravatar, which actually is an old drawing of my son when he was 3 years old.
 
 {{< fluid_imgs
-"pure-u-1-3|/img/"
+"pure-u-1-3|"
 "pure-u-1-3|/img/IMG_0731.jpeg"
-"pure-u-1-3|/img/" >}}
+"pure-u-1-3|" >}}
