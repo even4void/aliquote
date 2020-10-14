@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <!-- 2020-10-11 Sun 11:20 -->
+    <!-- 2020-10-14 Wed 17:37 -->
     <meta charset="utf-8">
     <meta name="viewport" content=
     "width=device-width, initial-scale=1">
     <title>Stata : analyse de la variance</title>
     <meta name="generator" content="Org mode">
     <link rel="stylesheet" type="text/css" href=
-    "worg.css">
+    "/Users/chl/org/drafts/_assets/worg.css">
     <script type="text/x-mathjax-config">
     MathJax.Hub.Config({
         displayAlign: "center",
@@ -40,37 +40,45 @@
             <div id="text-table-of-contents">
                 <ul>
                     <li>
-                        <a href="#orgfc8b223">Analyse de variance à
+                        <a href="#org37239c8">Analyse de variance à
                         un facteur</a>
                         <ul>
                             <li>
-                                <a href="#orge70767b">Modèle
+                                <a href="#orgaa91353">Modèle
                                 d’ANOVA</a>
                             </li>
                             <li>
-                                <a href="#org0b926a9">Conditions
+                                <a href="#org03406d8">Conditions
                                 d’application du test</a>
                             </li>
                             <li>
-                                <a href="#orga76ac38">Commandes
+                                <a href="#org38a4145">Commandes
                                 graphiques</a>
                             </li>
                             <li>
-                                <a href="#orgf00c01e">Comparaisons
+                                <a href="#org472b57e">Comparaisons
                                 multiples</a>
+                            </li>
+                            <li>
+                                <a href="#orgd7b7079">Cas des
+                                variances non égales</a>
+                            </li>
+                            <li>
+                                <a href="#org99978e8">Approche non
+                                paramétrique</a>
                             </li>
                         </ul>
                     </li>
                     <li>
-                        <a href="#orga790ddf">Analyse de variance à
+                        <a href="#org16aef52">Analyse de variance à
                         plusieurs facteurs</a>
                         <ul>
                             <li>
-                                <a href="#org553b734">Utilisation
+                                <a href="#orgbd4861d">Utilisation
                                 de la commande anova</a>
                             </li>
                             <li>
-                                <a href="#orgb5c15b0">Définition et
+                                <a href="#orgc8b1742">Définition et
                                 analyse de contrastes</a>
                             </li>
                         </ul>
@@ -95,14 +103,14 @@
         ouvrage à l’analyse de variance, incluant le cas des
         mesures répétées [<a href=
         "#dupont-2009-statis-model">1</a>].</p>
-        <div id="outline-container-orgfc8b223" class="outline-2">
-            <h2 id="orgfc8b223">Analyse de variance à un
+        <div id="outline-container-org37239c8" class="outline-2">
+            <h2 id="org37239c8">Analyse de variance à un
             facteur</h2>
-            <div class="outline-text-2" id="text-orgfc8b223"></div>
-            <div id="outline-container-orge70767b" class=
+            <div class="outline-text-2" id="text-org37239c8"></div>
+            <div id="outline-container-orgaa91353" class=
             "outline-3">
-                <h3 id="orge70767b">Modèle d’ANOVA</h3>
-                <div class="outline-text-3" id="text-orge70767b">
+                <h3 id="orgaa91353">Modèle d’ANOVA</h3>
+                <div class="outline-text-3" id="text-orgaa91353">
                     <p>Dans l’<a href=
                     "http://biostat.mc.vanderbilt.edu/dupontwd/wddtext/index.html">exemple
                     suivant</a>, tiré de [<a href=
@@ -170,7 +178,7 @@ graph box age, over(genotype)
 graph export "fig-04-boxplot-age-genotype.svg", replace
 </pre>
                     </div>
-                    <div id="org1b0bec1" class="figure">
+                    <div id="orgff58f96" class="figure">
                         <p><object type="image/svg+xml" data=
                         "./fig-04-boxplot-age-genotype.svg" class=
                         "org-svg" width="640px">
@@ -191,7 +199,7 @@ graph export "fig-04-boxplot-age-genotype.svg", replace
 graph export "fig-04-hist-age-genotype.svg", replace
 </pre>
                     </div>
-                    <div id="org6a7de07" class="figure">
+                    <div id="org85872b0" class="figure">
                         <p><object type="image/svg+xml" data=
                         "./fig-04-hist-age-genotype.svg" class=
                         "org-svg" width="640px">
@@ -241,11 +249,11 @@ Bartlett's test for equal variances:  chi2(2) =   1.0798  Prob&gt;chi2 = 0.583
 </pre>
                 </div>
             </div>
-            <div id="outline-container-org0b926a9" class=
+            <div id="outline-container-org03406d8" class=
             "outline-3">
-                <h3 id="org0b926a9">Conditions d’application du
+                <h3 id="org03406d8">Conditions d’application du
                 test</h3>
-                <div class="outline-text-3" id="text-org0b926a9">
+                <div class="outline-text-3" id="text-org03406d8">
                     <p>Il est généralement recommendé de vérifier
                     les hypothèses du modèle, en particulier celle
                     portant sur l’égalité des variances parentes,
@@ -302,7 +310,7 @@ qnorm r
 graph export "fig-04-qnorm-age-genotype-resid.svg", replace
 </pre>
                     </div>
-                    <div id="org61792d2" class="figure">
+                    <div id="orge47e6e8" class="figure">
                         <p><object type="image/svg+xml" data=
                         "./fig-04-qnorm-age-genotype-resid.svg"
                         class="org-svg" width="640px">
@@ -316,10 +324,10 @@ graph export "fig-04-qnorm-age-genotype-resid.svg", replace
                     </div>
                 </div>
             </div>
-            <div id="outline-container-orga76ac38" class=
+            <div id="outline-container-org38a4145" class=
             "outline-3">
-                <h3 id="orga76ac38">Commandes graphiques</h3>
-                <div class="outline-text-3" id="text-orga76ac38">
+                <h3 id="org38a4145">Commandes graphiques</h3>
+                <div class="outline-text-3" id="text-org38a4145">
                     <p>Stata n’offre pas vraiment de commandes
                     graphiques de post-estimation à l’exception de
                     celles applicables au cas du modèle linéaire,
@@ -338,10 +346,10 @@ graph export "fig-04-qnorm-age-genotype-resid.svg", replace
                     "#cox-2004-speakin-stata">2</a>].</p>
                 </div>
             </div>
-            <div id="outline-container-orgf00c01e" class=
+            <div id="outline-container-org472b57e" class=
             "outline-3">
-                <h3 id="orgf00c01e">Comparaisons multiples</h3>
-                <div class="outline-text-3" id="text-orgf00c01e">
+                <h3 id="org472b57e">Comparaisons multiples</h3>
+                <div class="outline-text-3" id="text-org472b57e">
                     <p>Lorsque le résultat du test d’ANOVA est
                     significatif, il est souvent intéressant, voire
                     nécessaire d’aller inspecter le résultat des
@@ -427,16 +435,126 @@ display r(p)*3
 </pre>
                 </div>
             </div>
-        </div>
-        <div id="outline-container-orga790ddf" class="outline-2">
-            <h2 id="orga790ddf">Analyse de variance à plusieurs
-            facteurs</h2>
-            <div class="outline-text-2" id="text-orga790ddf"></div>
-            <div id="outline-container-org553b734" class=
+            <div id="outline-container-orgd7b7079" class=
             "outline-3">
-                <h3 id="org553b734">Utilisation de la commande
+                <h3 id="orgd7b7079">Cas des variances non
+                égales</h3>
+                <div class="outline-text-3" id="text-orgd7b7079">
+                    <p>Plusieurs généralisations du test de Welch
+                    dans le cas où les variances ne sont pas égales
+                    ont été proposées [<a href=
+                    "#welch-1951-compar-sever">3</a>]. Sous Stata,
+                    les procédures <code>wtest</code> et
+                    <code>fstar</code> peuvent être téléchargées.
+                    Voici un exemple d’application avec
+                    <code>wtest,</code> dont les auteurs ont montré
+                    que cette statistique de test convient dans le
+                    cas où les échantillons sont de même taille (ce
+                    n’est pas vraiment le cas ici) mais de variance
+                    différente [<a href=
+                    "#wilcox-1986-new-monte">4</a>] :</p>
+                    <div class="org-src-container">
+                        <pre class="src src-jupyter-stata">
+                        wtest age genotype
+</pre>
+                    </div>
+                    <pre class="example">
+
+----------------------------------------------------------------------
+Dependent Variable is age and Independent Variable is genotype
+WStat(  2,  31.91) =   9.129, p= 0.0007
+----------------------------------------------------------------------
+</pre>
+                </div>
+            </div>
+            <div id="outline-container-org99978e8" class=
+            "outline-3">
+                <h3 id="org99978e8">Approche non paramétrique</h3>
+                <div class="outline-text-3" id="text-org99978e8">
+                    <p>L’ANOVA de Kruskal-Wallis, qui généralise la
+                    commande <a href=
+                    "https://www.stata.com/help.cgi?ranksum">ranksum</a>
+                    au cas à plus de deux échantillons, est
+                    disponible via la commande <a href=
+                    "https://www.stata.com/help.cgi?kwallis">kwallis</a>
+                    :</p>
+                    <div class="org-src-container">
+                        <pre class="src src-jupyter-stata">
+                        kwallis age, by(genotype)
+</pre>
+                    </div>
+                    <pre class="example">
+
+Kruskal-Wallis equality-of-populations rank test
+
+  +---------------------------+
+  | genotype | Obs | Rank Sum |
+  |----------+-----+----------|
+  |  1.6/1.6 |  14 |   494.00 |
+  |  1.6/0.7 |  29 |   999.50 |
+  |  0.7/0.7 |  16 |   276.50 |
+  +---------------------------+
+
+chi-squared =    12.060 with 2 d.f.
+probability =     0.0024
+
+chi-squared with ties =    12.073 with 2 d.f.
+probability =     0.0024
+</pre>
+                    <p>Cette commande ne dispose pas d’option. On
+                    peut retrouvera simplement les sommes des rangs
+                    (voire les moyennes) utilisées dans ce test
+                    statistique à l’aide des instructions suivantes
+                    :</p>
+                    <div class="org-src-container">
+                        <pre class="src src-jupyter-stata">
+                        egen rr = rank(age)
+bysort genotype : egen rs = sum(rr)
+tabdisp genotype, cellvar(rs) format(%3.1f)
+</pre>
+                    </div>
+                    <pre class="example">
+
+
+
+
+----------------------
+ Genotype |         rs
+----------+-----------
+  1.6/1.6 |      494.0
+  1.6/0.7 |      999.5
+  0.7/0.7 |      276.5
+----------------------
+</pre>
+                    <p>Il est également possible de coupler cette
+                    instruction avec une série de tests post-hoc de
+                    Mann-Whitney, comme illustré ci-dessous :</p>
+                    <div class="org-src-container">
+                        <pre class="src src-jupyter-stata">
+                        foreach k of numlist 1/3 {
+  quietly: ranksum age if genotype != `k', by(genotype)
+  display r(z), "(p=" 2*(1-normal(r(z))) ")"
+}
+</pre>
+                    </div>
+                    <pre class="example">
+
+3.1199701 (p=.00180869)
+2.9974171 (p=.00272278)
+.05188301 (p=.95862192)
+</pre>
+                </div>
+            </div>
+        </div>
+        <div id="outline-container-org16aef52" class="outline-2">
+            <h2 id="org16aef52">Analyse de variance à plusieurs
+            facteurs</h2>
+            <div class="outline-text-2" id="text-org16aef52"></div>
+            <div id="outline-container-orgbd4861d" class=
+            "outline-3">
+                <h3 id="orgbd4861d">Utilisation de la commande
                 anova</h3>
-                <div class="outline-text-3" id="text-org553b734">
+                <div class="outline-text-3" id="text-orgbd4861d">
                     <p>La commande <a href=
                     "https://www.stata.com/help.cgi?oneway">oneway</a>
                     est limité au cas à un facteur explicatif. La
@@ -504,7 +622,7 @@ Margins      : asbalanced
                     lequel on s’intéresse à la fabrication d’une
                     batterie capable de fonctionner dans des
                     conditions extrêmes de température [<a href=
-                    "#montgomery-2001-desig-analy-exper">3</a>].
+                    "#montgomery-2001-desig-analy-exper">5</a>].
                     Cette étude comprend deux facteurs
                     expérimentaux ayant trois niveaux chacun : la
                     température (°F) et un paramètre lié au design
@@ -570,7 +688,7 @@ graph export "fig-04-scatter-life-battery.svg", replace
 restore
 </pre>
                     </div>
-                    <div id="orgaf2e512" class="figure">
+                    <div id="org08a7cfc" class="figure">
                         <p><object type="image/svg+xml" data=
                         "./fig-04-scatter-life-battery.svg" class=
                         "org-svg" width="640px">
@@ -579,24 +697,48 @@ restore
                         </object></p>
                         <p><span class=
                         "figure-number">Figure&nbsp;4&nbsp;:</span>
-                        Distribution de l’âge de diagnostic en
-                        fonction du polymorphisme</p>
+                        Durée de vie moyenne des batteries en
+                        fonction des valeurs des facteurs
+                        expérimentaux</p>
                     </div>
-                    <p>La commande <a href=
-                    "https://www.stata.com/help.cgi?marginplot">marginplot</a>
-                    simplifierait grandement la tâche. Il existe
-                    également les commandes <a href=
+                    <p>Il existe également les commandes <a href=
                     "https://www.stata.com/help.cgi?rcap">rcap</a>
                     et <a href=
                     "https://www.stata.com/help.cgi?serrbar">serrbar</a>
-                    pour gérer les barres d’erreur.</p>
+                    pour gérer les barres d’erreur. Toutefois la
+                    commande <a href=
+                    "https://www.stata.com/help.cgi?marginplot">marginplot</a>
+                    est beaucoup plus souple d’utilisation et elle
+                    s’interface directement avec les modèles
+                    statistiques les plus courants. Voici une
+                    exemple de son utilisation avec le modèle
+                    précédent :</p>
+                    <div class="org-src-container">
+                        <pre class="src src-jupyter-stata">
+                        margins temperature#material
+marginsplot, name(p)
+graph export "fig-04-margins-life-battery.svg", replace name(p)
+</pre>
+                    </div>
+                    <div id="org64f0762" class="figure">
+                        <p><object type="image/svg+xml" data=
+                        "./fig-04-margins-life-battery.svg" class=
+                        "org-svg" width="640px">
+                            Sorry, your browser does not support
+                            SVG.
+                        </object></p>
+                        <p><span class=
+                        "figure-number">Figure&nbsp;5&nbsp;:</span>
+                        Graphique d’interaction avec la commande
+                        marginsplot</p>
+                    </div>
                 </div>
             </div>
-            <div id="outline-container-orgb5c15b0" class=
+            <div id="outline-container-orgc8b1742" class=
             "outline-3">
-                <h3 id="orgb5c15b0">Définition et analyse de
+                <h3 id="orgc8b1742">Définition et analyse de
                 contrastes</h3>
-                <div class="outline-text-3" id="text-orgb5c15b0">
+                <div class="outline-text-3" id="text-orgc8b1742">
                     <p>Voyons ce que l’on peut réaliser en termes
                     de tests de contrastes à l’aide de <a href=
                     "https://www.stata.com/help.cgi?pwcompare">pwcompare</a>.
@@ -724,9 +866,38 @@ r(322);
                                 <td align="right" class=
                                 "bibtexnumber">
                                     [<a name=
+                                    "welch-1951-compar-sever" id=
+                                    "welch-1951-compar-sever">3</a>]
+                                </td>
+                                <td class="bibtexitem">B.&nbsp;L.
+                                Welch, “On the comparison of
+                                several mean values: an alternative
+                                approach,” <em>Biometrika</em>,
+                                vol.&nbsp;38, p.&nbsp;330—336,
+                                1951.</td>
+                            </tr>
+                            <tr valign="top">
+                                <td align="right" class=
+                                "bibtexnumber">
+                                    [<a name=
+                                    "wilcox-1986-new-monte" id=
+                                    "wilcox-1986-new-monte">4</a>]
+                                </td>
+                                <td class="bibtexitem">
+                                R.&nbsp;Wilcox, V.&nbsp;Charlin,
+                                and K.&nbsp;Thompson, “New monte
+                                carlo results on the robustness of
+                                the anova f, w and f statistics,”
+                                vol.&nbsp;15, no.&nbsp;4,
+                                pp.&nbsp;933--943, 1986.</td>
+                            </tr>
+                            <tr valign="top">
+                                <td align="right" class=
+                                "bibtexnumber">
+                                    [<a name=
                                     "montgomery-2001-desig-analy-exper"
                                     id=
-                                    "montgomery-2001-desig-analy-exper">3</a>]
+                                    "montgomery-2001-desig-analy-exper">5</a>]
                                 </td>
                                 <td class="bibtexitem">D.&nbsp;C.
                                 Montgomery, <em>Design and Analysis
@@ -743,7 +914,7 @@ r(322);
         Generated by <a href=
         "https://www.gnu.org/software/emacs/">Emacs</a> 27.0.91
         (<a href="https://orgmode.org">Org</a> mode 9.4) on
-        2020-10-11 Sun 11:20 (<a href=
+        2020-10-14 Wed 17:37 (<a href=
         "mailto:chl@aliquote.org">chl@aliquote.org</a>)
     </div>
 </body>
