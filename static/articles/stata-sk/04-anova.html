@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <!-- 2020-10-14 Wed 17:37 -->
+    <!-- 2020-10-15 Thu 09:52 -->
     <meta charset="utf-8">
     <meta name="viewport" content=
     "width=device-width, initial-scale=1">
     <title>Stata : analyse de la variance</title>
     <meta name="generator" content="Org mode">
     <link rel="stylesheet" type="text/css" href=
-    "/Users/chl/org/drafts/_assets/worg.css">
+    "worg.css">
     <script type="text/x-mathjax-config">
     MathJax.Hub.Config({
         displayAlign: "center",
@@ -40,46 +40,60 @@
             <div id="text-table-of-contents">
                 <ul>
                     <li>
-                        <a href="#org37239c8">Analyse de variance à
+                        <a href="#org70c9269">Analyse de variance à
                         un facteur</a>
                         <ul>
                             <li>
-                                <a href="#orgaa91353">Modèle
+                                <a href="#orge12f28f">Modèle
                                 d’ANOVA</a>
                             </li>
                             <li>
-                                <a href="#org03406d8">Conditions
+                                <a href="#org02a761a">Conditions
                                 d’application du test</a>
                             </li>
                             <li>
-                                <a href="#org38a4145">Commandes
+                                <a href="#org5cac94e">Commandes
                                 graphiques</a>
                             </li>
                             <li>
-                                <a href="#org472b57e">Comparaisons
+                                <a href="#orgf3f330a">Comparaisons
                                 multiples</a>
                             </li>
                             <li>
-                                <a href="#orgd7b7079">Cas des
+                                <a href="#orgb5487dc">Cas des
                                 variances non égales</a>
                             </li>
                             <li>
-                                <a href="#org99978e8">Approche non
+                                <a href="#org4a5d162">Approche non
                                 paramétrique</a>
                             </li>
                         </ul>
                     </li>
                     <li>
-                        <a href="#org16aef52">Analyse de variance à
+                        <a href="#org74392c2">Analyse de variance à
                         plusieurs facteurs</a>
                         <ul>
                             <li>
-                                <a href="#orgbd4861d">Utilisation
+                                <a href="#orgcac23ed">Utilisation
                                 de la commande anova</a>
                             </li>
                             <li>
-                                <a href="#orgc8b1742">Définition et
+                                <a href="#org5da5c3a">Définition et
                                 analyse de contrastes</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#org87b5f58">Autres plans
+                        d’expérience</a>
+                        <ul>
+                            <li>
+                                <a href="#org64d1305">Plan en carré
+                                latin</a>
+                            </li>
+                            <li>
+                                <a href="#orga7d88ff">Plan en blocs
+                                incomplets équilibrés</a>
                             </li>
                         </ul>
                     </li>
@@ -103,14 +117,14 @@
         ouvrage à l’analyse de variance, incluant le cas des
         mesures répétées [<a href=
         "#dupont-2009-statis-model">1</a>].</p>
-        <div id="outline-container-org37239c8" class="outline-2">
-            <h2 id="org37239c8">Analyse de variance à un
+        <div id="outline-container-org70c9269" class="outline-2">
+            <h2 id="org70c9269">Analyse de variance à un
             facteur</h2>
-            <div class="outline-text-2" id="text-org37239c8"></div>
-            <div id="outline-container-orgaa91353" class=
+            <div class="outline-text-2" id="text-org70c9269"></div>
+            <div id="outline-container-orge12f28f" class=
             "outline-3">
-                <h3 id="orgaa91353">Modèle d’ANOVA</h3>
-                <div class="outline-text-3" id="text-orgaa91353">
+                <h3 id="orge12f28f">Modèle d’ANOVA</h3>
+                <div class="outline-text-3" id="text-orge12f28f">
                     <p>Dans l’<a href=
                     "http://biostat.mc.vanderbilt.edu/dupontwd/wddtext/index.html">exemple
                     suivant</a>, tiré de [<a href=
@@ -178,7 +192,7 @@ graph box age, over(genotype)
 graph export "fig-04-boxplot-age-genotype.svg", replace
 </pre>
                     </div>
-                    <div id="orgff58f96" class="figure">
+                    <div id="org9c6331f" class="figure">
                         <p><object type="image/svg+xml" data=
                         "./fig-04-boxplot-age-genotype.svg" class=
                         "org-svg" width="640px">
@@ -199,7 +213,7 @@ graph export "fig-04-boxplot-age-genotype.svg", replace
 graph export "fig-04-hist-age-genotype.svg", replace
 </pre>
                     </div>
-                    <div id="org85872b0" class="figure">
+                    <div id="org5dbbadb" class="figure">
                         <p><object type="image/svg+xml" data=
                         "./fig-04-hist-age-genotype.svg" class=
                         "org-svg" width="640px">
@@ -249,11 +263,11 @@ Bartlett's test for equal variances:  chi2(2) =   1.0798  Prob&gt;chi2 = 0.583
 </pre>
                 </div>
             </div>
-            <div id="outline-container-org03406d8" class=
+            <div id="outline-container-org02a761a" class=
             "outline-3">
-                <h3 id="org03406d8">Conditions d’application du
+                <h3 id="org02a761a">Conditions d’application du
                 test</h3>
-                <div class="outline-text-3" id="text-org03406d8">
+                <div class="outline-text-3" id="text-org02a761a">
                     <p>Il est généralement recommendé de vérifier
                     les hypothèses du modèle, en particulier celle
                     portant sur l’égalité des variances parentes,
@@ -310,7 +324,7 @@ qnorm r
 graph export "fig-04-qnorm-age-genotype-resid.svg", replace
 </pre>
                     </div>
-                    <div id="orge47e6e8" class="figure">
+                    <div id="orgb5b8a2b" class="figure">
                         <p><object type="image/svg+xml" data=
                         "./fig-04-qnorm-age-genotype-resid.svg"
                         class="org-svg" width="640px">
@@ -324,10 +338,10 @@ graph export "fig-04-qnorm-age-genotype-resid.svg", replace
                     </div>
                 </div>
             </div>
-            <div id="outline-container-org38a4145" class=
+            <div id="outline-container-org5cac94e" class=
             "outline-3">
-                <h3 id="org38a4145">Commandes graphiques</h3>
-                <div class="outline-text-3" id="text-org38a4145">
+                <h3 id="org5cac94e">Commandes graphiques</h3>
+                <div class="outline-text-3" id="text-org5cac94e">
                     <p>Stata n’offre pas vraiment de commandes
                     graphiques de post-estimation à l’exception de
                     celles applicables au cas du modèle linéaire,
@@ -346,10 +360,10 @@ graph export "fig-04-qnorm-age-genotype-resid.svg", replace
                     "#cox-2004-speakin-stata">2</a>].</p>
                 </div>
             </div>
-            <div id="outline-container-org472b57e" class=
+            <div id="outline-container-orgf3f330a" class=
             "outline-3">
-                <h3 id="org472b57e">Comparaisons multiples</h3>
-                <div class="outline-text-3" id="text-org472b57e">
+                <h3 id="orgf3f330a">Comparaisons multiples</h3>
+                <div class="outline-text-3" id="text-orgf3f330a">
                     <p>Lorsque le résultat du test d’ANOVA est
                     significatif, il est souvent intéressant, voire
                     nécessaire d’aller inspecter le résultat des
@@ -435,11 +449,11 @@ display r(p)*3
 </pre>
                 </div>
             </div>
-            <div id="outline-container-orgd7b7079" class=
+            <div id="outline-container-orgb5487dc" class=
             "outline-3">
-                <h3 id="orgd7b7079">Cas des variances non
+                <h3 id="orgb5487dc">Cas des variances non
                 égales</h3>
-                <div class="outline-text-3" id="text-orgd7b7079">
+                <div class="outline-text-3" id="text-orgb5487dc">
                     <p>Plusieurs généralisations du test de Welch
                     dans le cas où les variances ne sont pas égales
                     ont été proposées [<a href=
@@ -467,10 +481,10 @@ WStat(  2,  31.91) =   9.129, p= 0.0007
 </pre>
                 </div>
             </div>
-            <div id="outline-container-org99978e8" class=
+            <div id="outline-container-org4a5d162" class=
             "outline-3">
-                <h3 id="org99978e8">Approche non paramétrique</h3>
-                <div class="outline-text-3" id="text-org99978e8">
+                <h3 id="org4a5d162">Approche non paramétrique</h3>
+                <div class="outline-text-3" id="text-org4a5d162">
                     <p>L’ANOVA de Kruskal-Wallis, qui généralise la
                     commande <a href=
                     "https://www.stata.com/help.cgi?ranksum">ranksum</a>
@@ -532,7 +546,7 @@ tabdisp genotype, cellvar(rs) format(%3.1f)
                     <div class="org-src-container">
                         <pre class="src src-jupyter-stata">
                         foreach k of numlist 1/3 {
-  quietly: ranksum age if genotype != `k', by(genotype)
+  quietly ranksum age if genotype != `k', by(genotype)
   display r(z), "(p=" 2*(1-normal(r(z))) ")"
 }
 </pre>
@@ -546,15 +560,15 @@ tabdisp genotype, cellvar(rs) format(%3.1f)
                 </div>
             </div>
         </div>
-        <div id="outline-container-org16aef52" class="outline-2">
-            <h2 id="org16aef52">Analyse de variance à plusieurs
+        <div id="outline-container-org74392c2" class="outline-2">
+            <h2 id="org74392c2">Analyse de variance à plusieurs
             facteurs</h2>
-            <div class="outline-text-2" id="text-org16aef52"></div>
-            <div id="outline-container-orgbd4861d" class=
+            <div class="outline-text-2" id="text-org74392c2"></div>
+            <div id="outline-container-orgcac23ed" class=
             "outline-3">
-                <h3 id="orgbd4861d">Utilisation de la commande
+                <h3 id="orgcac23ed">Utilisation de la commande
                 anova</h3>
-                <div class="outline-text-3" id="text-orgbd4861d">
+                <div class="outline-text-3" id="text-orgcac23ed">
                     <p>La commande <a href=
                     "https://www.stata.com/help.cgi?oneway">oneway</a>
                     est limité au cas à un facteur explicatif. La
@@ -673,12 +687,104 @@ list in 1/3
     ---------------------+----------------------------------------------------
                    Total |  77646.972         35   2218.4849  
 </pre>
-                    <p>Un graphique d’interaction peut être
-                    constuit à l’aide de <a href=
+                    <p>On rappelle que le modèle à effets pour ce
+                    type d’ANOVA s’écrit :</p>
+                    <p>\[
+                    y_{ijk}=\mu+\tau_i+\beta_j+(\tau\beta)_{ij}+\varepsilon_{ijk},
+                    \]</p>
+                    <p>où \(i\), \(j\) (\(i=1\dots a\), \(j=1\dots
+                    b\)) décrivent les niveaux des facteurs \(A\)
+                    et \(B\), et \(k\) représente le numéro
+                    d’observation (\(k=1\dots n\)). L’ordre dans
+                    lequel les observations sont choisies est tiré
+                    au sort, de sorte que l’on parle d’un plan
+                    complètement randomisé. On distingue \(a+b+1\)
+                    dépendances linéaires dans ce système
+                    d’équations, et par conséquent les paramètres
+                    ne peuvent être identifiés sans imposer
+                    certaines contraintes. En règle générale, on
+                    impose \(\sum_{i=1}^a\hat{\tau}_i=0\),
+                    \(\sum_{j=1}^b\hat{\beta}_j=0\),
+                    \(\sum_{i=1}^a\widehat{\tau\beta}_{ij}=0\)
+                    (\(j=1,2,\dots,b\)) et
+                    \(\sum_{j=1}^b\widehat{\tau\beta}_{ij}=0\)
+                    (\(i=1,2,\dots,a\)). On montre avec un peu
+                    d’algèbre que l’équation ci-dessus peut être
+                    exprimée sous la forme d’une somme corrigée de
+                    sommes de carrés :</p>
+                    <p>\[ \begin{split}
+                    \sum_{i=1}^a\sum_{j=1}^b\sum_{k=1}^n(y_{ijk}-\bar{y}_{\cdot\cdot\cdot})^2
+                    &amp;= \sum_{i=1}^a\sum_{j=1}^b\sum_{k=1}^n[
+                    (\bar{y}_{i\cdot\cdot}-\bar{y}_{\cdot\cdot\cdot})+(\bar{y}_{\cdot
+                    j\cdot}-\bar{y}_{\cdot\cdot\cdot}) \\ & \quad +
+                    (\bar{y}_{ij\cdot}-\bar{y}_{i\cdot\cdot}-\bar{y}_{\cdot
+                    j\cdot}+\bar{y}_{\cdot\cdot\cdot})+(y_{ijk}-\bar{y}_{ij\cdot})]^2\\
+                    &amp;=
+                    bn\sum_{i=1}^a(\bar{y}_{i\cdot\cdot}-\bar{y}_{\cdot\cdot\cdot})^2+an\sum_{j=1}^b(\bar{y}_{\cdot
+                    j\cdot}-\bar{y}_{\cdot\cdot\cdot})^2 \\ & \quad
+                    +
+                    n\sum_{i=1}^a\sum_{j=1}^b(\bar{y}_{ij\cdot}-\bar{y}_{i\cdot\cdot}-\bar{y}_{\cdot
+                    j\cdot}+\bar{y}_{\cdot\cdot\cdot})^2\\ & \quad
+                    +
+                    \sum_{i=1}^a\sum_{j=1}^b\sum_{k=1}^n(y_{ijk}-\bar{y}_{ij\cdot})^2
+                    \end{split} \]</p>
+                    <p>Sous forme symbolique, et on retrouve la
+                    formule passée en arguments de <a href=
+                    "https://www.stata.com/help.cgi?anova">anova</a>
+                    (sans la résiduelle), on a bien
+                    \(SS_T=SS_A+SS_B+SS_{AB}+SS_E\). Les hypothèses
+                    associées à ce type de plan portent
+                    généralement sur les effets principaux et sur
+                    l’effet d’interaction :</p>
+                    <ul class="org-ul">
+                        <li>égalité des effets du traitement en
+                        lignes, \(H_0:\;
+                        \tau_1=\tau_2=\dots=\tau_a=0\) ;</li>
+                        <li>égalité des effets du traitement en
+                        colonnes, \(H_0:\;
+                        \beta_1=\beta_2=\dots=\beta_b=0\) ;</li>
+                        <li>absence d’interaction entre les
+                        traitements en lignes et en colonnes,
+                        \(H_0:\; (\tau\beta)_{ij}=0\quad
+                        \textrm{for all}\; i,j\).</li>
+                    </ul>
+                    <p>Voici le tableau résumant les moyennes pour
+                    chaque traitement, ainsi que les écart-types et
+                    effectifs associés. On pourra vérifier que le
+                    plan est parfaitement équilibré :</p>
+                    <div class="org-src-container">
+                        <pre class="src src-jupyter-stata">
+                        table material temperature, contents(mean life sd life n life) format(%4.1f)
+</pre>
+                    </div>
+                    <pre class="example">
+
+
+-------------------------------
+          |     Temperature    
+ Material |    15     70    125
+----------+--------------------
+        1 | 134.8   57.2   57.5
+          |  45.4   23.6   26.9
+          |     4      4      4
+          | 
+        2 | 155.8  119.8   49.5
+          |  25.6   12.7   19.3
+          |     4      4      4
+          | 
+        3 | 144.0  145.8   85.5
+          |  26.0   22.5   19.3
+          |     4      4      4
+-------------------------------
+</pre>
+                    <p>Un graphique d’interaction permettant
+                    d’illustrer les variations de moyennes entre
+                    les conditions pourrait être constuit à l’aide
+                    de <a href=
                     "https://www.stata.com/help.cgi?scatter">scatter</a>
                     comme suit :</p>
-                    <div class="org-src-container">
-                        <pre class="src src-jupyter-stata">preserve
+                    <pre class="example">
+preserve
 collapse (mean) mean=life (sd) sd=life, by(material temperature)
 list in 1/3
 drop sd
@@ -687,20 +793,6 @@ twoway connected mean* temperature, legend(label(1 "#1") label(2 "#2") label(3 "
 graph export "fig-04-scatter-life-battery.svg", replace
 restore
 </pre>
-                    </div>
-                    <div id="org08a7cfc" class="figure">
-                        <p><object type="image/svg+xml" data=
-                        "./fig-04-scatter-life-battery.svg" class=
-                        "org-svg" width="640px">
-                            Sorry, your browser does not support
-                            SVG.
-                        </object></p>
-                        <p><span class=
-                        "figure-number">Figure&nbsp;4&nbsp;:</span>
-                        Durée de vie moyenne des batteries en
-                        fonction des valeurs des facteurs
-                        expérimentaux</p>
-                    </div>
                     <p>Il existe également les commandes <a href=
                     "https://www.stata.com/help.cgi?rcap">rcap</a>
                     et <a href=
@@ -715,12 +807,12 @@ restore
                     précédent :</p>
                     <div class="org-src-container">
                         <pre class="src src-jupyter-stata">
-                        margins temperature#material
+                        quietly margins temperature#material
 marginsplot, name(p)
 graph export "fig-04-margins-life-battery.svg", replace name(p)
 </pre>
                     </div>
-                    <div id="org64f0762" class="figure">
+                    <div id="orgd319d51" class="figure">
                         <p><object type="image/svg+xml" data=
                         "./fig-04-margins-life-battery.svg" class=
                         "org-svg" width="640px">
@@ -728,17 +820,17 @@ graph export "fig-04-margins-life-battery.svg", replace name(p)
                             SVG.
                         </object></p>
                         <p><span class=
-                        "figure-number">Figure&nbsp;5&nbsp;:</span>
+                        "figure-number">Figure&nbsp;4&nbsp;:</span>
                         Graphique d’interaction avec la commande
                         marginsplot</p>
                     </div>
                 </div>
             </div>
-            <div id="outline-container-orgc8b1742" class=
+            <div id="outline-container-org5da5c3a" class=
             "outline-3">
-                <h3 id="orgc8b1742">Définition et analyse de
+                <h3 id="org5da5c3a">Définition et analyse de
                 contrastes</h3>
-                <div class="outline-text-3" id="text-orgc8b1742">
+                <div class="outline-text-3" id="text-org5da5c3a">
                     <p>Voyons ce que l’on peut réaliser en termes
                     de tests de contrastes à l’aide de <a href=
                     "https://www.stata.com/help.cgi?pwcompare">pwcompare</a>.
@@ -814,13 +906,12 @@ material#temperature |
                     ainsi que les degrés de liberté associés :</p>
                     <div class="org-src-container">
                         <pre class="src src-jupyter-stata">
-                        pwcompare i2.material#i70.temperature, mcompare(tukey) df(34)
+                        pwcompare i2.material#i3.temperature, mcompare(tukey) df(34)
 </pre>
                     </div>
                     <pre class="example">
-invalid pairwise comparison;
-term with only one level not allowed
-r(322);
+level 3 of factor temperature not found in list of covariates
+r(111);
 
 </pre>
                     <p>Des <a href=
@@ -832,6 +923,124 @@ r(322);
                     conditions expérimentales. Il ne s’agit donc
                     pas d’un calcul de puissance <i>a
                     posteriori</i>.</p>
+                </div>
+            </div>
+        </div>
+        <div id="outline-container-org87b5f58" class="outline-2">
+            <h2 id="org87b5f58">Autres plans d’expérience</h2>
+            <div class="outline-text-2" id="text-org87b5f58"></div>
+            <div id="outline-container-org64d1305" class=
+            "outline-3">
+                <h3 id="org64d1305">Plan en carré latin</h3>
+            </div>
+            <div id="outline-container-orga7d88ff" class=
+            "outline-3">
+                <h3 id="orga7d88ff">Plan en blocs incomplets
+                équilibrés</h3>
+                <div class="outline-text-3" id="text-orga7d88ff">
+                    <p>Les plans en blocs incomplets équilibrés
+                    (BIBD en anglais) font partie des plans en
+                    blocs aléatoires dans lesquels certains
+                    traitements ne sont pas observés pour certains
+                    blocs ou combinaisons de blocs. Si l’on note
+                    \(a\) le nombre de traitements, et \(k\) le
+                    nombre maximum de traitements dans chaque bloc
+                    (\(k &lt; a\)), alors un plan BIBD se résume à
+                    un arrangement de \(a \choose k\) combinaisons
+                    [<a href="#hinkelmann-2005-design">6</a>].</p>
+                    <p>Voici un exemple discuté par Montgomery,
+                    chapitre 4 [<a href=
+                    "#montgomery-2001-desig-analy-exper">5</a>]
+                    :</p>
+                    <table id="org0b14b2b" border="2" rules="all"
+                    frame="border" width="100%">
+                        <caption class="t-above">
+                            <span class="table-number">Tableau 1
+                            :</span> Résultats d’une expérience de
+                            catalyse (Tableau 4–21)
+                        </caption>
+                        <colgroup>
+                            <col class="org-right">
+                            <col class="org-right">
+                            <col class="org-right">
+                            <col class="org-right">
+                            <col class="org-right">
+                            <col class="org-right">
+                        </colgroup>
+                        <thead>
+                            <tr>
+                                <th scope="col" class="org-right">
+                                Traitement</th>
+                                <th scope="col" class="org-right">
+                                1</th>
+                                <th scope="col" class="org-right">
+                                2</th>
+                                <th scope="col" class="org-right">
+                                3</th>
+                                <th scope="col" class="org-right">
+                                4</th>
+                                <th scope="col" class="org-right">
+                                \(y_{i\cdot}\)</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="org-right">1</td>
+                                <td class="org-right">73</td>
+                                <td class="org-right">74</td>
+                                <td class="org-right">--</td>
+                                <td class="org-right">71</td>
+                                <td class="org-right">218</td>
+                            </tr>
+                            <tr>
+                                <td class="org-right">2</td>
+                                <td class="org-right">--</td>
+                                <td class="org-right">75</td>
+                                <td class="org-right">67</td>
+                                <td class="org-right">72</td>
+                                <td class="org-right">214</td>
+                            </tr>
+                            <tr>
+                                <td class="org-right">3</td>
+                                <td class="org-right">73</td>
+                                <td class="org-right">75</td>
+                                <td class="org-right">68</td>
+                                <td class="org-right">--</td>
+                                <td class="org-right">216</td>
+                            </tr>
+                            <tr>
+                                <td class="org-right">4</td>
+                                <td class="org-right">75</td>
+                                <td class="org-right">--</td>
+                                <td class="org-right">72</td>
+                                <td class="org-right">75</td>
+                                <td class="org-right">222</td>
+                            </tr>
+                        </tbody>
+                        <tbody>
+                            <tr>
+                                <td class="org-right">\(y_{\cdot
+                                j}\)</td>
+                                <td class="org-right">221</td>
+                                <td class="org-right">224</td>
+                                <td class="org-right">207</td>
+                                <td class="org-right">218</td>
+                                <td class="org-right">
+                                \(870=y_{\cdot\cdot}\)</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <p>Si l’on considère qu’il y a \(a\)
+                    traitements et \(b\) blocs, et que chaque bloc
+                    consiste en \(k\) traitements, avec \(r\)
+                    répliques au total dans le plan, alors on a \(N
+                    = ar = bk\) observations, et le nombre de fois
+                    où chaque paire de traitement apparaît dans le
+                    même bloc vaut \(\lambda =
+                    \frac{r(k-1)}{a-1}\), \(\lambda\in
+                    \{0,1,2,\dots\}\). Si \(a = b\), le plan est
+                    dit symétrique. <sup><a id="fnr.1" class=
+                    "footref" href="#fn.1">1</a></sup></p>
                     <div id="bibliography">
                         <h2>Références</h2>
                         <table>
@@ -904,7 +1113,41 @@ r(322);
                                 of Experiments</em>. Wiley,
                                 5&nbsp;ed., 2001.</td>
                             </tr>
+                            <tr valign="top">
+                                <td align="right" class=
+                                "bibtexnumber">
+                                    [<a name=
+                                    "hinkelmann-2005-design" id=
+                                    "hinkelmann-2005-design">6</a>]
+                                </td>
+                                <td class="bibtexitem">
+                                K.&nbsp;Hinkelmann and
+                                O.&nbsp;Kempthorne, <em>Design and
+                                Analysis of Experiments.
+                                Volume&nbsp;2: Advanced
+                                Experimental Design</em>. John
+                                Wiley & Sons, Inc., 2005.</td>
+                            </tr>
                         </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="footnotes">
+            <h2 class="footnotes">Notes de bas de page:</h2>
+            <div id="text-footnotes">
+                <div class="footdef">
+                    <sup><a id="fn.1" class="footnum" href=
+                    "#fnr.1">1</a></sup>
+                    <div class="footpara">
+                        <p class="footpara">Comme \(\lambda\) est
+                        forcément un entier, cela limite l’espace
+                        des solutions pour certains plans. Par
+                        exemple, les contraintes \(r=4\), \(t=4\),
+                        \(b=8\) et \(k=2\) ne sont pas admissibles
+                        dans un simple plan en blocs aléatoires,
+                        mais restent valides dans le cas un plan en
+                        blocs incomplets équilibrés.</p>
                     </div>
                 </div>
             </div>
@@ -914,7 +1157,7 @@ r(322);
         Generated by <a href=
         "https://www.gnu.org/software/emacs/">Emacs</a> 27.0.91
         (<a href="https://orgmode.org">Org</a> mode 9.4) on
-        2020-10-14 Wed 17:37 (<a href=
+        2020-10-15 Thu 09:52 (<a href=
         "mailto:chl@aliquote.org">chl@aliquote.org</a>)
     </div>
 </body>
