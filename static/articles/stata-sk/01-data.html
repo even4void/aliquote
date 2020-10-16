@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <!-- 2020-10-11 Sun 10:00 -->
+    <!-- 2020-10-16 Fri 19:26 -->
     <meta charset="utf-8">
     <meta name="viewport" content=
     "width=device-width, initial-scale=1">
@@ -40,113 +40,125 @@
             <div id="text-table-of-contents">
                 <ul>
                     <li>
-                        <a href="#org05cc72d">Gestion d’un tableau
+                        <a href="#orgf25aef2">Gestion d’un tableau
                         de données</a>
                         <ul>
                             <li>
-                                <a href="#org93f3ac2">Le format
+                                <a href="#orgb72f7da">Le format
                                 DTA</a>
                             </li>
                             <li>
-                                <a href="#org3c84b1a">Propriétés
+                                <a href="#orgb880d75">Propriétés
                                 d’un tableau Stata</a>
                             </li>
                             <li>
-                                <a href="#org2498b20">Autres
+                                <a href="#orgbc13be3">Autres
                                 sources de données</a>
                             </li>
                             <li>
-                                <a href="#org0a61a09">Type de
+                                <a href="#orgb4dbfd5">Type de
                                 variables</a>
                             </li>
                             <li>
-                                <a href="#orge461172">Variables et
+                                <a href="#orgcb21aac">Variables et
                                 liste de variables</a>
                             </li>
                         </ul>
                     </li>
                     <li>
-                        <a href="#orga39b3e7">Manipulation de
+                        <a href="#org693feb3">Manipulation de
                         variables</a>
                         <ul>
                             <li>
-                                <a href="#org94f56df">Syntaxe
+                                <a href="#org78741f9">Syntaxe
                                 élémentaire des commandes Stata</a>
                             </li>
                             <li>
-                                <a href="#org34c5148">Création et
+                                <a href="#org81c2fcd">Création et
                                 mise à jour de variables</a>
                             </li>
                             <li>
-                                <a href="#orgc917151">Étiquette et
+                                <a href="#orgbe1c88a">Étiquette et
                                 annotation</a>
                             </li>
                             <li>
-                                <a href="#org81bd0e3">Changement de
+                                <a href="#org38a07fd">Changement de
                                 mode de stockage et format</a>
                             </li>
                             <li>
-                                <a href="#org62693cd">Gestion des
+                                <a href="#org02e0645">Gestion des
                                 dates</a>
                             </li>
                             <li>
-                                <a href="#orgda2edf4">Recodage de
-                                variables</a>
+                                <a href="#orgd0082dd">Recodage de
+                                variables numériques</a>
+                            </li>
+                            <li>
+                                <a href="#orgd85ba25">Recodage de
+                                variables non-numériques</a>
+                            </li>
+                            <li>
+                                <a href="#orgd0490b3">Utilisation
+                                d’expressions régulières</a>
+                            </li>
+                            <li>
+                                <a href="#org1263438">Traitement
+                                des données manquantes</a>
                             </li>
                         </ul>
                     </li>
                     <li>
-                        <a href="#org048451a">Transformation d’un
+                        <a href="#orgd6cd145">Transformation d’un
                         tableau</a>
                         <ul>
                             <li>
-                                <a href="#orged1d284">Sélection
+                                <a href="#orgf79ab81">Sélection
                                 d’observations et tri</a>
                             </li>
                             <li>
-                                <a href="#org22e6fab">Optimisation
+                                <a href="#org2a31f1a">Optimisation
                                 de la taille mémoire</a>
                             </li>
                             <li>
                                 <a href=
-                                "#org4111b67">Agrégation</a>
+                                "#orga6acc08">Agrégation</a>
                             </li>
                             <li>
-                                <a href="#orgba0e66f">Fusion de
+                                <a href="#org17b5c1b">Fusion de
                                 sources de données</a>
                             </li>
                             <li>
-                                <a href="#org167fdd0">Mode de
+                                <a href="#org2967302">Mode de
                                 représentation rectangulaire</a>
                             </li>
                         </ul>
                     </li>
                     <li>
-                        <a href="#orgb7cdcc4">Tableaux de
+                        <a href="#org2488ef8">Tableaux de
                         description avancés</a>
                         <ul>
                             <li>
-                                <a href="#orgca15899">Les commandes
+                                <a href="#org09eed12">Les commandes
                                 tabulate et summarize</a>
                             </li>
                             <li>
-                                <a href="#org6c2c37e">La commande
+                                <a href="#org5189e1a">La commande
                                 tabstat</a>
                             </li>
                             <li>
-                                <a href="#org45be4b2">La commande
+                                <a href="#org213e05d">La commande
                                 table</a>
                             </li>
                             <li>
-                                <a href="#orgc8a1d74">Analyses
+                                <a href="#orgaf5e9f5">Analyses
                                 pondérées</a>
                             </li>
                             <li>
-                                <a href="#org79f97b0">Commandes
+                                <a href="#org6b23300">Commandes
                                 additionnelles</a>
                             </li>
                             <li>
-                                <a href="#org8e0002e">Exportation
+                                <a href="#org3a51bb5">Exportation
                                 des tableaux</a>
                             </li>
                         </ul>
@@ -165,14 +177,14 @@
         tout ce qui relève de la programmation, mais ceci fera
         l’objet d’un <a href="05-programming.html">autre
         chapitre</a>.</p>
-        <div id="outline-container-org05cc72d" class="outline-2">
-            <h2 id="org05cc72d">Gestion d’un tableau de
+        <div id="outline-container-orgf25aef2" class="outline-2">
+            <h2 id="orgf25aef2">Gestion d’un tableau de
             données</h2>
-            <div class="outline-text-2" id="text-org05cc72d"></div>
-            <div id="outline-container-org93f3ac2" class=
+            <div class="outline-text-2" id="text-orgf25aef2"></div>
+            <div id="outline-container-orgb72f7da" class=
             "outline-3">
-                <h3 id="org93f3ac2">Le format DTA</h3>
-                <div class="outline-text-3" id="text-org93f3ac2">
+                <h3 id="orgb72f7da">Le format DTA</h3>
+                <div class="outline-text-3" id="text-orgb72f7da">
                     <p>On a déjà vu un exemple de format natif
                     Stata avec les données <a href=
                     "https://www.stata.com/help.cgi?auto">auto</a>
@@ -264,11 +276,11 @@
                     "#cox-2005-stata">1</a>].</p>
                 </div>
             </div>
-            <div id="outline-container-org3c84b1a" class=
+            <div id="outline-container-orgb880d75" class=
             "outline-3">
-                <h3 id="org3c84b1a">Propriétés d’un tableau
+                <h3 id="orgb880d75">Propriétés d’un tableau
                 Stata</h3>
-                <div class="outline-text-3" id="text-org3c84b1a">
+                <div class="outline-text-3" id="text-orgb880d75">
                     <p>Les données d’illustration sont tirées de
                     [<a href="#kohler-2012-data-analy">2</a>] et
                     sont disponibles sur le <a href=
@@ -392,10 +404,10 @@ egp          seval        eqpair       pib          wor09
                     statistique (immutabilité).</p>
                 </div>
             </div>
-            <div id="outline-container-org2498b20" class=
+            <div id="outline-container-orgbc13be3" class=
             "outline-3">
-                <h3 id="org2498b20">Autres sources de données</h3>
-                <div class="outline-text-3" id="text-org2498b20">
+                <h3 id="orgbc13be3">Autres sources de données</h3>
+                <div class="outline-text-3" id="text-orgbc13be3">
                     <p>En dehors des tableaux de données au format
                     Stata, il est possible d’importer des sources
                     de données de différents types. Outre les
@@ -524,10 +536,10 @@ int bwt 72-76
                     lowbwt.dct, clear</code>.</p>
                 </div>
             </div>
-            <div id="outline-container-org0a61a09" class=
+            <div id="outline-container-orgb4dbfd5" class=
             "outline-3">
-                <h3 id="org0a61a09">Type de variables</h3>
-                <div class="outline-text-3" id="text-org0a61a09">
+                <h3 id="orgb4dbfd5">Type de variables</h3>
+                <div class="outline-text-3" id="text-orgb4dbfd5">
                     <p>On distinguera essentiellement les nombres
                     et les caractères, et par extension les chaînes
                     de caractères. Les variables catégorielles sont
@@ -689,11 +701,11 @@ sex                                                                       Gender
 </pre>
                 </div>
             </div>
-            <div id="outline-container-orge461172" class=
+            <div id="outline-container-orgcb21aac" class=
             "outline-3">
-                <h3 id="orge461172">Variables et liste de
+                <h3 id="orgcb21aac">Variables et liste de
                 variables</h3>
-                <div class="outline-text-3" id="text-orge461172">
+                <div class="outline-text-3" id="text-orgcb21aac">
                     <p>Un concept clé dans Stata est la possibilité
                     de travailler avec une seule variable, comme on
                     l’a vu dans l’expression <code>codebook
@@ -825,14 +837,14 @@ list wor* in 3
                 </div>
             </div>
         </div>
-        <div id="outline-container-orga39b3e7" class="outline-2">
-            <h2 id="orga39b3e7">Manipulation de variables</h2>
-            <div class="outline-text-2" id="text-orga39b3e7"></div>
-            <div id="outline-container-org94f56df" class=
+        <div id="outline-container-org693feb3" class="outline-2">
+            <h2 id="org693feb3">Manipulation de variables</h2>
+            <div class="outline-text-2" id="text-org693feb3"></div>
+            <div id="outline-container-org78741f9" class=
             "outline-3">
-                <h3 id="org94f56df">Syntaxe élémentaire des
+                <h3 id="org78741f9">Syntaxe élémentaire des
                 commandes Stata</h3>
-                <div class="outline-text-3" id="text-org94f56df">
+                <div class="outline-text-3" id="text-org78741f9">
                     <p>De manière générale, les commandes Stata
                     sont structurées de la manière suivante :</p>
                     <pre class="example">
@@ -1034,11 +1046,11 @@ summarize age
                     l’option <code>sort</code>.</p>
                 </div>
             </div>
-            <div id="outline-container-org34c5148" class=
+            <div id="outline-container-org81c2fcd" class=
             "outline-3">
-                <h3 id="org34c5148">Création et mise à jour de
+                <h3 id="org81c2fcd">Création et mise à jour de
                 variables</h3>
-                <div class="outline-text-3" id="text-org34c5148">
+                <div class="outline-text-3" id="text-org81c2fcd">
                     <p>On a déjà vu un exemple de création de
                     variable dans les illustrations précédentes
                     avec la commande <a href=
@@ -1057,7 +1069,7 @@ summarize age
 </pre>
                     <p>L’expression ci-dessus correspond bien à la
                     syntaxe discutée dans la <a href=
-                    "#org94f56df">section précédente</a>,
+                    "#org78741f9">section précédente</a>,
                     <code>command [varlist] [=exp]</code>. Le
                     résultat de cette instruction a généré de
                     nombreuses valeurs manquantes, ce qui
@@ -1125,7 +1137,7 @@ graph twoway histogram lincome, fraction bfcolor(gs3) blcolor(none)
 graph export "fig-01-histogram-lincome.svg", replace
 </pre>
                     </div>
-                    <div id="org102d850" class="figure">
+                    <div id="org852b5ec" class="figure">
                         <p><object type="image/svg+xml" data=
                         "./fig-01-histogram-lincome.svg" class=
                         "org-svg" width="640px">
@@ -1139,10 +1151,10 @@ graph export "fig-01-histogram-lincome.svg", replace
                     </div>
                 </div>
             </div>
-            <div id="outline-container-orgc917151" class=
+            <div id="outline-container-orgbe1c88a" class=
             "outline-3">
-                <h3 id="orgc917151">Étiquette et annotation</h3>
-                <div class="outline-text-3" id="text-orgc917151">
+                <h3 id="orgbe1c88a">Étiquette et annotation</h3>
+                <div class="outline-text-3" id="text-orgbe1c88a">
                     <p>Il est préférable de travailler avec des
                     noms de variables court, en minuscules, et
                     groupés par ordre logique dans le tableau. Cela
@@ -1267,11 +1279,11 @@ concern3:
                     subi.</p>
                 </div>
             </div>
-            <div id="outline-container-org81bd0e3" class=
+            <div id="outline-container-org38a07fd" class=
             "outline-3">
-                <h3 id="org81bd0e3">Changement de mode de stockage
+                <h3 id="org38a07fd">Changement de mode de stockage
                 et format</h3>
-                <div class="outline-text-3" id="text-org81bd0e3">
+                <div class="outline-text-3" id="text-org38a07fd">
                     <p>Si la précision automatiquement choisie par
                     Stata n’est pas indispensable à
                     l’interprétation des résultats ou si l’on
@@ -1303,10 +1315,10 @@ summarize age, format
 </pre>
                 </div>
             </div>
-            <div id="outline-container-org62693cd" class=
+            <div id="outline-container-org02e0645" class=
             "outline-3">
-                <h3 id="org62693cd">Gestion des dates</h3>
-                <div class="outline-text-3" id="text-org62693cd">
+                <h3 id="org02e0645">Gestion des dates</h3>
+                <div class="outline-text-3" id="text-org02e0645">
                     <p>Stata offre deux types de représentation
                     pour les dates : les dates simples (jour, mois,
                     année) sont gérées avec <a href=
@@ -1347,10 +1359,11 @@ summarize age, format
                     import excel</a>).</p>
                 </div>
             </div>
-            <div id="outline-container-orgda2edf4" class=
+            <div id="outline-container-orgd0082dd" class=
             "outline-3">
-                <h3 id="orgda2edf4">Recodage de variables</h3>
-                <div class="outline-text-3" id="text-orgda2edf4">
+                <h3 id="orgd0082dd">Recodage de variables
+                numériques</h3>
+                <div class="outline-text-3" id="text-orgd0082dd">
                     <p>Par recodage, on entend la discrétisation
                     d’une variable numérique en variable
                     catégorielle à plusieurs classes ou niveaux,
@@ -1377,15 +1390,101 @@ tabulate age4
 ------------+-----------------------------------
       Total |      5,411      100.00
 </pre>
-                    <p>La variable <code>egp</code> représente la
-                    classe socio-économique (selon la nomenclature
-                    allemande) des répondants et elle est composée
-                    de 9 classes, en omettant les valeurs traitées
-                    comme manquantes (étiquettées
-                    «&nbsp;Refusal&nbsp;» et «&nbsp;Does not
-                    apply&nbsp;»). On peut construire très
-                    facilement le tableau d’effectifs associés à
-                    l’aide de <a href=
+                    <p>Il existe d’autres façons d’aborder le même
+                    problème. Tout d’abord on peut procéder à un
+                    recodage «&nbsp;en ligne&nbsp;» à l’aide de
+                    <a href=
+                    "https://www.stata.com/help.cgi?autocode">autocode</a>
+                    :</p>
+                    <div class="org-src-container">
+                        <pre class="src src-jupyter-stata">
+                        generate age5 = autocode(age, 5, 17, 100)
+tabulate age5
+</pre>
+                    </div>
+                    <pre class="example">
+
+
+
+       age5 |      Freq.     Percent        Cum.
+------------+-----------------------------------
+       33.6 |      1,181       21.83       21.83
+       50.2 |      1,719       31.77       53.59
+       66.8 |      1,345       24.86       78.45
+       83.4 |      1,030       19.04       97.49
+        100 |        136        2.51      100.00
+------------+-----------------------------------
+      Total |      5,411      100.00
+</pre>
+                    <p>On peut également utiliser la commande
+                    <code>egen cut</code> qui permet de
+                    discrétiser une variable numérique en
+                    intervalles de classes réguliers ou
+                    irréguliers.</p>
+                    <p>Enfin, la création d’une variable binaire ne
+                    pose pas de souci particulier :</p>
+                    <div class="org-src-container">
+                        <pre class="src src-jupyter-stata">
+                        quietly summarize age, detail
+generate byte ageb = age &gt;= r(p50) if !missing(age)
+</pre>
+                    </div>
+                    <p>Une formulation équivalente consisterait à
+                    utiliser les instructions suivantes :</p>
+                    <pre class="example">
+generate byte ageb = 0 if !missing(age)
+replace ageb = 1 if age &gt;= r(p50)
+</pre>
+                </div>
+            </div>
+            <div id="outline-container-orgd85ba25" class=
+            "outline-3">
+                <h3 id="orgd85ba25">Recodage de variables
+                non-numériques</h3>
+                <div class="outline-text-3" id="text-orgd85ba25">
+                    <p>La commande <a href=
+                    "https://www.stata.com/help.cgi?encode">encode</a>
+                    permet de convertir une variable contenant du
+                    texte (chaîne de caractères) en variable
+                    catégorielle (codes numériques débutant à
+                    1) : les modalités uniques de la variable sont
+                    utilisées comme étiquettes
+                    («&nbsp;label&nbsp;») de la nouvelle variable
+                    générée. Une alternative consiste à
+                    utiliser <code>egen group</code>. Lorsque l’on
+                    utilise <a href=
+                    "https://www.stata.com/help.cgi?encode">encode</a>,
+                    l’option <code>gen()</code> permet de créer une
+                    nouvelle variable.</p>
+                    <p>La commande <a href=
+                    "https://www.stata.com/help.cgi?decode">decode</a>
+                    effectue l’opération inverse : elle permet de
+                    convertir les étiquettes d’une variable
+                    catégorielle en contenu texte (il n’y a donc
+                    plus de codes numériques associés à la
+                    nouvelle variable). Pour convertir des nombres
+                    en caractères, on utilise la commande <a href=
+                    "https://www.stata.com/help.cgi?tostring">tostring</a>
+                    (ou <code>generate newvar =
+                    string(oldvar)</code>). Enfin, la commande
+                    <a href=
+                    "https://www.stata.com/help.cgi?destring">destring</a>
+                    permet de convertir des nombres représentés
+                    sous forme de caractères par Stata (problème
+                    d’importation ou mauvaise manipulation).</p>
+                    <p>Dans le cas des variables catégorielles
+                    (avec ou sans étiquettes), il est possible
+                    d’utiliser la fonction <a href=
+                    "https://www.stata.com/help.cgi?recode">recode</a>.
+                    Considérons la variable <code>egp</code> qui
+                    représente la classe socio-économique (selon la
+                    nomenclature allemande) des répondants. Cette
+                    variable est composée de 9 classes, en omettant
+                    les valeurs traitées comme manquantes
+                    (étiquettées «&nbsp;Refusal&nbsp;» et
+                    «&nbsp;Does not apply&nbsp;»). On peut
+                    construire très facilement le tableau
+                    d’effectifs associés à l’aide de <a href=
                     "https://www.stata.com/help.cgi?tabulate">tabulate</a>,
                     l’option <code>missing</code> permettant de
                     dénombrer les valeurs manquantes :</p>
@@ -1454,15 +1553,177 @@ Service class 1/2 |      1,093       35.40       35.40
 </pre>
                 </div>
             </div>
-        </div>
-        <div id="outline-container-org048451a" class="outline-2">
-            <h2 id="org048451a">Transformation d’un tableau</h2>
-            <div class="outline-text-2" id="text-org048451a"></div>
-            <div id="outline-container-orged1d284" class=
+            <div id="outline-container-orgd0490b3" class=
             "outline-3">
-                <h3 id="orged1d284">Sélection d’observations et
+                <h3 id="orgd0490b3">Utilisation d’expressions
+                régulières</h3>
+                <div class="outline-text-3" id="text-orgd0490b3">
+                    <p>Plutôt que de sélectionner des observations
+                    selon des valeurs ou des ensembles de valeurs
+                    logiques ou numériques, il est tout à fait
+                    possible de rechercher des observations
+                    répondant à certains critères en utilisant des
+                    expressions régulières.</p>
+                    <p>Stata dispose de trois commandes (des
+                    fonctions plus exactement) permettant
+                    d’effectuer des manipulations sur les chaînes
+                    de caractères à partir d’expressions
+                    régulières :</p>
+                    <ul class="org-ul">
+                        <li>
+                            <a href=
+                            "https://www.stata.com/help.cgi?regexm">
+                            regexm</a> : (m)atch une expression
+                            (utile pour créer une variable
+                            binaire)
+                        </li>
+                        <li>
+                            <a href=
+                            "https://www.stata.com/help.cgi?regexr">
+                            regexr</a> : (r)eplace une expression
+                            par une autre
+                        </li>
+                        <li>
+                            <a href=
+                            "https://www.stata.com/help.cgi?regexs">
+                            regexs</a> : (s)ubexpression obtenue à
+                            partir de regexm
+                        </li>
+                    </ul>
+                    <p>Voir l’aide en ligne [D] functions pour les
+                    chaînes de caractères (<code>help
+                    string_functions</code>).</p>
+                    <p>Voici un exemple d’application :</p>
+                    <div class="org-src-container">
+                        <pre class="src src-jupyter-stata">
+                        decode state, gen(state_)
+generate inberlin = regexm(state_, "^Berl")
+drop state_
+tabulate state inberlin if inlist(state, 0, 1, 2)
+</pre>
+                    </div>
+                    <pre class="example">
+
+
+
+
+
+        State of |       inberlin
+       Residence |         0          1 |     Total
+-----------------+----------------------+----------
+          Berlin |         0        208 |       208 
+ Schleswig-Hols. |       166          0 |       166 
+  Hamburg/Bremen |       101          0 |       101 
+-----------------+----------------------+----------
+           Total |       267        208 |       475 
+</pre>
+                </div>
+            </div>
+            <div id="outline-container-org1263438" class=
+            "outline-3">
+                <h3 id="org1263438">Traitement des données
+                manquantes</h3>
+                <div class="outline-text-3" id="text-org1263438">
+                    <p>Stata dispose de plusieurs codes de valeurs
+                    manquantes :</p>
+                    <ul class="org-ul">
+                        <li><code>.</code> est le codage par
+                        défaut (<code>missing(var)</code> ou
+                        <code>var &gt;</code> .=) ;</li>
+                        <li><code>.a–.z</code> (valeurs manquantes
+                        étendues) peuvent être utilisés pour
+                        coder des valeurs manquantes ayant une
+                        signification différente (cas des
+                        sondages, par exemple).</li>
+                    </ul>
+                    <p>Il est possible d’associer des étiquettes
+                    aux valeurs manquantes étendues grâce à
+                    <code>label define</code> afin de les lister
+                    lors de tris simple ou croisé. La commande
+                    <a href=
+                    "https://www.stata.com/help.cgi?misstable">misstable</a>
+                    (sous-commande <code>summarize</code> ou
+                    <code>pattern</code>) fournit un résumé des
+                    données manquantes pour une ou plusieurs
+                    variables.</p>
+                    <div class="org-src-container">
+                        <pre class="src src-jupyter-stata">
+                        misstable pattern q01-q03
+</pre>
+                    </div>
+                    <pre class="example">
+
+   Missing-value patterns
+     (1 means complete)
+
+              |   Pattern
+    Percent   |  1  2  3
+  ------------+-------------
+       98%    |  1  1  1
+              |
+        1     |  0  0  0
+       &lt;1     |  1  1  0
+       &lt;1     |  1  0  1
+       &lt;1     |  1  0  0
+       &lt;1     |  0  0  1
+       &lt;1     |  0  1  0
+       &lt;1     |  0  1  1
+  ------------+-------------
+      100%    |
+
+  Variables are  (1) q01  (2) q02  (3) q03
+</pre>
+                    <p>Les deux principales commandes permettant de
+                    gérer les valeurs manquantes sont indiquées
+                    ci-dessous :</p>
+                    <ul class="org-ul">
+                        <li>
+                            <a href=
+                            "https://www.stata.com/help.cgi?mvdecode">
+                            mvdecode</a> : permet de remplacer des
+                            valeurs existantes par un ou plusieurs
+                            codes de valeur manquante ;
+                            fonctionnement identique à recode
+                        </li>
+                        <li>
+                            <a href=
+                            "https://www.stata.com/help.cgi?mvencode">
+                            mvencode</a> : permet de convertir des
+                            données manquantes en valeurs
+                            exploitables par Stata (texte ou
+                            nombre).
+                        </li>
+                    </ul>
+                    <p>Voici un exemple d’utilisation pour recoder
+                    automatiquement les revenus nuls à un code de
+                    valeur manquante spécifique (<code>.c</code>),
+                    ce qui permet de faire la distinction entre les
+                    revenus réellement non renseignés
+                    (<code>.</code>) et les revenus valant 0 et que
+                    l’on peut souhaiter analyser séparément ou à
+                    l’aide de modèles statistiques autres que le
+                    modèle linéaire classique. On a déjà vu un
+                    exemple d’application de <a href=
+                    "https://www.stata.com/help.cgi?mvdecode">mvdecode</a>
+                    plus haut. Voici un bref rappel de l’idée de
+                    base pour utiliser ces commandes :</p>
+                    <pre class="example">
+mvdecode income, mv(0=.c)
+generate lincome = log(income)
+mvencode income, mv(.c=0)
+summarize *inc*
+</pre>
+                </div>
+            </div>
+        </div>
+        <div id="outline-container-orgd6cd145" class="outline-2">
+            <h2 id="orgd6cd145">Transformation d’un tableau</h2>
+            <div class="outline-text-2" id="text-orgd6cd145"></div>
+            <div id="outline-container-orgf79ab81" class=
+            "outline-3">
+                <h3 id="orgf79ab81">Sélection d’observations et
                 tri</h3>
-                <div class="outline-text-3" id="text-orged1d284">
+                <div class="outline-text-3" id="text-orgf79ab81">
                     <p>On a vu que la commande <a href=
                     "https://www.stata.com/help.cgi?drop">drop</a>
                     permet de supprimer une ou plusieurs variables
@@ -1555,11 +1816,11 @@ summarize agediff
 </pre>
                 </div>
             </div>
-            <div id="outline-container-org22e6fab" class=
+            <div id="outline-container-org2a31f1a" class=
             "outline-3">
-                <h3 id="org22e6fab">Optimisation de la taille
+                <h3 id="org2a31f1a">Optimisation de la taille
                 mémoire</h3>
-                <div class="outline-text-3" id="text-org22e6fab">
+                <div class="outline-text-3" id="text-org2a31f1a">
                     <p>La commande <a href=
                     "https://www.stata.com/help.cgi?compress">compress</a>
                     permet d’optimiser le mode de stockage des
@@ -1589,8 +1850,8 @@ summarize agediff
 
 Contains data from data/gsoep09.dta
   obs:         5,345                          SOEP 2009 (Kohler/Kreuter)
- vars:            70                          13 Feb 2012 17:08
- size:       636,055                          
+ vars:            73                          13 Feb 2012 17:08
+ size:       684,160                          
 Sorted by: hhnr2009  rel2head
      Note: Dataset has changed since last saved.
 </pre>
@@ -1602,10 +1863,10 @@ Sorted by: hhnr2009  rel2head
                     données.</p>
                 </div>
             </div>
-            <div id="outline-container-org4111b67" class=
+            <div id="outline-container-orga6acc08" class=
             "outline-3">
-                <h3 id="org4111b67">Agrégation</h3>
-                <div class="outline-text-3" id="text-org4111b67">
+                <h3 id="orga6acc08">Agrégation</h3>
+                <div class="outline-text-3" id="text-orga6acc08">
                     <p>Par agrégation on entend le procédé qui
                     consiste à réduire un ensemble d’observations à
                     une valeur unique, typiquement un indicateur de
@@ -1674,22 +1935,22 @@ list sex age4 income in 1/5
                     fréquences.</p>
                 </div>
             </div>
-            <div id="outline-container-orgba0e66f" class=
+            <div id="outline-container-org17b5c1b" class=
             "outline-3">
-                <h3 id="orgba0e66f">Fusion de sources de
+                <h3 id="org17b5c1b">Fusion de sources de
                 données</h3>
-                <div class="outline-text-3" id="text-orgba0e66f">
+                <div class="outline-text-3" id="text-org17b5c1b">
                     <p><a href=
                     "https://www.stata.com/help.cgi?merge">merge</a>
                     et <a href=
                     "https://www.stata.com/help.cgi?append">append</a></p>
                 </div>
             </div>
-            <div id="outline-container-org167fdd0" class=
+            <div id="outline-container-org2967302" class=
             "outline-3">
-                <h3 id="org167fdd0">Mode de représentation
+                <h3 id="org2967302">Mode de représentation
                 rectangulaire</h3>
-                <div class="outline-text-3" id="text-org167fdd0">
+                <div class="outline-text-3" id="text-org2967302">
                     <p><a href=
                     "https://www.stata.com/help.cgi?fillin">fillin</a>
                     et <a href=
@@ -1697,15 +1958,15 @@ list sex age4 income in 1/5
                 </div>
             </div>
         </div>
-        <div id="outline-container-orgb7cdcc4" class="outline-2">
-            <h2 id="orgb7cdcc4">Tableaux de description
+        <div id="outline-container-org2488ef8" class="outline-2">
+            <h2 id="org2488ef8">Tableaux de description
             avancés</h2>
-            <div class="outline-text-2" id="text-orgb7cdcc4"></div>
-            <div id="outline-container-orgca15899" class=
+            <div class="outline-text-2" id="text-org2488ef8"></div>
+            <div id="outline-container-org09eed12" class=
             "outline-3">
-                <h3 id="orgca15899">Les commandes tabulate et
+                <h3 id="org09eed12">Les commandes tabulate et
                 summarize</h3>
-                <div class="outline-text-3" id="text-orgca15899">
+                <div class="outline-text-3" id="text-org09eed12">
                     <p>Comme discuté précédemment, le préfixe
                     <a href=
                     "https://www.stata.com/help.cgi?by">by</a>
@@ -1743,7 +2004,7 @@ list sex age4 income in 1/5
 graph export "fig-01-histogram-lincome-sex.svg", replace
 </pre>
                     </div>
-                    <div id="org174abab" class="figure">
+                    <div id="org5e466d1" class="figure">
                         <p><object type="image/svg+xml" data=
                         "./fig-01-histogram-lincome-sex.svg" class=
                         "org-svg" width="640px">
@@ -1793,7 +2054,7 @@ egp (Social |     Summary of Individual Labor
 graph export "fig-01-bar-lincome-sex.svg", replace
 </pre>
                     </div>
-                    <div id="orgcabbcba" class="figure">
+                    <div id="org4fb4d0d" class="figure">
                         <p><object type="image/svg+xml" data=
                         "./fig-01-bar-lincome-sex.svg" class=
                         "org-svg" width="640px">
@@ -1808,10 +2069,10 @@ graph export "fig-01-bar-lincome-sex.svg", replace
                     </div>
                 </div>
             </div>
-            <div id="outline-container-org6c2c37e" class=
+            <div id="outline-container-org5189e1a" class=
             "outline-3">
-                <h3 id="org6c2c37e">La commande tabstat</h3>
-                <div class="outline-text-3" id="text-org6c2c37e">
+                <h3 id="org5189e1a">La commande tabstat</h3>
+                <div class="outline-text-3" id="text-org5189e1a">
                     <p>La commande <a href=
                     "https://www.stata.com/help.cgi?tabstat">tabstat</a>
                     permet au contraire de spécifier la liste des
@@ -1854,7 +2115,7 @@ Summary for variables: lincome
 graph export "fig-01-box-lincome-sex.svg", replace
 </pre>
                     </div>
-                    <div id="orga52dabe" class="figure">
+                    <div id="orgbaa377e" class="figure">
                         <p><object type="image/svg+xml" data=
                         "./fig-01-box-lincome-sex.svg" class=
                         "org-svg" width="640px">
@@ -1868,10 +2129,10 @@ graph export "fig-01-box-lincome-sex.svg", replace
                     </div>
                 </div>
             </div>
-            <div id="outline-container-org45be4b2" class=
+            <div id="outline-container-org213e05d" class=
             "outline-3">
-                <h3 id="org45be4b2">La commande table</h3>
-                <div class="outline-text-3" id="text-org45be4b2">
+                <h3 id="org213e05d">La commande table</h3>
+                <div class="outline-text-3" id="text-org213e05d">
                     <p>La commande <a href=
                     "https://www.stata.com/help.cgi?table">table</a>
                     est beaucoup plus souple et elle permet non
@@ -1947,18 +2208,18 @@ Service class 1/2 |     11      10
 </pre>
                 </div>
             </div>
-            <div id="outline-container-orgc8a1d74" class=
+            <div id="outline-container-orgaf5e9f5" class=
             "outline-3">
-                <h3 id="orgc8a1d74">Analyses pondérées</h3>
+                <h3 id="orgaf5e9f5">Analyses pondérées</h3>
             </div>
-            <div id="outline-container-org79f97b0" class=
+            <div id="outline-container-org6b23300" class=
             "outline-3">
-                <h3 id="org79f97b0">Commandes additionnelles</h3>
+                <h3 id="org6b23300">Commandes additionnelles</h3>
             </div>
-            <div id="outline-container-org8e0002e" class=
+            <div id="outline-container-org3a51bb5" class=
             "outline-3">
-                <h3 id="org8e0002e">Exportation des tableaux</h3>
-                <div class="outline-text-3" id="text-org8e0002e">
+                <h3 id="org3a51bb5">Exportation des tableaux</h3>
+                <div class="outline-text-3" id="text-org3a51bb5">
                     <div id="bibliography">
                         <h2>Références</h2>
                         <table>
@@ -2056,7 +2317,7 @@ Service class 1/2 |     11      10
         Generated by <a href=
         "https://www.gnu.org/software/emacs/">Emacs</a> 27.0.91
         (<a href="https://orgmode.org">Org</a> mode 9.4) on
-        2020-10-11 Sun 10:00 (<a href=
+        2020-10-16 Fri 19:26 (<a href=
         "mailto:chl@aliquote.org">chl@aliquote.org</a>)
     </div>
 </body>

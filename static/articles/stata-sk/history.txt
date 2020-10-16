@@ -1,3 +1,4 @@
+* ba6d602 (Fri, 16 Oct 2020 19:31:06 +0200, chl) Update chapter 1 with recoding stuff
 * aac783d (Fri, 16 Oct 2020 11:18:39 +0200, chl) wip
 * 8f2b06d (Thu, 15 Oct 2020 10:12:26 +0200, chl) wip
 * 9b419fe (Wed, 14 Oct 2020 17:39:24 +0200, chl) Work on chapter 4
