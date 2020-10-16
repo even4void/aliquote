@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <!-- 2020-10-15 Thu 09:52 -->
+    <!-- 2020-10-16 Fri 11:08 -->
     <meta charset="utf-8">
     <meta name="viewport" content=
     "width=device-width, initial-scale=1">
@@ -40,59 +40,63 @@
             <div id="text-table-of-contents">
                 <ul>
                     <li>
-                        <a href="#org70c9269">Analyse de variance à
+                        <a href="#org7b103f2">Analyse de variance à
                         un facteur</a>
                         <ul>
                             <li>
-                                <a href="#orge12f28f">Modèle
+                                <a href="#org63d91f2">Modèle
                                 d’ANOVA</a>
                             </li>
                             <li>
-                                <a href="#org02a761a">Conditions
+                                <a href="#org0e10350">Conditions
                                 d’application du test</a>
                             </li>
                             <li>
-                                <a href="#org5cac94e">Commandes
+                                <a href="#orgd45a1d6">Commandes
                                 graphiques</a>
                             </li>
                             <li>
-                                <a href="#orgf3f330a">Comparaisons
+                                <a href="#orgdd6ed81">Comparaisons
                                 multiples</a>
                             </li>
                             <li>
-                                <a href="#orgb5487dc">Cas des
+                                <a href="#org8b93877">L’ANOVA via
+                                la régression</a>
+                            </li>
+                            <li>
+                                <a href="#orgb750454">Cas des
                                 variances non égales</a>
                             </li>
                             <li>
-                                <a href="#org4a5d162">Approche non
+                                <a href="#org3a992f4">Approche non
                                 paramétrique</a>
                             </li>
                         </ul>
                     </li>
                     <li>
-                        <a href="#org74392c2">Analyse de variance à
+                        <a href="#orgf94d15f">Analyse de variance à
                         plusieurs facteurs</a>
                         <ul>
                             <li>
-                                <a href="#orgcac23ed">Utilisation
+                                <a href="#org70e571a">Utilisation
                                 de la commande anova</a>
                             </li>
                             <li>
-                                <a href="#org5da5c3a">Définition et
+                                <a href="#org9eb8671">Définition et
                                 analyse de contrastes</a>
                             </li>
                         </ul>
                     </li>
                     <li>
-                        <a href="#org87b5f58">Autres plans
+                        <a href="#orgba940de">Autres plans
                         d’expérience</a>
                         <ul>
                             <li>
-                                <a href="#org64d1305">Plan en carré
-                                latin</a>
+                                <a href="#org9123ce0">Plan en blocs
+                                complets randomisés</a>
                             </li>
                             <li>
-                                <a href="#orga7d88ff">Plan en blocs
+                                <a href="#org7282cf9">Plan en blocs
                                 incomplets équilibrés</a>
                             </li>
                         </ul>
@@ -113,26 +117,47 @@
         "https://www.stata.com/help.cgi?oneway">oneway</a> et
         <a href=
         "https://www.stata.com/help.cgi?anova">anova</a>.</p>
-        <p>Dupont consacre plusieurs chapitres de son excellent
-        ouvrage à l’analyse de variance, incluant le cas des
-        mesures répétées [<a href=
-        "#dupont-2009-statis-model">1</a>].</p>
-        <div id="outline-container-org70c9269" class="outline-2">
-            <h2 id="org70c9269">Analyse de variance à un
+        <p>Dupont [<a href="#dupont-2009-statis-model">1</a>]
+        consacre plusieurs chapitres de son excellent ouvrage à
+        l’analyse de variance, incluant le cas des mesures
+        répétées.</p>
+        <div id="outline-container-org7b103f2" class="outline-2">
+            <h2 id="org7b103f2">Analyse de variance à un
             facteur</h2>
-            <div class="outline-text-2" id="text-org70c9269"></div>
-            <div id="outline-container-orge12f28f" class=
+            <div class="outline-text-2" id="text-org7b103f2"></div>
+            <div id="outline-container-org63d91f2" class=
             "outline-3">
-                <h3 id="orge12f28f">Modèle d’ANOVA</h3>
-                <div class="outline-text-3" id="text-orge12f28f">
+                <h3 id="org63d91f2">Modèle d’ANOVA</h3>
+                <div class="outline-text-3" id="text-org63d91f2">
+                    <p>Le modèle d’ANOVA à un facteur se formule
+                    ainsi :</p>
+                    <p>\[ y_{ij}=\mu_i+\varepsilon_{ij}\qquad
+                    i=1,\dots,a;\, j=1,\dots,n, \]</p>
+                    <p>où \(y_{ij}\) désigne la $j$ème observation
+                    associée au traitement (ou groupe) \(i\),
+                    \(\mu_i\) est la moyenne du traitement et
+                    \(\varepsilon_{ij}\) représente la valeur
+                    résiduelle. La formulation ci-dessus se nomme
+                    «&nbsp;modèle moyen&nbsp;». Si l’on considère
+                    les \(\mu_i\) par rapport à la moyenne
+                    générale, \(\mu\), avec \(\mu_i = \mu+\tau_i\),
+                    alors on peut écrire le modèle sous forme de
+                    modèle d’effets :</p>
+                    <p>\[ y_{ij}=\mu +
+                    \tau_i+\varepsilon_{ij}\qquad i=1,\dots,a;\,
+                    j=1,\dots,n. \]</p>
+                    <p>Les \(\tau_i\) reflètent ainsi les
+                    différentes entre les moyennes des traitements
+                    et la moyenne générale, et il s’agit bien
+                    d’effets au sens propre du terme.</p>
                     <p>Dans l’<a href=
                     "http://biostat.mc.vanderbilt.edu/dupontwd/wddtext/index.html">exemple
                     suivant</a>, tiré de [<a href=
                     "#dupont-2009-statis-model">1</a>], on
                     s’intéresse à la relation entre l’âge des
-                    participants à l’étude au moment du diagostique
-                    et un polymorphisme de séquence. Les données
-                    sont disponibles dans le fichier
+                    participants à l’étude au moment du
+                    diagnostique et un polymorphisme de séquence.
+                    Les données sont disponibles dans le fichier
                     <code>polymorphism.dta</code> :</p>
                     <div class="org-src-container">
                         <pre class="src src-jupyter-stata">
@@ -192,16 +217,16 @@ graph box age, over(genotype)
 graph export "fig-04-boxplot-age-genotype.svg", replace
 </pre>
                     </div>
-                    <div id="org9c6331f" class="figure">
+                    <div id="org53cf25a" class="figure">
                         <p><object type="image/svg+xml" data=
                         "./fig-04-boxplot-age-genotype.svg" class=
-                        "org-svg" width="640px">
+                        "org-svg">
                             Sorry, your browser does not support
                             SVG.
                         </object></p>
                         <p><span class=
                         "figure-number">Figure&nbsp;1&nbsp;:</span>
-                        Distribution de l’âge de diagnostic en
+                        Histogrammes pour l’âge de diagnostic en
                         fonction du polymorphisme</p>
                     </div>
                     <p>Il est également possible d’afficher ces
@@ -213,10 +238,10 @@ graph export "fig-04-boxplot-age-genotype.svg", replace
 graph export "fig-04-hist-age-genotype.svg", replace
 </pre>
                     </div>
-                    <div id="org5dbbadb" class="figure">
+                    <div id="org43ca7ca" class="figure">
                         <p><object type="image/svg+xml" data=
                         "./fig-04-hist-age-genotype.svg" class=
-                        "org-svg" width="640px">
+                        "org-svg">
                             Sorry, your browser does not support
                             SVG.
                         </object></p>
@@ -263,11 +288,11 @@ Bartlett's test for equal variances:  chi2(2) =   1.0798  Prob&gt;chi2 = 0.583
 </pre>
                 </div>
             </div>
-            <div id="outline-container-org02a761a" class=
+            <div id="outline-container-org0e10350" class=
             "outline-3">
-                <h3 id="org02a761a">Conditions d’application du
+                <h3 id="org0e10350">Conditions d’application du
                 test</h3>
-                <div class="outline-text-3" id="text-org02a761a">
+                <div class="outline-text-3" id="text-org0e10350">
                     <p>Il est généralement recommendé de vérifier
                     les hypothèses du modèle, en particulier celle
                     portant sur l’égalité des variances parentes,
@@ -324,10 +349,10 @@ qnorm r
 graph export "fig-04-qnorm-age-genotype-resid.svg", replace
 </pre>
                     </div>
-                    <div id="orgb5b8a2b" class="figure">
+                    <div id="orgfe50402" class="figure">
                         <p><object type="image/svg+xml" data=
                         "./fig-04-qnorm-age-genotype-resid.svg"
-                        class="org-svg" width="640px">
+                        class="org-svg">
                             Sorry, your browser does not support
                             SVG.
                         </object></p>
@@ -338,10 +363,10 @@ graph export "fig-04-qnorm-age-genotype-resid.svg", replace
                     </div>
                 </div>
             </div>
-            <div id="outline-container-org5cac94e" class=
+            <div id="outline-container-orgd45a1d6" class=
             "outline-3">
-                <h3 id="org5cac94e">Commandes graphiques</h3>
-                <div class="outline-text-3" id="text-org5cac94e">
+                <h3 id="orgd45a1d6">Commandes graphiques</h3>
+                <div class="outline-text-3" id="text-orgd45a1d6">
                     <p>Stata n’offre pas vraiment de commandes
                     graphiques de post-estimation à l’exception de
                     celles applicables au cas du modèle linéaire,
@@ -352,7 +377,24 @@ graph export "fig-04-qnorm-age-genotype-resid.svg", replace
                     commande <code>anovaplot</code> (une approche
                     manuelle pour construire un graphique
                     d’interaction est présentée dans la section
-                    suivante).</p>
+                    suivante) :</p>
+                    <div class="org-src-container">
+                        <pre class="src src-jupyter-stata">
+                        anovaplot
+graph export "fig-04-anovaplot-age-genotype.svg", replace
+</pre>
+                    </div>
+                    <div id="orgabc0d89" class="figure">
+                        <p><object type="image/svg+xml" data=
+                        "./fig-04-anovaplot-age-genotype.svg"
+                        class="org-svg">
+                            Sorry, your browser does not support
+                            SVG.
+                        </object></p>
+                        <p><span class=
+                        "figure-number">Figure&nbsp;4&nbsp;:</span>
+                        Valeurs prédites par le modèle d’ANOVA</p>
+                    </div>
                     <p>Une référence intéressante concernant les
                     approches graphiques pour le diagnostique des
                     modèles de régression, au sens large, est
@@ -360,10 +402,10 @@ graph export "fig-04-qnorm-age-genotype-resid.svg", replace
                     "#cox-2004-speakin-stata">2</a>].</p>
                 </div>
             </div>
-            <div id="outline-container-orgf3f330a" class=
+            <div id="outline-container-orgdd6ed81" class=
             "outline-3">
-                <h3 id="orgf3f330a">Comparaisons multiples</h3>
-                <div class="outline-text-3" id="text-orgf3f330a">
+                <h3 id="orgdd6ed81">Comparaisons multiples</h3>
+                <div class="outline-text-3" id="text-orgdd6ed81">
                     <p>Lorsque le résultat du test d’ANOVA est
                     significatif, il est souvent intéressant, voire
                     nécessaire d’aller inspecter le résultat des
@@ -449,11 +491,53 @@ display r(p)*3
 </pre>
                 </div>
             </div>
-            <div id="outline-container-orgb5487dc" class=
+            <div id="outline-container-org8b93877" class=
             "outline-3">
-                <h3 id="orgb5487dc">Cas des variances non
+                <h3 id="org8b93877">L’ANOVA via la régression</h3>
+                <div class="outline-text-3" id="text-org8b93877">
+                    <blockquote>
+                        <p>The regress command is used to fit the
+                        underlying regression model corresponding
+                        to an ANOVA model fit using the anova
+                        command. Type regress after anova to see
+                        the coefficients, standard errors, etc., of
+                        the regression model for the last run of
+                        anova.</p>
+                    </blockquote>
+                    <div class="org-src-container">
+                        <pre class="src src-jupyter-stata">
+                        quietly anova age genotype
+regress
+</pre>
+                    </div>
+                    <pre class="example">
+
+
+
+      Source |       SS           df       MS      Number of obs   =        59
+-------------+----------------------------------   F(2, 56)        =      7.86
+       Model |  2315.73355         2  1157.86678   Prob &gt; F        =    0.0010
+    Residual |  8245.79187        56  147.246283   R-squared       =    0.2193
+-------------+----------------------------------   Adj R-squared   =    0.1914
+       Total |  10561.5254        58  182.095266   Root MSE        =    12.135
+
+------------------------------------------------------------------------------
+         age |      Coef.   Std. Err.      t    P&gt;|t|     [95% Conf. Interval]
+-------------+----------------------------------------------------------------
+    genotype |
+    1.6/0.7  |  -.2635468   3.949057    -0.07   0.947    -8.174458    7.647365
+    0.7/0.7  |  -14.26786   4.440775    -3.21   0.002     -23.1638   -5.371915
+             |
+       _cons |   64.64286   3.243084    19.93   0.000     58.14618    71.13953
+------------------------------------------------------------------------------
+</pre>
+                </div>
+            </div>
+            <div id="outline-container-orgb750454" class=
+            "outline-3">
+                <h3 id="orgb750454">Cas des variances non
                 égales</h3>
-                <div class="outline-text-3" id="text-orgb5487dc">
+                <div class="outline-text-3" id="text-orgb750454">
                     <p>Plusieurs généralisations du test de Welch
                     dans le cas où les variances ne sont pas égales
                     ont été proposées [<a href=
@@ -481,10 +565,10 @@ WStat(  2,  31.91) =   9.129, p= 0.0007
 </pre>
                 </div>
             </div>
-            <div id="outline-container-org4a5d162" class=
+            <div id="outline-container-org3a992f4" class=
             "outline-3">
-                <h3 id="org4a5d162">Approche non paramétrique</h3>
-                <div class="outline-text-3" id="text-org4a5d162">
+                <h3 id="org3a992f4">Approche non paramétrique</h3>
+                <div class="outline-text-3" id="text-org3a992f4">
                     <p>L’ANOVA de Kruskal-Wallis, qui généralise la
                     commande <a href=
                     "https://www.stata.com/help.cgi?ranksum">ranksum</a>
@@ -560,15 +644,15 @@ tabdisp genotype, cellvar(rs) format(%3.1f)
                 </div>
             </div>
         </div>
-        <div id="outline-container-org74392c2" class="outline-2">
-            <h2 id="org74392c2">Analyse de variance à plusieurs
+        <div id="outline-container-orgf94d15f" class="outline-2">
+            <h2 id="orgf94d15f">Analyse de variance à plusieurs
             facteurs</h2>
-            <div class="outline-text-2" id="text-org74392c2"></div>
-            <div id="outline-container-orgcac23ed" class=
+            <div class="outline-text-2" id="text-orgf94d15f"></div>
+            <div id="outline-container-org70e571a" class=
             "outline-3">
-                <h3 id="orgcac23ed">Utilisation de la commande
+                <h3 id="org70e571a">Utilisation de la commande
                 anova</h3>
-                <div class="outline-text-3" id="text-orgcac23ed">
+                <div class="outline-text-3" id="text-org70e571a">
                     <p>La commande <a href=
                     "https://www.stata.com/help.cgi?oneway">oneway</a>
                     est limité au cas à un facteur explicatif. La
@@ -790,7 +874,6 @@ list in 1/3
 drop sd
 reshape wide mean, i(temperature) j(material)
 twoway connected mean* temperature, legend(label(1 "#1") label(2 "#2") label(3 "#3")) ytitle(Mean life)
-graph export "fig-04-scatter-life-battery.svg", replace
 restore
 </pre>
                     <p>Il existe également les commandes <a href=
@@ -812,25 +895,25 @@ marginsplot, name(p)
 graph export "fig-04-margins-life-battery.svg", replace name(p)
 </pre>
                     </div>
-                    <div id="orgd319d51" class="figure">
+                    <div id="orgc8aaa7c" class="figure">
                         <p><object type="image/svg+xml" data=
                         "./fig-04-margins-life-battery.svg" class=
-                        "org-svg" width="640px">
+                        "org-svg">
                             Sorry, your browser does not support
                             SVG.
                         </object></p>
                         <p><span class=
-                        "figure-number">Figure&nbsp;4&nbsp;:</span>
+                        "figure-number">Figure&nbsp;5&nbsp;:</span>
                         Graphique d’interaction avec la commande
                         marginsplot</p>
                     </div>
                 </div>
             </div>
-            <div id="outline-container-org5da5c3a" class=
+            <div id="outline-container-org9eb8671" class=
             "outline-3">
-                <h3 id="org5da5c3a">Définition et analyse de
+                <h3 id="org9eb8671">Définition et analyse de
                 contrastes</h3>
-                <div class="outline-text-3" id="text-org5da5c3a">
+                <div class="outline-text-3" id="text-org9eb8671">
                     <p>Voyons ce que l’on peut réaliser en termes
                     de tests de contrastes à l’aide de <a href=
                     "https://www.stata.com/help.cgi?pwcompare">pwcompare</a>.
@@ -926,18 +1009,59 @@ r(111);
                 </div>
             </div>
         </div>
-        <div id="outline-container-org87b5f58" class="outline-2">
-            <h2 id="org87b5f58">Autres plans d’expérience</h2>
-            <div class="outline-text-2" id="text-org87b5f58"></div>
-            <div id="outline-container-org64d1305" class=
+        <div id="outline-container-orgba940de" class="outline-2">
+            <h2 id="orgba940de">Autres plans d’expérience</h2>
+            <div class="outline-text-2" id="text-orgba940de"></div>
+            <div id="outline-container-org9123ce0" class=
             "outline-3">
-                <h3 id="org64d1305">Plan en carré latin</h3>
+                <h3 id="org9123ce0">Plan en blocs complets
+                randomisés</h3>
+                <div class="outline-text-3" id="text-org9123ce0">
+                    <p>Les plans en blocs complets randomisés (RCBD
+                    en anglais) sont utilisés lorsque l’on souhaite
+                    contrôler certains facteurs de nuisance. Le
+                    facteur d’intérêt est alors appelé traitement
+                    et le ou les facteurs de nuisance bloc(s). Il
+                    ne faut pas les confondre avec les modèles
+                    d’analyse de covariance dans lesquels les
+                    réponses sont ajustées <i>a posteriori</i> pour
+                    prendre en compte les facteurs de nuisance.</p>
+                    <blockquote>
+                        <p>Block what you can; randomize what you
+                        cannot. — George E.P. Box</p>
+                    </blockquote>
+                    <p>Les conditions de validité associées à ce
+                    type d’analyse sont les mêmes que dans le cas
+                    de l’ANOVA à plusieurs facteurs (indépendance,
+                    normalité et homogénéité des variances), mais
+                    on postule également l’absence d’interaction
+                    entre traitement et bloc (additivité des
+                    effets) et la symétrie composée de la matrice
+                    de variance-covariance, comme dans le cas de
+                    l’ANOVA à mesures répétées (dans cette
+                    dernière, les sujets sont assimilables aux
+                    blocs, mais chaque bloc contient plusieurs
+                    sujets appariés sur une ou plusieurs
+                    caractéristiques communes).</p>
+                    <p>Le modèle à effet se formule ainsi :</p>
+                    <p>\[
+                    y_{ij}=\mu+\tau_i+\beta_j+\varepsilon_{ij}\qquad
+                    (i=1,2,\dots,a; j=1,2,\dots,b), \]</p>
+                    <p>avec les contraintes \(\sum_{i=1}^a\tau_i =
+                    0\) et \(\sum_{j=1}^b\beta_j = 0\). L’équation
+                    fondamentale de cette ANOVA revient donc à
+                    \(SS_T=SS_{\textrm{treat}}+SS_{\textrm{block}}+SS_E\).
+                    La résiduelle à \((a-1)(b-1)\) degrés de
+                    liberté capture la variance non expliquée par
+                    les facteurs considérés.</p>
+                    <p>Considérons l’exemple suivant, tiré de</p>
+                </div>
             </div>
-            <div id="outline-container-orga7d88ff" class=
+            <div id="outline-container-org7282cf9" class=
             "outline-3">
-                <h3 id="orga7d88ff">Plan en blocs incomplets
+                <h3 id="org7282cf9">Plan en blocs incomplets
                 équilibrés</h3>
-                <div class="outline-text-3" id="text-orga7d88ff">
+                <div class="outline-text-3" id="text-org7282cf9">
                     <p>Les plans en blocs incomplets équilibrés
                     (BIBD en anglais) font partie des plans en
                     blocs aléatoires dans lesquels certains
@@ -952,7 +1076,7 @@ r(111);
                     chapitre 4 [<a href=
                     "#montgomery-2001-desig-analy-exper">5</a>]
                     :</p>
-                    <table id="org0b14b2b" border="2" rules="all"
+                    <table id="orgb277e3a" border="2" rules="all"
                     frame="border" width="100%">
                         <caption class="t-above">
                             <span class="table-number">Tableau 1
@@ -1041,6 +1165,11 @@ r(111);
                     \{0,1,2,\dots\}\). Si \(a = b\), le plan est
                     dit symétrique. <sup><a id="fnr.1" class=
                     "footref" href="#fn.1">1</a></sup></p>
+                    <div class="org-src-container">
+                        <pre class="src src-jupyter-stata">
+                        use data/tab-4-21, clear
+</pre>
+                    </div>
                     <div id="bibliography">
                         <h2>Références</h2>
                         <table>
@@ -1157,7 +1286,7 @@ r(111);
         Generated by <a href=
         "https://www.gnu.org/software/emacs/">Emacs</a> 27.0.91
         (<a href="https://orgmode.org">Org</a> mode 9.4) on
-        2020-10-15 Thu 09:52 (<a href=
+        2020-10-16 Fri 11:08 (<a href=
         "mailto:chl@aliquote.org">chl@aliquote.org</a>)
     </div>
 </body>
