@@ -1,6 +1,6 @@
 ---
 title: "Now"
-date: 2020-08-16T19:46:00+01:00
+date: 2020-12-15T19:46:00+01:00
 url: "/now"
 type: "now"
 ---
@@ -9,8 +9,6 @@ I left behind everything I'd built, and now I sometimes feels like a ghost in th
 
 ---
 
-This time I'm only a month and a half late to update this page. I'm on holidays, 15 days remaining or something like that. It has been very hot recently, but now the wether is milder. The health crisis doesn't affect me that much since I haven't seen anyone but my family for about 20 months now. It remains to be seen how this will play out in the new school year and whether I'll continue to work from. At least, I could get back to work and be more productive in June.
+I haven't updated this page in a while, again. It was well worth creating one. Anyway, I spent the entire last month in total confinement, with the exception of one or two outings of less than 2 hours per week. That was quite a month.
 
-I also spend a lot of time reconfiguring my whole command-line oriented setup ([Zsh](/post/customizing-iterm2/) and [Emacs](/post/emacs-in-terminal/)), and I'm happy with the results. I can now spend a whole day just in my terminal, with a few round trips on Safari. And finally, I'm starting to get a taste for statistical analysis again, but I don't know how long it will last.
-
-I read about 30 books in the last two months. A lot of them were interesting, or at least entertaining, see the last entries in my [book list](https://aliquote.org/files/books.txt).
+I'm starting a new adventure in the Linux land, this time with Ubuntu 20.06 LTS and a new laptop. Almost nothing new to me: I know a bit of Linux, from my old times in university, and I keep using a terminal and Neovim for most of my daily work. The hardest part is getting used to the non-Mac keyboard. After three days of intense labor, I now have a perfect working installation with all the tools I need.
