@@ -1,7 +1,7 @@
 ---
 title: "Random thoughts for the end of the year"
 date: 2020-12-27T07:27:13+01:00
-draft: true
+draft: false
 tags: ["unix"]
 categories: ["2020"]
 ---
