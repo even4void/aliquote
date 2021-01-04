@@ -6,7 +6,7 @@ tags: ["this", "unix", "stata"]
 categories: ["2021"]
 ---
 
-In which we wish our rddaers a happy new year.
+In which we wish our readers a happy new year.
 
 Let's not lie to ourselves, the year will not have been glorious and does not deserve a real retrospective, so let's continue our adventures in the Ubuntu universe.
 
@@ -16,7 +16,7 @@ Let's go back to Ubuntu. I'm still setting up things the way I like and adding p
 
 ![stata](/img/2020-12-30-16-30-52.png)
 
-Fortunately, there's an easy solution to [fix missing Stata icons on Linux](https://github.com/kylebarron/stata-png-fix). Also, if you want to upgrade, you will probably need to downgrade permissions in `/usr/local/stata` or ̀̀`/usr/local/stata13` (which is where we usually install Stata, here `/usr/local/stata` is just a symlink to `/usr/local/stata13` on my machine), e.g., 777 instead of 755, since downloaded files are saved in `.tmp/` folder under that directory. Finally, your `profile.do` file may be stored either as `$HOME/profile.do` or `$HOME/bin/profile.do`. I prefer the latter since I don't like dangling files in my HOME directory. Further customizations are discussed in the following blog post: [Installing Stata in Linux](https://acarril.github.io/posts/install-stata-linux). This is especially relevant if you plan to use the graphical frontend and want a tight OS integartion (i.e., MIME type and shortcut in the activity menu bar). And here we go:
+Fortunately, there's an easy solution to [fix missing Stata icons on Linux](https://github.com/kylebarron/stata-png-fix). Also, if you want to upgrade, you will probably need to downgrade permissions in `/usr/local/stata` or ̀̀`/usr/local/stata13` (which is where we usually install Stata, here `/usr/local/stata` is just a symlink to `/usr/local/stata13` on my machine), e.g., 777 instead of 755, since downloaded files are saved in `.tmp/` folder under that directory. Finally, your `profile.do` file may be stored either as `$HOME/profile.do` or `$HOME/bin/profile.do`. I prefer the latter since I don't like dangling files in my HOME directory. Further customizations are discussed in the following blog post: [Installing Stata in Linux](https://acarril.github.io/posts/install-stata-linux). This is especially relevant if you plan to use the graphical frontend and want a tight OS integration (i.e., MIME type and shortcut in the activity menu bar). And here we go:
 
 ![stata2](/img/2021-01-01-21-15-49.png)
 
