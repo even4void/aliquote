@@ -1,7 +1,7 @@
 ---
 title: "Practical and Modern Vim"
 date: 2021-01-29T21:08:07+01:00
-draft: true
+draft: false
 tags: ["review", "vim"]
 categories: ["2021"]
 ---
@@ -18,7 +18,7 @@ Chapter 5 is all about managing Neovim's internal terminal emulator, which is gr
 
 ## Practical Vim
 
-As noted by Tim pope in his preface to Practical Vim, this book is not a simple bag of tips and tricks.
+Here is a brief sketch of the first part of the book. I'll come back to it later once I've digested the rest of the book. As noted by Tim pope in his preface to *Practical Vim*, this book is not a simple bag of tips and tricks.
 
 > You can understand my skepticism, then, when I found out Practical Vim was using a tips format. How could a couple of hundred tips accomplish what took me thousands? A few pages in I realized my definition of “tip” was narrow- minded. In contrast to the problem/solution pattern I had expected, Practical Vim tips teach lessons in thinking like a proficient Vim user. In a sense, they are more like parables than recipes. The first few tips are lessons about the wide applicability of the . command. This is a staple of any proficient Vim user’s repertoire, yet without guidance it was years before I came to realize this on my own.
 
@@ -28,4 +28,4 @@ A striking feature of Vim is that you can organize your editing task much like y
 
 > Our work is repetitive by nature. Whether we’re making the same small change in several places or moving around between similar regions of a document, we repeat many actions. Anything that can streamline a repetitive workflow will save our time multifold. Vim is optimized for repetition. Its efficiency stems from the way it tracks our most recent actions. We can always replay the last change with a single keystroke. Powerful as this sounds, it’s useless unless we learn to craft our actions so that they perform a useful unit of work when replayed. Mastering this concept is the key to becoming effective with Vim.
 
-The author also discusses Ex commands. They may seem arcane, except for heavy Sed users, but they prove very useful in case you don't want to jump to the region or line of interest and just apply a command right from your insertion point.
+Drew Neil also discusses Ex commands. They may seem arcane, except for heavy Sed users, but they prove very useful in case you don't want to jump to the region or line of interest and just apply a command right from your insertion point. There's a lot going on in this chapter, including calling external programs or interacting with the shell. Since I mostly use the built-in Neovim terminal, I don't rely much on those features (besides `:sort`), but it's good to know there are so many possibilities available within a few keystrokes.
