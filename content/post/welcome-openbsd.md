@@ -23,3 +23,5 @@ Unlike ubuntu, default [permissions](/post/christmas-admin-on-ubuntu/) are more 
 {{< twitter 1358556278985998336 >}}
 
 So far, so good. I will probably stop here for a while, since I'm in the middle of my move and have other things to complete before leaving, but I hope I'll be posting more on this later in March.
+
+![openbsd](/img/IMG_1379.JPG)
