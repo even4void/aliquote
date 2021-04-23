@@ -1,7 +1,7 @@
 ---
 title: "Fisher-Yates shuffling"
 date: 2021-04-13T10:14:45+02:00
-draft: true
+draft: false
 tags: ["scheme", "statistics"]
 categories: ["2021"]
 ---
@@ -23,7 +23,7 @@ Reservoir sampling[^3] is another efficient technique for generating a random sa
 
 {{% alert note %}}
 <small>[2021-04-13]</small><br>
-This post was originally drafted on 2020-09-17, but it has been considerably revised and it now covers different sampling techniques.
+This post was originally drafted on 2020-09-17. It has been slightly edited and it will eventually get revised in the future. For now, it will stay unfinished.
 {{% /alert %}}
 
 [^1]: Durstenfeld, R., Algorithm 235: Random Permutation, *Communications of the ACM*, 7(7), 1964. [PDF](https://dl.acm.org/doi/pdf/10.1145/364520.364540)

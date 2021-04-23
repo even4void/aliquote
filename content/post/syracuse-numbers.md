@@ -1,7 +1,7 @@
 ---
 title: "Syracuse numbers"
 date: 2021-04-22T13:16:45+02:00
-draft: true
+draft: false
 tags: ["math", "scheme"]
 categories: ["2021"]
 ---
@@ -22,7 +22,7 @@ This apparent simple recurrence scheme is supposed to yield the number 1 in the 
 
 Atabey Kaygun wrote some nice blog posts on the Collatz conjecture, e.g., [Collatz Sequences (Continued)](https://kaygun.tumblr.com/post/67833833279/collatz-sequences-continued), [Collatz sequence (yet again)](https://kaygun.tumblr.com/post/170044995839/collatz-sequence-yet-again). He also discussed its [binary representation](https://kaygun.tumblr.com/post/622768677243289600/collatz-sequence-in-binary), and coincidentally I found [another blog](http://lisperator.net/blog/gazing-at-the-numbers-the-collatz-sequence/#tldr) that discusses this approach (see Observation #3, which is quite interesting in this respect). Other reference materials include: [On the 3x + 1 problem](http://www.ericr.nl/wondrous/), [The 3x+1 Problem: An Annotated Bibliography (1963-1999)](https://arxiv.org/abs/math/0309224), and for statistical nerds, [On the Probabilistic Proof of the Convergence of the Collatz Conjecture](https://www.hindawi.com/journals/jps/2019/6814378/).
 
-The idea is to perform integer division (by 2), and store remainders from least (first remainder) to most significant (last). To convert the number 101, we have the following: (with remainder in parenthesis)
+Using binary transformations instead of standard arithmetic on decimal numbers is interesting. The idea is to perform integer division (by 2), and store remainders from least (first remainder) to most significant (last). To convert the number 101, we have the following: (with remainder in parenthesis)
 
         101 / 2 = 50 (1)
          50 / 2 = 25 (0)
@@ -57,7 +57,7 @@ However, this is generally a builtin: `number->string`. For instance, using Chez
 "1100101"
 ```
 
-All that for what? If the final digit is a one, then the number is odd, otherwise it is even. Pretty simple test, especially if we keep the binary representation of $u_n$ as a list (think of extracting the last item in the list, i.e. `(define (last lst) (car (reverse lst)))`). Now, the recurrence function is used as follows:
+All that for what? If the final digit is a one, then the number is odd, otherwise it is even. Pretty simple test, especially if we keep the binary representation of $u_n$ as a list (think of extracting the last item in the list, i.e. `(define (last lst) (car (reverse lst)))`). Now, the recurrence function can be think of as follows:
 
 - if the number is even (final digit = 0), halve the number by shifting all the bits to the right (e.g., following the [logical right shift](https://stackoverflow.com/a/141873/420055) `0101 >>> 1` we get `0010`);
 - if the number is odd (final digit = 1), use a left shit (this will effectively double the number, e.g., `0010 << 1` yields `0100`) and add the original number to the result; then add one in binary.
