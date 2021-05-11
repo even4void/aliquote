@@ -48,5 +48,6 @@ Randoms musings on the www from Sunday -- on lisp, mostly. Note that most[^1] se
 - [Working with Clojure and Racket](https://trustica.cz/en/2019/04/04/working-with-clojure-and-racket/)
 - [Notes On Writing Clojure In Vim](https://thegreata.pe/articles/2016/11/25/notes-on-writing-clojure-in-vim/)
 - [Conjuring Clojure in Vim: 2020 Edition](https://blog.djy.io/conjuring-clojure-in-vim-2020-edition/)
+- [Clojure Concurrency Tutorial](https://purelyfunctional.tv/guide/clojure-concurrency/)
 
 [^1]: Some of the links cited above are also the results of cross-referencing Reddit or HackerNews.
