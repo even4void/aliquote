@@ -1,6 +1,6 @@
 ---
 title: "Now"
-date: 2021-04-12T14:46:00+01:00
+date: 2021-05-26T14:46:00+01:00
 url: "/now"
 type: "now"
 ---
@@ -9,10 +9,15 @@ type: "now"
 
 ---
 
-I forgot to update this page since December. I don't even remember what I was trying to do with such a Now page in the beginning. Anyway, let's keep it alive a while more and see how it goes.
+That was the day it was:
 
-Long story short, I moved last month and spent a few days in the hospital right after. That said, I'm very happy with my new apartment, which happens to be spacious enough for my small needs and much quieter than my previous one.
+{{< fluid_imgs
+  "pure-u-1-3|/img/IMG_1509.JPG"
+  "pure-u-1-3|/img/IMG_1508.JPG"
+  "pure-u-1-3|/img/IMG_1510.JPG" >}}
 
-I continue to feed the micro-blog with links I find here and there, by searching the web or reading my RSS feeds. I write a lot less long posts since the beginning of the year, mainly because of a lack of motivation. I've spent the last two years with over 70 posts a year, so I think I need to do something else. That doesn't mean I don't write, it's just that I'm not posting on this site right now. But it will come back, for sure.
+Last journey was "chez Cathy". I haven't travelled in a while, so it was pretty cool to move from home. I was also a full week off, which is great after all.
 
-I'm currently reading *Réelle*, by Guillaume Sire, after two or three detective novels. Light literature, no hassle, no need to think, just consume slices of life.
+I was reading _sept gingembres_ (Christophe Perruchas) lately. Rather relaxing, not more. Bug I liked it.
+
+Happy to see my RSS feed list growing up (250 -> 480), Twitter is so depressing these days.
