@@ -34,4 +34,6 @@ Here is yet another monthly review of what I found of possible interest while br
   - [Type inference](https://eli.thegreenplace.net/2018/type-inference/)
   - [Where the top of the stack is on x86](https://eli.thegreenplace.net/2011/02/04/where-the-top-of-the-stack-is-on-x86/)
 
+**Blog rolling**: [The Evolution of a ggplot (Ep. 1)](https://www.cedricscherer.com/2019/05/17/the-evolution-of-a-ggplot-ep.-1/) • [Resolving conflicts during a Git rebase](https://codeinthehole.com/guides/resolving-conflicts-during-a-git-rebase/) • [The compiler will optimize that away](https://blog.royalsloth.eu/posts/the-compiler-will-optimize-that-away/) • [Writing a Lisp, Part 0: Fundamentals](https://bernsteinbear.com//blog/lisp/00_fundamentals/) • [Box and Whiskers Plot](https://alex-hhh.github.io/2021/04/box-and-whiskers-plot.html?utm_source=all&utm_medium=RSS)
+
 [^1]: Sadly, Suz Hinton (alias noopkat) will no longer be streaming.
