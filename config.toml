@@ -55,14 +55,9 @@ icon = "github"
 url = "https://github.com/even4void"
 
 [[params.social]]
-name = "Matrix"
-icon = "hash"
-url = "https://matrix.to/#/@even4void:matrix.org"
-
-[[params.social]]
-name = "Email"
+name = "Contact"
 icon = "mail"
-url = "mailto:chl@aliquote.org"
+url = "/contact"
 
 [[params.social]]
 name = "RSS"
