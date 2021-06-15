@@ -142,10 +142,12 @@
     <outline type="rss" xmlUrl="https://austinrochford.com/rss.xml" htmlUrl="http://austinrochford.com/" title="AustinRochford.com"/>
     <outline type="rss" xmlUrl="https://beepb00p.xyz/rss.xml" htmlUrl="https://beepb00p.xyz/" title="beepb00p"/>
     <outline type="rss" xmlUrl="https://begriffs.com/atom.xml" htmlUrl="https://begriffs.com/atom.xml" title="begriffs.com"/>
+    <outline type="rss" xmlUrl="https://benjaminselfridge.github.io/feed.xml" htmlUrl="https://benjaminselfridge.github.io/" title="Ben Selfridge&#x2019;s blog"/>
     <outline type="rss" xmlUrl="https://bennetthardwick.com/index.xml" htmlUrl="https://bennetthardwick.com/" title="Bennett's Rust Journal"/>
     <outline type="rss" xmlUrl="https://benschmidt.org/index.xml" htmlUrl="https://benschmidt.org/" title="Ben Schmidt"/>
     <outline type="rss" xmlUrl="https://bernheisel.com/rss.xml" htmlUrl="https://bernheisel.com/" title="David Bernheisel's Blog"/>
     <outline type="rss" xmlUrl="https://bernsteinbear.com/feed.xml" htmlUrl="https://bernsteinbear.com/" title="Max Bernstein's Blog"/>
+    <outline type="rss" xmlUrl="https://berthub.eu/articles/index.xml" htmlUrl="https://berthub.eu/articles/" title="Bert Hubert's writings"/>
     <outline type="rss" xmlUrl="https://beza1e1.tuxen.de/blog_en.atom" htmlUrl="https://beza1e1.tuxen.de/blog_en.atom" title="Andreas Writing"/>
     <outline type="rss" xmlUrl="https://bitemyapp.com/rss.xml" htmlUrl="https://bitemyapp.com/" title=""/>
     <outline type="rss" xmlUrl="https://blog.acolyer.org/feed/" htmlUrl="https://blog.acolyer.org/" title="the morning paper"/>
@@ -331,6 +333,7 @@
     <outline type="rss" xmlUrl="https://leancrew.com/all-this/feed/" htmlUrl="https://leancrew.com/all-this/" title="And now it&#x2019;s all this"/>
     <outline type="rss" xmlUrl="https://lemire.me/blog/feed/" htmlUrl="https://lemire.me/blog" title="Daniel Lemire's blog"/>
     <outline type="rss" xmlUrl="https://lexi-lambda.github.io/feeds/all.rss.xml" htmlUrl="http://lexi-lambda.github.io/index.html" title="Alexis King's Blog: Alexis King's Blog"/>
+    <outline type="rss" xmlUrl="https://liam-on-linux.livejournal.com/data/rss" htmlUrl="https://liam-on-linux.livejournal.com/" title="Liam on Linux"/>
     <outline type="rss" xmlUrl="https://librehacker.com/feed/" htmlUrl="https://librehacker.com/" title="The Libre Hacker"/>
     <outline type="rss" xmlUrl="https://liorpachter.wordpress.com/feed/" htmlUrl="https://liorpachter.wordpress.com/" title="Bits of DNA"/>
     <outline type="rss" xmlUrl="https://lisp-journey.gitlab.io/blog/index.xml" htmlUrl="https://lisp-journey.gitlab.io/blog/" title="Blogs on Lisp journey"/>
@@ -504,6 +507,7 @@
     <outline type="rss" xmlUrl="https://www.dannyadam.com/blog/feed/" htmlUrl="https://www.dannyadam.com/blog" title="Daniel's Assorted Musings"/>
     <outline type="rss" xmlUrl="https://www.darkchestnut.com/feed.xml" htmlUrl="https://www.darkchestnut.com/" title="Dark Chestnut"/>
     <outline type="rss" xmlUrl="https://www.davidchristiansen.dk/feeds/all.rss.xml" htmlUrl="http://www.davidchristiansen.dk/blog/index.html" title="David Christiansen: David Christiansen"/>
+    <outline type="rss" xmlUrl="https://www.devever.net/~hl/index.feed" htmlUrl="https://www.devever.net/~hl/index.feed" title="devever.net/~hl"/>
     <outline type="rss" xmlUrl="https://www.didierverna.net/blog/index.php?feed/atom" htmlUrl="https://www.didierverna.net/blog/index.php?" title="Didier Verna's Scientific Blog"/>
     <outline type="rss" xmlUrl="https://www.eidel.io/feed.xml" htmlUrl="https://www.eidel.io/" title="Oliver Eidel - Articles"/>
     <outline type="rss" xmlUrl="https://www.evanjones.ca/index.rss" htmlUrl="https://www.evanjones.ca/" title="Evan Jones - Software Engineer | Computer Scientist"/>
