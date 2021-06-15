@@ -20,6 +20,11 @@ However, last week I installed and configured [slrn](https://www.slrn.org/), jus
 
 Did I read a lot of posts? Not really. I just skimmed over some groups I was following years ago, and subscribed to a few others. Unfortunately, I haven't been able to get my hands on my Emacs Gnus archives. It's always a bit like the principle of old backups: you never really find what you're looking for!
 
+{{% alert note %}}
+<small>[2020-06-15]</small><br>
+TIL that [Neomutt](/post/neomutt/) handles NNTP servers quite well actually. I pressed `i` (`<change-newsgroup>`) while intending to press a different key, it catched up my settings to connect to NES and asked me which group I wanted to subscribe to. Great!
+{{% /alert %}}
+
 This was a pleasant experience in any case. I will undoubtedly consult the archives from time to time.
 
 {{% music %}}Morcheeba • _Blood Like Lemonade_{{% /music %}}
