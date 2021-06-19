@@ -24,7 +24,7 @@ You could do this by hand, by following the [helpful tips](https://people.richla
 
 This is not the only algorithm used in matrix factorizations, of course. Indeed, modern statistical computing rely on [LU decomposition](https://en.wikipedia.org/wiki/LU_decomposition) or [QR factorization](https://en.wikipedia.org/wiki/QR_decomposition). The latter is what used in R for linear regression models, for instance. The QR decomposition of a real square matrix $A$ is a decomposition of $A$ as $A=QR$, where $Q$ is an orthogonal matrix (i.e., $Q^TQ=I$) and $R$ in an upper triangular matrix. Furthermore, if $A$ is [nonsingular](https://mathworld.wolfram.com/NonsingularMatrix.html), this decomposition is unique. Such a factorization can be found using the [Gram-Schmidt](https://en.wikipedia.org/wiki/Gram–Schmidt_process) procedure.
 
-Solving linear systems is quite easy in Racket thanks to the `math` module. Here is one way to find the solution of the above system (which is mostly what we did in [another post](post/newton-raphson-racket/)):
+Solving linear systems is quite easy in Racket thanks to the `math` module. Here is one way to find the solution of the above system (which is mostly what we did in [another post](/post/newton-raphson-racket/)):
 
 ```racket
 #lang racket
