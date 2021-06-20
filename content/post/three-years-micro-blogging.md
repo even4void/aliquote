@@ -22,4 +22,5 @@ The crappy R script I used two years ago did not produce a very satisfactory wor
 
 I intentionally left the "itunes" keyword, which comes from an HTML tag I use to display the album I'm currently listening to on Apple Music, or nowadays from my ripped Music library. I also left the hastags I use in some of my micro-posts, because I use few different tags like I did on Twitter and they help identify the content quickly. As can be seen, Emacs and programming languages( mostly functional PLs, except R) dominate the scene, but I suspect Emacs will fade over time now that I've found a new home for my main text editor. Let's see how it goes in the next few years.
 
-<a href="" type="application/rss+xml" class="iconfont icon-music" title="rss"></a> &nbsp; Branford Marsalis Quartet, *The Secret Between the Shadow and the Soul*.
+
+{{% music %}}Branford Marsalis Quartet • _The Secret Between the Shadow and the Soul_{{% /music %}}
