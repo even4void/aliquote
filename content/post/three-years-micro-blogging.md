@@ -20,7 +20,6 @@ The crappy R script I used two years ago did not produce a very satisfactory wor
 
 ![wordcloud](/img/wc-micro-2.png)
 
-I intentionally left the "itunes" keyword, which comes from an HTML tag I use to display the album I'm currently listening to on Apple Music, or nowadays from my ripped Music library. I also left the hastags I use in some of my micro-posts, because I use few different tags like I did on Twitter and they help identify the content quickly. As can be seen, Emacs and programming languages( mostly functional PLs, except R) dominate the scene, but I suspect Emacs will fade over time now that I've found a new home for my main text editor. Let's see how it goes in the next few years.
-
+I intentionally left the "itunes" keyword, which comes from an HTML tag I use to display the album I'm currently listening to on Apple Music, or nowadays from my ripped Music library. I also left the hastags I use in some of my micro-posts, because I use few different tags like I did on Twitter and they help identify the content quickly. As can be seen, Emacs which was over-represented two years ago has left his place in favor of (mostly functional) programming languages (in addition to R and Python, which I still use for statistics and bioinformatics), and I suspect Emacs will keep fading over time now that I've found a new home for my main text editor. Let's see how it goes in the next few years.
 
 {{% music %}}Branford Marsalis Quartet • _The Secret Between the Shadow and the Soul_{{% /music %}}
