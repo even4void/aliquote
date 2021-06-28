@@ -56,7 +56,7 @@ Below is a list of what has been archived over the years on this site or on exte
 <tr><td><a href="/cours/2011_health_measures/">Introductory lectures on Statistics for Health Measurement</a></td><td>Sep 2011</td><td>en</td><td>done</td><td><i data-feather="link" width="12px" height="12px"></i></td></tr>
 <tr><td><a href="/pub/iplots.pdf">A visual tour of interactive graphics with R</a></td><td>Mar 2011</td><td>en</td><td>canc</td><td><i data-feather="file-text" width="12px" height="12px"></i></td></tr>
 <tr><td><a href="/cours/psychometrics/">Psychometrics</a></td><td>Feb 2010</td><td>en</td><td>canc</td><td><i data-feather="link" width="12px" height="12px"></i></td></tr>
-<tr><td><a href="/cours/misc/Lalanne_Cogiter_2009.pdf">Analyse des données génétiques</a></td><td>Nov 2009</td><td>fr</td><td>done</td><td><i data-feather="file-text" width="12px" height="12px"></i></td></tr>
+<tr><td><a href="/pub/Lalanne_Cogiter_2009.pdf">Analyse des données génétiques</a></td><td>Nov 2009</td><td>fr</td><td>done</td><td><i data-feather="file-text" width="12px" height="12px"></i></td></tr>
 <tr><td><a href="/pub/Lalanne_BIBS_M2Pro.pdf">Intégration de données de neuroimagerie et de génétique</a></td><td>Jun 2009</td><td>fr</td><td>done</td><td><i data-feather="file-text" width="12px" height="12px"></i></td></tr>
 <tr><td><a href="/pub/contrasts.txt">Contrastes sous R</a></td><td>May 2008</td><td>fr</td><td>done</td><td><i data-feather="file-text" width="12px" height="12px"></i></td></tr>
 <tr><td><a href="/pub/MABMUSPlus/">A collection of plots from Selvin's book on S+</a></td><td>Feb 2009</td><td>en</td><td>done</td><td><i data-feather="link" width="12px" height="12px"></i></td></tr>
