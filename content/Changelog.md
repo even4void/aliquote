@@ -3,6 +3,13 @@ title: "The Changelog"
 date: 2018-05-17T00:00:00
 ---
 
+        % git log | tail -n 5
+        commit 316adb5e3d1ddce5d3d45419b0c035483616e361
+        Author: chl <xxxx@xxxx.xxxx>
+        Date:   Sun Jan 21 00:57:45 2018 +0100
+
+[2021-06-29] Update base color<br>
+[2021-06-14] Update contact informations<br>
 [2020-08-20] Update the Archives page<br>
 [2020-06-15] Replace Twitter with Matrix for DM<br>
 [2019-09-22] Add a [Now](/now) page<br>
@@ -24,9 +31,3 @@ date: 2018-05-17T00:00:00
 [2018-02-23] Finish migrating old posts<br>
 
 An even older Changelog can be found [here](/Changelog).
-
-        % git log | tail -n 5
-        commit 316adb5e3d1ddce5d3d45419b0c035483616e361
-        Author: chl <xxxx@xxxx.xxxx>
-        Date:   Sun Jan 21 00:57:45 2018 +0100
-            Setup root directory with academic theme
