@@ -50,11 +50,6 @@ icon = "search"
 url = "/search"
 
 [[params.social]]
-name = "Github"
-icon = "github"
-url = "https://github.com/even4void"
-
-[[params.social]]
 name = "Contact"
 icon = "mail"
 url = "/contact"
