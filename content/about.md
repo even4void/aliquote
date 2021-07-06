@@ -22,4 +22,4 @@ Now I'm sort of playing with my computer for a living, which seems like a good d
 > There are times and days, they mean nothing to me<br>
 > I've been looking through some of them old pictures<br>
 > They don't serve to jog my memory
-> <br><small>--- [Tindersticks](https://www.youtube.com/watch?v=zFfOgtTEji4)</small>
+> <br><small>--- Tindersticks</small>
