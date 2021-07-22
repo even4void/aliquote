@@ -9,15 +9,6 @@ type: "now"
 
 ---
 
-That was the day it was:
+Summer is coming, and holidays that go along. I still have some work to do before taking a 3-week break in August. I also need to get vaccinated, now that I'm done with chronic fatigue. Unfortunately, the new public health policies, here in France, prevent most activities outside of the town for those of us who aren't considered immune. Fair enough, I'll keep reading and cooking for the next few weeks.
 
-{{< fluid_imgs
-  "pure-u-1-3|/img/IMG_1509.JPG"
-  "pure-u-1-3|/img/IMG_1508.JPG"
-  "pure-u-1-3|/img/IMG_1510.JPG" >}}
-
-Last journey was "chez Cathy". I haven't travelled in a while, so it was pretty cool to move from home. I was also a full week off, which is great after all.
-
-I was reading _sept gingembres_ (Christophe Perruchas) lately. Rather relaxing, not more. Bug I liked it.
-
-Happy to see my RSS feed list growing up (250 -> 480), Twitter is so depressing these days.
+Recently, my son and I watched The Witcher, and now it's time for Breaking bad. Still enjoying my new apartment a lot, and happy to spend relaxing time on my balcony, where plants are growing fast.
