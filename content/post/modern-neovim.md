@@ -63,3 +63,7 @@ Finally, I switched to yet another statusline manager, [lualine](https://github.
   "pure-u-1-2|/img/2021-07-22-10-54-08.png"
   "pure-u-1-2|/img/2021-07-22-10-57-32.png" >}}
 
+{{% alert note %}}
+<small>[2021-07-24]</small><br>
+It's been a few days since I upgraded my whole Neovim config and I must say it was a good move: Everything's working fine. Telescope work just as well as [vim-fzf](https://github.com/junegunn/fzf.vim), and [git-signs](https://github.com/lewis6991/gitsigns.nvim) can afford to compete with [gitgutter](https://github.com/airblade/vim-gitgutter). Setting up LSP servers is just magic thanks to [nvim-lspconfig](https://github.com/neovim/nvim-lspconfig), and the completion framework is a piece of art, IMO.
+{{% /alert %}}
