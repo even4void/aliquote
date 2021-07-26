@@ -29,7 +29,6 @@ And here we go with my collection of personal shortcuts. These are Vim mappings,
 <tr><td><code>␣x</code></td><td>close quickfix, loclist or Trouble window</td></tr>
 <tr><td><code>␣e</code></td><td>open files from current working directory (not necessarily root)</td></tr>
 <tr><td><code>␣E</code></td><td>open in new tab files from current working directory (not necessarily root)</td></tr>
-<tr><td><code>␣f</code></td><td>find files in current working directory (root)</td></tr>
 <tr><td><code>tab</code></td><td>switch to next tab (cycle)</td></tr>
 <tr><td><code>␣tab</code></td><td>create a new tab</td></tr>
 <tr><td><code>␣$</code></td><td>open a terminal in a new tab</td></tr>
@@ -43,7 +42,7 @@ And here we go with my collection of personal shortcuts. These are Vim mappings,
 
 That's it, not a big deal. I tend to use built-in shortcuts a lot because I learned the hard way that most often than not, default settings are good.
 
-In Vim, my leader key is `<space>` (`␣`) and my localleaderkey key is `,`. I tend to use the leader key for installed plugins, while the localleader is used for custom settings or to remap commands I use a lot. Of note, my CAPS lock key is remapped system-wide to <Esc> (so `,<esc>` is equivalent to `,<caps>` to hide all other buffers in split view). As I said these mappings are mostly for normal mode. I only use `<C-e>` and `<C-a>` in normal and command mode, because these shortcuts are wired in my hands because readline's everywhere. I tend to use the same mapping in lower and upper case for related tasks. I recently replaced all my Fzf setup with [Telescope](https://github.com/nvim-telescope/telescope.nvim) (see my [previous post](/posts/modern-neovim/). I prefer to use the quickfix window rather than the loclist or Telescope for specific task, but I can display the quickfix list in Telescope as well. My complete Telescope mappings are shown below:
+In Vim, my leader key is `<space>` (`␣`) and my localleaderkey key is `,`. I tend to use the leader key for installed plugins, while the localleader is used for custom settings or to remap commands I use a lot. Of note, my CAPS lock key is remapped system-wide to <Esc> (so `,<esc>` is equivalent to `,<caps>` to hide all other buffers in split view). As I said these mappings are mostly for normal mode. I only use `<C-e>` and `<C-a>` in normal and command mode, because these shortcuts are wired in my hands because readline's everywhere. I tend to use the same mapping in lower and upper case for related tasks. I recently replaced all my Fzf setup with [Telescope](https://github.com/nvim-telescope/telescope.nvim) (see my [previous post](/posts/modern-neovim/)). I prefer to use the quickfix window rather than the loclist or Telescope for specific task, but I can display the quickfix list in Telescope as well. My complete Telescope mappings are shown below:
 
 ```lua
 utils.map('n', '<leader><leader>', '<cmd>Telescope buffers<CR>')
@@ -61,3 +60,9 @@ utils.map('n', '<leader>r', '<cmd>Telescope oldfiles<CR>')
 utils.map('n', '<leader>w', '<cmd>Telescope treesitter<CR>')
 ```
 
+Note that Telescope seems to consider that the working directory is that of the current buffer, although it would be better to consider the root directory of a project if there is one. As a workaround, you can use the [following mappings](https://joalon.se/blog/Fuzzy-Finding-with-Telescope-in-Git.html) instead of the above ones: (and this finally is what I chose to use as a replacement)
+
+```lua
+vim.cmd[[nnoremap <leader>f <cmd>lua require('telescope.builtin').find_files{ cwd = vim.fn.systemlist("git rev-parse --show-toplevel")[1] }<cr>]]
+vim.cmd[[nnoremap <leader>. <cmd>lua require('telescope.builtin').live_grep{ cwd = vim.fn.systemlist("git rev-parse --show-toplevel")[1] }<cr>]]
+```
