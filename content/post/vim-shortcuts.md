@@ -27,8 +27,9 @@ And here we go with my collection of personal shortcuts. These are Vim mappings,
 <tr><td><code>,x</code></td><td>close current buffer</td></tr>
 <tr><td><code>,esc</code></td><td>hide other buffers (<code>:only</code>)</td></tr>
 <tr><td><code>␣x</code></td><td>close quickfix, loclist or Trouble window</td></tr>
-<tr><td><code>␣e</code></td><td>open files from current working directory (not necessarily root)</td></tr>
-<tr><td><code>␣E</code></td><td>open in new tab files from current working directory (not necessarily root)</td></tr>
+<tr><td><code>␣.</code></td><td>set current working directory</td></tr>
+<tr><td><code>␣e</code></td><td>edit files from current buffer directory</td></tr>
+<tr><td><code>␣E</code></td><td>edit in new tab files from current buffer directory</td></tr>
 <tr><td><code>tab</code></td><td>switch to next tab (cycle)</td></tr>
 <tr><td><code>␣tab</code></td><td>create a new tab</td></tr>
 <tr><td><code>␣$</code></td><td>open a terminal in a new tab</td></tr>
@@ -48,7 +49,7 @@ In Vim, my leader key is `<space>` (`␣`) and my localleaderkey key is `,`. I t
 utils.map('n', '<leader><leader>', '<cmd>Telescope buffers<CR>')
 utils.map('n', '<leader>!', '<cmd>Telescope commands<CR>')
 utils.map('n', '<leader>/', '<cmd>Telescope current_buffer_fuzzy_find<CR>')
-utils.map('n', '<leader>.', '<cmd>Telescope live_grep<CR>')
+utils.map('n', '<leader>?', '<cmd>Telescope live_grep<CR>')
 utils.map('n', '<leader>*', '<cmd>Telescope grep_string<CR>')
 utils.map('n', '<leader>:', '<cmd>Telescope command_history<CR>')
 utils.map('n', '<leader>f', '<cmd>Telescope find_files<CR>')
@@ -60,9 +61,11 @@ utils.map('n', '<leader>r', '<cmd>Telescope oldfiles<CR>')
 utils.map('n', '<leader>w', '<cmd>Telescope treesitter<CR>')
 ```
 
-Note that Telescope seems to consider that the working directory is that of the current buffer, although it would be better to consider the root directory of a project if there is one. As a workaround, you can use the [following mappings](https://joalon.se/blog/Fuzzy-Finding-with-Telescope-in-Git.html) instead of the above ones: (and this finally is what I chose to use as a replacement)
+Note that Telescope respects `autochdir`, so it will limit itself to the current working directory if that option is set to true. As we are generally interested in considering the root directory of a project if there is one, you can use the [following mappings](https://joalon.se/blog/Fuzzy-Finding-with-Telescope-in-Git.html) as a workaround: (this of course assumes that your project lives in a Git repo)
 
 ```lua
 vim.cmd[[nnoremap <leader>f <cmd>lua require('telescope.builtin').find_files{ cwd = vim.fn.systemlist("git rev-parse --show-toplevel")[1] }<cr>]]
 vim.cmd[[nnoremap <leader>. <cmd>lua require('telescope.builtin').live_grep{ cwd = vim.fn.systemlist("git rev-parse --show-toplevel")[1] }<cr>]]
 ```
+
+However, my own shortcut `<space>e` was devised long ago to handle the general CWD issue with Vim. So if you are using the above setup, provided `autochdir` is not explicitly set to true, you should be able to use Telescope to browse your project while `<space>e`, after eventually setting the root directory using `<space>.`, would open or create file in the same directory as the current buffer or in the root directory previously defined.
