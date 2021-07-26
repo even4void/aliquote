@@ -1,7 +1,7 @@
 ---
 title: "Custom Vim shortcuts (2/n)"
 date: 2021-07-25T21:50:09+02:00
-draft: true
+draft: false
 tags: ["vim"]
 categories: ["2021"]
 ---
