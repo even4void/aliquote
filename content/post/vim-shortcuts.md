@@ -6,7 +6,8 @@ tags: ["vim"]
 categories: ["2021"]
 ---
 
-« [Previous post](/post/modern-neovim/) in this series
+« [Previous post](/post/modern-neovim/) in this series<br>
+» [Next post](/post/vim-lsp/) in this series
 
 Here is a list of the personal shortcuts I use the most in Vim. Nothing special, but feel free to copy/paste in case you find anything useful for your own workflow. Of note, I've read so much posts on remapping everything to Vim's hjkl hot keys that I got tired of it, really. I use the hjkl keys when I think I'll need to repeat a command, otherwise we just have plain old arrow keys, right? Likewise, in Tmux, the arrow keys allow to switch to any pane easily. Arrow keys are mapped in many applications as well, whether it be Firefox, iTerm, Gnome terminal, Kitty, etc. Even in Vim you can use arrow keys with <C-w> to navigate along the way. Home row, you said? Come on, the arrows are just below, on your right -- not so far away in fact. But let's go to the point.
 
@@ -19,13 +20,15 @@ Snippets were fun a while ago, but I don't like them anymore. Most of the snippe
 And here we go with my collection of personal shortcuts. These are Vim mappings, mostly for normal mode, so please adapt to your personal settings:
 
 <table border="0">
-<tbody>
+<thead>
 <tr>
 <td><em>Keys</em></td>
 <td><em>Description</em></td>
 </tr>
+</thead>
+<tbody>
 <tr><td><code>,x</code></td><td>close current buffer</td></tr>
-<tr><td><code>,esc</code></td><td>hide other buffers (<code>:only</code>)</td></tr>
+<tr><td><code>-</code></td><td>open Netrw</td></tr>
 <tr><td><code>␣x</code></td><td>close quickfix, loclist or Trouble window</td></tr>
 <tr><td><code>␣.</code></td><td>set current working directory</td></tr>
 <tr><td><code>␣e</code></td><td>edit files from current buffer directory</td></tr>
