@@ -1,18 +1,20 @@
 ---
 title: "Neovim and LSP (3/n)"
 date: 2021-07-27T20:19:08+02:00
-draft: true
+draft: false
 tags: ["vim"]
 categories: ["2021"]
 ---
 
 « [Previous post](/post/vim-shortcuts/) in this series
 
-There was a time where a dedicated package did exist for every new language you wanted to use, whether it be Emacs or Vim. For instance, Intero has long been the de facto standard for Haskell in Emacs (there was also a port to Vim, IIRC), while Slime probably still remains the only one true package for dealing with Common Lisp in Emacs. Times are changing since Microsoft invested the scene of code editors with their flagship product, VS Code, and now we get the Language Server Protocol which allows communicating in a standardized manner signals emitted by a running process (e.g., a linter) to an editor. Emacs, (Neo)Vim, Sublime Text, IntelliJ all have plugins for interacting with existing servers in Python, Clang, Clojure, R, or Julia to name a few. Often times there are many implementations available on the language side. For instance, Python has python-language-server (as a replacement of pylsp), pyright (which requires Node), jedi-lsp, and others that I forgot about. Regarding Python, Microsoft devloped on its side pylance, as an enhanced version of pyright (in fact it relies on pyright, it's just that it is not released as an easy install for other code editors).
+Next in this series on using a modern Neovim setup, let's talk about the built-in Language Server Protocol (LSP) facilities.
 
-I have long been happy with ALE, as discussed in my [other](/post/getting-into-neovim/) [posts](/post/vim-and-lsp/), since it provides an easy and intuitive way to add one or more linters and fixers to a language (fileype in Vim parlance), but also provides access to LSP settings: Go to definition or refrences, rename, help on hover, etc.
+There was a time where a dedicated package did exist for every new language you wanted to use, whether it be Emacs or Vim. For instance, [Intero](https://chrisdone.github.io/intero/) has long been the de facto standard for Haskell in Emacs (there was also a port to Vim, IIRC), while [Slime](https://common-lisp.net/project/slime/) probably still remains the only one true package for dealing with Common Lisp in Emacs. Times are changing since Microsoft invested the scene of code editors with their flagship product, VS Code, and now we get the Language Server Protocol which allows communicating in a standardized manner signals emitted by a running process (e.g., a linter) to an editor. Emacs, (Neo)Vim, Sublime Text, IntelliJ all have plugins for interacting with existing servers in Python, Clang, Clojure, R, or Julia to name a few. Often times there are many implementations available on the language side. For instance, Python has [python-lsp-server](https://github.com/python-lsp/python-lsp-server) (as a replacement of [pyls](https://github.com/palantir/python-language-server)), [pyright](https://github.com/Microsoft/pyright) (which requires Node), [jedi-language-server](https://github.com/pappasam/jedi-language-server), and others that I forgot about. Regarding Python, Microsoft developed on its side [pylance](https://marketplace.visualstudio.com/items?itemName=ms-python.vscode-pylance), as an enhanced version of pyright (in fact it relies on pyright with additional server capabilities, it's just that it is not released as an easy install for other code editors).
 
-My new LSP setup is provided below. I use the following packages: 'neovim/nvim-lspconfig', 'hrsh7th/nvim-compe', 'folke/lsp-trouble.nvim'.
+I have long been happy with [ALE](https://github.com/dense-analysis/ale), as discussed in my [other](/post/getting-into-neovim/) [posts](/post/vim-and-lsp/), since it provides an easy and intuitive way to add one or more linters and fixers to a language (filetype in Vim parlance), but also provides access to LSP settings: Go to definition or references, rename, help on hover, etc. Regarding linters, there is also [Neomake]() but I always found ALE setup easier. And it gave me go to references and go to definitions, although the go to references results were not displayed in a quickfix window. The advantage of ALE is that you can configure as many linters and fixers as you want, they will be executed one after the other in an async manner. When using Neovim built-in LSP, you are apparently tight to the linters that come with the server itself, and you must rely on another plugin to add additional linters if you need more.
+
+My new LSP setup is provided below. I use the following packages: [nvim-lspconfig](https://github.com/neovim/nvim-lspconfig), [nvim-compe](https://github.com/hrsh7th/nvim-compe), [lsp-trouble.nvim](https://github.com/folke/lsp-trouble.nvim).
 
 ```lua
 vim.lsp.handlers["textDocument/publishDiagnostics"] = vim.lsp.with(
@@ -99,3 +101,21 @@ require("trouble").setup {
 }
 ```
 
+It works quite well in practice, especially for Rust, Haskell and Python. For the later, I need to dig on to understand why it doesn't use [mypy](https://github.com/Richardk2n/mypy-ls) or [memestra](https://github.com/QuantStack/pyls-memestra) (and isort, etc.) altogether right out of the box, though. I suspect the bug is caused by memestra.[^1] For the time being, I use [formatter.nvim](https://github.com/mhartington/formatter.nvim) as a fixer to format on save. There's a `formatCommand=` setting in `pylsp.setup`, but I think it's just for Lua `vim.lsp.buf.formatting()`. I don't want to use ALE after disabling its LSP functionalities, since it's apparently possible to managa evrything from within `lspconfig`. I should note, however, that [diagnostic-languageserver]https://github.com/iamcco/diagnostic-languageserver) may be a [better option](https://github.com/neovim/nvim-lspconfig/issues/903#issuecomment-843820972).
+
+Note that this is a temporary setup, while I'm getting familiar with the LSP ecosystem in Neovim. I keep trying plugins here and there to see how best to enhance the LSP experience while keeping a minimal setup and without impairing Neovim startup time. The very first time, I added [lspsaga](https://github.com/glepnir/lspsaga.nvim) to my set of plugins, but I didn't like it very much.
+
+Finally, not all (Neo)Vim theme provide correct highlighting groups for LSP diagnostics. However, it is quite easy to manually update the theme you use or to add the following settings after your `colorscheme whatever` statement, see also [lsp-colors](https://github.com/folke/lsp-colors.nvim) plugin:
+
+```lua
+hi link LspDiagnosticsDefaultError ErrorMsg
+hi link LspDiagnosticsDefaultWarning WarningMsg
+hi link LspDiagnosticsDefaultInformation InfoMsg
+hi link LspDiagnosticsDefaultHint Noise
+hi link LspDiagnosticsVirtualTextError ErrorMsg
+hi link LspDiagnosticsVirtualTextWarning WarningMsg
+hi link LspDiagnosticsVirtualTextInformation InfoMsg
+hi link LspDiagnosticsVirtualTextHint Noise
+```
+
+[^1]: Probably something that goes along what [Chris Siebenmann](https://utcc.utoronto.ca/~cks/space/blog/python/PythonPylspNotes) noticed in his case: Memestra attempts to make a directory under sys.prefix, which is owned by root if you're running the system CPython or PyPy.
