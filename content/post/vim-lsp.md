@@ -6,7 +6,8 @@ tags: ["vim"]
 categories: ["2021"]
 ---
 
-« [Previous post](/post/vim-shortcuts/) in this series
+« [Previous post](/post/vim-shortcuts/) in this series<br>
+» [Next post](/post/neovim-useful-plugins/) in this series
 
 Next in this series on using a modern Neovim setup, let's talk about the built-in Language Server Protocol (LSP) facilities.
 
