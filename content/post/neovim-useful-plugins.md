@@ -8,7 +8,7 @@ categories: ["2021"]
 
 « [Previous post](/post/vim-lsp/) in this series
 
-Since I decided to keep my setup as lightweight as possible, and to rely on (Neo)[vim builtins](https://www.moolenaar.net/habits.html) as much as I can, I have no other packages than those listed in the very first post of this series. However, I keep looking at new Neovim-related plugins, written in Lua since I expect them to be faster and easier to integrate than their Vim-only counterparts. For a full list of awesome (or not) plugins, you can check out this [list hosted on Github](https://github.com/rockerBOO/awesome-neovim).
+Since I decided to keep my setup as lightweight as possible, and to rely on (Neo)[vim builtins](https://www.moolenaar.net/habits.html) as much as I can, I have no other packages than those listed in the very first post of this series. However, I keep looking at new Neovim-related plugins, written in Lua since I expect them to be faster and easier to integrate than their Vim-only counterparts. For a full list of awesome (or not) plugins, you can check out this [list hosted on GitHub](https://github.com/rockerBOO/awesome-neovim).
 
 Here is a list of plugins that I am particularly interested in:
 
@@ -36,13 +36,34 @@ Here is a list of plugins that I am particularly interested in:
 
   It does more or less what I generally need to do: surround one or two words using specific delimiters. However, it sucks for s-expressions, and I would like a more reliable way to handle barfing and slurping, or to quickly capture forms or s-exp, without the hassle of the [vim-sexp](https://github.com/guns/vim-sexp) plugin. This new plugin looks interesting, though, as it provides two modes (sandwich and surround) in normal mode, but also special keybinding in insert mode.
 
+  Here is the function I use by the way:
+
+  ```vim
+  "" https://vim.fandom.com/wiki/Surround_selection_with_text
+  function! text#surround(s1, s2) range
+    exe "normal vgvmboma\<Esc>"
+    normal! `a
+    let lineA = line('.')
+    let columnA = col('.')
+    normal! `b
+    let lineB = line('.')
+    let columnB = col('.')
+    if lineA > lineB || lineA <= lineB && columnA > columnB
+      normal! mc
+      normal! `amb
+      normal! `cma
+    endif
+    exe "normal `ba" . a:s2 . "\<Esc>`ai" . a:s1 . "\<Esc>"
+  endfunction
+  ```
+
 {{% alert note %}}
 <small>[2021-07-30]</small><br>
-I finally installed the plugin and gave it a try. The `s<char>` for visual selection and `ys{motion}{char}` are quite handy, and in the former case the cursor moves to the previous position in the jump list apparently. Also, this only works for all sort of brackets, not special characters like back ticks, which you'll need to add the `pairs` option (a Lua's dictionary for nested and linear pairs of surrounding characters). Finally, the prefix ("s") can be changed if necessary.
+I finally installed the plugin and gave it a try. The `s<char>` for visual selection and `ys{motion}{char}` are quite handy, and in the former case the cursor moves to the previous position in the jump list apparently. Also, this only works for all sort of brackets, not special characters like back ticks --- you could probably add it to the `pairs` option (a Lua's dictionary for nested and linear pairs of surrounding characters), but it didn't work for me. Finally, the prefix ("s") can be changed if necessary, and you can use Tim Pope's mappings as well. For what is worth, I'll keep using my own shortcuts.
 {{% /alert %}}
 
 - [neorg](https://github.com/vhyrro/neorg): As a long time Org user, I was intrigued by this new plugin, which is not completely a rewrite of Emacs Org mode for (Neo)vim but introduces some new features, like simplified key mapping, improved code blocks with Treesitter integration, and builtin completion. It looks amazing, although I'm not sure I will switch to the new ".norg" filetype for the time being. In fact, I barely write any Org document these days, except those I drafted last year that I hope to complete one day or the other, this year.
 
 - [nord.nvim](https://github.com/shaunsingh/nord.nvim): I no longer use the wonderful Nord theme since I switched back to a light theme (every app, not only CLI tools). I have a copy of the original Nord theme in my `colors/` directory, but I barely use it (only when my eyes are to tired at night). However, this theme adds support for a lot of plugins I currently use, and it seems to treesitter-aware.
 
-- [vim-ultest](https://github.com/rcarriga/vim-ultest): I've been using [vim-test](https://github.com/vim-test/vim-test) on occasional basis in the past, but since I'm not a TDD guy, nor a heavy test writter for my scripts, I stopped there. This plugin provides several enhancement to vim-test by exploiting the sign column and floating window, like [gitsigns](https://github.com/lewis6991/gitsigns.nvim) or LSP diagnostics, and by allowing a running process to be attached for debugging (e.g., using Pdb in the case of Python).
+- [vim-ultest](https://github.com/rcarriga/vim-ultest): I've been using [vim-test](https://github.com/vim-test/vim-test) on occasional basis in the past, but since I'm not a TDD guy, nor a heavy test writer for my scripts, I stopped there. This plugin provides several enhancement to vim-test by exploiting the sign column and floating window, like [gitsigns](https://github.com/lewis6991/gitsigns.nvim) or LSP diagnostics, and by allowing a running process to be attached for debugging (e.g., using Pdb in the case of Python).
