@@ -104,6 +104,7 @@ require("trouble").setup {
 
 It works quite well in practice, especially for Rust, Haskell and Python. When I first drafted this blog post, it was not working so great for Python buffers. I needed to read on to understand why it doesn't use [mypy](https://github.com/Richardk2n/mypy-ls) or [memestra](https://github.com/QuantStack/pyls-memestra) (and isort, etc.) altogether right out of the box. Upon inspecting LSP log, it happens the bug is probably caused by memestra.[^1]
 
+![img](/img/2021-07-22-10-57-32.png)
 
 For the time being, I use [formatter.nvim](https://github.com/mhartington/formatter.nvim) as a fixer to format on save. I ended up configuring both black and isort for Python buffers. It's quite easy, since you only to pass two functions for Python filetype, it's just that it looks a bit more verbose than other plugin like ALE or [Neoformat](https://github.com/sbdchd/neoformat). Moreover, my `,w=` mapping (which calls Lua's `vim.lsp.buf.formatting_sync(nil, 100)` under the hood) can be used to format on line. I don't want to use ALE after disabling its LSP functionalities, since it's apparently possible to manage everything from within `lspconfig`. I should note, however, that [diagnostic-languageserver](https://github.com/iamcco/diagnostic-languageserver) may be a [better option](https://github.com/neovim/nvim-lspconfig/issues/903#issuecomment-843820972).
 

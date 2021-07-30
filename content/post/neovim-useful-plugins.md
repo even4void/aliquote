@@ -6,7 +6,8 @@ tags: ["vim"]
 categories: ["2021"]
 ---
 
-« [Previous post](/post/vim-lsp/) in this series
+« [Previous post](/post/vim-lsp/) in this series<br>
+» [Next post](/post/vim-fuzzy-finder/) in this series
 
 Since I decided to keep my setup as lightweight as possible, and to rely on (Neo)[vim builtins](https://www.moolenaar.net/habits.html) as much as I can, I have no other packages than those listed in the very first post of this series. However, I keep looking at new Neovim-related plugins, written in Lua since I expect them to be faster and easier to integrate than their Vim-only counterparts. For a full list of awesome (or not) plugins, you can check out this [list hosted on GitHub](https://github.com/rockerBOO/awesome-neovim).
 
