@@ -27,7 +27,7 @@ require('packer').startup(function()
   use 'hrsh7th/nvim-compe'
   use 'folke/lsp-trouble.nvim'
 
-  -- use 'simrat39/rust-tools.nvim'
+  use 'simrat39/rust-tools.nvim'
 
   use {'lewis6991/gitsigns.nvim', requires = 'nvim-lua/plenary.nvim'}
   use {'nvim-treesitter/nvim-treesitter', run = ':TSUpdate'}
