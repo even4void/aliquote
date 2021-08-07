@@ -122,7 +122,7 @@ hi link LspDiagnosticsVirtualTextWarning WarningMsg
 hi link LspDiagnosticsVirtualTextInformation InfoMsg
 hi link LspDiagnosticsVirtualTextHint InfoMsg
 ```
-
+<br>
 {{% alert note %}}
 <small>[2021-08-06]</small><br>
 I removed `lsp-trouble.nvim` since I don't find any added value for my own usage of LSP diagnostics. I am happy with using the Quickfix window, which `nvim_lsp` can populate for me, and that use for other purpose (make, grep) anyway. Likewise, I think I don't really need `rust-tools.nvim`: Inlay hints are available via [lsp_extensions.nvim](https://github.com/nvim-lua/lsp_extensions.nvim), and that's all what I was interested in. I will discuss all of these choices in a wrap-up post later on. Let's keep it simple, with less than 15 plugins (14 plugins at the time of this writing) and [100 ms](https://www.pubnub.com/blog/how-fast-is-realtime-human-perception-and-technology/) of startup time (70-85 ms at the moment). You know, those magic numbers, like [7 ± 2](https://en.wikipedia.org/wiki/The_Magical_Number_Seven,_Plus_or_Minus_Two), and the like...
