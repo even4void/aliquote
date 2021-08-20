@@ -1,6 +1,6 @@
 ---
 title: "Now"
-date: 2021-05-26T14:46:00+01:00
+date: 2021-08-20T14:46:00+01:00
 url: "/now"
 type: "now"
 ---
@@ -9,6 +9,10 @@ type: "now"
 
 ---
 
-Summer is coming, and holidays that go along. I still have some work to do before taking a 3-week break in August. I also need to get vaccinated, now that I'm done with chronic fatigue. Unfortunately, the new public health policies, here in France, prevent most activities outside of the town for those of us who aren't considered immune. Fair enough, I'll keep reading and cooking for the next few weeks.
+Last week before going back to work...
 
-Recently, my son and I watched The Witcher, and now it's time for Breaking bad. Still enjoying my new apartment a lot, and happy to spend relaxing time on my balcony, where plants are growing fast.
+Overall, the Summer was pretty nice: no heat wave period as in previous years, a few days in the countryside, a lot of books reads, and long days spent to listen to chill jazz. I'm currently reading J'écris ton nom, by Sylvestre Sbille, and I'm still into this sweet [Jazz Chill](/micro/2019-03-25-20-08-00/) compilation grabbed on Apple Music. I'm done with Season 2 of [Homeland](https://en.wikipedia.org/wiki/Homeland_(TV_series)), and I don't know what's next. Now, I'm trying to dive deeper into Haskell and Mathematica.
+
+{{< fluid_imgs "pure-u-1-3|"
+               "pure-u-1-3|/img/65013925888__578EE3EF-F79C-4BAC-BA93-A2B9335445EA.JPG"
+               "pure-u-1-3|" >}}
