@@ -10,9 +10,8 @@ I got a refurbished Lenovo Thinkpad T450S yesterday, and I installed OpenBSD 6.8
 
 The machine itself dates from 2015; it's a bit old, single core i7 but with custom RAM settings apparently (20 Go, more than what I currently have on my Dell laptop). It looks like the battery is near the end of its life, but this may well be a measurement issue from the sensors. I'll need to investigate, or buy a new battery. It comes with a 512 Go HD, and of course I install OpenBSD on the whole disk since I don't need Windows 10. No USB-C, nor HDMI, unfortunately. Hopefully, I still have an ethernet plug, an SD card reader, and a mini-display port.
 
-{{< fluid_imgs "pure-u-1-3|/img/IMG_1615.JPG"
-               "pure-u-1-3|/img/IMG_1616.JPG"
-               "pure-u-1-3|/img/IMG_1617.JPG" >}}
+{{< fluid_imgs "pure-u-1-2|/img/IMG_1616.JPG"
+               "pure-u-1-2|/img/IMG_1617.JPG" >}}
 
 This is still a rough install as I did not manage to configure everything, meaning that I'm still using ksh as the default shell, and I haven't installed anything beside the minimal set of utilities I use to use daily on my Ubuntu machine. I am reading the [FAQ](https://www.openbsd.org/faq/) and the [OpenBSD handbook](https://www.openbsdhandbook.com/), and the wonderful set of built-in docs (i.e., there's not only man pages for the commands, but also for the config files!). By the way, if you want to give it a try, [OpenBSD on a Laptop](https://www.c0ffee.net/blog/openbsd-on-a-laptop/) is a must read.
 
