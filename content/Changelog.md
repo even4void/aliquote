@@ -1,6 +1,6 @@
 ---
 title: "The Changelog"
-date: 2018-05-17T00:00:00
+date: 2021-09-02T00:00:00
 ---
 
         % git log | tail -n 5
@@ -8,6 +8,7 @@ date: 2018-05-17T00:00:00
         Author: chl <xxxx@xxxx.xxxx>
         Date:   Sun Jan 21 00:57:45 2018 +0100
 
+[2021-09-02] Remove Now page<br>
 [2021-06-29] Update base color<br>
 [2021-06-14] Update contact informations<br>
 [2020-08-20] Update the Archives page<br>
