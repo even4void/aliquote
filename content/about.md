@@ -14,9 +14,11 @@ type: "page"
 
 You landed on my homepage, thanks for stopping by!
 
-I'm a middle-aged bohemian scientist, initially trained in cognitive science before working as a medical statistician for nearly a decade. I also happened to be a teacher for 15 years when time allowed, while pretending to be an applied statistician the rest of the week. Professional details were once available on a "publish-or-perish" page, which is no longer up to date. But let that not stop you reading more.
+I'm a middle-aged bohemian scientist, initially trained in cognitive science before working as a medical statistician for nearly a decade. I also happened to be a teacher for 15 years when time allowed. Professional details were once available on a "publish-or-perish" page, which is no longer up to date. But let that not stop you reading more.
 
-I'm now more or less involved in computer science (bioinformatics, sysadmin, database management) and statistical genetics. Even if I find myself a bit broke, the job is more rewarding and that gives me some free time. Anyway, welcome to my little placeholder for random musings in the digital era! I read a lot of technical stuff ([raw archive](/files/references.bib) as a BibTeX file) and more generally [literature artwork](/files/books.txt) (relaunched in 2013), and I like [writing](/post) about almost everything that is barely related to a computer, or just post [micro ideas](/micro/). Here is [how I (generally) do](/articles/how-i-do). You can reach me on [Libera.chat](/contact).
+I'm now more or less involved in computer science (bioinformatics, sysadmin, database management) and statistical genetics. Even if I find myself a bit broke, the job is more rewarding and that gives me some free time.
+
+Anyway, welcome to my little placeholder for random musings in the digital era! I read a lot of technical stuff ([raw archive](/files/references.bib) as a BibTeX file) and more generally [literature artwork](/files/books.txt) (relaunched in 2013), and I like [writing](/post) about almost everything that is barely related to a computer, or just post [micro ideas](/micro/). Here is [how I (generally) do](/articles/how-i-do). You can reach me on [Libera.chat](/contact).
 
 > There are places I don't remember<br>
 > There are times and days, they mean nothing to me<br>
