@@ -22,6 +22,7 @@ Before I discuss my current setup, here's what I really need from a WM: (1) hand
 $ gsettings set org.gnome.desktop.background picture-uri ""
 $ gsettings set org.gnome.desktop.background primary-color '#6e7f80'
 $ gsettings set org.gnome.desktop.interface gtk-key-theme "Emacs"
+$ gsettings set org.gnome.desktop.wm.preferences focus-mode 'mouse'
 $ cd /usr/share/gnome-shell/extensions/
 $ sudo mv ubuntu-dock@ubuntu.com{,.bak}
 ```
