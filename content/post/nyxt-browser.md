@@ -17,6 +17,11 @@ Several keyboard-driven web browsers, like [Qutebrowser](https://qutebrowser.org
 
 Nyxt gives me all what I need : `gg` and `G` to go to the bottom or the top of the page, `F` to emulate easy motion, and `d` to delete buffer(s). The history tree is great, although I didn't check how usable it is for longer web crawling sessions. I didn't really customize the UI, but it seems to be pretty easy, especially if you're versed into Emacs config file.
 
+{{% alert note %}}
+<small>[2021-09-13]</small><br>
+See also: [visurf, a web browser based on NetSurf](https://drewdevault.com/2021/09/11/visurf-announcement.html)
+{{% /alert %}}
+
 ### Zathura viewer
 
 I was looking for a quick PDF viewer, and I came across [Zathura](https://pwmt.org/projects/zathura/) on [Big Pile of Vim-like](https://vim.reversed.top/). I installed it right away, along with associated plugin to read PDF, DJVU and PS documents. It's rare to see an application allowing to read both PDF and DJVU format. Some textbooks are still available in that old format, and I will no longer have to convert them to PDF beforehand. The UI is really minimalist, and this is mostly Vim-centric: `J` and `K` are used to go to the next or previous page, `gg` and `G` jump to the first or last page, `C-o` and `C-i` to navigate the jump list, etc. More keyboard shortcuts are documented [here](https://defkey.com/zathura-shortcuts). If you don't like the dark background, you can use the color you want by editing the config file `$HOME/.config/zathura/zathurarc`. I have these settings, for example:
