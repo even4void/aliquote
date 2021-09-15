@@ -19,7 +19,7 @@ Nyxt gives me all what I need : `gg` and `G` to go to the bottom or the top of t
 
 {{% alert note %}}
 <small>[2021-09-13]</small><br>
-See also: [visurf, a web browser based on NetSurf](https://drewdevault.com/2021/09/11/visurf-announcement.html)
+See also: [visurf, a web browser based on NetSurf](https://drewdevault.com/2021/09/11/visurf-announcement.html).
 {{% /alert %}}
 
 ### Zathura viewer
