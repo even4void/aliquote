@@ -7,6 +7,7 @@ categories: ["2021"]
 ---
 
 « [Previous post](/post/neovim-useful-plugins/) in this series<br>
+» [Next post](/post/neovim-wrapup/) in this series
 
 I have been a happy user of [fzf.vim](https://github.com/junegunn/fzf.vim) for the past few months. I use [fzf](https://github.com/junegunn/fzf) in my Terminal as well, so it looked natural to me to use it as a fuzzy finder in Vim too. It is quite straightforward to configure, and it works perfectly well. Zero dependencies, other than `fzf` itself, and it provides a bunch of options to manage your buffers, files in project, recent files, git commits, and more. The natural replacement for `fzf.vim` appears to be [Telescope](https://github.com/nvim-telescope/telescope.nvim) in Neovim. It comes as full featured as `fzf.vim`, but also supports floating windows and additional extensions, which are installed either as separate plugins or as opt-in packages.
 
