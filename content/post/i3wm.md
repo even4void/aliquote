@@ -122,4 +122,11 @@ modules-right = cmus system-usb-mount cpu temperature battery pulseaudio wlan et
 
 So far I really like this new setup. It's still a bit crazy to have 3 ways of arranging windows on a screen --- tmux, kitty and i3 --- but in the end not having to worry about window placement and maximization and having simple keyboard shortcuts to navigate and move windows is a huge plus. Kudos to the i3 and polybar developers.
 
+{{% alert note %}}
+<small>[2021-09-21]</small><br>
+After having messed around with my polybar configuration for a week, I finally settled upon the "grayblocks" theme from [polybar-themes](https://github.com/adi1090x/polybar-themes), with lot of customizations of course. See below for the latest screenshot.
+{{% /alert %}}
+
+![polybar](/img/2021-09-21-15-22-23.png)
+
 [^1]: Note that you can even use polybar itself to take a screenshot of your current config.
