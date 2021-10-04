@@ -25,3 +25,8 @@ To give you an idea, here are a few screenshots that I took during my last sessi
   "pure-u-1-2|/img/2019-01-28-13-40-35.png" >}}
 
 I recently noticed that their [business plan](https://tableplus.io/pricing) has slightly evolved, otherwise it looks like a solid application for database management. I do not know what is included in the full-featured (aka not free) version, but for ordinary use the free edition should be largely enough to perform basic operations.
+
+{{% alert note %}}
+<small>[2021-10-04]</small><br>
+I've been using TablePlus for two years now, and I can confirm that it is a great application. I use it mostly for SQLite (it even includes an option to drop column) and Postgresql. Moreover, there's an alpha version for Linux at the time of this writing, which is almost on par with the classical version for Mac.
+{{% /alert %}}
