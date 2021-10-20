@@ -34,6 +34,11 @@ set statusbar-fg "#e5e9f0"
 
 I particularly like the dual view (`d`) and the index (`<tab>`), as well as the easy zooming facilities (`+` and `-`).
 
+{{% alert note %}}
+<small>[2021-10-20]</small><br>
+With the aid of a few add-ons (available via `apt`), Zathura can also become your default EPUB and DJVU browser. I used `xdg-mime default zathura.desktop application/pdf` to make it mine.
+{{% /alert %}}
+
 ### Feh image viewer
 
 As suggested on the [i3](https://i3wm.org/) website, [feh](https://feh.finalrewind.org/) can be used to set a wallpaper for your desktop. You may not enjoy it much in tiling mode, but at least you can choose a picture to your liking. Besides, feh can be used as a simple image viewer, for those who don't like ImageMagick display application. It works smoothly, and again hitting the `q` key simply close the app, like Zathura. Above all, you can simply browse a whole directory, and the arrow keys help to switch to the previous/next (`left`/`right`) picture or to zoom in (`up`) and out (`down`). More information is available in the man page.
