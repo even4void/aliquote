@@ -2,7 +2,7 @@
 title: "Coffescript"
 date: 2012-06-24T20:37:38+01:00
 draft: false
-tags: ["javascript"]
+tags: ["misc"]
 categories: ["2012"]
 ---
 

@@ -2,7 +2,7 @@
 title: "Back in Mac"
 date: 2020-08-20T18:09:22+02:00
 draft: false
-tags: ["misc"]
+tags: ["apple"]
 categories: ["2020"]
 ---
 
