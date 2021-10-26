@@ -1,6 +1,6 @@
 ---
 title: "ArXiving on October 2021"
-date: 2021-10-23:09:25+01:00
+date: 2021-10-23T10:09:25+01:00
 draft: false
 tags: ["readings", "arxiv"]
 categories: ["2021"]
