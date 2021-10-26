@@ -22,7 +22,6 @@ require('packer').startup(function()
     'nvim-telescope/telescope.nvim',
     requires = {'nvim-lua/popup.nvim', 'nvim-lua/plenary.nvim'}
   }
-  use 'hoob3rt/lualine.nvim'
 
   use 'neovim/nvim-lspconfig'
   use 'nvim-lua/lsp_extensions.nvim'
@@ -51,3 +50,8 @@ end)
 Well, that's it. I don't really need `lualine` (previously, I was using my own status line), but it's fast enough that I don't care. I know [nvim-cmp](https://github.com/hrsh7th/nvim-cmp) superseded `nvim-compe` some time ago, but I don't really care as the later works for me. I really like `gitsigns` since it comes with built-in blame and hunk preview. Surely `treesitter` is a thing, but I'm waiting to see if [nvim-treesitter-textobjects](https://github.com/nvim-treesitter/nvim-treesitter-textobjects) could be useable for Lisp/Scheme languages at some point. The `kommentary` plugin is not really necessary for my day-to-day scripting tasks in Bash or Python, but I keep it in case I need to work on biggish Python or Rust projects. I know the Debug Adapter Protocol is used in VS Code and Emacs. I tested it in my Python projects, and it works great. Let's see how it goes with C and Rust toy programs in the future. I know there are other alternatives to `formatter`, especially those who are closer to ALE than others, but actually my config is okay.
 
 Here is my whole config in case you are interested (this includes Zsh and Tmux settings): [vim+zsh_2021-09-21.tar.gz](/pub/vim+zsh_2021-09-21.tar.gz).
+
+{{% alert note %}}
+<small>[2021-10-26]</small><br>
+You may find this blog post very useful: [Moving to modern Neovim](https://toroid.org/modern-neovim).
+{{% /alert %}}
