@@ -42,10 +42,12 @@ Let's see it in action:
 (setf seed (make-random-state *random-state*))
 (def x (normal-rand 100))
 (def bs (bootstrap #'mean x 1000))
-(histogram bs)
+(histogram bs :title "1000 bootstrap samples")
 ```
 
 The bias is quite small (`(- (mean x) (mean bs))` < 0.005 on my sample).
+
+![img](/img/2021-11-02-12-01-17.png)
 
 [^1]: I came across several projects that aim to provide a more or less statistical package in Lisp or Scheme. The later one is [lisp-stat](https://github.com/Lisp-Stat/lisp-stat), which does not offer much at the time of this writing. The name of the project itself, with part of the code re-copyrighted after AJ Rossini or Luke Tierney under a different licence, makes me wonder where this project is going on, but this has already been [discussed on HN](https://news.ycombinator.com/item?id=26632429). Anyway, if we get something close to Luke Tierney's LispStat in Common Lisp, why not.
 
