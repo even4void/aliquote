@@ -1,5 +1,5 @@
 ---
-title: "QR decomposition and linear regression"
+title: "QR factorization and linear regression"
 date: 2021-11-03T15:42:51+01:00
 draft: true
 tags: ["lisp", "statistics"]
@@ -12,7 +12,7 @@ Rather than inverting the $X$ matrix, we will use QR decomposition, as R does, s
 
 $$ \left(X^TX\right)^{-1}X^Ty = \left(R^TQ^TQR\right)^{-1}R^TQ^Ty = \left(R^TR\right)^{-1}R^TQ^Ty = R^{-1}Q^Ty. $$
 
-Let's implement this approach in Lisp using the [magicl](https://github.com/quil-lang/magicl) package, which provides low-level bindings to BLAS/LAPACK as well as a high-level interface with everything we need for common linear algebra problems (e.g., SVD, Cholesky or QR decomposition, etc.).
+Let's implement this approach in Lisp using the [magicl](https://github.com/quil-lang/magicl) package, which provides low-level bindings to BLAS/LAPACK as well as a high-level interface with everything we need for common linear algebra problems (e.g., SVD, Cholesky or QR decomposition, etc.). Other CL libraries are available but I like this one because it is actively maintained by working heroes, including Robert Smith (@stylewarning), who also happens to play piano. We also need a toy artificial dataset.
 
 ```lisp
 (ql:quickload :magicl)
