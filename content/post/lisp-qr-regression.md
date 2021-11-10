@@ -12,19 +12,32 @@ Rather than inverting the $X$ matrix, we will use QR decomposition, as R does, s
 
 $$ \left(X^TX\right)^{-1}X^Ty = \left(R^TQ^TQR\right)^{-1}R^TQ^Ty = \left(R^TR\right)^{-1}R^TQ^Ty = R^{-1}Q^Ty. $$
 
-In the end, we only really need to solve $Rx = \bar y$, where $y$ is rotated as $\bar y = Q^Ty$, using backward substitution.
+In the end, we only really need to solve $Rx = \bar y$, where $y$ is rotated as $\bar y = Q^Ty$, and $R$ is triangular, using backward substitution.
 
-More information can be found in this [on-line course](https://inst.eecs.berkeley.edu/~ee127/sp21/livebook/l_ols_ls_def.html) and this longer artcile on the Stan website: [The QR Decomposition For Regression Models](https://mc-stan.org/users/documentation/case-studies/qr_regression.html). For a more detailed treatment, I would suggest [Numerical Methods of Statistics](https://www4.stat.ncsu.edu/~monahan/nmos2/toc.html) (2nd ed.), by John F. Monahan, especially for the connection with Householder transformations (§5.6.).
+More information can be found in this [on-line course](https://inst.eecs.berkeley.edu/~ee127/sp21/livebook/l_ols_ls_def.html) and this longer article on the Stan website: [The QR Decomposition For Regression Models](https://mc-stan.org/users/documentation/case-studies/qr_regression.html). For a more detailed treatment, I would suggest [Numerical Methods of Statistics](https://www4.stat.ncsu.edu/~monahan/nmos2/toc.html) (2nd ed.), by John F. Monahan, especially for the connection with Householder transformations (§5.6.).
 
-Let's implement this approach in Lisp using the [magicl](https://github.com/quil-lang/magicl) package, which provides low-level bindings to BLAS/LAPACK as well as a high-level interface with everything we need for common linear algebra problems (e.g., SVD, Cholesky or QR decomposition, etc.). Other CL libraries are available but I like this one because it is actively maintained by working heroes, including Robert Smith (@stylewarning), who also happens to play piano. We also need a toy artificial dataset.
+Let's implement this approach in Lisp using the [magicl](https://github.com/quil-lang/magicl) package, which provides low-level bindings to BLAS/LAPACK as well as a high-level interface with everything we need for common linear algebra problems (e.g., SVD, Cholesky or QR decomposition, etc.). Other CL libraries are available but I like this one because it is actively maintained by working heroes, including Robert Smith (@stylewarning), who also happens to play piano. We also need a toy dataset, which will be a subset of one the dataset used by Selvin in his book on S+ (see [here](https://aliquote.org/pub/MABMUSPlus/) for a collection of plots and a recap' of the exercises).
 
 ```lisp
 (ql:quickload :magicl)
 (setf *read-default-float-format* 'double-float)
-(defparameter *X* (magicl:from-list '(3.0 2.0  2.0
-                                      2.0 3.0 -2.0)
-                                    '(2 3)))
+(defparameter *X* (magicl:from-list '(9.1 0 35
+                                      8.9 0 29
+                                      8.5 0 34
+                                      7.4 0 32
+                                      7.5 0 28
+                                      7.3 0 28
+                                      6.7 1 24
+                                      6.5 1 24
+                                      7.2 1 28
+                                      6.5 1 26
+                                      6.6 1 26
+                                      7.1 1 26)
+                                    '(12 3)))
 ```
+
+![img](/img/selvin-reg.png)
+<small>[Gnuplot script](/img/selvin-reg.gp)</small>
 
 The instruction `(magicl:qr *X*)` should return the two matrices $Q$ and $R$. We can use built-in facilities to compute $\bar y$, but solving $Rx = \bar y$ requires a back substitution procedure.
 
