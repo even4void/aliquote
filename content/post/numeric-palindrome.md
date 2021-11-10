@@ -2,7 +2,7 @@
 title: "Palindrome number"
 date: 2019-12-27T18:24:15+01:00
 draft: false
-tags: ["clang"]
+tags: ["clang", "euler"]
 categories: ["2019"]
 ---
 
