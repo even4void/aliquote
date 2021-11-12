@@ -12,7 +12,7 @@ Rather than inverting the $X$ matrix, we will use QR decomposition, as R does, s
 
 $$ \left(X^TX\right)^{-1}X^Ty = \left(R^TQ^TQR\right)^{-1}R^TQ^Ty = \left(R^TR\right)^{-1}R^TQ^Ty = R^{-1}Q^Ty. $$
 
-In the end, we only really need to solve $Rx = \bar y$, where $y$ is rotated as $\bar y = Q^Ty$, and $R$ is triangular, using backward substitution.
+In the end, we only really need to solve $Rx = \bar y$, where $y$ is rotated as $\bar y = Q^Ty$ (in R, this is computed using `qr.qty()`) and $R$ is triangular, using backward substitution.
 
 More information can be found in this [on-line course](https://inst.eecs.berkeley.edu/~ee127/sp21/livebook/l_ols_ls_def.html) and this longer article on the Stan website: [The QR Decomposition For Regression Models](https://mc-stan.org/users/documentation/case-studies/qr_regression.html). For a more detailed treatment, I would suggest [Numerical Methods of Statistics](https://www4.stat.ncsu.edu/~monahan/nmos2/toc.html) (2nd ed.), by John F. Monahan, especially for the connection with Householder transformations (§5.6.).
 
@@ -21,26 +21,26 @@ Let's implement this approach in Lisp using the [magicl](https://github.com/quil
 We also need a toy dataset, which will be a subset of one the dataset used by Selvin in his book on S+ (see [here](https://aliquote.org/pub/MABMUSPlus/) for a collection of plots and a recap' of the exercises). Here is a quick glance at the dataset:
 
 ![img](/img/selvin-reg.png)
-<small>[Gnuplot script](/img/selvin-reg.gp)</small>
+<small>Gnuplot [script](/img/selvin-reg.gp) and raw [dataset](/pub/selvin-reg.dat).</small>
 
-Let's first try to input the data:
+Let's first try to input the data: (be careful, values must be recognized as float, not integers!)
 
 ```lisp
 (ql:quickload :magicl)
 (setf *read-default-float-format* 'double-float)
 (defparameter *y* (magicl:from-list '(9.1 8.9 8.5 7.4 7.5 7.3 6.7 6.5 7.2 6.5 6.6 7.1) '(12 1)))
-(defparameter *X* (magicl:from-list '(35 0
-                                      29 0
-                                      34 0
-                                      32 0
-                                      28 0
-                                      28 0
-                                      24 1
-                                      24 1
-                                      28 1
-                                      26 1
-                                      26 1
-                                      26 1)
+(defparameter *X* (magicl:from-list '(35.0 0.0
+                                      29.0 0.0
+                                      34.0 0.0
+                                      32.0 0.0
+                                      28.0 0.0
+                                      28.0 0.0
+                                      24.0 1.0
+                                      24.0 1.0
+                                      28.0 1.0
+                                      26.0 1.0
+                                      26.0 1.0
+                                      26.0 1.0)
                                     '(12 2)))
 ```
 
