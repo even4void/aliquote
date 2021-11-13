@@ -16,7 +16,24 @@ In the end, we only really need to solve $Rx = \bar y$, where $y$ is rotated as 
 
 More information can be found in this [on-line course](https://inst.eecs.berkeley.edu/~ee127/sp21/livebook/l_ols_ls_def.html) and this longer article on the Stan website: [The QR Decomposition For Regression Models](https://mc-stan.org/users/documentation/case-studies/qr_regression.html). For a more detailed treatment, I would suggest [Numerical Methods of Statistics](https://www4.stat.ncsu.edu/~monahan/nmos2/toc.html) (2nd ed.), by John F. Monahan, especially for the connection with Householder transformations (§5.6.).
 
-Let's implement this approach in Lisp using the [magicl](https://github.com/quil-lang/magicl) package, which provides low-level bindings to BLAS/LAPACK as well as a high-level interface with everything we need for common linear algebra problems (e.g., SVD, Cholesky or QR decomposition, etc.). Other CL libraries are available but I like this one because it is actively maintained by working heroes, including Robert Smith (@stylewarning), who also happens to play piano.
+Let's implement this approach in Lisp using the [magicl](https://github.com/quil-lang/magicl) package, which provides low-level bindings to BLAS/LAPACK as well as a high-level interface with everything we need for common linear algebra problems (e.g., SVD, Cholesky or QR decomposition, etc.). Other CL libraries are available but this one looks interesting because it is actively maintained by working heroes, including Robert Smith (@stylewarning), who also happens to play piano. As an illustration, here is how one compute the SVD ($U\Sigma V$) of a rectangular matrix:
+
+```lisp
+(defparameter *a* (magicl:from-list '(3.0 2.0  2.0
+                                      2.0 3.0 -2.0)
+                                    '(2 3)))
+(magicl:svd *a*)
+```
+
+This returns the expected results:
+
+$$
+\begin{array}{l}
+U = {\pmatrix {1/\sqrt{2} & 1/\sqrt{2} \cr 1/\sqrt{2} & -1/\sqrt{2}}} \cr
+ \Sigma = {\pmatrix {5 & 0 & 0 \cr 0 & 3 & 0}} \cr
+ V^T = {\pmatrix {1/\sqrt{2} & 1/\sqrt{2} & 0 \cr 1/\sqrt{18} & -1/\sqrt{18} & 4/\sqrt{18} \cr 2/3 & -2/3 & -1/3 }}
+\end{array}
+$$
 
 We also need a toy dataset, which will be a subset of one the dataset used by Selvin in his book on S+ (see [here](https://aliquote.org/pub/MABMUSPlus/) for a collection of plots and a recap' of the exercises). Here is a quick glance at the dataset:
 
@@ -44,7 +61,7 @@ Let's first try to input the data: (be careful, values must be recognized as flo
                                     '(12 2)))
 ```
 
-The instruction `(magicl:qr *X*)` should return the two matrices $Q$ and $R$ discussed above. We can use built-in facilities to compute $\bar y$, but solving $Rx = \bar y$ requires to write a back substitution procedure since there is no real MATLAB-like "solve" procedure available in magicl. Fortunately, there's one available on Rosetta:
+The instruction `(magicl:qr *X*)` should return the two matrices $Q$ and $R$ discussed above. We can use built-in facilities to compute $\bar y$, but solving $Rx = \bar y$ requires to write a back substitution procedure since there is no real MATLAB-like "solve" procedure available in magicl, as noted on this [HN thread](https://news.ycombinator.com/item?id=26065511). Fortunately, there's one available on Rosetta:
 
 ```lisp
 (defun solve-upper-triangular (R b)
@@ -61,9 +78,14 @@ The instruction `(magicl:qr *X*)` should return the two matrices $Q$ and $R$ dis
     x))
 ```
 
-Then, using the same notation as above, we can write:
+Then, using the same notation as above, we can write something like:
 
 ```lisp
-;; Get R and Q
-(solve-upper-triangular (magicl:@ R x) (magicl:@ (magicl:transpose Q) y))
+(multiple-value-bind (Q R)
+     (magicl:qr *X*)
+   (solve-upper-triangular (magicl:@ *X* R) (magicl:@ (magicl:transpose Q) *y*)))
 ```
+
+Well, that's a bit convoluted but that worked. Next time, we'll see how the [GSLL](https://common-lisp.net/project/gsll/) can be used to solve similar problems.
+
+{{% music %}}Mini Trees • _Youth_{{% /music %}}
