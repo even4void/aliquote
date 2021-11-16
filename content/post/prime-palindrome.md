@@ -1,7 +1,7 @@
 ---
-title: "Prime Palindromes"
+title: "Prime palindromes"
 date: 2021-11-16T11:23:19+01:00
-draft: true
+draft: false
 tags: ["euler", "math", "racket"]
 categories: ["2021"]
 ---

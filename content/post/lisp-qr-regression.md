@@ -1,7 +1,7 @@
 ---
 title: "QR factorization and linear regression"
 date: 2021-11-03T15:42:51+01:00
-draft: true
+draft: false
 tags: ["lisp", "statistics"]
 categories: ["2021"]
 ---
@@ -63,33 +63,15 @@ Let's first try to input the data: (be careful, values must be recognized as flo
                                     '(12 3)))
 ```
 
-The instruction `(magicl:qr *X*)` should return the two matrices $Q$ and $R$ discussed above. We can use built-in facilities to compute $\bar y$, but solving $Rx = \bar y$ requires to write a back substitution procedure since there is no real MATLAB-like "solve" procedure available in magicl, as noted on this [HN thread](https://news.ycombinator.com/item?id=26065511). Fortunately, there's one available on Rosetta. After little modifications to take into account the use of magicl array it now reads:
-
-```lisp
-(defun solve-upper-triangular (R b)
-  (let* ((n (cadr (magicl:shape R)))
-         (x (make-array `(,n 1) :initial-element 0.0d0)))
-
-    (loop for k from (- n 1) downto 0
-       do (setf (aref x k 0)
-                (/ (- (magicl:tref b k 0)
-                      (loop for j from (+ k 1) to (- n 1)
-                         sum (* (magicl:tref R k j)
-                                (aref x j 0))))
-                   (magicl:tref R k k))))
-    x))
-```
-
-Then, using the same notation as above, we can write something like:
+The instruction `(magicl:qr *X*)` should return the two matrices $Q$ and $R$ discussed above. Then, from the expressions above we see that the vector of estimated parameters can be computed as $R^{-1}Q^Ty$, such that we can write:
 
 ```lisp
 (multiple-value-bind (Q R)
      (magicl:qr *X*)
-     R)
    (magicl:@ (magicl:inv R) (magicl:@ (magicl:transpose Q) *y*)))
 ```
 
-We get the estimated parameters $(3.606, 0.146, -0.574)$, and $R = {\pmatrix {3.464 & 98.150 & 1.732 \cr 0.000 & 12.028 & -1.330 \cr 0.000 & 0.000 & 1.109}}$.
+We get the estimated parameters $(3.606, 0.146, -0.574)$, and $R = {\pmatrix {3.464 & 98.150 & \hphantom{-}1.732 \cr 0.000 & 12.028 & -1.330 \cr 0.000 & 0.000 & \hphantom{-}1.109}}$.
 
 Well, that's a bit convoluted but that worked. Next time, we'll see how the [GSLL](https://common-lisp.net/project/gsll/) can be used to solve similar problems.
 
