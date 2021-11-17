@@ -28,10 +28,10 @@ Let's implement this approach in Lisp using the [magicl](https://github.com/quil
 This returns the expected results:
 
 $$
-\begin{array}{ll}
-U = {\pmatrix {1/\sqrt{2} & 1/\sqrt{2} \cr 1/\sqrt{2} & -1/\sqrt{2}}} &
+\begin{array}{l}
+U = {\pmatrix {1/\sqrt{2} & 1/\sqrt{2} \cr 1/\sqrt{2} & -1/\sqrt{2}}} \cr
  \Sigma = {\pmatrix {5 & 0 & 0 \cr 0 & 3 & 0}} \cr
- V^T = {\pmatrix {1/\sqrt{2} & 1/\sqrt{2} & 0 \cr 1/\sqrt{18} & -1/\sqrt{18} & 4/\sqrt{18} \cr 2/3 & -2/3 & -1/3 }} &
+ V^T = {\pmatrix {1/\sqrt{2} & 1/\sqrt{2} & 0 \cr 1/\sqrt{18} & -1/\sqrt{18} & 4/\sqrt{18} \cr 2/3 & -2/3 & -1/3 }}
 \end{array}
 $$
 
