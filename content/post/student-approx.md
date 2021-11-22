@@ -1,8 +1,8 @@
 ---
 title: "Student's t distribution"
-date: 2021-11-18T21:23:27+01:00
-draft: true
-tags: ["statistics"]
+date: 2021-11-19T21:23:27+01:00
+draft: false
+tags: ["statistics", "racket"]
 categories: ["2021"]
 ---
 
@@ -40,17 +40,17 @@ $$ Q(t\mid k) = \frac{\Gamma\big((k+1)/2\big)}{\Gamma(k/2)\sqrt{\pi}}u^{-k/2}\su
 
 where $c_0 = 1$, $c_j = \frac{2j-1}{2j}c_{j-1}$, and $u = 1 + \frac{t^2}{k}$.
 
-Currently, there's no way to compute tail probability from the Student's $t$ distribution in Racket math library, although it has everything we need for the Gamma or Beta distribution. A while back, I pointed to [Racket and Chicken](https://stats.stackexchange.com/a/20144/930) libraries. However, let's do this by hand using Racket's builtin facilities:
+Currently, there's no way to compute tail probability from the Student's $t$ distribution in Racket math library, although it has everything we need for the Gamma or Beta distribution. Let's do this by hand using Racket's builtin facilities to compute the _regularized_ incomplete Beta function:
 
 ```racket
 (require math/special-functions)
 
-(define (pt t df)
-  (let ([beta (* 0.5 (beta-inc (* 0.5 df) 0.5 (/ df (+ df (sqr t)))))])
-    beta))
+(define (pt t df [two-tailed? #f])
+  (let ([beta (* 0.5 (beta-inc (* 0.5 df) 0.5 (/ df (+ df (sqr t))) #f #t))])
+    (if two-tailed? (* 2 beta) beta)))
 
 (pt 2.41 36)
-; => 0.008913560280910294
+; => 0.010594171035128275
 ```
 
 R returns $Q(2.41 \mid 36) = 0.01059417$ for the one-tailed probability.
