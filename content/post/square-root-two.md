@@ -2,11 +2,11 @@
 title: "Computing √2 by additions alone"
 date: 2020-03-28T08:32:49+01:00
 draft: false
-tags: ["math"]
+tags: ["math", "mathematica"]
 categories: ["2020"]
 ---
 
-We've  already seen a well-known algorithm to computing $\sqrt{2}$ to an arbitrary precision using [Newton's method](/post/newton-raphson-racket/) in a previous post (see esp. footnote 1). Here is another approach discussed by Melzak.[^1] Let's start with two positive integers $p_0$ and $q_0$, and the following recurrence relations, for $n = 0, 1, 2, \dots$:
+We've  already seen a well-known algorithm to compute $\sqrt{2}$ to an arbitrary precision using [Newton's method](/post/newton-raphson-racket/) in a previous post (see esp. footnote 1). Here is another approach discussed by Melzak.[^1] Let's start with two positive integers $p_0$ and $q_0$, and the following recurrence relations, for $n = 0, 1, 2, \dots$:
 
 $$
 \begin{cases}
