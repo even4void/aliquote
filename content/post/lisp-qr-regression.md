@@ -18,8 +18,7 @@ More information can be found in this [on-line course](https://inst.eecs.berkele
 
 {{% alert note %}}
 <small>[2021-11-24]</small><br>
-See also this excellent article by  Avatar
-Matthew Drury: [How Does A Computer Calculate Eigenvalues?](https://madrury.github.io/jekyll/update/statistics/2017/10/04/qr-algorithm.html)
+See also this excellent article by Matthew Drury: [How Does A Computer Calculate Eigenvalues?](https://madrury.github.io/jekyll/update/statistics/2017/10/04/qr-algorithm.html)
 {{% /alert %}}
 
 Let's implement this approach in Lisp using the [magicl](https://github.com/quil-lang/magicl) package, which provides low-level bindings to BLAS/LAPACK as well as a high-level interface with everything we need for common linear algebra problems (e.g., SVD, Cholesky or QR decomposition, etc.). Other CL libraries are available but this one looks interesting because it is actively maintained by working heroes, including Robert Smith (@stylewarning), who also happens to play piano. As an illustration, here is how one compute the SVD ($U\Sigma V$) of a rectangular matrix:
