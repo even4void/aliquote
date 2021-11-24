@@ -16,6 +16,12 @@ In the end, we only really need to solve $Rx = \bar y$, where $y$ is rotated as 
 
 More information can be found in this [on-line course](https://inst.eecs.berkeley.edu/~ee127/sp21/livebook/l_ols_ls_def.html), which inspired the above notation, and this longer article on the Stan website: [The QR Decomposition For Regression Models](https://mc-stan.org/users/documentation/case-studies/qr_regression.html). For a more detailed treatment, I would suggest [Numerical Methods of Statistics](https://www4.stat.ncsu.edu/~monahan/nmos2/toc.html) (2nd ed.), by John F. Monahan, especially for the connection with Householder transformations (§5.6.).
 
+{{% alert note %}}
+<small>[2021-11-24]</small><br>
+See also this excellent article by  Avatar
+Matthew Drury: [How Does A Computer Calculate Eigenvalues?](https://madrury.github.io/jekyll/update/statistics/2017/10/04/qr-algorithm.html)
+{{% /alert %}}
+
 Let's implement this approach in Lisp using the [magicl](https://github.com/quil-lang/magicl) package, which provides low-level bindings to BLAS/LAPACK as well as a high-level interface with everything we need for common linear algebra problems (e.g., SVD, Cholesky or QR decomposition, etc.). Other CL libraries are available but this one looks interesting because it is actively maintained by working heroes, including Robert Smith (@stylewarning), who also happens to play piano. As an illustration, here is how one compute the SVD ($U\Sigma V$) of a rectangular matrix:
 
 ```lisp
