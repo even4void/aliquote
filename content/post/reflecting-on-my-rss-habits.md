@@ -3,7 +3,7 @@ title: "Reflecting on my RSS habits"
 date: 2021-04-29T21:59:27+02:00
 draft: false
 tags: ["misc"]
-categories: ["2020"]
+categories: ["2021"]
 ---
 
 While listening to a nice compilation of [Jazz Chill](https://music.apple.com/us/playlist/jazz-chill/pl.63271312c084419891982eab46cc68ac) (no sponsoring, my Macbook mostly became my private juke box since I switched to Ubuntu), I was thinking of how my web reading habits evolved with time. Back in 2010 I was learning a lot of useful tips almost every day on Twitter, and I collected thousands of bookmarks during 8 or 9 years. Nowadays, there's nothing left on Twitter except personal timelines I like to follow from time to time. I always have had an RSS feed reader since 2008, but it is now my primary source of information and I don't even have to leave my terminal for reading interesting blog posts.
