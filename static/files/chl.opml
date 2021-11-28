@@ -138,7 +138,7 @@
     <outline type="rss" xmlUrl="https://andreyorst.gitlab.io/feed.xml" htmlUrl="https://andreyorst.gitlab.io/" title="Andrey&#xA0;Listopadov"/>
     <outline type="rss" xmlUrl="https://annoying.technology/index.xml" htmlUrl="https://annoying.technology/index.xml" title="Annoying Technology"/>
     <outline type="rss" xmlUrl="https://antonz.org/feed.xml" htmlUrl="https://antonz.org/" title="Anton Zhiyanov"/>
-    <outline type="rss" xmlUrl="https://antonz.org/rss" htmlUrl="" title=""/>
+    <outline type="rss" xmlUrl="https://antonz.org/rss" htmlUrl="https://antonz.org/" title="Anton Zhiyanov"/>
     <outline type="rss" xmlUrl="https://aphyr.com/posts.atom" htmlUrl="https://aphyr.com/posts.atom" title="Aphyr: Posts"/>
     <outline type="rss" xmlUrl="https://ar.al/index.xml" htmlUrl="https://ar.al/" title="Aral Balkan"/>
     <outline type="rss" xmlUrl="https://archive.casouri.cat/note/rss.xml" htmlUrl="https://archive.casouri.cat/note/nil" title="Notes"/>
@@ -161,6 +161,7 @@
     <outline type="rss" xmlUrl="https://blog.binchen.org/rss.xml" htmlUrl="http://blog.binchen.org/" title="Chen's blog"/>
     <outline type="rss" xmlUrl="https://blog.burntsushi.net/index.xml" htmlUrl="https://blog.burntsushi.net/" title="Andrew Gallant's Blog on Andrew Gallant's Blog"/>
     <outline type="rss" xmlUrl="https://blog.carlosgaldino.com/atom.xml" htmlUrl="https://blog.carlosgaldino.com/atom.xml" title="carlosgaldino"/>
+    <outline type="rss" xmlUrl="https://blog.cddr.org/index.xml" htmlUrl="" title=""/>
     <outline type="rss" xmlUrl="https://blog.cyrusharmon.org/blog/cyrusblog/rss" htmlUrl="https://blog.cyrusharmon.org/blog/cyrusblog" title="Cyrus' New Completely Useless Blog"/>
     <outline type="rss" xmlUrl="https://blog.dave.tf/index.xml" htmlUrl="https://blog.dave.tf/" title="blog.dave.tf"/>
     <outline type="rss" xmlUrl="https://blog.davemartin.me/index.xml" htmlUrl="https://blog.davemartin.me/" title="Dave Martin's Blog"/>
@@ -218,7 +219,7 @@
     <outline type="rss" xmlUrl="https://borodust.org/atom.xml" htmlUrl="https://borodust.org/atom.xml" title="Boroblog Atom Feed"/>
     <outline type="rss" xmlUrl="https://borretti.me/feed.xml" htmlUrl="https://borretti.me/" title="Fernando Borretti"/>
     <outline type="rss" xmlUrl="https://box.matto.nl/index.rss" htmlUrl="http://box.matto.nl/index.html" title="Open source software and nice hardware"/>
-    <outline type="rss" xmlUrl="https://bphogan.com/index.xml" htmlUrl="https://bphogan.com/" title="Home on bphogan.com"/>
+    <outline type="rss" xmlUrl="https://bphogan.com/index.xml" htmlUrl="https://bphogan.com/" title="Home on Brian P. Hogan"/>
     <outline type="rss" xmlUrl="https://bradleytaunt.com/atom.xml" htmlUrl="https://bradleytaunt.com/atom.xml" title="Ugly Duck"/>
     <outline type="rss" xmlUrl="https://brainder.org/feed" htmlUrl="https://brainder.org/" title="Brainder."/>
     <outline type="rss" xmlUrl="https://brandur.org/articles.atom" htmlUrl="https://brandur.org/" title="Articles &#x2014; brandur.org"/>
@@ -351,7 +352,7 @@
     <outline type="rss" xmlUrl="https://inessential.com/xml/rss.xml" htmlUrl="https://inessential.com/" title="inessential.com"/>
     <outline type="rss" xmlUrl="https://inlehmansterms.net/feed.xml" htmlUrl="http://inlehmansterms.net/" title="In Lehman's Terms"/>
     <outline type="rss" xmlUrl="https://irrlab.com/feed/" htmlUrl="https://irrlab.com/" title="thoughts&#x2026;"/>
-    <outline type="rss" xmlUrl="https://iximiuz.com/feed.rss" htmlUrl="" title=""/>
+    <outline type="rss" xmlUrl="https://iximiuz.com/feed.rss" htmlUrl="https://iximiuz.com/" title="Ivan Velichko on Containers, Kubernetes, and Backend Development"/>
     <outline type="rss" xmlUrl="https://izbicki.me/feed.rss" htmlUrl="https://izbicki.me/feed.rss" title="Mike Izbicki's blog posts"/>
     <outline type="rss" xmlUrl="https://j19sch.github.io/blog/rss.xml" htmlUrl="https://j19sch.github.io/" title="Joep Schuurkes"/>
     <outline type="rss" xmlUrl="https://jacobian.org/atom/entries/" htmlUrl="https://jacobian.org/" title="jacobian.org"/>
@@ -550,7 +551,7 @@
     <outline type="rss" xmlUrl="https://simplystatistics.org/index.xml" htmlUrl="https://simplystatistics.org/index.xml" title="Simply Statistics"/>
     <outline type="rss" xmlUrl="https://sivers.org/en.atom" htmlUrl="https://sivers.org/en.atom" title="Derek Sivers"/>
     <outline type="rss" xmlUrl="https://skerritt.blog/rss/" htmlUrl="" title=""/>
-    <outline type="rss" xmlUrl="https://snarky.ca/rss/" htmlUrl="" title=""/>
+    <outline type="rss" xmlUrl="https://snarky.ca/rss/" htmlUrl="https://snarky.ca/" title="Tall, Snarky Canadian"/>
     <outline type="rss" xmlUrl="https://so.nwalsh.com/feed.rss" htmlUrl="" title=""/>
     <outline type="rss" xmlUrl="https://stackoverflow.com/feeds/user/69545" htmlUrl="https://stackoverflow.com/users/69545" title="User Rainer Joswig - Stack Overflow"/>
     <outline type="rss" xmlUrl="https://standblog.org/blog/feed/atom" htmlUrl="https://standblog.org/blog/" title="Standblog"/>
