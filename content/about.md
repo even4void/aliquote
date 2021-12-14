@@ -8,15 +8,15 @@ type: "page"
 
 {{% headquote %}}
 < a•l•iquote |ˈalikwət|, noun /><br>
-<small><em>Mathematics a quantity that can be divided into another an integral number of times. Origin late 16th cent.: from French aliquote, from Latin aliquot ‘some, so many,’ from alius ‘one of two’ + quot ‘how many.’</em></small><br>
-<small><a href="/changelog/">Changelog</a> • <a href="/privacy/">Privacy</a><br><a href="/even4void.txt">GPG key</a>: 152E3E3F7C4CCE44</small>
+<small><em>Mathematics a quantity that can be divided into another an integral<br>number of times. Origin late 16th cent.: from French aliquote, from Latin<br> aliquot ‘some, so many,’ from alius ‘one of two’ + quot ‘how many.’</em></small><br>
+<small><a href="/changelog/">Changelog</a> • <a href="/privacy/">Privacy</a> • GPG key: <a href="/even4void.txt">152E3E3F7C4CCE44</a></small>
 {{% /headquote %}}
 
 You landed on my homepage, thanks for stopping by!
 
 I'm a middle-aged bohemian scientist, initially trained in cognitive science before working as a medical statistician for nearly a decade. I also happened to be a teacher for 15 years when time allowed. Professional details were once available on a "publish-or-perish" page, which is no longer up to date. But let that not stop you reading more.
 
-I'm now more or less involved in computer science (bioinformatics, sysadmin, database management) and statistical genetics. Even if I find myself a bit broke, the job is more rewarding and that gives me some free time.
+I'm now more or less involved in computer science (bioinformatics, sysadmin, database management) and biostatistics. Even if I find myself a bit broke, the job is more rewarding and that gives me some free time.
 
 Anyway, welcome to my little placeholder for random musings in the digital era! I read a lot of technical stuff ([raw archive](/files/references.bib) as a BibTeX file) and more generally [literature artwork](/files/books.txt) (relaunched in 2013), and I like [writing](/post) about almost everything that is barely related to a computer, or just post [micro ideas](/micro/). Here is [how I (generally) do](/articles/how-i-do). You can reach me on [Libera.chat](/contact).
 
