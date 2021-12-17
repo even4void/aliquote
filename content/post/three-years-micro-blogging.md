@@ -16,7 +16,7 @@ When I added this section to the site I thought it would make a perfect fit for 
 
 My personal setup has changed a bit: I use Neovim instead of Doom Emacs, I'm on Ubuntu and no longer use a Macbook, and so on. But the core idea remains the same: I can write a short note or quickly post a link by typing the following two words at my shell: `micro now`. This will create a file in the right directory, pre-populated with the corresponding header, and I'm good with writing whatever I like. Using `rsync` it can be synchronized almost immediately with my online server.
 
-The crappy R script I used two years ago did not produce a very satisfactory word cloud this time. There's more content than last time and I really need to filter stop words, numbers and pucntuation other than using a series of `gsub`s. Here's an [enhanced version](three-years-micro-blogging.r), which may be as crappy as the preceding one --- but with native pipes:
+The crappy R script I used two years ago did not produce a very satisfactory word cloud this time. There's more content than last time and I really need to filter stop words, numbers and pucntuation other than using a series of `gsub`s. Here's an [enhanced version](/pub/three-years-micro-blogging.r), which may be as crappy as the preceding one --- but with native pipes:
 
 ![wordcloud](/img/wc-micro-2.png)
 
