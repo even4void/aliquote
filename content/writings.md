@@ -21,6 +21,8 @@ Below is a list of what has been archived over the years on this site or on exte
 <td><em>Status</em></td>
 <td><em>Type</em></td>
 </tr>
+<tr><td><a href="">Getting started with Mathematica</a></td><td>Jan 2022</td><td>en</td><td>todo</td><td><i data-feather="file-text" width="12px" height="12px"></i></td></tr>
+<tr><td><a href="">Programmation fonctionnelle avec Haskell</a></td><td>Dec 2021</td><td>fr</td><td>todo</td><td><i data-feather="file-text" width="12px" height="12px"></i></td></tr>
 <tr><td><a href="/pub/vim-101.pdf">Vim 101</a></td><td>Aug 2020</td><td>en</td><td>done</td><td><i data-feather="file-text" width="12px" height="12px"></i></td></tr>
 <tr><td><a href="/pub/impatient-emacs.pdf">Emacs pour l'impatient</a></td><td>Feb 2020</td><td>fr</td><td>canc</td><td><i data-feather="file-text" width="12px" height="12px"></i></td></tr>
 <tr><td><a href="/pub/ngs.pdf">RNA-Seq workshop</a></td><td>Feb 2020</td><td>en</td><td>done</td><td><i data-feather="file-text" width="12px" height="12px"></i></td></tr>
