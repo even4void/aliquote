@@ -1,12 +1,12 @@
 ---
 title: "Pandoc templates are great"
 date: 2022-01-10T21:17:41+01:00
-draft: true
+draft: false
 tags: ["tex"]
 categories: ["2022"]
 ---
 
-In my previous post, I talked about writing Org file in Vim. While I much prefer the Org format, I often fall back on Markdown as the default markup for plain text files. I devised several Pandoc templates over the years, especially for RMarkdown documents. As discussed in an [older post of mine](/post/latex-beamer-21-century/), I use a Makefile and a YAML header to process my text MArkdown or RMarkdown documents. Having a separate YAML header as well as plain $\LaTeX$ file to add custom macros make it easy to define a common template for a series of handouts. The main font is Fira Sans, and its derivation (Fira Sans Condensed and Fira Code). It took me a longer time to understand how to use ligatures in listings-based code block. I've used various workarounds, like using Unicode characters (e.g., for the R assignment operator, `<-`) or additional $\LaTeX$ packages for verbatim environments. Finally, the solution is quite easy once you learn it: Just add the [lstfiracode](https://github.com/RuixiZhang42/lstfiracode) package, and customize your listings settings as follows: `\lstset{basicstyle=\small\ttfamily, style=FiraCodeStyle, ...}`.
+In my [previous post](/post/org-in-vim/), I talked about writing Org file in Vim. While I much prefer the Org format, I often fall back on Markdown as the default markup for plain text files. I devised several Pandoc templates over the years, especially for RMarkdown documents. As discussed in an [older post of mine](/post/latex-beamer-21-century/), I use a Makefile and a YAML header to process my text MArkdown or RMarkdown documents. Having a separate YAML header as well as plain $\LaTeX$ file to add custom macros make it easy to define a common template for a series of handouts. The main font is Fira Sans, and its derivation (Fira Sans Condensed and Fira Code). It took me a longer time to understand how to use ligatures in listings-based code block. I've used various workarounds, like using Unicode characters (e.g., for the R assignment operator, `<-`) or additional $\LaTeX$ packages for verbatim environments. Finally, the solution is quite easy once you learn it: Just add the [lstfiracode](https://github.com/RuixiZhang42/lstfiracode) package, and customize your listings settings as follows: `\lstset{basicstyle=\small\ttfamily, style=FiraCodeStyle, ...}`.
 
 Lately, I've also used the Eisvogel template for some handouts. It works great, its design favors simple (sans) defaults, but I don't really like the default settings for code chunks, for example. Needless to say, I wrote my own custom template to export Org file to Latex Tufte handout via Pandoc, as discussed elsewhere on this blog. I also have a similar workflow for Md -> Tex export, without using the Tufte handout Latex class. It reimplements part of the Tufte layout, but it relies on different base fonts (Fira and STIX Two Math) and verbatim environments. Here is an excerpt:
 
@@ -33,6 +33,8 @@ marginparwidth=6.5cm]{geometry}
 
 \renewcommand{\footnote}[1]{\let\thesidenote\relax\sidenotetext{#1}}
 ```
+
+Pandoc templates are great because it reduces the $\LaTeX$ you have to write. I know most text editors will handle snippets or shortcuts that will create new environment or section or whatever on the fly. However, If you can stick to Markdown or Org syntax for 80% of the document, that's not so bad either.
 
 Finally, a long time ago (if memory serves it was in 2009), I got inspired by Kieran Healy's [own templates](https://github.com/kjhealy/pandoc-templates) and I devised a simple Xe$\LaTeX$ article-based Pandoc template which used another set of great fonts:[^1]
 
@@ -65,7 +67,10 @@ mainfont: Minion Pro
 sansfont: Myriad Pro
 monofont: Fira Code
 mathfont: STIX Two Math
-monofontoptions: [Scale = 0.8, Numbers = Lining, BoldFont = Fira Code Medium, Contextuals = Alternate]
+monofontoptions: >
+                 [Scale = 0.8, Numbers = Lining,
+                 BoldFont = Fira Code Medium,
+                 Contextuals = Alternate]
 mainfontoptions: [Numbers = OldStyle, Ligatures = Rare]
 mathfontoptions: [Scale = MatchLowercase]
 fontsize: 9pt
@@ -83,7 +88,9 @@ header-includes:
     - \usepackage{fontawesome}
     - \usepackage{lstfiracode}
     - \usepackage{setspace}
-    - \AtBeginEnvironment{quote}{\sffamily\raggedright\frenchspacing\setstretch{1.0}}
+    - >
+      \AtBeginEnvironment{quote}{\sffamily\raggedright
+      \frenchspacing\setstretch{1.0}}
     - >
       \lstset{basicstyle=\small\ttfamily,
       style=FiraCodeStyle,
@@ -97,5 +104,7 @@ Here is a side by side preview of both variants (Adobe fonts on the left, Fira o
 
 {{< fluid_imgs "pure-u-1-2|/img/template_adobe.png"
                "pure-u-1-2|/img/template_fira.png" >}}
+
+Of course, the same template can be applied to an Org file, with minor adaptation, using [Latex header](https://orgmode.org/manual/LaTeX-header-and-sectioning.html) options.
 
 [^1]: See also [What best combination of fonts for Serif, Sans, and Mono do you recommend?](https://tex.stackexchange.com/questions/9533/what-best-combination-of-fonts-for-serif-sans-and-mono-do-you-recommend)
