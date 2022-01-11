@@ -1,55 +1,59 @@
 ---
-title: "New Pandoc Template"
+title: "Pandoc templates are great"
 date: 2022-01-10T21:17:41+01:00
 draft: true
 tags: ["tex"]
 categories: ["2022"]
 ---
 
-While browsing GitHub, I noticed that the nvim-lua organization offers a "starter kit" init.lua file for Neovim users. It is a single Lua file, which is quite handy when you want to quickly bootstrap a sane config on external servers. I tested it in my own environment and it's pretty good actually. I like the idea of having a single file for the whole config, although I can understand why we may want to split our whole config in separate files, which is actually what I do, see below.
+In my previous post, I talked about writing Org file in Vim. While I much prefer the Org format, I often fall back on Markdown as the default markup for plain text files. I devised several Pandoc templates over the years, especially for RMarkdown documents. As discussed in an [older post of mine](/post/latex-beamer-21-century/), I use a Makefile and a YAML header to process my text MArkdown or RMarkdown documents. Having a separate YAML header as well as plain $\LaTeX$ file to add custom macros make it easy to define a common template for a series of handouts. The main font is Fira Sans, and its derivation (Fira Sans Condensed and Fira Code). It took me a longer time to understand how to use ligatures in listings-based code block. I've used various workarounds, like using Unicode characters (e.g., for the R assignment operator, `<-`) or additional $\LaTeX$ packages for verbatim environments. Finally, the solution is quite easy once you learn it: Just add the [lstfiracode](https://github.com/RuixiZhang42/lstfiracode) package, and customize your listings settings as follows: `\lstset{basicstyle=\small\ttfamily, style=FiraCodeStyle, ...}`.
 
-```shell
-~/.config/nvim % tre
-      1 .
-      2 ├── after
-      3 │   └── syntax
-      4 │       ├── racket.vim
-      7 ├── autoload
-      8 │   ├── spelling.vim
-      9 │   └── text.vim
-     10 ├── colors
-     11 │   ├── nord.vim
-     12 │   └── plain.vim
-     13 ├── ftplugin
-     14 │   ├── css.vim
-     15 │   ├── gitcommit.vim
-     16 │   ├── haskell.vim
-     17 │   ├── help.vim
-     18 │   ├── html.vim
-     19 │   ├── markdown.vim
-     21 │   ├── racket.vim
-     22 │   ├── rust.vim
-     24 │   ├── text.vim
-     25 │   └── vim.vim
-     26 ├── lua
-     27 │   ├── format.lua
-     28 │   ├── lsp.lua
-     29 │   ├── mappings.lua
-     30 │   ├── settings.lua
-     31 │   └── utils.lua
-     32 ├── plugin
-     33 │   └── packer_compiled.lua
-     34 ├── spell
-     35 │   ├── en.utf-8.add
-     36 │   ├── en.utf-8.add.spl
-     37 │   ├── fr.utf-8.add
-     38 │   └── fr.utf-8.add.spl
-     39 └── init.lua
-     40
-     41 8 directories, 30 files
+Lately, I've also used the Eisvogel template for some handouts. It works great, its design favors simple (sans) defaults, but I don't really like the default settings for code chunks, for example. Needless to say, I wrote my own custom template to export Org file to Latex Tufte handout via Pandoc, as discussed elsewhere on this blog. I also have a similar workflow for Md -> Tex export, without using the Tufte handout Latex class. It reimplements part of the Tufte layout, but it relies on different base fonts (Fira and STIX Two Math) and verbatim environments. Here is an excerpt:
+
+```latex
+\usepackage[a4paper, left=1cm, right=8cm, top=1cm, bottom=1cm,
+marginparwidth=6.5cm]{geometry}
+\usepackage{sidenotes}
+\usepackage{sectsty}
+\subsectionfont{\color{DarkSlateGrey}}
+\usepackage{titlesec}
+\titlespacing{\section}{0pt}{\parskip}{-\parskip}
+\titlespacing{\subsection}{0pt}{\parskip}{-\parskip}
+\renewcommand{\baselinestretch}{1}
+\usepackage[justification=justified, singlelinecheck=false]{caption}
+
+\DeclareCaptionFont{white}{\color{white}}
+\DeclareCaptionFormat{listing}{\hspace*{-3.5pt}%
+  \parbox{\textwidth}{\colorbox{LightSlateGrey}{\parbox{\dimexpr\textwidth+1pt}{#1#2#3}}\vskip2.8pt}}
+\captionsetup[lstlisting]{labelformat=empty,format=listing,labelfont=white,textfont=white}
+
+\renewenvironment{figure}[1][width=\marginparwidth]
+  {\begin{marginfigure}}
+  {\end{marginfigure}}
+
+\renewcommand{\footnote}[1]{\let\thesidenote\relax\sidenotetext{#1}}
 ```
-<small>`tre` is just an alias for `tree -NC -aC -I '.git|node_modules' --dirsfirst "$@" | less -FRNX`</small>
 
-In my previous post, I talked about writing Org file in Vim. While I much prefer the Org format, I often fall back on Markdown as the default markup for plain text files. I devised several Pandoc templates over the years, especially for RMarkdown documents. As discussed in an [older post of mine](/post/latex-beamer-21-century/), I use a Makefile and a YAML header to process my text MArkdown or RMarkdown documents. Having a separate YAML header as well as plain $\LaTeX$ file to add custom macros make it easy to define a common template for a series of handouts.
+Finally, a long time ago (if memory serves it was in 2009), I was also inspired by Kieran Healy's own template and devised a simple Xe$\LaTeX$ article-based Pandoc template which uses another set of great fonts:
 
-Lately, I've used the Eisvogel template for some handout. It works great, its design favors simple (sans) defaults, but I don't really like the default settings for code chunks, for example. In the meantime, I wrote my own custom template to export Org file to Latex Tufte handout via Pandoc. I also have a similar workflow for Md -> Tex export, without using the Tufte handout Latex class.
+```latex
+\usepackage[xetex,
+            colorlinks=true,
+            urlcolor=BlueViolet,
+            citecolor=greeny,
+            filecolor=,
+            linkcolor=greeny,
+            plainpages=false,
+            pdfpagelabels,
+            bookmarksnumbered,
+            pdftitle={\mytitle},
+            %pagebackref,
+            pdfauthor={\myauthor},
+            pdfkeywords={\mykeywords}]{hyperref}
+
+\setromanfont[Mapping={tex-text},Numbers={OldStyle},%
+              Ligatures={Common}]{Minion Pro}
+\setsansfont[Mapping={tex-text},Scale=0.9]{Myriad Pro}
+\setmonofont[Mapping=tex-text,Colour=AA0000,Scale=0.9]{Inconsolata}
+```
+
