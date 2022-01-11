@@ -34,7 +34,7 @@ marginparwidth=6.5cm]{geometry}
 \renewcommand{\footnote}[1]{\let\thesidenote\relax\sidenotetext{#1}}
 ```
 
-Finally, a long time ago (if memory serves it was in 2009), I was also inspired by Kieran Healy's own template and devised a simple Xe$\LaTeX$ article-based Pandoc template which uses another set of great fonts:
+Finally, a long time ago (if memory serves it was in 2009), I got inspired by Kieran Healy's [own templates](https://github.com/kjhealy/pandoc-templates) and I devised a simple Xe$\LaTeX$ article-based Pandoc template which used another set of great fonts:[^1]
 
 ```latex
 \usepackage[xetex,
@@ -57,3 +57,45 @@ Finally, a long time ago (if memory serves it was in 2009), I was also inspired 
 \setmonofont[Mapping=tex-text,Colour=AA0000,Scale=0.9]{Inconsolata}
 ```
 
+Today, I decided to rehabilitate this template using a much simpler Pandoc template, and to replace the Fira font triumvirate with the above settings. Rather than writing a separate YAML header, I put the header directly into the Markdown file.
+
+```markdown
+---
+mainfont: Minion Pro
+sansfont: Myriad Pro
+monofont: Fira Code
+mathfont: STIX Two Math
+monofontoptions: [Scale = 0.8, Numbers = Lining, BoldFont = Fira Code Medium, Contextuals = Alternate]
+mainfontoptions: [Numbers = OldStyle, Ligatures = Rare]
+mathfontoptions: [Scale = MatchLowercase]
+fontsize: 9pt
+linestretch: 1
+classoption: [svgnames]
+lang: fr-FR
+citecolor: DarkSlateGrey
+urlcolor:  SlateGrey
+linkcolor: SlateGrey
+link-citations: true
+bibliography: /home/chl/Documents/notes/references.bib
+csl: apa-fr-provost.csl
+header-includes:
+    - \defaultfontfeatures{Extension = .otf}
+    - \usepackage{fontawesome}
+    - \usepackage{lstfiracode}
+    - \usepackage{setspace}
+    - \AtBeginEnvironment{quote}{\sffamily\raggedright\frenchspacing\setstretch{1.0}}
+    - >
+      \lstset{basicstyle=\small\ttfamily,
+      style=FiraCodeStyle,
+      commentstyle=\color{DarkSlateGrey},
+      frame = single,
+      rulecolor = \color{LightSlateGrey}}
+---
+```
+
+Here is a side by side preview of both variants (Adobe fonts on the left, Fira on the right):
+
+{{< fluid_imgs "pure-u-1-2|/img/template_adobe.png"
+               "pure-u-1-2|/img/template_fira.png" >}}
+
+[^1]: See also [What best combination of fonts for Serif, Sans, and Mono do you recommend?](https://tex.stackexchange.com/questions/9533/what-best-combination-of-fonts-for-serif-sans-and-mono-do-you-recommend)
