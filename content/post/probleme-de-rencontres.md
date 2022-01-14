@@ -2,7 +2,7 @@
 title: "Un problème de rencontres"
 date: 2022-01-14T20:17:44+01:00
 draft: true
-tags: ["maths"]
+tags: ["math"]
 categories: ["2022"]
 ---
 
