@@ -12,5 +12,26 @@ The total number of objects to be considered is $N=n!$, by definition. All those
 
 $$ S_j = \frac{{n \choose j}(n-j)!}{n!} = \frac{1}{j!}. $$
 
+Riordan relies on symbolic development (pp. 52-53) to show that:
+
+$$
+\begin{align}
+p_n(0) &= 1 - S_1 + S_2 - S_3 + \dots + (-1)^nS_n\cr
+       &= 1 - 1 + \frac{1}{2!} - \frac{1}{3!} + \dots + \frac{(-1)^n}{n!}
+\end{align}
+$$
+
+and also that:
+
+$$
+\begin{align}
+p_n(k) &= S_k - (k+1)S_{k+1} + {k+2 \choose 2}S_{k+2} - \dots + (-1)^{n-k}{n \choose k}S_n\cr
+       &= \frac{1 - 1 + \frac{1}{2!} - \dots + \frac{(-1)^{n-k}}{(n-k)!}}{k!} \cr
+       &= \frac{p_{n-k}(0)}{k!}
+\end{align}
+$$
+
+The above indicates that all probabilities are determined by $p_n(0)$ which is the truncated exponential series $e^{-1}$, whose mean is $S_1=1$. For large $n$, the distribution is approximated by a Poisson distribution with mean 1 since $p_n(k) \approx e^{-1}/k!$.
+
 [^1]: Riordan, John. _Introduction to Combinatorial Analysis_. Dover Publications Inc., 2002.
 [^2]: An $\mathcal{O}(N)$ algorithm to find a particular derangement of a sequence of $n$ items consists in dividing the original sequence in pairs of items and then swap each item from each pair; if $n$ is odd the last pair must be swapped twice, which means there are at most $n/2+1$ swaps. It does not help generating a random derangement, but it finds the derangement with the least perturbation in lexicographic order.
