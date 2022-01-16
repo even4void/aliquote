@@ -1,7 +1,7 @@
 ---
 title: "Un problème de rencontres"
 date: 2022-01-14T20:17:44+01:00
-draft: true
+draft: false
 tags: ["math"]
 categories: ["2022"]
 ---
@@ -31,7 +31,8 @@ p_n(k) &= S_k - (k+1)S_{k+1} + {k+2 \choose 2}S_{k+2} - \dots + (-1)^{n-k}{n \ch
 \end{align}
 $$
 
-The above indicates that all probabilities are determined by $p_n(0)$ which is the truncated exponential series $e^{-1}$, whose mean is $S_1=1$. For large $n$, the distribution is approximated by a Poisson distribution with mean 1 since $p_n(k) \approx e^{-1}/k!$.
+The above indicates that all probabilities are determined by $p_n(0)$ which is the truncated exponential series $e^{-1}$,[^3] whose mean is $S_1=1$. For large $n$, the distribution is approximated by a Poisson distribution with mean 1 since $p_n(k) \approx e^{-1}/k!$.
 
 [^1]: Riordan, John. _Introduction to Combinatorial Analysis_. Dover Publications Inc., 2002.
 [^2]: An $\mathcal{O}(N)$ algorithm to find a particular derangement of a sequence of $n$ items consists in dividing the original sequence in pairs of items and then swap each item from each pair; if $n$ is odd the last pair must be swapped twice, which means there are at most $n/2+1$ swaps. It does not help generating a random derangement, but it finds the derangement with the least perturbation in lexicographic order.
+[^3]: Recall that well-known Taylor and Maclaurin series includes $e^x = 1 + x + \frac{x^2}{2!} + \frac{x^3}{3!} + \dots + \frac{x^n}{n!} = \sum_{n=0}^\infty \frac{x^n}{n!}$ for all $x$. A truncated series is just an approximation of an infinite series using some maximum for the series. For instance, in the case of a geometric series, $1 + t + t^2 + t^3 + \dots = \sum_{n=0}^\infty t^n$, we know that when $\|t\|<1$, the solution converges to $\frac{1}{1-t}$. Instead of this, we could consider $\sum_{n=0}^N t^n$, which can be evaluated numerically.
