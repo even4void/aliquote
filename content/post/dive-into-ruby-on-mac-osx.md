@@ -2,11 +2,11 @@
 title: "Dive into Ruby on Mac OS X"
 date: 2009-12-01T08:30:34+01:00
 draft: false
-tags: ["apple", "ruby"]
+tags: ["apple"]
 categories: ["2009"]
 ---
 
-I would like to be able to use different versions of Ruby without getting in trouble with load paths. I currently have two versions of Ruby installed on my system. 
+I would like to be able to use different versions of Ruby without getting in trouble with load paths. I currently have two versions of Ruby installed on my system.
 
 The base package comes with my Snow Leopard install:
 
@@ -18,7 +18,7 @@ It is installed as a Mac framework in `/System/Library/Frameworks/Ruby.framework
 
 ```
 $ ls -l /usr/bin/rub*
-lrwxr-xr-x  1 root  wheel  76 29 aoû 14:37 /usr/bin/ruby@ -> \ 
+lrwxr-xr-x  1 root  wheel  76 29 aoû 14:37 /usr/bin/ruby@ -> \
 ../../System/Library/Frameworks/Ruby.framework/Versions/Current/usr/bin/ruby
 ```
 
@@ -70,17 +70,17 @@ The problem is that I permanently encounter problems with my configuration. This
 ```
 $ irb
 irb(main):001:0> $"
-=> ["enumerator.so", "e2mmap.rb", "irb/init.rb", "irb/workspace.rb", "irb/context.rb", 
-"irb/extend-command.rb", "irb/output-method.rb", "irb/notifier.rb", "irb/slex.rb", 
-"irb/ruby-token.rb", "irb/ruby-lex.rb", "readline.bundle", "irb/input-method.rb", 
-"irb/locale.rb", "irb.rb", "prettyprint.rb", "pp.rb", "rubygems/rubygems_version.rb", 
-"rubygems/defaults.rb", "thread.bundle", "thread.rb", "rbconfig.rb", "rubygems/exceptions.rb", 
-"rubygems/requirement.rb", "rubygems/version.rb", "rubygems/dependency.rb", "rubygems/gem_path_searcher.rb", 
-"rubygems/user_interaction.rb", "rubygems/platform.rb", "rubygems/specification.rb", 
-"rubygems/source_index.rb", "rubygems/builder.rb", "stringio.bundle", "yaml/error.rb", 
-"syck.bundle", "yaml/ypath.rb", "yaml/basenode.rb", "yaml/syck.rb", "yaml/tag.rb", 
-"yaml/stream.rb", "yaml/constants.rb", "rational.rb", "date/format.rb", "date.rb", 
-"yaml/rubytypes.rb", "yaml/types.rb", "yaml.rb", "rubygems/config_file.rb", "rubygems/custom_require.rb", 
+=> ["enumerator.so", "e2mmap.rb", "irb/init.rb", "irb/workspace.rb", "irb/context.rb",
+"irb/extend-command.rb", "irb/output-method.rb", "irb/notifier.rb", "irb/slex.rb",
+"irb/ruby-token.rb", "irb/ruby-lex.rb", "readline.bundle", "irb/input-method.rb",
+"irb/locale.rb", "irb.rb", "prettyprint.rb", "pp.rb", "rubygems/rubygems_version.rb",
+"rubygems/defaults.rb", "thread.bundle", "thread.rb", "rbconfig.rb", "rubygems/exceptions.rb",
+"rubygems/requirement.rb", "rubygems/version.rb", "rubygems/dependency.rb", "rubygems/gem_path_searcher.rb",
+"rubygems/user_interaction.rb", "rubygems/platform.rb", "rubygems/specification.rb",
+"rubygems/source_index.rb", "rubygems/builder.rb", "stringio.bundle", "yaml/error.rb",
+"syck.bundle", "yaml/ypath.rb", "yaml/basenode.rb", "yaml/syck.rb", "yaml/tag.rb",
+"yaml/stream.rb", "yaml/constants.rb", "rational.rb", "date/format.rb", "date.rb",
+"yaml/rubytypes.rb", "yaml/types.rb", "yaml.rb", "rubygems/config_file.rb", "rubygems/custom_require.rb",
 "rubygems.rb", "etc.bundle", "fileutils.rb"]
 ```
 
