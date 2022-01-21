@@ -1,7 +1,7 @@
 ---
 title: "ArXiving on December 2021"
 date: 2022-01-20T10:09:25+01:00
-draft: false
+draft: true
 tags: ["readings", "arxiv"]
 categories: ["2022"]
 ---

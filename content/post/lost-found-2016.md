@@ -1,6 +1,6 @@
 ---
 title: "lost+found 2016"
-date: 2017-01-21T19:28:46+01:00
+date: 2017-12-21T19:28:46+01:00
 draft: false
 tags: ["this", "emacs"]
 categories: ["2017"]
@@ -40,7 +40,7 @@ As in the previous case, Docker will pull the relevant image from the internet, 
 CONTAINER ID        IMAGE               COMMAND                  CREATED             STATUS              PORTS                         NAMES
 706c4d957b24        nginx               "nginx -g 'daemon off"   13 minutes ago      Up 13 minutes       0.0.0.0:80->80/tcp, 443/tcp   webserver
 ```
-(For whatever reason, I couldn't check that ngynx is working on `http://localhost` using Emacs `eww` and I had to launch my browser.) 
+(For whatever reason, I couldn't check that ngynx is working on `http://localhost` using Emacs `eww` and I had to launch my browser.)
 
 To stop the running container, we just use the following command:
 
@@ -71,7 +71,7 @@ Some key features are highlighted below:
 - *Helm and which key:* I think Spacemacs is just an incredible idea (for Emacs users at least) because it offers a great UI while maintaining availbale key bindings. You don't need to learn anything except that you just want to forget about your `.emacs` or `init.el` config file, and replace it with `.spacemacs` (or [something else][emacsd] if you like). Now, you get additional pleasure: `M-m` (so-called [leader key][leader]) will trigger a dedicated Helm mini-buffer
 
     ![Spacemacs and which-key](/img/2016-05-05-12-26-28.png)
-    
+
     Beside Helm completion mini-buffer, Spacemacs also provide so-called micro states, which allows to perform quick repetitive action, e.g. dealing with buffers, by simple key presses.
 
 - *Documentation:* The documentation is, well, just great. Everything comes as [Org][org]-formatted files, and it is readily available *via* `M-m h SPC` (or, we can just press the `F1` key to get a series of help-related commands).
