@@ -6,7 +6,7 @@ tags: ["readings", "arxiv"]
 categories: ["2022"]
 ---
 
-Here are a few papers that I read last month, in the CS and Stat category.
+Here are a few papers that I read for the most part last month, in the CS and Stat category.
 
 ### Type Stability in Julia: Avoiding Performance Pathologies in JIT Compilation (https://arxiv.org/abs/2109.01950)
 
@@ -17,7 +17,12 @@ I still haven't really gotten into the Julia language. I follow the news here an
 
 Just out of curiosity because I was reading [Introduction to Classical and Quantum Computing](https://www.thomaswong.net/introduction-to-classical-and-quantum-computing.pdf) (PDF) by Thomas G. Wong, I fetched this paper on quantum computing for statisticians.
 
+
 ### Aitchison's Compositional Data Analysis 40 Years On: A Reappraisal (https://arxiv.org/abs/2201.05197)
 
 It's been a long since I read a paper written by Michael Greenacre.
 
+
+### How ISO C became unusable for operating systems development (https://arxiv.org/abs/2201.07845)
+
+The take-away message is that the primary reason why ISO C is poorly designed for OS development relates to a "design approach in the ISO standard that has given priority to certain kinds of optimization over both correctness and the 'high-level assembler' intentions of C, even while the latter remain enshrined in the rationale."
