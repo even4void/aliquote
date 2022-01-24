@@ -26,3 +26,6 @@ It's been a long since I read a paper written by Michael Greenacre.
 ### How ISO C became unusable for operating systems development (https://arxiv.org/abs/2201.07845)
 
 The take-away message is that the primary reason why ISO C is poorly designed for OS development relates to a "design approach in the ISO standard that has given priority to certain kinds of optimization over both correctness and the 'high-level assembler' intentions of C, even while the latter remain enshrined in the rationale."
+
+
+### Marginal Effects for Non-Linear Prediction Functions (https://arxiv.org/abs/2201.08837)
