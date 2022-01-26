@@ -6,7 +6,7 @@ tags: ["vim", "tex"]
 categories: ["2022"]
 ---
 
-I rarely have to write $\LaTeX$ these days. I usually let Pandoc do the harder stuff, and simply write my plain text documents using Org or Markdown markup language. I used to rely on $\LaTeX$ in the case of R+Sweave/knitr report, but I rarely have to write statistical report these days. However, I may happen to write [plain $\TeX$](/post/latex-beamer-21-century/) or edit $\LaTeX$ documents, in which case I appreciate a solid workflow to edit, compile and keep my text in sync with the PDF renderer.
+I rarely have to write $\LaTeX$ these days. I usually let Pandoc do the harder stuff, and simply write my plain text documents using Org or Markdown markup language. I used to rely on $\LaTeX$ in the case of R+Sweave/knitr reports, but I rarely have to write any statistical report these days. However, I may happen to write [plain $\TeX$](/post/latex-beamer-21-century/) or edit $\LaTeX$ documents, in which case I appreciate a solid workflow to edit, compile and keep my text in sync with the PDF renderer.
 
 Under Emacs I had everything I needed thanks to Auctex and Pandoc, but under Vim I used the bare minimum so far, that is native syntax highlighting and Vim motion. I don't use snippets but I have a set of `iabbrev` that alleviates the need to write cumbersome and recurrent $\LaTeX$ expressions:
 
@@ -26,9 +26,9 @@ iabbrev texttt@ \texttt{DATA}<Esc>?DATA<CR>cw
 iabbrev frac@ \frac{DATA}{}<Esc>?DATA<CR>cw
 ```
 
-Enters [Vimtex](https://github.com/lervag/vimtex) which I discovered when I was reading [How I'm able to take notes in mathematics lectures using LaTeX and Vim](https://castel.dev/post/lecture-notes-1/) a while ago. Note that the vimtex+[zathura](/post/nyxt-browser/) is the winning combo here. Contrary to the author of the blog post, I don't use concealing, nor snippets (see above).
+Enters [Vimtex](https://github.com/lervag/vimtex) which I discovered when I was reading [How I'm able to take notes in mathematics lectures using LaTeX and Vim](https://castel.dev/post/lecture-notes-1/) a while ago. Note that vimtex+[zathura](/post/nyxt-browser/) is the _winning combo_ here. Contrary to the author of the blog post, I don't use concealing, nor snippets (see above).
 
-Things I like: `]]` automagically close the current environment, you can toggle on/off a table of contents in a dedicated sidebar, the `%` matching operator is redefined to highlight opening and closing $\LaTeX$ delimiters, you can compile and preview your file with pre-defined mappings, and there are specific motion operators (e.g., `ic`, `id`, `ie`, `i$`). And on top of that, you can use reverse (Ctrl+click from Zathura) and forward (`<localleader>lr` from Vim) search. And it just works! See also this review: [A Complete Guide on Writing LaTeX with Vimtex in Neovim](https://jdhao.github.io/2019/03/26/nvim_latex_write_preview/).
+Things I like: `]]` automagically close the current environment, Bibtex keys and labels can be autocompleted using builtin omnicomplete (`C-x C-o`), you can toggle on/off a table of contents in a dedicated sidebar, the `%` matching operator is redefined to highlight opening and closing $\LaTeX$ delimiters, you can compile and preview your file with pre-defined mappings, and there are specific motion operators (e.g., `ic`, `id`, `ie`, `i$`). And on top of that, you can use reverse (Ctrl+click from Zathura) and forward (`<localleader>lr` from Vim) search. And it just works! Zathura is configured as the defaut PDF viewer, and all you have to do is to ensure that `synctex` is active when compiling your $\LaTeX$ document. This is already defined in Vimtex default options. See also this review: [A Complete Guide on Writing LaTeX with Vimtex in Neovim](https://jdhao.github.io/2019/03/26/nvim_latex_write_preview/). (Note that you no longer need to spawn a server since Neovim 0.5+.)
 
 To compile Knitr standalone documents, I use the following mapping:
 
@@ -47,5 +47,9 @@ $pdflatex = 'pdflatex -shell-escape -interaction=nonstopmode -synctex=1 -file-li
 $pdf_previewer = 'zathura';
 set_tex_cmds('-synctex=1 -interaction=nonstopmode -shell-escape %O %S');
 ```
+
+Finally, I use the [Bibtex extension](https://github.com/nvim-telescope/telescope-bibtex.nvim) for Telescope, which provides a nice alternative to [Helm-bibtex](https://github.com/tmalsburg/helm-bibtex) to display a list of available references (globally or in the current directory). Inserting the reference by pressing the enter key will take care of formatting the bibliographic key depending on the filetype (Markdown, Latex or plain text).
+
+![img](/img/2022-01-26-20-43-51.png)
 
 {{% music %}}Sonic Youth • _The World Looks Red_{{% /music %}}
