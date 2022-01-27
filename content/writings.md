@@ -22,6 +22,7 @@ Below is a list of what has been archived over the years on this site or on exte
 <td><em>Type</em></td>
 </tr>
 <tr><td><a href="/pub/vim-101.pdf">Vim 101</a></td><td>Aug 2020</td><td>en</td><td>done</td><td><i data-feather="file-text" width="12px" height="12px"></i></td></tr>
+<tr><td><a href="/pub/z.pdf">Z notes</a></td><td>Feb 2020</td><td>fr</td><td>todo</td><td><i data-feather="file-text" width="12px" height="12px"></i></td></tr>
 <tr><td><a href="/pub/impatient-emacs.pdf">Emacs pour l'impatient</a></td><td>Feb 2020</td><td>fr</td><td>canc</td><td><i data-feather="file-text" width="12px" height="12px"></i></td></tr>
 <tr><td><a href="/pub/ngs.pdf">RNA-Seq workshop</a></td><td>Feb 2020</td><td>en</td><td>done</td><td><i data-feather="file-text" width="12px" height="12px"></i></td></tr>
 <tr><td><a href="/articles/stata-sk">Stata Starter Kit</a></td><td>Sep 2019</td><td>fr</td><td>todo</td><td><i data-feather="link" width="12px" height="12px"></i></td></tr>
