@@ -32,7 +32,7 @@ I still use C because this is one of the first languages I learned when I was in
 ### Marginal Effects for Non-Linear Prediction Functions (https://arxiv.org/abs/2201.08837)
 
 
-#### Sidenote
+### Sidenote
 
 At the time of this writing you can replace the x in ar*x*iv URL to get a pretty HTML rendering of the article. See below for the second article discussed above.
 
