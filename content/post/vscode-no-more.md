@@ -16,8 +16,18 @@ I have a long [series of posts] about how I configured Neovim during last summer
 - [nvim-dap], [nvim-dap-ui], [nvim-dap-virtual-text], for debugging. I only trigger `dap` UI on demand, but I have virtual text activated automagically when I started a debugging session. I use it mostly for Python scripts. As an update to a [previous micro-post], I even get this working for Haskell.
 - [neogen], because everyone likes `docstrings`.
 
+Below are some demos (Python, Rust, Haskell) of what's available in a modern Vim world nowadays.
 
+{{< fluid_imgs
+"pure-u-1-3|/img/2022-02-03-21-51-22.png"
+"pure-u-1-3|/img/2022-02-03-21-52-45.png"
+"pure-u-1-3|/img/2022-02-03-21-55-37.png" >}}
 
+- Left: highlight `dap` debugging with virtual text and LSP error/warning highlights in the status line (syntax and formatting errors deliberately added);
+- Middle: Rust with inlay hints and code lens for test cases;
+- Right: Haskell with [Wingman] code action.
+
+Happy coding in Neovim!
 
 {{% music %}}Memory Cassett • _Asleep at a Party_{{% /music %}}
 
@@ -33,3 +43,4 @@ I have a long [series of posts] about how I configured Neovim during last summer
 [nvim-dap-virtual-text]: https://github.com/theHamsta/nvim-dap-virtual-text
 [previous micro-post]: /micro/2022-01-28-18-09-39/
 [neogen]: https://github.com/danymat/neogen
+[Wingman]: https://haskellwingman.dev/
