@@ -68,4 +68,9 @@ And here is the result:
 
 Next step would be to ask how many of those "artificial" words are real words? In other words, how many of the above pseudo-words are found in your Unix or Mac dictionary (`/usr/share/dict/french`)?
 
+{{% alert note %}}
+<small>[2022-02-03]</small><br>
+See also [Wordle letters](https://leancrew.com/all-this/2022/01/wordle-letters/) for more "classical", Perl-based, approaches to filtering dict files on Linux or Mac.
+{{% /alert %}}
+
 {{% music %}}Neon Indian • _Should Have Taken Acid With You_{{% /music %}}
