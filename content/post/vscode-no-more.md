@@ -1,7 +1,7 @@
 ---
 title: "No more VS Code"
 date: 2022-02-03T10:23:13+01:00
-draft: true
+draft: false
 tags: ["vim"]
 categories: ["2022"]
 ---
