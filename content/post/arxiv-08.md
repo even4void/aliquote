@@ -31,6 +31,8 @@ I still use C because this is one of the first languages I learned when I was in
 
 ### Marginal Effects for Non-Linear Prediction Functions (https://arxiv.org/abs/2201.08837)
 
+### From p-Values to Posterior Probabilities of Hypothesis (https://arxiv.org/abs/2202.06864)
+
 
 ### Sidenote
 
