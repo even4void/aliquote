@@ -22,7 +22,7 @@ vim.cmd[[nnoremap <silent>       gz :MagmaEvaluateLine<CR>]]
 
 I know there are other actions available, e.g. for reevaluating a certain code chunk or clearing current output, but I don't need them often.
 
-The current Jupyter kernel I installed are common-lisp, haskell,	iclojure, ipurescript, ir, javascript, python3, racket, rust, stata, wolframlanguage13. The hardest part was to get CL kernel working since I kept getting an error with ironclad when using quicklisp alone. Finally, everything went fine with [Roswell].
+Following the suggestions available on the Jupyter [project wiki], I installed the following kernels: common-lisp, haskell,	iclojure, ipurescript, ir, javascript, python3, racket, rust, stata, wolframlanguage13. The hardest part was to get CL kernel working since I kept getting an error with ironclad when using quicklisp alone. Finally, everything went fine with [Roswell].
 
 
 [neoterm]: https://github.com/kassio/neoterm
@@ -32,6 +32,7 @@ The current Jupyter kernel I installed are common-lisp, haskell,	iclojure, ipure
 [Stata]: /post/stata-jupyter/
 [Magma]: https://github.com/dccsillag/magma-nvim
 [Roswell]: https://github.com/roswell/roswell
+[project wiki]: https://github.com/jupyter/jupyter/wiki/Jupyter-kernels
 
 {{% music %}}Tkay Maidza • _Onto Me_{{% /music %}}
 
