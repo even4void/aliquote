@@ -8,6 +8,8 @@ categories: ["2022"]
 
 Here are a few papers that I read over the past two months, in the CS and Stat category as usual.
 
+At the time of this writing you can replace the x in ar*x*iv URL to get a pretty HTML rendering of the article. See below for the second article discussed above.
+
 ### Type Stability in Julia: Avoiding Performance Pathologies in JIT Compilation (https://arxiv.org/abs/2109.01950)
 
 I still haven't really gotten into the Julia language. I follow the news here and there and I'm glad to know that there is now a native graphical backend, not just web output. The last time I tested Julia (v1.6), I found the runtime of a first script to be quite substantial, although I understand why that is the case. The language server is slow too, because of the initial indexing of the symbols contained in all the installed packages. Nevertheless, I think Julia has a future and I hope there will soon be a consolidated set of tools for statistical modeling, much like Frank Harrell's [rms](https://github.com/harrelfe/rms) package. As I said in a previous post, for the moment I want to investigate Racket and Lisp-like languages, or maybe Haskell, to see if they could provide a good fit for my own workflow (even if I rarely perform statistical analyses nowadays). Julia remains, however, an interesting approach to statistical computing nowadays.
@@ -26,12 +28,6 @@ The take-away message is that the primary reason why ISO C is poorly designed fo
 
 I still use C because this is one of the first languages I learned when I was in grad school (after Turbo Pascal, you named it). I like it because of its syntax and its simplicity, but I usually only write toy programs so I don't have to bother with all its "pitfalls" regarding low-level and hard-core programming. I don't use C++, but I'm rather interested in learning Rust because I like the tooling as well as [rust-analyzer](https://rust-analyzer.github.io/). Yet, I know it's a hard path.
 
-
-### Sidenote
-
-At the time of this writing you can replace the x in ar*x*iv URL to get a pretty HTML rendering of the article. See below for the second article discussed above.
-
-![preview](/img/2022-02-02-21-02-17.png)
 
 {{% music %}}Laura-Mary Carter • _Town Called Nothing_{{% /music %}}
 
