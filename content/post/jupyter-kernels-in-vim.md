@@ -20,10 +20,28 @@ vim.cmd[[xnoremap <silent>       gz :<C-u>MagmaEvaluateVisual<CR>]]
 vim.cmd[[nnoremap <silent>       gz :MagmaEvaluateLine<CR>]]
 ```
 
-I know there are other actions available, e.g. for reevaluating a certain code chunk or clearing current output, but I don't need them often.
+I know there are other actions available, e.g. for reevaluating a certain code chunk or clearing current output, but I don't need them often. Combined with LSP, however, this plugin provides decent IDE-like features, with the comfort of Vim editing.
+
+{{< fluid_imgs
+"pure-u-1-3|/img/2022-02-26-20-26-38.png"
+"pure-u-1-3|/img/2022-02-28-20-30-13.png"
+"pure-u-1-3|/img/2022-02-26-20-27-10.png" >}}
 
 Following the suggestions available on the Jupyter [project wiki], I installed the following kernels: common-lisp, haskell,	iclojure, ipurescript, ir, javascript, python3, racket, rust, stata, wolframlanguage13. The hardest part was to get CL kernel working since I kept getting an error with ironclad when using quicklisp alone. Finally, everything went fine with [Roswell].
 
+Note that you can still send the whole buffer to a terminal and run the appropriate program, thanks to `ftplugin` directives. For instance, I have the following settings for Python, defined in `after/ftplugin/python.vim`:
+
+```vim
+setlocal makeprg=python3\ %
+setlocal errorformat=
+
+nmap gZ :13 split term://python3 %<cr>
+nmap <buffer> k :!pydoc3 <cword><cr>
+
+ia pp print("")<Left>
+```
+
+I use more or less similar mappings for Haskell, C, Rust and Racket.
 
 [neoterm]: https://github.com/kassio/neoterm
 [iron]: https://github.com/hkupty/iron.nvim
