@@ -36,7 +36,7 @@ setlocal makeprg=python3\ %
 setlocal errorformat=
 
 nmap gZ :13 split term://python3 %<cr>
-nmap <buffer> k :!pydoc3 <cword><cr>
+nmap <buffer><localleader>k :!pydoc3 <cword><cr>
 
 ia pp print("")<Left>
 ```
