@@ -1,7 +1,7 @@
 ---
 title: "Vim and clangd"
 date: 2022-03-08T21:35:53+01:00
-draft: true
+draft: false
 tags: ["vim", "clang"]
 categories: ["2022"]
 ---
@@ -10,7 +10,9 @@ Bioinformatics is what I officially do for a living nowadays, along web dev -- y
 
 I removed a few unused packages, as usual. I tried a few other ones, because why not. The most surprising finding was that the successor of ['hrsh7th/nvim-compe'] (now defunct), which is what I use as a basic completion engine for all things related to LSP, buffer and command-line management, is [nvim-cmp]. It is maintained by the same author but this plugin is just asking us to install a ton of additional plugins (e.g., one for LSP stuff, one for buffer, one for `:` stuff, and so on). I can understand why (one target, one package), but I find it weird that we can't get a unified UI for things like completion. After all, we only have to manage one package to get all LSP settings, isn't it? Anyway, I tried this approach and just gave up: too much noise (why do we need to enable a snippet engine system, even if we don't need one, BTW?), not that many improvements over my bare use of completion needs. I reverted back to `nvim-compe`.
 
-Later on, I wanted to test my c/c++ config more extensively. I came across a lot of posts dealing with how to setup Vim or Neovim and LSP/Clangd. I already had the bare config for ['neovim/nvim-lspconfig'], which is (mostly):
+Later on, I wanted to test my c/c++ config more extensively, with two prerequisites: It should rely on clang-based workflow, and it should support both standard Makefile (for C) and CMake (for C and C++, but since I don't do C++ the later is mostly to ensure that I can compile others' codebase).
+
+I came across a lot of posts dealing with how to setup Vim or Neovim and LSP/Clangd. I already had the bare config for ['neovim/nvim-lspconfig'], which is (mostly):
 
 ```lua
 local nvim_lsp = require('lspconfig')
@@ -58,10 +60,26 @@ for _, lsp in ipairs(servers) do
 end
 ```
 
-And, that's it as I said! I mean, I get all the things I need: diagnostics, goto definition/references
+And, that's it: As I said in a [previous post], the built-in LSP tools together with a few well crafted package usually make my day. I mean, I get all the things we usually need form an IDE: diagnostics, goto definition/references, and so on. And with the progress of code actions, at least in Rust, C and Haskell, we will soon get powerful refactoring tools. Now, what additional packages are useful in the context of LSP/Clangd. Well, [clangd-extensions] comes to the rescue, especially by adding inlay hints (you'll need Clang-13 at least), type hierarchy and AST, and more.
+
+Regarding Makefile and CMake, I rely on bare Vim config in after/ftplugin/c.vim, namely:
+
+```
+compiler gcc
+set makeprg=cd\ build\ &&\ cmake\ -DCMAKE_BUILD_TYPE=debug\ -DCMAKE_EXPORT_COMPILE_COMMANDS=1\ ..\ &&\ cmake\ --build\ .
+
+autocmd QuickFixCmdPost [^l]* nested cwindow
+autocmd QuickFixCmdPost    l* nested lwindow
+
+nmap gZ :10 split term://zig cc % && ./a.out<cr>
+```
+
+I use make in case I'm working with CMake (this assumes there's a already a build directory that was defined beforehand; and you'll need to link the `compile_command.json` file at the root directory). For standard Makefile-based project, I use `:!make` from Vim command prompt. Lastly, I tend to use the same mapping, `gZ`, across multiples langauges to just fire a quick terminal and run the program.
 
 {{% music %}}Midnight Sister • _Satellite_{{% /music %}}
 
 ['hrsh7th/nvim-compe']: https://github.com/hrsh7th/nvim-compe
 [nvim-cmp]: https://github.com/hrsh7th/nvim-cmp
 ['neovim/nvim-lspconfig']: https://github.com/neovim/nvim-lspconfig
+[previous post]: /post/vscode-no-more/
+[clangd-extensions]: https://github.com/p00f/clangd_extensions.nvim

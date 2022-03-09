@@ -27,6 +27,11 @@ Below are some demos (Python, Rust, Haskell) of what's available in a modern Vim
 - Middle: Rust with inlay hints and code lens for test cases;
 - Right: Haskell with [Wingman] code action.
 
+{{% alert note %}}
+<small>[2021-03-08]</small><br>
+See also [Neovim LSP to replace VSCode](https://dev.to/casonadams/neovim-lsp-to-replace-vscode-n8c), or [Neovim and Rust](https://sharksforarms.dev/posts/neovim-rust/), which was featured on the [Rust blog](https://blog.rust-lang.org/2022/02/21/rust-analyzer-joins-rust-org.html) this month.
+{{% /alert %}}
+
 Happy coding in Neovim!
 
 {{% music %}}Memory Cassett • _Asleep at a Party_{{% /music %}}
