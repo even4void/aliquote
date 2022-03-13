@@ -6,11 +6,13 @@ tags: ["misc"]
 categories: ["2022"]
 ---
 
-I use Cmus as my main media player, and occasionally mpv. I'm pretty happy with my setup. Everything runs from a terminal, no fancy UI, no distraction, just the raw output. My music library is something like 62 Go of MP3 (and some OGG), but not everything is in order. I mean, I miss a lot of tags for some albums that I ripped from my personal CD collection. Here comes the idea of auto-tagging everything. I tried three solutions. Here are the results.
+I use [Cmus] as my main media player, and occasionally [mpv] although I mostly use the later for video playback (including [streamlink]). I'm pretty happy with my current setup. Everything runs from a terminal, there's no fancy UI nor unwanted distraction, just the raw output. My music library actually weighs about 62 Go and it's full of MP3, some OGG as well as some videos, but not everything is in order. I mean, I miss a lot of tags for some albums that I ripped from my personal CD collection. Here comes the idea of auto-tagging everything. I tried three solutions. Here are my very first impressions.
 
-At first, I was impressed by beets, especially since it is a command-line only utility, which comes with many add-ons (aka plugins). I configured its settings based on the documentation and what I could grabbed from the interweb. Then I tested it on a specific folder in my database.
+I tested all three software on a specific folder in my database, which I know is not the easiest one, since it features a mix of A Certain Ratio and Joy Division's live shows, among others. And I warmly recommend everything from [The Factory Records].
 
-Beets:
+### Beets
+
+At first, I was impressed by [beets], especially since it is a command-line only utility, which comes with many add-ons (aka plugins). I configured its settings based on the documentation and what I could find on the intertube.
 
 ```shell
 Tagging:
@@ -68,11 +70,13 @@ Candidates:
 par Dino (6.4%) (id, unmatched tracks, artist, ...) (bandcamp, Digital Media, 2018, FR, Revue & Corrigée)
 # selection (default 1), Skip, Use as-is, as Tracks, Group albums,
 Enter search, enter Id, aBort, plaY?
-
-
 ```
 
-Onetagger:
+It is nice that it asks us to decide what to do next. However, it may soon become cumbersome for mass retagging. Moreover, the returned results are not always very accurate, even if the above example doesn't exemplify this claim. On the first run, the correct 2 CD set did not figure on the first position, although I don't why it is the case when I replicated the import process later.
+
+### Onetagger
+
+I came across this software by chance. I was surprised there was a Linux ready binary to download. The UI is quite nicely done, and it is easy to start the auto-tagging process. You must select one or more external sources, including iTunes (with limited queries) or Spotify (needs a free account). The results were quite deceptive. I got a lot of failed download from one source, and even if all queries to Apple Music were successful, I ended up with all ID3 infos removed from my tracks. Don't know why.
 
 ```shell
 --8<--------
@@ -97,5 +101,15 @@ Mar 12 20:57:35.101 INFO iTunes rate limit delay: 2957, module: onetagger::tagge
 Mar
 -------->8--
 ```
+
+### Picard
+
+MusicBrainz is a recognized platform for tagging.
+
+[Cmus]: /post/cmus/
+[mpv]: https://mpv.io/
+[streamlink]: https://streamlink.github.io/
+[beets]: https://beets.io/
+[The Factory Records]: https://www.ilikeyouroldstuff.com/news/40-years-of-factory-records
 
 {{% music %}}XXX • _XXX_{{% /music %}}
