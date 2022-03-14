@@ -1,7 +1,7 @@
 ---
 title: "Auto-tagging my music library"
 date: 2022-03-12T21:12:02+01:00
-draft: true
+draft: false
 tags: ["misc"]
 categories: ["2022"]
 ---
@@ -76,7 +76,7 @@ It is nice that it asks us to decide what to do next. However, it may soon becom
 
 ### Onetagger
 
-I came across this software by chance. I was surprised there was a Linux ready binary to download. The UI is quite nicely done, and it is easy to start the auto-tagging process. You must select one or more external sources, including iTunes (with limited queries) or Spotify (needs a free account). The results were quite deceptive. I got a lot of failed download from one source, and even if all queries to Apple Music were successful, I ended up with all ID3 infos removed from my tracks. Don't know why.
+I came across this software by chance. I was surprised there was a Linux ready binary to download. The UI is quite nicely done, and it is easy to start the auto-tagging process. You must select one or more external sources, including iTunes (with limited queries) or Spotify (needs a free account). The results were quite deceptive. I got a lot of failed downloads from one source, and even if all queries to Apple Music were okay (but not that successful), I ended up with all ID3 infos removed from my tracks. Don't know why.
 
 ```shell
 --8<--------
@@ -104,12 +104,15 @@ Mar
 
 ### Picard
 
-MusicBrainz is a recognized platform for tagging.
+[MusicBrainz] is a recognized platform for tagging. Picard uses its database to fetch track's tags, album cover, etc. It is easy to install on Ubuntu (you just have to add the recommended PPA and ask for `sudo apt update && sudo apt install picard`). Last time I gave it a try, I found it not so intuitive. But now I realize that (1) it is fast and (2) it provides reliable results. Deal.
+
+I yet have to tag my all library database. Wishing me luck, then!
 
 [Cmus]: /post/cmus/
 [mpv]: https://mpv.io/
 [streamlink]: https://streamlink.github.io/
 [beets]: https://beets.io/
 [The Factory Records]: https://www.ilikeyouroldstuff.com/news/40-years-of-factory-records
+[MusicBrainz]: https://musicbrainz.org/
 
-{{% music %}}XXX • _XXX_{{% /music %}}
+{{% music %}}Joy Bogat • _Sometimes_{{% /music %}}
