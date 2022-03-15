@@ -104,7 +104,85 @@ Mar
 
 ### Picard
 
-[MusicBrainz] is a recognized platform for tagging. Picard uses its database to fetch track's tags, album cover, etc. It is easy to install on Ubuntu (you just have to add the recommended PPA and ask for `sudo apt update && sudo apt install picard`). Last time I gave it a try, I found it not so intuitive. But now I realize that (1) it is fast and (2) it provides reliable results. Deal.
+[MusicBrainz] is a recognized platform for tagging. Picard uses its database to fetch track's tags, album cover, etc. It is easy to install on Ubuntu (you just have to add the recommended PPA and ask for `sudo apt update && sudo apt install picard`). Last time I gave it a try, I found it not so intuitive. But now I realize that (1) it is fast and (2) it provides reliable results. It even added the lyrics. Deal.
+
+```shell
+~/.../A Certain Ratio/Live At Leigh Rock Festival '79 [Disc 1] % id3v2 -l 1-13\ Faceless.mp3
+id3v1 tag info for 1-13 Faceless.mp3:
+Title  : Faceless                        Artist: A Certain Ratio
+Album  : Live at Leigh Rock Festival 19  Year: 2006, Genre: Rock (17)
+Comment:                                 Track: 13
+id3v2 tag info for 1-13 Faceless.mp3:
+TIT2 (Title/songname/content description): Faceless
+TPE1 (Lead performer(s)/Soloist(s)): A Certain Ratio
+TRCK (Track number/Position in set): 13/18
+TALB (Album/Movie/Show title): Live at Leigh Rock Festival 1979
+TPOS (Part of a set): 1/2
+TCON (Content type): Rock (17)
+TBPM (BPM (beats per minute)): 0
+TCMP ():  frame
+TMED (Media type): CD
+TDAT (Date): 2407
+TORY (Original release year): 2006
+TPUB (Publisher): Ozit
+TYER (Year): 2006
+IPLS (Involved people list): ,
+TXXX (User defined text information): (SCRIPT): Latn
+TPE2 (Band/orchestra/accompaniment): Various Artists
+TSO2 ():  frame
+TSOP ():  frame
+TXXX (User defined text information): (ASIN): B000F9RME8
+TXXX (User defined text information): (originalyear): 2006
+TXXX (User defined text information): (ARTISTS): A Certain Ratio
+UFID (Unique file identifier): http://musicbrainz.org, 36 bytes
+TXXX (User defined text information): (MusicBrainz Album Status): official
+TXXX (User defined text information): (MusicBrainz Album Release Country): GB
+TXXX (User defined text information): (MusicBrainz Album Type): album/compilation/live
+TXXX (User defined text information): (Acoustid Id): fcbc4ae0-1982-41d7-9961-1da4663c3021
+TXXX (User defined text information): (MusicBrainz Album Id): e01790b2-77ba-4b7d-8383-118a6cdc700d
+TXXX (User defined text information): (MusicBrainz Artist Id): 73577e86-4da8-4d76-949d-34c757e053be
+TXXX (User defined text information): (MusicBrainz Album Artist Id): 89ad4ac3-39f7-470e-963a-56509c546377
+TXXX (User defined text information): (MusicBrainz Release Group Id): 0ac9fd10-73e7-3d48-b1e0-c45b788130bb
+TXXX (User defined text information): (MusicBrainz Release Track Id): 34e13319-80ff-32ca-9d07-73675a0d37b0
+USLT (Unsynchronized lyric/text transcription): ()[XXX]: Tekst piosenki:
+Go on, close the door
+Leave me alone again
+Hide the sun, bring me darkness
+Let the walls come swallow me
+
+I breathe in deep and taste my senses
+For one last time, I know I'll be free
+I breathe in deep, vigilant senses
+I'm not enslaved, I'll fly again in my dreams
+
+Feeling sad and blue and lost and cold
+Counting hours, building towers, watch them all collapse
+
+I breathe in deep and taste my senses
+For one last time, I know I'll be free
+I breathe in deep, vigilant senses
+I'm not enslaved, I'll fly again in my dreams
+
+All the cowards let's step up and speak our minds, will you listen?
+Be the judge and face the fact. How you and me are both to blame
+
+My spirit fades, my need remains untouched
+My night has come, and it will be my last
+
+I breathe in deep and taste my senses
+For one last time, I know I'll be free
+I breathe in deep, vigilant senses
+I'm not enslaved, I'll fly again in my dreams
+
+I breathe in deep and taste my senses
+For one last time, I know I'll be free
+I breathe in deep, vigilant senses
+I'm not enslaved, I'll fly again in my dreams
+Dodaj interpretację do tego tekstu »
+
+Historia edycji tekstu
+APIC (Attached picture): (e)[, 3]: image/jpeg, 166930 bytes
+```
 
 I yet have to tag my all library database. Wishing me luck, then!
 
