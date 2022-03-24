@@ -29,7 +29,7 @@ CL-USER(11): (power-set '(1 2 3))
 (nil (3) (2) (2 3) (1) (1 3) (1 2) (1 2 3))
 ```
 
-What's more interesting is that it worked with characters as well, so that we can compose an infinite number of words given a constrained alphabet. In the following example, I will consider the [most frequently used letters](https://fr.wikipedia.org/wiki/Fr%C3%A9quence_d%27apparition_des_lettres_en_fran%C3%A7ais) in French:
+What's more interesting is that it works with characters as well, so that we can compose an infinite number of words given a constrained alphabet. In the following example, I will consider the [most frequently used letters](https://fr.wikipedia.org/wiki/Fr%C3%A9quence_d%27apparition_des_lettres_en_fran%C3%A7ais) in French:
 
 ```lisp
 (defparameter *set* '(#\e #\a #\i #\s #\n #\r #\t #\o))
