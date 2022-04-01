@@ -33,10 +33,10 @@ The straightforward way to handle other font families in a $\LaTeX$ processed th
 So, just put
 
 ```latex
-\usepackage{fontspec, xltxtra} 
-\setmainfont{Apple Garamond} 
-\setsansfont[Scale=0.86]{Fontin Sans} 
-\setmonofont[Scale=0.8]{Menlo} 
+\usepackage{fontspec, xltxtra}
+\setmainfont{Apple Garamond}
+\setsansfont[Scale=0.86]{Fontin Sans}
+\setmonofont[Scale=0.8]{Menlo}
 ```
 
 in your preamble, and you'll get a nice document with Garamond for Serif text. Note that `xltxtra` loads `fontspec` by default. Here is how it looks:
@@ -47,7 +47,7 @@ Optional arguments can be passed to `\set*font`, or globally with `fontspec`: `M
 
 More detailed explanations can be found in the documentation (`$ texdoc fontspec`) for the `fontspec`package.
 
-Font size can also be changed anywhere in the document using 
+Font size can also be changed anywhere in the document using
 
 ```latex
 \fontsize{12pt}{18pt}\selectfont
@@ -59,7 +59,7 @@ which result in There is also a `Scale=` parameter (i.e., `Scale=1.4` would resu
 \defaultfontfeatures{Scale=MatchLowercase}
 ```
 
-So, for instance, 
+So, for instance,
 
 A lot of fonts come with a TeXLive installation, as can be seen below
 
@@ -85,7 +85,7 @@ $ fc-list | grep -i gara
 For example, the following instructions contained in a file `tex_ttf.tex`
 
 ```latex
-\font\1="Inconsolata"\1 
+\font\1="Inconsolata"\1
 \input knuth.tex
 \bye
 ```
@@ -113,7 +113,7 @@ $ mtxrun --script fonts --reload
 ```
 
 [Fonts in ConTEXt](http://pragma-ade.com/general/manuals/showfont.pdf) Manual section on [Fonts](http://context.aanhet.net/svn/contextman/context-reference/en/co-fonts.pdf) available from the SVN repository. See also [Fonts in LuaTeX](http://wiki.contextgarden.net/Fonts_in_LuaTeX).
- 
+
 ### What best combination of fonts to use?
 
 Did you ever wonder what combination of Serif, Sans and Mono does give the best rendering (on screen, and for printing)? I'm going to ask this on [tex.stackexchange.com](tex.stackexchange.com) because I didn't find anything reliable on Google.
@@ -127,6 +127,10 @@ According to the American Association of University Presses, Minion, ITC New Bas
 - <http://www.ctan.org/tex-archive/help/Catalogue/entries/kpfonts.html>
 - Daniel Rhatigan, [Three typefaces for Mathematics](vhttp://www.typeculture.com/academic_resource/articles_essays/pdfs/tc_article_47.pdf)
 
+{{% alert note %}}
+<small>[2022-04-01]</small><br>
+Apparently, the FontFeed website is dead. See [What Happened to Fontfeed.com & Top Alternatives](https://www.photoshopbuzz.com/what-happened-to-fontfeed/) to learn more about it, and thanks June for the followup notice!
+{{% /alert %}}
 
 ## Outlier detection
 <small>(February 2011)</small>
@@ -144,7 +148,7 @@ Before starting to look at the automatic detection of possible outliers, let's g
 ```r
 library(lattice)
 trellis.par.set(list(fontsize = list(text=9, points=6)))
-splom(iris[,1:4], groups=iris[,5], type=c("p","g","smooth"), 
+splom(iris[,1:4], groups=iris[,5], type=c("p","g","smooth"),
       lwd=2, pch=19, alpha=.4, auto.key=list(space="top", columns=3))
 ```
 
@@ -181,7 +185,7 @@ polygon(iris.pca$scores[chpts,3], iris.pca$scores[chpts,4], lty=3)
 
 ![xyplot](/img/20110228145501.png)
 
-The most extreme points are 
+The most extreme points are
 
 ```r
 > chpts
@@ -210,7 +214,7 @@ pairs(iris[,-5], col=ifelse(outl>68.78, "red", "black"))
 ![rfoutlier](/img/20110228130451.png)
 
 
-### Malahanobis outlier detection 
+### Malahanobis outlier detection
 
 This time, we use the [mvoutlier](http://cran.r-project.org/web/packages/mvoutlier/index.html) and the `chisq.plot()` function that will plot the ordered robust Mahalanobis distances of the data against the quantiles of the χ<sup>2</sup> distribution.
 
@@ -259,7 +263,7 @@ print @shuffled[0..$n];
 ```
 [INFO] ------------------------------------------------------------------------
 [INFO] Reactor Summary:
-[INFO] 
+[INFO]
 [INFO] Apache Mahout ..................................... SUCCESS [18.464s]
 [INFO] Mahout Build Tools ................................ SUCCESS [11.130s]
 [INFO] Mahout Math ....................................... SUCCESS [34.161s]
