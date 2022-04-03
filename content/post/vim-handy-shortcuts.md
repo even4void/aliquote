@@ -16,7 +16,8 @@ Over the past two years where I've been using Neovim exclusively, I settled upon
 - `<C-f>` as a shortcut for `Telescope live_grep`; using the Ivy theme and a 20% window at the bottom, it really shines. See the screenshot at the end of the post.
 - `<C-x>` is actually a shortcut for `"_dP`, and it is pretty cool since it allows to visually select a region and paste it over and over again on visual blocks selected afterwards.
 - `<C-h>`, `<C-j>`, `<C-k>` and `<C-l>` to increase/decrease split width or height (e.g., `<C-h>` stands for `:vertical resize -4<CR>`).
-- `<leader><leader>` to switch between opened buffers (`Telescope buffers`).
+- `<C-Left>` and `<C-Right>` to navigate between tabs, since I can use w/b and W/B for horizontal word-wise motion.
+- `<leader><leader>` to switch between opened buffers (`Telescope buffers`). Note that `<C-b>` would be better, but it's already the primary key for Tmux and I became used to the space-space combo after 3 years of Doom Emacs.
 - `<leader>e` which is basically `:e <C-R>=expand("%:p:h") . "/" <CR>`; I used it most of the day, since it allows to quickly open a file in the current working directory, with tab completion.
 - `<leader>r` as a shortcut for `Telescope oldfiles`.
 - `<leader><tab>` and `<localleader><tab>` to create new tab and switch to the next tab, respectively.
@@ -24,15 +25,30 @@ Over the past two years where I've been using Neovim exclusively, I settled upon
 - `<localleader>s` or `<localleader>S` to sort a region in lexicographic order (increasing or decreasing).[^2]
 - `<localleader>"` for [Neogen]
 
+See also this related post: [Custom Vim shortcuts (2/n)](/post/vim-shortcuts/).
+
 In addition to the above, I also have handy shortcuts for [Magma], `vim-surround`-like stuff,[^3] etc.
 
 ![](/img/2022-03-23-15-20-21.png)
+
+Finally, I don't really like or need snippet engines, so I just defined some handy abbreviations, like this:
+
+```vim
+iabbrev +w []()
+iabbrev +@ chl@aliquote.org
+iabbrev +% --8<--------<CR>-------->8--<Up>
+iabbrev +' ``
+iabbrev +" ```<CR><CR>```<Esc>2k
+iabbrev +:: ¯\_(ツ)_/¯
+iabbrev +:( ಠ_ಠ
+iabbrev +:) ಠ‿ಠ
+```
 
 {{% music %}}Charlie Haden • _Conception_{{% /music %}}
 
 [^1]: ``<c-g>u<Esc>[s1z=`]a<c-g>u`` (Credit: [Gilles Castel], see also [Francis Tseng] or [SO]), and `:let @s='\<'.expand('<cword>').'\>'<CR>:%s/<C-r>s//<Left>` and `sy:%s/<C-r>s//<Left>` (Credit: [bluz71])
 [^2]: `vip:sort u<CR>` in visual mode and `:sort u<CR>` in normal mode (Credit: [strager])
-[^3]: E.g., `vnoremap _( :call text#surround('(', ')')<CR>]]`
+[^3]: E.g., `vnoremap _( :call text#surround('(', ')')<CR>`
 
 [Telescope]: https://github.com/nvim-telescope/telescope.nvim
 [Gilles Castel]: https://castel.dev/post/lecture-notes-1/
