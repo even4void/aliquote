@@ -11,7 +11,6 @@ Over the past two years where I've been using Neovim exclusively, I settled upon
 - `<C-s>` in insert mode, this is used to correct the last typo (using the first suggestion) while in normal mode it allows to replace the word under the cursor.[^1]
 - `<C-p>` to navigate files (`Telescope find_files`).
 - `<C-q>` calls a little function to close or open the quickfix (if there're some items to show).
-- `<C-n>` to open a quick tree viewer (this is just the built-in `:15Lexplore<CR>`); I use this less often than `-` for `:Ex<CR>`.
 - `<leader>g` and `<leader>G` to quickly check git status (for the whole directory or the current buffer).
 - `<C-f>` as a shortcut for `Telescope live_grep`; using the Ivy theme and a 20% window at the bottom, it really shines. See the screenshot at the end of the post.
 - `<C-x>` is actually a shortcut for `"_dP`, and it is pretty cool since it allows to visually select a region and paste it over and over again on visual blocks selected afterwards.
