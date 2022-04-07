@@ -15,11 +15,10 @@ Over the past two years where I've been using Neovim exclusively, I settled upon
 - `<C-f>` as a shortcut for `Telescope live_grep`; using the Ivy theme and a 20% window at the bottom, it really shines. See the screenshot at the end of the post.
 - `<C-x>` is actually a shortcut for `"_dP`, and it is pretty cool since it allows to visually select a region and paste it over and over again on visual blocks selected afterwards.
 - `<C-h>`, `<C-j>`, `<C-k>` and `<C-l>` to increase/decrease split width or height (e.g., `<C-h>` stands for `:vertical resize -4<CR>`).
-- `<C-Left>` and `<C-Right>` to navigate between tabs, since I can use w/b and W/B for horizontal word-wise motion.
+- `<C-Left>` and `<C-Right>` to navigate between tabs, since I can use w/b and W/B for horizontal word-wise motion. I also use `<localleader><tab>` to create new tabs.
 - `<leader><leader>` to switch between opened buffers (`Telescope buffers`). Note that `<C-b>` would be better, but it's already the primary key for Tmux and I became used to the space-space combo after 3 years of Doom Emacs.
 - `<leader>e` which is basically `:e <C-R>=expand("%:p:h") . "/" <CR>`; I used it most of the day, since it allows to quickly open a file in the current working directory, with tab completion.
 - `<leader>r` as a shortcut for `Telescope oldfiles`.
-- `<leader><tab>` and `<localleader><tab>` to create new tab and switch to the next tab, respectively.
 - `<leader>$` and `<leader>!` to open a terminal in a new tab or in a split, respectively.
 - `<localleader>s` or `<localleader>S` to sort a region in lexicographic order (increasing or decreasing).[^2]
 - `<localleader>"` for [Neogen]
