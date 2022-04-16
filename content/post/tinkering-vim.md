@@ -16,6 +16,7 @@ Finally, the number of packages I rely on is limited and I believe my startup ti
 ~ % tree -L 2 .local/share/nvim/site/pack/packer
 .local/share/nvim/site/pack/packer
 ├── opt
+│   ├── iron.nvim
 │   ├── magma-nvim
 │   ├── neogen
 │   ├── parinfer-rust
@@ -40,7 +41,7 @@ Finally, the number of packages I rely on is limited and I believe my startup ti
     ├── telescope-symbols.nvim
     └── telescope-ui-select.nvim
 
-24 directories, 0 files
+25 directories, 0 files
 ~ % vim-profiler.py nvim
 Running nvim to generate startup logs... done.
 Loading and processing logs... done.
