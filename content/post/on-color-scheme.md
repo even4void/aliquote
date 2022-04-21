@@ -1,6 +1,6 @@
 ---
 title: "On choosing your colorscheme"
-date: 2022-04-19:29:19+02:00
+date: 2022-04-19T19:29:19+02:00
 draft: false
 tags: ["vim", "emacs", "unix"]
 categories: ["2022"]
