@@ -13,24 +13,36 @@ Over the past few months, I wrote some custom templates for PDF and HTML exports
 Here is a simple shell script that takes care of this:
 
 ```bash
-#!/usr/bin/env sh
+#!/usr/bin/env bash
 
 OPT=$1
 FILE=$2
 
+ELISP="/home/chl/Documents/notes/.assets/org-babel.el"
+BIB="#+BIBLIOGRAPHY: references ieeetr limit:t option:-nobibsource"
+
 case $OPT in
-        -pdf)
-                emacs --batch -l /home/chl/org/org-babel.el --eval "(progn (find-file \"$FILE\") (org-latex-export-to-pdf))"
-        ;;
-        -html)
-                rc="$(grep '#+BIBLIOGRAPHY' $FILE)"
-                [ -z $rc ] && echo "\033[1mNo valid bibliography found.\033[0m"
-                emacs --batch -l /home/chl/org/org-babel.el --eval "(progn (find-file \"$FILE\") (org-html-export-to-html))"
-        ;;
-        *)
-        echo "Unknown export format."
-        ;;
+-pdf)
+	emacs --batch -l "$ELISP" --eval "(progn (find-file \"$FILE\") (org-latex-export-to-pdf))"
+	;;
+-html)
+	cp "$FILE" "_$FILE"
+	rc="$(grep '#+BIBLIOGRAPHY' "$FILE")"
+	[ -z "$rc" ] && echo "$BIB" >>"_$FILE"
+	emacs --batch -l "$ELISP" --eval "(progn (find-file \"_$FILE\") (org-html-export-to-html))"
+	mv _"${FILE%.org}.html" "${FILE%.org}.html"
+	rm "_$FILE"
+	;;
+*)
+	echo "Unknown export format."
+	;;
 esac
 ```
+
+<br>
+{{% alert note %}}
+<small>[2022-04-24]</small><br>
+I updated the above script to account for the case where we want to produce both a PDF and an HTML file. The latter requires a `#+BIBLIOGRAPHY:` directive to generate a proper bibliography with `bibtex2html`, but this directive is not well handled when exporting to PDF. Maybe there's an option to detect the exporting backend and discard such a directive in case it is not the HTML format, but I don't really know. For the time being, I will just add the HTML directive manually. Older version of this script can be found in the [Git history](https://github.com/even4void/aliquote/blob/master/content/post/standalone-org-babel.md).
+{{% /alert %}}
 
 Basically, it allows to compile an Org file and to produce either a PDF or HTML file, based on the flag passed when invoking the command. Of note, for HTML documents it relies on `ox-bibtex`, while PDFs are produced using the standard toolchain (biblatex with bibtex backend and pdflatex, but it is not difficult to use biber and lualatex instead). With that in place, I can now regenerate my previous documents without even opening Emacs, which is great after all. I know that the [vim-orgmode](https://github.com/jceb/vim-orgmode) plugin can take care of this as well, but as you see it is not very difficult to write your own backend for that purpose. I keep my custom settings in the file `org-babel.el`, which remains available on Github in my "org" repository, in case you're interested.
