@@ -23,7 +23,6 @@ Below is a list of what has been archived over the years on this site or on exte
 </tr>
 <tr><td><a href="/pub/vim-101.pdf">Vim 101</a></td><td>Aug 2020</td><td>en</td><td>done</td><td><i data-feather="file-text" width="12px" height="12px"></i></td></tr>
 <tr><td><a href="/pub/z.pdf">Z notes</a></td><td>Feb 2020</td><td>fr</td><td>todo</td><td><i data-feather="file-text" width="12px" height="12px"></i></td></tr>
-<tr><td><a href="/pub/impatient-emacs.pdf">Emacs pour l'impatient</a></td><td>Feb 2020</td><td>fr</td><td>canc</td><td><i data-feather="file-text" width="12px" height="12px"></i></td></tr>
 <tr><td><a href="/pub/ngs.pdf">RNA-Seq workshop</a></td><td>Feb 2020</td><td>en</td><td>done</td><td><i data-feather="file-text" width="12px" height="12px"></i></td></tr>
 <tr><td><a href="/articles/stata-sk">Stata Starter Kit</a></td><td>Sep 2019</td><td>fr</td><td>todo</td><td><i data-feather="link" width="12px" height="12px"></i></td></tr>
 <tr><td><a href="/pub/papers.pdf">Reading notes</a></td><td>Jan 2019</td><td>en</td><td>done</td><td><i data-feather="file-text" width="12px" height="12px"></i></td></tr>
@@ -43,7 +42,6 @@ Below is a list of what has been archived over the years on this site or on exte
 <tr><td><a href="/pub/intro-stata.pdf">Introduction au logiciel Stata</a></td><td>Mar 2015</td><td>fr</td><td>done</td><td><i data-feather="file-text" width="12px" height="12px"></i></td></tr>
 <tr><td><a href="/pub/intro-r.pdf">Introduction au logiciel R</a></td><td>Feb 2015</td><td>fr</td><td>done</td><td><i data-feather="file-text" width="12px" height="12px"></i></td></tr>
 <tr><td><a href="https://github.com/even4void/rstats-esme">Data Mining avec R</a></td><td>Feb 2015</td><td>fr</td><td>done</td><td><i data-feather="link" width="12px" height="12px"></i></td></tr>
-<tr><td><a href="/pub/RStudio.pdf">RStudio tips</a></td><td>Oct 2014</td><td>en</td><td>canc</td><td><i data-feather="file-text" width="12px" height="12px"></i></td></tr>
 <tr><td><a href="/cours/misc/stats101.pdf">Introduction aux statistiques médicales</a></td><td>Oct 2014</td><td>fr</td><td>done</td><td><i data-feather="file-text" width="12px" height="12px"></i></td></tr>
 <tr><td><a href="/cours/misc/reliability.pdf">Concordance et fidélité de mesure</a></td><td>Sep 2014</td><td>fr</td><td>done</td><td><i data-feather="file-text" width="12px" height="12px"></i></td></tr>
 <tr><td><a href="/cours/misc/mooc/">Introduction au langage R</a></td><td>Apr 2014</td><td>fr</td><td>done</td><td><i data-feather="link" width="12px" height="12px"></i></td></tr>
