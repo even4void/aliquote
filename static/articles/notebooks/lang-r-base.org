@@ -1,0 +1,507 @@
+#+TITLE: Introduction to R
+#+AUTHOR: chl
+#+DATE: May 2019
+#+LANGUAGE: en
+#+OPTIONS: num:2 toc:nil
+#+PROPERTY: header-args :cache no :exports both :results output :res 300 :width 800 :height 800 :session *R*
+
+This introduction to the R language aims at understanding how to represent and manipulate data objects as commonly found in data science, to provide basic summary statistic and to build relevant graphical representation of the data \cite{ihaka-1996-r}.
+
+**Important notice:** Only base commands are discussed here, not the [[https://www.tidyverse.org/][tidyverse]]. A separate cheatsheet is available for the [[https://ggplot2.tidyverse.org/][ggplot2]] package.
+
+* Installing R and RStudio
+
+The R statistical package can be installed from [[https://cran.r-project.org/][CRAN]]. Be sure to also download [[https://www.rstudio.com/][RStudio]] as it provided a full-featured user interface to interact with R. To use Jupyter notebook, you will also need the [[https://irkernel.github.io/][IR kernel]].
+
+** Useful additional packages
+
+This tutorial mainly relies on core facilities that come along so called R [[https://stackoverflow.com/a/9705725][base packages]]. However, it is possible to install additional packages and, in particular, the [[https://ggplot2.tidyverse.org/][ggplot2]] package, as shown below:
+
+#+BEGIN_EXAMPLE
+install.packages("ggplot2")
+#+END_EXAMPLE
+
+** Setup
+
+The following setup will be used for graphical displays:
+
+#+BEGIN_SRC R
+library(ggplot2)
+theme_set(theme_minimal())
+#+END_SRC
+
+Note that you need to load the ggplot2 package only once, at the start of your R session.
+
+* Getting started
+
+** Variables
+
+There are fundamentally two kind of data structures in statistics-oriented programming languages: numbers and strings. Numbers can be integers or real numbers and they are used to represent values observed for a continuous or discrete statistical variable, while strings are everything else that cannot be represented as numbers or list of numbers, e.g. address of a building, answer to an open-ended question in a survey, etc.
+
+Here is how we can create a simple variable, say =x=, to store a list of 5 numerical values:
+
+#+BEGIN_SRC R
+x <- c(1, 3, 2, 5, 4)
+#+END_SRC
+
+Note that the symbol =<-= stands for the recommended assignment operator, yet it is possible to use === to assign some quantity to a given variable, which appears on the left hand side of the above expression. Also, the series of values is reported between round brackets, and each values is separated by a comma. From now on, we will talk interchangeably of values or of observations as if we were talking of a measure collected on a statistical unit.
+
+Some properties of this newly created variable can be queried online, e.g. how many elements does =x= has or how those elements are represneted in R:
+
+#+BEGIN_SRC R
+length(x)
+typeof(x)
+#+END_SRC
+
+It should be noted that x contains values stored as real numbers (=double=) while they may just be stored as integers. It is however possible to ask R to use truly integer values:
+
+#+BEGIN_SRC R
+x <- c(1L, 3L, 2L, 5L, 4L)
+typeof(x)
+#+END_SRC
+
+The distinction between 32 bits integers and reals will not be that important in common analysis tasks, but it is important to keep in mind that it is sometimes useful to check whether data are represented as expected, especially in the case of categorical variables, also called 'factor' in R parlance (more on this latter).
+
+The list of numbers we stored in =x= is called a vector, and it is one of the building block of common R data structures. Oftentimes, we will need richer data structures, especially two-dimensional objects, like matrix or data frame, or higher-dimensional objects such as array or list.
+
+#+CAPTION: Common data structures in R
+#+NAME: fig:r-base-001
+#+LABEL: fig:r-base-001
+#+ATTR_HTML: :width 640px
+#+ATTR_LATEX: :width 0.8\linewidth
+[[./assets/lang-r-base-001.png]]
+
+** Vectors
+
+The command =c= ('concatenate') we used to create our list of integers will be very useful when it comes to pass multiple options to a command. It can be nested into another call to =c= like in the following example:
+
+#+BEGIN_SRC R
+x <- c(c(1, 2, 3), c(4, 5, 6), 7, 8)
+#+END_SRC
+
+In passing, note that since we use the same name for our newly created variable, =x=, the old content referenced in =x= (1, 3, 2, 5, 4) is definitively lost. Once you have a vector of values, you can access each item by providing the (one-based) index of the item(s), e.g.:
+
+#+BEGIN_SRC R
+x[1]
+x[3]
+x[c(1,3)]
+x[1:3]
+#+END_SRC
+
+A convenient shorhand notation for regular sequence of integers is =start:end=, where =start= is the starting value and =end= is the last value (both included). Hence, =c(1,2,3,4)= is the same as =1:4=. This is useful when one wants to preview the first 3 or 5 values in a vector, for example. A more general function to work with regular sequence of numbers is =seq=. Here is an example of use:
+
+#+BEGIN_SRC R
+seq(1, 10)
+seq(1, 10, by = 2)
+seq(0, 10, length = 5)
+#+END_SRC
+
+Updating content of a vector can be done directly by assigning a new value to one of the item:
+
+#+BEGIN_SRC R
+x[3] <- NA
+#+END_SRC
+
+In the above statement, the third item has been assigned a missing value, which is coded as =NA= ('not available') in R. Again, there is no way to go back to the previous state of the variable, so be careful when updating the content of a variable.
+
+The presence of missing data is important to check before engaging into any serious statistical stuff. The =is.na= function can be used to check for the presence of any missing value in a variable, while =which= will return the index that matches a =TRUE= result, if any:
+
+#+BEGIN_SRC R
+is.na(x)
+which(is.na(x))
+#+END_SRC
+
+Notice that many functions like =is.na=, or =which=, act in a vectorized way, meaning that you don't have to iterate manually over each item in the vector. Moreover, function calls can be nested one into the other. In the latter R expression, =which= is actually processing the values returned by the call to =is.na=.
+
+** Vectors and random sampling
+
+The sample function allows to randomly shuffle an existing vector or to generate a sequence of random numbers. Whenever we rely on the random number generator (RNG), it is recommend to set the seed of the RNG in order to ensure that those pseudo-random sequence could be reproduced later. Here is an illustration:
+
+#+BEGIN_SRC R
+s <- c(1, 4, 2, 3, 8)
+sample(s)
+#+END_SRC
+
+#+BEGIN_SRC R
+sample(1:10, size = 5)
+sample(0:1, size = 10, replace = TRUE)
+#+END_SRC
+
+In summary, =sample(1:n, size = n)= returns a permutation of the =n= elements, while =sample(1:n, size = n, replace = TRUE)= provides a bootstrap sample of the original data.
+
+** Sorting
+
+Sorting a list of values or finding the index or rank of any value in a vector are common tasks in statistical programming. It is different from computing ranks of observed values, which is handled by the =rank= function. The two main instructions to sort a list of values and to get the index of the sorted item are =sort= and =order=, respectively:
+
+#+BEGIN_SRC R
+z <- c(1, 6, 7, 2, 8, 3, 9, 4, 5)
+sort(z)
+order(z)
+#+END_SRC
+
+** Data frames
+
+Data frames are one of the core data structures to store and represent statistical data. Many routine functions that are used to load data stored in flat files or databases or to preprocess data stored in memory rely on data frames. Likewise, graphical commands such as those found in the ggplot2 package generally assumes a data frame as input. The same applies to functions used in statistical modeling (=lm=, =glm=, etc.).
+
+In a data frame, observations are arranged in rows and variables are arranged in columns. Each variable can be viewed as a single vector, but those variables are all recorded into a common data structure, each with an unique name. Moreover, each column, or variable, can be of a different type--numeric, factor, character or boolean, which makes data frame slightly different from 'matrix' object where only values of the same type can be stored.
+
+Here is an example of a built-in data frame, readily available by using the command =data=:
+
+#+BEGIN_SRC R
+data(ToothGrowth)
+head(ToothGrowth)
+#+END_SRC
+
+#+BEGIN_SRC R
+str(ToothGrowth)
+#+END_SRC
+
+While =head= allows to preview the first 6 lines of a data frame, =str= provides a concise overview of what's available in the data frame, namely: the name of each variable (column), its mode of representation, et the first 10 observations (values).
+
+The dimensions (number of lines and columns) of a data frame can be verified using =dim= (a shortcut for the combination of =nrows= and =ncols=):
+
+#+BEGIN_SRC R
+dim(ToothGrowth)
+#+END_SRC
+
+To access any given cell in this data frame, we will use the indexing trick we used in the case of vectors, but this time we have to indicate the line number as well as the column number, or name: Hence, =ToothGrowth[i,j]= means the value located at line =i= and column =j=, while =ToothGrowth[c(a,b),j]= would mean values at line =a= and =b= for the same column =j=.
+
+#+CAPTION: Representation of a data frame in R
+#+NAME: fig:lang-r-base-002
+#+LABEL: fig:lang-r-base-002
+#+ATTR_HTML: :width 320px
+#+ATTR_LATEX: :width 0.5\linewidth
+[[./assets/lang-r-base-002.png]]
+
+Here is how we can retrieve the second observation in the first column:
+
+#+BEGIN_SRC R
+ToothGrowth[2,1]
+#+END_SRC
+
+Since the columns of a data frame have names, it is equivalent to use =ToothGrowth[2,1]= and =ToothGrowth[2,"len"]=. In the latter case, variable names must be quoted. Column names can be displayed using =colnames= or =names= (in the special case of data frames), while row names are available via =rownames=. Row names can be used as unique identifier for statistical units, but best practice is usually to store unique IDs as characters or factor levels in a dedicated column in the data frame.
+
+Since we know that we can use c to create a list of numbers, we can use =c= to create a list of line numbers to look for. Imagine you want to access the content of a given column (=len=, which is the first column, numbered 1), for lines 2 and 4: (=c(2, 4)=):
+
+#+CAPTION: Vector indexing
+#+NAME: fig:lang-r-base-003
+#+LABEL: fig:lang-r-base-003
+#+ATTR_HTML: :width 320px
+#+ATTR_LATEX: :width 0.5\linewidth
+[[./assets/lang-r-base-003.png]]
+
+Here is how we would do in R:
+
+#+BEGIN_SRC R
+ToothGrowth[c(2,4),1]
+#+END_SRC
+
+This amounts to 'indexed selection', meaning that we need to provide the row (or column) numbers, while most of the time we are interested in criterion-based indexation, that is: "which observation fullfills a given criterion." We generally call this a 'filter'. Since most R operations are vectorized, this happens to be really easy. For instance, to display observations on =supp= that satisfy the condition =len > 6=, we would use:
+
+#+BEGIN_SRC R
+head(ToothGrowth$supp[ToothGrowth$len > 6])
+#+END_SRC
+
+#+CAPTION: Selecting elements in a data frame
+#+NAME: fig:lang-r-base-004
+#+LABEL: fig:lang-r-base-004
+#+ATTR_HTML: :width 320px
+#+ATTR_LATEX: :width 0.5\linewidth
+[[./assets/lang-r-base-004.png]]
+
+Likewise, it is possible to combine different filters using logical operators: =&= stands for 'and' (logical conjunction) and =|= stands for 'or' (logical disjonction); logical equality is denoted as ==== while its negation reads =!==. Here is an example where we want to select observations that satisfy a given condition on both the =dose= (dose = 0.5) and =len= (len > 10) variables:
+
+#+CAPTION: Using filters on a data frame
+#+NAME: fig:lang-r-base-005
+#+LABEL: fig:lang-r-base-005
+#+ATTR_HTML: :width 320px
+#+ATTR_LATEX: :width 0.5\linewidth
+[[./assets/lang-r-base-005.png]]
+
+In R, we would write:
+
+#+BEGIN_SRC R
+ToothGrowth[ToothGrowth$len > 10 & ToothGrowth$dose < 1,]
+#+END_SRC
+
+You will soon realize that for complex queries this notation become quite cumbersome: all variable must be prefixed by the name of the data frame, which can result in a very long statement. While it is recommended practice for programming or when developing dedicated package, it is easier to rely on =subset= in an interactive session. The =subset= command asks for three arguments, namely the name of the data frame we are working on, the rows we want to select (or filter), and the columns we want to return. The result of a call to =subset= is always a data frame.
+
+#+CAPTION: Subsetting a data frame by row and column
+#+NAME: fig:lang-r-base-006
+#+LABEL: fig:lang-r-base-006
+#+ATTR_HTML: :width 320px
+#+ATTR_LATEX: :width 0.5\linewidth
+[[./assets/lang-r-base-006.png]]
+
+Here is an example of use:
+
+#+BEGIN_SRC R
+subset(ToothGrowth, len > 10 & dose < 1)
+#+END_SRC
+
+#+CAPTION: Subsetting a data frame: Illustration of joint filters
+#+NAME: fig:lang-r-base-007
+#+LABEL: fig:lang-r-base-007
+#+ATTR_HTML: :width 320px
+#+ATTR_LATEX: :width 0.5\linewidth
+[[./assets/lang-r-base-007.png]]
+
+
+It is also possible to use the technique discussed in the case of vectors to sort a data frame in ascending or descending order according to one or more variables. Here is an example using the =len= variable:
+
+#+BEGIN_SRC R
+head(ToothGrowth)
+head(ToothGrowth[order(ToothGrowth$len),])
+#+END_SRC
+
+The =which= function can also be used to retrieve a specific observation in a data frame, like in the following instruction:
+
+#+BEGIN_SRC R
+which(ToothGrowth$len < 8)
+#+END_SRC
+
+* Statistical summaries
+
+As explained above, the =str= function is useful to check a given data structure, and individual properties of a data frame can be queried using dedicated functions, e.g. =nrow= or =ncol=. Now, to compute statistical quantities on a variable, we can use dedicated functions like =mean= (arithmetical mean), =sd= (standard deviation; see also =var=), =IQR= (interquartile range), =range= (range of values; see also =min= and =max=), or the =summary= function, which computes a five-point summary in the case of a numerical variable or a table of counts for categorical outcomes.
+
+** Univariate case
+
+Here are some applications in the case we are interested in summarizing one variable at a time:
+
+#+BEGIN_SRC R
+mean(ToothGrowth$len)
+range(ToothGrowth$len)
+c(min(ToothGrowth$len), max(ToothGrowth$len))
+table(ToothGrowth$dose)
+#+END_SRC
+
+summary(ToothGrowth)
+
+Of course, the above functions can be applied to a subset of the original data set:
+
+#+BEGIN_SRC R
+mean(ToothGrowth$len[ToothGrowth$dose == 1])
+table(ToothGrowth$dose[ToothGrowth$len < 20])
+#+END_SRC
+
+** Bivariate case
+
+If we want to summarize a numerical variable according the values that a factor variable takes, we can use =tapply= or =aggregate=. The latter expects a 'formula' describing the relation between the variables we are interested in: the response variable or outcome appears on the left-hand side (LHS), while the factors or descriptors are listed in the right-hand side (RHS). The last argument to =aggregate= is the function we want to apply to each chunk of observations defined by the RHS. Here is an example of use:
+
+#+BEGIN_SRC R
+aggregate(len ~ dose, data = ToothGrowth, mean)
+aggregate(len ~ supp + dose, data = ToothGrowth, mean)
+#+END_SRC
+
+Note that only one function can be applied to the 'formula'. Even if it possible to write a custom function that computes the mean and standard deviation of a variable, both results will be returned as single column in the data frame returned by =aggregate=. There do exist other ways to perform such computation, though (see, e.g., the =plyr=, =dplyr= or =Hmisc= packages, to name a few), if the results are to be kept in separate variables for later. This, however, does not preclude from using =aggregate= for printing multivariate results in the console:
+
+#+BEGIN_SRC R
+aggregate(len ~ dose, data = ToothGrowth, summary)
+f <- function(x) c(mean = mean(x), sd = sd(x))
+aggregate(len ~ dose, data = ToothGrowth, f)
+#+END_SRC
+
+The =table= functions also works with two (or even three) variables:
+
+#+BEGIN_SRC R
+table(ToothGrowth$dose, ToothGrowth$supp)
+#+END_SRC
+
+If formulas are to be preferred, the =xtabs= function provides a convenient replacement for =table=:
+
+#+BEGIN_SRC R
+xtabs(~ dose + supp, data = ToothGrowth)
+#+END_SRC
+
+In either case, frequencies can be computed from the table of counts using =prop.table=, using the desired margin (row=1, column=2) in the bivariate case:
+
+#+BEGIN_SRC R
+prop.table(table(ToothGrowth$dose))
+prop.table(table(ToothGrowth$dose, ToothGrowth$supp), margins = 1)
+#+END_SRC
+
+* Practical use case: The ESS survey
+
+The =data= directory includes three [[https://www.rdocumentation.org/packages/base/versions/3.5.3/topics/readRDS][RDS]] files related to the [[https://www.europeansocialsurvey.org/][European Social Survey]] (ESS). This survey first ran in 2002 (round 1), and it is actually renewed every two years. The codebook can be downloaded, along [[http://www.europeansocialsurvey.org/data/download.html][other data sheets]], on the main website.
+
+There are two files related to data collected in France (round 1 or rounds 1-5, =ess-*-fr.rds=) and one file for all participating countries (=ess-one-round.rds=).
+French data
+
+Assuming the =data= directory is available in the current working directory, here is how we can load French data for round 1:
+
+#+BEGIN_SRC R
+WD <- "~/Sites/aliquote/static/articles/notebooks"
+filepath <- paste0(WD, "/data/ess-one-round-fr.rds")
+d <- readRDS(filepath)
+head(as.data.frame(d[1:10]))
+#+END_SRC
+
+#+BEGIN_SRC R
+table(d$yrbrn)
+#+END_SRC
+
+#+BEGIN_SRC R
+summary(d$agea)
+#+END_SRC
+
+Let us focus on the following list of variables, readily available in the file =ess-one-round-29vars-fr.rds=:
+
+- =tvtot=: TV watching, total time on average weekday
+- =rdtot=: Radio listening, total time on average weekday
+- =nwsptot=: Newspaper reading, total time on average weekday
+- =polintr=: How interested in politics
+- =trstlgl=: Trust in the legal system
+- =trstplc=: Trust in the police
+- =trstplt=: Trust in politicians
+- =vote=: Voted last national election
+- =happy=: How happy are you
+- =sclmeet=: How often socially meet with friends, relatives or colleagues
+- =inmdisc=: Anyone to discuss intimate and personal matters with
+- =sclact=: Take part in social activities compared to others of same age
+- =health=: Subjective general health
+- =ctzcntr=: Citizen of country
+- =brncntr=: Born in country
+- =facntr=: Father born in country
+- =mocntr=: Mother born in country
+- =hhmmb=: Number of people living regularly as member of household
+- =gndr=: Gender
+- =yrbrn=: Year of birth
+- =agea=: Age of respondent, calculated
+- =edulvla=: Highest level of education
+- =eduyrs=: Years of full-time education completed
+- =pdjobyr=: Year last in paid job
+- =wrkctr=: Employment contract unlimited or limited duration
+- =wkhct=: Total contracted hours per week in main job overtime excluded
+- =marital=: Legal marital status
+- =martlfr=: Legal marital status, France
+- =lvghw=: Currently living with husband/wife
+
+** Recoded French data
+
+Note that variables in the file =ess-one-round-29vars-fr.rds= have been recoded and categorical variables now have proper labels. See the script file =scripts/ess-one-round-29vars-fr.r= to see what has been done to the base file.
+
+#+BEGIN_SRC R
+filepath <- paste0(WD, "/data/ess-one-round-29vars-fr.rds")
+d29 <- readRDS(filepath)
+head(d29)
+#+END_SRC
+
+First, let us look at the distribution of the =gndr= variable, using a simple bar chart:
+
+#+BEGIN_SRC R
+summary(d29$gndr)
+#+END_SRC
+
+#+BEGIN_SRC R :file assets/lang-r-base-008.png :results graphics file
+p <- ggplot(data = d29, aes(x = gndr)) +
+  geom_bar() +
+  labs(x = "Sex of respondant", y = "Counts")
+p
+#+END_SRC
+
+Now, let's look at the distribution of age. The ggplot2 package offers a =geom_density= function but it is also possible to draw a line using the precomputed empirical density function, or to let ggplot2 compute the density function itself using the =stat== option. Here is how it looks:
+
+#+BEGIN_SRC R
+summary(d29$agea)
+#+END_SRC
+
+#+BEGIN_SRC R :file assets/lang-r-base-009.png :results graphics file
+p <- ggplot(data = d29, aes(x = agea)) +
+  geom_line(stat = "density", bw = 2) +
+  labs(x = "Age of respondant")
+p
+#+END_SRC
+
+The distribution of age can also be represented as an histogram, and ggplot2 makes it quite easy to split the display depending on the sex of the respondants, which is called a 'facet' in ggplot2 parlance:
+
+#+BEGIN_SRC R :file assets/lang-r-base-010.png :results graphics file
+p <- ggplot(data = d29, aes(x = agea)) +
+  geom_histogram(binwidth = 5) +
+  facet_grid(~ gndr) +
+  labs(x = "Age of respondant")
+p
+#+END_SRC
+
+
+Finally, a boxplot might also be an option, especially when we want to compare the distribution of a numerical variable across levels of a categorical variable. The =coord_flip= instruction is used to swap the X and Y axes, but keep in mind that =x== and =y== labels still refer to the =x= and =y= variable defined in the =aes=:
+
+#+BEGIN_SRC R :file assets/lang-r-base-011.png :results graphics file
+p <- ggplot(data = d29, aes(x = gndr, y = agea)) +
+  geom_boxplot() +
+  coord_flip() +
+  labs(x = NULL, y = "Age of respondants")
+p
+#+END_SRC
+
+**Sidenote:** In the above instructions, we used the following convention to build a ggplot2 object:
+
+- we assign to a variable, say =p=, the call to ggplot2 plus any further instructions ('geom', 'scale', 'coord_', etc.) using the =+= operator;
+- we use only one =aes= structure, when calling =ggplot=, so that it makes it clear what are the data and what variables are used;
+- we display the graph at the end, by simpling calling our variable =p=.
+
+Yet, it is possible to proceed in many different ways, depending on your taste and needs. The following instructions are all valid expressions and will yield the same result:
+
+#+BEGIN_EXAMPLE
+ggplot(data = d29, aes(x = gndr, y = agea, color = vote)) + geom_boxplot()
+
+p <- ggplot(data = d29, aes(x = gndr, y = agea, color = vote))
+p <- p + geom_boxplot() + labs(x = "Gender")
+p
+
+p <- ggplot(data = d29, aes(x = gndr, y = agea))
+p + geom_boxplot(aes(color = vote)) + labs(x = "Gender")
+#+END_EXAMPLE
+
+Moreover, it is also possible to use the quick one-liner version of =ggplot=, namely =qplot=:
+
+#+BEGIN_EXAMPLE
+qplot(x = gndr, y = agea, data = d29, color = vote, geom = "boxplot") + labs(x = "Gender")
+#+END_EXAMPLE
+
+or even:
+
+#+BEGIN_EXAMPLE
+qplot(x = gndr, y = agea, data = d29, color = vote, geom = "boxplot", xlab = "Gender")
+#+END_EXAMPLE
+
+Further details are available in the handout [[./lang-r-ggplot.html][lang-r-ggplot]].
+
+** Data from other countries
+
+Data from all other participating countries can be loaded in the same manner:
+
+#+BEGIN_SRC R
+filepath <- paste0(WD, "/data/ess-one-round.rds")
+db <- readRDS(filepath)
+cat("No. observations =", nrow(db), "\n")
+table(db$cntry)
+#+END_SRC
+
+Since French data are (deliberately) missing from this dataset, we can append them to the above data frame as follows:
+
+#+BEGIN_SRC R
+db <- rbind.data.frame(db, d)
+cat("No. observations =", nrow(db), "\n")
+#+END_SRC
+
+#+BEGIN_SRC R
+db$cntry <- factor(db$cntry)
+table(db$cntry)
+#+END_SRC
+
+Remember that is also possible to use =summary= with a factor variable to display a table of counts.
+
+In this particular case, we are just appending a data frame to another data frame already loaded in memory. This assumes that both share the name columns, of course. Sometimes, another common operation might be performed, an 'inner join' between two data tables. For example, imagine that part of the information is spread out in one data frame, and the rest of the data sits in another data frame. If the two data frames have a common unique ID, it is then easy to merge both data frames using the =merge= command. Here is a simplified example using the above data, that we will split in two beforehand:
+
+#+BEGIN_EXAMPLE
+db$id <- 1:nrow(db)
+db1 <- db[,c(1:10,ncol(db))]
+db2 <- db[,c(11:(ncol(db)-1),ncol(db))]
+all <- merge(db1, db2, by = "id")
+#+END_EXAMPLE
+
+In case the unique ID is spelled differently in the two data frames, it is possible to replace =by= with =by.x= and =by.y=. Notice that we created a column to store the unique ID (as an integer), since it would be more difficult to use =rownames= as the key.
+
+#+LATEX: \printbibliography
+#+LATEX: \newpage
+#+TOC: headlines 2
