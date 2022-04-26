@@ -1,0 +1,155 @@
+#+TITLE: Managing graphics with R
+#+AUTHOR: chl
+#+DATE: May 2019
+#+LANGUAGE: en
+#+OPTIONS: num:2 toc:nil
+#+PROPERTY: header-args :cache no :exports both :results output :res 300 :width 800 :height 800 :session *R*
+
+R offers two main graphical systems: base and grid. The latter is exposed in two core packages: lattice and ggplot2. We will use the later, which relies on the idea of a "Grammar of Graphics" \cite{wilkinson-2005-gramm-graph}.
+
+#+BEGIN_SRC R
+suppressPackageStartupMessages(library(ggplot2))
+theme_set(theme_bw())
+#+END_SRC
+
+The above instructions allow to load the required package and to set a default theme. They are meant to be run only once, when R is started for the current session. However, it is still possible to change the theme at any time, or inline when building a custom graphical display.
+
+Let's look at a random sample of the GSOEP dataset available in =data/gsoep09.dta=. This is a Stata file built upon the [[https://www.eui.eu/Research/Library/ResearchGuides/Economics/Statistics/DataPortal/GSOEP][German Socio Economic Survey]] from 2009. Note that these data come with survey weights (=dweight= and =xweights=) but we will proceed as if it was a cross-sectional sample. The foreign package allows to read Stata files (up to Stata 12 version), but it is more convenient to use the haven package. The =read_dta= function will return a "tibble", which is like an ordinary data frame but with extra properties that we won't exploit in this tutorial.
+
+#+BEGIN_SRC R
+library(haven)
+d <- read_dta("data/gsoep09.dta")
+head(as.data.frame(d))
+#+END_SRC
+
+* Data preprocessing
+
+We will first subset the data frame by selecting only a dozen of variables, and then draw a random sample of 10% of the original dataset. Specifically, the variables we are interested in are described below:
+
+- =persnr=: respondant ID
+- =hhnr2009=: household ID
+- =ybirth=: year of birth
+- =sex=: sex of respondant
+- =mar=: marital status
+- =egp=: socio-economic class
+- =yedu=: no. years of education
+- =income=: annual income (€)
+- =rel2head=: position of respondant relative to household
+- =wor01= to =wor12=: 3-point Likert answers to socio-economic and political questions
+
+#+BEGIN_SRC R
+vars <- c("persnr", "hhnr2009", "ybirth", "sex", "mar", "egp", "yedu", "income", "rel2head",
+          "wor01", "wor02", "wor03", "wor04", "wor05", "wor06", "wor07", "wor08", "wor09", "wor10", "wor11", "wor12")
+set.seed(101)
+idx <- sample(1:nrow(d), floor(nrow(d)*.1))
+d <- subset(d[idx, ], select = vars)
+dim(d)
+#+END_SRC
+
+The next step consists in re-encoding categorical variables and computing auxiliary variables:
+
+#+BEGIN_SRC R
+d$persnr <- factor(d$persnr)
+d$hhnr2009 <- factor(d$hhnr2009)
+d$sex <- droplevels(as_factor(d$sex))
+d$mar <- droplevels(as_factor(d$mar))
+d$egp <- droplevels(as_factor(d$egp))
+d$rel2head <- droplevels(as_factor(d$rel2head))
+d$age <- 2009 - d$ybirth
+#+END_SRC
+
+Let us now look at the above variables, and recode some of =mar= and =egp= categories: (For simplicity, we will discard all refusals from the present dataset.)
+
+#+BEGIN_SRC R
+table(d$mar)
+levels(d$mar)[3:5] <- "Single"
+d$mar[d$mar == "Refusal"] <- NA
+d$mar <- droplevels(d$mar)
+table(d$mar)
+#+END_SRC
+
+#+BEGIN_SRC R
+table(d$egp)
+levels(d$egp)[1:2] <- "High"
+levels(d$egp)[2:4] <- "Mid"
+levels(d$egp)[3:4] <- "Low"
+levels(d$egp)[4:6] <- "None"
+d$egp[d$egp == "Refusal"] <- NA
+d$egp <- droplevels(d$egp)
+table(d$egp)
+#+END_SRC
+
+Finally, let us only keep individuals with available income, and no missing value on =mar= or =egp=:
+
+#+BEGIN_SRC R
+d <- subset(d, income > 0 & !is.na(mar) & !is.na(egp))
+d$logincome <- log(d$income)
+dim(d)
+#+END_SRC
+
+* The ggplot philosophy
+
+In the spirit of the /Grammar of Graphics/ developped by Leland Wilkinson, the [[https://ggplot2.tidyverse.org/][ggplot2]] library uses a system of layers where graphical elements are joined altogether in a coherent way.
+
+#+CAPTION: The Grammar of Graphics principles
+#+NAME: fig:lang-r-ggplot-001
+#+LABEL: fig:lang-r-ggplot-001
+#+ATTR_HTML: :width 640px
+#+ATTR_LATEX: :width 0.8\linewidth
+[[./assets/lang-r-ggplot-001.png]]
+
+The following elements are usually found, in more or less the following order:
+
+- =ggplot()=: a data frame (=data==) together with a mapping (=aes()=)
+- =geom_*()=: one or more geometrical objects
+- =facet_wrap()=: a system of facets (used for conditioning on additional variables)
+- =scale_*_*()=: a custom scale for each axis and color schemes
+- =coord_*()=: a coordinate system
+- =labs()=: some annotations for axes and other graphical properties
+- =theme_*()=: a custom theme
+
+Basically, we start by indicating the data frame in which the variables can be found (=data ==), and what role these variables play in the plot (=aes(x=, y=, color=)=). Two numerical variables can be used to code the spatial location of a point in a 2D space, while a categorical variable could be used to highligtht those points using color values mapped onto variable levels. The type of graphical object we wan to draw (=geom_point()=, =geom_histogram()=) depends on the number and the type of variables available in the =aes()= mapping. If there's only one numeric variable, we cannot draw a scatterplot, of course, but we can build an histogram, for example. Note that a single plot can contain multiple geometrical object, e.g. a scatterplot and a scatterplot smoother (lowess curve). Each plot can be customized in several ways, but most of the time we may be interested in updating the axes or the object properties (e.g., =scale_x_continuous()=, =scale_color_manual()=), and the labels or the title/subtitle (=labs()=).
+
+The most up to date documentation is available on-line in Winston Chang's [[https://r-graphics.org/][R Graphics Cookbook]] \cite{chang-2013-r-graph-cookb}.
+
+** Illustration of the layered approach
+
+A very basic plot can be thought of as a succession of layers. In the example below, we first draw a scatterplot using variable =lwt= (on the x-axis) and =bwt= (on the y-axis) from the =MASS::birthwt= dataset, and then add a scatterplot smoother (a lowess curve, with default smoothing parameters) on top of the scatterplot:
+
+#+BEGIN_EXAMPLE
+p <- ggplot() +
+    layer(data = MASS::birthwt,
+          stat = "identity",
+          geom = "point",
+          mapping = aes(x = lwt, y = bwt),
+          position = "identity") +
+    layer(data = MASS::birthwt,
+          stat = "smooth",
+          geom = "line",
+          mapping = aes(x = lwt, y = bwt),
+          position = "identity",
+          params = list(method = "auto"))
+#+END_EXAMPLE
+
+Here is the simplified version using the approach described above:
+
+#+BEGIN_SRC R :file assets/lang-r-ggplot-002.png :results graphics file
+library(MASS)
+p <- ggplot(data = birthwt, aes(x = lwt, y = bwt))
+p + geom_point() + geom_smooth(method = "auto")
+#+END_SRC
+
+This follows the same principled approach: You add each graphical piece together using the =+= operateur -- which is specific to ggplot2 -- and you print the final graphical object to the graphical device. This is the reason why we don't use any assignment operateur (=<-=) in the last expression. It would be possible to write the following expression:
+
+#+BEGIN_EXAMPLE
+ggplot(data = birthwt, aes(x = lwt, y = bwt)) + geom_point() + geom_smooth(method = "auto")
+#+END_EXAMPLE
+
+However, it is better practice to save the graphical commands in a variable, and even to accumulate (=+=) the instructions as they go along since this allows to build the final plot in an incremental way.
+
+* Exploratory analysis
+
+** Histogram and density estimators
+
+Histogram and density curve are two common estimators for the distribution of a continuous random variable. They do indeed have their counterparts in ggplot2, namely =geom_histogram= and =geom_density=, although in the latter case it is also possible to use =geom_line= using the a density estimator that ggplot2 will compute for us. Here are two examples of use:
+

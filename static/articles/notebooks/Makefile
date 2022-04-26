@@ -1,7 +1,5 @@
 .PHONY: clean veryclean
 
-all: *.pdf *.html
-
 %.html : %.org
 	 org-babel -html $^
 
