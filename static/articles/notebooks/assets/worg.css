@@ -154,6 +154,7 @@
 
   img {
     border: none;
+    max-width: 100%;
   }
 
   .footdef a {

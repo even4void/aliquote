@@ -14,7 +14,7 @@ theme_set(theme_bw())
 
 The above instructions allow to load the required package and to set a default theme. They are meant to be run only once, when R is started for the current session. However, it is still possible to change the theme at any time, or inline when building a custom graphical display.
 
-Let's look at a random sample of the GSOEP dataset available in =data/gsoep09.dta=. This is a Stata file built upon the [[https://www.eui.eu/Research/Library/ResearchGuides/Economics/Statistics/DataPortal/GSOEP][German Socio Economic Survey]] from 2009. Note that these data come with survey weights (=dweight= and =xweights=) but we will proceed as if it was a cross-sectional sample. The foreign package allows to read Stata files (up to Stata 12 version), but it is more convenient to use the haven package. The =read_dta= function will return a "tibble", which is like an ordinary data frame but with extra properties that we won't exploit in this tutorial.
+Let's look at a random sample of the GSOEP dataset available in [[file:data/gsoep09.dta][data/gsoep09.dta]]. This is a Stata file built upon the [[https://www.eui.eu/Research/Library/ResearchGuides/Economics/Statistics/DataPortal/GSOEP][German Socio Economic Survey]] from 2009. Note that these data come with survey weights (=dweight= and =xweights=) but we will proceed as if it was a cross-sectional sample. The foreign package allows to read Stata files (up to Stata 12 version), but it is more convenient to use the haven package. The =read_dta= function will return a "tibble", which is like an ordinary data frame but with extra properties that we won't exploit in this tutorial.
 
 #+BEGIN_SRC R
 library(haven)
@@ -153,3 +153,87 @@ However, it is better practice to save the graphical commands in a variable, and
 
 Histogram and density curve are two common estimators for the distribution of a continuous random variable. They do indeed have their counterparts in ggplot2, namely =geom_histogram= and =geom_density=, although in the latter case it is also possible to use =geom_line= using the a density estimator that ggplot2 will compute for us. Here are two examples of use:
 
+#+BEGIN_SRC R :file assets/lang-r-ggplot-003.png :results graphics file
+p <- ggplot(data = d, aes(x = age)) +
+  geom_histogram(binwidth = 5) +
+  labs(x = "Age", y = "Counts")
+p
+#+END_SRC
+
+#+BEGIN_SRC R :file assets/lang-r-ggplot-004.png :results graphics file
+p <- ggplot(data = d, aes(x = age)) +
+  geom_line(stat = "density") +
+  labs(x = "Age", y = "Density")
+p
+#+END_SRC
+
+The syntax is almost identical in both case, pending the options specific to each geometrical object: In the case of =geom_histogram=, it is possible to indicate the size (=binwidth=) or the number (=bins=) of intervals to use when discretizing the continuous variable =x=; with the density estimator, we can specify the size of the smoothing window (=bw= or =adjust=) and/or the kernel (=kernel=).
+
+** Boxplots
+
+Boxplots can be used to visually depict the output of the summary function, that is a five-number summary of the distribution of a numerical variable (location, shape and range). It is most useful when there are several distributions to plot side by side, hence the use of =x= and =y= in the mapping below:
+
+#+BEGIN_SRC R :file assets/lang-r-ggplot-005.png :results graphics file
+p <- ggplot(data = d, aes(x = mar, y = logincome)) +
+  geom_boxplot() +
+  labs(x = "Marital Status", y = "Annual Income (log)") +
+  coord_flip()
+p
+#+END_SRC
+
+** Barplots
+
+Let us summarize the distribution of average (log) income across socio-economic classes. First, we need to compute the mean and standard deviation of =logincome= for each level of =egp=. This is easily performed using =aggregate= (or =tapply=):
+
+#+BEGIN_SRC R
+egp_stats <- aggregate(logincome ~ egp, data = d, mean)
+egp_stats$sd <- aggregate(logincome ~ egp, data = d, sd)$logincome
+names(egp_stats)[2] <- "mean"
+egp_stats
+#+END_SRC
+
+Unfortunately, =aggregate= returns a data frame with only one column for the computed results (named after the variable that appears in the LHS), no matter if the function returns a single valued vector or multivariate vectors. Hence, we are forced to extract the result computed with the second call to aggregate and append it as a distinct column. It is then possible to use a combination of =geom_bar= and =geom_errorbar= to produce the desired result:
+
+#+BEGIN_SRC R :file assets/lang-r-ggplot-006.png :results graphics file
+p <- ggplot(data = egp_stats, aes(x = egp, y = mean)) +
+  geom_bar(stat = "identity") +
+  geom_errorbar(aes(ymin = mean - sd, ymax = mean + sd), width = .2, col = "black") +
+  labs(x = "Socio-Economic Status", y = "Average income (log)")
+p
+#+END_SRC
+
+Here is another example using two variables in the RHS, =egp= and =sex=:
+
+#+BEGIN_SRC R
+egp_stats <- aggregate(logincome ~ egp, data = d, mean)
+egp_stats <- aggregate(logincome ~ egp + sex, data = d, mean)
+egp_stats$sd <- aggregate(logincome ~ egp + sex, data = d, sd)$logincome
+names(egp_stats)[3] <- "mean"
+#+END_SRC
+
+#+BEGIN_SRC R :file assets/lang-r-ggplot-007.png :results graphics file
+p <- ggplot(data = egp_stats, aes(x = egp, y = mean, fill = sex)) +
+  geom_bar(stat = "identity", position = position_dodge()) +
+  geom_errorbar(aes(ymin = mean - sd, ymax = mean + sd), width = .2, col = "black", position = position_dodge(.9)) +
+  scale_fill_manual("", values = c("cornflowerblue", "darkorange")) +
+  labs(x = "Socio-Economic Status", y = "Average income (log)")
+p
+#+END_SRC
+
+** Scatterplots
+
+Scatterplot are a common way to display the joint variation of two series of observations, specified as =x= and =y= coordinates in a 2D plan. A scatterplot smoother, e.g. a lowess (or loess) curve, can be superimposed on the scatterplot to help in gauging local deviation to the linear relationship assumption commonly found in linear regression. In addition to the x and y variables, it is also possible to ask ggplot2 to highlight point using a color that depends on the level of a third categorical variable. This is controlled in the aesthetic directly. When we are not happy with the default color scheme, we can provide our own values (RGB, HEX or named colors) using a "manual" scale, which targets an existing aesthetic. Finally, =facet_grid= or =facet_wrap= can be used to build a treillis graphic, meaning that the overall plot is subsetted according to the facet defined in this specific instruction. Here is a full working example in action:
+
+#+BEGIN_SRC R :file assets/lang-r-ggplot-008.png :width 1200 :results graphics file
+p <- ggplot(data = subset(d, egp != "None"), aes(x = age, y = logincome, color = sex)) +
+  geom_point(alpha = 0.5) +
+  geom_smooth(method = "loess", se = FALSE, span = 1.5) +
+  scale_color_manual("", values = c("cornflowerblue", "darkorange")) +
+  facet_grid(mar ~ egp) +
+  labs(x = "Age", y = "Average income (log)")
+p
+#+END_SRC
+
+#+LATEX: \printbibliography
+#+LATEX: \newpage
+#+TOC: headlines 2

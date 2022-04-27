@@ -322,15 +322,15 @@ prop.table(table(ToothGrowth$dose, ToothGrowth$supp), margins = 1)
 
 * Practical use case: The ESS survey
 
-The =data= directory includes three [[https://www.rdocumentation.org/packages/base/versions/3.5.3/topics/readRDS][RDS]] files related to the [[https://www.europeansocialsurvey.org/][European Social Survey]] (ESS). This survey first ran in 2002 (round 1), and it is actually renewed every two years. The codebook can be downloaded, along [[http://www.europeansocialsurvey.org/data/download.html][other data sheets]], on the main website.
+The [[file:data/][data]] directory includes three [[https://www.rdocumentation.org/packages/base/versions/3.5.3/topics/readRDS][RDS]] files related to the [[https://www.europeansocialsurvey.org/][European Social Survey]] (ESS). This survey first ran in 2002 (round 1), and it is actually renewed every two years. The codebook can be downloaded, along [[http://www.europeansocialsurvey.org/data/download.html][other data sheets]], on the main website.
 
-There are two files related to data collected in France (round 1 or rounds 1-5, =ess-*-fr.rds=) and one file for all participating countries (=ess-one-round.rds=).
+There are two files related to data collected in France (round 1 or rounds 1-5, =ess-*-fr.rds=) and one file for all participating countries ([[file:data/ess-one-round.rds][ess-one-round.rds]]).
 French data
 
 Assuming the =data= directory is available in the current working directory, here is how we can load French data for round 1:
 
 #+BEGIN_SRC R
-WD <- "~/Sites/aliquote/static/articles/notebooks"
+WD <- "."
 filepath <- paste0(WD, "/data/ess-one-round-fr.rds")
 d <- readRDS(filepath)
 head(as.data.frame(d[1:10]))
@@ -344,7 +344,7 @@ table(d$yrbrn)
 summary(d$agea)
 #+END_SRC
 
-Let us focus on the following list of variables, readily available in the file =ess-one-round-29vars-fr.rds=:
+Let us focus on the following list of variables, readily available in the file [[file:data/ess-one-round-29vars-fr.rds][ess-one-round-29vars-fr.rds]]:
 
 - =tvtot=: TV watching, total time on average weekday
 - =rdtot=: Radio listening, total time on average weekday
@@ -378,7 +378,7 @@ Let us focus on the following list of variables, readily available in the file =
 
 ** Recoded French data
 
-Note that variables in the file =ess-one-round-29vars-fr.rds= have been recoded and categorical variables now have proper labels. See the script file =scripts/ess-one-round-29vars-fr.r= to see what has been done to the base file.
+Note that variables in the file [[file:data/ess-one-round-29vars-fr.rds][ess-one-round-29vars-fr.rds]] have been recoded and categorical variables now have proper labels. See the script file [[file:scripts/ess-one-round-29vars-fr.r][ess-one-round-29vars-fr.r]] to see what has been done to the base file.
 
 #+BEGIN_SRC R
 filepath <- paste0(WD, "/data/ess-one-round-29vars-fr.rds")

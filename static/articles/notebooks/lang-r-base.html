@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<!-- 2022-04-26 mar. 21:28 -->
+<!-- 2022-04-27 mer. 09:40 -->
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Introduction to R</title>
@@ -41,16 +41,16 @@ This introduction to the R language aims at understanding how to represent and m
 <b><b>Important notice:</b></b> Only base commands are discussed here, not the <a href="https://www.tidyverse.org/">tidyverse</a>. A separate cheatsheet is available for the <a href="https://ggplot2.tidyverse.org/">ggplot2</a> package.
 </p>
 
-<div id="outline-container-orgd6da038" class="outline-2">
-<h2 id="orgd6da038"><span class="section-number-2">1</span> Installing R and RStudio</h2>
+<div id="outline-container-org6db3a1d" class="outline-2">
+<h2 id="org6db3a1d"><span class="section-number-2">1</span> Installing R and RStudio</h2>
 <div class="outline-text-2" id="text-1">
 <p>
 The R statistical package can be installed from <a href="https://cran.r-project.org/">CRAN</a>. Be sure to also download <a href="https://www.rstudio.com/">RStudio</a> as it provided a full-featured user interface to interact with R. To use Jupyter notebook, you will also need the <a href="https://irkernel.github.io/">IR kernel</a>.
 </p>
 </div>
 
-<div id="outline-container-org038c8c8" class="outline-3">
-<h3 id="org038c8c8"><span class="section-number-3">1.1</span> Useful additional packages</h3>
+<div id="outline-container-org9a8768a" class="outline-3">
+<h3 id="org9a8768a"><span class="section-number-3">1.1</span> Useful additional packages</h3>
 <div class="outline-text-3" id="text-1-1">
 <p>
 This tutorial mainly relies on core facilities that come along so called R <a href="https://stackoverflow.com/a/9705725">base packages</a>. However, it is possible to install additional packages and, in particular, the <a href="https://ggplot2.tidyverse.org/">ggplot2</a> package, as shown below:
@@ -62,8 +62,8 @@ install.packages("ggplot2")
 </div>
 </div>
 
-<div id="outline-container-orgc81564d" class="outline-3">
-<h3 id="orgc81564d"><span class="section-number-3">1.2</span> Setup</h3>
+<div id="outline-container-org9b13e61" class="outline-3">
+<h3 id="org9b13e61"><span class="section-number-3">1.2</span> Setup</h3>
 <div class="outline-text-3" id="text-1-2">
 <p>
 The following setup will be used for graphical displays:
@@ -82,12 +82,12 @@ Note that you need to load the ggplot2 package only once, at the start of your R
 </div>
 </div>
 
-<div id="outline-container-org2335990" class="outline-2">
-<h2 id="org2335990"><span class="section-number-2">2</span> Getting started</h2>
+<div id="outline-container-orgb215549" class="outline-2">
+<h2 id="orgb215549"><span class="section-number-2">2</span> Getting started</h2>
 <div class="outline-text-2" id="text-2">
 </div>
-<div id="outline-container-orgd8209ac" class="outline-3">
-<h3 id="orgd8209ac"><span class="section-number-3">2.1</span> Variables</h3>
+<div id="outline-container-org909d16f" class="outline-3">
+<h3 id="org909d16f"><span class="section-number-3">2.1</span> Variables</h3>
 <div class="outline-text-3" id="text-2-1">
 <p>
 There are fundamentally two kind of data structures in statistics-oriented programming languages: numbers and strings. Numbers can be integers or real numbers and they are used to represent values observed for a continuous or discrete statistical variable, while strings are everything else that cannot be represented as numbers or list of numbers, e.g. address of a building, answer to an open-ended question in a survey, etc.
@@ -148,7 +148,7 @@ The list of numbers we stored in <code>x</code> is called a vector, and it is on
 </p>
 
 
-<div id="orgefb0d35" class="figure">
+<div id="org2a6d35e" class="figure">
 <p><img src="./assets/lang-r-base-001.png" alt="lang-r-base-001.png" width="640px">
 </p>
 <p><span class="figure-number">Figure 1: </span>Common data structures in R</p>
@@ -156,8 +156,8 @@ The list of numbers we stored in <code>x</code> is called a vector, and it is on
 </div>
 </div>
 
-<div id="outline-container-orge566226" class="outline-3">
-<h3 id="orge566226"><span class="section-number-3">2.2</span> Vectors</h3>
+<div id="outline-container-org65395eb" class="outline-3">
+<h3 id="org65395eb"><span class="section-number-3">2.2</span> Vectors</h3>
 <div class="outline-text-3" id="text-2-2">
 <p>
 The command <code>c</code> ('concatenate') we used to create our list of integers will be very useful when it comes to pass multiple options to a command. It can be nested into another call to <code>c</code> like in the following example:
@@ -247,8 +247,8 @@ Notice that many functions like <code>is.na</code>, or <code>which</code>, act i
 </div>
 </div>
 
-<div id="outline-container-org4d9d279" class="outline-3">
-<h3 id="org4d9d279"><span class="section-number-3">2.3</span> Vectors and random sampling</h3>
+<div id="outline-container-orge1eadcc" class="outline-3">
+<h3 id="orge1eadcc"><span class="section-number-3">2.3</span> Vectors and random sampling</h3>
 <div class="outline-text-3" id="text-2-3">
 <p>
 The sample function allows to randomly shuffle an existing vector or to generate a sequence of random numbers. Whenever we rely on the random number generator (RNG), it is recommend to set the seed of the RNG in order to ensure that those pseudo-random sequence could be reproduced later. Here is an illustration:
@@ -262,7 +262,7 @@ sample(s)
 
 <pre class="example">
 
-[1] 8 3 2 4 1
+[1] 1 4 2 3 8
 </pre>
 
 
@@ -273,9 +273,9 @@ sample(0:1, size = 10, replace = TRUE)
 </div>
 
 <pre class="example">
-[1]  2  8 10  4  5
+[1]  8  9  1  2 10
 
- [1] 1 1 1 1 0 0 0 0 1 0
+ [1] 1 1 0 1 1 0 0 1 0 0
 </pre>
 
 
@@ -285,8 +285,8 @@ In summary, <code>sample(1:n, size = n)</code> returns a permutation of the <cod
 </div>
 </div>
 
-<div id="outline-container-org1d760fe" class="outline-3">
-<h3 id="org1d760fe"><span class="section-number-3">2.4</span> Sorting</h3>
+<div id="outline-container-org923e127" class="outline-3">
+<h3 id="org923e127"><span class="section-number-3">2.4</span> Sorting</h3>
 <div class="outline-text-3" id="text-2-4">
 <p>
 Sorting a list of values or finding the index or rank of any value in a vector are common tasks in statistical programming. It is different from computing ranks of observed values, which is handled by the <code>rank</code> function. The two main instructions to sort a list of values and to get the index of the sorted item are <code>sort</code> and <code>order</code>, respectively:
@@ -308,8 +308,8 @@ order(z)
 </div>
 </div>
 
-<div id="outline-container-orgd8b09c1" class="outline-3">
-<h3 id="orgd8b09c1"><span class="section-number-3">2.5</span> Data frames</h3>
+<div id="outline-container-orgd8ef274" class="outline-3">
+<h3 id="orgd8ef274"><span class="section-number-3">2.5</span> Data frames</h3>
 <div class="outline-text-3" id="text-2-5">
 <p>
 Data frames are one of the core data structures to store and represent statistical data. Many routine functions that are used to load data stored in flat files or databases or to preprocess data stored in memory rely on data frames. Likewise, graphical commands such as those found in the ggplot2 package generally assumes a data frame as input. The same applies to functions used in statistical modeling (<code>lm</code>, <code>glm</code>, etc.).
@@ -377,7 +377,7 @@ To access any given cell in this data frame, we will use the indexing trick we u
 </p>
 
 
-<div id="orgcf49222" class="figure">
+<div id="org71c197e" class="figure">
 <p><img src="./assets/lang-r-base-002.png" alt="lang-r-base-002.png" width="320px">
 </p>
 <p><span class="figure-number">Figure 2: </span>Representation of a data frame in R</p>
@@ -406,7 +406,7 @@ Since we know that we can use c to create a list of numbers, we can use <code>c<
 </p>
 
 
-<div id="org024e633" class="figure">
+<div id="orga6c4b24" class="figure">
 <p><img src="./assets/lang-r-base-003.png" alt="lang-r-base-003.png" width="320px">
 </p>
 <p><span class="figure-number">Figure 3: </span>Vector indexing</p>
@@ -442,7 +442,7 @@ Levels: OJ VC
 
 
 
-<div id="orga91b061" class="figure">
+<div id="orgd1ea4b6" class="figure">
 <p><img src="./assets/lang-r-base-004.png" alt="lang-r-base-004.png" width="320px">
 </p>
 <p><span class="figure-number">Figure 4: </span>Selecting elements in a data frame</p>
@@ -453,7 +453,7 @@ Likewise, it is possible to combine different filters using logical operators: <
 </p>
 
 
-<div id="org12af5d5" class="figure">
+<div id="org04cc668" class="figure">
 <p><img src="./assets/lang-r-base-005.png" alt="lang-r-base-005.png" width="320px">
 </p>
 <p><span class="figure-number">Figure 5: </span>Using filters on a data frame</p>
@@ -486,7 +486,7 @@ You will soon realize that for complex queries this notation become quite cumber
 </p>
 
 
-<div id="org2665bc4" class="figure">
+<div id="org8569538" class="figure">
 <p><img src="./assets/lang-r-base-006.png" alt="lang-r-base-006.png" width="320px">
 </p>
 <p><span class="figure-number">Figure 6: </span>Subsetting a data frame by row and column</p>
@@ -515,7 +515,7 @@ Here is an example of use:
 
 
 
-<div id="orgfc72343" class="figure">
+<div id="orgae8207e" class="figure">
 <p><img src="./assets/lang-r-base-007.png" alt="lang-r-base-007.png" width="320px">
 </p>
 <p><span class="figure-number">Figure 7: </span>Subsetting a data frame: Illustration of joint filters</p>
@@ -566,16 +566,16 @@ The <code>which</code> function can also be used to retrieve a specific observat
 </div>
 </div>
 
-<div id="outline-container-org41f726c" class="outline-2">
-<h2 id="org41f726c"><span class="section-number-2">3</span> Statistical summaries</h2>
+<div id="outline-container-orgeb4c277" class="outline-2">
+<h2 id="orgeb4c277"><span class="section-number-2">3</span> Statistical summaries</h2>
 <div class="outline-text-2" id="text-3">
 <p>
 As explained above, the <code>str</code> function is useful to check a given data structure, and individual properties of a data frame can be queried using dedicated functions, e.g. <code>nrow</code> or <code>ncol</code>. Now, to compute statistical quantities on a variable, we can use dedicated functions like <code>mean</code> (arithmetical mean), <code>sd</code> (standard deviation; see also <code>var</code>), <code>IQR</code> (interquartile range), <code>range</code> (range of values; see also <code>min</code> and <code>max</code>), or the <code>summary</code> function, which computes a five-point summary in the case of a numerical variable or a table of counts for categorical outcomes.
 </p>
 </div>
 
-<div id="outline-container-orge8725c0" class="outline-3">
-<h3 id="orge8725c0"><span class="section-number-3">3.1</span> Univariate case</h3>
+<div id="outline-container-orgb12cf40" class="outline-3">
+<h3 id="orgb12cf40"><span class="section-number-3">3.1</span> Univariate case</h3>
 <div class="outline-text-3" id="text-3-1">
 <p>
 Here are some applications in the case we are interested in summarizing one variable at a time:
@@ -624,8 +624,8 @@ table(ToothGrowth$dose[ToothGrowth$len &lt; 20])
 </div>
 </div>
 
-<div id="outline-container-org5bb52bd" class="outline-3">
-<h3 id="org5bb52bd"><span class="section-number-3">3.2</span> Bivariate case</h3>
+<div id="outline-container-org7213327" class="outline-3">
+<h3 id="org7213327"><span class="section-number-3">3.2</span> Bivariate case</h3>
 <div class="outline-text-3" id="text-3-2">
 <p>
 If we want to summarize a numerical variable according the values that a factor variable takes, we can use <code>tapply</code> or <code>aggregate</code>. The latter expects a 'formula' describing the relation between the variables we are interested in: the response variable or outcome appears on the left-hand side (LHS), while the factors or descriptors are listed in the right-hand side (RHS). The last argument to <code>aggregate</code> is the function we want to apply to each chunk of observations defined by the RHS. Here is an example of use:
@@ -734,15 +734,15 @@ Erreur dans prop.table(table(ToothGrowth$dose, ToothGrowth$supp), margins = 1) :
 </div>
 </div>
 
-<div id="outline-container-org2e74455" class="outline-2">
-<h2 id="org2e74455"><span class="section-number-2">4</span> Practical use case: The ESS survey</h2>
+<div id="outline-container-org0a37e45" class="outline-2">
+<h2 id="org0a37e45"><span class="section-number-2">4</span> Practical use case: The ESS survey</h2>
 <div class="outline-text-2" id="text-4">
 <p>
-The <code>data</code> directory includes three <a href="https://www.rdocumentation.org/packages/base/versions/3.5.3/topics/readRDS">RDS</a> files related to the <a href="https://www.europeansocialsurvey.org/">European Social Survey</a> (ESS). This survey first ran in 2002 (round 1), and it is actually renewed every two years. The codebook can be downloaded, along <a href="http://www.europeansocialsurvey.org/data/download.html">other data sheets</a>, on the main website.
+The <a href="data/">data</a> directory includes three <a href="https://www.rdocumentation.org/packages/base/versions/3.5.3/topics/readRDS">RDS</a> files related to the <a href="https://www.europeansocialsurvey.org/">European Social Survey</a> (ESS). This survey first ran in 2002 (round 1), and it is actually renewed every two years. The codebook can be downloaded, along <a href="http://www.europeansocialsurvey.org/data/download.html">other data sheets</a>, on the main website.
 </p>
 
 <p>
-There are two files related to data collected in France (round 1 or rounds 1-5, <code>ess-*-fr.rds</code>) and one file for all participating countries (<code>ess-one-round.rds</code>).
+There are two files related to data collected in France (round 1 or rounds 1-5, <code>ess-*-fr.rds</code>) and one file for all participating countries (<a href="data/ess-one-round.rds">ess-one-round.rds</a>).
 French data
 </p>
 
@@ -751,7 +751,7 @@ Assuming the <code>data</code> directory is available in the current working dir
 </p>
 
 <div class="org-src-container">
-<pre class="src src-R">WD &lt;- "~/Sites/aliquote/static/articles/notebooks"
+<pre class="src src-R">WD &lt;- "."
 filepath &lt;- paste0(WD, "/data/ess-one-round-fr.rds")
 d &lt;- readRDS(filepath)
 head(as.data.frame(d[1:10]))
@@ -800,7 +800,7 @@ head(as.data.frame(d[1:10]))
 
 
 <p>
-Let us focus on the following list of variables, readily available in the file <code>ess-one-round-29vars-fr.rds</code>:
+Let us focus on the following list of variables, readily available in the file <a href="data/ess-one-round-29vars-fr.rds">ess-one-round-29vars-fr.rds</a>:
 </p>
 
 <ul class="org-ul">
@@ -836,11 +836,11 @@ Let us focus on the following list of variables, readily available in the file <
 </ul>
 </div>
 
-<div id="outline-container-orgf6b0786" class="outline-3">
-<h3 id="orgf6b0786"><span class="section-number-3">4.1</span> Recoded French data</h3>
+<div id="outline-container-org0504fa4" class="outline-3">
+<h3 id="org0504fa4"><span class="section-number-3">4.1</span> Recoded French data</h3>
 <div class="outline-text-3" id="text-4-1">
 <p>
-Note that variables in the file <code>ess-one-round-29vars-fr.rds</code> have been recoded and categorical variables now have proper labels. See the script file <code>scripts/ess-one-round-29vars-fr.r</code> to see what has been done to the base file.
+Note that variables in the file <a href="data/ess-one-round-29vars-fr.rds">ess-one-round-29vars-fr.rds</a> have been recoded and categorical variables now have proper labels. See the script file <a href="scripts/ess-one-round-29vars-fr.r">ess-one-round-29vars-fr.r</a> to see what has been done to the base file.
 </p>
 
 <div class="org-src-container">
@@ -1033,8 +1033,8 @@ Further details are available in the handout <a href="./lang-r-ggplot.html">lang
 </div>
 </div>
 
-<div id="outline-container-org11e5032" class="outline-3">
-<h3 id="org11e5032"><span class="section-number-3">4.2</span> Data from other countries</h3>
+<div id="outline-container-org75d90ac" class="outline-3">
+<h3 id="org75d90ac"><span class="section-number-3">4.2</span> Data from other countries</h3>
 <div class="outline-text-3" id="text-4-2">
 <p>
 Data from all other participating countries can be loaded in the same manner:
@@ -1113,31 +1113,31 @@ In case the unique ID is spelled differently in the two data frames, it is possi
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents">
 <ul>
-<li><a href="#orgd6da038">1. Installing R and RStudio</a>
+<li><a href="#org6db3a1d">1. Installing R and RStudio</a>
 <ul>
-<li><a href="#org038c8c8">1.1. Useful additional packages</a></li>
-<li><a href="#orgc81564d">1.2. Setup</a></li>
+<li><a href="#org9a8768a">1.1. Useful additional packages</a></li>
+<li><a href="#org9b13e61">1.2. Setup</a></li>
 </ul>
 </li>
-<li><a href="#org2335990">2. Getting started</a>
+<li><a href="#orgb215549">2. Getting started</a>
 <ul>
-<li><a href="#orgd8209ac">2.1. Variables</a></li>
-<li><a href="#orge566226">2.2. Vectors</a></li>
-<li><a href="#org4d9d279">2.3. Vectors and random sampling</a></li>
-<li><a href="#org1d760fe">2.4. Sorting</a></li>
-<li><a href="#orgd8b09c1">2.5. Data frames</a></li>
+<li><a href="#org909d16f">2.1. Variables</a></li>
+<li><a href="#org65395eb">2.2. Vectors</a></li>
+<li><a href="#orge1eadcc">2.3. Vectors and random sampling</a></li>
+<li><a href="#org923e127">2.4. Sorting</a></li>
+<li><a href="#orgd8ef274">2.5. Data frames</a></li>
 </ul>
 </li>
-<li><a href="#org41f726c">3. Statistical summaries</a>
+<li><a href="#orgeb4c277">3. Statistical summaries</a>
 <ul>
-<li><a href="#orge8725c0">3.1. Univariate case</a></li>
-<li><a href="#org5bb52bd">3.2. Bivariate case</a></li>
+<li><a href="#orgb12cf40">3.1. Univariate case</a></li>
+<li><a href="#org7213327">3.2. Bivariate case</a></li>
 </ul>
 </li>
-<li><a href="#org2e74455">4. Practical use case: The ESS survey</a>
+<li><a href="#org0a37e45">4. Practical use case: The ESS survey</a>
 <ul>
-<li><a href="#orgf6b0786">4.1. Recoded French data</a></li>
-<li><a href="#org11e5032">4.2. Data from other countries</a></li>
+<li><a href="#org0504fa4">4.1. Recoded French data</a></li>
+<li><a href="#org75d90ac">4.2. Data from other countries</a></li>
 </ul>
 </li>
 </ul>
@@ -1166,7 +1166,7 @@ R.&nbsp;Ihaka and R.&nbsp;Gentleman, &ldquo;R: A language for data analysis and 
 </div>
 </div>
 <div id="postamble" class="status">
-Generated by <a href="https://www.gnu.org/software/emacs/">Emacs</a> 26.3 (<a href="https://orgmode.org">Org</a> mode 9.3.1) on 2022-04-26 mar. 21:28 (<a href="mailto:chl@aliquote">chl@aliquote</a>)
+Generated by <a href="https://www.gnu.org/software/emacs/">Emacs</a> 26.3 (<a href="https://orgmode.org">Org</a> mode 9.3.1) on 2022-04-27 mer. 09:40 (<a href="mailto:chl@aliquote">chl@aliquote</a>)
 </div>
 </body>
 </html>
