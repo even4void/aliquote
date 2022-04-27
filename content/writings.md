@@ -29,7 +29,7 @@ Below is a list of what has been archived over the years on this site or on exte
 <tr><td><a href="/pub/papers.pdf">Reading notes</a></td><td>Jan 2019</td><td>en</td><td>done</td><td><i data-feather="file-text" width="12px" height="12px"></i></td></tr>
 <tr><td><a href="/cours/2018_meta/">Méta-analyses avec R</a></td><td> Oct 2018</td><td>fr</td><td>done</td><td><i data-feather="link" width="12px" height="12px"></i></td></tr>
 <tr><td><a href="https://github.com/even4void/rstats-ssample">Statistiques pour petits échantillons</a></td><td>May 2018</td><td>fr</td><td>done</td><td><i data-feather="link" width="12px" height="12px"></i></td></tr>
-<tr><td><a href="https://github.com/even4void/rstats-biostats">Méthodes biostatistiques</a></td><td>Jun 2018</td><td>fr</td><td>done</td><td><i data-feather="link" width="12px" height="12px"></i></td></tr>
+<tr><td><a href="https://even4void.github.io/rstats-biostats/">Méthodes biostatistiques</a></td><td>Jun 2018</td><td>fr</td><td>done</td><td><i data-feather="link" width="12px" height="12px"></i></td></tr>
 <tr><td><a href="https://github.com/even4void/EESPE11">Méthodes psychométriques en qualité de vie</a></td><td>Jun 2016</td><td>fr</td><td>done</td><td><i data-feather="link" width="12px" height="12px"></i></td></tr>
 <tr><td><a href="/pub/SAS2R.pdf">Statistics for Clinical Trials: Applications Using R</a></td><td>Jun 2016</td><td>en</td><td>todo</td><td><i data-feather="file-text" width="12px" height="12px"></i></td></tr>
 <tr><td><a href="https://github.com/even4void/Stata101">Stata 101</a></td><td>May 2016</td><td>fr</td><td>done</td><td><i data-feather="link" width="12px" height="12px"></i></td></tr>
