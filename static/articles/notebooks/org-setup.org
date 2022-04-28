@@ -23,6 +23,12 @@ print("%d bytes" % (Z.size * Z.itemsize))
 #+END_SRC
 #+END_EXAMPLE
 
+Everything between the =#+BEGIN_SRC= and =#+END_SRC= statements is pure Python code, as indicated in the [[https://www.orgmode.org/worg/org-contrib/babel/header-args.html][header]], just after =#+BEGIN_SRC=. This is much like Markdown fenced code blocks. Normally, such a code chunk can be evaluated in Emacs by pressing =C-c C-c=, and a =#+RESULTS= block will be displayed right after the source code. The header arguments determine how code should be processed and displayed. It can be global (i.e., valid for all code chunks in the current buffer) or local (i.e., only for the current code chunk). In the latter case, it is specified right after the language (here, =python=). Otherwise, we can put a general statement at the beginning of the document, and update header options on the go. Here is some header stuff that you probably want to put at the top of your Org document:
+
+#+BEGIN_EXAMPLE
+#+PROPERTY: header-args :cache no :exports both :results output :session
+#+END_EXAMPLE
+
 * How to proceed your Org documents
 
 
