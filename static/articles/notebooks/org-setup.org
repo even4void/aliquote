@@ -11,7 +11,32 @@ I tend to view Org as a three-fold utility. First, it is a very good markup lang
 
 The rationale is as follows: We could use general purpose tool like [[https://www.dexy.it/][dexy]] or [[https://www.cs.tufts.edu/~nr/noweb/][noweb]], or more specialized one ([[https://stat.ethz.ch/R-manual/R-devel/library/utils/doc/Sweave.pdf][Sweave]], [[https://yihui.org/knitr/][knitr]], [[https://mpastell.com/pweave/][pweave]], [[https://homepage.divms.uiowa.edu/~rlenth/StatWeave/][staweave]]), use built-in exporters (e.g., from Mathematica markup language), or all-in-one solution in the browser as in Jupyter notebooks. I don't really like working in my web browser, and for what matters I don't need a digital playground, but rather a way to embed snippets of code and their outputs into my document.
 
-* How to write Org documents
+This is not a tutorial on Org, Org mode, or even Emacs. Also, keep in mind that this is written from the perspective of someone who works exclusively with Neovim. Although there are some plugins that allow to reproduce part of the Emacs way of working with Org,[fn:vim] we assume no external plugins at all. At the time of this writing, the Neovim [[https://github.com/nvim-orgmode/orgmode][orgmode]] plugin does not allow to evaluate code block. Its main focus seems to be on the GTD side of Org--and it does it pretty well, in my own view. This short note aims at describing what works for me, when it comes to writing Org documents as plain text (syntax highlighting is provided by the venerable [[https://github.com/jceb/vim-orgmode][vim-orgmode]] syntax file). You will lose verything you get when working directly from Emacs: inline evaluation of code block, management of references (labels, bibliographic entries, outline, among others), the Org dispatcher which allows to select the exporting backend, and so on. However, you will be able to export your plain text document with the result of your source block pretty printed in your HTML or PDF output files.
+
+* How to write your Org documents
+
+** Languages
+
+R and Stata should work right out of the box provided you installed the [[https://ess.r-project.org/][ESS]] package. Things may be broken for Julia, though. It should be noted that Stata version < 14 does not allow saving SVG or PNG image, which may limit your ability to export images as easily as with other languages. The only option for those who are on Stata 13 like me is to use imagemagick to post-process images saved in Postscript format. The following oneliner shell script will do the work:
+
+#+BEGIN_EXAMPLE
+for i in *.eps; do convert -density 300 -quality 85 "$i" "${i%%.*}.png"; done
+#+END_EXAMPLE
+
+Python and Mathematica require additional settings. For Python, you need to point =org-babel-python-command= to the relevant Python you want to use, otherwise it will pick the default =python= program available in your =$PATH=. If you are using a virtual environment, or =python3=, then you likely want to update the default settings. For Mathematica, you will need [[https://ai.eecs.umich.edu/people/dreeves/mash/][mash.pl]],[fn:mma] as described in the following article: [[https://rgoswami.me/posts/org-mathematica/][Using Mathematica with Orgmode]].
+
+Finally, languages need to be loaded for Org to properly works. This can be done in Emacs config file as follows: (more on this in a later section)
+
+#+BEGIN_EXAMPLE
+(org-babel-do-load-languages
+ 'org-babel-load-languages
+ '((R . t)
+   (python . t)
+   (mathematica . t)
+   (stata . t)))
+#+END_EXAMPLE
+
+** Basic source blocks
 
 The [[https://orgmode.org/][Org]] website comes with nice tutorials. Read them, you will learn the basic syntax for highlighting and delineating your text. Next comes the Babel aspect of Org. Each chunk of code will read more or less like the following snippet:[fn:rou]
 
@@ -23,16 +48,117 @@ print("%d bytes" % (Z.size * Z.itemsize))
 #+END_SRC
 #+END_EXAMPLE
 
-Everything between the =#+BEGIN_SRC= and =#+END_SRC= statements is pure Python code, as indicated in the [[https://www.orgmode.org/worg/org-contrib/babel/header-args.html][header]], just after =#+BEGIN_SRC=. This is much like Markdown fenced code blocks. Normally, such a code chunk can be evaluated in Emacs by pressing =C-c C-c=, and a =#+RESULTS= block will be displayed right after the source code. The header arguments determine how code should be processed and displayed. It can be global (i.e., valid for all code chunks in the current buffer) or local (i.e., only for the current code chunk). In the latter case, it is specified right after the language (here, =python=). Otherwise, we can put a general statement at the beginning of the document, and update header options on the go. Here is some header stuff that you probably want to put at the top of your Org document:
+Everything between the =#+BEGIN_SRC= and =#+END_SRC= statements is pure Python code, as indicated in the [[https://www.orgmode.org/worg/org-contrib/babel/header-args.html][header]], just after =#+BEGIN_SRC=. This is much like Markdown fenced code blocks. Normally, such a code chunk can be evaluated in Emacs by pressing =C-c C-c=, and a =#+RESULTS= block will be displayed right after the source code. The header arguments determine how code should be processed and displayed. It can be global (i.e., valid for all code chunks in the current buffer) or local (i.e., only for the current code chunk). In the latter case, it is specified right after the language (here, =python=). Otherwise, we can put a general statement at the beginning of the document, and update header options on the go. Here is some header stuff that you probably want to put at the top of your Org document:[fn:opt]
 
 #+BEGIN_EXAMPLE
 #+PROPERTY: header-args :cache no :exports both :results output :session
 #+END_EXAMPLE
 
+** Source blocks evaluation
+
+Here is a the same example again, but with both input (=SRC=) and output (=RESULTS=) enabled:
+
+#+BEGIN_SRC python :exports both :results output
+import numpy as np
+Z = np.zeros((10,10))
+print("%d bytes" % (Z.size * Z.itemsize))
+#+END_SRC
+
+The results are wrapped up in a verbatim block, which shows up nicely when using $\LaTeX$ or HTML backend.
+
+
+#+NAME: tab:header
+#+LABEL: tab:header
+#+ATTR_HTML: :border 2 :rules all :frame border :width 100%
+#+CAPTION: Results options available for each language
+|-------------+----------------------------|
+|-------------+----------------------------|
+| Language    | Available options          |
+|-------------+----------------------------|
+| R           | =value=, =output=          |
+| Stata       | =value=, =output=          |
+| Python      | =value=, =output=          |
+| Mathematica | =value=, =output=, =latex= |
+|-------------+----------------------------|
+|-------------+----------------------------|
+
+
+** Advanced usage
+
+
 * How to proceed your Org documents
+
+** Local and global setup
+
+Again, there are two options to export your Org documents. Either you reuse your own Emacs configuration, or you write one from scratch. The latter is useful in case you want to maintain separate configuration for each project, while the former is the easy way to go. Here is what you could put in a file named =setup.el=:
+
+#+BEGIN_EXAMPLE
+(load (expand-file-name "init.el" user-emacs-directory))
+(require 'org)
+(load "ox-bibtex.el")
+#+END_EXAMPLE
+
+The above instructions load your whole Emacs config, via =init.el= in the user emacs directory. In your Makefile, you then invoke Emacs like this:
+
+#+BEGIN_EXAMPLE
+%.html: %.org
+	emacs --batch -l setup.el $< -f org-html-export-to-html --kill
+#+END_EXAMPLE
+
+If, on the other hand, you prefer to write custom settings for each project directory, then there's a little more work involved. First, you will need to import the relevant Emacs package and load the appropriate languages. This can be done as follows (again we assume everything is stored in a file named =setup.org=):
+
+#+BEGIN_EXAMPLE
+(require 'org)
+(require 'ess-site)
+(require 'ess-stata-mode)
+(require 'ox-bibtex)
+
+(org-babel-do-load-languages
+ 'org-babel-load-languages
+ '((R . t)
+   (python . t)
+   (mathematica . t)
+   (stata . t)))
+
+(setq ess-ask-for-ess-directory nil)
+(setq inferior-R-program-name "/usr/bin/R"
+      org-babel-python-command "/usr/bin/python3"
+      org-babel-mathematica-command "~/bin/mash"
+      mathematica-command-line "~//bin/mash"
+      inferior-R-args "-q --no-save --no-restore")
+#+END_EXAMPLE
+
+
+** Wrapping up everything in a shell script
+
+If you are going to use this everyday, you are better off writing a little shell script to perform all the work. Here is a simplified illustration:
+
+#+BEGIN_EXAMPLE
+#!/usr/bin/env bash
+
+OPT=$1
+FILE=$2
+
+ELISP="/home/chl/Documents/notes/assets/org-babel.el"
+
+case $OPT in
+-pdf)
+	emacs --batch -l "$ELISP" --eval "(progn (find-file \"$FILE\") (org-latex-export-to-pdf))"
+	;;
+-html)
+	emacs --batch -l "$ELISP" --eval "(progn (find-file \"$FILE\") (org-html-export-to-html))"
+	;;
+*)
+	echo "Unknown export format."
+	;;
+esac
+#+END_EXAMPLE
 
 
 # FOOTNOTES
+[fn:vim] See this post, [[https://aliquote.org/post/org-in-vim/][Org in Vim]], for example.
 [fn:gtd] There are many other thing built in Org mode, especially for "getting things done", which motivated the original development of Org, but I am not so much interested in these aspects.
 [fn:snr] Note that the [[https://github.com/michaelb/sniprun][sniprun]] Neovim plugin allows to run lines/blocs of code from different languages, mimicking the inline evaluation available in Emacs.
 [fn:rou] Example taken from Nicolas Rougier's [[https://github.com/rougier/numpy-100][100 numpy exercises]].
+[fn:opt] You can do really crazy stuff with Org source headers. For instance, you can invoke [[https://imagemagick.org/][imagemagick]] to post-process your image files, define custom $\LaTex$ commands that will be inserted conditional on the exporting backend (with or without Org macros). See the [[https://org-babel.readthedocs.io/en/latest/eval/][Org Babel reference card]] to learn more.
+[fn:mma] There may be better option, but even if this Perl script is rather old, it still works like a charm.
