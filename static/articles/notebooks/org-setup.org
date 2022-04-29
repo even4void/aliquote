@@ -17,7 +17,7 @@ The rationale is as follows: We could use general purpose tool like [[https://ww
 This is not a tutorial on Org, Org mode, or even Emacs. You will find plenty of documentation on the [[https://orgmode.org/][Org]] site itself, as well as on blog posts or GitHub. Also, keep in mind that this is written from the perspective of someone who works exclusively with Neovim. Although there are some plugins that allow to reproduce part of the Emacs way of working with Org,[fn:vim] we assume no external plugins at all.[fn:syn] At the time of this writing, the Neovim [[https://github.com/nvim-orgmode/orgmode][orgmode]] plugin does not allow to evaluate code block. Its main focus seems to be on the GTD side of Org, and it does it pretty well, in my own view. This short note rather aims at describing what works for me, on my machine, when it comes to writing Org documents as plain text. Beware that you will lose everything you get when working directly with Emacs: inline evaluation of code block, management of references (labels, bibliographic entries, outline, among others), the Org dispatcher which allows to select the exporting backend, and so on. However, you will be able to export your plain text document with the result of your source block pretty printed in your HTML or PDF output files. All that in (Neo)vim. You'll get the best of both worlds!
 
 #+BEGIN_QUOTE
-All editors suck, except Emacs and Vim. -- myself
+All editors suck, except Emacs and Vim. -- Yours truly, circa 2020
 #+END_QUOTE
 
 * How to write your Org documents
@@ -71,7 +71,24 @@ Z = np.zeros((10,10))
 print("%d bytes" % (Z.size * Z.itemsize))
 #+END_SRC
 
-The results are wrapped up in a verbatim block, which shows up nicely when using $\LaTeX$ or HTML backend. The above was produced by passing the following header options: =:exports both :results output=. If we only want the code, and not the results (if any), we simply have to write =:exports code=. In fact, there are five defaults options, for which default values are put in parenthesis: =:session= (=none=), =:results= (=replace=), =:exports= (=code=), =:cache= (=no=), =:noweb= (=no=). Instead of =:exports code=, we could also set =:results silent=. There are also language-specific arguments, like =:tangle=. For instance, Mathematica allows to display result as $\LaTeX$ expression, using a combination of =TeXForm= and =:results raw=. Another approach is to ask for verbatim output, and post-process the =RESULTS= block. Alterantively, we can simply ask for =:results latex=, as shown below:
+The results are wrapped up in a verbatim block, which shows up nicely when using $\LaTeX$ or HTML backend. The above was produced by passing the following header options: =:exports both :results output=. If we only want the code, and not the results (if any), we simply have to write =:exports code=. In fact, there are five defaults options, for which default values are put in parenthesis: =:session= (=none=), =:results= (=replace=), =:exports= (=code=), =:cache= (=no=), =:noweb= (=no=). Instead of =:exports code=, we could also set =:results silent=. There are also language-specific arguments, like =:tangle=. Available arguments are detailed in Table [[tab:header]].
+
+#+NAME: tab:header
+#+LABEL: tab:header
+#+CAPTION: Language-specific header arguments
+|-------------+-------------------------------------------------------------------------------|
+|-------------+-------------------------------------------------------------------------------|
+| Language    | Available options                                                             |
+|-------------+-------------------------------------------------------------------------------|
+| R           | =colnames=, =file=, =results=, =session=, =R-dev-args=                        |
+| Stata       | /mostly the same as R/                                                        |
+| Python      | =results=, =return=, =python=, =session=, =var=, =exports=                    |
+| Mathematica | /mostly the same as R/                                                        |
+| Shell       | =results=, =session=, =var=, =noweb=, =tangle=, =stdin=, =cmdline=, =shebang= |
+|-------------+-------------------------------------------------------------------------------|
+|-------------+-------------------------------------------------------------------------------|
+
+For instance, Mathematica allows to display result as $\LaTeX$ expression, using a combination of =TeXForm= and =:results raw=. Another approach is to ask for verbatim output, and post-process the =RESULTS= block. Alterantively, we can simply ask for =:results latex=, as shown below:
 
 #+BEGIN_SRC mathematica :results latex
 D[2x^2 Exp[x^2/3], x] // TeXForm
@@ -87,6 +104,22 @@ at $n=1$ (which actually is $\tfrac{\pi^2}{6}$):
 Integrate[x/(Exp[x]-1),{x,0,Infinity}]
 #+END_SRC
 
+Table [[tab:results]] summarizes the main options that are generally useful depending on the language at hand.
+
+#+NAME: tab:results
+#+LABEL: tab:results
+#+CAPTION: Common =:results= options available for each language
+|-------------+-------------------------------------------|
+|-------------+-------------------------------------------|
+| Language    | Available options                         |
+|-------------+-------------------------------------------|
+| R           | =output=, =raw=, =table=, =html=, =latex= |
+| Stata       | =output=                                  |
+| Python      | =output=, =value=, =table=                |
+| Mathematica | =output=, =latex=                         |
+|-------------+-------------------------------------------|
+|-------------+-------------------------------------------|
+
 Org does not take care of formatting raw results, though, so care must be taken when you have specific formatting requirements. The following illustrate how we could possibly compute the factorial of 200 using Python. Since the result is quite a big integer, it will overflow our text width, unless we format the result ourselves:
 
 #+NAME: factorial
@@ -96,6 +129,8 @@ from textwrap import wrap
 value = math.prod(range(1, 200))
 print("\n".join(wrap(str(value))))
 #+END_SRC
+
+** Old good noweb
 
 However, you could simply display the above code without the =print= statement, and add an hidden block for displaying the result. Or you could store the result in a variable and later display it. Or you could use the [[https://orgmode.org/manual/Noweb-Reference-Syntax.html][noweb]] approach. We will need to provide a name to the previous code block (say, =#+NAME: factorial=), and then we can reuse the same code block later on, using the following syntax:
 
@@ -111,11 +146,26 @@ Here is what we would get:
 <<factorial()>>
 #+END_SRC
 
-Of course, nothing prevents you from calling your program from a shell directly.
+** Calling the shell
+
+Sometimes it is easier to use the shell directly. For this to work, we also need to add shell to our list of Babel languages:
+
+#+BEGIN_EXAMPLE
+(org-babel-do-load-languages
+ 'org-babel-load-languages
+ '( ...
+   (shell . t)
+    ...
+   ))
+#+END_EXAMPLE
+
+Note that we use the keyword =shell=, but in source block this should be replaced by any valid shell available on your system (e.g., bash, sh, zsh). Using a shell allows to call a compiled program directly, to preprocess data using Sed or Awk, and so on. And of course, nothing prevents you from calling your preferred program from a shell directly as illustrated below:[fn:rsh]
 
 #+BEGIN_SRC bash
 Rscript -e 'summary(rnorm(100))'
 #+END_SRC
+
+** Advanced usage
 
 We can do a little better in this case and ask to return a formatted table, using a dedicated package and =:results raw=:
 
@@ -125,24 +175,7 @@ r <- summary(rnorm(100))
 print(ascii(r, include.rownames = FALSE), type = "org")
 #+END_SRC
 
-Other R packages allow to export in HTML (e.g., =xtable=) or $\LaTeX$ (e.g., =Hmisc=). Similar options do exist for Python and Pandas, e.g., [[https://emacs.stackexchange.com/q/28715][Get pandas data-frame as a table in org-babel]]. Table [[tab:header]] summarizes the main options that are generally useful depending on the language at hand.
-
-#+NAME: tab:header
-#+LABEL: tab:header
-#+ATTR_HTML: :border 2 :rules all :frame border :width 100%
-#+CAPTION: Common =:results= options available for each language
-|-------------+-------------------------------------------|
-|-------------+-------------------------------------------|
-| Language    | Available options                         |
-|-------------+-------------------------------------------|
-| R           | =output=, =raw=, =table=, =html=, =latex= |
-| Stata       | =output=                                  |
-| Python      | =output=, =value=, =table=                |
-| Mathematica | =output=, =latex=                         |
-|-------------+-------------------------------------------|
-|-------------+-------------------------------------------|
-
-Here are two approaches to embed graphical output in an Org document. First off, here's some Mathematica where we explicitely save the image before printing it, using =:results file=. Note that we did not export the result for this snippet, but the image is written as =assets/org-setup-sine.png= so that it can be printed anywhere in the document, e.g., in the margin.
+The article [[https://orgmode.org/worg/org-contrib/babel/languages/ob-doc-R.html][R Source Code Blocks in Org Mode]] provides further examples. Other R packages allow to export in HTML (e.g., =xtable=) or $\LaTeX$ (e.g., =Hmisc=). Similar options do exist for Python and Pandas, e.g., [[https://emacs.stackexchange.com/q/28715][Get pandas data-frame as a table in org-babel]]. Here are two approaches to embed graphical output in an Org document. First off, here's some Mathematica where we explicitely save the image before printing it, using =:results file=. Note that we did not export the result for this snippet, but the image is written as =assets/org-setup-sine.png= so that it can be printed anywhere in the document, e.g., in the margin, and customized at will (e.g., by adding a caption).
 
 #+LATEX: \begin{marginfigure}[-.5in]
 #+LATEX: \includegraphics[width=\textwidth]{assets/org-setup-sine.png}
@@ -154,35 +187,20 @@ Export["assets/org-setup-sine.png", p];
 Print["assets/org-setup-sine.png"]
 #+END_SRC
 
-And here is some R code:
+And here is some R code, where ask for a direct graphical output using a specific filename (=:file assets/org-setup-bwt.png :results graphics file=). Two things to note: we specify the header option in a separate directive, using =#+HEADER:=, and we wrote the R scipt in a separate file ([[file:/scripts/org-setup-ggplot.r][org-setup-ggplot.r]]) that is included as is using the =#+INCLUDE:= directive. This directive allows to include any external files into an Org master file, and it is often used for multi-chapter document. However, since we can specify the [[https://orgmode.org/manual/Include-Files.html][type of block]] that will hold the file content, it provides an easy way to embed any kind of code and to keep them seperated without having to [[https://orgmode.org/manual/Extracting-Source-Code.html][tangle]] them. Together with the shell option discussed in the previous section, it also provides a cheap way to include Scheme or Lisp code and to evaluate code chunk using an interpreter or a compiler.
 
-#+BEGIN_SRC R :file assets/org-setup-bwt.png :results graphics file
-library(ggplot2)
-library(directlabels)
-theme_set(theme_minimal())
-data(birthwt, package = "MASS")
-birthwt$lwt <- birthwt$lwt * 0.45
-birthwt$race <- factor(birthwt$race, levels = 1:3, labels = c("white", "black", "other"))
-fm <- low ~ lwt + race
-m <- glm(fm, data = birthwt, family = binomial)
-d <- expand.grid(lwt = seq(40, 100), race = factor(levels(birthwt$race)))
-d$yhat <- predict(m, d, type = "response")
-p <- ggplot(data = d, aes(x = lwt, y = yhat, color = race)) +
-       geom_line(aes(group = race), size = 1) +
-       scale_color_brewer(palette = "Set2") +
-       guides(color = FALSE) +
-       labs(x = "Mother weight (kg)", y = "Pr(low = 1)", caption = "Predicted response curves")
-direct.label(p + aes(label = race), method = "smart.grid")
-#+END_SRC
+#+HEADER: :file assets/org-setup-bwt.png :results graphics file
+#+INCLUDE: "scripts/org-setup-ggplot.r" src R
 
-** Advanced usage
+** Wrapping up
 
+The above sections only showed what's possible with Org using minimal configuration and settings. A lot more can be done. Again, browse the [[https://orgmode.org/][Org]] website and the internet at large, Google if you really need it. What we learned so far is that the =:results= header argument control many aspects of what is exported and how it may be displayed in the subsequent output. Your options here will depend on the exporting backend itself. If you use PDF via $\LaTeX$, almost everything is possible and you'll get nice tables. Relying on the shell may be interesting in many occasions. Although we only dealed with mainstream scientific programming languages, other data-oriented languages are available, like [[https://orgmode.org/worg/org-contrib/babel/languages/ob-doc-sqlite.html][SQLite]].
 
-* How to proceed your Org documents
+* How to process your Org documents
 
 ** Local and global setup
 
-Again, there are two options to export your Org documents. Either you reuse your own Emacs configuration, or you write one from scratch. The latter is useful in case you want to maintain separate configuration for each project, while the former is the easy way to go. Here is what you could put in a file named =setup.el=:
+There are two options to export your Org document. Either you reuse your own Emacs configuration, or you write one from scratch. The latter is useful in case you want to maintain separate configuration for each project, while the former is the easy way to go. Here is what you could put in a file named =setup.el=:
 
 #+BEGIN_EXAMPLE
 (load (expand-file-name "init.el" user-emacs-directory))
@@ -190,7 +208,7 @@ Again, there are two options to export your Org documents. Either you reuse your
 (load "ox-bibtex.el")
 #+END_EXAMPLE
 
-The above instructions load your whole Emacs config, via =init.el= in the user Emacs directory. In your Makefile, you then invoke Emacs like this:
+The above instructions load your whole Emacs config, via =init.el= in the user Emacs directory. In your Makefile,[fn:mak] you then invoke Emacs like this:
 
 #+BEGIN_EXAMPLE
 %.html: %.org
@@ -220,10 +238,11 @@ If, on the other hand, you prefer to write custom settings for each project dire
       inferior-R-args "-q --no-save --no-restore")
 #+END_EXAMPLE
 
+There's a bunch of default options that you can specify into your config file. For instance, you can ask to add the =:session= flag automatically for all R source blocks (apart form the global header option, we can add language-specific buffer settings).[fn:sta] The =ox-bibtex= package is only required if you need to manage your bibliographic entries (this requires [[https://github.com/acla/bibtex2html][bibtex2html]] for the HTML exporting backend).
 
 ** Wrapping up everything in a shell script
 
-If you are going to use this everyday, you are better off writing a little shell script to perform all the work. Here is a simplified illustration:
+If you are going to use this approach everyday, you are better off writing a little shell script to perform all the work. Here is a simplified illustration:
 
 #+BEGIN_EXAMPLE
 #!/usr/bin/env bash
@@ -255,3 +274,6 @@ esac
 [fn:rou] Example taken from Nicolas Rougier's [[https://github.com/rougier/numpy-100][100 numpy exercises]].
 [fn:opt] You can do really crazy stuff with Org source headers. For instance, you can invoke [[https://imagemagick.org/][imagemagick]] to post-process your image files, define custom $\LaTeX$ commands that will be inserted conditional on the exporting backend (with or without Org macros). See the [[https://org-babel.readthedocs.io/en/latest/eval/][Org Babel reference card]] to learn more.
 [fn:mma] There may be better option, but even if this Perl script is rather old, it still works like a charm.
+[fn:rsh] You can do more involved stuff using Dirk Eddelbuettel's [[https://eddelbuettel.github.io/littler/][little r]] script.
+[fn:mak] Everyone's using a Makefile, right?
+[fn:sta] In this configuration, I assume that the program =stata= is available in your =$PATH=. Usually, one of the many versions of Stata (SE, MP, IC) is symlinked into =/usr/local/bin= or =/usr/local/stataXX/=, where =XX= stands for Stata version number, as =stata-se= or =stata-mp=. Sometimes, an additional symlink, =stata -> stata-[(mp|se)]=, is automatically created (by the install script or via Stata GUI). This PR assumes that such a link does exist, otherwise it has to be created by the user under his =$HOME= directory or in system-wide =$PATH=.
