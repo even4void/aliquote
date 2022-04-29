@@ -2,22 +2,29 @@
 #+AUTHOR: chl
 #+DATE: April 2022
 #+LANGUAGE: en
+#+PROPERTY: header-args :cache no :exports both :results output
 
-As a matter of fact, I no longer use Emacs. I switched to (Neo)vim a while ago now, since I found myself more comfortable editing text in Vim than I ever was in Emacs. To be honest, I don't really miss any other fancy parts from Emacs operating system, except maybe the ability to run REPL for multiple languages within a few clicks (actually, I used to use =C-c C-c= most of the times), and I really don't miss the package dependencies mess that occurred from time to time when upgrading everything. To tell the truth I don't have great requirements in terms of text editor, but I want a responsive editor, which facilitates text manipulation and fuzzy search within a few clicks.
+A bit of context first. As a matter of fact, I no longer use Emacs. I switched to (Neo)vim a while ago now, since I found myself more comfortable editing text in Vim than I ever was in Emacs. To be honest, I don't really miss any other fancy parts from Emacs operating system, except maybe the ability to run REPL for multiple languages within a few clicks (actually, I used to use =C-c C-c= most of the times), and I really don't miss the package dependencies mess that occurred from time to time when upgrading everything. To tell the truth I don't have great requirements in terms of text editor, but I want a responsive editor, which facilitates text manipulation and fuzzy search within a few clicks.
 
-However, Emacs is there on my machine, with the bare essentials in 30 LOC of =init.el=, and [[https://orgmode.org/][Org]] is readily available from any decent package manager on Linux distros. The following wa written on not so recent versions of Emacs (26.3) and Org mode (9.3.1). Also, I will focus on scientific programming languages, namely R, Stata, Python and Mathematica. In the past I used to use Org mode mostly for functional programming languages (Scheme, Common Lisp and Clojure). For an overview of what Org is good for, take a look at [[http://ehneilsen.net/notebook/orgExamples/org-examples.html][Emacs org-mode examples and cookbook]].
+However, Emacs is already installed on my machine, with the bare essentials in 30 LOC of =init.el=, and [[https://orgmode.org/][Org]] is readily available from any decent package manager on Linux distros. The following was written on not so recent versions of Emacs (26.3) and Org mode (9.3.1). Also, I will focus on scientific programming languages, namely R, Stata, Python and Mathematica. In the past I used to use Org mode mostly for functional programming languages (Scheme, Common Lisp and Clojure). For an overview of what Org is good for, take a look at [[http://ehneilsen.net/notebook/orgExamples/org-examples.html][Emacs org-mode examples and cookbook]].
+
+* Why Org
 
 I tend to view Org as a three-fold utility. First, it is a very good markup language, which also happens to be more clean and rich than Markdown. You don't need to worry about spaces for hard breaklines, there's a verse environment, as well as todo and progress state indicators or even [[https://github.com/fniessen/org-macros][macros]], and various other things that can be managed under the umbrella of the =#+PROPERTY= element. Second, Org mode in Emacs comes with handy exporting facilities (think of [[https://pandoc.org/][Pandoc]], but built in Emacs directly). Third, Org introduced [[https://orgmode.org/worg/org-contrib/babel/intro.html][Babel]] a while ago, which allows to evaluate code directly into an Emacs buffer or when exporting.[fn:gtd] As such, this provides a way to do literate programming right into your preferred text editor, even if it's (Neo)vim! Of course, if you do not work under Emacs, you lose the ability to evaluate chunks of code right into Emacs, much like an interactive playground. However, you can still evaluate the whole document and export it to HTML or PDF, much like if you were sourcing the whole buffer in Emacs.[fn:snr]
 
 The rationale is as follows: We could use general purpose tool like [[https://www.dexy.it/][dexy]] or [[https://www.cs.tufts.edu/~nr/noweb/][noweb]], or more specialized one ([[https://stat.ethz.ch/R-manual/R-devel/library/utils/doc/Sweave.pdf][Sweave]], [[https://yihui.org/knitr/][knitr]], [[https://mpastell.com/pweave/][pweave]], [[https://homepage.divms.uiowa.edu/~rlenth/StatWeave/][staweave]]), use built-in exporters (e.g., from Mathematica markup language), or all-in-one solution in the browser as in Jupyter notebooks. I don't really like working in my web browser, and for what matters I don't need a digital playground, but rather a way to embed snippets of code and their outputs into my document.
 
-This is not a tutorial on Org, Org mode, or even Emacs. Also, keep in mind that this is written from the perspective of someone who works exclusively with Neovim. Although there are some plugins that allow to reproduce part of the Emacs way of working with Org,[fn:vim] we assume no external plugins at all. At the time of this writing, the Neovim [[https://github.com/nvim-orgmode/orgmode][orgmode]] plugin does not allow to evaluate code block. Its main focus seems to be on the GTD side of Org--and it does it pretty well, in my own view. This short note aims at describing what works for me, when it comes to writing Org documents as plain text (syntax highlighting is provided by the venerable [[https://github.com/jceb/vim-orgmode][vim-orgmode]] syntax file). You will lose verything you get when working directly from Emacs: inline evaluation of code block, management of references (labels, bibliographic entries, outline, among others), the Org dispatcher which allows to select the exporting backend, and so on. However, you will be able to export your plain text document with the result of your source block pretty printed in your HTML or PDF output files.
+This is not a tutorial on Org, Org mode, or even Emacs. You will find plenty of documentation on the [[https://orgmode.org/][Org]] site itself, as well as on blog posts or GitHub. Also, keep in mind that this is written from the perspective of someone who works exclusively with Neovim. Although there are some plugins that allow to reproduce part of the Emacs way of working with Org,[fn:vim] we assume no external plugins at all.[fn:syn] At the time of this writing, the Neovim [[https://github.com/nvim-orgmode/orgmode][orgmode]] plugin does not allow to evaluate code block. Its main focus seems to be on the GTD side of Org, and it does it pretty well, in my own view. This short note rather aims at describing what works for me, on my machine, when it comes to writing Org documents as plain text. Beware that you will lose everything you get when working directly with Emacs: inline evaluation of code block, management of references (labels, bibliographic entries, outline, among others), the Org dispatcher which allows to select the exporting backend, and so on. However, you will be able to export your plain text document with the result of your source block pretty printed in your HTML or PDF output files. All that in (Neo)vim. You'll get the best of both worlds!
+
+#+BEGIN_QUOTE
+All editors suck, except Emacs and Vim. -- myself
+#+END_QUOTE
 
 * How to write your Org documents
 
 ** Languages
 
-R and Stata should work right out of the box provided you installed the [[https://ess.r-project.org/][ESS]] package. Things may be broken for Julia, though. It should be noted that Stata version < 14 does not allow saving SVG or PNG image, which may limit your ability to export images as easily as with other languages. The only option for those who are on Stata 13 like me is to use imagemagick to post-process images saved in Postscript format. The following oneliner shell script will do the work:
+R and Stata should work right out of the box provided you installed the [[https://ess.r-project.org/][ESS]] package. Things may be broken for Julia, though. It should be noted that Stata version < 14 does not allow saving SVG or PNG image, which may limit your ability to export images as easily as with other languages. The only option for those who are on Stata 13 like me is to use [[https://imagemagick.org/][imagemagick]] to post-process images saved in Postscript format. The following oneliner shell script will do the work:
 
 #+BEGIN_EXAMPLE
 for i in *.eps; do convert -density 300 -quality 85 "$i" "${i%%.*}.png"; done
@@ -58,30 +65,115 @@ Everything between the =#+BEGIN_SRC= and =#+END_SRC= statements is pure Python c
 
 Here is a the same example again, but with both input (=SRC=) and output (=RESULTS=) enabled:
 
-#+BEGIN_SRC python :exports both :results output
+#+BEGIN_SRC python
 import numpy as np
 Z = np.zeros((10,10))
 print("%d bytes" % (Z.size * Z.itemsize))
 #+END_SRC
 
-The results are wrapped up in a verbatim block, which shows up nicely when using $\LaTeX$ or HTML backend.
+The results are wrapped up in a verbatim block, which shows up nicely when using $\LaTeX$ or HTML backend. The above was produced by passing the following header options: =:exports both :results output=. If we only want the code, and not the results (if any), we simply have to write =:exports code=. In fact, there are five defaults options, for which default values are put in parenthesis: =:session= (=none=), =:results= (=replace=), =:exports= (=code=), =:cache= (=no=), =:noweb= (=no=). Instead of =:exports code=, we could also set =:results silent=. There are also language-specific arguments, like =:tangle=. For instance, Mathematica allows to display result as $\LaTeX$ expression, using a combination of =TeXForm= and =:results raw=. Another approach is to ask for verbatim output, and post-process the =RESULTS= block. Alterantively, we can simply ask for =:results latex=, as shown below:
 
+#+BEGIN_SRC mathematica :results latex
+D[2x^2 Exp[x^2/3], x] // TeXForm
+#+END_SRC
+
+We can also ask Mathematica to compute the n-th order Bose integral
+
+$$ I_n = \int_0^{\infty} \frac{x^n}{e^x - 1} dx $$
+
+at $n=1$ (which actually is $\tfrac{\pi^2}{6}$):
+
+#+BEGIN_SRC mathematica
+Integrate[x/(Exp[x]-1),{x,0,Infinity}]
+#+END_SRC
+
+Org does not take care of formatting raw results, though, so care must be taken when you have specific formatting requirements. The following illustrate how we could possibly compute the factorial of 200 using Python. Since the result is quite a big integer, it will overflow our text width, unless we format the result ourselves:
+
+#+NAME: factorial
+#+BEGIN_SRC python
+import math
+from textwrap import wrap
+value = math.prod(range(1, 200))
+print("\n".join(wrap(str(value))))
+#+END_SRC
+
+However, you could simply display the above code without the =print= statement, and add an hidden block for displaying the result. Or you could store the result in a variable and later display it. Or you could use the [[https://orgmode.org/manual/Noweb-Reference-Syntax.html][noweb]] approach. We will need to provide a name to the previous code block (say, =#+NAME: factorial=), and then we can reuse the same code block later on, using the following syntax:
+
+#+BEGIN_EXAMPLE
+#+BEGIN_SRC python :noweb yes
+<<factorial()>>
+#+END_SRC
+#+END_EXAMPLE
+
+Here is what we would get:
+
+#+BEGIN_SRC python :noweb yes
+<<factorial()>>
+#+END_SRC
+
+Of course, nothing prevents you from calling your program from a shell directly.
+
+#+BEGIN_SRC bash
+Rscript -e 'summary(rnorm(100))'
+#+END_SRC
+
+We can do a little better in this case and ask to return a formatted table, using a dedicated package and =:results raw=:
+
+#+BEGIN_SRC R :results raw
+library(ascii)
+r <- summary(rnorm(100))
+print(ascii(r, include.rownames = FALSE), type = "org")
+#+END_SRC
+
+Other R packages allow to export in HTML (e.g., =xtable=) or $\LaTeX$ (e.g., =Hmisc=). Similar options do exist for Python and Pandas, e.g., [[https://emacs.stackexchange.com/q/28715][Get pandas data-frame as a table in org-babel]]. Table [[tab:header]] summarizes the main options that are generally useful depending on the language at hand.
 
 #+NAME: tab:header
 #+LABEL: tab:header
 #+ATTR_HTML: :border 2 :rules all :frame border :width 100%
-#+CAPTION: Results options available for each language
-|-------------+----------------------------|
-|-------------+----------------------------|
-| Language    | Available options          |
-|-------------+----------------------------|
-| R           | =value=, =output=          |
-| Stata       | =value=, =output=          |
-| Python      | =value=, =output=          |
-| Mathematica | =value=, =output=, =latex= |
-|-------------+----------------------------|
-|-------------+----------------------------|
+#+CAPTION: Common =:results= options available for each language
+|-------------+-------------------------------------------|
+|-------------+-------------------------------------------|
+| Language    | Available options                         |
+|-------------+-------------------------------------------|
+| R           | =output=, =raw=, =table=, =html=, =latex= |
+| Stata       | =output=                                  |
+| Python      | =output=, =value=, =table=                |
+| Mathematica | =output=, =latex=                         |
+|-------------+-------------------------------------------|
+|-------------+-------------------------------------------|
 
+Here are two approaches to embed graphical output in an Org document. First off, here's some Mathematica where we explicitely save the image before printing it, using =:results file=. Note that we did not export the result for this snippet, but the image is written as =assets/org-setup-sine.png= so that it can be printed anywhere in the document, e.g., in the margin.
+
+#+LATEX: \begin{marginfigure}[-.5in]
+#+LATEX: \includegraphics[width=\textwidth]{assets/org-setup-sine.png}
+#+LATEX: \end{marginfigure}
+
+#+BEGIN_SRC mathematica :exports code :results file
+p = Plot[Sin[x], {x, 0, 6 Pi}, Frame->True];
+Export["assets/org-setup-sine.png", p];
+Print["assets/org-setup-sine.png"]
+#+END_SRC
+
+And here is some R code:
+
+#+BEGIN_SRC R :file assets/org-setup-bwt.png :results graphics file
+library(ggplot2)
+library(directlabels)
+theme_set(theme_minimal())
+data(birthwt, package = "MASS")
+birthwt$lwt <- birthwt$lwt * 0.45
+birthwt$race <- factor(birthwt$race, levels = 1:3, labels = c("white", "black", "other"))
+fm <- low ~ lwt + race
+m <- glm(fm, data = birthwt, family = binomial)
+d <- expand.grid(lwt = seq(40, 100), race = factor(levels(birthwt$race)))
+d$yhat <- predict(m, d, type = "response")
+p <- ggplot(data = d, aes(x = lwt, y = yhat, color = race)) +
+       geom_line(aes(group = race), size = 1) +
+       scale_color_brewer(palette = "Set2") +
+       guides(color = FALSE) +
+       labs(x = "Mother weight (kg)", y = "Pr(low = 1)", caption = "Predicted response curves")
+direct.label(p + aes(label = race), method = "smart.grid")
+#+END_SRC
 
 ** Advanced usage
 
@@ -98,11 +190,11 @@ Again, there are two options to export your Org documents. Either you reuse your
 (load "ox-bibtex.el")
 #+END_EXAMPLE
 
-The above instructions load your whole Emacs config, via =init.el= in the user emacs directory. In your Makefile, you then invoke Emacs like this:
+The above instructions load your whole Emacs config, via =init.el= in the user Emacs directory. In your Makefile, you then invoke Emacs like this:
 
 #+BEGIN_EXAMPLE
 %.html: %.org
-	emacs --batch -l setup.el $< -f org-html-export-to-html --kill
+    emacs --batch -l setup.el $< -f org-html-export-to-html --kill
 #+END_EXAMPLE
 
 If, on the other hand, you prefer to write custom settings for each project directory, then there's a little more work involved. First, you will need to import the relevant Emacs package and load the appropriate languages. This can be done as follows (again we assume everything is stored in a file named =setup.org=):
@@ -157,8 +249,9 @@ esac
 
 # FOOTNOTES
 [fn:vim] See this post, [[https://aliquote.org/post/org-in-vim/][Org in Vim]], for example.
+[fn:syn] Besides syntax highlighting which is provided by the venerable [[https://github.com/jceb/vim-orgmode][vim-orgmode]] syntax file.
 [fn:gtd] There are many other thing built in Org mode, especially for "getting things done", which motivated the original development of Org, but I am not so much interested in these aspects.
 [fn:snr] Note that the [[https://github.com/michaelb/sniprun][sniprun]] Neovim plugin allows to run lines/blocs of code from different languages, mimicking the inline evaluation available in Emacs.
 [fn:rou] Example taken from Nicolas Rougier's [[https://github.com/rougier/numpy-100][100 numpy exercises]].
-[fn:opt] You can do really crazy stuff with Org source headers. For instance, you can invoke [[https://imagemagick.org/][imagemagick]] to post-process your image files, define custom $\LaTex$ commands that will be inserted conditional on the exporting backend (with or without Org macros). See the [[https://org-babel.readthedocs.io/en/latest/eval/][Org Babel reference card]] to learn more.
+[fn:opt] You can do really crazy stuff with Org source headers. For instance, you can invoke [[https://imagemagick.org/][imagemagick]] to post-process your image files, define custom $\LaTeX$ commands that will be inserted conditional on the exporting backend (with or without Org macros). See the [[https://org-babel.readthedocs.io/en/latest/eval/][Org Babel reference card]] to learn more.
 [fn:mma] There may be better option, but even if this Perl script is rather old, it still works like a charm.
