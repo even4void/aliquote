@@ -134,6 +134,7 @@
     <outline type="rss" xmlUrl="https://alexey.radul.name/feed.xml" htmlUrl="" title=""/>
     <outline type="rss" xmlUrl="https://alexgaynor.net/feed.xml" htmlUrl="https://alexgaynor.net/blog/" title="Blogs on Alex Gaynor"/>
     <outline type="rss" xmlUrl="https://alexschroeder.ch/wiki/feed/full/" htmlUrl="https://alexschroeder.ch/wiki?action=journal" title="Alex Schroeder: Diary"/>
+    <outline type="rss" xmlUrl="https://alexvia.com/index.xml" htmlUrl="" title=""/>
     <outline type="rss" xmlUrl="https://alistapart.com/main/feed/" htmlUrl="https://alistapart.com/" title="A List Apart: The Full Feed"/>
     <outline type="rss" xmlUrl="https://alternativebit.fr/posts/index.xml" htmlUrl="https://alternativebit.fr/posts/" title="AlternativeBit"/>
     <outline type="rss" xmlUrl="https://ambrevar.xyz/atom.xml" htmlUrl="https://ambrevar.xyz/atom.xml" title="Pierre Neidhardt's homepage"/>
@@ -215,6 +216,7 @@
     <outline type="rss" xmlUrl="https://blog.rust-lang.org/feed.xml" htmlUrl="https://blog.rust-lang.org/" title="Rust Blog"/>
     <outline type="rss" xmlUrl="https://blog.sanctum.geek.nz/feed/" htmlUrl="https://blog.sanctum.geek.nz/" title="Arabesque"/>
     <outline type="rss" xmlUrl="https://blog.schembri.me/index.xml" htmlUrl="https://blog.schembri.me/" title="Jamie Schembri &#x2013; Jamie Schembri"/>
+    <outline type="rss" xmlUrl="https://blog.semanticart.com/atom.xml" htmlUrl="" title=""/>
     <outline type="rss" xmlUrl="https://blog.smola.org/rss" htmlUrl="https://blog.smola.org/" title="Adventures in Data Land"/>
     <outline type="rss" xmlUrl="https://blog.sumtypeofway.com/atom.xml" htmlUrl="https://blog.sumtypeofway.com/atom.xml" title="adventures in uncertainty"/>
     <outline type="rss" xmlUrl="https://blog.sunfishcode.online/atom.xml" htmlUrl="https://blog.sunfishcode.online/atom.xml" title="sunfishcode's blog"/>
