@@ -415,6 +415,7 @@
     <outline type="rss" xmlUrl="https://kate.io/feed.xml" htmlUrl="https://kate.io/feed.xml" title="Kate Murphy"/>
     <outline type="rss" xmlUrl="https://kaygun.tumblr.com/rss" htmlUrl="https://kaygun.tumblr.com/" title="Atabey Kaygun"/>
     <outline type="rss" xmlUrl="https://kbroman.org/blog/index.xml" htmlUrl="https://kbroman.org/" title="the stupidest thing..."/>
+    <outline type="rss" xmlUrl="https://kevincox.ca/feed.atom" htmlUrl="" title=""/>
     <outline type="rss" xmlUrl="https://kevq.uk/feed/" htmlUrl="https://kevq.uk/" title="Kev Quirk"/>
     <outline type="rss" xmlUrl="https://kieranhealy.org/blog/index.xml" htmlUrl="https://kieranhealy.org/blog/" title="Blogs on kieranhealy.org"/>
     <outline type="rss" xmlUrl="https://kislayverma.com/feed/" htmlUrl="https://kislayverma.com/" title="Kislay Verma"/>
@@ -497,6 +498,7 @@
     <outline type="rss" xmlUrl="https://nakabonne.dev/index.xml" htmlUrl="https://nakabonne.dev/" title="Ryo Nakao"/>
     <outline type="rss" xmlUrl="https://nedbatchelder.com/blog/rss.xml" htmlUrl="https://nedbatchelder.com/blog" title="Ned Batchelder's blog"/>
     <outline type="rss" xmlUrl="https://neilmitchell.blogspot.com/feeds/posts/default" htmlUrl="https://neilmitchell.blogspot.com/" title="Neil Mitchell's Blog (Haskell etc)"/>
+    <outline type="rss" xmlUrl="https://neovim.io/news.xml" htmlUrl="" title=""/>
     <outline type="rss" xmlUrl="https://ngnghm.github.io/feeds/all.rss.xml" htmlUrl="http://ngnghm.github.io/index.html" title="Houyhnhnm Computing: Houyhnhnm Computing"/>
     <outline type="rss" xmlUrl="https://ngoldbaum.github.io/index.xml" htmlUrl="https://ngoldbaum.github.io/" title="Nathan Goldbaum"/>
     <outline type="rss" xmlUrl="https://nhaehnle.blogspot.com/feeds/posts/default" htmlUrl="https://nhaehnle.blogspot.com/" title="Tagebuch eines Interplanetaren Botschafters"/>
