@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-<!-- 2022-05-13 ven. 18:25 -->
+<!-- 2022-05-13 ven. 22:39 -->
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Stata : analyse de la variance</title>
@@ -37,27 +37,27 @@
 <h2>Table des matières</h2>
 <div id="text-table-of-contents">
 <ul>
-<li><a href="#org7ec6193">Analyse de variance à un facteur</a>
+<li><a href="#org4d7d80c">Analyse de variance à un facteur</a>
 <ul>
-<li><a href="#org0e6e634">Modèle d'ANOVA</a></li>
-<li><a href="#orga77e3ab">Conditions d'application du test</a></li>
-<li><a href="#org988c848">Commandes graphiques</a></li>
-<li><a href="#org37e1ec3">Comparaisons multiples</a></li>
-<li><a href="#org7108743">L'ANOVA via la régression</a></li>
-<li><a href="#org40a2c63">Cas des variances non égales</a></li>
-<li><a href="#orgf35d825">Approche non paramétrique</a></li>
+<li><a href="#org2754583">Modèle d'ANOVA</a></li>
+<li><a href="#org631b5e2">Conditions d'application du test</a></li>
+<li><a href="#org2e3fbe9">Commandes graphiques</a></li>
+<li><a href="#orge2aaa2d">Comparaisons multiples</a></li>
+<li><a href="#org8c01fc9">L'ANOVA via la régression</a></li>
+<li><a href="#org108f6b6">Cas des variances non égales</a></li>
+<li><a href="#org4bf5226">Approche non paramétrique</a></li>
 </ul>
 </li>
-<li><a href="#org2053965">Analyse de variance à plusieurs facteurs</a>
+<li><a href="#org2633802">Analyse de variance à plusieurs facteurs</a>
 <ul>
-<li><a href="#org0e0b3ed">Utilisation de la commande anova</a></li>
-<li><a href="#org44bf920">Définition et analyse de contrastes</a></li>
+<li><a href="#orge62545d">Utilisation de la commande anova</a></li>
+<li><a href="#orgec981a6">Définition et analyse de contrastes</a></li>
 </ul>
 </li>
-<li><a href="#orga8afc89">Autres plans d'expérience</a>
+<li><a href="#org099876e">Autres plans d'expérience</a>
 <ul>
-<li><a href="#org6aa5e00">Plan en blocs complets randomisés</a></li>
-<li><a href="#org474b423">Plan en blocs incomplets équilibrés</a></li>
+<li><a href="#orgc333deb">Plan en blocs complets randomisés</a></li>
+<li><a href="#org6eeac7c">Plan en blocs incomplets équilibrés</a></li>
 </ul>
 </li>
 </ul>
@@ -71,13 +71,13 @@ L'analyse de variance (ANOVA), souvent retrouvée dans l'exploitation d'un plan 
 Dupont [<a href="#dupont-2009-statis-model">1</a>] consacre plusieurs chapitres de son excellent ouvrage à l'analyse de variance, incluant le cas des mesures répétées.
 </p>
 
-<div id="outline-container-org7ec6193" class="outline-2">
-<h2 id="org7ec6193">Analyse de variance à un facteur</h2>
-<div class="outline-text-2" id="text-org7ec6193">
+<div id="outline-container-org4d7d80c" class="outline-2">
+<h2 id="org4d7d80c">Analyse de variance à un facteur</h2>
+<div class="outline-text-2" id="text-org4d7d80c">
 </div>
-<div id="outline-container-org0e6e634" class="outline-3">
-<h3 id="org0e6e634">Modèle d'ANOVA</h3>
-<div class="outline-text-3" id="text-org0e6e634">
+<div id="outline-container-org2754583" class="outline-3">
+<h3 id="org2754583">Modèle d'ANOVA</h3>
+<div class="outline-text-3" id="text-org2754583">
 <p>
 Le modèle d'ANOVA à un facteur se formule ainsi :
 </p>
@@ -161,7 +161,7 @@ graph export "fig-04-boxplot-age-genotype.eps", replace
 </div>
 
 
-<div id="orge7a0a87" class="figure">
+<div id="org3a270dc" class="figure">
 <p><img src="./fig-04-boxplot-age-genotype.png" alt="fig-04-boxplot-age-genotype.png" width="800px">
 </p>
 <p><span class="figure-number">Figure&nbsp;1&nbsp;: </span>Histogrammes pour l'âge de diagnostic en fonction du polymorphisme</p>
@@ -178,7 +178,7 @@ graph export "fig-04-hist-age-genotype.eps", replace
 </div>
 
 
-<div id="orga5ff00c" class="figure">
+<div id="orgee62d37" class="figure">
 <p><img src="./fig-04-hist-age-genotype.png" alt="fig-04-hist-age-genotype.png" width="800px">
 </p>
 <p><span class="figure-number">Figure&nbsp;2&nbsp;: </span>Distribution de l'âge de diagnostic en fonction du polymorphisme</p>
@@ -209,9 +209,9 @@ Bartlett's test for equal variances:  chi2(2) =   1.0798  Prob&gt;chi2 = 0.583
 </div>
 </div>
 
-<div id="outline-container-orga77e3ab" class="outline-3">
-<h3 id="orga77e3ab">Conditions d'application du test</h3>
-<div class="outline-text-3" id="text-orga77e3ab">
+<div id="outline-container-org631b5e2" class="outline-3">
+<h3 id="org631b5e2">Conditions d'application du test</h3>
+<div class="outline-text-3" id="text-org631b5e2">
 <p>
 Il est généralement recommendé de vérifier les hypothèses du modèle, en particulier celle portant sur l'égalité des variances parentes, de manière graphique. Notons que <a href="https://www.stata.com/help.cgi?oneway">oneway</a> propose d'office un test formel d'égalité des variances (test de Bartlett). Le test de Levenne est disponible via la commande <a href="https://www.stata.com/help.cgi?robvar">robvar</a> (statistique <code>W50</code>) :
 </p>
@@ -253,7 +253,7 @@ graph export "fig-04-qnorm-age-genotype-resid.eps", replace
 </div>
 
 
-<div id="org1ba4868" class="figure">
+<div id="org556f948" class="figure">
 <p><img src="./fig-04-qnorm-age-genotype-resid.png" alt="fig-04-qnorm-age-genotype-resid.png" width="800px">
 </p>
 <p><span class="figure-number">Figure&nbsp;3&nbsp;: </span>Distribution des résidus du modèle d'ANOVA</p>
@@ -261,9 +261,9 @@ graph export "fig-04-qnorm-age-genotype-resid.eps", replace
 </div>
 </div>
 
-<div id="outline-container-org988c848" class="outline-3">
-<h3 id="org988c848">Commandes graphiques</h3>
-<div class="outline-text-3" id="text-org988c848">
+<div id="outline-container-org2e3fbe9" class="outline-3">
+<h3 id="org2e3fbe9">Commandes graphiques</h3>
+<div class="outline-text-3" id="text-org2e3fbe9">
 <p>
 Stata n'offre pas vraiment de commandes graphiques de post-estimation à l'exception de celles applicables au cas du modèle linéaire, telles que les graphiques de résidus en fonction des valeurs prédites ou observées. Il existe toutefois de nombreux packages disponibles sur le site SSC, en particulier la commande <code>anovaplot</code> (une approche manuelle pour construire un graphique d'interaction est présentée dans la section suivante) :
 </p>
@@ -275,7 +275,7 @@ graph export "fig-04-anovaplot-age-genotype.eps", replace
 </div>
 
 
-<div id="org2af2eaf" class="figure">
+<div id="orgda71418" class="figure">
 <p><img src="./fig-04-anovaplot-age-genotype.png" alt="fig-04-anovaplot-age-genotype.png" width="800px">
 </p>
 <p><span class="figure-number">Figure&nbsp;4&nbsp;: </span>Valeurs prédites par le modèle d'ANOVA</p>
@@ -287,9 +287,9 @@ Une référence intéressante concernant les approches graphiques pour le diagno
 </div>
 </div>
 
-<div id="outline-container-org37e1ec3" class="outline-3">
-<h3 id="org37e1ec3">Comparaisons multiples</h3>
-<div class="outline-text-3" id="text-org37e1ec3">
+<div id="outline-container-orge2aaa2d" class="outline-3">
+<h3 id="orge2aaa2d">Comparaisons multiples</h3>
+<div class="outline-text-3" id="text-orge2aaa2d">
 <p>
 Lorsque le résultat du test d'ANOVA est significatif, il est souvent intéressant, voire nécessaire d'aller inspecter le résultat des comparaisons de chaque paire de moyennes. Comme indiqué plus haut, il est déconseillé de procéder à de telles comparaisons multiples lorsque l'ANOVA n'est en elle-même pas significative puisque dans ce cas il s'agit un peu de ce que l'on appelle du "data fishing". Cela dit, dans certains cas de figure, il est possible de pré-spécifier les comparaisons d'intérêt et de n'analyser que ces contrastes d'intérêt. Dans ce cas, le modèle d'ANOVA est même facultatif.
 </p>
@@ -340,9 +340,9 @@ quietly ttest age if genotype != 1, by(genotype)
 </div>
 
 
-<div id="outline-container-org7108743" class="outline-3">
-<h3 id="org7108743">L'ANOVA via la régression</h3>
-<div class="outline-text-3" id="text-org7108743">
+<div id="outline-container-org8c01fc9" class="outline-3">
+<h3 id="org8c01fc9">L'ANOVA via la régression</h3>
+<div class="outline-text-3" id="text-org8c01fc9">
 <blockquote>
 <p>
 The regress command is used to fit the underlying regression model corresponding to an ANOVA model fit using the anova command.  Type regress after anova to see the coefficients, standard errors, etc., of the regression model for the last run of anova.
@@ -380,9 +380,9 @@ regress
 </div>
 
 
-<div id="outline-container-org40a2c63" class="outline-3">
-<h3 id="org40a2c63">Cas des variances non égales</h3>
-<div class="outline-text-3" id="text-org40a2c63">
+<div id="outline-container-org108f6b6" class="outline-3">
+<h3 id="org108f6b6">Cas des variances non égales</h3>
+<div class="outline-text-3" id="text-org108f6b6">
 <p>
 Plusieurs généralisations du test de Welch dans le cas où les variances ne sont pas égales ont été proposées [<a href="#welch-1951-compar-sever">3</a>]. Sous Stata, les procédures <code>wtest</code> et <code>fstar</code> peuvent être téléchargées. Voici un exemple d'application avec <code>wtest,</code> dont les auteurs ont montré que cette statistique de test convient dans le cas où les échantillons sont de même taille (ce n'est pas vraiment le cas ici) mais de variance différente [<a href="#wilcox-1986-new-monte">4</a>] :
 </p>
@@ -400,9 +400,9 @@ r(199);
 </div>
 </div>
 
-<div id="outline-container-orgf35d825" class="outline-3">
-<h3 id="orgf35d825">Approche non paramétrique</h3>
-<div class="outline-text-3" id="text-orgf35d825">
+<div id="outline-container-org4bf5226" class="outline-3">
+<h3 id="org4bf5226">Approche non paramétrique</h3>
+<div class="outline-text-3" id="text-org4bf5226">
 <p>
 L'ANOVA de Kruskal-Wallis, qui généralise la commande <a href="https://www.stata.com/help.cgi?ranksum">ranksum</a> au cas à plus de deux échantillons, est disponible via la commande <a href="https://www.stata.com/help.cgi?kwallis">kwallis</a> :
 </p>
@@ -476,13 +476,13 @@ Il est également possible de coupler cette instruction avec une série de tests
 </div>
 </div>
 
-<div id="outline-container-org2053965" class="outline-2">
-<h2 id="org2053965">Analyse de variance à plusieurs facteurs</h2>
-<div class="outline-text-2" id="text-org2053965">
+<div id="outline-container-org2633802" class="outline-2">
+<h2 id="org2633802">Analyse de variance à plusieurs facteurs</h2>
+<div class="outline-text-2" id="text-org2633802">
 </div>
-<div id="outline-container-org0e0b3ed" class="outline-3">
-<h3 id="org0e0b3ed">Utilisation de la commande anova</h3>
-<div class="outline-text-3" id="text-org0e0b3ed">
+<div id="outline-container-orge62545d" class="outline-3">
+<h3 id="orge62545d">Utilisation de la commande anova</h3>
+<div class="outline-text-3" id="text-orge62545d">
 <p>
 La commande <a href="https://www.stata.com/help.cgi?oneway">oneway</a> est limité au cas à un facteur explicatif. La commande <a href="https://www.stata.com/help.cgi?anova">anova</a> est plus générale et couvre : les plans factoriels et emboîtés, les plans équilibrés ou non (cf. calcul des sommes de carrés), les mesures répétées, l’analyse de covariance. Dans le cas à un facteur à effet fixe, on retrouvera évidemment les mêmes résultats que plus haut :
 </p>
@@ -683,7 +683,7 @@ graph export "fig-04-margins-life-battery.eps", replace name(p)
 </div>
 
 
-<div id="org80970d6" class="figure">
+<div id="org817d86f" class="figure">
 <p><img src="./fig-04-margins-life-battery.png" alt="fig-04-margins-life-battery.png" width="800px">
 </p>
 <p><span class="figure-number">Figure&nbsp;5&nbsp;: </span>Graphique d'interaction avec la commande marginsplot</p>
@@ -691,9 +691,9 @@ graph export "fig-04-margins-life-battery.eps", replace name(p)
 </div>
 </div>
 
-<div id="outline-container-org44bf920" class="outline-3">
-<h3 id="org44bf920">Définition et analyse de contrastes</h3>
-<div class="outline-text-3" id="text-org44bf920">
+<div id="outline-container-orgec981a6" class="outline-3">
+<h3 id="orgec981a6">Définition et analyse de contrastes</h3>
+<div class="outline-text-3" id="text-orgec981a6">
 <p>
 Voyons ce que l'on peut réaliser en termes de tests de contrastes à l'aide de <a href="https://www.stata.com/help.cgi?pwcompare">pwcompare</a>. Dans un premier temps, la comparaison de l'ensemble des paires de moyennes peut être réalisée en décomposant le terme d'interaction, et en utilisant la méthode de Tukey comme correction pour les tests multiples :
 </p>
@@ -785,13 +785,13 @@ Des <a href="https://stats.idre.ucla.edu/stata/faq/how-can-i-do-power-and-robust
 </div>
 </div>
 
-<div id="outline-container-orga8afc89" class="outline-2">
-<h2 id="orga8afc89">Autres plans d'expérience</h2>
-<div class="outline-text-2" id="text-orga8afc89">
+<div id="outline-container-org099876e" class="outline-2">
+<h2 id="org099876e">Autres plans d'expérience</h2>
+<div class="outline-text-2" id="text-org099876e">
 </div>
-<div id="outline-container-org6aa5e00" class="outline-3">
-<h3 id="org6aa5e00">Plan en blocs complets randomisés</h3>
-<div class="outline-text-3" id="text-org6aa5e00">
+<div id="outline-container-orgc333deb" class="outline-3">
+<h3 id="orgc333deb">Plan en blocs complets randomisés</h3>
+<div class="outline-text-3" id="text-orgc333deb">
 <p>
 Les plans en blocs complets randomisés (RCBD en anglais) sont utilisés lorsque l'on souhaite contrôler certains facteurs de nuisance. Le facteur d'intérêt est alors appelé traitement et le ou les facteurs de nuisance bloc(s). Il ne faut pas les confondre avec les modèles d'analyse de covariance dans lesquels les réponses sont ajustées <i>a posteriori</i> pour prendre en compte les facteurs de nuisance.
 </p>
@@ -825,9 +825,9 @@ Considérons l'exemple suivant, tiré de
 </div>
 
 
-<div id="outline-container-org474b423" class="outline-3">
-<h3 id="org474b423">Plan en blocs incomplets équilibrés</h3>
-<div class="outline-text-3" id="text-org474b423">
+<div id="outline-container-org6eeac7c" class="outline-3">
+<h3 id="org6eeac7c">Plan en blocs incomplets équilibrés</h3>
+<div class="outline-text-3" id="text-org6eeac7c">
 <p>
 Les plans en blocs incomplets équilibrés (BIBD en anglais) font partie des plans en blocs aléatoires dans lesquels certains traitements ne sont pas observés pour certains blocs ou combinaisons de blocs. Si l'on note \(a\) le nombre de traitements, et \(k\) le nombre maximum de traitements dans chaque bloc (\(k < a\)), alors un plan BIBD se résume à un arrangement de \(a \choose k\) combinaisons [<a href="#hinkelmann-2005-design">6</a>].
 </p>
@@ -836,7 +836,7 @@ Les plans en blocs incomplets équilibrés (BIBD en anglais) font partie des pla
 Voici un exemple discuté par Montgomery, chapitre 4 [<a href="#montgomery-2001-desig-analy-exper">5</a>] :
 </p>
 
-<table id="org3cb5652" border="2" rules="all" frame="border" width="100%">
+<table id="org3150535" border="2" rules="all" frame="border" width="100%">
 <caption class="t-above"><span class="table-number">Tableau 1 :</span> Résultats d'une expérience de catalyse (Tableau 4&#x2013;21)</caption>
 
 <colgroup>
@@ -1025,7 +1025,7 @@ Comme \(\lambda\) est forcément un entier, cela limite l'espace des solutions p
 </div>
 </div></div>
 <div id="postamble" class="status">
-Generated by <a href="https://www.gnu.org/software/emacs/">Emacs</a> 26.3 (<a href="https://orgmode.org">Org</a> mode 9.3.1) on 2022-05-13 ven. 18:25 (<a href="mailto:chl@aliquote.org">chl@aliquote.org</a>)
+Generated by <a href="https://www.gnu.org/software/emacs/">Emacs</a> 26.3 (<a href="https://orgmode.org">Org</a> mode 9.3.1) on 2022-05-13 ven. 22:39 (<a href="mailto:chl@aliquote.org">chl@aliquote.org</a>)
 </div>
 </body>
 </html>
