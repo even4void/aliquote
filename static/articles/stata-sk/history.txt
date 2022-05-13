@@ -1,3 +1,4 @@
+* 13bd7fe (Fri, 13 May 2022 20:29:57 +0200, chl) Minor fix
 * 29bb802 (Fri, 13 May 2022 18:25:45 +0200, chl) Minor fix
 * 4eaaff7 (Fri, 13 May 2022 18:23:29 +0200, chl) Update main chapters with new build policy
 * 2044dd4 (Fri, 13 May 2022 16:58:45 +0200, chl) Update dist and building policy

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-<!-- 2022-05-13 ven. 18:18 -->
+<!-- 2022-05-13 ven. 20:27 -->
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Stata : programmation</title>
@@ -37,19 +37,19 @@
 <h2>Table des matières</h2>
 <div id="text-table-of-contents">
 <ul>
-<li><a href="#orgc0bf4e2">Programmation avec Stata</a>
+<li><a href="#org71b6d3c">Programmation avec Stata</a>
 <ul>
-<li><a href="#orgb7ab69d">Les macros Stata</a></li>
-<li><a href="#org70f5465">Macros locales</a></li>
-<li><a href="#org3a767f6">Variables catégorielles</a></li>
-<li><a href="#org614c538">Gestion des dates</a></li>
-<li><a href="#org09169d5">Compteurs et boucles</a></li>
-<li><a href="#orge6f7776">Les différents types de boucles</a></li>
-<li><a href="#orga9dbfd3">Structures de contrôle</a></li>
+<li><a href="#orgd1b8d44">Les macros Stata</a></li>
+<li><a href="#org7a979de">Macros locales</a></li>
+<li><a href="#org63eaaa2">Variables catégorielles</a></li>
+<li><a href="#orgec84190">Gestion des dates</a></li>
+<li><a href="#org3309993">Compteurs et boucles</a></li>
+<li><a href="#orgf4f20b6">Les différents types de boucles</a></li>
+<li><a href="#org5c7928a">Structures de contrôle</a></li>
 </ul>
 </li>
-<li><a href="#orgee5621b">Automatisation</a></li>
-<li><a href="#orgabeec01">Gestion d'un package</a></li>
+<li><a href="#orgb31a6e8">Automatisation</a></li>
+<li><a href="#org90c38f3">Gestion d'un package</a></li>
 </ul>
 </div>
 </div>
@@ -57,13 +57,13 @@
 Ce chapitre est consacré aux techniques de programmation avec le langage Stata, et dans une moindre mesure Mata. L'ouvrage de référence demeure l'ouvrage de Mitchell [<a href="#mitchell-2010-data-manag">1</a>] pour tout ce qui relève de l'automatisation à l'aide de commandes Stata pour la gestion de données, ainsi que l'ouvrage de Baum sur la programmation en elle-même [<a href="#baum-2009-introd-stata-progr">2</a>]. Germán Rodríguez propose également un <a href="http://data.princeton.edu/stata/programming.html">excellent tutoriel</a> sur son site internet. Concernant la création de commande et l'usage de Mata, l'ouvrage de Bill Gould [<a href="#gould-2018-mata-book">3</a>].
 </p>
 
-<div id="outline-container-orgc0bf4e2" class="outline-2">
-<h2 id="orgc0bf4e2">Programmation avec Stata</h2>
-<div class="outline-text-2" id="text-orgc0bf4e2">
+<div id="outline-container-org71b6d3c" class="outline-2">
+<h2 id="org71b6d3c">Programmation avec Stata</h2>
+<div class="outline-text-2" id="text-org71b6d3c">
 </div>
-<div id="outline-container-orgb7ab69d" class="outline-3">
-<h3 id="orgb7ab69d">Les macros Stata</h3>
-<div class="outline-text-3" id="text-orgb7ab69d">
+<div id="outline-container-orgd1b8d44" class="outline-3">
+<h3 id="orgd1b8d44">Les macros Stata</h3>
+<div class="outline-text-3" id="text-orgd1b8d44">
 <p>
 Ce que l'on appelle "variable" dans la plupart des langages de programmation correspond au terme "macro" dans le langage Stata. Une variable reste définie dans le sens statistique et donc correspond aux colonnes d'un tableau de données. Quant aux "macros", on en distingue <a href="http://www.stata.com/statalist/archive/2008-08/msg01258.html">plusieurs types</a>, selon leur nature ou leur portée.
 </p>
@@ -95,9 +95,9 @@ La command <a href="https://www.stata.com/help.cgi?summarize">summarize</a> stoc
 </div>
 </div>
 
-<div id="outline-container-org70f5465" class="outline-3">
-<h3 id="org70f5465">Macros locales</h3>
-<div class="outline-text-3" id="text-org70f5465">
+<div id="outline-container-org7a979de" class="outline-3">
+<h3 id="org7a979de">Macros locales</h3>
+<div class="outline-text-3" id="text-org7a979de">
 <p>
 Une macro locale se définit comme une expression : <code>local name [=] text</code>. Une macro locale permet de stocker sous forme de chaîne de caractères une expression (ou son résultat après évaluation dans le cas ou on utilise le signe =). Voici un exemple d'utilisation :
 </p>
@@ -190,19 +190,18 @@ estimates table m*
 </div>
 </div>
 
-<div id="outline-container-org3a767f6" class="outline-3">
-<h3 id="org3a767f6">Variables catégorielles</h3>
-<div class="outline-text-3" id="text-org3a767f6">
+<div id="outline-container-org63eaaa2" class="outline-3">
+<h3 id="org63eaaa2">Variables catégorielles</h3>
+<div class="outline-text-3" id="text-org63eaaa2">
 <div class="org-src-container">
-<pre class="src src-stata">levelsof country, local(lvls)
+<pre class="src src-stata">levelsof race, local(lvls)
 local items =  `r(r)'
 </pre>
 </div>
 
 <pre class="example">
-levelsof country, local(lvls)
-variable country not found
-r(111);
+levelsof race, local(lvls)
+1 2 3
 local items =  `r(r)'
 invalid syntax
 r(198);
@@ -215,15 +214,14 @@ Consulter également les valeurs retournées par <code>return list</code>.
 </div>
 </div>
 
-<div id="outline-container-org614c538" class="outline-3">
-<h3 id="org614c538">Gestion des dates</h3>
-<div class="outline-text-3" id="text-org614c538">
+<div id="outline-container-orgec84190" class="outline-3">
+<h3 id="orgec84190">Gestion des dates</h3>
+<div class="outline-text-3" id="text-orgec84190">
 <div class="org-src-container">
 <pre class="src src-stata">local date: display %tdd_m_yy date(c(current_date), "DMY")
 display "`date'"
-summ date
-local date: display %tdd_m_yy `r(max)'
-display "`date'"
+// local date: display %tdd_m_yy `r(max)'
+// display "`date'"
 local date2 = subinstr(trim("`date'"), " ", "_", .)
 display "`date2'"
 </pre>
@@ -233,30 +231,29 @@ display "`date2'"
 local date: display %tdd_m_yy date(c(current_date), "DMY")
 display "`date'"
 13 May 2222
-summ date
-variable date not found
-r(111);
-local date: display %tdd_m_yy `r(max)'
-display "`date'"
+
+
 local date2 = subinstr(trim("`date'"), " ", "_", .)
 display "`date2'"
+13_May_2222
 </pre>
+
 
 <p>
 Voir aussi
 </p>
 
 <div class="org-src-container">
-<pre class="src src-stata">local date = string(date(c(current_date), "DMY"), "%tdd!_m!_Y")
-local date = string(date(c(current_date), "DMY"), "%tdCCYYNNDD")
+<pre class="src src-stata">// local date = string(date(c(current_date), "DMY"), "%tdd!_m!_Y")
+// local date = string(date(c(current_date), "DMY"), "%tdCCYYNNDD")
 local date = string(date(c(current_date), "DMY"), "%tdCYND")
 display "`date'"
 </pre>
 </div>
 
 <pre class="example">
-local date = string(date(c(current_date), "DMY"), "%tdd!_m!_Y")
-local date = string(date(c(current_date), "DMY"), "%tdCCYYNNDD")
+
+
 local date = string(date(c(current_date), "DMY"), "%tdCYND")
 display "`date'"
 20220513
@@ -269,9 +266,9 @@ display "`date'"
 </div>
 </div>
 
-<div id="outline-container-org09169d5" class="outline-3">
-<h3 id="org09169d5">Compteurs et boucles</h3>
-<div class="outline-text-3" id="text-org09169d5">
+<div id="outline-container-org3309993" class="outline-3">
+<h3 id="org3309993">Compteurs et boucles</h3>
+<div class="outline-text-3" id="text-org3309993">
 <p>
 On rappelle que pour la sélection critériée d'observation dans un tableau de données, le qualificateur <a href="https://www.stata.com/help.cgi?if">if</a> est l'un des plus utiles. Voici par exemple une instruction typique : <code>list [varlist] [if] [in] [, options]</code>, ainsi que quelques illustrations :
 </p>
@@ -319,9 +316,9 @@ Les instructions <a href="https://www.stata.com/help.cgi?inrange">inrange</a> et
 </div>
 </div>
 
-<div id="outline-container-orge6f7776" class="outline-3">
-<h3 id="orge6f7776">Les différents types de boucles</h3>
-<div class="outline-text-3" id="text-orge6f7776">
+<div id="outline-container-orgf4f20b6" class="outline-3">
+<h3 id="orgf4f20b6">Les différents types de boucles</h3>
+<div class="outline-text-3" id="text-orgf4f20b6">
 <p>
 En dehors des utilitaires classiques de branchement conditionnel (if/else) ou d’itération (while) détaillé dans la section suivante, Stata permet de construire des boucles à partir de nombres ou d’éléments d’une liste. Les deux commandes clés sont :
 </p>
@@ -464,28 +461,18 @@ list w* in 1/5
 Dans la même veine, on peut imaginer : le recodage en masse des niveaux d’une liste de variable (<a href="https://www.stata.com/help.cgi?recode">recode</a>), la gestion des données manquantes (<a href="https://www.stata.com/help.cgi?mvdecode">mvdecode</a>), etc. Un autre exemple consiste à <a href="http://www.stata.com/support/faqs/data-management/using-while-loops/">générer des graphiques avec des instructions non "byable"</a>, l'annotation d'une <a href="http://www.stata.com/statalist/archive/2010-06/msg01581.html">liste de variables</a>, ou enfin le nommage automatique de graphiques :
 </p>
 
-<div class="org-src-container">
-<pre class="src src-stata">foreach x of varlist var1-var5 {
+<pre class="example">
+foreach x of varlist var1-var5 {
   local v : var label `x'
   twoway line yvar xvar, title("`v'")
 }
 </pre>
 </div>
-
-<pre class="example">
-foreach x of varlist var1-var5 {
-  2.   local v : var label `x'
-  3.   twoway line yvar xvar, title("`v'")
-  4. }
-variable var1 not found
-r(111);
-</pre>
-</div>
 </div>
 
-<div id="outline-container-orga9dbfd3" class="outline-3">
-<h3 id="orga9dbfd3">Structures de contrôle</h3>
-<div class="outline-text-3" id="text-orga9dbfd3">
+<div id="outline-container-org5c7928a" class="outline-3">
+<h3 id="org5c7928a">Structures de contrôle</h3>
+<div class="outline-text-3" id="text-org5c7928a">
 <p>
 Les structures de branchement conditionnels telles qu'une instruction if/else peuvent être utilisées directement à l'intérieur d'une boucle <a href="https://www.stata.com/help.cgi?foreach">foreach</a>, par exemple, ou dans un script <i>do</i> de contrôle de qualité, en conjonction avec <a href="https://www.stata.com/help.cgi?assert">assert</a>. Dans la majorité des cas, il convient toutefois de garder en tête la façon dont Stata facilite le travail sur les variables sans avoir à gérer soi-même les boucles d'itération sur les observations (<a href="https://www.stata.com/help.cgi?by">by</a>, <a href="https://www.stata.com/help.cgi?recode">recode</a>, <a href="https://www.stata.com/help.cgi?egen">egen</a>, etc.).
 </p>
@@ -501,18 +488,11 @@ Attention à <a href="https://www.stata.com/support/faqs/data-management/multipl
 </pre>
 </div>
 
-<pre class="example">
-if price &gt; 10000 {
-  sum foreign
-}
-</pre>
-
-
 <p>
 Usage de <a href="https://www.stata.com/help.cgi?cond">cond</a> [<a href="#kantor-2005-depen">kantor-2005-depen</a>]</p>
 
 <div class="org-src-container">
-<pre class="src src-stata">sysuse auto
+<pre class="src src-stata">sysuse auto, clear
 gen v1 = mpg &gt; 20
 gen v2 = !inrange(mpg, 0, 20)
 gen v3 = cond(mpg &gt; 20, 1, 0)
@@ -522,9 +502,8 @@ gen v5 = irecode(mpg, 0, 20, .)
 </div>
 
 <pre class="example">
-sysuse auto
-no; data in memory would be lost
-r(4);
+sysuse auto, clear
+(1978 Automobile Data)
 gen v1 = mpg &gt; 20
 gen v2 = !inrange(mpg, 0, 20)
 gen v3 = cond(mpg &gt; 20, 1, 0)
@@ -536,13 +515,13 @@ gen v5 = irecode(mpg, 0, 20, .)
 </div>
 </div>
 
-<div id="outline-container-orgee5621b" class="outline-2">
-<h2 id="orgee5621b">Automatisation</h2>
+<div id="outline-container-orgb31a6e8" class="outline-2">
+<h2 id="orgb31a6e8">Automatisation</h2>
 </div>
 
-<div id="outline-container-orgabeec01" class="outline-2">
-<h2 id="orgabeec01">Gestion d'un package</h2>
-<div class="outline-text-2" id="text-orgabeec01">
+<div id="outline-container-org90c38f3" class="outline-2">
+<h2 id="org90c38f3">Gestion d'un package</h2>
+<div class="outline-text-2" id="text-org90c38f3">
 <div id="bibliography">
 <h2>Références</h2>
 
@@ -601,7 +580,7 @@ G.&nbsp;Kolev, &ldquo;Scalar or variable? the problem of ambiguous names,&rdquo;
 </div>
 </div>
 <div id="postamble" class="status">
-Generated by <a href="https://www.gnu.org/software/emacs/">Emacs</a> 26.3 (<a href="https://orgmode.org">Org</a> mode 9.3.1) on 2022-05-13 ven. 18:18 (<a href="mailto:chl@aliquote.org">chl@aliquote.org</a>)
+Generated by <a href="https://www.gnu.org/software/emacs/">Emacs</a> 26.3 (<a href="https://orgmode.org">Org</a> mode 9.3.1) on 2022-05-13 ven. 20:27 (<a href="mailto:chl@aliquote.org">chl@aliquote.org</a>)
 </div>
 </body>
 </html>
