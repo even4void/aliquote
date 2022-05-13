@@ -1,3 +1,8 @@
+* 29bb802 (Fri, 13 May 2022 18:25:45 +0200, chl) Minor fix
+* 4eaaff7 (Fri, 13 May 2022 18:23:29 +0200, chl) Update main chapters with new build policy
+* 2044dd4 (Fri, 13 May 2022 16:58:45 +0200, chl) Update dist and building policy
+* 219f252 (Thu, 12 May 2022 23:13:18 +0200, chl) wip
+* 79778c2 (Thu, 12 May 2022 10:48:06 +0200, chl) wip
 * ba6d602 (Fri, 16 Oct 2020 19:31:06 +0200, chl) Update chapter 1 with recoding stuff
 * aac783d (Fri, 16 Oct 2020 11:18:39 +0200, chl) wip
 * 8f2b06d (Thu, 15 Oct 2020 10:12:26 +0200, chl) wip

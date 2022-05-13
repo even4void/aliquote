@@ -1,0 +1,351 @@
+@import url(https://fonts.googleapis.com/css?family=Droid+Sans|Droid+Sans+Mono|Droid+Serif);
+
+@media all {
+  h1 {
+    color: #6d2c2c;
+    font-size: 2.1em;
+    margin-bottom: 10px;
+    margin-right: 7%;
+    margin-top: 10px;
+    padding: 0 0 30px 0;
+  }
+
+  h2 {
+    border-bottom: 1px solid #ddd;
+    color: #432223;
+    font-family: sans-serif;
+    font-size: 1.45em;
+    line-height: 1.5em;
+    padding: 10px 0 10px 0;
+  }
+
+  .outline-text-2 {
+    margin-left: 0.1em;
+  }
+
+  h3 {
+    color: black;
+    font-family: sans-serif;
+    font-size: 1.3em;
+    line-height: 1.5em;
+  }
+
+  h4 {
+    color: #a5573e;
+    font-family: sans-serif;
+    font-size: 1.2em;
+    margin-left: 1.2em;
+  }
+
+  .outline-text-4 {
+    margin-left: 1.45em;
+  }
+
+  a {
+    border-bottom: 1px dotted #999;
+    color: black;
+    font-weight: 400;
+    text-decoration: none;
+  }
+
+  a:visited {
+    font-weight: 400;
+    text-decoration: none;
+  }
+
+  a:hover {
+    border-bottom: 1px solid #999;
+    text-decoration: none;
+  }
+
+  a.footref {
+    border-bottom: none;
+    font-family: sans-serif;
+    text-decoration: none;
+  }
+
+  sup {
+    font-size: 0.83em;
+    line-height: 0;
+    vertical-align: super;
+  }
+
+  li {
+    margin: 0.4em;
+  }
+
+  table {
+    border-collapse: collapse;
+    border: none;
+    text-align: center;
+    width: 80%;
+  }
+  table td,
+  table th {
+    border: 1px solid #ffffff;
+    padding: 3px 4px;
+  }
+
+  table tr:hover {
+    background-color: #f8f5ec;
+  }
+  table tbody td {
+    font-size: 13px;
+  }
+  /* table tr:nth-child(even) { */
+  /*   background: #f5e9e0; */
+  /* } */
+  table tr:last-child {
+    border-bottom: 2px solid #333333;
+  }
+  table thead {
+    /* border-bottom: 2px solid #333333; */
+    border-top: 2px solid #333333;
+  }
+  table thead th {
+    color: #444444;
+    font-size: 15px;
+    font-weight: bold;
+    text-align: center;
+  }
+  table tfoot {
+    border-bottom: 2px solid #333333;
+    color: #444444;
+    font-size: 14px;
+    font-weight: bold;
+  }
+  table tfoot td {
+    font-size: 14px;
+  }
+
+  #bibliography table {
+    border-collapse: collapse;
+    border: none;
+    text-align: left;
+    width: 100%;
+  }
+
+  #bibliography table tr:hover {
+    background-color: white;
+  }
+
+  #bibliography table tbody td {
+    font-size: 1em;
+  }
+
+  #bibliography table tr:last-child {
+    border-bottom: none;
+  }
+
+  code {
+    background: #f8f5ec;
+    border-radius: 4px;
+    color: #444;
+    font-family: Droid Sans Mono, Monaco, Consolas, "Lucida Console", monospace;
+    font-size: 0.9em;
+    padding: 3px 5px;
+    white-space: normal;
+  }
+
+  pre.src {
+    background-color: #f8f5ec;
+    white-space: pre-line;
+  }
+
+  img {
+    border: none;
+    max-width: 100%;
+  }
+
+  .footdef a {
+    border-bottom: 1px dotted #999;
+    font-family: sans-serif;
+    text-decoration: none;
+  }
+
+  .footdef a:hover {
+    border-bottom: 1px solid #999;
+    text-decoration: none;
+  }
+
+  .footpara {
+    display: inline;
+    margin: 0.2em auto;
+  }
+
+  .footdef {
+    margin-bottom: 1em;
+  }
+
+  .footdef sup a {
+    border-bottom: none;
+  }
+  .footdef sup {
+    padding-right: 0.5em;
+  }
+
+  #org-div-home-and-up {
+    position: fixed;
+    right: 0;
+    top: 4em;
+  }
+
+  /* Org-specific stuff */
+  h1.title {
+    line-height: 30pt;
+  }
+
+  .todo {
+    color: #444;
+    font-weight: bold;
+  }
+
+  .todo.STAR {
+    color: #444;
+    font-weight: bold;
+  }
+
+  .done {
+    color: #ccc79a;
+    font-weight: bold;
+  }
+
+  .tag {
+    color: #ccc;
+    font-size: 80%;
+  }
+
+  .timestamp {
+    color: #9099ab;
+  }
+
+  #postamble {
+    font-size: 75%;
+    line-height: 10pt;
+    margin-left: 30px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 0.2em;
+    z-index: -1000;
+  }
+}
+
+@media only screen and (min-width: 320px) {
+  html {
+    font: 0.9em/1.6em "Droid Serif", Cambria, Georgia, "DejaVu Serif", serif;
+    margin: 0;
+  }
+
+  body #content {
+    background-color: white;
+    margin: auto;
+    max-width: 100%;
+    padding-top: 0px;
+    padding: 2em;
+  }
+
+  pre {
+    color: #444;
+    font-family: Droid Sans Mono, Monaco, Consolas, "Lucida Console", monospace;
+    font-size: 90%;
+    overflow: auto;
+    padding-left: 1em;
+  }
+}
+
+@media only screen and (min-width: 961px) {
+  html {
+    background-color: #f8f5ec;
+    background-position: right bottom;
+    background-repeat: no-repeat;
+    font: 0.9em/1.6em "Droid Serif", Cambria, Georgia, "DejaVu Serif", serif;
+    margin: 0;
+  }
+
+  body {
+    color: black;
+    font-size: 12pt;
+    line-height: 18pt;
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-top: 0;
+  }
+
+  body #content {
+    background-color: white;
+    margin-left: 0px;
+    max-width: 70%;
+    padding-top: 0px;
+    padding: 2em;
+  }
+
+  body .title {
+    font-size: 22pt;
+    margin-left: 0px;
+  }
+
+  pre {
+    color: #444;
+    font-family: Droid Sans Mono, Monaco, Consolas, "Lucida Console", monospace;
+    font-size: 90%;
+    margin-right: -5em;
+    overflow: auto;
+    padding-left: 1em;
+  }
+
+  #table-of-contents {
+    -moz-border-radius-bottomleft: 5px;
+    -moz-box-shadow: 0 0 1em #777777;
+    -webkit-border-bottom-left-radius: 5px;
+    -webkit-box-shadow: 0 0 1em #777777;
+    background: white;
+    box-shadow: 0 0 1em #777777;
+    font-size: 10pt;
+    line-height: 12pt;
+    max-height: 80%;
+    overflow: auto;
+    position: fixed;
+    right: 0em;
+    text-align: right;
+    top: 0em;
+  }
+
+  #table-of-contents h2 {
+    border: 0;
+    font-size: 13pt;
+    font-weight: normal;
+    max-width: 9em;
+    padding-bottom: 0.05em;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    padding-top: 0.05em;
+  }
+
+  #table-of-contents #text-table-of-contents {
+    display: none;
+    text-align: left;
+  }
+
+  #table-of-contents:hover #text-table-of-contents {
+    display: block;
+    margin-top: -1.5em;
+    padding: 0.5em;
+  }
+
+  #license {
+    background-color: #eeeeee;
+  }
+
+  .sidenote {
+    clear: right;
+    float: right;
+    font-size: 0.8em;
+    line-height: 1.1;
+    margin-bottom: 0;
+    margin-right: -35%;
+    margin-top: 0;
+    position: relative;
+    vertical-align: baseline;
+    width: 30%;
+  }
+}

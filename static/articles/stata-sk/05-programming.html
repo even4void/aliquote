@@ -1,15 +1,13 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <!-- 2020-10-11 Sun 12:02 -->
-    <meta charset="utf-8">
-    <meta name="viewport" content=
-    "width=device-width, initial-scale=1">
-    <title>Stata : programmation</title>
-    <meta name="generator" content="Org mode">
-    <link rel="stylesheet" type="text/css" href=
-    "worg.css">
-    <script type="text/x-mathjax-config">
+<!-- 2022-05-13 ven. 18:18 -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Stata : programmation</title>
+<meta name="generator" content="Org mode">
+<link rel="stylesheet" type="text/css" href="assets/worg.css" />
+<script type="text/x-mathjax-config">
     MathJax.Hub.Config({
         displayAlign: "center",
         displayIndent: "0em",
@@ -27,194 +25,135 @@
                TagSide: "right",
                TagIndent: ".8em"
              }
-    });
-    </script>
-    <script type="text/javascript" src=
-    "https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
+});
+</script>
+<script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
-    <div id="content">
-        <h1 class="title">Stata : programmation</h1>
-        <div id="table-of-contents">
-            <h2>Table des matières</h2>
-            <div id="text-table-of-contents">
-                <ul>
-                    <li>
-                        <a href="#org56aa3be">Programmation avec
-                        Stata</a>
-                        <ul>
-                            <li>
-                                <a href="#orgf0fafb4">Les macros
-                                Stata</a>
-                            </li>
-                            <li>
-                                <a href="#org3f5dc9b">Macros
-                                locales</a>
-                            </li>
-                            <li>
-                                <a href="#org5c1e8b9">Compteurs et
-                                boucles</a>
-                            </li>
-                            <li>
-                                <a href="#org736f79d">Les
-                                différents types de boucles</a>
-                            </li>
-                            <li>
-                                <a href="#org948382d">Structures de
-                                contrôle</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="#org647b156">Automatisation</a>
-                    </li>
-                    <li>
-                        <a href="#orgd2fee4c">Gestion d’un
-                        package</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-        <p>Ce chapitre est consacré aux techniques de programmation
-        avec le langage Stata, et dans une moindre mesure Mata.
-        L’ouvrage de référence demeure l’ouvrage de Mitchell
-        [<a href="#mitchell-2010-data-manag">1</a>] pour tout ce
-        qui relève de l’automatisation à l’aide de commandes Stata
-        pour la gestion de données, ainsi que l’ouvrage de Baum sur
-        la programmation en elle-même [<a href=
-        "#baum-2009-introd-stata-progr">2</a>]. Germán Rodríguez
-        propose également un <a href=
-        "http://data.princeton.edu/stata/programming.html">excellent
-        tutoriel</a> sur son site internet. Concernant la création
-        de commande et l’usage de Mata, l’ouvrage de Bill Gould
-        [<a href="#gould-2018-mata-book">3</a>].</p>
-        <div id="outline-container-org56aa3be" class="outline-2">
-            <h2 id="org56aa3be">Programmation avec Stata</h2>
-            <div class="outline-text-2" id="text-org56aa3be"></div>
-            <div id="outline-container-orgf0fafb4" class=
-            "outline-3">
-                <h3 id="orgf0fafb4">Les macros Stata</h3>
-                <div class="outline-text-3" id="text-orgf0fafb4">
-                    <p>Ce que l’on appelle «&nbsp;variable&nbsp;»
-                    dans la plupart des langages de programmation
-                    correspond au terme «&nbsp;macro&nbsp;» dans le
-                    langage Stata. Une variable reste définie dans
-                    le sens statistique et donc correspond aux
-                    colonnes d’un tableau de données. Quant aux
-                    «&nbsp;macros&nbsp;», on en distingue <a href=
-                    "http://www.stata.com/statalist/archive/2008-08/msg01258.html">
-                    plusieurs types</a>, selon leur nature ou leur
-                    portée.</p>
-                    <p>Stata permet de stocker temporairement ou
-                    définitivement des valeurs calculées ou
-                    retournées par une procédure d’estimation. On
-                    parlera de macros au sens large. En voici une
-                    illustration avec le jeu de données sur les
-                    automobiles :</p>
-                    <div class="org-src-container">
-                        <pre class="src src-jupyter-stata">
-                        sysuse auto, clear
+<div id="content">
+<h1 class="title">Stata : programmation</h1>
+<div id="table-of-contents">
+<h2>Table des matières</h2>
+<div id="text-table-of-contents">
+<ul>
+<li><a href="#orgc0bf4e2">Programmation avec Stata</a>
+<ul>
+<li><a href="#orgb7ab69d">Les macros Stata</a></li>
+<li><a href="#org70f5465">Macros locales</a></li>
+<li><a href="#org3a767f6">Variables catégorielles</a></li>
+<li><a href="#org614c538">Gestion des dates</a></li>
+<li><a href="#org09169d5">Compteurs et boucles</a></li>
+<li><a href="#orge6f7776">Les différents types de boucles</a></li>
+<li><a href="#orga9dbfd3">Structures de contrôle</a></li>
+</ul>
+</li>
+<li><a href="#orgee5621b">Automatisation</a></li>
+<li><a href="#orgabeec01">Gestion d'un package</a></li>
+</ul>
+</div>
+</div>
+<p>
+Ce chapitre est consacré aux techniques de programmation avec le langage Stata, et dans une moindre mesure Mata. L'ouvrage de référence demeure l'ouvrage de Mitchell [<a href="#mitchell-2010-data-manag">1</a>] pour tout ce qui relève de l'automatisation à l'aide de commandes Stata pour la gestion de données, ainsi que l'ouvrage de Baum sur la programmation en elle-même [<a href="#baum-2009-introd-stata-progr">2</a>]. Germán Rodríguez propose également un <a href="http://data.princeton.edu/stata/programming.html">excellent tutoriel</a> sur son site internet. Concernant la création de commande et l'usage de Mata, l'ouvrage de Bill Gould [<a href="#gould-2018-mata-book">3</a>].
+</p>
+
+<div id="outline-container-orgc0bf4e2" class="outline-2">
+<h2 id="orgc0bf4e2">Programmation avec Stata</h2>
+<div class="outline-text-2" id="text-orgc0bf4e2">
+</div>
+<div id="outline-container-orgb7ab69d" class="outline-3">
+<h3 id="orgb7ab69d">Les macros Stata</h3>
+<div class="outline-text-3" id="text-orgb7ab69d">
+<p>
+Ce que l'on appelle "variable" dans la plupart des langages de programmation correspond au terme "macro" dans le langage Stata. Une variable reste définie dans le sens statistique et donc correspond aux colonnes d'un tableau de données. Quant aux "macros", on en distingue <a href="http://www.stata.com/statalist/archive/2008-08/msg01258.html">plusieurs types</a>, selon leur nature ou leur portée.
+</p>
+
+<p>
+Stata permet de stocker temporairement ou définitivement des valeurs calculées ou retournées par une procédure d’estimation. On parlera de macros au sens large. En voici une illustration avec le jeu de données sur les automobiles :
+</p>
+
+<div class="org-src-container">
+<pre class="src src-stata">sysuse auto, clear
 quietly summarize mpg, meanonly
 display r(mean)
 </pre>
-                    </div>
-                    <pre class="example">
+</div>
 
+<pre class="example">
+set more off
+sysuse auto, clear
 (1978 Automobile Data)
-
-
+quietly summarize mpg, meanonly
+display r(mean)
 21.297297
 </pre>
-                    <p>La command <a href=
-                    "https://www.stata.com/help.cgi?summarize">summarize</a>
-                    stocke temporairement la moyenne
-                    (<code>mean</code>) de la variable (ou dans le
-                    cas d’une liste de variables, de la dernière
-                    variable de la liste) en mémoire et il est
-                    possible d’obtenir la valeur de retour stockée
-                    dans <code>r()</code>. Ce type de données peut
-                    être stocké globalement (accessible depuis
-                    l’espace de travail, les programmes, etc.) ou
-                    localement, ou, comme dans l’exemple ci-dessus,
-                    affiché à l’écran.</p>
-                </div>
-            </div>
-            <div id="outline-container-org3f5dc9b" class=
-            "outline-3">
-                <h3 id="org3f5dc9b">Macros locales</h3>
-                <div class="outline-text-3" id="text-org3f5dc9b">
-                    <p>Une macro locale se définit comme une
-                    expression : <code>local name [=] text</code>.
-                    Une macro locale permet de stocker sous forme
-                    de chaîne de caractères une expression (ou
-                    son résultat après évaluation dans le cas ou
-                    on utilise le signe =). Voici un exemple
-                    d’utilisation :</p>
-                    <div class="org-src-container">
-                        <pre class="src src-jupyter-stata">
-                        quietly summarize mpg, meanonly
+
+
+<p>
+La command <a href="https://www.stata.com/help.cgi?summarize">summarize</a> stocke temporairement la moyenne (<code>mean</code>) de la variable (ou dans le cas d'une liste de variables, de la dernière variable de la liste) en mémoire et il est possible d'obtenir la valeur de retour stockée dans <code>r()</code>. Ce type de données peut être stocké globalement (accessible depuis l’espace de travail, les programmes, etc.) ou localement, ou, comme dans l'exemple ci-dessus, affiché à l'écran.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org70f5465" class="outline-3">
+<h3 id="org70f5465">Macros locales</h3>
+<div class="outline-text-3" id="text-org70f5465">
+<p>
+Une macro locale se définit comme une expression : <code>local name [=] text</code>. Une macro locale permet de stocker sous forme de chaîne de caractères une expression (ou son résultat après évaluation dans le cas ou on utilise le signe =). Voici un exemple d'utilisation :
+</p>
+
+<div class="org-src-container">
+<pre class="src src-stata">quietly summarize mpg, meanonly
 local m1 r(mean)
 display `m1'
 </pre>
-                    </div>
-                    <pre class="example">
+</div>
 
-
-
+<pre class="example">
+quietly summarize mpg, meanonly
+local m1 r(mean)
+display `m1'
 21.297297
 </pre>
-                    <p>Attention, l’utilisation de <code>m</code>
-                    comme nom de macro pourrait dans le cas de ce
-                    jeu de données prêter à confusion.</p>
-                    <p>L’ajout du symbole = dans l’expression
-                    ci-dessus permet de stocker la valeur de retour
-                    après évaluation :</p>
-                    <div class="org-src-container">
-                        <pre class="src src-jupyter-stata">
-                        quietly regress mpg weight
+
+
+<p>
+Attention, l'utilisation de <code>m</code> comme nom de macro pourrait dans le cas de ce jeu de données prêter à confusion.
+</p>
+
+<p>
+L'ajout du symbole = dans l'expression ci-dessus permet de stocker la valeur de retour après évaluation :
+</p>
+
+<div class="org-src-container">
+<pre class="src src-stata">quietly regress mpg weight
 local r2 = e(r2)
 display `r2'
 </pre>
-                    </div>
-                    <pre class="example">
+</div>
 
-
-
-.65153125
+<pre class="example">
+quietly regress mpg weight
+local r2 = e(r2)
+65153125
 </pre>
-                    <p>L’omission du signe = aurait pour
-                    conséquence de produire des résultats
-                    variable après l’estimation d’un nouveau
-                    modèle de régression. Après une instruction
-                    telle que <code>local r2 e(r2)</code>, c’est la
-                    formule <code>e(r2)</code> qui est stockée et
-                    non son résultat.</p>
-                    <p>Il existe également une autre manière de
-                    définir des macros locales : <a href=
-                    "https://www.stata.com/help.cgi?scalar">scalar</a>.
-                    Essentiellement, les deux macros permettent de
-                    stocker des valeurs pour une utilisation
-                    future. Elles se distinguent sur les points
-                    suivants : (1) les scalars sont enregistrés
-                    globalement, et non localement, d’où un risque
-                    potentiel de conflit de nom [<a href=
-                    "#kolev-2006-scalar-variab">4</a>] ; (2) Stata
-                    stocke des valeurs sans perte de précision
-                    dans les scalars et non une représentation
-                    sous forme de chaîne de caractères (environ 8
-                    chiffres significatifs).</p>
-                    <p>Un usage classique des macros locales
-                    consiste à enregistrer une liste de cofacteurs
-                    présents dans tous les modèles de régression
-                    dont on souhaite estimer les paramètres.
-                    Plutôt que de répéter systématiquement dans
-                    les modèles une même série de variables
-                    explicatives, il est souvent plus judicieux et
-                    plus économique de les stocker dans une macro,
-                    comme illustré ci-après :</p>
-                    <div class="org-src-container">
-                        <pre class="src src-jupyter-stata">
-                        webuse lbw
+
+
+<p>
+L’omission du signe = aurait pour conséquence de produire des résultats variable après l’estimation d’un nouveau modèle de régression. Après une instruction telle que <code>local r2 e(r2)</code>, c’est la formule <code>e(r2)</code> qui est stockée et non son résultat.
+</p>
+
+<p>
+Il existe également une autre manière de définir des macros locales : <a href="https://www.stata.com/help.cgi?scalar">scalar</a>. Essentiellement, les deux macros permettent de stocker des
+valeurs pour une utilisation future. Elles se distinguent sur les points suivants : (1) les scalars sont enregistrés globalement, et non localement, d’où un risque potentiel de conflit de nom [<a href="#kolev-2006-scalar-variab">4</a>] ; (2) Stata stocke des valeurs sans perte de précision dans les scalars et non une représentation sous forme de chaîne de caractères (environ 8 chiffres significatifs).
+</p>
+
+<p>
+Un usage classique des macros locales consiste à enregistrer une liste de cofacteurs présents dans tous les modèles de régression dont on souhaite estimer les paramètres. Plutôt que de répéter systématiquement dans les modèles une même série de variables explicatives, il est souvent plus judicieux et plus économique de les stocker dans une macro, comme illustré ci-après :
+</p>
+
+<div class="org-src-container">
+<pre class="src src-stata">webuse lbw
 local cofactors age smoke
 quietly : regress bwt `cofactors' ht
 estimates store m1
@@ -222,16 +161,17 @@ quietly : regress bwt `cofactors' ht i.race
 estimates store m2
 estimates table m*
 </pre>
-                    </div>
-                    <pre class="example">
+</div>
 
-(Hosmer & Lemeshow data)
-
-
-
-
-
-
+<pre class="example">
+webuse lbw
+(Hosmer &amp; Lemeshow data)
+local cofactors age smoke
+quietly : regress bwt `cofactors' ht
+estimates store m1
+quietly : regress bwt `cofactors' ht i.race
+estimates store m2
+estimates table m*
 
 ----------------------------------------
     Variable |     m1           m2      
@@ -247,40 +187,107 @@ estimates table m*
        _cons |  2825.8965     3302.911  
 ----------------------------------------
 </pre>
-                </div>
-            </div>
-            <div id="outline-container-org5c1e8b9" class=
-            "outline-3">
-                <h3 id="org5c1e8b9">Compteurs et boucles</h3>
-                <div class="outline-text-3" id="text-org5c1e8b9">
-                    <p>On rappelle que pour la sélection critériée
-                    d’observation dans un tableau de données, le
-                    qualificateur <a href=
-                    "https://www.stata.com/help.cgi?if">if</a> est
-                    l’un des plus utiles. Voici par exemple une
-                    instruction typique : <code>list [varlist] [if]
-                    [in] [, options]</code>, ainsi que quelques
-                    illustrations :</p>
-                    <div class="org-src-container">
-                        <pre class="src src-jupyter-stata">
-                        sysuse auto, clear
+</div>
+</div>
+
+<div id="outline-container-org3a767f6" class="outline-3">
+<h3 id="org3a767f6">Variables catégorielles</h3>
+<div class="outline-text-3" id="text-org3a767f6">
+<div class="org-src-container">
+<pre class="src src-stata">levelsof country, local(lvls)
+local items =  `r(r)'
+</pre>
+</div>
+
+<pre class="example">
+levelsof country, local(lvls)
+variable country not found
+r(111);
+local items =  `r(r)'
+invalid syntax
+r(198);
+</pre>
+
+
+<p>
+Consulter également les valeurs retournées par <code>return list</code>.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org614c538" class="outline-3">
+<h3 id="org614c538">Gestion des dates</h3>
+<div class="outline-text-3" id="text-org614c538">
+<div class="org-src-container">
+<pre class="src src-stata">local date: display %tdd_m_yy date(c(current_date), "DMY")
+display "`date'"
+summ date
+local date: display %tdd_m_yy `r(max)'
+display "`date'"
+local date2 = subinstr(trim("`date'"), " ", "_", .)
+display "`date2'"
+</pre>
+</div>
+
+<pre class="example">
+local date: display %tdd_m_yy date(c(current_date), "DMY")
+display "`date'"
+13 May 2222
+summ date
+variable date not found
+r(111);
+local date: display %tdd_m_yy `r(max)'
+display "`date'"
+local date2 = subinstr(trim("`date'"), " ", "_", .)
+display "`date2'"
+</pre>
+
+<p>
+Voir aussi
+</p>
+
+<div class="org-src-container">
+<pre class="src src-stata">local date = string(date(c(current_date), "DMY"), "%tdd!_m!_Y")
+local date = string(date(c(current_date), "DMY"), "%tdCCYYNNDD")
+local date = string(date(c(current_date), "DMY"), "%tdCYND")
+display "`date'"
+</pre>
+</div>
+
+<pre class="example">
+local date = string(date(c(current_date), "DMY"), "%tdd!_m!_Y")
+local date = string(date(c(current_date), "DMY"), "%tdCCYYNNDD")
+local date = string(date(c(current_date), "DMY"), "%tdCYND")
+display "`date'"
+20220513
+</pre>
+
+
+<p>
+<a href="https://medium.com/the-stata-guide/the-awesome-stata-tips-collection-6805afdedffa">The awesome Stata tips collection</a>.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org09169d5" class="outline-3">
+<h3 id="org09169d5">Compteurs et boucles</h3>
+<div class="outline-text-3" id="text-org09169d5">
+<p>
+On rappelle que pour la sélection critériée d'observation dans un tableau de données, le qualificateur <a href="https://www.stata.com/help.cgi?if">if</a> est l'un des plus utiles. Voici par exemple une instruction typique : <code>list [varlist] [if] [in] [, options]</code>, ainsi que quelques illustrations :
+</p>
+
+<div class="org-src-container">
+<pre class="src src-stata">sysuse auto, clear
 list price if mpg &lt;= 13
 list price if inrange(mpg, 12, 13)
-list price if inlist(mpg, 13, 16, 18, 19) & foreign == 1
+list price if inlist(mpg, 13, 16, 18, 19) &amp; foreign == 1
 </pre>
-                    </div>
-                    <pre class="example">
+</div>
 
+<pre class="example">
+sysuse auto, clear
 (1978 Automobile Data)
-
-
-     +--------+
-     |  price |
-     |--------|
- 26. | 11,497 |
- 27. | 13,594 |
-     +--------+
-
+list price if mpg &lt;= 13
 
      +--------+
      |  price |
@@ -288,7 +295,15 @@ list price if inlist(mpg, 13, 16, 18, 19) & foreign == 1
  26. | 11,497 |
  27. | 13,594 |
      +--------+
+list price if inrange(mpg, 12, 13)
 
+     +--------+
+     |  price |
+     |--------|
+ 26. | 11,497 |
+ 27. | 13,594 |
+     +--------+
+list price if inlist(mpg, 13, 16, 18, 19) &amp; foreign == 1
 
      +-------+
      | price |
@@ -297,174 +312,121 @@ list price if inlist(mpg, 13, 16, 18, 19) & foreign == 1
  69. | 5,719 |
      +-------+
 </pre>
-                    <p>Les instructions <a href=
-                    "https://www.stata.com/help.cgi?inrange">inrange</a>
-                    et <a href=
-                    "https://www.stata.com/help.cgi?inlist">inlist</a>
-                    permettent de construire des listes
-                    régulières ou irrégulières de valeurs
-                    numériques. Ce principe de sélection
-                    s’applique également aux commandes de résumé
-                    numérique (<a href=
-                    "https://www.stata.com/help.cgi?summarize">summarize</a>,
-                    <a href=
-                    "https://www.stata.com/help.cgi?tabulate">tabulate</a>)
-                    ou de modélisation (<a href=
-                    "https://www.stata.com/help.cgi?regress">regress</a>).</p>
-                </div>
-            </div>
-            <div id="outline-container-org736f79d" class=
-            "outline-3">
-                <h3 id="org736f79d">Les différents types de
-                boucles</h3>
-                <div class="outline-text-3" id="text-org736f79d">
-                    <p>En dehors des utilitaires classiques de
-                    branchement conditionnel (if/else) ou
-                    d’itération (while) détaillé dans la section
-                    suivante, Stata permet de construire des
-                    boucles à partir de nombres ou d’éléments
-                    d’une liste. Les deux commandes clés sont
-                    :</p>
-                    <ul class="org-ul">
-                        <li>
-                            <a href=
-                            "https://www.stata.com/help.cgi?forvalues">
-                            forvalues</a> : boucle sur une
-                            séquence régulière de nombres
-                            entiers
-                        </li>
-                        <li>
-                            <a href=
-                            "https://www.stata.com/help.cgi?foreach">
-                            foreach</a> : boucle sur une séquence
-                            d’éléments pris dans une liste
-                            (nombres, texte ou variable)
-                        </li>
-                    </ul>
-                    <div class="org-src-container">
-                        <pre class="src src-jupyter-stata">
-                        forvalues index = 1/3 {
+
+<p>
+Les instructions <a href="https://www.stata.com/help.cgi?inrange">inrange</a> et <a href="https://www.stata.com/help.cgi?inlist">inlist</a> permettent de construire des listes régulières ou irrégulières de valeurs numériques. Ce principe de sélection s’applique également aux commandes de résumé numérique (<a href="https://www.stata.com/help.cgi?summarize">summarize</a>, <a href="https://www.stata.com/help.cgi?tabulate">tabulate</a>) ou de modélisation (<a href="https://www.stata.com/help.cgi?regress">regress</a>).
+</p>
+</div>
+</div>
+
+<div id="outline-container-orge6f7776" class="outline-3">
+<h3 id="orge6f7776">Les différents types de boucles</h3>
+<div class="outline-text-3" id="text-orge6f7776">
+<p>
+En dehors des utilitaires classiques de branchement conditionnel (if/else) ou d’itération (while) détaillé dans la section suivante, Stata permet de construire des boucles à partir de nombres ou d’éléments d’une liste. Les deux commandes clés sont :
+</p>
+
+<ul class="org-ul">
+<li><a href="https://www.stata.com/help.cgi?forvalues">forvalues</a> : boucle sur une séquence régulière de nombres entiers</li>
+<li><a href="https://www.stata.com/help.cgi?foreach">foreach</a> : boucle sur une séquence d’éléments pris dans une liste (nombres, texte ou variable)</li>
+</ul>
+
+<div class="org-src-container">
+<pre class="src src-stata">forvalues index = 1/3 {
   display `index'
 }
 </pre>
-                    </div>
-                    <pre class="example">
+</div>
 
+<pre class="example">
+forvalues index = 1/3 {
+  2.   display `index'
+  3. }
 1
 2
 3
 </pre>
-                    <p>Le principe de la syntaxe est simple bien
-                    qu’il fasse faire bien attention aux accolades,
-                    en particulier la dernière qui doit figurer
-                    seule sur une ligne : <code>forvalues macro
-                    locale = séquence {</code>. Pour construire
-                    une séquence régulière de nombres, on
-                    utilise l’une des formes suivantes : (1)
-                    <code>min/max</code> (comme dans le cas de
-                    <code>list in</code>) : <code>1/3</code>
-                    devient ainsi la séquence <code>1 2 3</code> ;
-                    (2) <code>first(step)last</code> :
-                    <code>10(5)25</code> devient <code>10 15 20
-                    25</code>.</p>
-                    <p>Voici une application simple qui consiste à
-                    discrétiser une variable numérique. La commande
-                    <a href=
-                    "https://www.stata.com/help.cgi?tabulate">tabulate</a>
-                    dispose de l’option <code>generate</code> qui
-                    per- met de générer des variables
-                    indicatrices (à utiliser après <a href=
-                    "https://www.stata.com/help.cgi?xtile">xtile</a>,
-                    <a href=
-                    "https://www.stata.com/help.cgi?egen%20cut">egen
-                    cut</a> ou <a href=
-                    "https://www.stata.com/help.cgi?autocode()">autocode()</a>).
-                    Pour créer des indicatrices, on peut utiliser
-                    une boucle comme suit :</p>
-                    <div class="org-src-container">
-                        <pre class="src src-jupyter-stata">
-                        forvalues low = 12(8)42 {
+
+
+<p>
+Le principe de la syntaxe est simple bien qu'il fasse faire bien attention aux accolades, en particulier la dernière qui doit figurer seule sur une ligne : <code>forvalues macro locale = séquence {</code>. Pour construire une séquence régulière de nombres, on utilise l’une des formes suivantes : (1) <code>min/max</code> (comme dans le cas de <code>list in</code>) : <code>1/3</code> devient ainsi la séquence <code>1 2 3</code> ; (2) <code>first(step)last</code> : <code>10(5)25</code> devient <code>10 15 20 25</code>.
+</p>
+
+<p>
+Voici une application simple qui consiste à discrétiser une variable numérique. La commande <a href="https://www.stata.com/help.cgi?tabulate">tabulate</a> dispose de l’option <code>generate</code> qui per- met de générer des variables indicatrices (à utiliser après <a href="https://www.stata.com/help.cgi?xtile">xtile</a>, <a href="https://www.stata.com/help.cgi?egen%20cut">egen cut</a> ou <a href="https://www.stata.com/help.cgi?autocode()">autocode()</a>). Pour créer des indicatrices, on peut utiliser une boucle comme suit :
+</p>
+
+<div class="org-src-container">
+<pre class="src src-stata">forvalues low = 12(8)42 {
   local high = `low' + 7
-  gen mpg`low'to`high' = mpg &gt;= `low' & mpg &lt;= `high'
+  gen mpg`low'to`high' = mpg &gt;= `low' &amp; mpg &lt;= `high'
 }
 list mpg* in 1/3
 </pre>
-                    </div>
-                    <pre class="example">
+</div>
 
+<pre class="example">
+forvalues low = 12(8)42 {
+  2.   local high = `low' + 7
+  3.   gen mpg`low'to`high' = mpg &gt;= `low' &amp; mpg &lt;= `high'
+  4. }
+list mpg* in 1/3
 
-
-   +-------------------------------------------------+
-   | mpg   mpg12~19   mpg20~27   mpg28~35   mpg36~43 |
-   |-------------------------------------------------|
-1. |  22          0          1          0          0 |
-2. |  17          1          0          0          0 |
-3. |  22          0          1          0          0 |
-   +-------------------------------------------------+
+     +-------------------------------------------------+
+     | mpg   mpg12~19   mpg20~27   mpg28~35   mpg36~43 |
+     |-------------------------------------------------|
+  1. |  22          0          1          0          0 |
+  2. |  17          1          0          0          0 |
+  3. |  22          0          1          0          0 |
+     +-------------------------------------------------+
 </pre>
-                    <p>La syntaxe générique est dans ce cas
-                    <code>foreach macro locale in liste {</code>.
-                    Les élements de la liste peuvent être du
-                    texte (ne pas oublier les quotes) ou des
-                    nombres :</p>
-                    <div class="org-src-container">
-                        <pre class="src src-jupyter-stata">
-                        foreach v in one two three {
+
+<p>
+La syntaxe générique est dans ce cas <code>foreach macro locale in liste {</code>. Les élements de la liste peuvent être du texte (ne pas oublier les quotes) ou des nombres :
+</p>
+
+<div class="org-src-container">
+<pre class="src src-stata">foreach v in one two three {
   display "`v'"
 }
 foreach num in 1 1 2 3 5 {
   display `num'
 }
 </pre>
-                    </div>
-                    <pre class="example">
+</div>
 
+<pre class="example">
+foreach v in one two three {
+  2.   display "`v'"
+  3. }
 one
 two
 three
-
+foreach num in 1 1 2 3 5 {
+  2.   display `num'
+  3. }
 1
 1
 2
 3
 5
 </pre>
-                    <p>L’instruction <a href=
-                    "https://www.stata.com/help.cgi?foreach">foreach</a>
-                    fonctionne également avec des listes et l’on
-                    distingue eux principaux cas de figure :</p>
-                    <ul class="org-ul">
-                        <li>
-                            <code>foreach macro locale of numlist
-                            liste { ... }</code> : Peu de
-                            différence avec l’instruction foreach
-                            générique, mais Stata vérifiera que
-                            la liste contient exclusivement des
-                            nombres. La liste de nombres peut être
-                            une séquence construite comme dans le
-                            cas de <a href=
-                            "https://www.stata.com/help.cgi?forvalues">
-                            forvalues</a>.
-                        </li>
-                        <li>
-                            <code>foreach macro locale of varlist
-                            liste { ... }</code> : Stata vérifiera
-                            que les variables figurant dans la
-                            liste existent bien, et on peut
-                            utiliser les abréviations habituelles
-                            (<code>var*</code> ou
-                            <code>var1-var3</code>) pour les
-                            <a href=
-                            "https://www.stata.com/help.cgi?varlist">
-                            varlist</a>.
-                        </li>
-                    </ul>
-                    <p>Voici un autre exemple d’application dans
-                    lequel on cherche à renommer un ensemble de
-                    variables :</p>
-                    <div class="org-src-container">
-                        <pre class="src src-jupyter-stata">
-                        xtile weightc = weight, nq(4)
+
+<p>
+L'instruction <a href="https://www.stata.com/help.cgi?foreach">foreach</a> fonctionne également avec des listes et l'on distingue eux principaux cas de figure :
+</p>
+
+<ul class="org-ul">
+<li><code>foreach macro locale of numlist liste { ... }</code> : Peu de différence avec l’instruction foreach générique, mais Stata vérifiera que la liste contient exclusivement des nombres. La liste de nombres peut être une séquence construite comme dans le cas de <a href="https://www.stata.com/help.cgi?forvalues">forvalues</a>.</li>
+<li><code>foreach macro locale of varlist liste { ... }</code> : Stata vérifiera que les variables figurant dans la liste existent bien, et on peut utiliser les abréviations habituelles (<code>var*</code> ou <code>var1-var3</code>) pour les <a href="https://www.stata.com/help.cgi?varlist">varlist</a>.</li>
+</ul>
+
+<p>
+Voici un autre exemple d'application dans lequel on cherche à renommer un ensemble de variables :
+</p>
+
+<div class="org-src-container">
+<pre class="src src-stata">xtile weightc = weight, nq(4)
 quietly tabulate weightc, gen(weightc)
 drop weightc
 local i = 0
@@ -474,14 +436,18 @@ foreach v of varlist weightc1-weightc4 {
 }
 list w* in 1/5
 </pre>
-                    </div>
-                    <pre class="example">
+</div>
 
-
-
-
-
-
+<pre class="example">
+xtile weightc = weight, nq(4)
+quietly tabulate weightc, gen(weightc)
+drop weightc
+local i = 0
+foreach v of varlist weightc1-weightc4 {
+  2.   local i = `i' + 1
+  3.   rename `v' w`i'
+  4. }
+list w* in 1/5
 
      +----------------------------+
      | weight   w1   w2   w3   w4 |
@@ -493,131 +459,149 @@ list w* in 1/5
   5. |  4,080    0    0    0    1 |
      +----------------------------+
 </pre>
-                    <p>Dans la même veine, on peut imaginer : le
-                    recodage en masse des niveaux d’une liste de
-                    variable (<a href=
-                    "https://www.stata.com/help.cgi?recode">recode</a>),
-                    la gestion des données manquantes (<a href=
-                    "https://www.stata.com/help.cgi?mvdecode">mvdecode</a>),
-                    etc. Un autre exemple consiste à <a href=
-                    "http://www.stata.com/support/faqs/data-management/using-while-loops/">
-                    générer des graphiques avec des instructions
-                    non «&nbsp;byable&nbsp;»</a> ou annoter une
-                    <a href=
-                    "http://www.stata.com/statalist/archive/2010-06/msg01581.html">
-                    liste de variables</a>.</p>
-                </div>
-            </div>
-            <div id="outline-container-org948382d" class=
-            "outline-3">
-                <h3 id="org948382d">Structures de contrôle</h3>
-                <div class="outline-text-3" id="text-org948382d">
-                    <p>Les structures de branchement conditionnels
-                    telles qu’une instruction if/else peuvent être
-                    utilisées directement à l’intérieur d’une
-                    boucle <a href=
-                    "https://www.stata.com/help.cgi?foreach">foreach</a>,
-                    par exemple, ou dans un script <i>do</i> de
-                    contrôle de qualité, en conjonction avec
-                    <a href=
-                    "https://www.stata.com/help.cgi?assert">assert</a>.
-                    Dans la majorité des cas, il convient toutefois
-                    de garder en tête la façon dont Stata facilite
-                    le travail sur les variables sans avoir à gérer
-                    soi-même les boucles d’itération sur les
-                    observations (<a href=
-                    "https://www.stata.com/help.cgi?by">by</a>,
-                    <a href=
-                    "https://www.stata.com/help.cgi?recode">recode</a>,
-                    <a href=
-                    "https://www.stata.com/help.cgi?egen">egen</a>,
-                    etc.).</p>
-                    <p>Attention à <a href=
-                    "https://www.stata.com/support/faqs/data-management/multiple-operations/">
-                    ne pas confondre</a> le qualificateur <a href=
-                    "https://www.stata.com/help.cgi?if">if</a> avec
-                    l’instruction de test Stata ou Mata
-                    correspondante. L’expression <code>sum foreign
-                    if price &gt; 10000</code> ne fournira pas le
-                    même résultat que :</p>
-                    <div class="org-src-container">
-                        <pre class="src src-jupyter-stata">
-                        if price &gt; 10000 { 
-  sum foreign 
-} 
+
+<p>
+Dans la même veine, on peut imaginer : le recodage en masse des niveaux d’une liste de variable (<a href="https://www.stata.com/help.cgi?recode">recode</a>), la gestion des données manquantes (<a href="https://www.stata.com/help.cgi?mvdecode">mvdecode</a>), etc. Un autre exemple consiste à <a href="http://www.stata.com/support/faqs/data-management/using-while-loops/">générer des graphiques avec des instructions non "byable"</a>, l'annotation d'une <a href="http://www.stata.com/statalist/archive/2010-06/msg01581.html">liste de variables</a>, ou enfin le nommage automatique de graphiques :
+</p>
+
+<div class="org-src-container">
+<pre class="src src-stata">foreach x of varlist var1-var5 {
+  local v : var label `x'
+  twoway line yvar xvar, title("`v'")
+}
 </pre>
-                    </div>
-                    <p>Usage de <a href=
-                    "https://www.stata.com/help.cgi?cond">cond</a>
-                    [<a href=
-                    "#kantor-2005-depen">kantor-2005-depen</a>]</p>
-                </div>
-            </div>
-        </div>
-        <div id="outline-container-org647b156" class="outline-2">
-            <h2 id="org647b156">Automatisation</h2>
-        </div>
-        <div id="outline-container-orgd2fee4c" class="outline-2">
-            <h2 id="orgd2fee4c">Gestion d’un package</h2>
-            <div class="outline-text-2" id="text-orgd2fee4c">
-                <div id="bibliography">
-                    <h2>Références</h2>
-                    <table>
-                        <tr valign="top">
-                            <td align="right" class="bibtexnumber">
-                                [<a name="mitchell-2010-data-manag"
-                                id=
-                                "mitchell-2010-data-manag">1</a>]
-                            </td>
-                            <td class="bibtexitem">M.&nbsp;N.
-                            Mitchell, <em>Data Management Using
-                            Stata: A Practical Handbook</em>. Stata
-                            Press, 2010.</td>
-                        </tr>
-                        <tr valign="top">
-                            <td align="right" class="bibtexnumber">
-                                [<a name=
-                                "baum-2009-introd-stata-progr" id=
-                                "baum-2009-introd-stata-progr">2</a>]
-                            </td>
-                            <td class="bibtexitem">C.&nbsp;F. Baum,
-                            <em>An Introduction to Stata
-                            Programming</em>. Stata Press,
-                            2009.</td>
-                        </tr>
-                        <tr valign="top">
-                            <td align="right" class="bibtexnumber">
-                                [<a name="gould-2018-mata-book" id=
-                                "gould-2018-mata-book">3</a>]
-                            </td>
-                            <td class="bibtexitem">W.&nbsp;Gould,
-                            <em>The Mata Book: A Book for Serious
-                            Programmers and Those Who Want to
-                            Be</em>. Stata Press, 2018.</td>
-                        </tr>
-                        <tr valign="top">
-                            <td align="right" class="bibtexnumber">
-                                [<a name="kolev-2006-scalar-variab"
-                                id=
-                                "kolev-2006-scalar-variab">4</a>]
-                            </td>
-                            <td class="bibtexitem">G.&nbsp;Kolev,
-                            “Scalar or variable? the problem of
-                            ambiguous names,” <em>The Stata
-                            Journal</em>, vol.&nbsp;6, no.&nbsp;2,
-                            pp.&nbsp;279--280, 2006.</td>
-                        </tr>
-                    </table>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div id="postamble" class="status">
-        Generated by <a href=
-        "https://www.gnu.org/software/emacs/">Emacs</a> 27.0.91
-        (<a href="https://orgmode.org">Org</a> mode 9.4) on
-        2020-10-11 Sun 12:02 (<a href=
-        "mailto:even4void@aliquote.org">even4void@aliquote.org</a>)
-    </div>
+</div>
+
+<pre class="example">
+foreach x of varlist var1-var5 {
+  2.   local v : var label `x'
+  3.   twoway line yvar xvar, title("`v'")
+  4. }
+variable var1 not found
+r(111);
+</pre>
+</div>
+</div>
+
+<div id="outline-container-orga9dbfd3" class="outline-3">
+<h3 id="orga9dbfd3">Structures de contrôle</h3>
+<div class="outline-text-3" id="text-orga9dbfd3">
+<p>
+Les structures de branchement conditionnels telles qu'une instruction if/else peuvent être utilisées directement à l'intérieur d'une boucle <a href="https://www.stata.com/help.cgi?foreach">foreach</a>, par exemple, ou dans un script <i>do</i> de contrôle de qualité, en conjonction avec <a href="https://www.stata.com/help.cgi?assert">assert</a>. Dans la majorité des cas, il convient toutefois de garder en tête la façon dont Stata facilite le travail sur les variables sans avoir à gérer soi-même les boucles d'itération sur les observations (<a href="https://www.stata.com/help.cgi?by">by</a>, <a href="https://www.stata.com/help.cgi?recode">recode</a>, <a href="https://www.stata.com/help.cgi?egen">egen</a>, etc.).
+</p>
+
+<p>
+Attention à <a href="https://www.stata.com/support/faqs/data-management/multiple-operations/">ne pas confondre</a> le qualificateur <a href="https://www.stata.com/help.cgi?if">if</a> avec l'instruction de test Stata ou Mata correspondante. L'expression <code>sum foreign if price &gt; 10000</code> ne fournira pas le même résultat que :
+</p>
+
+<div class="org-src-container">
+<pre class="src src-stata">if price &gt; 10000 {
+  sum foreign
+}
+</pre>
+</div>
+
+<pre class="example">
+if price &gt; 10000 {
+  sum foreign
+}
+</pre>
+
+
+<p>
+Usage de <a href="https://www.stata.com/help.cgi?cond">cond</a> [<a href="#kantor-2005-depen">kantor-2005-depen</a>]</p>
+
+<div class="org-src-container">
+<pre class="src src-stata">sysuse auto
+gen v1 = mpg &gt; 20
+gen v2 = !inrange(mpg, 0, 20)
+gen v3 = cond(mpg &gt; 20, 1, 0)
+recode mpg (0/20 = 0) (21/. = 1), gen(v4)
+gen v5 = irecode(mpg, 0, 20, .)
+</pre>
+</div>
+
+<pre class="example">
+sysuse auto
+no; data in memory would be lost
+r(4);
+gen v1 = mpg &gt; 20
+gen v2 = !inrange(mpg, 0, 20)
+gen v3 = cond(mpg &gt; 20, 1, 0)
+recode mpg (0/20 = 0) (21/. = 1), gen(v4)
+(74 differences between mpg and v4)
+gen v5 = irecode(mpg, 0, 20, .)
+</pre>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgee5621b" class="outline-2">
+<h2 id="orgee5621b">Automatisation</h2>
+</div>
+
+<div id="outline-container-orgabeec01" class="outline-2">
+<h2 id="orgabeec01">Gestion d'un package</h2>
+<div class="outline-text-2" id="text-orgabeec01">
+<div id="bibliography">
+<h2>Références</h2>
+
+<table>
+
+<tr valign="top">
+<td align="right" class="bibtexnumber">
+[<a name="mitchell-2010-data-manag">1</a>]
+</td>
+<td class="bibtexitem">
+M.&nbsp;N. Mitchell, <em>Data Management Using Stata: A Practical Handbook</em>.
+ Stata Press, 2010.
+
+</td>
+</tr>
+
+
+<tr valign="top">
+<td align="right" class="bibtexnumber">
+[<a name="baum-2009-introd-stata-progr">2</a>]
+</td>
+<td class="bibtexitem">
+C.&nbsp;F. Baum, <em>An Introduction to Stata Programming</em>.
+ Stata Press, 2009.
+
+</td>
+</tr>
+
+
+<tr valign="top">
+<td align="right" class="bibtexnumber">
+[<a name="gould-2018-mata-book">3</a>]
+</td>
+<td class="bibtexitem">
+W.&nbsp;Gould, <em>The Mata Book: A Book for Serious Programmers and Those Who Want
+  to Be</em>.
+ Stata Press, 2018.
+
+</td>
+</tr>
+
+
+<tr valign="top">
+<td align="right" class="bibtexnumber">
+[<a name="kolev-2006-scalar-variab">4</a>]
+</td>
+<td class="bibtexitem">
+G.&nbsp;Kolev, &ldquo;Scalar or variable? the problem of ambiguous names,&rdquo; <em>The
+  Stata Journal</em>, vol.&nbsp;6, no.&nbsp;2, pp.&nbsp;279--280, 2006.
+
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+Generated by <a href="https://www.gnu.org/software/emacs/">Emacs</a> 26.3 (<a href="https://orgmode.org">Org</a> mode 9.3.1) on 2022-05-13 ven. 18:18 (<a href="mailto:chl@aliquote.org">chl@aliquote.org</a>)
+</div>
 </body>
 </html>

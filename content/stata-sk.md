@@ -4,7 +4,7 @@ date: 2018-05-24T00:00:00
 url: "/articles/stata-sk/"
 ---
 
-Voici une collection de tutoriels pour apprendre Stata (et les statistiques). Tout a été testé avec Stata 14 sur Mac OS X [Jupyter](https://kylebarron.dev/stata_kernel/). Hormis les commandes spécifiques des dernières versions Stata (p. ex., `bayes:`), tout devrait fonctionner avec Stata 13.
+Voici une collection de tutoriels pour apprendre Stata (et les statistiques). Les 4 premiers chapitres ont été initialement testés avec Stata 14 sur Mac OS X [Jupyter](https://kylebarron.dev/stata_kernel/). Hormis les commandes spécifiques des dernières versions Stata (p. ex., `bayes:`), tout devrait fonctionner avec Stata 13, qui est la version actuelle de développement de ces documents.
 
 [Un aperçu rapide de Stata](./00-intro.html) <br>
 
