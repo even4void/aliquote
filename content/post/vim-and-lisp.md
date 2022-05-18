@@ -8,7 +8,7 @@ categories: ["2022"]
 
 I really like the `keywordprg` mapping in Vim. It's the capital K that you press to get help for the word under the cursor (known as `cword` in Vim parlance). If you use an LSP client (builtin Neovim LSP, Coc or ALE, for example), you likely use it everyday since it is generally mapped onto the Hover method of the LSP server.
 
-When not in an LSP-aware environment, I write my own `keywordprg`. You can find plenty of [nice ideas] on the web. Since I use pretty much always the same programming languages, I have the following in my `after/ftplugin/stata.vim` settings, for instance:
+When not in an LSP-aware environment, I write my own `keywordprg`. You can find plenty of [nice ideas] on the web. Since I use some programming languages that don't come with an LSP yet, I have the following in my `after/ftplugin/stata.vim` settings, for instance:
 
 ```vim
 setlocal keywordprg=stata_help
@@ -59,5 +59,5 @@ And now I get the full CLHS documentation for free when working in neovim!
 [hyperspec]: http://www.lispworks.com/documentation/HyperSpec/Front/index.htm
 [hyperspec]: https://quickref.common-lisp.net/hyperspec.html
 [links]: https://links.twibright.com/user_en.html
-[inice ideas]: https://til.codeinthehole.com/posts/about-how-to-use-keywordprg-effectively/
+[nice ideas]: https://til.codeinthehole.com/posts/about-how-to-use-keywordprg-effectively/
 [footnote]: https://aliquote.org/post/bioinformatics-data-skills/
