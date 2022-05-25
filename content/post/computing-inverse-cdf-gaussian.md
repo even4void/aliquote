@@ -6,7 +6,7 @@ tags: ["statistics", "python", "racket"]
 categories: ["2022"]
 ---
 
-There's no closed-form solution to the inverse CDF for the normal distribution. By glancing at the statistics module from [CPython], I noticed the authors actually rely on the rational approximation described in Wichura's Algorithm AS 241: The Percentage Points of the Normal Distribution.[^1]
+There's no closed-form solution to the inverse CDF for the normal distribution, also known as the "quantile" function. By glancing at the statistics module from [CPython], I noticed the authors actually rely on the rational approximation described in Wichura's Algorithm AS 241: The Percentage Points of the Normal Distribution.[^1]
 
 The same algorithm is used by the authors of the Racket [math] module, with an additional remark:
 
@@ -35,7 +35,12 @@ Here is what I got from Racket:
 -9.013271153126675
 ```
 
-Clearly, something is going wrong in the last test case ($z_{10^{-20}}$).
+The last value does not agree with test values provided in the reference paper, and I got the same results in R (`qnorm(10e-20)`), Stata (`invnormal(10e-20)`), or Python using scipy (`norm.ppf(10e-20)`). However, Mathematica gave the expected result:
+
+```mathematica
+In[10]:= N[InverseCDF[NormalDistribution[], 10^-20], 16]
+Out[10]= -9.262340089798408
+```
 
 [^1]: Wichura, Michael J. Algorithm AS 241: The Percentage Points of the Normal Distribution. Journal of the Royal Statistical Society. Series C (Applied Statistics), 37(3): 477-484 (1988). [PDF](https://csg.sph.umich.edu/abecasis/gas_power_calculator/algorithm-as-241-the-percentage-points-of-the-normal-distribution.pdf)
 
