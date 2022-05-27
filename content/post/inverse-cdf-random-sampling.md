@@ -2,7 +2,7 @@
 title: "Generating random samples by the inverse CDF transformation"
 date: 2022-05-26T11:45:44+02:00
 draft: false
-tags: ["statistics", "scheme"]
+tags: ["statistics", "racket"]
 categories: ["2022"]
 ---
 
@@ -40,8 +40,43 @@ Note that the normal CDF $\Phi(x)$ is related to the error function $\text{erf}(
 
 $$ \Phi^{-1}(y) = \sqrt{2}\text{erf}^{-1}(2y-1). $$
 
-{{% music %}}XXX • _XXX_{{% /music %}}
+If your programming language provides you with either an inverse erf or normal CDF, then you can generate a sequence of random normal deviates easily. Here is an example using Racket:
+
+```scheme
+(require math/distributions)
+(define (replicate f times)
+  (for ([x (in-range times)])
+    (displayln (f))))
+(define (rnorm [mean 0.0] [sd 1.0])
+  (let ([x (random)])
+    (flnormal-inv-cdf mean sd x #f #f)))
+(replicate rnorm 10)
+```
+
+```scheme
+(require plot)
+(plot-new-window? #t)
+(define xs (build-list 10 (lambda (x) (rnorm))))
+```
+
+Note that Racket's `random` produces random variates in the open interval $(0,1)$. If you need to include 0 and 1, for whatever reason, chekout [soegaard]'s answer on SO.
+
+Relevant links for Scheme users:
+
+- [Random Number Generation], from the old Science Collection or the [SRFI 27]
+- MIT Scheme [documentation]
+- Philip Bewig's own implementation, and [some of his answers] on SO
+- the [Mersenne Twister] algorithm for Chicken Scheme
+
+{{% music %}}A Certain Ratio • _Do the Du_{{% /music %}}
 
 [wikipedia]: https://en.wikipedia.org/wiki/Normal_distribution
+[soegaard]: https://stackoverflow.com/a/51987441/420055
+[srfi 27]: https://srfi.schemers.org/srfi-27/
+[random number generation]: https://planet.racket-lang.org/package-source/williams/science.plt/4/2/planet-docs/science/random-numbers.html
+[documentation]: https://web.mit.edu/scheme_v9.2/doc/mit-scheme-ref/Random-Numbers.html
+[implementation]: https://programmingpraxis.com/contents/themes/#Random%20Number%20Generators
+[some of his answers]: https://stackoverflow.com/a/14675103/420055
+[mersenne twister]: https://wiki.call-cc.org/eggref/5/random-mtzig
 
 [^1]: A rejection rate of 20% can be expected.
