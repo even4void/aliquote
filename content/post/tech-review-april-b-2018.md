@@ -20,7 +20,7 @@ Twenty years. It's been more than 20 years that [Thomas Lumley](http://faculty.w
 
 We can't do data science in a GUI, still I do not believe my web browser is the best text editor ever. I came across a blog post discussing why Jupyter notebook is not an option when it comes to [write a scientific paper](https://www.oliversherouse.com/2018/04/17/notebooks_arent_papers.html) (with all honesty and glory, and the like). See also [Jupyter, Mathematica, and the Future of the Research Paper](https://paulromer.net/jupyter-mathematica-and-the-future-of-the-research-paper/), and the related [HN thread](https://news.ycombinator.com/item?id=16840692). In the meantime, I discovered [Codalab](https://worksheets.codalab.org) which let you build computational notebook in any language (via a Docker container). Here is what it looks like (h/t Lynn Cherny):
 
-{{< tweet 987972223016325120 >}}
+{{< tweet user="arnicas" id="987972223016325120" >}}
 
 I learned that there are many things that [VS Code can do](https://vscodecandothat.com), and also that Atom has been revamped, with [teletype](https://teletype.atom.io) and more [IDE-like features](https://ide.atom.io). I miss the ability to hack the editor using some old fashioned [Emacs lisp](https://github.com/chrisdone/elisp-guide), and [Magit](https://emacsair.me/2017/09/01/magit-walk-through/) of course, but I believe it still is the best option for people that do not want to invest much time in learning Vim or Emacs.
 

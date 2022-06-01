@@ -16,7 +16,7 @@ Two new books on my viewfinder: Bernhard Schölkopf is probably well known for h
 
 If you are looking for some datasets, here are the (supposed) "[50 Best Free Datasets for Machine Learning](https://gengo.ai/articles/the-50-best-free-datasets-for-machine-learning/)", although I remain circumspect as to the following assertions: a dataset shouldn’t be messy, because you don’t want to spend a lot of time cleaning data; a dataset shouldn’t have too many rows or columns, so it’s easy to work with. Aren't we spending almost 80% of our time cleaning data in the real life? So, why not start with a very dirty dataset and apply data cleansing techniques and feature engineering like a big boss?
 
-{{< tweet 1009254759075807237 >}}
+{{< tweet user="TilingBot" id="1009254759075807237" >}}
 
 [LISP: back to the future (a tribute to 60th anniversary)](https:/i/sigma.software/about/media/lisp-back-future-tribute-60th-anniversary). Because why not?
 

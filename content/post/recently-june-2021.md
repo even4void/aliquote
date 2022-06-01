@@ -12,7 +12,7 @@ I recently subscribed to a free [Bnc4Free](https://bnc4free.com/) account in ord
 
 Sometimes I wish great authors provide RSS feed for us, human beings, who like keeping an archive of their readings. Lately I came across [Infinite Ink](https://www.ii.com/) which has very interesting articles to review, and a beautiful web UI. Unfortunately, no link to add to my RSS reader, and I'm doomed to not forget about this very elegant site. I now have more than 500 feeds in my personal [OPML file](/files/chl.opml). Feel free to grab what you find interesting there. And yes, Dirk, there're still people reading others' blog, especially yours.
 
-{{< twitter 1402791696979660801 >}}
+{{< twitter user="eddelbuettel" id="1402791696979660801" >}}
 
 Keep up the good work, Dirk, I'll be listening. Also, no idea what happens on Seth Brown's side, but [his site](https://seth-brown.net/) keeps changing again and again. Sadly, no more blog posts available at the time of this writing.
 
@@ -21,6 +21,5 @@ My Emacs -> Vim switch is going well. For the coding part, I'm left with [vim-po
 And yes, plants are growing well in case you were asking.
 
 {{< fluid_imgs
-  "pure-u-1-2|/img/IMG_1530.JPG"
-  "pure-u-1-2|/img/IMG_1536.JPG"
->}}
+"pure-u-1-2|/img/IMG_1530.JPG"
+"pure-u-1-2|/img/IMG_1536.JPG" >}}

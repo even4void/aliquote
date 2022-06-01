@@ -8,7 +8,7 @@ categories: ["2014"]
 
 I installed [Yosemite](http://en.wikipedia.org/wiki/OS_X_Yosemite) last week on my fresh MacBook Pro, and I must say this is just whooo...
 
-As part of my series of [posts](/post/os-x-leopard) on [OS X](/post/os-x-lion) [updates](/post/os-x-mavericks), here are my very first impressions on OS X 10.10. Note that I never tried any beta versions despite the big buzz surrounding its release, and I just installed the official release from the App Store. Here is how looks desktop as I am writing this post: 
+As part of my series of [posts](/post/os-x-leopard) on [OS X](/post/os-x-lion) [updates](/post/os-x-mavericks), here are my very first impressions on OS X 10.10. Note that I never tried any beta versions despite the big buzz surrounding its release, and I just installed the official release from the App Store. Here is how looks desktop as I am writing this post:
 
 ![OS X Yosemite](/img/2014-11-04-13-14-09.png)
 <small>(And yes, I just tried the new release of TextMate 2.0 instead of writing in Emacs.)</small>
@@ -26,7 +26,7 @@ For Julia, rather than recompiling each time from my local GitHub repository, I 
 % brew install --HEAD --64bit julia
 ```
 
-I had some problems with the `--HEAD` option, so that I ended up installing the base version. But I'm not very happy with that solution: (1) this is Julia 0.3.2 while I had `Version 0.4.0-dev+817` (2014-09-28 15:29 UTC); (2) this installed a bunch of software suffixed with `-julia` in my `/usr/local`. 
+I had some problems with the `--HEAD` option, so that I ended up installing the base version. But I'm not very happy with that solution: (1) this is Julia 0.3.2 while I had `Version 0.4.0-dev+817` (2014-09-28 15:29 UTC); (2) this installed a bunch of software suffixed with `-julia` in my `/usr/local`.
 
 ```
 % brew deps julia
@@ -64,4 +64,4 @@ Now, when viewing Man pages I get the GNU version instead of the BSD one.
 
 Otherwise, I installed a [bunch of software](/post/useful-mac-apps-for-data-scientists) and picked up some nice configuration files from [Mathias Bynens' GitHub](https://github.com/mathiasbynens/dotfiles). In passing, I updated the default icon for Emacs once I saw this Tweet:
 
-{{< tweet 527983358081376258 >}}
+{{< tweet user="ahmadSeleem" id="527983358081376258" >}}

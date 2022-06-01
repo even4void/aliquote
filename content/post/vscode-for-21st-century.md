@@ -10,7 +10,7 @@ VS Code is the new cool editor of the 21st century that everybody knows, likes, 
 
 I already wrote a short review in the past: [VS Code and Python](/post/vscode-python/). One of the things that significantly changed since last year is far better support for R, thanks to the new [language server](https://github.com/REditorSupport/languageserver). The UI has significantly improved too. Yet I'm still on Emacs for a long time apparently, if only because I process plain text editing in Markdown or Org, and Emacs has better support for this kind of writing tasks in my opinion. While I really liked [Typora](/post/typora/), I couldn't last more than a few days using an application other than Emacs. Go figure. Probably a matter of taste, or "culture and habit" as one used to say in the following thread:
 
-{{< tweet 1275106475581505540 >}}
+{{< tweet user="cemerick" id="1275106475581505540" >}}
 
 Here are a few things that I like in Emacs and that I always missed in any other editors:
 

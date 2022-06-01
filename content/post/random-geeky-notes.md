@@ -8,13 +8,11 @@ categories: ["2013"]
 
 Here are some random geeky notes that have accumulated over the past few months on my desk.
 
-There are too many articles I have read and have to read to provide a semblance of summary here. Regarding books, my reading list is growing as well. Nevertheless, I've been happy with *Serious Stats*, by Thom Baguley, and *Statictics Applied to Clinical Studies*, by Cleophas and Zwinderman (bought on <http://www.springer.com>) as a complement to *Statictics Applied to Clinical Trials* by the same authors. I also enjoyed *Introduction to Psychometric Theory*, by Raykov and Marcoulides, since I was looking for a book relying on the [Mplus](http://www.statmodel.com/) software.
+There are too many articles I have read and have to read to provide a semblance of summary here. Regarding books, my reading list is growing as well. Nevertheless, I've been happy with _Serious Stats_, by Thom Baguley, and _Statictics Applied to Clinical Studies_, by Cleophas and Zwinderman (bought on <http://www.springer.com>) as a complement to _Statictics Applied to Clinical Trials_ by the same authors. I also enjoyed _Introduction to Psychometric Theory_, by Raykov and Marcoulides, since I was looking for a book relying on the [Mplus](http://www.statmodel.com/) software.
 
 R 3.0 has been [released](https://stat.ethz.ch/pipermail/r-announce/2013/000561.html) early this year. See also David Smith's [post](http://blog.revolutionanalytics.com/2013/04/r-version-3-released.html) on Revolutions blog. I'm still using the 2.15.2 version, partly because I have a lot of work in progress and also because I haven't found any decent way to manage my old packages directory with both versions. I guess at what time I will have to update everything, but I have to wait for a moment.
 
 I just updated to Tex 2013, I bought Stata 13 and I'm playing more and more with Julia. For literate programming, I will probably be happy with [dexy](http://www.dexy.it/), and also try the [Stata filter](http://www.dexy.it/filters/Stata.html).
-
-{{< tweet 364204704927973376 >}}
 
 I authored (80%) a [new course](http://www.cesam.upmc.fr/fr/cours_d_informatique.html) on the use of statistical software (R and Stata, as far as I was concerned) in medical research. It took me more than 150 hours to produce about 450 pages of slides, exercises and solutions, errata and handouts. What I've learned is that it is not writing code or designing a $\LaTeX$ template, or even learning some Stata, that take most time: it is all about finding some good data set!
 
@@ -30,7 +28,5 @@ Now, there are really great tools to build interactive HTML slides, namely [Slid
 
 Other miscellanies: I noticed that Apple just updated Java to version 7 (from Oracle)--what they called Java for OS X 2013. It probably occurred during an update that I allowed, although I haven't updated anything since one year or so. I believe I haven't noticed this change before because my Clojure install just works fine and it's been a long since I haven't needed Java web start or the Java compiler. It is still possible to [revert those changes](http://support.apple.com/kb/HT5559). Another funny thing is that I can [still use](http://support.apple.com/kb/DL923) my registered QuickTime Pro 7 software, despite QuickTime X being the default on OS X 10.7 and higher. Well, enough for my [uphill complaints](/post/the-random-joys-of-living-with-a-macbook).
 
-
 [^1]: Their [annual report](http://bioconductor.org/about/annual-reports/AnnRep2013.pdf) (PDF) looks great too!
-
 [^2]: And now there's [Bios366](https://github.com/fonnesbeck/Bios366) (Advanced Statistical Computing) using Python.

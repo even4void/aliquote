@@ -10,11 +10,11 @@ GitHub is not only for source code.
 
 ## Publishing on GitHub
 
-Github has long been the *de facto* platform to share and publish open-source code, notwithstanding the fact that it is becoming a dedicated host for [reproducible research](http://zmjones.com/git/); see, e.g., [The benefits of reproducible research: a public health example](http://git.io/TEMQ1w).
+Github has long been the _de facto_ platform to share and publish open-source code, notwithstanding the fact that it is becoming a dedicated host for [reproducible research](http://zmjones.com/git/); see, e.g., [The benefits of reproducible research: a public health example](http://git.io/TEMQ1w).
 
 Now, there is also an increasing number of books or tutorials that are delivered through Github. For example, the source code for the beautiful [Smooth CoffeeScript](http://autotelicum.github.io/Smooth-CoffeeScript/) book is available on [GitHub](https://github.com/autotelicum/Smooth-CoffeeScript). The same applies for [Eloquent Javascript](http://eloquentjavascript.net), see the [source code](https://github.com/marijnh/Eloquent-JavaScript). Regarding the [R](http://r-project.org) statistical software, Hadley Wickham has long been developing and hosting his forthcoming book, [Advanced R](http://adv-r.had.co.nz) (Springer), on [GitHub](https://github.com/hadley/adv-r), and more recently he updated his [Github account](https://github.com/hadley/r-pkgs) with a new title, [Building R packages](http://r-pkgs.had.co.nz).
 
-{{< tweet 497735400098918400 >}}
+{{< tweet user="hadleywickham" id="497735400098918400" >}}
 
 ## Gitbook
 

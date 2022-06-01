@@ -17,7 +17,7 @@ There are a number of great review of available software to edit and process Mar
 
 But see [What is Markdown?](http://whatismarkdown.com/) to learn more about.
 
-Recently, I heard about [Deckset](http://www.decksetapp.com/), which looks like a really great tool to publish nice looking slides using Markdown only. Unfortunately it appears that is is [only available](https://twitter.com/decksetapp/status/456534972648550400) for OS X 10.9, while I choose to stay at 10.7 ([long ago](/post/my-setup) again). I know how easy it is to produce [Beamer slides](http://johnmacfarlane.net/pandoc/demo/example9/producing-slide-shows-with-pandoc.html) with Pandoc and Markdown, the advantage being that we are not restricted to HTML+JS output. 
+Recently, I heard about [Deckset](http://www.decksetapp.com/), which looks like a really great tool to publish nice looking slides using Markdown only. Unfortunately it appears that is is [only available](https://twitter.com/decksetapp/status/456534972648550400) for OS X 10.9, while I choose to stay at 10.7 ([long ago](/post/my-setup) again). I know how easy it is to produce [Beamer slides](http://johnmacfarlane.net/pandoc/demo/example9/producing-slide-shows-with-pandoc.html) with Pandoc and Markdown, the advantage being that we are not restricted to HTML+JS output.
 
 Hopefully, this is not the only solution and there are a couple of links about standalone apps or wrappers.
 
@@ -31,7 +31,7 @@ Hopefully, this is not the only solution and there are a couple of links about s
 
 - [Landslide](https://github.com/adamzap/landslide): a Python-based slideshow system, which Chris Fonnesbeck was using for one of his course:
 
-{{< tweet 382960381607809024 >}}
+{{< tweet user="fonnesbeck" id="382960381607809024" >}}
 
 I'm pretty sure I bookmarked other links from Twitter, but well, that's where Twitter sucks: it's hard to find something you posted or bookmarked, say, three or four months ago. Here is all what I found by looking in my recent tweets:
 
