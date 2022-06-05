@@ -12,7 +12,7 @@ The same algorithm is used by the authors of the Racket [math] module, with an a
 
 > Added asymptotic expansions to increase range when given log probabilities, and a Newton iteration to fix up answers in the tricky spot between -20000 and -744.
 
-Note that test cases are provided int he original article such that you can easily verify that your own implementation provide expected results:
+Note that test cases are provided in the original article such that you can easily verify that your own implementation provides the expected results:
 
 $$
 \begin{equation}
