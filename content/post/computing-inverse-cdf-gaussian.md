@@ -1,7 +1,7 @@
 ---
 title: "Computing the inverse CDF of a Gaussian"
 date: 2022-06-04T16:08:28+02:00
-draft: false
+draft: true
 tags: ["statistics", "python", "racket"]
 categories: ["2022"]
 ---
