@@ -15,7 +15,7 @@ Yesterday, I decided to give [Kopia] a try. It uses deduplication, compression, 
 One thing I noticed is that it is blazing fast, especially compared to deja-dup.[^1] I excluded static folders which are unlikely to change more than once a week (pictures, music, and PDFs) and I ended up with a 30 Go backup repository.
 
 ```shell
-% du -sh ./* | sort -h
+~ % du -sh ./* | sort -h
 364K    ./bin
 1,7G    ./tmp
 2,1G    ./Sites
@@ -27,6 +27,28 @@ One thing I noticed is that it is blazing fast, especially compared to deja-dup.
 ```
 
 I'm aware of the [3-2-1] backup strategy, except that I no longer use any offsite storage (Dropbox or Google, previously). I'm expecting to setup a central backup on a NAS, and a local copy on an external HD. I also have a cron job to schedule backup every hour, with default retention policy (48 hourly snapshots are kept in the central repository).
+
+```shell
+~ % kopia snapshot list
+chl@aliquote:/home/chl
+  2022-06-05 19:05:21 CEST k295d3d6f42eeb3fa08c5d47e58af91bf 58.4 GB drwxr-xr-x files:504927 dirs:73697 (hourly-17,daily-3,weekly-2)
+  2022-06-06 20:22:20 CEST k96b2fb21131fbbfc0815dd5fb373a763 44 GB drwxr-xr-x files:506393 dirs:73202 (hourly-16)
+  2022-06-06 21:00:02 CEST kf916e1b0c60fa4f409a42684fb93019a 44 GB drwxr-xr-x files:506629 dirs:73202 (hourly-15)
+  2022-06-06 22:00:01 CEST k728bb034a39a4ff650182b3059d49991 44 GB drwxr-xr-x files:506712 dirs:73203 (hourly-14)
+  2022-06-06 23:00:01 CEST k5f4017166b44946ca6259a4ae17f1e38 44 GB drwxr-xr-x files:506714 dirs:73203 (hourly-13,daily-2)
+  2022-06-07 00:00:01 CEST kbf3b9941f81be51b1165cfb6806b4251 44.1 GB drwxr-xr-x files:506716 dirs:73203 (hourly-12)
+  2022-06-07 01:00:01 CEST k97b62af55128160101b828d76e26256c 44.1 GB drwxr-xr-x files:506718 dirs:73203 (hourly-11)
+  2022-06-07 02:00:01 CEST k39386d816ded10cbc656a2e4c161e1bc 44.1 GB drwxr-xr-x files:506720 dirs:73203 (latest-10,hourly-10)
+  2022-06-07 03:00:01 CEST kc012f6b2bf5e8678e89b5d891603a168 44.1 GB drwxr-xr-x files:506722 dirs:73203 (latest-9,hourly-9)
+  2022-06-07 04:00:01 CEST k8947a49d41f253dd2938d29ffbd7f1a3 44.1 GB drwxr-xr-x files:506724 dirs:73203 (latest-8,hourly-8)
+  2022-06-07 05:00:02 CEST ka91ca4f30e5411edfa2ff196a4e0905f 44.1 GB drwxr-xr-x files:506726 dirs:73203 (latest-7,hourly-7)
+  2022-06-07 06:00:01 CEST k19705c3b296d13670f0cc9ac7e91ffb5 44.2 GB drwxr-xr-x files:506728 dirs:73203 (latest-6,hourly-6)
+  2022-06-07 07:00:02 CEST kadc58cb442efbd727441de745cbebd13 44.2 GB drwxr-xr-x files:506730 dirs:73203 (latest-5,hourly-5)
+  2022-06-07 08:00:01 CEST kdb87258b93ae8e3d3d83ac5a4d281426 44.2 GB drwxr-xr-x files:506973 dirs:73244 (latest-4,hourly-4)
+  2022-06-07 10:00:01 CEST k7d9b1c6f0d746e9b9ffdb63011299a2c 44.2 GB drwxr-xr-x files:507123 dirs:73244 (latest-3,hourly-3)
+  2022-06-07 11:00:01 CEST k22b5115235d9dceb0ec9f204be6e3ae7 44.3 GB drwxr-xr-x files:507782 dirs:73254 (latest-2,hourly-2)
+  2022-06-07 12:00:01 CEST k7dc38129e4011ef6c0e870e220094459 44.3 GB drwxr-xr-x files:507743 dirs:73229 (latest-1,hourly-1,daily-1,weekly-1,monthly-1,annual-1)
+```
 
 It all looks very promising. I'm waiting to see what happens next, especially in case of accidental deletions or corruptions.
 
