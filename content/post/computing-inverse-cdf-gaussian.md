@@ -1,8 +1,8 @@
 ---
 title: "Computing the inverse CDF of a Gaussian"
-date: 2022-06-04T16:08:28+02:00
-draft: true
-tags: ["statistics", "python", "racket"]
+date: 2022-06-08T16:08:28+02:00
+draft: false
+tags: ["statistics", "racket"]
 categories: ["2022"]
 ---
 
@@ -44,7 +44,7 @@ Out[10]= -9.262340089798408
 
 I learned a long time ago that for everything related to statistical distributions, it's always worth double checking with Mathematica.
 
-In the case of R, some strange things may happen, even if the authors took care of the details for you. For instance, there's a `lower.tail` argument to the `p*` and `q*` family functions, which allows to correct for catastrophic cancellation; it even works when distribution are not symmetric (otherwise we could simply use `qnorm(1-p)`).
+On a related point, in the case of R, some strange things may happen, although the authors usually took care of the details for you. For instance, there's a `lower.tail` argument to the `p*` and `q*` family functions, which allows to correct for catastrophic cancellation; it even works when distribution are not symmetric (otherwise we could simply use `qnorm(1-p)`).
 
 {{% music %}}Shawn Mullins • _Lullaby_{{% /music %}}
 
