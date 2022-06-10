@@ -2,7 +2,7 @@
 title: "Josephus Problem"
 date: 2020-01-30T20:27:54+01:00
 draft: false
-tags: ["math"]
+tags: ["math", "mathematica", "scheme"]
 categories: ["2020"]
 ---
 
