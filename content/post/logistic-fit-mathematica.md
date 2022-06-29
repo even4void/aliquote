@@ -1,5 +1,5 @@
 ---
-title: "Logistic Fit Mathematica"
+title: "Logistic Fit in Mathematica"
 date: 2022-06-27T20:04:23+02:00
 draft: true
 tags: ["mathematica"]
@@ -32,11 +32,18 @@ f[x_] := 1 + CDF[ecdf, x] 10 // Floor
 qvalues = Map[f, dt[[All, 1]]]
 ```
 
-Next, we will replace decile indices with the class center of the real values.
+Here, an instruction like `MapThread[Append, {dt, qvalues}]` will simply append a new column holding the decile index for each row. We would like, however, to replace each decile index with the corresponding class center from the real values, which can be computed as follows:
+
+```mathematica
+tens = Quantile[dt[[All, 1]], Range[0, 1, .1]];
+centers = Total[{Most[tens], Differences[tens]/2}]
+```
+
+And then, we will add a new column to our data set to reflect class membership for each observation.
 
 {{% music %}}Daft Punk • _Da Funk_{{% /music %}}
 
-[^1]: David W. Hosmer and Stanley Lemeshow, Applied Logistic Regression, Wiley, 2000.
+[^1]: David W. Hosmer and Stanley Lemeshow, _Applied Logistic Regression_, Wiley, 2000.
 [^2]: The response variable should come last.
 
 [older post]: /post/newton-raphson-racket/
