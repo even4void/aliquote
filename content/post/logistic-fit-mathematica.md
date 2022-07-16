@@ -8,7 +8,7 @@ categories: ["2022"]
 
 In an [older post] I showed how we could fit a Logistic regression using Racket builtin linear algebra routines.
 
-It is not difficult to import a CSV file and get a working Table for a Logistic regression model, or any other model from the Exponential family really. Here's how I did for the classical low birthweight dataset from Hosmer & Lemeshow[^1], where I consider a single predictor (age of the mother):[^2]
+It is not difficult to import a CSV file and get a working Table for a Logistic regression model, or any other model from the Exponential family really. Here's how I did for the classical low birth weight dataset from Hosmer & Lemeshow[^1], where I consider a single predictor (age of the mother):[^2]
 
 ```mathematica
 data = Import["~/Documents/work/tutors/CESAM/cours/Stata/birthwt2.csv"];
@@ -44,7 +44,7 @@ And then, we will add a new column to our data set to reflect class membership f
 {{% music %}}Daft Punk • _Da Funk_{{% /music %}}
 
 [^1]: David W. Hosmer and Stanley Lemeshow, _Applied Logistic Regression_, Wiley, 2000.
-[^2]: The response variable should come last.
+[^2]: Note that unlike in Stata model formulation the response variable comes last.
 
 [older post]: /post/newton-raphson-racket/
 [histogram binning]: https://mathematica.stackexchange.com/a/127734/167
