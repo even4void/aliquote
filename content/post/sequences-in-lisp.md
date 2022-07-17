@@ -6,7 +6,7 @@ tags: ["lisp"]
 categories: ["2022"]
 ---
 
-In Common Lisp, sequences are made of lists, vectors, strings and [maybe other things]. In short, these are ordered [collections] of elements (or items for short). You can define a generic sequence using `maque-sequence`, or rely on specialized functions (`make-list`, `make-array`, `list`, `vector`, etc.) as shown below:
+In Common Lisp, sequences are made of lists, vectors, strings and [maybe other things]. In short, these are ordered [collections] of elements (or items for short). You can define a generic sequence using `maque-sequence`, or rely on specialized functions (`make-list`, `make-array`,[^1] `list`, `vector`, etc.) as shown below:
 
 ```lisp
 * (defparameter *x* (make-sequence '(vector double-float) 5 :initial-element 1d0))
@@ -36,7 +36,7 @@ To generate a regular sequence à la Python's `range` function, we could define 
 (1 2 3 4 5)
 ```
 
-This will only work for numbers, of course. While playing with [newLISP], I learned that there's a builtin `sequence` function there, which works like LispStat's `iseq`:[^1]
+This will only work for numbers, of course. While playing with [newLISP], I learned that there's a builtin `sequence` function there, which works like LispStat's `iseq`:[^2]
 
 ```lisp
 > (setq x (sequence 1 5))
@@ -65,11 +65,12 @@ Of course, we could do the same with arrays as shown below:
 ((3 4))
 ```
 
-I think I'll need to investigate more into this dialect to see if toy examples from LispStat could be ported to newLISP. Despite all the [criticisms] we can found on HN, I believe newLISP provides a handy way of writing quick scripts in Lisp, but see [I am not afraid to admit that I've used Lisp for real work]. Other candidates on my list are PicoLisp and Janet. Stay tuned.
+I think I'll need to investigate more into this dialect to see if toy examples from LispStat could be ported to newLISP. Despite all the [criticisms] we can found on HN, I believe newLISP provides a handy way of writing quick scripts in Lisp, but see [I am not afraid to admit that I've used Lisp for real work]. See also [newlisp - an intriguing dialect of Lisp], by Eli Bendersky, which also summarizes the point raised above. Other candidates on my list are PicoLisp and Janet. Stay tuned.
 
 {{% music %}}As Animals • _By My Side_{{% /music %}}
 
-[^1]: or various implementation of the `iota` function in CL, e.g. [Generating sequences in Common Lisp] or the [Alexandria] library.
+[^1]: See also [this warning] about portable scientific code in CL, especially when dealing with arrays.
+[^2]: Or various implementation of the `iota` function in CL, e.g. [Generating sequences in Common Lisp] or the [Alexandria] library.
 
 [many other things]: http://www.lispworks.com/documentation/HyperSpec/Body/t_seq.htm
 [collections]: https://gigamonkeys.com/book/collections.html
@@ -79,3 +80,5 @@ I think I'll need to investigate more into this dialect to see if toy examples f
 [alexandria]: https://quickref.common-lisp.net/alexandria.html
 [criticisms]: https://hn.algolia.com/?q=newlisp
 [i am not afraid to admit that i've used lisp for real work]: https://lmf-ramblings.blogspot.com/2011/08/i-am-not-afraid-to-admit-that-ive-used.html
+[newlisp - an intriguing dialect of lisp]: https://eli.thegreenplace.net/2006/04/20/newlisp-an-intriguing-dialect-of-lisp
+[this warning]: https://tamaspapp.eu/post/common-lisp-to-julia/
