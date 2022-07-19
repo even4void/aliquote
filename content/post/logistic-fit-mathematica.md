@@ -1,8 +1,8 @@
 ---
-title: "Logistic Fit in Mathematica"
-date: 2022-06-27T20:04:23+02:00
-draft: true
-tags: ["mathematica"]
+title: "Logistic fit in Mathematica"
+date: 2022-07-19T16:04:23+02:00
+draft: false
+tags: ["mathematica", "statistics"]
 categories: ["2022"]
 ---
 
@@ -13,7 +13,7 @@ It is not difficult to import a CSV file and get a working Table for a Logistic 
 ```mathematica
 data = Import["~/Documents/work/tutors/CESAM/cours/Stata/birthwt2.csv"];
 dt = data[[2 ;;, {2, 1}]];
-m = GeneralizedLinearModelFit[dt, x, x, ExponentialFamily -> "Binomial"]
+m = GeneralizedLinearModelFit[dt, x, x, ExponentialFamily -> "Binomial"];
 ```
 
 Note that we could also use `SemanticImport` to get a "Dataset" structured array, but since it is not callable from `GeneralizedLinearModelFit`, let's stay with classical list of lists. From here now, almost all we need is now available in our "FittedModel" `m`, and we can even display the regression equation using the following incantation:
@@ -29,22 +29,38 @@ First we need to add a column indicating to which decile each value of age belon
 ```mathematica
 ecdf = EmpiricalDistribution[dt[[All, 1]]];
 f[x_] := 1 + CDF[ecdf, x] 10 // Floor
-qvalues = Map[f, dt[[All, 1]]]
+qvalues = Map[f, dt[[All, 1]]];
+qvalues = qvalues /. {11 -> 10}; (* FIXME: account for max value *)
 ```
 
 Here, an instruction like `MapThread[Append, {dt, qvalues}]` will simply append a new column holding the decile index for each row. We would like, however, to replace each decile index with the corresponding class center from the real values, which can be computed as follows:
 
 ```mathematica
 tens = Quantile[dt[[All, 1]], Range[0, 1, .1]];
-centers = Total[{Most[tens], Differences[tens]/2}]
+centers = Total[{Most[tens], Differences[tens]/2}];
 ```
 
-And then, we will add a new column to our data set to reflect class membership for each observation.
+Then, we need a replacement rule to tell Mathematica how to perform the desired mapping:
+
+```mathematica
+SetAttributes[g, Listable]
+g[a_, b_] := a -> b
+```
+
+Finally, we will add a new column to our data set to reflect class membership for each observation, and plot both the prediction and the mean observed frequencies for each decile:
+
+```mathematica
+dt = MapThread[Append, {dt, qvalues /. g[Table[x, {x, 10}], centers]}]
+obs = GroupBy[Sort[dt[[All, 2 ;;]]], Last -> First, Mean]
+Show[ListPlot[obs], Plot[m[x], {x, 14, 45}], AxesLabel -> {"Age", "Pr(low)"}]
+```
+
+![img](/img/birthwt_glm.png)
 
 {{% music %}}Daft Punk • _Da Funk_{{% /music %}}
 
 [^1]: David W. Hosmer and Stanley Lemeshow, _Applied Logistic Regression_, Wiley, 2000.
-[^2]: Note that unlike in Stata model formulation the response variable comes last.
+[^2]: Note that the response variable comes last, unlike Stata's model formulation.
 
 [older post]: /post/newton-raphson-racket/
 [histogram binning]: https://mathematica.stackexchange.com/a/127734/167
