@@ -12,11 +12,11 @@ It's been two years now that I'm logged on IRC every day. Although I have few in
 
 So, why Matrix? As I said I like to stay using IRC but to keep up to date you either have to set up your own bouncer or rely on third-party ones. I've been very happy with BNC4FREE: you keep being logged in and get a backlog for the past 24 hours. You only need to connect once in a month, but of course you can launch your IRC application in the background on your local machine or a host server. I used both solutions, but finally I ended up spawning Irssi on my lab computer so it stays connected all time. The advantage of using the Matrix protocol is that you also stay connected all day and get a history of all messages (starting from the time you joined a channel). This also means you don't need to have the application running in the background. And you get notification for free, via libnotify on Linux.
 
-About Element itself. The UI is nicely set up. Nothing too fancy, especially after it is configured using the IRC layout (this can be found in the general settings). I haven't explored all settings since I just installed the app yesterday, but it looks promising, especially the additional features (see below). Here's a screenshot of Element on my desktop:
+About Element itself. The UI is nicely set up. Nothing too fancy, especially after it is configured using the IRC layout (this can be found in the general settings). I haven't explored all settings since I just installed the app yesterday, but it looks promising, especially the additional features (see below). Here's a screenshot of Element on my desktop, using the Nord color theme:
 
 ![element](/img/2022-07-24-16-45-49.png)
 
-Compared to the previous version of Element, there's now a "[lab features]" of some sort, so that you can enable further options. For instance, you can define your custom UI theme or use of from [GitHub]. Note that you will need to add a configuration file, `$HOME/.config/Element/config.json`, and not use the existing one (`$HOME/.config/Element/electron-config.json`), including the option `"showLabsSettings": true` (camel case here, and not snake case as shown on GH). Here's mine:
+Compared to the previous version of Element, there's now a "[lab features]" of some sort, so that you can enable further options. For instance, you can define your custom UI theme or use one of from [GitHub]. Note that you will need to add a configuration file, `$HOME/.config/Element/config.json`, and not use the existing one (`$HOME/.config/Element/electron-config.json`), including the option `"showLabsSettings": true` (camel case here, and not snake case as shown on GH). Here's mine:
 
 ```json
 {
