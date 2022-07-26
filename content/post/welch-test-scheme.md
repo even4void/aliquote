@@ -1,7 +1,7 @@
 ---
 title: "Welch t-test in Scheme"
 date: 2022-07-25T19:44:22+02:00
-draft: false
+draft: true
 tags: ["scheme", "statistics"]
 categories: ["2022"]
 ---
