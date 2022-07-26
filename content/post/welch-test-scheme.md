@@ -1,7 +1,7 @@
 ---
 title: "Welch t-test in Scheme"
 date: 2022-07-25T19:44:22+02:00
-draft: true
+draft: false
 tags: ["scheme", "statistics"]
 categories: ["2022"]
 ---
@@ -45,7 +45,7 @@ $$
 
 Here is a simple function that compute the test statistic and its assocuated p-value. It follows the approach in Statistical functions in Common Lisp (Version 1.01 July 27, 2001) by Larry Hunter, except that we d'ont use a lookup table for the p-value as can be found in certain versions available on the web. Instead, we use the incomplete Beta distribution discussed in [previous] [posts] which is available from the [GNU Scientific Library].
 
-I will use Chicken Scheme since it is quite easy to use its FFI facilities (see, e.g., this post on the [Murmurhash] algorithm). For CL users, [Matt Curtis] provide a standalone incomplete beta function in his port of Larry Hunter's code. Fortunately, there's also some [Chicken code] for the original Lisp code. Here's me rolling my own version:
+I will use Chicken Scheme since it is quite easy to use its FFI facilities (see, e.g., this post on the [Murmurhash] algorithm). For CL users, [Matt Curtis] provide a standalone incomplete beta function in his port of Larry Hunter's code. Fortunately, there's also some [Chicken code] for the original Lisp code, provided by Peter Lane. Here's the gist of it:
 
 ```scheme
 (import (chicken foreign))
@@ -55,7 +55,7 @@ I will use Chicken Scheme since it is quite easy to use its FFI facilities (see,
 (define beta-incomplete
   (foreign-lambda double "gsl_sf_beta_inc" double double double))
 
-(define (p-value stat df two-sided)
+(define (pt stat df two-sided)
   (set! stat (exact->inexact stat))
   (set! df (exact->inexact df))
   (let ((a (beta-incomplete (* 0.5 df) 0.5 (/ df (+ df (square stat))))))
@@ -73,7 +73,36 @@ I will use Chicken Scheme since it is quite easy to use its FFI facilities (see,
       (set! stat (/ (- x1 x2
                             (* s (sqrt (+ (/ n1) (/ n2)))))))
       (set! df (+ n1 n2 -2)))
-    (p-value stat df two-sided)))
+    (pt stat df two-sided)))
+```
+
+Let's test it:
+
+```scheme
+> (t-test 12 2 24 11 1.5 24 #t)
+```
+
+Compare to Stata:
+
+```stata
+. ttesti 24 12 2 24 11 1.5
+
+Two-sample t test with equal variances
+------------------------------------------------------------------------------
+         |     Obs        Mean    Std. Err.   Std. Dev.   [95% Conf. Interval]
+---------+--------------------------------------------------------------------
+       x |      24          12    .4082483           2    11.15547    12.84453
+       y |      24          11    .3061862         1.5    10.36661    11.63339
+---------+--------------------------------------------------------------------
+combined |      48        11.5    .2627511    1.820393    10.97141    12.02859
+---------+--------------------------------------------------------------------
+    diff |                   1    .5103104               -.0272015    2.027201
+------------------------------------------------------------------------------
+    diff = mean(x) - mean(y)                                      t =   1.9596
+Ho: diff = 0                                     degrees of freedom =       46
+
+    Ha: diff < 0                 Ha: diff != 0                 Ha: diff > 0
+ Pr(T < t) = 0.9719         Pr(|T| > |t|) = 0.0561          Pr(T > t) = 0.0281
 ```
 
 {{% music %}}Caroles Daughter • _My Mother Wants Me Dead_{{% /music %}}
