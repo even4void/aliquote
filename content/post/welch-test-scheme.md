@@ -76,22 +76,58 @@ Ho: diff = 0                     Satterthwaite's degrees of freedom =  42.6558
  Pr(T < t) = 0.9717         Pr(|T| > |t|) = 0.0566          Pr(T > t) = 0.0283
 ```
 
-Now we would like to compute a 95% asymptotic confidence interval. According to Stata, using Satterthwaite(s approximation it amounts to $[-0.0294;2.0294]$. Under the equal variance assumption, it is $[-.0272;2.0272]$. Not much of a difference between the two CIs. Here are the values computed using Scheme:
+Now we would like to compute a 95% asymptotic confidence interval. According to Stata, using Satterthwaite's approximation (42.7 df) it amounts to $[-0.0294;2.0294]$. Under the equal variance assumption (46 df), it is $[-.0272;2.0272]$. Not much of a difference between the two CIs. Here are the values computed using Scheme:
 
 ```scheme
 > (define (pooled-sd s1 n1 s2 n2)
     (sqrt (/ (+ (* (- n1 1) (* s1 s1))
-          (* (- n2 1) (* s2 s2)))
-        (+ n1 n2 -2))))
+                (* (- n2 1) (* s2 s2)))
+             (+ n1 n2 -2))))
 > (define sp (pooled-sd 2 24 1.5 24))
-> (normal-mean-ci 1 sp 24 0.05)
 ```
+
+We need to be careful when using the one-sample confidence interval routine (`normal-mean-ci`), since it needs to get the right degrees of freedom. IT works great in the case of univariate statitics. The function reads:
+
+```scheme
+(define (normal-mean-ci mean sd n alpha)
+  (let ((t-value (t-distribution (- n 1) (- 1 (/ alpha 2)))))
+    (values (- mean (* t-value (/ sd (sqrt n))))
+            (+ mean (* t-value (/ sd (sqrt n)))))))
+```
+
+In this case, the degree of freedom is the sample size minus 1, and the standard error is computed as `(/ sd (sqrt n))`, which is defintely not what we want. The estimated standard error of the difference of means is the pooled SD, `sp`, times $\sqrt{1/24 + 1/24}=\sqrt{1/12}$, in the case of equal variances. Hence the correct 95% CI is computed as follows:
+
+```scheme
+> (define se (* sp (sqrt (/ 1 12))))
+> (define qt 46 0.975)
+> (values (- 1 (* qt se)) (+ 1 (* qt se)))
+-0.0272016886019351
+2.02720168860194
+```
+
+Using separate variances, we would use the following standard error to compute te 95% CI:[^4]
+
+```scheme
+> (define se (sqrt (+ (/ (* 2 2) 24) (/ (* 1.5 1.5) 24))))
+> (define nu (/ (square (+ (/ (* 2 2) 24) (/ (* 1.5 1.5) 24)))
+                                (+ (/ (square (/ (* 2 2) 24)) (- 24 1))
+                                   (/ (square (/ (* 1.5 1.5) 24)) (- 24 1)))))
+> (define qt (t-distribution nu 0.975))
+> (values (- 1 (* qt se)) (+ 1 (* qt se)))
+-0.0293791829211965
+2.0293791829212
+```
+
+This agrees with Stata's summary table.
+
+Of course, it would be better to embed the computation of the confidence intervals into the testing procedure, which actually returns the p-value only.
 
 {{% music %}}Caroles Daughter • _My Mother Wants Me Dead_{{% /music %}}
 
 [^1]: See the [Behrens-Fisher problem](https://en.wikipedia.org/wiki/Behrens–Fisher_problem).
 [^2]: F. E. Satterthwaite (1946). An Approximate Distribution of Estimates of Variance Components. _Biometrics Bulletin_, _2_, 110-114.
 [^3]: B. L. Welch (1947). The Generalization of Student's Problem When Several Different Population Variances Are Involved. _Biometrika_, _34_, 28-35.
+[^4]: See William D. Dupont (2009). _Statistical Modeling for Biomedical Researchers_ (2nd ed.), Cambridge (p. 36).
 
 [previous]: /post/student-approx/
 [posts]: /post/computing-student-t/
