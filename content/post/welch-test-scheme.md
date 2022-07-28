@@ -99,7 +99,7 @@ In this case, the degree of freedom is the sample size minus 1, and the standard
 
 ```scheme
 > (define se (* sp (sqrt (/ 1 12))))
-> (define qt 46 0.975)
+> (define qt (t-distribution 46 0.975))
 > (values (- 1 (* qt se)) (+ 1 (* qt se)))
 -0.0272016886019351
 2.02720168860194
