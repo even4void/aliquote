@@ -2,7 +2,7 @@
 title: "Reeder App"
 date: 2018-04-08T09:11:04+02:00
 draft: false
-tags: ["app", "review", "apple"]
+tags: ["app", "apple"]
 categories: ["2018"]
 ---
 
@@ -25,6 +25,6 @@ First of all, you don't have to start again from scratch and you can import the 
 
 After one week of using Reeder, I feel like I am done with web UIs, at least for the next few months.[^1]
 
-[^1]: *Update*: After several months, I still find this app very entertaining. The clean UI invites to stay focused on reading. The only thing I miss is the ability to highlight sentences or even selected part of a post, much like in Preview or other PDF apps.
+[^1]: _Update_: After several months, I still find this app very entertaining. The clean UI invites to stay focused on reading. The only thing I miss is the ability to highlight sentences or even selected part of a post, much like in Preview or other PDF apps.
 
 {{% music %}}Morcheeba • _Blood Like Lemonade_{{% /music %}}

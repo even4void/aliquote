@@ -2,7 +2,7 @@
 title: "Postico App"
 date: 2019-05-21T20:21:14+02:00
 draft: false
-tags: ["apple", "database", "app", "review"]
+tags: ["apple", "database", "app"]
 categories: ["2019"]
 ---
 

@@ -2,7 +2,7 @@
 title: "Dash App"
 date: 2018-04-25T9:14:06+02:00
 draft: false
-tags: ["app", "review", "apple"]
+tags: ["app", "apple"]
 categories: ["2018"]
 ---
 

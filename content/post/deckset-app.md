@@ -2,7 +2,7 @@
 title: "Deckset App"
 date: 2018-05-11T12:19:06+02:00
 draft: false
-tags: ["app", "review", "apple"]
+tags: ["app", "apple"]
 categories: ["2018"]
 ---
 

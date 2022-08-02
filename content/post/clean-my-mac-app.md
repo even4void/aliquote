@@ -2,7 +2,7 @@
 title: "CleanMyMac App"
 date: 2018-10-09T10:44:27+02:00
 draft: false
-tags: ["apple", "app", "review"]
+tags: ["apple", "app"]
 categories: ["2018"]
 ---
 

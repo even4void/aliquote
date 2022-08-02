@@ -2,7 +2,7 @@
 title: "Light Table and interactive live coding"
 date: 2014-04-25T22:15:52+01:00
 draft: false
-tags: ["apple", "app", "review"]
+tags: ["apple", "app"]
 categories: ["2014"]
 ---
 

@@ -2,7 +2,7 @@
 title: "Forklift"
 date: 2018-06-27T07:44:45+02:00
 draft: false
-tags: ["apple", "app", "review"]
+tags: ["apple", "app"]
 categories: ["2018"]
 ---
 

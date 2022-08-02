@@ -2,7 +2,7 @@
 title: "Exploratory Desktop"
 date: 2018-03-26T09:04:43+01:00
 draft: false
-tags: ["rstats", "app", "review"]
+tags: ["rstats", "app"]
 categories: ["2018"]
 ---
 
@@ -73,7 +73,7 @@ The data used throughout this review were fetched from the [National Bureau of E
 Here are some benchmarks using more (compared to base R `read.csv()` function) or less (default options for [data.table](http://r-datatable.com) and [readr](http://readr.tidyverse.org) were used) efficient approaches to load the data in CSV format right into R:
 
 - `data.table::fread()` takes 56 sec; `object.size()` gives me 4512.4 Mb
-- `readr::read_csv()` takes 193 sec; `object.size()` gives me 4784.1 Mb 
+- `readr::read_csv()` takes 193 sec; `object.size()` gives me 4784.1 Mb
 
 <small>(Python `pandas.read_csv()` is a winner of a little on that one with 163 sec.)</small>
 

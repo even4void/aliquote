@@ -2,11 +2,11 @@
 title: "Transmit App"
 date: 2018-09-28T10:55:50+02:00
 draft: false
-tags: ["apple", "app", "review"]
+tags: ["apple", "app"]
 categories: ["2018"]
 ---
 
-[Transmit](https://www.panic.com/transmit/) has been my *de facto* FTP client for several years now, except when I need to quickly send files over the internet in which case I still rely on ncftp.
+[Transmit](https://www.panic.com/transmit/) has been my _de facto_ FTP client for several years now, except when I need to quickly send files over the internet in which case I still rely on ncftp.
 
 Transmit is very good at managing local and remote files (you can even preview or edit remote files from Transmit directly) and it allows for quick synchronization of local and distant folders. Long ago, I tried [Cyberduck](https://cyberduck.io), which is quite good also, but it is probably a matter of choice for my use cases (occasional FTP upload and keeping my site in sync with my local files). The only thing I've never been able to get used to is the icon of the application.
 
