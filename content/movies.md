@@ -17,7 +17,7 @@ I haven't watched TV in about ten years, probably even before I removed the TV f
 <td><em>Seasons (Ep.)</em></td>
 <td><em>Rating</em></td>
 </tr>
-<tr><td><a href="https://en.wikipedia.org/wiki/3%25">3%</a></td><td>2022</td><td>4 (33)</td><td>&#9733;&#9733;&#9733;&#9734;&#9734;</td></tr>
+<tr><td><a href="https://en.wikipedia.org/wiki/3%25">3% (S1)</a></td><td>2022</td><td>1 (10)</td><td>&#9733;&#9733;&#9733;&#9734;&#9734;</td></tr>
 <tr><td><a href="https://en.wikipedia.org/wiki/Secret_City_(TV_series)">Secret City</a></td><td>2022</td><td>2 (12)</td><td>&#9733;&#9733;&#9733;&#9733;&#9734;</td></tr>
 <tr><td><a href="https://en.wikipedia.org/wiki/Sense8">Sense8</a></td><td>2022</td><td>2 (24)</td><td>&#9733;&#9733;&#9733;&#9733;&#9733;</td></tr>
 <tr><td><a href="https://en.wikipedia.org/wiki/Kiss_Me_First_(TV_series)">Kiss Me First</a></td><td>2022</td><td>1 (6)</td><td>&#9733;&#9733;&#9734;&#9734;&#9734;</td></tr>
@@ -49,7 +49,7 @@ I haven't watched TV in about ten years, probably even before I removed the TV f
 <tr><td><a href="https://en.wikipedia.org/wiki/Prison%5FBreak">Prison Break</a></td><td>2018</td><td>5 (90)</td><td>&#9733;&#9733;&#9733;&#9733;&#9734;</td></tr>
 <tr><td><a href="https://en.wikipedia.org/wiki/The_Walking_Dead_(TV_series)">The Walking Dead</a></td><td>2018+</td><td>11 (169)</td><td>&#9733;&#9733;&#9733;&#9733;&#9734;</td></tr>
 <tr><td><a href="https://en.wikipedia.org/wiki/The_Bridge_(2011_TV_series)">The Bridge</a></td><td>2018</td><td>4 (38)</td><td>&#9733;&#9733;&#9733;&#9733;&#9733;</td></tr>
-<tr><td><a href="https://da.wikipedia.org/wiki/Norskov">Norskov (S1 only)</a></td><td>2018</td><td>1 (10)</td><td>&#9733;&#9733;&#9734;&#9734;&#9734;</td></tr>
+<tr><td><a href="https://da.wikipedia.org/wiki/Norskov">Norskov (S1)</a></td><td>2018</td><td>1 (10)</td><td>&#9733;&#9733;&#9734;&#9734;&#9734;</td></tr>
 <tr><td><a href="https://en.wikipedia.org/wiki/Jordskott">Jordskott</a></td><td>2018</td><td>2 (18)</td><td>&#9733;&#9733;&#9733;&#9734;&#9734;</td></tr>
 <tr><td><a href="https://en.wikipedia.org/wiki/The_Fall_(TV_series)">The Fall</a></td><td>2018</td><td>3 (17)</td><td>&#9733;&#9733;&#9733;&#9734;&#9734;</td></tr>
 <tr><td><a href="https://en.wikipedia.org/wiki/Top_of_the_Lake">Top of the Lake</a></td><td>2017</td><td>2 (12)</td><td>&#9733;&#9733;&#9733;&#9733;&#9733;</td></tr>
