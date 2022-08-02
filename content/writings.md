@@ -36,9 +36,11 @@ Below is a list of what has been archived over the years on this site or on exte
 <tr><td><a href="https://github.com/even4void/EESPE11">Méthodes psychométriques en qualité de vie</a></td><td>Jun 2016</td><td>fr</td><td>done</td><td><i data-feather="link" width="12px" height="12px"></i></td></tr>
 <tr><td><a href="/pub/SAS2R.pdf">Statistics for Clinical Trials: Applications Using R</a></td><td>Jun 2016</td><td>en</td><td>todo</td><td><i data-feather="file-text" width="12px" height="12px"></i></td></tr>
 <tr><td><a href="https://github.com/even4void/Stata101">Stata 101</a></td><td>May 2016</td><td>fr</td><td>done</td><td><i data-feather="link" width="12px" height="12px"></i></td></tr>
+<tr><td><a href="/cours/2016_ERDF">Atelier d'introduction à R</a></td><td>Apr 2016</td><td>fr</td><td>done</td><td><i data-feather="link" width="12px" height="12px"></i></td></tr>
 <tr><td><a href="/cours/2016_Canceropole">Analyse de données biomédicales avec R</a></td><td>Mar 2016</td><td>fr</td><td>done</td><td><i data-feather="link" width="12px" height="12px"></i></td></tr>
 <tr><td><a href="/cours/psychometrics_up13.pdf"> Méthodes psychométriques en psychiatrie</a></td><td>Feb 2016</td><td>fr</td><td>done</td><td><i data-feather="file-text" width="12px" height="12px"></i></td></tr>
 <tr><td><a href="http://even4void.github.io/seminr/">Analyse multivariée et modèles à variables latentes</a></td><td>Jan 2016</td><td>fr</td><td>done</td><td><i data-feather="link" width="12px" height="12px"></i></td></tr>
+<tr><td><a href="/cours/2015_IAE">Atelier de formation Stata</a></td><td>Dec 2015</td><td>fr</td><td>done</td><td><i data-feather="link" width="12px" height="12px"></i></td></tr>
 <tr><td><a href="/cours/2015_INVS">Gestion de données avancées avec R</a></td><td>Nov 2015</td><td>fr</td><td>done</td><td><i data-feather="link" width="12px" height="12px"></i></td></tr>
 <tr><td><a href="/cours/supelec">Biostatistiques avec R</a></td><td>Oct 2015</td><td>fr</td><td>done</td><td><i data-feather="link" width="12px" height="12px"></i></td></tr>
 <tr><td><a href="/cours/misc/lalanne_apramen_2015.pdf">Les essais cliniques en pratique</a></td><td>Sep 2015</td><td>fr</td><td>done</td><td><i data-feather="file-text" width="12px" height="12px"></i></td></tr>
