@@ -1,6 +1,6 @@
 ---
 title: "Bootstrap resampling using Scheme"
-date: 2022-08-03T10:34:29+02:00
+date: 2022-08-09T10:34:29+02:00
 draft: true
 tags: ["scheme", "statistcis"]
 categories: ["2022"]
@@ -20,7 +20,7 @@ $$ \mathbb{\widehat V}[S(X)] = \frac{1}{B-1}\sum\_{b=1}^B\left(S(X_b^{\star}) - 
 
 where $\bar S^{\star}$ is the bootstrap sample mean, $\frac{1}{B}\sum_{b=1}^BS(X_b^{\star})$.
 
-Basically, we need a way to shuffle a list of indices (the observation index in a list or vector), to call the same function on a $B$ random lists, and to compute a sum. Below is some Chicken Scheme code. Let's first get some data:
+Basically, we need a way to shuffle (with replacement) a list of indices (the observation index in a list or vector), to call the same function on $B$ random lists, and to compute a sum. Below is some Chicken Scheme code. Let's first get some data:
 
 ```scheme
 (import (chicken io))

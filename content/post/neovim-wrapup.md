@@ -55,3 +55,10 @@ Here is my whole config in case you are interested (this includes Zsh and Tmux s
 <small>[2021-10-26]</small><br>
 You may find this blog post very useful: [Moving to modern Neovim](https://toroid.org/modern-neovim).
 {{% /alert %}}
+
+<br>
+
+{{% alert note %}}
+<small>[2022-08-13]</small><br>
+Finally, it took me almost two years to get a comfy setup which I use everyday without bothering tinkering my config files every two days or so. The hard part was to get used to what's builtin, in both Vim and Neovim, how best to use available tools, and delete every bit of extraneous settings that won't stand the test of time. Read the manual, seriously, there's so much to learn. And use as few plugins as possible: I'm happy with 15 plugins ([opt] `iron.nvim`, `neogen`, `neogit`, `nvim-parinfer`, `vim-test`, `vimtex`; [start] `Comment.nvim`, `null-ls.nvim`, `nvim-lspconfig`, `nvim-treesitter`, ̀`packer.nvim`, `plenary.nvim`, `telescope-bibtex.nvim`, `telescope-fzf-native.nvim`, `telescope.nvim`), and pieces of [mini.nvim](https://github.com/echasnovski/mini.nvim) that I grabbed by the end of 2021 and customized to my liking.
+{{% /alert %}}

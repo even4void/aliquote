@@ -1,6 +1,6 @@
 ---
 title: "Life in a few words"
-date: 2022-08-12T11:07:46+02:00
+date: 2022-08-09T11:07:46+02:00
 draft: false
 tags: ["self", "mathematica"]
 categories: ["2022"]
