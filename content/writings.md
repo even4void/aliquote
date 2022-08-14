@@ -7,7 +7,7 @@ weight: 40
 
 Here is a list of things I like to work on when time allows. As you will guess pretty quickly, I can leave _those_ things hanging out for years, but there is always a chance that this stuff will be finished someday. Note that these pages are a resurrection of my [previous website](/post/migrating-to-hugo/), and I left a lot of materials behind. If you are looking for my old teaching ressources, almost everything remains available on the Teaching page if you bookmarked it once in a while, but most links should be available below (except for in-house training).
 
-I yet have to find something to write, you know something that will last forever --- but never ending. In the meantime, I put a lot of random and not so random stuff on Github. I also intend to write other series on statistical (retro)computing using Unix tools or LispStat maybe.
+I yet have to find something to write, you know something that will last forever ------nbsp;---nbsp; but never ending. In the meantime, I put a lot of random and not so random stuff on Github. I also intend to write other series on statistical (retro)computing using Unix tools or LispStat maybe.
 
 Below is a list of what has been archived over the years on this site or on external servers (beware these are for the most part the remnants of my former life, so don't expect any update).
 
@@ -21,7 +21,8 @@ Below is a list of what has been archived over the years on this site or on exte
 <td><em>Status</em></td>
 <td><em>Type</em></td>
 </tr>
-<tr><td><a href="/articles/movies/">Informal ratings of some TV shows</a></td><td>July 2022</td><td>en</td><td>done</td><td><i data-feather="link" width="12px" height="12px"></i></td></tr>
+<tr><td><a href="/pub/scheme.pdf">Le langage Scheme</a></td><td>Aug 2022</td><td>fr</td><td>done</td><td><i data-feather="file-text" width="12px" height="12px"></i></td></tr>
+<tr><td><a href="/articles/movies/">Informal ratings of some TV shows</a></td><td>Jul 2022</td><td>en</td><td>done</td><td><i data-feather="link" width="12px" height="12px"></i></td></tr>
 <tr><td><a href="/articles/notebooks/org-setup.pdf">A minimal Org setup to write scientific notebooks</a></td><td>Apr 2022</td><td>en</td><td>done</td><td><i data-feather="file-text" width="12px" height="12px"></i></td></tr>
 <tr><td><a href="/pub/vim-101.pdf">Vim 101</a></td><td>Aug 2020</td><td>en</td><td>done</td><td><i data-feather="file-text" width="12px" height="12px"></i></td></tr>
 <tr><td><a href="/pub/z.pdf">Z notes</a></td><td>Feb 2020</td><td>fr</td><td>todo</td><td><i data-feather="file-text" width="12px" height="12px"></i></td></tr>
@@ -71,11 +72,11 @@ Below is a list of what has been archived over the years on this site or on exte
 <tr><td><a href="/pub/sql/">Gestion de bases de données</a></td><td>Mar 2008</td><td>fr</td><td>canc</td><td><i data-feather="link" width="12px" height="12px"></i></td></tr>
 <tr><td><a href="/pub/RMB/">Regression methods in Biostatistics</a></td><td>Feb 2008</td><td>en</td><td>canc</td><td><i data-feather="link" width="12px" height="12px"></i></td></tr>
 <tr><td><a href="/pub/MDLD.pdf">Models for Discrete Longitudinal Data</a></td><td>Nov 2007</td><td>en</td><td>canc</td><td><i data-feather="file-text" width="12px" height="12px"></i></td></tr>
-<tr><td><a href="/cours/2007_cogmaster_B4/">Modèles probabilistes et théorie de l'information</a></td><td>??? 2007</td><td>fr</td><td>done</td><td><i data-feather="link" width="12px" height="12px"></i></td></tr>
-<tr><td><a href="/cours/2006_cogmaster_B4/">Modèles probabilistes en sciences cognitives</a></td><td>??? 2006</td><td>fr</td><td>done</td><td><i data-feather="link" width="12px" height="12px"></i></td></tr>
-<tr><td><a href="/pub/tips.txt">Trucs et astuces Linux</a></td><td>??? 2006</td><td>fr</td><td>done</td><td><i data-feather="file-text" width="12px" height="12px"></i></td></tr>
-<tr><td><a href="/cours/2005_iut/">Introduction aux sciences cognitives</a></td><td>??? 2005</td><td>fr</td><td>done</td><td><i data-feather="link" width="12px" height="12px"></i></td></tr>
-<tr><td><a href="/cours/2004_cim/">Statistiques appliquées à l'exprimentation humaine</a></td><td>??? 2004</td><td>fr</td><td>done</td><td><i data-feather="link" width="12px" height="12px"></i></td></tr>
+<tr><td><a href="/cours/2007_cogmaster_B4/">Modèles probabilistes et théorie de l'information</a></td><td>---&nbsp;&nbsp; 2007</td><td>fr</td><td>done</td><td><i data-feather="link" width="12px" height="12px"></i></td></tr>
+<tr><td><a href="/cours/2006_cogmaster_B4/">Modèles probabilistes en sciences cognitives</a></td><td>---&nbsp;&nbsp; 2006</td><td>fr</td><td>done</td><td><i data-feather="link" width="12px" height="12px"></i></td></tr>
+<tr><td><a href="/pub/tips.txt">Trucs et astuces Linux</a></td><td>---&nbsp;&nbsp; 2006</td><td>fr</td><td>done</td><td><i data-feather="file-text" width="12px" height="12px"></i></td></tr>
+<tr><td><a href="/cours/2005_iut/">Introduction aux sciences cognitives</a></td><td>---&nbsp;&nbsp; 2005</td><td>fr</td><td>done</td><td><i data-feather="link" width="12px" height="12px"></i></td></tr>
+<tr><td><a href="/cours/2004_cim/">Statistiques appliquées à l'exprimentation humaine</a></td><td>---&nbsp;&nbsp; 2004</td><td>fr</td><td>done</td><td><i data-feather="link" width="12px" height="12px"></i></td></tr>
 <tr><td><a href="/pub/Combinatoire.ps">Analyse combinatoire</a></td><td>Apr 2003</td><td>fr</td><td>done</td><td><i data-feather="file-text" width="12px" height="12px"></i></td></tr>
 <tr><td><a href="/pub/Matrices.ps">Analyse matricielle</a></td><td>Apr 2003</td><td>fr</td><td>done</td><td><i data-feather="file-text" width="12px" height="12px"></i></td></tr>
 </tbody>
