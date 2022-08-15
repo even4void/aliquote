@@ -33,82 +33,82 @@ My leader is ","[^1] and I do not define specific mappings for the localleader i
 <tr><td><kbd>-</kbd></td><td>n</td><td><kbd>:Ex</kbd></td><td>Show explorer</td></tr>
 <tr><td><kbd>,l</kbd></td><td>n</td><td><kbd>&lt;C-^></kbd></td><td>Alternate buffer</td></tr>
 <tr><td><kbd>,o</kbd></td><td>n</td><td><kbd>&lt;C-w>&lt;C-w></kbd></td><td>Other widow</td></tr>
-<tr><td><kbd>,!<kbd></td><td>n</td><td><kbd>:10sp +te<kbd></td><td>Popup terminal</td></tr>
-<tr><td><kbd>,.<kbd></td><td>n</td><td><kbd>:lcd %:p:h<kbd></td><td>Set local current directory</td></tr>
-<tr><td><kbd>,E<kbd></td><td>n</td><td><kbd>:tabe &lt;C-R>=expand("%:p:h") . "/"<kbd></td><td>Open file in new tab from current directory</td></tr>
-<tr><td><kbd>,e<kbd></td><td>n</td><td><kbd>:e &lt;C-R>=expand("%:p:h") . "/"<kbd></td><td>Open file from current directory</td></tr>
-<tr><td><kbd>&lt;C-Left><kbd></td><td>n</td><td><kbd>:tabprev<kbd></td><td>Previous tab</td></tr>
-<tr><td><kbd>&lt;C-Right><kbd></td><td>n</td><td><kbd>:tabnext<kbd></td><td>Next tab</td></tr>
-<tr><td>&lt;Tab></td><td>n</td><td><kbd>:tabnext<kbd></td><td>Next tab</td></tr>
-<tr><td>,&lt;Tab></td><td>n</td><td><kbd>:$tabnew<kbd></td><td>New tab</td></tr>
-<tr><td>J</td><td>n</td><td><kbd>mzJ`z<kbd></td><td>Join lines (cursor stationary)</td></tr>
-<tr><td><</td><td>v</td><td><kbd>&lt;gv<kbd></td><td>Fix block indentation (backward)</td></tr>
-<tr><td>></td><td>v</td><td><kbd>>gv<kbd></td><td>Fix block indentation (forward)</td></tr>
-<tr><td>&lt;C-q></td><td>n</td><td><kbd>quickfix_toggle()<kbd></td><td>Close quickfix window (custom)</td></tr>
-<tr><td>[Q</td><td>n</td><td><kbd>:cfirst<kbd></td><td>Go to first quickfix item</td></tr>
-<tr><td>]Q</td><td>n</td><td><kbd>:clast<kbd></td><td>Go to last quickfix item</td></tr>
-<tr><td>&lt;C-h></td><td>n</td><td><kbd>:vertical resize -4<kbd></td><td>Resize split (left)</td></tr>
-<tr><td>&lt;C-j></td><td>n</td><td><kbd>:resize -4<kbd></td><td>Resize split (down)</td></tr>
-<tr><td>&lt;C-k></td><td>n</td><td><kbd>:resize +4<kbd></td><td>Resize split (up)</td></tr>
-<tr><td>&lt;C-l></td><td>n</td><td><kbd>:vertical resize +4<kbd></td><td>Resize split (right)</td></tr>
-<tr><td>W!!</td><td>c</td><td><kbd>:w !sudo tee % >/dev/null&lt;Cr>:e!&lt;Cr><kbd></td><td>Save as root</td></tr>
-<tr><td>&lt;C-s></td><td>i</td><td><kbd>&lt;C-g>u&lt;Esc>[s1z=`]a&lt;C-g>u<kbd></td><td>Fix last spelling error (repeat.)</td></tr>
-<tr><td>&lt;S-Tab></td><td>i</td><td><kbd>pumvisible() ? "\&lt;C-p>" : "\&lt;S-Tab>"<kbd></td><td>Previous omnicompletion item</td></tr>
-<tr><td>&lt;Tab></td><td>i</td><td><kbd>pumvisible() ? "\&lt;C-n>" : "\&lt;S-Tab>"<kbd></td><td>Next omnicompletion item</td></tr>
-<tr><td>,S</td><td>n</td><td><kbd>vip:sort iu<kbd></td><td>Sort in reverse lexicographic order</td></tr>
-<tr><td>,S</td><td>v</td><td><kbd>:sort u<kbd></td><td>Sort in reverse lexicographic order</td></tr>
-<tr><td>,s</td><td>n</td><td><kbd>vip:sort u<kbd></td><td>Sort in lexicographic order</td></tr>
-<tr><td>,s</td><td>v</td><td><kbd>:sort u<kbd></td><td>Sort in lexicographic order</td></tr>
-<tr><td>,"</td><td>n</td><td>:Neogen</td><td>Generate docstring</td></tr>
-<tr><td>N</td><td>n</td><td>Nzz</td><td>Keep cursor centered on screen when looking behind</td></tr>
-<tr><td>n</td><td>n</td><td>nzz</td><td>Keep cursor centered on screen when looking ahead</td></tr>
-<tr><td>U</td><td>n</td><td>&lt;C-r></td><td>Redo</td></tr>
-<tr><td>zs</td><td>n</td><td>1z=</td><td>Fix spelling using first suggestion</td></tr>
-<tr><td>^</td><td>n</td><td>:set hls!&lt;Bar>set hls?</td><td>Toggle on/off search highlights</td></tr>
-<tr><td>&lt;Backspace></td><td>n</td><td>:nohl</td><td>Clear search highlights</td></tr>
-<tr><td>,df</td><td>n</td><td>:set spell&lt;Cr>:set spelllang=fr</td><td>Toggle spelling (French)</td></tr>
-<tr><td>,de</td><td>n</td><td>:set spell&lt;Cr>:set spelllang=en</td><td>Toggle spelling (English)</td></tr>
-<tr><td>&lt;C-s></td><td>n</td><td>:let @s='\&lt;'.expand('&lt;cword>').'\>'&lt;Cr>:%s/&lt;C-r>s//&lt;Left></td><td>Substitute current word</td></tr>
-<tr><td>&lt;C-s></td><td>x</td><td>sy:%s/&lt;C-r>s//&lt;Left></td><td>Substitute current word</td></tr>
-<tr><td>,p</td><td>n</td><td>:set invpaste&lt;Cr>:set paste?&lt;Cr></td><td>Toggle on/off paste mode</td></tr>
-<tr><td>YY</td><td>n,v</td><td>"+y</td><td>Yank to clipboard</td></tr>
-<tr><td>&lt;C-f></td><td>n</td><td>:Grep&lt;Space></td><td>Grep (custom)</td></tr>
-<tr><td>&lt;C-p></td><td>n</td><td>:Telescope find_files</td><td>Fuzzy finder for files</td></tr>
-<tr><td>,/</td><td>n</td><td>:Telescope current_buffer_fuzzy_find</td><td>Fuzzy search in buffer</td></tr>
-<tr><td>,:</td><td>n</td><td>:Telescope command_history</td><td>Fuzzy finder for command history</td></tr>
-<tr><td>,,</td><td>n</td><td>:Telescope buffers</td><td>Fuzzy finder for buffers</td></tr>
-<tr><td>,f</td><td>n</td><td>:Telescope live_grep</td><td>Live grep in working directory</td></tr>
-<tr><td>,*</td><td>n</td><td>:lua require('telescope.builtin').grep_string({search = vim.fn.expand("&lt;cword>")})</td><td>Fuzzy grep current word in working directory</td></tr>
-<tr><td>,G</td><td>n</td><td>:Neogit</td><td>Neogit</td></tr>
-<tr><td>,gg</td><td>n</td><td>:Telescope git_status</td><td>Git status</td></tr>
-<tr><td>,gC</td><td>n</td><td>:Telescope git_commits</td><td>Git commit log</td></tr>
-<tr><td>,gc</td><td>n</td><td>:Telescope git_bcommits</td><td>Git buffer commit log</td></tr>
-<tr><td>,gb</td><td>n</td><td>:Telescope git_branches</td><td>Git branches</td></tr>
-<tr><td>,gs</td><td>n</td><td>:Telescope git_stash</td><td>Git stash</td></tr>
-<tr><td>,q</td><td>n</td><td>:Telescope quickfix</td><td>Telescope quickfix</td></tr>
-<tr><td>,r</td><td>n</td><td>:Telescope oldfiles</td><td>Telescope old files</td></tr>
-<tr><td>,w</td><td>n</td><td>:Telescope diagnostics</td><td>LSP diagnostics</td></tr>
-<tr><td>,@</td><td>n</td><td>:Telescope bibtex</td><td>Telescope bibtex</td></tr>
-<tr><td>s.</td><td>n</td><td>&lt;Plug>(iron-repeat-cmd)</td><td>Iron repeat action</td></tr>
-<tr><td>ss</td><td>n</td><td>&lt;Plug>(iron-send-line)</td><td>Iron send current line</td></tr>
-<tr><td>s</td><td>n</td><td>&lt;Plug>(iron-send-motion)</td><td>Iron send selection</td></tr>
-<tr><td>s</td><td>v</td><td>&lt;Plug>(iron-visual-send)</td><td>Iron send selection</td></tr>
-<tr><td>,T</td><td>n</td><td>:TestFile</td><td>Test file (vimtest)</td></tr>
-<tr><td>,t</td><td>n</td><td>:TestNearest</td><td>Test nearest (vimtest)</td></tr>
-<tr><td>,wq</td><td>n</td><td>vim.diagnostic.setqflist</td><td>Show diagnostics in quickfix (LSP)</td></tr>
-<tr><td>[w</td><td>n</td><td>vim.diagnostic.goto_prev</td><td>Go to previous diagnostic (LSP)</td></tr>
-<tr><td>]w</td><td>n</td><td>vim.diagnostic.goto_prev</td><td>Go to next diagnostic (LSP)</td></tr>
-<tr><td>,wd</td><td>n</td><td>vim.diagnostic.open_float</td><td>Show diagnostic in a floating window (LSP)</td></tr>
-<tr><td>g=</td><td>x</td><td>vim.lsp.buf.range_formatting</td><td>Format selection (LSP)</td></tr>
-<tr><td>g=</td><td>n</td><td>vim.lsp.buf.formatting</td><td>Format selection (LSP)</td></tr>
-<tr><td>z=</td><td>n,x</td><td>vim.lsp.buf.code_action</td><td>Code action (LSP)</td></tr>
-<tr><td>g0</td><td>n</td><td>require("telescope.builtin").lsp_workspace_symbols</td><td>Show workspace symbols (LSP)</td></tr>
-<tr><td>K</td><td>n</td><td>vim.lsp.buf.hover</td><td>Show help for current symbol (LSP)</td></tr>
-<tr><td>&lt;C-h></td><td>i</td><td>vim.lsp.buf.signature_help</td><td>Show signature help (LSP)</td></tr>
-<tr><td>gd</td><td>n</td><td>require("telescope.builtin").lsp_definitions</td><td>Show definition (LSP)</td></tr>
-<tr><td>gr</td><td>n</td><td>require("telescope.builtin").lsp_references</td><td>Show references (LSP)</td></tr>
-<tr><td>zr</td><td>n</td><td>vim.lsp.buf.rename</td><td>Rename symbol (LSP)</td></tr>
-<tr><td>gi</td><td>n</td><td>vim.lsp.buf.implementation</td><td>Show implementation (LSP)</td></tr>
+<tr><td><kbd>,!</kbd></td><td>n</td><td><kbd>:10sp +te</kbd></td><td>Popup terminal</td></tr>
+<tr><td><kbd>,.</kbd></td><td>n</td><td><kbd>:lcd %:p:h</kbd></td><td>Set local current directory</td></tr>
+<tr><td><kbd>,E</kbd></td><td>n</td><td><kbd>:tabe &lt;C-R>=expand("%:p:h") . "/"</kbd></td><td>Open file in new tab from current directory</td></tr>
+<tr><td><kbd>,e</kbd></td><td>n</td><td><kbd>:e &lt;C-R>=expand("%:p:h") . "/"</kbd></td><td>Open file from current directory</td></tr>
+<tr><td><kbd>&lt;C-Left></kbd></td><td>n</td><td><kbd>:tabprev</kbd></td><td>Previous tab</td></tr>
+<tr><td><kbd>&lt;C-Right></kbd></td><td>n</td><td><kbd>:tabnext</kbd></td><td>Next tab</td></tr>
+<tr><td><kbd>&lt;Tab></kbd></td><td>n</td><td><kbd>:tabnext</kbd></td><td>Next tab</td></tr>
+<tr><td><kbd>,&lt;Tab></kbd></td><td>n</td><td><kbd>:$tabnew</kbd></td><td>New tab</td></tr>
+<tr><td><kbd>J</kbd></td><td>n</td><td><kbd>mzJ`z</kbd></td><td>Join lines (cursor stationary)</td></tr>
+<tr><td><kbd><</kbd></td><td>v</td><td><kbd>&lt;gv</kbd></td><td>Fix block indentation (backward)</td></tr>
+<tr><td><kbd>></kbd></td><td>v</td><td><kbd>>gv</kbd></td><td>Fix block indentation (forward)</td></tr>
+<tr><td><kbd>&lt;C-q></kbd></td><td>n</td><td><kbd>quickfix_toggle()</kbd></td><td>Close quickfix window (custom)</td></tr>
+<tr><td><kbd>[Q</kbd></td><td>n</td><td><kbd>:cfirst</kbd></td><td>Go to first quickfix item</td></tr>
+<tr><td><kbd>]Q</kbd></td><td>n</td><td><kbd>:clast</kbd></td><td>Go to last quickfix item</td></tr>
+<tr><td><kbd>&lt;C-h></kbd></td><td>n</td><td><kbd>:vertical resize -4</kbd></td><td>Resize split (left)</td></tr>
+<tr><td><kbd>&lt;C-j></kbd></td><td>n</td><td><kbd>:resize -4</kbd></td><td>Resize split (down)</td></tr>
+<tr><td><kbd>&lt;C-k></kbd></td><td>n</td><td><kbd>:resize +4</kbd></td><td>Resize split (up)</td></tr>
+<tr><td><kbd>&lt;C-l></kbd></td><td>n</td><td><kbd>:vertical resize +4</kbd></td><td>Resize split (right)</td></tr>
+<tr><td><kbd>W!!</kbd></td><td>c</td><td><kbd>:w !sudo tee % >/dev/null&lt;Cr>:e!&lt;Cr></kbd></td><td>Save as root</td></tr>
+<tr><td><kbd>&lt;C-s></kbd></td><td>i</td><td><kbd>&lt;C-g>u&lt;Esc>[s1z=`]a&lt;C-g>u</kbd></td><td>Fix last spelling error (repeat.)</td></tr>
+<tr><td><kbd>&lt;S-Tab></kbd></td><td>i</td><td><kbd>pumvisible() ? "\&lt;C-p>" : "\&lt;S-Tab>"</kbd></td><td>Previous omnicompletion item</td></tr>
+<tr><td><kbd>&lt;Tab></kbd></td><td>i</td><td><kbd>pumvisible() ? "\&lt;C-n>" : "\&lt;S-Tab>"</kbd></td><td>Next omnicompletion item</td></tr>
+<tr><td><kbd>,S</kbd></td><td>n</td><td><kbd>vip:sort iu</kbd></td><td>Sort in reverse lexicographic order</td></tr>
+<tr><td><kbd>,S</kbd></td><td>v</td><td><kbd>:sort u</kbd></td><td>Sort in reverse lexicographic order</td></tr>
+<tr><td><kbd>,s</kbd></td><td>n</td><td><kbd>vip:sort u</kbd></td><td>Sort in lexicographic order</td></tr>
+<tr><td><kbd>,s</kbd></td><td>v</td><td><kbd>:sort u</kbd></td><td>Sort in lexicographic order</td></tr>
+<tr><td><kbd>,"</kbd></td><td>n</td><td><kbd>:Neogen</kbd></td><td>Generate docstring</td></tr>
+<tr><td><kbd>N</kbd></td><td>n</td><td><kbd>Nzz</kbd></td><td>Keep cursor centered on screen when looking behind</td></tr>
+<tr><td><kbd>n</kbd></td><td>n</td><td><kbd>nzz</kbd></td><td>Keep cursor centered on screen when looking ahead</td></tr>
+<tr><td><kbd>U</kbd></td><td>n</td><td><kbd>&lt;C-r></kbd></td><td>Redo</td></tr>
+<tr><td><kbd>zs</kbd></td><td>n</td><td><kbd>1z=</kbd></td><td>Fix spelling using first suggestion</td></tr>
+<tr><td><kbd>^</kbd></td><td>n</td><td><kbd>:set hls!&lt;Bar>set hls?</kbd></td><td>Toggle on/off search highlights</td></tr>
+<tr><td><kbd>&lt;Backspace></kbd></td><td>n</td><td><kbd>:nohl</kbd></td><td>Clear search highlights</td></tr>
+<tr><td><kbd>,df</kbd></td><td>n</td><td><kbd>:set spell&lt;Cr>:set spelllang=fr</kbd></td><td>Toggle spelling (French)</td></tr>
+<tr><td><kbd>,de</kbd></td><td>n</td><td><kbd>:set spell&lt;Cr>:set spelllang=en</kbd></td><td>Toggle spelling (English)</td></tr>
+<tr><td><kbd>&lt;C-s></kbd></td><td>n</td><td><kbd>:let @s='\&lt;'.expand('&lt;cword>').'\>'&lt;Cr>:%s/&lt;C-r>s//&lt;Left></kbd></td><td>Substitute current word</td></tr>
+<tr><td><kbd>&lt;C-s></kbd></td><td>x</td><td><kbd>sy:%s/&lt;C-r>s//&lt;Left></kbd></td><td>Substitute current word</td></tr>
+<tr><td><kbd>,p</kbd></td><td>n</td><td><kbd>:set invpaste&lt;Cr>:set paste?&lt;Cr></kbd></td><td>Toggle on/off paste mode</td></tr>
+<tr><td><kbd>YY</kbd></td><td>n,v</td><td><kbd>"+y</kbd></td><td>Yank to clipboard</td></tr>
+<tr><td><kbd>&lt;C-f></kbd></td><td>n</td><td><kbd>:Grep&lt;Space></kbd></td><td>Grep (custom)</td></tr>
+<tr><td><kbd>&lt;C-p></kbd></td><td>n</td><td><kbd>:Telescope find_files</kbd></td><td>Fuzzy finder for files</td></tr>
+<tr><td><kbd>,/</kbd></td><td>n</td><td><kbd>:Telescope current_buffer_fuzzy_find</kbd></td><td>Fuzzy search in buffer</td></tr>
+<tr><td><kbd>,:</kbd></td><td>n</td><td><kbd>:Telescope command_history</kbd></td><td>Fuzzy finder for command history</td></tr>
+<tr><td><kbd>,,</kbd></td><td>n</td><td><kbd>:Telescope buffers</kbd></td><td>Fuzzy finder for buffers</td></tr>
+<tr><td><kbd>,f</kbd></td><td>n</td><td><kbd>:Telescope live_grep</kbd></td><td>Live grep in working directory</td></tr>
+<tr><td><kbd>,*</kbd></td><td>n</td><td><kbd>:lua require('telescope.builtin').grep_string({search = vim.fn.expand("&lt;cword>")})</kbd></td><td>Fuzzy grep current word in working directory</td></tr>
+<tr><td><kbd>,G</kbd></td><td>n</td><td><kbd>:Neogit</kbd></td><td>Neogit</td></tr>
+<tr><td><kbd>,gg</kbd></td><td>n</td><td><kbd>:Telescope git_status</kbd></td><td>Git status</td></tr>
+<tr><td><kbd>,gC</kbd></td><td>n</td><td><kbd>:Telescope git_commits</kbd></td><td>Git commit log</td></tr>
+<tr><td><kbd>,gc</kbd></td><td>n</td><td><kbd>:Telescope git_bcommits</kbd></td><td>Git buffer commit log</td></tr>
+<tr><td><kbd>,gb</kbd></td><td>n</td><td><kbd>:Telescope git_branches</kbd></td><td>Git branches</td></tr>
+<tr><td><kbd>,gs</kbd></td><td>n</td><td><kbd>:Telescope git_stash</kbd></td><td>Git stash</td></tr>
+<tr><td><kbd>,q</kbd></td><td>n</td><td><kbd>:Telescope quickfix</kbd></td><td>Telescope quickfix</td></tr>
+<tr><td><kbd>,r</kbd></td><td>n</td><td><kbd>:Telescope oldfiles</kbd></td><td>Telescope old files</td></tr>
+<tr><td><kbd>,w</kbd></td><td>n</td><td><kbd>:Telescope diagnostics</kbd></td><td>LSP diagnostics</td></tr>
+<tr><td><kbd>,@</kbd></td><td>n</td><td><kbd>:Telescope bibtex</kbd></td><td>Telescope bibtex</td></tr>
+<tr><td><kbd>s.</kbd></td><td>n</td><td><kbd>&lt;Plug>(iron-repeat-cmd)</kbd></td><td>Iron repeat action</td></tr>
+<tr><td><kbd>ss</kbd></td><td>n</td><td><kbd>&lt;Plug>(iron-send-line)</kbd></td><td>Iron send current line</td></tr>
+<tr><td><kbd>s</kbd></td><td>n</td><td><kbd>&lt;Plug>(iron-send-motion)</kbd></td><td>Iron send selection</td></tr>
+<tr><td><kbd>s</kbd></td><td>v</td><td><kbd>&lt;Plug>(iron-visual-send)</kbd></td><td>Iron send selection</td></tr>
+<tr><td><kbd>,T</kbd></td><td>n</td><td><kbd>:TestFile</kbd></td><td>Test file (vimtest)</td></tr>
+<tr><td><kbd>,t</kbd></td><td>n</td><td><kbd>:TestNearest</kbd></td><td>Test nearest (vimtest)</td></tr>
+<tr><td><kbd>,wq</kbd></td><td>n</td><td><kbd>vim.diagnostic.setqflist</kbd></td><td>Show diagnostics in quickfix (LSP)</td></tr>
+<tr><td><kbd>[w</kbd></td><td>n</td><td><kbd>vim.diagnostic.goto_prev</kbd></td><td>Go to previous diagnostic (LSP)</td></tr>
+<tr><td><kbd>]w</kbd></td><td>n</td><td><kbd>vim.diagnostic.goto_next</kbd></td><td>Go to next diagnostic (LSP)</td></tr>
+<tr><td><kbd>,wd</kbd></td><td>n</td><td><kbd>vim.diagnostic.open_float</kbd></td><td>Show diagnostic in a floating window (LSP)</td></tr>
+<tr><td><kbd>g=</kbd></td><td>x</td><td><kbd>vim.lsp.buf.range_formatting</kbd></td><td>Format selection (LSP)</td></tr>
+<tr><td><kbd>g=</kbd></td><td>n</td><td><kbd>vim.lsp.buf.formatting</kbd></td><td>Format selection (LSP)</td></tr>
+<tr><td><kbd>z=</kbd></td><td>n,x</td><td><kbd>vim.lsp.buf.code_action</kbd></td><td>Code action (LSP)</td></tr>
+<tr><td><kbd>g0</kbd></td><td>n</td><td><kbd>require("telescope.builtin").lsp_workspace_symbols</kbd></td><td>Show workspace symbols (LSP)</td></tr>
+<tr><td><kbd>K</kbd></td><td>n</td><td><kbd>vim.lsp.buf.hover</kbd></td><td>Show help for current symbol (LSP)</td></tr>
+<tr><td><kbd>&lt;C-h></kbd></td><td>i</td><td><kbd>vim.lsp.buf.signature_help</kbd></td><td>Show signature help (LSP)</td></tr>
+<tr><td><kbd>gd</kbd></td><td>n</td><td><kbd>require("telescope.builtin").lsp_definitions</kbd></td><td>Show definition (LSP)</td></tr>
+<tr><td><kbd>gr</kbd></td><td>n</td><td><kbd>require("telescope.builtin").lsp_references</kbd></td><td>Show references (LSP)</td></tr>
+<tr><td><kbd>zr</kbd></td><td>n</td><td><kbd>vim.lsp.buf.rename</kbd></td><td>Rename symbol (LSP)</td></tr>
+<tr><td><kbd>gi</kbd></td><td>n</td><td><kbd>vim.lsp.buf.implementation</kbd></td><td>Show implementation (LSP)</td></tr>
 </tbody>
 </table>
 </small>
