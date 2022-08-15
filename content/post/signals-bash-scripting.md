@@ -17,11 +17,17 @@ Without further ado, here's a sample script which catch up eventual user interru
 
 trap "echo User interrupt; exit" SIGINT
 
-ghc -e '
+ghc -e 'iterate (\x -> ((1103515245 * x) + 12345 `mod` 2^31)) 1'
+```
+
+The congruential generator above is not great of course.[^1] To generate an infinite sequence of random number generator, consider the more elaborated solution below:[^2]
+
+```haskell
 import System.Random
-g <- newStdGen
-(randoms g :: [Double])
-'
+
+main = do
+  g <- newStdGen
+  (randoms g :: [Double])
 ```
 
 A similar approach is discussed in [this blog post]. Other options are discussed on [Stack Overflow]. Another nice usage of the `trap` command is to clean up intermediate or temporary files in case the program carshes. See an exemple in [this article].
@@ -32,3 +38,6 @@ A similar approach is discussed in [this blog post]. Other options are discussed
 [this blog post]: https://lgfang.github.io/computer/2020/02/13/bash-signal-trap
 [stack overflow]: https://stackoverflow.com/questions/15785522/catch-sigint-in-bash-handle-and-ignore
 [this article]: https://phoenixnap.com/kb/bash-trap-command
+
+[^1]: It was the original BSD `rand()` function, though.
+[^2]: You will likely need to install the `random` package since it does not come with default install of Stack or GHCup.

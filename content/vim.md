@@ -35,6 +35,8 @@ My leader is ","[^1] and I do not define specific mappings for the localleader i
 <tr><td><kbd>,o</kbd></td><td>n</td><td><kbd>&lt;C-w>&lt;C-w></kbd></td><td>Other widow</td></tr>
 <tr><td><kbd>,!</kbd></td><td>n</td><td><kbd>:10sp +te</kbd></td><td>Popup terminal</td></tr>
 <tr><td><kbd>,.</kbd></td><td>n</td><td><kbd>:lcd %:p:h</kbd></td><td>Set local current directory</td></tr>
+<tr><td><kbd>,x</kbd></td><td>n</td><td><kbd>:bp &lt;Bar> bd! #</kbd></td><td>Kill current buffer</td></tr>
+<tr><td><kbd>,X</kbd></td><td>n</td><td><kbd>Only()</kbd></td><td>Keep only current buffer (custom)</td></tr>
 <tr><td><kbd>,E</kbd></td><td>n</td><td><kbd>:tabe &lt;C-R>=expand("%:p:h") . "/"</kbd></td><td>Open file in new tab from current directory</td></tr>
 <tr><td><kbd>,e</kbd></td><td>n</td><td><kbd>:e &lt;C-R>=expand("%:p:h") . "/"</kbd></td><td>Open file from current directory</td></tr>
 <tr><td><kbd>&lt;C-Left></kbd></td><td>n</td><td><kbd>:tabprev</kbd></td><td>Previous tab</td></tr>

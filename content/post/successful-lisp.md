@@ -1,6 +1,6 @@
 ---
 title: "Successful Lisp"
-date: 2022-08-18T10:09:25+01:00
+date: 2022-08-10T10:09:25+01:00
 draft: true
 tags: ["review", "lisp"]
 categories: ["2022"]
