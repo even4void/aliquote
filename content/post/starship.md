@@ -20,15 +20,19 @@ Enters [starship], which is supposed to be a
 
 Being one of these blazing fast CLI utilities developed in Rust (think exa, fdfind, etc.), I thought I would give it a try. My idea was that since it only requires a single config file (in addition to the executable itself, which can be obtained using `curl -sS https://starship.rs/install.sh | sh`) I could reuse my setup on other machine quite easily.
 
-I was able to reproduce my handmade Zsh prompt using the following settings: (The only difference is that I kept information regarding the virtual environment and Python version in the left prompt.)
+I was able to reproduce my handmade Zsh prompt using the following settings shown below. The only difference is that I kept information regarding the virtual environment and Python version in the left prompt, and put evry transient information in the right prompt:
 
 ```
-format = """$username$directory$sudo$python$git_branch$git_status[%](bold blue) """
-right_format = """$cmd_duration$status"""
+format = '$username$directory$python$git_branch$git_status[%](bold blue) '
+right_format = '$cmd_duration$status$jobs$sudo'
 add_newline = true
 
 [directory]
 style = "bold blue"
+
+[jobs]
+symbol = '+'
+format = '[\[$symbol$number\]]($style) '
 
 [cmd_duration]
 min_time = 5_000
@@ -51,7 +55,8 @@ renamed = ""
 style = "bold purple"
 
 [sudo]
-symbol = "# "
+symbol = "#"
+format = '[$symbol]($style) '
 style = "bold red"
 disabled = false
 
@@ -66,7 +71,7 @@ symbol = ""
 disabled = false
 ```
 
-Cleaner, simpler to manage, no need to deal with Zsh `precmd` or use circomvoluted idioms to test whether we are in an SSH session or not. More to the point, once starship prompt is configured, it can be reused by any supported shell, including Fish.
+Cleaner, simpler to manage, no need to deal with Zsh `precmd` or use circomvoluted idioms to test whether we are in an SSH session or not. More to the point, once starship prompt is configured, it can be reused by any supported shell, including Fish. The only that I wasn't able to reproduce from my sh settings is that I used to use a subtle trick to show when there were multiple jobs running in the background: rather than displaying a symbol or the number of jobs in my left prompt, I just changed the color of the prompt character itself (from blue to orange when there's at least one hidden job; likewise, I used a red color to indicate that the previous command exited with no zero return code).
 
 {{% music %}}The Jesus and Mary Chain • _Darklands_{{% /music %}}
 
