@@ -71,7 +71,9 @@ symbol = ""
 disabled = false
 ```
 
-Cleaner, simpler to manage, no need to deal with Zsh `precmd` or use circomvoluted idioms to test whether we are in an SSH session or not. More to the point, once starship prompt is configured, it can be reused by any supported shell, including Fish. The only that I wasn't able to reproduce from my sh settings is that I used to use a subtle trick to show when there were multiple jobs running in the background: rather than displaying a symbol or the number of jobs in my left prompt, I just changed the color of the prompt character itself (from blue to orange when there's at least one hidden job; likewise, I used a red color to indicate that the previous command exited with no zero return code).
+Cleaner, simpler to manage, no need to deal with Zsh `precmd` or use circomvoluted idioms to test whether we are in an SSH session or not. More to the point, once starship prompt is configured, it can be reused by any supported shell, including Fish.
+
+The only thing that I wasn't able to reproduce from my sh settings is that I used to use a subtle trick to show when there were multiple jobs running in the background: rather than displaying a symbol or the number of jobs in my left prompt, I just changed the color of the prompt character itself (from blue to orange when there's at least one hidden job; likewise, I used a red color to indicate that the previous command exited with no zero return code). Bonus point: the right prompt doesn't move when you resize your terminal, that is it remains right-aligned and does not stay in the middle of nowhere after you reduced then maximized your terminal window.
 
 {{% music %}}The Jesus and Mary Chain • _Darklands_{{% /music %}}
 
