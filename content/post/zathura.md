@@ -89,15 +89,16 @@ The color scheme follows the Nord dark theme, and it is on by default. If I want
 [zathura]: /post/nyxt-browser/
 [vimtex]: https://github.com/lervag/vimtex
 
-[^1]: I wrote a helper function in Vimscript that can `xdg-open` the PDF or Postscript or DJVU file associated to a BIbTeX entry, which I can trigger using `gf` shortcut.
+[^1]:
+    I wrote a helper function in Vimscript that can `xdg-open` the PDF or Postscript or DJVU file associated to a BIbTeX entry, which I can trigger using `gf` shortcut.
 
-```
-function! text#open_bibtex_key() abort
-  let s:uri = split(split(expand('<cWORD>'), '{')[1], ',')[0]
-  if s:uri !=# ''
-    silent exec "!xdg-open ~/Documents/papers/'".s:uri."'.* &"
-  else
-    echo 'No match found.'
-  endif
-endfunction
-```
+    ```
+    function! text#open_bibtex_key() abort
+      let s:uri = split(split(expand('<cWORD>'), '{')[1], ',')[0]
+      if s:uri !=# ''
+        silent exec "!xdg-open ~/Documents/papers/'".s:uri."'.* &"
+      else
+        echo 'No match found.'
+      endif
+    endfunction
+    ```
