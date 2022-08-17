@@ -10,7 +10,7 @@ Last year I briefly mentioned [Zathura] as my default PDF viewer. Since my last 
 
 - a single plain text configuration file
 - support for EPUB format
-- a nice index accessible via <kbd><tab></kbd>
+- a nice index accessible via <kbd>tab</kbd>
 - easy bookmarks
 - synctex support for $\LaTeX$ editing in Neovim with [vimtex]
 - copy/pasting via mouse selection
@@ -23,31 +23,22 @@ Here are my personal settings in `$HOME/.config/zathura/zathurarc`:
 ```
 set default-bg                  "#2E3440"
 set default-fg                  "#D8DEE9"
-
 set statusbar-fg                "#D8DEE9"
 set statusbar-bg                "#2E3440"
-
 set index-bg                    "#2E3440"
 set index-fg                    "#D8DEE9"
-
 set index-active-bg             "#81A1C1"
 set index-active-fg             "#D8DEE9"
-
 set inputbar-bg                 "#2E3440"
 set inputbar-fg                 "#D8DEE9"
-
 set notification-warning-bg     "#EBCB8B"
 set notification-warning-fg     "#2E3440"
-
 set highlight-color             "#81A1C1"
 set highlight-active-color      "#81A1C1"
-
 set completion-highlight-fg     "#BF616A"
 set completion-highlight-bg     "#2E3440"
-
 set completion-bg               "#2E3440"
 set completion-fg               "#D8DEE9"
-
 set notification-bg             "#D8DEE9"
 set notification-fg             "#2E3440"
 
@@ -80,7 +71,7 @@ map D set "first-page-column 1:1"
 map <C-d> set "first-page-column 1:2"
 ```
 
-The color scheme follows the Nord dark theme, and it is on by default. If I want a light background as in Evince, I can `C-r` to disable recoloring. The window height and width are defined such as Zathura looks maximized on my screen. I think the remaining options speak for themselves.
+The color scheme follows the Nord dark theme, and it is on by default. If I want a light background as in Evince, I can `C-r` to disable recoloring. The window height and width are defined such that Zathura looks maximized on my screen. I think the remaining options speak for themselves.
 
 ![img](/img/2022-08-17-11-52-45.png)
 
