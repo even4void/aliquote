@@ -28,6 +28,26 @@ Basically, we need a way to shuffle (with replacement) a list of indices (the ob
 (define data (call-with-input-file fs (lambda (p) (read-lines p))))
 ```
 
+To pick a random element from a list, one can use (replace `pseudo-random-integer` with `random` if you are using Racket):
+
+```scheme
+(import (chicken random))
+(lambda (x) (list-ref x (pseudo-random-integer (length x))))
+```
+
+To repeat the same call $k$ times, we can use the following iterator:
+
+```scheme
+(define (pick x) (list-ref x (pseudo-random-integer (length x))))
+(define xs '(1 2 3 4 5 6 7 8 9 10))
+(define (times func n)
+   (if (= n 0)
+       #f
+       (begin
+          (func)
+	  (times (lambda() (func xs)) (- n 1)))))
+```
+
 {{% music %}}The Durutti Column • _Experiment in Fifth_{{% /music %}}
 
 [previous post]: /post/bootstraping-lisp/

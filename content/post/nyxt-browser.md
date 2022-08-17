@@ -8,7 +8,6 @@ categories: ["2021"]
 
 When switching to i3, as discussed in my [previous post](/post/i3wm/), I was particularly interested in getting a more comfortable keyboard-centric user experience. This led me to drop or look for alternatives to the few Gnome applications I used to use (Evince, Nautilus, Firefox). Below is a quick summary of what I've found. (And yes I know that everything is already available under Emacs with eww, pdf-tools, dired and native image support in GUI version of Emacs.)
 
-
 ### Nyxt browser
 
 I really like the design philosophy of [Nyxt](https://nyxt.atlas.engineer/), and you will certainly acknowledge, especially if you have some experience with keyboard-driven or TUI web browser, that the UI is beautiful. Moreover, it is designed with Emacs and Vim users in mind, since you can select the keybindings set you like best. I recommend reading the manual before using Nyxt for longer web sessions; it's even [available in Lisp](https://github.com/atlas-engineer/nyxt/blob/master/source/manual.lisp).
@@ -20,6 +19,41 @@ Nyxt gives me all what I need : `gg` and `G` to go to the bottom or the top of t
 {{% alert note %}}
 <small>[2021-09-13]</small><br>
 See also: [visurf, a web browser based on NetSurf](https://drewdevault.com/2021/09/11/visurf-announcement.html).
+{{% /alert %}}
+
+For my micro-blog, I can simply `yt` and `yu` to get the title and url of a web page in my primary clipboard, which makes life so much easy. It is also quite easy to bookmark a page or to add additional search engine, provided you know a bit of Lisp. Here's a minimal config file with Vim keybindings:
+
+```lisp
+(define-configuration (buffer web-buffer)
+  ((default-modes (append '(vi-normal-mode)
+                          %slot-default%))))
+
+(define-configuration prompt-buffer
+  ((default-modes (append '(vi-insert-mode)
+                          %slot-default%))))
+
+(define-configuration buffer
+    ((download-path (make-instance 'download-data-path
+                                 :dirname "~/tmp/"))))
+
+(defvar *my-search-engines*
+  (list
+   '("python3" "https://docs.python.org/3/search.html?q=~a" "https://docs.python.org/3")
+   '("doi" "https://dx.doi.org/~a" "https://dx.doi.org/")
+   '("google" "https://www.google.com/search?q=~a" "https://www.google.com/"))
+  "List of search engines.")
+
+(define-configuration buffer
+  ((search-engines (append (mapcar (lambda (engine) (apply 'make-search-engine engine))
+                                   *my-search-engines*)
+                           %slot-default%))))
+```
+
+For Firefox users, note that <kbd>Alt+Left</kbd> arrow still work in addition to `[` to navigate backward in the history of the current buffer.
+
+{{% alert note %}}
+<small>[2022-08-17]</small><br>
+I've been using Nyxt as my daily driver for quick surfing on the web and it works really great. I only use Firefix when I have to do web development or to tweak CSS settings (thanks to the developer tools). Hopefully, with a single keystroke, I can send the current Nyxt buffer to Firefox and continue from there. I noticed Nyxt has a new release, [Nyxt 3](https://nyxt.atlas.engineer/article/release-3-pre-release-1.org). I'm eagerly waiting for an official release in the next weeks.
 {{% /alert %}}
 
 ### Zathura viewer
@@ -46,5 +80,3 @@ As suggested on the [i3](https://i3wm.org/) website, [feh](https://feh.finalrewi
 ### Ranger file manager
 
 I don't use a file manager in Neovim other than the builtin Netrw. I mapped the `-` key to browse the current directory, and that's fine. However, sometimes I need more: a directory browser, with preview available on demand. That's all what we get when we install [ranger](https://ranger.github.io/). It is powerful, really. You use the arrow keys (yes, I like the arrow keys!) to navigate your directories, and you use some magic combo like `zi` or `zp` to display images or files online (image previewing doesn't work in Tmux, though). And you can `:rename` or `:move` files using the command mode.
-
-
