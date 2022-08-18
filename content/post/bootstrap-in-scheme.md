@@ -35,17 +35,17 @@ To pick a random element from a list, one can use (replace `pseudo-random-intege
 (lambda (x) (list-ref x (pseudo-random-integer (length x))))
 ```
 
-To repeat the same call $k$ times, we can use the following iterator:
+To repeat the same call $k$ times (this is exercise 1.43 in SICP), we can use the following iterator:
 
 ```scheme
+(import (chicken random))
 (define (pick x) (list-ref x (pseudo-random-integer (length x))))
 (define xs '(1 2 3 4 5 6 7 8 9 10))
-(define (times func n)
-   (if (= n 0)
-       #f
-       (begin
-          (func)
-	  (times (lambda() (func xs)) (- n 1)))))
+(define (times fn n)
+  (if (= n 1)
+      fn
+      (lambda (x)
+        (fn ((times fn (- n 1)) x)))))
 ```
 
 {{% music %}}The Durutti Column • _Experiment in Fifth_{{% /music %}}
