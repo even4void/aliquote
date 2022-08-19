@@ -6,7 +6,7 @@ tags: ["self", "readings"]
 categories: ["2022"]
 ---
 
-I just finish reading an interesting book (in French), by Bruno Patino, on web and social network-induced attention disorder: _La civilisation du poisson rouge_ (Grasset, 2019).
+I just finished reading an interesting book (in French), by Bruno Patino, on web and social network-induced attention disorder: _La civilisation du poisson rouge_ (Grasset, 2019).
 
 > Le poisson rouge tourne dans son bocal. Il semble redécouvrir le monde à chaque tour. Les ingénieurs de Google ont réussi à calculer la durée maximale de son attention : 8 secondes. Ces mêmes ingénieurs ont évalué la durée d’attention de la génération des millenials, celle qui a grandi avec les écrans connectés : 9 secondes. Nous sommes devenus des poissons rouges, enfermés dans le bocal de nos écrans, soumis au manège de nos alertes et de nos messages instantanés.<br>
 > Une étude du Journal of Social and Clinical Psychology évalue à 30 minutes le temps maximum d’exposition aux réseaux sociaux et aux écrans d’Internet au-delà duquel apparaît une menace pour la santé mentale. D’après cette étude, mon cas est désespéré, tant ma pratique quotidienne est celle d’une dépendance aux signaux qui encombrent l’écran de mon téléphone. Nous sommes tous sur le chemin de l’addiction : enfants, jeunes, adultes.<br>
