@@ -1,7 +1,7 @@
 ---
 title: "Split-apply-combine in Scheme"
-date: 2022-08-19T15:57:09+02:00
-draft: true
+date: 2022-08-20T15:57:09+02:00
+draft: false
 tags: ["scheme", "rstats"]
 categories: ["2022"]
 ---
@@ -16,7 +16,7 @@ cbn = rbind(x = apl)
 cbn
 ```
 
-Using plyr, this would simply be `ddply(data = crabs, .(sp), summarize, x = mean(BD))`. Related tools include `subset` and `transform`, and higher-order variations thereof (`Filter`, `Reduce`, and `Map`). I've seen few people using the later, but it really was not so common back in the days. Maybe [David Springate] talked about those functional recipes in one of his talks or tutorials, I don't remember quite well, although I'm sure he blogged about [functional programming in R]. [Thomas Mailund] did this too.
+Using plyr, this would simply be `ddply(data = crabs, .(sp), summarize, x = mean(BD))`. Related tools include `subset` and `transform`, and higher-order variations thereof (`Filter`, `Reduce`, and `Map`). I've seen few people using the later, but it really was not so common back in the days. Maybe [David Springate] talked about those functional recipes in one of his talks or tutorials, I don't remember quite well, although I'm sure he blogged about [functional programming in R]. [Thomas Mailund] did this too. If I were to resume the above aspects of data processing using keywords that bear some resemblance with functional PLs, I would say this all amounts to filter, apply, reduce and collect (the later is specific to Common Lisp, though).
 
 On a related point, Eli Bendersky cites Ben Vandgrift and Alex Miller (_Clojure Applied_) in one of his [Clojure-related blog post]. Look at the following piece of code:
 
@@ -33,9 +33,31 @@ Doesn't it look like what we discussed above?[^1] The point of Eli Bendersky is 
 
 > Applications that process and extract useful bits of information from large datasets all look alike in many programming languages, at least to some extent. What we really want in many cases is SQL-like primitives built into our languages, but this is often challenging (.NET's LINQ is one example of a successful approach).
 
-Of course, filtering rows or columns, or aggregating numerical quantities with or without grouping first are all builtins in DSLs for statistical computing (R, Stata, LispStat, to name a few). And there have been some attempt at producing reliable Lisp or Scheme packages for data munging. This will probably de dealt with in a future post, especially for Common Lisp and Racket.
+Of course, filtering rows or columns, or aggregating numerical quantities with or without grouping first are all builtin in DSLs for statistical computing (R, Stata, LispStat, to name a few). And there have been some attempt at producing reliable Lisp or Scheme packages for data munging. This will probably de dealt with in a future post, especially for Common Lisp and Racket.
 
-In the mean time, since I'm reading a lot of Scheme books at the moment, I found a close analogy to this approach in [chapter 8] (Higher-order functions) of _Simply Scheme_.
+In the mean time, since I'm reading a lot of Scheme books at the moment, I found a close analogy to this approach in [chapter 8] (Higher-order functions) of _Simply Scheme_, where the author explains and illustrates the behavior of three procedures:
+
+<small>
+<table border="0">
+<tbody>
+<tr>
+<td><em>Function</em></td>
+<td><em>Purpose</em></td>
+<td><em>First argument</td>
+</tr>
+<tr><td><kbd>every</kbd></td><td>transform</td><td>one-arg <em>transforming</em> function</td></tr>
+<tr><td><kbd>keep</kbd></td><td>select</td><td>one-arg <em>predicate</em> function</td></tr>
+<tr><td><kbd>accumulate</kbd></td><td>combine</td><td>two-arg <em>combining</em> function</td></tr>
+</tbody>
+</table>
+</small>
+
+In this case, `every` will usually play the role of the R `transform` function, or `Map`; `keep` acts as a filter and does the job of (part of) `subset` or `Filter`; finally, `accumulate` resembles to many of R's builtin functions (e.g., `cumsum`) and more generally acts as a reducer (`Reduce`). It is the combination of those higher-order functions that makes Scheme so powerful, as in the following examples:
+
+```scheme
+(every square (keep even? '(87 4 7 12 0 5)))
+(accumulate word (keep vowel? (every first '(and i love her))))
+```
 
 {{% music %}}Keith Jarrett & Charlie Haden • _Goodbye_{{% /music %}}
 
