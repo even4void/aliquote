@@ -6,7 +6,7 @@ tags: ["app"]
 categories: ["2022"]
 ---
 
-I'm back to Matrix, finally. Last time I interacted on the network was in 2021, from the web app, Element. Previously, I tried Riot.im on my MacBook. Now that Element is available as a Desktop app for Linux, I see no reason to use the web app and I happily spent a few time configuring Element on my Linux laptop. I had to quit the channels I joined through my IRC bouncer to avoid duplicating my identities on the IRC channels I'm usually following (#scheme, #chicken, #lisp, #commonlisp, #haskell, #clojure), and joined them again from Element after having being authentified on the IRC network (Libera.chat). The process is well described on various blogs or the Matrix documentation itself. From what I understood, a bot is spawned from the Matrix network onto the IRC network, and from there on acts as if it was you.
+I'm back to [Matrix], finally. Last time I interacted on the network was in 2021, from the web app, Element. Previously, I tried Riot.im on my MacBook. Now that Element is available as a Desktop app for Linux, I see no reason to use the web app and I happily spent a few time configuring Element on my Linux laptop. I had to quit the channels I joined through my IRC bouncer to avoid duplicating my identities on the IRC channels I'm usually following (#scheme, #chicken, #lisp, #commonlisp, #haskell, #clojure), and joined them again from Element after having being authentified on the IRC network (Libera.chat). The process is well described on various blogs or the Matrix documentation itself. From what I understood, a bot is spawned from the Matrix network onto the IRC network, and from there on acts as if it was you.
 
 It's been two years now that I'm logged on IRC every day. Although I have few interactions with others, I like it a lot better than all other chat applications I used before, except maybe chat rooms on Cross Validated from those days where I was still active there. I also deleted my Twitter account a few weeks ago. I haven't had any interaction in years, and I think it simply wasn't for me anymore. The only things left in the cloud are my Apple account and my Gmail which I only use as a catchup email service for some external providers now. Everything else has been deleted. There're some online account that I probably forgot but they will be too, soon or later.
 
@@ -52,5 +52,6 @@ Compared to the previous version of Element, there's now a "[lab features]" of s
 
 {{% music %}}BADBADNOTGOOD • _Signal from the Noise_{{% /music %}}
 
+[matrix]: /post/matrix-riot/
 [lab features]: https://github.com/vector-im/element-web/blob/develop/docs/labs.md
 [github]: https://github.com/aaronraimist/element-themes/
