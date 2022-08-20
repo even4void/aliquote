@@ -2,7 +2,7 @@
 title: "Kopia backup"
 date: 2022-06-05T20:36:43+02:00
 draft: false
-tags: ["unix", "app"]
+tags: ["app"]
 categories: ["2022"]
 ---
 
