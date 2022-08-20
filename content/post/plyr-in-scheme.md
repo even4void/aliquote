@@ -1,6 +1,6 @@
 ---
 title: "Split-apply-combine in Scheme"
-date: 2022-08-20T15:57:09+02:00
+date: 2022-08-18T15:57:09+02:00
 draft: false
 tags: ["scheme", "rstats"]
 categories: ["2022"]

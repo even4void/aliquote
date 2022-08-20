@@ -1,7 +1,7 @@
 ---
 title: "Nyxt V3"
-date: 2022-08-19T12:38:06+02:00
-draft: true
+date: 2022-08-20T12:38:06+02:00
+draft: false
 tags: ["app"]
 categories: ["2022"]
 ---
@@ -15,9 +15,10 @@ Last time, I only scratched the surface of this wonderful app. Let's go into the
 - it's quite fast, and largely less bloated than most other web browsers
 - keyboard shortcuts are useful and well thought (both for Vi and Emacs users)
 - you can easily jump to headings or opened buffers using dedicated panels, with fuzzy search
--
+- if you're a Lisp user, you also get an REPL for free (I didn't try it, though)
+- fuzzy search is available for almost everything (switching buffer, history, commands)
 
-Vim users will get the comfort of modal mappings for free, and the normal mode can be defined for all but text input (e.g., input box in web document, status prompt in Nyxt). The Nyxt team even defined some `g` mappings, like in Vim. As I said in the other post, I can simply `yt` and `yu` to get the title and url of a web page in my primary clipboard. It doesn't look like much but it saves so much copy/paste back and forth between my text editor and the browser. The shorcut `yy` is used to copy (yank in Vim parlance) text, but you can safely add a `C-c` shortcut in addition.
+Vim users will get the comfort of modal mappings for free, and the normal mode can be defined for all but text input (e.g., input box in web document, status prompt in Nyxt). The Nyxt team even defined some `g` mappings, like in Vim. As I said in the other post, I can simply `yt` and `yu` to get the title and URL of a web page in my primary clipboard. It doesn't look like much but it saves so much copy/paste back and forth between my text editor and the browser. The shortcut `yy` is used to copy (yank in Vim parlance) text, but you can safely add a `C-c` shortcut in addition.
 
 {{< fluid_imgs
   "pure-u-1-2|/img/2022-08-19-20-54-47.png"
@@ -63,7 +64,7 @@ Here is a list of shortcuts I use in my daily browsing activities using Nyxt:
 </table>
 </small>
 
-In addition to the above mappings where custom mappings are highlited using an asterisk, I also use a custom shortcut to open the current buffer in Firefox:
+In addition to the above mappings where custom mappings are highlighted using an asterisk, I also use a custom shortcut (<kbd>C-o</kbd>) to open the current buffer in Firefox:
 
 ```lisp
 (define-command-global open-external-browser ()
@@ -71,7 +72,7 @@ In addition to the above mappings where custom mappings are highlited using an a
   (uiop:run-program (list "firefox" (render-url (url (current-buffer))))))
 ```
 
-Nyxt 3 introduced some changes in how we defined our configuration files (`config.lisp` versus `init.lisp`) and how we address some components. You can start with [Artyom Bologov]'s config to get an idea of how it feels to customize Nyxt a bit.
+As I said, Nyxt is great for basic navigation but when it comes to inspecting HTML or CSS elements I'm more comfortable using Firefox developer tools. Time will tell if I can manage to do even basic web dev tasks in Nyxt. Also, Nyxt 3 introduced some changes in how we defined our configuration files (`config.lisp` versus `init.lisp`) and how we address some components. Basic stuff I showed in my earlier post no longer works, unfortunately. You can start with [Artyom Bologov]'s config to get an idea of how it feels to customize Nyxt a bit. I used some of his macros to define my own shortcuts, for example.
 
 {{% music %}}Kendra Morris • _This Life_{{% /music %}}
 
