@@ -16,7 +16,7 @@ cbn = rbind(x = apl)
 cbn
 ```
 
-Using plyr, this would simply be `ddply(data = crabs, .(sp), summarize, x = mean(BD))`. Related tools include `subset` and `transform`, and higher-order variations thereof (`Filter`, `Reduce`, and `Map`). I've seen few people using the later, but it really was not so common back in the days. Maybe [David Springate] talked about those functional recipes in one of his talks or tutorials, I don't remember quite well, although I'm sure he blogged about [functional programming in R]. [Thomas Mailund] did this too. If I were to resume the above aspects of data processing using keywords that bear some resemblance with functional PLs, I would say this all amounts to filter, apply, reduce and collect (the later is specific to Common Lisp, though).
+Using plyr, this would simply be `ddply(data = crabs, .(sp), summarize, x = mean(BD))`. Related tools include `subset` and `transform`, and higher-order variations thereof (`Filter`, `Reduce`, and `Map`). I've seen few people using the later, but it really was not so common back in the days. Maybe [David Springate] talked about those functional recipes in one of his talks or tutorials, I don't remember quite well, although I'm sure he blogged about [functional programming in R]. [Thomas Mailund] did this too. If I were to resume the above aspects of data processing using keywords that bear some resemblance with functional PLs, I would say this all amounts to filter, apply (or map), reduce and collect (the later is specific to Common Lisp, though).
 
 On a related point, Eli Bendersky cites Ben Vandgrift and Alex Miller (_Clojure Applied_) in one of his [Clojure-related blog post]. Look at the following piece of code:
 
