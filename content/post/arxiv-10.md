@@ -8,8 +8,6 @@ categories: ["2022"]
 
 Here are a few papers that I read over the past weeks, in the CS and Stat category as usual.
 
-### https://arxiv.org/abs/2204.12733
-
 ### https://arxiv.org/abs/2204.14121
 
 ### https://arxiv.org/abs/2204.14156
