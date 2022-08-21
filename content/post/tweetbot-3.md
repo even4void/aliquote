@@ -2,7 +2,7 @@
 title: "Tweetbot 3"
 date: 2018-06-10T08:23:38+02:00
 draft: false
-tags: ["app", "review", "twitter"]
+tags: ["app", "apple", "twitter"]
 categories: ["2018"]
 ---
 

@@ -2,7 +2,7 @@
 title: "Moom App"
 date: 2019-12-26T18:53:06+01:00
 draft: false
-tags: ["review", "app", "apple"]
+tags: ["app", "apple"]
 categories: ["2019"]
 ---
 

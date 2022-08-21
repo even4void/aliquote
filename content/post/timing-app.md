@@ -2,7 +2,7 @@
 title: "Timing App"
 date: 2018-10-08T07:49:13+02:00
 draft: false
-tags: ["apple", "app", "review"]
+tags: ["apple", "app"]
 categories: ["2018"]
 ---
 
