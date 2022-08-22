@@ -6,7 +6,9 @@ tags: ["unix"]
 categories: ["2022"]
 ---
 
-I've been faithfully using cron jobs on Linux for twenty years now. It's quite simple to schedule basic tasks using `crontab -e`: simply write your shell script or call the application you want to run at a desired time, and then forget about it. Currently, I only have two crontab entries running: one for checking my mail (`mbsync`), and the other for [Kopia] hourly backup. Most Linux distros now favor the use of systemd schedulers, also called "timers", instead of cron, and so I decided to move all my running jobs to systemd. One of the advantages of using systemd is that you can move your systemd files between your machine or over ssh. The other advantage, of course, is that you can manage your running jobs using `systemctl`, which means you can stop or pause tasks at any time, or reschedule a timer easily.
+I've been faithfully using cron jobs on Linux for twenty years now. It's quite simple to schedule basic tasks using `crontab -e`: simply write your shell script or call the application you want to run at a desired time, and then forget about it. Currently, I only have two crontab entries running: one for checking my mail (`mbsync`), and the other for [Kopia] hourly backup. Most Linux distros now favor the use of systemd schedulers, also called "timers", instead of cron, and so I decided to move all my running jobs to systemd.
+
+One of the advantages of using systemd is that you can move your systemd files between your machine or over ssh. The other advantage, of course, is that you can manage your running jobs using `systemctl`, which means you can stop or pause tasks at any time, or reschedule a timer easily. Finally, you can check when your task were run for the last time, and when they will be run next.[^1]
 
 As an example, consider the following cron task, which runs Kopia backup every hour on my machine:
 
@@ -74,15 +76,25 @@ Once you have these two files, you just need to reload the systemd configuration
 
 ```shell
 % systemctl --user daemon-reload
+% systemctl --user start kopia-backup
 % systemctl --user enable kopia-backup.timer
 ```
 
-If you just want to test the timer, replace the last command with `systemctl --user start kopia-backup`. To check that the timer is indeed enabled or active, just issue:
+To check that the timer is indeed enabled or active, just issue:
 
 ```shell
 % systemctl --user list-timers --all
+NEXT                         LEFT       LAST                         PASSED  UNIT               ACTIVATES
+Mon 2022-08-22 19:15:00 CEST 14min left Mon 2022-08-22 19:00:08 CEST 21s ago mail-sync.timer    mail-sync.service
+Mon 2022-08-22 20:00:00 CEST 59min left Mon 2022-08-22 19:00:08 CEST 21s ago kopia-backup.timer kopia-backup.service
+
+2 timers listed.
 ```
+
+I implented my two cron jobs (fetch mail every 15' and backup my `$HOME` folder every hour) using systemd timer, and it works like a charm.
 
 {{% music %}}Jan Lundgreen Trio • _Rosemary's Baby_{{% /music %}}
 
 [kopia]: /post/kopia/
+
+[^1]: One of the advantage of cron job is that the same job can be run again, in parallel, even if the previous instance hasn't finished yet. This happens if you have long-running jobs that are launched at evry short interval. This at least is what I seem to remember from my early Linux days, and I didn't check what the state of the rt is for this kind of situation.

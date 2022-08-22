@@ -53,6 +53,11 @@ And now I get the full CLHS documentation for free when working in neovim!
 
 ![clhs](/img/2022-05-17-22-41-44.png)
 
+{{% alert note %}}
+<small>[2022-08-22]</small><br>
+An even better soluton is to use [dasht](https://github.com/sunaku/dasht) and the [dasht.vim](https://github.com/sunaku/vim-dasht) plugin. The later detects filetype automagically and provides help for the relevant docset, although it is still possible to search the whole collection of docsets. It works great for Common Lisp and Racket, but I'm still looking for R5, R6 and R7RS docsets for Scheme. Note that for CSS? HTML and Javascript, the documentation is taken from Mozilla MDN and it's a bit crapy since the whole page header is returned together with the result. Also, if you prefer to use Fzf from the command line, the following shortcut may come handy: <code>dasht-query-line $@ | perl -0777 -pe 's/name = (._?)\ntype = (._?)\nfrom = (._?)\nurl = (._?)\n/ $4 | $1 | $3 | $3\n\n/g' | column -ts'|' | fzf --no-sort --with-nth=2.. --bind 'enter:execute(w3m {1})+accept'</code>. (Don't remember where I found this snippet, sorry!)
+{{% /alert %}}
+
 {{% music %}}Echo & The Bunnymen • _All That Jazz_{{% /music %}}
 
 [roswell]: https://github.com/roswell/roswell
