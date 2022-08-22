@@ -61,7 +61,6 @@ set window-height               3000
 set window-width                3000
 
 set save_position               "true"
-set zoom_level                  "false"
 set synctex-editor-command      "nvim"
 
 set font                        "Ubuntu Mono 13"
