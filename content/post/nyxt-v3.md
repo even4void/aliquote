@@ -35,7 +35,7 @@ Here is a list of shortcuts I use in my daily browsing activities using Nyxt:
 <td><em>Command</td>
 <td><em>Role</em></td>
 </tr>
-<tr><td><kbd>C-=</kbd>*</td><td><kbd>buffer-listing-mode</kbd></td><td><kbd>buffers-panel</kbd></td><td>list all buffers in a separate buffer</td></tr>
+<tr><td><kbd>C-w</kbd>*</td><td><kbd>buffer-listing-mode</kbd></td><td><kbd>buffers-panel</kbd></td><td>list all buffers in a separate buffer</td></tr>
 <tr><td><kbd>C-h</kbd>*</td><td><kbd>history-mode</kbd></td><td><kbd>list-history</kbd></td><td>list history in a separate buffer</td></tr>
 <tr><td><kbd>H</kbd></td><td><kbd>history-mode</kbd></td><td><kbd>history-backwards</kbd></td><td>go backward in history</td></tr>
 <tr><td><kbd>L</kbd></td><td><kbd>history-mode</kbd></td><td><kbd>history-forwards</kbd></td><td>go forward in history</td></tr>

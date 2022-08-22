@@ -23,9 +23,13 @@ Being one of these blazing fast CLI utilities developed in Rust (think exa, fdfi
 I was able to reproduce my handmade Zsh prompt using the following settings shown below. The only difference is that I kept information regarding the virtual environment and Python version in the left prompt, and put evry transient information in the right prompt:
 
 ```
-format = '$username$directory$python$git_branch$git_status[%](bold blue) '
-right_format = '$cmd_duration$status$jobs$sudo'
+format = '$username$directory$python$haskell$git_branch$git_status$character'
+right_format = '$cmd_duration$jobs$sudo'
 add_newline = true
+
+[character]
+success_symbol = "[%](bold blue)"
+error_symbol = "[%](bold red)"
 
 [directory]
 style = "bold blue"
@@ -37,9 +41,11 @@ format = '[\[$symbol$number\]]($style) '
 [cmd_duration]
 min_time = 5_000
 format = "[$duration]($style) "
+style = "bright-black"
 
 [git_branch]
 format = "[$branch(:$remote_branch)]($style)"
+style = "bold purple"
 
 [git_status]
 format = "([$all_status$ahead_behind]($style)) "
@@ -60,15 +66,17 @@ format = '[$symbol]($style) '
 style = "bold red"
 disabled = false
 
-[python]
+[haskell]
 symbol = ""
-format = '[${symbol}${pyenv_prefix}(${version} )(\($virtualenv\) )]($style)'
+format = '[\[hs v$symbol($version)\]]($style) '
+style = "bold yellow"
+detect_extensions = ["cabal", "hs-boot"]
+
+[python]
+format = '[\[py ${pyenv_prefix}(${version})(\($virtualenv\))\]]($style) '
 version_format = "v${major}(.${minor})"
 detect_extensions = []
-
-[status]
-symbol = ""
-disabled = false
+style = "bold yellow"
 ```
 
 Cleaner, simpler to manage, no need to deal with Zsh `precmd` or use circomvoluted idioms to test whether we are in an SSH session or not. More to the point, once starship prompt is configured, it can be reused by any supported shell, including Fish.
