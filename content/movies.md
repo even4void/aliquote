@@ -6,7 +6,7 @@ url: "/articles/movies/"
 
 Here is a list of TV shows I watched over the past few years, along with personal ratings.
 
-I haven't watched TV in about ten years, probably even before I removed the TV from my room. I didn't really like series until I avidly watched 24 every week for many weeks. Since then I occasionally watch TV series, alone or with my son, on Apple Tv or Netflix. I prefer to wait for whole seasons to be available, and watch them at a safe pace (one or two episodes a day). Anyway, it all looks like a lot of screen time today.
+I haven't watched TV in about ten years, probably even before I removed the TV from my room. I didn't really enjoy series until I avidly watched 24 every week for many weeks. Since then I occasionally watch TV series, alone or with my son, on Apple Tv or Netflix. I prefer to wait for whole seasons to be available, and watch them at a safe pace (one or two episodes a day). Anyway, it all looks like a lot of screen time today.
 
 <small>
 <table border="0">
