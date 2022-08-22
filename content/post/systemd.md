@@ -6,7 +6,7 @@ tags: ["unix"]
 categories: ["2022"]
 ---
 
-I've been faithfully using cron jobs on Linux for twenty years now. It's quite simple to schedule basic tasks using `crontab -e`: simply write your shell script or call the application you want to run at a desired time, and then forget about it. Currently, I only have two crontab entries running: one for checking my mail (`mbsync`), and the other for [Kopia] hourly backup. Recent versions of Ubuntu now favor the use of systemd scheduler instead of cron, and so I decided to move all my running jobs to systemd. One of the advantages of using systemd is that you can move your systemd files between your machine or over ssh. The other advantage, of course, is that you can manage your running jobs using `systemctl`, which means you can stop or pause tasks at any time, or reschedule a timer easily.
+I've been faithfully using cron jobs on Linux for twenty years now. It's quite simple to schedule basic tasks using `crontab -e`: simply write your shell script or call the application you want to run at a desired time, and then forget about it. Currently, I only have two crontab entries running: one for checking my mail (`mbsync`), and the other for [Kopia] hourly backup. Most Linux distros now favor the use of systemd schedulers, also called "timers", instead of cron, and so I decided to move all my running jobs to systemd. One of the advantages of using systemd is that you can move your systemd files between your machine or over ssh. The other advantage, of course, is that you can manage your running jobs using `systemctl`, which means you can stop or pause tasks at any time, or reschedule a timer easily.
 
 As an example, consider the following cron task, which runs Kopia backup every hour on my machine:
 
@@ -55,8 +55,8 @@ Here is a brief summary of most common settings for the scheduler:
 <td><em>Timer</em></td>
 <td><em>Description</em></td>
 </tr>
-<tr><td><kbd>*-*-* *:*:00</kbd>*</td><td>every minute</td></tr>
-<tr><td><kbd>*-*-* *:*/30:00</kbd>*</td><td>every 30 minute</td></tr>
+<tr><td><kbd>*:*:00</kbd>*</td><td>every minute</td></tr>
+<tr><td><kbd>*:/30:00</kbd>*</td><td>every 30 minute</td></tr>
 <tr><td><kbd>*-*-* *:00:00</kbd>*</td><td>every hour</td></tr>
 <tr><td><kbd>*-*-* */3:00:00</kbd>*</td><td>every three hour</td></tr>
 <tr><td><kbd>*-*-* 00:00:00</kbd>*</td><td>every day</td></tr>
