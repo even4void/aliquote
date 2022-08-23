@@ -3,6 +3,8 @@ HOST=ssh.cluster002.ovh.net
 HOST_DIR=www/
 LOCAL_DIR=/home/chl/Sites/aliquote/public
 
+.PHONY: build commit deploy
+
 clean:
 	rm -rf $LOCAL_DIR
 
