@@ -8,10 +8,10 @@ Here are the current Neovim mappings I came to feel comfortable with over time. 
 
 Note that I only have 15 plugins in my `start` and `opt` directories, in addition to part of [mini.nvim](https://github.com/echasnovski/mini.nvim) that I adapted to suit my needs better: (This may change in the future but usually I tend to remove plugins rather than add new ones.)
 
-- [opt] `iron.nvim`, `neogen`, `neogit`, `nvim-parinfer`, `vim-test`, `vimtex`;
+- [opt] `neogen`, `neogit`, `nvim-parinfer`, `vim-test`, `vimtex`;
 - [start] `Comment.nvim`, `null-ls.nvim`, `nvim-lspconfig`, `nvim-treesitter`, ̀`packer.nvim`, `plenary.nvim`, `telescope-bibtex.nvim`, `telescope-fzf-native.nvim`, `telescope.nvim`
 
-I could easily get rid of telescope-bibtex, Comment, packer, vim-test, iron, and neogen.
+I could easily get rid of telescope-bibtex, Comment, packer, vim-test, and neogen.
 
 I prefer a minimalist setup these days, and I tend to rely on hand-on solutions for tasks I carry over and over. Many of those custom settings come from briliant Vimers who are acknowledged in my config files. Note that some of those mappings may override existing ones, whether they are somewhat redundant (e.g. <kbd>s</kbd> and <kbd>c</kbd>) or because I don't use them at all (e.g., some of the <kbd>Ctrl</kbd>, <kbd>g</kbd> or <kbd>z</kbd> combinations).
 
@@ -34,6 +34,7 @@ My leader is ","[^1] and I do not define specific mappings for the localleader i
 <tr><td><kbd>,l</kbd></td><td>n</td><td><kbd>&lt;C-^></kbd></td><td>Alternate buffer</td></tr>
 <tr><td><kbd>,o</kbd></td><td>n</td><td><kbd>&lt;C-w>&lt;C-w></kbd></td><td>Other widow</td></tr>
 <tr><td><kbd>,!</kbd></td><td>n</td><td><kbd>:10sp +te</kbd></td><td>Popup terminal</td></tr>
+<tr><td><kbd>,§</kbd></td><td>n</td><td><kbd>:15Lex</kbd></td><td>Popup tree sidebar</td></tr>
 <tr><td><kbd>,.</kbd></td><td>n</td><td><kbd>:lcd %:p:h</kbd></td><td>Set local current directory</td></tr>
 <tr><td><kbd>,x</kbd></td><td>n</td><td><kbd>:bp &lt;Bar> bd! #</kbd></td><td>Kill current buffer</td></tr>
 <tr><td><kbd>,X</kbd></td><td>n</td><td><kbd>Only()</kbd></td><td>Keep only current buffer (custom)</td></tr>
@@ -91,12 +92,11 @@ My leader is ","[^1] and I do not define specific mappings for the localleader i
 <tr><td><kbd>,r</kbd></td><td>n</td><td><kbd>:Telescope oldfiles</kbd></td><td>Telescope old files</td></tr>
 <tr><td><kbd>,w</kbd></td><td>n</td><td><kbd>:Telescope diagnostics</kbd></td><td>LSP diagnostics</td></tr>
 <tr><td><kbd>,@</kbd></td><td>n</td><td><kbd>:Telescope bibtex</kbd></td><td>Telescope bibtex</td></tr>
-<tr><td><kbd>s.</kbd></td><td>n</td><td><kbd>&lt;Plug>(iron-repeat-cmd)</kbd></td><td>Iron repeat action</td></tr>
-<tr><td><kbd>ss</kbd></td><td>n</td><td><kbd>&lt;Plug>(iron-send-line)</kbd></td><td>Iron send current line</td></tr>
-<tr><td><kbd>s</kbd></td><td>n</td><td><kbd>&lt;Plug>(iron-send-motion)</kbd></td><td>Iron send selection</td></tr>
-<tr><td><kbd>s</kbd></td><td>v</td><td><kbd>&lt;Plug>(iron-visual-send)</kbd></td><td>Iron send selection</td></tr>
 <tr><td><kbd>,T</kbd></td><td>n</td><td><kbd>:TestFile</kbd></td><td>Test file (vimtest)</td></tr>
 <tr><td><kbd>,t</kbd></td><td>n</td><td><kbd>:TestNearest</kbd></td><td>Test nearest (vimtest)</td></tr>
+<tr><td><kbd>s</kbd></td><td>v,x</td><td><kbd>y&lt;C-w>wpa&lt;CR>&lt;CR>&lt;Esc></kbd></td><td>Send selection to nearest terminal</td></tr>
+<tr><td><kbd>ss</kbd></td><td>n</td><td><kbd>Vy&lt;C-w>wpa&lt;CR>&lt;CR>&lt;Esc></kbd></td><td>Send line to nearest terminal</td></tr>
+<tr><td><kbd>gK</kbd></td><td>n</td><td><kbd>:Dasht</kbd></td><td>Query documentation from Dash</td></tr>
 <tr><td><kbd>,wq</kbd></td><td>n</td><td><kbd>vim.diagnostic.setqflist</kbd></td><td>Show diagnostics in quickfix (LSP)</td></tr>
 <tr><td><kbd>[w</kbd></td><td>n</td><td><kbd>vim.diagnostic.goto_prev</kbd></td><td>Go to previous diagnostic (LSP)</td></tr>
 <tr><td><kbd>]w</kbd></td><td>n</td><td><kbd>vim.diagnostic.goto_next</kbd></td><td>Go to next diagnostic (LSP)</td></tr>
