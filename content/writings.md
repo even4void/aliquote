@@ -52,6 +52,7 @@ Below is a list of what has been archived over the years on this site or on exte
 <tr><td><a href="/cours/misc/stats101.pdf">Introduction aux statistiques médicales</a></td><td>Oct 2014</td><td>fr</td><td><i data-feather="file-text" width="12px" height="12px"></i></td></tr>
 <tr><td><a href="/cours/misc/reliability.pdf">Concordance et fidélité de mesure</a></td><td>Sep 2014</td><td>fr</td><td><i data-feather="file-text" width="12px" height="12px"></i></td></tr>
 <tr><td><a href="/cours/misc/mooc/">Introduction au langage R</a></td><td>Apr 2014</td><td>fr</td><td><i data-feather="link" width="12px" height="12px"></i></td></tr>
+<tr><td><a href="/pub/quickies.html">Quickies (random notes)</a></td><td>---&nbsp;&nbsp; 2014</td><td>en</td><td><i data-feather="link" width="12px" height="12px"></i></td></tr>
 <tr><td><a href="/pub/MDAE.pdf">R Companion to Montgomery's Design and Analysis of Experiments<sup>x</sup></a></td><td>Dec 2012</td><td>en</td><td><i data-feather="file-text" width="12px" height="12px"></i></td></tr>
 <tr><td><a href="/cours/2013_AS/">Atelier Statistique du Cogmaster</a></td><td>Oct 2012</td><td>fr</td><td><i data-feather="link" width="12px" height="12px"></i></td></tr>
 <tr><td><a href="/cours/misc/gee/">Analyzing correlated data<sup>x</sup><a></td><td>Apr 2012</td><td>en</td><td><i data-feather="link" width="12px" height="12px"></i></td></tr>
