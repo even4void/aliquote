@@ -68,8 +68,8 @@ My leader is ","[^1] and I do not define specific mappings for the localleader i
 <tr><td><kbd>zs</kbd></td><td>n</td><td><kbd>1z=</kbd></td><td>Fix spelling using first suggestion</td></tr>
 <tr><td><kbd>^</kbd></td><td>n</td><td><kbd>:set hls!&lt;Bar>set hls?</kbd></td><td>Toggle on/off search highlights</td></tr>
 <tr><td><kbd>&lt;Backspace></kbd></td><td>n</td><td><kbd>:nohl</kbd></td><td>Clear search highlights</td></tr>
-<tr><td><kbd>,df</kbd></td><td>n</td><td><kbd>:set spell&lt;Cr>:set spelllang=fr</kbd></td><td>Toggle spelling (French)</td></tr>
-<tr><td><kbd>,de</kbd></td><td>n</td><td><kbd>:set spell&lt;Cr>:set spelllang=en</kbd></td><td>Toggle spelling (English)</td></tr>
+<tr><td><kbd>,df</kbd></td><td>n</td><td><kbd>:setlocal spell!&lt;bar>setlocal spell?&lt;cr>:setlocal spelllang=fr&lt;cr></kbd></td><td>Toggle spelling on/off (French)</td></tr>
+<tr><td><kbd>,de</kbd></td><td>n</td><td><kbd>:setlocal spell!&lt;bar>setlocal spell?&lt;cr>:setlocal spelllang=en&lt;cr></kbd></td><td>Toggle spelling on/off (English)</td></tr>
 <tr><td><kbd>&lt;C-s></kbd></td><td>n</td><td><kbd>:let @s='\&lt;'.expand('&lt;cword>').'\>'&lt;Cr>:%s/&lt;C-r>s//&lt;Left></kbd></td><td>Substitute current word</td></tr>
 <tr><td><kbd>&lt;C-s></kbd></td><td>x</td><td><kbd>sy:%s/&lt;C-r>s//&lt;Left></kbd></td><td>Substitute current word</td></tr>
 <tr><td><kbd>,p</kbd></td><td>n</td><td><kbd>:set invpaste&lt;Cr>:set paste?&lt;Cr></kbd></td><td>Toggle on/off paste mode</td></tr>
