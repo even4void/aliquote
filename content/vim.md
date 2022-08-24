@@ -32,7 +32,6 @@ My leader is ","[^1] and I do not define specific mappings for the localleader i
 <tr><td><kbd>&lt;C-e></kbd></td><td>c</td><td><kbd>:&lt;End></kbd></td><td>Go to end of line</td></tr>
 <tr><td><kbd>-</kbd></td><td>n</td><td><kbd>:Ex</kbd></td><td>Show explorer</td></tr>
 <tr><td><kbd>,l</kbd></td><td>n</td><td><kbd>&lt;C-^></kbd></td><td>Alternate buffer</td></tr>
-<tr><td><kbd>,o</kbd></td><td>n</td><td><kbd>&lt;C-w>&lt;C-w></kbd></td><td>Other widow</td></tr>
 <tr><td><kbd>,!</kbd></td><td>n</td><td><kbd>:10sp +te</kbd></td><td>Popup terminal</td></tr>
 <tr><td><kbd>,§</kbd></td><td>n</td><td><kbd>:15Lex</kbd></td><td>Popup tree sidebar</td></tr>
 <tr><td><kbd>,.</kbd></td><td>n</td><td><kbd>:lcd %:p:h</kbd></td><td>Set local current directory</td></tr>
