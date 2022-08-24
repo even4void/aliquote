@@ -6,12 +6,12 @@ url: "/articles/vim/"
 
 Here are the current Neovim mappings I came to feel comfortable with over time. This is by no means a reference card, and yes I do use the arrow keys for navigating into my buffers. It depends on motion range, though. Another key idea is that I use Tmux everyday and I like to have an unified set of mappings, beside the leader/prefix key.
 
-Note that I only have 15 plugins in my `start` and `opt` directories, in addition to part of [mini.nvim](https://github.com/echasnovski/mini.nvim) that I adapted to suit my needs better: (This may change in the future but usually I tend to remove plugins rather than add new ones.)
+Note that I only have 13 plugins in my `start` and `opt` directories, in addition to part of [mini.nvim](https://github.com/echasnovski/mini.nvim) that I adapted to suit my needs better: (This may change in the future but usually I tend to remove plugins rather than add new ones.)
 
 - [opt] `neogen`, `neogit`, `nvim-parinfer`, `vim-test`, `vimtex`;
-- [start] `Comment.nvim`, `null-ls.nvim`, `nvim-lspconfig`, `nvim-treesitter`, ̀`packer.nvim`, `plenary.nvim`, `telescope-bibtex.nvim`, `telescope-fzf-native.nvim`, `telescope.nvim`
+- [start] `Comment.nvim`, `null-ls.nvim`, `nvim-lspconfig`, `nvim-treesitter`, `packer.nvim`, `plenary.nvim`, `telescope-fzf-native.nvim`, `telescope.nvim`
 
-I could easily get rid of telescope-bibtex, Comment, packer, vim-test, and neogen.
+I could easily get rid of Comment, packer, vim-test, and neogen.
 
 I prefer a minimalist setup these days, and I tend to rely on hand-on solutions for tasks I carry over and over. Many of those custom settings come from briliant Vimers who are acknowledged in my config files. Note that some of those mappings may override existing ones, whether they are somewhat redundant (e.g. <kbd>s</kbd> and <kbd>c</kbd>) or because I don't use them at all (e.g., some of the <kbd>Ctrl</kbd>, <kbd>g</kbd> or <kbd>z</kbd> combinations).
 
@@ -90,7 +90,6 @@ My leader is ","[^1] and I do not define specific mappings for the localleader i
 <tr><td><kbd>,q</kbd></td><td>n</td><td><kbd>:Telescope quickfix</kbd></td><td>Telescope quickfix</td></tr>
 <tr><td><kbd>,r</kbd></td><td>n</td><td><kbd>:Telescope oldfiles</kbd></td><td>Telescope old files</td></tr>
 <tr><td><kbd>,w</kbd></td><td>n</td><td><kbd>:Telescope diagnostics</kbd></td><td>LSP diagnostics</td></tr>
-<tr><td><kbd>,@</kbd></td><td>n</td><td><kbd>:Telescope bibtex</kbd></td><td>Telescope bibtex</td></tr>
 <tr><td><kbd>,T</kbd></td><td>n</td><td><kbd>:TestFile</kbd></td><td>Test file (vimtest)</td></tr>
 <tr><td><kbd>,t</kbd></td><td>n</td><td><kbd>:TestNearest</kbd></td><td>Test nearest (vimtest)</td></tr>
 <tr><td><kbd>s</kbd></td><td>v,x</td><td><kbd>y&lt;C-w>wpa&lt;CR>&lt;CR>&lt;Esc></kbd></td><td>Send selection to nearest terminal</td></tr>

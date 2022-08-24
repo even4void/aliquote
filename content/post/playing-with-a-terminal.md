@@ -49,6 +49,21 @@ alias bibfind="bibtex-ls ~/org/references.bib \
 
 I wished I could simplify the last two instructions, but that's fine.
 
+{{% alert note %}}
+<small>[2022-08-24]</small><br>
+I still use the Vim function discussed below to open PDF from my Bibtex file, but since I no longer use [fzf](https://github.com/junegunn/fzf.vim), the previous mappings no longer apply. I used to use [telescope-bibtex.nvim](https://github.com/nvim-telescope/telescope-bibtex.nvim) as a replacement, but eventually I got back to shell scripting and rewrote my aliases as proper Bash scripts. I added a <code>bibcite</code> command which reads:
+
+<pre><code>
+bibtex-ls ~/Documents/notes/references.bib |
+	fzf --multi --ansi |
+	rg -o --color never '[a-z0-9\-]+$' |
+	xargs -I % sh -c 'printf %' |
+	xclip -sel clip
+</code></pre>
+
+Basically it fires a Fzf prompt and copy the selected entry to the primary clipboard. I can then insert the Bibtex key right into a Neovim buffer.
+{{% /alert %}}
+
 Now, what if I could also open the PDF file associated to a Bibtex entry directly while I'm browsing the Bibtex file itself? So, here's the very first Vim function that I wrote from scratch:
 
 ```vim
