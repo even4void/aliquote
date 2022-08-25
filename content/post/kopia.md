@@ -52,6 +52,11 @@ chl@aliquote:/home/chl
 
 It all looks very promising. I'm waiting to see what happens next, especially in case of accidental deletions or corruptions.
 
+{{% alert note %}}
+<small>[2022-08-25]</small><br>
+Small update: I effectiveley had to use Kopia to restore some files that were accidently deleted, and to compared two directories at different points in time. The latter is made really easy thanks to the <code>diff</code> utility inside Kopia. Also, after two months of daily backup, I came to the conclusion that compression (zstd or pgzip) is not that good as it consumes a lot of RAM and keep RAM cache increasing when your backup are schduled on an hourly basis. Finally, to keep your backup repository at a reasonable size don't forget to set up appropriate exclusion rules using <code>kopia set policy</code>.
+{{% /alert %}}
+
 {{% music %}}Washed Out • _Amor Fati_{{% /music %}}
 
 [^1]: Backups to a local SSD are expected to be faster than backups whose destination is an external HD, though.

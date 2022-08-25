@@ -20,6 +20,7 @@ Below is a list of what has been archived over the years on this site or on exte
 <td><em>Lang</em></td>
 <td><em>Type</em></td>
 </tr>
+<tr><td><a href="/articles/tmux/">Tmux shortcuts</a></td><td>Aug 2022</td><td>en</td><td><i data-feather="link" width="12px" height="12px"></i></td></tr>
 <tr><td><a href="/articles/vim/">Vim shortcuts</a></td><td>Aug 2022</td><td>en</td><td><i data-feather="link" width="12px" height="12px"></i></td></tr>
 <tr><td><a href="/pub/scheme.pdf">Le langage Scheme</a></td><td>Aug 2022</td><td>fr</td><td><i data-feather="file-text" width="12px" height="12px"></i></td></tr>
 <tr><td><a href="/articles/movies/">Informal ratings of some TV shows</a></td><td>Jul 2022</td><td>en</td><td><i data-feather="link" width="12px" height="12px"></i></td></tr>

@@ -4,14 +4,12 @@ date: 2022-08-15T00:00:00
 url: "/articles/vim/"
 ---
 
-Here are the current Neovim mappings I came to feel comfortable with over time. This is by no means a reference card, and yes I do use the arrow keys for navigating into my buffers. It depends on motion range, though. Another key idea is that I use Tmux everyday and I like to have an unified set of mappings, beside the leader/prefix key.
+Here are the current Neovim mappings I came to feel comfortable with over time. This is by no means a reference card, and yes I do use the arrow keys for navigating into my buffers. It depends on motion range, though. Another key idea is that I use Tmux everyday and I like to have an unified set of mappings, beside the leader/prefix key. See my [blog posts](/tags/vim/) for how I started to use Vim and Neovim.
 
-Note that I only have 13 plugins in my `start` and `opt` directories, in addition to part of [mini.nvim](https://github.com/echasnovski/mini.nvim) that I adapted to suit my needs better: (This may change in the future but usually I tend to remove plugins rather than add new ones.)
+Note that I only have 12 plugins in my `start` and `opt` directories, in addition to part of [mini.nvim](https://github.com/echasnovski/mini.nvim) that I adapted to suit my needs better: (This may change in the future but usually I tend to remove plugins rather than add new ones.)
 
-- [opt] `neogen`, `neogit`, `nvim-parinfer`, `vim-test`, `vimtex`;
+- [opt] `neogit`, `nvim-parinfer`, `vim-test`, `vimtex`;
 - [start] `Comment.nvim`, `null-ls.nvim`, `nvim-lspconfig`, `nvim-treesitter`, `packer.nvim`, `plenary.nvim`, `telescope-fzf-native.nvim`, `telescope.nvim`
-
-I could easily get rid of Comment, packer, vim-test, and neogen.
 
 I prefer a minimalist setup these days, and I tend to rely on hand-on solutions for tasks I carry over and over. Many of those custom settings come from briliant Vimers who are acknowledged in my config files. Note that some of those mappings may override existing ones, whether they are somewhat redundant (e.g. <kbd>s</kbd> and <kbd>c</kbd>) or because I don't use them at all (e.g., some of the <kbd>Ctrl</kbd>, <kbd>g</kbd> or <kbd>z</kbd> combinations).
 
@@ -62,7 +60,6 @@ My leader is ","[^1] and I do not define specific mappings for the localleader i
 <tr><td><kbd>,S</kbd></td><td>v</td><td><kbd>:sort u</kbd></td><td>Sort in reverse lexicographic order</td></tr>
 <tr><td><kbd>,s</kbd></td><td>n</td><td><kbd>vip:sort u</kbd></td><td>Sort in lexicographic order</td></tr>
 <tr><td><kbd>,s</kbd></td><td>v</td><td><kbd>:sort u</kbd></td><td>Sort in lexicographic order</td></tr>
-<tr><td><kbd>,"</kbd></td><td>n</td><td><kbd>:Neogen</kbd></td><td>Generate docstring</td></tr>
 <tr><td><kbd>N</kbd></td><td>n</td><td><kbd>Nzz</kbd></td><td>Keep cursor centered on screen when looking behind</td></tr>
 <tr><td><kbd>n</kbd></td><td>n</td><td><kbd>nzz</kbd></td><td>Keep cursor centered on screen when looking ahead</td></tr>
 <tr><td><kbd>U</kbd></td><td>n</td><td><kbd>&lt;C-r></kbd></td><td>Redo</td></tr>
@@ -114,6 +111,13 @@ My leader is ","[^1] and I do not define specific mappings for the localleader i
 </table>
 </small>
 
-I also have kind of an universal mapping, <kbd>gs</kbd>, which depending on filetype may compile a $\LaTeX$ document or a C file and show its output, run a Python/Haskell/Lisp/Scheme script and show its output, etc. It is defined in relevant `after/ftplugin/*.vim` files.
+I also have kind of an universal mapping, <kbd>gs</kbd>, which depending on filetype may compile a $\LaTeX$ document or a C file and show its output, run a Python/Haskell/Lisp/Scheme script and show its output, etc. It is defined in relevant `after/ftplugin/*.vim` files. Finally, since I never found a good or reliable plugin to send command to a terminal, and I've tried many of the exiting ones for Vim or Neovim, I wrote my own commands: (It assumes that you have a terminal opened next to your buffer in a split, which is how I work in any case.)
+
+```vim
+" poor man send-to-repl features (we need to fire a REPL in a split first)
+noremap ss Vy<C-w>wpa<CR><CR><Esc>
+noremap s y<C-w>wpa<CR><CR><Esc>
+xnoremap s y<C-w>wpa<CR><CR><Esc>
+```
 
 [^1]: I recently switched to this leader key after having spent three years using the <kbd>Space</kbd> key as my leader, as a leftover of my Doom Emacs period.
