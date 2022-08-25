@@ -43,6 +43,7 @@ My leader is ","[^1] and I do not define specific mappings for the localleader i
 <tr><td><kbd>&lt;C-Right></kbd></td><td>n</td><td><kbd>:tabnext</kbd></td><td>Next tab</td></tr>
 <tr><td><kbd>&lt;Tab></kbd></td><td>n</td><td><kbd>:tabnext</kbd></td><td>Next tab</td></tr>
 <tr><td><kbd>,&lt;Tab></kbd></td><td>n</td><td><kbd>:$tabnew</kbd></td><td>New tab</td></tr>
+<tr><td><kbd>,&lt;S-Tab></kbd></td><td>n</td><td><kbd>C-wT</kbd></td><td>Move split to new tab</td></tr>
 <tr><td><kbd>J</kbd></td><td>n</td><td><kbd>mzJ`z</kbd></td><td>Join lines (cursor stationary)</td></tr>
 <tr><td><kbd><</kbd></td><td>v</td><td><kbd>&lt;gv</kbd></td><td>Fix block indentation (backward)</td></tr>
 <tr><td><kbd>></kbd></td><td>v</td><td><kbd>>gv</kbd></td><td>Fix block indentation (forward)</td></tr>
