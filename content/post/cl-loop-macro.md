@@ -47,11 +47,12 @@ If you are interested in macros, I can suggest the following blog posts:
 
 - [Idiomatic Macros for Common Lisp](https://stuartsierra.com/2006/06/03/idiomatic-macros), by Stuart Sierra
 - [The Nature of Lisp](https://www.defmacro.org/ramblings/lisp.html), by Slava Akhmechet
+- [Macro elegance: the magical simplicity of Lisp macros](https://dotink.co/posts/macros/), by Linus Lee
 - [Racket Macro Exercises](https://lexi-lambda.github.io/racket-macro-exercises/index.html), by Alexis King
 - [Iterators and for loops with Guile Scheme](https://willosborne.co.uk/coding/2019/11/16/iterators-and-for-loops-with-guile-scheme.html), by Will Osborne
 - [Macros in Racket, part one](https://tfeb.org/fragments/2015/01/13/macros-in-racket-part-one/) and [The proper use of macros in Lisp](https://www.tfeb.org/fragments/2021/11/11/the-proper-use-of-macros-in-lisp/), by Tim Bradshaw
 - [Haskell doesn't have macros](https://chrisdone.com/posts/haskell-doesnt-have-macros/), by Chris Done
 
-{{% music %}}XXX • _XXX_{{% /music %}}
+{{% music %}}Brad Mehldau Trio • _The Very Thought of You_{{% /music %}}
 
 [^1]: They are known as the `arithmetic-up` and `arithmetic-downto` arguments. See the [HyperSpec documentation](http://www.lispworks.com/documentation/HyperSpec/Body/m_loop.htm).
