@@ -120,4 +120,21 @@ noremap s y<C-w>wpa<CR><CR><Esc>
 xnoremap s y<C-w>wpa<CR><CR><Esc>
 ```
 
+My startup time is pretty decent, see the benchmarks below:
+
+```shell
+~ % hyperfine "nvim --headless +qa" --warmup 5
+Benchmark 1: nvim --headless +qa
+  Time (mean ± σ):      50.6 ms ±   0.5 ms    [User: 41.7 ms, System: 9.1 ms]
+  Range (min … max):    49.8 ms …  52.3 ms    56 runs
+
+
+~ % hyperfine "nvim --headless +qa" --warmup 5
+Benchmark 1: nvim --headless +qa
+  Time (mean ± σ):      37.9 ms ±   0.8 ms    [User: 31.6 ms, System: 6.5 ms]
+  Range (min … max):    36.9 ms …  40.4 ms    77 runs
+```
+
+<small>First run is on medium processor load, while second run is with performance settings.</small>
+
 [^1]: I recently switched to this leader key after having spent three years using the <kbd>Space</kbd> key as my leader, as a leftover of my Doom Emacs period.
