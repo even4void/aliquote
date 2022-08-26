@@ -28,7 +28,7 @@ I haven't watched TV in about ten years, probably even before I removed the TV f
 <tr><td><a href="https://en.wikipedia.org/wiki/The_Witcher_(TV_series)">The Witcher</a></td><td>2021+</td><td>2 (16)</td><td>&#9733;&#9733;&#9733;&#9733;&#9734;</td></tr>
 <tr><td><a href="https://en.wikipedia.org/wiki/Homeland_(TV_series)">Homeland</a></td><td>2021</td><td>8 (96)</td><td>&#9733;&#9733;&#9733;&#9734;&#9734;</td></tr>
 <tr><td><a href="https://en.wikipedia.org/wiki/Biohackers">Biohackers</a></td><td>2021</td><td>2 (12)</td><td>&#9733;&#9733;&#9734;&#9734;&#9734;</td></tr>
-<tr><td><a href="https://en.wikipedia.org/wiki/See_(TV_Series)">See</a></td><td>2021+</td><td>3 (17)</td><td>&#9733;&#9733;&#9733;&#9733;&#9734;</td></tr>
+<tr><td><a href="https://en.wikipedia.org/wiki/See_(TV_Series)">See</a></td><td>2021</td><td>2 (16)</td><td>&#9733;&#9733;&#9733;&#9733;&#9734;</td></tr>
 <tr><td><a href="https://en.wikipedia.org/wiki/The_100_(TV_series)">The 100</a></td><td>2020+</td><td>7 (100)</td><td>&#9733;&#9733;&#9733;&#9733;&#9734;</td></tr>
 <tr><td><a href="https://en.wikipedia.org/wiki/Black_Mirror">Black Mirror</a></td><td>2020+</td><td>5 (22)</td><td>&#9733;&#9733;&#9733;&#9733;&#9733;</td></tr>
 <tr><td><a href="https://en.wikipedia.org/wiki/Fargo_(TV_series)">Fargo</a></td><td>2020</td><td>4 (41)</td><td>&#9733;&#9733;&#9733;&#9734;&#9734;</td></tr>
