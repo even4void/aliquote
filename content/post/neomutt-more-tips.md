@@ -16,21 +16,21 @@ I spent a lot of time configuring Neomutt to my liking, and to this end I happen
 
 - using folder hooks: Folder hooks are actions that carried automatically when you enter a (local or remote) folder. I use a few of them, mostly to setup specific mailboxes. For instance, I have a different display mode depending on whether I'm in my Inbox or in the Archives folder (where I usually want a detailed timestamp, especially the year since messages can span more than 15 years), but see below:
 
-  ```
-  folder-hook archives/* 'set read_inc=1000'
-  folder-hook archives/* 'set index_format="[%[%Y-%m-%d %H:%M]] [%Z %?X?A&-? %?l?%4l&%4c?] %-25.25F %?M?<%M> ?%s "'
+     ```
+     folder-hook archives/* 'set read_inc=1000'
+     folder-hook archives/* 'set index_format="[%[%Y-%m-%d %H:%M]] [%Z %?X?A&-? %?l?%4l&%4c?] %-25.25F %?M?<%M> ?%s "'
 
-  folder-hook aliquote/* source ~/.config/neomutt/accounts/aliquote
-  folder-hook aliquote/* 'set index_format="[%[!%m-%d %H:%M]] %zt %-25.25F %?M?<%M>? %s "'
-  folder-hook aliquote/Sent 'set index_format="[%[!%m-%d %H:%M]] [%Z %?X?A&-?] %-25.25F %s "'
-  folder-hook aliquote/Sent 'set sort=reverse-date-sent'
-  folder-hook aliquote/Sent set strict_threads=yes
+     folder-hook aliquote/* source ~/.config/neomutt/accounts/aliquote
+     folder-hook aliquote/* 'set index_format="[%[!%m-%d %H:%M]] %zt %-25.25F %?M?<%M>? %s "'
+     folder-hook aliquote/Sent 'set index_format="[%[!%m-%d %H:%M]] [%Z %?X?A&-?] %-25.25F %s "'
+     folder-hook aliquote/Sent 'set sort=reverse-date-sent'
+     folder-hook aliquote/Sent set strict_threads=yes
 
-  folder-hook aliquote/INBOX 'push "Tscipy-dev-request<enter><tag-prefix-cond><save-message>=digests<enter><end-cond>"'
-  --8<--------
-  ```
+     folder-hook aliquote/INBOX 'push "Tscipy-dev-request<enter><tag-prefix-cond><save-message>=digests<enter><end-cond>"'
+     --8<--------
+     ```
 
-  If you write a lot of macros, sometimes it is worth considering folder-hook or variation thereof. You often just have to replace your `macro` statement with a `push` command to let Mutt press all the keys for you.
+     If you write a lot of macros, sometimes it is worth considering folder-hook or variation thereof. You often just have to replace your `macro` statement with a `push` command to let Mutt press all the keys for you.
 
 - collapsing threads: I wanted all threads to be collapsed by default when entering my Archives folder. I originally used a hook for that, `folder-hook archives/* 'push <collapse-all>\n'`, which has the undesired side-effect of making sidebar actions (navigating next and previous folders) to open the first message when entering the folder itself. Fortunately, there's an even simpler solution using the following two options: `set collapse_all = yes` and `set uncollapse_new = yes`. This will affect all folder, but the last one will help in case there are new replies in the Inbox.
 
@@ -53,7 +53,7 @@ digests
 --8<--------
 ```
 
-I now use a single account setup because I found that juggling different accounts was kind of not that funny at times. My typical workflow is that every new mail end up in the INBOX, with some automatic filters to move messages from mailing-lists I subscribed to in their respective folders. Mailing digest are archived manually in the "digests" folder, or I use a weird macro.[^2] The "archives" folder is an all-in-one archive of all the messages I received since around 2006 (Gmail time, remember?). It held more than 45K messages at some point, but I did a drastic pruning a few years ago so that now there are just about fifteen thousand messages, which is more manageable, even for Neomutt. I have some handful macros that help keeps the digests and mailing folders clean: one macro allows to delete all message older than a certain amount of days, while another macro is used to mark all messages as read.
+I now use a single account setup because I found that juggling different accounts was kind of not that funny at times. My typical workflow is that every new mail end up in the INBOX, with some automatic filters to move messages from mailing-lists I subscribed to in their respective folders. Mailing digest may be archived manually into the "digests" folder, and I used to use a weird macro to automate this stuff.[^2] The "archives" folder is an all-in-one archive of all the messages I received since around 2006 (Gmail time, remember?). It held more than 45K messages at some point, but I did a drastic pruning a few years ago so that now there are just about fifteen thousand messages, which is more manageable, even for Neomutt. I have some handful macros that help keeps the digests and mailing folders clean: one macro allows to delete all message older than a certain amount of days, while another macro is used to mark all messages as read.
 
 ```
 macro index <Esc>x "<tag-pattern>~d >6m<enter><tag-prefix-cond><delete-message>" "delete old messages"
@@ -69,7 +69,8 @@ macro index \Cx "T~U<enter><tag-prefix><clear-flag>N<untag-pattern>.<enter>" "ma
 [urlscan]: https://github.com/firecat53/urlscan
 
 [^1]: I may even have missed Steve Losh's excellent [blog post](https://stevelosh.com/blog/2012/10/the-homely-mutt/) at some point.
-[^2]: Example of a weird macro:
+[^2]:
+    Example of a weird macro, that I converted to equivalent folder hook a while ago:
 
     ```
     macro index <Esc>s \
