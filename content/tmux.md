@@ -42,7 +42,9 @@ Compared to Neovim, my requirements are even more minimalistic since I don't use
 <tr><td><kbd>M-l</kbd></td><td><kbd>last-window</kbd></td><td>go to last window</td></tr>
 <tr><td><kbd>M-m</kbd></td><td><kbd>command-prompt -p "Search man pages for:" "new-window 'exec man %%'"</kbd></td><td>query man page in a temporary window</td></tr>
 <tr><td><kbd>M-o</kbd></td><td><kbd>selectp -t :.+</kbd></td><td>go to other split</td></tr>
-<tr><td><kbd>M-p</kbd></td><td><kbd>run "tmux split-window -p 10 'tmux send-keys -t #{pane_id} \"$(locate ~/ | fzf -m | paste -sd\\  -)\"'"</kbd></td><td>find file in bottom temporary split using Fzf</td></tr>
+<tr><td><kbd>M-b</kbd></td><td><kbd>run "tmux split-window -p 10 'tmux send-keys -t #{pane_id} \"$(bibcite)\"'"</kbd></td><td>Bibtex citation from bibtex-ls (copy to clipboard)</td></tr>
+<tr><td><kbd>M-B</kbd></td><td><kbd>run "tmux split-window -p 10 'tmux send-keys -t #{pane_id} \"$(bibfind)\"'"</kbd></td><td>Bibtex citation from bibtex-ls (open PDF)</td></tr>
+<tr><td><kbd>M-/</kbd></td><td><kbd>run "tmux split-window -p 10 'tmux send-keys -t #{pane_id} \"$(locate ~/ | fzf -m | paste -sd\\  -)\"'"</kbd></td><td>find file in bottom temporary split using Fzf</td></tr>
 <tr><td><kbd>M-s</kbd></td><td><kbd>split-window -v -c "#{pane_current_path}"</kbd></td><td>create horizontal split</td></tr>
 <tr><td><kbd>M-v</kbd></td><td><kbd>split-window -v -c "#{pane_current_path}"</kbd></td><td>create vertical split</td></tr>
 <tr><td><kbd>M-t</kbd></td><td><kbd>break-pane</kbd></td><td>convert pane to proper window</td></tr>

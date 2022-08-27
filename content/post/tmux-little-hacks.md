@@ -15,8 +15,11 @@ Here's mine:
 ```
 bind-key -n M-q display-menu -x W -y S \
     "New Session"                        S "command-prompt -p \"New Session:\" \"new-session -A -s '%%'\"" \
+    "Kill Session"                       x "kill-session" \
+    "Kill Other Session(s)"              X "kill-session -a" \
     "" \
     "New Window"                         ␍ new-window \
+    "Kill Window"                        k "killw"  \
     "Choose Window"                      w choose-window \
     "Previous Window"                    🡠 previous-window \
     "Next Window"                        🡢 next-window \
@@ -90,6 +93,11 @@ bind-key -n M-w choose-window
 bind-key -n M-y copy-mode
 bind-key -n M-z resize-pane -Z
 ```
+
+{{% alert note %}}
+<small>[2022-08-27]</small><br>
+See my [Tmux cheatsheet](/artciles/tmux/) for more up to date mappings.
+{{% /alert %}}
 
 Happy hacking on Tmux!
 
