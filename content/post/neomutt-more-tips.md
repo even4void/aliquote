@@ -40,7 +40,23 @@ I spent a lot of time configuring Neomutt to my liking, and to this end I happen
 
 - colors: There are several sections to manage Neomutt color theme, the main parts being `index`, `header` and `body`. In the `body` section, you can even highlight Git diff or emojis if you like.
 
-The main structure of my mailboxes is shown below:
+- PGP signing/encryption: I like to have the possibility to sign and/or encrypt my message, but I don't want them to be signed on by default. For this, you can unset the `crypt_autoencrypt` and `crypt_autosign` variables, and when you save your message, the magic key is `p` before confirming to send your message (`y`): you will be prompted to sign and/or encrypt your outgoing email. To configure PGP stufff in neomutt, source the relevant sample file, `/usr/share/doc/neomutt/samples/gpg.rc.gz`, which contains default values that should work if you have gpgme installed on your system, and the relevant settings in your muttrc file:
+
+     ```
+     set crypt_autoencrypt = no
+     set crypt_autopgp = yes
+     set crypt_autosign = no
+     set crypt_replysign = yes
+     set crypt_replysignencrypted = yes
+     set crypt_use_gpgme = yes
+     set crypt_verify_sig = yes
+
+     set pgp_self_encrypt = yes
+     set pgp_sign_as = {PGP_KEY}
+     set pgp_use_gpg_agent = yes
+     ```
+
+Finally, some words about my workflow. The main structure of my mailboxes is shown below:
 
 ```
 INBOX
@@ -60,6 +76,11 @@ macro index <Esc>x "<tag-pattern>~d >6m<enter><tag-prefix-cond><delete-message>"
 macro index \Cx "T~U<enter><tag-prefix><clear-flag>N<untag-pattern>.<enter>" "mark all messages as read"
 ```
 
+{{% alert note %}}
+<small>[2022-08-27]</small><br>
+TIL some Vim keybindings are defined in `/usr/share/doc/neomutt/vim-keys/vim-keys.rc`. Unfortunately, there's not much to see except some bindings for moving around, scrolling and managing threads (sort of).
+{{% /alert %}}
+
 {{% music %}}Maxence Cyrin • _As the Darkness Falls_{{% /music %}}
 
 [original post]: /post/neomutt/
@@ -70,7 +91,7 @@ macro index \Cx "T~U<enter><tag-prefix><clear-flag>N<untag-pattern>.<enter>" "ma
 
 [^1]: I may even have missed Steve Losh's excellent [blog post](https://stevelosh.com/blog/2012/10/the-homely-mutt/) at some point.
 [^2]:
-    Example of a weird macro, that I converted to equivalent folder hook a while ago:
+    Example of a weird macro, that I converted to more manageable folder hooks a while ago:
 
     ```
     macro index <Esc>s \
