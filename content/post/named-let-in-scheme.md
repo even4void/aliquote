@@ -1,12 +1,12 @@
 ---
 title: "Named let in Scheme"
-date: 2022-08-27T13:17:18+02:00
-draft: true
-tags: ["scheme"]
+date: 2022-08-28T13:17:18+02:00
+draft: false
+tags: ["scheme", "sicp"]
 categories: ["2022"]
 ---
 
-In [one of my last posts], I discussed Common Lisp `loop` macro. I just finished reading [The Adventures of a Pythonista in Schemeland], by Michele Simionato. Although it is now more than 10 years old, it is a very good read that I recommend to people interested in Scheme, especially if they want to learn more about macros. In this series of articles, the authors discusses some idiomatic construct in Scheme. Beside recursion, he shows an example of a for-loop form which I got interested in. Chicken Scheme, which is the current implementation of Scheme dialect I use,[^1] has a for-each construct which allows to write stuff like this:
+In [one of my last posts], I discussed Common Lisp `loop` [macro]. I just finished reading [The Adventures of a Pythonista in Schemeland], by Michele Simionato. Although it is now more than 10 years old, it is a very good read that I recommend to people interested in Scheme, especially if they want to learn more about macros. In this series of articles, the authors discusses some idiomatic construct in Scheme. Beside recursion, he shows an example of a for-loop form which I got interested in. Chicken Scheme, which is the current implementation of Scheme dialect I use,[^1] has a for-each construct which allows to write stuff like this:
 
 ```scheme
 (define xs '(0 1 2 3 4))
@@ -26,7 +26,40 @@ In Scheme, a [named `let`] is the standard way to build such a for-like expressi
      (loop (+ i 1))))
 ```
 
-This is well explained on [Stack Overflow], especially how it relates to tail-recursion. See also [Python to Scheme to Assembly, Part 1: Recursion and Named Let](https://davidad.github.io/blog/2014/02/28/python-to-scheme-to-assembly-1/), for another use case of recursion.
+This is well explained on [Stack Overflow], especially how it relates to tail-recursion. See also [Python to Scheme to Assembly, Part 1: Recursion and Named Let](https://davidad.github.io/blog/2014/02/28/python-to-scheme-to-assembly-1/), for another use case of recursion and accumulators. Now, checking the SICP book, Abelson & coll. discuss an iterative Fibonacci procedure using a named let:
+
+```scheme
+(define (fib n)
+  (let fib-iter ((a 1)
+                 (b 0)
+                 (count n))
+    (if (= coutn 0)
+        b
+        (fib-iter (+ a b) a (- count 1)))))
+```
+
+A named let can also be an alternative to the following procedure (Exercise 4.8):
+
+```scheme
+(define (let->combination expr)
+   (cons (make-lambda (let-vars expr) (let-body expr))
+         (let-inits expr)))
+```
+
+Here is one solution from [Scheme wiki]:
+
+```scheme
+(define (let->combination expr)
+     (if (named-let? expr)
+         (sequence->exp
+           (list (named-let->func expr)
+                 (cons (named-let-func-name expr) (named-let-func-inits expr))))
+         (cons (make-lambda (let-vars expr)
+               (list (let-body expr)))
+               (let-inits expr))))
+```
+
+See also [Eli Bendersky](https://eli.thegreenplace.net/2007/12/06/sicp-sections-411-412)'s solutions in Common Lisp.
 
 Instead of a for loop, let's consider a while loop. It is not much different, since in this case we have a predicate that helps stopping the iteration and a default case. See also this discussion on `call/cc` on [SO]. There's a bunch of useful utilities in the "standard prelude" of [Programming Praxis]. It targets R5RS, and some of its forms are already available in Chicken Scheme or Racket, but it is worth taking a look at the code. For instance, it features a macro for a [while loop] construct:
 
@@ -47,7 +80,7 @@ Example of use:
 => 4321
 ```
 
-It is defined as a [macro], and I just found that Jacques Chazarain once proposed a different solution, using pretty old syntax and non-hygienic macro:[^2]
+Incidentally, I just found that Jacques Chazarain also discussed the case of Fibonacci numbers and named let constructs, and he even proposed a different solution to the while loop macro, using pretty old syntax and non-hygienic macro:[^2]
 
 ```scheme
 (define-macro (while test . body)
@@ -68,7 +101,7 @@ There is nevertheless a slight issue with the formulation above: the local funct
      (,loop))))
 ```
 
-This is also discussed on [Chicken Scheme] website.
+A related topic is also discussed on [Chicken Scheme] website.
 
 {{% music %}}MIKA • _Blue Eyes_{{% /music %}}
 
@@ -82,6 +115,7 @@ This is also discussed on [Chicken Scheme] website.
 [named `let`]: https://people.csail.mit.edu/jaffer/r5rs_6.html#IDX130
 [stack overflow]: https://stackoverflow.com/questions/31909121/how-does-the-named-let-in-the-form-of-a-loop-work
 [so]: https://stackoverflow.com/a/44110742/420055
+[scheme wiki]: http://community.schemewiki.org/?sicp-ex-4.8
 [programming praxis]: https://programmingpraxis.com/contents/standard-prelude/
 [while loop]: https://programmingpraxis.com/contents/standard-prelude/#control-flow
 [macro]: https://docs.scheme.org/guide/macros/
