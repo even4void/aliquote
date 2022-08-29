@@ -7,7 +7,7 @@ weight: 40
 
 Here is a list of things I like to work on when time allows. As you will guess pretty quickly, I can leave _those_ things hanging out for years, but there is always a chance that this stuff will be finished someday. Note that these pages are a resurrection of my [previous website](/post/migrating-to-hugo/), and I left a lot of materials behind. If you are looking for my old teaching ressources, almost everything remains available on the Teaching page if you bookmarked it once in a while, but most links should be available below (except for in-house training).
 
-I yet have to find something to write, you know something that will last forever ------nbsp;---nbsp; but never ending. In the meantime, I put a lot of random and not so random stuff on Github. I also intend to write other series on statistical (retro)computing using Unix tools or LispStat maybe.
+I yet have to find something to write, you know something that will last forever; but never ending. In the meantime, I put a lot of random and not so random stuff on Github. I also intend to write other series on statistical (retro)computing using Unix tools or LispStat maybe.
 
 Below is a list of what has been archived over the years on this site or on external servers (beware these are for the most part the remnants of my former life, so don't expect any update).
 

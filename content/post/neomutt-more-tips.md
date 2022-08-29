@@ -16,21 +16,21 @@ I spent a lot of time configuring Neomutt to my liking, and to this end I happen
 
 - using folder hooks: Folder hooks are actions that carried automatically when you enter a (local or remote) folder. I use a few of them, mostly to setup specific mailboxes. For instance, I have a different display mode depending on whether I'm in my Inbox or in the Archives folder (where I usually want a detailed timestamp, especially the year since messages can span more than 15 years), but see below:
 
-     ```
-     folder-hook archives/* 'set read_inc=1000'
-     folder-hook archives/* 'set index_format="[%[%Y-%m-%d %H:%M]] [%Z %?X?A&-? %?l?%4l&%4c?] %-25.25F %?M?<%M> ?%s "'
+  ```
+  folder-hook archives/* 'set read_inc=1000'
+  folder-hook archives/* 'set index_format="[%[%Y-%m-%d %H:%M]] [%Z %?X?A&-? %?l?%4l&%4c?] %-25.25F %?M?<%M> ?%s "'
 
-     folder-hook aliquote/* source ~/.config/neomutt/accounts/aliquote
-     folder-hook aliquote/* 'set index_format="[%[!%m-%d %H:%M]] %zt %-25.25F %?M?<%M>? %s "'
-     folder-hook aliquote/Sent 'set index_format="[%[!%m-%d %H:%M]] [%Z %?X?A&-?] %-25.25F %s "'
-     folder-hook aliquote/Sent 'set sort=reverse-date-sent'
-     folder-hook aliquote/Sent set strict_threads=yes
+  folder-hook aliquote/* source ~/.config/neomutt/accounts/aliquote
+  folder-hook aliquote/* 'set index_format="[%[!%m-%d %H:%M]] %zt %-25.25F %?M?<%M>? %s "'
+  folder-hook aliquote/Sent 'set index_format="[%[!%m-%d %H:%M]] [%Z %?X?A&-?] %-25.25F %s "'
+  folder-hook aliquote/Sent 'set sort=reverse-date-sent'
+  folder-hook aliquote/Sent set strict_threads=yes
 
-     folder-hook aliquote/INBOX 'push "Tscipy-dev-request<enter><tag-prefix-cond><save-message>=digests<enter><end-cond>"'
-     --8<--------
-     ```
+  folder-hook aliquote/INBOX 'push "Tscipy-dev-request<enter><tag-prefix-cond><save-message>=digests<enter><end-cond>"'
+  --8<--------
+  ```
 
-     If you write a lot of macros, sometimes it is worth considering folder-hook or variation thereof. You often just have to replace your `macro` statement with a `push` command to let Mutt press all the keys for you.
+  If you write a lot of macros, sometimes it is worth considering folder-hook or variation thereof. You often just have to replace your `macro` statement with a `push` command to let Mutt press all the keys for you.
 
 - collapsing threads: I wanted all threads to be collapsed by default when entering my Archives folder. I originally used a hook for that, `folder-hook archives/* 'push <collapse-all>\n'`, which has the undesired side-effect of making sidebar actions (navigating next and previous folders) to open the first message when entering the folder itself. Fortunately, there's an even simpler solution using the following two options: `set collapse_all = yes` and `set uncollapse_new = yes`. This will affect all folder, but the last one will help in case there are new replies in the Inbox.
 
@@ -42,19 +42,19 @@ I spent a lot of time configuring Neomutt to my liking, and to this end I happen
 
 - PGP signing/encryption: I like to have the possibility to sign and/or encrypt my message, but I don't want them to be signed on by default. For this, you can unset the `crypt_autoencrypt` and `crypt_autosign` variables, and when you save your message, the magic key is `p` before confirming to send your message (`y`): you will be prompted to sign and/or encrypt your outgoing email. To configure PGP stufff in neomutt, source the relevant sample file, `/usr/share/doc/neomutt/samples/gpg.rc.gz`, which contains default values that should work if you have gpgme installed on your system, and the relevant settings in your muttrc file:
 
-     ```
-     set crypt_autoencrypt = no
-     set crypt_autopgp = yes
-     set crypt_autosign = no
-     set crypt_replysign = yes
-     set crypt_replysignencrypted = yes
-     set crypt_use_gpgme = yes
-     set crypt_verify_sig = yes
+  ```
+  set crypt_autoencrypt = no
+  set crypt_autopgp = yes
+  set crypt_autosign = no
+  set crypt_replysign = yes
+  set crypt_replysignencrypted = yes
+  set crypt_use_gpgme = yes
+  set crypt_verify_sig = yes
 
-     set pgp_self_encrypt = yes
-     set pgp_sign_as = {PGP_KEY}
-     set pgp_use_gpg_agent = yes
-     ```
+  set pgp_self_encrypt = yes
+  set pgp_sign_as = {PGP_KEY}
+  set pgp_use_gpg_agent = yes
+  ```
 
 Finally, some words about my workflow. The main structure of my mailboxes is shown below:
 
@@ -76,6 +76,7 @@ macro index <Esc>x "<tag-pattern>~d >6m<enter><tag-prefix-cond><delete-message>"
 macro index \Cx "T~U<enter><tag-prefix><clear-flag>N<untag-pattern>.<enter>" "mark all messages as read"
 ```
 
+<br>
 {{% alert note %}}
 <small>[2022-08-27]</small><br>
 TIL some Vim keybindings are defined in `/usr/share/doc/neomutt/vim-keys/vim-keys.rc`. Unfortunately, there's not much to see except some bindings for moving around, scrolling and managing threads (sort of).

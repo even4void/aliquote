@@ -30,7 +30,7 @@ subtitle = "< a quantity that can be divided into another a whole number of time
 mainSections = ["tweet"]
 featherIconsCDN = true
 wc = true
-# mode = "auto"
+mode = "auto"
 
 [outputs]
 home = ["HTML", "RSS", "JSON"]
