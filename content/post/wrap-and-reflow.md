@@ -41,10 +41,11 @@ This also seems to cause trouble with [quoted messages and on GitHub]. There's [
 ```vim
 set spell spelllang=fr,en
 
+setlocal tw=0
 set formatoptions+=wq
 
 function! Reflow() abort
-  setlocal tw=72 et colorcolumn=73
+  setlocal tw=72 et cc=73
   setlocal list
 endfunction
 
@@ -53,13 +54,13 @@ map <buffer> g= <Esc>:call Reflow()<CR>vipgq
 iabbrev <buffer> =s --chl
 ```
 
-Now, when I group-reply, whenever I press `g=` (this is a mapping I use for formatting in LSP as well) the text gets correctly hard-wrapped to the desired hard limit (72 chars).
+Now, whenever I group-reply, I can just press `g=` (this is a mapping I use for formatting in LSP as well) to get the message correctly hard-wrapped to the desired hard limit (72 chars), and later I have `gq` to do the hard work for me. That may just be crap, but it looks like it works.
 
 Better looking email or not? To be honest, I don't really know since I quite like plain old good hard-wrapped text. But given that my editor and my terminal support so called wrap-margin, unlike Edward Z. Yang I do not mind writing long-lines as long as I know that I can soft- or hard-wrap them at any time withing a single key press.
 
 {{% music %}}Jasmine Myra • _New Beginnings_{{% /music %}}
 
-[^1]: I use a different setting and I only display `tw`, `cc` and `et`: `"[tw:%{&tw} %{&cc?'cc:&cc':''} %{&et?'»':''}] "`.
+[^1]: I use a different setting and I only display `tw` (with `text-flowed` indicator appended if any), `cc` and `et`: `"[%{&tw}%{matchstr(&fo, 'w')}%{&cc?','.&cc:''}%{&et?',+':''}] "`.
 [^2]: On an 80 column terminal, if we subtract 4 columns for the indent on the left and 4 more for symmetry on the right, we’re left with 72 columns.
 [^3]: I stopped writing email in Gmail UI so long time ago that I have vague memory that it was just plain crap, but see [Dear Google, please fix plain text emails in Gmail].
 
