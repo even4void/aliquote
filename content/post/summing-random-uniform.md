@@ -20,10 +20,12 @@ Here is my brute force approach using Racket: (also, no formatting at all, I sai
 
 ```
 
-How about the math? There are several solutions available on math.SO, [more] or [less] complicated.
+How about the math? There are several solutions available on math.SO, [more] or [less] complicated. See also [Wolfram MathWorld].
 
-{{% music %}}XXX • _XXX_{{% /music %}}
+{{% music %}}Bauhaus • _She's in Parties_{{% /music %}}
 
 [chris wellons]: https://nullprogram.com/blog/2013/02/25/
 [more]: https://math.stackexchange.com/q/111314/26851
 [less]: https://math.stackexchange.com/q/214399/26851
+[wolfram mathworld]: https://mathworld.wolfram.com/UniformSumDistribution.html
+[sum of uniformly distributed random numbers]: https://www.fourmilab.ch/documents/random_sum/
