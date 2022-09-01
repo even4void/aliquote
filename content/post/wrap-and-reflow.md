@@ -55,9 +55,7 @@ iabbrev <buffer> =s --chl
 
 Now, when I group-reply, whenever I press `g=` (this is a mapping I use for formatting in LSP as well) the text gets correctly hard-wrapped to the desired hard limit (72 chars).
 
-Better looking email or not? To be honest, I don't really know since I quite like plain old good hard-wrapped text. But given that my editor and my terminal support so called wrap-margin, unlike Edward Z. Yang I do not mind writing long-lines as long as I know that I can soft- or hard-wrap them at any time withing a single key press. Below is how an individual email renders on Gamil and Neomutt, with `tw=0` in Vim:
-
-![img](/img/2022-09-01-15-11-05.png)
+Better looking email or not? To be honest, I don't really know since I quite like plain old good hard-wrapped text. But given that my editor and my terminal support so called wrap-margin, unlike Edward Z. Yang I do not mind writing long-lines as long as I know that I can soft- or hard-wrap them at any time withing a single key press.
 
 {{% music %}}Jasmine Myra • _New Beginnings_{{% /music %}}
 
