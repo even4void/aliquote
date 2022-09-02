@@ -93,6 +93,11 @@ Mon 2022-08-22 20:00:00 CEST 59min left Mon 2022-08-22 19:00:08 CEST 21s ago kop
 
 I implented my two cron jobs (fetch mail every 15' and backup my `$HOME` folder every hour) using systemd timer, and it works like a charm.
 
+{{% alert note %}}
+<small>[2022-09-01]</small><br>
+See also this excellent review, in which I leaerned that we can check if our `OnCalendar` settings work as expected: [Use systemd timers instead of cronjobs](https://opensource.com/article/20/7/systemd-timers).
+{{% /alert %}}
+
 {{% music %}}Jan Lundgreen Trio • _Rosemary's Baby_{{% /music %}}
 
 [kopia]: /post/kopia/
