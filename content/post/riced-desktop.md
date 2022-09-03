@@ -11,12 +11,23 @@ New (riced) desktop setup.
 {{< fluid_imgs
   "pure-u-1-2|/img/2021-10-06-19-43-42.png"
   "pure-u-1-2|/img/2021-10-06-20-48-14.png" >}}
-<small> i3-gaps, polybar, rofi (not shown), kitty, neomutt, irssi, cmus.</small>
+<small> Gnome 20.04 LTS: i3-gaps, polybar, rofi (not shown), Kitty, Neomutt, Irssi, Cmus.</small>
 
------
+---
 
 Update [2022-02-04]
 
 ![desktop](/img/2022-02-04-11-09-03.png)
-<small> regolith/i3-gaps, i3bar, rofi (not shown), tmux, gnome terminal, neomutt, cmus.</small>
+<small> Ubuntu 20.04 LTS: Regolith/i3-gaps, i3bar, rofi (not shown), Tmux, Gnome terminal, Neomutt, cmus.</small>
 
+---
+
+Update [2022-09-03]
+
+![desktop](/img/2022-09-03-18-34-59.png)
+<small> Ubuntu 22.04 LTS: Gnome Mutter, Tmux, Gnome terminal, Neovim, Cmus, Neomutt (not shown).</small>
+
+{{% alert note %}}
+<small>[2022-09-03]</small><br>
+I will update this post with more screenshots as I continue updating my desktop setup on a regular basis. However, it is unlikely the main applications I use daily will change. If you like ricing your desktop too, go take a look at <https://deskto.ps> (crafted by [Joshua Stein](https://jcs.org)).
+{{% /alert %}}
