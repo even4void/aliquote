@@ -2,7 +2,7 @@
 title: "Desktop setup"
 date: 2021-10-06T21:01:50+02:00
 draft: false
-tags: ["misc"]
+tags: ["unix"]
 categories: ["2021"]
 ---
 
@@ -24,8 +24,10 @@ Update [2022-02-04]
 
 Update [2022-09-03]
 
-![desktop](/img/2022-09-03-18-34-59.png)
-<small> Ubuntu 22.04 LTS: Gnome Mutter, Tmux, Gnome terminal, Neovim, Cmus, Neomutt (not shown).</small>
+{{< fluid_imgs
+  "pure-u-1-2|/img/2022-09-04-09-43-38.png"
+  "pure-u-1-2|/img/2022-09-04-11-15-36.png" >}}
+<small> Ubuntu 22.04 LTS: Gnome Mutter/tactile, Tmux, Simple (Suckless) terminal or Gnome terminal, Neovim, Cmus, Irssi and Neomutt (not shown).</small>
 
 {{% alert note %}}
 <small>[2022-09-03]</small><br>
