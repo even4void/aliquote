@@ -1,8 +1,8 @@
 ---
 title: "Summing random Uniform deviates"
-date: 2022-08-26T17:37:55+02:00
-draft: true
-tags: ["math"]
+date: 2022-09-03T17:37:55+02:00
+draft: false
+tags: ["math", "scheme"]
 categories: ["2022"]
 ---
 
@@ -10,22 +10,41 @@ categories: ["2022"]
 
 > How many times should a random number from [0, 1] be drawn to have it sum over 1?
 
-Here is my brute force approach using Racket: (also, no formatting at all, I said "brute force"!)
+Here is my brute force approach using Scheme and recursion only:
 
-```racket
-#lang racket
+```scheme
+(import (chicken random))
 
-(define xs (for/vector #:length 100 ([i (in-range 100)]) (random)))
-(for/vector
+(set-pseudo-random-seed! 101)
 
+(let loop ((n 1)
+           (sum 0))
+  (cond ((> sum 1) sum)
+        (else (loop (add1 n) (+ sum (pseudo-random-real))))))
+
+;; => 1.77838275494088
 ```
 
-How about the math? There are several solutions available on math.SO, [more] or [less] complicated. See also [Wolfram MathWorld].
+A more involved solution using (typed) Racket and `for/fold` is discussed on [Stack Overflow].
+
+How about the math? There are several solutions available on math.SO, [more] or [less] complicated. See also [this application]. In essence, the probability that the sum of $n$ variables is $> 1$ while the other $n - 1$ are $< 1$ is:
+
+$$
+\begin{equation}
+\begin{aligned}
+P(S > 1) & = \int_1^n P_{X_1 + \dots + X_n}(u)du - \int_1^n P_{X_1 + \dots + X_{n-1}}(u)du\cr
+& = \left( 1 - \frac{1}{n!} \right) - \left( 1 - \frac{1}{(n-1)!} \right)\cr
+& = \frac{1}{n(n-2)!}
+\end{aligned}
+\end{equation}
+$$
+
+Then it follows that $\sum_{n=1}^{\infty}nP(S > 1)$ is equal to $\sum_{n=1}^{\infty}\frac{1}{(n-2)!}$, or after simplification $e$.
 
 {{% music %}}Bauhaus • _She's in Parties_{{% /music %}}
 
 [chris wellons]: https://nullprogram.com/blog/2013/02/25/
+[stack overflow]: https://stackoverflow.com/questions/8328564/efficient-random-number-list-sum-in-racket
 [more]: https://math.stackexchange.com/q/111314/26851
 [less]: https://math.stackexchange.com/q/214399/26851
-[wolfram mathworld]: https://mathworld.wolfram.com/UniformSumDistribution.html
-[sum of uniformly distributed random numbers]: https://www.fourmilab.ch/documents/random_sum/
+[this application]: https://www.fourmilab.ch/documents/random_sum/
