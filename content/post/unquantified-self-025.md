@@ -22,7 +22,7 @@ If you follow this blog more or less regularly, you will have noticed an increas
 
 [tactile]: https://extensions.gnome.org/extension/4548/tactile/
 [stand by]: /post/how-to-do-without-wm/
-[movie ratings]: /movies/
+[movie ratings]: /articles/movies/
 [few days ago]: /micro/2022-08-23-13-56-00/
 
 [^1]: For aesthetics, but also to alleviate suffering after long sessions in front of my computer.
