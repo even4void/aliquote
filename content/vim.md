@@ -24,8 +24,6 @@ My leader is ","[^1] and I do not define specific mappings for the localleader i
 <td><em>Command</td>
 <td><em>Role</em></td>
 </tr>
-<tr><td><kbd>&lt;C-a></kbd></td><td>i</td><td><kbd>&lt;C-o>0</kbd></td><td>Go to start of line</td></tr>
-<tr><td><kbd>&lt;C-e></kbd></td><td>i</td><td><kbd>&lt;C-o>$</kbd></td><td>Go to end of line</td></tr>
 <tr><td><kbd>&lt;C-a></kbd></td><td>c</td><td><kbd>:&lt;Home></kbd></td><td>Go to start of line</td></tr>
 <tr><td><kbd>&lt;C-e></kbd></td><td>c</td><td><kbd>:&lt;End></kbd></td><td>Go to end of line</td></tr>
 <tr><td><kbd>-</kbd></td><td>n</td><td><kbd>:Ex</kbd></td><td>Show explorer</td></tr>

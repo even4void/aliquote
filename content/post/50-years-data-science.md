@@ -10,7 +10,7 @@ I recently reread Kaplan's proposal to teach statistics to future statisticians,
 
 <!--more-->
 
-## Donoho, D. (2017). [50 years of data science](https://www.tandfonline.com/doi/abs/10.1080/10618600.2017.1384734). _Journal of Computational and Graphical Statistics_, 26(4), 745–766.
+### Donoho, D. (2017). [50 years of data science](https://www.tandfonline.com/doi/abs/10.1080/10618600.2017.1384734). _Journal of Computational and Graphical Statistics_, 26(4), 745–766.
 
 I have been a bit late at reading this article, and it has been largely debated on Twitter over the past months. However, I feel like it is an interesting read for anyone interested in statistics and to large extent data science. Moreover, I think it brings some context and appetizer for understanding Kaplan's plan.
 
@@ -22,7 +22,7 @@ As a sidenote, Norman Matloff in [his own review](https://matloff.wordpress.com/
 
 Indeed, it is probably time to realize that we can't think of large data, or even _data_ at large, as just well structured tabular entities like is the case of data frames. Paul Murrell discussed with particular care the variety of data sources, including XML and text input, in his book [Introduction to Data Technologies](https://www.stat.auckland.ac.nz/~paul/ItDT/).
 
-## Kaplan, D. T. (2017). [Teaching stats for data science](https://peerj.com/preprints/3205/). _PeerJ Preprints_, 5: e3205v1.
+### Kaplan, D. T. (2017). [Teaching stats for data science](https://peerj.com/preprints/3205/). _PeerJ Preprints_, 5: e3205v1.
 
 So, what's the plan? Here are the ten building blocks that Kaplan believes are important to master, with my comments next to some of them. I should note that [Exercises for Statistical Modeling: A Fresh Approach](http://project-mosaic-books.com/?page_id=13) by the same author is also a pretty good read.
 
