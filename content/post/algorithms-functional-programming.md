@@ -1,6 +1,6 @@
 ---
 title: "Algorithms for functional programming"
-date: 2022-09-08T21:52:36+02:00
+date: 2022-09-08T19:52:36+02:00
 draft: false
 tags: ["review", "scheme"]
 categories: ["2022"]
