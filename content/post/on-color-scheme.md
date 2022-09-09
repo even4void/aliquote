@@ -15,7 +15,10 @@ Previously, I devised a similar [dark theme] for Doom Emacs, and later on a [lig
 
 > Wayne goes a step further and denounces the use of syntax highlighting since it is a waste of an important information channel and suggest several alternative uses of color, among which, rainbow parenthesis, context highlighting, import highlighting, argument highlighting, type highlighting, etc. Instead of syntax or semantic colorization based on content, a simple alternative would be to adapt colorization to the reader, taking attentional constraints into account.
 
-For a more extreme take, see [A case against syntax highlighting](https://www.linusakesson.net/programming/syntaxhighlighting/).
+{{% alert note %}}
+<small>[2022-09-08]</small><br>
+For a more extreme take, see [A case against syntax highlighting](https://www.linusakesson.net/programming/syntaxhighlighting/). See also [Your syntax highlighter is wrong](https://jameshfisher.com/2014/05/11/your-syntax-highlighter-is-wrong/).
+{{% /alert %}}
 
 Of course, your mileage may vary. What is important is that your colorscheme fits with your own perception and way of working, or in other words that it brings a little more to the table than [no color] at all.
 
