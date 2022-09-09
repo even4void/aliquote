@@ -85,7 +85,7 @@ My leader is ","[^1] and I do not define specific mappings for the localleader i
 <tr><td><kbd>,gs</kbd></td><td>n</td><td><kbd>:Telescope git_stash</kbd></td><td>Git stash</td></tr>
 <tr><td><kbd>,q</kbd></td><td>n</td><td><kbd>:Telescope quickfix</kbd></td><td>Telescope quickfix</td></tr>
 <tr><td><kbd>,r</kbd></td><td>n</td><td><kbd>:Telescope oldfiles</kbd></td><td>Telescope old files</td></tr>
-<tr><td><kbd>,w</kbd></td><td>n</td><td><kbd>:Telescope diagnostics</kbd></td><td>LSP diagnostics</td></tr>
+<tr><td><kbd>,ww</kbd></td><td>n</td><td><kbd>:Telescope diagnostics</kbd></td><td>LSP diagnostics</td></tr>
 <tr><td><kbd>,T</kbd></td><td>n</td><td><kbd>:TestFile</kbd></td><td>Test file (vimtest)</td></tr>
 <tr><td><kbd>,t</kbd></td><td>n</td><td><kbd>:TestNearest</kbd></td><td>Test nearest (vimtest)</td></tr>
 <tr><td><kbd>s</kbd></td><td>v,x</td><td><kbd>y&lt;C-w>wpa&lt;CR>&lt;CR>&lt;Esc></kbd></td><td>Send selection to nearest terminal</td></tr>

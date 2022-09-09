@@ -32,13 +32,15 @@ Compared to Neovim, my requirements are even more minimalistic since I don't use
 <tr><td><kbd>M-Up</kbd></td><td><kbd>swap-window -t -1</kbd></td><td>move window to the left</td></tr>
 <tr><td><kbd>M-Left</kbd></td><td><kbd>previous-window</kbd></td><td>select next window to the left</td></tr>
 <tr><td><kbd>M-Right</kbd></td><td><kbd>next-window</kbd></td><td>select next window to the right</td></tr>
+<tr><td><kbd>M-k</kbd></td><td><kbd>previous-window</kbd></td><td>select next window to the left</td></tr>
+<tr><td><kbd>M-j</kbd></td><td><kbd>next-window</kbd></td><td>select next window to the right</td></tr>
 <tr><td><kbd>M-O</kbd></td><td><kbd>switch-client -l</kbd></td><td>change current Tmux client and session</td></tr>
-<tr><td><kbd>M-S</kbd></td><td><kbd>command-prompt -p "New Session:" "new-session -A -s '%%'"</kbd></td><td>create new session</td></tr>
+<tr><td><kbd>M-n</kbd></td><td><kbd>command-prompt -p "New Session:" "new-session -A -s '%%'"</kbd></td><td>create new session</td></tr>
 <tr><td><kbd>M-X</kbd></td><td><kbd>"kill-session -a"</kbd></td><td>kill all other sessions</td></tr>
 <tr><td><kbd>M-x</kbd></td><td><kbd>kill-session</kbd></td><td>kill current sessions</td></tr>
 <tr><td><kbd>M-h</kbd></td><td><kbd>choose-window 'join-pane -h -s "%%"'</kbd></td><td>attach pane to another window</td></tr>
-<tr><td><kbd>M-j</kbd></td><td><kbd>select-layout even-horizontal</kbd></td><td>arrange panes using horizontal layout</td></tr>
-<tr><td><kbd>M-k</kbd></td><td><kbd>select-layout even-vertical</kbd></td><td>arrange panes using vertical layout</td></tr>
+<tr><td><kbd>M-V</kbd></td><td><kbd>select-layout even-horizontal</kbd></td><td>arrange panes using horizontal layout</td></tr>
+<tr><td><kbd>M-S</kbd></td><td><kbd>select-layout even-vertical</kbd></td><td>arrange panes using vertical layout</td></tr>
 <tr><td><kbd>M-l</kbd></td><td><kbd>last-window</kbd></td><td>go to last window</td></tr>
 <tr><td><kbd>M-m</kbd></td><td><kbd>command-prompt -p "Search man pages for:" "new-window 'exec man %%'"</kbd></td><td>query man page in a temporary window</td></tr>
 <tr><td><kbd>M-o</kbd></td><td><kbd>selectp -t :.+</kbd></td><td>go to other split</td></tr>
