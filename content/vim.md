@@ -6,14 +6,14 @@ url: "/articles/vim/"
 
 Here are the current Neovim mappings I came to feel comfortable with over time. This is by no means a reference card, and yes I do use the arrow keys for navigating into my buffers. It depends on motion range, though. Another key idea is that I use Tmux everyday and I like to have an unified set of mappings, beside the leader/prefix key. See my [blog posts](/tags/vim/) for how I started to use Vim and Neovim.
 
-Note that I only have 10 plugins in my `start` and `opt` directories, in addition to part of [mini.nvim](https://github.com/echasnovski/mini.nvim) that I adapted to suit my needs better: (This may change in the future but usually I tend to remove plugins rather than add new ones.)
+Note that I only have 10 plugins in my `start` and `opt` directories,[^1] in addition to part of [mini.nvim](https://github.com/echasnovski/mini.nvim) that I adapted to suit my needs better: (This may change in the future but usually I tend to remove plugins rather than add new ones.)
 
 - [opt] `null-ls.nvim`, `nvim-parinfer`, `vim-test`, `vimtex`;
 - [start] `Comment.nvim`, `nvim-lspconfig`, `nvim-treesitter`, `packer.nvim`, `plenary.nvim`, `telescope.nvim`
 
 I prefer a minimalist setup these days, and I tend to rely on hand-on solutions for tasks I carry over and over. Many of those custom settings come from briliant Vimers who are acknowledged in my config files. Note that some of those mappings may override existing ones, whether they are somewhat redundant (e.g. <kbd>s</kbd> and <kbd>c</kbd>) or because I don't use them at all (e.g., some of the <kbd>Ctrl</kbd>, <kbd>g</kbd> or <kbd>z</kbd> combinations).
 
-My leader is ","[^1] and I do not define specific mappings for the localleader in my main config files. It looks like I always misunderstoof the role of [localleader](https://learnvimscriptthehardway.stevelosh.com/chapters/06.html), and I decided to book it for my `after/ftplugin` custom settings.
+My leader is ","[^2] and I do not define specific mappings for the localleader in my main config files. It looks like I always misunderstoof the role of [localleader](https://learnvimscriptthehardway.stevelosh.com/chapters/06.html), and I decided to book it for my `after/ftplugin` custom settings.
 
 <small>
 <table border="0">
