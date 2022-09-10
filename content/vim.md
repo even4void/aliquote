@@ -6,10 +6,10 @@ url: "/articles/vim/"
 
 Here are the current Neovim mappings I came to feel comfortable with over time. This is by no means a reference card, and yes I do use the arrow keys for navigating into my buffers. It depends on motion range, though. Another key idea is that I use Tmux everyday and I like to have an unified set of mappings, beside the leader/prefix key. See my [blog posts](/tags/vim/) for how I started to use Vim and Neovim.
 
-Note that I only have 10 plugins in my `start` and `opt` directories,[^1] in addition to part of [mini.nvim](https://github.com/echasnovski/mini.nvim) that I adapted to suit my needs better: (This may change in the future but usually I tend to remove plugins rather than add new ones.)
+Note that I only have 10 plugins in my `start` and `opt` directories, in addition to part of [mini.nvim](https://github.com/echasnovski/mini.nvim) that I adapted to suit my needs better: (This may change in the future but usually I tend to remove plugins rather than add new ones.[^1] )
 
-- [opt] `null-ls.nvim`, `nvim-parinfer`, `vim-test`, `vimtex`;
-- [start] `Comment.nvim`, `nvim-lspconfig`, `nvim-treesitter`, `packer.nvim`, `plenary.nvim`, `telescope.nvim`
+- [opt] `Comment.nvim`, `nvim-lspconfig`, `null-ls.nvim`, `nvim-parinfer`, `vim-test`, `vimtex`;
+- [start] `nvim-treesitter`, `packer.nvim`, `plenary.nvim`, `telescope.nvim`
 
 I prefer a minimalist setup these days, and I tend to rely on hand-on solutions for tasks I carry over and over. Many of those custom settings come from briliant Vimers who are acknowledged in my config files. Note that some of those mappings may override existing ones, whether they are somewhat redundant (e.g. <kbd>s</kbd> and <kbd>c</kbd>) or because I don't use them at all (e.g., some of the <kbd>Ctrl</kbd>, <kbd>g</kbd> or <kbd>z</kbd> combinations).
 
@@ -119,19 +119,19 @@ xnoremap s y<C-w>wpa<CR><CR><Esc>
 My startup time is pretty decent, see the benchmarks below:
 
 ```shell
-~/tmp » hyperfine "nvim --headless +qa" --warmup 5                                                   21s
+~ » hyperfine "nvim --headless +qa" --warmup 5
 Benchmark 1: nvim --headless +qa
-  Time (mean ± σ):      44.4 ms ±   0.4 ms    [User: 37.0 ms, System: 7.9 ms]
-  Range (min … max):    43.8 ms …  46.5 ms    61 runs
+  Time (mean ± σ):      36.1 ms ±   0.3 ms    [User: 29.1 ms, System: 7.4 ms]
+  Range (min … max):    35.5 ms …  37.0 ms    78 runs
 
 
-~/tmp » hyperfine "nvim --headless +qa" --warmup 5
+~ » hyperfine "nvim --headless +qa" --warmup 5
 Benchmark 1: nvim --headless +qa
-  Time (mean ± σ):      33.9 ms ±   0.4 ms    [User: 27.1 ms, System: 6.9 ms]
-  Range (min … max):    33.3 ms …  35.1 ms    86 runs
+  Time (mean ± σ):      28.1 ms ±   0.6 ms    [User: 22.6 ms, System: 5.6 ms]
+  Range (min … max):    27.0 ms …  29.7 ms    103 runs
 ```
 
-<small>First run is on default processor settings, while second run is with performance settings.</small>
+<small>First run is on default processor settings (700-2,300 MHz), while second run is with performance settings (up to 4,900 MHz).</small>
 
 [^1]: When I first drafted this cheatsheet, I was still using 15 plugins or so. Some packages broke at some point and I was too lazy to investigate why, or some were of too little use to justify keeping them. I don't really miss anything with my current config, though.
 [^2]: I recently switched to this leader key after having spent three years using the <kbd>Space</kbd> key as my leader, as a leftover of my Doom Emacs period.
