@@ -51,8 +51,6 @@ My leader is ","[^2] and I do not define specific mappings for the localleader i
 <tr><td><kbd>&lt;C-l></kbd></td><td>n</td><td><kbd>:vertical resize +4</kbd></td><td>Resize split (right)</td></tr>
 <tr><td><kbd>W!!</kbd></td><td>c</td><td><kbd>:w !sudo tee % >/dev/null&lt;Cr>:e!&lt;Cr></kbd></td><td>Save as root</td></tr>
 <tr><td><kbd>&lt;C-s></kbd></td><td>i</td><td><kbd>&lt;C-g>u&lt;Esc>[s1z=`]a&lt;C-g>u</kbd></td><td>Fix last spelling error (repeat.)</td></tr>
-<tr><td><kbd>&lt;S-Tab></kbd></td><td>i</td><td><kbd>pumvisible() ? "\&lt;C-p>" : "\&lt;S-Tab>"</kbd></td><td>Previous omnicompletion item</td></tr>
-<tr><td><kbd>&lt;Tab></kbd></td><td>i</td><td><kbd>pumvisible() ? "\&lt;C-n>" : "\&lt;S-Tab>"</kbd></td><td>Next omnicompletion item</td></tr>
 <tr><td><kbd>,S</kbd></td><td>n</td><td><kbd>vip:sort iu</kbd></td><td>Sort in reverse lexicographic order</td></tr>
 <tr><td><kbd>,S</kbd></td><td>v</td><td><kbd>:sort u</kbd></td><td>Sort in reverse lexicographic order</td></tr>
 <tr><td><kbd>,s</kbd></td><td>n</td><td><kbd>vip:sort u</kbd></td><td>Sort in lexicographic order</td></tr>
