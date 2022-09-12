@@ -114,22 +114,5 @@ noremap s y<C-w>wpa<CR><CR><Esc>
 xnoremap s y<C-w>wpa<CR><CR><Esc>
 ```
 
-My startup time is pretty decent, see the benchmarks below:
-
-```shell
-~ » hyperfine "nvim --headless +qa" --warmup 5
-Benchmark 1: nvim --headless +qa
-  Time (mean ± σ):      36.1 ms ±   0.3 ms    [User: 29.1 ms, System: 7.4 ms]
-  Range (min … max):    35.5 ms …  37.0 ms    78 runs
-
-
-~ » hyperfine "nvim --headless +qa" --warmup 5
-Benchmark 1: nvim --headless +qa
-  Time (mean ± σ):      28.1 ms ±   0.6 ms    [User: 22.6 ms, System: 5.6 ms]
-  Range (min … max):    27.0 ms …  29.7 ms    103 runs
-```
-
-<small>First run is on default processor settings (700-2,300 MHz), while second run is with performance settings (up to 4,900 MHz).</small>
-
 [^1]: When I first drafted this cheatsheet, I was still using 15 plugins or so. Some packages broke at some point and I was too lazy to investigate why, or some were of too little use to justify keeping them. I don't really miss anything with my current config, though.
 [^2]: I recently switched to this leader key after having spent three years using the <kbd>Space</kbd> key as my leader, as a leftover of my Doom Emacs period.
