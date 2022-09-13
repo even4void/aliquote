@@ -103,6 +103,11 @@ There is nevertheless a slight issue with the formulation above: the local funct
 
 A related topic is also discussed on [Chicken Scheme] website.
 
+{{% alert note %}}
+<small>[2022-09-12]</small><br>
+Now that I'm catching up on my RSS feeds, I can suggest a further reading, especially for Lisp hackers: [Named Lambda and Named Let](http://funcall.blogspot.com/2022/07/named-lambda-and-named-let.html), by Joe Marshall.
+{{% /alert %}}
+
 {{% music %}}MIKA • _Blue Eyes_{{% /music %}}
 
 [^1]: It is the first Scheme implementation I heard about, around 2007, via Jan de Leeuw's mailing list on statistical computing. I wrote toy example, stopped using it and forgot about it until I got back to Scheme four or five years ago.

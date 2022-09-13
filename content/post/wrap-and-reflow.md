@@ -14,7 +14,7 @@ Two things always bothered me. On the one hand, while it is easy to unwrap text 
 > The 998 character limit is due to limitations in many implementations which send, receive, or store Internet Message Format messages that simply cannot handle more than 998 characters on a line. Receiving implementations would do well to handle an arbitrarily large number of characters in a line for robustness sake. However, there are so many implementations which (in compliance with the transport requirements of [RFC2821]) do not accept messages containing more than 1000 character including the CR and LF per line, it is important for implementations not to create such messages.<br>
 > The more conservative 78 character recommendation is to accommodate the many implementations of user interfaces that display these messages which may truncate, or disastrously wrap, the display of more than 78 characters per line, in spite of the fact that such implementations are non-conformant to the intent of this specification (and that of [RFC2821] if they actually cause information to be lost). Again, even though this limitation is put on messages, it is encumbant upon implementations which display messages.<br>
 
-In other words, when writing emails, do hard-wrap your message (and don't put your signature on top when group-replying in a mailing-list!). The same applies to Git [commit messages], although we may wrap differently the header (or summary) and body of a commit message. Regarding the header line limiation, this is not an absolute rule and it is often not respected, as far as I can tell, especially when introducing Git leaders (feat, fix, docs or doc, etc.). I keep seeing people setting the number of max characters allowed on a line (`textwidth` in Vim parlance) below this limit, when composing email, probably to accomodate the quoted messages included in a group-reply. The OpenBSD even recommends [Plain text, 72 characters per line]. There's another Git-related justification for the 72 vs. 78 char limit.[^2]
+In other words, when writing emails, do hard-wrap your message (and don't put your signature on top when group-replying in a mailing-list!). The same applies to Git [commit messages], although we may wrap differently the header (or summary) and body of a commit message. Regarding the header line limiation, this is not an absolute rule and it is often not respected, as far as I can tell, especially when introducing Git leaders (feat, fix, docs or doc, etc.). I keep seeing people setting the number of max characters allowed on a line (`textwidth` in Vim parlance) below this limit, when composing email, probably to accomodate the quoted messages included in a group-reply. The OpenBSD even recommends [Plain text, 72 characters per line]. There's another Git-related justification for the 72 vs. 78 char limit.[^2] But see [Use plaintext email].
 
 The other option is to let the text "flow", which leads to using the [text-flowed] format. There's even an option for that in (Neo)mutt. However, there are some caveats with those conventions for ordinary emails in the 21th century: many mail readers, including Gmail[^3] or Outlook, don't honor this setting apparently. Here's how Gmail renders an email when we enforce a textwidth of 68 chars, despite asking for `text-flowed` content:
 
@@ -36,7 +36,7 @@ signature at bottom to not bother people when group-replying.
 
 That's lame. The header does indicate that the text should be reflowed.
 
-This also seems to cause trouble with [quoted messages and on GitHub]. There's [one solution] to annoy those programs, but there may be a better alternative: don't hard wrap for casual emails, but enforce 72 chars max (or whatever) for group-reply, which is what I ended up doing recently. Since I don't know how to manage alternative settings in `ftplugin/mail.vim` depending on Neomutt reply action (`message-reply` or `group-reply`), I defined a shortcut to change the format options when I am writing to a list rather than a single person:
+This also seems to cause trouble with [quoted messages and on GitHub]. There's [one solution] to annoy those programs, but there may be a better alternative: don't hard wrap for casual emails, but enforce 72 chars max (or whatever) for list-reply, which is what I ended up doing recently. Since I don't know how to manage alternative settings in `ftplugin/mail.vim` depending on Neomutt reply action (`message-reply` or `group-reply`) and I don't want to add folder hooks for each list I subscribed to, I defined a shortcut to change the format options when I am writing to a list rather than a single person:
 
 ```vim
 set spell spelllang=fr,en
@@ -54,7 +54,7 @@ map <buffer> g= <Esc>:call Reflow()<CR>vipgq
 iabbrev <buffer> =s --chl
 ```
 
-Now, whenever I group-reply, I can just press `g=` (this is a mapping I use for formatting in LSP as well) to get the message correctly hard-wrapped to the desired hard limit (72 chars), and later I have `gq` to do the hard work for me. That may just be crap, but it looks like it works.
+Now, whenever I list-reply, I can just press `g=` (this is a mapping I use for formatting in LSP as well) to get the message correctly hard-wrapped to the desired hard limit (72 chars), and later I have `gq` to do the hard work for me. That may just be crap, but it looks like it works.
 
 Better looking email or not? To be honest, I don't really know since I quite like plain old good hard-wrapped text. But given that my editor and my terminal support so called wrap-margin, unlike Edward Z. Yang I do not mind writing long-lines as long as I know that I can soft- or hard-wrap them at any time withing a single key press.
 
@@ -71,3 +71,4 @@ Better looking email or not? To be honest, I don't really know since I quite lik
 [quoted messages and on github]: https://nullprogram.com/blog/2017/06/15/
 [text-flowed]: https://brianbuccola.com/line-breaks-in-mutt-and-vim/
 [one solution]: https://vxlabs.com/2019/08/25/format-flowed-with-long-lines/
+[Use plaintext email]: https://useplaintext.email/
