@@ -17,3 +17,6 @@ categories: ["2022"]
 ### https://arxiv.org/abs/2204.08336
 
 ### https://arxiv.org/abs/2111.09220
+
+{{% music %}}Queens of the Stone Age • _Long Slow Goodbye_{{% /music %}}
+

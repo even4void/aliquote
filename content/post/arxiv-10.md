@@ -34,3 +34,4 @@ See also [Parallel Augmented Maps](https://cmuparlay.github.io/PAMWeb/).
 
 This article describes solutions to correct for the biais arising from overfitting datastes where $p/n < 1$. Besides regularization techniques, the asymptotic characteristic function of the ML estimators can be used to estimate the overfitting bias using only a small set of non-linear equations. The maths are dense, and I will probably need to reread the hard part.
 
+{{% music %}}New Order • _Video 5 8 6_{{% /music %}}
