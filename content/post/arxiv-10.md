@@ -10,7 +10,7 @@ Here are a few papers that I read over the past weeks, in the CS and Stat catego
 
 ### https://arxiv.org/abs/2204.14121
 
-Invere probability weighting is used in survey and epidemiological analysis. I only used this technique once, and it was in quick comparison with propensity score analysis, where the key idea was in both case to achieve balance between treated and control subjects in order to reduce confounding. See Chan, K. C. G., et al. Globally efficient non-parametric inference of average treatment effects by empirical balancing calibration weighting (Journal of the Royal Statistical Society: Series B 78(3), 2016) for recent work. In this article, the authors
+Inverse probability weighting is used in survey and epidemiological analysis. I only used this technique once, and it was in quick comparison with propensity score analysis, where the key idea was in both case to achieve balance between treated and control subjects in order to reduce confounding. See Chan, K. C. G., et al. Globally efficient non-parametric inference of average treatment effects by empirical balancing calibration weighting (Journal of the Royal Statistical Society: Series B 78(3), 2016) for recent work. In this article, the authors discuss the use of binning and smoothing, or, as an alternative, hierarchical modeling. Their conclusions are that those Bayesian estimators perform better (i.e., they have lower mean squared errors)
 
 ### https://arxiv.org/abs/2204.14156
 

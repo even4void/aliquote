@@ -17,7 +17,8 @@ I haven't watched TV in about ten years, probably even before I removed the TV f
 <td><em>Seasons (Ep.)</em></td>
 <td><em>Rating</em></td>
 </tr>
-<tr><td><a href="https://www.netflix.com/title/81483047">Oats Studios short movies</a></td><td>2022</td><td>1 (10)</td><td>&#9733;&#9733;&#9733;&#9734;&#9734;</td></tr>
+<tr><td><a href="https://www.netflix.com/title/81394937">La disparue de Lørenskog</a></td><td>2022</td><td>1 (6)</td><td>&#9733;&#9733;&#9733;&#9734;&#9734;</td></tr>
+<tr><td><a href="https://www.netflix.com/title/81483047">Oats Studios shorts</a></td><td>2022</td><td>1 (10)</td><td>&#9733;&#9733;&#9733;&#9734;&#9734;</td></tr>
 <tr><td><a href="https://en.wikipedia.org/wiki/The_Sandman_(TV_series)">Sandman</a></td><td>2022</td><td>1 (11)</td><td>&#9733;&#9733;&#9734;&#9734;&#9734;</td></tr>
 <tr><td><a href="https://en.wikipedia.org/wiki/Tribes_of_Europa">Tribes of Europa</a></td><td>2022</td><td>1 (6)</td><td>&#9733;&#9733;&#9733;&#9734;&#9734;</td></tr>
 <tr><td><a href="https://en.wikipedia.org/wiki/Mindhunter_(TV_series)">Mindhunter</a></td><td>2022</td><td>2 (19)</td><td>&#9733;&#9733;&#9733;&#9733;&#9734;</td></tr>
@@ -27,7 +28,7 @@ I haven't watched TV in about ten years, probably even before I removed the TV f
 <tr><td><a href="https://en.wikipedia.org/wiki/Kiss_Me_First_(TV_series)">Kiss Me First</a></td><td>2022</td><td>1 (6)</td><td>&#9733;&#9733;&#9734;&#9734;&#9734;</td></tr>
 <tr><td><a href="https://fr.wikipedia.org/wiki/Altered_Carbon">Altered Carbon</a></td><td>2022</td><td>2 (18)</td><td>&#9733;&#9733;&#9733;&#9734;&#9734;</td></tr>
 <tr><td><a href="https://en.wikipedia.org/wiki/Severance_(TV_series)">Severance</a></td><td>2022</td><td>1 (9)</td><td>&#9733;&#9733;&#9734;&#9734;&#9734;</td></tr>
-<tr><td><a href="https://en.wikipedia.org/wiki/Teen_Wolf_(2011_TV_series)">Teen Wolf</a></td><td>2022</td><td>6 (100)</td><td>&#9733;&#9733;&#9734;&#9734;&#9734;</td></tr>
+<tr><td><a href="https://en.wikipedia.org/wiki/Teen_Wolf_(2011_TV_series)">Teen Wolf</a></td><td>2021+</td><td>6 (100)</td><td>&#9733;&#9733;&#9734;&#9734;&#9734;</td></tr>
 <tr><td><a href="https://en.wikipedia.org/wiki/The_Witcher_(TV_series)">The Witcher</a></td><td>2021+</td><td>2 (16)</td><td>&#9733;&#9733;&#9733;&#9733;&#9734;</td></tr>
 <tr><td><a href="https://en.wikipedia.org/wiki/Homeland_(TV_series)">Homeland</a></td><td>2021</td><td>8 (96)</td><td>&#9733;&#9733;&#9733;&#9734;&#9734;</td></tr>
 <tr><td><a href="https://en.wikipedia.org/wiki/Biohackers">Biohackers</a></td><td>2021</td><td>2 (12)</td><td>&#9733;&#9733;&#9734;&#9734;&#9734;</td></tr>
