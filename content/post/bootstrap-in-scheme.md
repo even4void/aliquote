@@ -22,7 +22,7 @@ where $\bar S^{\star}$ is the bootstrap sample mean, $\frac{1}{B}\sum_{b=1}^BS(X
 
 Basically, we need a way to (1) shuffle (with replacement) a list of indices (the observation index in a list or vector) _or_ to shuffle the data values directly, then (2) call the same function on $B$ random lists, and finally (3) compute a sum (or any other test statistic). Below is some Chicken Scheme code.
 
-To pick a random element from a list, one can use (replace `pseudo-random-integer` with `random` if you are using Racket), the following lambda will do the job:
+To pick a random element from a list, the following lambda will do the job (replace `pseudo-random-integer` with `random` if you are using Racket):
 
 ```scheme
 (import (chicken random))
@@ -57,12 +57,12 @@ Since we sample with replacement, it is normal to expect some duplicates since t
 
 Everything is now in place. We just need to add one more outer loop to build $n$-samples $k$ times.
 
-Let's first get some data:
+Let's first get [some data]:
 
 ```scheme
 (import (chicken io))
 
-(define fs "/home/chl/Documents/work/tutors/CESAM/cours/Stata/birthwt2.csv")
+(define fs "birthwt2.csv")
 
 (define data (call-with-input-file fs (lambda (p) (read-lines p))))
 ```
@@ -119,3 +119,4 @@ From there on, it is not really diffcult to write a full standalone procedure fo
 [statistics]: https://wiki.call-cc.org/eggref/5/statistics
 [fisher]: https://en.wikipeadia.org/wiki/Fisher_transformation
 [average bootstrap sample]: https://blogs.sas.com/content/iml/2017/06/28/average-bootstrap-sample-omits-data.html
+[some data]: /pub/birthwt2.csv
