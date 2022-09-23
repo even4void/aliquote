@@ -25,6 +25,7 @@ Below is a list of what has been archived over the years on this site or on exte
 <tr><td><a href="/pub/scheme.pdf">Le langage Scheme</a></td><td>Aug 2022</td><td>fr</td><td><i data-feather="file-text" width="12px" height="12px"></i></td></tr>
 <tr><td><a href="/articles/movies/">Informal ratings of some TV shows</a></td><td>Jul 2022</td><td>en</td><td><i data-feather="link" width="12px" height="12px"></i></td></tr>
 <tr><td><a href="/articles/notebooks/org-setup.pdf">A minimal Org setup to write scientific notebooks</a></td><td>Apr 2022</td><td>en</td><td><i data-feather="file-text" width="12px" height="12px"></i></td></tr>
+<tr><td><a href="/pub/genetics-epidemiology.pdf">Notes on epidemiological genetics</a></td><td>Apr 2022</td><td>en</td><td><i data-feather="file-text" width="12px" height="12px"></i></td></tr>
 <tr><td><a href="/pub/urls.html">Refiled links</a></td><td>Dec 2020</td><td>en</td><td><i data-feather="link" width="12px" height="12px"></i></td></tr>
 <tr><td><a href="/pub/vim-101.pdf">Vim 101</a></td><td>Aug 2020</td><td>en</td><td><i data-feather="file-text" width="12px" height="12px"></i></td></tr>
 <tr><td><a href="/pub/z.pdf">Z notes</a></td><td>Feb 2020</td><td>fr</td><td><i data-feather="file-text" width="12px" height="12px"></i></td></tr>
@@ -67,7 +68,6 @@ Below is a list of what has been archived over the years on this site or on exte
 <tr><td><a href="/cours/psychometrics/">Psychometrics<sup>x</sup></a></td><td>Feb 2010</td><td>en</td><td><i data-feather="link" width="12px" height="12px"></i></td></tr>
 <tr><td><a href="/pub/Lalanne_Cogiter_2009.pdf">Analyse des données génétiques</a></td><td>Nov 2009</td><td>fr</td><td><i data-feather="file-text" width="12px" height="12px"></i></td></tr>
 <tr><td><a href="/pub/Lalanne_BIBS_M2Pro.pdf">Intégration de données de neuroimagerie et de génétique</a></td><td>Jun 2009</td><td>fr</td><td><i data-feather="file-text" width="12px" height="12px"></i></td></tr>
-<tr><td><a href="/pub/genetics-epidemiology.pdf">Notes on epidemiological genetics</a></td><td>Apr 2009</td><td>en</td><td><i data-feather="file-text" width="12px" height="12px"></i></td></tr>
 <tr><td><a href="/pub/contrasts.txt">Contrastes sous R</a></td><td>May 2008</td><td>fr</td><td><i data-feather="file-text" width="12px" height="12px"></i></td></tr>
 <tr><td><a href="/pub/MABMUSPlus/">A collection of plots from Selvin's book on S+</a></td><td>Feb 2009</td><td>en</td><td><i data-feather="link" width="12px" height="12px"></i></td></tr>
 <tr><td><a href="/cours/stats_bioinfo">Statistiques inférentielles</a></td><td>Dec 2008</td><td>fr</td><td><i data-feather="link" width="12px" height="12px"></i></td></tr>

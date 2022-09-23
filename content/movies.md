@@ -17,7 +17,7 @@ I haven't watched TV in about ten years, probably even before I removed the TV f
 <td><em>Seasons (Ep.)</em></td>
 <td><em>Rating</em></td>
 </tr>
-<tr><td><a href="https://www.netflix.com/title/81394937">La disparue de Lørenskog</a></td><td>2022</td><td>1 (6)</td><td>&#9733;&#9733;&#9733;&#9734;&#9734;</td></tr>
+<tr><td><a href="https://www.netflix.com/title/81394937">La disparue de Lørenskog</a></td><td>2022</td><td>1 (6)</td><td>&#9733;&#9733;&#9734;&#9734;&#9734;</td></tr>
 <tr><td><a href="https://www.netflix.com/title/81483047">Oats Studios shorts</a></td><td>2022</td><td>1 (10)</td><td>&#9733;&#9733;&#9733;&#9734;&#9734;</td></tr>
 <tr><td><a href="https://en.wikipedia.org/wiki/The_Sandman_(TV_series)">Sandman</a></td><td>2022</td><td>1 (11)</td><td>&#9733;&#9733;&#9734;&#9734;&#9734;</td></tr>
 <tr><td><a href="https://en.wikipedia.org/wiki/Tribes_of_Europa">Tribes of Europa</a></td><td>2022</td><td>1 (6)</td><td>&#9733;&#9733;&#9733;&#9734;&#9734;</td></tr>
