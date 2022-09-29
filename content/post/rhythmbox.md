@@ -10,6 +10,11 @@ I've been a faithful user of [cmus] for the past two years. It is fast and respo
 
 Since I upgraded to Ubuntu 22.04 LTS I decided to try another music player. I've been trying Audacious on i3, but that's was just to try it out. Last week, I decided to give Rhythmbox a try. I think it should normally be instaled on a full-featured Ubuntu distro, like Libreoffice, Thunderbird and the like. Since I decided to install the bare essentials, I don't have default application for managing media files on Ubuntu.
 
+{{% alert note %}}
+<small>[2022-09-29]</small><br>
+TIL about [Lollypop](https://wiki.gnome.org/Apps/Lollypop) (via [Reddit](https://www.reddit.com/r/linux/comments/8kmero/linux_needs_a_really_good_music_player/)), which also seems to handle metadata quite well, and provides audio scrobbling facilities. There apparently is the [Sayonara player](https://sayonara-player.com/) in the race as well.
+{{% /alert %}}
+
 I imported my main libraries into Rhythmbox with no problem at all. All tracks were correctly classified by author/album/genre apparently. I could check with [beets], except that it no longer works since I switched to Python 3.10. I then created new playlists using the following command, for each playlist folder:
 
 ```shell
