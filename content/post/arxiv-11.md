@@ -8,6 +8,10 @@ categories: ["2022"]
 
 ### https://arxiv.org/abs/2204.09155
 
+At first sight, it sounds really interesting:
+
+> Persistent homology (...) produces a statistical summary in the form of a persistence diagram, which captures the shape and size of the data.
+
 ### https://arxiv.org/abs/2204.11819
 
 ### https://arxiv.org/abs/2204.11209
