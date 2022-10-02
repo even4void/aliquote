@@ -109,9 +109,9 @@ I also have kind of an universal mapping, <kbd>gs</kbd>, which depending on file
 
 ```vim
 " poor man send-to-repl features (we need to fire a REPL in a split first)
-noremap ss Vy<C-w>wpa<CR><CR><Esc>
-noremap s y<C-w>wpa<CR><CR><Esc>
-xnoremap s y<C-w>wpa<CR><CR><Esc>
+noremap ss Vy<C-w>wpa<CR><C-\><C-n><C-w>pj
+noremap s y<C-w>wpa<CR><C-\><C-n><C-w>p
+xnoremap s y<C-w>wpa<CR><C-\><C-n><C-w>p
 ```
 
 [^1]: When I first drafted this cheatsheet, I was still using 15 plugins or so. Some packages broke at some point and I was too lazy to investigate why, or some were of too little use to justify keeping them. I don't really miss anything with my current config, though.
