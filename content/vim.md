@@ -11,6 +11,11 @@ Note that I only have 10 plugins in my `start` and `opt` directories, in additio
 - [opt] `Comment.nvim`, `nvim-lspconfig`, `null-ls.nvim`, `nvim-parinfer`, `vim-test`, `vimtex`;
 - [start] `nvim-treesitter`, `packer.nvim`, `plenary.nvim`, `telescope.nvim`
 
+{{% alert note %}}
+<small>[2022-10-05]</small><br>
+I changed it all again! Latest setup described [here](/post/speed-up-neovim/). This means that some keybindings no longer apply to my current config. It's all in the details but I feel like a minimalist setup and almost zero dependencies are the take away message.
+{{% /alert %}}
+
 I prefer a minimalist setup these days, and I tend to rely on hand-on solutions for tasks I carry over and over. Many of those custom settings come from briliant Vimers who are acknowledged in my config files. Note that some of those mappings may override existing ones, whether they are somewhat redundant (e.g. <kbd>s</kbd> and <kbd>c</kbd>) or because I don't use them at all (e.g., some of the <kbd>Ctrl</kbd>, <kbd>g</kbd> or <kbd>z</kbd> combinations).
 
 My leader is ","[^2] and I do not define specific mappings for the localleader in my main config files. It looks like I always misunderstoof the role of [localleader](https://learnvimscriptthehardway.stevelosh.com/chapters/06.html), and I decided to book it for my `after/ftplugin` custom settings.
