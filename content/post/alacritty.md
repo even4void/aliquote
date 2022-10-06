@@ -34,7 +34,7 @@ John Cook discussed font that come with ligatures, like Fira Code, on [his blog]
 
 > There’s one place where I believe Fira Code would be ideal: code examples inside a prose document. In that context you care about aesthetics and you want a monospaced font.
 
-![img](/img/2022-10-06-21-52-38.png)
+![img](/img/2022-10-06-21-51-38.png)
 
 {{% music %}}The Psychedelic Furs • _Love My Way_{{% /music %}}
 
