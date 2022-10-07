@@ -25,7 +25,7 @@ Of course, this does not mean that I only listen to digital music. I have some g
 
 {{< fluid_imgs
 "pure-u-1-2|/img/68500743319__496CF36A-5D30-470F-A124-A0933F167FD0.JPG"
-"pure-u-1-2|/img/68500743319__496CF36A-5D30-470F-A124-A0933F167FD0.JPG" >}}
+"pure-u-1-2|/img/68500782808__55A24BB2-A435-4247-A9F0-9F2216BA1559.JPG" >}}
 
 {{% music %}}Cocteau Twins • _Blood Bitch_{{% /music %}}
 
