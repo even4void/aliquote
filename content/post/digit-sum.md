@@ -2,7 +2,7 @@
 title: "Digit Sum"
 date: 2019-07-08T10:14:05+02:00
 draft: false
-tags: ["math", "scheme", "euler"]
+tags: ["math", "racket", "euler"]
 categories: ["2019"]
 ---
 
@@ -34,4 +34,4 @@ This is widely used in checksum algorithms, for instance the Luhn number checksu
     (* (/ 1 10) (mod-10 x i))))
 ```
 
-A related idea can be found in the [CRC error checking](https://dvsoft.developpez.com/Articles/CRC/) algorithm. There are various Lips implementation of the CRC algorithm, [here](http://www.thoughtstuff.com/rme/crc.lisp) and [there](https://github.com/robblackwell/cl-crc64).
+A related idea can be found in the [CRC error checking](https://dvsoft.developpez.com/Articles/CRC/) algorithm. There are various Lisp implementation of the CRC algorithm, [here](http://www.thoughtstuff.com/rme/crc.lisp) and [there](https://github.com/robblackwell/cl-crc64).
