@@ -88,7 +88,7 @@ I summarized sone of the options I have in my vimrc folder in the following tabl
 <td><em>Fixer</em></td>
 </tr>
 <tr><td>c</td><td>clangd</td><td>built-in</td><td>built-in</td></tr>
-<tr><td>python</td><td>pyright</td><td>built-in</td><td>black,[^3] isort</td></tr>
+<tr><td>python</td><td>pyright</td><td>built-in</td><td>black, isort</td></tr>
 <tr><td>racket</td><td>racket-langserver</td><td>built-in</td><td>built-in</td></tr>
 <tr><td>haskell</td><td>hls</td><td>built-in</td><td>built-in</td></tr>
 <tr><td>purescript</td><td>purescriptls</td><td>built-in</td><td>built-in</td></tr>
@@ -102,7 +102,6 @@ I summarized sone of the options I have in my vimrc folder in the following tabl
 
 [^1]: It is available on [GitHub](https://github.com/phelipetls/dotfiles/blob/master/.config/nvim/compiler/pytest.vim).
 [^2]: I don't really mind formatting a buffer using a shortcut, although it is possible to use an autocommand to format it on save.
-[^3]: I also use `setlocal formatprg=python3\ -m\ macchiato` for range formatting.
 
 [null-ls]: https://github.com/jose-elias-alvarez/null-ls.nvim
 [ALE]: https://github.com/dense-analysis/ale
