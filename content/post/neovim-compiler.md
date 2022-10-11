@@ -70,7 +70,7 @@ In both cases above, the tricky part is to manage the `errorformat`. Once you ha
 
 ```vim
 compiler shellcheck
-setlocal makeprg=shellcheck\ %
+setlocal makeprg=shellcheck\ -f\ gcc\ %
 nmap <buffer> <silent> g= :!shfmt -i 2 -ln posix -sr -ci -s -w %<cr>:redraw!<cr>
 ```
 
