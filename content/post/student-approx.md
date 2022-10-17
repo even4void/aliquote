@@ -55,6 +55,13 @@ Currently, there's no way to compute tail probability from the Student's $t$ dis
 
 R returns $Q(2.41 \mid 36) = 0.01059417$ for the one-tailed probability.
 
+
+{{% alert note %}}
+<small>[2022-10-17]</small><br>
+For those more versed into the Python ecosystem, John Cook wrote a nice summary of what's available in Scipy: [Using Python as a statistical calculator](https://www.johndcook.com/blog/2022/10/15/python-as-stat-calculator/).
+{{% /alert %}}
+
+
 [^1]: John F. Monahan. _Numerical Methods in Statistics_. Cambridge University Press (2011).
 [^2]: Abramowitz and Stegun. [*Handbook of Mathematical Functions*](http://people.math.sfu.ca/~cbm/aands/)
 [^3]: As noted by Monahan, for large values of $t/\sqrt{k}$, which may happen for very large test statistic under low df distribution, this expression may yield to potential cancellation.
