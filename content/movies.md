@@ -38,6 +38,7 @@ I haven't watched TV in about ten years, probably even before I removed the TV f
 <tr><td><a href="https://en.wikipedia.org/wiki/The_100_(TV_series)">The 100</a></td><td>2020+</td><td>7 (100)</td><td>&#9733;&#9733;&#9733;&#9733;&#9734;</td></tr>
 <tr><td><a href="https://en.wikipedia.org/wiki/Black_Mirror">Black Mirror</a></td><td>2020+</td><td>5 (22)</td><td>&#9733;&#9733;&#9733;&#9733;&#9733;</td></tr>
 <tr><td><a href="https://en.wikipedia.org/wiki/Fargo_(TV_series)">Fargo</a></td><td>2020</td><td>4 (41)</td><td>&#9733;&#9733;&#9733;&#9734;&#9734;</td></tr>
+<tr><td><a href="https://en.wikipedia.org/wiki/Department_Q_(film_series)">Department Q</a></td><td>2020</td><td>4</td><td>&#9733;&#9733;&#9733;&#9733;&#9734;</td></tr>
 <tr><td><a href="https://en.wikipedia.org/wiki/The_Leftovers_(TV_series)">The Leftovers (S1)</a></td><td>2020</td><td>1 (10)</td><td>&#9733;&#9733;&#9733;&#9734;&#9734;</td></tr>
 <tr><td><a href="https://en.wikipedia.org/wiki/Battlestar_Galactica_(2004_TV_series)">Battlestar Galactica</a></td><td>2020</td><td>4 (76)</td><td>&#9733;&#9733;&#9733;&#9734;&#9734;</td></tr>
 <tr><td><a href="https://en.wikipedia.org/wiki/American_Gods_(TV_series)">American Gods</a></td><td>2020</td><td>3 (26)</td><td>&#9733;&#9733;&#9734;&#9734;&#9734;</td></tr>
@@ -45,6 +46,7 @@ I haven't watched TV in about ten years, probably even before I removed the TV f
 <tr><td><a href="https://en.wikipedia.org/wiki/The_Rook_(miniseries)">The Rook</a></td><td>2020</td><td>1 (8)</td><td>&#9733;&#9733;&#9733;&#9734;&#9734;</td></tr>
 <tr><td><a href="https://en.wikipedia.org/wiki/Euphoria_(American_TV_series)">Euphoria (S1)</a></td><td>2019</td><td>1 (9)</td><td>&#9733;&#9733;&#9733;&#9733;&#9734;</td></tr>
 <tr><td><a href="https://en.wikipedia.org/wiki/12_Monkeys_(TV_series)">12 Monkeys</a></td><td>2019</td><td>4 (47)</td><td>&#9733;&#9733;&#9733;&#9733;&#9733;</td></tr>
+<tr><td><a href="https://en.wikipedia.org/wiki/The_Handmaid%27s_Tale_(TV_series)">The Handmaid's Tale</a></td><td>2019</td><td>4 (43)</td><td>&#9733;&#9733;&#9733;&#9733;&#9734;</td></tr>
 <tr><td><a href="https://en.wikipedia.org/wiki/Westworld_(TV_series)">Westworld</a></td><td>2019</td><td>4 (33)</td><td>&#9733;&#9733;&#9733;&#9733;&#9734;</td></tr>
 <tr><td><a href="https://en.wikipedia.org/wiki/Chernobyl_(miniseries)">Chernobyl</a></td><td>2019</td><td>1 (5)</td><td>&#9733;&#9733;&#9734;&#9734;&#9734;</td></tr>
 <tr><td><a href="https://en.wikipedia.org/wiki/The_Expanse_(TV_series)">The Expanse</a></td><td>2019</td><td>6 (62)</td><td>&#9733;&#9733;&#9733;&#9733;&#9734;</td></tr>
