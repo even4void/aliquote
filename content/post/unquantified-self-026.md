@@ -1,10 +1,24 @@
 ---
-title: "Unquantified Self 026"
-date: 2022-09-28T20:03:14+02:00
+title: "The unquantified self #26"
+date: 2022-10-28T20:03:14+02:00
 draft: true
-tags: []
+tags: ["self"]
 categories: ["2022"]
 ---
 
+October is going to an end. I have only partially recovered from the fatigue and other little worries of the last months, which are still under investigation. But, anyway, I am still around. I've been playing with my crayons lately. It's been 25 years that I hadn't made any drawing, so I was surprised to find myself spending each evening in front of a kraft paper notebook. The sixty or so drawings produced are partly the product of external sources of inspiration (Lee Zimmerman, Enki Bilal, Kandinsky, Matisse) and of more personal reflections.
 
-{{% music %}}XXX • _XXX_{{% /music %}}
+{{< fluid_imgs
+"pure-u-1-3|/img/"
+"pure-u-1-3|/img/"
+"pure-u-1-3|/img/" >}}
+
+It is in all cases only ink, and a bit of charcoal. No eraser whatsoever.
+
+I've been watching some new TV series (Alice in Borderland, La disparue de Lørenskog -- I'm too lazy to look for the English title, and Deadwind). These were all great short movies for the past evenings.
+
+Lastly, I'm in the process of configuring a home server based on OpenBSD that will run on my old [Macbook pro][]. It will be fun, eventually. I will also be managing a nice server (32 HT cores, 512 Go RAM, 832 iGPU cores) at work. Time to brush up my sysadmin skills, which are now close to zero to be honest.
+
+{{% music %}}Jack Johnson • _Sitting, Waiting, Wishing_{{% /music %}}
+
+[Macbook pro]: /post/ubuntu-on-mac/

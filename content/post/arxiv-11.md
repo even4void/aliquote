@@ -1,6 +1,6 @@
 ---
 title: "ArXiving on October 2022"
-date: 2022-10-01T10:09:25+01:00
+date: 2022-10-25T10:09:25+01:00
 draft: true
 tags: ["readings", "arxiv"]
 categories: ["2022"]
@@ -8,9 +8,11 @@ categories: ["2022"]
 
 ### https://arxiv.org/abs/2204.09155
 
-At first sight, it sounds really interesting:
+At first sight, it sounded really interesting:
 
 > Persistent homology (...) produces a statistical summary in the form of a persistence diagram, which captures the shape and size of the data.
+
+Then, I realized that
 
 ### https://arxiv.org/abs/2204.11819
 
