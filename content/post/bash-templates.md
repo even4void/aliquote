@@ -33,6 +33,11 @@ esac
 
 As can be seen, this is pretty basic stuff, and everything is handled via the first argument to the shell script (recall that `$0` is the program name, `$1` its first argument, etc.). Of course, feel free to add all sort of guards (`set -e`, `set -u`, `set -o pipefail`) at the top of your script. My default Vim template for shell scripts include most of them, and I delete unnecessary ones depending on my needs.
 
+{{% alert note %}}
+<small>[2022-10-27]</small><br>
+See also [Shell Script Best Practices](https://sharats.me/posts/shell-script-best-practices/) to learn a lot more tips and tricks. It also features a nice Bash template.
+{{% /alert %}}
+
 The second template is a little more involved as it exemplifies the use of proper subcommands, as in Hugo or Git for instance. The following script is a real script that I use to update a changelog with Git revisions in specific Git repositories on my hard drive (my website and all Git projects that are in the same directory, `$HOME/cwd`). Here's the gist of it:
 
 ```shell
