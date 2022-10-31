@@ -1,7 +1,7 @@
 ---
 title: "Computing eigenvalues using QR decomposition"
 date: 2022-10-30T09:31:49+01:00
-draft: false
+draft: true
 tags: ["math", "racket"]
 categories: ["2022"]
 ---
