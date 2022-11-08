@@ -23,11 +23,12 @@ Compared to Neovim, my requirements are even more minimalistic since I don't use
 <tr><td><kbd>M-K</kbd></td><td><kbd>resize-pane -U 4</kbd></td><td>resize pane toward up</td></tr>
 <tr><td><kbd>M-L</kbd></td><td><kbd>resize-pane -R 4</kbd></td><td>resize pane toward right</td></tr>
 <tr><td><kbd>M-!</kbd></td><td><kbd>split-window -f -l 10 -c "#{pane_current_path}"</kbd></td><td>bottom popup terminal</td></tr>
+<tr><td><kbd>M--</kbd></td><td><kbd>display-popup -E -w 80% -h 80% "lf"</kbd></td><td>lf file manager in a popup</td></tr>
 <tr><td><kbd>M-:</kbd></td><td><kbd>command-prompt</kbd></td><td>display command prompt</td></tr>
 <tr><td><kbd>M-&lt;</kbd></td><td><kbd>swap-pane -U</kbd></td><td>move pane to the left</td></tr>
 <tr><td><kbd>M-&gt;</kbd></td><td><kbd>swap-pane -D</kbd></td><td>move pane to the right</td></tr>
+<tr><td><kbd>M-Enter</kbd></td><td><kbd>new-window</kbd></td><td>new window</td></tr>
 <tr><td><kbd>M-=</kbd></td><td><kbd>choose-buffer</kbd></td><td>select among paste buffers</td></tr>
-<tr><td><kbd>M-D</kbd></td><td><kbd>choose-client</kbd></td><td>select Tmux client to use</td></tr>
 <tr><td><kbd>M-Down</kbd></td><td><kbd>swap-window -t +1</kbd></td><td>move window to the right</td></tr>
 <tr><td><kbd>M-Up</kbd></td><td><kbd>swap-window -t -1</kbd></td><td>move window to the left</td></tr>
 <tr><td><kbd>M-Left</kbd></td><td><kbd>previous-window</kbd></td><td>select next window to the left</td></tr>
@@ -44,9 +45,7 @@ Compared to Neovim, my requirements are even more minimalistic since I don't use
 <tr><td><kbd>M-l</kbd></td><td><kbd>last-window</kbd></td><td>go to last window</td></tr>
 <tr><td><kbd>M-m</kbd></td><td><kbd>command-prompt -p "Search man pages for:" "new-window 'exec man %%'"</kbd></td><td>query man page in a temporary window</td></tr>
 <tr><td><kbd>M-o</kbd></td><td><kbd>selectp -t :.+</kbd></td><td>go to other split</td></tr>
-<tr><td><kbd>M-b</kbd></td><td><kbd>run "tmux split-window -p 10 'tmux send-keys -t #{pane_id} \"$(bibcite)\"'"</kbd></td><td>Bibtex citation from bibtex-ls (copy to clipboard)</td></tr>
-<tr><td><kbd>M-B</kbd></td><td><kbd>run "tmux split-window -p 10 'tmux send-keys -t #{pane_id} \"$(bibfind)\"'"</kbd></td><td>Bibtex citation from bibtex-ls (open PDF)</td></tr>
-<tr><td><kbd>M-/</kbd></td><td><kbd>run "tmux split-window -p 10 'tmux send-keys -t #{pane_id} \"$(locate ~/ | fzf -m | paste -sd\\  -)\"'"</kbd></td><td>find file in bottom temporary split using Fzf</td></tr>
+<tr><td><kbd>M-p</kbd></td><td><kbd>run-shell -b ~/bin/tmux-fzf</kbd></td><td>select picker for window</td></tr>
 <tr><td><kbd>M-s</kbd></td><td><kbd>split-window -v -c "#{pane_current_path}"</kbd></td><td>create horizontal split</td></tr>
 <tr><td><kbd>M-v</kbd></td><td><kbd>split-window -v -c "#{pane_current_path}"</kbd></td><td>create vertical split</td></tr>
 <tr><td><kbd>M-t</kbd></td><td><kbd>break-pane</kbd></td><td>convert pane to proper window</td></tr>
@@ -55,6 +54,7 @@ Compared to Neovim, my requirements are even more minimalistic since I don't use
 <tr><td><kbd>M-z</kbd></td><td><kbd>resize-pane -Z</kbd></td><td>maximize current pane</td></tr>
 <tr><td><kbd>C-b C-g</kbd></td><td><kbd>setw synchronize-panes</kbd></td><td>synchronize panes</td></tr>
 <tr><td><kbd>C-b C-m</kbd></td><td><kbd>if -F '#{s/off//:mouse}' 'set -g mouse off; display-message "mouse: off"' 'set -g mouse on; display-message "mouse: on"'</kbd></td><td>toggle mouse mode on/off</td></tr>
+<tr><td><kbd>C-b C-p</kbd></td><td><kbd>run "tmux capture-pane; tmux save-buffer ~/tmp/tmux-\"$(date +%FT%T)\""</kbd></td><td>save buffer to a file</td></tr>
 <tr><td><kbd>C-b C-r</kbd></td><td><kbd>source-file ~/.tmux.conf \; display-message "Config reloaded"</kbd></td><td>reload Tmux config</td></tr>
 <tr><td><kbd>C-b C-s</kbd></td><td><kbd>if -F '#{s/off//:status}' 'set status off' 'set status on'</kbd></td><td>toggle status bar on/off</td></tr>
 </tbody>

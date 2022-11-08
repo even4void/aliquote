@@ -31,7 +31,10 @@ Hopefully, this is not the only solution and there are a couple of links about s
 
 - [Landslide](https://github.com/adamzap/landslide): a Python-based slideshow system, which Chris Fonnesbeck was using for one of his course:
 
-{{< tweet user="fonnesbeck" id="382960381607809024" >}}
+{{% alert note %}}
+<small>[2022-11-08]</small><br>
+Unfortunately, the tweet with ID 382960381607809024 has been deleted.
+{{% /alert %}}
 
 I'm pretty sure I bookmarked other links from Twitter, but well, that's where Twitter sucks: it's hard to find something you posted or bookmarked, say, three or four months ago. Here is all what I found by looking in my recent tweets:
 

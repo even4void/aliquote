@@ -14,7 +14,10 @@ Problem with local backup is that if the disk crashed or something bad happens a
 
 I decided to go to the cloud (which was what I did with my iDisk before Apple changed their policies) with [Amazon S3](http://aws.amazon.com/fr/s3/) services and [Arq](http://www.haystacksoftware.com/arq/) which I found thanks to [Chris Fonnesbeck](http://biostat.mc.vanderbilt.edu/wiki/Main/ChrisFonnesbeck) via Twitter.
 
-{{< tweet user="fonnesbeck" id="265506509776093184" >}}
+{{% alert note %}}
+<small>[2022-11-08]</small><br>
+Unfortunately, the tweet with ID 265506509776093184 has been deleted.
+{{% /alert %}}
 
 Yet you have to pay for that, whether you exceed your S3 free storage (5 Go) or simply for the application; $29 for Arq remains affordable, though, and I don't plan to exceed my S3 Bucket. Arq is currently uploading my data to [Amazon Glacier](http://aws.amazon.com/glacier/), which according to the docs implies a 4-hour delay to get access to the data but at a reduced cost. I believe this is a fair trade for a simple backup of critical data that we would miss in case of total breakdown of our system.
 
