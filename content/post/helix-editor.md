@@ -2,7 +2,7 @@
 title: "Helix editor"
 date: 2022-04-23T20:28:05+02:00
 draft: false
-tags: ["misc"]
+tags: ["app"]
 categories: ["2022"]
 ---
 
@@ -18,7 +18,7 @@ Soon after this comment, the whole comment thread starts to be a replay of the V
 
 {{% alert note %}}
 <small>[2022-11-09]</small><br>
-I spent a few hours playing with Helix today. I compiled it from scratch using `cargo` and followed the instructions to set up its runtime (865 Mo!) and so on. It works really great, I mean for text editor written from scratch in Rust. I really like the experience, even if some keybindings are not that intuitive when coming from (Neo)vim. The built-in LSP and Treesitter integrations work as advertised, and you also get some DAP debugging for Rust and C/C++. The configuration is easy to manage (this is a simple toml file), and there are plenty of gorgeous color themes to choose from. I do not really like the popup window that presents available combination of keypresses (much like which-key in Emacs or Vim), but I guess some like it. I am more comfortable with my own config for Neovim, but I would surely recommend Helix for anyone interested in a zero-config powerful text editor for coding.
+I spent a few hours playing with Helix today. I compiled it from scratch using `cargo` and followed the instructions to set up its runtime (865 Mo!) and so on. It works really great, I mean for text editor written from scratch in Rust. I really like the experience, even if some keybindings are not that intuitive when coming from (Neo)vim. This is easily [configurable](https://raw.githubusercontent.com/LGUG2Z/helix-vim/master/config.toml), though. The built-in LSP and Treesitter integrations work as advertised, and you also get some DAP debugging for Rust and C/C++. The configuration is easy to manage (this is a simple toml file), and there are plenty of gorgeous color themes to choose from. I do not really like the popup window that presents available combination of keypresses (much like which-key in Emacs or Vim), but I guess some like it. I am more comfortable with my own config for Neovim, but I would surely recommend Helix for anyone interested in a zero-config powerful text editor for coding.
 {{% /alert %}}
 
 {{% music %}}Ida Sand • _Burning_{{% /music %}}
