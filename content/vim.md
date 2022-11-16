@@ -80,7 +80,6 @@ My leader is ","[^2] and I do not define specific mappings for the localleader i
 <tr><td><kbd>gr</kbd></td><td>n</td><td><kbd>vim.lsp.buf.references</kbd></td><td>Show references (LSP)</td></tr>
 <tr><td><kbd>gi</kbd></td><td>n</td><td><kbd>vim.lsp.buf.implementation</kbd></td><td>Show references (LSP)</td></tr>
 <tr><td><kbd>zr</kbd></td><td>n</td><td><kbd>vim.lsp.buf.rename</kbd></td><td>Rename symbol (LSP)</td></tr>
-<tr><td><kbd>gi</kbd></td><td>n</td><td><kbd>vim.lsp.buf.implementation</kbd></td><td>Show implementation (LSP)</td></tr>
 </tbody>
 </table>
 </small>
