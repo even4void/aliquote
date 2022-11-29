@@ -8,7 +8,7 @@ Here are the current Neovim mappings I came to feel comfortable with over time. 
 
 Note that I only have a dozen of plugins in my `start` and `opt` directories, in addition to part of [mini.nvim](https://github.com/echasnovski/mini.nvim) that I adapted to suit my needs better: (This may change in the future but usually I tend to remove plugins rather than add new ones.[^1] )
 
-- [opt] `nvim-treesitter`, `nvim-treesitter-textobjects`, `Comment.nvim`, `nvim-lspconfig`, `nvim-parinfer`, `vimtex`, `fzf-hoogle.vim`, `cmake4vim`, `nvim-colorizer`;
+- [opt] `nvim-treesitter`, `nvim-treesitter-textobjects`, `Comment.nvim`, `nvim-lspconfig`, `nvim-parinfer`, `vimtex`, `fzf-hoogle.vim`, `nvim-colorizer`;
 - [start]  `packer.nvim`, `fzf.vim`, `fzf`
 
 {{% alert note %}}
