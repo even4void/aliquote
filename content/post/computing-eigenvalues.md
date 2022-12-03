@@ -1,6 +1,6 @@
 ---
 title: "Computing eigenvalues using QR decomposition"
-date: 2022-10-30T09:31:49+01:00
+date: 2022-11-30T09:31:49+01:00
 draft: true
 tags: ["math", "racket"]
 categories: ["2022"]
@@ -15,7 +15,6 @@ In Racket, using an example from [Rosetta][] we would write:
 (matrix-qr (matrix [[12 -51   4]
                     [ 6 167 -68]
                     [-4  24 -41]]))
-(for/list
 ```
 
 
