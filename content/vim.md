@@ -8,7 +8,7 @@ Here are the current Neovim mappings I came to feel comfortable with over time. 
 
 Note that I only have a dozen of plugins in my `start` and `opt` directories, in addition to part of [mini.nvim](https://github.com/echasnovski/mini.nvim) that I adapted to suit my needs better: (This may change in the future but usually I tend to remove plugins rather than add new ones.[^1] )
 
-- [opt] `nvim-treesitter`, `nvim-treesitter-textobjects`, `Comment.nvim`, `nvim-lspconfig`, `nvim-parinfer`, `vimtex`, `fzf-hoogle.vim`, `nvim-colorizer`;
+- [opt] `nvim-treesitter`, `nvim-treesitter-textobjects`, `Comment.nvim`, `nvim-lspconfig`, `nvim-parinfer`, `vimtex`, `fzf-hoogle.vim`, `nvim-colorizer` `rust-tools.nvim`;
 - [start]  `packer.nvim`, `fzf.vim`, `fzf`
 
 {{% alert note %}}
@@ -70,9 +70,9 @@ My leader is ","[^2] and I do not define specific mappings for the localleader i
 <tr><td><kbd>[d</kbd></td><td>n</td><td><kbd>vim.diagnostic.goto_prev</kbd></td><td>Go to previous diagnostic (LSP)</td></tr>
 <tr><td><kbd>]d</kbd></td><td>n</td><td><kbd>vim.diagnostic.goto_next</kbd></td><td>Go to next diagnostic (LSP)</td></tr>
 <tr><td><kbd>,wd</kbd></td><td>n</td><td><kbd>vim.diagnostic.open_float</kbd></td><td>Show diagnostic in a floating window (LSP)</td></tr>
-<tr><td><kbd>g=</kbd></td><td>x</td><td><kbd>vim.lsp.buf.range_formatting</kbd></td><td>Format selection (LSP)</td></tr>
-<tr><td><kbd>g=</kbd></td><td>n</td><td><kbd>vim.lsp.buf.formatting</kbd></td><td>Format selection (LSP)</td></tr>
+<tr><td><kbd>g=</kbd></td><td>n</td><td><kbd>vim.lsp.buf.format</kbd></td><td>Format selection (LSP)</td></tr>
 <tr><td><kbd>z=</kbd></td><td>n,x</td><td><kbd>vim.lsp.buf.code_action</kbd></td><td>Code action (LSP)</td></tr>
+<tr><td><kbd>z!</kbd></td><td>n,x</td><td><kbd>vim.lsp.codelens.run</kbd></td><td>Code lens (LSP)</td></tr>
 <tr><td><kbd>gO</kbd></td><td>n</td><td><kbd>vim.lsp.buf.document_symbol()</kbd></td><td>Show workspace or buffer symbols depending on filetype (LSP)</td></tr>
 <tr><td><kbd>K</kbd></td><td>n</td><td><kbd>vim.lsp.buf.hover</kbd></td><td>Show help for current symbol (LSP)</td></tr>
 <tr><td><kbd>&lt;C-h></kbd></td><td>i</td><td><kbd>vim.lsp.buf.signature_help</kbd></td><td>Show signature help (LSP)</td></tr>
