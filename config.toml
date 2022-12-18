@@ -34,20 +34,35 @@ mode = "auto"
 [outputs]
 home = ["HTML", "RSS", "JSON"]
 
-[[menu.main]]
-name = "Articles"
-url = "/post"
-weight = 1
+# [[menu.main]]
+# name = "Articles"
+# url = "/post"
+# weight = 1
 
 [[params.social]]
-name = "Search"
-icon = "search"
-url = "/search"
+name = "About"
+icon = "info"
+url = "/about"
+
+[[params.social]]
+name = "Articles"
+icon = "list"
+url = "/post"
+
+[[params.social]]
+name = "Archives"
+icon = "archive"
+url = "/writings"
 
 [[params.social]]
 name = "Contact"
 icon = "mail"
 url = "/contact"
+
+[[params.social]]
+name = "Search"
+icon = "search"
+url = "/search"
 
 [[params.social]]
 name = "RSS"
