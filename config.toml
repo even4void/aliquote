@@ -1,6 +1,6 @@
 baseURL = "https://aliquote.org/"
 languageCode = "en"
-title = "aliquote"
+title = "<aliquote/>"
 theme = "aliquote"
 paginate = 10
 enableRobotsTXT = true
@@ -26,7 +26,6 @@ filename = "sitemap.xml"
 name = "chl"
 
 [params]
-subtitle = "< a quantity that can be divided into another a whole number of time />"
 mainSections = ["tweet"]
 featherIconsCDN = true
 wc = true
