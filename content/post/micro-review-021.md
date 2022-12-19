@@ -1,6 +1,6 @@
 ---
 title: "December in review"
-date: 2022-12-19TA0:33:05+01:00
+date: 2022-12-19T10:33:05+01:00
 draft: false
 tags: ["readings"]
 categories: ["2022"]
