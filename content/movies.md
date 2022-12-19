@@ -17,7 +17,7 @@ I haven't watched TV in about ten years, probably even before I removed the TV f
 <td><em>Seasons (Ep.)</em></td>
 <td><em>Rating</em></td>
 </tr>
-<tr><td><a href="https://en.wikipedia.org/wiki/The_Silent_Sea_(TV_series)">The Silent Sea</a></td><td>2022</td><td>1 (8)</td><td>&#9733;&#9733;&#9733;&#9734;&#9734;</td></tr>
+<tr><td><a href="https://en.wikipedia.org/wiki/The_Silent_Sea_(TV_series)">The Silent Sea</a></td><td>2022</td><td>1 (8)</td><td>&#9733;&#9734;&#9734;&#9734;&#9734;</td></tr>
 <tr><td><a href="https://en.wikipedia.org/wiki/Love,_Death_%26_Robots">Love, Death & Robots</a></td><td>2022</td><td>3 (35)</td><td>&#9733;&#9733;&#9733;&#9734;&#9734;</td></tr>
 <tr><td><a href="https://en.wikipedia.org/wiki/Deadwind">Deadwind</a></td><td>2022</td><td>3 (28)</td><td>&#9733;&#9733;&#9733;&#9734;&#9734;</td></tr>
 <tr><td><a href="https://www.netflix.com/title/81394937">Alice in Borderland</a></td><td>2022</td><td>1 (8)</td><td>&#9733;&#9733;&#9733;&#9734;&#9734;</td></tr>

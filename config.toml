@@ -40,11 +40,6 @@ home = ["HTML", "RSS", "JSON"]
 # weight = 1
 
 [[params.social]]
-name = "About"
-icon = "info"
-url = "/about"
-
-[[params.social]]
 name = "Articles"
 icon = "list"
 url = "/post"
@@ -53,6 +48,11 @@ url = "/post"
 name = "Archives"
 icon = "archive"
 url = "/writings"
+
+[[params.social]]
+name = "About"
+icon = "info"
+url = "/about"
 
 [[params.social]]
 name = "Contact"
