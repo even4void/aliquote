@@ -17,6 +17,7 @@ I haven't watched TV in about ten years, probably even before I removed the TV f
 <td><em>Seasons (Ep.)</em></td>
 <td><em>Rating</em></td>
 </tr>
+<tr><td><a href="https://en.wikipedia.org/wiki/Guillermo_del_Toro%27s_Cabinet_of_Curiosities">Cabinet of Curiosities</a></td><td>2022</td><td>1 (8)</td><td>&#9733;&#9733;&#9733;&#9733;&#9734;</td></tr>
 <tr><td><a href="https://en.wikipedia.org/wiki/The_Silent_Sea_(TV_series)">The Silent Sea</a></td><td>2022</td><td>1 (8)</td><td>&#9733;&#9734;&#9734;&#9734;&#9734;</td></tr>
 <tr><td><a href="https://en.wikipedia.org/wiki/Love,_Death_%26_Robots">Love, Death & Robots</a></td><td>2022</td><td>3 (35)</td><td>&#9733;&#9733;&#9733;&#9734;&#9734;</td></tr>
 <tr><td><a href="https://en.wikipedia.org/wiki/Deadwind">Deadwind</a></td><td>2022</td><td>3 (28)</td><td>&#9733;&#9733;&#9733;&#9734;&#9734;</td></tr>
@@ -27,12 +28,12 @@ I haven't watched TV in about ten years, probably even before I removed the TV f
 <tr><td><a href="https://en.wikipedia.org/wiki/Tribes_of_Europa">Tribes of Europa</a></td><td>2022</td><td>1 (6)</td><td>&#9733;&#9733;&#9733;&#9734;&#9734;</td></tr>
 <tr><td><a href="https://en.wikipedia.org/wiki/Mindhunter_(TV_series)">Mindhunter</a></td><td>2022</td><td>2 (19)</td><td>&#9733;&#9733;&#9733;&#9733;&#9734;</td></tr>
 <tr><td><a href="https://en.wikipedia.org/wiki/3%25">3% (S1)</a></td><td>2022</td><td>1 (10)</td><td>&#9733;&#9733;&#9734;&#9734;&#9734;</td></tr>
-<tr><td><a href="https://en.wikipedia.org/wiki/Secret_City_(TV_series)">Secret City</a></td><td>2022</td><td>2 (12)</td><td>&#9733;&#9733;&#9733;&#9733;&#9734;</td></tr>
+<tr><td><a href="https://en.wikipedia.org/wiki/Secret_City_(TV_series)">Secret City</a></td><td>2022</td><td>2 (12)</td><td>&#9733;&#9733;&#9733;&#9734;&#9734;</td></tr>
 <tr><td><a href="https://en.wikipedia.org/wiki/Sense8">Sense8</a></td><td>2022</td><td>2 (24)</td><td>&#9733;&#9733;&#9733;&#9733;&#9734;</td></tr>
 <tr><td><a href="https://en.wikipedia.org/wiki/Kiss_Me_First_(TV_series)">Kiss Me First</a></td><td>2022</td><td>1 (6)</td><td>&#9733;&#9733;&#9734;&#9734;&#9734;</td></tr>
 <tr><td><a href="https://fr.wikipedia.org/wiki/Altered_Carbon">Altered Carbon</a></td><td>2022</td><td>2 (18)</td><td>&#9733;&#9733;&#9733;&#9734;&#9734;</td></tr>
 <tr><td><a href="https://en.wikipedia.org/wiki/Severance_(TV_series)">Severance</a></td><td>2022</td><td>1 (9)</td><td>&#9733;&#9733;&#9734;&#9734;&#9734;</td></tr>
-<tr><td><a href="https://en.wikipedia.org/wiki/Teen_Wolf_(2011_TV_series)">Teen Wolf</a></td><td>2021+</td><td>6 (100)</td><td>&#9733;&#9733;&#9734;&#9734;&#9734;</td></tr>
+<tr><td><a href="https://en.wikipedia.org/wiki/Teen_Wolf_(2011_TV_series)">Teen Wolf</a></td><td>2021+</td><td>6 (100)</td><td>&#9733;&#9734;&#9734;&#9734;&#9734;</td></tr>
 <tr><td><a href="https://en.wikipedia.org/wiki/The_Witcher_(TV_series)">The Witcher</a></td><td>2021+</td><td>2 (16)</td><td>&#9733;&#9733;&#9733;&#9733;&#9734;</td></tr>
 <tr><td><a href="https://en.wikipedia.org/wiki/Homeland_(TV_series)">Homeland</a></td><td>2021</td><td>8 (96)</td><td>&#9733;&#9733;&#9733;&#9734;&#9734;</td></tr>
 <tr><td><a href="https://en.wikipedia.org/wiki/Biohackers">Biohackers</a></td><td>2021</td><td>2 (12)</td><td>&#9733;&#9733;&#9734;&#9734;&#9734;</td></tr>
