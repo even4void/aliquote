@@ -1,7 +1,7 @@
 ---
 title: "Computing eigenvalues using QR decomposition"
-date: 2022-12-20T09:31:49+01:00
-draft: true
+date: 2022-12-28T09:31:49+01:00
+draft: false
 tags: ["math", "racket"]
 categories: ["2022"]
 ---
@@ -16,11 +16,16 @@ In Racket, the very first iteration would read:
                     [ 6 167 -68]
                     [-4  24 -41]]))
 (define X (matrix+ X0 (matrix-transpose X0)))
-(define eye (diagonal-matrix '(1 1 1)))
+; (define D (diagonal-matrix '(1 1 1)))
+(define D (identity-matrix 3))
 (define-values (Q R) (matrix-qr X))
-(define eye (matrix* eye Q))
-(define X (matrix* R Q)
+(define D (matrix* D Q))
+(define X (matrix* R Q))
 ```
+
+Wrap the above code in a function, iterate 20 to 30 times and then the $X$ matrix should contain the eignevalues on its diagonal.
+
+Of note, the Householder method for computing the QR decomposition in Racket is available on [Rosetta][].
 
 {{% music %}}Clan of Xymox • _A Day_{{% /music %}}
 
