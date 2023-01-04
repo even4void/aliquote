@@ -49,6 +49,11 @@ Although the tidyverse provides lot of packages that may be useful to perform co
 
 Disclaimer: I have nothing against the tidyverse way of doing things (I just barely understand why we really need another "rlang", and I regret the problems of [reverse dependencies] that it may have caused in the past). If that suits your needs, that's all fine. If on the contrary you get stuck on basic data manipulation stuff, or built-in one-liner R functions don't play well with "tibble", then you're probably going in the wrong direction. Start with Phil Spector's textbook \cite{spector-2008-data-manip-r}, then eventually learn a bit of plyr \cite{wickham-2011-split-apply}. The 80% of time spent in data manipulation, as we use to say, is not a joke: You will likely spend most of your time switching from long to wide format, aggregating data all over again and again, and not just before even you start building your super nice statistical model.
 
+{{% alert note %}}
+<small>[2023-01-04]</small><br>
+See also Norm Matloff's take on the tidyverse: [Teach Base-R, Not Just the Tidyverse].
+{{% /alert %}}
+
 [r workflow]: https://www.fharrell.com/post/rflow
 [plyr]: https://cran.r-project.org/web/packages/plyr/
 [dplyr]: https://cran.r-project.org/web/packages/dplyr/
@@ -59,5 +64,6 @@ Disclaimer: I have nothing against the tidyverse way of doing things (I just bar
 [ggplot2]: https://ggplot2.tidyverse.org/
 [reverse dependencies]: https://dirk.eddelbuettel.com/blog/2018/02/28/
 [lightweight is the right weight]: https://www.tinyverse.org/
+[teach base-r, not just the tidyverse]: https://github.com/matloff/TidyverseSkeptic
 
 {{% music %}}IAMDDB • _Silver Lines_{{% /music %}}
