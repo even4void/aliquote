@@ -51,7 +51,7 @@ Disclaimer: I have nothing against the tidyverse way of doing things (I just bar
 
 {{% alert note %}}
 <small>[2023-01-04]</small><br>
-See also Norm Matloff's take on the tidyverse: [Teach Base-R, Not Just the Tidyverse].
+See also Norm Matloff's take on the tidyverse: [Teach Base-R, Not Just the Tidyverse](https://github.com/matloff/TidyverseSkeptic).
 {{% /alert %}}
 
 [r workflow]: https://www.fharrell.com/post/rflow
@@ -64,6 +64,5 @@ See also Norm Matloff's take on the tidyverse: [Teach Base-R, Not Just the Tidyv
 [ggplot2]: https://ggplot2.tidyverse.org/
 [reverse dependencies]: https://dirk.eddelbuettel.com/blog/2018/02/28/
 [lightweight is the right weight]: https://www.tinyverse.org/
-[teach base-r, not just the tidyverse]: https://github.com/matloff/TidyverseSkeptic
 
 {{% music %}}IAMDDB • _Silver Lines_{{% /music %}}
