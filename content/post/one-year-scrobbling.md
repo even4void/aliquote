@@ -6,7 +6,7 @@ tags: ["misc"]
 categories: ["2022"]
 ---
 
-It's been a full year of scrobbling... I registered an account on [Last.fm] last year. Originally, this was mostly to get recommendations and to track the music I listen to on Cmus, as an alternative to Apple Music which I no longer really use (even if they offer an online platform now). I prefer to stand by my offline records.
+It's been a full year of scrobbling... I registered an account on Last.fm last year. Originally, this was mostly to get recommendations and to track the music I listen to on Cmus, as an alternative to Apple Music which I no longer really use (even if they offer an online platform now). I prefer to stand by my offline records.
 
 Anyway, the statistics speak for themselves now: these are almost 36,000 scrobbles in one year, which means between 60 and 90 hours each week, and 700-800 tracks weekly on average. I don't have a premium account so it's hard to figure out a detailed report of my activities. Of course, I know what I listened too, this is mostly of the post-punk and jazz genres.
 
@@ -29,5 +29,4 @@ Of course, this does not mean that I only listen to digital music. I have some g
 
 {{% music %}}Cocteau Twins • _Blood Bitch_{{% /music %}}
 
-[Last.fm]: https://www.last.fm/user/even4void
-[Rhythmbox]: /post/rhythmbox/
+[rhythmbox]: /post/rhythmbox/

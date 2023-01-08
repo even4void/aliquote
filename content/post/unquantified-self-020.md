@@ -6,7 +6,7 @@ tags: ["self"]
 categories: ["2021"]
 ---
 
-Yet another post about how life is going while I'm about to complete this year 2021. I'll be on holidays for the next two weeks. I haven't had time to write as much blog posts than I originally thought last month, but I'm not worried. I will have plenty of time later on, probably, and if not this means those blog posts can wait. In the meantime, I managed to finish [Homeland](https://en.wikipedia.org/wiki/Homeland_(TV_series)), and I listened to a lot of nice playlists of jazz but also from the post-punk era (close to 500 tracks each week for a month). You can check it out on [Last.fm](https://www.last.fm/user/even4void).
+Yet another post about how life is going while I'm about to complete this year 2021. I'll be on holidays for the next two weeks. I haven't had time to write as much blog posts than I originally thought last month, but I'm not worried. I will have plenty of time later on, probably, and if not this means those blog posts can wait. In the meantime, I managed to finish [Homeland](<https://en.wikipedia.org/wiki/Homeland_(TV_series)>), and I listened to a lot of nice playlists of jazz but also from the post-punk era (close to 500 tracks each week for a month). You can check it out on Last.fm.
 
 Sometimes I miss my old good [Nord](https://www.nordtheme.com/) dark theme. As an alternative to my current setup (kitty + zsh), I considered using xterm + tmux. This might provide an easy-to-getup setup for remote machine since I only need to copy two config files. I grabbed xterm settings on [GitHub](https://github.com/arcticicestudio/nord-xresources) and I started hacking my xterm config by adding a few options in `$HOME/.Xresources`:
 
