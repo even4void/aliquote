@@ -19,7 +19,7 @@ Below is a list of what has been archived over the years on this site or on exte
 <td><em>Date</em></td>
 <td><em>Lang</em></td>
 </tr>
-<tr><td><a href="https://github.com/podo-gec/cours/tree/master/bioinfo">Bioinformatique et génomique statistique</a></td><td>Jan 2023</td><td>fr</td></tr>
+<tr><td><a href="https://github.com/podo-gec/cours/tree/master/bioinfo">Outils bioinformatiques et génomique</a></td><td>Jan 2023</td><td>fr</td></tr>
 <tr><td><a href="/articles/tmux/">Tmux shortcuts</a></td><td>Aug 2022</td><td>en</td></tr>
 <tr><td><a href="/articles/vim/">Vim shortcuts</a></td><td>Aug 2022</td><td>en</td></tr>
 <tr><td><a href="/pub/scheme.pdf">Le langage Scheme</a></td><td>Aug 2022</td><td>fr</td></tr>
