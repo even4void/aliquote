@@ -10,7 +10,7 @@ I have long been interested in replacing R or Stata with Mathematica. I know it'
 
 Anton Antonov has a nice [blog][] which describes common tasks in statistics or machine learning, and plently of examples in his GitHub repository on [R vs. Mathematica][].
 
-One of the nice feature of Mathematica is that the basic data structure for working with data is the list. Expressions like `{{1, 0.8}, {2, 3.2}, ...}` allows to construct a bivariate series, which can be manipulated using lot of built-in functions, and formatted accordingly in Matrix form or as a grid. Moreover, there's now the `Dataset` structure
+One of the nice feature of Mathematica is that the basic data structure for working with data is the [list][]. Expressions like `{{1, 0.8}, {2, 3.2}, ...}` allows to construct a bivariate series, which can be manipulated using lot of built-in functions, and formatted accordingly in Matrix form or as a grid. Moreover, there's now the `Dataset` structure
 
 I like the following reply on [HN][]:
 
@@ -20,10 +20,25 @@ I like the following reply on [HN][]:
 
 Same for me, except that I also have a paid license for Stata 13 MP.
 
+Here is a toy example of fitting a linear regression model in Mathematica:
+
+```mathematica
+data = Table[{3 + i + RandomReal[{-3, 7}], i + RandomReal[{-2, 5}]}, {i, 1, 20}];
+Dataset[Prepend[data, {"x", "y"}]]
+
+lm = LinearModelFit[data, x, x];
+lm["BestFit"]
+
+Show[ListPlot[data], Plot[lm[x], {x, 0, 30}]]
+```
+
+![ols](/img/ols_mathematica.png)
+
 {{% music %}}Lars Bygdén • _Fall Into The Night_{{% /music %}}
 
 [fitting splines]: https://mathematica.stackexchange.com/a/89148/167
 [contingency tables]: https://mathematica.stackexchange.com/q/153734/167
 [blog]: https://mathematicaforprediction.wordpress.com/
 [r vs. mathematica]: https://github.com/antononcube/MathematicaVsR
+[list]: https://reference.wolfram.com/language/tutorial/ManipulatingLists.html
 [hn]: https://news.ycombinator.com/item?id=9797936
