@@ -2,7 +2,7 @@
 title: "Playing with BackupMyTweets"
 date: 2011-01-17T13:42:24+01:00
 draft: false
-tags: ["dataviz", "twitter", "perl"]
+tags: ["dataviz", "perl"]
 categories: ["2011"]
 ---
 
@@ -20,7 +20,7 @@ Here is a sample of the raw text file (`tweets.txt`) that I am currently working
 2009-03-25 \ Attending the 3rd Workshop on Genomic Epidemiology ...
 ```
 
-I was initially thinking of processing these data with R. But, now that I have a clean text file, I can use un*x command-line utilities to get some rough measures of my Twitter activity:
+I was initially thinking of processing these data with R. But, now that I have a clean text file, I can use un\*x command-line utilities to get some rough measures of my Twitter activity:
 
 ```
 $ cat tweets.txt | grep 'Retweet' | wc -l
@@ -76,11 +76,11 @@ $ tojulian2.sh 2010-01-14
 ```
 
 However, this won't work as expected because `system()` will return its exit status (0 if success) just after `$2`. A small workaround is to do:
- 
- ```
+
+```
 $ cat tweets_by_date.dat | awk '{cmd="tojulian2.sh " $2; cmd \
-  | getline dd; close(cmd); printf("%d %d\n", dd, $1)}' \
-  > tweets_by_date2.dat 
+ | getline dd; close(cmd); printf("%d %d\n", dd, $1)}' \
+ > tweets_by_date2.dat
 ```
 
 Ok, now the text file looks like
