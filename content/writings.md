@@ -19,13 +19,14 @@ Below is a list of what has been archived over the years on this site or on exte
 <td><em>Date</em></td>
 <td><em>Lang</em></td>
 </tr>
+<tr><td><a href="/pub/stackexchange-stats.html">Archive of my answers on Cross Validated</a></td><td>Jan 2023</td><td>en</td></tr>
 <tr><td><a href="https://github.com/podo-gec/cours/tree/master/bioinfo">Outils bioinformatiques et génomique</a></td><td>Jan 2023</td><td>fr</td></tr>
 <tr><td><a href="/articles/tmux/">Tmux shortcuts</a></td><td>Aug 2022</td><td>en</td></tr>
 <tr><td><a href="/articles/vim/">Vim shortcuts</a></td><td>Aug 2022</td><td>en</td></tr>
 <tr><td><a href="/pub/scheme.pdf">Le langage Scheme</a></td><td>Aug 2022</td><td>fr</td></tr>
 <tr><td><a href="/articles/movies/">Informal ratings of some TV shows</a></td><td>Jul 2022</td><td>en</td></tr>
 <tr><td><a href="/articles/notebooks/org-setup.pdf">A minimal Org setup to write scientific notebooks</a></td><td>Apr 2022</td><td>en</td></tr>
-<tr><td><a href="/pub/genetics-epidemiology.pdf">Notes on epidemiological genetics (wip)</a></td><td>Apr 2022</td><td>en</td></tr>
+<tr><td><a href="/pub/genetics-epidemiology.pdf">Notes on epidemiological genetics</a></td><td>Apr 2022</td><td>en</td></tr>
 <tr><td><a href="/pub/urls.html">Refiled links</a></td><td>Dec 2020</td><td>en</td></tr>
 <tr><td><a href="/pub/vim-101.pdf">Vim 101</a></td><td>Aug 2020</td><td>en</td></tr>
 <tr><td><a href="/pub/z.pdf">Z notes</a></td><td>Feb 2020</td><td>fr</td></tr>
