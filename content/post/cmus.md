@@ -32,4 +32,9 @@ It works fine to just launch 12 hours of music in the background and get back to
 
 There's a lot more to see with [cmus extensions](https://github.com/cmus/cmus/wiki).
 
+{{% alert note %}}
+<small>[2023-01-21]</small><br>
+Should you want to fetch music directly from Youtube, you can use the [following hack](https://github.com/invicnaper/cmus-youtube). You will likely need to install a bunch of additional libraries on Ubuntu, but it works fine. This may help developing additional command to fetch music from external provider (e.g. Bandcamp, or [online radio](/micro/2022-10-27-21-32-49)).
+{{% /alert %}}
+
 ![cmus](/img/2021-09-18-20-27-54.png)
