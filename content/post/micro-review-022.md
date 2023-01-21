@@ -1,7 +1,7 @@
 ---
 title: "January in review"
-date: 2023-01-17T20:41:31+01:00
-draft: true
+date: 2023-01-21T18:41:31+01:00
+draft: false
 tags: ["readings"]
 categories: ["2023"]
 ---
