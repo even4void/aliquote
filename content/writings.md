@@ -5,9 +5,9 @@ menu: "main"
 weight: 40
 ---
 
-Here is a list of things I like to work on when time allows. As you will guess pretty quickly, I can leave _those_ things hanging out for years, but there is always a chance that this stuff will be finished someday. Note that these pages are a resurrection of my [previous website](/post/migrating-to-hugo/), and I left a lot of materials behind. If you are looking for my old teaching ressources, almost everything remains available on the Teaching page if you bookmarked it once in a while, but most links should be available below (except for in-house training).
+Here is a list of things I like to work on when time allows. As you will guess pretty quickly, I can leave _those_ things hanging out for years, but there is always a chance that this stuff will be finished someday. Note that these pages are a resurrection of my [previous website](/post/migrating-to-hugo/), and I left a lot of materials behind. If you are looking for my old teaching resources, almost everything remains available on the Teaching page if you bookmarked it once in a while, but most links should be available below (except for in-house training).
 
-I yet have to find something to write, you know something that will last forever; but never ending. In the meantime, I put a lot of random and not so random stuff on Github. I also intend to write other series on statistical (retro)computing using Unix tools or LispStat maybe.
+I yet have to find something to write, you know something that will last forever; but never ending. In the meantime, I put a lot of random and not so random stuff on GitHub. I also intend to write other series on statistical (retro)computing using Unix tools or LispStat maybe.
 
 Below is a list of what has been archived over the years on this site or on external servers (beware these are for the most part the remnants of my former life, so don't expect any update).
 
@@ -19,7 +19,8 @@ Below is a list of what has been archived over the years on this site or on exte
 <td><em>Date</em></td>
 <td><em>Lang</em></td>
 </tr>
-<tr><td><a href="/pub/stackexchange-tex.html">Archive of my answers on Tex.stackexchange</a></td><td>Jan 2023</td><td>en</td></tr>
+<tr><td><a href="/pub/stackexchange-so.html">Archive of my answers on StackOverflow</a></td><td>Jan 2023</td><td>en</td></tr>
+<tr><td><a href="/pub/stackexchange-tex.html">Archive of my answers on TeX.SE</a></td><td>Jan 2023</td><td>en</td></tr>
 <tr><td><a href="/pub/stackexchange-stats.html">Archive of my answers on Cross Validated</a></td><td>Jan 2023</td><td>en</td></tr>
 <tr><td><a href="https://github.com/podo-gec/cours/tree/master/bioinfo">Outils bioinformatiques et génomique</a></td><td>Jan 2023</td><td>fr</td></tr>
 <tr><td><a href="/articles/tmux/">Tmux shortcuts</a></td><td>Aug 2022</td><td>en</td></tr>
@@ -39,7 +40,7 @@ Below is a list of what has been archived over the years on this site or on exte
 <tr><td><a href="https://github.com/even4void/rstats-ssample">Statistiques pour petits échantillons</a></td><td>May 2018</td><td>fr</td></tr>
 <tr><td><a href="https://even4void.github.io/rstats-biostats/">Méthodes biostatistiques</a></td><td>Jun 2018</td><td>fr</td></tr>
 <tr><td><a href="https://github.com/even4void/EESPE11">Méthodes psychométriques en qualité de vie</a></td><td>Jun 2016</td><td>fr</td></tr>
-<tr><td><a href="/pub/SAS2R.pdf">Statistics for Clinical Trials: Applications Using R<sup>x</sup></a></td><td>Jun 2016</td><td>en</td></tr>
+<tr><td><a href="/pub/SAS2R.pdf">Statistics for Clinical Trials: Applications Using R</a></td><td>Jun 2016</td><td>en</td></tr>
 <tr><td><a href="https://github.com/even4void/Stata101">Stata 101</a></td><td>May 2016</td><td>fr</td></tr>
 <tr><td><a href="/cours/2016_ERDF">Atelier d'introduction à R</a></td><td>Apr 2016</td><td>fr</td></tr>
 <tr><td><a href="/cours/2016_Canceropole">Analyse de données biomédicales avec R</a></td><td>Mar 2016</td><td>fr</td></tr>
@@ -49,7 +50,7 @@ Below is a list of what has been archived over the years on this site or on exte
 <tr><td><a href="/cours/2015_INVS">Gestion de données avancées avec R</a></td><td>Nov 2015</td><td>fr</td></tr>
 <tr><td><a href="/cours/supelec">Biostatistiques avec R</a></td><td>Oct 2015</td><td>fr</td></tr>
 <tr><td><a href="/cours/misc/lalanne_apramen_2015.pdf">Les essais cliniques en pratique</a></td><td>Sep 2015</td><td>fr</td></tr>
-<tr><td><a href="/pub/vizRguide.pdf">A Visual Guide to R Graphics and Data Mungling<sup>x</sup></a></td><td>Apr 2015</td><td>en</td></tr>
+<tr><td><a href="/pub/vizRguide.pdf">A Visual Guide to R Graphics and Data Mungling</a></td><td>Apr 2015</td><td>en</td></tr>
 <tr><td><a href="/pub/intro-stata.pdf">Introduction au logiciel Stata</a></td><td>Mar 2015</td><td>fr</td></tr>
 <tr><td><a href="/pub/intro-r.pdf">Introduction au logiciel R</a></td><td>Feb 2015</td><td>fr</td></tr>
 <tr><td><a href="https://github.com/even4void/rstats-esme">Data Mining avec R</a></td><td>Feb 2015</td><td>fr</td></tr>
@@ -57,26 +58,26 @@ Below is a list of what has been archived over the years on this site or on exte
 <tr><td><a href="/cours/misc/reliability.pdf">Concordance et fidélité de mesure</a></td><td>Sep 2014</td><td>fr</td></tr>
 <tr><td><a href="/cours/misc/mooc/">Introduction au langage R</a></td><td>Apr 2014</td><td>fr</td></tr>
 <tr><td><a href="/pub/quickies.html">Quickies (random notes)</a></td><td>---&nbsp;&nbsp; 2014</td><td>en</td></tr>
-<tr><td><a href="/pub/MDAE.pdf">R Companion to Montgomery's Design and Analysis of Experiments<sup>x</sup></a></td><td>Dec 2012</td><td>en</td></tr>
+<tr><td><a href="/pub/MDAE.pdf">R Companion to Montgomery's Design and Analysis of Experiments</a></td><td>Dec 2012</td><td>en</td></tr>
 <tr><td><a href="/cours/2013_AS/">Atelier Statistique du Cogmaster</a></td><td>Oct 2012</td><td>fr</td></tr>
-<tr><td><a href="/cours/misc/gee/">Analyzing correlated data<sup>x</sup><a></td><td>Apr 2012</td><td>en</td></tr>
+<tr><td><a href="/cours/misc/gee/">Analyzing correlated data<a></td><td>Apr 2012</td><td>en</td></tr>
 <tr><td><a href="/cours/misc/mva_clinres">Sélection de variables pour données irrégulières</a></td><td>Apr 2012</td><td>fr</td></tr>
 <tr><td><a href="/cours/2012_biomed/">Introduction à #rstats pour la recherche biomédicale</a></td><td>Feb 2012</td><td>fr</td></tr>
 <tr><td><a href="/cours/misc/glm/">GLM: Theory and applications in the Life science</a></td><td>Dec 2011</td><td>en</td></tr>
 <tr><td><a href="/cours/2011_health_measures/lwb_explained.pdf">lwb.R: Code explained</a></td><td>Oct 2011</td><td>en</td></tr>
 <tr><td><a href="/cours/2011_health_measures/">Introductory lectures on Statistics for Health Measurement</a></td><td>Sep 2011</td><td>en</td></tr>
-<tr><td><a href="/pub/iplots.pdf">A visual tour of interactive graphics with R<sup>x</sup></a></td><td>Mar 2011</td><td>en</td></tr>
-<tr><td><a href="/cours/psychometrics/">Psychometrics<sup>x</sup></a></td><td>Feb 2010</td><td>en</td></tr>
+<tr><td><a href="/pub/iplots.pdf">A visual tour of interactive graphics with R</a></td><td>Mar 2011</td><td>en</td></tr>
+<tr><td><a href="/cours/psychometrics/">Psychometrics</a></td><td>Feb 2010</td><td>en</td></tr>
 <tr><td><a href="/pub/Lalanne_Cogiter_2009.pdf">Analyse des données génétiques</a></td><td>Nov 2009</td><td>fr</td></tr>
 <tr><td><a href="/pub/Lalanne_BIBS_M2Pro.pdf">Intégration de données de neuroimagerie et de génétique</a></td><td>Jun 2009</td><td>fr</td></tr>
-<tr><td><a href="/pub/contrasts.txt">Contrastes sous R</a></td><td>May 2008</td><td>fr</td></tr>
+<tr><td><a href="/pub/contrasts.txt">Contrastes sous R</a></td><td>May 2009</td><td>fr</td></tr>
 <tr><td><a href="/pub/MABMUSPlus/">A collection of plots from Selvin's book on S+</a></td><td>Feb 2009</td><td>en</td></tr>
 <tr><td><a href="/cours/stats_bioinfo">Statistiques inférentielles</a></td><td>Dec 2008</td><td>fr</td></tr>
 <tr><td><a href="/pub/intro_cat.pdf">Le testing adaptatif : Intérêts et applications</a></td><td>Sep 2008</td><td>fr</td></tr>
-<tr><td><a href="/pub/maps.txt">Représentations de données cartographiques<sup>x</sup></a></td><td>Apr 2008</td><td>fr</td></tr>
-<tr><td><a href="/pub/sql/">Gestion de bases de données<sup>x</sup></a></td><td>Mar 2008</td><td>fr</td></tr>
-<tr><td><a href="/pub/RMB/">Regression methods in Biostatistics<sup>x</sup></a></td><td>Feb 2008</td><td>en</td></tr>
-<tr><td><a href="/pub/MDLD.pdf">Models for Discrete Longitudinal Data<sup>x</sup></a></td><td>Nov 2007</td><td>en</td></tr>
+<tr><td><a href="/pub/maps.txt">Représentations de données cartographiques</a></td><td>Apr 2008</td><td>fr</td></tr>
+<tr><td><a href="/pub/sql/">Gestion de bases de données</a></td><td>Mar 2008</td><td>fr</td></tr>
+<tr><td><a href="/pub/RMB/">Regression methods in Biostatistics</a></td><td>Feb 2008</td><td>en</td></tr>
+<tr><td><a href="/pub/MDLD.pdf">Models for Discrete Longitudinal Data</a></td><td>Nov 2007</td><td>en</td></tr>
 <tr><td><a href="/cours/2007_cogmaster_B4/">Modèles probabilistes et théorie de l'information</a></td><td>---&nbsp;&nbsp; 2007</td><td>fr</td></tr>
 <tr><td><a href="/cours/2006_cogmaster_B4/">Modèles probabilistes en sciences cognitives</a></td><td>---&nbsp;&nbsp; 2006</td><td>fr</td></tr>
 <tr><td><a href="/pub/tips.txt">Trucs et astuces Linux</a></td><td>---&nbsp;&nbsp; 2006</td><td>fr</td></tr>
