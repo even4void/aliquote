@@ -8,4 +8,6 @@ categories: ["2022"]
 
 ### Polynomial spline regression: Theory and Application (https://arxiv.org/abs/2212.14777)
 
-{{% music %}}XXX • _XXX_{{% /music %}}
+### Parametrization Cookbook: A set of Bijective Parametrizations for using Machine Learning methods in Statistical Inference (https://arxiv.org/abs/2301.08297)
+
+{{% music %}}Train • _Drops of Jupiter_{{% /music %}}
