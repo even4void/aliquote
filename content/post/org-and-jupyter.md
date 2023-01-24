@@ -87,8 +87,8 @@ So far it seems to work great. I just need to update my default [Org config], in
 [no longer]: https://gitlab.com/robhicks/ob-stata.el/-/issues/10
 [bad support]: https://gitlab.com/robhicks/ob-stata.el/-/issues/10
 [stata_kernel]: https://kylebarron.dev/stata_kernel/
-[stata kernel]: https://aliquote.org/post/stata-jupyter/
+[stata kernel]: /post/stata-jupyter/
 [emacs-jupyter]: https://github.com/nnicandro/emacs-jupyter
 [previous commits]: https://github.com/even4void/stata-sk/commit/d24b13817df321cd963970c8f948f66651caba63
 [iron.nvim]: https://github.com/hkupty/iron.nvim/pull/214
-[org config]: http://localhost:1313/articles/notebooks/org-setup.pdf
+[org config]: /pub/org-setup.pdf

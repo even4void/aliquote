@@ -52,5 +52,5 @@ I still have to manage how to get omnifunc completion working, but for the momen
 [lsp-wl]: https://github.com/kenkangxgwe/vscode-lsp-wl
 [wolfram]: https://github.com/WolframResearch/vscode-wolfram
 [mash]: http://ai.eecs.umich.edu/people/dreeves/mash/
-[a minimal org setup to write scientific notebooks]: https://www.aliquote.org/articles/notebooks/org-setup.pdf
+[a minimal org setup to write scientific notebooks]: https://www.aliquote.org/pub/org-setup.pdf
 [iron.nvim]: https://github.com/hkupty/iron.nvim
