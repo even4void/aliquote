@@ -10,4 +10,12 @@ categories: ["2022"]
 
 ### Parametrization Cookbook: A set of Bijective Parametrizations for using Machine Learning methods in Statistical Inference (https://arxiv.org/abs/2301.08297)
 
+### An Introduction to Probabilistic Programming (https://arxiv.org/abs/1809.10756)
+
+one of the authors of Anglican
+
+[slides](https://jwvdm.github.io/slides/inference-learning-prob-prog/)
+
+### A Practical Introduction to Regression Discontinuity Designs: Extensions (https://arxiv.org/abs/2301.08958)
+
 {{% music %}}Train • _Drops of Jupiter_{{% /music %}}

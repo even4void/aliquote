@@ -6,9 +6,9 @@ tags: ["readings"]
 categories: ["2023"]
 ---
 
-- [Modern Polars](https://kevinheavey.github.io/modern-polars/) offers a side by side comparison of the Polars and Pandas libraries for working with rectangular datasets in Python. From reading the Polars documentation, I like the idea of having select or filter methods, instead of relying on Pandas default indexing facilities. We can even address rows and columns using numbers, like in R, which would make transitioning from R data frame less hard than when using Pandas.
+- [Modern Polars](https://kevinheavey.github.io/modern-polars/) offers a side by side comparison of the Polars and Pandas libraries for working with rectangular datasets in Python. From reading the Polars documentation, I like the idea of having select or filter methods, instead of relying on Pandas default indexing facilities. We can even address rows and columns using numbers, like in R, which would make transitioning from R data frame less hard than when using Pandas. See also [Replacing Pandas with Polars. A Practical Guide](https://www.confessionsofadataguy.com/replacing-pandas-with-polars-a-practical-guide/).
 
-- [A Visual Guide to SSH Tunnels: Local and Remote Port Forwarding](https://iximiuz.com/en/posts/ssh-tunnels/): This is a handy tutorial for local and remote port forwarding with great illustrations. It covers everything you need to know to use ssh tunnels confidently. "The mnemonics are "ssh -L local:remote" and "ssh -R remote:local" and it's always the left-hand side that opens a new port."
+- [A Visual Guide to SSH Tunnels: Local and Remote Port Forwarding](https://iximiuz.com/en/posts/ssh-tunnels/): This is a handy tutorial for local and remote [port forwarding](https://www.ssh.com/academy/ssh/tunneling-example#remote-forwarding) with great illustrations. It covers everything you need to know to use ssh tunnels confidently. "The mnemonics are "ssh -L local:remote" and "ssh -R remote:local" and it's always the left-hand side that opens a new port."
 
 - If you are looking for a quick but opinionated overview of Vim's for editing code at the speed of light, [Vim is touch-typing on steroids](https://www.trickster.dev/post/vim-is-touch-typing-on-steroids/) does a great job.
 
