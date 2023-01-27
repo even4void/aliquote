@@ -6,7 +6,7 @@ tags: ["scheme", "clang"]
 categories: ["2020"]
 ---
 
-The [MurmurHash](https://en.wikipedia.org/wiki/MurmurHash) algorithm belongs to non-cryptographic hash function and it is used for hash-based lookup, e.g. to convert a word $w$ to an integer $s \in [0, H)$, where $H$ is the table size. I came across this hash function by reading a recent publication on a new read mapper.[^1] It has been shown to have [good properties](https://softwareengineering.stackexchange.com/a/145633) in terms of speed and number of collisions compared to other hashing algoritms; see also [Hash functions: An empirical comparison](https://www.strchr.com/hash_functions).
+The [MurmurHash](https://en.wikipedia.org/wiki/MurmurHash) algorithm belongs to non-cryptographic hash function and it is used for hash-based lookup, e.g. to convert a word $w$ to an integer $s \in [0, H)$, where $H$ is the table size. I came across this hash function by reading a recent publication on a new read mapper.[^1] It has been shown to have [good properties](https://softwareengineering.stackexchange.com/a/145633) in terms of speed and number of collisions compared to other hashing algoritms; see also [Hash functions: An empirical comparison](https://www.strchr.com/hash_functions).[^2]
 
 Although different implementations of Murmurhash3 are cited on the Wikipedia page (see also the `mmh3`/`digest` packages for Python/R), I couldn't find one in Scheme. So here is a quick and dirty one in Chicken scheme, using its solid FFI facilities and some C code grabbed from the Wikipedia page. There's also the [digest](http://dirk.eddelbuettel.com/code/digest.html) R package (here's the [C code](https://github.com/cran/digest/blob/master/src/pmurhash.c) in question for the interested reader) and some [C++ code](https://github.com/rurban/smhasher/blob/master/MurmurHash3.cpp) available on [smhasher](https://github.com/aappleby/smhasher) on Github, but I haven't tried it yet.
 
@@ -72,3 +72,4 @@ $ ./m32
 ```
 
 [^1]: Edgar, R. C. (2020). [URMAP, an ultra-fast read mapper](https://www.biorxiv.org/content/10.1101/2020.01.12.903351v1). bioRxiv
+[^2]: See this [related post](/post/hash-collision/) for how we define and quantify hash collisions.

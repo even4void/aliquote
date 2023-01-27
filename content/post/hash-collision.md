@@ -1,6 +1,6 @@
 ---
 title: "Hash collision"
-date: 2023-01-26T09:17:27+01:00
+date: 2023-01-25T09:17:27+01:00
 draft: false
 tags: ["math"]
 categories: ["2023"]
@@ -14,6 +14,6 @@ $$1 - e^{\frac{-k(k-1)}{2N}}.$$
 
 However, it can further be shown that for $x$ small, $1-e^{-x} \approx x$, which means that the probability expressed above can also be approximated with $\frac{k(k-1)}{2N}$. No more floating points! FInally, if $k$ is large, then $k(k-1) \approx k^2$, and we find our $\frac{k^2}{2N}$ expression from the beginning.
 
-You may also like [How do you find quantiles in this balls-in-bins problem?](https://stats.stackexchange.com/a/524418/930).
+You may also like [How do you find quantiles in this balls-in-bins problem?](https://stats.stackexchange.com/a/524418/930), and [How unique is UUID?](https://stackoverflow.com/questions/1155008/how-unique-is-uuid).
 
 {{% music %}}Toggi Jonsson Quarted • _Von_{{% /music %}}
