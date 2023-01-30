@@ -18,4 +18,10 @@ one of the authors of Anglican
 
 ### A Practical Introduction to Regression Discontinuity Designs: Extensions (https://arxiv.org/abs/2301.08958)
 
+### Improving Software Engineering in Biostatistics: Challenges and Opportunities (https://arxiv.org/abs/2301.11791)
+
+### A statistical framework for planning and analysing test-retest studies for repeatability of quantitative biomarker measurements (https://arxiv.org/abs/2301.11690)
+
+### From Classification Accuracy to Proper Scoring Rules: Elicitability of Probabilistic Top List Predictions (https://arxiv.org/abs/2301.11797)
+
 {{% music %}}Train • _Drops of Jupiter_{{% /music %}}
