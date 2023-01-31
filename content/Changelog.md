@@ -8,6 +8,7 @@ date: 2021-09-02T00:00:00
         Author: chl <xxxx@xxxx.xxxx>
         Date:   Sun Jan 21 00:57:45 2018 +0100
 
+[2023-01-08] Remove feather JS, update About page, cleanup unused folders<br>
 [2022-09-06] Update link display (closer in spirit to HTML specs)<br>
 [2022-08-29] Add dark theme<br>
 [2022-06-06] Update default theme (Hugo 0.92)<br>
