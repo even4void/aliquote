@@ -1,5 +1,5 @@
 ---
-title: "Python datatable"
+title: "Data tables in Python"
 date: 2023-01-31T13:21:30+01:00
 draft: false
 tags: ["python"]
