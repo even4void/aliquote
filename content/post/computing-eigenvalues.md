@@ -23,7 +23,7 @@ In Racket, the very first iteration would read:
 (define X (matrix* R Q))
 ```
 
-Wrap the above code in a function, iterate 20 to 30 times and then the $X$ matrix should contain the eignevalues on its diagonal.
+Wrap the above code in a function, iterate 20 to 30 times and then the $X$ matrix should contain the eigenvalues on its diagonal.
 
 Of note, the Householder method for computing the QR decomposition in Racket is available on [Rosetta][].
 
