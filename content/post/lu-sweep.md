@@ -6,4 +6,6 @@ tags: ["statistics", "math"]
 categories: ["2023"]
 ---
 
+Regression
+
 {{% music %}}Poppy • _Flux_{{% /music %}}
