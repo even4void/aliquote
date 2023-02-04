@@ -76,7 +76,7 @@ As a sequel to my previous post on seaborn and plotnine, let's see how we can re
 "pure-u-1-2|/img/fig-toothgrowth-r.png"
 "pure-u-1-2|/img/fig-toothgrowth-py.png" >}}
 
-R code is shown below:
+R code is shown below:[^2]
 
 ```r
 r <- aggregate(len ~ dose + supp, data = ToothGrowth, mean)
@@ -107,3 +107,4 @@ Not much of a difference either way. See the final result on the right panel of 
 {{% music %}}Badflower • _Ghost_{{% /music %}}
 
 [^1]: It would be interesting to benchamrk datatable.fread against R data.table or pandas.read_csv, like I did in my review of [Exploratory Desktop](https://aliquote.org/post/exploratory-desktop-app/).
+[^2]: Shorter version for the impatient: `lattice::xyplot(len ∼ dose, data = ToothGrowth, groups = supp, type = c ("p", "a"))`.

@@ -14,7 +14,7 @@ I'm a middle-aged bohemian scientist, initially trained in cognitive science and
 
 I'm now more or less involved in data processing at large (bioinformatics, a bit of sysadmin, database management, web dev). Even if I find myself a bit broke, the job is more rewarding and that gives me some free time.
 
-Anyway, welcome to my little placeholder for random musings in the digital era! I read a lot of technical stuff ([raw archive](/files/references.bib) as a BibTeX file), listen to a good deal of music every day, and more generally enjoy [literature artwork](/files/books.txt) (relaunched in 2013). I also like [writing](/post) about almost everything that is barely related to a computer, or just post [micro ideas](/micro/). Here is [how I (generally) do](/articles/how-i-do). You can reach me on [Libera.chat](/contact).
+Anyway, welcome to my little placeholder for random musings in the digital era! I read a lot of technical stuff ([raw archive](/files/references.bib) as a BibTeX file), listen to a good deal of [music](/post/one-year-scrobbling/) every day, some [TV shows](/articles/movies/) in the evening, and more generally enjoy [literature artwork](/files/books.txt) (relaunched in 2013). I also like [writing](/post) about almost everything that is barely related to a computer, or just post [micro ideas](/micro/). Here is [how I (generally) do](/articles/how-i-do). You can reach me on [Libera.chat](/contact).
 
 > There are places I don't remember<br>
 > There are times and days, they mean nothing to me<br>
