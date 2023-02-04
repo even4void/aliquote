@@ -24,8 +24,8 @@ Here are the (filtered) results from R:
 
 ```r
         dfb.1_ dfb.pp15 dfb.pp75  dfb.dpi  dfb.ddpi   dffit cov.r   cook.d    hat inf
-Japan 0.63987 -0.65614 -0.67390 0.14610 0.388603 0.8597 1.085 1.43e-01 0.2233
-Libya 0.55074 -0.48324 -0.37974 -0.01937 -1.024477 -1.1601 2.091 2.68e-01 0.5315 \*
+Japan  0.63987 -0.65614 -0.67390  0.14610  0.388603  0.8597 1.085 1.43e-01 0.2233
+Libya  0.55074 -0.48324 -0.37974 -0.01937 -1.024477 -1.1601 2.091 2.68e-01 0.5315   *
 ```
 
 {{% music %}}The Loyal Seas • _Last of the great machines_{{% /music %}}
