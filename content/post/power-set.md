@@ -21,6 +21,27 @@ In Lisp, we can write the following:
                      power-set-cdr)))))
 ```
 
+<br>
+
+{{% alert note %}}
+<small>[2023-02-06]</small><br>
+Daniel P. Friedman suggested this implementation of power set in Scheme, see his slides on [The Joys of Scheme](http://www.cs.indiana.edu/hyplan/dfried/intro-slides.ps) (PS):
+
+```scheme
+(define power-set
+  (lambda (set)
+    (cond
+      ((null? set) '(()))
+      (else (extend (car set) (power-set (cdr set)))))))
+(define extend
+  (lambda (item power-set
+    (append
+      (map (lambda (set) (cons item set)) power-set)
+      power-set))
+```
+
+{{% /alert %}}
+
 Using our base example, this gives:
 
 ```lisp
