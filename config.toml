@@ -40,27 +40,22 @@ home = ["HTML", "RSS", "JSON"]
 # weight = 1
 
 [[params.social]]
-name = "Articles"
+name = "articles"
 icon = "list"
 url = "/post"
 
 [[params.social]]
-name = "Archives"
+name = "archives"
 icon = "archive"
 url = "/writings"
 
 [[params.social]]
-name = "About"
+name = "about"
 icon = "info"
 url = "/about"
 
-# [[params.social]]
-# name = "Contact"
-# icon = "mail"
-# url = "/contact"
-
 [[params.social]]
-name = "Search"
+name = "search"
 icon = "search"
 url = "/search"
 
