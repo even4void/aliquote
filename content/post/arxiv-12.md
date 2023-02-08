@@ -24,4 +24,8 @@ one of the authors of Anglican
 
 ### From Classification Accuracy to Proper Scoring Rules: Elicitability of Probabilistic Top List Predictions (https://arxiv.org/abs/2301.11797)
 
+### Getting to the Point. Index Sets and Parallelism-Preserving Autodiff for Pointful Array Programming (https://arxiv.org/abs/2104.05372)
+
+I learned about Dex on Darren Wilkinson's blog.
+
 {{% music %}}Train • _Drops of Jupiter_{{% /music %}}

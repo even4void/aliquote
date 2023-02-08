@@ -17,6 +17,7 @@ I haven't watched TV in about ten years, probably even before I removed the TV f
 <td><em>Seasons (Ep.)</em></td>
 <td><em>Rating</em></td>
 </tr>
+<tr><td><a href="https://en.wikipedia.org/wiki/Copenhagen_Cowboy">Copenhagen Cowboy</a></td><td>2023</td><td>6 (1)</td><td>&#9733;&#9733;&#9734;&#9734;&#9734;</td></tr>
 <tr><td><a href="https://en.wikipedia.org/wiki/Dark_(TV_series)">Dark</a></td><td>2023</td><td>3 (26)</td><td>&#9733;&#9733;&#9733;&#9734;&#9734;</td></tr>
 <tr><td><a href="https://en.wikipedia.org/wiki/The_Witcher:_Blood_Origin">The Witcher: Blood Origin</a></td><td>2023</td><td>1 (4)</td><td>&#9733;&#9733;&#9734;&#9734;&#9734;</td></tr>
 <tr><td><a href="https://en.wikipedia.org/wiki/Treason_(TV_series)">Treason</a></td><td>2023</td><td>1 (5)</td><td>&#9733;&#9733;&#9734;&#9734;&#9734;</td></tr>
