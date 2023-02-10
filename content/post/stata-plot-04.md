@@ -60,25 +60,25 @@ anovaplot dosec supp, scatter(jitter(5))
 
 [^1]: Here is my `profile.do` configuration by the way:
 
-    sysdir set PLUS "~/.local/lib/ado/plus/"
-    sysdir set PERSONAL "~/.local/lib/ado/personal/"
-    sysdir set OLDPLACE "~/.local/lib/ado/"
+        sysdir set PLUS "~/.local/lib/ado/plus/"
+        sysdir set PERSONAL "~/.local/lib/ado/personal/"
+        sysdir set OLDPLACE "~/.local/lib/ado/"
 
-    set seed 101
-    set logtype text
-    set matastrict on
-    set maxvar 5000
-    set scrollbufsize 2000000
-    set tracedepth 1
-    // set varabbrev off
+        set seed 101
+        set logtype text
+        set matastrict on
+        set maxvar 5000
+        set scrollbufsize 2000000
+        set tracedepth 1
+        // set varabbrev off
 
-    set scheme plotplain
-    graph set eps fontdir ~/.local/share/fonts
-    graph set window fontface "Roboto Condensed"
-    if "`c(console)'"!="console" graph set eps preview on
-    graph set eps logo off
-    graph set eps fontface "Roboto Condensed"
-    graph set print logo off
-    // set autotabgraphs on, perm
+        set scheme plotplain
+        graph set eps fontdir ~/.local/share/fonts
+        graph set window fontface "Roboto Condensed"
+        if "`c(console)'"!="console" graph set eps preview on
+        graph set eps logo off
+        graph set eps fontface "Roboto Condensed"
+        graph set print logo off
+        // set autotabgraphs on, perm
 
-    set max_memory 8g, permanently
+        set max_memory 8g, permanently
