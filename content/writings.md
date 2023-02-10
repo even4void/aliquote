@@ -19,7 +19,7 @@ Below is a list of what has been archived over the years on this site or on exte
 <td><em>Date</em></td>
 <td><em>Lang</em></td>
 </tr>
-<tr><td><a href="https://github.com/even4void/biostats">Biostatistics methods</a></td><td>Feb 2023</td><td>en</td></tr>
+<tr><td><a href="https://github.com/even4void/biostats">Biostatistical computing</a></td><td>Feb 2023</td><td>en</td></tr>
 <tr><td><a href="/pub/stackexchange-so.html">Archive of my answers on StackOverflow</a></td><td>Jan 2023</td><td>en</td></tr>
 <tr><td><a href="/pub/stackexchange-tex.html">Archive of my answers on TeX.SE</a></td><td>Jan 2023</td><td>en</td></tr>
 <tr><td><a href="/pub/stackexchange-stats.html">Archive of my answers on Cross Validated</a></td><td>Jan 2023</td><td>en</td></tr>
