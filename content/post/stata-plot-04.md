@@ -36,15 +36,15 @@ In this case, we use the [`uncluttered`](https://github.com/graykimbrough/unclut
 Here is a similar command built using the menu dialog options for `marginsplot`, which works with the `plotplain` scheme:
 
 ```stata
- marginsplot, noci recast(line) ///
-   plot1opts(lcolor(ebblue)) plot2opts(lcolor(orange)) ///
-   addplot((scatter len dosec if supp == 1, mcolor(ebblue) jitter(5)) ///
-   (scatter len dosec if supp == 2, mcolor(orange) jitter(5))) ///
-   ytitle(Length (oc. unit)) xtitle(Dose (mg/day)) xscale(range(0.75 3.25)) ///
-   title("") legend(off)
+marginsplot, noci recast(line) ///
+  plot1opts(lcolor(ebblue)) plot2opts(lcolor(orange)) ///
+  addplot((scatter len dosec if supp == 1, mcolor(ebblue) jitter(5)) ///
+  (scatter len dosec if supp == 2, mcolor(orange) jitter(5))) ///
+  ytitle(Length (oc. unit)) xtitle(Dose (mg/day)) xscale(range(0.75 3.25)) ///
+  title("") legend(off)
 ```
 
-I should note I was not able to reorder the legend (to suppress the additional keys generated for the scatter added plots). Anyway, both results are shown side by side below:
+I should note taht I was not able to reorder the legend (to suppress the additional keys generated for the scatter added plots) via the menu options. Likewise, I did not bother standardizing the symbol shape as `oh`. Anyway, this is not hard to fix and both results are shown side by side below:
 
 {{< fluid_imgs
 "pure-u-1-2|/img/fig-01-06.png"
