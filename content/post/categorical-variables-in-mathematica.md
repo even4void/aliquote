@@ -12,7 +12,7 @@ The take away message is that if you happen to work with a rectangular table whe
 
 As an illustrtaion, consider the following Stata dataset, [polymorphism.dta](/pub/polymorphism.dta),[^1] which includes 3 variables (participant ID, age, genotype with three levels). The magic of `Import` is that it works with Stata data format too, especially when it is imported as a Dataset:
 
-```
+```mathematica
 d = Import["polymorphism.dta", "Dataset"];
 ```
 
@@ -22,7 +22,7 @@ d = Import["polymorphism.dta", "Dataset"];
 
 If you prefer the traditional Table view (right panel in the above figure), you can omit the last option, and if you really need to add a header, you can add it in the front of the list:[^2]
 
-```
+```mathematica
 labels = {"id", "age", "genotype"};
 d = Prepend[Import["polymorphism.dta"], labels];
 ```
@@ -31,13 +31,13 @@ Note that you can also flatten your Dataset using ̀`Flatten /@ List @@@ Normal 
 
 Back to model fitting. To change the reference category, say consider the third category as the baseline, I did not find an easier way than recoding the numerical values using an anonymous function like so:[^3]
 
-```
+```mathematica
 dd = MapAt[4 - #&, d, {All, 3}
 ```
 
 Then we can fit a one-way ANOVA and print an ANOVA table using the following commands:
 
-```
+```mathematica
 m = LinearModelFit[dd[[All, {3, 2}]], x, x, NominalVariables -> x];
 Normal[m]
 m["ANOVATable"]
