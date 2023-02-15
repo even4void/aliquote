@@ -2,7 +2,7 @@
 title: "Statistical charts using Mathematica"
 date: 2023-02-15T08:09:39+01:00
 draft: false
-tags: ["mathematica"]
+tags: ["mathematica", "dataviz"]
 categories: ["2023"]
 ---
 

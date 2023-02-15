@@ -13,7 +13,7 @@ build:
 	hugo --gc --minify
 
 serve:
-	hugo server -D
+	hugo server -D -F
 
 commit:
 	@echo "\033[0;32m[+] Staging local changes\033[0m"
