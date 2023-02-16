@@ -10,7 +10,7 @@ Until now, I was always defining a design matrix by hand to fit, say, a linear r
 
 The take away message is that if you happen to work with a rectangular table where categorical predictors are stored using their labels rather than a numerical code, and you want to perform a one- or two-way ANOVA, or an analysis of covariance, then `NominalVariables -> Automatic` is your best friend.
 
-As an illustrtaion, consider the following Stata dataset, [polymorphism.dta](/pub/polymorphism.dta),[^1] which includes 3 variables (participant ID, age, genotype with three levels). The magic of `Import` is that it works with Stata data format too, especially when it is imported as a Dataset:
+As an illustrtaion, consider the following Stata dataset, [polymorphism.dta](/pub/polymorphism.dta),[^1] which includes 3 variables (participant ID, age, genotype with three levels). The magic of [`Import`](http://reference.wolfram.com/language/guide/ListingOfAllFormats.html) is that it works with Stata data format too, especially when it is imported as a Dataset:
 
 ```mathematica
 d = Import["polymorphism.dta", "Dataset"];
