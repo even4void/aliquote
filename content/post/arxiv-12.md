@@ -28,4 +28,6 @@ one of the authors of Anglican
 
 I learned about Dex on Darren Wilkinson's blog.
 
+### Cross-Validated Decision Trees with Targeted Maximum Likelihood Estimation for Nonparametric Causal Mixtures Analysis (https://arxiv.org/abs/2302.07976)
+
 {{% music %}}Train • _Drops of Jupiter_{{% /music %}}
