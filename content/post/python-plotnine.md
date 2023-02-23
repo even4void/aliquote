@@ -16,9 +16,13 @@ flights = seaborn.load_dataset("flights")
 seaborn.relplot(data=flights, x="year", y="passengers", hue="month", kind="line")
 ```
 
+{{< fluid_imgs
+"pure-u-1-2|/img/fig-python-plotnine-1.png"
+"pure-u-1-2|/img/fig-python-plotnine-2.png" >}}
+
 To produce this kind of plot using Matplotlib alone, it would requires a lot more instruction as we need to group data by month and use year on the x-axis. The syntax above is mostly comparable with `qplot` from the [ggplot2](https://ggplot2.tidyverse.org/) R package.
 
-This dataset is basically a data structure we studied in [another post](https://aliquote.org/post/stata-plot-01/). To reproduce our earlier small multiples, we would write:[^1]
+This dataset is basically a data structure we studied in [another post](https://aliquote.org/post/stata-plot-01/). To reproduce our earlier small multiples (see right panel above), we would write:[^1]
 
 ```python
 g = seaborn.relplot(
@@ -37,7 +41,7 @@ The `seaborn.relplot` command is used for facetted displays. The on-line doc say
 
 > provides access to several different axes-level functions that show the relationship between two variables with semantic mappings of subsets. The kind parameter selects the underlying axes-level function to use
 
-In the above example, the same effect could be achieved using `seaborn.lineplot` instead. There's a lot more commands in the [API](https://seaborn.pydata.org/api.html), msot of them targeting statistical applications (e.g., `rugplot`, `ecdfplot`, `kdeplot`, `strippplot`, `boxplot`). Combined with [statsmodels](https://www.statsmodels.org/stable/index.html) and (scipy](https://scipy.org/), I feel like it provides a complete statistical toolbox for newcomers to Python for statistical munging, albeit with less specialized routines compared to R or Stata.
+In the above example, the same effect could be achieved using `seaborn.lineplot` instead. There's a lot more commands in the [API](https://seaborn.pydata.org/api.html), most of them targeting statistical applications (e.g., `rugplot`, `ecdfplot`, `kdeplot`, `strippplot`, `boxplot`). Combined with [statsmodels](https://www.statsmodels.org/stable/index.html) and (scipy](https://scipy.org/), I feel like it provides a complete statistical toolbox for newcomers to Python for statistical munging, albeit with less specialized routines compared to R or Stata.
 
 Next to Seaborn, there's [plotnine](https://plotnine.readthedocs.io/en/stable/), which started to be developed six or seven years ago. Its syntax is even closer to ggplot2, so if you're an R user you may want to start with plotnine directly. For instance, the above plot could be produced as follows:
 
@@ -52,13 +56,17 @@ Our facetted small multiples would then be written as follows:
 
 ```python
 from plotnine import *
-flights2 = flights2.rename(columns={"month": "mmonth"})
+flights2 = flights.rename(columns={"month": "mmonth"})
 (ggplot(flights)
   + geom_line(aes("year", "passengers", color="factor(month)"), size = 3)
   + geom_line(flights2, aes("year", "passengers", group="factor(mmonth)"), color="grey")
   + facet_wrap("~ month", nrow=3)
   + scale_color_discrete(guide=False))
 ```
+
+{{< fluid_imgs
+"pure-u-1-2|/img/fig-python-plotnine-3.png"
+"pure-u-1-2|/img/fig-python-plotnine-4.png" >}}
 
 {{% music %}}Face The Beat: Session 7 • _Dance My darling -- Love & Hate_{{% /music %}}
 

@@ -1,6 +1,6 @@
 ---
 title: "Bootstrap t-test"
-date: 2023-02-21T20:55:34+01:00
+date: 2023-02-22T20:55:34+01:00
 draft: false
 tags: ["rstats", "stata"]
 categories: ["2023"]
