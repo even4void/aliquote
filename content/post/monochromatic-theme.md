@@ -29,7 +29,7 @@ Regarding other TUIs, I have chosen color schemes that can accommodate black & w
 
 {{< fluid_imgs
 "pure-u-1-3|/img/2023-02-28-20-42-10.png"
-"pure-u-1-3|/img/2023-02-28-20-43-57.png" >}}
+"pure-u-1-3|/img/2023-02-28-20-43-57.png"
 "pure-u-1-3|/img/tty3.png" >}}
 
 Overall I quite like working on a virtual console, especially since I can still listen to music running on Cmus in a regular X session, and the right panel above shows how it looks like.
