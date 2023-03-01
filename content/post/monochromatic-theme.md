@@ -25,14 +25,15 @@ fi
 
 As can be seen, if we are connected via ssh or a simple tty, we'll be disabling most of the fuzz defined elsewhere to prettify the prompt, using [exa](https://the.exa.website/) for nice listing, etc. I also use these settings for running a terminal inside Neovim, for example.
 
-Regarding other TUIs, I have chosen color schemes that can accommodate black & white screen either by using few colors (Tmux or Irssi) or by defining mono color (Neomutt). The "mono" colorscheme for Vim is inspired by Joshua Stein [own color scheme](https://github.com/jcs/dotfiles/blob/master/.vim/colors/jcs.vim),[^2] who also authored the [NO_COLOR](https://no-color.org/) site. Here is my default theme (left) and the mono theme (middle) when editing this post:
+Regarding other TUIs, I have chosen color schemes that can accommodate black & white screen either by using few colors (Tmux or Irssi) or by defining mono color (Neomutt). The "mono" colorscheme for Vim is inspired by Joshua Stein [own color scheme](https://github.com/jcs/dotfiles/blob/master/.vim/colors/jcs.vim),[^2] who also authored the [NO_COLOR](https://no-color.org/) site. Here is my default theme (left) and the mono theme (right) when editing this post:
 
 {{< fluid_imgs
-"pure-u-1-3|/img/2023-02-28-20-42-10.png"
-"pure-u-1-3|/img/2023-02-28-20-43-57.png"
-"pure-u-1-3|/img/tty3.png" >}}
+"pure-u-1-2|/img/2023-02-28-20-42-10.png"
+"pure-u-1-2|/img/2023-02-28-20-43-57.png" >}}
 
-Overall I quite like working on a virtual console, especially since I can still listen to music running on Cmus in a regular X session, and the right panel above shows how it looks like.
+Overall I quite like working on a virtual console, especially since I can still listen to music running on Cmus in a regular X session, so here is a screenshot of the same editing session on a virtual console:
+
+![img](/img/tty3.png)
 
 {{% music %}}Dave Gahan & Soulsavers • _Metal Heart_{{% /music %}}
 
