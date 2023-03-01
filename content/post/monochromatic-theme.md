@@ -1,6 +1,6 @@
 ---
 title: "Mono color scheme for tty"
-date: 2023-03-01T10:20:22+01:00
+date: 2023-03-01T09:20:22+01:00
 draft: false
 tags: ["unix"]
 categories: ["2023"]
