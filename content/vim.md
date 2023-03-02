@@ -9,7 +9,7 @@ Here are the current Neovim mappings I came to feel comfortable with over time. 
 Note that I only have a dozen of plugins in my `start` and `opt` directories, in addition to part of [mini.nvim](https://github.com/echasnovski/mini.nvim) that I adapted to suit my needs better: (This may change in the future but usually I tend to remove plugins rather than add new ones.[^1] )
 
 - [opt] `nvim-treesitter`, `nvim-treesitter-textobjects`, `Comment.nvim`, `nvim-lspconfig`, `nvim-parinfer`, `vimtex`, `fzf-hoogle.vim`, `nvim-colorizer` `rust-tools.nvim`;
-- [start]  `packer.nvim`, `fzf.vim`, `fzf`
+- [start] `packer.nvim`, `fzf.vim`, `fzf`
 
 {{% alert note %}}
 <small>[2022-10-05]</small><br>
@@ -34,8 +34,8 @@ My leader is ","[^2] and I do not define specific mappings for the localleader i
 <tr><td><kbd>-</kbd></td><td>n</td><td><kbd>:Ex</kbd></td><td>Show explorer</td></tr>
 <tr><td><kbd>,!</kbd></td><td>n</td><td><kbd>:10sp +te</kbd></td><td>Popup terminal</td></tr>
 <tr><td><kbd>,.</kbd></td><td>n</td><td><kbd>:lcd %:p:h</kbd></td><td>Set local current directory</td></tr>
-<tr><td><kbd>,x</kbd></td><td>n</td><td><kbd>:bp &lt;Bar> bd! #</kbd></td><td>Kill current buffer</td></tr>
-<tr><td><kbd>,X</kbd></td><td>n</td><td><kbd>Only()</kbd></td><td>Keep only current buffer (custom)</td></tr>
+<tr><td><kbd>&lt;Backspace></kbd></td><td>n</td><td><kbd>:bp &lt;Bar> bd! #</kbd></td><td>Kill current buffer</td></tr>
+<tr><td><kbd>&lt;C-x></kbd></td><td>n</td><td><kbd>Only()</kbd></td><td>Keep only current buffer (custom)</td></tr>
 <tr><td><kbd>,e</kbd></td><td>n</td><td><kbd>:e &lt;C-R>=expand("%:p:h") . "/"</kbd></td><td>Open file from current directory</td></tr>
 <tr><td><kbd>&lt;Tab></kbd></td><td>n</td><td><kbd>:tabnext</kbd></td><td>Next tab</td></tr>
 <tr><td><kbd>,&lt;Tab></kbd></td><td>n</td><td><kbd>:$tabnew</kbd></td><td>New tab</td></tr>
@@ -54,7 +54,6 @@ My leader is ","[^2] and I do not define specific mappings for the localleader i
 <tr><td><kbd>n</kbd></td><td>n</td><td><kbd>nzz</kbd></td><td>Keep cursor centered on screen when looking ahead</td></tr>
 <tr><td><kbd>U</kbd></td><td>n</td><td><kbd>&lt;C-r></kbd></td><td>Redo</td></tr>
 <tr><td><kbd>zs</kbd></td><td>n</td><td><kbd>1z=</kbd></td><td>Fix spelling using first suggestion</td></tr>
-<tr><td><kbd>&lt;Backspace></kbd></td><td>n</td><td><kbd>:nohl</kbd></td><td>Clear search highlights</td></tr>
 <tr><td><kbd>,df</kbd></td><td>n</td><td><kbd>:setlocal spell!&lt;bar>setlocal spell?&lt;cr>:setlocal spelllang=fr&lt;cr></kbd></td><td>Toggle spelling on/off (French)</td></tr>
 <tr><td><kbd>,de</kbd></td><td>n</td><td><kbd>:setlocal spell!&lt;bar>setlocal spell?&lt;cr>:setlocal spelllang=en&lt;cr></kbd></td><td>Toggle spelling on/off (English)</td></tr>
 <tr><td><kbd>,p</kbd></td><td>n</td><td><kbd>:set invpaste&lt;Cr>:set paste?&lt;Cr></kbd></td><td>Toggle on/off paste mode</td></tr>
