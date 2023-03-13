@@ -17,6 +17,7 @@ I haven't watched TV in about ten years, probably even before I removed the TV f
 <td><em>Seasons (Ep.)</em></td>
 <td><em>Rating</em></td>
 </tr>
+<tr><td><a href="https://en.wikipedia.org/wiki/Vikings:_Valhalla">Vikings Valhalla</a></td><td>2023</td><td>2 (16)</td><td>&#9733;&#9733;&#9733;&#9734;&#9734;</td></tr>
 <tr><td><a href="https://en.wikipedia.org/wiki/1983_(TV_series)">1983</a></td><td>2023</td><td>1 (8)</td><td>&#9733;&#9733;&#9733;&#9734;&#9734;</td></tr>
 <tr><td><a href="https://en.wikipedia.org/wiki/Pine_Gap_(TV_series)">Pine Gap</a></td><td>2023</td><td>1 (6)</td><td>&#9733;&#9733;&#9734;&#9734;&#9734;</td></tr>
 <tr><td><a href="https://en.wikipedia.org/wiki/Copenhagen_Cowboy">Copenhagen Cowboy</a></td><td>2023</td><td>1 (6)</td><td>&#9733;&#9733;&#9734;&#9734;&#9734;</td></tr>
