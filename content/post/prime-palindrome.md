@@ -52,4 +52,9 @@ Unless you wrap the above code in an [nth](https://docs.racket-lang.org/collecti
 94049
 ```
 
+{{% alert note %}}
+<small>[2023-03-14]</small><br>
+For other interesting problems on progression of primes, see [Twin Primes, Cousin Primes, Sexy Primes, and Prime Triplets](https://kaygun.tumblr.com/), by Atabey Kaygun.
+{{% /alert %}}
+
 {{% music %}}Laura Stevenson • _Continental Divide_{{% /music %}}

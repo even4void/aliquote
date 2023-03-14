@@ -6,7 +6,7 @@ tags: ["python"]
 categories: ["2023"]
 ---
 
-Python has a lot of base packages that can be used to perform most of our statistical computing tasks. There's a good review of what's available when you install Python in _Serious Python_, by Julien Danjou (No Starch Press, 2018), and often times you don't really need extra stuff.
+Python has a lot of base packages that can be used to perform most of our statistical computing tasks. There's a good review of [what's available](/post/python-getting-functional/) when you install Python in _Serious Python_, by Julien Danjou (No Starch Press, 2018), and often times you don't really need extra stuff.
 
 Here are two small illustrations of my wanderings with Python for basic statistical stuff. For a project at work, I needed a quick implementation of bootstrapping. This was just to ensure that the statistic I was computing on the full dataset was reliable enough. I was not interested in drawing confidence intervals or anything more fancy from the bootstrapped statistics. Initially, I tried using the `asyncio` module, but finally I ended up using `multiprocessing` (see [Multi-blast and parallel processing](/post/multi-blast/) for another use of this module).
 
