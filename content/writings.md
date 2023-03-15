@@ -72,8 +72,11 @@ Below is a list of what has been archived over the years on this site or on exte
 <tr><td><a href="/cours/psychometrics/">Psychometrics</a></td><td>Feb 2010</td><td>en</td></tr>
 <tr><td><a href="/pub/Lalanne_Cogiter_2009.pdf">Analyse des données génétiques</a></td><td>Nov 2009</td><td>fr</td></tr>
 <tr><td><a href="/pub/Lalanne_BIBS_M2Pro.pdf">Intégration de données de neuroimagerie et de génétique</a></td><td>Jun 2009</td><td>fr</td></tr>
+<tr><td><a href="/pub/gene_therapy.pdf">La thérapie génique</a></td><td>Jun 2009</td><td>fr</td></tr>
 <tr><td><a href="/pub/contrasts.txt">Contrastes sous R</a></td><td>May 2009</td><td>fr</td></tr>
+<tr><td><a href="/pub/R_on_the_web.html">R Ressources on the web</a></td><td>Feb 2009</td><td>en</td></tr>
 <tr><td><a href="/pub/MABMUSPlus/">A collection of plots from Selvin's book on S+</a></td><td>Feb 2009</td><td>en</td></tr>
+<tr><td><a href="/pub/DAAG/">A collection of plots from Maindonald's DAAG book</a></td><td>---&nbsp;&nbsp; 2009</td><td>en</td></tr>
 <tr><td><a href="/cours/stats_bioinfo">Statistiques inférentielles</a></td><td>Dec 2008</td><td>fr</td></tr>
 <tr><td><a href="/pub/intro_cat.pdf">Le testing adaptatif : Intérêts et applications</a></td><td>Sep 2008</td><td>fr</td></tr>
 <tr><td><a href="/pub/maps.txt">Représentations de données cartographiques</a></td><td>Apr 2008</td><td>fr</td></tr>
@@ -81,6 +84,7 @@ Below is a list of what has been archived over the years on this site or on exte
 <tr><td><a href="/pub/RMB/">Regression methods in Biostatistics</a></td><td>Feb 2008</td><td>en</td></tr>
 <tr><td><a href="/pub/MDLD.pdf">Models for Discrete Longitudinal Data</a></td><td>Nov 2007</td><td>en</td></tr>
 <tr><td><a href="/cours/2007_cogmaster_B4/">Modèles probabilistes et théorie de l'information</a></td><td>---&nbsp;&nbsp; 2007</td><td>fr</td></tr>
+<tr><td><a href="/pub/these_lalanne2006_href.pdf">Formes et mouvements : de la perception à l’action</a></td><td>Sep 2006</td><td>fr</td></tr>
 <tr><td><a href="/cours/2006_cogmaster_B4/">Modèles probabilistes en sciences cognitives</a></td><td>---&nbsp;&nbsp; 2006</td><td>fr</td></tr>
 <tr><td><a href="/pub/tips.txt">Trucs et astuces Linux</a></td><td>---&nbsp;&nbsp; 2006</td><td>fr</td></tr>
 <tr><td><a href="/cours/2005_iut/">Introduction aux sciences cognitives</a></td><td>---&nbsp;&nbsp; 2005</td><td>fr</td></tr>
