@@ -10,7 +10,7 @@ A power set is the set of all subsets composed of one or more elements of the or
 
 How to generate such a power set in a recursive manner? First, the power set of an empty list is of course the empty list. Second, the power set of $A = \\{a,\\dots\\}$, where $\\dots$ represents the `cdr` of $A$ using Lisp notation (i.e., all elements after the first one, $a$) amounts to concatenating the power set of $A - \\{a\\}$ -- which means all subset of $A$ which do not include $a$ -- and, again, the power set of $A - \\{a\\}$, this time with a prepended to each subset. In the above example, the later point yields, on the one hand, $\\{\\}$, $\\{2\\}$, $\\{3\\}$, $\\{2,3\\}$, and on the other hand, $\\{1\\}$, $\\{1,2\\}$, $\\{1,3\\}$, $\\{1,2,3\\}$. I don't remember the name of this algorithm.
 
-In Lisp, we can write the following:
+In Lisp, we can write the following:[^1]
 
 ```lisp
 (defun power-set (lst)
@@ -49,6 +49,8 @@ CL-USER(11): (power-set '(1 2 3))
 
 (nil (3) (2) (2 3) (1) (1 3) (1 2) (1 2 3))
 ```
+
+<br>
 
 {{% alert note %}}
 <small>[2023-03-14]</small><br>
@@ -100,3 +102,14 @@ See also [Wordle letters](https://leancrew.com/all-this/2022/01/wordle-letters/)
 {{% /alert %}}
 
 {{% music %}}Neon Indian • _Should Have Taken Acid With You_{{% /music %}}
+
+[^1]: [Newlisp](http://www.newlisp.org) makes it even easier:
+
+    ```lisp
+    (define (power-set x)
+      (if (empty? x)
+          (list '())
+          (let ((elt (first x))
+                (p (power-set (rest x))))
+               (append (map (fn (s) (cons elt s)) p) p))))
+    ```
