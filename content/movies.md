@@ -17,6 +17,7 @@ I haven't watched TV in about ten years, probably even before I removed the TV f
 <td><em>Seasons (Ep.)</em></td>
 <td><em>Rating</em></td>
 </tr>
+<tr><td><a href="https://www.netflix.com/title/81494917">Triada</a></td><td>2023</td><td>1 (8)</td><td>&#9733;&#9733;&#9733;&#9734;&#9734;</td></tr>
 <tr><td><a href="https://en.wikipedia.org/wiki/Vikings:_Valhalla">Vikings Valhalla</a></td><td>2023</td><td>2 (16)</td><td>&#9733;&#9733;&#9733;&#9734;&#9734;</td></tr>
 <tr><td><a href="https://en.wikipedia.org/wiki/1983_(TV_series)">1983</a></td><td>2023</td><td>1 (8)</td><td>&#9733;&#9733;&#9733;&#9734;&#9734;</td></tr>
 <tr><td><a href="https://en.wikipedia.org/wiki/Pine_Gap_(TV_series)">Pine Gap</a></td><td>2023</td><td>1 (6)</td><td>&#9733;&#9733;&#9734;&#9734;&#9734;</td></tr>
@@ -41,7 +42,7 @@ I haven't watched TV in about ten years, probably even before I removed the TV f
 <tr><td><a href="https://fr.wikipedia.org/wiki/Altered_Carbon">Altered Carbon</a></td><td>2022</td><td>2 (18)</td><td>&#9733;&#9733;&#9733;&#9734;&#9734;</td></tr>
 <tr><td><a href="https://en.wikipedia.org/wiki/Severance_(TV_series)">Severance</a></td><td>2022</td><td>1 (9)</td><td>&#9733;&#9733;&#9734;&#9734;&#9734;</td></tr>
 <tr><td><a href="https://en.wikipedia.org/wiki/Teen_Wolf_(2011_TV_series)">Teen Wolf</a></td><td>2021+</td><td>6 (100)</td><td>&#9733;&#9734;&#9734;&#9734;&#9734;</td></tr>
-<tr><td><a href="https://en.wikipedia.org/wiki/The_Witcher_(TV_series)">The Witcher</a></td><td>2021+</td><td>2 (16)</td><td>&#9733;&#9733;&#9733;&#9733;&#9734;</td></tr>
+<tr><td><a href="https://en.wikipedia.org/wiki/The_Witcher_(TV_series)">The Witcher</a></td><td>2021+</td><td>2 (16)</td><td>&#9733;&#9733;&#9733;&#9734;&#9734;</td></tr>
 <tr><td><a href="https://en.wikipedia.org/wiki/Homeland_(TV_series)">Homeland</a></td><td>2021</td><td>8 (96)</td><td>&#9733;&#9733;&#9733;&#9734;&#9734;</td></tr>
 <tr><td><a href="https://en.wikipedia.org/wiki/Biohackers">Biohackers</a></td><td>2021</td><td>2 (12)</td><td>&#9733;&#9733;&#9734;&#9734;&#9734;</td></tr>
 <tr><td><a href="https://en.wikipedia.org/wiki/See_(TV_Series)">See</a></td><td>2021</td><td>2 (16)</td><td>&#9733;&#9733;&#9733;&#9733;&#9734;</td></tr>
