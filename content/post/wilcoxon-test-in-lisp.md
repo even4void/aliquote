@@ -29,11 +29,7 @@ LispStat has a `rank` function, but unfortunately it does not compute the averag
 ;; => (1 2.5 5 4 2.5 6)
 ```
 
-There's more than one way to report results from a Wilcoxon-Mann-Whitney, and the test statistic is usually labelled either as U (SPSS & Co.) or W (R), statistic (Python) or TestStatistic (Mathematica), or directly as a standard normal quantile ($z$, in Stata). As noted in the R on-line help for `wilcox.test`:
-
-> The literature is not unanimous about the definitions of the Wilcoxon rank sum and Mann-Whitney tests. The two most common definitions correspond to the sum of the ranks of the first sample with the minimum value subtracted or not: R subtracts and S-PLUS does not, giving a value which is larger by m(m+1)/2 for a first sample of size m. (It seems Wilcoxon's original paper used the unadjusted sum of the ranks but subsequent tables subtracted the minimum.)
-
-Similar comments are made in Stata manuals, or by the author of the Haskell's [statistics](https://hackage.haskell.org/package/statistics) package.
+There's more than one way to report results from a Wilcoxon-Mann-Whitney, and the test statistic is usually labelled either as U (SPSS & Co.) or W (R), statistic (Python) or TestStatistic (Mathematica), or directly as a standard normal quantile ($z$, in Stata). Even the definition of the test itself (Wilcoxon rank sum or Mann-Whitney test) is not clear, as noted in the R on-line help for `wilcox.test`. Similar comments are made in Stata manuals, or by the author of the Haskell's [statistics](https://hackage.haskell.org/package/statistics) package.
 
 Hence, it may happen that only the sum of ranks is reported, or the sum of ranks minus a correction factor ($n_{\star}(n_{\star}+1)/2$, where $\star$ denotes the index for the first or second group[^2]), which is the case of the first two naming schemes (although, technically, U is the shifted version of the test statistic), while the $z$ value refers to the standardized test statistic that follows a normal distribution.[^3] Assuming $n_1 < n_2$, we define $W_R$ the sum of the ranks assigned to the $n_1$ observations in the first sample. Critical values for this statistic for small $n$ can be used.[^4] When $\text{min}(n_1, n_2) > 10$, we use the following Gaussian approximation:
 
