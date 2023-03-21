@@ -6,7 +6,7 @@ weight: 1
 type: "page"
 ---
 
-<small><a href="/changelog/">Changelog</a> • <a href="/privacy/">Privacy</a> • <a href="/contact/">Contact</a> | GPG key: <a href="/even4void.txt">152E3E3F7C4CCE44</a></small>
+<small><a href="/changelog/">Changelog</a> • <a href="/privacy/">Privacy</a> • <a href="/contact/">Contact</a> | GPG key: <a href="/even4void.txt">152E3E3F7C4CCE44</a> | <a href="index.xml">RSS</a></small>
 
 You landed on my homepage, thanks for stopping by!
 

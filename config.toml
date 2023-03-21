@@ -59,10 +59,10 @@ name = "search"
 icon = "search"
 url = "/search"
 
-[[params.social]]
-name = "RSS"
-icon = "rss"
-url = "/index.xml"
+# [[params.social]]
+# name = "RSS"
+# icon = "rss"
+# url = "/index.xml"
 
 [taxonomies]
 tag = "tags"
