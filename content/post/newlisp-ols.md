@@ -39,12 +39,19 @@ Great! Compare to the built-in function:
 (write-file "/home/chl/tmp/lbw_fit.dat" (stat:list2ascii out))
 ```
 
+At this point, I'm afraid there's not much we can do to go forward since the stat module does not offer a way to build a regression or ANOVA table.
+
 ```shell
-cat lbw_fit.dat | sed -e 's/(//g' -e 's/)//g' -e 's/,/./' | gnuplot -p -e "set terminal png size 600, 300; set output '~/tmp/lbw_fit.png'; plot '<cat' using 1:2"
+$ sed -i -e 's/(//g' -e 's/)//g' -e 's/,/./' lbw_fit.dat
+$ gnuplot -p -e "set terminal png size 800, 600; set output '~/tmp/lbw_fit.png'; \
+    set grid; set xlabel 'Mother age (yr.)'; set ylabel 'Baby weight (g)'; \
+    plot 'lbw_fit.dat' u 1:2 w p pt 6 notitle, \
+    'lbw_fit.dat' u 1:3 w l lc rgb 'black' lw 2 notitle"
 ```
 
-By the way, Gnuplot itself is able to fit a linear regression from raw data.
-Stata's results for reference:
+![img](/img/lbw_fit.png)
+
+By the way, Gnuplot itself is able to fit a linear regression from raw data. Finally, here are Stata's results for reference:
 
 ```
 . import delimited /home/chl/tmp/birthwt.csv
