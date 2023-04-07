@@ -8,6 +8,11 @@ categories: ["2023"]
 
 I read Rasmus Bååth's last post, [Three strategies to tackle Big Data in R and Python](https://www.sumsar.net/blog/three-strategies-for-big-data/), and I thought I would run my own benchmark on [duckdb](https://duckdb.org/) with the data discussed in my review of [Exploratory Desktop](/post/exploratory-desktop-app/) some years ago.[^1] Moreover, I'm interested in trying out Python [datatable](/post/python-datatable/) `fread` function.
 
+{{% alert note %}}
+<small>[2023-04-06]</small><br>
+See also [In-process, in-memory databases](https://yetanothermathprogrammingconsultant.blogspot.com/2023/04/in-process-in-memory-databases.html) for a more detailed comparison of DuckDB vs. SQLite.
+{{% /alert %}}
+
 Duckdb has long been a database backend I wanted to try, along with [TileDB](https://github.com/TileDB-Inc/TileDB) (I followed [Dirk Eddelbuettel](https://github.com/eddelbuettel) work on its R frontend, but go checkout [his website](https://dirk.eddelbuettel.com/) for more information; I also warmly recommend his online course on [Data Science Programming Methods](https://stat447.com/)).
 
 Let's benchmark loading some data then. I fetched data for year 2021 (1.6 Go), which includes 3,669,928 records according to the [codebook](https://data.nber.org/nvss/natality/code/nat2021us.html).[^2] For the sake of comparison, loading the same data file in sqlite took less than 1,5 minutes, with little RAM caching. Simple queries are a breeze as expected, although I forgot to enable proper timing (`.timer on`):
