@@ -54,10 +54,10 @@ name = "about"
 icon = "info"
 url = "/about"
 
-[[params.social]]
-name = "search"
-icon = "search"
-url = "/search"
+# [[params.social]]
+# name = "search"
+# icon = "search"
+# url = "/search"
 
 # [[params.social]]
 # name = "RSS"
