@@ -8,7 +8,7 @@ categories: ["2023"]
 
 I came across a Racket package which aims to provide basic linear regression fitting utilities to Schemers. Unfortunately, it relies on the use of normal equations to solve the linear systems, which is rarely a good idea (think about what happens if the design matrix has a very irregular shape, or even [condition number](https://stats.stackexchange.com/a/343075)). Moreover, it is not very flexible regarding data i/o, but that's not the point of this post.
 
-Direct methods (i.e., matrix decomposition) have been discussed beforehand, e.g. [here](/post/lisp-qr-regression/) (Lisp) and [here](/post/newton-raphson-racket/) (Racket). Here is another direct method which relies on the SVD. Considering the linear system $X\beta = y$, the idea is to decompose $X$ as $\underset{m\times m}{U}\overset{m\times n}{\Sigma}\underset{n\times n}{V^T}$, where $U$ and $V$ are unitary matrices, and $\Sigma$ is a diagonal matrix filled with 0 for rows $n+1,\dots,m$.[^1]  Then, $\hat\beta$ is obtained as $V^T\Sigma^{-1}U^Ty$. See [The QR Algorithm Computes Eigenvalues and Singular Values](https://blogs.mathworks.com/cleve/2019/08/05/the-qr-algorithm-computes-eigenvalues-and-singular-values/) to learn more about the relationship between the QR and SVD matrix decompositions.
+Direct methods (i.e., matrix decomposition) have been discussed beforehand, e.g. [here](/post/lisp-qr-regression/) (Lisp) and [here](/post/newton-raphson-racket/) (Racket). Here is another direct method which relies on the SVD. Considering the linear system $X\beta = y$, the idea is to decompose $X$ as $\underset{m\times m}{U}\overset{m\times n}{\Sigma}\underset{n\times n}{V^T}$, where $U$ and $V$ are unitary matrices, and $\Sigma$ is a diagonal matrix filled with 0 for rows $n+1,\dots,m$.[^1] Then, $\hat\beta$ is obtained as $V^T\Sigma^{-1}U^Ty$. See [The QR Algorithm Computes Eigenvalues and Singular Values](https://blogs.mathworks.com/cleve/2019/08/05/the-qr-algorithm-computes-eigenvalues-and-singular-values/) to learn more about the relationship between the QR and SVD matrix decompositions.
 
 To sum up, although solving normal equations is usually the fastest method, its squared condition number renders it less stable; QR decomposition is more stable at the expense of a larger cost, and SVD works well even in case $X$ is rank-deficient.
 
@@ -20,7 +20,7 @@ Here is a direct application in Racket, using the same example we used in a [pre
 
 (define (import file)
   (csv->list ((make-csv-reader-maker
-               '((seperator-chars #\,)
+               '((separator-chars #\,)
                  (quote-char . #f))) (open-input-file file))))
 
 (define data (map (lambda (xs) (map string->number xs)) (cdr (import "/home/chl/tmp/birthwt.csv"))))
