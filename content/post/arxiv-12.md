@@ -1,7 +1,7 @@
 ---
 title: "ArXiving on January 2023"
 date: 2023-04-19T12:19:00+01:00
-draft: true
+draft: false
 tags: ["readings", "arxiv"]
 categories: ["2022"]
 ---
