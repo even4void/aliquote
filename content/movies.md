@@ -17,6 +17,7 @@ I haven't watched TV in about ten years, probably even before I removed the TV f
 <td><em>Seasons (Ep.)</em></td>
 <td><em>Rating</em></td>
 </tr>
+<tr><td><a href="https://en.wikipedia.org/wiki/The_Last_Kingdom_(TV_series)">The Last Kingdom</a></td><td>2023</td><td>5 (46)</td><td>&#9733;&#9733;&#9734;&#9734;&#9734;</td></tr>
 <tr><td><a href="https://en.wikipedia.org/wiki/The_Night_Agent">The Night Agent</a></td><td>2023</td><td>1 (10)</td><td>&#9733;&#9734;&#9734;&#9734;&#9734;</td></tr>
 <tr><td><a href="https://www.netflix.com/title/81494917">Triada</a></td><td>2023</td><td>1 (8)</td><td>&#9733;&#9733;&#9733;&#9734;&#9734;</td></tr>
 <tr><td><a href="https://en.wikipedia.org/wiki/Vikings:_Valhalla">Vikings Valhalla</a></td><td>2023</td><td>2 (16)</td><td>&#9733;&#9733;&#9733;&#9734;&#9734;</td></tr>
