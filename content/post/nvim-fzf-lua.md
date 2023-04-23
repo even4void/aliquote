@@ -6,7 +6,7 @@ tags: ["vim"]
 categories: ["2023"]
 ---
 
-I use a borrowing TUI low-color setup, and I have never been as happy since it allows to focus on the task at hand. Anyway, my Neovim configuration has been relatively stable for the past few months, and since Neovim 0.7-dev I haven't encountered a single breaking change in Neovim core, which is pretty good sign. At the time of this writing, the nightly version of Neovim is 0.10.0-dev (LuaJIT 2.1.0-beta3).
+I use a boring TUI low-color setup, and I have never been as happy since it allows to focus on the task at hand. Anyway, my Neovim configuration has been relatively stable for the past few months, and since Neovim 0.7-dev I haven't encountered a single breaking change in Neovim core, which is pretty good sign. At the time of this writing, the nightly version of Neovim is 0.10.0-dev (LuaJIT 2.1.0-beta3).
 
 Today I decided to give a try to [fzf-lua](https://github.com/ibhagwan/fzf-lua) as a replacement for [fzf.nvim](https://github.com/junegunn/fzf.vim). Since it is my daily driver to navigating files, history, etc. in Neovim, it must be at least as efficient as Junegunn Choi's wonderful plugin. It looks like it is. Everything works perfectly, with the added benefits of a more comfortable Git UI (you can stage or unstage files, and preview local changes), an online help for available shortcuts depending on the context, more utilities (just [take a look](https://github.com/ibhagwan/fzf-lua#search) at the number of functions to grep for something in your files); last but not least, it support Neovim builtin [LSP and diagnostics](https://github.com/ibhagwan/fzf-lua#lspdiagnostics), which I was missing from fzf.vim.
 
