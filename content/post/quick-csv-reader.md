@@ -26,10 +26,10 @@ While I would prefer to roll my own version, my previous review of the available
 
 - [data-frame](https://docs.racket-lang.org/data-frame/index.html), which is the package I used for some time.
 - [data-table](https://github.com/jadudm/data-table), "a library for manipulating tabular data in Racket." It has interesting features like working with remote data structures but it seems pretty limited in terms data manipulation, and the project hasn't received any update in several years.
-- [rebellion](), "a suite of libraries for defining new struct-based types including record types and enum types, and much more." It features a [tabular data structure](https://docs.racket-lang.org/rebellion/Tables.html), where column names are stored as keywords.
-- [sawzall](), "A grammar of data manipulation for Racket, inspired by dplyr." It is probably the closer in spirit to R's (new) way of data munging. However, the project hasn't received any update in several years.
+- [rebellion](https://github.com/jackfirth/rebellion), "a suite of libraries for defining new struct-based types including record types and enum types, and much more." It features a [tabular data structure](https://docs.racket-lang.org/rebellion/Tables.html), where column names are stored as keywords.
+- [sawzall](https://github.com/ralsei/sawzall), "A grammar of data manipulation for Racket, inspired by dplyr." It is probably the closer in spirit to R's (new) way of data munging. However, the project hasn't received any update in the last two years. It depends on the `data-frame` package, and it comes with a companion package for pgraphics ([graphite](https://github.com/ralsei/graphite)).
 
-There may be other packages I am missing, of course. The `data-frame` package is really great except it doesn't quite suppot categorical data. However, I'm working on adding that in a PR. It means we can write things like that:
+There may be other packages I am missing, of course. The `data-frame` package is really great except it doesn't quite support categorical data, at least last time I tried it. I'm working on it, though, which eventually will mean we could write things like that:
 
 ```racket
 (require data-frame)
