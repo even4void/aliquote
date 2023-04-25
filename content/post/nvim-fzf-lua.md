@@ -61,4 +61,19 @@ Finally, I really like the quote on the GH README:
 > ... and not telescope or any other vim/neovim household name?<br>
 > As @junegunn himself put it, “because you can and you love fzf”.
 
+{{% alert note %}}
+<small>[2023-04-24]</small><br>
+Well, actually it didn't take long before I realized how magical this plugin is, and what kind of enhancements it brigs to fzf.vim. The integration with LSP and the quickfix which I use a lot is simply wonderful, and all the defaults and options were carefully crafted! The lua bindings for [fzf-bibtex](https://github.com/msprev/fzf-bibtex) also work like a charm, and I added a simple helper function to open the PDF file right from the Fzf prompt:
+
+```lua
+local file_open = function(selected, opts)
+  local result = vim.fn.system("bibtex-cite", selected)
+  fh = "/home/chl/Documents/papers/" .. result:sub(2) .. ".pdf"
+  vim.api.nvim_command("silent !zathura " .. fh .. " &")
+end
+```
+
+<small>This assumes that the name of the PDF file is the Bibtex key. If that's not the case, I guess it will be harder unless the filename is available in the Bibte entry itself (and you will need to parse that entry specifically).</small>
+{{% /alert %}}
+
 {{% music %}}Chico Hamilton • _Goodbye Baby Blues_{{% /music %}}
