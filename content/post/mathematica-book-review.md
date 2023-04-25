@@ -28,7 +28,7 @@ In Mathematica, lists and tables are the core elements you often end up manipula
 
 {{< fluid_imgs
 "pure-u-1-2|/img/2023-04-25-12-19-27.png"
-"pure-u-1-2|/img/2023-04-25-12-39-53.png.png" >}}
+"pure-u-1-2|/img/2023-04-25-12-39-53.png" >}}
 
 Other book reviews to follow: Mathematica in Action, and An Engineer's Guide to Mathematica.
 
