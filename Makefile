@@ -6,7 +6,7 @@ LOCAL_DIR=/home/chl/Sites/aliquote/public
 .PHONY: build commit deploy
 
 clean:
-	rm -rf $LOCAL_DIR
+	rm -rf $(LOCAL_DIR)
 
 build:
 	@echo "\033[0;32m[+] Building public files in $(LOCAL_DIR)\033[0m"
