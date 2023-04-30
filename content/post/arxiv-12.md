@@ -3,7 +3,7 @@ title: "ArXiving on January 2023"
 date: 2023-04-19T12:19:00+01:00
 draft: false
 tags: ["readings", "arxiv"]
-categories: ["2022"]
+categories: ["2023"]
 ---
 
 (I know, I know, it's a bit late for a January review.)
