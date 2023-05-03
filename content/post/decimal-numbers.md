@@ -42,6 +42,11 @@ A common pattern is to extract the fractional part of a number and to store each
 
 <small>(The `quotient` and `remainder` procedures are bundled in the `base` module.)</small>
 
+{{% alert note %}}
+<small>[2023-05-03]</small><br>
+See also [Convert integer to list of digits](https://cookbook.scheme.org/convert-integer-to-list-of-digits/) on the Scheme Cookbook for some other alternatives.
+{{% /alert %}}
+
 It turns out that the above procedure is easier to read and quite more efficient than converting character to number, although digits are given in reverse order. However, it is not difficult to `reverse` the list afterwards, or to adapt the code if timing is a critical element. You can then `apply`, `map` or `filter` the resulting list of digits at will. Here is a working example using a few decimals of $\pi$:
 
 ```racket

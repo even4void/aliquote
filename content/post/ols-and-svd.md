@@ -33,6 +33,11 @@ Here is a direct application in Racket, using the same example we used in a [pre
 ;; => (flomat: ((12.429712027714643) (2655.74446970517)))
 ```
 
+{{% alert note %}}
+<small>[2023-05-02]</small><br>
+To learn about more "traditional" Racket [arrays](https://docs.racket-lang.org/math/array.html), check the documentation or the following blog post, by Alex Harsányi: [A Racket Array Tutorial](https://alex-hhh.github.io/2023/04/array-tutorial.html).
+{{% /alert %}}
+
 Note that the above procedure returns a full matrix (m x m) for U, but we don't really need the extra columns, hence the subsetting to the first two columns of $U$. For the record, we got the following results using Newlisp:
 
 ```lisp
