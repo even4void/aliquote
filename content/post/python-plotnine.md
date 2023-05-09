@@ -68,6 +68,11 @@ flights2 = flights.rename(columns={"month": "mmonth"})
 "pure-u-1-2|/img/fig-python-plotnine-3.png"
 "pure-u-1-2|/img/fig-python-plotnine-4.png" >}}
 
+{{% alert note %}}
+<small>[2023-05-09]</small><br>
+Allen Downey makes a heavy use of Matplotlib, oftentimes through custom plotting functions. See figure 3 in this [blog post](https://www.allendowney.com/blog/2023/04/24/the-overton-paradox/) for a variant of small multiples that I personally like a lot.
+{{% /alert %}}
+
 {{% music %}}Face The Beat: Session 7 • _Dance My darling -- Love & Hate_{{% /music %}}
 
 [^1]: There's a slightly different illustration of [small multiple time series](https://seaborn.pydata.org/examples/timeseries_facets.html) on Seaborn gallery.
