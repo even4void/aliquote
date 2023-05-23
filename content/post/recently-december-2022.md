@@ -19,6 +19,10 @@ I've been working on a fun side project using Clojure, and I was pleasantly surp
 
 I've been trying [Helix editor][] again, but overall I like my Neovim configuration better. However, I should note this really is a great project and it's good there's some competitive solutions sitting around. Sadly, Onivim development has [stopped recently][]. Yes, I too love [editors][].
 
+{{% alert note %}}
+<small>[2023-05-23]</small><br>
+See this recent review of Helix: [A Walkthrough on Helix — A Post-Modern Modal Text Editor](https://alpha2phi.medium.com/a-walkthrough-on-helix-a-post-modern-modal-text-editor-faf573d16892). It's hard to fight muscle memory, though, even if there's some support for [Vim keybindings](https://github.com/helix-editor/helix/wiki/FAQ#is-a-vivim-keymap-planned).
+{{% /alert %}}
 
 {{% music %}}New Order • _Leave Me Alone_{{% /music %}}
 

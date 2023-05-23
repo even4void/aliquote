@@ -27,6 +27,11 @@ Wrap the above code in a function, iterate 20 to 30 times and then the $X$ matri
 
 Of note, the Householder method for computing the QR decomposition in Racket is available on [Rosetta][].
 
+{{% alert note %}}
+<small>[2023-05-23]</small><br>
+For other numerical approaches to computing eigenvectors and eigenvalues, see this excellent blog post by Marc Khoury: [Numerical Algorithms for Computing Eigenvectors](https://marckhoury.github.io/blog/numerical-algorithms-for-computing-eigenvectors).
+{{% /alert %}}
+
 {{% music %}}Clan of Xymox • _A Day_{{% /music %}}
 
 [matthew drury]: https://madrury.github.io/jekyll/update/statistics/2017/10/04/qr-algorithm.html
