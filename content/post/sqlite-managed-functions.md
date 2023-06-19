@@ -46,6 +46,11 @@ p25  p50  p75
 2.0  5.0  7.0
 ```
 
+{{% alert note %}}
+<small>[2023-06-19]</small><br>
+Recently, sqlean was made available for Python as a dedicated package, see [Python's sqlite3 with extensions](https://antonz.org/sqlean-py/).
+{{% /alert %}}
+
 {{% music %}}Lauren Bush • _In a Mellow Tone_{{% /music %}}
 
 [^1]: There's also a `total()` function which behaves a little bit differently as it returns "0.0" in case the query returns only NULL values, while `sum()` will return NULL like other SQL variants.
