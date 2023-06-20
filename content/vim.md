@@ -8,8 +8,8 @@ Here are the current Neovim mappings I came to feel comfortable with over time. 
 
 Note that I only have a dozen of plugins in my `start` and `opt` directories, in addition to part of [mini.nvim](https://github.com/echasnovski/mini.nvim) that I adapted to suit my needs better: (This may change in the future but usually I tend to remove plugins rather than add new ones.[^1] )
 
-- [opt] `nvim-treesitter`, `nvim-treesitter-textobjects`, `Comment.nvim`, `nvim-lspconfig`, `nvim-parinfer`, `vimtex`, `fzf-hoogle.vim`, `nvim-colorizer` `rust-tools.nvim`;
-- [start] `packer.nvim`, `fzf.vim`, `fzf`
+- [opt] `nvim-treesitter`, `nvim-treesitter-textobjects`, `Comment.nvim`, `nvim-lspconfig`, `null-ls.nvim`, `plenary` (dep), `neogen`, `nvim-parinfer`, `nvim-lightbulb`, `vimtex`, `nvim-colorizer` `gitsigns.nvim`;
+- [start] `packer.nvim`, `fzf-lua`
 
 {{% alert note %}}
 <small>[2022-10-05]</small><br>
@@ -32,14 +32,13 @@ My leader is ","[^2] and I do not define specific mappings for the localleader i
 <tr><td><kbd>&lt;C-a></kbd></td><td>c</td><td><kbd>:&lt;Home></kbd></td><td>Go to start of line</td></tr>
 <tr><td><kbd>&lt;C-e></kbd></td><td>c</td><td><kbd>:&lt;End></kbd></td><td>Go to end of line</td></tr>
 <tr><td><kbd>-</kbd></td><td>n</td><td><kbd>:Ex</kbd></td><td>Show explorer</td></tr>
-<tr><td><kbd>,!</kbd></td><td>n</td><td><kbd>:10sp +te</kbd></td><td>Popup terminal</td></tr>
 <tr><td><kbd>,.</kbd></td><td>n</td><td><kbd>:lcd %:p:h</kbd></td><td>Set local current directory</td></tr>
 <tr><td><kbd>&lt;Backspace></kbd></td><td>n</td><td><kbd>:bp &lt;Bar> bd! #</kbd></td><td>Kill current buffer</td></tr>
 <tr><td><kbd>&lt;C-x></kbd></td><td>n</td><td><kbd>Only()</kbd></td><td>Keep only current buffer (custom)</td></tr>
 <tr><td><kbd>,e</kbd></td><td>n</td><td><kbd>:e &lt;C-R>=expand("%:p:h") . "/"</kbd></td><td>Open file from current directory</td></tr>
-<tr><td><kbd>&lt;Tab></kbd></td><td>n</td><td><kbd>:tabnext</kbd></td><td>Next tab</td></tr>
+<tr><td><kbd>&lt;Tab></kbd></td><td>n</td><td><kbd>tabpagenr('$') ==? 1 ? "<C-^>" : ":tabnext<cr></kbd></td><td>Go to alternate buffer or to next tab</td></tr>
 <tr><td><kbd>,&lt;Tab></kbd></td><td>n</td><td><kbd>:$tabnew</kbd></td><td>New tab</td></tr>
-<tr><td><kbd>,&lt;S-Tab></kbd></td><td>n</td><td><kbd>C-wT</kbd></td><td>Move split to new tab</td></tr>
+<tr><td><kbd>,&lt;S-Tab></kbd></td><td>n</td><td><kbd>winnr('$') ==? 2 ? "<C-w>T" : ":tabprev<cr></kbd></td><td>Move split to new tab or go to previous tab</td></tr>
 <tr><td><kbd>J</kbd></td><td>n</td><td><kbd>mzJ`z</kbd></td><td>Join lines (cursor stationary)</td></tr>
 <tr><td><kbd>&lt;C-q></kbd></td><td>n</td><td><kbd>quickfix_toggle()</kbd></td><td>Close quickfix window (custom)</td></tr>
 <tr><td><kbd>[Q</kbd></td><td>n</td><td><kbd>:cfirst</kbd></td><td>Go to first quickfix item</td></tr>
@@ -57,18 +56,14 @@ My leader is ","[^2] and I do not define specific mappings for the localleader i
 <tr><td><kbd>,df</kbd></td><td>n</td><td><kbd>:setlocal spell!&lt;bar>setlocal spell?&lt;cr>:setlocal spelllang=fr&lt;cr></kbd></td><td>Toggle spelling on/off (French)</td></tr>
 <tr><td><kbd>,de</kbd></td><td>n</td><td><kbd>:setlocal spell!&lt;bar>setlocal spell?&lt;cr>:setlocal spelllang=en&lt;cr></kbd></td><td>Toggle spelling on/off (English)</td></tr>
 <tr><td><kbd>,p</kbd></td><td>n</td><td><kbd>:set invpaste&lt;Cr>:set paste?&lt;Cr></kbd></td><td>Toggle on/off paste mode</td></tr>
-<tr><td><kbd>&lt;C-p></kbd></td><td>n</td><td><kbd>:Files</kbd></td><td>Fuzzy finder for files</td></tr>
+<tr><td><kbd>&lt;C-p></kbd></td><td>n</td><td><kbd>:FzfLua files</kbd></td><td>Fuzzy finder for files</td></tr>
 <tr><td><kbd>&lt;C-s></kbd></td><td>n</td><td><kbd>:RgCw</kbd></td><td>Fzf Rg on current word or project</td></tr>
-<tr><td><kbd>&lt;C-t></kbd></td><td>n</td><td><kbd>:TagsCw</kbd></td><td>Fzf Tags on current word or project</td></tr>
-<tr><td><kbd>,,</kbd></td><td>n</td><td><kbd>:Buffers</kbd></td><td>Fuzzy finder for buffers</td></tr>
-<tr><td><kbd>,gg</kbd></td><td>n</td><td><kbd>:GFiles?</kbd></td><td>Git status</td></tr>
-<tr><td><kbd>,gb</kbd></td><td>n</td><td><kbd>:BCommits</kbd></td><td>Git buffer commit log</td></tr>
-<tr><td><kbd>,gc</kbd></td><td>n</td><td><kbd>:Commits</kbd></td><td>Git commit log</td></tr>
-<tr><td><kbd>,r</kbd></td><td>n</td><td><kbd>:History</kbd></td><td>Old files</td></tr>
+<tr><td><kbd>,,</kbd></td><td>n</td><td><kbd>:FzfLua buffers</kbd></td><td>Fuzzy finder for buffers</td></tr>
+<tr><td><kbd>,gg</kbd></td><td>n</td><td><kbd>:FzfLua git_status</kbd></td><td>Git status</td></tr>
+<tr><td><kbd>,gb</kbd></td><td>n</td><td><kbd>:FzfLua git_bcommits</kbd></td><td>Git buffer commit log</td></tr>
+<tr><td><kbd>,gc</kbd></td><td>n</td><td><kbd>:FzfLua git_commits</kbd></td><td>Git commit log</td></tr>
+<tr><td><kbd>,r</kbd></td><td>n</td><td><kbd>:FzfLua oldfiles</kbd></td><td>Old files</td></tr>
 <tr><td><kbd>,ww</kbd></td><td>n</td><td><kbd>vim.diagnostic.setqflist</kbd></td><td>Show diagnostics in quickfix (LSP)</td></tr>
-<tr><td><kbd>[d</kbd></td><td>n</td><td><kbd>vim.diagnostic.goto_prev</kbd></td><td>Go to previous diagnostic (LSP)</td></tr>
-<tr><td><kbd>]d</kbd></td><td>n</td><td><kbd>vim.diagnostic.goto_next</kbd></td><td>Go to next diagnostic (LSP)</td></tr>
-<tr><td><kbd>,wd</kbd></td><td>n</td><td><kbd>vim.diagnostic.open_float</kbd></td><td>Show diagnostic in a floating window (LSP)</td></tr>
 <tr><td><kbd>g=</kbd></td><td>n</td><td><kbd>vim.lsp.buf.format</kbd></td><td>Format selection (LSP)</td></tr>
 <tr><td><kbd>z=</kbd></td><td>n,x</td><td><kbd>vim.lsp.buf.code_action</kbd></td><td>Code action (LSP)</td></tr>
 <tr><td><kbd>z!</kbd></td><td>n,x</td><td><kbd>vim.lsp.codelens.run</kbd></td><td>Code lens (LSP)</td></tr>
