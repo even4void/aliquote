@@ -37,4 +37,9 @@ There's a lot more to see with [cmus extensions](https://github.com/cmus/cmus/wi
 Should you want to fetch music directly from Youtube, you can use the [following hack](https://github.com/invicnaper/cmus-youtube). You will likely need to install a bunch of additional libraries on Ubuntu, but it works fine. This may help developing additional command to fetch music from external provider (e.g. Bandcamp, or [online radio](/micro/2022-10-27-21-32-49)).
 {{% /alert %}}
 
+{{% alert note %}}
+<small>[2023-06-20]</small><br>
+If you use [mpris](https://specifications.freedesktop.org/mpris-spec/latest/), you can get cover art in Gnome notification applet almost for free, see this fork: [cmus-mpris-album-art](https://github.com/MicahBird/cmus-mpris-album-art).
+{{% /alert %}}
+
 ![cmus](/img/2021-09-18-20-27-54.png)
