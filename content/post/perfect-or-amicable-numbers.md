@@ -19,7 +19,7 @@ It is quite easy to compute the sum of divisors using recursion or list comprehe
      i))
 ```
 
-[Another solution](https://stackoverflow.com/a/23711209) involving a `fold/fold` form has been proposed on SO. Now, deciding on whether a given number is perfect or not is just a matter of a `cond`:
+[Another solution](https://stackoverflow.com/a/23711209) involving a `for/fold` form has been proposed on SO. Now, deciding on whether a given number is perfect or not is just a matter of a `cond`:
 
 ```racket
 (define (perfect? n)
