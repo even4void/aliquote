@@ -112,4 +112,4 @@ Of course, most of the above grouping and aggregating operations could be perfor
 
 {{% music %}}Glenn Gould • _Goldberg Variations_{{% /music %}}
 
-[1]: I also came across [uke](https://github.com/samdphillips/uke) in addition to the packages mentioned in my [previous post](/post/quick-csv-reader/), and the [dataframe](https://docs.racket-lang.org/dataframe/index.html) package. I will review them when time allows.
+[^1]: I also came across [uke](https://github.com/samdphillips/uke) in addition to the packages mentioned in my [previous post](/post/quick-csv-reader/), and the [dataframe](https://docs.racket-lang.org/dataframe/index.html) package. I will review them when time allows.
