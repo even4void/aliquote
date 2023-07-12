@@ -1,16 +1,16 @@
 ---
 title: "Data frames for Racket"
 date: 2023-07-10T14:02:08+02:00
-draft: true
+draft: false
 tags: ["racket"]
 categories: ["2023"]
 ---
 
-Lately, I've been playing with another implementations of data frames in Racket: [tabular-asa](https://github.com/massung/tabular-asa/). The data-frame package by Alex Harsányi is the first one I used (one or two years ago) and I found it comfortable to use except it doesn't handle categorical variables, but see my preceding [review](/post/quick-csv-reader/).[^1]
+Lately, I've been playing with another implementation of data frames in Racket: [tabular-asa](https://github.com/massung/tabular-asa/). The data-frame package by Alex Harsányi is the first one I used (one or two years ago) and I found it comfortable to use except it doesn't handle categorical variables, but see my preceding [review](/post/quick-csv-reader/).[^1] This one doesn't either, but it handles missing values, like the data-frame package, and grouping or aggregating functions are a bit more intuitive to use (no need to rely on an external index) and closer in spirit to the R or Python ecosystem.
 
-Here is a toy example inspired by Travis Hinkleman's [recent post](https://www.travishinkelman.com/data-transformation-scheme/) about his own implementation of data frame for Chez Scheme. Note that the NYC flights dataset is a 29 Mo file, so it stands for a relatively honest benchmark for Racket's data processing capabilities.
+Here is a toy example inspired by Travis Hinkleman's [recent post](https://www.travishinkelman.com/data-transformation-scheme/) about his own implementation of data frame for Chez Scheme. Note that the NYC flights dataset is a 29 Mo file, so it stands for a relatively honest benchmark for Racket's data processing capabilities. In what follows I am mostly interested in the time it takes to load such a dataset.
 
-First, let's try the default CSV reader. Herafter I'll be using a poor-man solution for timing the whole process of loading the dataset in Racket REPL (I'm using Racket 8.6 [cs]). As a result, the data will not be available outside the scope of this block. You will need to define the variable properly to access it later.
+First, let's try the default CSV reader. Hereafter I'll be using a poor-man solution for timing the whole process of loading the dataset in Racket REPL (I'm using Racket 8.6 [cs]). As a result, the data will not be available outside the scope of this block. You will need to define the variable properly to access it later.
 
 ```racket
 (require csv-reading)
@@ -25,7 +25,7 @@ First, let's try the default CSV reader. Herafter I'll be using a poor-man solut
 ; => cpu time: 4366 real time: 9121 gc time: 410
 ```
 
-Not very convenient since we get a list of lists that would require some post-processing, but it's fast enough. Here is a quick benchmark of the data-frame package for the sake of comparison. Note that I convertes the TSV to a proprer CSV format since this package doesn't handle [other separator](https://github.com/alex-hhh/data-frame/issues/11).
+Not very convenient since we get a list of lists that would require some post-processing, but it's fast enough. Here is a quick benchmark of the data-frame package for the sake of comparison. Note that I converted the TSV to a proper CSV format since this package doesn't handle [other separator](https://github.com/alex-hhh/data-frame/issues/11).
 
 ```racket
 (require data-frame)
@@ -40,7 +40,7 @@ Not very convenient since we get a list of lists that would require some post-pr
 
 Since it doesn't handle categorical variables or dates (meaning they are stored as raw strings) some procedures like `df-describe` are pretty useless for variables like `carrier`, `dest`, or `time_hour`, and there's not much you can do unless you recode then using numeric codes, which is what I ended up doing once. Anyway, there's a handy [tutorial](https://alex-hhh.github.io/2018/08/racket-data-frame.html) on the author's website if you want to learn about this package.
 
-Now, here is whta we get with tabular-asa:
+Now, here is what we get with tabular-asa:
 
 ```racket
 (require tabular-asa)
@@ -98,18 +98,18 @@ It appears this package provides a load of useful features, which may be familia
 
 (define xs (for/list ([x (table-column grouped-data 'dep_delay)]) x))
 
-(plot-font-face "Roboto Condensed")
-(plot-font-size 11)
-(plot (density xs)
-      #:x-label "Departure delay"
-      #:y-label "Density"
-      #:out-file "/tmp/plot.png")
+(parameterize ([plot-font-face "Roboto Condensed"]
+               [plot-font-size 11])
+    (plot (density xs)
+        #:x-label "Departure delay"
+        #:y-label "Density"
+        #:out-file "/tmp/plot.png"))
 ```
 
 ![img](/img/fig-density-depdelay.png)
 
-Of course, most of the above grouping and aggregating operations could be performed with the data-frame package. What's interesting in this case
+Of course, most of the above grouping and aggregating operations could be performed with the data-frame package. What's interesting in this case is that author makes heavy use of lazy data structures and relies on a column-major internal representation of rectangular datasets.
 
 {{% music %}}Glenn Gould • _Goldberg Variations_{{% /music %}}
 
-[1]: I also came across [uke](https://github.com/samdphillips/uke) but I didn't had time to test it
+[1]: I also came across [uke](https://github.com/samdphillips/uke) in addition to the packages mentioned in my [previous post](/post/quick-csv-reader/), and the [dataframe](https://docs.racket-lang.org/dataframe/index.html) package. I will review them when time allows.
