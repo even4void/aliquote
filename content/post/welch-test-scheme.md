@@ -11,11 +11,10 @@ categories: ["2022"]
 For two independant samples, the Student test statistic is defined as follows:
 
 $$
-t_{\text{obs}}=\frac{\bar x_1 - \bar x_2}{s_c\sqrt{\frac{1}{n_1}+\frac{1}{n_2}}},\quad
-s_c=\left(\frac{(n_1-1)s^2_1+(n_2-1)s^2_2}{n_1+n_2-2}\right)^{1/2},
+t_{\text{obs}}=\frac{\bar x_1 - \bar x_2}{s_c\sqrt{\frac{1}{n_1}+\frac{1}{n_2}}},
 $$
 
-where $\bar x_i$ and $n_i$ represent the means and sample sizes of the two samples, and $s_c$ is the pooled variance for the difference of means. Under $H_0$, this test statistic follows a Student distribution with $n_1+n_2-2$ degrees of freedom.
+with $s_c=\left(\frac{(n_1-1)s^2_1+(n_2-1)s^2_2}{n_1+n_2-2}\right)^{1/2}$, and where $\bar x_i$ and $n_i$ represent the means and sample sizes of the two samples, and $s_c$ is the pooled variance for the difference of means. Under $H_0$, this test statistic follows a Student distribution with $n_1+n_2-2$ degrees of freedom.
 
 A $100(1-\alpha)$\% confidence interval for the difference $\bar x_1 - \bar x_2$ can be defined as
 
