@@ -23,6 +23,9 @@ A simple call to `top` suggests that the whole system, OpenBSD and i3, relies on
 
 Unlike ubuntu, default [permissions](/post/christmas-admin-on-ubuntu/) are more sensible, and there's even a sandboxing policy for applications that require extra privileges, like accessing the web or talking to external servers. See also [What security does a default OpenBSD installation offer?](https://dataswamp.org/~solene/2021-02-14-openbsd-default-security.html) (or the [French version](https://dataswamp.org/~solene/2021-01-04-pourquoi-openbsd.html)). And there's also: (although I didn't check by myself)
 
-{{< twitter user="jcs" id="1358556278985998336" >}}
+{{% alert note %}}
+<small>[2023-08-14]</small><br>
+Unfortunately, the tweet with ID 1358556278985998336 is no longer available.
+{{% /alert %}}
 
 So far, so good. I will probably stop here for a while, since I'm in the middle of my move and have other things to complete before leaving, but I hope I'll be posting more on this later in March.
