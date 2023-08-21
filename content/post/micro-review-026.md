@@ -1,5 +1,5 @@
 ---
-title: "August in review (2/n)"
+title: "August in review (2)"
 date: 2023-08-21T13:41:36+02:00
 draft: false
 tags: ["readings"]
@@ -11,7 +11,7 @@ As a sequel of one omy last posts, here are some more bookmarks that were awaiti
 - [Infrequently asked questions in comp.lang.c](https://www.seebs.net/faqs/c-iaq.html): I once thought about writing a similar thing for common questions on Cross Validated, then gave up since it became clear that it would require way much more time that I could possibly allow for this task.
 - [WTF is going on with R7RS Large?](http://dpk.io/r7rswtf): Besides a short but nice summary on how Scheme implementations evolved overtime, this post tries to explain what happened behind the scenes regarding the future of R<sup>7</sup>RS Large which should be entirely SRFI-based, contrary to previous revisions of the Scheme language.
 - [A Guide to Undefined Behavior in C and C++, Part 1](https://blog.regehr.org/archives/213): A 3-part series on undefined behavior (resulting from erroneous operations like accessing a null pointer or dividing by zero) in C, as the title suggests.
-- [Probabilistic Machine Learning: Advanced Topics](https://probml.github.io/pml-book/) (): I enjoyed reading the very first book written by Kevin Murphy, _Machine Learning: A Probabilistic Perspective_. Then I discovered that he wrote two other books totalling more than 2000 pp. of fresh material.
+- [Probabilistic Machine Learning: Advanced Topics](https://probml.github.io/pml-book/): I enjoyed reading the very first book written by Kevin Murphy, _Machine Learning: A Probabilistic Perspective_. Then I discovered that he wrote two other books totalling more than 2000 pp. of fresh material.
 - Here is new version of [Modern CSV](https://www.moderncsv.com/modern-csv-2-is-now-available/) if you happen to process raw CSV files in your terminal.
 - [How to Recalculate a Spreadsheet](https://lord.io/spreadsheets/): Lot of useful tips and informations regaridng the management of live spreadsheets.
 - [Web reading list](https://mattwidmann.net/notes/web-reading-list/): I like when bloggers provide a list of the blog they follow themselves, or directly an RSS or Atom feed. Check out his website too, it is beautifully organized and laid out.
