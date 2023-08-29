@@ -631,8 +631,8 @@
 - André Velter, Séduire l'univers (Gallimard)
 - Gérard Haller, Menschen (Galilée)
 - Catherine Cusset, La définition du bonheur (Gallimard)
-- Chloé Delaume, Le coeur synthétique (Points)
-- Gringe, Ensemble on aboit en silence (Harper Collins)
+- Chloé Delaume, Le cœur synthétique (Points)
+- Gringe, Ensemble on aboie en silence (Harper Collins)
 - Daniel Vander Gucht, Robert, va te coucher (La lettre volée)
 - Sarah Chiche, Saturne (Points)
 - Maylis de Kerangal, Ni fleurs ni couronnes (Folio)
@@ -646,7 +646,7 @@
 - Enki Bilal, L'homme est un accident (Belin)
 - Michel-Ange, Poèmes (Gallimard) [#]
 - Jennifer Haigh, Le grand silence (Gallimeister)
-- Lars Kepler, L'homme-miroir (Actes Sud)
+- Lars Kepler, L'homme miroir (Actes Sud)
 - Guillevic, Possibles futurs (Gallimard) [#]
 - François Noudelmann, Les enfants de Cadillac (Gallimard)
 - Xavier Galmiche, Le poulailler métaphysique (Le Pommier)
@@ -688,7 +688,7 @@
 - Mathieu Brosseau, L'exercice de la disparition (Le Castor Astral)
 - Cécile Coulon, Une bête au paradis (Le livre de poche)
 - Cécile Coulon, Les ronces (Le Castor Astral)
-- Nathalie Prince, Un enterrrement et quatre saisons (Flammarion)
+- Nathalie Prince, Un enterrement et quatre saisons (Flammarion)
 - Olivier Bordaçarre, Dernier désir (Fayard)
 - Pierrette Fleutiaux, Nous sommes éternels (Gallimard)
 - Isabelle Carré, Le jeu des si (Grasset)
@@ -705,7 +705,7 @@
 - Pierre Glendinning, Scènes (P.O.L.)
 - Michel Butor, Epithalame (Carte Blanche) [#]
 - Pascal Garnier, Contes gouttes (L'entreligne) [#]
-- Carlo M. Cipolla, Les lois fondamentales de la stupdité humaine (P.U.F.)
+- Carlo M. Cipolla, Les lois fondamentales de la stupidité humaine (P.U.F.)
 - Michel Butor, Exprès (Gallimard) [#]
 - Bruno Patino, La civilisation du poisson rouge (Livre de poche)
 - Annie Cohen-Solal et Cristelle Terroni, La valeur de l'art contemporain (P.U.F.)
@@ -766,9 +766,10 @@
 - Luigi Capuana, Torture (Actes Sud)
 - John Irving, Les rêves des autres (Points)
 - Olivier Bleys, Pastel (Folio)
-- Daniel Pennac, La féé carabine (Folio)
+- Daniel Pennac, La fée carabine (Folio)
 - Hiromi Kawakami, Abandons (Actes Sud)
 - Chloe Aridjis, Déchirures (Mercure) [#]
 - Camilo Castro Branco, Amour de perdition (Actes Sud)
+- John De Précy, Le jardin perdu (Actes Sud)
 
 [#] Déjà lu par le passé
