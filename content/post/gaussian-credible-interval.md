@@ -1,10 +1,12 @@
 ---
-title: "Gaussian credible intervals"
+title: "Bayesian power analysis and confidence intervals"
 date: 2023-08-30T09:33:34+02:00
 draft: true
 tags: ["statistics"]
 categories: ["2023"]
 ---
+
+## Power and sample size
 
 We are often tasked with computing the number of subjects needed to achieve a certain statistical power, especially in biomedical sciences. Various formulae are available online or in dedicated textbooks.[^1] Here is a simple illustration with a two-sample proportion: Let's say we want to compare the efficacy of a new treatment (N) with that of the reference treatment (R) in a clinical trial. The outcome is the percentage of complete remission after one week. We know that this percentage equals 50% with R, and we expect 80% of recovery with N.[^2] To achieve 95% statistical power, how many patients do we need to enroll?
 
@@ -14,9 +16,36 @@ The same principle applies to the case of the arithmetic mean and a two-sample S
 
 ![img](/img/2023-08-30-10-26-57.png)
 
-Now, we can take a different approach and rely on credible intervals, as illustrated in Murphy's updated edition of his famous ML textbook,[^4] which I am currently reading. Here is the full derivation in the case of a two-sample problem with a continuous outcome.
+Bayesian approaches[^4] usually yield smaller sample sizes compared to frequentist approaches, and most of the time no closed-form solutions do exist which means numerical computation must be undergone. I found an interesting review of the pros and cons of those approaches in a recent article of The American Statistician: [A Review of Bayesian Perspectives on Sample Size Derivation for Confirmatory Trials](https://www.tandfonline.com/doi/full/10.1080/00031305.2021.1901782). And here is a blog post that discusses a simulation-based approach for power analysis using posterior distributions: [Sample size determination in the context of Bayesian analysis](https://www.rdatagen.net/post/2021-06-01-bayesian-power-analysis/).
 
-We want an interval that verifies $P(l\leq \mu_n \leq u\mid D) > 0.95$, where as usual:
+## Confidence intervals
+
+Computing confidence intervals most of the time relies on the use of a normal approximation in the case of two-sample proportions, and it is covered in most textbooks in the case of two-sample experiments. Basically, we would compute a 95% CI for the difference between two proportions as follows: $(P_N–P_R) \pm \Phi^{-1}(\alpha/2)\sqrt{P_N(1-P_N)/n_N + P_R(1-P_R)/n_R}$, where $\Phi$ is the cumulative distribution function for the standard normal distribution (with mean 0 and variance 1), and $\alpha$ is the predefined type I error rate. Typically, $\alpha=0.05$, and $\Phi^{-1}(0.025)=-1.96$ and $\Phi^{-1}(0.975)=1.96$.
+
+Here is a simple implementation in Python, which assumes raw data (i.e., a series of binary events for each sample):
+
+```python
+import numpy as np
+import matplotlib.pyplot as plt
+from scipy.stats import norm
+
+def propci(xs, ys, level=0.95):
+    alpha = 1 - level
+    xs, ys = np.asarray(xs), np.asarray(ys)
+    nx, ny = xs.shape[0],  ys.shape[0]
+    px, py = np.mean(xs), np.mean(ys)
+    diff = px - py
+    se = np.sqrt(px*(1-px)/nx + py*(1-py)/ny)
+    quantile = norm.ppf(1 - alpha /  2)
+    lower = diff - quantile * sd
+    upper = diff + quantile * sd
+
+    return lower, upper
+```
+
+Now, we can take a different approach and rely on credible intervals, as illustrated in Murphy's updated edition of his famous ML textbook,[^5] which I am currently reading. The problem is stated as follows: Let $X\sim\mathcal{N}(\mu, \sigma^2=4)$ where $\mu$ is unknown but has prior $\mu\sim\mathcal{N}(\mu_0,\sigma_0^2=9)$. The posterior after seeing $n$ samples is $\mu_n\sim\mathcal{N}(\mu_n,\sigma_n^2)$. How big does $n$ have to be to ensure $P(l\leq\mu_n\leq u\mid D) \geq 0.95$, where $(l,u)$ is an interval centered on $\mu_n$ of width 1, and $D$ is the data?
+
+Here is the full derivation in the case of a two-sample problem with a continuous outcome. We want an interval that verifies $P(l\leq \mu_n \leq u\mid D) \geq 0.95$, where as usual:
 
 $$
 \begin{equation}
@@ -27,7 +56,7 @@ u & = \mu_n + \Phi^{-1}(1-\alpha/2)\sigma_n = \mu + 1.96\sigma_n
 \end{equation}
 $$
 
-where $\Phi$ is the cumulative distribution function for the standard normal distribution (with mean 0 and variance 1), and $\alpha$ is the predefined type I error rate. Typically, $\alpha=0.05$, and $\Phi^{-1}(0.025)=-1.96$ and $\Phi^{-1}(0.975)=1.96$. We need to find $n$ such that $u - l = 1$, that is $2(1.96)\sigma_n = 1$, or $\sigma_n^2 = \frac{1}{4(1.96)^2}$ with $\sigma_n^2 = \frac{\sigma^2\sigma_0^2}{n\sigma_0^2+\sigma^2}$. Hence we have
+We need to find $n$ such that $u - l = 1$, that is $2(1.96)\sigma_n = 1$, or $\sigma_n^2 = \frac{1}{4(1.96)^2}$ with $\sigma_n^2 = \frac{\sigma^2\sigma_0^2}{n\sigma_0^2+\sigma^2}$. Hence we have
 
 $$
 \begin{equation}
@@ -44,6 +73,7 @@ We would need at least $n\geq 62$ subjects per group.
 [^1]: Thomas P. Ryan. _Sample Size and Determination and Power_. Wiley, 2013.
 [^2]: Bouvenot & Vray. _Essais Cliniques. Théorie, Pratique et Critique_ (4ème éd.). Lavoisier, 2006 (p. 248).
 [^3]: An other interesting question would be to ask what is the minimal expected recovery percentage we would get with 50 patients per group at 80% power. The derivation is as follows: $\Pi_N - \Pi_R = 2.80\sqrt{(2 \times 0.25)/50} = 0.28$, so that $\Pi_N = \Pi_R + 0.28 = 0.785 + 0.28 = 1.065$. In other words, $P_N = 76\%$.
-[^4]: _Probabilistic Machine Learning: An introduction_. See all available textbooks [here](https://probml.github.io/pml-book/).
+[^4]: I'm not talking about Bayesian updating whereby we sample size is increased during the course of a study by using the Bayes factor to quantify the degree of support for a hypothesis agaisnt the alternative given the observed data.
+[^5]: _Probabilistic Machine Learning: An introduction_. See all available textbooks [here](https://probml.github.io/pml-book/).
 
 {{% music %}}Jean Carn, Adrian Younge & Ali Shaheed Muhammad • _Black Rainbows_{{% /music %}}
