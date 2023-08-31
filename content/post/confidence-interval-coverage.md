@@ -6,7 +6,7 @@ tags: ["statistics", "python", "racket"]
 categories: ["2023"]
 ---
 
-While I was working on my [previous post](/post/gaussina-credible-interval), I wrote a quick Python script to estimate how well confidence intervals for a mean or a proportion cover the true parameter value. Since the arithmetic mean applies equally to continuous or binary outcomes (in the latter case, we get the proportion as desired), the code is quite simple. Here is my own implementation, which assumes raw data (i.e., a series of observations for each sample):
+According to the frequentist definition of a confidence interval, the 95% lower and upper bounds can be interpreted as follows: for 100 independent samples, we expect 95 of the CIs to include the true parameter. While I was working on my [previous post](/post/gaussina-credible-interval), I wrote a quick Python script to estimate how well confidence intervals for a mean or a proportion cover the true parameter value. Since the arithmetic mean applies equally to continuous or binary outcomes (in the latter case, we get the proportion as desired), the code is quite simple. Here is my own implementation, which assumes raw data (i.e., a series of observations for each sample):
 
 ```python
 import numpy as np
@@ -33,7 +33,7 @@ def twosamp_ci(xs, ys, level=0.95):
     return lower, upper
 ```
 
-Then I couldn't resist rewriting this little function in Racket, so here it is:
+It could be rewritten without even using Numpy since the maths and statistics modules include the stuff we need. I couldn't resist rewriting this little function in Racket, though, so here it is:
 
 ```racket
 TODO
