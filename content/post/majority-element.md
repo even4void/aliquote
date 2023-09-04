@@ -6,9 +6,9 @@ tags: ["racket"]
 categories: ["2020"]
 ---
 
-One of [Rosalind](http://rosalind.info/problems/maj/) problems deals with finding the "majority element" of a vector, which is defined as the value that appears in more than half of the entries. Note that this is a little different from what we usually call the mode in statistics. This is a pretty simple task to run using, e.g., Python or R. 
+One of [Rosalind](http://rosalind.info/problems/maj/) problems deals with finding the "majority element" of a vector, which is defined as the value that appears in more than half of the entries. Note that this is a little different from what we usually call the mode in statistics. This is a pretty simple task to run using, e.g., Python or R.
 
-Here is a solution in Python: 
+Here is a solution in Python:
 
 ```python
 from collections import Counter
@@ -40,7 +40,7 @@ We could probably use numpy and/or scipy as well, but let's keep it simple. I re
 (apply max (for/list ([i (remove-duplicates items)]) (counter i items)))
 ```
 
-If we want to return both the item value and the associated counts, there are two options (and probably more): either we rely on a hash table, or we return a list (or a pair) of values and counts, like Python's `enumerate`; this could be something like replacing `(counter i items)` with `(list i (counter i items))`, but we will need to update the function used when calling `apply` because `max` will not accept a tuple of values. 
+If we want to return both the item value and the associated counts, there are two options (and probably more): either we rely on a hash table, or we return a list (or a pair) of values and counts, like Python's `enumerate`; this could be something like replacing `(counter i items)` with `(list i (counter i items))`, but we will need to update the function used when calling `apply` because `max` will not accept a tuple of values.
 
 Here is a little example of using a hash instead of plain lists:
 
@@ -65,7 +65,7 @@ This also (sort of) solves the problem of the joint use of `apply` and `max` des
 (argmax cadr (for/list ([i (remove-duplicates items)]) (list i (counter i items))))
 ```
 
- The same approach could obviously serve the purpose of finding the mode in a list of values, e.g.:
+The same approach could obviously serve the purpose of finding the mode in a list of values, e.g.:
 
 ```racket
 (define (mode xs)
@@ -84,3 +84,8 @@ Finally, what about `enumerate` like idiom in Racket? Here's one solution:
 (define (enumerate xs)
   (zip (range (length xs)) xs))
 ```
+
+{{% alert note %}}
+<small>[2023-09-04]</small><br>
+See [Simulating Python Zip in Lisp](https://www.rangakrish.com/index.php/2023/09/04/simulating-python-zip-in-lisp/) for a more convoluted way of implementing `zip` in CL.
+{{% /alert %}}
