@@ -12,4 +12,6 @@ categories: ["2023"]
 
 ### An introduction to graph theory (https://arxiv.org/abs/2308.04512)
 
+### Permutation testing in high-dimensional linear models: an empirical investigation (https://arxiv.org/abs/2001.01466)
+
 {{% music %}}xxx • _xxx_{{% /music %}}

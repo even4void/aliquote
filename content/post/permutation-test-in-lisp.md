@@ -1,37 +1,16 @@
 ---
-title: "Permutation Test in Lisp"
+title: "Permutation test in Lisp"
 date: 2023-03-08T09:26:56+01:00
 draft: true
-tags: []
+tags: ["lisp", "statistics"]
 categories: ["2023"]
 ---
 
-In LispStat, we can compute the Mann-Whitney test statistic as follows:
+I drafted this post in March, along [Wilcoxon test in Lisp](/post/wilcoxon-test-in-lisp/), then forgot about it. How about using a permutation test? We'll be using the same dataset than in the previous post (permeability constants of the human chorioamnion from Hollander & Wolfe, 1973). With such a small sample size, we can compute an exact permutation test.
 
 ```lisp
-(defun rank' (xs)
-  (let* ((rs (+ (rank xs) 1)))
-    (dotimes (i (length xs))
-      (if (> (length (which (= (nth i xs) xs))) 1)
-          (setf (select rs (which (= (nth i xs) xs)))
-                (repeat (mean (select rs (which (= (nth i xs) xs))))
-                        (length (which (= (nth i xs) xs)))))))
-
-(defun mw-test (xs)
-  (let* ((x (car xs))
-         (y (cdr xs))
-         (n (length x))
-         (xy (combine x y))
-         (rs (rank' xy))
-         (w (sum (select rs (iseq n)))))))
+(setf xs '(0.80 0.83 1.89 1.04 1.45 1.38 1.91 1.64 0.73 1.46))
+(setf ys '(1.15 0.88 0.90 0.74 1.21))
 ```
 
-Let's test it using the following example data from R: Permeability constants of the human chorioamnion (a placental membrane) at term (x) and between 12 to 26 weeks gestational age (y). The alternative of interest is greater permeability of the human chorioamnion for the term pregnancy. (Hollander & Wolfe (1973), 69f.)
-
-```lisp
-(setf x '(1.83  0.50  1.62  2.48 1.68 1.88 1.55 3.06 1.30))
-(setf y '(0.878 0.647 0.598 2.05 1.06 1.29 1.06 3.14 1.29))
-(mw-test (list x y))
-```
-
-{{% music %}}XXX • _XXX_{{% /music %}}
+{{% music %}}AlinaHipHarp • _Meditation_{{% /music %}}
