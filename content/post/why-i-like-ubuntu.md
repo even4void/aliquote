@@ -1,5 +1,5 @@
 ---
-title: "Why I like Ubuntu"
+title: "Why I like Ubuntu, eventually"
 date: 2023-09-04T15:34:30+02:00
 draft: false
 tags: ["unix"]
@@ -10,7 +10,7 @@ A few years ago I switched to Linux after having been a fervent Mac user for ove
 
 Switching to Ubuntu was like going back in time since I was a Linux user during my PhD, and I used a lot of distros: Madrake (1 yr), Red Hat (1 yr), Slackware (6 mo) and finally Debian (2 or 3 yr). I didn't really miss anything when I started using [Ubuntu](/post/one-week-with-ubuntu/) as I was comfortable with the command line, and all the applications I used on the Mac mainly ran on the command line. I also installed OpenBSD on another laptop, but no other Linux boxes. Note that I did not try any other mainline or fancy Linux distros, so in this post I am only speaking of Ubuntu.
 
-Recently, I came across a nice blog post by Alan Pope: [Why I use Ubuntu](https://popey.com/blog/2023/08/why-i-use-ubuntu/). Among the key points, I like that it works and that it offers a relatively secure and consistent UI. Compared to Debian, it is way easier to bring back to life an old Macbook pro with retina display and specific wireless driver. I may try Fedora at some point, at least to remind me of my RPMs days. I should not that there are things that I don't really like, but snap is probably one of the ugly thing that comes to my mind. I already purged everything related to snap on my machine, but I keep seeing applications that are only available via snap or flatpak, along Docker sometimes.
+Recently, I came across a nice blog post by Alan Pope: [Why I use Ubuntu](https://popey.com/blog/2023/08/why-i-use-ubuntu/). Among the key points, I like that it works and that it offers a relatively secure and consistent UI. Compared to Debian, it is way easier to bring back to life an old Macbook pro with retina display and specific wireless driver. I may try Fedora at some point, at least to remind me of my RPMs days. I should not that there are things that I don't really like, but snap is probably one of the ugly thing that comes to my mind. You will even find outdated versions of deb packages (e.g., the `tree` program). I already purged everything related to snap on my machine, but I keep seeing applications that are only available via snap or flatpak (e.g., the statistical packages Jasp or Jamovi) along with Docker sometimes.
 
 > I’ve been using Ubuntu now for eighteen years. I know (roughly) how it works. I am familiar with the release cadence and set my expectations accordingly. I can manage to upgrade from one release to another without the sky falling in. When something does go wrong, I’m able to fix it or find out how to. I rarely ’nuke and pave’ a system, even if it seems beyond repair.
 
