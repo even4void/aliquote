@@ -16,6 +16,7 @@ I already talked about the [Helix editor](/post/helix-editor). I try to use it o
 - Git support is acceptable, at least there's a Git gutter and goto next/prev change. Bonus, you get a visual selection for free in the later cases.
 - Tree sitter support is excellent, and unlike Neovim you don't need to install extra plugins (which [don't exist](https://github.com/helix-editor/helix/discussions/3806) anyway, at the time of this writing).
 - Native DAP support is nice, especially when you see how picky it is to configure everything in Neovim with [nvim-dap](https://github.com/mfussenegger/nvim-dap) (the plugin is great, it's just that it is a lot of extra configuration for lldb-vscode, debugpy, etc.). I'm eagerly awaiting full support for Python.
+- So many good defaults, e.g., start in a directory with `hx .` and you get a file picker.
 - I don't use builtin colorschemes but they look gorgeous as advertised. Here is my boring colorless theme, by the way:
 
 ![helix](/img/2023-09-18-20-56-05.png)
@@ -30,4 +31,4 @@ I already talked about the [Helix editor](/post/helix-editor). I try to use it o
 - No spell checke, but [this may change soon](https://github.com/helix-editor/helix/discussions/3637#discussioncomment-6868540).
 - I still need to find my way through the use of pipes instead of Vim's `r!` although it is a minor issue.
 
-{{% music %}}XXX • _XXX_{{% /music %}}
+{{% music %}}Patricia Brennan • _Improvisation VI_{{% /music %}}
