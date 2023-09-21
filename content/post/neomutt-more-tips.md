@@ -14,6 +14,11 @@ I will probably never regret switching from [mu4e] to Neomutt two years ago. Chr
 
 I spent a lot of time configuring Neomutt to my liking, and to this end I happened to read a lot of blog posts,[^1] the online documentation and the man pages, dotfiles available on Github, etc. Neomutt is great, but its configuration is harder than it seems because there are tons of options that you need to define carefully. Of course, default options are quite good, but you know when you start tinkering your setup... My previous post explained how I ended up setting my default config. Here are a few additional tricks that I learned along the way.
 
+{{% alert note %}}
+<small>[2023-09-21]</small><br>
+Not mentioned here is how to get notified when you receive new emails. See this [micro post](/micro/2023-09-21-08-41-50) for a solution that circumvents some of `notify-send` limitations.
+{{% /alert %}}
+
 - using folder hooks: Folder hooks are actions that carried automatically when you enter a (local or remote) folder. I use a few of them, mostly to setup specific mailboxes. For instance, I have a different display mode depending on whether I'm in my Inbox or in the Archives folder (where I usually want a detailed timestamp, especially the year since messages can span more than 15 years), but see below:
 
   ```
