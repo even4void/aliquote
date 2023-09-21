@@ -1,6 +1,6 @@
 ---
 title: "Some interesting R packages"
-date: 2023-09-18T09:23:08+02:00
+date: 2023-09-19T09:23:08+02:00
 draft: false
 tags: ["rstats"]
 categories: ["2023"]
