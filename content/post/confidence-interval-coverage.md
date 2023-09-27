@@ -1,7 +1,7 @@
 ---
 title: "Confidence intervals and coverage"
 date: 2023-09-26T08:48:37+02:00
-draft: true
+draft: false
 tags: ["statistics", "python"]
 categories: ["2023"]
 ---
