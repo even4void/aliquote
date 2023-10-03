@@ -6,4 +6,6 @@ tags: ["bioinformatics", "scheme"]
 categories: ["2023"]
 ---
 
-{{% music %}}XXX • _XXX_{{% /music %}}
+Suffix trees and tries are common data structure in computational genomics.
+
+{{% music %}}Arcade Fire • _Wake Up_{{% /music %}}
