@@ -16,4 +16,6 @@ Startup time is a bit longer (70-80 ms instead of 30 ms with my previous config)
 
 And then comes [nvim-orgmode](https://github.com/nvim-orgmode/orgmode).
 
+Mason looks great as it installs everything (using schema) within a single click or config line, but it also means you end up with a huge local/Share/nvim directory (3.3 Go with 5 LSPs, compared to less than 180 Mo with my previous config) even when you already have local copies of the LSPs. This is not a big deal if you have a large HD, but if you make regular backup using Kopia, you may want to exclude that directory from your hourly or daily backups.
+
 {{% music %}}Bauhaus • _Exquisite Corpse_{{% /music %}}
