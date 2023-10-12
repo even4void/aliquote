@@ -19,7 +19,7 @@ Benchmark 1: nvim --headless +qa
 
 ![img](/img/2023-10-06-21-40-30.png)
 
-Yes, I'm back to the good old era of the 500+ LOC vimrc. In my case, I now have a single `init.lua` file to manage my plugins and general settings. I still have various directories lying around, though. Here is the big picture:
+Yes, I'm back to the good old era of the 500+ LOC vimrc. In my case, I now have a single `init.lua` file to manage my plugins and general settings, nicely organized and presented thanks to native (and efficient) Vim folding. I still have various directories lying around, though. Here is the big picture:
 
 ```shell
 ~/.config/nvim
@@ -40,14 +40,13 @@ I discarded part of a forked version of mini.nvim that I was using for completio
 
 The biggest issue for me was to replace `null-ls`[^1] since it provided me with a bunch of useful linters and fixers but it came out it was not too difficult to get rid of it since [conform.nvim](https://github.com/stevearc/conform.nvim) and [nvim-lint](https://github.com/mfussenegger/nvim-lint) came to the rescue shortly. I am aware it can be done with autocommands as [explained on SO](https://stackoverflow.com/a/77153991) or simple mappings (which is what I already have in some of my `after/ftplugin` files, but these two packages allow to manage linters and formatters in a more comfortable way.
 
-Startup time is a bit longer (70-80 ms instead of 30 ms with my previous config), but I use a different set of plugins so it's hard to compare. The most notable changes are the addition of auto-installers, like [mason.nvim](https://github.com/williamboman/mason.nvim) (with [mason-lspconfig.nvim](https://github.com/williamboman/mason-lspconfig.nvim) and [mason-tool-installer.nvim](https://github.com/WhoIsSethDaniel/mason-tool-installer.nvim), which works alongside [nvim-lspconfig](https://github.com/neovim/nvim-lspconfig), and linting/formatting packages cited above). I already installed all LSPs, linters and formatters I need using pip, npm, curl or whatever, but the big advantage of this approach is that everything is self-contained so that I can transfer my config files to any other computer and get everything installed right away. Mason-based tools will install everything (using a [registry list](https://mason-registry.dev/registry/list) in the case of Mason itself) within a single click or config line.[^2] It also means you end up with a huge `$HOME/local/share/nvim` directory (3.3 Go with 5 LSPs, compared to less than 180 Mo with my previous config). This is not a big deal if you have a large HD, but if you make regular backup using Kopia, you may want to exclude that directory from your hourly or daily backups. As an example, consider the following listing, in the middle of my configuration: some LSPs, formatters and linters take up some space, really:[^3]
+Startup time is a bit longer (70-80 ms instead of 30 ms with my previous config), but I use a different set of plugins so it's hard to compare. The most notable changes are the addition of auto-installers, like [mason.nvim](https://github.com/williamboman/mason.nvim) (with [mason-lspconfig.nvim](https://github.com/williamboman/mason-lspconfig.nvim) and [mason-tool-installer.nvim](https://github.com/WhoIsSethDaniel/mason-tool-installer.nvim), which works alongside [nvim-lspconfig](https://github.com/neovim/nvim-lspconfig), and linting/formatting packages cited above). I already installed all LSPs, linters and formatters I need using pip, npm, curl or whatever, but the big advantage of this approach is that everything is self-contained so that I can transfer my config files to any other computer and get everything installed right away. Mason-based tools will install everything (using a [registry list](https://mason-registry.dev/registry/list) in the case of Mason itself) within a single click or config line.[^2] It also means you end up with a huge `$HOME/local/share/nvim` directory (3.3 Go with 9 LSPs, compared to less than 180 Mo with my previous config). This is not a big deal if you have a large HD, but if you make regular backup using Kopia, you may want to exclude that directory from your hourly or daily backups. As an example, consider the following listing, in the middle of my configuration: some LSPs, formatters and linters take up some space, really:[^3]
 
 ```shell
 $ .local/share/nvim/mason/packages
 » du -sh ./* | sort -h
 2,8M    ./shfmt
 4,0M    ./purescript-language-server
-7,4M    ./bash-language-server
 14M     ./stylua
 15M     ./shellcheck
 19M     ./texlab
@@ -72,4 +71,4 @@ And then comes [nvim-orgmode](https://github.com/nvim-orgmode/orgmode), which is
 
 [^1]: By the end of writing this post, I learned it has been forked as [none-ls.nvim](https://github.com/nvimtools/none-ls.nvim).
 [^2]: Compared to nvimlsp-config, Mason uses a different naming convention, so be careful.
-[^3]: Of note, the R language server took a lot of time to install, compared to other LSPs.
+[^3]: Of note, the R language server took a lot of time to install, compared to other LSPs. At this point, I'm thinking of removing it since I don't really need it except for the `keywordprg` (on-line help), which I can manage by my side.
