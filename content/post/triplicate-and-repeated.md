@@ -10,6 +10,6 @@ In behavioral quantitative measurement, we are used to repetition within and bet
 
 Next, there are two questions that always puzzled me: (1) technical replication is often performed using triplicates; (2) mixed-effect models are rarely used in practice, rather technical replicates are averaged and the analysis is performed using statistical tests for independent group (ANOVA, t-test, etc.).
 
-I don't think there's any statistical justification for the use of $k=3$ technical replicates rather than, say, $k=10$. However, 3 observations are enough to gauge the precision of the measurement, and discard an outlying value if necessary.
+I don't think there's any statistical justification for the use of $k=3$ technical replicates rather than, say, $k=10$. Three observations are enough to gauge the precision of the measurement, and discard an outlying value if necessary, but larger sample size are better especially when we want to get a more precise averaged or pooled estimate and/or we are dealing with small effect sizes. My small Dr. Google literature review can be found below: (and these are DuckDuckGo results, not Google ones, but you already know that, right?)
 
 {{% music %}}Joy Division • _Transmission_{{% /music %}}
