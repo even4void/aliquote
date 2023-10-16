@@ -1,5 +1,5 @@
 ---
-title: "Lost+found 2021"
+title: "lost+found 2021"
 date: 2021-12-27T21:39:37+01:00
 draft: false
 tags: ["this"]
@@ -9,6 +9,7 @@ categories: ["2021"]
 It is very unlikely these posts will ever end in anything other than rough drafts, so closing them right now.
 
 ## 2020-10-04
+
 <small>I was about to benchmark some common statistical programs used to perform boosting, then forgot about it.</small>
 
 There has been a renewed interest in [Boosting](https://en.wikipedia.org/wiki/Boosting_%28machine_learning%29) techniques over the past few years, possibly through Kaggle contests where it ranks among the [top](https://www.kdnuggets.com/2017/10/xgboost-top-machine-learning-method-kaggle-explained.html) algorithms currently in use. [LightGBM](https://papers.nips.cc/paper/6907-lightgbm-a-highly-efficient-gradient-boosting-decision-tree.pdf) and [XGBoost](https://arxiv.org/pdf/1603.02754.pdf) (and [CatBoost](http://learningsys.org/nips17/assets/papers/paper_11.pdf)) are probably the most used algorithms at the time of this writing.[^1] Packages are available for R, Python, [Clojure](micro/clojure-xgboost), and probably other scientific PLs.
@@ -32,6 +33,7 @@ stroke = h2o.import_file()
 [^3]: Other interesting datasets are available on the [Vanderbilt server](http://biostat.mc.vanderbilt.edu/wiki/Main/DataSets)/
 
 ## 2021-06-07
+
 <small>Some rants against this "new" R (which will soon be called the modern R, but not as in _Modern Applied Statistics with S_).</small>
 
 Something that has always struck me for years is that: Learning R is hard. However, I would say that it's like the Vim learning curve, not the Emacs's one, unless you learned it the rlang's way. You know, there's some business behind the "tidyverse" way of doing things. Above that, there are too much shortcuts to learn how to speak R. I'm not thinking of the R inferno or things like that, just the language itself.
