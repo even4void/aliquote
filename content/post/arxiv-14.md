@@ -16,7 +16,11 @@ This article summarizes a long list of data repositories spanning a dozen or so 
 
 ### Demystifying Statistical Matching Algorithms for Big Data (https://arxiv.org/abs/2309.05859)
 
+Propensity scoring is widely used in the absence of a controlled experiment, e.g. in observational studies, where as the authors say matching is used to pair treated and control units with similar value of potential confounders (aka, the propensity score). Usually, matching is done with replacement, that is a control is paired to several treated units (1-to-n matching, with replacement). There are [other estimators](https://www.stata.com/features/causal-inference/) (e.g., inverse probability weighting or doubly robust methods), though. [Oversampling and replacement strategies](https://bmcmedresmethodol.biomedcentral.com/articles/10.1186/s12874-021-01454-z) may alter the balance between bias and variance. In the case of matching without replacement, greedy approaches are used; in Stata, there's a command `calipmatch` which does the job for you, while in R the /de facto/ packages are probably `Matching` and `MatchIt`. In this paper, the authors review alternative approaches, namely optimal statistical matching (linear balanced and unbalanced assignment problem, maximum cardinality matching, and minimal cost matching).
+
 ### Subgroup detection in linear growth curve models with generalized linear mixed model (GLMM) trees (https://arxiv.org/abs/2309.05862)
+
+Here is another paper by Achim Zeilis on regression trees. This time, it deals with "extended" GLMMs for identifying subgroups in growth curve modeling. Recursive partitioning is performed
 
 ### A Change-Point Approach to Estimating the Proportion of False Null Hypotheses in Multiple Testing (https://arxiv.org/abs/2309.10017)
 
