@@ -20,11 +20,11 @@ Propensity scoring is widely used in the absence of a controlled experiment, e.g
 
 ### Subgroup detection in linear growth curve models with generalized linear mixed model (GLMM) trees (https://arxiv.org/abs/2309.05862)
 
-Here is another paper by Achim Zeilis on regression trees. This time, it deals with "extended" GLMMs for identifying subgroups in growth curve modeling. It's been a long time since I first used [partykit](https://cran.r-project.org/web/packages/partykit/index.html) for tree-structured regression and classification models, and this was in a benchmark with classical CART, [logic regression](https://www.tandfonline.com/doi/abs/10.1198/1061860032238), and ensemble methods (random forests and boosting); this didn't end up in a paper, but it was a fun exercise. Since then, a lot of work has been put forward into this framework and I'm not really up to date. Unlike other methods for partitioning latent growth curves, this modeling framework set up a mixed approach: "GLMM trees do not fit a full parametric model in each of the subgroups defined by the terminal nodes of the tree. In- stead, fixed-effects parameters are estimated locally, using the observations within a terminal node, and the random-effects parameters are estimated globally, using all observations."
+Here is another paper by Achim Zeilis on regression trees. This time, it deals with "extended" GLMMs for identifying subgroups in growth curve modeling. It's been a long time since I first used [partykit](https://cran.r-project.org/web/packages/partykit/index.html) for tree-structured regression and classification models, and this was in a benchmark with classical CART, [logic regression](https://www.tandfonline.com/doi/abs/10.1198/1061860032238), and ensemble methods (random forests and boosting); this didn't end up in a paper, but it was a fun exercise. Since then, a lot of work has been put forward into this framework and I'm not really up to date. Unlike other methods for partitioning latent growth curves, this modeling framework set up a mixed approach: "GLMM trees do not fit a full parametric model in each of the subgroups defined by the terminal nodes of the tree. Instead, fixed-effects parameters are estimated locally, using the observations within a terminal node, and the random-effects parameters are estimated globally, using all observations."
 
 ### A Change-Point Approach to Estimating the Proportion of False Null Hypotheses in Multiple Testing (https://arxiv.org/abs/2309.10017)
 
-I have used FDR correction for multiple comparisons here and there, as an alternative to sequential methods like Holm's approach (which is the default in R's `p.adjust`, btw). The authors offer an alternative data-driven method to the classical Storey's method (i.e., a family of true null proportion of false null hypotehses estimators) for estimating the FDR. In this case, the sorted p-values are approximated using a piecewise linear function with one change point (inversion of slope), as illustreated below. This is somewhat akin to the knee/elbow method or scree plots for determining the number of principal components or factors to retain in PCA or FA, which is discusse in section C.1.
+I have used FDR correction for multiple comparisons here and there, as an alternative to sequential methods like Holm's approach (which is the default in R's `p.adjust`, btw). The authors offer an alternative data-driven method to the classical Storey's method (i.e., a family of true null proportion of false null hypotheses estimators) for estimating the FDR. In this case, the sorted p-values are approximated using a piecewise linear function with one change point (inversion of slope), as illustrated below. This is somewhat akin to the knee/elbow method or scree plots for determining the number of principal components or factors to retain in PCA or FA, which is discussed in section C.1.
 
 ![img](/img/2023-10-16-20-45-29.png)
 
@@ -35,14 +35,14 @@ Yet another article discussing the benefit of using bootstrap to assess model go
 For test level $\alpha$, candidate normal linear model $\mathcal{M}$, bootstrap iterations $B$, sample size $n$, and a null hypothesis that $\mathcal{M}$ is adequately specified:
 
 1. Resample, with replacement, outcomes with covariates to generate a bootstrap sample of size $n$.
-2. Fit model $\mathcal{M}$ to this bootstrap sample, and with this fitted model, calculatê $\text{Var}[\text{GOF}]$and record this statistic.
-3. Repeat steps 1-2 $B$ times to generate an empirical bootstrap distribu-tion for̂ $\text{Var}[\text{GOF}]$.
+2. Fit model $\mathcal{M}$ to this bootstrap sample, and with this fitted model, calculate $\text{Var}[\text{GOF}]$and record this statistic.
+3. Repeat steps 1-2 $B$ times to generate an empirical bootstrap distribution for $\text{Var}[\text{GOF}]$.
 4. Construct a $100\times (1−\alpha)$% bootstrap confidence interval for $\text{Var}[\text{GOF}]$.
 5. If this interval does not contain $2n$, reject the null hypothesis at the $\alpha$ level. If it does contain $2n$, the null hypothesis was not rejected and model $\mathcal{M}$ does not appear to exhibit lack-of-fit.
 
 ### Unveiling Challenges in Mendelian Randomization for Gene-Environment Interaction (https://arxiv.org/abs/2309.12152)
 
-As a sequel to this 10-years [old post](/post/mendelian-randomization/), here is a paper that uses genetic variants as instrumental variables (2-stage predictor substitution and the 2-stage residual inclusion) to estimate causal effects in GWAS on ifestyle and environmental factors.
+As a sequel to this 10-years [old post](/post/mendelian-randomization/), here is a paper that uses genetic variants as instrumental variables (2-stage predictor substitution and the 2-stage residual inclusion) to estimate causal effects in GWAS on lifestyle and environmental factors.
 
 {{% music %}}Public Image Ltd • _Rise_{{% /music %}}
 
