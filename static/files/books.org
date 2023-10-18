@@ -1,4 +1,5 @@
 * 2013
+
 - Haruki Murakami, 1Q84 Tome 3 (Belfond)
 - Haruki Murakami, Underground (Belfond)
 - Camilla Läckberg, La princesse des glaces (Actes Sud, Babel Noir)
@@ -30,7 +31,9 @@
 - Alexis Jenni, Élucidations (Gallimard)
 - David Bosc, Milo (Allia)
 
+
 * 2014
+
 - Alice Munro, Fugitives (Points)
 - Francis Picabia, Caravansérail (Belfond)
 - Brigitte Giraud, L'amour est très surestimé (Stock)
@@ -151,7 +154,9 @@
 - Alina Reyes, Le boucher (Seuil)
 - Paul Eluard, Souvenirs de la maison des fous (Seghers)
 
+
 * 2015
+
 - André de Richaud, La nuit aveuglante (Insomnies)
 - Pierre Courtaud, Histoire(s) du dormeur (éditions du limon) [#]
 - Stieg Larsson, La fille qui rêvait d'un bidon d'essence et d'une allumette (Actes Sud)
@@ -201,7 +206,9 @@
 - J Benet, Treize fables et demie (Les éditions Passages du Nord/Ouest)
 - Jules Renard, Le mauvais livre (Arbre Vengeur)
 
+
 * 2016
+
 - Pierre Raufast, La fractale des raviolis (Folio)
 - Haruki Murakami, L'étrange bibliothèque (Belfond)
 - Jean-Paul Didierlaurent, Le liseur du 6h27 (Folio)
@@ -274,7 +281,9 @@
 - Bob Dylan, Chroniques (Folio)
 - Marie Ndiaye, Le cheffe, roman d'une cuisinière (Gallimard)
 
+
 * 2017
+
 - Yann Moix, Terreur (Grasset)
 - Grégoire Delacourt, Danser au bord de l'abîme (JC Lattès)
 - René Char, Le Nu perdu (Gallimard, Poésie)
@@ -336,7 +345,9 @@
 - La bibliothèque des impardonnables, Le serment de fidélité (Fario)
 - Sophie Chauveau, Manet le secret (Folio)
 
+
 * 2018
+
 - Kazuo Ishiguro, Le géant enfoui (JC Lattès)
 - Kazuo Ishiguro, Auprès de moi toujours (JC Lattès)
 - Pramoedya Ananta Toer, Le monde des hommes (Zulma)
@@ -429,7 +440,9 @@
 - Patti Smith, Dévotion (Gallimard)
 - Valérie Manteau, Le sillon (Le Tripode)
 
+
 * 2019
+
 - Patti Smith, Dévotion (Gallimard)
 - Françoise Giroud, Deux et deux font trois (Grasset)
 - Juliette Arnaud, Comment t'écrire adieu (Belfond)
@@ -501,7 +514,9 @@
 - Michel Douard, Un couple de singes (La manufacture de livres)
 - Fred Uhlman, L'ami retrouvé (Folio)
 
+
 * 2020
+
 - Rimbaud, Poésies (Pléïade) [#]
 - Peter Brooke, Le diable c'est l'ennui (Actes Sud)
 - Georges Perec, Espèces d'espaces (Galilée)
@@ -593,7 +608,9 @@
 - Julian Barnes, Une fille, qui danse (Folio)
 - Arnaldur Indridason, Etranges rivages (Points)
 
+
 * 2021
+
 - Arnaldur Indridason, La cité des jarres (Points)
 - Emmanuel Carrère, Yoga (P.O.L.)
 - Christopher Buckley, Départs anticipés (Points)
@@ -660,7 +677,9 @@
 - François-Henri Désérable, Mon maître et mon vainqueur (Gallimard)
 - Richard Powers, Sidérations (Actes Sud)
 
+
 * 2022
+
 - Silvina Ocampo, Inventions du souvenir (Des femmes)
 - Willem Elsschot, Le feu follet (Le Castor Astral)
 - Fabrice Chillet, Un feu éteint (Finitude)
@@ -737,7 +756,9 @@
 - Album Kafka (Pléiade)
 - Cornelia Möser, Libérations sexuelles (La Découverte)
 
+
 * 2023
+
 - Joseph Conrad, Au coeur des ténèbres (Pléiade)
 - Edgar Lee Masters, Des voix sous les pierres (Les belles lettres)
 - Charlotte, Emily, Anne et Branwell Brontë, Le monde du dessous (Les belles lettres)
@@ -801,5 +822,8 @@
 - Jacques Audiberti, La fin du monde (Actes Sud)
 - Henri Calet, Garonne, roman fleuve (Le festin)
 - Harry Mulisch, Le pupille (Actes Sud)
+- Karine Marcelle Arneodo, Jours de fête (La barque)
+- André Breton, Poisson soluble (Gallimard) [#]
+- Clémentine Haenel, Pleins pkares (L'arpenteur)
 
 [#] Déjà lu par le passé
