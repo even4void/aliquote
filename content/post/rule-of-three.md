@@ -1,5 +1,5 @@
 ---
-title: "Rule of three and some variations on the Chebyshev inequality"
+title: "Rule of three and the Chebyshev inequality"
 date: 2023-10-02T14:11:06+02:00
 draft: false
 tags: ["statistics"]
