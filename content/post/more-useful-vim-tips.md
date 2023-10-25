@@ -18,4 +18,10 @@ It's been 3 years that I am using Neovim as my daily driver. I learned a lot of 
 - Read the documentation (and learn to navigate inside) rather than spending hours browsing the internet to learn about the latest cool plugins (which is only compatible with the next-to-last version of Neovim); that is, write small functions or commands that do 90% of what you expect, rather than plugging in yet another plugin. Most of what you will read from past [Vim wikis](https://vim.fandom.com/wiki/Vim_Tips_Wiki) still apply as of today in Neovim, so don't reinvent the wheel.
 - We rarely need to `<C-z>` these days, thanks to the builtin terminal emulator.
 
+{{% alert note %}}
+<small>[2023-10-25]</small><br>
+See also [At least one Vim trick you might not know](https://www.hillelwayne.com/post/intermediate-vim/) and [Vim's useful lists](https://codeinthehole.com/tips/vim-lists/) for useful tips.
+{{% /alert %}}
+
+
 {{% music %}}Yasmin Levy • _Mano Suave_{{% /music %}}

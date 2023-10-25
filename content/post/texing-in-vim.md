@@ -28,6 +28,11 @@ iabbrev frac@ \frac{DATA}{}<Esc>?DATA<CR>cw
 
 Enters [Vimtex](https://github.com/lervag/vimtex) which I discovered when I was reading [How I'm able to take notes in mathematics lectures using LaTeX and Vim](https://castel.dev/post/lecture-notes-1/) a while ago. Note that vimtex+[zathura](/post/nyxt-browser/) is the _winning combo_ here. Contrary to the author of the blog post, I don't use concealing, nor snippets (see above).
 
+{{% alert note %}}
+<small>[2023-10-25]</small><br>
+See this excellent tutorial to get started with using vimtex: [Getting started with the VimTeX plugin](https://www.ejmastnak.com/tutorials/vim-latex/vimtex/).
+{{% /alert %}}
+
 Things I like: `]]` will automagically close the current environment, Bibtex keys and labels can be autocompleted using builtin omnicomplete (`C-x C-o`), you can toggle on/off a table of contents in a dedicated sidebar, the `%` matching operator is redefined to highlight opening and closing $\LaTeX$ delimiters, you can compile and preview your file with pre-defined mappings, and there are specific motion operators (e.g., `ic`, `id`, `ie`, `i$`). And on top of that, you can use reverse (Ctrl+click from Zathura) and forward (`<localleader>lr` from Vim) search. And it just works! Zathura is configured as the defaut PDF viewer, and all you have to do is to ensure that `synctex` is active when compiling your $\LaTeX$ document. This is already defined in Vimtex default options. See also this review: [A Complete Guide on Writing LaTeX with Vimtex in Neovim](https://jdhao.github.io/2019/03/26/nvim_latex_write_preview/). (Note that you no longer need to spawn a server since Neovim 0.5+.)
 
 To compile Knitr standalone documents, I use the following mapping:
