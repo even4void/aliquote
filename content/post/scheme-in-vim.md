@@ -44,6 +44,13 @@ The file `~/.local/share/scheme/words` was generated as advertised by Evan Hanso
 
 For the time being, I'm not interested in other Scheme flavor, so I decided to target Chicken scheme only. Together with Racket, it is a solid Scheme implementation that further comes with a package manager and a nice FFI.
 
+{{% alert note %}}
+<small>[2023-10-27]</small><br>
+I highly recommend installing [vim-paredit](https://github.com/kovisoft/paredit) (still maintained despite being listed on [vim-scripts](https://github.com/vim-scripts)). For some time I use to rely on [nvim-parinfer](https://github.com/gpanders/nvim-parinfer), and now there's [nvim-paredit](https://github.com/julienvincent/nvim-paredit) (and [parpar](https://github.com/dundalek/parpar.nvim) if you prefer a combo). Tehre's also [vim-sexp](https://github.com/guns/vim-sexp), with awful mappings, and [vim-sexp-mappings-for-regular-people](https://github.com/tpope/vim-sexp-mappings-for-regular-people), with far better mappings but a longer nick). I've tried them all, noticed some issues with nvim-parinfer when deleting enclosed forms, which led me to rely on Vim `dib` and `dab` instead. Here with vim-paredit you get part of parinfer, i.e., when you delete a line or an s-expression inside a top-level form in Lisp you get the correct result, and many additional goodies like slurping and barfing the easy way (`<` and `>`), join/slice/wrap lists and sublists, in normal or visual mode. As a final remark, I should note that there's a [treesitter grammar](https://github.com/6cdh/tree-sitter-scheme) for Scheme (as well as Common Lisp, Racket, and Clojure), which means indentation and formating should be all right.
+{{% /alert %}}
+
+-----
+
 A final word: The `gs` mapping is something that I implemented for most languages that offer some kind of a REPL or a quick compilation process. So far, I have it implemented for the folloing filetypes:
 
 ```shell
@@ -92,6 +99,11 @@ rust.vim
 ```
 
 Note that I also use [iron] to launch some REPL right into a running Neovim instance.[^1] It also works great with the interactive interpreter `csi`.
+
+{{% alert note %}}
+<small>[2023-10-27]</small><br>
+No more plugin providing REPL-like features. If I were to install one, I would choose either [slimv](https://github.com/kovisoft/slimv) (almost surely) or [conjure](https://github.com/Olical/conjure). If this is just to send a line or a selection to a terminal running my favorite interpreter, I stand by my poor man mappings: `vim.keymap.set("n", "ss", [[ Vy<C-w>wpa<CR><C-\><C-n><C-w>pj ]])` (current line), `vim.keymap.set("x", "s", [[ y<C-w>wpa<CR><C-\><C-n><C-w>p ]])` (visual selection).
+{{% /alert %}}
 
 Happy scheming in (Neo)vim!
 
