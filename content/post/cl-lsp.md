@@ -81,7 +81,7 @@ vim.lsp.start({
 })
 ```
 
-Here are the server`vim.lsp.get_active_clients()[1].server_capabilities`
+Here are the server functionnalities obtained from `vim.lsp.get_active_clients()[1].server_capabilities`:
 
 ```
 {
