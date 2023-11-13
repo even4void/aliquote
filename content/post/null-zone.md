@@ -49,8 +49,7 @@ p
 And the code that computes the null zone:
 
 ```r
-null.zone <- function(data, conf.int = 0.95)
-{
+null.zone <- function(data, conf.int = 0.95) {
     x <- data[[1]]
     y <- data[[2]]
     stat <- t.test(x, y, conf.level = conf.int, var.equal = TRUE)
