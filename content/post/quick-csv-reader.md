@@ -42,6 +42,11 @@ There may be other packages I am missing, of course. The `data-frame` package is
 
 I'm interested in Jack Firth's package, though, for it provides handy data structures, including tables iterations and comprehensions. It's just that I'm not familiar with this package, and I would need to benchamrk the record (with constant-time lookup of field values by name) and table objects. It is well documented, like the `data-table` package.
 
+{{% alert note %}}
+<small>[2023-11-16]</small><br>
+TIL there's another package which I didn't find when I drafted this post: [RacketFrames](https://github.com/bommysk/RacketFrames).
+{{% /alert %}}
+
 {{% music %}}Bentley • _Been a While_{{% /music %}}
 
 [^1]: There's also `filter-map`, at least in Racket, which is probably a better fit in this case: `(filter-map (lambda (x) (expt x x)) '(1 2 3 4 5))` (no need to construct a list explicitely). Note that `filter-map` may be more interesting when one wants to filter items in a row depending on a certain predicate.
