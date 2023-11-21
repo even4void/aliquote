@@ -44,6 +44,7 @@ This doesn't seem too incompatible with a hypothesis of equidistribution in whic
 
 (defparameter *xs* '(93 116 103 102 93 97 94 95 101 106))
 (defparameter *expected* (/ (list-length *data*) (list-length *xs*)))
+(defparameter *dof* (- (list-length *xs*) 1))
 (defparameter *statistic* (apply #'+ (mapcar (lambda (x) (/ (expt (- x *expected*) 2) *expected*)) (int-to-float *xs*))))
 ;; => 4.7400002
 ```
@@ -54,7 +55,7 @@ To get the associated p-value, I will use Larry Hunter's legacy package, augment
 (require "asdf")
 (asdf:load-asd "/home/chl/Documents/misc/lisp/lhstats/lhstats.asd")
 (asdf:load-system :lhstats)
-(- 1 (nth-value 0 (statistics::gamma-incomplete (* 0.5 9) (* 0.5 *statistic*))))
+(- 1 (nth-value 0 (statistics::gamma-incomplete (* 0.5 *dof*) (* 0.5 *statistic*))))
 ;; => 0.8563586405247742d0
 ```
 
