@@ -12,6 +12,12 @@ It's been 3 years that I am using Neovim as my daily driver. I learned a lot of 
 - Don't forget _builtin commands_: There are a lot of useful commands already available in Vim, and many shortcuts that are worth learning, e.g., for manipulating windows and tabs or the `z` and `g` prefixed commands.
 - _Search and replace using regex_ are powerful tools: Use capture groups eagerly, like in `:%s/\([0-9]*\).*/\1/`; also, don't forget you can save search results in a file, e.g. `g/pattern/.w! >> out.txt`, if you need to process them afterwards.
 - Prefer a _low contrast monochromatic colorscheme_ to avoid Christmas tree-like effects; [treesitter](https://github.com/nvim-treesitter/nvim-treesitter) should take care of highlighting the right stuff, and it will be helpful to perform [structural editing](https://github.com/nvim-treesitter/nvim-treesitter-textobjects).
+
+{{% alert note %}}
+<small>[2023-11-21]</small><br>
+See this excellent discussion on [Overcolorization](https://andreyor.st/posts/2023-11-17-overcolorization/): "Syntax highlighting is a tool, and highlighting important parts of the code makes programming less convoluted. Pretty colors are nice to have, but if the point is only to make the code look fancy, there’s no real value for what we’re trying to do in the end - write better code. Let’s help each other at least at that."
+{{% /alert %}}
+
 - Use _templates for your one-liner_: You can define a set of autocommands or a simple mapping to insert a file right into your buffer; in the latter case, `:-1 read` allows to place a template file above the insertion point, in contrast to the default behavior of `:read`.
 - `formatprg` and `equalprog` are invaluable if you don't use or don't have a relevant LSP at hand. Vim is quite good at indenting, so you're more likely to deal with `formatprg`. For instance, to format bibliographic entries in a Bibtex file, you could define `setlocal formatprg=bibclean\ -align-equals\ -brace-protect\ -delete-empty-values\ -fix-accents\ -quiet` in your `after/ftplugin/bib.vim`, and then `gqip` the current entry.
 - You usually want to put your custom settings in `after/ftplugin` rather than `plugin`. If possible, keep it orthogonal to your init file so that you can use a minimal init file that is shareable across machines while your `after` folder get you load of enhancements to the core config.
