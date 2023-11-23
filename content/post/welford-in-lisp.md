@@ -61,6 +61,20 @@ ss.sampleVariance([1, 2, 3, 4, 5].map((x) => x + 1e10));
 
 The take away message is that you should either rely on a two-pass algorithm (i.e., compute the mean first, then the squared deviations from the mean) or the Welford algorithm, especially if you are interested in running statistics.
 
+{{% alert note %}}
+<small>[2023-11-23]</small><br>
+As I was surveying the various statistical packages lying around on GitHub, I found many buggy implementations (e.g., `basic-statistics.lisp` in [LispUtils](https://github.com/MBcode/LispUtils)). However, [cl-ana](https://github.com/ghollisjr/cl-ana) got it right:
+
+```lisp
+(ql:quickload "cl-ana")
+(defparameter *xs* '(1 2 3 4 5))
+(cl-ana::variance *xs*)
+;; => 5/2
+(cl-ana::variance (mapcar (lambda (x) (+ 10000000 x))  *xs*))
+;; => 5/2
+```
+{{% /alert %}}
+
 {{% music %}}Tracy Chapman • _Fast Car_{{% /music %}}
 
 [^1]: See, e.g., N.J. Higham, _Accuracy and Stability of Numerical Algorithms_ (2nd ed.), SIAM 2002. (section 1.9)
