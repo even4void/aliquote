@@ -17,7 +17,7 @@ Here's how I would usually do:
 ```r
 library(randomForest)
 d <- read.table("boshouse.txt")
-
+names(d) <- c()
 ```
 
 Now, with `qeML`, we can perform the above steps using a one-liner:

@@ -6,7 +6,9 @@ tags: ["unix"]
 categories: ["2023"]
 ---
 
-I have been using a custom setup to organize my init shell scripts for more more than one year long now, and I believe it's pretty robust both for local and remote use. The only things you really need to know, beside writing proper shell scripts, is what a login vs. interactive shell is and which init files are loaded in each cases. Briefly, an interactive shell runs in your preferred terminal emulator and this is where you usually type your commands, while a non-interactive process involves some kind of I/O operations which the user can't interact with. A login shell is used whenever you log in on your system (after the X or Wayland server is started, this is probably the one at the top of all child processes), while a non-login shell is everything else that is started in userland after you logged in, including external process launched by separate programs without user's action.
+I have been using a custom setup to organize my init shell scripts for more more than one year long now, and I believe it's pretty robust both for local and remote use. The idea came after I read a nice blog post about how best to manage a set of dotfiles (at the time of this writing I can't find the blog but I will update this post if I came across it again).
+
+The only things you really need to know, beside writing proper shell scripts, is what a login vs. interactive shell is and which init files are loaded in each cases. Briefly, an interactive shell runs in your preferred terminal emulator and this is where you usually type your commands, while a non-interactive process involves some kind of I/O operations which the user can't interact with. A login shell is used whenever you log in on your system (after the X or Wayland server is started, this is probably the one at the top of all child processes), while a non-login shell is everything else that is started in userland after you logged in, including external process launched by separate programs without user's action.
 
 My `.profile` simply reads:
 
@@ -29,7 +31,7 @@ I use zsh as my shell interpreter, so here's my `.zprofile`:
 [[ $- =~ i ]] && [ -r "$HOME"/.zshrc ] && source "$HOME"/.zshrc
 ```
 
-The `.bash_profile` is identical. Basically, this allows to manage login shells by sourcing relevant init files. The `.config/profile.d` directory follows Bash scripts organization for environment variables (`/etc/profile`) and application-specific startup files (`/etc/profile.d`). I currently have three main files there:
+The `.bash_profile` is identical, so that I can rely on the exact same config to load everything I need independent of the shell I'm using, or more precisely the machine I interact since I do a lot of remote work through ssh where I generally only use Bash and BW colorscheme. In sum, the above scheme allows to manage login shells by sourcing a common set of relevant init files. The `.config/profile.d` directory follows Bash scripts organization for environment variables (`/etc/profile`) and application-specific startup files (`/etc/profile.d`). I currently have three main files there:
 
 ```shell
 » tree .config/profile.d
@@ -39,7 +41,7 @@ The `.bash_profile` is identical. Basically, this allows to manage login shells 
 └── 20-shell.sh
 ```
 
-The main file is of course `00-path.sh` where I set up all relevant paths for libraries and executables on my HD. Here are some examples of what I've put in here:
+The main file is of course `00-path.sh` where I set up all relevant paths for libraries and executables on my HD. Since I use Ubuntu on other machines too, this applies equally well to remote server. Here is an excerpt from this file:
 
 ```shell
 # vim: noai:ts=2:
@@ -47,13 +49,6 @@ The main file is of course `00-path.sh` where I set up all relevant paths for li
 # Fix API server issue with Podman
 # https://github.com/containers/podman/issues/13468#issuecomment-1062764637
 export DOCKER_HOST="unix:$XDG_RUNTIME_DIR/podman/podman.sock"
-
-# Go
-if [ -d "/usr/local/go" ]; then
-	export GOROOT=/usr/local/go
-	export GOPATH="$HOME"/.local/lib/go
-	PATH="$GOPATH/bin:$GOROOT/bin:$PATH"
-fi
 
 # Scheme
 [ -d "$HOME/.local/lib/scheme" ] && export CHEZSCHEMELIBDIRS="/home/chl/.local/lib/scheme:"
@@ -105,5 +100,29 @@ The startup sequence when I log on my computer for the first time is then:
 ```shell
 .zprofile -> .profile -> .config/profile.d/* -> .zshrc -> .config/zsh/*
 ```
+
+From `.zshrc` I source various other shell scripts specific to Zsh (e.g., completion) or common with Bash (alias and functions). When I'm on ssh or on virtual console, I disable some extra stuff like Starship prompt or colors.
+
+```shell
+if [ $XDG_SESSION_TYPE = "tty" ]; then
+  unset LS_COLORS
+  export TERM=xterm-mono
+  export NO_COLOR=1
+  alias ll="ls -alF"
+  PROMPT="%~ %(!.#.%%) "
+else
+  eval "$(starship init zsh)"
+fi
+
+TRAPEXIT() {
+  if [[ ! -o login ]]; then
+    . ~/.zlogout
+  fi
+}
+```
+
+The `.zlogout` file takes care of cleaning the mess introduced by some programs, who insists on creating various directories here and there.
+
+That's it!
 
 {{% music %}}Nick Cave and the Bad Seeds • _Wonderful Life_{{% /music %}}
