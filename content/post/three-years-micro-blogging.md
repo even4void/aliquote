@@ -2,7 +2,7 @@
 title: "Three years micro-blogging"
 date: 2021-06-20T16:00:38+02:00
 draft: false
-tags: ["this", "micro"]
+tags: ["this"]
 categories: ["2021"]
 ---
 And so, [two years](/post/one-year-micro-blogging/) later, we are about to exceed 3000 posts on the micro-blog.
