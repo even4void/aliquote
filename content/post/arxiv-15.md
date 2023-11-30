@@ -1,7 +1,7 @@
 ---
 title: "ArXiving on November 2023"
 date: 2023-11-30T12:24:09+02:00
-draft: true
+draft: false
 tags: ["readings", "arxiv"]
 categories: ["2023"]
 ---
@@ -22,10 +22,16 @@ A new paper by Dianne Cook, whose contributions I have always greatly appreciate
 
 ### Visualizing adverse events in clinical trials using correspondence analysis with R-package visae (https://arxiv.org/abs/2101.03454)
 
-Although I'm no longer involved in medical statistics, I keep an eye open on data visualization and applied methodology in the field. This article drew my attention a few weeks ago
+Although I'm no longer involved in medical statistics, I keep an eye open on data visualization and applied methodology in the field. This article drew my attention a few weeks ago because it relies on multivariate projection methods, in this case correspondance analysis and biplots. There's an associated [GitHub](https://github.com/cran/visae) repository where you will find code (shiny and ggplot) and illustrations. The advantage of biplots as summary displays is that they help highlighting complex relationship (or, in some cases, interactions). For instance, in the associated BMC paper the authors published alongside this preprint, they used biplots to highlight discrepancies between single agent treatments and their combinations with oxaliplatin at all levels of AE classes, which explain most of the variability among treatments.
 
-### https://arxiv.org/abs/2311.08254
+### Identifiable and interpretable nonparametric factor analysis (https://arxiv.org/abs/2311.08254)
 
-### https://arxiv.org/abs/2311.06974
+Contrary to Gaussian models or deep neural networks, which show poor performance in terms of identifiability, interpretability, and reproducibility, the authors propose to use the "NIFTY framework, which parsimoniously transforms uniform latent variables using one-dimensional nonlinear mappings and then applies a linear generative model." Briefly stated, such an approach allows to work with a standard linear latent factor model, which is easier to interpret compared to the aforementioned models, which amounts to a Bayesian independent component analysis under certain conditions.
+
+![img2](/img/2023-11-30-20-57-42.png)
+
+### Generating Signed Permutations by Twisting Two-Sided Ribbons (https://arxiv.org/abs/2311.06974)
+
+An interesting review of algorithms available to generate permutations, and specifically signed permutations which are permutations of $[n]$ objects with a $\pm$ sign. In the case of permutations, there are $n!$ solutions, while for signed permutations there are $2^n\cdot n!$ solutions. Not something I am really interested in at the moment, but I'll keep it in mynd in case I need it. There are a lot of nice illustrations, BTW.
 
 {{% music %}}Mini Trees • _Cracks in the Pavement_{{% /music %}}
