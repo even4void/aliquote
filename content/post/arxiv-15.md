@@ -14,7 +14,7 @@ I'm still not a big fan of the term [data science](/post/50-years-data-science) 
 
 A paper I read last year, thanks to Evan Miller, but go read his own [blog post](https://www.evanmiller.org/bootstrapping-sample-medians.html) which covers pretty all the math. While the authors originally proposed a Poisson model for bootstrapping differences in quantiles, whereby each observation in the original sample is included in each bootstrap sample according to a Poisson distribution with parameter 1, Evan Miller suggested an approximation which involves a Bessel function.
 
-### Frame to frame interpolation for high-dimensional data visualisation using the woylier package (ehttps://arxiv.org/abs/2311.08181)
+### Frame to frame interpolation for high-dimensional data visualisation using the woylier package (https://arxiv.org/abs/2311.08181)
 
 A new paper by Dianne Cook, whose contributions I have always greatly appreciated since I discovered [ggobi](http://ggobi.org/) (the website is still alive apparently). The "grand tour" (and other derivatives) is a method that allows to view data in more than three dimensions using linear projection, essentially by using rotations of a lower-dimensional projection in high-dimensional space. I've only seen this implemented efficiently in ggobi, but there may have been other attempts. Frames are stacked together with small interpolation to create a smooth motion. However, projection are usually rotationally invariant (when using geodesic interpolation algorithm) which may not be a desirable property when, e.g., we are looking for non-linear association in a high-dimensional dataset. The present package works along the [tourr](https://cran.r-project.org/web/packages/tourr/index.html) package.
 
