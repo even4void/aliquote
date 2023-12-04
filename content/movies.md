@@ -17,6 +17,7 @@ I haven't watched TV in about ten years, probably even before I removed the TV f
 <td><em>Seasons (Ep.)</em></td>
 <td><em>Rating</em></td>
 </tr>
+<tr><td><a href="https://en.wikipedia.org/wiki/The_Chestnut_Man">Octobre</a></td><td>2023</td><td>1 (6)</td><td>&#9733;&#9733;&#9733;&#9734;&#9734;</td></tr>
 <tr><td><a href="https://en.wikipedia.org/wiki/Bodies_(2023_TV_series)">Bodies</a></td><td>2023</td><td>1 (8)</td><td>&#9733;&#9733;&#9733;&#9734;&#9734;</td></tr>
 <tr><td><a href="https://en.wikipedia.org/wiki/1899_(TV_series)">1899</a></td><td>2023</td><td>1 (8)</td><td>&#9733;&#9733;&#9733;&#9734;&#9734;</td></tr>
 <tr><td><a href="https://en.wikipedia.org/wiki/Maniac_(miniseries)">Maniac</a></td><td>2023</td><td>1 (10)</td><td>&#9733;&#9733;&#9733;&#9734;&#9734;</td></tr>
