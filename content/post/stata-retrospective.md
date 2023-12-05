@@ -12,7 +12,7 @@ I'm afraid I haven't made much progress on my [Stata Starter Kit][0] since I sta
 
 Stata is almost [40 years old][1]. The latest stable release (v18) was released on April 25, 2023. Stata is written in C, but users can access the source code of commands/programs using viewsource. Pre-compiled code cannot be accessed, though. The article [Statistical software certification][2] describes the process of certification adopted by StataCorp. [Thirty Years with Stata: A Retrospective][3] is a good read, as well as [volume 5(1)][4] of the Stata Journal which celebrated the 20 years of Stata. Needless to say, Stata comes with extensive documentation. There are 23 manuals bundled with Stata v13, totalling 11365 pages.[^1]
 
-Of course there are the [41 commands][5] that every Stata user should known (as of Stata v13), but there are also those 42 commands, originally found in Stata v1.0:
+Of course there are the [41 commands][5] that every Stata user should know (as of Stata v13), but there are also those 42 commands, originally found in Stata v1.0:
 
 ```stata
 append dir infile plot spool beep do input query summarize by drop label
