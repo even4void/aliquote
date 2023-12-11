@@ -72,6 +72,6 @@ I started rewritting part of the above Stata system in Scheme,[^2] and my hope i
 [5]: https://www.stata.com/manuals13/u27.pdf
 
 [^1]: On Linux you can run, e.g., `for i in /usr/local/stata/docs/*.pdf; \ do pdfinfo "$i" | grep "^Pages:"; done | awk '{s+=$2} END {print s}'`
-[^2]: Stata is primarily column-based, which is a perfect fit for list/vector processing.
+[^2]: I always considered Stata as primarily column-based even if it's written in C and not in Fortran (at least, it's way easier and way more common to use the `if` than the `in` statement), which is a perfect fit for list/vector processing. Sean Becketti talks about how useful such a "data rectangle" was back at the time in [Thirty Years with Stata: A Retrospective][3].
 
 {{% music %}}Nirvana • _Breed_{{% /music %}}

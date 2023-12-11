@@ -23,7 +23,8 @@ Reservoir sampling[^3] is another efficient technique for generating a random sa
 
 {{% alert note %}}
 <small>[2021-04-13]</small><br>
-This post was originally drafted on 2020-09-17. It has been slightly edited and it will eventually get revised in the future. For now, it will stay unfinished.
+This post was originally drafted on 2020-09-17. It has been slightly edited and it will eventually get revised in the future. For now, it will stay unfinished.<br>
+See also [How to shuffle songs?](https://engineering.atspotify.com/2014/02/how-to-shuffle-songs/) and [Scrambling Eggs for Spotify with Knuth's Fibonacci Hashing](https://pncnmnp.github.io/blogs/fibonacci-hashing.html).
 {{% /alert %}}
 
 [^1]: Durstenfeld, R., Algorithm 235: Random Permutation, *Communications of the ACM*, 7(7), 1964. [PDF](https://dl.acm.org/doi/pdf/10.1145/364520.364540)
