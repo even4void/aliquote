@@ -21,4 +21,10 @@ G4Music is presented as a low memory application, and a fast indexer of local mu
 
 The UI is really slick and useable, with minimal settings that are actionable in a few motions. If you are looking for a simple music player, give it a try. Overall, I like it a lot.
 
+{{% alert note %}}
+<small>[2023-12-16]</small><br>
+See [this post](https://andreyor.st/posts/2023-11-19-linux-music-players/) by Andrey Listopadov for an extensive review of available players for Linux.
+{{% /alert %}}
+
+
 {{% music %}}New Order • _5 8 6_{{% /music %}}

@@ -55,6 +55,12 @@ cpu time: 33 real time: 34 gc time: 1
 
 However, the second approach remains much faster when it comes to computing a given term when, say, $n>10000$.
 
+
+{{% alert note %}}
+<small>[2023-12-14]</small><br>
+For additional appraoches, see [Magical Fibonacci Formulae](https://orlp.net/blog/magical-fibonacci-formulae/) and [Calculating Fibonacci Numbers by Fast Doubling](https://chunminchang.github.io/blog/post/calculating-fibonacci-numbers-by-fast-doubling), or links in [The Competitive Programmer's Handbook](post/the-competitive-programmer-s-handbook.md).
+{{% /alert %}}
+
 If you are interested in computing Fibonacci numbers using optimized algorithms, don't miss this thread on the Clojure Google group: [best fibo implementation under the new laziness?](https://groups.google.com/forum/#!topic/clojure/V6EvGg2rXhs). It refers to an algorithm (posted on `comp.lang.lisp`) which relies on Lucas numbers. The [most elegant solution](https://stackoverflow.com/a/628014) that I read so far was written by Rainer Joswig, who knowns quite a bit of CL, to say the least.
 
 *Premature optimization is evil*: It doesn't cost much to reread the statement several times.
