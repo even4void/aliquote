@@ -1,7 +1,7 @@
 ---
 title: "The unquantified self #31"
 date: 2023-12-18T20:34:48+01:00
-draft: true
+draft: false
 tags: ["self"]
 categories: ["2023"]
 ---
@@ -18,6 +18,10 @@ I'm past my schedule for posting on this blog, partly because I was quite busy a
 
 ![img](/img/2023-12-14_21.12.47.png)
 
-Finally, I'm quite happy with how reading went for the second half of the year since I read about 60 books (out of 85). This does not include technical books.
+Finally, I'm quite happy with how reading went for the second half of the year since I read about 60 books (out of 85). This does not include technical books. It keeps me in line with previous years, and above all it allows me to disconnect a little. The same applies to drawing and writing, of course.
+
+I was finally able to repair my vinyl turntable after buying a stylus. It took me a while and I had to wait with internet radio ([ABC Lounge](https://www.abc-lounge.com/radio/) is quite good actually), my MP3s and bandcamp in the meantime.
+
+<iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/album=1098942231/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/track=4255534408/transparent=true/" seamless><a href="https://isobelcampbell.bandcamp.com/album/there-is-no-other">There Is No Other... de Isobel Campbell</a></iframe>
 
 {{% music %}}Alan Pasqua • _A Sleeping Child_{{% /music %}}
