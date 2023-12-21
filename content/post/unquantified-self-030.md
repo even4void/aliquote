@@ -22,6 +22,6 @@ Finally, after 3 months off, I'm back with my little city in Minecraft. Thanks t
 {{< fluid_imgs "pure-u-1-2|/img/2023-11-02_13.02.44.png"
                "pure-u-1-2|/img/2023-11-02_11.22.03.png" >}}
 
-Side note: I can't believe I'm already at the 38th selfish post.
+Side note: I can't believe I'm already at the 30th selfish post.
 
 {{% music %}}Shaka Ponk • _Palabra Mi Amor_{{% /music %}}
