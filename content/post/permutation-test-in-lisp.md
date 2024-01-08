@@ -1,37 +1,63 @@
 ---
 title: "Permutation test in Lisp"
 date: 2023-12-22T09:26:56+01:00
-draft: true
+draft: false
 tags: ["scheme", "statistics"]
 categories: ["2023"]
 ---
 
-I drafted this post in March, along [Wilcoxon test in Lisp](/post/wilcoxon-test-in-lisp/), then forgot about it. How about using a permutation test? We will be using this time a paired sample design from the same authors, on measurements taken from the Hamilton depression scale in 9 patients with mixed anxiety and depression, taken at two occasions -- before and after initiation of the administration of a tranquilizer (Hollander & Wolfe, 1973). With such a small sample size, we can compute an exact permutation test, which would be close to a [one-liner](https://stats.stackexchange.com/a/43967) in R.
+I drafted this post in March, along [Wilcoxon test in Lisp](/post/wilcoxon-test-in-lisp/), then forgot about it. How about using a permutation test? Since I ran out of time with implementing a proper version in Common Lisp, and get bored of Hollander & Wolfe's dataset, let's look at this quick [one-liner](https://stats.stackexchange.com/a/43967) in R.
 
 ```scheme
-(define xs '(1.83 0.50 1.62 2.481.681.881.553.061.30))
-(define ys '(0.878 0.647 0.598 2.05 1.06 1.29 1.06 3.14 1.29))
+(define xs '(12.9 13.5 12.8 15.6 17.2 19.2 12.6 15.3 14.4 11.3))
+(define ys '(12.7 13.6 12.0 15.2 16.8 20.0 12.0 15.9 16.0 11.1))
 ```
 
-I will be using algorithm from Shmuel Zaks, [A new algorithm for generation of permutations](https://link.springer.com/article/10.1007/BF01937486) (Technical Report 220, Technion-Israel Institute of Technology, 1981), from Programming Praxis prelude (originally [written in Scheme](https://programmingpraxis.com/contents/standard-prelude/#comment-2790)). Should you rather prefer using Lisp, you certainly want to use `flet`, `zerop`, and `nthcdr` in place of local `define`, `zero?` and `list-tail` (and maybe some other subtitute that I have overlooked).
+From there on, we need a way to generate all pairwise differences for permuted sequences. Although it is tempting to implement a procedure to permute a list of numbers,[^1] we rather need a way to generate all combinations of k elements chosen among n ones.[^2] My own implementation in R would indeed looks like this: (Note that I use the unstandardized difference in means, not the test statistic typically computed from a t-test.)
+
+```r
+xs <- c(12.9, 13.5, 12.8, 15.6, 17.2, 19.2, 12.6, 15.3, 14.4, 11.3)
+ys <- c(12.7, 13.6, 12.0, 15.2, 16.8, 20.0, 12.0, 15.9, 16.0, 11.1)
+s0 <- mean(xs) - mean(ys)
+xy <- c(xs, ys)
+idx <- combn(seq(along = 1:20), 10)
+f <- function(k) mean(xy[k]) - mean(xy[-k])
+s <- apply(idx, 2, f)
+pobs <- sum(abs(s) >= abs(s0)) / length(s)
+## 0.9713352
+```
+
+Now, let's do this in Scheme:
 
 ```scheme
-(define (permutations xs)
-  (define (rev xs n ys)
-    (if (zero? n) ys
-      (rev (cdr xs) (- n 1) (cons (car xs) ys))))
-  (let ((xs xs) (perms (list xs)))
-    (define (perm n)
-      (if (> n 1)
-          (do ((j (- n 1) (- j 1)))
-              ((zero? j) (perm (- n 1)))
-            (perm (- n 1))
-            (set! xs (rev xs n (list-tail xs n)))
-            (set! perms (cons xs perms)))))
-    (perm (length xs))
-    perms))
+(define (combn k xs)
+  (cond ((= k 0) '(()))
+        ((null? xs) '())
+        (else (append (map (lambda (x) (cons (car xs) x))
+                           (combn (- k 1) (cdr xs)))
+                      (combn k (cdr xs))))))
 ```
 
-From there on, we need a way to generate all pairwise differences for permuted sequences.
+We could mimic the R code above by computing the difference in means between each combination and its complement (i.e. the element of `xs` and `ys` not already present in the combination), but let's simplify the problem a bit: the two samples are of equal size, hence the sum provides the same amount of information as the mean. Furthermore, we only need to compute one of the two sums since the other one can be deduced from the grand sum. Hence the sum of the permuted sequence is a sufficient statistic. Let's test the above code by computing the sum of each sub-lists formed using 9 elements taken in `xy`, which results from the concatenation of `x` and `ys`:
 
-{{% music %}}Alina Bzhezhinska & Hip Harp Coolective • _Meditation_{{% /music %}}
+```scheme
+(define xy (append xs ys))
+(map (lambda (x) (apply + x)) (combn (length xs) xy))
+;; => (144.8 146.2 147.1  ...
+```
+
+The original value is `(apply + xs)`, and it will be our reference to compute the proportion of values that are at least more extreme on the distribution of permuted test statistics. The answer only requires to modify the previous code a little bit:
+
+```scheme
+(define pdist (combn (length xs) xy))
+(define stat (apply + xs))
+(define pos (map (lambda (x) (cond ((> (apply + x) stat) 1) (else 0))) pdist))
+(exact->inexact (/ (foldr + 0 pos) (length pos)))
+;; => 0.514332416809197
+```
+<small>`(apply + pos)` yields a stack overflow in this case, hence the use of right folding. Using a similar approach, I got 0.5210061 from R.</small>
+
+{{% music %}}Alina Bzhezhinska & Hip Harp Collective • _Meditation_{{% /music %}}
+
+[1]: Regarding permutation in Scheme, I would recommend using algorithm from Shmuel Zaks, [A new algorithm for generation of permutations](https://link.springer.com/article/10.1007/BF01937486) (Technical Report 220, Technion-Israel Institute of Technology, 1981), from Programming Praxis prelude (originally [written in Scheme](https://programmingpraxis.com/contents/standard-prelude/#comment-2790)). Should you rather prefer using Lisp, you certainly want to use `flet`, `zerop`, and `nthcdr` in place of local `define`, `zero?` and `list-tail` (and maybe some other substitutes that I have overlooked).
+[2]: See also Combinations from a Set in [Chapter 1](https://people.eecs.berkeley.edu/~bh/ssch1/showing.html) of _Simply Scheme_.
