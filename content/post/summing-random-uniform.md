@@ -6,7 +6,7 @@ tags: ["math", "scheme"]
 categories: ["2022"]
 ---
 
-[Chris Wellons] one asked the following question before providing some code to estimate the result, which I call brute force estimate but I do it a lot too:
+[Chris Wellons] once asked the following question before providing some code to estimate the result, which I call brute force estimate but I do it a lot too:
 
 > How many times should a random number from [0, 1] be drawn to have it sum over 1?
 

@@ -17,6 +17,8 @@ I haven't watched TV in about ten years, probably even before I removed the TV f
 <td><em>Seasons (Ep.)</em></td>
 <td><em>Rating</em></td>
 </tr>
+<tr><td><a href="">Sermons de minuit</a></td><td>2023</td><td>1 (7)</td><td>&#9733;&#9733;&#9733;&#9734;&#9734;</td></tr>
+<tr><td><a href="https://en.wikipedia.org/wiki/Obliterated">Obliterated</a></td><td>2023</td><td>1 (8)</td><td>&#9733;&#9733;&#9734;&#9734;&#9734;</td></tr>
 <tr><td><a href="https://en.wikipedia.org/wiki/Muted_(TV_series)">El Silencio</a></td><td>2023</td><td>1 (6)</td><td>&#9733;&#9733;&#9733;&#9733;&#9734;</td></tr>
 <tr><td><a href="https://en.wikipedia.org/wiki/The_Chestnut_Man">Octobre</a></td><td>2023</td><td>1 (6)</td><td>&#9733;&#9733;&#9733;&#9733;&#9734;</td></tr>
 <tr><td><a href="https://en.wikipedia.org/wiki/Bodies_(2023_TV_series)">Bodies</a></td><td>2023</td><td>1 (8)</td><td>&#9733;&#9733;&#9733;&#9734;&#9734;</td></tr>
@@ -82,7 +84,7 @@ I haven't watched TV in about ten years, probably even before I removed the TV f
 <tr><td><a href="https://en.wikipedia.org/wiki/The%5FKilling%5F(Danish%5FTV%5Fseries)">The Killing</a></td><td>2018</td><td>3 (40)</td><td>&#9733;&#9733;&#9733;&#9733;&#9734;</td></tr>
 <tr><td><a href="https://en.wikipedia.org/wiki/Game_of_Thrones">Game of Thrones</a></td><td>2018</td><td>8 (73)</td><td>&#9733;&#9733;&#9733;&#9733;&#9733;</td></tr>
 <tr><td><a href="https://en.wikipedia.org/wiki/Prison%5FBreak">Prison Break</a></td><td>2018</td><td>5 (90)</td><td>&#9733;&#9733;&#9733;&#9733;&#9734;</td></tr>
-<tr><td><a href="https://en.wikipedia.org/wiki/The_Walking_Dead_(TV_series)">The Walking Dead</a></td><td>2018+</td><td>11 (169)</td><td>&#9733;&#9733;&#9733;&#9733;&#9734;</td></tr>
+<tr><td><a href="https://en.wikipedia.org/wiki/The_Walking_Dead_(TV_series)">The Walking Dead</a></td><td>2018+</td><td>11 (177)</td><td>&#9733;&#9733;&#9733;&#9733;&#9734;</td></tr>
 <tr><td><a href="https://en.wikipedia.org/wiki/The_Bridge_(2011_TV_series)">The Bridge</a></td><td>2018</td><td>4 (38)</td><td>&#9733;&#9733;&#9733;&#9733;&#9733;</td></tr>
 <tr><td><a href="https://da.wikipedia.org/wiki/Norskov">Norskov (S1)</a></td><td>2018</td><td>1 (10)</td><td>&#9733;&#9733;&#9734;&#9734;&#9734;</td></tr>
 <tr><td><a href="https://en.wikipedia.org/wiki/Jordskott">Jordskott</a></td><td>2018</td><td>2 (18)</td><td>&#9733;&#9733;&#9733;&#9734;&#9734;</td></tr>

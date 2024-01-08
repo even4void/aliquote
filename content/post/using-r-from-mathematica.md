@@ -1,5 +1,5 @@
 ---
-title: "Using R From Mathematica"
+title: "Using R from Mathematica"
 date: 2023-12-21T18:10:31+01:00
 draft: false
 tags: ["mathematica", "rstats"]

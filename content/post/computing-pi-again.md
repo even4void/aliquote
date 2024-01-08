@@ -1,5 +1,5 @@
 ---
-title: "Computing Pi Again"
+title: "Computing Pi again"
 date: 2023-11-15T21:40:38+01:00
 draft: false
 tags: ["math", "lisp"]
