@@ -13,19 +13,7 @@ I drafted this post in March, along [Wilcoxon test in Lisp](/post/wilcoxon-test-
 (define ys '(12.7 13.6 12.0 15.2 16.8 20.0 12.0 15.9 16.0 11.1))
 ```
 
-From there on, we need a way to generate all pairwise differences for permuted sequences. Although it is tempting to implement a procedure to permute a list of numbers,[^1] we rather need a way to generate all combinations of k elements chosen among n ones.[^2] My own implementation in R would indeed looks like this: (Note that I use the unstandardized difference in means, not the test statistic typically computed from a t-test.)
-
-```r
-xs <- c(12.9, 13.5, 12.8, 15.6, 17.2, 19.2, 12.6, 15.3, 14.4, 11.3)
-ys <- c(12.7, 13.6, 12.0, 15.2, 16.8, 20.0, 12.0, 15.9, 16.0, 11.1)
-s0 <- mean(xs) - mean(ys)
-xy <- c(xs, ys)
-idx <- combn(seq(along = 1:20), 10)
-f <- function(k) mean(xy[k]) - mean(xy[-k])
-s <- apply(idx, 2, f)
-pobs <- sum(abs(s) >= abs(s0)) / length(s)
-## 0.9713352
-```
+From there on, we need a way to generate all pairwise differences for permuted sequences. Although it is tempting to implement a procedure to permute a list of numbers,[^1] and take the first half of the sequence as the first (resampled) sample, we can equivalently generate all combinations of k elements chosen among n ones.[^2] My own implementation in R is shown in [another post](/post/bootstrap-test). Note that I use the unstandardized difference in means, not the test statistic typically computed from a t-test or its non-parametric alternative.
 
 Now, let's do this in Scheme:
 
@@ -38,7 +26,7 @@ Now, let's do this in Scheme:
                       (combn k (cdr xs))))))
 ```
 
-We could mimic the R code above by computing the difference in means between each combination and its complement (i.e. the element of `xs` and `ys` not already present in the combination), but let's simplify the problem a bit: the two samples are of equal size, hence the sum provides the same amount of information as the mean. Furthermore, we only need to compute one of the two sums since the other one can be deduced from the grand sum. Hence the sum of the permuted sequence is a sufficient statistic. Let's test the above code by computing the sum of each sub-lists formed using 9 elements taken in `xy`, which results from the concatenation of `x` and `ys`:
+We could mimic the R code above by computing the difference in means between each combination and its complement (i.e. the element of `xs` or `ys` not already present in the combination), but let's simplify the problem a bit: the two samples are of equal size, hence the sum provides the same amount of information as the mean. Furthermore, we only need to compute one of the two sums since the other one can be deduced from the grand sum. Hence the sum of the permuted sequence is a sufficient statistic. Let's test the above code by computing the sum of each sub-lists formed using 9 elements taken in `xy`, which results from the concatenation of `x` and `ys`:
 
 ```scheme
 (define xy (append xs ys))
@@ -59,5 +47,5 @@ The original value is `(apply + xs)`, and it will be our reference to compute th
 
 {{% music %}}Alina Bzhezhinska & Hip Harp Collective • _Meditation_{{% /music %}}
 
-[^1]: Regarding permutation in Scheme, I would recommend using algorithm from Shmuel Zaks, [A new algorithm for generation of permutations](https://link.springer.com/article/10.1007/BF01937486) (Technical Report 220, Technion-Israel Institute of Technology, 1981), from Programming Praxis prelude (originally [written in Scheme](https://programmingpraxis.com/contents/standard-prelude/#comment-2790)). Should you rather prefer using Lisp, you certainly want to use `flet`, `zerop`, and `nthcdr` in place of local `define`, `zero?` and `list-tail` (and maybe some other substitutes that I have overlooked).
+[^1]: Regarding permutation in Scheme, I would recommend using algorithm from Shmuel Zaks, [A new algorithm for generation of permutations](https://link.springer.com/article/10.1007/BF01937486) (Technical Report 220, Technion-Israel Institute of Technology, 1981), from Programming Praxis prelude (originally [written in Scheme](https://programmingpraxis.com/contents/standard-prelude/#comment-2790)). It works well for small n, but not that well when n=20 (because of heap size limit). Should you rather prefer using Lisp, you certainly want to use `flet`, `zerop`, and `nthcdr` in place of local `define`, `zero?` and `list-tail` (and maybe some other substitutes that I have overlooked).
 [^2]: See also Combinations from a Set in [Chapter 1](https://people.eecs.berkeley.edu/~bh/ssch1/showing.html) of _Simply Scheme_.
