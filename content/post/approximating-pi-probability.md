@@ -2,13 +2,13 @@
 title: "Probabilistic approximations of Pi"
 date: 2024-01-10T13:07:10+01:00
 draft: false
-tags: ["math"]
+tags: ["math", "mathematica"]
 categories: ["2023"]
 ---
 
-In his [_Mathematical Recreations and Essays_](https://www.gutenberg.org/ebooks/26839), W.W. Rouse Ball mentions two way to estimate the value of of $\pi$ to a few digit places "using probability." I would say this is more of a frequentist estimation problem than a purely probabilistic method since it involves collecting experimental data.
+In his [_Mathematical Recreations and Essays_](https://www.gutenberg.org/ebooks/26839), W.W. Rouse Ball mentions two ways to estimate the value of of $\pi$ to a few digit places "using probability." I would say this is more of a frequentist estimation problem than a purely probabilistic method since it involves collecting experimental data.
 
-The first approach considers a number of equidistant parallel straight lines lying on a plane, distance apart $a$; if we drop a stick of length $l < a$ on to the plane, then the probability thta it will fall so as to lie across one of the lines is $2l / \pi a$. This means we can estimate this quantity, and therefore $\pi$, by repeating this experiment a large number of times. For instance, $\pi = 3.1419$ was found with 1120 trials by Captain Fox in 1864.[^1]
+The first approach considers a number of equidistant parallel straight lines lying on a plane, distance apart $a$; if we drop a stick of length $l < a$ on to the plane, then the probability that it will fall so as to lie across one of the lines is $2l / \pi a$. This means we can estimate this quantity, and therefore $\pi$, by repeating this experiment a large number of times. For instance, $\pi = 3.1419$ was found with 1120 trials by Captain Fox in 1864.[^1]
 
 The second approach relies on prime numbers: If two numbers are written down at random, the probability that they will be prime to each other (i.e., [co-prime](https://en.wikipedia.org/wiki/Coprime_integers)) is [$6/\pi^2$](https://math.stackexchange.com/questions/64498/probability-that-two-random-numbers-are-coprime-is-frac6-pi2). Here is a little simulation in Mathematica that considers 250 random numbers to mimic the author's report of an experiment in which each of 50 students wrote down 5 pairs of numbers at random, where it was found that 154 of the pairs were found to consist of co-prime numbers:
 
