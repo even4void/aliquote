@@ -35,9 +35,8 @@ The approximate 95% CI for a proportion estimated from a sample of size $n$ is
 
 $$ \hat p \pm 2\sqrt{\frac{\hat p(1-\hat p}{n}}, $$
 
-which can be approximated as $\hat p \pm \sqrt{\hat p/n}$ for small $\hat p$. As an example, to get a precision of two decimal places for a proportion of 0.01, we would need $n > 1600$ rearrangements ($0.01 > 4\sqrt{0.01/n}$, then solve for $n$). This is probably why the rule of thumb is to use 1000 to 10000 permutations, when not "use the maximum number of permutations". Of course, this only applies to Monte Carlo re-rerandomization, since in the case of exact permutation tests you get the "exact" p-value you get, which is tied to your sample size. E.g., with five observations you only have 32 possibilities and 1 extreme observation out of 32 means a p-value of 0.03125.[^2]
+which can be approximated as $\hat p \pm \sqrt{\hat p/n}$ for small $\hat p$. As an example, to get a precision of two decimal places for a proportion of 0.01, we would need $n > 1600$ rearrangements ($0.01 > 4\sqrt{0.01/n}$, then solve for $n$). This is probably why the rule of thumb is to use 1000 to 10000 permutations, when not "use the maximum number of permutations". Of course, this only applies to Monte Carlo re-rerandomization, since in the case of exact permutation tests you get the "exact" p-value you get, which is tied to your sample size. E.g., with five observations you only have 32 possibilities and 1 extreme observation out of 32 means a p-value of 0.03125.
 
 {{% music %}}Happy Mondays • _Olive Oil_{{% /music %}}
 
 [^1]: Phillip Good (2005) _Resampling Methods: A Practical Guide to Data Analysis_, Boston: Birkhäuser
-[^2]: Phillip Good (2005) _Permutation, Parametric, and Bootstrap Tests of Hypotheses_, New York: Springer-Verlag

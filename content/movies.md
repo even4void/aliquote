@@ -17,7 +17,7 @@ I haven't watched TV in about ten years, probably even before I removed the TV f
 <td><em>Seasons (Ep.)</em></td>
 <td><em>Rating</em></td>
 </tr>
-<tr><td><a href="https://en.wikipedia.org/wiki/Post_Mortem_(TV_series)">Post-mortem</a></td><td>2024</td><td>2 (17)</td><td>&#9733;&#9733;&#9734;&#9734;&#9734;</td></tr>
+<tr><td><a href="https://www.netflix.com/title/81164276">Post-mortem</a></td><td>2024</td><td>1 (6)</td><td>&#9733;&#9733;&#9734;&#9734;&#9734;</td></tr>
 <tr><td><a href="https://en.wikipedia.org/wiki/Midnight_Mass_(miniseries)">Sermons de minuit</a></td><td>2023</td><td>1 (7)</td><td>&#9733;&#9733;&#9734;&#9734;&#9734;</td></tr>
 <tr><td><a href="https://en.wikipedia.org/wiki/Obliterated">Obliterated</a></td><td>2023</td><td>1 (8)</td><td>&#9733;&#9733;&#9734;&#9734;&#9734;</td></tr>
 <tr><td><a href="https://en.wikipedia.org/wiki/Muted_(TV_series)">El Silencio</a></td><td>2023</td><td>1 (6)</td><td>&#9733;&#9733;&#9733;&#9733;&#9734;</td></tr>

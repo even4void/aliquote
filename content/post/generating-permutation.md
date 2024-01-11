@@ -6,6 +6,7 @@ tags: ["scheme"]
 categories: ["2024"]
 ---
 
+In a [previous post](/post/permutation-test-in-lisp/), I mention a way to suffle labels of a two-group dataset in order to carry out a permutation test. Usually, it's more efficient to randomize the highest level unit of an experimental design, i.e. rather than shuffling observations use the group level.
 
 
 A recursive solution to the problem of generating all permutation of a given list or array is as follows:
@@ -46,3 +47,8 @@ https://www.nayuki.io/page/next-lexicographical-permutation-algorithm
 
 
 stream, generator
+
+
+
+[^2]: Phillip Good (2004) _Permutation, Parametric, and Bootstrap Tests of Hypotheses_, New York: Springer-Verlag
+
