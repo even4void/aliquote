@@ -3,7 +3,7 @@ title: "Probabilistic approximations of Pi"
 date: 2024-01-10T13:07:10+01:00
 draft: false
 tags: ["math", "mathematica"]
-categories: ["2023"]
+categories: ["2024"]
 ---
 
 In his [_Mathematical Recreations and Essays_](https://www.gutenberg.org/ebooks/26839), W.W. Rouse Ball mentions two ways to estimate the value of of $\pi$ to a few digit places "using probability." I would say this is more of a frequentist estimation problem than a purely probabilistic method since it involves collecting experimental data.

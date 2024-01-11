@@ -3,7 +3,7 @@ title: "How many permutations"
 date: 2024-01-11T11:53:15+01:00
 draft: false
 tags: ["statistics", "stata", "clojure"]
-categories: ["2023"]
+categories: ["2024"]
 ---
 
 Usually, we would determine the number of permutations required to carry out a Monte Carlo permutation test based on the precision we wish to attain for the p-value. In fact, Stata provides a confidence interval for the estimated p-value when you use the [permute](https://www.stata.com/manuals/rpermute.pdf) procedure. This confidence interval is based on a binomial proportion (this is what we are estimating after all). With the example discussed in a [previous post](/post/permutation-test-in-lisp/), converted as a [tabular dataset](/pub/how-many-permutations.csv), here is a sample run from Stata 13:
