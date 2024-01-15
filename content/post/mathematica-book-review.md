@@ -30,8 +30,6 @@ In Mathematica, lists and tables are the core elements you often end up manipula
 "pure-u-1-2|/img/2023-04-25-12-19-27.png"
 "pure-u-1-2|/img/2023-04-25-12-39-53.png" >}}
 
-Other book reviews to follow: Mathematica in Action, and An Engineer's Guide to Mathematica.
-
 {{% music %}}Killing Joke • _Darkness Before Dawn_{{% /music %}}
 
 [^1]: This pretty applies to most of Packt's published stuff, with few exception regarding [Python](https://www.packtpub.com/product/python-machine-learning/9781783555130) and [Clojure](https://www.packtpub.com/product/clojure-high-performance-programming-second-edition/9781785283642). My impression is that over time the quality of published works has constantly deteriorated, like PLoS One in the scientific field: easy come, easy go, sure, but also the easier it is to publish, the less attention is paid to the competition.
