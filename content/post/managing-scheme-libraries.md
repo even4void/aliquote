@@ -3,7 +3,7 @@ title: "Managing Scheme libraries"
 date: 2024-01-18T20:42:11+01:00
 draft: false
 tags: ["scheme"]
-categories: ["2023"]
+categories: ["2024"]
 ---
 
 A quick note on the packaging system for some of the Scheme implementations I use. It is rather incomplete at this point, I will eventually update it later.
