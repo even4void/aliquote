@@ -35,3 +35,9 @@ This is widely used in checksum algorithms, for instance the Luhn number checksu
 ```
 
 A related idea can be found in the [CRC error checking](https://dvsoft.developpez.com/Articles/CRC/) algorithm. There are various Lisp implementation of the CRC algorithm, [here](http://www.thoughtstuff.com/rme/crc.lisp) and [there](https://github.com/robblackwell/cl-crc64).
+
+{{% alert note %}}
+<small>[2024-01-19]</small><br>
+Mathematica 14 now has its own `DigitSum` function.
+{{% /alert %}}
+
