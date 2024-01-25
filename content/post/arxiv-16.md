@@ -16,9 +16,10 @@ categories: ["2024"]
 
 ### (https://arxiv.org/pdf/2401.10233)
 
-### (https://arxiv.org/abs/2401.12730)
+### On the visualisation of the correlation matrix (https://arxiv.org/abs/2401.12730)
 
-Related work on PCA: [Estimating the construct validity of Principal Components Analysis](https://arxiv.org/abs/2401.12905).
+I always liked biplot graphical displays, despite their subtleties regarding how rows and/or columns of a correlation or distance matrix are adjusted.
+[Are the Signs of Factor Loadings Arbitrary in Confirmatory Factor Analysis? Problems and Solutions](https://arxiv.org/abs/2401.12937) was also mentioned in my daily arxiv digest. As I am slowly forgetting 15 years of previous work in psychometrics, I find it particularly hard to come back from time to time to such papers. Anyway, I'm happy to see that research continues in this field, especially for old questions like those. Finally, I came across this related work on PCA: [Estimating the construct validity of Principal Components Analysis](https://arxiv.org/abs/2401.12905).
 
 ### (https://arxiv.org/abs/2401.12697)
 
