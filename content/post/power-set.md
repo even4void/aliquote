@@ -101,6 +101,11 @@ Next step would be to ask how many of those "artificial" words are real words? I
 See also [Wordle letters](https://leancrew.com/all-this/2022/01/wordle-letters/) for more "classical", Perl-based, approaches to filtering dict files on Linux or Mac.
 {{% /alert %}}
 
+{{% alert note %}}
+<small>[2024-02-01]</small><br>
+Yet another shell-based workflow to solve wordle puzzle: [Wordle With Grep](https://susam.net/maze/wordle-with-grep.html).
+{{% /alert %}}
+
 {{% music %}}Neon Indian • _Should Have Taken Acid With You_{{% /music %}}
 
 [^1]: [Newlisp](http://www.newlisp.org) makes it even easier:
