@@ -12,6 +12,11 @@ There's another handy (sort of) rule of thumb. If you remember what you learned 
 
 Now, assuming a unimodal distribution with mean $\mu$ and finite variance $\sigma^2$, for any $\lambda > \sqrt{8/3} \approx 1.633$, $$ \Pr(\mid X - \mu \mid \geq \lambda\sigma) \leq \frac{4}{9\lambda^2}. $$ This is known as the Vysochanskiï-Petunin inequality. When $\lambda = 3$, the upper probability bound equals $4/81 \approx 0.05$.[^1] To my knowledge, applications of this inequality mainly are in [control charts](https://www.wikidoc.org/index.php/Control_chart) or [financial](https://www.sciencedirect.com/science/article/abs/pii/S0377221721001545) statistics, but there may be some other interesting applications.
 
+{{% alert note %}}
+<small>[2024-02-07]</small><br>
+See also [How likely is a random variable to be far from its center?](https://www.johndcook.com/blog/2024/02/06/chevyshev-variations/).
+{{% /alert %}}
+
 {{% music %}}Antony & The Johnsons • _Cripple and the Starfish_{{% /music %}}
 
 [^1]: Chebyshev's inequality would yield about twice that value.
