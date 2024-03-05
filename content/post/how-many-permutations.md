@@ -35,7 +35,7 @@ The approximate 95% CI for a proportion estimated from a sample of size $n$ is
 
 $$ \hat p \pm 2\sqrt{\frac{\hat p(1-\hat p}{n}}, $$
 
-which can be approximated as $\hat p \pm \sqrt{\hat p/n}$ for small $\hat p$. As an example, to get a precision of two decimal places for a proportion of 0.01, we would need $n > 1600$ rearrangements ($0.01 > 4\sqrt{0.01/n}$, then solve for $n$). This is probably why the rule of thumb is to use 1000 to 10000 permutations, when not "use the maximum number of permutations". Of course, this only applies to Monte Carlo re-rerandomization, since in the case of exact permutation tests you get the "exact" p-value you get, which is tied to your sample size. E.g., with five observations you only have 32 possibilities and 1 extreme observation out of 32 means a p-value of 0.03125.
+which can be approximated as $\hat p \pm \sqrt{\hat p/n}$ for small $\hat p$. As an example, to get a precision of two decimal places for a proportion of 0.01, we would need $n > 1600$ rearrangements ($0.01 > 4\sqrt{0.01/n}$, then solve for $n$). This is probably why the rule of thumb is to use 1000 to 10000 permutations, when not "use the maximum number of permutations". Of course, this only applies to Monte Carlo re-rerandomization, since in the case of exact permutation tests you get the "exact" p-value you get, which is tied to your sample size. E.g., with five observations you only have 32 possibilities and 1 extreme observation out of 32 means a p-value of 0.03125.[^2]
 
 And here is yet another way to carry out a permutation test, although it is suboptimal (in many ways). This time, we will simply shuffle the whole sequence of observation and take the first half part of the sequence. Again, we will rely on a Monte Carlo approach and only carry out a limited number of random draws from the original sample. Last but not least, we will replace Scheme with Clojure.
 
@@ -54,7 +54,7 @@ As before, we will consider the sum of the observations in one group (the origin
 ;; => 0.525
 ```
 
-Run time is quite decent in this case, even for large `k`. Now let's check the distribution of the permuted test statistic? Here's one with 10000 iterations (p=0.5156) and the venerable Gnuplot backend.[^2]
+Run time is quite decent in this case, even for large `k`. Now let's check the distribution of the permuted test statistic? Here's one with 10000 iterations (p=0.5156) and the venerable Gnuplot backend.[^3]
 
 ```shell
 set terminal png size 600, 300
@@ -75,4 +75,5 @@ Overall, I was pleasantly surprised by how easy it was to perform this task in C
 {{% music %}}Happy Mondays • _Olive Oil_{{% /music %}}
 
 [^1]: Phillip Good (2005) _Resampling Methods: A Practical Guide to Data Analysis_, Boston: Birkhäuser
-[^2]: ot sure how to properly export the lazy sequence into a text file, so I'll be using `(spit "/home/chl/tmp/pdist.dat" (vec pdist))` but I need to remove the enclosing bracket afterwards and replace space with carriage return to please Gnuplot. The final file is available [here](/pub/pdist.dat).
+[^2]: Another approach to devise the number of Monte Cralo experiments to run would be to consider the worst situation $p=0.5$, in which case we find that for $n=10000$ and $n=100000$ we get a standard deviation of 0.005 and 0.0016. Hence with $n=100000$, the most pessimistic 95% confidence interval on the $p$-value has width 0.0031 = 0.31%. See Olivier Thas, Comparing Distribution (Springer, 2010), § 7.1.2.3.
+[^3]: Not sure how to properly export the lazy sequence into a text file, so I'll be using `(spit "/home/chl/tmp/pdist.dat" (vec pdist))` but I need to remove the enclosing bracket afterwards and replace space with carriage return to please Gnuplot. The final file is available [here](/pub/pdist.dat).
