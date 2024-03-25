@@ -51,7 +51,7 @@ vim.lsp.start(config, {
 
 local augroup = vim.api.nvim_create_augroup("PythonFormatting", {})
 vim.api.nvim_clear_autocmds({ group = augroup, buffer = bufnr })
-vim.api.nvim_create_autocmd({ "BufWritePre " }, {
+vim.api.nvim_create_autocmd({ "BufWritePre" }, {
   group = augroup,
   buffer = bufnr,
   callback = function()
