@@ -17,6 +17,7 @@ I haven't watched TV in about ten years, probably even before I removed the TV f
 <td><em>Seasons (Ep.)</em></td>
 <td><em>Rating</em></td>
 </tr>
+<tr><td><a href="https://en.wikipedia.org/wiki/3_Body_Problem_(TV_series)">Le problème à 3 corps</a></td><td>2024</td><td>1 (8)</td><td>&#9733;&#9733;&#9733;&#9734;&#9734;</td></tr>
 <tr><td><a href="https://en.wikipedia.org/wiki/La_R%C3%A9volution">La révolution</a></td><td>2024</td><td>1 (8)</td><td>&#9733;&#9733;&#9734;&#9734;&#9734;</td></tr>
 <tr><td><a href="https://en.wikipedia.org/wiki/Detective_Forst">Detective Forst</a></td><td>2024</td><td>1 (6)</td><td>&#9733;&#9733;&#9733;&#9734;&#9734;</td></tr>
 <tr><td><a href="https://en.wikipedia.org/wiki/The_Trial_(Italian_TV_series)">Il processo</a></td><td>2024</td><td>1 (8)</td><td>&#9733;&#9733;&#9733;&#9734;&#9734;</td></tr>
