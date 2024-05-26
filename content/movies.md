@@ -17,6 +17,7 @@ I haven't watched TV in about ten years, probably even before I removed the TV f
 <td><em>Seasons (Ep.)</em></td>
 <td><em>Rating</em></td>
 </tr>
+<tr><td><a href="https://en.wikipedia.org/wiki/Bodkin_(TV_series)">Bodkin</a></td><td>2024</td><td>1 (7)</td><td>&#9733;&#9733;&#9733;&#9734;&#9734;</td></tr>
 <tr><td><a href="https://en.wikipedia.org/wiki/The_Gentlemen_(2024_TV_series)">The Gentlemen</a></td><td>2024</td><td>1 (8)</td><td>&#9733;&#9733;&#9734;&#9734;&#9734;</td></tr>
 <tr><td><a href="https://en.wikipedia.org/wiki/Ripley_(TV_series)">Ripley</a></td><td>2024</td><td>1 (8)</td><td>&#9733;&#9733;&#9733;&#9733;&#9734;</td></tr>
 <tr><td><a href="https://en.wikipedia.org/wiki/Tokyo_Vice_(TV_series)">Tokyo Vice</a></td><td>2024</td><td>2 (17)</td><td>&#9733;&#9733;&#9733;&#9734;&#9734;</td></tr>
