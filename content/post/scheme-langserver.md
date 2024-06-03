@@ -1,5 +1,5 @@
 ---
-title: "Scheme Langserver"
+title: "Scheme, language server & Co."
 date: 2024-06-03T14:32:17+02:00
 draft: true
 tags: ["scheme", "vim"]
@@ -29,6 +29,11 @@ Available kernels:
   stata                 /home/chl/.local/share/jupyter/kernels/stata
   wolframlanguage14     /home/chl/.local/share/jupyter/kernels/wolframlanguage14
 ```
+
+And here is an example of Racket code evaluated using Molten (left) or in a terminal directly (right):
+
+{{< fluid_imgs "pure-u-1-2|/img/2024-06-03-16-11-26.png"
+               "pure-u-1-2|/img/2024-06-03-16-12-55.png" >}}
 
 There's not much support for Scheme languages in the existing Jupyter kernels, but there's one for Common Lisp which actually works. However, I should say that in this case slim is way better. Slimv also supports Scheme and Clojure, although Racket support is pretty outdated. As for replacing MIT Scheme with Chez Scheme, no luck here.
 
