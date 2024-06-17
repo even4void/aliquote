@@ -15,7 +15,7 @@ So far, my [setup for Scheme](/post/scheme-in-vim/) was pretty simple, and it mo
 
 I had to compile and install Chez Scheme v10 in order to compile swish and get ride of minor error message in the log file for swish-lint. But it didn't help getting hover information to work with Chez. Note that compiling csv10 is just a matter of `configure && make` and you're done in a few minutes with a working install; only `make test` takes a lot of time.
 
-I now use [molten-nvim](https://github.com/benlubas/molten-nvim) (without image support and other fancy settings) to evaluate code snippets for which I have associated Jupyter kernels. This mostly mimic my old [Magma setup](/post/jupyter-kernels-in-vim/) that I abandoned in the meantime. It remains quite non-obtrusive, and I can still fire up a terminal with the appropriate shell (mostly R, Python and Stata) and get my poor-man REPL features (i.e., send current line or selection to the other split window) to work right away. Anyway, here's the list of kernels I have on my HD:
+I am currently trying out [molten-nvim](https://github.com/benlubas/molten-nvim) (without image support and other fancy settings) to evaluate code snippets for which I have associated Jupyter kernels. This mostly mimic my old [Magma setup](/post/jupyter-kernels-in-vim/) that I abandoned in the meantime. It remains quite non-obtrusive, and I can still fire up a terminal with the appropriate shell (mostly R, Python and Stata) and get my poor-man REPL features (i.e., send current line or selection to the other split window) to work right away. Anyway, here's the list of kernels I have on my HD:
 
 ```shell
 aliquote master?                                                                                              1h21m9s +
@@ -28,6 +28,18 @@ Available kernels:
   racket                /home/chl/.local/share/jupyter/kernels/racket
   stata                 /home/chl/.local/share/jupyter/kernels/stata
   wolframlanguage14     /home/chl/.local/share/jupyter/kernels/wolframlanguage14
+```
+
+And here are the settings I use in my `init.lua` file:
+
+```lua
+vim.g.molten_auto_open_output = false
+vim.g.molten_auto_image_popup = true
+-- vim.g.molten_output_win_style = "minimal"
+-- vim.g.molten_use_border_highlights = true
+-- vim.keymap.set("n", "<localleader>ss", ":MoltenEvaluateOperator<CR>", { silent = true })
+vim.keymap.set("n", "ss", ":MoltenEvaluateLine<CR>", { silent = true })
+vim.keymap.set("v", "ss", ":<C-u>MoltenEvaluateVisual<CR>gv", { silent = true })
 ```
 
 And here is an example of Racket code evaluated using Molten (left) or in a terminal directly (right):
