@@ -1,7 +1,7 @@
 ---
 title: "Cochran-Mantel-Haenszel test"
-date: 2024-06-19T20:53:23+02:00
-draft: true
+date: 2024-06-21T20:53:23+02:00
+draft: false
 tags: ["statistics", "rstats", "python", "stata"]
 categories: ["2024"]
 ---
@@ -51,6 +51,27 @@ I exported the above dataset as a dataframe with one row per observation as foll
 > write.csv(dd[rep(row.names(dd), dd$Freq), 1:3], file = "satisfaction.csv", row.names = FALSE)
 ```
 
+I got the same result in Stata:
+
+```stata
+. import delimited /home/chl/tmp/satisfaction.csv, varnames(1)
+
+. foreach v of varlist income-gender {
+  2.   encode `v', gen(`v'_)
+  3.   drop `v'
+  4. }
+
+. rename *_ *
+
+. emh income jobsatisfaction, strata(gender) general
+
+Extended Mantel-Haenszel (Cochran-Mantel-Haenszel) Stratified Test of Association
+
+General Association Statistic:
+Q (9) = 10.2001, P = 0.3345
+Transformation: Table Scores (Untransformed Data)
+```
+
 Then, in Python, it is as simple as the following snippet:
 
 ```python
@@ -69,8 +90,23 @@ r
 Cochran-Mantel-Haenszel M^2 = 12.29047, dof = 9, p-value = 0.1974
 ```
 
-And so it begins. The test statistics and their respective p-values do not match.
+And so it begins. The test statistics and their respective p-values do not match. Querying the online help from IPython suggests there's an `adjustment` option, with no indication of what it means actually. I thought it would maybe related to some kind of continuity correction[^2] and I went right away check the source code on GitHub. Sadly, there was not `adjustment` parameter in the GH code, although there's one in my local package (installed via `pip`):
+
+```python
+# -%<---------------
+    # Create stratified contingency tables
+    for k in range(K):
+        cat = df[stratifier].cat.categories[k]
+
+        subset = df.loc[df[stratifier] == cat, [var, outcome]]
+        xs = pd.crosstab(subset[outcome], subset[var], dropna=False)
+        contingency_tables[:, :, k] = xs  + adjustment
+# ->%---------------
+```
+
+Since the author claims his code is based on Agresti (*Categorical Data Analysis*, 2002), I also checked the textbook. It was long time since I didn't open it, btw.
 
 {{% music %}}New Order • _Blue Monday_{{% /music %}}
 
 [^1]: It's worth noting that they apply a continuity correction by default.
+[^2]: If I'm not mistaken, Fisher-Yates correction only applies in the case of 2x2 tables.
