@@ -1,7 +1,7 @@
 ---
 title: "Cochran-Mantel-Haenszel test"
 date: 2024-06-21T20:53:23+02:00
-draft: false
+draft: true
 tags: ["statistics", "rstats", "python", "stata"]
 categories: ["2024"]
 ---
