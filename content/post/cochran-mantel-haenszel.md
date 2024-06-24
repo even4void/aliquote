@@ -1,7 +1,7 @@
 ---
 title: "Cochran-Mantel-Haenszel test"
 date: 2024-06-21T20:53:23+02:00
-draft: true
+draft: false
 tags: ["statistics", "rstats", "python", "stata"]
 categories: ["2024"]
 ---
@@ -104,7 +104,7 @@ And so it begins. The test statistics and their respective p-values do not match
 # ->%---------------
 ```
 
-Since the author claims his code is based on Agresti (*Categorical Data Analysis*, 2002), I also checked the textbook. It was long time since I didn't open it, btw.
+Since the author claims his code is based on Agresti (*Categorical Data Analysis*, 2002), I should have checked the textbook since it was long time since I didn't open it, and compare the code with the suggested algorithm. But then I came to other interesting problems, and I think I'll get back to this later.
 
 {{% music %}}New Order • _Blue Monday_{{% /music %}}
 
