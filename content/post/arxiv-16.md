@@ -6,9 +6,17 @@ tags: ["readings", "arxiv"]
 categories: ["2024"]
 ---
 
+Old reads...
+
 ### (https://arxiv.org/abs/1901.01973)
 
+I rarely use Postgres for my personal hobbies (I usually find that SQLite provides me with convenient cost-effectiveness tradeoff for pet projects), but I always appreciated it for long term projects as well as its extensions. This paper is a recollection of the early days of Postgres in the 80s.
+
+> Postgres was Stonebraker’s second system, and it was certainly chock full of features and ideas. Yet the system succeeded in prototyping many of the ideas, while delivering a software infrastructure that carried a number of the ideas to a suc- cessful conclusion. This was not an accident—at base, Postgres was designed for extensibility, and that design was sound. With exten- sibility as an architectural core, it is possible to be creative and stop worrying so much about discipline: you can try many exten- sions and let the strong succeed.
+
 ### (https://arxiv.org/abs/2401.06261)
+
+[Mendelian randomization](/post/mendelian-randomization)
 
 ### (https://arxiv.org/abs/2401.09559)
 
