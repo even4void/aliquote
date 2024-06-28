@@ -8,7 +8,7 @@ categories: ["2024"]
 
 Old reads...
 
-### Looking Back at Postgre s(https://arxiv.org/abs/1901.01973)
+### Looking Back at Postgres (https://arxiv.org/abs/1901.01973)
 
 I rarely use Postgres for my personal hobbies (I usually find that SQLite provides me with convenient cost-effectiveness tradeoff for pet projects), but I always appreciated it for long term projects as well as its extensions. This paper is a recollection of the early days of Postgres in the 80s.
 
