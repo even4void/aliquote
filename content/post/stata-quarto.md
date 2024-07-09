@@ -47,6 +47,8 @@ sysuse auto
 su mpg
 hist mpg
 ```
+
+That's it!
 ```
 
 ![img](/img/2024-07-09-21-14-17.png)
