@@ -8,11 +8,34 @@ categories: ["2024"]
 
 [I](/post/lazy-nvim/) [did](/post/vim-revamp-again/) [it](/post/neovim-lsp-easy/) again: I cleaned up unused or defunct stuff in my Neovim config. I have one excuse, though: Since I upgraded to version 0.10, I needed to account for API breaking changes but also to accommodate [all the goodies](https://gpanders.com/blog/whats-new-in-neovim-0.10/), especially regarding LSP & Co.
 
-Neovim gained a builtin commenting system, probably inherited from [mini.nvim](https://github.com/echasnovski/mini.nvim). Since I removed the plugin I was using, I'm glad this is now shipped as a default. The default theme (on the right below) has been redesigned, and it looks great (except for the diff view), but I much prefer the quiet theme (on the left) which removes almost everything and yields a very slick UI, IMO.
+Neovim gained a builtin commenting system, probably inherited from [mini.nvim](https://github.com/echasnovski/mini.nvim). Since I removed the plugin I was using, I'm glad this is now shipped as a default. The default theme (on the right below) has been redesigned, and it looks great (except for the diff view), but I much prefer the quiet theme (on the left) which removes almost everything and yields a very slick UI, IMO. See `:help dev_theme` for more info on the design of the new colorscheme.
 
-{{< fluid_imgs
+{{&lt; fluid_imgs
 "pure-u-1-2|/img/2024-07-05-13-34-43.png"
 "pure-u-1-2|/img/2024-07-05-13-34-58.png" >}}
+
+{{% alert note %}}
+<small>[2024-07-06]</small><br>
+If I ever change my mind, I could still rely on the default theme when I'm working on my local computer and switch to the quiet theme for remote sessions. Something like that, maybe:[^1]
+
+```lua
+vim.api.nvim_command([[
+  augroup updatecolorscheme
+  autocmd colorscheme * :hi normal guibg=NONE ctermbg=NONE |
+  hi! link QuickFixLine Visual
+  augroup END
+]])
+
+if vim.env.XDG_SESSION_TYPE == "wayland" then
+  vim.cmd.colorscheme("default")
+  local fzf_theme = "light"
+else
+  vim.cmd.colorscheme("quiet")
+  local fzf_theme = "bw"
+end
+```
+
+{{% /alert %}}
 
 Regarding LSP, omnifunc and tagfunc are now automatically set up when attaching an LSP. There are now default mapping to navigate diagnostics and to pop up the diagnostic window. It is also easier to determine the root folder for a project (see `vim.fs.root`). Inlay hints have landed in the 0.10 release (it works great with rust-analyzer and clangd), which means we can show them on demand using a simple mapping:
 
@@ -57,8 +80,26 @@ if client.server_capabilities.codeActionProvider then
 end
 ```
 
-This is all great news from people who like to keep their editor free of any IDE fancy things.
+This is all great news from people who like to keep their editor free of any IDE fancy things. There's an interesting [thread on HN](https://news.ycombinator.com/item?id=40378218) regarding all those goodies.
 
 As an aside, following my [recent post](/post/scheming-in-vim/), I briefly tried to get used to Conjure but I couldn't find my way with the log buffer. The thing that I will probably miss is the ability to set marks and reevaluate them at will. But to be honest, I reverted back to [molten-nvim](https://github.com/benlubas/molten-nvim) which provides the best compromise between inline evaluation and my full REPL driven (with a terminal opened in a split) workflow. And I like the idea that I can plot almost anything in R, Stata or Python (with plotnine) and get a nice PDF almost instantaneously.
 
+In passing, I also reworked my whole `after/ftplugin/markdown.vim` settings. Treesitter now handles most the stuff I implemented myself, especially navigating between section, folding, or block selection. I still need this stuff for `org.vim` since I removed the orgmode plugin so nothing's lost. I added one package, [vim-table-mode](https://github.com/dhruvasagar/vim-table-mode), which I used to use occasionally in the past.
+
 {{% music %}}ANOHNI and the Johnsons • _Epilepsy is Dancing_{{% /music %}}
+
+[^1]&#x3A;
+    Further improvement to the quiet theme would be to remove diagnostic colors altogether:
+
+    ```lua
+      hi DiagnosticUnderlineError guisp=Black |
+      hi DiagnosticUnderlineWarn guisp=Black |
+      hi DiagnosticUnderlineHint guisp=Black |
+      hi DiagnosticUnderlineInfo guisp=Black |
+      hi! link DiagnosticFloatingError NormalFloat |
+      hi! link DiagnosticFloatingWarn NormalFloat |
+      hi! link DiagnosticFloatingHint NormalFloat |
+      hi! link DiagnosticFloatingInfo NormalFloat |
+      hi! link DiagnosticFloatingOk NormalFloat
+    ```
+
