@@ -19,37 +19,35 @@ And for the remaining stuff, I just add `set ft=markdown` and `runtime! ftplugin
 
 Anyway, great news for Quarto users using Stata with version below 17: you can declare [stata_kernel](https://kylebarron.dev/stata_kernel/getting_started/) as a custom kernel rather than the default [nbstata](https://hugetim.github.io/nbstata/). Since I only owe a license for Stata 13 MP, I don't know what's new in the Stata world other than what I read on the www, but it works perfectly well, including graphical output. This was the most cumbersome thing I ahppened to deal with when I was writing my [Stata Starter Kit](https://aliquote.org/articles/stata-sk/) using org-mode some years ago. Since I'm using Stata 13, I needed to export graphics as encapsulated PS file, and then convert them to PNG files. Of course this was automated via a Makefile, but when you find that a version number (13 < 14) prevents you from exporting your figures as PNG or SVG files, it really sucks. Now it's all over, and I can just write Stata code and let Quarto produce a well-formatted PDF or HTML file using Pandoc. MRE follows.[^1]
 
-```
----
-title: Hello Stata
-author: chl
-jupyter:
-  kernelspec:
-    display_name: Stata
-    language: Stata
-    name: stata
-format:
-  html:
-    toc: true
-    html-math-method: mathjax
-    highlight-style: monochrome
-    embed-resources: true
-    anchor-sections: true
-    citations-hover: false
-    footnotes-hover: false
-    code-copy: true
----
+    ---
+    title: Hello Stata
+    author: chl
+    jupyter:
+      kernelspec:
+        display_name: Stata
+        language: Stata
+        name: stata
+    format:
+      html:
+        toc: true
+        html-math-method: mathjax
+        highlight-style: monochrome
+        embed-resources: true
+        anchor-sections: true
+        citations-hover: false
+        footnotes-hover: false
+        code-copy: true
+    ---
 
-Trying out to run some Stata code:
+    Trying out to run some Stata code:
 
-```{stata}
-sysuse auto
-su mpg
-hist mpg
-```
+    ```{stata}
+    sysuse auto
+    su mpg
+    hist mpg
+    ```
 
-That's it!
-```
+    That's it!
 
 ![img](/img/2024-07-09-21-14-17.png)
 
