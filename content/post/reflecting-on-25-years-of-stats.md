@@ -1,5 +1,5 @@
 ---
-title: "Make progress and feel at ease in statistical computing"
+title: "Feeling more or less at ease in statistical computing"
 date: 2024-07-10T20:42:46+02:00
 draft: false
 tags: ["statistics"]
