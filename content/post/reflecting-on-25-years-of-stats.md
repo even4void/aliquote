@@ -1,5 +1,5 @@
 ---
-title: "Feeling more or less at ease in statistical computing"
+title: "Develop good habits from the start"
 date: 2024-07-10T20:42:46+02:00
 draft: false
 tags: ["statistics"]
@@ -22,5 +22,7 @@ Other rule-of-thumbs I adopted over time:
 - Be careful with variable encoding and missing values.
 - Be careful with default values of your preferred statistical package for certain routines, they may differ from other well acknowledged software (continuity correction, population vs. sample dof, etc.).
 - Reproducibility is a thing, but you should first be able to reproduce your own results (think about the 2-year cycle or so before publishing a paper; you may be asked to re-run the whole analysis to please one picky reviewer, who might be right by the way).
+
+To sum up, developing good habits from the start is always worth it. I can't count the number of times I've been asked to produce a result with slightly updated data 6 or 12 months after the end of a project: having a solid, well-tested script has made things easier every time.
 
 {{% music %}}Passenger • _Wicked Man's Rest_{{% /music %}}

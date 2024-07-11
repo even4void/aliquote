@@ -2,7 +2,7 @@
 title: "Playing with BackupMyTweets"
 date: 2011-01-17T13:42:24+01:00
 draft: false
-tags: ["dataviz", "perl"]
+tags: ["dataviz"]
 categories: ["2011"]
 ---
 

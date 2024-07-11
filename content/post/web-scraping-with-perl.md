@@ -2,7 +2,7 @@
 title: "Web scraping with Perl"
 date: 2010-04-04T08:49:55+01:00
 draft: false
-tags: ["perl"]
+tags: ["misc"]
 categories: ["2010"]
 ---
 

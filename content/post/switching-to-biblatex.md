@@ -2,7 +2,7 @@
 title: "Switching to Biblatex"
 date: 2010-04-04T17:34:41+01:00
 draft: false
-tags: ["tex", "perl"]
+tags: ["tex"]
 categories: ["2010"]
 ---
 
