@@ -72,11 +72,11 @@ Here is a brief summary of most common settings for the scheduler:
 </table>
 </small>
 
-Once you have these two files, you just need to reload the systemd configuration and enable the timer:
+Once you have these two files, you just need to reload the systemd configuration and enable the timer (which, in this case, is the unit of interest):[^2]
 
 ```shell
 % systemctl --user daemon-reload
-% systemctl --user start kopia-backup
+% systemctl --user start kopia-backup.timer
 % systemctl --user enable kopia-backup.timer
 ```
 
@@ -103,3 +103,4 @@ See also this excellent review, in which I leaerned that we can check if our `On
 [kopia]: /post/kopia/
 
 [^1]: One of the advantage of cron job is that the same job can be run again, in parallel, even if the previous instance hasn't finished yet. This happens if you have long-running jobs that are launched at evry short interval. This at least is what I seem to remember from my early Linux days, and I didn't check what the state of the rt is for this kind of situation.
+[^2]: Thanks to Robert Lützner for having noticed an error in the wording of one of the commands.
