@@ -1,7 +1,7 @@
 ---
 title: "Writing plain TeX using vimtex"
 date: 2024-07-24T21:02:57+02:00
-draft: true
+draft: false
 tags: ["vim", "tex"]
 categories: ["2024"]
 ---
@@ -42,5 +42,7 @@ I encountered some problem when trying to refomat using Vim's `gq` but `gw` work
 
 \bye
 ```
+
+I will probably update the above template when I will really write something more elaborated than a toy example.
 
 {{% music %}}Claire Welles • _Waiting In The Sun_{{% /music %}}
