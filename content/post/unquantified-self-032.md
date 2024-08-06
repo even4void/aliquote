@@ -10,9 +10,9 @@ Yet another one of these posts to reflect on recent moments in my life. I just f
 
 This site has been pretty quiet for the past 3 months, partly because of the busy workload, but also because of a lack of motivation. I took the opportunity to read a lot of [books](/files/books.txt) and draw whatever came to mind, or sometimes to mind. An excerpt follows.
 
-{{< fluid_imgs "pure-u-1-3|IMG_3783.JPG"
-               "pure-u-1-3|IMG_4007.JPG"
-               "pure-u-1-3|IMG_4027.JPG" >}}
+{{< fluid_imgs "pure-u-1-3|/img/IMG_3783.JPG"
+               "pure-u-1-3|/img/IMG_4007.JPG"
+               "pure-u-1-3|/img/IMG_4027.JPG" >}}
 
 I still [want it darker](https://www.youtube.com/watch?v=v0nmHymgM7Y) as he said.
 
