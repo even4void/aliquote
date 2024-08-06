@@ -10,7 +10,7 @@ categories: ["2024"]
 
 Neovim gained a builtin commenting system, probably inherited from [mini.nvim](https://github.com/echasnovski/mini.nvim). Since I removed the plugin I was using, I'm glad this is now shipped as a default. The default theme (on the right below) has been redesigned, and it looks great (except for the diff view), but I much prefer the quiet theme (on the left) which removes almost everything and yields a very slick UI, IMO. See `:help dev_theme` for more info on the design of the new colorscheme.
 
-{{&lt; fluid_imgs
+{{< fluid_imgs
 "pure-u-1-2|/img/2024-07-05-13-34-43.png"
 "pure-u-1-2|/img/2024-07-05-13-34-58.png" >}}
 
