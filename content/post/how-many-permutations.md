@@ -68,7 +68,7 @@ set label "Original test statistic" at 145,0.75 tc "orange"
 plot "pdist.dat" u 1:(1/100.) s kdens bandwidth 1 lw 2
 ```
 
-![img](/img/pdist.png)
+{{ figure src="/img/pdist.png" }}
 
 Overall, I was pleasantly surprised by how easy it was to perform this task in Clojure by using builtin stuff only.
 

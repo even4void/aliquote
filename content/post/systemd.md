@@ -46,7 +46,7 @@ Unit = kopia-backup.service
 WantedBy = timers.target
 ```
 
-The `Persistent` option informs systemd to launch the task if it was missed the last start time because of some failure to run the task (e.g., system on sleep or done), much like anacron. There are also so-called monotonic timers, which just indicate how often a task should be run, not at what time precisely. This usually is performed with reference to system startup, using e.g., `OnStartupSec=`. NOte that both approaches can be interleaved, and the task will run whenever of the two timers occur. By default, timers in systemd have an accuracy of 1 minute, but you can ask for a more tight schedule, for instance `AccuracySec = 1us`.
+The `Persistent` option informs systemd to launch the task if it was missed at the last start time because of some failure to run the task (e.g., system on sleep or done), much like anacron. There are also so-called monotonic timers, which just indicate how often a task should be run, not at what time precisely. This usually is performed with reference to system startup, using e.g., `OnStartupSec=`. Note that both approaches can be interleaved, and the task will run whenever any of the two timers occurs. By default, timers in systemd have an accuracy of 1 minute, but you can ask for a more tight schedule, for instance `AccuracySec = 1us`.
 
 Here is a brief summary of most common settings for the scheduler:
 
@@ -91,7 +91,7 @@ Mon 2022-08-22 20:00:00 CEST 59min left Mon 2022-08-22 19:00:08 CEST 21s ago kop
 2 timers listed.
 ```
 
-I implented my two cron jobs (fetch mail every 15' and backup my `$HOME` folder every hour) using systemd timer, and it works like a charm.
+I implemented my two cron jobs (fetch mail every 15' and backup my `$HOME` folder every hour) using systemd timer, and it works like a charm.
 
 {{% alert note %}}
 <small>[2022-09-01]</small><br>
