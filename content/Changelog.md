@@ -8,7 +8,7 @@ date: 2021-09-02T00:00:00
         Author: chl <xxxx@xxxx.xxxx>
         Date:   Sun Jan 21 00:57:45 2018 +0100
 
-[2024-08-06] Update base colors (some background color are taken from <http://ro-che.info>)<br>
+[2024-08-06] Update base colors (some background color are taken from <http://ro-che.info>) and convert `<img>` tag to proper HTML5 `<figure>`<br>
 [2023-04-13] Easter cleansing: more minimalistic theme (drawing inspiration from <htts://jcs.org>)<br>
 [2023-01-08] Remove feather JS, update About page, cleanup unused folders<br>
 [2022-09-06] Update link display (closer in spirit to HTML specs)<br>
@@ -37,7 +37,7 @@ date: 2021-09-02T00:00:00
 [2018-03-07] Switch to the Even theme instead of Academic<br>
 [2018-02-23] Finish migrating old posts<br>
 
-An even older Changelog is availabel below:
+An even older Changelog is available below:
 
 [2016-05-28] Many updates: Stata 101 courses, SAS2R, CV, book reading, etc.<br>
 [2015-03-30] Update CV, vitae and courses<br>
