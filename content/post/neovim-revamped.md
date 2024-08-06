@@ -14,6 +14,8 @@ Neovim gained a builtin commenting system, probably inherited from [mini.nvim](h
 "pure-u-1-2|/img/2024-07-05-13-34-43.png"
 "pure-u-1-2|/img/2024-07-05-13-34-58.png" >}}
 
+<br>
+
 {{% alert note %}}
 <small>[2024-07-06]</small><br>
 If I ever change my mind, I could still rely on the default theme when I'm working on my local computer and switch to the quiet theme for remote sessions. Something like that, maybe:[^1]
