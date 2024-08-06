@@ -13,6 +13,6 @@ Transmit is very good at managing local and remote files (you can even preview o
 I have just upgraded to version 5 which brings additional features and add support to several backends (Microsoft Azure, AWS, Dropbox, etc.). Batch renaming has been added to the latest release and favorite places now sits in the top bar, like for Safari bookmarks.
 It also looks like the app is more responsive and that the transfer rate has been greatly improved compared to the previous version that was installed on my system (no longer available on the App Store btw). Finally, the activity monitor is a great enhancement as it allows to see directly what files are currently being processed instead of the old overall progress bar that was sitting in the states bar.
 
-![](/img/2018-09-28-19-36-26.png)
+{{< figure src="/img/2018-09-28-19-36-26.png" >}}
 
 Sadly, this is another app which is no longer distributed via the App Store and so cannot be automagically upgraded by the system.

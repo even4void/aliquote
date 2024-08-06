@@ -14,7 +14,7 @@ So, why Matrix? As I said I like to stay using IRC but to keep up to date you ei
 
 About Element itself. The UI is nicely set up. Nothing too fancy, especially after it is configured using the IRC layout (this can be found in the general settings). I haven't explored all settings since I just installed the app yesterday, but it looks promising, especially the additional features (see below). Here's a screenshot of Element on my desktop, using the Nord color theme:
 
-![element](/img/2022-07-24-16-45-49.png)
+{{< figure src="/img/2022-07-24-16-45-49.png" >}}
 
 Compared to the previous version of Element, there's now a "[lab features]" of some sort, so that you can enable further options. For instance, you can define your custom UI theme or use one of from [GitHub]. Note that you will need to add a configuration file, `$HOME/.config/Element/config.json`, and not use the existing one (`$HOME/.config/Element/electron-config.json`), including the option `"showLabsSettings": true` (camel case here, and not snake case as shown on GH). Here's mine:
 

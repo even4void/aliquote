@@ -12,7 +12,7 @@ Note that this only applies to my [micro posts](/micro). For standard posts like
 
 So for now, rather than creating new micro posts using Hugo from the command line, I just have one Org file which basically looks like the one shown in the screenshot below:
 
-![](/img/2018-10-27-19-05-22.png)
+{{< figure src="/img/2018-10-27-19-05-22.png" >}}
 
 Each post is written under a new level-2 heading, with basic `PROPERTIES` (actually, just the "slug"). The global settings are managed at the top of the file (see below), hence the fact that using a single file is much easier than one file per post, as discussed on the [ox-hugo](https://ox-hugo.scripter.co) website. Here is my basic template:
 

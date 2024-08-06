@@ -25,6 +25,6 @@ Regarding Emacs, there are a few packages that I could not live without. They ar
 
 Happy hacking!
 
-![emacs](/img/2020-05-15-20-35-35.png)
+{{< figure src="/img/2020-05-15-20-35-35.png" >}}
 
 {{% music %}}Tom Waits • _Asylum Years_{{% /music %}}

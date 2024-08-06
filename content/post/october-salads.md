@@ -8,14 +8,14 @@ categories: ["2018"]
 
 ... et en salades, ou autres gourmandises.
 
-![](/img/IMG_0423.jpg)
+{{< figure src="/img/IMG_0423.jpg" >}}
 
 {{< fluid_imgs
   "pure-u-1-3|/img/IMG_0425.jpg"
   "pure-u-1-3|/img/IMG_0427.jpg"
   "pure-u-1-3|/img/IMG_0408.jpg" >}}
 
-![](/img/56261647642__805A88AC-DBB5-4BA5-927F-898F910921DB.jpg)
+{{< figure src="/img/56261647642__805A88AC-DBB5-4BA5-927F-898F910921DB.jpg" >}}
 
 {{< fluid_imgs
   "pure-u-1-2|/img/IMG_0406.jpg"

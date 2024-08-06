@@ -23,7 +23,7 @@ The former obviously subsumes an idea of causality while the latter more or less
 
 An example of formative and reflexive constructs is shown in the following picture.
 
-![path](/img/20111211213531.png)
+{{< figure src="/img/20111211213531.png" >}}
 
 However, I should note that the above controversy has also been discussed in older papers dealing with the assessment of health-related quality of life. I am thinking of two papers by Peter Fayers which are:
 
@@ -50,12 +50,12 @@ But let's note that "in practice many clinical variables will be of intermediate
 
 At a more general level, the concept of causality in HRQL outcome studies has been discussed by Wilson and Clearly in the following paper: Wilson, I.B. and Cleary, P.D. (1995). Linking clinical variables with health-related quality of life. A conceptual model of patient outcomes, *JAMA*, 273, 59-65. This has led to this well-known outline of HRQL key constructs and their relationships:
 
-![hrql](/img/20111212104356.png)
+{{< figure src="/img/20111212104356.png" >}}
 
 But see Mathisen, L. et al. (2007). [Quality of life can both influence and be an outcome of general health perceptions after heart surgery](http://www.hqlo.com/content/5/1/27). *Health and Quality of Life Outcomes*, 5, 27, for interesting dynamic models of the relationships between HRQL and health perception.
 
 On a related perspective, there was an interesting paper by Atkinson and Lennox who considered five types of measurement models, depending on whether the measure is based on a (1) Multiple Effect Indicator model, (2) Multiple Cause Indicator model, (3) Single Item Effect Indicator model, (4) Single Item Cause Indicator model, or (5) Mixed Multiple Indicator model. Those models are depicted in the figure below:
 
-![atkinson](/img/20111212111507.png)
+{{< figure src="/img/20111212111507.png" >}}
 
 Atkinson, M.J. and Lennox, R.D. (2006). [Extending basic principles of measurement models to the design and validation of Patient Reported Outcomes](http://www.zevep.com/dokumente/biomed/1477-7525-4-65.pdf). *Health and Quality of Life Outcomes*, 4, 65.

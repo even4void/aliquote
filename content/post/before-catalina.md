@@ -25,4 +25,4 @@ I like that it is still possible to [run R 1.0](https://twitter.com/revodavid/st
 
 Anyway, I'll probably continue with my current configuration for a few more years; and who know: by then we'll have a new improved version of the modern R and the successor to VS Code. Long live the Unix shell!
 
-![shell](/img/2019-10-28-16-27-34.png)
+{{< figure src="/img/2019-10-28-16-27-34.png" >}}

@@ -15,7 +15,7 @@ The DALYs are another unit of measurement that stands for *Disability Adjusted L
 
 As a sort of illustration and a way to learn [ggplot2](http://had.co.nz/ggplot2/) map layout, here is some R code I used to make the following picture
 
-![daly](/img/20110112143203.png)
+{{< figure src="/img/20110112143203.png" >}}
 
 This really is a toy example with [ggplot2](http://had.co.nz/ggplot2/), and that does not reflect the actual DALYs distribution worldwide.
 

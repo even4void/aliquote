@@ -35,7 +35,7 @@ The <i class="fa fa-file-pdf-o fa-1x"></i> [SLIME User Manual](http://common-lis
 
 First, we launch Slime and just ask to eval `(+ 1 3)`.
 
-![slime](/img/20110130223138.png)
+{{< figure src="/img/20110130223138.png" >}}
 
 Then, we deliberately introduces an error when submitting our code to the REPL, in this case we ask `1-2`: it popups an SLDB window saying `the variable [1-2] is unbound` which means it has no value bounded to it. Now we can click or select `1: [ABORT] Return to Top-Level.` and we're back to the REPL. Another cool thing from using Slime is that you get auto-completion when you are typing into the REPL. For example, let's write a function $x \mapsto x^2$, 
 
@@ -47,11 +47,11 @@ Then, we deliberately introduces an error when submitting our code to the REPL, 
 
 As soon as you start typing `defun`, you'll get this nice prompt for name and argument:
 
-![](/img/20110131163408.png)
+{{< figure src="/img/20110131163408.png" >}}
 
 Let's again introduce an error when typing the function definition, say we wrote `(*x x)` instead of `(* x x)`. Here is what we get from the SLDB when we run `(square 5)` at the prompt: 
 
-![](/img/20110131163753.png)
+{{< figure src="/img/20110131163753.png" >}}
 
 Going back to the REPL, <kbd>Esc-p</kbd> two times gives back the previous function definition that we can now correct. 
 

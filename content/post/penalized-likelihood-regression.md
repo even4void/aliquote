@@ -47,7 +47,7 @@ for (penalize in 1:2) {
 
 and the plots are shown in the next figure.
 
-![](/img/20080406190322.png)
+{{< figure src="/img/20080406190322.png" >}}
 
 As can be seen, in the left panel, all parameters are shrinked by the same amount a: when df get smaller (i.e. penalty factor gets larger), the regression fit gets flatter and confidence band (dotted curves) become narrower. However, in the right panel, only the cubic spline terms that are nonlinear in X1 are shrinked. Further, as the amount of shrinkage increases (lower df), the fits become more linear and closer to the true regression line (straight dotted line). The `stepPlr` package provides additional functions for PLME. In particular, the `step.plr()` function implements L2 penalized logistic regression along with the stepwise variable selection procedure.<sup>(13)</sup> Hereafter, I reproduce some of the example code found in the R on-line help.
 

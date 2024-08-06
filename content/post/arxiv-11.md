@@ -18,7 +18,7 @@ Then, I realized that it's a hard paper (for me at least). I'll keep it under my
 
 I've been teaching the basis of recommender systems in an engineering school for two years. I liked it, especially when discussing matrix factorization algorithms and Co. Applications speak for themselves (everybody knows Amazon or Spotify, right?), and I missed Seth Brown's beer recommendation engine. This paper is  more about social networks and preferential attachment (rich-get-richer and homophily). The authors show that the number of vertices in their K-groups preferential attachment model follows a power law, and they dscuss two applications on real web data.
 
-![fig2](/img/2022-10-26-20-54-05.png)
+{{< figure src="/img/2022-10-26-20-54-05.png" >}}
 
 ### Locality Sensitive Hashing for Structured Data: A Survey (https://arxiv.org/abs/2204.11209)
 

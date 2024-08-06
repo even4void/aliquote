@@ -8,7 +8,7 @@ categories: ["2019"]
 
 In one of my last post, I discussed [de Bruijn graph](/post/de-bruijn-graph/) based on one of [Rosalind](http://rosalind.info) problems in the Bioinformatics track. This post is again about graphs, and Rosalind problems. The Motzkin number *M<sub>n</sub>* represents the number of ways to form a noncrossing matching (i.e., non-intersecting chords) in the complete graph *K<sub>n</sub>* with *n* nodes. A related quantity is the Catalan number *C<sub>n</sub>* which counts the number of ways to form a *perfect* noncrossing matching; in this case the matching includes every node in the graph, which must necessarily contain an even total number of nodes. A picture is better than thousand of words, so I wrote a bit of Metapost (long time no see!) to reproduce part of the figure for *M<sub>5</sub>* available on [Wikipedia](https://en.wikipedia.org/wiki/Motzkin_number):
 
-![](/img/motzkin.png)
+{{< figure src="/img/motzkin.png" >}}
 
 The following recurrence relation can be used to find the value of *M<sub>n</sub>*, for any *n*:
 

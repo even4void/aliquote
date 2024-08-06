@@ -26,7 +26,7 @@ I've read several papers or arXiv reviews on probabilistic programming (PP) late
 
 This review is structured along two ideas: to provide an overview of many widely used deep learning models, spanning visual (CNNs), sequential (RNNs) and graph structured data, associated tasks (image segmentation, super-resolution, sequence to sequence mappings and many others) and different training methods, and to highlight techniques that use deep learning (DL) with less data (e.g., self-supervision or semi-supervised learning) and better interpret these complex models. In my own view, DL is a useful technique when some kind of regularities can be exploited in the data --- including bias if any, and when the training size is large. This generally holds in the case of pattern recognition tasks like NLP or image processing, but I remain sceptical about the application of this type of model in tasks for which more traditional supervised methods (e.g., logistic regression) would be just as suitable. There are also lot of links regarding tutorials and software, that are not necessarily limited to DL.
 
-![](/img/2020-03-29-09-00-19.png)
+{{< figure src="/img/2020-03-29-09-00-19.png" >}}
 
 ### Reinforcement Learning in Economics and Finance [arXiv:2003.10014v1](https://arxiv.org/abs/2003.10014)
 

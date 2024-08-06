@@ -53,7 +53,7 @@ My `.emacs` is not entirely clean at the moment: I need to investigate the [auto
 
 An example of an interactive R session is shown below:
 
-![Emacs 1](/img/20120616124927.png)
+{{< figure src="/img/20120616124927.png" >}}
 
 Top panel shows how Yasnippet prompting tool is triggered when pressing tab (<kbd>⇥</kbd>), while bottom panel shows available arguments when typing `rnorm` in the R shell directly.
 
@@ -66,4 +66,4 @@ Here is another screenshot which show the beginning of a clojure script with aut
 
 Finally, this configuration works equally well when Emacs run in a Terminal (`nw`), as can be seen below:
 
-![Emacs 4](/img/20120616193729.png)
+{{< figure src="/img/20120616193729.png" >}}

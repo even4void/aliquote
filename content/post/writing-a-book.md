@@ -8,7 +8,7 @@ categories: ["2015"]
 
 I spent the last month working hard to finish my book on biomedical statistics using R. It has been a pleasuring experience since I wrote this book using Emacs, R, and git. In fact, I spent several days and nights with a screen looking like the one shown below (this is Homebrew Emacs in fullscreen mode):
 
-![Writing a book using Emacs](/img/emacs-book.png)
+{{< figure src="/img/emacs-book.png" >}}
 
 Of course there are many things to fix and I'm not totally happy with the book as it stands. I think it would have been much easier to write this book five years ago. Now, there are so many good books on R that it is a very challenging task to write a new one. I have only one excuse: This book was written for students enrolled in a course on statistical computing using R, Stata and SAS. Book price should not exceed 10 € in electronic format, so I think this is a good deal for them.
 

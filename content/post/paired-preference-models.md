@@ -171,7 +171,7 @@ levelplot(Freq~winner+loser, baseball,
           col.regions=brewer.pal(7,"Blues"), at=0:6)
 ```
 
-![](/img/20100418124621.png)
+{{< figure src="/img/20100418124621.png" >}}
 
 
 ## References

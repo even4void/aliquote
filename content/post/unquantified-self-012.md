@@ -18,7 +18,7 @@ I have not much to say about work days: They are just work days. Nothing too bor
 
 I often find myself spending my evenings looking back in the past, but that's easy to sort out, finally. I keep watching movies and TV shows almost every day. Recently, I watched [Euphoria](https://www.imdb.com/title/tt8772296/) (Season 1), [American Gods](https://www.imdb.com/title/tt1898069/) (Season 1), [Killing Eve](https://www.imdb.com/title/tt7016936/) (Seasons 1 and 2), [The Rook](https://www.imdb.com/title/tt2741602/) (Season 1). With my son, we are into Season 4 of [Black List](https://www.imdb.com/title/tt2741602/), and still enjoying it a lot.
 
-![itunes](/img/2020-02-21-09-39-11.png)
+{{< figure src="/img/2020-02-21-09-39-11.png" >}}
 
 I've read a lot more [books](/files/books.txt) recently too, mostly novels and short stories, and a bit of poetry. It's restful, to say the least. I wish I could read a lot more, but I am often too tired at night. And it's not like I don't have the time: if not today, it will be tomorrow as I've been telling myself for the past two years. Also I finally took the time to sort through most of my books in my libraries.
 

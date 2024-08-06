@@ -70,7 +70,7 @@ And here are two random samples of size 1000, depicted using a boxplot: (I yet h
                           #:width 3/4)))
 ```
 
-![img](/img/2022-05-27-22_09-30.png)
+{{< figure src="/img/2022-05-27-22_09-30.png" >}}
 
 Relevant links for Scheme users:
 

@@ -14,6 +14,6 @@ De retour d'un petit séjour bien agréable avec mon fils à Saint-Malo. Nous av
 
 Cette petite escapade nous a fait un bien fou. La mer était magnifique, et les galettes excellentes comme il se doit en Bretagne. Nous étions déjà allés à Saint-Malo chacun de notre côté, lui il y a quelques années avec sa mère et moi lorsque j'étais enfant avec mes parents. S'y retrouver tous les deux, après tant d'années sans vraies vacances à la mer, a été un vrai bonheur.
 
-![img](/img/IMG_2160.JPG)
+{{< figure src="/img/IMG_2160.JPG" >}}
 
 {{% music %}}Louis Ville & Mell • _Hôtel Pourri_{{% /music %}}

@@ -14,7 +14,7 @@ I've tried two Starter Kits and [prelude](https://github.com/bbatsov/prelude), b
 
 Here is how looks my Emacs at the time I am writing this post (with [Gruber theme](https://github.com/rexim/gruber-darker-theme)), with an R script and an [IBuffer](http://www.emacswiki.org/emacs/IbufferMode):
 
-![Emacs with Gruber theme](/img/2014-07-27-14-43-49.png)
+{{< figure src="/img/2014-07-27-14-43-49.png" >}}
 
 {{% alert note %}}
 This is very much work in progress and things will probably change a little. I will eventually post this Emacs config files on GitHub.

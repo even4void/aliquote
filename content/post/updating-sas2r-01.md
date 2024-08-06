@@ -17,4 +17,4 @@ Little update: I started working on this draft again. I still enjoy fitting line
 
 Still, it remains painful to read SAS code when we have such elegant alternative solutions like R or Stata, notwithstanding the fact that I am no longer that interested in medical statistics. I am not super productive these days. I never was, but I know I will never be now. Anyway, here we are: I am slowly working on it again. The project is [still on GitHub](https://github.com/chlalanne/SAS2R).
 
-![](/img/sas2r.png)
+{{< figure src="/img/sas2r.png" >}}

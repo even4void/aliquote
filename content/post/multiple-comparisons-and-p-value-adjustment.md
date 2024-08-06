@@ -48,7 +48,7 @@ Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’
 	
 As can be seen from the resulting call to the `aov()` function (Recall that `aov()` is just a wrapper for the more general `lm()` function), the treatment main effect appears significant (the p-value is largely .001). This is not very surprising given the picture of the data shown in the figure below.
 
-![](/img/20080726232906.png)
+{{< figure src="/img/20080726232906.png" >}}
 
 However, what can be said about the paired difference between consecutive formulations (20mg at once, 10mg twice a day, 5mg four times a day), and how do they compare to already in-use drugs (`drugD` and `drugE`)?
 
@@ -122,7 +122,7 @@ abline(v=0,lty=2,col="gray50")
 par(opar)
 ```
 
-![](/img/20080727114456.png)
+{{< figure src="/img/20080727114456.png" >}}
 
 Now, we see that 7 pairs of difference of means out of 10 are different from 0 at the 5% level. Lower bound of 95% CI is always 1.
 
@@ -354,7 +354,7 @@ mt.plot(allp, teststat, plottype="pvsr", proc=procs, leg=c(80,0.4),
         lty=ltypes, col=cols, lwd=2)
 ```
 	
-![](/img/20080727180028.png)
+{{< figure src="/img/20080727180028.png" >}}
 
 False Discovery Rate (FDR) is tightly linked to the preliminary example used when talking about the multtest package. In fact, when we plotted the adjusted p-values against the number of rejected hypotheses, we were already talking about the proportion of correct rejection of the null hypothesis. Here, "correct" means that the significant tests of hypothesis really reflects the reality, that is the true population parameters.
 

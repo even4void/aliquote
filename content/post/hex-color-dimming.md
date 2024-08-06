@@ -8,7 +8,7 @@ categories: ["2021"]
 
 My color scheme for the terminal is rather unusual, but it is in part inspired by the Belafonte Day color theme. I initially configured Kitty to use my custom theme, and then extend it to other terminal emulators and text editors, although for the later I don't really use colors (except for highlighting strings, number and all sorts of literals). Actually, I'm only using 10 colors instead of 16, meaning I use the same low and high contrast color for all colors except black and white -- which are not really black and white, by the way.
 
-![neofetch](/img/2021-05-01-10-55-23.png)
+{{< figure src="/img/2021-05-01-10-55-23.png" >}}
 
 In case I need it, it would be nice to be able to slightly decrease the luminance of the alternative colors. Since we are working using Hex codes, it involves a bit more work than with HSL. In essence, this has been covered in this [blog post](https://www.sitepoint.com/javascript-generate-lighter-darker-color/), or in various StackOverflow threads.
 

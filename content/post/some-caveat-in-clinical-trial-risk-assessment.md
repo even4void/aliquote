@@ -19,4 +19,4 @@ An alternative way of thinking of the effect of a new drug compared to a standar
 
 And here's a picture that summarizes the above concept and that I found very interesting:
 
-![](/img/20110320220541.png)
+{{< figure src="/img/20110320220541.png" >}}

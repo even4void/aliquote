@@ -10,7 +10,7 @@ Here it comes. I got a new MacBook Pro 13. After my longest streak with the [sam
 
 Although the ideas I developed in a previous post on [my default setup](/post/my-setup) haven't changed very much--I am writing this post in Markdown using Emacs, as usual, I must admit I feel the need to upgrade my core system and get a new laptop with more capabilities. So I choose a MacBook Pro 13 Retina, core i7, with 16 Go RAM / 512 Go HD. Well, my first impressions are that it is blazing fast compared to any laptop I worked on in the past. This is not surprising since the "best" machine I used to use always was some kind of core i2 MacBook Pro or Air.
 
-![Macbook Pro](/img/2014-08-08-20-33-18.png)
+{{< figure src="/img/2014-08-08-20-33-18.png" >}}
 
 As always, I took some notes during the process because it is relatively new to me and I tend to forget what I did after few months. So this post is mainly intended to serve as a log file of my install.
 
@@ -92,7 +92,7 @@ Beside PostgreSQL, which I installed as a standalone application, I configured [
 
 I have used `Terminal.app` and `zsh` but I will eventually switch back to [iTerm](http://iterm2.com). The following picture is my current console that lives next to my running Emacs, and that's almost all that I have actually on my Desktop :-)
 
-![Terminal](/img/20140727153700.png)
+{{< figure src="/img/20140727153700.png" >}}
 
 (My zsh prompt is quite simple:  
 `PROMPT='%F{yellow}[%h] %F{blue}%n@%m (%j) %{$reset_color%}%{$fg[white]%}[%~]%{$reset_color%}%(?..%F{red} ★) $(git_prompt_info)

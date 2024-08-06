@@ -55,6 +55,6 @@ set_tex_cmds('-synctex=1 -interaction=nonstopmode -shell-escape %O %S');
 
 Finally, I use the [Bibtex extension](https://github.com/nvim-telescope/telescope-bibtex.nvim) for Telescope, which provides a nice alternative to [Helm-bibtex](https://github.com/tmalsburg/helm-bibtex) to display a list of available references (globally or in the current directory). Inserting the reference by pressing the enter key will take care of formatting the bibliographic key depending on the filetype (Markdown, Latex or plain text).
 
-![img](/img/2022-01-26-20-43-51.png)
+{{< figure src="/img/2022-01-26-20-43-51.png" >}}
 
 {{% music %}}Sonic Youth • _The World Looks Red_{{% /music %}}

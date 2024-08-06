@@ -41,7 +41,7 @@ graph box value if variable == 1, text(`r(p50)' 95 "Median") ///
   ytitle("Flexibility")
 ```
 
-![](/img/stata-plot-003.png)
+{{< figure src="/img/stata-plot-003.png" >}}
 
 With all three variables, the command simply becomes:
 
@@ -49,7 +49,7 @@ With all three variables, the command simply becomes:
 graph box value, over(variable, sort(1) descending)
 ```
 
-![](/img/stata-plot-004.png)
+{{< figure src="/img/stata-plot-004.png" >}}
 
 Unfortunately, `graph (h)box` is not a member of the `twoway` family so it is not possible to overlay a scatterplot or a dotplot on top (or beneath). However, we don't necessarily need the box, and as suggested by Tufte a [simpler version](https://stats.stackexchange.com/a/13915) might just be used to highlight the median and draw whiskers around it. I wrote a scrappy [R function](https://gist.github.com/even4void/1128764) to build such lightweight boxplot a long ago. Hence, we can simply draw all the elements we need one after the other.
 
@@ -62,7 +62,7 @@ twoway (scatter q2 variable, ylab(0(1)10) xscale(r(0.8 3.2) off fill) xlab(,nola
   (rspike q1 lo variable) (rspike hi q3 variable), legend(off)
 ```
 
-![](/img/stata-plot-005.png)
+{{< figure src="/img/stata-plot-005.png" >}}
 
 Next, we could add the datapoints with an additional call to `scatter` but the dataset we are currently working is no longer available because of `collapse` and it would probably more cumbersome to save it and merge it afterwards (especially given the fact that there won't exist a common id variable). Let's just append the aggregate statistics like we would do with window functions:
 
@@ -78,6 +78,6 @@ twoway (scatter value variable, jitter(3) mcolor(gs13)) (scatter q2 variable, ms
   ylab(0(1)10) xscale(r(0.8 3.2)) xlab(1/3, valuelabel noticks) ytitle("Value") xtitle("") legend(off)
 ```
 
-![](/img/stata-plot-006.png)
+{{< figure src="/img/stata-plot-006.png" >}}
 
 This looks like a lot of typing but it is not difficult to wrap the above code into a proper `command`. Likewise it would not require too much of an effort to apply Tukey's rules for defining "outside" values and to update how whiskers do extend around the 1st and 3rd quartiles.

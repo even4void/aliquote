@@ -14,6 +14,6 @@ As advertised [recently](/micro/2023-02-23-12-12-36/), I configured my Minecraft
 
 A screenshot lost in my files follows, which is one of my last screenshots on [Last.fm](/post/one-year-scrobbling/). I heard about [Kodi](https://kodi.tv/) but finally I think I'm fine with [cmus](/post/cmus/) and [mpv](https://mpv.io/), and everything is going well on the music side, I still have to listen to 7-8 hours a day.
 
-![img](/img/2023-01-02-18-44-12.png)
+{{< figure src="/img/2023-01-02-18-44-12.png" >}}
 
 {{% music %}}Active Child • _You Are All I See_{{% /music %}}

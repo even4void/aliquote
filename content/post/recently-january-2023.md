@@ -8,7 +8,7 @@ categories: ["2023"]
 
 Same desktop environment for over five or six months, similar window tiling across session, and same tools as well: Neovim, Irssi, Tmux, Alacritty, Zsh, Cmus, Newsboat. No more config tweaks, since almost everything work as expected. Once you get the right tools, properly configured, stick with them and use them everyday.
 
-![desktop](/img/2023-01-17-21-13-06.png)
+{{< figure src="/img/2023-01-17-21-13-06.png" >}}
 
 I've been pretty busy the last two weeks with a new course on bioinformatics for genomic applications. I did a biostatistics refresher too, after a long hiatus (5 years with no teaching at all). It was exhausting, though. Some stuff need to be improved for the next session, but overall I was pretty happy with how things went along the course.
 

@@ -19,11 +19,11 @@ print numpy.__version__
 $ pygmentize -f html -O full -o 1.html 1.py
 ```
 
-![Screenshot1](/img/2010-12-26-17-52-00.png)
+{{< figure src="/img/2010-12-26-17-52-00.png" >}}
 
 Here is a short example of rendering R and Python code:
 
-![Screenshot2](/img/2010-12-26-18-18-00.png)
+{{< figure src="/img/2010-12-26-18-18-00.png" >}}
 
 The source file is here: [test_minted.tex](/pub/test_minted.tex). To compile, just run:
 

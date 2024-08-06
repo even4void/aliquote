@@ -8,4 +8,4 @@ categories: ["2012"]
 
 Eight years now...
 
-![Pierre](/img/20120623224809.jpg)
+{{< figure src="/img/20120623224809.jpg" >}}

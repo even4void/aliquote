@@ -12,7 +12,7 @@ If I did manage to complete my move (thanks to several friends and family member
 
 From a less melodramatic point of view, I put my hi-fi system back on, and this time I'm content with vinyl and streaming via the Apple TV. The sound is really good in the new appartment. I also subscribed to the combo Netflix--Disney+--Canal+, so I guess I will no longer have to buy or rent movies or series on Apple. I originally subscribed to Netflix last year in order to watch Black Mirror. It ended up quickly as my account got hijacked a week later. Let's hope this won't happen this time.
 
-![hi-fi setup](/img/IMG_1407.JPG)
+{{< figure src="/img/IMG_1407.JPG" >}}
 
 When I got back from the hospital, my computer ran out of battery so I had to fall back to the [Thinkpad and OpenBSD](/post/welcome-openbsd/). I spent a few hours adding further options to the core system as well as configuring Kitty and Zsh. Of course, all paths needed to be updated again since Ubuntu relies on `/usr` and OpenBSD, like macOS, on `usr/local`. That's not really an issue, but I wish Ubuntu would follow the same idea.
 

@@ -33,7 +33,7 @@ natl2016  csvsql --db postgresql://localhost/surveys --table natl2016 --inser
 
 So far so good, it works like a charm.
 
-![](/img/2019-03-06-07-32-02.png)
+{{< figure src="/img/2019-03-06-07-32-02.png" >}}
 
 We could use a little loop to ask `sed` to do that 5 to 10 times, but `split` is exactly what we are looking for. It is also more flexible as we can decide to split a file into chunks of given length (`-l`) or size (`-b`). In this case, it is not possible to split in chunks of fixed size since this could result in incomplete lines. So we will be using a fixed length for each chunk (500,000 rows). Here it is in action:<sup>[^1]</sup> (the last line is just to ensure that we haven't lost anything during the process)
 
@@ -71,7 +71,7 @@ done
 
 That's it. Here are the results from [Postico](https://eggerapps.at/postico/):<sup>[^3]</sup>
 
-![](/img/2019-03-06-16-03-36.png)
+{{< figure src="/img/2019-03-06-16-03-36.png" >}}
 
 Now, I believe it should be possible to input the whole CSV file but I haven't tried. 
 

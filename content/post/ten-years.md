@@ -9,7 +9,7 @@ It's been ten years that this "blog" is up and running.
 
 When I first set up my blogging system, I gave it another name (I didn't like the termn "blog" or "weblog" at that time): "Memos." This section has gone now that the site has been redesigned, but I always liked this title better because it gives a more accurate picture of what all this stuff really is: Just a bunch of ideas jumbled together, for the most part, and several log entries to keep a record of my adventures with my many Macbook. Originally, it looked like this (as of November 2017 from the [Way Back Machine](https://web.archive.org/web/*/http://aliquote.org/memos)):
 
-![](/img/2018-05-22-08-01-43.png)
+{{< figure src="/img/2018-05-22-08-01-43.png" >}}
 
 The design of my website was probably a bit crappy but I liked it a lot. This was a "responsive" CSS (for what that meant in 2010) with very little sophistication (a grid layout, a top menu and just plain hyperlinks). The color scheme was inspired from the [Context website](http://www.pragma-ade.nl), and I used [Textpattern](https://textpattern.com) as my blogging engine for several years. No comment, no cookies, no Ads, no stats, just plain text. I never thought it would still be alive 10 years later, but here we are. I rarely read old entries, but when I happened to find one of this blog entries referenced somewhere on the internet I feel like I have done something, finally. 
 
@@ -36,7 +36,7 @@ The same logic could be used to plot an histogram of the data, unless you want i
   with boxes fs solid 0.25 lc rgb '#C7254E' notitle"
 ```
 
-![](/img/plot-posts.png)
+{{< figure src="/img/plot-posts.png" >}}
 
 The longest posts are not really that surprising: it is a "lost+found" [archive of drafts](/post/lost-found-2010) and a [bunch of paper abstracts](/post/bunch-of-papers-statistics-medicine). The shortest ones are one-liner life events and current drafts in progress.
 

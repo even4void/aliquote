@@ -8,7 +8,7 @@ categories: ["2018"]
 
 A fresh new week... with a cold weather and some snow finally.
 
-![snowing ivry](/img/UNADJUSTEDNONRAW_thumb_1142.jpg)
+{{< figure src="/img/UNADJUSTEDNONRAW_thumb_1142.jpg" >}}
 
 Some fresh meals too :smile:
 
@@ -19,6 +19,6 @@ Some fresh meals too :smile:
 
 And a brand new subscription to Apple Music!
 
-![Apple Music](/img/2018-02-07-20-52-12.png)
+{{< figure src="/img/2018-02-07-20-52-12.png" >}}
 
 {{% music %}}Mark Kozelek • *What's next to the moon*{{% /music %}}

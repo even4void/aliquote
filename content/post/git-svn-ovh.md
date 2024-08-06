@@ -85,11 +85,11 @@ $ git push
 
 Here is how it looks under [GitX]:
 
-![](/img/20100714112228.png)
+{{< figure src="/img/20100714112228.png" >}}
 
 And if you wonder how easily does Emacs handle Git repositories, let's take a look at the following screenshot from an R tutorial I am currently writing:
 
-![](/img/20100714110203.png)
+{{< figure src="/img/20100714110203.png" >}}
 
 
 [Ovh]: http://www.ovh.com

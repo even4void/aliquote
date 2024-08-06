@@ -10,9 +10,9 @@ Unsurprisingly, I happened to reconfigure [Spacemacs](http://spacemacs.org) for 
 
 Here are two screenshots of my new workhorse:
 
-![](/img/2018-06-12-13-15-29.png)
+{{< figure src="/img/2018-06-12-13-15-29.png" >}}
 
-![](/img/2018-06-12-20-23-31.png)
+{{< figure src="/img/2018-06-12-20-23-31.png" >}}
 
 I use the vim-powerline modeline as it is simple yet informative enough. At least I know when I am in normal or hybrid mode, and what the major mode actually is. You can click on the major mode in the modeline if you like using the mouse and you will have excatly what you get by pressing `SPC-m`, or equivalently `,`, or `C-c`. I only activated the layers I think I will use in most cases and I only added a couple of custom settings in the `user-config` section of the dot file. At some point, I should probably move them to a dedicated private layer. I am still using the [doom themes](https://github.com/hlissner/emacs-doom-themes), and I refrain myself to install the doom modeline, which has been [ported recently to Spacemacs](https://gist.github.com/aaronjensen/32eb280a2ab67201dc350d6e392a3b65).
 

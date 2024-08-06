@@ -20,6 +20,6 @@ categories: ["2023"]
 
 - [sqliteviz](https://sqliteviz.com/): Instant offline SQL-powered data visualisation in your browser. Looks great. Here's what I came up in a few clicks with our ToothGrowth dataset from previous posts:
 
-![img](/img/2023-02-27-10-29-02.png)
+{{< figure src="/img/2023-02-27-10-29-02.png" >}}
 
 {{% music %}}Chip Wickham • _Sais_{{% /music %}}

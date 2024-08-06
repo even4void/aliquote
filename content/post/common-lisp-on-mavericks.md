@@ -101,7 +101,7 @@ There's not much to see, apparently. Most of the packages with a Gnuplot backend
 
 There is also some bindings to the R software, and I found that [rcl](http://common-lisp.net/project/rcl/) works pretty well. It is "quickloadable" and it allows to use R graphic system without much pain; see some [examples](http://common-lisp.net/project/rcl/examples.html).
 
-![linedit](/img/2014-08-04-08-32-16.png)
+{{< figure src="/img/2014-08-04-08-32-16.png" >}}
 
 It would be interesting to write something on top of [vecto](http://www.xach.com/lisp/vecto/) since it seems like a promising package, and it is currently maintained by the author of Quicklisp himself.
 
@@ -121,7 +121,7 @@ I am aware of [Common Lisp Statistics](https://github.com/blindglobe/common-lisp
 
 Now, I just have to figure out how to run the examples again.
 
-![Lispstat](/img/2014-08-04-13-48-10.png)
+{{< figure src="/img/2014-08-04-13-48-10.png" >}}
 
 
 [^1]: Please note that if the `sbt` plugin is enabled via the `oh-my-zsh` shell manager, `sbcl` is in fact aliased to `sbt clean`.

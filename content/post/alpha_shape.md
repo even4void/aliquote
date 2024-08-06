@@ -8,7 +8,7 @@ categories: ["2021"]
 
 Yesterday I worked on an interesting problem in Python. Given a set of (x,y) points in a plane, I needed to compute the area of the whole cloud of points. An easy solution would be to compute the convex hull of the 2D points, but of course it would overestimate the total area in the presence of strong outlying values at the periphery. We could rely on Delaunay triangulation for that purpose, or maybe its dual (the Voronoi diagram) to minimize the overestimation, as shown in the Figure below (left panel). Another approach would consist in summing of the areas of all interior polygons, which is the same as the sum of the polygon areas defined by the Delaunay triangulation minus the exterior polygons, i.e., those not surrounded entirely by other polygons.
 
-![alpha-shape](/img/alpha_shape.png)
+{{< figure src="/img/alpha_shape.png" >}}
 
 Luckily, I found a [nice package](https://pypi.org/project/alpha-shapes/) on Pypi that handles all that stuff right.[^1] Note that there's a close relationship between alpha shape and Delaunay triangulation: As described on Wikipedia, each edge or triangle of the Delaunay triangulation may be associated with a characteristic radius, the radius of the smallest empty circle containing the edge or triangle. Furthermore, when $\alpha=0$, we get the classical convex hull. See also [Introduction to Alpha Shapes](https://graphics.stanford.edu/courses/cs268-11-spring/handouts/AlphaShapes/as_fisher.pdf) (PDF).
 

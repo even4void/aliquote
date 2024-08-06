@@ -31,4 +31,4 @@ Outre un clin d'oeil aux voyelles de Rimbaud, le lecteur avisé y découvrira de
 
 Hâte de lire le prochain, dans l'édition originale en anglais :
 
-![](/img/iu.jpeg)
+{{< figure src="/img/iu.jpeg" >}}

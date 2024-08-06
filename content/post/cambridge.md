@@ -8,7 +8,7 @@ categories: ["2009"]
 
 Some photos from St-John’s College, while attending the [16th International Meeting of Psychometric Society](http://www.psychometrics.ppsis.cam.ac.uk/news.31.htm) in Cambridge.
 
-![Cambridge](/img/IMG_0215.JPG)
+{{< figure src="/img/IMG_0215.JPG" >}}
 
 {{< fluid_imgs
   "pure-u-1-3|/img/IMG_0229.JPG"

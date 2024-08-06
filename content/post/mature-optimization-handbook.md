@@ -22,7 +22,7 @@ There is more to learn in the next chapters, especially if you are ready to perf
 
 > (with) sufficient stubbornness it is possible to wring insight out of nothing but a SQL prompt, but in this day and age no one should have to.
 
-![](/img/2018-04-12-10-46-21.png)
+{{< figure src="/img/2018-04-12-10-46-21.png" >}}
 
 As a final word, here is a little gem from the very first pages of the book:
 

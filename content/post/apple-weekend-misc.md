@@ -30,7 +30,7 @@ ld: warning: text reloc in
 
 This has been referenced on [Ticket #5128](http://hackage.haskell.org/trac/ghc/ticket/5128), and it led me to suspect that I rather need to update my entire Haskell system. Well, that was quick and easy with the Frameworkized version available on <http://hackage.haskell.org/platform//mac.html>. 
 
-![haskell2011](/img/20110828212438.png)
+{{< figure src="/img/20110828212438.png" >}}
 
 Next to that, even if I didn't get any problem compiling a sample demo program, it throws out some warnings (see partial output below):
 
@@ -46,15 +46,15 @@ As discussed on [Ticket #5019](http://hackage.haskell.org/trac/ghc/ticket/5019),
 
 Here is a preview of the HTML version of the test document, with working references, syntax highlight and $\LaTeX$ support. (The commands I used were: `pandoc pandoc_text.md -s -m --bibliography="ml_dysp.bib" -o 1.html`.)
 
-![test](/img/20110829115737.png)
+{{< figure src="/img/20110829115737.png" >}}
 
 ## OpenCV
 
 Ah, remember to never install so-called "superpack", you know the `pkg` that is supposed to do everything for you (like the [scipy-superpack](http://stronginference.com/scipy-superpack/)) <i class="fa fa-chain-broken fa-1x"></i> . Note that I don't want to denigrate all the efforts made by the maintainers (and for what is worth, maintaining working package on a Mac is a challenging task!), but the problem I have with that approach is that you never know what is installed or whether it will break what you already installed by hand. In my case, I decided to give a try to [SimpleCV](http://simplecv.org/). I dont't know why but instead of a simple `easy_install simplecv`, I choose the packaged binary. As can be seen, a lot of stuff is installed directly in /usr/local`.
 
-![install1](/img/20110829121723.png)
+{{< figure src="/img/20110829121723.png" >}}
 
-![install2](/img/20110829121716.png)
+{{< figure src="/img/20110829121716.png" >}}
 
 There were so many problems with that install (notwithstanding the fact that it targeted Python 2.6, while Python 2.7 is now the default under OS X Lion) that I decided to reinstall everything, that means:
 

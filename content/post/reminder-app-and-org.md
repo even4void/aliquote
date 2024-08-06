@@ -10,7 +10,7 @@ Since macOS Sierra, I found myself using the Reminder App more often than I did 
 
 Most importantly, it is available on iOS too. I use Reminder for various stuff. Beside simple TODO list and project management, I also make extensive use of Reminder to store web links via Apple Share Action menu. Here is what I currently have in my "Read it later" list:
 
-![](/img/2018-10-21-13-28-07.png)
+{{< figure src="/img/2018-10-21-13-28-07.png" >}}
 
 Note that it also possible to send reminder from Apple Mail directly (although it is not obvious --- you have to left-click on the title of a message to send it to the Reminder App). It is also interesting to remark that copy/pasting the above list yields the following plain text checklist:
 

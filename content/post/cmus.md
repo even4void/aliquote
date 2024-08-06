@@ -42,4 +42,4 @@ Should you want to fetch music directly from Youtube, you can use the [following
 If you use [mpris](https://specifications.freedesktop.org/mpris-spec/latest/), you can get cover art in Gnome notification applet almost for free, see this fork: [cmus-mpris-album-art](https://github.com/MicahBird/cmus-mpris-album-art).
 {{% /alert %}}
 
-![cmus](/img/2021-09-18-20-27-54.png)
+{{< figure src="/img/2021-09-18-20-27-54.png" >}}

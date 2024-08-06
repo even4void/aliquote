@@ -16,7 +16,7 @@ While looking for tiling WMs available for macOS, which was quickly solved after
 
 Below is screenshot of the "tall layout", with a main window on the left and everything arranged in row on the right:
 
-![amethyst-tall](/img/2020-09-03-14-12-44.png)
+{{< figure src="/img/2020-09-03-14-12-44.png" >}}
 
 There are other interesting features: You can activate the "focus follows mouse", like in Kitty (or iTerm), create list of selected apps that should stay floating (or, conversely, that should always be tiled), you can configure window margins and screen padding to add extra space around each window like I did in the screenshot above.
 

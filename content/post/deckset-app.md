@@ -12,7 +12,7 @@ I already discussed Decket [a while ago](/post/from-beamer-to-deckset) while I w
 
 A few pictures are worth than thousand words. When you launch Deckset, you get sort of a drawer where you can see all your recent files. You can pick one and it will be displayed in a dedicated window, or you can just edit your Markdown file directly from your preferred editor.
 
-![](/img/2018-05-11-12-34-32.png)
+{{< figure src="/img/2018-05-11-12-34-32.png" >}}
 
 The next two screenshots show the variety of slides that can be built using simple Markdown and a lightweight set of extra commands specific to Deckset. This is [well documented](https://www.decksetapp.com/help/) and easily available from the Help menu. You can display your slides using Deckset directly, and you will get access to "presenter notes" and a second display monitor for free. Importantly, you can also export your slides in PDF format (I know people like JS slides, but I can ensure you that your PDF will still be readable in 20 years but certainly not your Javascript-powered prez).
 
@@ -24,6 +24,6 @@ It looks like Deckset got a [major refactoring](https://www.decksetapp.com/2/) a
 
 I bought the 1.x version from the App Store back in 2014, so I am not eligible for the free upgrade. To be honest, I thought this app was going to die slowly, but I am happy to be proven wrong. I may try the update at some point. In the meantime, the current version is no longer supported and not available via App Store anymore!
 
-![](/img/2018-05-11-12-34-11.png)
+{{< figure src="/img/2018-05-11-12-34-11.png" >}}
 
 {{% music %}}Jeanne Added • _Be Sensational_{{% /music %}}

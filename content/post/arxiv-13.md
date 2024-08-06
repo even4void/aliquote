@@ -26,7 +26,7 @@ This is an extension to the permutation testing framework to the case where the 
 
 This is a short review of power analysis for k-means, Ward agglomerative hierarchical clustering, c-means fuzzy clustering, latent class analysis, latent profile analysis, and Gaussian mixture modelling. Results based on simulated datasets are summarized in Table 1 of the paper, reproduced below.
 
-![img](/img/2023-09-07-10-32-51.png)
+{{< figure src="/img/2023-09-07-10-32-51.png" >}}
 
 ### Supervised dimensionality reduction for multiple imputation by chained equations (https://arxiv.org/abs/2309.01608)
 

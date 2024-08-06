@@ -14,7 +14,7 @@ I have something like more than 28,000 emails, as a result of a sloppy emailing 
 
 It's quite funny to browse five years of emailing activity. My first email on Gmail was from 2006/3/30. I was even able to find an R-Help digest from 2006/07/20 (Vol 41, Issue 20)! The largest email attachments I was able to found dated back from my PhD (obviously, I was so in a hurry that I send and resend the manuscript to everybody multiple times). Anyway, here is the picture that summarizes FindBigMail's results:
 
-![BigMail](/img/20110121135900.png)
+{{< figure src="/img/20110121135900.png" >}}
 
 Well, some attachments were over 10 Mb! In conclusion, this on-line application saves a lot of time for finding forgotten emails (typically those including pictures, 2 Mb each!).
 

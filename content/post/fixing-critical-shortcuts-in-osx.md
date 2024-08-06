@@ -8,7 +8,7 @@ categories: ["2014"]
 
 Here are some minor tweaks to default keyboard shortcuts in Apple Terminal.app and [iTerm](http://iterm2.com).
 
-![Keyboard option on a Mac](/img/2014-08-13-09-01-07.png)
+{{< figure src="/img/2014-08-13-09-01-07.png" >}}
 
 I like being able to switch from one tab to another using left and right arrows, and I prefer to keep consistent shortcuts so I updated the default ones in Terminal.app with those used in iTerm (e.g., <kbd>⌘ ➝</kbd> for next pane). Since Terminal.app uses system localization, labels are in French, and I have a hard time finding how to spell it correctly (because of the single quote).
 

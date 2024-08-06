@@ -8,7 +8,7 @@ categories: ["2023"]
 
 I installed [JASP](https://jasp-stats.org/) recently as I wanted to see how it evolves since the last time I used it (several years ago). Unfortunately, there's no package, tarball or AppImage so you need to install it from Flathub, using flatpak. With regard to my [last post](/post/why-i-like-ubuntu), this also was an occasion to try out flatpak. Overall, it works quite well, it doesn't update itself or its packages _de manière impromptue_, and it is simple to use. Of course, you end up with giant applications since it bundles every dependencies it needs. For instance, JASP is as large as 2.6 Go once installed in `/var/lib/flatpak`. Anyway, the installation went smoothly, and I came to appreciate the flatpak way of installing desktop app. I might even replace all my AppImage's with those from Flathub.[^1]
 
-![flatpak](/img/2023-09-13-15-42-56.png)
+{{< figure src="/img/2023-09-13-15-42-56.png" >}}
 
 Back to Bayesian statistics. Several years ago I mentioned a [Bayesian alternative](/post/bayesian-t-test/) to the traditional Student t-test, but the post found its way into the draft folder forever. Rather than writing and submitting to Stan or JAGS a model file, here is what I would do in R. First, using the [brms](https://paul-buerkner.github.io/brms/) package, we can mimic a t-test assuming unequal variance as follows:
 
@@ -75,11 +75,11 @@ Kruschke also discussed two-group comparisons in section 16.3 of the second edit
 
 Now, it's time to try out JASP. Here's what we get after specifying an informed prior (Student t distribution with default scale factor of 0.707 and df=1) instead of a scaled Cauchy distribution:
 
-![jasp](/img/2023-09-18-14-26-34.png)
+{{< figure src="/img/2023-09-18-14-26-34.png" >}}
 
 This module relies on the [BayesFactor](https://cran.r-project.org/web/packages/BayesFactor/index.html) package, where the ttestBF implements work made by Morey and coll.[^6] JASP also offers a _Robust T-Tests_ module which provides Bayesian model-averaged t-test, as implemented in the [RoBTT](https://cran.csail.mit.edu/web/packages/RoBTT/) package. See also [A conceptual introduction to Bayesian Model Averaging](https://journals.sagepub.com/doi/full/10.1177/2515245919898657) for an introduction. This involves longer computation time, but with default parameters we obtain the following results:
 
-![jasp2](/img/2023-09-18-14-38-26.png)
+{{< figure src="/img/2023-09-18-14-38-26.png" >}}
 
 There are various options that I did not try, but overall I find that this is a great way to get started with Bayesian statistics for beginner students. No need to learn complex R code or to install various stuff. However, we need to carefully check what packages are used under the hood, what priors are used, and what statistics are reported (e.g., Bayes Factor, posterior estimates, etc.).
 

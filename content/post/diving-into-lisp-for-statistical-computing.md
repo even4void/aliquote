@@ -28,7 +28,7 @@ But of course, now there's [Clojure](http://www.clojure.org) and the [incanter](
 
 Anyway, here come the good news for Emacs users: Thanks to [ESS](http://ess.r-project.org/), you can run Lisp Stat inside Emacs; just enter XLisp mode with <kbd>M-x</kbd> XLS and you'll get a prompt and all the handy thinks that generally come with Emacs mode (history, parenthesis matching, etc.). Below is a screenshot I took during a short session:
 
-![emacs](/img/20110205182443.png)
+{{< figure src="/img/20110205182443.png" >}}
 
 What's so good with Lisp? Well, it is quite easy to run a regression model and to plot the residuals for the regression of `x` on `y`:
 

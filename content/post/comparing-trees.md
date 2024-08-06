@@ -56,7 +56,7 @@ points(dd0, dd2, col = "cornflowerblue")
 abline(0, 1)
 ```
 
-![cophenetic](/img/2020-03-03-11-47-00.png)
+{{< figure src="/img/2020-03-03-11-47-00.png" >}}
 
 We can conclude that the NJ method offers the best reconstruction of the original pairwise distance matrix, which is to be expected since UPGMA imposes an ultrametric property whereby all tips should be equidistant from the root, which is another way to say that all species have undergone the same amount of evolution.
 

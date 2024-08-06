@@ -12,7 +12,7 @@ For instance, Karl Broman proposed his own theme for base R graphics, with a gre
 
 Here is an example of a beautiful R graphical display:
 
-![Credit: http://www.gradaanwr.net](/img/coffeeT-1-page-001.jpg)
+{{< figure src="/img/coffeeT-1-page-001.jpg" >}}
 
 The R code is available on <http://www.gradaanwr.net/content/ch12-ensemble-graphics-and-case-studies/>. This is certainly the next book I will order on [Amazon.com](http://www.amazon.com).
 
@@ -73,7 +73,7 @@ par(opar)
 
 Again, the `Hmisc` package provides a nice function to arrange axis label, especially in the y-direction; see `mgp.axis()`. Here, I used a somewhat complicated approach: I called `title()` to redefine x- and y-label default position (baby weight are displayed using 4 digits, converted as characters, but when setting `las=1` R does not increase the space between y-label and y-axis). This cannot be done with `par(mgp=)` (I only changed the space between lines and units for each axis), and using `mtext()` is rather cumbersome for that very purpose.
 
-![A grey theme](/img/grayplot.png)
+{{< figure src="/img/grayplot.png" >}}
 
 It is not difficult to suppress axis drawing and only use grid lines. Here is an updated version of our helper function (in fact, we could further simplify the first `axis()` lines since we are not longer concerned with displaying axis ticks):
 
@@ -110,6 +110,6 @@ with(birthwt, plot(lwt/2.2, bwt, axes = FALSE, pch = 16,
 par(opar)
 ```
 
-![Alternate grey plot](/img/grayplot2.png)
+{{< figure src="/img/grayplot2.png" >}}
 
 That's it!

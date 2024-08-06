@@ -34,6 +34,6 @@ If you want to learn about string encoding, specifically in R, [String Encoding 
 
 David Drukker started [blogging again](https://blog.stata.com/2018/02/15/programming-an-estimation-command-in-stata-preparing-to-write-a-plugin/) on the Stata blog. This is a followup to the previous series on [Programming an estimation command](https://blog.stata.com/2016/01/15/programming-an-estimation-command-in-stata-a-map-to-posted-entries/). Stay tuned! Meanwhile, here are two new books that were just published in February: [The Mata Book: A Book for Serious Programmers and Those Who Want to Be](http://www.stata-press.com/books/mata-book/), [Survey Weights: A Step-by-Step Guide to Calculation](http://www.stata-press.com/books/survey-weights/).
 
-![Credit: [Andrei Kashcha](https://github.com/anvaka/circles)](/img/spirograph.gif)
+{{< figure src="/img/spirograph.gif" >}}
 
 {{% music %}}Talking Heads • _Fear of music_{{% /music %}}

@@ -36,7 +36,7 @@ In[15]:= randomCoprime[x_Integer] :=
 ListPlot[{#, randomCoprime[#]} & /@ RandomInteger[{3, 100}, 500]]
 ```
 
-![img](/img/coprime-random.png)
+{{< figure src="/img/coprime-random.png" >}}
 
 The above function could be used to draw random integer instead of the first consecutive integers used in the previous simulation.
 

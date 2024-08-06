@@ -54,7 +54,7 @@ reshape wide mean, i(temperature) j(material)
 twoway connected mean* temperature, legend(label(1 "#1") label(2 "#2") label(3 "#3")) ytitle(Mean life) scheme(plotplain)
 ```
 
-![](/img/stata-plot-007.png)
+{{< figure src="/img/stata-plot-007.png" >}}
 
 This misses the error bars, though, but I can imagine that adding "low" and "high" values to the current aggregated table and then overlaying the current graph with grouped `twoway rcap` could be one solution. Again, this is quite overkill since the marvelous `margins` command will handle all that for us:
 
@@ -64,4 +64,4 @@ margins temperature#material
 marginsplot
 ```
 
-![](/img/stata-plot-008.png)
+{{< figure src="/img/stata-plot-008.png" >}}

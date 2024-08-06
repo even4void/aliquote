@@ -35,7 +35,7 @@ datasets=# SELECT * FROM auto LIMIT 5;
 
 Here is the table viewed from Induction:
 
-![Viewing a table](/img/20121123120510.png)
+{{< figure src="/img/20121123120510.png" >}}
 
 And here is a little query (with syntax highlighting and auto-complete), on the left, and a simple scatterplot (nothing fancy, of course), on the right:
 

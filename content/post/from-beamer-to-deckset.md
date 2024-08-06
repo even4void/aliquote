@@ -12,7 +12,7 @@ Now that I [upgraded to Mavericks](/post/os-x-mavericks) (OS X 10.9), I decided 
 
 The idea of Deckset is that you write simple Markdown (like when using [Pandoc](http://johnmacfarlane.net/pandoc/)) and slides are formatted using gorgeous themes.
 
-![Deckset](/img/2014-08-16-12-53-35.png)
+{{< figure src="/img/2014-08-16-12-53-35.png" >}}
 
 Slides are rendered as you type your Markdown slides, which is pretty handy, and figures can be displayed in different manner (fit to screen, left- or right-aligned, filtered, or at a specific % of the original size). Any editor that supports Markdown editing (well, basically all text editors) can be used, which means that I can write in Emacs. In fact, Deckset is better described as a presenter not an authoring tool. Unlike Pandoc, it is a paid application (available on the AppStore). It is something to consider if you are happy with Keynotes or Beamer.
 
@@ -20,21 +20,21 @@ Slides are rendered as you type your Markdown slides, which is pretty handy, and
 
 In what follows, I will use some materials I wrote for a training in [Biostatistics with R](/cours/2012_biomed/). Initially, I used a combination of Pandoc and a custom Beamer template to process a set of Markdown files (with a bit of pure LaTeX instructions, though). This way, I was able to focus on the content rather than the layout. It took me some time, however, to get the definitive look-and-feel that I was looking for. If you are interested, see my [beamer.latex](/pub/beamer.latex) template and the [Makefile](/pub/Makefile) I used to generate the PDF slides. Here is what it looks like:
 
-![02-eda](/img/2014-08-17-11-35-08.png)
+{{< figure src="/img/2014-08-17-11-35-08.png" >}}
 
 <small>(The complete slides are here: [02-eda.pdf](/cours/2012_biomed/02-eda.pdf).)</small>
 
 And here is what I was able to achieve with a default grey theme:
 
-![02-eda-bis](/img/2014-08-17-11-39-05.png)
+{{< figure src="/img/2014-08-17-11-39-05.png" >}}
 
 The same slide with a white background:
 
-![02-eda-ter](/img/2014-08-17-12-15-36.png)
+{{< figure src="/img/2014-08-17-12-15-36.png" >}}
 
 Changing theme is really easy and it applies globally.
 
-![theming](/img/2014-08-17-12-15-53.png)
+{{< figure src="/img/2014-08-17-12-15-53.png" >}}
 
 Here is the final [PDF output](http://aliquote.org/pub/slides.pdf). Note that this uses the nice [PTmono](https://www.google.com/fonts/specimen/PT+Mono) and [Lato](https://www.google.com/fonts/specimen/Lato) fonts.
 

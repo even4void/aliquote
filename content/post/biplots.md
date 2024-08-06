@@ -10,7 +10,7 @@ I thought it would be funny to relate how I came from a query about "biplot disp
 
 So, basically I was looking for existing implementation of biplots for Common Lisp. To be honest, I was suspecting that something would be available for [xlispstat](http://www.stat.uiowa.edu/~luke/xls/xlispstat/), and that was the very first hit: [xls-biplot](http://tukey.upf.es/xls-biplot/) was written by Frederic Udina eight years ago. His [paper](http://www.jstatsoft.org/v13/i05/paper) published in the *Journal of Statistical Software* explains available transformations (functional transformation, weighting, centering) of the raw data and the way coordinates (standard, principal, canonical) can be computed to express variables relationships in a reduced factorial space. The picture below was taken when running the demo file in `xlispstat` (`(test-bp)`).
 
-![lispstat](/img/20120225114345.png)
+{{< figure src="/img/20120225114345.png" >}}
 
 Leading to another, I came across the following paper:
 Weihs, C. and Schmidli, H. (1990). [OMEGA (Online Multivariate Exploratory Graphical Analysis): Routine Searching for Structure](http://projecteuclid.org/DPubS?service=UI&version=1.0&verb=Display&handle=euclid.ss/1177012166). *Statistical Science*, 5(2), 175-208. See also a [rejoinder](http://projecteuclid.org/DPubS?service=UI&version=1.0&verb=Display&handle=euclid.ss/1177012172) by Forrest Young (author of [Vista](http://www.visualstats.org/)). 
@@ -34,7 +34,7 @@ For R users, there's the [BiplotGUI](http://biplotgui.r-forge.r-project.org/) pa
 
 I started thinking of a [ggplot2](http://had.co.nz/ggplot2/) implementation of biplot in R. At the time of this writing, it seems there was only one such attempt, namely [ggbiplot](https://github.com/vqv/ggbiplot),[^1] and it is limited to (SVD-based) PCA. I may fork the code at some point. The next picture is one of my experiences in translating `FactoMineR` biplot for multiple correspondence analysis using `ggplot`.
 
-![FactoMineR](/img/20120225130226.png)
+{{< figure src="/img/20120225130226.png" >}}
 
 At this point, I should mention the definitive reference on this topic: Gower, J.C. and Hand, D.J. (1996). *Biplots*. Chapman & Hall:
 

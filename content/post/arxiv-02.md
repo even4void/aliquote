@@ -22,7 +22,7 @@ In this reasearch paper, the authors present a porbabilistic-based algorithm wit
 
 I read this preprint because it is written by a very bright guy I followed on Stack Exchange and his personal website for a long time now. I heard about that paper on Twitter. As I now he is quite proficient with R and well versed into the Generalized Additive Model (GAM), I was happy to take some time to review that paper. If you are interested in this kind of stuff, you should really take a look at [his blog](https://www.fromthebottomoftheheap.net). This paper deals with statistical analyses of trends in palaeoenvironmental time series using GAMs. This family of models allows not only to provide smoothand cross-validated estimates of trend in time, but also to assess model uncertainty and, to some extent, to test formal hypothesis between alternate models. This paper serves both as an introduction to using GAMs in a correct and sensible way, but also as a hand on tutorial with real datasets.
 
-![](/img/2018-10-19-19-13-04.png)
+{{< figure src="/img/2018-10-19-19-13-04.png" >}}
 
 ### Thomas Hofmann, Bernhard Schölkopf & Alexander J. Smola (2008). [Kernel Methods in Machine Learning](https://arxiv.org/abs/math/0701907v3)
 
@@ -32,7 +32,7 @@ This is an old publication that I found while looking to [Bernhard Schölkopf](h
 
 Overall, I found that this article provides a thorough overview of kernel methods, and if you want an extended version, go check the definitive book written a few years before by the same authors:
 
-![](/img/learning-with-kernels.jpg)
+{{< figure src="/img/learning-with-kernels.jpg" >}}
 
 ### Victor Dibia & Çagătay Demiralp (2018). [Data2Vis: Automatic Generation of Data Visualizations Using Sequence to Sequence Recurrent Neural Networks](https://arxiv.org/abs/1804.03126)
 

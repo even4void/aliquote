@@ -33,7 +33,7 @@ plot(rt)
 
 This gives the following results:
 
-![DIF](/img/20110224204422.png)
+{{< figure src="/img/20110224204422.png" >}}
 
 The items that are highlighted in black exhibit DIF. More to say later on.
 
@@ -58,7 +58,7 @@ ecsi
 
 The `ECSImobi` structure is a convenient wrapper holding the structural and measurement models, which I roughly show below as incidence matrices:
 
-![struct](/img/20110224163554.png)
+{{< figure src="/img/20110224163554.png" >}}
 
 The figures were generated using `lattice`, as shown below:
 
@@ -77,11 +77,11 @@ There are a lot of outputs, among which we find
   
 We can plot the factor scores using `densityplot(ecsi)`: 
 
-![ecsi](/img/20110224155249.png)
+{{< figure src="/img/20110224155249.png" >}}
 
 Another very handy function is `pathDiagram()` which produces a Graphviz file for the PLS path model. Here is how it looks with default settings:
 
-![path](/img/20110224161129.png)
+{{< figure src="/img/20110224161129.png" >}}
 
 An equivalent formulation of this model using `plspm` looks like the one provided in the on-line help, with a different model specification:
 
@@ -105,7 +105,7 @@ plot(res2)
 
 Again, there are useful `plot` methods, including the one used here to summarize the inner model (which reflects the magnitude of the links between the 6 LVs).
 
-![path2](/img/20110224165315.png)
+{{< figure src="/img/20110224165315.png" >}}
 
 Finally, we could also directly use the [lavaan](http://cran.r-project.org/web/packages/lavaan/index.html) or [sem](http://cran.r-project.org/web/packages/sem/index.html) package and fit a traditional CFA/SEM model. In the latter case, there's also a convenient function called `plsm2sem()` that allows to convert a `plsm` object to an object of class `mod` for usage with interfacing with `sem` methods.
 
@@ -117,11 +117,11 @@ The [qgraph](http://cran.r-project.org/web/packages/qgraph/index.html) package, 
 In particular, there are nice illustrations on the Big Five theory of personality traits, as measured by the NEOPI, on the dedicated website. Here is the example I like best, for analyzing correlation matrices, which basically show (1) an association graph with circular or (2) spring layout, (3) a concentration graph with spring layout, and (4) a factorial graph with spring layout (but see
 `help(qgraph.panel)`):  
 
-![qg1](/img/20110224170255.png)
+{{< figure src="/img/20110224170255.png" >}}
 
 And here is an example for summarizing a standard PCA applied on the NEOPI (see `help(qgraph.pca)`):
 
-![qg2](/img/20110224170309.png)
+{{< figure src="/img/20110224170309.png" >}}
 
 ## Polytomous items 
 
@@ -130,7 +130,7 @@ Although I didn't found any specific topic around IRT models for polytomous item
 
 From the on-line help, let's try to fit a simple model to the `soup` data, where respondents were asked to rate sample products on an ordered scale with six categories given by combinations of (reference, not reference) and (sure, not sure, guess), in an A-not A [discrimination test](http://en.wikipedia.org/wiki/Discrimination_testing). Before that, here is a quick view of the individual data (10 responses per subject, N=24 subjects, two types of stimuli):
 
-![sureness](/img/20110224151821.png)
+{{< figure src="/img/20110224151821.png" >}}
 
 The plot was generated as follows:
 

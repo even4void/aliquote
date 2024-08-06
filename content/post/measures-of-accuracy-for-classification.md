@@ -42,11 +42,11 @@ $$ \text{PCP}=\frac{\text{TP}}{\text{TP}+\text{FN}},\quad \text{PCN}=\frac{\text
 
 Of note, we have PCP = Pr(instance classified as positive | instance is truly positive), whereas in a statistical decision framework, the Type I error risk is α = Pr(instance classified as positive | instance is truly negative). The following Table summarizes the correspondence between decision theory and classification results.
 
-![](/img/Cwhns.png)
+{{< figure src="/img/Cwhns.png" >}}
 
 As shown below, a correct rejection of H<sub>0</sub> occurs with probability 1 − α and may be considered as test specificity.
 
-![](/img/KRJ3B.png)
+{{< figure src="/img/KRJ3B.png" >}}
 
 ## Distance-based measures
 

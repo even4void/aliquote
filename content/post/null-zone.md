@@ -44,7 +44,7 @@ p <- ggplot(data = d, aes(x = variable, y = value, shape = treat, color = treat)
 p
 ```
 
-![fig-sepsis](/img/fig-sepsis.png)
+{{< figure src="/img/fig-sepsis.png" >}}
 
 And the code that computes the null zone:
 
@@ -79,7 +79,7 @@ p <- p + geom_ribbon(data = dr, aes(x = x, ymin = Lower, ymax = Upper), inherit.
 p
 ```
 
-![fig-sepsis-2](/img/fig-sepsis-2.png)
+{{< figure src="/img/fig-sepsis-2.png" >}}
 
 The shaded area above corresponds to the area in which the two means at each time point should lie if the null hypothesis cannot be rejected at a two-sided 5% level. Unprotected t-test assuming equal variance at each time point confirm that the two groups only differ on the first occasion:
 

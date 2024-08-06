@@ -8,7 +8,7 @@ categories: ["2014"]
 
 I just finished reading two recent books in the R Series from Chapman & Hall: *Reproducible research with R and RStudio* ([Christopher Gandrud](http://christophergandrud.blogspot.fr/)), and *Dynamic documents with R and knitr* ([Yihui Xie](http://yihui.name/)).
 
-![R books](/img/20140327104852.png)
+{{< figure src="/img/20140327104852.png" >}}
 
 Following my post on a good [Workflow for statistical data analysis](/post/workflow-for-statistical-data-analysis), I decided to take a look at the state of the art regarding the R statistical software. In fact, I've been using [Sweave](http://www.stat.uni-muenchen.de/~leisch/Sweave/) and [knitr](http://yihui.name/knitr/) for a while now, and I tend to use knitr for everything but simple R scripts that can be self-contained.
 

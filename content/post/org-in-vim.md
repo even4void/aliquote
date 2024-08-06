@@ -11,7 +11,7 @@ I wrote my [last post](/post/standalone-org-babel/) about it when I stopped usin
 
 I installed this plugin alongside [vim-table-mode](https://github.com/dhruvasagar/vim-table-mode), and everything works as advertised. I didn't tested the agenda facilities since I no longer rely on it in my daily workflow.[^2] In particular, I like the fact that I get automatic folding as one would expect when working with Emacs. I do not use the concealing feature for links and other emphasized pieces of text, but they look to work too, provided you `set conceallevel=2` in your config or from the command line when editing your file. For editing purpose at least, it is enough for me. Below is a screenshot of my [Vim 101 tutorial](/pub/vim-101.pdf), which I wrote in Emacs [two years ago](/post/emacs-org-tufte-handout/).
 
-![orgmode](/img/2022-01-06-20-56-25.png)
+{{< figure src="/img/2022-01-06-20-56-25.png" >}}
 
 If you take a look at the online help for `orgmode`, you will soon notice that it focus on agenda functionalities. I hope that automatic evaluation of code blocks will be integrated soon. I tried [sniprun](https://github.com/michaelb/sniprun) breifly in the afternoon, and although it is very approachable and it provides a concise way to evaluate code block and displaying results using modern features like virtual text, it does not support Lisp-like PLs (Common Lisp, Scheme or Clojure). We'll see how it goes then. In the meantime, the vim-table-mode is a killer feature since it even works for any filetype in Vim.
 

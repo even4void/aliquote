@@ -23,7 +23,7 @@ After you installed GHCup for the first time, you should have a working Haskell 
 
 If you're a Stack user, you can continue working as usual, you just got HLS for free.
 
-![img](/img/2022-08-15-19-24-17.png)
+{{< figure src="/img/2022-08-15-19-24-17.png" >}}
 
 {{% music %}}Keith Jarrett • _Never Let Me Go_{{% /music %}}
 

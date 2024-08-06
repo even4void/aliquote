@@ -37,7 +37,7 @@ ListPlot[xs, PlotRange -> All]
 
 Compare the above to what would be obtained using the Newton derivative-based approach:
 
-![Newton](/img/2020-03-28-11-33-36.png)
+{{< figure src="/img/2020-03-28-11-33-36.png" >}}
 
 The convergence is quick.[^2] Note that the serie is alternating around $\sqrt{2}$, and we have:
 

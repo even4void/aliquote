@@ -34,7 +34,7 @@ Personally, I never liked the term "data scientist" and I was quite happy with w
 
 (But see also his followup post, [I am a data scientist](https://kbroman.wordpress.com/2016/04/08/i-am-a-data-scientist/).)
 
-![Source: <https://twitter.com/cdixon/status/428914681911070720>](http://aliquote.org/pub/img/BfOTdpkIUAA0UXA.jpg-large.jpeg)
+{{< figure src="http://aliquote.org/pub/img/BfOTdpkIUAA0UXA.jpg-large.jpeg" >}}
 
 In the present article, the authors define data science as the union of the following domains, after David Donoho's article, [50 Years of Data Science](http://www.tandfonline.com/doi/abs/10.1080/10618600.2017.1384734): (1) data gathering, preparation, and exploration, (2) data representation and transformation, (3) computing with data, (4) data modeling, (5) data visualization and presentation, and (6) science about data science.
 

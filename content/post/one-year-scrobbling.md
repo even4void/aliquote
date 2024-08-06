@@ -12,7 +12,7 @@ Anyway, the statistics speak for themselves now: these are almost 36,000 scrobbl
 
 Last year summary is shown below (October--December):
 
-![summary](/img/2022-10-07-10-13-36.png)
+{{< figure src="/img/2022-10-07-10-13-36.png" >}}
 
 My music library is composed of 13,632 tracks in MP3 format, as of today, and a bunch of additional music and video grabbed from Youtube or old MP3s not properly tagged yet. It's by far the most reliable collection I had over the last 25 years, since I spent a fait amount of time cleaning dead records and tagging all valid records using beets and MusicBrainz. I don't mind the cover, most of the time, but I know [Rhythmbox] is able to fetch them automagically, so I have most of them somewhere cached on my computer.
 

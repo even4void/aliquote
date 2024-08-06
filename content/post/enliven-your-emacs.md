@@ -67,11 +67,11 @@ If you want to highlight checkboxes using the same color as your TODO header, un
 
 Overall, I found that my daily log book looks much prettier now.
 
-![](/img/2019-09-11-15-36-04.png)
+{{< figure src="/img/2019-09-11-15-36-04.png" >}}
 
 Likewise, here is some R code stolen from the [magrittr](https://magrittr.tidyverse.org) website and the pipe chapter of [R for data science](https://r4ds.had.co.nz/pipes.html) -- which doesn't mean I became a fan of using pipes in R, but let's pretend we have a decent unicode replacement for `%>%`, `%T>%`, and the like:[^2]
 
-![](/img/2019-09-11-15-40-16.png)
+{{< figure src="/img/2019-09-11-15-40-16.png" >}}
 
 [^1]: I also found a similar suggestion on [SO](https://emacs.stackexchange.com/a/33402).
 [^2]: I'm reluctant to use arrow-like operators from Haskell.

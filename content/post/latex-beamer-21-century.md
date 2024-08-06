@@ -26,7 +26,7 @@ One may readily verify that if $f$ and $g$ are continuous functions on $D$ then 
 
 Below is the result when compiled with `luatex`:
 
-![luatex](/img/2020-02-13-10-24-48.png)
+{{< figure src="/img/2020-02-13-10-24-48.png" >}}
 
 This is not just to use nice looking fonts. Unicode support also enables the use of accented letters (which are quite useful in French or German) and instead of `\'e` we can now simply write `é` as we would do in a Latex document. Yet, we are missing lot of goodies in plain TeX, like verbatim, Figure or Table environments, but it is not too hard to find useful macros that do the job well. If you haven't read [TeX for the Impatient](https://www.gnu.org/software/teximpatient/) (available in English and in French), go check the code in your TeX distribution.
 

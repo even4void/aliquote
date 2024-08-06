@@ -32,7 +32,7 @@ In[49]:= GraphicsGrid[{{Histogram[data, Automatic, "Probability"],
    Histogram[Map[ArcTanh, data], Automatic, "Probability"]}}]
 ```
 
-![](/img/2020-02-03-13-39-37.png)
+{{< figure src="/img/2020-02-03-13-39-37.png" >}}
 <small>Figure 3.1 in van der Vaart[^2] is probably wrong since values for $\text{arctanh}\\:r$ are all negative (right panel).</small>
 
 Unlike Box-Cox power transformation, where the idea is to look for a scale on which effects are additive,[^3] in this approach we directly work at the level of the test statistic. As an alternative, when the distribution of the test statistic is unknown or not close to normal, one can resort on computing bias-corrected bootstrap CIs.

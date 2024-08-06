@@ -22,7 +22,7 @@ A similar point was raised by Schmitt [2].
 
 Below, I show how Cronbach's α evolves as the number of items, the average item intercorrelation and the dimensionality are varied. It is merely Cortina's Table 2 converted to a more compact chart. I didn't add the standard error, though.
 
-![](/img/20100924210640.png)
+{{< figure src="/img/20100924210640.png" >}}
 
 As can be seen, lower internal consistencies are found for low number of items, low average item correlation, and when there is no unidimensionality. I happened to produce a similar plot as follows (it needs `cronbach_alpha.R`, which may be download as [Gist 595886](http://gist.github.com/595886)):
 
@@ -60,7 +60,7 @@ xyplot(res~sample, data=res.df, groups=rho, type=c("g","b"),
                 title=expression(rho),cex=.6))
 ```
 
-![](/img/20100924212401.png)
+{{< figure src="/img/20100924212401.png" >}}
 
 For a fixed sample size (N = 300), Cronbach’s alpha increases when the number of items and inter-items correlation (ρ) are also increasing. Even with modest (albeit perfect) correlation between items, e.g. ρ = 0.35, Cronbach’s α would still be at 0.943 with 30 items (and 0.910 with 20 items). Varying sample size does not modify this pattern of variation.
 

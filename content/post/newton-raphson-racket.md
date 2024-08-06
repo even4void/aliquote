@@ -48,7 +48,7 @@ The Newton algorithm belongs to root finding methods, and it is usually employed
 
 Now, suppose we are interested in finding the maximum of a given function, $f(x)$. Let us assume that $f'$ is continuously differentiable, and that $f''(x^{\star})\neq 0$, with $x^{\star}$ the root we are looking for. Maximizing $f$ amounts to find the root of $f'(x)$, which is depicted in the next picture, and at each step we will approximate $f'(x^{\star})$ with the linear Taylor expansion $f'(x^{\star})\approx f'(x^{(t)}) + \left(x^{\star}-x^{(t)}\right)f''(x^{(t)})$ ($=0$).
 
-![2019-08-08-07-34-04](/img/2019-08-08-07-34-04.png)
+{{< figure src="/img/2019-08-08-07-34-04.png" >}}
 
 As can be seen, the derivative $f'$ is approximated by its tangent at $x^{(t)}$, so that we will approximate its root by the root of the tangent line (highlighted as a black dot in the above picture). Hence, we have:
 
@@ -72,7 +72,7 @@ In matrix notation, we would write $\frac{\partial^2\ell}{\partial\beta^2} = -\b
 
 In the end, we would like to estimate the parameters of the logistic model fitted to the dataset shown below (observed and fitted values; see handout 3 in the [rstats-biostats](https://github.com/even4void/rstats-biostats) project for R code and a brief description of the data):
 
-![2019-08-06-10-02-00](/img/2019-08-06-10-02-00.png)
+{{< figure src="/img/2019-08-06-10-02-00.png" >}}
 
 Other than basic mathematical operators and functions, the most important piece of code we need is an equivalent of `crossprod`, the matrix [cross-product](https://en.wikipedia.org/wiki/Cross_product), and `solve`, which is used to solve a system of equations. Luckily, both procedures are available in [racket/math](https://docs.racket-lang.org/math/matrices.html). The instructions inside the R loop could thus be translated literally using untyped Racket as follows:
 

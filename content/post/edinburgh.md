@@ -8,7 +8,7 @@ categories: ["2010"]
 
 Here are some photos from Edinburgh. A very nice place to live in…
 
-![Edinburgh](/img/IMG_0027.JPG)
+{{< figure src="/img/IMG_0027.JPG" >}}
 
 {{< fluid_imgs
   "pure-u-1-2|/img/IMG_0019.JPG"

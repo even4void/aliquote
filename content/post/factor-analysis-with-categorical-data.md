@@ -13,7 +13,7 @@ Takane and de Leeuw, [On the relationship between item response theory and facto
 
 Basically, this paper demonstrates that Bock's marginal likelihood method for a two-parameter IRT model with gaussian errors ('normal ogive model') is equivalent to traditional factor analysis for categorical data, in case of dichotomous (Christoffersson, 1975) and ordered polytomous items (Muthén, 1984). Generalization to the case of unordered polytomous items is also discussed in Section 4. The "taxonomy of data for the IRT and FA models" (Table 1, p. 403) encompasses a wide range of models and applications:
 
-![FA models](/img/20120727124015.png)
+{{< figure src="/img/20120727124015.png" >}}
 
 Another paper that I often provide as a more recent reference is 
 Kamata and Bauer, [A Note on the Relation Between Factor Analytic and Item Response Theory Models](http://www.unc.edu/~dbauer/manuscripts/kamata-bauer-2008.pdf), *Structural Equation Modeling* (2008) 15:136.

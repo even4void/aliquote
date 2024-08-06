@@ -44,7 +44,7 @@ data = RandomFunction[p, {0, 100}];
 ListStepPlot[data]
 ```
 
-![](/img/dna-cmrp.png)
+{{< figure src="/img/dna-cmrp.png" >}}
 The stationnary distribution of this process can be computed with `StationaryDistribution[p]`, while `PDF[p[t], k] // PiecewiseExpand` will return the corresponding PDF. If we are interested in a particular state, this is readily available using any of these two commands. For instance, the probability that the long-run proportion of time the process is in state 2 is given by:
 
 ```mathematica
@@ -59,7 +59,7 @@ DiscretePlot[Evaluate[%], {k, 0, 10}, PlotRange -> {{0, 11}, {0, 0.7}},
   PlotLegends -> {"C", "G", "T"}]
 ```
 
-![](/img/dna-cmrp-2.png)
+{{< figure src="/img/dna-cmrp-2.png" >}}
 
 Finally, the limiting transition matrix is obtained using `MarkovProcessProperties[p, "LimitTransitionMatrix"]`, and we are in close agreement with the results printed in the tutorial:
 
@@ -133,6 +133,6 @@ ListPlot[NestList[Function[x, Q.x], fb, 10000][[All, 1]],
   PlotRange -> {{0, 10000}, {0.23, 0.27}}]
 ```
 
-![](/img/jukes-cantor.png)
+{{< figure src="/img/jukes-cantor.png" >}}
 
 This is in agreement with the model specifications and $\Pr(A)=\frac{1}{4}$.

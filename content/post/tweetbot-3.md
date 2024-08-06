@@ -10,7 +10,7 @@ Since Twitter [withdrawned its native Twitter client](https://twitter.com/Twitte
 
 To be honest, I read [some reviews](https://tidbits.com/2018/03/02/three-alternatives-to-twitters-now-defunct-mac-app/) before deciding which app to choose. At that time, most people were lurking into Tweetdeck, Twitteriffic, or Tweetbot. All that I knew was that I won't be using a web app like Tweetdeck so I decided to try Tweetbot. I do not use Twitter on my Desktop a lot, except for grabbing images or read bookmarked threads. Indeed, I mostly reading Twitter from my iPhone, and as always Twitter is more of a Pinterest to me than a social tool. So any native app that would bring me back the basic functionalities I had with the preceding app would fit the bill.
 
-![](/img/2018-06-10-08-39-43.png)
+{{< figure src="/img/2018-06-10-08-39-43.png" >}}
 
 And now it just happened: I updated to Tweetbot 3 after having played with Tweetbot 2 for a month or so. Tweetbot makes me feel like I am using the old Twitter native app (even if I now have to pay for using it) and that's probably a reasonable choice for what I use Twitter for. On the plus side, it has some additional features that makes interacting with Twitter enjoyable again.
 
@@ -22,4 +22,4 @@ What I like so far:
 - Fullscreen support, which using Apple [split view](https://support.apple.com/en-us/HT204948) mode for fullscreen apps, makes it incredibly easy to have Twitter and any Newsfeed reader side by side (below is an example with [Reeder](/post/reeder-app)).
 - Account management: it is quite easy to add or remove lists or even mute filters from the "My Account" pane.
 
-![](/img/2018-06-10-09-02-42.png)
+{{< figure src="/img/2018-06-10-09-02-42.png" >}}

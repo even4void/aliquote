@@ -16,7 +16,7 @@ To be honest, I only made a modest usage of Python 2.x for teaching between 2010
 
 Surely, having richer data structures at hand offers new horizons. Being able to work with mutable (`list` and `dict`) or immutable (`tuple`) objects is a plus, even if I consume the latter due to side effects (e.g., `zip`ping on a `dict` or a pair of `list`s). Dictionaries are really interesting data structures, however. While named vectors or lists have always been available in R, there is no comparison possible as no canned method is available to exploit this type of pairing (I once provided an illustration of [what we would have to write](https://stackoverflow.com/a/9284010) in R to reproduce `zip` or `enumerate`), notwithstanding the fact that it would have relatively poor application given the omnipresence of data frames and named lists in R. Anyway, there seem to exist a [few packages](https://stackoverflow.com/a/44570412) to mimic dictionaries or hash tables, but these are add-ons while, on the contrary, this is built-in in Clojure or Racket (including either mutable or immutable version in the latter case). Here is an example of my using a dict to create an SQL statement using a `dict`:
 
-![](/img/2019-03-13-21-26-26.png)
+{{< figure src="/img/2019-03-13-21-26-26.png" >}}
 
 <small>(The `keys = str(keys).replace("'", "")` instruction is here to ensure that column names are unquoted when they are sent to PostgreSQL.)</small>
 

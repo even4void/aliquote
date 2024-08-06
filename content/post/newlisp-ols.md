@@ -49,7 +49,7 @@ $ gnuplot -p -e "set terminal png size 800, 600; set output '~/tmp/lbw_fit.png';
     'lbw_fit.dat' u 1:3 w l lc rgb 'black' lw 2 notitle"
 ```
 
-![img](/img/lbw_fit.png)
+{{< figure src="/img/lbw_fit.png" >}}
 
 By the way, Gnuplot itself is able to fit a linear regression from raw data. Finally, here are Stata's results for reference:
 

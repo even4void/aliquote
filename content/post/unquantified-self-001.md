@@ -10,7 +10,7 @@ Here is the monthly newletter from/to my self.
 
 I believe we can safely forget about the winter for the time being and enjoy the sunny days. That's good news for my hand because beta blockers do not play well with cold weather.
 
-![From Twitter](/img/0176.jpg)
+{{< figure src="/img/0176.jpg" >}}
 
 I came across the above pic via Twitter (can't find the link, tho); sometimes I miss Paris, especially wandering the streets at night.
 
@@ -20,7 +20,7 @@ I didn't read much in April, partly because I was doing other unimportant stuff 
 
 I listened to good old music: Nick Cave, Joy Division, Tindersticks, ..., as well as new one. Sadly, I cannot share my Apple Music playlist for the moment. I also spent some evenings listening to this nice [ECM playlist](https://itunes.apple.com/us/playlist/ecm/pl.5a9326f0f5da47059b21850add4d145b) (ECM Records).
 
-![](/img/2018-05-03-21-31-27.png)
+{{< figure src="/img/2018-05-03-21-31-27.png" >}}
 
 I spent a full week with Pierre during the last public holidays. This hasn't happened in a while since I left our home, so I was very happy. We spent our time playing games (him), cooking (me), and watching TV shows (us). We are almost done with [The Walking Dead](https://en.wikipedia.org/wiki/The_Walking_Dead_(TV_series)). Next one will be [Game of Thrones](https://en.wikipedia.org/wiki/Game_of_Thrones) eventually. Personally, I finished watching [The Fall](https://en.wikipedia.org/wiki/The_Fall_(TV_series)) (Series 1). Just starting Series 2.
 
@@ -28,6 +28,6 @@ I am happy with how the site goes. I have been able to publish regularly since I
 
 Anyway, if your are looking for a good red wine, I can recommend this one:
 
-![](/img/0020.jpg)
+{{< figure src="/img/0020.jpg" >}}
 
 {{% music %}}New Order • *Music Complete*{{% /music %}}

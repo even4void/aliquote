@@ -62,7 +62,7 @@ In the mean time, I found interesting blog posts like [Spacemacs for 2016][milos
 
 Everything seems to work right out of the box. A quick check allowed me to confirm that Slime and CIDER can be directly fired from a Lisp or Clojure buffer, while IPython is the default REPL that is launched when visiting a Python file. Spacemacs relies on [anaconda mode][anaconda-mode] (not to be confused with [Anaconda Python][anaconda]) which was a little bit tricky to configure (I ran into trouble with Homebrew Python and then once I installed Anaconda Python, with `pip` itself[^1]; but see [this discussion][issue2917]). Most important to me is the ability to use [ESS][ess] to manage my statistical projects, and it also proved to work quite smoothly.
 
-![Spacemacs in 2016](/img/2016-05-05-12-38-17.png)
+{{< figure src="/img/2016-05-05-12-38-17.png" >}}
 
 Some key features are highlighted below:
 

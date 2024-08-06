@@ -38,6 +38,6 @@ Unfortunately, the tweet with ID 382960381607809024 has been deleted.
 
 I'm pretty sure I bookmarked other links from Twitter, but well, that's where Twitter sucks: it's hard to find something you posted or bookmarked, say, three or four months ago. Here is all what I found by looking in my recent tweets:
 
-![chl's tweets](/img/20140417104911.png)
+{{< figure src="/img/20140417104911.png" >}}
 
 By the way, Pandoc can also [make use of Reveal.js](https://github.com/jgm/pandoc/wiki/Using-pandoc-to-produce-reveal.js-slides). Of course, if you are using R as often as I do you may well know that RStudio now has a nice [Presentation mode](http://www.rstudio.com/ide/docs/presentations/overview). That's what I used in my [latest course](http://cogmaster-stats.github.io/site/), although I would have preferred to use [Slidify](http://slidify.org/) (when I started writing this course, I wanted to publish everything on [Rpubs](http://rpubs.com) and RStudio was great for that).

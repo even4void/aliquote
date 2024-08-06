@@ -19,7 +19,7 @@ I already talked about the [Helix editor](/post/helix-editor). I try to use it o
 - So many good defaults, e.g., start in a directory with `hx .` and you get a file picker.
 - I don't use builtin colorschemes but they look gorgeous as advertised. Here is my boring colorless theme, by the way:
 
-![helix](/img/2023-09-18-20-56-05.png)
+{{< figure src="/img/2023-09-18-20-56-05.png" >}}
 
 *What I miss:*
 

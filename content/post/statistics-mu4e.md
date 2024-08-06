@@ -114,7 +114,7 @@ p + theme_bw()
 
 <small>(The ugly stuff for date conversion is there because I couldn't make R understand how date were stored as `%Y-%b` in my `FR_UTF8` locale.)</small>
 
-![Email usage over time](/img/ts-emails-year.png)
+{{< figure src="/img/ts-emails-year.png" >}}
 
 So clearly, my email activity has seriously increased past 2008, that is two years after I got my PhD (part of this may be explained by the fact that I decided to only use my Gmail account for professional use, and no more MS Exchange as I did during 2006-2008.)
 
@@ -126,6 +126,6 @@ $ mu find --sortfield=date --fields="d m" date:8y..1d | \
   uniq -c | awk '{print $2 " " $1 " " $3}' > 2.dat
 ```
 
-![Email distribution across mailboxes](/img/ts-emails-year-mailbox.png)
+{{< figure src="/img/ts-emails-year-mailbox.png" >}}
 
 I stopped teaching during two years (2010-2012), and I began to work with INSERM and AP-HP shortly after I left my job in psychometrics for educational assessment in 2008. This is nicely reflected in the above picture. Likewise, as I am involved in a [MOOC](http://goo.gl/drKW0h), I receive lot of messages daily via a Google group. However, it was a surprise to notice that the activity in my 'private' mailbox dropped suddenly by mid 2011. The overall number of messages I send seems to be around 300-500 messages every three months, which means that I write around 100 emails a month, which is less than I expected. Of course, this only shows part of my mailboxes, and it does not account for the fact that Gmail labels hardly reflect our real activity: for instance, my 'sent' mailbox includes messages that are associated to other mailboxes.

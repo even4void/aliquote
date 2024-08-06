@@ -92,5 +92,5 @@ $ context par_checker.tex
 
 I got the following PDF:
 
-![tex](/img/20110825195205.png)
+{{< figure src="/img/20110825195205.png" >}}
 

@@ -32,7 +32,7 @@ Show[ListPlot[data], Plot[lm[x], {x, 0, 30}]]
 
 Even if this is a contrived example, it shows how easy it is to generate an artificial dataset, which can be printed much like an R `data.table` or Pandas data frame, to feed built-in functions. Most of Mathematica builtin functions are self-contained, which means there are a lot of optional parameters (but default values are usually good) and function names are generally well chosen. Default graphics are also well composed, as shown below:
 
-![ols](/img/ols_mathematica.png)
+{{< figure src="/img/ols_mathematica.png" >}}
 
 One day, I will probably translate my old [biostatistics][] tutorial to Mathematica.
 

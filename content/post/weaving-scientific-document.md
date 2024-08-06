@@ -16,11 +16,11 @@ I grabbed the Statweave jar file a long ago, but never tried it for real. Now, f
 
 Here is a sample R document:
 
-![rdoc](/img/20110422183131.png)
+{{< figure src="/img/20110422183131.png" >}}
 
 And here is one with Stata commands embedded:
 
-![statadoc](/img/20110425170528.png)
+{{< figure src="/img/20110425170528.png" >}}
 
 The idea is as simple as that of Sweave: you include code chunks in a dedicated environment (here, it starts with `\begin{XXcode}` and stops with `\end{XXcode}`, where `XX` stands for the foreign language). The Stata example simply reads:
 
@@ -47,7 +47,7 @@ Here is the result:
 
 Nothing really difficult in terms of syntax. The configuration of Statweave is also easy. I just changed the default setting for Stata, before noticing that everything was already in the on-line help (RTFM!). So, only the first item in the configuration dialog has to be update in order to reflect the location of your Stata executable:
 
-![stataopt](/img/20110425171416.png)
+{{< figure src="/img/20110425171416.png" >}}
 
 It seems to be possible to use Matlab and Maple. I will try to configure StatWeave to accept Octave code, instead of Matlab that I don't use anymore since the end of my PhD.
 

@@ -28,11 +28,11 @@ Except that I didn't find any pleasant light theme for Regolith -- I currently u
 
 What I really like, though, is that all Gnome applications work as if you were using the default Gnome shell desktop, with a pretty GTK theme. Here's the default look'n feel of Gnome applications (here, the control panel):
 
-![regolith2](/img/2022-02-03-09-33-45.png)
+{{< figure src="/img/2022-02-03-09-33-45.png" >}}
 
 Gnome terminal nicely fits in the tiling framework (no menu bar, no title bar, etc.), and of course Tmux makes session and terminal management even easier:
 
-![regolith3](/img/2022-02-03-09-37-23.png)
+{{< figure src="/img/2022-02-03-09-37-23.png" >}}
 
 {{% music %}}Marianne Faithfull • _Crazy Love_{{% /music %}}
 

@@ -17,7 +17,7 @@ New (riced) desktop setup.
 
 Update [2022-02-04]
 
-![desktop](/img/2022-02-04-11-09-03.png)
+{{< figure src="/img/2022-02-04-11-09-03.png" >}}
 <small> Ubuntu 20.04 LTS: Regolith/i3-gaps, i3bar, rofi (not shown), Tmux, Gnome terminal, Neomutt, cmus.</small>
 
 ---
@@ -33,7 +33,7 @@ Update [2022-09-03]
 
 Update [2023-02-13]
 
-![desktop2](/img/2023-02-13-10-57-55.png)
+{{< figure src="/img/2023-02-13-10-57-55.png" >}}
 <small>Alacritty with font ligature support, Tmux, Cmus, Neovim nightly.</small>
 
 {{% alert note %}}

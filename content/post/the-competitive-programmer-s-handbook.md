@@ -76,7 +76,7 @@ def cn(n):
 
 A related problem is the [Catalan’s Triangle](https://kaygun.tumblr.com/post/169499813519/catalans-triangle). Finally, Catalan numbers are also related to binary (top) and rooted (bottom) trees (see below), and [many other data structures](http://www.geometer.org/mathcircles/catalan.pdf) (PDF).
 
-![](/img/2018-05-02-10-10-11.png)
+{{< figure src="/img/2018-05-02-10-10-11.png" >}}
 
 If you are interested in competitive programming, you may also want to take a look at some of the references cited in the book:
 

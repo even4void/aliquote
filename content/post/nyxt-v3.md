@@ -8,7 +8,7 @@ categories: ["2022"]
 
 Two years ago I presented the [Nyxt browser], and how I thought at that time it fit well in my text-oriented workflow. This is still the case, although I had neglected this browser a bit because of big web developments these last twenty months. Now I'm back to it as my daily driver for browsing, using the v3 (pre release), after trying out v2.2.4 for a week or so. I must admit it changes the surfing experience quite a bit, but it's all good.
 
-![img](/img/2022-08-19-20-54-32.png)
+{{< figure src="/img/2022-08-19-20-54-32.png" >}}
 
 Last time, I only scratched the surface of this wonderful app. Let's go into the details of what I like:
 

@@ -18,7 +18,7 @@ Fortunately, the Python statsmodels package provides [OLSResults.get_influence()
 
 Here is a sample [Python script](/pub/ols_influence.py) which demonstrates how to compute Cook's distance[^1] from a multiple regression model as illustrated in R's on-line help for `influence`.
 
-![img](/img/fig-ols-influence.png)
+{{< figure src="/img/fig-ols-influence.png" >}}
 
 Here are the (filtered) results from R:
 

@@ -40,7 +40,7 @@ The [mixOmics](http://cran.r-project.org/web/packages/mixOmics/index.html) packa
 
 Charles Bouveyron provided a general overview of the [HDclassif](http://cran.r-project.org/web/packages/HDclassif/index.html) package (but see the JSS paper, [HDclassif: An R Package for Model-Based Clustering and Discriminant Analysis of High-Dimensional Data](http://www.jstatsoft.org/v46/i06/)), which is for supervised and unsupervised classification. There was a nice demo of clustering with the `crabs` dataset, which can be found in `demo_hddc()`. Below is a screenshot from running model-based clustering with the EM algorithm, k-means initialization for cluster centres, and `AkBkQkDk` model for the general variance-covariance structure (see section 2.1 of the JSS paper for more explanation).
 
-![Clustering](/img/20120704141942.png)
+{{< figure src="/img/20120704141942.png" >}}
 
 Florent Langrognet presented the [Rmixmod](http://cran.r-project.org/web/packages/Rmixmod/index.html) package; this is a porting from the [mixmod project](http://www.mixmod.org/) for high performance model-based cluster and discriminant analysis, which comes as a C++ library with command-line utilities and a MATLAB frontend. Interestingly, this package also works with semi-supervised problem, and it allows for case weighting.
 

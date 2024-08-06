@@ -14,7 +14,7 @@ I think I first heard of this app on one of Jack Baty's weblogs, but to be hones
 
 My first impression was that the UI is very clean, minimalist, and so much well thought: you get all the space for writing, with no status or menu bar, or even side bar full of icons for sharing, exporting, and the like. Take a look by yourselves:
 
-![](/img/2019-11-07-15-10-04.png)
+{{< figure src="/img/2019-11-07-15-10-04.png" >}}
 
 Other features I found very handy in Typora:
 

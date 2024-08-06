@@ -83,11 +83,11 @@ $ python setup.py install --with-cython
 
 Below is a little check, using `%run example_predict.py` in IPython 0.10.2:
 
-![scikit](/img/20110724221626.png)
+{{< figure src="/img/20110724221626.png" >}}
 
 and an illustration with the [mean shift algorithm](http://scikit-learn.sourceforge.net/stable/auto_examples/cluster/plot_mean_shift.html), from the `scikit.learn`:
 
-![scikit2](/img/20110724222033.png)
+{{< figure src="/img/20110724222033.png" >}}
 
 Welcome OS X Lion again: How fortunate!
 

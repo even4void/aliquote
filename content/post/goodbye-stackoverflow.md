@@ -12,6 +12,6 @@ I have been [elected on Cross Validated](https://stats.stackexchange.com/users?t
 
 It was a pretty tough decision to make but you have to face it: I hadn't participated for 4 years and since my accident I don't have much motivation for all these interactions on the internet anymore. I still consult Cross Validated from time to time, but I must admit I generally read answers from specific users that I was already following beforehand. I am quite happy about how the site works, even though I haven't followed every detail in a long time. Surely, one of the hardest part of this community has always resolved around the necessary but sometimes delicate distinction between questions that are purely related to statistical software, numerical computing issues, or even applied mathematics. Anyway, I believe a good job was done by the moderators and the community in suggesting what topics are a good fit for the site.
 
-![](/img/2019-01-06-20-03-36.png)
+{{< figure src="/img/2019-01-06-20-03-36.png" >}}
 
 For the record, here are [all my posts](/pub/stackexchange_2010-2012.tar.gz) (10.2 Mb tarball) on the main site. I described in an [earlier post](/post/archiving-stackexchange/) the why and how of that archive. I haven't checked if the imgur links are still valid, but at least the plain text version should be enough to get the idea.

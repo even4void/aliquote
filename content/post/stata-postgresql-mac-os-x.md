@@ -16,11 +16,11 @@ Mac OS X comes with [iODBC](http://www.iodbc.org/dataspace/iodbc/wiki/iODBC/), i
 
 However, ODBC connectors seem to be slowly updated for newer version of OS X. For example, the latest release of [MySQL Connector/ODBC](http://dev.mysql.com/doc/refman/5.6/en/connector-odbc.html) targets [10.6](http://dev.mysql.com/downloads/connector/odbc/) (but it should work with 10.7 and onwards). There are detailed instructions on how to [install the ODBC connector](http://dev.mysql.com/doc/refman/5.6/en/connector-odbc-installation.html) from either a binary or source package. Please note that there is a packaged installer where we can see what's going to be installed on the system:
 
-![](/img/20121123182733.png)
+{{< figure src="/img/20121123182733.png" >}}
 
 Unfortunately, there's no file `libmyodbc3S.so` as reported in the above screenshot or in the on-line help. As I used the tarball, I just copied files in `bin/` and `lib/` to my `/usr/local`. Then we need an `odbc.ini` file. I copied the one in the `test/` folder in `~/Library/ODBC` (which I had to create), and changed absolute paths in there. Then I just used ODBC Administrator to configure a User DSN, according to the [instructions](http://dev.mysql.com/doc/refman/5.6/en/connector-odbc-configuration-dsn-macosx.html).
 
-![](/img/20121123225519.png)
+{{< figure src="/img/20121123225519.png" >}}
 
 We can also check that it worked directly from the command line:
 
@@ -78,11 +78,11 @@ mysql> UPDATE auto SET rep78 = NULL WHERE rep78 = -999;
 
 Then, in Stata:
 
-![](/img/20121123234857.png)
+{{< figure src="/img/20121123234857.png" >}}
 
 How about R with the [RODBC](http://cran.r-project.org/web/packages/RODBC/index.html) package? Let's try it:
 
-![](/img/20121124000019.png)
+{{< figure src="/img/20121124000019.png" >}}
 
 Next adventures in "Data Land": Connect from Emacs on my Airbook to a SAS server installed on another Mac running some Windows flavor (probably XP) installed on a USB key through Virtual Box! (I don't really like the idea, but I have to use SAS for a course.)
 

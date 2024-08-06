@@ -43,7 +43,7 @@ library(lattice)
 contourplot(yy ~ xx$s + xx$rel, region=TRUE, cuts=20)
 ```
 
-![](/img/20100418184505.png)
+{{< figure src="/img/20100418184505.png" >}}
 
 Now, a clinical significant change is not defined as a change greater than what might be expected by measurement error but it is viewed as a change of the patient's location with respect to normative or population-based criterion,<sup>(5)</sup> e.g., its location from the mean ± 2 SD.
 

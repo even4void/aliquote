@@ -26,7 +26,7 @@ zsh 5.0.0 (x86_64-apple-darwin11.4.0)
 
 As I am using [iTerm2](http://www.iterm2.com/), I just configured this new version as my default `zsh` interpreter in the Preferences panel.
 
-![OS X Preference panel](/img/20120724125723.png)
+{{< figure src="/img/20120724125723.png" >}}
 
 We can then launch a new Terminal and see whether everything is working:
 

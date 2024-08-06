@@ -54,7 +54,7 @@ Yet another book(down) on R for Data Science, a course originally taught on [Har
 [IBM Plex](https://ibm.github.io/type/)
 A nice looking OTF font, for desktop and web, which comes in Mono, Sans and Serif version.
 
-![The IBM Plex font](/img/2018-01-02-18-56-46.png)
+{{< figure src="/img/2018-01-02-18-56-46.png" >}}
 
 [Learning probabilistic programming](http://www.robots.ox.ac.uk/~fwood/anglican/teaching/mlss2014/)
 I found this series of exercices while looking for probabilistic programming on Google. This is base on the [Anglican](https://probprog.github.io/anglican/index.html) package, which in turn relies on Clojure. It didn't explore it much at the moment but I hope to do so in the near future.

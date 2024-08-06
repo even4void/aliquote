@@ -26,7 +26,7 @@ Section 1 is mainly devoted to the history of psychiatric epidemiology and the n
 
 Section 2 reviews the basic experimental design used to assess or uncover significant marker of mental disorders. As shown in the next figure, this includes: cross-sectional, case-control and cohort or longitudinal studies, randomized clinical trials, and post-hoc or meta-analysis. In short, the design and analysis of a study aims at maximizing the precision and validity of its findings. Avoiding bias or confounding effect is thus the primary goal of any epidemiologist, especially because most of the studies under consideration are observational per se. Strict control over experimental factors or exposure, like in an RCT, are thus generally lacking.
 
-![Study designs](/img/20080427125228.png)
+{{< figure src="/img/20080427125228.png" >}}
 
 Here are the main advantages and drawbacks of each design:
 
@@ -109,11 +109,11 @@ Section 3 puts emphasis on the reading of data, in particular on the relevance o
 
 The fundamental question when interpreting research findings is to consider what observations “mean” and what can be inferred from them. The [CONSORT statement][CONSORT statement] also provides useful guidelines for reporting results gained through RCTs. The diagram below illustrates the checking process that every critical reviewer may follow in order to ensure that a correct inference can be done based on the observed results.
 
-![CONSORT chart](/img/20080501103418.png)
+{{< figure src="/img/20080501103418.png" >}}
 
 Robert Stewart offers in Chapter 13 an extensive discussion around causal pathways and how inferential aspects shall be handled. The following table summarizes the approach promulgated by Hill (1965) which includes 9 different criteria related to causation effect. His original article was indeed entitled <i class="fa fa-file-pdf-o fa-1x"></i> [The environment and disease: association or causation?][The environment and disease: association or causation?].
 
-![Hill 1965](/img/20080501202234.png)
+{{< figure src="/img/20080501202234.png" >}}
 
 Causation, or causality interpretation, are by far the most difficult aspects of epidemiological research. Cohort and cross-sectional studies might both lead to confounding effects for example. Another set of criteria has been proposed by H.B. Asher in *Causal Modeling* (Sage, 1976), as cited by S. Menard (*Longitudinal Research*, Sage University Paper 76, 1991):
 
@@ -123,7 +123,7 @@ Causation, or causality interpretation, are by far the most difficult aspects of
 
 While the first two criteria can easily be checked using a cross-sectional or time-ordered cross-sectional study, the latter can only be assessed with longitudinal data, except for biological or genetic characteristics for which temporal order can be assume without longitudinal data. Of course, the situation becomes more complex in case of a non-recursive causal relationship. To catch up some of the most useful concepts, here is a brief illustration of the main cause-effect relationships one may encounter in an observational study:
 
-![Causality](/img/20080511093830.png)
+{{< figure src="/img/20080511093830.png" >}}
 
 The interested reader could also refer to Chapter 2 of Rothman's *Modern Epidemiology* (1998, Lippincott Williams & Wilkins, 2nd Edition).[^2]
 
@@ -146,7 +146,7 @@ opinion, of course) in the following HTMLized [BibTeX file] [BibTeX file], or ju
 
 When I am looking for some large-scale (aggregated or not) dataset, I usually search the [Eurostat] database which contains data collected for the European Commission. In the case of biomedical data, a useful resources is the [World Health Organization]. For instance, the [Global Health Atlas] includes standardized data and statistics for infectious diseases at country, regional, and global levels. The figure below is taken from their homepage.
 
-![WHO Atlas](/img/20090108103527.png)
+{{< figure src="/img/20090108103527.png" >}}
 
 ### Notes ###
 

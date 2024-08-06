@@ -36,7 +36,7 @@ for (j in seq_along(nitems)) {
 }
 ```
 
-![cronbach](/img/20110625205901.png)
+{{< figure src="/img/20110625205901.png" >}}
 
 Finally, note that:
 

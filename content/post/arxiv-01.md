@@ -53,7 +53,7 @@ Flint depends on AWS (S3 bucket) and Lambda. It allows you to use Spark without 
 
 [AWS Lambda](https://aws.amazon.com/fr/lambda/) is one of the next-generation service from Amazon. It let you run any code in a serverless environment according to a pay-as-you-go cost model: Amazon takes care of allocating ressources and managing parallel execution of your code. Moreover the execution can be triggered by external event, like in Travis CI. As an example, consider an image processing pipeline where each time an user upload an image on an S3 bucket, a Lambda to generate an image thumbnail is triggered. For a standalone application, take a look at Seth Brown [BeerAI recommender system](http://www.drbunsen.org/beerai/).
 
-![Picture taken from https://aws.amazon.com/fr/lambda/](/img/2018-04-08-09-30-04.png)
+{{< figure src="/img/2018-04-08-09-30-04.png" >}}
 
 ### Aaronson, S. (2011). [Why Philosophers Should Care About Computational Complexity](https://arxiv.org/abs/1108.1791)
 

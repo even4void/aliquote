@@ -14,14 +14,14 @@ I am particularly interested in displaying large association tables in a graphic
 
 I already know fluctuation plots, as implemented in [ggplot2](http://had.co.nz/ggplot2/) (`ggfluctuation()`), or heatmap displays (again `ggfluctuation()`, or `levelplot()` from the Lattice package). This would work for (2) essentially. I can imagine that a network or graph representation would also help showing (1) + (2). In fact, similar displays were already proposed to study genes networks, as in the following picture taken from [The influence of genetic variation on gene expression](http://genome.cshlp.org/content/17/12/1707.abstract), from Williams et al., *Genome Research* (2007) 17:1707.
 
-![genome](/img/20101228163448.png)
+{{< figure src="/img/20101228163448.png" >}}
 
 In *Beautiful Visualization, Looking at data through the eyes of experts* (Steele and Iliinsky, eds., O'Reilly, 2010), [Robert Kosara](http://kosara.net/) shows how to turn a Table into a tree with Parallel Sets (Chapter 12). His paper is available online:
 Robert Kosara, <i class="fa fa-file-pdf-o fa-1x"></i> [Turning a Table into a Tree: Growing Parallel Sets into a Purposeful Project](http://kosara.net/papers/2010/Kosara_BeautifulVis_2010.pdf), in Steele, Iliinsky (eds), *Beautiful Visualization*, pp. 193–204, O'Reilly Media, 2010.
 
 Here's what it looks like:
 
-![kosara](/img/20110114114907.png)
+{{< figure src="/img/20110114114907.png" >}}
 
 Another paper that I liked is Aritra Dasgupta, Robert Kosara, [Pargnostics: Screen-Space Metrics for Parallel Coordinates](http://kosara.net/papers/2010/Dasgupta_InfoVis_2010.pdf), *Transactions on Visualization and Computer Graphics (Proceedings InfoVis)*, vol. 16, no. 6, pp. 1017–1026, 2010, but we shall concentrate on circular displays for the moment.
 
@@ -42,7 +42,7 @@ prop.table(s.tab)
 
 Now, here is how it looks when we draw those linear relationships as "ribbons" whose size reflect conditional associations:
 
-![kaleid1](/img/20110114142955.png)
+{{< figure src="/img/20110114142955.png" >}}
 
 So far, so good. We got the idea, but as we generate data from uniform distribution, no relations are to be expected between the categories of A and B. This is indeed the case and there's no apparent "pattern" in those ribbons, and the points on the A-segment are evenly spaced. So, let's try with a more unbalanced two-way table:
 
@@ -52,7 +52,7 @@ s2 <- as.table(matrix(c(23,14,2,14,2,25,15,5), nc=2))
 
 And here is flat display:
 
-![kaleid2](/img/20110114152228.png)
+{{< figure src="/img/20110114152228.png" >}}
 
 Clearly, a more interesting pattern can be seen there. First, nearly all of the first category of A is linked to the first category of B. Second, this kind of picture clearly highlights close-to-empty cells (`s2[3,1]` and `s2[1,2]`).
 
@@ -70,7 +70,7 @@ plot(s.g, layout=layout.circle,
 
 The first table is shown below on the left; the second table is on the left. Clearly, this is close to the preceding pictures (we could even have arranged vertes on a rectangular grid):
 
-![graph](/img/20110114163455.png)
+{{< figure src="/img/20110114163455.png" >}}
 
 
 ## Building circular displays à la Circos

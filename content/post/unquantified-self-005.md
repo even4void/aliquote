@@ -10,7 +10,7 @@ Winter is over. And here are the evening news of a man in post-hibernation perio
 
 Today was the first day of the year I was able to eat outside, I mean on my balcony.
 
-![](/img/IMG_0569.jpg)
+{{< figure src="/img/IMG_0569.jpg" >}}
 
 The beginning of the year was less productive in terms of posts on the main site. I spent most of my time micro-blogging instead, around 4-5 posts/day. I still listen to a lot of music, but essentially when the day is over and you can finally touch the smell of the night. It has always been this way: I feel more relaxed when it gets dark, and jazz and alternative music is better when you are relaxed anyway. I spent a lot of time listening to the complete collection of Keith Jarrett and his trio. This was delightful as always.
 

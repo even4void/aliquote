@@ -8,7 +8,7 @@ categories: ["2022"]
 
 A few months ago I learned that we can add popup menus to Tmux, using `display-menu`. I rarely use it, but I find it convenient. The more I learn about those little hacks in Tmux the more I like it. It's worth all modern terminals by far.
 
-![tmux-menu](/img/2022-07-29-20-11-46.png)
+{{< figure src="/img/2022-07-29-20-11-46.png" >}}
 
 Here's mine:
 

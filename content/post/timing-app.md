@@ -8,7 +8,7 @@ categories: ["2018"]
 
 [Timing](https://timingapp.com) is a lightweight application to monitor and record all activity on your Mac. It is a perfect application for time tracking and project-based timesheets:
 
-![](/img/2018-10-08-08-28-35.png)
+{{< figure src="/img/2018-10-08-08-28-35.png" >}}
 
 I have long been searching for an offline timing application. I have heard about several time tracker app that work remotely, need to install a runnable script through your editor, focus on billing or even run on Apple Watch. But I always wanted a simple solution, that will monitor all my activities without much manual tweaking and does not upload data remotely. This is what Timing actually offers, and much more since it allows to:
 

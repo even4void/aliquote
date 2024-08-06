@@ -82,7 +82,7 @@ Let's test this implementation using an example taken from R. The two series sho
 ;; => (35 1.224744871391589 0.22067136191984682)
 ```
 
-![img](/img/fig-mann-whitney-hollander.png)
+{{< figure src="/img/fig-mann-whitney-hollander.png" >}}
 
 Here are the results I got for the same dataset with other statistical packages, using default parameters:
 

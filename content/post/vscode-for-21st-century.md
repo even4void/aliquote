@@ -28,4 +28,4 @@ Of course, VS code looks pretty, comes full of nice feature and integrates all t
 
 Finally, I would say that Emacs affords some kind of digital minimalism, precisely because of what some folks think of a rough UI. However, once you get a pretty informative modeline, a project drawer, a task runner, a nice Git interface, you're close to being as productive as VC coders, IMO. Here's one example of a recent Emacs session during which I was writing some R code. This is powered by Doom emacs and the R langage server (running on top of ESS), btw. Although VS Code offers split view (horizontal and vertical), I like the fact that Emacs allows to have a shell together with a running process while editing some code, and that you can send any R command or region to the R console (and not the shell) by simply using `C-RET`.
 
-![emacs](/img/2020-06-23-09-25-43.png)
+{{< figure src="/img/2020-06-23-09-25-43.png" >}}

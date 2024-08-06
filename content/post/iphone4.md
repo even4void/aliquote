@@ -10,6 +10,6 @@ Here it is! I finally decide to switch to the next gen iPhone, namely the [iPhon
 
 Here is a nice shot taken in a nice room when I was visiting Edinburgh the last days (click to enlarge):
 
-![](/img/20100817084124.jpg)
+{{< figure src="/img/20100817084124.jpg" >}}
 
 [iPhone4]: http://www.apple.com/iphone/

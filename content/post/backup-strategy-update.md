@@ -21,14 +21,14 @@ Unfortunately, the tweet with ID 265506509776093184 has been deleted.
 
 Yet you have to pay for that, whether you exceed your S3 free storage (5 Go) or simply for the application; $29 for Arq remains affordable, though, and I don't plan to exceed my S3 Bucket. Arq is currently uploading my data to [Amazon Glacier](http://aws.amazon.com/glacier/), which according to the docs implies a 4-hour delay to get access to the data but at a reduced cost. I believe this is a fair trade for a simple backup of critical data that we would miss in case of total breakdown of our system.
 
-![Arq](/img/20121201121140.png)
+{{< figure src="/img/20121201121140.png" >}}
 
 I took the opportunity during this winter cleaning to remove all emails from list servers from my Gmail account (19,849, 800 Mo approx.) and switched to Emacs [gnus](http://www.gnus.org) to read them from <http://news.gmane.org>.
 
-![Gmail](/img/20121201113340.png)
+{{< figure src="/img/20121201113340.png" >}}
 
 My last Gmail cleanup is now more than [one year old](/post/cleaning-my-gmail.md). (I still don't like pie charts.) I realized that it is a waste of time and HD space to subscribe to 10+ list servers when you could simply browse them through simple CLI applications.
 
 And here how it looks under Emacs:
 
-![gnus](/img/20121201125654.png)
+{{< figure src="/img/20121201125654.png" >}}

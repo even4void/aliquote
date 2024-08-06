@@ -22,11 +22,11 @@ It's quite interesting that Emacs, and to some extent Vim, comes with full-featu
 
 However, it is interesting to note that we can interact with a live Racket shell in ST as well. Here is a screenshot of `sublimeREPL` running under ST3 with the same sample Scheme code as before: (The Racket package should be installed prior to running the Racket REPL, and `racket` must be in your `$PATH`.)
 
-![ST3REPL1](/img/20140424215625.png)
+{{< figure src="/img/20140424215625.png" >}}
 
 However, to be fair it looks like the R REPL has been enhanced. Last time I checked, their REPL was displaying strange characters when R expressions were being sent to it (this was last year with ST2 since SublimeREPL was not available for ST3). Now it looks ok, although I haven't gone far with it:
 
-![ST3REPL2](/img/20140424215828.png)
+{{< figure src="/img/20140424215828.png" >}}
 
 Note that diving into litterate programming with knitr requires a couple of additional packages, namely [SublimeKnitr](https://github.com/andrewheiss/SublimeKnitr), [EnhancedR](https://github.com/randy3k/Enhanced-R), and [LaTeXing](http://docs.latexing.com/), but see [Using knitr with LaTeXing](http://docs.latexing.com/stable/tutorials/knitr-with-latexing.html) for more information.
 

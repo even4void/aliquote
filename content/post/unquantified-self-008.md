@@ -12,7 +12,7 @@ It's already the end of May. I didn't see the time pass, or rather yes, but just
 
 Other than that, I managed to read a few books anyway, and to watch a few movies--in several stages, each time, because I'm at the end of my life in the evening after two beers! My son and I enjoyed watching the last season of _The Walking Dead_, and we are now busy with the latest season of _Game of Thrones_. This should not take a long time since the producers decided to shorten it to 6 episodes, if I understand correctly. Next one on the radar is _The 100_, season 5.
 
-![](/img/2019-05-30-20-09-00.png)
+{{< figure src="/img/2019-05-30-20-09-00.png" >}}
 
 I wish I had more time to rest and just read a good book. I don't buy new books, or very few every two months or so, and I just keep reading the ones I got from my past life, or those I find at the tram station where people drop off the books they no longer want. I'm turning 45 next week, and I have probably reached an age where there is more pleasure in [rereading](https://www.humanite.fr/gainsbourg-lhomme-qui-lit) than in discovering new things:
 
@@ -20,8 +20,8 @@ I wish I had more time to rest and just read a good book. I don't buy new books,
 
 I also decided to update my data-related toolset, and to switch back to command-line only tools. I want to use other languages for scientific computing (no more R or Stata, if possible) and I will spend the next few months in learning functional PLs more seriously. Coupled with a Javascript backend, I believe Racket or Clojure are probably the best way to move forward. I spent the last two weeks in CLI mode. No more native apps; everything's running in a Terminal. I quite like it.
 
-![](/img/2019-05-25-20-10-07.png)
+{{< figure src="/img/2019-05-25-20-10-07.png" >}}
 
 Finally, I have a few movies left. And of course, a lot of music under my belt. It should allow me to last the whole month of June.
 
-![](/img/IMG_0691.jpg)
+{{< figure src="/img/IMG_0691.jpg" >}}

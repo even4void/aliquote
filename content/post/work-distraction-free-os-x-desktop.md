@@ -10,7 +10,7 @@ categories: ["2012"]
 
 I've been using [iTerm](http://iterm.sourceforge.net/) as a replacement of default Apple Terminal program some years ago, then switched back to Console.App with OS 10.6. I'm back to [iTerm2](http://www.iterm2.com) which has a lot of [interesting features](http://www.iterm2.com/#/section/features). I do no really like Apple's fullscreen mode, except for reading PDF papers, or in some occasions browsing with Safari.App. One annoying feature of this fullscreen mode is that there's no way to get non-modal window behavior, which is particularly sad with [Apple Mail](https://discussions.apple.com/thread/3195461?start=45&tstart=0) or when using a Terminal that need to interact with external programs (typically R for statistical computing, or simply Gnuplot). However, when you just need to type shell commands or edit text files (yes, what else?!), iTerm2.App fullscreen mode is just great.
  
-![iTerm2](/img/20120301103347.png)
+{{< figure src="/img/20120301103347.png" >}}
  
 The above screenshot was taken while writing a tech note on using [SBCL]((http://www.sbcl.org/)) on OS X 10.7 and fixing some minor issues related to my [move to XCode 4.3](/post/the-random-joys-of-living-with-a-macbook) (but see the side note below). As can be seen, SBCL is currently being compiled (lower right panel) while I'm writing using `Pandoc-mode` on Emacs. Different profiles can be used with iTerm2.App; the one on the left is simply "Pastel (Dark background)", where I updated background color from the default black to a less aggressive dark grey.
 

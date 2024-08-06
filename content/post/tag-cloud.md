@@ -34,7 +34,7 @@ wt <- log(wt[wt > 8])
 cloud(wt, col = col.br(wt, fit=TRUE))
 ```
 
-![](/img/20100417113155.png)
+{{< figure src="/img/20100417113155.png" >}}
 
 Then I tried to arrange the (x,y) layout, by randomly assigning words to distinct spatial locations. I also tried a 3D layout, where words lie on a sphere:
 
@@ -90,7 +90,7 @@ Here is a short and lighter implementation using [Nodebox][Nodebox].
 
 Finally, I realized that there is a huge amount of discussion on how to best represent tags, or more generally how tagging information can be used to display useful information about web traffic, text content, but see this [post][post]. In the same vein, such approach may be used to reproduce Ishihara's plates, but see [Ishihara color test][Ishihara color test].
 
-![](/img/20090327171538.png)
+{{< figure src="/img/20090327171538.png" >}}
 
 
 

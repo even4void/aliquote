@@ -48,7 +48,7 @@ alias weka='java -Xmx512m -classpath $CLASSPATH:weka.jar'
 
 This approach is comparable to the use of the `Simple CLI` that is available in weka GUI, although the latter allows for classnames completion:
 
-![weka](/img/20120920130015.png)
+{{< figure src="/img/20120920130015.png" >}}
 
 Online help is also a plus. E.g., at the Simple CLI prompt, you can get a list of all available option for this classifier:
 :
@@ -147,7 +147,7 @@ Size of the tree : 17
 
 We can easily get completion by following Jython section on [Completion function for GNU readline](http://www.jython.org/docs/library/rlcompleter.html). I haven't tried [jythonconsole](http://code.google.com/p/jythonconsole/), but this approach works just fine.
 
-![Jython console](/img/20120920131911.png)
+{{< figure src="/img/20120920131911.png" >}}
 
 But, of course we can work directly with Emacs since [python-mode](http://www.emacswiki.org/emacs/?action=browse;oldid=PythonMode;id=PythonProgrammingInEmacs) supports Jython right out of the box: in a Python buffer, just type `M-x py-toggle-shells`, and Emacs will switch to Jython as the default interpreter.
 

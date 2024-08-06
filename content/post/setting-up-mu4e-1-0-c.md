@@ -8,7 +8,7 @@ categories: ["2018"]
 
 Just when I thought I would be a reasonable guy for 2018 and just keep processing my email with Apple Mail, I found myself reconfiguring Emacs to fetch and send some email using [mu4e](http://www.djcbsoftware.nl/code/mu/mu4e.html), now in version 1. 
 
-![](/img/2018-06-01-11-36-01.png)
+{{< figure src="/img/2018-06-01-11-36-01.png" >}}
 
 The above screenshot is just a side by side arrangement of the header view and the main mode view (with a little help from `ace-swap-window`).
 

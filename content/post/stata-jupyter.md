@@ -32,7 +32,7 @@ Available kernels:
 
 That being said, the usual thing to do is to run Jupyter in your preferred terminal, like we did for years with IPython (which still works fine by the way), using, e.g., `jupyter console` (which is equivalent to `jupyter-console)` or `jupyter qtconsole` if you want a more capable console, which allows among other things to display graphics inside the terminal. You can specify a different kernel using `jupyter console --kernel stata` (or `--kernel ir` for [R](https://irkernel.github.io/running/)), provided you installed the [Stata kernel](https://kylebarron.dev/stata_kernel/). Here is a little illustration when a Qt console is launched as `jupyter qtconsole --kernel stata --no-banner`:
 
-![](/img/2020-04-01-10-06-49.png)
+{{< figure src="/img/2020-04-01-10-06-49.png" >}}
 
 Autocompletion is available for some optional command arguments, which is pretty nice, as shown on the left in the above screenshots. There are also some ["magic" commands](https://kylebarron.dev/stata_kernel/using_stata_kernel/magics/) (e.g., `%help` or `%locals`), but not everything is actually working in the QT console. Of note, you will need Stata 14+ to display graphics in the QT console as there's no PNG or SVG backend in earlier versions of Stata.
 
@@ -53,7 +53,7 @@ ELISP> (setq inferior-STA-program-name "/usr/local/bin/jupyter-console")
 
 And that's almost all you have to do! Now, when you `C-c C-c` on a line or block of lines, this will be sent as usual to the REPL attached to your session, except that it will be a Jupyter kernel:
 
-![](/img/2020-03-31-19-49-22.png)
+{{< figure src="/img/2020-03-31-19-49-22.png" >}}
 
 Finally, I should note that there's also a [Jupyter mode](https://github.com/dzop/emacs-jupyter) for Emacs (and [another one](https://github.com/tmurph/jupyter-mode)) that can be used as a replacement for the above two approaches. The idea is just to connect to a Jupyter server using a specific kernel, and then send whatever command you want to this running instance of Jupyter. Again, in my experience, it works (more or less) but I found it easier to rely on ESS alone.
 

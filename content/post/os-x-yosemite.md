@@ -10,7 +10,7 @@ I installed [Yosemite](http://en.wikipedia.org/wiki/OS_X_Yosemite) last week on 
 
 As part of my series of [posts](/post/os-x-leopard) on [OS X](/post/os-x-lion) [updates](/post/os-x-mavericks), here are my very first impressions on OS X 10.10. Note that I never tried any beta versions despite the big buzz surrounding its release, and I just installed the official release from the App Store. Here is how looks desktop as I am writing this post:
 
-![OS X Yosemite](/img/2014-11-04-13-14-09.png)
+{{< figure src="/img/2014-11-04-13-14-09.png" >}}
 <small>(And yes, I just tried the new release of TextMate 2.0 instead of writing in Emacs.)</small>
 
 The UI looks very clean, and this will be a big change for your eyes if you have been using a Mac for several years. Several new features are really good (PDF annotation, Messages transferred automatically from an iPhone to the Mac, dark theme, etc.), and this update comes with critical fixes like broken multi-desktop support. I have nothing to say regarding the brand new font (Apple Helvetica Neue, instead of Lucida Grande) that sits everywhere, although this choice has been [criticized by some](http://gizmodo.com/designers-explain-why-apples-new-os-x-typeface-is-a-str-1585123982). Anyway, I like the new look-and-feel of the desktop (including the relooked Dock) and the window management system--though I still use [Moom](http://manytricks.com/moom/) to resize windows. One of my Email add-ons, [CargoLifter](http://www.chungwasoft.com/cargolifter/), was broken after the update, but Apple now provides a way to attach (via iCloud) large documents to email, so this is not a big deal. I had to install a Java6-compatible package from Apple website and Oracle JDK 8 since some of my software (e.g., Mathematica) didn't play well with the new Java version that ships with Yosemite.
@@ -60,7 +60,7 @@ export MANPATH="/usr/local/opt/coreutils/libexec/gnuman:$MANPATH"
 
 Now, when viewing Man pages I get the GNU version instead of the BSD one.
 
-![Viewing GNU man pages](/img/2014-11-04-13-26-25.png)
+{{< figure src="/img/2014-11-04-13-26-25.png" >}}
 
 Otherwise, I installed a [bunch of software](/post/useful-mac-apps-for-data-scientists) and picked up some nice configuration files from [Mathias Bynens' GitHub](https://github.com/mathiasbynens/dotfiles). In passing, I updated the default icon for Emacs once I saw this Tweet:
 

@@ -12,7 +12,7 @@ For somewhat different reasons that evolved over time, I stopped using a feed re
 
 However, I never really liked web application (especially the iPython notebook or other web-powered editors), and I have always preferred native app when one was available and not too expensive. Reeder is not free, it costs money, but it remains affordable if you prefer truly native look'n feel and settings like me.
 
-![The Reeder app](/img/2018-03-31-10-11-03.png)
+{{< figure src="/img/2018-03-31-10-11-03.png" >}}
 
 First of all, you don't have to start again from scratch and you can import the feeds you stored on Feedly without any problem. This also applies to other popular reader like Instapaper or Feedbin. Unfortunately, there is no way to synchronize Medium articles at the time of this writing. Also, there is no iCloud syncing. Anyway, here are some of the benefits from using this tiny application instead of spending too much time opening dozens of tabs in your Safari (or Chrome or whatever) browser:
 

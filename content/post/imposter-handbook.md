@@ -9,7 +9,7 @@ categories: ["2018"]
 Here is a little gem that I came across a few weeks ago, thanks to Twitter:  
 Conery, R., [The Imposter's Handbook](https://bigmachine.io/products/the-imposters-handbook) (2016), 111 Jackson, Seattle WA 96714: Big Machine, Inc.
 
-![The Imposter Handbook](/img/imposter.jpg)
+{{< figure src="/img/imposter.jpg" >}}
 
 The associated [website on Github](https://github.com/imposters-handbook/sample-code) contains code in various languages (mainly JS).
 

@@ -8,7 +8,7 @@ categories: ["2018"]
 
 Back in January, I came across a tweet saying "Protect yourself today." That sounds great!
 
-![Tweet 954365286488010752 removed](/img/2018-09-03-21-57-00.png)
+{{< figure src="/img/2018-09-03-21-57-00.png" >}}
 
 But how do we ensure that we are really secured? That nobody (especially a large company) tracks us on internet, without speaking about the [Internet of Things](https://www.forbes.com/sites/jacobmorgan/2014/05/13/simple-explanation-internet-things-that-anyone-can-understand/#45a2662e1d09). That we remain free of listening to music, watching TV show, sending messages to friends over wireless network without being watched and recorded without our knowledge? How about Yahoo (500 million users) or Facebook (90 million) massive leak?
 

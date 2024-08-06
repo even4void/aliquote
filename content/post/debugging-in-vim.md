@@ -46,6 +46,6 @@ Unfortunately, setting a breakpoint in pdb or ghci will not highlight the corres
 
 Here is a preview of a fake debugging session on a Python script:
 
-![img](/img/2022-09-15-13-29-01.png)
+{{< figure src="/img/2022-09-15-13-29-01.png" >}}
 
 {{% music %}}Queens of the Stone Age • _Long Slow Goodbye_{{% /music %}}

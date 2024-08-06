@@ -22,11 +22,11 @@ In my case, I was offered the option to delete my old Xcode program, but not `/D
 
 Anyway, I'm left with reinstalling everything. Funny enough, all utilities are now packaged within Xcode, instead of being "utilities" that can be used independently of Xcode.
 
-![xcode1](/img/20120223155521.png)
+{{< figure src="/img/20120223155521.png" >}}
 
 Likewise, you need to go to Developer Central to get extra programs, like OpenGL Profiler or the Quartz Composer.
 
-![xcode2](/img/20120223155511.png)
+{{< figure src="/img/20120223155511.png" >}}
 
 The fact that Apple removed support for `gcc` (in favor of `llvm`) with the latest release of Xcode has created [some buzz](https://stat.ethz.ch/pipermail/r-sig-mac/2011-March/008100.html) in the R community, notwithstanding the fact that they charged Apple users for that (ok, now it's free again). When I got my OS X 10.7, there was no support for Flash (ok, I can live without it) or Java (I had to reinstall it!). In the next release, they will drop X11 and replace it with [XQuartz](http://xquartz.macosforge.org/trac/wiki).
 

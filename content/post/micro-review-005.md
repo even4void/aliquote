@@ -16,7 +16,7 @@ How many one-liners cheat sheets are there on Github? Here are two that I find v
 
 [A new angle on the t-test](http://www.evolvedmicrobe.com/Literature/GeometricTDistribution.pdf) (Wood and Saville, The Statistician, 2002) is a nice paper that I came across, thanks to Giuseppe on [Twitter](https://twitter.com/gappy3000). It illustrates a geometric approach to computing the t statistic (in this case, $t = \sqrt{2}\text{cot}(\theta)$, where $\theta$ denotes the angle between the data vector and a unit vector, and is used to quantify the degree of extremality of the data under the null) and its associated p-value (in this case, the probability under the null that a data vector of a fixed length lies in the double cone) using a paired t-test for 3 samples. This is a short paper, but it provides a very interesting take on the classical t-test.
 
-![t-test](/img/2019-11-04-16-30-23.png)
+{{< figure src="/img/2019-11-04-16-30-23.png" >}}
 
 [Cascading cache invalidation](https://philipwalton.com/articles/cascading-cache-invalidation/), by Philip Walton, deals with caching and, specifically, how to get the benefits of immutable assets and long term caching without cascading cache invalidations. I'm not involved in that sort of business, and I know it is an hard one, but if you're interested in caching best practice, this article is probably the most recent one that I've heard about.
 

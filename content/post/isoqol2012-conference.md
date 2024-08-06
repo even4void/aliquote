@@ -8,7 +8,7 @@ categories: ["2012"]
 
 Here some are notes I took during the 19th annual conference of the [International Society for Quality of Life Research](http://www.isoqol.org) which was held in Budapest, Hungary.
 
-![Budapest](/img/20121026133045.jpg)
+{{< figure src="/img/20121026133045.jpg" >}}
 
 ## On the use of mixed methods to assess content validity of patient reported outcomes
    

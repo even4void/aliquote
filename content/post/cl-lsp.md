@@ -120,7 +120,7 @@ Here are the server functionnalities obtained from `vim.lsp.get_active_clients()
 
 Mandatory screenshot:
 
-![img](/img/2023-11-08-11-45-33.png)
+{{< figure src="/img/2023-11-08-11-45-33.png" >}}
 
 Formatting does not seem to work correctly (see [#26](https://github.com/cxxxr/cl-lsp/issues/26)), while hover information is okay. No luck with goto actions (definition, reference), nor with omnicompletion (`C-X C-O`). I don't know if it is able to report diagnostics. It doesn't even produce a log file that we could inspect for diagnostic purpose. Also, sbcl is consuming a significant amount of CPU in the background, at least enough to trigger the fans on my laptop. The process is detached correctly upon quitting Neovim, though. This looked like a really cool project, although [slimv](https://github.com/kovisoft/slimv) or [vlime](https://github.com/vlime/vlime) are probably better shaped for interactive Lisp development.
 

@@ -26,7 +26,7 @@ For example, using a toy demo from Racket website, here is how it looks under th
 
 With Emacs, you just have to `M-x run-geiser` to start the REPL (it is pretty fast to come up, unlike Clojure REPL). However, since `Geiser` targets both Racket and Guile, I decided to compile Guile. I tried to install Guile some time ago, following a suggestion on [Cross Validated](http://stats.stackexchange.com/a/20144/930) where I provided a brief illustration with Scheme. But it soon reached to the point where I had too much dependencies to manage and I finally gave up. This time, it works perfectly well, and I suspect that this is because I added all those dependencies in the mean time (in particular, to install [mu](/post/using-mu-to-manage-e-mails)).
 
-![guile](/img/20140401192823.png)
+{{< figure src="/img/20140401192823.png" >}}
 
 Finally, I recently learned about [Pyret](http://www.pyret.org/) (and, as a side-effect, of [Frog](https://github.com/greghendershott/frog)):
 

@@ -14,11 +14,11 @@ In the context of GWAS, where we usually work with 500,000 SNPs or more, and whe
 
 There comes graph-structured hypothesis, whereby hypotheses are arranged in a tree structure based on (1) prior biological knowledge (Fig 1a), (2) logical relationship (Fig 1b), or (3) a data driven principle (e.g. linkage disequilibrium).
 
-![](/img/20100831214719.png)
+{{< figure src="/img/20100831214719.png" >}}
 
 The sequential rejection principle states that if one hypothesis is rejected, then we might update the remaining ones and set a new critical level for un-rejected hypothesis. Goeman and Solari<sup>(1)</sup> use this method throughout their inheritance procedure, but basically it derives from Meinshausen's procedure:<sup>(2)</sup> if hypothesis are arranged in a tree, critical levels are found to be equal to alpha * # letters / # leaves. Figure 2 shows an example of how hypotheses and critical levels are processed.
 
-![](/img/20100831215539.png)
+{{< figure src="/img/20100831215539.png" >}}
 
 In the latest case (on the right), if AB is rejected, then it follows that both A and B critical levels are alpha x 2/5 since if AB is false, we know that at least one of A or B is false.
 
@@ -91,7 +91,7 @@ points(jitter(x[y>2900,3]),x[y>2900,4], cex=.6)
 
 Here is the resulting bounding box found by the PRIM algorithm:
 
-![](/img/20100903140638.png)
+{{< figure src="/img/20100903140638.png" >}}
 
 Turning back to the talk, the author presents an algorithm for Local Sparse Bump Hunting (LSBH) which I roughly summarize as: (1) use CART for partitioning the input space, (2) use (local) sPCA followed by a rotation, and a test for identifying local, which, if positive, is followed by PRIM, (3) aggregation of the results. This does not make any MVN assumption. In short, LSBH is a combination of greedy and patient methods, going recursively and locally. It should be available as an R package (`lshb`).
 
@@ -143,7 +143,7 @@ with $T_i$ distributed as a $\chi^2$ at every single item (crossed by gender). T
 
 Simulated correlated multivariate binary data were generated with the [bindata](http://cran.r-project.org/web/packages/bindata/index.html) package. Hierarchical testing of variable importance follows the Meinshausen's method, already discussed at the top of this page. The following picture is taken from Hummel et al.<sup>(1)</sup> and it shows results from the focus level procedure that determined a subgraph of the GO with a controlled number of falsely rejected null hypotheses.
 
-![](/img/20100904110331.png)
+{{< figure src="/img/20100904110331.png" >}}
 
 Interesting references to work throughout are:
 

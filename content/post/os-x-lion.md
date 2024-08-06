@@ -16,7 +16,7 @@ Besides, there are some significant software updates.
 
 About C coding, `gcc` is now symlinked to `llvm-gcc-4.2`, as part of the Apple developpers' "effort" to fully integrate [LLVM](http://llvm.org/) and [clang](http://clang.llvm.org/) in the OS. That means that there's no more GNU `gcc`. The following post is interesting in this respect, [OS X Isn't for Developers](http://zachholman.com/2011/03/osx-isnt-for-developers/).
 
-![gcc](/img/20110724103338.png)
+{{< figure src="/img/20110724103338.png" >}}
 
 Hopefully, the R software is supposed to compile with `llvm`, but there's a lot more to read on the [r-sig-mac-request](https://stat.ethz.ch/pipermail/r-sig-mac/) mailing, where a discussion was initiated on March the 10th (and ended 11 days after). I've seen a reply by Jan de Leeuw saying R compiles fine with `llvm-gcc`:
 
@@ -56,7 +56,7 @@ No Java runtime present, requesting install.
 
 The following dialog window then popups
 
-![java](/img/20110724110115.png)
+{{< figure src="/img/20110724110115.png" >}}
 
 but nothing happens. In fact, it is supposed to trigger Software Update to download and install the required Java runtime, but it doesn't work for me.
 
@@ -89,6 +89,6 @@ GNU Emacs 22.1.1
 
 but my [AucTeX](http://www.gnu.org/software/auctex/) install (which was in `/usr/local`) has suddenly ceased to work. Why? I know that [Aquamacs](http://aquamacs.org/) comes with everything I ever needed, especially the [dev branch](http://aquamacs.org/nightlies.shtml) which includes the new package manager, but I also like using Emacs for the Terminal directly.
 
-![emacs](/img/20110724185537.png)
+{{< figure src="/img/20110724185537.png" >}}
 
 I updated to AucTeX 11.86. It's not that bad finally as I upgraded my TexLive distribution.

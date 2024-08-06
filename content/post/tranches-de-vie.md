@@ -18,7 +18,7 @@ Alors voilà un frigo rempli de légumes, datant de janvier 2017. Plein hiver, d
 
 Toujours l'hiver, mais plutôt finissant. Je continue mes expérimentations de soupes mixées et j'expérimente de nouvelles formules de pizza pour mon fils.
 
-![](/img/IMG_0393.jpeg)
+{{< figure src="/img/IMG_0393.jpeg" >}}
 
 Là, à gauche, j'ai sans doute nettoyé mon frigo, comme je le fais assez régulièrement tous les deux ou trois mois (sans compter les nettoyages ponctuels, bien entendu). C'est le mois de juillet ; salades à volonté !
 
@@ -28,7 +28,7 @@ Là, à gauche, j'ai sans doute nettoyé mon frigo, comme je le fais assez régu
 
 L'hiver est revenu. Des légumes, encore des légumes. Je me rappelle avoir essayé plusieurs moutardes pour en trouver une qui ne soit pas trop salée pour accompagner sauces et tartes aux légumes. Le mieux que j'ai trouvé tire quand même dans les 2-3 g de sel pour 100 g. Il existe des moutardes sans sel, mais ce sont essentiellement des graines ayant goût de vinaigre.
 
-![frigo 01](/img/IMG_0070.jpg)
+{{< figure src="/img/IMG_0070.jpg" >}}
 
 De nouveau le frigo bien vidé et nettoyé, en janvier 2018. C'est à cette même époque que j'ai commencé à me préparer des salades concombres ou des macédoines de légumes aux épices. J'en prépare toujours autant d'ailleurs : la seconde photo date d'octobre de la même année.
 
@@ -38,10 +38,10 @@ De nouveau le frigo bien vidé et nettoyé, en janvier 2018. C'est à cette mêm
 
 Tomates et cerises pour accompagner l'été. Cette année, j'aurais comme l'année dernière préparé de nombreuses ratatouilles, mais je me suis également mis à réaliser des sauces bolognaises variées (tantôt avec des morceaux de carottes, tantôt avec de l'aubergine), plus ou moins pimentées.
 
-![frigo 01](/img/IMG_0768.jpg)
+{{< figure src="/img/IMG_0768.jpg" >}}
 
 Photo la plus récente : c'est la fin de la saison des tomates, mais j'en ai encore quelques-unes pour réaliser des salades : tomate ananas, zébra et noires de Crimée.
 
-![frigo 01](/img/IMG_0794.jpg)
+{{< figure src="/img/IMG_0794.jpg" >}}
 
 {{% music %}}The National • _Trouble Will Find Me_{{% /music %}}

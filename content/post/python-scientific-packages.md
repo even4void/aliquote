@@ -54,7 +54,7 @@ Playing Sound...
 with `stars.py` opening a window like the one below (and moving stars inside,
 but I cannot capture them in a snapshot :-).
 
-![](/img/20100418213844.png)
+{{< figure src="/img/20100418213844.png" >}}
 	
 Now, what's up? There are plenty of examples on how to use NumPy and SciPy, as
 well as Matplolib. For instance, the following snippet ([specgram.py][specgram.py])
@@ -86,7 +86,7 @@ show()
 
 shows a spectrogram in an interactive graphical device (see below).
 
-![](/img/20100418214317.png)
+{{< figure src="/img/20100418214317.png" >}}
 
 For further readings, I would recommend:
 

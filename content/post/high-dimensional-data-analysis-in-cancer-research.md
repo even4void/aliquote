@@ -14,10 +14,10 @@ Here is a small simulation with LASSO penalization. The following picture depict
 
 Basically, I simulated a set of p=100 predictors, with s=20 variables (symmetrically correlated at 0.3) associated to the Y outcome. Then, I would like to see if LASSO penalization allows to recover the true associated Xs. Clearly, it seems to works quite well, except for some predictors which would be judged significant through univariate testing (although in this case, correcting for multiple comparisons with, e.g., Bonferroni, would yield an alpha of 5e-04).
 
-![Lasso](/img/20100810122359.png)
+{{< figure src="/img/20100810122359.png" >}}
 
 The next figure illustrates some nice properties of splines fitting. The code used to produce this picture follows.
 
 {{< gist even4void 515249 >}}
 
-![Splines](/img/20100809114609.png)
+{{< figure src="/img/20100809114609.png" >}}

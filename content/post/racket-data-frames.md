@@ -106,7 +106,7 @@ It appears this package provides a load of useful features, which may be familia
         #:out-file "/tmp/plot.png"))
 ```
 
-![img](/img/fig-density-depdelay.png)
+{{< figure src="/img/fig-density-depdelay.png" >}}
 
 Of course, most of the above grouping and aggregating operations could be performed with the data-frame package. What's interesting in this case is that author makes heavy use of lazy data structures and relies on a column-major internal representation of rectangular datasets.
 

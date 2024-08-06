@@ -26,7 +26,7 @@ Here is another paper by Achim Zeilis on regression trees. This time, it deals w
 
 I have used FDR correction for multiple comparisons here and there, as an alternative to sequential methods like Holm's approach (which is the default in R's `p.adjust`, btw). The authors offer an alternative data-driven method to the classical Storey's method (i.e., a family of true null proportion of false null hypotheses estimators) for estimating the FDR. In this case, the sorted p-values are approximated using a piecewise linear function with one change point (inversion of slope), as illustrated below. This is somewhat akin to the knee/elbow method or scree plots for determining the number of principal components or factors to retain in PCA or FA, which is discussed in section C.1.
 
-![img](/img/2023-10-16-20-45-29.png)
+{{< figure src="/img/2023-10-16-20-45-29.png" >}}
 
 ### A New Bootstrap Goodness-of-Fit Test for Normal Linear Regression Models (https://arxiv.org/abs/2309.10614)
 

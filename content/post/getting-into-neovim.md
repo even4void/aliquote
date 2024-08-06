@@ -35,4 +35,4 @@ I still have to find how to configure `cmake` and [clang-format](https://duckduc
 
 The documentation is also gorgeous (even if I find navigating into the help pages a bit tricky compared to Info page). Take a look at the screenshot below to see what I mean:
 
-![ale](/img/2020-09-12-08-07-46.png)
+{{< figure src="/img/2020-09-12-08-07-46.png" >}}

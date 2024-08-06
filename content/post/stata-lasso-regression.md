@@ -36,7 +36,7 @@ graph matrix y x*
 
 Note that in the above model, we do not control the variance-covariance matrix of the predictors so that we can't ensure that the partial correlations are exactly zero. More appropriate techniques are available to create [multivariate normal observations](https://www.stata.com/support/faqs/statistics/multivariate-normal-observations/). It is easy to check visually that the correlation matrix between the outcome $y$ and the predictors $x_j$ behave as expected:
 
-![](/img/fig-ridge-matrix.png)
+{{< figure src="/img/fig-ridge-matrix.png" >}}
 
 And here is what we get when using a combination of L1 and L2 penalties:
 

@@ -8,7 +8,7 @@ categories: ["2023"]
 
 While browsing [deskto.ps](https://deskto.ps/u/oceane/d/dhlexn) I noticed a good looking music player, [Amberol](https://apps.gnome.org/fr/app/io.bassi.Amberol/). Unfortunately, it is only available as a Flatpak and it failed to compile on my machine because of a conflicting version of lib-gtk4-dev. Then, I came across [G4Music](https://gitlab.gnome.org/neithern/g4music), which is inspired by Amberol and comes with a bunch of additional features. Here it is in action:
 
-![img](/img/2023-05-27-12-21-26.png)
+{{< figure src="/img/2023-05-27-12-21-26.png" >}}
 
 Once dependencies were resolved (valac, meson, libgtk-4-dev, libadwaita-1-dev, libgstreamer1.0-dev, libgstreamer-plugins-base1.0-dev), the compilation and building stages took less than 30 seconds. This is the first time I use [Meson](https://mesonbuild.com/) as a build system and it looks really fast.
 

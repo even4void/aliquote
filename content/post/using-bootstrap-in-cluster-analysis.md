@@ -24,7 +24,7 @@ xy <- rbind(sim.xy(100, c(0,0), c(.2,.2)),
 
 Here is how it looks:
 
-![xy](/img/20110519084053.png)
+{{< figure src="/img/20110519084053.png" >}}
 
 <small>(I generally fix my seed at a value of 101 if one is interested in reproducing the results.)</small>
 

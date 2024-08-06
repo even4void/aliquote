@@ -91,7 +91,7 @@ To see if it support the X11 interface, let's try to launch the help panel:
 
 A window like the one shown below should pop up on the screen.
 
-![](/img/20110222132507.png)
+{{< figure src="/img/20110222132507.png" >}}
 
 To build a 32-bits version, we need to adjust `CFLAGS` and `CXXFLAGS` (`-arch i386`) or directly pass the `m32` flag to gcc. In my case, I generated both versions but then only installed the 64-bits executable in `/usr/local` with `make install` (with root privileges).
 
@@ -112,7 +112,7 @@ Not all packages use `dhc-make`, though. For example, I successfully reproduced 
 ? (==> p redisplay)
 ```
 
-![](/img/20110222134253.png)
+{{< figure src="/img/20110222134253.png" >}}
 
 [^1]: See also [R: Lessons Learned, Directions for the Future](http://www.stat.auckland.ac.nz/%7Eihaka/downloads/JSM-2010.pdf) (JSM, 2010, and these [slides](http://www.stat.auckland.ac.nz/%7Eihaka/downloads/JSM-Talk.pdf)).
 

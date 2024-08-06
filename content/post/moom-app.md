@@ -12,7 +12,7 @@ I am a long time user of [Moom](https://manytricks.com/moom/), a tiny applicatio
 
 This is handy if you like to stay away from the mouse or the touchpad as much as you can. However, the second reason why I like Moom is that is non obtrusive: You can hide the icon in the menu bar and let the application starts at login, so you never realize that is running in the background. It adds a tiny menu (aka Moom's palette) to the top-left "green" button of each window, which allows to resize the running application half-screen (left/right or top/bottom) or full-screen. Compared to the split view in fullscreen mode, I always found it much more powerful. It is not a tiling window manager, but it's close.
 
-![Moom app top right corner](/img/2019-12-26-19-02-12.png)
+{{< figure src="/img/2019-12-26-19-02-12.png" >}}
 
 A final feature of Moom is that you can drap app to border or corner of your desktop in order to automagically resize your windows. I don't use this feature as much as the keyboard shortcuts and Moom's palette, but it is an interesting option anyway. Usually, I have the following settings: Mail fullscreen on a dedicated space, when I use it of course; iTerm half screen or maximized/fullscreen if I use several panes; Emacs, two third screen or maximized when I need to work on several buffers; Safari, maximized. Then I usually rely on <kbd>⌥-⇥</kbd> to switch between opened apps. All those window arrangements can be performed using Moom shortcuts, as a matter of fact.
 

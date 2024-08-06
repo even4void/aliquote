@@ -8,7 +8,7 @@ categories: ["2022"]
 
 A few days ago I was looking at some old messages on Usenet's comp.lang.scheme, now attached to Google groups. I quit all groups I was subscribed to a while ago already, but I renabled one of them just to see how it feels. Well, you still feel the same, Google, but I'm happy comp.lang.lisp hasn't been shutdown completely, and it is still possible to dig into the archives:[^1]
 
-![comp.lang.lisp](/img/2002-08-27-11-05-33.png)
+{{< figure src="/img/2002-08-27-11-05-33.png" >}}
 
 Last time I installed [slrn] ([official website]) and configured it to use [eternal-september] NNTP server. It worked great, and it still works after a few months without opening slrn. I spend some time digging on DDG for users' config for NNTP, and except for the [official documentation], I found nothing. Noboody's using (Neo)mutt for reading news via NNTP these days?
 

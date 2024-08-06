@@ -43,4 +43,4 @@ Using $\LaTeX$, I just wrote a wrapper file like this:
 
 The result is shown below:
 
-![t-dist](/img/20110430190433.png)
+{{< figure src="/img/20110430190433.png" >}}

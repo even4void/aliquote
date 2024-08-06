@@ -107,7 +107,7 @@ No more plugin providing REPL-like features. If I were to install one, I would c
 
 Happy scheming in (Neo)vim!
 
-![img](/img/2022-07-27-21-11-59.png)
+{{< figure src="/img/2022-07-27-21-11-59.png" >}}
 
 {{% music %}}Nick Cave & The Bad Seeds • _Rock of Gibraltar_{{% /music %}}
 

@@ -32,7 +32,7 @@ The key point resolves around [full reptend prime](https://en.wikipedia.org/wiki
 
 I also happened to find a very nice solution in Mathematica, by [Nayuki](https://www.nayuki.io/page/project-euler-solutions):[^2]
 
-![](/img/2019-12-24-17-03-16.png)
+{{< figure src="/img/2019-12-24-17-03-16.png" >}}
 
 There's more to see: The following fraction has 2997 recurring decimals!
 

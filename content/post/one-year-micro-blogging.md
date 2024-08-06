@@ -21,7 +21,7 @@ aliquote master ✗ abdb045 23h25m ◒ ♯  ls content/micro | wc -l
 
 Here is a [quick and dirty](/pub/one-year-micro-blogging.r) summary of all my micro-posts:
 
-![](/img/wc-micro.png)
+{{< figure src="/img/wc-micro.png" >}}
 
 Well, even raw data say a lot: I like Keith Jarrett, and I mostly talk about Emacs and my readings, as well as TV shows I watch in the evening ("season"). Note that I removed words with less than 4 characters, and that I no longer smoke ("cigarettes" comes from the band [Cigarettes after sex](https://fr.wikipedia.org/wiki/Cigarettes_After_Sex)).
 

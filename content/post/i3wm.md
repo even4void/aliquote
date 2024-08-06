@@ -127,6 +127,6 @@ So far I really like this new setup. It's still a bit crazy to have 3 ways of ar
 After having messed around with my polybar configuration for a week, I finally settled upon the "grayblocks" theme from [polybar-themes](https://github.com/adi1090x/polybar-themes), with lot of customizations of course. See below for the latest screenshot.
 {{% /alert %}}
 
-![polybar](/img/2021-09-21-15-22-23.png)
+{{< figure src="/img/2021-09-21-15-22-23.png" >}}
 
 [^1]: Note that you can even use polybar itself to take a screenshot of your current config.

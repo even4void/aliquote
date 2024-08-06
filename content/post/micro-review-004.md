@@ -10,7 +10,7 @@ Here is the monthly micro review of (not so) random links I found while browsing
 
 Here we are, finally:
 
-![apple](/img/2019-10-08-11-03-40.png)
+{{< figure src="/img/2019-10-08-11-03-40.png" >}}
 
 I've heard a bit of Catalina during the beta, but not so much. It's probably because I mostly turn away from Twitter lately. Now that I reviewed the new features and checked what's working (yeah, apparently [notifications work great](https://tyler.io/macos-10-15-vista/)!) and what's not, I will put on hold the upgrade. My current config looks ok to me and I clearly don't see any added value to the upcoming macOS version: I already have an iPhone, and I don't need an iPad. This just led me to think that I could probably turn back to Linux, using some kind of a minimalist desktop (e.g., [i3](https://i3wm.org)) running on a [Matebook](https://consumer.huawei.com/us/tablets/matebook-x-pro/). So now you know what my dream setup would be if things get too [broken](https://tyler.io/broken/) on macOS or my Macbook were suddenly to crash.
 
@@ -20,7 +20,7 @@ Unlike [Graydon Hoare](https://usesthis.com/interviews/graydon.hoare/), I think 
 
 I'm done with the [Hacktoberfest](https://hacktoberfest.digitalocean.com), which I completed quickly Wednesday morning. If I have read the rules before, I would have chosen otehr repository, surely, or I would have worked on my GH solely. Anyway, if I get a T-shirt, it will go to my preferred Fortnite and Minecraft player (you already guessed who's the guy, right?).
 
-![hacktoberfest](/img/2019-10-09-11-39-47.png)
+{{< figure src="/img/2019-10-09-11-39-47.png" >}}
 
 If you like math and CS, here are a bunch of textbooks available online or in PDF format that I came across recently:
 

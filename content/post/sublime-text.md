@@ -12,7 +12,7 @@ I am a huge fan of [GNU Emacs](http://www.gnu.org/software/emacs/), so why writi
 
 Sublime Text is great because it has a very simple user interface: no fancy buttons, a simplified and useful status bar, two magic commands (<kbd>⌘-P</kbd> and <kbd>⇧-⌘-P</kbd>). Configuration is done via text files, with Python as a driving language. I tried it for a day or so, but obviously that is not enough to really gauge its capabilities. However, I soon found myself missing some nice tools from Emacs: first, keyboard shortcuts are really different--looks like I had to rewire my fingers, buffer management and file/directory browsing (I'm thinking of `dired-x` and `ido-mode`, among others). Of course, there's [sublemacspro](http://grundprinzip.github.com/sublemacspro/) which provides some of Emacs key mapping, but that's just too limited. I have an Emacs.app but I mainly work from a terminal with bash, jobs, and the unix way of life; I just can't do that with Sublime Text. I found little support for R or $\LaTeX$, as compared to Emacs. I'm missing inferior processes where I can just lauch any interactive program I want in a dedicated buffer, although I was able to run Clojure thanks to the [sublimeREPL](https://github.com/wuub/SublimeREPL) package, which uses `lein repl`.[^1]
 
-![ST and Clojure](/img/20120826225419.png)
+{{< figure src="/img/20120826225419.png" >}}
 
 My conclusion is that I will stick to GNU Emacs: with age, I'm less inclined to change my work habits; but I will certainly recommend it for students and people interested in leveraging their text editing activities.
 

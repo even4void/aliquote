@@ -40,7 +40,7 @@ legend("topleft",c("Yes","No"),pch=15,col=c(2,4),bty="n",
 par(opar)
 ```
 
-![](/img/20080414223544.png)
+{{< figure src="/img/20080414223544.png" >}}
  
 The above figure could hardly be interpreted as is because we need to consider both marginal (not shown) and conditional (these plots) distributions at the same time. However, we can run a reduced (compared to that used in (5)) model including color, age and sex, as well as color × age. This is done as follows:
 

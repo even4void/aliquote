@@ -49,7 +49,7 @@ Anyway, great news for Quarto users using Stata with version below 17: you can d
 
     That's it!
 
-![img](/img/2024-07-09-21-14-17.png)
+{{< figure src="/img/2024-07-09-21-14-17.png" >}}
 
 {{% music %}}Bauhaus • _Double Dare_{{% /music %}}
 

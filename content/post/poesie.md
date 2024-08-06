@@ -8,7 +8,7 @@ categories: ["2022"]
 
 Just out of curiosity, I made a quick wordcloud using Mathematica with very few normalization (capital letters, punctuation characters, stop words, short words, etc.) to summarize some personal stuff I wrote during the last 15 years or so, and I thought I will just put it right there.
 
-![worddle](/img/wordcloud_poesie.png)
+{{< figure src="/img/wordcloud_poesie.png" >}}
 
 My very basic script is shown below: (More solutions are available on [Stack Exchange].)
 

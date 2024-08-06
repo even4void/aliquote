@@ -18,7 +18,7 @@ My personal setup has changed a bit: I use Neovim instead of Doom Emacs, I'm on 
 
 The crappy R script I used two years ago did not produce a very satisfactory word cloud this time. There's more content than last time and I really need to filter stop words, numbers and punctuation other than using a series of `gsub`s. Here's an [enhanced version](/pub/three-years-micro-blogging.r), which may be as crappy as the preceding one --- but with native pipes:
 
-![wordcloud](/img/wc-micro-2.png)
+{{< figure src="/img/wc-micro-2.png" >}}
 
 I intentionally left the "iTunes" keyword, which comes from an HTML tag I use to display the album I'm currently listening to on Apple Music, or nowadays from my ripped Music library. I also left the hashtags I use in some of my micro-posts, because I use few different tags like I did on Twitter and they help identify the content quickly. As can be seen, Emacs which was over-represented two years ago has left his place in favor of (mostly functional) programming languages (in addition to R and Python, which I still use for statistics and bioinformatics), and I suspect Emacs will keep fading over time now that I've found a new home for my main text editor. Let's see how it goes in the next few years.
 

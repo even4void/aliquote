@@ -40,7 +40,7 @@ This is well above the limit of unsigned long long in C. So we will probably nee
 ~/tmp  cat out | cut -d: -f 2 | gnuplot -p -e "set logscale y; plot '<cat'"
 ```
 
-![](/img/armstrong.png)
+{{< figure src="/img/armstrong.png" >}}
 
 > Thank God that number theory is unsullied by any application. --- Leonard Dickson
 

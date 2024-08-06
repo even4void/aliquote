@@ -14,7 +14,7 @@ According to Wikipedia, probabilistic programming refers to a programming paradi
 
 Here is a lovely [interactive population map](https://pudding.cool/2018/10/city_3d/) that I found recently on Twitter (h/t [@maartenzam](https://twitter.com/maartenzam/status/1055200741575614465)):
 
-![](/img/DqTTMpkWkAEd_ws.jpg-large.jpeg)
+{{< figure src="/img/DqTTMpkWkAEd_ws.jpg-large.jpeg" >}}
 
 [Principles of Algorithmic Problem Solving](https://www.csc.kth.se/~jsannemo/slask/main.pdf), by Johan Sannemo, with [HN thread](https://news.ycombinator.com/item?id=18287355), provides a nice introduction to desigining various algorithms, ranging from brute-force methods to dynamic programming, combinatorics or number theory. It uses C++ like the Competitive Programmer's Handbook that I [reviewed earlier](/post/the-competitive-programmer-s-handbook).
 
@@ -35,7 +35,7 @@ I just learned about [nextflow](https://www.nextflow.io) which enables scalable 
 
 A new Vega-based implementation of density maps, this time for multiclass problems, is available on Github. The first time I saw it, this reminded me of Hadley Wickham's work on [Embedded Plots](http://vita.had.co.nz/papers/embedded-plots.html) (or maybe, [Glyph Maps](http://vita.had.co.nz/papers/glyph-maps.html)).
 
-![](/img/multiclass-density-map.png)
+{{< figure src="/img/multiclass-density-map.png" >}}
 
 As I always loved 3D moving geometrical objects--and I regularly check plenty of them on Twitter, here is one to end this review:
 

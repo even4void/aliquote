@@ -42,7 +42,7 @@ $$
 
 We also need a toy dataset, which will be a subset of one the dataset used by Selvin in his book on S+ (see [here](https://aliquote.org/pub/MABMUSPlus/) for a collection of plots and a recap' of the exercises). Here is a quick glance at the dataset, which describes how birth weight evolves with maternal age for smoking and non-smoking mothers:
 
-![img](/img/selvin-reg.png)
+{{< figure src="/img/selvin-reg.png" >}}
 <small>Gnuplot [script](/img/selvin-reg.gp) and raw [dataset](/pub/selvin-reg.dat).</small>
 
 The regression line in the above plot reads $\text{weight} = 3.61 + 0.15\times\text{age}      - 0.57\mathbb{I}\_{\text{smoking}}$.

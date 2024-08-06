@@ -49,7 +49,7 @@ x = list(zip(*list(cis.values())))
 plt.hlines(y, x[0], x[1])
 ```
 
-![img](/img/fig-ci-coverage.png)
+{{< figure src="/img/fig-ci-coverage.png" >}}
 
 It could be rewritten without even using Numpy since the [math](https://docs.python.org/3/library/math.html) and [statistics](https://docs.python.org/3/library/statistics.html) modules include the stuff we need.
 

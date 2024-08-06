@@ -8,7 +8,7 @@ categories: ["2018"]
 
 *Learning Unix for OS X*, from the O'Reilly collection, is a book I read long ago but that I forgot to review in time. Here are some words about it.
 
-![](/img/9781449332310.gif)
+{{< figure src="/img/9781449332310.gif" >}}
 
 First of all, it should be noted that it is not Dave Taylor's first try at writing a book on OS X and Darwin, but most of the previous incantations are now out of print. Dave Taylor designed the [Elm](http://www.instinct.org/elm/) email client in the 90s, well before [Mutt](http://www.mutt.org) and other text-based email software.
 

@@ -26,7 +26,7 @@ Some not so random links found on Twitter or elsewhere that I haven't had time t
 
 - In my last [post on Newton's method](/post/newton-raphson-racket/), I mentioned a simple algorithm to find the approximate square root of a number: Let's say you are interested in finding the square root $x=\sqrt{a}$, $a>0$. One way to do this is to start with a reasonable first guess, $x_1>0$, and iterate with the following approximation: $x\_{n+1}=\frac{1}{2}\left(x_n+\frac{a}{x_n}\right)$. This approach was first proposed by Babylonians, who also happened to invent multiplications. A nice alternative to standard multiplication is the so-called Karatsuba method, which offers a nice compromise between additions and multiplications so that overall there are less than $n^2$ steps to perform. Karatsuba approach is discussed in Don Knuth's TAOCP, as well as in [_Modern Computer Algebra_](https://www.cambridge.org/core/books/modern-computer-algebra/DB3563D4013401734851CF683D2F03F0), by Joachim von zur Gathen & Jürgen Gerhard. Later, Schönhage and Strassen provided an even better algorithm, partly based on FFT. Finally, Harvey and van der Hoeven proposed an algorithm that allows to perform [multiplication of very large numbers in $n\log(n)$ steps](https://www.quantamagazine.org/mathematicians-discover-the-perfect-way-to-multiply-20190411/).
 
-![KaratsubaMethod_560-1065x1720](/img/KaratsubaMethod_560-1065x1720.jpg)
+{{< figure src="/img/KaratsubaMethod_560-1065x1720.jpg" >}}
 
 - TIL the [Linux Journal](https://www.linuxjournal.com) has reached the end of its existence. Sad news for the FOSS community.
 

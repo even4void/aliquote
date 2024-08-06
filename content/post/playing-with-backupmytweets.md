@@ -46,7 +46,7 @@ $ graph -T ps -F HersheySans -f 0.035 -S 2 0.025 -m 0 -X Time -Y Frequency \
   < tweets_by_date.dat > plot.ps
 ```
 
-![graph1](/img/20110117130656.png)
+{{< figure src="/img/20110117130656.png" >}}
 
 Yep, we are far from a [ggplot2](http://had.co.nz/ggplot2/) picture.
 
@@ -98,13 +98,13 @@ $ graph -T ps -F HersheySans -f 0.035 -S 2 0.025 -m 0 -X "Elapsed days" \
   -Y Frequency < tweets_by_date2.dat > plot.ps
 ```
 
-![graph2](/img/20110117131159.png)
+{{< figure src="/img/20110117131159.png" >}}
 
 Of course, all of the graphical stuff might have been obtained with Gnuplot.
 
 I have been mainly focusing on the treatment of dates; obviously, the next step is to process the text data (i.e., text mining). In the meantime, here is a preview of my tweets as a worddle.
 
-![graph3](/img/20110117134626.png)
+{{< figure src="/img/20110117134626.png" >}}
 
 In conclusion, we have seen how with elementary commands, and using at most 10 built-in utilities (`perl`, `bash`, `awk`, `grep`, `cut`, `uniq`, `sort`, `cat`, `nl`, `bc`) plus `graph`, we have access to simple but efficient reporting facilities. No need to use external statistical software for that! Everything is available at the shell prompt. Now, I agree that `Python` + `matplotlib` or `R` + `ggplot2` would produce far better results, at the price of few supplementary line of code. In fact, everything could have been done directly in Perl.
 

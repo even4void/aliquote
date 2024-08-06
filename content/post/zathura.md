@@ -72,7 +72,7 @@ map <C-d> set "first-page-column 1:2"
 
 The color scheme follows the Nord dark theme, and it is on by default. If I want a light background as in Evince, I can `C-r` to disable recoloring. The window height and width are defined such that Zathura looks maximized on my screen. I think the remaining options speak for themselves.
 
-![img](/img/2022-08-17-11-52-45.png)
+{{< figure src="/img/2022-08-17-11-52-45.png" >}}
 
 {{% music %}}Jewel • _Hands_{{% /music %}}
 

@@ -52,7 +52,7 @@ $ display spin_plot.gif
 
 The result is shown below, with data generated as `data <- replicate(3, rnorm(100))` in R.
 
-![](/img/spin_plot.gif)
+{{< figure src="/img/spin_plot.gif" >}}
 
 Now, we can do much better with [GGobi][GGobi] and Projection Pursuit.
 
@@ -120,9 +120,9 @@ When I started my PhD, I was used to the [Psychophysics toolbox][Psychophysics t
 
 Setup is quite straightforward, although compilation of `gl_qt.c` failed. Most of the demo scripts are running.
 
-![visionegg](/img/20100619212334.png)
+{{< figure src="/img/20100619212334.png" >}}
 
-![grating](/img/20100619212608.png)
+{{< figure src="/img/20100619212608.png" >}}
 
 
 ### A note about PyQt
@@ -168,7 +168,7 @@ btn.show()
 app.exec_loop()
 ```
 
-![pyqt](/img/20100619210813.png)
+{{< figure src="/img/20100619210813.png" >}}
 
 [Psychophysics toolbox]: http://psychtoolbox.org/wikka.php?wakka=PsychtoolboxOverview
 [octave]: www.gnu.org/software/octave/

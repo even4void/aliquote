@@ -12,7 +12,7 @@ Yes, it seems like another post about the best editor for the Mac. I spent two m
   "pure-u-1-2|/img/20100702203401.png"
   "pure-u-1-2|/img/20100702203412.png" >}}
 
-![Textmate](/img/20100702203450.png)
+{{< figure src="/img/20100702203450.png" >}}
 
 Hereafter, I enumerate useful functionalities that are expected when using a text editor for coding or text editing (I emphasized the conjunction because my own texts mostly are in text or tex mode). For keybinding, I use the convention from Emacs and Textmate communities, where <kbd>M</kbd> means the meta or escape (<kbd>⎋</kbd>) key, <kbd>C</kbd> the control (<kbd>⌃</kbd>) key and <kbd>A</kbd> the alt (<kbd>⌥</kbd>) key.
 

@@ -10,7 +10,7 @@ I decided to backup my posts on [stats.stackechange.com](http://stats.stackechan
 
 All my posts are available as plain text files, with names `0001.txt` to `0245.txt`. They include the title of the questions (with link to [stats.stackexchange.com](stats.stackexchange.com)) followed by my response, in [Markdown](http://daringfireball.net/projects/markdown/syntax) format.
 
-![worddle](/img/20110121111926.png)
+{{< figure src="/img/20110121111926.png" >}}
 
 ## The hard (and ugly) way
 

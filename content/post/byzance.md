@@ -12,7 +12,7 @@ Here's a quick translation from French to English (bear in mind that I'm not a n
 
 Here is a screenshot of the data table:
 
-![vanderwaerden](/img/IMG_1125.jpg)
+{{< figure src="/img/IMG_1125.jpg" >}}
 
 <small>These values were derived from a Byzantine calendar where the dates entered in the twelve signs of the zodiac were recorded in the form of hours, the hours of the day being counted from 6 a.m. onwards and the sign of Libra being considered as the origin of the calculation of time. We then subtracted the time that the average sun would need to enter the sign in question, assuming a year strictly equal to 365 days and 6 hours.</small>
 

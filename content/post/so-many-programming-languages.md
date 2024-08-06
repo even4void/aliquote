@@ -25,7 +25,7 @@ Here is a concise [Cheat sheet](http://anyall.org/scalacheat/), and here is a di
 
 I discovered [Haskell](http://www.haskell.org/) three or four years ago when reading [Vincent Zoonekynd](http://zoonek.free.fr)'s blog ([here](http://zoonek.free.fr/blosxom/Linux/2007-01-01_Haskell.html)). I initially thought it was something to do fun things in mathematics, and never came back to it until recently when I came across this interesting paper on functional programming for information visualization and visual analytics: <i class="fa fa-file-pdf-o fa-1x"></i> [Beautiful Code, Compelling Evidence](http://www.renci.org/wp-content/pub/tutorials/BeautifulCode.pdf), by J. R. Heard. There is a nice illustration with annotated code on the use of circular displays based on OpenGL (that I also discussed in a [preceding post](/post/dwelling-upon-circular-displays)).
 
-![](/img/20110213110747.png)
+{{< figure src="/img/20110213110747.png" >}}
 
 Since then, I also started using [Pandoc](http://johnmacfarlane.net/pandoc/), which has now replaced [AsciiDoc](http://www.methods.co.nz/asciidoc/) for writing my notes and tutorials.
 
@@ -68,7 +68,7 @@ The famous "Hello World" example with groovy reads:
 groovy -e "println 'Hello ' + args[0]" World
 ```
 
-![h/t @yokofakun](/img/20110213111034.png)
+{{< figure src="/img/20110213111034.png" >}}
 
 
 ## Lua

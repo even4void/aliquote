@@ -20,7 +20,7 @@ $$
 
 You could do this by hand, by following the [helpful tips](https://people.richland.edu/james/lecture/m116/matrices/pivot.html) from the site where this example originates from, but Mathematica has built-in procedures to solve linear systems like this, e.g. `Solve` or `LinearSolve`, and there's also a `RowReduce` function which acts like Gaussian elimination. Here's what we get:
 
-![Mathematica solution](/img/2020-03-25-19-29-57.png)
+{{< figure src="/img/2020-03-25-19-29-57.png" >}}
 
 This is not the only algorithm used in matrix factorizations, of course. Indeed, modern statistical computing rely on [LU decomposition](https://en.wikipedia.org/wiki/LU_decomposition) or [QR factorization](https://en.wikipedia.org/wiki/QR_decomposition). The latter is what used in R for linear regression models, for instance. The QR decomposition of a real square matrix $A$ is a decomposition of $A$ as $A=QR$, where $Q$ is an orthogonal matrix (i.e., $Q^TQ=I$) and $R$ in an upper triangular matrix. Furthermore, if $A$ is [nonsingular](https://mathworld.wolfram.com/NonsingularMatrix.html), this decomposition is unique. Such a factorization can be found using the [Gram-Schmidt](https://en.wikipedia.org/wiki/Gram–Schmidt_process) procedure.
 

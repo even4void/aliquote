@@ -16,7 +16,7 @@ I made some drawings lately. Ink or charcoal, depending on my mood. I often shoo
 
 I'm past my schedule for posting on this blog, partly because I was quite busy at work, and also busy at home cooking or playing Minecraft. We've made a lot of progress: most of the buildings are now fitted out, terraforming has gained momentum in the past weeks and we're still fine-tuning the details in many places of the map. I don't plan to build other big stuff, except the castle/monastery and 2 or 3 supplementary farmhouses. I will probably make a screencast to showcase everything I built during the last 5 months.
 
-![img](/img/2023-12-14_21.12.47.png)
+{{< figure src="/img/2023-12-14_21.12.47.png" >}}
 
 Finally, I'm quite happy with how reading went for the second half of the year since I read about 60 books (out of 85). This does not include technical books. It keeps me in line with previous years, and above all it allows me to disconnect a little. The same applies to drawing and writing, of course.
 

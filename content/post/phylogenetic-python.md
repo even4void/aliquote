@@ -37,7 +37,7 @@ A tree in Newick format should also be available in the `Species_Tree/` subdirec
 $ ete3 view -t Species_Tree/SpeciesTree_rooted.txt
 ```
 
-![species-tree](/img/2020-03-12-10-08-17.png)
+{{< figure src="/img/2020-03-12-10-08-17.png" >}}
 
 Note, however, that is the "final" species tree, and not gene trees that could potentially be produced on aligned sequences (but see the `Gene_Trees` subdirectory). Fortunately, all orthologous sequences are available in Fasta format in the `Single_Copy_Orthologue_Sequences` subdirectory. Two examples of such a gene tree are shown below (click to enlarge).
 
@@ -89,7 +89,7 @@ $ ete3 view -t OG0000007/OG0000007_a.fa.final_tree.nw
 
 In the above statement, `none-none-none-raxml_default` means that we use no aligner, no trimmer, no (model) tester, and the RaxML utility with default settings. Here's the output of our manual tree reconstruction:
 
-![raxml-tree](/img/OG0000007_a.fa.final_tree.png)
+{{< figure src="/img/OG0000007_a.fa.final_tree.png" >}}
 
 As can be seen, there's some room for improvement since the alignment appears quite bad. That being said, we can still compare this tree with the one built by Orthofinder using `ete3 compare`. We will first need to match the labels in both trees:
 

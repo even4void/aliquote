@@ -37,7 +37,7 @@ p = ggplot(data = anscombe, aes(x3, y3)) +
 ggsave("~/fig-lrm-anscombe.png", p3, w = 6, h = 4, dpi = 300)
 ```
 
-![img](/img/fig-lrm-anscombe.png)
+{{< figure src="/img/fig-lrm-anscombe.png" >}}
 
 I just learned about [Theil-Sen Regression](https://library.virginia.edu/data/articles/theil-sen-regression-programming-and-understanding-an-outlier-resistant-alternative-to-least-squares). Instead of minimizing squared residuals, the slope is calculated by taking the median of the slopes between each pair of points in the data, which basically amounts to compute every possible $(y_j - y_i)/(x_j - x_i)$ if $x_i \neq x_j$.[^2] It follows that the OLS estimate of a simple regression slope can be conceptualized as a weighted average of pairwise slopes, with weights $(x_j - x_i)^2$. Go read the rest of the blog post if you are interested in robust regression.
 

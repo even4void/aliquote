@@ -14,7 +14,7 @@ I've spent some good time with Apple Music. Here is a lovely playlist from the E
 
 I've heard about [Roon](https://www.baty.net/2018/the-roon-music-player-is-awesome/) but iTunes relayed on my amp is enough for me right now.
 
-![](/img/IMG_0184.jpg)
+{{< figure src="/img/IMG_0184.jpg" >}}
 
 Still no real job. I wouldn't be the first to complain, except for the financial aspects. I'm still in a ghost character position for public administration. Looks like I may need to find another job myself. Still, I keep looking for fresh news.
 
@@ -24,4 +24,4 @@ There are ups and downs to living with half a valid heart, like there are ups an
 
 Place Jussieu. Mixed memories. A way to go to my old Math classes, then to the boxing hall, and later to stroll around.
 
-![](/img/IMG_0185.JPG)
+{{< figure src="/img/IMG_0185.JPG" >}}

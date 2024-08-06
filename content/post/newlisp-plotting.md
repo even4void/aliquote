@@ -32,7 +32,7 @@ The `x` and `y` variable defined above represent the weight of the mother and of
 (plot:export "fig-bwt-newlisp.png")
 ```
 
-![img](/img/fig-bwt-newlisp.png)
+{{< figure src="/img/fig-bwt-newlisp.png" >}}
 
 That was quite easy, but I fear there's not much plotting functions available except `plot`, which produces univariate line plot. I guess we will have to resort to Gnuplot or plotutils for more capabilities. However, let that not stop us investigate into this scripting language. In future posts, I expect to show how to fit basic linear models using GSL and to perform some data mining tasks.
 

@@ -16,7 +16,7 @@ Some references are given in the References section, but here is one good textbo
 
 As has been suggested, a parallel-groups design can also be used in effective dose studies. Assuming 3 doses for the active group and a standard deviation of the outcome (e.g., pain score) of 45 points, with a minimal clinical important difference of 25 points, we would need 54 patients in each group to ensure 80% power. However, titration assays are often done in two-stage, with a first randomization of patients on dose sequence, and a second random allocation of patients to effective dose group or a placebo, see e.g. Davis (1992) and the following illustration.
 
-![Two-stage randomization](/img/20130220114923.png)
+{{< figure src="/img/20130220114923.png" >}}
 
 Free combination therapy is another topic where complex designs might be required (factorial or response surface with quadratic terms added) but it is generally found in pre-clinical studies.<sup>(6,7)</sup> Of note, fixed-dose combinations have been shown to perform usually better than free-drug combination, especially in terms of adherence which was found to be reduced by 25% according to Bangalore and coll.<sup>(8)</sup>
 

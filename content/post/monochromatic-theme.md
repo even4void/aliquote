@@ -33,7 +33,7 @@ Regarding other TUIs, I have chosen color schemes that can accommodate black & w
 
 Overall I quite like working on a virtual console, especially since I can still listen to music running on Cmus in a regular X session, so here is a screenshot of the same editing session on a virtual console:
 
-![img](/img/tty3.png)
+{{< figure src="/img/tty3.png" >}}
 
 {{% music %}}Dave Gahan & Soulsavers • _Metal Heart_{{% /music %}}
 

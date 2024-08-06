@@ -41,7 +41,7 @@ The remaining of the script is a simple loop to draw the main frame and select r
 
 And the full story:
 
-![](/img/random_walk.gif)
+{{< figure src="/img/random_walk.gif" >}}
 
 [^1]: Since this index is sensitive to the number of recapture, another index has been proposed, the Schnabel index (note that it also depends on the number of CR stages).
 [^2]: Tlling, Kate. [Capture-recapture methods---useful or misleading?](https://academic.oup.com/ije/article/30/1/12/619016) _International Journal of Epidemiology_ 2001, 30: 12–14.

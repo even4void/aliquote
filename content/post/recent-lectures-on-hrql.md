@@ -12,7 +12,7 @@ Also, I assembled a bunch of key papers in HRQL that I actually share with my co
 
 I am also diving into personality research, not so to remember my earlier education in psychology, but to better understand the link between personality traits, genetics, and HRQL. I shall return to this topic later.
 
-![](/img/20100513234333.png)
+{{< figure src="/img/20100513234333.png" >}}
 
 - Multilevel Analysis of Individuals and Cultures, Fons J.R. van de Vijver, Dianne A. Van Hemert, Ype H. Poortinga, editors (LEA, 2008, 448 pages, ISBN 978-0-8058-5892-1).
 In this new book, top specialists address theoretical, methodological, and empirical multilevel models as they relate to the analysis of individual and cultural data. Divided into four parts, the book opens with the basic conceptual and theoretical issues in multilevel research, including the fallacies of such research. Part II describes the methodological aspects of multilevel research, including data-analytic and structural equation modeling techniques. Applications and models from various research areas including control, values, organizational behavior, social beliefs, well-being, personality, response styles, school performance, family, and acculturation, are explored in Part III. This section also deals with validity issues in aggregation models. The book concludes with an overview of the kinds of questions addressed in multilevel models and highlights the theoretical and methodological issues yet to be explored.<br />

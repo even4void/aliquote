@@ -18,7 +18,7 @@ A paper I read last year, thanks to Evan Miller, but go read his own [blog post]
 
 A new paper by Dianne Cook, whose contributions I have always greatly appreciated since I discovered [ggobi](http://ggobi.org/) (the website is still alive apparently). The "grand tour" (and other derivatives) is a method that allows to view data in more than three dimensions using linear projection, essentially by using rotations of a lower-dimensional projection in high-dimensional space. I've only seen this implemented efficiently in ggobi, but there may have been other attempts. Frames are stacked together with small interpolation to create a smooth motion. However, projection are usually rotationally invariant (when using geodesic interpolation algorithm) which may not be a desirable property when, e.g., we are looking for non-linear association in a high-dimensional dataset. The present package works along the [tourr](https://cran.r-project.org/web/packages/tourr/index.html) package.
 
-![img](/img/2023-11-30-18-54-51.png)
+{{< figure src="/img/2023-11-30-18-54-51.png" >}}
 
 ### Visualizing adverse events in clinical trials using correspondence analysis with R-package visae (https://arxiv.org/abs/2101.03454)
 
@@ -28,7 +28,7 @@ Although I'm no longer involved in medical statistics, I keep an eye open on dat
 
 Contrary to Gaussian models or deep neural networks, which show poor performance in terms of identifiability, interpretability, and reproducibility, the authors propose to use the "NIFTY framework, which parsimoniously transforms uniform latent variables using one-dimensional nonlinear mappings and then applies a linear generative model." Briefly stated, such an approach allows to work with a standard linear latent factor model, which is easier to interpret compared to the aforementioned models, which amounts to a Bayesian independent component analysis under certain conditions.
 
-![img2](/img/2023-11-30-20-57-42.png)
+{{< figure src="/img/2023-11-30-20-57-42.png" >}}
 
 ### Generating Signed Permutations by Twisting Two-Sided Ribbons (https://arxiv.org/abs/2311.06974)
 

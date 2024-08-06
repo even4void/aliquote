@@ -10,7 +10,7 @@ Some random notes on my recent 'pythonic peregrinations' on my Airbook.
 
 Python packages management is really painful. My `/Library/Python/2.7/site-packages` is just a mess. This is probably due in part to the fact that I switched from `easy_install` to `pip` two years ago, but anyway there's a lot of useless stuff in there.
 
-![Python site-packages](/img/20130413214446.png)
+{{< figure src="/img/20130413214446.png" >}}
 
 I heard about [Bokeh](https://github.com/ContinuumIO/Bokeh), a new plotting library for Python. Basically, it ought to embed Wilkinson's Grammar of Graphics into the [d3js](http://d3js.org) framework. It is maintained by the same guys from Continuum Analytics who develop [Blaze](http://blaze.pydata.org) and [Anaconda](https://store.continuum.io/cshop/anaconda). In contrast to Enthought EPD,[^1] it is
 
@@ -80,7 +80,7 @@ I should note that several packages were installed or updated at the same time, 
 Exemples from the [Quickstart guide](http://docs.enthought.com/chaco/quickstart.html) seem to run smoothly. I had to replace `traits.ui` by `traitsui`, and of course remove every mention of `enthought.*`
 
 
-![dataviz1](/img/20130404210418.png)
+{{< figure src="/img/20130404210418.png" >}}
 
 To install `Bokeh`, I just followed the [instructions on GitHub](https://github.com/ContinuumIO/Bokeh).
 
@@ -104,7 +104,7 @@ ImportError: No module named geventwebsocket.handler
 
 So, I had to install `gevent-websocket`, and then `flask`. Finally, following the instructions on GitHub, this is just a matter of starting the redis server, launch `python startlocal.py` in Bokeh main directory, and run `python pandas_example.py` in another terminal to get the following plot, live in my browser (`http://localhost:5006/bokeh`):
 
-![dataviz2](/img/20130513212306.png)
+{{< figure src="/img/20130513212306.png" >}}
 
 Quite impressive so far!
 

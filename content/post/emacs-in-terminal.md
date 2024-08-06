@@ -14,7 +14,7 @@ Sometimes, I feel lazy or in retro mode and I only want to run a Terminal on my 
 
 When in GUI mode, I have a lot of keybindings involving the command key on my Macbook. This is handy since I'm used to use, e.g., `⌘-F` to search for some expression, or `⌘-S` or `⌘-W` to save or close a buffer (which are not really buffers in other macOS applications, but that's another issue). Finally I made them all available via the leader key (`SPC`) in Doom, so that `s-&`, which means "switch to the next workspace" in GUI mode, becomes `SPC-&` when I run Emacs in a Terminal. By the way, `which-key` is such a nice add-on, I wish it exists long before when I started learning more advanced Emacs shortcuts. Indeed I added a lot of custom shortcuts under my leader key, see below.
 
-![emacs-which-key](/img/2020-08-06-15-08-11.png)
+{{< figure src="/img/2020-08-06-15-08-11.png" >}}
 
 Overall, I'm starting to appreciate Evil mode, especially motion, visual mode, and the `z` and `g` prefixes. I'm still learning, though. at this point, I would say I use 50% of Vim keybindings, in addition to `which-key` shortcuts, when I'm not simply moving around using the arrow keys with or without the `fn` key (yes I know, this is bad, we have `hjkl` and `C-u`/`C-d`). However, I tend to be slowly moving to using Vim keybindings exclusively, especially when running Emacs in a Terminal.
 

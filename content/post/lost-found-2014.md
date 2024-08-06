@@ -337,7 +337,7 @@ relation between indicators or items and the general factor is direct, and
 not mediated by specific factors as in a second-order factor model. As such,
 the bifactor model may be seen as a measurement model, unlike the later.
 
-![Bifactor models](/img/20140704153700.jpg)
+{{< figure src="/img/20140704153700.jpg" >}}
 
 From [Statalist](http://www.stata.com/statalist/archive/2011-11/msg00596.html), I found the following references on second-order factor and bifactor models (whenever possible I fixed dead links and tried to find ungated PDFs):
 

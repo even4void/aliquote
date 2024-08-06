@@ -93,7 +93,7 @@ Misclassification error rate: 0.02 = 3 / 150
 
 Note that instead of `tree()`, we could have used the [rpart](http://cran.r-project.org/web/packages/rpart/index.html) package. The resulting tree looks like the one shown below:
 
-![](/img/20110225184022.png)
+{{< figure src="/img/20110225184022.png" >}}
 
 Well, what about doing this 50 times, each time with a different base sample?
 
@@ -128,7 +128,7 @@ As can be seen, the cutoff considered for splitting each node varies from one tr
 
 There are a lot of other packages to explore, including: [party](http://cran.r-project.org/web/packages/party/index.html), [maptree](http://cran.r-project.org/web/packages/maptree/index.html), [marginTree](http://cran.r-project.org/web/packages/marginTree/index.html), [psychotree](http://cran.r-project.org/web/packages/psychotree/index.html), [boruta](http://cran.r-project.org/web/packages/boruta/index.html), [caret](http://cran.r-project.org/web/packages/caret/index.html), [longRPart](http://cran.r-project.org/web/packages/longRPart/index.html), [ipred](http://cran.r-project.org/web/packages/longRPart/index.html). The above results might be contrasted with, for instance, those obtained from the `ctree()` from the [party](http://cran.r-project.org/web/packages/party/index.html) package. Quoting the vignette, "The conditional distribution of statistics measuring the association between responses and covariates is the basis for an unbiased selection among covariates measured at different scales. Moreover, multiple test procedures are applied to determine whether no significant association between any of the covariates and the response can be stated and the recursion needs to stop."
 
-![](/img/20110225200100.png)
+{{< figure src="/img/20110225200100.png" >}}
 
 Although we didn't prune our trees in the preceding example, using `ctree()` alleviates the need of bothering with that. In effect, tree growth is governed by statistical stopping rules (see section 3 of the vignette, <i class="fa fa-file-pdf-o fa-1x"></i> [party: A Laboratory for Recursive Partytioning](http://cran.r-project.org/web/packages/party/vignettes/party.pdf)).
 

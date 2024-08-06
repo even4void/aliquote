@@ -39,6 +39,6 @@ bind v split-window -h
 
 And here is a little screenshot that shows how it looks on my desktop:
 
-![tmux](/img/2014-11-12-17-23-15.png)
+{{< figure src="/img/2014-11-12-17-23-15.png" >}}
 
 I should note that [iTerm2](http://iterm2.com), which is the Terminal I am using since several years, already provides split panes, autocomplete, powerful search features, session history and window management, as well as mouse action (focus, copy/paste, smart selection, etc.). So why bother with Tmux after all? Well, the only thing that iTerm is currently missing is the ability to keep running in the background when the application is closed (accidentally or not). In any case, iTerm offers nice integration with Tmux. [The Text Triumvirate](http://www.drbunsen.org/the-text-triumvirate/), by Seth Brown, is also definitely a good read.

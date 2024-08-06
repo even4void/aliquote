@@ -15,7 +15,7 @@ I've used Alacritty for one year and finally came back to Kitty. The latest addi
 show-urls-launch=Control+Shift+o
 ```
 
-![img](/img/2023-09-25-20-36-34.png)
+{{< figure src="/img/2023-09-25-20-36-34.png" >}}
 
 You may also want to disable the extra space on the right of the terminal windwo by disabling the scrollback marker. Otherwise, you'll get strange looking horizontal menu/status bar (e.g., tmux, vim, newsboat). This is easily achieved as follows:
 

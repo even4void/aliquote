@@ -46,6 +46,6 @@ Anyway, I ended up with the following settings in my `init.el` file, just in tim
 
 You will notice that I also updated the default program name for [pylint](https://www.pylint.org) and [flake8](http://flake8.pycqa.org/en/latest/) since they were disabled in all Python buffers because of whoever thought I was using Python 2.7. And that's it for the screenshot of the day:
 
-![Emacs](/img/2019-01-15-09-23-33.png)
+{{< figure src="/img/2019-01-15-09-23-33.png" >}}
 
 [^1]: I checked the [closed PRs](https://github.com/seagle0128/doom-modeline/pulls?q=is%3Apr+is%3Aclosed) as well.

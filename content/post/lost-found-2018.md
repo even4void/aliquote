@@ -34,7 +34,7 @@ But note that even if the author offers to tackle such problems from the perspec
 
 Chapter 1 provides a quick exposition to Bayes theorem, described as a way to get from P(B|A) to P(A|B), especially in cases where P(A|B) is not easy to compute. I find that the M&M problem (§1.6) is a very nice way to introduce bayesian inference, in the spirit of Philip Good's introduction to permutation testing (_Permutation, Parametric, and Bootstrap Tests of Hypotheses_, Springer, 2005): define the problem, set up the hypotheses and a test statistic, and finally assess the likelihood of the observed result; or, as the author suggests in Chapter 3: (1) choose a representation for the hypotheses, (2) choose a representation for the data, and (3) write the likelihood function. The next one is about the Monty Hall dilemma and it is really trickier.[^2] It is, however, easy to run a little simulation of the expected proportion of wins in case we choose to switch or stick to our initial choice. Here are the results I get using Mathematica:
 
-![Monty Hall simulation](/img/monty-hall.png)
+{{< figure src="/img/monty-hall.png" >}}
 
 Of note, a collection of related problems (with solutions) can be found on the author's blog: [All your Bayes are belong to us!](http://allendowney.blogspot.fr/2011/10/all-your-bayes-are-belong-to-us.html).
 

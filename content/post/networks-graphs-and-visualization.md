@@ -18,7 +18,7 @@ Surprisingly, this gives a very clear picture of the links between various disor
 
 Another example of spatial representation of a connected network is the now well-known [Nexus][Nexus] application that can access any [Facebook][Facebook] account. More generally, [social networks] rely on similar facilities for geometric visualization of relationships. The following example has been found on [Jeffrey Heer's webpage][Jeffrey Heer]:
 
-![](/img/20100418221053.png)
+{{< figure src="/img/20100418221053.png" >}}
 
 Also, on [Flickr][Flickr] one can found a very [big network][big network] including only people with at least 50 or 10 mutual contacts. By not allowing overlaps between the nodes, the network is spread out, and relationships are made clearer. There are four very distinct clusters for the first case (50 mutuals friends).
 

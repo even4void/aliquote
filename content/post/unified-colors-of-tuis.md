@@ -10,7 +10,7 @@ The other day I got tired of my terminal color scheme ([Nord]) which makes no di
 
 Here is what I finally decided to stand by for the next few weeks:
 
-![neofetch](/img/2022-09-28-21-00-45.png)
+{{< figure src="/img/2022-09-28-21-00-45.png" >}}
 
 This palette was grabbed from the homepage of <https://terminal.sexy>, and the white/dark variants are based on the Nord palette and personal taste. I don't know its name, though.
 
@@ -52,7 +52,7 @@ Later, I wrote a shell script that allows me to switch my color theme on the go.
 
 Those two colorschemes, which are based on [modified] versions of Nord and Vimbones from the zenbones plugin, are great for daily use, but they are not consistent one each other. And I'm too lazy to find a good fit for a common color palettes. Less is better, most of the time, so I rewrote from a scratch a single colortheme, as I did three years ago for Vim. It tooks me less than an hour to get a working theme for both color themes (light and dark): no color, except for constant and stuff I want to be aware of (warning or error message, bad spelling, etc.). Again, I take advantage of Alacritty's handling multiple fonts to highlight keywords or comments with medium or semi-bolded typefaces. It's all good!
 
-![neovim](/img/2022-09-29-09-47-18.png)
+{{< figure src="/img/2022-09-29-09-47-18.png" >}}
 
 {{% music %}}Morcheeba • _Trigger Hippie_{{% /music %}}
 

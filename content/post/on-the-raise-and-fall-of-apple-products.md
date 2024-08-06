@@ -23,7 +23,7 @@ Unfortunately, it also happened that the `Makefile` was not ready for consumptio
 3. (linking) I never succeed in linking the whole stuff, partly because of the above complications (and how I did alter the original code) but also because of 32/64 bits issues that I was not able to sort out (and there was also dependency issues like Xmu which actually sits in `/opt/X11/lib` but was causing enough problem to prevent the linking stage to complete).
 
 
-![](/img/2018-04-17-21-51-17.png)
+{{< figure src="/img/2018-04-17-21-51-17.png" >}}
 
 -----
 

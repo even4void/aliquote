@@ -10,7 +10,7 @@ I've been a heavy Zsh users for years. I tried Fish some years ago, and although
 
 I spent some time configuring my Zsh prompt the way I like it to be: responsive and informative, no fuzzy stuff. The one we can see in the above screenshot looks too verbose to me, but that's just me. My prompt-related [Zsh mess] can be viewed online, and it looks like this:
 
-![img](/img/2022-08-16-14-42-03.png)
+{{< figure src="/img/2022-08-16-14-42-03.png" >}}
 
 Specifically, I highlight Python virtual environment, command duration (when > 5s) and exit code, as well as Git branch with overall repo status. I don't need to indicate whether files were added, modified or deleted, or any departure from a remote branch; I just want to know whethert he repo is clean or dirty. I use the same idea in my Neovim modeline.
 

@@ -16,7 +16,7 @@ So, what are the main differences between Metapost and Asymptote?
 
 I like Metapost because it nicely fits within Context. It is also possible to typeset directly Metapost code into a document, see [MPlib: MetaPost as a reusable component](http://www.tug.org/TUGboat/Articles/tb28-3/tb90hoekwater-mplib.pdf), TUGboat, Volume 28 (2007), No. 3), and the [luamplib](http://www.ctan.org/tex-archive/macros/luatex/generic/luamplib/luamplib.pdf) package for Lua$\LaTeX$. My preferred textbook is still _Metafun_, from Hans Hagen:
 
-![metafun](/img/20110120081849.png)
+{{< figure src="/img/20110120081849.png" >}}
 
 A simple [previewer](http://www.tlhiv.org/mppreview/) was made available online by Troy Henderson.
 

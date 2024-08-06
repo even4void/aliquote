@@ -14,7 +14,7 @@ I do care as well, especially since I spend nearly 70% of my "computing time" in
 
 Now, when I see the number of new commits since the last time I fetched the develop branch of Doom Emacs on my HD, I just want to cry. It is just scary as it might break a lot of things that are currently working (mainly Python and Lisp/Scheme stuff), and I wonder if there is a point in updating as frequently as I did in the past. Last update went with a complete rework of the package management ([straight](https://github.com/raxod502/straight.el)) system, for example. Even with a complete backup of my `.emacs.d`, it took me more time than expected to get my Emacs up again. And, of course, I forgot to save the `.local/cache` directory where a lot of useful stuff is stored...
 
-![](/img/2019-09-18-21-58-09.png)
+{{< figure src="/img/2019-09-18-21-58-09.png" >}}
 
 Anyway, let's see how it goes. For the time being, I will definitely stay with my current config, as I find it definitely satisfactory after months of fighting with LSP servers and Org mode. I know I will probably change my mind in the next few weeks, but anyway, here are the good parts of my hacking time, which closely follows my [earlier post](/post/enliven-your-emacs/).
 
@@ -27,7 +27,7 @@ First, I removed `org-ref` --- I wasn't really using it, in fact I just need to 
 
 This is basically how it looks:
 
-![](/img/2019-09-18-23-00-40.png)
+{{< figure src="/img/2019-09-18-23-00-40.png" >}}
 
 I should note that I follow strict rules when generating BibTeX keys, which simplifies the construction of the above regex (which should stop whenever we encouter a semi-colon, a comma or a period):
 

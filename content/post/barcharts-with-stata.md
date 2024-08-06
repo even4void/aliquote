@@ -27,7 +27,7 @@ graph bar racec*, ascategory yvaroptions(relabel(1 "White" 2 "Black" 3 "Other"))
   ytitle("Frequencies")
 ```
 
-![](/img/20130411120829.png)
+{{< figure src="/img/20130411120829.png" >}}
 
 We can add `(sum)` after `graph bar` to get counts instead of frequencies.
 
@@ -46,7 +46,7 @@ graph bar (count) id, over(race) asyvars percent showyvars bargap(20) ///
   ytitle("Proportions") legend(off)
 ```
 
-![](/img/20130411120907.png)
+{{< figure src="/img/20130411120907.png" >}}
 
 Much simpler, and intuitive! 
 

@@ -16,7 +16,7 @@ Everyone doing scientific computing in Python knows [ScipPy](https://scipy.org),
 
 > This remains a distinguishing feature of Python for science, and one of the reasons why it has been so successful in the realm of data science: instead of adding general features to a language designed for numerical and scientific computing, here scientific features are added to a general purpose language.
 
-![Scipy development](/img/2019-07-28-18-21-30.png)
+{{< figure src="/img/2019-07-28-18-21-30.png" >}}
 
 ### Techniques for Automated Machine Learning (Chen et al., 2019) [arXiv:1907.08908v1](https://arxiv.org/abs/1907.08908)
 

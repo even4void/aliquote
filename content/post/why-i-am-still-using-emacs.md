@@ -14,7 +14,7 @@ I tried [Spacemacs](https://github.com/syl20bnr/spacemacs) yesterday and I must 
 
 I must admit that the Spacemacs UI is really well designed, especially the [modeline](https://github.com/syl20bnr/spacemacs/blob/master/doc/DOCUMENTATION.org#mode-line), and the concept of general and private layers. The core packages are available in [spacemacs/package.el](https://github.com/syl20bnr/spacemacs/blob/master/spacemacs/packages.el); as can be seen, the authors choose some of the best packages around the ones available on MELPA. Regarding Spacemacs modeline, I found a lot of discussion on the internet (e.g., on [reddit](https://www.reddit.com/r/emacs/comments/36qo2l/i_tried_to_copy_the_spacemacs_powerline_theme_my/)) because people seem to enjoy a lot its look-and-feel. I even found [one implementation](https://github.com/ashutoshrishi/emacs-personal/blob/master/personal/theming.el) of Spacemacs modeline, although it is likely that a dedicated package will be release by the Spacemacs team in the near future.
 
-![Spacemacs](/img/spacemacs-python.png)
+{{< figure src="/img/spacemacs-python.png" >}}
 
 Since I am not a Vim user, I cannot tell whether Spacemacs can lead Vim users to switch to Emacs, or pure Emacs addicts to adopt Spacemacs. I for one find difficult to work with an already customized text editor: I need to do it myself, in order to understand how everything works or what I may be missing. Anyway, having played with Spacemacs for 3-4 hours I thought it would be good to update my own Emacs.
 
@@ -42,7 +42,7 @@ exec /usr/local/Cellar/emacs/HEAD/Emacs.app/Contents/MacOS/Emacs -nw  "$@"
 
 Here is how my Emacs looks like by now: 
 
-![Emacs look'n feel](/img/emacs.png)
+{{< figure src="/img/emacs.png" >}}
 
 My modeline is much less developed but I am happy with it. Here is what I have in some of my configuration files:
 

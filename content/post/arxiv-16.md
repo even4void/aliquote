@@ -18,7 +18,7 @@ I rarely use Postgres for my personal hobbies (I usually find that SQLite provid
 
 I wrote about [Mendelian randomization](/post/mendelian-randomization) a while ago. This paper is about its multivariate extension in the context of causal inference using instrumental variables in a study of genome-wide significant GWAS loci. When the [instrumental set condition](https://academic.oup.com/biomet/advance-article/doi/10.1093/biomet/asad066/7342182?login=false) is satisfied, direct causal effects of all exposures in the model on the outcome variable of interest can be identified.
 
-![img](/img/gwas_mendelian_instruments.png)
+{{< figure src="/img/gwas_mendelian_instruments.png" >}}
 
 ### Asymptotic Online FWER Control for Dependent Test Statistics (https://arxiv.org/abs/2401.09559)
 

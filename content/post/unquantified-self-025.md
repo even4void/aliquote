@@ -8,7 +8,7 @@ categories: ["2022"]
 
 I'm trying out a new desktop setup, see below.
 
-![img](/img/2022-09-04-12-28-07.png)
+{{< figure src="/img/2022-09-04-12-28-07.png" >}}
 
 Little customizations here and there: terminal transparency (10%) and refined dark theme,[^1] uniformized statusline (no background color, darkgrey foreground where possible) and uniform Neovim statusline (`vim.o.laststatus = 3`), [tactile] extension for window placement (after many attempts to find a suitable way of tiling windows altogther on my screen). It feels good, especially when you are anxious while waiting for biomedical test results. Still, I [stand by] the idea that Gnome WM is already a good fit for how I use to use my desktop, but being able to snap window on a grid is an invaluable add-on, especially since it does not conflict with natural tiling behavior of Gnome WM; moreover, when you use focus-follow-mouse mode, it is quite easy to activate windows on the fly.
 

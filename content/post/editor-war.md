@@ -14,7 +14,7 @@ That's the advantage of Doom Emacs after all: we can use both keymappings at any
 
 Now comes the question of the color scheme, since I always advocated the idea that simple and light themes are often better. Some [nice themes](https://jblevins.org/projects/emacs-color-themes/) are described on Jason Blevins's site, and I tried a lot of colorless or minimalist themes in the past. I don't really like pink or purple, so Atom or VS Code default colorful schemes, and Emacs variations thereof, are not an option. In the end the buffer just looks like a rainbow. I use the wonderful [Nord (dark) theme](https://www.nordtheme.com) in both Vim and Emacs, as well as iTerm. In my view, it looks better in Vim compared to the corresponding implementation for Emacs in non-GUI mode, but since I generally use Emacs in a GUI I don't really care. I made some modification to the base color scheme, though. The idea was to have a lighter color scheme, after removing extraneous colorization for faces that are not that essential when writing prose or code. You can have a look below:
 
-![emacs](/img/2020-07-10-08-11-10.png)
+{{< figure src="/img/2020-07-10-08-11-10.png" >}}
 
 The idea is simply to remove syntax highlighting for everything except keywords and related language-specific forms, which use the same <span style="background:#81a1c1; color:white; padding:1px 3px 1px 3px; border-radius: 5px">base color</span>, and to highlight <span style="background:#ebcb8b; color:white; padding:1px 3px 1px 3px; border-radius: 5px">strings</span> differently (with a dimmed variant for <span style="background:#bca26f; color:white; padding:1px 3px 1px 3px; border-radius: 5px">numbers</span>):
 

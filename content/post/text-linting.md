@@ -17,7 +17,7 @@ The `spell` module takes care of activating Flyspell in `text-mode`, while `gram
 
 Of course, syntax checkers are mostly used in `prog-mode`, think of [eslint](https://eslint.org) or [lintr](https://github.com/jimhester/lintr), for instance. They are well integrated into Flycheck nowadays. Note that some of the available linters offer both a checker and a way to automatically fix any error that was encountered during the checking stage. Anyway, syntax checkers are also available for `text-mode`, e.g. Markdown and Org (but also ResT or Asciidoc). In Doom Emacs, [proselint](https://github.com/amperser/proselint) is the default checker for Org mode, while for Markdown you can install [markdownlint](https://github.com/DavidAnson/markdownlint) -- this is what I use at the moment -- or [mdl](https://github.com/markdownlint/markdownlint).
 
-![markdownlint](/img/2020-05-29-15-06-16.png)
+{{< figure src="/img/2020-05-29-15-06-16.png" >}}
 
 Proselint is great,[^1] but there's another option for text processing, namely [textlint](https://textlint.github.io). It is a Node-based package, and you need to define your own set of rules and to install each component manually, but it is more versatile than Proselint in my view. You can even install plugin for `languagetool,` weasel-related stuff (like `writegood-mode`), or [proselint](https://github.com/textlint-rule/textlint-rule-proselint) itself. The config file is where you define rules and plugins to use. If you want to make textlint recognize Org document as text file, you will need to add these lines in you `.textlintrc` file:
 

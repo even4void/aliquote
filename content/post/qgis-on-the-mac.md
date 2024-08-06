@@ -10,7 +10,7 @@ I decided to install a GIS software, just to be able to explore some spatial clu
 
 My first idea was to look at the [Quantuum GIS](http://www.qgis.org/) project. It looks pretty nice and is available for OS X 10.6. I also decided to reinstall [GRASS](http://grass.fbk.eu) 6.4 (I've tried to compile an old version by hand in the past, it was really a pain...). From what I read, there's a consistent [community of users](http://grass.fbk.eu/) around those software as shown on the next picture
 
-![grass-users](/img/20110123193107.png)
+{{< figure src="/img/20110123193107.png" >}}
 
 ## A step by step installation guide
 

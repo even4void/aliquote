@@ -22,7 +22,7 @@ It looks like VS Code might become a viable and [faster alternative to RStudio](
 
 The 2018 edition of the [Ihaka Lectures Series](https://www.stat.auckland.ac.nz/en/about/our-department/ihaka-lectures.html) is now live at the University of Auckland. The last talk was by [Paul Murrell](https://www.stat.auckland.ac.nz/~paul/) who presented his new package `BrailleR`, which generates text descriptions of R plots, along with some cool programming tips: (1) if a decision is difficult, don't make it; (2) if your tummy does not feel all warm inside, you have not got it right yet; (3) build a fish rod, not a fish; (4) be lazy; (5) not everyone uses Linux, (6) computers can multitask.
 
-![](/img/ihaka-lectures-2018.jpg)
+{{< figure src="/img/ihaka-lectures-2018.jpg" >}}
 
 [IDEA](https://idea-instructions.com) offers "an ongoing series of nonverbal algorithm assembly instructions." Briefly, they use IKEA-like pictograms to demonstrate specific algorithms in computer science, e.g. quick sort or graph scan.
 

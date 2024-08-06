@@ -93,7 +93,7 @@ where `blocker.bug` is simply the model in BUGS syntax, `data` is a list with th
 
 This took about 20 sec. to complete on my Mac (Core 2 Duo, 2.8 GHz) and the MCMC results are summarized below (thanks to the `coda` package).
 
-![](/img/20100627175212.png)
+{{< figure src="/img/20100627175212.png" >}}
 
 For the first chain, we get as posterior estimates:
 

@@ -51,7 +51,7 @@ links "$rc"
 
 And now I get the full CLHS documentation for free when working in neovim!
 
-![clhs](/img/2022-05-17-22-41-44.png)
+{{< figure src="/img/2022-05-17-22-41-44.png" >}}
 
 {{% alert note %}}
 <small>[2022-08-22]</small><br>

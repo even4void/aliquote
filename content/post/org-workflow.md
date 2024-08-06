@@ -12,11 +12,11 @@ Some of my previous posts were about [blogging](/post/org-blogging/), managing [
 
 Regarding the Org markup itself, I find it more coherent and definitely more robust --- think of nested item lists, line breaks or image insertion in a list.[^1] Once rendered into Emacs, it's no longer apparent that we are dealing with a markup language. Look and see how beautiful Org document are with little customization (basically, the ones that come with [Doom Emacs](https://github.com/hlissner/doom-emacs)):
 
-![emacs](/img/2020-02-22-20-06-31.png)
+{{< figure src="/img/2020-02-22-20-06-31.png" >}}
 
 Of course, Markdown mode for Emacs also comes with kind of a "concealing" featuring (which works better than in Vim sometimes), but there's no comparison when it comes to managing links and images, or even to navigate between headers, IMHO. Furthermore, now that Github renders Org documents like it did for years with Markdown files, we also have a nice way to display our raw files online. But there's more. Indeed, one of the nicest feature of Emacs + Org is the possibility of using Pandoc as a front-end for exporting Org documents. I first started using default HTML export, but I soon came to realize that using Pandoc provides far better rendering options. Below is the same document exported as an HTML page using a custom [Github-like](https://github.com/tajmone/pandoc-goodies/tree/master/templates/html5/github) CSS:
 
-![html](/img/2020-02-24-10-46-16.png)
+{{< figure src="/img/2020-02-24-10-46-16.png" >}}
 
 Here is what I have in my Emacs init file:
 

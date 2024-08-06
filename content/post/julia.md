@@ -12,7 +12,7 @@ A lot of smart guys have recently blogged about Julia, see e.g. [Julia, I love Y
 
 The installation went fine for me. I'm using XCode 4.3.2 on OS X 10.7.3, with command-line tools installed and [64-bit gfortran](http://gcc.gnu.org/wiki/GFortranBinaries) (first time I installed a different fortran from the one released on [R Development Tools and Libraries](http://cran.r-project.org/bin/macosx/tools/)). Of course, I forgot to ask for a parallel build, so it took far longer than expected. To get a working web REPL, I also needed to fetch [lighttpd](http://www.lighttpd.net/), which is basically as simple as typing `make -C external install-lighttpd` in `julia/` root directory. Although the web REPL looks great, it has very limited plotting facilities at the moment, so I will stick with the console REPL. It is worth noting that during the first install all external dependencies will be downloaded and everything goes into a `root` folder. In the end, it amounts to about 1.3 Go on your hard drive, so you can safely delete everything but the `external/root` folder (and `lighttpd.conf` if you want to use the web server).
 
-![julia](/img/20120404100147.png)
+{{< figure src="/img/20120404100147.png" >}}
 
 Let's start with some very basic stuff. Note that I am using the REPL and for plotting purpose I choose the recently released [Gaston](http://groups.google.com/group/julia-dev/browse_thread/thread/b2dd8f1141459dc) interface to Gnuplot.[^1] There's an embedded plotting library, `Winston`, but I got a lot of `Cairo`-related errors when trying it. To use R's probability distributions and RNGs, we need to have a working `libRmath` somewhere. I happened to compile it following instructions in the [R Installation and Administration](http://cran.r-project.org/doc/manuals/R-admin.html#The-standalone-Rmath-library) manual, as pointed out by Doug Bates: (We really just need to type `make` in the `src/nmath/standalone` subdirectory of R source tree.)
 
@@ -33,7 +33,7 @@ plot()
 
 Here is what I got:
 
-![Julia plotting](/img/20120403090132.png)
+{{< figure src="/img/20120403090132.png" >}}
 
 Nothing fabulous actually. But wait, we can do other funny things. First, let's implement a simplified t-test. There's already a bunch of handy functions in `base/statistics.jl`. Basically, we just need to compute a difference of means and a pooled estimate for the variance. Note that we assume equal variance and a two-sided test. I also added a switch-statement for the case of paired samples. This has been tested with the famous Student's sleep data set ([student1908.csv](/pub/student1908.csv)).
 

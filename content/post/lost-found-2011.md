@@ -41,7 +41,7 @@ So, just put
 
 in your preamble, and you'll get a nice document with Garamond for Serif text. Note that `xltxtra` loads `fontspec` by default. Here is how it looks:
 
-![ex1](/img/20110123110923.png)
+{{< figure src="/img/20110123110923.png" >}}
 
 Optional arguments can be passed to `\set*font`, or globally with `fontspec`: `Mapping=tex-text`, `Ligatures={Common, Historical}`, `Numbers={OldStyle, Lining}`.
 
@@ -98,7 +98,7 @@ $ xetex tex_ttf.tex
 
 and the result is shown below.
 
-![knuth](/img/20110124124841.png)
+{{< figure src="/img/20110124124841.png" >}}
 
 ### Context
 
@@ -152,7 +152,7 @@ splom(iris[,1:4], groups=iris[,5], type=c("p","g","smooth"),
       lwd=2, pch=19, alpha=.4, auto.key=list(space="top", columns=3))
 ```
 
-![xyplot](/img/20110228142718.png)
+{{< figure src="/img/20110228142718.png" >}}
 
 A convenient way to look interactively at the data is to rely on some kind of brushing. Actually, without resorting to [GGobi](http://www.ggobi.org/), it is available through [iPlots](http://cran.r-project.org/web/packages/iplots/index.html), or its next-gen version [Acinonyx](http://RForge.net/Acinonyx/), or the `tkBrush()` function from the [TeachingDemos](http://cran.r-project.org/web/packages/TeachingDemos/index.html) package. (The latter makes use of `Tk` so make sure it is installed on your machine.)
 
@@ -164,7 +164,7 @@ tkBrush(iris)
 
 Well, we spotted three individuals that seem to exhibit some extreme pattern of measures when considering sepal width x sepal or petal length. These are inviduals 42, 118, and 132, see `.Last.value$pch`. It should be emphasized that this way of doing is plenty wrong if we look for multivariate outliers: Here, we are just looking at bivariate relationships, so it is likely that we will fail to identify good candidates in the 4D space.
 
-![brush](/img/20110228125757.png)
+{{< figure src="/img/20110228125757.png" >}}
 
 
 ### PCA outlier detection
@@ -183,7 +183,7 @@ chpts <- chull(iris.pca$scores[,3], iris.pca$scores[,4])
 polygon(iris.pca$scores[chpts,3], iris.pca$scores[chpts,4], lty=3)
 ```
 
-![xyplot](/img/20110228145501.png)
+{{< figure src="/img/20110228145501.png" >}}
 
 The most extreme points are
 
@@ -211,7 +211,7 @@ In the next figure, I have highlighted those 10 indivduals in red:
 pairs(iris[,-5], col=ifelse(outl>68.78, "red", "black"))
 ```
 
-![rfoutlier](/img/20110228130451.png)
+{{< figure src="/img/20110228130451.png" >}}
 
 
 ### Malahanobis outlier detection

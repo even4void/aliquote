@@ -314,7 +314,7 @@ This might also be shown visually, where Target have been reordered by their mea
 > dotplot(tab4[order(apply(tab4, 1, mean)),], type="b")
 ```
 
-![dotplot](/img/20110429134620.png)
+{{< figure src="/img/20110429134620.png" >}}
 
 In conclusion, the characteristic root test of the interaction might provide an interesting alternative to Tukey's test when there's no main effect [2,3]. I'm not aware of any available R implementation. I should write one. Other relevant papers are listed in the References below.
 

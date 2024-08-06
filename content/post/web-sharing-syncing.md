@@ -22,7 +22,7 @@ I discovered Dropbox at the beginning of 2009, and used it a lot since then. The
 
 I also discovered [Dropzone][Dropzone] which is an application/script launcher sitting in the Dock. It offers useful shortcuts like URL shortening through [bit.ly][bit.ly], upload to your Flickr account, sharing snippets (gist) on Github, etc.
 
-![](/img/20100808102813.png)
+{{< figure src="/img/20100808102813.png" >}}
 
 
 [Box.net]: http://www.box.net/

@@ -10,7 +10,7 @@ Here is a newcomer in the world of "user-friendly" statistical packages: [Wizard
 
 This software features an all-in-one approach to data analysis and visualization: you start with a spreadsheet of your raw data, and you can ask for a description of it with two clicks (select a 'summary' button, and then select a variable. Several graphics are proposed, depending on the type of data, but sadly [pie charts](http://stats.stackexchange.com/q/8974/930) are offered as default for categorical data. Moreover, tests of adjustment to a theoretical probability distribution are automagically printed (the trial version just doesn't print associated p-values). That's not necessarily something that I would look at when first approaching a new dataset, and I would like to be able to display several variables at once.
 
-![Wizard Mac](/img/20120926194623.png)
+{{< figure src="/img/20120926194623.png" >}}
 
 About statistical models, it is limited to multivariate regression. The tutorial says that Wizard can perform weighted linear regression as well as logistic regression, and I tested them. In fact, ANOVA is performed in the same way as linear regression, i.e. as linear models (no ANOVA table, no post-hoc tests, etc.). At least, visualization of model residuals is there.
 
@@ -29,6 +29,6 @@ In both cases, I'm seriously missing the ability to write commands myself and ha
 
 Another application for interactive statistical analysis is [Data Desk](http://www.datadesk.com). Initially, Data Desk was also a Mac-only application, but it has been made available for Windows users 15 years ago. It is a really nice tool that allow to visualize multivariate dataset with brushing and linking in quick steps. It supports some basic techniques for statistical modeling like linear and non-linear regression. I think it should have been a serious add-on in the 90's. Now, we have [GGobi](http://www.ggobi.org) (or the new Qt interface, [cranvas](https://github.com/ggobi/cranvas) and the like) which offers almost exactly the same, with projection pursuit, multidimensional scaling and a connection with R. (This is the reason why I never bought Data Desk.)
 
-![Data Desk](/img/20120926201644.png)
+{{< figure src="/img/20120926201644.png" >}}
 
 The problem with so-called "user-friendly" packages to data analysis is always the same: what if I tell you that two records were inadvertently inserted in your data and that you must redo everything? If you haven't recorded each step somehow, then you just have to go through each button and menu again. This is the problem with statistical UIs that don't offer any way to store your commands and replay them at any time, and I'm not even talking about reproducible research: I'm just talking about how to manage statistical projects in an economical albeit efficient manner.

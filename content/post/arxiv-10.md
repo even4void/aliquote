@@ -20,7 +20,7 @@ This article deals with the inference population that small sample studies usual
 
 Along with classical parametric regression models or ensemble methods in machine learning, the super learner algorithm allows to learn a prediction function without needing to set on a fixed modeling approach: as an entire pre-specified and adaptive strategy, it allow the modeler to consider several predictive models at once. Here's the big picture:
 
-![img](/img/2022-09-16-20-25-01.png)
+{{< figure src="/img/2022-09-16-20-25-01.png" >}}
 
 For the practictioner, the core decisions are to (1) specify the performance metric for the discrete super learner, (2) derive the effective sample size, (3) define the V-fold cross-validation scheme, (4) form library of candidate learners, and (5) to use discrete super learner to select the candidate with the best cross-validated predictive performance.
 

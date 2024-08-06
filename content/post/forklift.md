@@ -8,7 +8,7 @@ categories: ["2018"]
 
 Here is a brief review of [Forklift](https://binarynights.com), a lightweight and pervasive app for file management. There is already a very nice review on [Jack Baty's blog](https://www.baty.net/2018/forklift-as-a-finder-replacement/). I have not much more to add but I will briefly highlight the key features I like most.
 
-![](/img/2018-06-27-07-54-20.png)
+{{< figure src="/img/2018-06-27-07-54-20.png" >}}
 
 I've never made very sustained use of the Finder. However, I find it pretty convenient when it comes to visualize the hierarchical structure of certain folders, or just to preview some files using the <kbd>SPC</kbd> shortcut. Forklift allows you to edit known files without even opening them, which some users may find pretty useful (this even works when files are hosted on a remote server). In any case, it is also possible to choose among distinct apps to open a file selected from one of the two panes.
 

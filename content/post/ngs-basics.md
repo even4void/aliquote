@@ -10,7 +10,7 @@ Lately, I started taking some notes on Next Generation Sequence analysis, more s
 
 All in one, RNA-Seq consists in a series of extraction, preprocessing and statistical analysis, namely: DNA extraction from a sample, DNA sequencing, Alignment of sequencing reads to a reference genome, Basic exploratory data analysis, Identification of genomic variants (SNPs, small insertions and deletions), Gene quantification (i.e., statistics on count data). But see the following picture which highlights a typical workflow using R :[^1]
 
-![](/img/fig-count-rna.png)
+{{< figure src="/img/fig-count-rna.png" >}}
 
 In what follows, I will review two tools that are quite handy if you want things done in a resonnable amount of time. This is does not mean that this the perfect solution --- there are far better accurate workflow for data preprocessing --- but this may help perform batch analysis in case you have large amount of data and seek an efficient way for screening of candidate gene sets, for instance. I will be using data available on the [JGI](https://jgi.doe.gov) website, and other data that I cannot share here so that I won't reproduce R outputs. I hope, however, that the following R code is enough to help you get started with your own dataset.
 

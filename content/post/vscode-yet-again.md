@@ -70,7 +70,7 @@ However, in the case of the Vim extension, this becomes:
 
 Lovely. And this goes in `settings.json`, not `keybindings.json` by the way! Lastly, it was time to get rid of the activity bar, the explorer tree, and the tab bar.
 
-![VSCode](/img/2021-05-07-19-14-17.png)
+{{< figure src="/img/2021-05-07-19-14-17.png" >}}
 <small>Apparently, I still have some work to do for Markdown colors...</small>
 
 Anyway, I believe VS Code is a great asset, midway between a feature-complete mouse+keyboard-driven text editor and a minimalistic IDE. Clearly, it has gained so much attention in the past 5 years or so that it's hard to imagine someone looking for a good text editor for coding who end up using Notepad+, GEdit, or Kate. And it's surely the perfect tool for the big hearing of web devs (business is business). However, I like Vim (or Emacs) better for it allows me to stay focus on the text I write.

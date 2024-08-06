@@ -12,9 +12,9 @@ I'm using the [Kitty](/post/kitty-terminal/) terminal emulator and it is quite e
 
 Below is a screenshot of my current desktop: Emacs and Vim, side by side, using an almost consistent duotone-like color theme for both.
 
-![amethyst](/img/2020-09-03-13-57-08.png)
+{{< figure src="/img/2020-09-03-13-57-08.png" >}}
 
 While I was quite happy with these settings, this means I had to override a lot of default font-lock and face settings in Doom Opera Light theme. I know `custom-theme-set-faces!` is way better than `custom-set-faces!` for that purpose, but the problem really is that I don't need all those colorful features. Here comes the Doom plain theme, which landed on Github a [few days ago](https://github.com/hlissner/emacs-doom-themes/commit/64b033208d3c2eac33d2b284c4a66eb7bee94c37), and it is just what I needed to finalize my new color scheme. For the moment, I kept most of the default settings, which happen to be a tinted black and various grey schemes, and just updated the way errors and visual line are highlighted, as well as "font-lock" for core language elements (all in bold). Also, comments are highlighted using a different color than the base grey used elsewhere to make them standout a little (as suggested by Nikita Tonsky). I left constants (strings and numbers) as is, that is in grey, but maybe I will revert to my old settings at some point. I use almost the same settings for Vim, which means that whatever text editor I decide to use I will get the same visual feedback. Here is how it looks for Emacs Lisp and C files (in terminal mode):
 
-![plain](/img/2020-09-04-18-31-12.png)
+{{< figure src="/img/2020-09-04-18-31-12.png" >}}
 <small>The error in the C code was introduced deliberately to show the error color code, and this [code](https://mumble.net/~campbell/tmp/random_real.c) is from Taylor R. Campbell.</small>

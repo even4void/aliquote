@@ -25,7 +25,7 @@ for i in range(4):
     plt.axis('off')
 ```
 
-![img](/img/rose-rgb.png)
+{{< figure src="/img/rose-rgb.png" >}}
 
 Other manipulating RGB channels using simple matrix operations, we can also use more advanced techniques like adding blur or low-pass filter effects with [OpenCV2]. However, using Numpy alone we can also add some [salt and pepper]-like effect: (Credit: Shubham Pachori)
 
@@ -71,7 +71,7 @@ for i in range(4):
     plt.axis('off')
 ```
 
-![img](/img/rose-filter.png)
+{{< figure src="/img/rose-filter.png" >}}
 
 {{% music %}}Magazine • _Back to Nature_{{% /music %}}
 

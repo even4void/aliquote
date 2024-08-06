@@ -55,7 +55,7 @@ obs = GroupBy[Sort[dt[[All, 2 ;;]]], Last -> First, Mean]
 Show[ListPlot[obs], Plot[m[x], {x, 14, 45}], AxesLabel -> {"Age", "Pr(low)"}]
 ```
 
-![img](/img/birthwt_glm.png)
+{{< figure src="/img/birthwt_glm.png" >}}
 
 {{% music %}}Daft Punk • _Da Funk_{{% /music %}}
 

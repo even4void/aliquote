@@ -10,7 +10,7 @@ In this brief review, I will talk about [Exploratory Desktop](https://explorator
 
 I have been following the development of Exploratory since its inception, or when the very first beta was released. It is continuously updated and it has smoothly evolved toward a full-featured UI for exploratory and, more recently, explanatory data analysis. For the latest news (version 4.2), see the [blog post](https://blog.exploratory.io/exploratory-v4-2-released-dashboard-new-analytics-new-charts-and-more-ee5d8aab1adc) from Exploratory team. Kan Nishida, the founder of Exploratory, is regularly posting [tutorials and hot release news on Medium](https://blog.exploratory.io/@kanaugust).
 
-![](/img/2018-03-26-22-08-29.png)
+{{< figure src="/img/2018-03-26-22-08-29.png" >}}
 
 At its heart, there is the open-source [R](http://www.r-project.org) statistical software and the [tidyverse](https://www.tidyverse.org) ecosystem. The original idea of Exploratory is to propose a clean UI that allows to transparently use most of the [tidyverse](https://www.tidyverse.org) packages through analytical steps that can be chained together, much like in Knime or Rapidminer. Although I never really used this app in my previous work, I suggested to some students interested in an alternative approach to data science with R (read, without the command-line stuff) to take a look at it, just in case they would find it more convenient than RStudio or other IDEs.
 
@@ -22,11 +22,11 @@ I have tried the hard way but it was too much a pain for this short review. See 
 
 So I will stick with the [birth weight dataset](https://stats.stackexchange.com/a/21504) from Hosmer and Lemeshow that I have been perusing for my courses the last 10 years or so. Let start a new project and import a dataset as a CSV file. You can also import the RData file that comes with R in the MASS package (`birthwt`). Once it is done, the project will be listed on the welcome screen.
 
-![](/img/2018-03-25-19-56-03.png)
+{{< figure src="/img/2018-03-25-19-56-03.png" >}}
 
 Once the data are imported in Exploratory, you are presented with a summary view, sort of a visual dashboard of all variables available in the local data frame. I like the idea. It has been removed in a previous version of Exploratory, but it is back again. Although it takes a lot of space on screen, I really think it is a good idea to summarize each variable using visual information.
 
-![](/img/2018-03-20-18-43-39.png)
+{{< figure src="/img/2018-03-20-18-43-39.png" >}}
 
 ## Data munging
 
@@ -34,21 +34,21 @@ You have probably noticed the big "+" icon on the top menu bar. "The "+" sign st
 
 As discussed above, Exploratory is built around the dplyr package, so don't be surprised if you find a lot of commands that are used in any dplyr tutorial. Recall that dplyr is basically organized around `group_by()` (to split data by group(s)), `summarise()` (to aggregate data), `mutate()` (to transform variable inline), `filter()` (to select observations/rows in a data table), `select()`(to select variables/columns), `arrange()` (to order variables/columns).
 
-![](/img/2018-03-20-18-44-17.png)
+{{< figure src="/img/2018-03-20-18-44-17.png" >}}
 
 For instance, the `race` variable is treated as a numeric variable. To recode `race` into a factor, we can navigate through the Actions menu and choose "Mutate". Without surprise, this relies on `dplyr::mutate()` and allows to transform variable inline.
 
-![](/img/2018-03-20-18-45-08.png)
+{{< figure src="/img/2018-03-20-18-45-08.png" >}}
 
 You can aggregate data in multiple ways: pivot table, conditional means, counts of levels of a factor, etc. For example, we could easily compute the mean of `bwt` by values of `race`. Every action results can generally be represented graphically. Here, with the preceding example, we can go right to "Viz" panel and the default is a bar chart for the three means. Note that several options are available that allow to customize the default rendering, including axis annotation, creating [small multiples](https://blog.exploratory.io/exploratory-v2-2-with-small-multiple-c7050e5627dd) through the use of one or more "facets", and so on.
 
-![](/img/2018-03-25-19-56-27.png)
+{{< figure src="/img/2018-03-25-19-56-27.png" >}}
 
 ## Statistical modeling
 
 In the following picture, I have set up a logistic regression to predict `low` birth weight depending on values of all other variables (I skipped the `bwt` varible afterwards)
 
-![](/img/2018-03-25-19-59-20.png)
+{{< figure src="/img/2018-03-25-19-59-20.png" >}}
 
 Here are the results for the basic model (with a 30% holdout sample). Confidence intervals are readily available in a post-processing step:
 

@@ -12,7 +12,7 @@ Even if I find Gnome terminal really great, I wanted to get ride of window decor
 
 The other nifty feature of Alacritty is that it has a scrollback buffer (activated with <kbd>Shift+Ctrl+Space</kbd>) where you get Vim keybindings at your finger tip to navigate, select and yank any portion of text. That's even better than under Tmux, to the point that I now often switch to this mode of selection inside Tmux itself. It also looks like there's something called hint that allow to automagically highlight some regexed part of the screen, but I didn't get into it at the time of this writing.
 
-![img](/img/2022-10-06-21-48-23.png)
+{{< figure src="/img/2022-10-06-21-48-23.png" >}}
 
 Like Kitty, Alacritty allows to define your own color scheme (the structure is quite identical, in fact -- just a plain text file with foreground/background colors, and all 16 terminal colors in Hex format) as well as a custom set of fonts. I switched to Fira Code (after Iosevska, JetBrains Mono and Ubuntu Mono, respectively) because I like it and it comes with SemiBold font shape, which I find less intrusive than plain Bold. There's not italic font shape, though, but it can be overcomed by using a variant of the regular font shape, as shown below:
 
@@ -34,7 +34,7 @@ John Cook discussed font that come with ligatures, like Fira Code, on [his blog]
 
 > There’s one place where I believe Fira Code would be ideal: code examples inside a prose document. In that context you care about aesthetics and you want a monospaced font.
 
-![img](/img/2022-10-06-21-51-38.png)
+{{< figure src="/img/2022-10-06-21-51-38.png" >}}
 
 {{% music %}}The Psychedelic Furs • _Love My Way_{{% /music %}}
 

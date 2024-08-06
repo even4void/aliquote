@@ -16,7 +16,7 @@ I should note that I have nothing against Spacemacs: this is a big project and a
 
 Anyway, here is a screenshot of me writing one of the next post for this blog:
 
-![Doom Emacs](/img/2018-04-11-21-55-27.png)
+{{< figure src="/img/2018-04-11-21-55-27.png" >}}
 
 On second thought, that's a little bit funny: this is Emacs with Vi modal editing and Atom look'n feel. 
 

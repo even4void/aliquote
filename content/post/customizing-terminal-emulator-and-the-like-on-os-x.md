@@ -18,7 +18,7 @@ I decided to change the look'n feel of my Terminal. I'm using iTerm2, instead of
 
 My terminal now looks like this:
 
-![OS X Terminal](/img/20120721103526.png)
+{{< figure src="/img/20120721103526.png" >}}
 
 Basically, current history line number, command line number, hostname, number of jobs and current directory are displayed on the first line, a left to right arrow replacing the standard Bash `$` on the second line. When in a `git` repository, actual branch is printed next to the path. When last command returns an error, a red star is printed after command history. I found that displaying the number of jobs is really useful in case you want to run different programs into the same terminal, say R, python and Emacs, switch easily between them (`C-z`, `fg` followed by jobs number to get the process back) and never forget there are running jobs when leaving it. All that is done with the pretty ugly instructions (in my `.profile`):
 
@@ -84,4 +84,4 @@ I added this to my `.Rprofile`.
 
 I choose to use very few different colors, essentially for normal output (blue), warnings (orange), and errors (red).
 
-![R shell](/img/20120721112832.png)
+{{< figure src="/img/20120721112832.png" >}}

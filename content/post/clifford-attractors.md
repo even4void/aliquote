@@ -22,11 +22,11 @@ $$
 
 In Mathematica, it is quite easy to define those equations and compute a few values as a function of $n$, or a complete list of $(x,y)$ values for $n$ taking all values in a given range, as illustrated with the following code:
 
-![Mathematica output](/img/math-clifford.png)
+{{< figure src="/img/math-clifford.png" >}}
 
 Below is the result (note that this graphic only includes 100,000 data points and the aspect ratio was not modified).
 
-![Clifford attractor](/img/clifford.png)
+{{< figure src="/img/clifford.png" >}}
 
 Of course, while digging on Google to find other interesting patterns and the math' behind them, I happened to find a [thread on Stack Exchange](https://mathematica.stackexchange.com/questions/159668/drawing-clifford-attractors-in-mathematica), with clever Mathematica code (be sure toc heck the linked thread too!).
 
@@ -63,6 +63,6 @@ void draw() {
 }
 ```
 
-![Clifford attractor using Processing](/img/clifford02.png)
+{{< figure src="/img/clifford02.png" >}}
 
 {{% music %}}London Grammar • *Truth is a beautiful thing*{{% /music %}}

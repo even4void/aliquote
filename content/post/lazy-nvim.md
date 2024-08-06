@@ -17,7 +17,7 @@ Benchmark 1: nvim --headless +qa
   Range (min … max):    65.9 ms …  70.4 ms    44 runs
 ```
 
-![img](/img/2023-10-06-21-40-30.png)
+{{< figure src="/img/2023-10-06-21-40-30.png" >}}
 
 Yes, I'm back to the good old era of the 500+ LOC vimrc. In my case, I now have a single `init.lua` file to manage my plugins and general settings, nicely organized and presented thanks to native (and efficient) Vim folding. I still have various directories lying around, though. Here is the big picture:
 

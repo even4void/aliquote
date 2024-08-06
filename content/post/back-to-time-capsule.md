@@ -12,7 +12,7 @@ Here are some background information for the record: I owned a Time Capsule (TC)
 
 The Time Capsule is really easy to configure, especially when we just want it to be connected to our network as a simple client. This is entirely done with Airport utility. Then, we just have to change Time Machine setting to tell it to use the TC HD for backups, and then... well, we just have to wait for a long, very long time. How long do you say?
 
-![Waiting](/img/20120615230808.png)
+{{< figure src="/img/20120615230808.png" >}}
 
 Who said we live in a wireless land? The above time is for the case where we are using wireless access to the TC, with the TC configured as a client to my home wireless network. We can get more reasonable timing by creating a network for the Time Capsule (which is the default option) and connecting the Macbook and the TC directly with an ethernet cable, as documented on Apple's KB: [Backing up with Time Capsule for the first time](http://support.apple.com/kb/HT1175). Of course, you will need an ethernet adapter for your Macbook! This way, I got something like 90 Go saved in 3.5 hours.
 

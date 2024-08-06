@@ -27,7 +27,7 @@ See also this related post: [Custom Vim shortcuts (2/n)](/post/vim-shortcuts/).
 
 In addition to the above, I also have handy shortcuts for [Magma], `vim-surround`-like stuff,[^3] etc.
 
-![](/img/2022-03-23-15-20-21.png)
+{{< figure src="/img/2022-03-23-15-20-21.png" >}}
 
 Finally, I don't really like or need snippet engines, so I just defined some handy abbreviations, like this:
 

@@ -48,7 +48,7 @@ And, for Emacs, provided we are using [package.el](http://emacswiki.org/emacs/EL
 
 Below are some screenshots of `jedi.el` in action:
 
-![Jedi](/img/20130211201329.png)
+{{< figure src="/img/20130211201329.png" >}}
 
 {{< fluid_imgs
   "pure-u-1-2|/img/20130211201042.png"
@@ -56,4 +56,4 @@ Below are some screenshots of `jedi.el` in action:
 
 On a related point, I took advantage of those updates to update my [nrepl](https://github.com/kingtim/nrepl.el) package for Clojure and install [ac-nrepl](https://github.com/purcell/ac-nrepl) which also comes with handy autocompletion and doc (`C-c C-d`) support.
 
-![Clojure and nREPL](/img/20130211211212.png)
+{{< figure src="/img/20130211211212.png" >}}
