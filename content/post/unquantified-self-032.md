@@ -6,7 +6,7 @@ tags: ["self"]
 categories: ["2024"]
 ---
 
-Yet another one of these posts to reflect on recent moments in my life. I just finisehd watching Season 2 of the [House of the Dragons](https://en.wikipedia.org/wiki/House_of_the_Dragon). It was great and I am now just awaiting the third Season. I wouldn't say it's on the same level as Game of Thrones, but maybe it's that there's less of a profusion of characters, which makes House of the Dragons more intimate and closer to a classic series or mini-series. I watched other mini-series previously but only [The Queen's Gambit](https://en.wikipedia.org/wiki/The_Queen%27s_Gambit_(miniseries)) and [Ripley](https://en.wikipedia.org/wiki/Ripley_(TV_series)) get my attention.
+Yet another one of these posts to reflect on recent moments in my life. I just finisehd watching Season 2 of the [House of the Dragons](https://en.wikipedia.org/wiki/House_of_the_Dragon). It was great and I am now just awaiting the third Season. I wouldn't say it's on the same level as Game of Thrones, but maybe it's that there's less of a profusion of characters, which makes House of the Dragons more intimate and closer to a classic series or mini-series. I watched other mini-series previously but only [The Queen's Gambit](https://en.wikipedia.org/wiki/The_Queen%27s_Gambit_(miniseries)) and [Ripley](https://en.wikipedia.org/wiki/Ripley_(TV_series)) got my attention.
 
 This site has been pretty quiet for the past 3 months, partly because of the busy workload, but also because of a lack of motivation. I took the opportunity to read a lot of [books](/files/books.txt) and draw whatever came to mind, or sometimes to mind. An excerpt follows.
 
