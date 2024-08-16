@@ -17,7 +17,6 @@ Upon rebooting the system, my plan was to remove packages tagged jammy (obs-stud
 I deleted old Linux kernels (headers and images), totalling 640 Mo on my HD! I used a [shell script](https://askubuntu.com/a/1315976) slighty adpated from SO.
 
 ```shell
-~
 » dpkg --list | grep linux-headers
 ii  linux-headers-5.15.0-118                       5.15.0-118.128
 ii  linux-headers-5.15.0-118-generic               5.15.0-118.128
@@ -51,7 +50,6 @@ I also cleaned up `/usr/share/applications` and `$HOME/.local/share/applications
 I still need to filter out broken executables installed by Python in $HOME/.local/bin (e.g., streamlink), install nodejs, npm and yarn, and handle software that were installed via custom PPAs (e.g., Racket). Also, I would need to review log files in `/var/log/dist-upgrade` to see if I missed something.
 
 ```shell
-~
 » neofetch
 OS: Ubuntu 24.04 LTS x86_64
 Host: Latitude 7310
