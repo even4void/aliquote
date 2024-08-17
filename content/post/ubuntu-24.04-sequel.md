@@ -10,7 +10,7 @@ Quickly jotted post-install steps of my previous post. It was a joy, really.
 
 ### Node
 
-I know there are warious way to install the full-stack on Ubuntu, either via apt, dedicated PPAs, or [nvm](https://github.com/nvm-sh/nvm). Previously I was using the official NodeSource repository. Ubuntu is known to be somewhat lagging a little behind the latest versions, so this was the best whance to get a decent nodejs with the 22.04 LTS at some point. I'm not particularly interested in managing multiple versions of Node since I barely do any serious stuff in JS for web dev.
+I know there are warious way to install the full-stack on Ubuntu, either via apt, dedicated PPAs, or [nvm](https://github.com/nvm-sh/nvm). Previously I was using an imported deb repository. Ubuntu is known to be somewhat lagging a little behind the latest versions, so this was the best chance to get a decent nodejs with the 22.04 LTS at some point. I'm not particularly interested in managing multiple versions of Node since I barely do any serious stuff in JS for web dev.
 
 Currently, the official Ubuntu repository offers nodejs/noble 18.19.1+. That's okay, but if you try to install npm, unless  you'll end up with a giant list of packages! Installing the combo nodejs + npm, with nodejs-doc (because we like to read the doc, right?) results in a mess:
 
@@ -22,10 +22,10 @@ Après cette opération, 169 Mo d'espace disque supplémentaires seront utilisé
 
 Note that you would get almost nothing by asking apt for `--no-install-recommends` (about forty packages less at best).
 
-Let's try with the NodeSource repo instead, with the LTS release. Notice that several blog posts suggest <https://deb.nodesource.com> as a primary repo, but this is not from the NodeJS oragnization, AFAICT. In retrospect, this is probably what I installed last time:[^1]
+Let's try with the NodeSource repo instead, with the LTS release. Notice that several blog posts suggest <https://deb.nodesource.com> as a primary repo, but this is not from the NodeJS organization, AFAICT. In retrospect, this is probably what I installed last time:[^1]
 
 ```
-node-jquery/jammy,jammy,now 3.6.0+dfsg+~3.5.13-1 all  [installé, automatique]
+nodejs/nodistro,now 20.12.2-1nodesource1 amd64  [installé]
 ```
 
 Anyway, there are prebuilt binaries available on <https://nodejs.org>, as well as a suggestion to use nvm. I finally choose the later. Everything went fine except that I lost my custom lib directory (so-called "prefix" in Node parlance). I'll check back later!
@@ -53,7 +53,7 @@ v20.16.0
 
 ### Python
 
-Canonical apparently wants to use Python more and more for the back office. It is now harder to pip install a Python package. If you try to install Poetry using their online shell script, you will be redirected to an error message concerning the impossibility of installing packages outside a virtual environment. Same goes with pip in your `$HOME` directory:
+Canonical apparently wants to use Python more and more for the back office. It is now harder to pip install a Python package. If you try to install Poetry using their online shell script, you will be redirected to an error message about installing packages outside a virtual environment. Same goes with pip in your `$HOME` directory:
 
 ```shell
 » pip install --user poetry
@@ -83,7 +83,7 @@ I'm not against banning system-wide installations, on the contrary. But it seems
 
 > I manage my Python packages in the only way which I think is sane: installing them from my Linux distribution’s package manager. I maintain a few dozen Python packages for Alpine Linux myself. It’s from this perspective that, throughout all of this turmoil in Python’s packaging world, I have found myself feeling especially put out. --- [Python: Please stop screwing over Linux distros](https://drewdevault.com/2021/11/16/Python-stop-screwing-distros-over.html)
 
-Quick fact checking: There are a lot of R and Python packages already available on Ubuntu 24.04:[^2]
+Quick fact checking: There are a lot of R and Python packages already available on Ubuntu 24.04![^2]
 
 ```shell
 » apt search r-cran- | wc -l
@@ -94,6 +94,8 @@ Quick fact checking: There are a lot of R and Python packages already available 
 ```
 
 I'm waiting to see how I'll proceed, but frankly I think I'll just install the deb packages I use frequently and create a sandbox for the rest.
+
+In the meantime, I just deleted my Python 3.10 library and everything that was installed under `$HOME/.local/bin` with pip (`rg -l "\#\!/usr/bin/python3" | xargs rm`).
 
 ### R
 
@@ -109,7 +111,7 @@ This whole set of packages is going to install a bunch of additional software, b
 
 Results: 155 packages, 403 Mo.
 
-In summary, I just installed a total of xxx packages on various places on my laptop, from various sources on the internet, using various package manager (having almost zero reverse or orphaned dependencies management). [Everything is HUUUUGE](https://tonsky.me/blog/disenchantment/).
+In summary, I just installed and deleted a total of xxx packages (where xxx > 500) on various places on my laptop, from various sources on the internet, using various package manager (having almost zero reverse or orphaned dependencies management). [Everything is HUUUUGE](https://tonsky.me/blog/disenchantment/).
 
 
 {{% music %}}Tindersticks • _My Sister_{{% /music %}}
