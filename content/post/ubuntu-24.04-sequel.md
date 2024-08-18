@@ -83,7 +83,7 @@ I'm not against banning system-wide installations, on the contrary. But it seems
 
 > I manage my Python packages in the only way which I think is sane: installing them from my Linux distribution’s package manager. I maintain a few dozen Python packages for Alpine Linux myself. It’s from this perspective that, throughout all of this turmoil in Python’s packaging world, I have found myself feeling especially put out. --- [Python: Please stop screwing over Linux distros](https://drewdevault.com/2021/11/16/Python-stop-screwing-distros-over.html)
 
-Quick fact checking: There are a lot of R and Python packages already available on Ubuntu 24.04![^2]
+Quick fact checking: There are a lot of R and Python packages (this includes documentation packages) already available on Ubuntu 24.04![^2]
 
 ```shell
 » apt search r-cran- | wc -l

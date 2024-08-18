@@ -70,6 +70,13 @@ CPU: Intel i7-10610U (8) @ 4.900GHz
 - swayimg no `--gallery` option with current version from apt, while the version I compiled from the master branch on GitHub works fine.
 - Zathura is working fine with poppler as a PDF backend; should install mupdf backend but got stuck with dependencies (it would require mupdf > 1.19, and when I checkout the latest tag which accepts mupdf I got another conflict with a now defunct library). For the moment, I will use Foliate for Epub. And I realized that using a single app for all publication formats isn't very realistic. After all, Evince is able to open PS and DVI files, while Zathura needs a plugin for Postscript and can't open DVI file.
 
+
+{{% alert note %}}
+<small>[2024-08-17]</small><br>
+As advised on [Linux Mint Forums](https://forums.linuxmint.com/viewtopic.php?t=426783), you can just install the latest available deb package (23.10 Mantic), and it works right out of the box.
+{{% /alert %}}
+
+
 Oh, I forgot to say that Minecraft is still working ;-)
 
 {{% music %}}Tindersticks • _See my Girls_{{% /music %}}

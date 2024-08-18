@@ -65,8 +65,12 @@ The last block allow to complement pyright with autoformatting thanks to a custo
 ```vim
 " after/ftplugin/python.vim
 setlocal formatprg=python3\ -m\ macchiato
-" setlocal formatprg=black\ -q\ 2>/dev/null\ --stdin-filename\ %\ -
 ```
+
+{{% alert note %}}
+<small>[2024-08-18]</small><br>
+Heiker Curiel has several blog posts that describe how to setup LSP in Neovim without relying on nvim-lspconfig, in particular [Can we manage neovim's LSP client without plugins?](https://vonheikemen.github.io/devlog/tools/manage-neovim-lsp-client-without-plugins/) and [A guide on Neovim's LSP client](https://vonheikemen.github.io/devlog/tools/neovim-lsp-client-guide/).
+{{% /alert %}}
 
 Then I defined mappings and an autocommand in my `init.lua` file:
 

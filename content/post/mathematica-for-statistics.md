@@ -8,7 +8,7 @@ categories: ["2023"]
 
 I have long been interested in replacing R or Stata with Mathematica. I know it's not entirely possible due to the large amount of dedicated statistical routines (especially, post-fit procedures) available in these two statistical packages, but Mathematica is fine for most use cases I encountered the last two years, i.e. fitting a linear regression to a bivariate datasets, [fitting splines][], computing pairwise correlation coefficient, working with [contingency tables][], etc.
 
-Anton Antonov has a nice [blog][] which describes common tasks in statistics or machine learning, and plently of examples in his GitHub repository on [R vs. Mathematica][].
+Eralier on I wrote a quick tutorial on how to fit a simple [logitic regression][] model with Mathematica. Anton Antonov has a nice [blog][] which describes common tasks in statistics or machine learning, and plently of examples in his GitHub repository on [R vs. Mathematica][].
 
 One of the nice feature of Mathematica is that the basic data structure for working with data is the [list][]. Expressions like `{{1, 0.8}, {2, 3.2}, ...}` allows to construct a bivariate series, which can be manipulated using lot of built-in functions, and formatted accordingly in Matrix form or as a grid. Moreover, there's now the `Dataset` structure, although it is not ready to be consumed by most statistical fitting routines I'm interested in. Anyway, using lists as the basis for higher-order data structures is really nice, especially when you're already involved in the Python ecosystem. I like the following reply on [HN][]:
 
@@ -45,3 +45,4 @@ One day, I will probably translate my old [biostatistics][] tutorial to Mathemat
 [list]: https://reference.wolfram.com/language/tutorial/ManipulatingLists.html
 [hn]: https://news.ycombinator.com/item?id=9797936
 [biostatistics]: https://even4void.github.io/rstats-biostats/
+[logistic regression]: /post/logistic-fit-mathematica/

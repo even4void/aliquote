@@ -27,7 +27,6 @@ pack
 └── plugins
     ├── opt
     │   ├── neogen
-    │   ├── rustaceanvim
     │   └── vim-table-mode
     └── start
         ├── fzf-lua
