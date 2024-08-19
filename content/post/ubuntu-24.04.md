@@ -65,16 +65,16 @@ CPU: Intel i7-10610U (8) @ 4.900GHz
 - Alacritty 0.13 is available via apt. However I encountered some issue with the mouse pointer that disappeared from sight when above window, so that I reinstalled version 0.14-dev from GitHub that I compiled last week.
 - There's a new version for Cmus available in Ubuntu repos, still without album art support; I reinstalled my old fork, messed up with various GH clones (including one which used to work, and then I deleted everything. I'll see how to bring album art back in my notification popup if I really miss that.
 - Newsboat not available in official repos, don't know why, but there's a deb package for 23.10 and apparently a snap package for the current relese. Hey, I don't want to use Snap, I removed it from my laptop two releases ago already!
-- Now got NeoMutt 20231103, which is a 4 yr.bump (latest version in 22.04 dated back to 2019 if I remember correctly). Got some issues with my color definition but this was [easily fixed](https://github.com/neomutt/neomutt/issues/4095).
-- Tmux 3.4 works as expected.
-- swayimg no `--gallery` option with current version from apt, while the version I compiled from the master branch on GitHub works fine.
-- Zathura is working fine with poppler as a PDF backend; should install mupdf backend but got stuck with dependencies (it would require mupdf > 1.19, and when I checkout the latest tag which accepts mupdf I got another conflict with a now defunct library). For the moment, I will use Foliate for Epub. And I realized that using a single app for all publication formats isn't very realistic. After all, Evince is able to open PS and DVI files, while Zathura needs a plugin for Postscript and can't open DVI file.
-
 
 {{% alert note %}}
 <small>[2024-08-17]</small><br>
 As advised on [Linux Mint Forums](https://forums.linuxmint.com/viewtopic.php?t=426783), you can just install the latest available deb package (23.10 Mantic), and it works right out of the box.
 {{% /alert %}}
+
+- Now got NeoMutt 20231103, which is a 4 yr.bump (latest version in 22.04 dated back to 2019 if I remember correctly). Got some issues with my color definition but this was [easily fixed](https://github.com/neomutt/neomutt/issues/4095).
+- Tmux 3.4 works as expected.
+- swayimg no `--gallery` option with current version from apt, while the version I compiled from the master branch on GitHub works fine.
+- Zathura is working fine with poppler as a PDF backend; should install mupdf backend but got stuck with dependencies (it would require mupdf > 1.19, and when I checkout the latest tag which accepts mupdf I got another conflict with a now defunct library). For the moment, I will use Foliate for Epub. And I realized that using a single app for all publication formats isn't very realistic. After all, Evince is able to open PS and DVI files, while Zathura needs a plugin for Postscript and can't open DVI file.
 
 
 Oh, I forgot to say that Minecraft is still working ;-)
