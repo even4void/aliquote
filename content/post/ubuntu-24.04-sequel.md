@@ -10,7 +10,7 @@ Quickly jotted post-install steps of my previous post. It was a joy, really.
 
 ### Node
 
-I know there are warious way to install the full-stack on Ubuntu, either via apt, dedicated PPAs, or [nvm](https://github.com/nvm-sh/nvm). Previously I was using an imported deb repository. Ubuntu is known to be somewhat lagging a little behind the latest versions, so this was the best chance to get a decent nodejs with the 22.04 LTS at some point. I'm not particularly interested in managing multiple versions of Node since I barely do any serious stuff in JS for web dev.
+I know there are various way to install the full-stack on Ubuntu, either via apt, dedicated PPAs, or [nvm](https://github.com/nvm-sh/nvm). Previously I was using an imported deb repository. Ubuntu is known to be somewhat lagging a little behind the latest versions, so this was the best chance to get a decent nodejs with the 22.04 LTS at some point. I'm not particularly interested in managing multiple versions of Node since I barely do any serious stuff in JS for web dev.
 
 Currently, the official Ubuntu repository offers nodejs/noble 18.19.1+. That's okay, but if you try to install npm, unless  you'll end up with a giant list of packages! Installing the combo nodejs + npm, with nodejs-doc (because we like to read the doc, right?) results in a mess:
 
@@ -83,7 +83,7 @@ I'm not against banning system-wide installations, on the contrary. But it seems
 
 > I manage my Python packages in the only way which I think is sane: installing them from my Linux distribution’s package manager. I maintain a few dozen Python packages for Alpine Linux myself. It’s from this perspective that, throughout all of this turmoil in Python’s packaging world, I have found myself feeling especially put out. --- [Python: Please stop screwing over Linux distros](https://drewdevault.com/2021/11/16/Python-stop-screwing-distros-over.html)
 
-Quick fact checking: There are a lot of R and Python packages (this includes documentation packages) already available on Ubuntu 24.04![^2]
+Quick fact checking: There are a lot of R (thanks to [r2u](https://eddelbuettel.github.io/r2u/)) and Python packages (this includes documentation packages) already available on Ubuntu 24.04![^2]
 
 ```shell
 » apt search r-cran- | wc -l
@@ -101,7 +101,7 @@ In the meantime, I just deleted my Python 3.10 library and everything that was i
 
 After reinstalling R from the official Ubuntu source list, I got R 4.3. I was running v4.4.0 but it is not a big deal. I had a total of 498 packages (2.4 Go) in my personal library. Rather than keeping stuff compiled with another version, I took the opportunity to shorten the list of packages I will have installed by default, and use [renv](https://rstudio.github.io/renv/) to manage additional packages on a per-project basis. This is in line with the approach usually taken in other PLs I use.
 
-I selected the following list of "essential" packages, meaning I will probably use two or three of them each time I fire up R for a quick statistical investigation, excluding LSP and editor stuff, i.e. languageserver, lintr and styler: car, coin, cowplot, data.table, directlabels, ggplot2, glmnet, haven, Hmisc, languageserver, lintr, lme4, mclust, multcomp, plotly, reshape2, renv, readxl, rms, skimr, styler, tinytest, vegan. Skimr is surely the only exotic piece of a package in this list, and it adds little to the bill after all.
+I selected the following list of "essential" packages, meaning I will probably use two or three of them each time I fire up R for a quick statistical investigation, excluding LSP and editor stuff, i.e. languageserver, lintr and styler: car, coin, cowplot, data.table, directlabels, ggplot2, glmnet, haven, Hmisc, languageserver, lintr, lme4, mclust, multcomp, plotly, remotes, reshape2, renv, readxl, rms, skimr, styler, tinytest, vegan. Skimr is surely the only exotic piece of a package in this list, and it adds little to the bill after all.
 
 This whole set of packages is going to install a bunch of additional software, but not that much compared to what testthat alone would require:[^3]
 
@@ -111,7 +111,7 @@ This whole set of packages is going to install a bunch of additional software, b
 
 Results: 155 packages, 403 Mo.
 
-In summary, I just installed and deleted a total of xxx packages (where xxx > 500) on various places on my laptop, from various sources on the internet, using various package manager (having almost zero reverse or orphaned dependencies management). [Everything is HUUUUGE](https://tonsky.me/blog/disenchantment/).
+In summary, I just installed and deleted a total of xxx packages (where xxx > 500) on various places on my laptop, from various sources on the internet, using various package manager (having almost zero reverse or orphaned dependencies management,[^4] unless you use your distro own package manager). [Everything is HUUUUGE](https://tonsky.me/blog/disenchantment/).
 
 
 {{% music %}}Tindersticks • _My Sister_{{% /music %}}
@@ -129,4 +129,4 @@ In summary, I just installed and deleted a total of xxx packages (where xxx > 50
 
 [^2]: Sadly, no [plotnine](https://plotnine.org/)!
 [^3]: Installing testthat on a fresh and empty libPath means a mare addition of packages (35 Mo) already : ‘utf8’, ‘crayon’, ‘pillar’, ‘pkgconfig’, ‘vctrs’, ‘glue’, ‘fs’, ‘pkgbuild’, ‘rprojroot’, ‘diffobj’, ‘fansi’, ‘rematch2’, ‘tibble’, ‘brio’, ‘callr’, ‘cli’, ‘desc’, ‘digest’, ‘evaluate’, ‘jsonlite’, ‘lifecycle’, ‘magrittr’, ‘pkgload’, ‘praise’, ‘processx’, ‘ps’, ‘R6’, ‘rlang’, ‘waldo’, ‘withr’. Remember the [tinyverse](https://www.tinyverse.org/)?
-
+[^4]: While r2u is a great initiative, I keep the habits of [compiling everything from source](https://gist.github.com/even4void/99e40b772ec84b82eaef9bd2e5de0ace), at least on my machine. And please note that using bspm to get native binary via the r2u apt repo doesn't work with renv, rig (and probably pak).
