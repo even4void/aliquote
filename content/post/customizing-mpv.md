@@ -6,6 +6,8 @@ tags: []
 categories: ["2024"]
 ---
 
+https://github.com/mpv-player/mpv/wiki/User-Scripts
+https://github.com/mpv-player/mpv/wiki/FAQ
 https://wiki.archlinux.org/title/Mpv
 https://kokomins.wordpress.com/2019/10/14/mpv-config-guide/
 https://github.com/iwalton3/default-shader-pack
