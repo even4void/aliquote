@@ -27,7 +27,7 @@ Update [2022-09-03]
 {{< fluid_imgs
   "pure-u-1-2|/img/2022-09-04-09-43-38.png"
   "pure-u-1-2|/img/2022-09-04-11-15-36.png" >}}
-<small> Ubuntu 22.04 LTS: Gnome Mutter/tactile, Tmux, Simple (Suckless) terminal or Gnome terminal, Neovim, Cmus, Irssi and Neomutt (not shown).</small>
+<small>Ubuntu 22.04 LTS: Gnome Mutter/tactile, Tmux, Simple (Suckless) terminal or Gnome terminal, Neovim, Cmus, Irssi and Neomutt (not shown).</small>
 
 ---
 
@@ -35,6 +35,13 @@ Update [2023-02-13]
 
 {{< figure src="/img/2023-02-13-10-57-55.png" >}}
 <small>Alacritty with font ligature support, Tmux, Cmus, Neovim nightly.</small>
+
+---
+
+Update [2024-08-23]
+
+{{< figure src="/img/2024-08-23-22-19-36.png" >}}
+<small>Ubuntu 22.04 LTS: Foot terminal, Tmux, Neovim nightly 0.10.0 (release).</small>
 
 {{% alert note %}}
 <small>[2022-09-03]</small><br>
