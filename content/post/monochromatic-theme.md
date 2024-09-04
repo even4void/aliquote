@@ -8,6 +8,11 @@ categories: ["2023"]
 
 I already discussed the use of [monochrome color scheme](post/monochrome-color-scheme/) in the past. The main benefit for me has been to avoid the "christmas tree" effect[^1] in my text editor (Neovim), but see [On choosing your colorscheme](/post/on-color-scheme/). Such minimalist settings helps me focus on the task at hand, while while maintaining high portability depending on the capabilities of the machines I work on (macOS and OpenBSD sometimes, ssh access to computing servers most of the time).
 
+{{% alert note %}}
+<small>[2024-09-02]</small><br>
+See also [Color Conundrum](https://oppi.li/posts/color_conundrum/) by Akshay who maked a good point here: "Imagine highlighting an entire book because all of it is important."
+{{% /alert %}}
+
 I use Zsh as my main shell, but sometimes I also use Bash. I keep a minimal `bashrc` config file in case I need to use my default settings on a remote server, and I have the following settings in my `.bashrc`, which I mostly use on virtual consoles or when connected via ssh:
 
 ```shell
