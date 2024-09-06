@@ -24,27 +24,9 @@ Here's a list of TUIs I use on my OS. They are ranked according to daily usage, 
 - a bunch of Git addons saved in `$HOME/bin` folder (see below)
 - ( list to be completed )
 
-Here's a raw list of binaries I installed over the time:
+Here's a raw list of binaries I installed over the time. I won't show my `$HOME/bin` folder, whcih I purged recently from old X11-only or defunct shell scripts. I still have a dozens of those lying around.
 
 ```shell
-» ls bin
-alacritty-switch-theme.sh*  cycle_wallpaper.sh*   git-pr*                kopia-init*          org-beamer*             sysup*
-aliquote-micro.r*           evince-synctex.sh*    git-rewrite-author*    lastag*              pbcopy*                 targz*
-aliquote-post.r*            extract*              git-semver-next*       lisp-make-project*   pdf2img*                tikz2pdf*
-backup-dotfiles.sh*         extract-info-vpn.sh*  git-status-all*        mash*                playme*                 tmux-fzf*
-bag_of_tweets.r*            fasview*              git-summary*           micro*               profile.do              tmux-urlview.sh*
-battery-status*             fet.sh*               git-sync*              movie2img@           quarto_bw.sh*           togif*
-bibcite*                    ffdash*               hemux*                 movie2img.py*        radio*                  treediff*
-bibfind*                    fix_ubuntu_gpg.sh*    hyperspec_lookup.ros*  mu-index-notify.sh*  readstat*               ubuntu.sh
-bootstrap.sh                gdm_bkg*              inbox@                 mutt-mu*             remove_old_kernels.sh*  unwrap-fasta*
-catix*                      genpwd*               init-tmux*             newsboat-notify*     rga-fzf*                unwrap-text*
-changelog*                  getbib*               irssi_log_cat.py*      notify-action.sh*    rmake*                  vimdiff*
-clear-cache*                git-changelog*        irssi-sync*            notify-send.sh*      rs-playground*          vim-profiler.py*
-cmus-now*                   git-churn*            jbl-connect*           nvim-bashrc          run-pandoc*             wtf*
-cmus-recent*                git-clean-clone*      knitr*                 nvim-keywordprg*     scrcap*                 xls*
-collect_micro.py*           git-cstat*            kopia-clean-hourly*    onchange*            set-theme*              ytb2mp3*
-csv2sqlite.py*              git-delete-history*   kopia-diff*            org-babel*           stata@
-
 » ls .local/bin
 akku@         deno*       haskell-debug-adapter*  matterbridge*     py-spy*       rust-analyzer*    stylish-haskell*  wtwitch*
 alen*         difft*      hdc*                    mdbook*           qlot@         scc*              stylua*           xlispstat*
