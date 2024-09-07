@@ -27,7 +27,7 @@ Here's a list of TUIs I use on my OS. They are ranked according to daily usage, 
 - some utilities for interacting with tmux or cmus, as well as neomutt, and a script named `radio` that triggers mpv with online radios.
 - I also have several handy alias in my zsh config.
 
-{{< figure src="/img/2024-09-07-10-12-10.png" title="Back to Foot as my main terminal" >}}
+{{< figure src="/img/2024-09-07-10-12-10.png" >}}
 
 Here's a raw list of binaries I installed over the time. I won't show my `$HOME/bin` folder, whcih I purged recently from old X11-only or defunct shell scripts. I still have a dozens of those lying around.
 
