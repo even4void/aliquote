@@ -13,6 +13,12 @@ New (riced) desktop setup.
   "pure-u-1-2|/img/2021-10-06-20-48-14.png" >}}
 <small> Gnome 20.04 LTS: i3-gaps, polybar, rofi (not shown), Kitty, Neomutt, Irssi, Cmus.</small>
 
+
+{{% alert note %}}
+<small>[2022-09-03]</small><br>
+I will update this post with more screenshots as I continue updating my desktop setup on a regular basis. However, it is unlikely the main applications I use daily will change. If you like ricing your desktop too, go take a look at <https://deskto.ps> (crafted by [Joshua Stein](https://jcs.org)).
+{{% /alert %}}
+
 ---
 
 Update [2022-02-04]
@@ -41,9 +47,4 @@ Update [2023-02-13]
 Update [2024-08-23]
 
 {{< figure src="/img/2024-08-23-22-19-36.png" >}}
-<small>Ubuntu 22.04 LTS: Foot terminal, Tmux, Neovim nightly 0.10.0 (release).</small>
-
-{{% alert note %}}
-<small>[2022-09-03]</small><br>
-I will update this post with more screenshots as I continue updating my desktop setup on a regular basis. However, it is unlikely the main applications I use daily will change. If you like ricing your desktop too, go take a look at <https://deskto.ps> (crafted by [Joshua Stein](https://jcs.org)).
-{{% /alert %}}
+<small>Ubuntu 24.04 LTS: Foot terminal, Tmux, Neovim nightly 0.10.0 (release).</small>
