@@ -158,6 +158,7 @@
     <outline type="rss" xmlUrl="https://dragan.rocks/feed.xml" htmlUrl="http://dragan.rocks/" title="Dragan Djuric"/>
     <outline type="rss" xmlUrl="https://drewdevault.com/blog/index.xml" htmlUrl="https://drewdevault.com/" title="Drew DeVault's blog"/>
     <outline type="rss" xmlUrl="https://drhagen.com/feed/" htmlUrl="https://drhagen.com/" title="David R Hagen"/>
+    <outline type="rss" xmlUrl="https://dthompson.us/feed.xml" htmlUrl="https://dthompson.us/feed.xml" title="dthompson"/>
     <outline type="rss" xmlUrl="https://dyscour.se/rss" htmlUrl="https://dyscour.se/" title="Dysfunctional Discourse"/>
     <outline type="rss" xmlUrl="https://elangocheran.com/feed/" htmlUrl="https://elangocheran.com/" title="Sequenced Thoughts from C/S"/>
     <outline type="rss" xmlUrl="https://eli.thegreenplace.net/feeds/all.atom.xml" htmlUrl="https://eli.thegreenplace.net/" title="Eli Bendersky's website"/>
