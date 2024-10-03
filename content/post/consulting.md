@@ -15,3 +15,8 @@ Emphasis is mine. The point of this article is that rather than doing purely the
 The whole article is available in the IMS Bulletin: [Terence’s Stuff: How to do Statistical Research](http://www4.stat.ncsu.edu/~davidian/st810a/speed.pdf) (PDF).
 
 
+{{% alert note %}}
+<small>[2024-10-03]</small><br>
+At first I was reluctant to update this old post of mine, but here is a nice discussion on consulting vs. collaborating by Frank Harrell: [Tips for Biostatisticians Collaborating with Non-Biostatistician Medical Researchers](https://hbiostat.org/talks/collab.html).
+{{% /alert %}}
+
