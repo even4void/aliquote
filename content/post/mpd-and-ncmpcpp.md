@@ -30,7 +30,7 @@ It is also possible to manage a "sticker" database, which is composed of added f
 <small>[2024-10-24]</small><br>
 I successfully imported all my play counts from Cmus in the mpd sticker database. First, I started recording new listening statistics with [mscout](https://github.com/hardfau1t/mscout). It works great, and it is simple to setup as a user unit to be managed by systemd. This program has options to get statistics from individual songs as well as playlists. One minor annoyance was that it fired up a new notification for every song, but this can easily be disabled in the source code by commenting out the relevant section of code. It can also export or import statistics from or to the sticker database. Therefore I hacked one of psyomn's [gists](https://gist.github.com/psyomn/55b5711d14ac763259cacfbbf7ce9c81) to extract relevant information from Cmus cache (full pathname and play counts for all the songs in my library) and reformat them according to the format expected by mscout. It worked perfectly fine!
 
-{{< figure src="/img/2024-10-24-19-02-54..png" >}}
+{{< figure src="/img/2024-10-24-19-02-54.png" >}}
 
 {{% /alert %}}
 
