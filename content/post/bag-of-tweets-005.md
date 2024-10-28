@@ -93,7 +93,6 @@ Here is the latest bag of tweets<sup>\*</sup>, which covers May 2011.
 - dbNSFP: a lightweight database of human non-synonymous SNPs and their functional predictions http://ff.im/D0zAb (h/t kshameer, 9 May)
 - Never new this - PLINK (--flipscan) can use LD to find incorrect strand designation http://bit.ly/koqdvI #GWAS (h/t genetics_blog, 9 May)
 - 1 in 38 children may have an autism spectrum disorder: http://bit.ly/jvAlUN (h/t newscientist, 9 May)
-- http://bit.ly/lBioL2 : Fractal Clustering efectively deals with large data sets, high-dimensionality and noise. May be good for Microarrays (h/t i_314, 9 May)
 - SciDB integrates with R . http://bit.ly/h1zx0r #rstats (h/t NPHard, 9 May)
 - COLT 2011 Call for Participation: The 24rd Annual Conference on Learning Theory (COLT 2011) will take place in B... http://bit.ly/mbJP16 (h/t PASCALNetwork, 9 May)
 - Generic Programming with C++ 0x http://post.ly/20i9P (h/t irr, 9 May)
