@@ -2,7 +2,7 @@ baseURL = "https://aliquote.org/"
 languageCode = "en"
 title = "aliquote.org"
 theme = "aliquote"
-paginate = 10
+pagination.pagerSize = 10
 enableRobotsTXT = true
 
 # disable
