@@ -6,11 +6,7 @@ tags: ["apple"]
 categories: ["2024"]
 ---
 
-I thought I would write a blog post a month ago after [my laptop blew up](/micro/2024-11-25-21-09-42/), then when I spent a week reconfiguring my [old MacBook 12"](/micro/2024-11-26-21-42-11/). I gave up, it was certainly better to let things go at that time. Now I got a new MacBook, the top of the line, and it's refreshing. First, I never had a laptop as powerful as this one,
-
-{{< figure src="/img/2024-12-22-20-17-48.png" >}}
-
-Still, it's a little annoying since I lost a lot of personal stuff.
+I thought I would write a blog post a month ago after [my laptop blew up](/micro/2024-11-25-21-09-42/), then when I spent a week reconfiguring my [old MacBook 12"](/micro/2024-11-26-21-42-11/). I gave up, it was certainly better to let things go at that time. Now I got a new MacBook, the top of the line, and it's refreshing. First, I never had a laptop as powerful as this one. Still, it's a little annoying since I lost a lot of personal stuff.
 
 ## Ground 0
 
