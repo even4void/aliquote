@@ -99,6 +99,11 @@ bind-key -n M-z resize-pane -Z
 See my [Tmux cheatsheet](/artciles/tmux/) for more up to date mappings.
 {{% /alert %}}
 
+{{% alert note %}}
+<small>[2025-01-06]</small><br>
+See also this [little gem](https://willhbr.net/2024/03/06/tmux-conf-with-commentary/) on Will Richardson's weblog.
+{{% /alert %}}
+
 Happy hacking on Tmux!
 
 {{% music %}}Jean-Yves Thibaudet • _Liszt Consolations, S. 172 - No. 3 in D-Flat Major. Lento placido_{{% /music %}}
