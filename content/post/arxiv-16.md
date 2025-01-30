@@ -36,7 +36,7 @@ I like biplot graphical displays, despite their subtleties regarding how rows an
 
 [Are the Signs of Factor Loadings Arbitrary in Confirmatory Factor Analysis? Problems and Solutions](https://arxiv.org/abs/2401.12937) was also mentioned in my daily arxiv digest. As I am slowly forgetting 15 years of previous work in psychometrics, I find it particularly hard to come back from time to time to such papers. Anyway, I'm happy to see that research continues in this field, especially for old questions like those. Finally, I came across this related work on PCA: [Estimating the construct validity of Principal Components Analysis](https://arxiv.org/abs/2401.12905).
 
-### (https://arxiv.org/abs/2401.12911)
+### Pretraining and the Lasso (https://arxiv.org/abs/2401.12911)
 
 A potentially interesting paper I should read.
 
