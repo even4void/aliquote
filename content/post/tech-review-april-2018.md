@@ -18,7 +18,7 @@ This [Python notebook](https://nbviewer.jupyter.org/github/groverpr/learn_python
 
 Here is a nice article published on Medium (the original article is available on the [UW Interactive Data Lab](https://idl.cs.washington.edu)): [Multiple Perspectives on the Multiple Comparisons Problem in Visual Analysis](https://medium.com/hci-design-at-uw/multiple-perspectives-on-the-multiple-comparisons-problem-in-visual-analysis-df7493818bbd?source=twitterShare-9f9ac461ae21-1522699359). By the way, you can follow one of [Jeffrey Heer](https://homes.cs.washington.edu/~jheer/)'s excellent course on data visualization, for instance [CSE442 Data Visualization](https://courses.cs.washington.edu/courses/cse442/17au/).
 
-{{< tweet user="estherschindler" id="979005249452232704" >}}
+{{< x user="estherschindler" id="979005249452232704" >}}
 
 I started learning a bit of [Rust](https://www.rust-lang.org) a month ago, after having read one of Evan Miller's [nice review](http://www.evanmiller.org/a-taste-of-rust.html), an [O'Reilly ebook](http://www.oreilly.com/programming/free/why-rust.csp), and part of the [online documentation](https://doc.rust-lang.org/book/) which is awesome. I thought at that time that support for numerical computing was lacking in the current implementation and existing packages. However, there's now a native [port of Apache Arrow](https://github.com/apache/arrow/tree/master/rust), which looks promising.
 

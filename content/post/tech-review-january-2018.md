@@ -31,7 +31,7 @@ For bayesian modeling, in addition to the existing packages [RStan](http://mc-st
 
 [Client-Side Web Development](https://info343.github.io)
 An online course that looks really nice.
-{{< tweet user="mf_viz" id="953352029778280449" >}}
+{{< x user="mf_viz" id="953352029778280449" >}}
 
 [Programming Design Systems](https://programmingdesignsystems.com)
 A free digital book that teaches a practical introduction to the new foundations of graphic design. By Rune Madsen. The chapter on [geometric composition](https://programmingdesignsystems.com/layout/a-short-history-of-geometric-composition/index.html#a-short-history-of-geometric-composition-DvkJs3o) is really interesting for those who are versed in data visualization and [Trellis displays](http://ect.bell-labs.com/sl/project/trellis/display.examples.html).

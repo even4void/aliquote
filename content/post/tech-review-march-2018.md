@@ -14,7 +14,7 @@ Some fresh news from Twitter and the internet without further ado.
 
 If you are after good tutorials on bayesian analysis and mixed-effects models, stop by [Michael Clark's website](http://m-clark.github.io/documents/). Surely you will learn something, and appreciate beautiful typography on the web.
 
-{{< tweet user="erkaman2" id="969842250959159296" >}}
+{{< x user="erkaman2" id="969842250959159296" >}}
 
 These days, everything turns around Deep Learning, or just anything that we can call AI-related stuff. One can find several O'Reilly Newsletters or books, online course on Coursera and elsewhere, and various library in Pyhton, Java or other languages. I just skimmed over [Practical Deep Learning For Coders](http://course.fast.ai), from [fast.ai](http://www.fast.ai), which features seven two-hour video lectures and detailed notebooks, and it looks really cool.[^1] In his article [Data Visualization for Artificial Intelligence, and Vice Versa](https://medium.com/@plotlygraphs/data-visualization-for-artificial-intelligence-and-vice-versa-a38869065d88), Nicolas Kruchten discusses AI software, like [TensorFlow Graph Vizualizer](https://www.tensorflow.org/programmers_guide/graph_viz) or this beautiful [handwritten pattern recognition engine](https://distill.pub/2016/handwriting/), and how such technology-driven data visualization process might complement or replace human decision in various fields.
 
@@ -35,7 +35,7 @@ John Skeet---remember that guy who accumulated [over 1,000,000 reputation points
 
 [According to this Shiny app](https://t.co/Ew35JwfeXH), I'm a bot with 95% probability. Someone is probably wrong on the internet.
 
-{{< tweet user="kearneymw" id="973579441111748608" >}}
+{{< x user="kearneymw" id="973579441111748608" >}}
 
 If you like Allen Downey textbooks (i.e., the "How to Think..." series), you will probably be interested in Ben Lauwens' [translation for Julia](https://benlauwens.github.io/ThinkJulia.jl/latest/chap01.html). This provides a great introduction to the core features of the Julia language.
 

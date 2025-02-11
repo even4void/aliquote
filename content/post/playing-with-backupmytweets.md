@@ -43,7 +43,7 @@ and we need to have data formatted as (x,y) pairs arranged by columns; this mean
 ```
 $ !! | nl | cut -c 1-11 > tweets_by_date.dat
 $ graph -T ps -F HersheySans -f 0.035 -S 2 0.025 -m 0 -X Time -Y Frequency \
-  < tweets_by_date.dat > plot.ps
+  < xs_by_date.dat > plot.ps
 ```
 
 {{< figure src="/img/20110117130656.png" >}}
@@ -95,7 +95,7 @@ To use graph with these dates, we need to reverse the x-axis so that older dates
 
 ```
 $ graph -T ps -F HersheySans -f 0.035 -S 2 0.025 -m 0 -X "Elapsed days" \
-  -Y Frequency < tweets_by_date2.dat > plot.ps
+  -Y Frequency < xs_by_date2.dat > plot.ps
 ```
 
 {{< figure src="/img/20110117131159.png" >}}

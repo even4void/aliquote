@@ -39,4 +39,4 @@ A new Vega-based implementation of density maps, this time for multiclass proble
 
 As I always loved 3D moving geometrical objects--and I regularly check plenty of them on Twitter, here is one to end this review:
 
-{{< tweet user="beesandbombs" id="1047136671895101440" >}}
+{{< x user="beesandbombs" id="1047136671895101440" >}}

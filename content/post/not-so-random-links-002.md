@@ -16,7 +16,7 @@ Some not so random links found on Twitter or elsewhere that I haven't had time t
 
 - Tries are interesting sorted-sequence data structure in that they are designed specifically for string keys. Indeed, tries are trees whose edges are labeled by characters or strings, and the characters along a root-leaf path represent a key. Using appropriate data structures for the inner nodes, a trie can be searched in time $\mathcal{O}(s)$ for a string of size $s$.[^1] There is a tight connection to [radix sort](https://en.wikipedia.org/wiki/Radix_sort). The [hypertrie](https://github.com/mafintosh/hypertrie) project provides a distributed single writer key/value store in javascript, that depends on [hypercore](https://github.com/mafintosh/hypercore). The latter is one of the core pilar of the [dat project](https://dat.foundation) (see Tom MacWright's review of the [decentralized web](https://tmcw.github.io/2017/07/20/decentralize-your-website.html)), which I heard again recently because a guy processed several Gig of Wikipedia offline using a local dat dataset over personal wifi. Sidenote: If you are interested in trees and Racket, be sure to check Matt Might's post on [red-black trees](http://matt.might.net/articles/red-black-delete/).
 
-         {{< tweet user="boldakov" id="1159013757915475970" >}}
+         {{< x user="boldakov" id="1159013757915475970" >}}
 
 - [The Evolution of a ggplot](https://cedricscherer.netlify.com/2019/05/17/the-evolution-of-a-ggplot-ep.-1/): Nice wrap-up of how to customize a ggplot graphic. I personally liked the way the authors started with a basic boxplot and improve it in several directions, going so far as to include a tile map legend.
 

@@ -28,7 +28,7 @@ But, look, while the [Mathematics for Machine Learning](https://mml-book.github.
 
 I must admit that I was really disappointed by the recent buzz around RMS, but I found _this_ was very well put:
 
-{{< tweet user="codinghorror" id="993666577315778561" >}}
+{{< x user="codinghorror" id="993666577315778561" >}}
 
 Hack is a [typeface designed for source code](https://sourcefoundry.org/hack/). Should I try to replace Source Code or Fira Code? Not any time soon, but let us keep this in mind. Also, while [VimR](http://vimr.org) (not to be confused with the [NVim-R](https://github.com/jalvesaq/Nvim-R) plugin) has been refined and now use [neovim](https://neovim.io) instead of Macvim, I came across [Oni](https://onivim.github.io/oni-docs/#/), which is "a new kind of text editor." Think of it as a combination of nvim powered by node. Don't be afraid: There is also a [Rust version of Emacs](https://github.com/Wilfred/remacs)!
 
