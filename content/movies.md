@@ -86,6 +86,7 @@ I haven't watched TV in about ten years, probably even before I removed the TV f
 <tr><td><a href="https://en.wikipedia.org/wiki/Killing_Eve">Killing Eve</a></td><td>2020</td><td>4 (32)</td><td>&#9733;&#9733;&#9733;&#9733;&#9734;</td></tr>
 <tr><td><a href="https://en.wikipedia.org/wiki/The_Rook_(miniseries)">The Rook</a></td><td>2020</td><td>1 (8)</td><td>&#9733;&#9733;&#9733;&#9734;&#9734;</td></tr>
 <tr><td><a href="https://en.wikipedia.org/wiki/Euphoria_(American_TV_series)">Euphoria (S1)</a></td><td>2019</td><td>1 (9)</td><td>&#9733;&#9733;&#9733;&#9733;&#9734;</td></tr>
+<tr><td><a href="https://en.wikipedia.org/wiki/12_Monkeys_(TV_series)">Black List</a></td><td>2019</td><td>10 (218)</td><td>&#9733;&#9733;&#9733;&#9733;&#9733;</td></tr>
 <tr><td><a href="https://en.wikipedia.org/wiki/12_Monkeys_(TV_series)">12 Monkeys</a></td><td>2019</td><td>4 (47)</td><td>&#9733;&#9733;&#9733;&#9733;&#9733;</td></tr>
 <tr><td><a href="https://en.wikipedia.org/wiki/The_Handmaid%27s_Tale_(TV_series)">The Handmaid's Tale</a></td><td>2019</td><td>4 (43)</td><td>&#9733;&#9733;&#9733;&#9733;&#9734;</td></tr>
 <tr><td><a href="https://en.wikipedia.org/wiki/Westworld_(TV_series)">Westworld</a></td><td>2019</td><td>4 (33)</td><td>&#9733;&#9733;&#9733;&#9733;&#9734;</td></tr>
