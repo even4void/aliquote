@@ -1,6 +1,6 @@
 ---
 title: "ArXiving on July 2025"
-date: 2025-07-12T15:27:46+02:00
+date: 2025-07-23T15:27:46+02:00
 draft: true
 tags: ["readings", "arxiv"]
 categories: ["2025"]
@@ -164,4 +164,4 @@ categories: ["2025"]
 > two fundamental problems: hypergraph cut sparsification and $\ell_p$ subspace
 > embedding.
 
-{{% music %}}XXX • _XXX_{{% /music %}}
+{{% music %}}Within Temptation • _Faster_{{% /music %}}
