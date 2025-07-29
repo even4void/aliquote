@@ -33,6 +33,8 @@ categories: ["2025"]
 > encourages further validation and exploration of these techniques in future
 > research.
 
+An overview of difefrent approach to control the false discovery rate in multiple testing: Benjamini-Hochberg (BH), Benjamini-Yekutieli (BY), and Storey's method. The BH methid is already available in R's `p.adjust()`.
+
 
 ### Controlling the false discovery rate under a non-parametric graphical (https://arxiv.org/abs/2506.24126)
 
