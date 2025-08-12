@@ -1,7 +1,7 @@
 ---
 title: "ArXiving on July 2025"
 date: 2025-07-23T15:27:46+02:00
-draft: true
+draft: false
 tags: ["readings", "arxiv"]
 categories: ["2025"]
 ---
@@ -33,8 +33,15 @@ categories: ["2025"]
 > encourages further validation and exploration of these techniques in future
 > research.
 
-An overview of difefrent approach to control the false discovery rate in multiple testing: Benjamini-Hochberg (BH), Benjamini-Yekutieli (BY), and Storey's method. The BH methid is already available in R's `p.adjust()`.
+An overview of different approach to control the false discovery rate in multiple testing: Benjamini-Hochberg (BH), Benjamini-Yekutieli (BY), and Storey's method. The BH method is already available in R's `p.adjust()`. The BY method is just an extension of the BH method that accounts for positive correlations among test statistics, while Storey’s technique estimates the proportion of null hypotheses $\pi_0$ among the tested CDS. Whether you rely on a nominal $\alpha$ level or $q$-value cutoffs, as in proteomics analyses, all those methods work equally well. The author's conclusion is as follows:
 
+- BH is best for balanced performance between false discovery control and power.
+- BY is suited for avoiding false positives but sacrifices true positive identification.
+- StoreyQ is optimal for maximizing significant discoveries in exploratory genomics research.
+
+Note that although this targets RNA-Seq analysis, where Multiple Hypothesis Testing is one of the many challenges raised by the big data omics era, this should apply to other contexts as well. It is worth noting that the authors included a simulation model for count data, using a Negative Binomial Model, which is what is usually found in pipeline like [DESeq2](https://bioconductor.org/packages/devel/bioc/vignettes/DESeq2/inst/doc/DESeq2.html).
+
+I appreciated that the author provided a sidenote on statistical significance and biological relevance: "It is also crucial to recognize that statistical significance does not always imply biological importance, nor does a lack of significance disprove a biological hypothesis. In highly variable, small-sample contexts, meaningful changes may evade detection, reinforcing the need for well-powered experiments. Similarly, even a modest difference can be flagged as significant in extremely large datasets. These nuances highlight that DE detection should be interpreted within the broader scope of effect sizes, reproducibility, and biological validation."
 
 ### Controlling the false discovery rate under a non-parametric graphical (https://arxiv.org/abs/2506.24126)
 
@@ -51,6 +58,7 @@ An overview of difefrent approach to control the false discovery rate in multipl
 > set is small. Our fastest method, the IndBH procedure, typically finishes
 > within seconds even in simulations with up to one million hypotheses.
 
+Yet another paper on controlling the false discovery rate. As mentioned above, when there's some correlation between tested markers, modification of the default FDR correction (Benjamini–Hochberg) is in order. The trick the authors used in this work is to take into account a dependecy graph for $p$-values, allowing to assume independence of $p$-values that are not within each other’s neighborhoods, and otherwise leave the dependence unspecified.
 
 ### clustra: A multi-platform k-means clustering algorithm for analysis of longitudinal trajectories in large electronic health records data (https://arxiv.org/abs/2507.00962)
 
@@ -81,20 +89,7 @@ An overview of difefrent approach to control the false discovery rate in multipl
 > in both platforms, satisfying the needs of investigators familiar with, or
 > constrained by access to, one or the other platform.
 
-### Dynamic Similarity Graph Construction with Kernel Density Estimation (https://arxiv.org/abs/2507.01696)
-
-> In the kernel density estimation (KDE) problem, we are given a set $X$ of
-> data points in $\mathbb{R}^d$, a kernel function $k: \mathbb{R}^d \times
-> \mathbb{R}^d \rightarrow \mathbb{R}$, and a query point $\mathbf{q} \in
-> \mathbb{R}^d$, and the objective is to quickly output an estimate of
-> $\sum_{\mathbf{x} \in X} k(\mathbf{q}, \mathbf{x})$. In this paper, we consider
-> $\textsf{KDE}$ in the dynamic setting, and introduce a data structure that
-> efficiently maintains the estimates for a set of query points as data points
-> are added to $X$ over time. Based on this, we design a dynamic data structure
-> that maintains a sparse approximation of the fully connected similarity graph
-> on $X$, and develop a fast dynamic spectral clustering algorithm. We further
-> evaluate the effectiveness of our algorithms on both synthetic and real-world
-> datasets.
+It's been years I'm no longer involved in healths analytics and patient-reported outcomes, but this one reminded me of [a post](https://stats.stackexchange.com/a/3363) on Cross Validated about clustering of longitudinal data. Since I'm barely reminescent of those days, I remember [one answer](https://stats.stackexchange.com/a/3673) of mine which took up my entire morning and into which I put a lot of effort and attention.
 
 ### Targeted tuning of random forests for quantile estimation and prediction intervals (https://arxiv.org/abs/2507.01430)
 
@@ -115,6 +110,8 @@ An overview of difefrent approach to control the false discovery rate in multipl
 > probabilities. We discuss how the superior performance of QCL tuning is linked
 > to its alignment with the estimation goal. Finally, we explore the validity and
 > width of prediction intervals created using this method.
+
+Again, it's been a long time since I ever ran an RF algorithm on real data points. It looks like the RF framework has been extended far and long, and even for quantile regression. In this regard, the out-of-bag sample is used to estimate the bias of the marginal quantile coverage probability estimate.
 
 ### Tensor-product interactions in Markov-switching models (https://arxiv.org/abs/2507.01555)
 
@@ -144,26 +141,6 @@ An overview of difefrent approach to control the false discovery rate in multipl
 > improve the level of detail in inference, allowing to fit HMMs with hundreds of
 > parameters, 10-20 (potentially bivariate) smooths to thousands of observations.
 
-### On the Adversarial Robustness of Online Importance Sampling (https://arxiv.org/abs/2507.02394)
-
-> This paper studies the adversarial-robustness of importance-sampling (aka
-> sensitivity sampling); a useful algorithmic technique that samples elements
-> with probabilities proportional to some measure of their importance. A
-> streaming or online algorithm is called adversarially-robust if it succeeds
-> with high probability on input streams that may change adaptively depending on
-> previous algorithm outputs. Unfortunately, the dependence between stream
-> elements breaks the analysis of most randomized algorithms, and in particular
-> that of importance-sampling algorithms. Previously, Braverman et al. [NeurIPS
-> 2021] suggested that streaming algorithms based on importance-sampling may be
-> adversarially-robust; however, they proved it only for well-behaved inputs.
->  We focus on the adversarial-robustness of online importance-sampling, a
-> natural variant where sampling decisions are irrevocable and made as data
-> arrives. Our main technical result shows that, given as input an adaptive
-> stream of elements $x_1,\ldots,x_T\in \mathbb{R}_+$, online importance-sampling
-> maintains a $(1\pm\epsilon)$-approximation of their sum while matching (up to
-> lower order terms) the storage guarantees of the oblivious (non-adaptive) case.
-> We then apply this result to develop adversarially-robust online algorithms for
-> two fundamental problems: hypergraph cut sparsification and $\ell_p$ subspace
-> embedding.
+This is a novel approach for semiparametric inference in hidden-state models, which relies on incorporating tensor-product interactions into Markov-switching models, also known as Hidden Markov Model, a mix of two stochastic processes (one observed and the other latent). It's dense and I need to read this when I'll have more time. Now, let's go back to holidays, FWIW.
 
 {{% music %}}Within Temptation • _Faster_{{% /music %}}
