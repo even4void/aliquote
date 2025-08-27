@@ -8,6 +8,11 @@ categories: ["2025"]
 
 Last month I spent a few hours configuring my system (macOS Sequoia) to follow the [XDG Base Directory Specification](https://specifications.freedesktop.org/basedir-spec/latest/). I like the idea of having common paths defined for most applications. It worked quite well for me on Ubuntu, and I wanted to [declutter](/micro/2025-03-10-12-44-08/) my `$HOME` dotfiles.
 
+{{% alert note %}}
+<small>[2025-08-26]</small><br>
+Two weeks later, I came across this blog post by Rebecca Turner on [macOS and user configuration files](https://becca.ooo/blog/macos-dotfiles/). I share her thoughts about "When should you use ~/Library/Application Support", and I always expected other devs do too. [Hygg](https://github.com/kruseio/hygg) is a nice alternative to [doxx](https://github.com/bgreenwell/doxx), and in addition it supports PDF and EPUB, but its configuration and state files are written in `$HOME/Library`.
+{{% /alert %}}
+
 I already follow part of the XDG specs by putting everything I can in `$HOME/.config`. I also make heavy use of `$HOME/.local` to store additional programs (`/bin`), libraries (`/lib`) and extra stuff (`share`). To automate things a little I defined specific environment variables to point to the right directories. Here is what I have in my `$HOME/.config/profile.d/00-path.sh` which is sourced for every login shell (Apple Terminal use login shell by default):
 
 ```shell
