@@ -26,6 +26,17 @@ categories: ["2025"]
 > speculations based on assumptions that cannot be fully validated or checked
 > using the analysis data.
 
+This is a chapter from the 3rd edition of the _Handbook of Epidemiology_ (Pigeot and Ahrens, eds.). It's been a long time since I haven't read papers or textbook on epidemiology, but I had this one on my bookshelf at some point in my life. This is all about the study of associations and causal relationships outside the field of randomized clinical trials, which are discussed upfront:
+
+> The methods thus provide logically sound inferences only in ideal cases, rather
+than correct answers for our actual imperfect applications. They are however widely applied and
+misinterpreted in studies that fall far short of their assumptions, as when actual participation and
+treatment are not random. These problems are only partially accounted for by discussions of
+study limitations; occasionally they are further analyzed with speculative models for the non-
+random (systematic) aspects of the causal processes generating the data.
+
+But the simplifying assumptions are a recurring theme in the rest of the chapter, as well as that of a fictional world in which all assumptions hold. There is a very enlightning discussion on $p$-values, how they are often misinterpreted, and how they should be regarded in light of observed data (see pp.19 ff.). And basically, the whole paper is about statistical significance and how not to fool onto the trap of significant or non-signifcant $p$-values. Of note, Bayesian statistics are briefly discussed. I must admit I never encountered a single epidemiological paper using Bayesian inference.
+
 ### A Comprehensive Comparison of the Wald, Wilson, and adjusted Wilson Confidence Intervals for Proportions (https://arxiv.org/abs/2508.10223)
 
 > The standard confidence interval for a population proportion covered in the
@@ -45,6 +56,8 @@ categories: ["2025"]
 > 6) pseudo-observations is the best for the 90\% (resp., 95\% and 99\%) adjusted
 > Wilson confidence interval, but it also performs better than both the 90\%
 > (resp., 95\% and 99\%) Wald and Wilson confidence intervals.
+
+While two-group comparisons with a continuous outcome are generally easily understood and carried out using a $t$ or Wilcoxon test (although, in the latter case, with bad assumptions), estimating the precision of proportion estimates always rely on Wald confidence intervals, aka the "normal approximation". In this case, the proprtion of success is estimated as $\hat p \pm z_{\alpha}\sqrt{\frac{\hat p(1 - \hat p)}{n}}$, where $z_{\alpha}$ is the $1-\alpha/2$ quantile of the standard normal distribution ($z=1.96$ for a 95% confidence interval).
 
 ### Better bootstrap t confidence intervals for the mean (https://arxiv.org/abs/2508.10083)
 
