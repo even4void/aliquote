@@ -48,8 +48,8 @@ nnoremap <buffer> gS :10 split term://pandoc -s
 To manage my bibliographic entries, I use Bibtex and a wrapper around `fzf-lua` which can be called in normal or insert mode. It was very useful when I was writing tutorial and slides, but now I rarely use it since I mostly write on this blog.
 
 {{< fluid_imgs
-"pure-u-1-3|/img/2025-08-31-10-30-28.png"
-"pure-u-1-3|/img/2025-08-31-10-08-16.png" >}}
+"pure-u-1-2|/img/2025-08-31-10-30-28.png"
+"pure-u-1-2|/img/2025-08-31-10-08-16.png" >}}
 
 Treesitter now include both the `markdown` and `markdown_inline` parsers, which means you get highlighting for free everywhere, including code blocks. I do not use any linter, but [prettier][6] does a nice job when it comes to formatting the whole document:
 
