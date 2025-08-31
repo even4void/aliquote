@@ -1,7 +1,7 @@
 ---
 title: "ArXiving on August 2025"
-date: 2025-08-21T16:22:28+02:00
-draft: true
+date: 2025-08-26T16:22:28+02:00
+draft: false
 tags: ["arxiv"]
 categories: ["2025"]
 ---
@@ -57,7 +57,9 @@ But the simplifying assumptions are a recurring theme in the rest of the chapter
 > Wilson confidence interval, but it also performs better than both the 90\%
 > (resp., 95\% and 99\%) Wald and Wilson confidence intervals.
 
-While two-group comparisons with a continuous outcome are generally easily understood and carried out using a $t$ or Wilcoxon test (although, in the latter case, with bad assumptions), estimating the precision of proportion estimates always rely on Wald confidence intervals, aka the "normal approximation". In this case, the proprtion of success is estimated as $\hat p \pm z_{\alpha}\sqrt{\frac{\hat p(1 - \hat p)}{n}}$, where $z_{\alpha}$ is the $1-\alpha/2$ quantile of the standard normal distribution ($z=1.96$ for a 95% confidence interval).
+While two-group comparisons with a continuous outcome are generally easily understood and carried out using a $t$ or Wilcoxon test (although, in the latter case, with bad assumptions), estimating the precision of proportion estimates always rely on Wald confidence intervals, aka the "normal approximation". In this case, the proprtion of success is estimated as $\hat p \pm z_{\alpha}\sqrt{\frac{\hat p(1 - \hat p)}{n}}$, where $z_{\alpha}$ is the $1-\alpha/2$ quantile of the standard normal distribution ($z=1.96$ for a 95% confidence interval). An alternative option is to rely on Wilson's CI, and the well-known Agresti-Couli interval provides a very good approximation to it. You may recall that in the case of proportion, the standard error may be computed from the estimated proportion, $\hat p$, which yield Wald CIs,  or from the proportion under $H_0$, $p_0$, which is the [score test](https://en.wikipedia.org/wiki/Score_test) statistic (also called $z$-test in most statistical packages).[^1] The Wilson CIs are more tedious to compute (see Formula 2 in the paper and this [blog post](https://www.econometrics.blog/post/the-wilson-confidence-interval-for-a-proportion/)). The authors describe adjusted Wilson intervals for 90, 95, and 99% confidence level. The color scheme retained for these analyses remain, however, quite surprising.
+
+[^1]: See also [Coin tossing experiment: Score and Wald tests](/post/coin-tossing-experiment/).
 
 ### Better bootstrap t confidence intervals for the mean (https://arxiv.org/abs/2508.10083)
 
@@ -78,20 +80,9 @@ While two-group comparisons with a continuous outcome are generally easily under
 > lengthy discussion of the difficulties in constructing a utility function to
 > evaluate nonparametric approximate confidence intervals.
 
-### Importance Sampling Approximation of Sequence Evolution Models with Site-Dependence (https://arxiv.org/abs/2508.11461)
+For small samples and/or skewed data, the Bayesian $t$-test is a good option (see this [unfinished post](/post/bayesian-t-test/) of mine). BCA correction for a bootstrap $t$-test usually undercovers the mean, and other problems appear when we consider the studentized rather than the arithmetic mean. In this paper the authors consider various techniques to overcome limitations arising from small samples and they show that the  power law bootstrap $t$ and the beta bootstrap $t$ (decsribed in §2.5) provide good results, the latter being second order accurate.
 
-> We consider models for molecular sequence evolution in which the transition
-> rates at each site depend on the local sequence context, giving rise to a
-> time-inhomogeneous Markov process in which sites evolve under a complex
-> dependency structure. We introduce a randomized approximation algorithm for the
-> marginal sequence likelihood under these models using importance sampling, and
-> provide matching order upper and lower bounds on the finite sample
-> approximation error. Given two sequences of length $n$ with $r$ observed
-> mutations, we show that for practical regimes of $r/n$, the complexity of the
-> importance sampler does not grow exponentially $n$, but rather in $r$, making
-> the algorithm practical for many applied problems. We demonstrate the use of
-> our techniques to obtain problem-specific complexity bounds for a well-known
-> dependent-site model from the phylogenetics literature.
+See also, Hall, P. (1988). [Theoretical comparisons of bootstrap confidence intervals](https://projecteuclid.org/journals/annals-of-statistics/volume-16/issue-3/Theoretical-Comparison-of-Bootstrap-Confidence-Intervals/10.1214/aos/1176350933.full). The Annals of Statistics, 16(3):927–953.
 
 ### Dissecting Microbial Community Structure and Heterogeneity via Multivariate Covariate-Adjusted Clustering (https://arxiv.org/abs/2508.11036)
 
@@ -116,6 +107,8 @@ While two-group comparisons with a continuous outcome are generally easily under
 > upper-airway microbiota data from a pediatric asthma study, uncovering distinct
 > microbial subtypes and their associations with clinical characteristics.
 
+I had to help a student two years ago for a microbial analysis, and she found an arcane R package on GitHub which relied on Spearman correlation of table of counts, IIRC, and allowed to build a network of co-occurring species, but this didn't allow to take into account co-factors of interest. Unfortunately, the experimental design was flawed, so the analysis ended up early. It is interesting to see that covariates can be taken into account in the analysis of such large dataset .
+
 ### What makes a study design quasi-experimental? The case of difference-in-differences (https://arxiv.org/abs/2508.13945)
 
 > Study designs classified as quasi- or natural experiments are typically
@@ -128,6 +121,8 @@ While two-group comparisons with a continuous outcome are generally easily under
 > We argue that only the former deserves an additional measure of credibility for
 > reasons of design. We use the difference-in-differences approach to illustrate
 > our discussion.
+
+This papers provides a use case of difference-in-differences, and its relation with the parallel trends assumption, which usually holds if the exposure is randomly assigned. Random treatment allocation, however, does not mean we need to use a DID estimator, and post-treatment comparison should be preferred.
 
 ### Perspective: An outlook on fluorescence tracking (https://arxiv.org/abs/2508.13668)
 
@@ -143,25 +138,6 @@ While two-group comparisons with a continuous outcome are generally easily under
 > spatiotemporal resolution and greater computational and data efficiency in
 > next-generation single-molecule studies.
 
-### Structural Foundations for Leading Digit Laws: Beyond Probabilistic Mixtures (https://arxiv.org/abs/2508.13237)
-
-> This article presents a modern deterministic framework for the study of
-> leading significant digit distributions in numerical data. Rather than relying
-> on traditional probabilistic or mixture-based explanations, we demonstrate that
-> the observed frequencies of leading digits are determined by the underlying
-> arithmetic, algorithmic, and structural properties of the data-generating
-> process. Our approach centers on a shift-invariant functional equation, whose
-> general solution is given by explicit affine-plus-periodic formulas. This
-> structural formulation explains the diversity of digit distributions
-> encountered in both empirical and mathematical datasets, including cases with
-> pronounced deviations from logarithmic or scale-invariant profiles.
-> We systematically analyze digit distributions in finite and infinite
-> datasets, address deterministic sequences such as prime numbers and recurrence
-> relations, and highlight the emergence of block-structured and fractal
-> features. The article provides critical examination of probabilistic models,
-> explicit examples and counterexamples, and discusses limitations and open
-> problems for further research. Overall, this work establishes a unified
-> mathematical foundation for digital phenomena and offers a versatile toolset
-> for modeling and analyzing digit patterns in applied and theoretical contexts.
+For someone like me who deal with data coming from cellular biology, this provides an excellent overview of fluorescence microscopy.
 
 {{% music %}}Stone Temple Pilots • _Crackerman_{{% /music %}}
