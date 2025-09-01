@@ -67,7 +67,7 @@ A _Wald test_ can be constructed as $\xi^W = n(\hat\theta - \frac{1}{2})\tilde I
 
 $$ \xi^W = \left( \frac{\hat\theta - \frac{1}{2}}{\sqrt{\frac{\hat\theta(1-\hat\theta)}{n}}} \right). \qquad (\star)$$
 
-Under $H_0$, $\xi^W \to_l \chi^2(1)$ and the 5% critical region is approximately $W = {\xi^W \geq 4} = {\star \geq 2}$.
+Under $H_0$, $\xi^W \to_l \chi^2(1)$ and the 5% critical region is approximately $W = \{\xi^W \geq 4\} = \{\star \geq 2\}$.
 
 In the case of the score test, the test statistic reads
 
