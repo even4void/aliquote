@@ -22,9 +22,13 @@ sqrt' x start = find precision $ iterate newton start
 
 You can load the above in `ghci` and just ask for `sqrt 9 4`. We can get ride of the `Just` by importing `Data.Maybe (fromJust)` and chaining `fromJust $` with `find`, but the above snippet already does the job.
 
-https://stackoverflow.com/a/12066869
+More inforamtion can be found at the following links:
 
-Note that there's already a stochastic gradient descent [library](https://hackage.haskell.org/package/sgd) on Hackage. And there's also a [monadic application](https://andrew.gibiansky.com/blog/machine-learning/gradient-descent/) on Andrew Gibiansky's weblog.
+- [What is the difference between Gradient Descent and Newton's Gradient Descent?](https://stackoverflow.com/a/12066869)
+- [Why is Newton's method not widely used in machine learning?](https://stats.stackexchange.com/questions/253632/why-is-newtons-method-not-widely-used-in-machine-learning)
+- [Newton's Method vs Gradient Descent?](https://math.stackexchange.com/questions/3453005/newtons-method-vs-gradient-descent)
+
+Regarding Haskell specifically, there's already a stochastic gradient descent [library](https://hackage.haskell.org/package/sgd) on Hackage. And there's also a [monadic application](https://andrew.gibiansky.com/blog/machine-learning/gradient-descent/) on Andrew Gibiansky's weblog.
 
 {{% music %}}Lauren Hoffman & The Secret Storm • _Feel It All_{{% /music %}}
 
