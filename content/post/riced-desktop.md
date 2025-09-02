@@ -48,3 +48,11 @@ Update [2024-08-23]
 
 {{< figure src="/img/2024-08-23-22-19-36.png" >}}
 <small>Ubuntu 24.04 LTS: Foot terminal, Tmux, Neovim nightly 0.10.0 (release).</small>
+
+---
+
+Update [2025-09-02]
+
+{{< figure src="/img/2025-09-02-06-52-12.png" >}}
+<small>macOS 15.6.1 Sequoia: Apple terminal, Apple Music, on a gorgeous display (3024x1964 @ 120 Hz (as 1512x982) in 14").</small>
+
