@@ -31,19 +31,10 @@ term=$(echo -n "$2" | jq -Rr @uri)
 curl "dict://dict.org/d:$term"
 ```
 
-I also have some export commands via Pandoc (beware they rely on custom $\\LaTeX$ and CSL templates):
-
-```vim
-nnoremap <buffer> gs :10 split term://pandoc -s
-      \ --pdf-engine=lualatex
-      \ --resource-path=$HOME/.local/share/csl:$HOME/Documents/notes
-      \ -F pandoc-crossref --citeproc --listings %
-      \ -o %:r.pdf<cr>:startinsert<cr><cr>
-nnoremap <buffer> gS :10 split term://pandoc -s
-      \ --pdf-engine=xelatex  --citeproc --listings
-      \ -t beamer % $HOME/.local/share/pandoc/slides/header.yaml
-      \ -o %:r.pdf<cr>:startinsert<cr><cr>
-```
+{{% alert note %}}
+<small>[2025-09-02]</small><br>
+Finally, I found it more convenient to use [vim-mac-dictionary](https://github.com/johngrib/vim-mac-dictionary/tree/master). With little effort, you can extract the useful part of the code. Be sure to sort your local dictionaries in the right order since the Swift code will only lookup the first entry. Since you can use any VimL or Lua function as `keywordprg` (when prefixed by a colon), you only need to modify the defualt command so that it reads: `command! -nargs=+ MacDictWord :silent! call Find(expand('<cword>'))<CR>`. Much more pleasant than the above ad-hoc solution.
+{{% /alert %}}
 
 To manage my bibliographic entries, I use Bibtex and a wrapper around `fzf-lua` which can be called in normal or insert mode. It was very useful when I was writing tutorial and slides, but now I rarely use it since I mostly write on this blog.
 
