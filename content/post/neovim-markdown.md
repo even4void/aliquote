@@ -31,6 +31,7 @@ term=$(echo -n "$2" | jq -Rr @uri)
 curl "dict://dict.org/d:$term"
 ```
 
+<br>
 {{% alert note %}}
 <small>[2025-09-02]</small><br>
 Finally, I found it more convenient to use [vim-mac-dictionary](https://github.com/johngrib/vim-mac-dictionary/tree/master). With little effort, you can extract the useful part of the code. Be sure to sort your local dictionaries in the right order since the Swift code will only lookup the first entry. Since you can use any VimL or Lua function as `keywordprg` (when prefixed by a colon), you only need to modify the defualt command so that it reads: `command! -nargs=+ MacDictWord :silent! call Find(expand('<cword>'))<CR>`. Much more pleasant than the above ad-hoc solution.
