@@ -20,7 +20,6 @@ nnoremap <buffer> gra :call Formd("-r")<cr>
 xnoremap <buffer> <silent> grn :!trans :en -brief -<cr>
 nnoremap <buffer> gO :call MarkdownHeaders()<CR>
 nnoremap <buffer> <silent> gl :!open -a Marked\ 2.app %<cr>
-nnoremap <buffer> <leader>cc :setlocal! conceallevel=2<cr>
 nnoremap <buffer> <leader># :-1 read ~/.config/nvim/templates/md<cr>
 ```
 
