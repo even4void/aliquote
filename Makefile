@@ -23,6 +23,6 @@ commit:
 deploy: build commit
 	@echo "\033[0;32m[+] Syncing on GitHub\033[0m"
 	git push
-	@echo "\033[0;32m[+] Deploying updates to $(HOST)\033[0m"
+	@echo "\033[0;32m[+] Updating remote server\033[0m"
 	rsync -az ${LOCAL_DIR}/ ${USER}@${HOST}:~/${HOST_DIR}
 
