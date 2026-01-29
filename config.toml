@@ -34,11 +34,6 @@ mode = "auto"
 [outputs]
 home = ["HTML", "RSS", "JSON"]
 
-# [[menu.main]]
-# name = "Articles"
-# url = "/post"
-# weight = 1
-
 [[params.social]]
 name = "articles"
 icon = "list"
