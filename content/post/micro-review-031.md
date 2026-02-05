@@ -26,4 +26,9 @@ Here's a bunch of links that I didn't manage to post on the micro blog in due ti
 
 - [Python Numbers Every Programmer Should Know](https://mkennedy.codes/posts/python-numbers-every-programmer-should-know/): interesting summary of latencies as found in web framework, coroutines, list and dict operations, etc.
 
+- [Effective Simulated Annealing with Python](https://nry.me/posts/2020-05-14/simulated-annealing-with-python/), with zero dependencies.
+
+- [The fastest way to detect a vowel in a string](https://austinhenley.com/blog/vowels.html). On the importance of trying to swap the inner and outer loops.
+
+> Replicating human perception is hard, and it's made harder when constrained to the limitations of display technology or printed images. You don't have to be ashamed about adjusting a photo when automated algorithms make the wrong call. --- [What an unprocessed photo looks like](https://maurycyz.com/misc/raw_photo/)
 {{% music %}}Front 242 • _First In/First Out_{{% /music %}}
