@@ -1,4 +1,5 @@
 * 2013
+
 - Haruki Murakami, 1Q84 Tome 3 (Belfond)
 - Haruki Murakami, Underground (Belfond)
 - Camilla Läckberg, La princesse des glaces (Actes Sud, Babel Noir)
@@ -31,6 +32,7 @@
 - David Bosc, Milo (Allia)
 
 * 2014
+
 - Alice Munro, Fugitives (Points)
 - Francis Picabia, Caravansérail (Belfond)
 - Brigitte Giraud, L'amour est très surestimé (Stock)
@@ -152,6 +154,7 @@
 - Paul Eluard, Souvenirs de la maison des fous (Seghers)
 
 * 2015
+
 - André de Richaud, La nuit aveuglante (Insomnies)
 - Pierre Courtaud, Histoire(s) du dormeur (éditions du limon) [#]
 - Stieg Larsson, La fille qui rêvait d'un bidon d'essence et d'une allumette (Actes Sud)
@@ -202,6 +205,7 @@
 - Jules Renard, Le mauvais livre (Arbre Vengeur)
 
 * 2016
+
 - Pierre Raufast, La fractale des raviolis (Folio)
 - Haruki Murakami, L'étrange bibliothèque (Belfond)
 - Jean-Paul Didierlaurent, Le liseur du 6h27 (Folio)
@@ -275,6 +279,7 @@
 - Marie Ndiaye, Le cheffe, roman d'une cuisinière (Gallimard)
 
 * 2017
+
 - Yann Moix, Terreur (Grasset)
 - Grégoire Delacourt, Danser au bord de l'abîme (JC Lattès)
 - René Char, Le Nu perdu (Gallimard, Poésie)
@@ -337,6 +342,7 @@
 - Sophie Chauveau, Manet le secret (Folio)
 
 * 2018
+
 - Kazuo Ishiguro, Le géant enfoui (JC Lattès)
 - Kazuo Ishiguro, Auprès de moi toujours (JC Lattès)
 - Pramoedya Ananta Toer, Le monde des hommes (Zulma)
@@ -430,6 +436,7 @@
 - Valérie Manteau, Le sillon (Le Tripode)
 
 * 2019
+
 - Patti Smith, Dévotion (Gallimard)
 - Françoise Giroud, Deux et deux font trois (Grasset)
 - Juliette Arnaud, Comment t'écrire adieu (Belfond)
@@ -502,6 +509,7 @@
 - Fred Uhlman, L'ami retrouvé (Folio)
 
 * 2020
+
 - Rimbaud, Poésies (Pléïade) [#]
 - Peter Brooke, Le diable c'est l'ennui (Actes Sud)
 - Georges Perec, Espèces d'espaces (Galilée)
@@ -594,6 +602,7 @@
 - Arnaldur Indridason, Etranges rivages (Points)
 
 * 2021
+
 - Arnaldur Indridason, La cité des jarres (Points)
 - Emmanuel Carrère, Yoga (P.O.L.)
 - Christopher Buckley, Départs anticipés (Points)
@@ -661,6 +670,7 @@
 - Richard Powers, Sidérations (Actes Sud)
 
 * 2022
+
 - Silvina Ocampo, Inventions du souvenir (Des femmes)
 - Willem Elsschot, Le feu follet (Le Castor Astral)
 - Fabrice Chillet, Un feu éteint (Finitude)
@@ -738,6 +748,7 @@
 - Cornelia Möser, Libérations sexuelles (La Découverte)
 
 * 2023
+
 - Joseph Conrad, Au coeur des ténèbres (Pléiade)
 - Edgar Lee Masters, Des voix sous les pierres (Les belles lettres)
 - Charlotte, Emily, Anne et Branwell Brontë, Le monde du dessous (Les belles lettres)
@@ -824,6 +835,7 @@
 - Apollinaire, Alcools (Gallimard) [#]
 
 * 2024
+
 - Yves Leclair, L'autre vie (Gallimard) [#]
 - Maria Messina, La maison dans l'impasse (Actes Sud)
 - Laurent Binet, Perspectives (Grassset)
@@ -907,6 +919,7 @@
 - Paul Verlaine, Sagesse (Albert Messein) [#]
 
 * 2025
+
 - Mathias Enard, Mélancolie des confins (Actes Sud)
 - Sandrine Colette, Madeleine avant l'aube (JC Lattès)
 - Julia Deck, Ann d'Angleterres (Seuil)
@@ -986,5 +999,7 @@
 - Cécile Coulon, Le visage de la nuit (L'iconoclaste)
 - Laurent Seksik, Franz Kafka ne veut pas mourir (Gallimard)
 - Jean-Marc Roberts, Affaires étrangères (Points)
+- Francis Vladimir, Les crépusculaires (Editions Bérénice) [#]
+- Colette Nys-Mazure, À main levée (Ad Solem) [#]
 
 [#] Déjà lu par le passé
