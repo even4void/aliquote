@@ -56,3 +56,10 @@ Update [2025-09-02]
 {{< figure src="/img/2025-09-02-06-52-12.png" >}}
 <small>macOS 15.6.1 Sequoia: Apple terminal, Apple Music, on a gorgeous display (3024x1964 @ 120 Hz (as 1512x982) in 14").</small>
 
+---
+
+Update [2026-03-18]
+
+{{< figure src="/img/2026-03-18-07-18-54.png" >}}
+<small>Same as above, after upgrading to macOS 26.3.1 Tahoe.</small>
+
