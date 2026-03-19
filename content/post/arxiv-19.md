@@ -17,4 +17,4 @@ categories: ["2026"]
 
 ### Extending the saemix package for R to fit non Gaussian outcomes (https://arxiv.org/abs/2603.03154)
 
-{{% music %}}XXX • _XXX_{{% /music %}}
+{{% music %}}The Wake • _Rusted 20_{{% /music %}}
