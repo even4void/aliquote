@@ -69,6 +69,13 @@ pinentry-program /usr/local/MacGPG2/libexec/pinentry-mac.app/Contents/MacOS/pine
 
 Note that [set-gpg-pinentry-program][2] seems to do the same job as well.
 
+{{% alert note %}}
+<small>[2026-03-20]</small><br>
+The pinentry seems to work smoothly outside the Terminal too.
+
+![img](/img/2026-03-20-10-15-34.png)
+{{% /alert %}}
+
 {{% music %}}Amy Macdonald • _Crazy Shade of Blue_{{% /music %}}
 
 [^1]: It is also possible to [use touchid][1] directly.
