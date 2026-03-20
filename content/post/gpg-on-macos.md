@@ -57,8 +57,32 @@ $ mv ~/.gnupg ~/.config/gnupg
 ```
 
 Upon launching GPG Keychain, it now uses the correct configuration and it finds
-the list of keys I have in my database. This is fine when using the GUI app. I
-don't want to bypass the pinentry step.[^2] Now when it comes to signing Git
+the list of keys I have in my database. This is fine when using the GUI app, and
+a Launch Agent will ensure that it is set correctly on login. Here is
+`~/Library/LaunchAgents/setenv.GNUPGHOME.plist`:
+
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+  <plist version="1.0">
+  <dict>
+  <key>Label</key>
+  <string>setenv.GNUPGHOME</string>
+  <key>ProgramArguments</key>
+  <array>
+    <string>/bin/launchctl</string>
+    <string>setenv</string>
+    <string>GNUPGHOME</string>
+    <string>/Users/chl/.config/gnupg</string>
+  </array>
+  <key>RunAtLoad</key>
+  <true/>
+</dict>
+</plist>
+```
+
+
+I don't want to bypass the pinentry step.[^2] Now when it comes to signing Git
 commit from the command-line, the GPG agent complains that there's no valid
 pinentry program since I originally set it to
 `/usr/local/MacGPG2/libexec/pinentry-mac.app`. It should have read:
