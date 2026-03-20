@@ -57,14 +57,17 @@ $ mv ~/.gnupg ~/.config/gnupg
 ```
 
 Upon launching GPG Keychain, it now uses the correct configuration and it finds
-the list of keys I have in my database. This is fine when using the GUI app. Now
-when it comes to signing Git commit from the command-line, the GPG agent
-complains that there's no valid pinentry program since it is set to
-`/usr/local/MacGPG2/libexec/pinentry-mac.app`. I don't want to bypass the
-pinentry step.[^2] I could add some helper scripts to check if we are running
-gpg in a terminal or via an applicaiton, and point to either the pinentry-mac
-app or exec, but I just found [set-gpg-pinentry-program][2] which seems to do
-the job well enough for me.
+the list of keys I have in my database. This is fine when using the GUI app. I
+don't want to bypass the pinentry step.[^2] Now when it comes to signing Git
+commit from the command-line, the GPG agent complains that there's no valid
+pinentry program since I originally set it to
+`/usr/local/MacGPG2/libexec/pinentry-mac.app`. It should have read:
+
+```
+pinentry-program /usr/local/MacGPG2/libexec/pinentry-mac.app/Contents/MacOS/pinentry-mac
+```
+
+Note that [set-gpg-pinentry-program][2] seems to do the same job as well.
 
 {{% music %}}Amy Macdonald • _Crazy Shade of Blue_{{% /music %}}
 
