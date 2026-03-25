@@ -1,7 +1,7 @@
 ---
-title: "Neomutt and Apple Mbox"
-date: 2026-03-25T10:47:13+01:00
-draft: true
+title: "Neomutt and iCloud IMAP"
+date: 2026-03-25T17:47:13+01:00
+draft: false
 tags: ["apple"]
 categories: ["2026"]
 ---
@@ -75,17 +75,91 @@ set signature = ~/.config/neomutt/signatures/signature
 
 Now, all I have to do is to replace the externally managed `set folder =
 ~/.mail`, for local mailboxes, with `set imap_user` and Co. Here is what it
-looks now (again, no `set imap_user` shown):
+looks now (again, no credentials shown). My config is split into different file,
+a general `muttrc` and one file per account (actually I only use my iCloud
+account):
 
 ```
+# muttrc
+-%<---
+source ~/.config/neomutt/accounts/icloud
+
+set attach_save_dir = ~/tmp
+set header_cache = ~/.cache/neomutt/cache/
+set header_cache_compress_method = "zlib"
+set header_cache_compress_level = 3
+set mailcap_path = ~/.config/neomutt/mailcap
+set message_cachedir = ~/.cache/neomutt/cache/
+set tmpdir = ~/.cache/neomutt/tmp
+
+set beep_new = yes
+set check_new
+set confirmappend = no
+set delete
+set imap_idle = yes
+set mail_check = 120
+set mail_check_stats
+set mail_check_stats_interval = 120
+set mark_old
+set mbox_type = Maildir
+set move = no
+set pipe_decode
+set quit = ask-yes
+set sleep_time = 0
+set thorough_search
+set timeout = 15
+set wait_key = no
+
+mailboxes $spoolfile $postponed $record $mbox $trash +Junk +digests +lists +store
+--->%-
+
+# icloud
 set imap_user = '<..snip..>'
 set imap_pass = <..snip..>
 set folder = "imaps://$imap_user@imap.mail.me.com:993"
+
+set smtp_authenticators = 'gssapi:login'
+set smtp_url=smtp://$imap_user:$imap_pass@smtp.mail.me.com:587/
+set smtp_pass=$imap_pass
+set from = $imap_user
+
+set ssl_force_tls = yes
+set ssl_starttls = yes
+
 set spoolfile = +INBOX
 set postponed = +Drafts
 set mbox = +Archive
 set record = "+Sent Messages"
+set trash = "+Deleted Messages"
+
+set signature = ~/.config/neomutt/signatures/signature
+
+account-hook $imap_user "set imap_user=$imap_user imap_pass=$imap_pass"
+
+macro index,pager a \
+  "<save-message>+Archive<enter>"  \
+  "Archive message"
 ```
+
+It works like a charm, except that switching to different mailboxes takes a
+little longer compared to when I was using local mailbox, which is not
+surprising.  On the contrary, sending email using Neomutt builtin smtp program
+iq quicker than using msmtp, like polling for new mails. No need to manually
+call mbsync or to implement a CRON job to automate fetching new mails.
+
+Finally, I'm back reading ArXiv in Neomutt:
+
+{{< fluid_imgs
+  "pure-u-1-2|/img/2026-03-25-17-59-06.png"
+  "pure-u-1-2|/img/2026-03-25-17-59-11.png" >}}
+
+Interesting links I found while thinking about reinstating my text-based email
+reader:
+
+- [Text based email workflow on macOS][9]
+- [NeoMutt: using IMAP and SMTP][10]
+- [Making Mutt Useful Offline][11]
+- [Optional Features][12] from the official Neomutt documentation
 
 {{% music %}}The Adverts • _No Time To Be 21 (live)_{{% /music %}}
 
@@ -97,3 +171,7 @@ set record = "+Sent Messages"
 [6]: /post/neomutt/
 [7]: /post/tipx-on-neomutt/
 [8]: /post/neomutt-more-tips/
+[9]: https://macowners.club/posts/text-based-email-workflow-macos/
+[10]: https://www.futurile.net/2025/05/18/neomutt-email-native-imap-tutorial/
+[11]: https://jcs.org/2008/09/29/making_mutt_useful_offline
+[12]: https://neomutt.org/guide/optionalfeatures.html
