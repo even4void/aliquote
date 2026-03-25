@@ -33,7 +33,8 @@ The password can be managed outside the config file if desired, by the way. I
 may eventually switch to SourceHut Soju instance if I'm happy with this client.
 The price are reasonably low, and they offer Mercurial and bpaste services in
 addition to traditional Git and lists, but see [Setting up IRC with soju and
-senpai][4] to learn how to configure their IRC bouncer.
+senpai][4] to learn how to configure their IRC bouncer. See also this lobste.rs
+thread about [Goguma, the soju bouncer and the senpai IRC][5].
 
 From what I've seen so far, Senpai has a clean UI, with mouse-enabled action. No
 distraction, it's just pure text and you hide all side panels if you like.
@@ -45,9 +46,18 @@ It's time for the traditional screenshot, yet another TUI in my toolshed.
 
 ![img](/img/2026-03-25-09-04-03.png)
 
+> IRC is a venerable 37 year old chat protocol used by many open-source software
+> projects, technical experts happily lending their help and other discussion
+> groups. However, the historic IRC protocol is not always well-suited to modern
+> usage, such as connecting from multiple devices with unreliable connectivity,
+> or connecting from battery-constrained mobile devices. --- [Chatting on IRC in
+> 2025: grandpa, what's up?][6]
+
 {{% music %}}Adele • _Set Fire to the Rain_{{% /music %}}
 
 [1]: https://soju.im
 [2]: https://irctoday.com
 [3]: https://git.sr.ht/~delthas/senpai/
 [4]: https://www.nickzana.dev/blog/irc-soju-senpai/
+[5]: https://lobste.rs/s/wy2jgl/goguma_irc_client_for_mobile_devices
+[6]: https://archive.fosdem.org/2025/schedule/event/fosdem-2025-6407-chatting-on-irc-in-2025-grandpa-what-s-up-/
