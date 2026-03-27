@@ -2,7 +2,7 @@
 title: "Neomutt and iCloud IMAP"
 date: 2026-03-25T17:47:13+01:00
 draft: false
-tags: ["apple"]
+tags: ["apple", "app"]
 categories: ["2026"]
 ---
 

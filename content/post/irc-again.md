@@ -2,7 +2,7 @@
 title: "IRC again"
 date: 2026-03-25T08:50:13+01:00
 draft: false
-tags: ["apple", "unix"]
+tags: ["apple", "unix", "app"]
 categories: ["2026"]
 ---
 
