@@ -161,6 +161,21 @@ reader:
 - [Making Mutt Useful Offline][11]
 - [Optional Features][12] from the official Neomutt documentation
 
+{{% alert note %}}
+<small>[2026-03-29]</small><br>
+Following this [micro-post](/micro/2026-03-26-09-55-51/), I tried to rely on
+Mutt aliases but it was just a pain. I'm now using abook
+
+First, convert all your aliases to a proper address book:
+
+```shell
+abook --convert --informat mutt --infile ~/.config/neomutt/aliases --outformat abook --outfile ~/.local/share/abook/addressbook
+```
+
+Then define your `query_command` as follows: `set query_command = "abook
+--mutt-query '%s'"`. And you should be all fine!
+{{% /alert %}}
+
 {{% music %}}The Adverts • _No Time To Be 21 (live)_{{% /music %}}
 
 [1]: https://www.loc.gov/preservation/digital/formats//fdd/fdd000615.shtml
