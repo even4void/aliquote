@@ -1,6 +1,6 @@
 ---
 title: "ArXiving on March 2026"
-date: 2026-03-17T09:33:56+01:00
+date: 2026-04-07T09:33:56+01:00
 draft: true
 tags: ["arxiv"]
 categories: ["2026"]
@@ -106,9 +106,84 @@ categories: ["2026"]
 > for covariate and interindividual variability model was also implemented to
 > build the covariate model and applied to categorical and survival-type data.
 
+### [Trajectory-informed graph-based clustering for longitudinal cancer subtyping][5]
+
+> Cancer subtyping plays a crucial role in informing prognosis and guiding
+> personalized treatment strategies. However, conventional subtyping approaches
+> often rely on static, biopsy-derived scores that hardly capture the biological
+> heterogeneity and temporal evolution of the disease. In this study, we propose
+> a novel trajectory-informed clustering method for cancer subtyping that
+> integrates multi-modal clinical data and longitudinal patient trajectories.
+> Our method constructs a patient similarity graph using time-varying
+> imaging-derived features, clinical covariates, and transitions among key
+> clinical states such as therapy, surveillance, relapse, and death. This graph
+> structure enables the identification of patient subgroups that are not only
+> phenotypically and genotypically distinct but also aligned with patterns of
+> disease progression. We position our approach within the landscape of existing
+> subtyping methods and highlight its advantages in terms of temporal modeling
+> and graph-based interpretability. Through simulation studies and application
+> to a real world dataset of liver metastases, we demonstrate the ability of our
+> framework to uncover clinically relevant subtypes with distinct prognostic
+> trajectories. Our results underscore the potential of trajectory-informed
+> clustering to enhance personalized oncology by bridging cross-sectional
+> biomarkers with dynamic disease evolution.
+
+### [Cancer Survival Rates Are Misleading][6]
+
+> Five-year cancer survival rates are widely reported and often interpreted to
+> mean that early detection saves lives, that a late fatal diagnosis would have
+> been prevented by earlier detection, and that increasing survival over time
+> proves better treatment. This expository article explains why such inferences
+> are not supported by survival statistics alone. A simple Markov model of tumor
+> progression, calibrated to patterns like those in SEER data, shows that high
+> survival after early diagnosis, large gaps between early and late stage, and
+> improving survival can all appear even when treatment is ineffective and
+> screening does not reduce mortality. The discussion ties these points to the
+> clinical literature and argues that randomized trials and mortality outcomes
+> are needed to support screening and treatment claims; five-year survival alone
+> provides little actionable evidence and is easily misread.
+
+### [A practical introduction to ODE modelling in Stan for biological systems][7]
+
+> Integrating dynamical systems models with time series data is a central part
+> of contemporary mathematical biology. With the rich variety of available
+> models and data, numerous methods and computational tools have been developed
+> for these purposes. One such tool is Stan, a freely available and open-source
+> probabilistic programming framework that provides efficient methods for
+> estimating model parameters from data using computational Bayesian inference
+> algorithms. Stan includes built-in mechanisms for working with ordinary
+> differential equation (ODE) models, which are widely used in mathematical
+> biology and related fields to study simulated, experimental, and real-world
+> systems that change over time. Through step-by-step worked examples, including
+> both pedagogical toy models and applications with real data, this article
+> provides a practical, self-contained introduction to performing parameter
+> estimation and model evaluation for first-order linear and nonlinear ODE
+> models in Stan. The article also explains key statistical methods that
+> underpin Stan and discusses computational Bayesian modelling in the context of
+> biological applications.
+
+### [Tiny but uniform improvements of adaptive BH procedures via compound e-values][8]
+
+> After the seminal Benjamini-Hochberg (BH) procedure for controlling the false
+> discovery rate (FDR) was proposed, dozens of papers have attempted to improve
+> its power by adapting to the unknown proportion of nulls. We observe that most
+> null proportion estimates are simply compound e-values in disguise, and thus
+> most adaptive FDR procedures can be interpreted as instances of the e-weighted
+> BH (ep-BH) procedure of Ignatiadis, Wang, and Ramdas [2024], i.e., the BH
+> procedure weighted by compound e-values. This lens helps us show that most
+> existing procedures are inadmissible, and we provide uniform improvements to
+> them. While the improvements are small in practice, they still come for free
+> (without additional assumptions), and help unify the literature. We also use
+> our "leave-one-out ep-BH method" to design a new method with finite-sample FDR
+> control for the simultaneous t-test setting.
+
 {{% music %}}The Wake • _Rusted 20_{{% /music %}}
 
 [1]: https://arxiv.org/abs/2602.23640
 [2]: https://arxiv.org/abs/2602.23815
 [3]: https://arxiv.org/abs/2602.23507
 [4]: https://arxiv.org/abs/2603.03154
+[5]: https://arxiv.org/abs/2603.10089
+[6]: https://arxiv.org/abs/2603.19945
+[7]: https://arxiv.org/abs/2603.20343
+[8]: https://arxiv.org/abs/2603.21424
