@@ -14,6 +14,11 @@ $$1 - e^{\frac{-k(k-1)}{2N}}.$$
 
 However, it can further be shown that for $x$ small, $1-e^{-x} \approx x$, which means that the probability expressed above can also be approximated with $\frac{k(k-1)}{2N}$. No more floating points! FInally, if $k$ is large, then $k(k-1) \approx k^2$, and we find our $\frac{k^2}{2N}$ expression from the beginning.
 
+{{% alert note %}}
+<small>[2026-05-17]</small><br>
+[When is your birthday? - The Math Behind Hash Collisions](https://0xkrt26.github.io/math_behind_security/2026/05/08/birthday-problem.html) illustrates how the birthday paradox and hash tables' collisions share the same maths: "days become table fields, people turn into hashes, but the calculations remain unchanged."
+{{% /alert %}}
+
 You may also like [How do you find quantiles in this balls-in-bins problem?](https://stats.stackexchange.com/a/524418/930), and [How unique is UUID?](https://stackoverflow.com/questions/1155008/how-unique-is-uuid).
 
 {{% music %}}Toggi Jonsson Quarted • _Von_{{% /music %}}
