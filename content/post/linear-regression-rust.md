@@ -13,7 +13,9 @@ expanded to its full length. This really was a quick check to see what's
 available in Rust, and how developing in Rust feels when using Neovim. About the
 second point, I want to be able to run tests directly from within my editor, as
 well as launch a debugger without relying on external task file or firing up
-another terminal.
+another terminal. Note that I removed uninteresting part of the original code
+(linear regression implemented using standard formulae based on summated
+standard deviations).
 
 I got several error with `cargo run` due to openblas-build requiring the
 `rustls` or `native-tls` feature to be enabled. Rather than struggling with
@@ -41,7 +43,7 @@ This is discussed in the following [GH issue][3].
 
 Running the original code as is, everything works out of the box:
 
-![img](/img/2026-05-20-09-57-21.png)
+![img](/img/)
 
 So far, so good. Now, let's add some tests.
 
