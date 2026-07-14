@@ -33,4 +33,6 @@ such containers might be to test and/or debug web apps or statistical APIs.
 \[^1\]: Of note, you'll need macOS Tahoe and an ARM processor, and there's no
 equivalent to Docker compose.
 
+https://www.it-connect.fr/conteneurs-macos-apple-container/#google_vignette
+
 {{% music %}}Marta Zlakowska • *When It's Going Wrong*{{% /music %}}
