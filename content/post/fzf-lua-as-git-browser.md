@@ -94,8 +94,8 @@ it first.
 
 Of note, I've tried various plugins in the pasr. I should mention
 [diffview.nvim][3] and [codediff.nvim][4]. The latter allows to toggle split vs.
-unified diff view,[^1] while the former relies on Vim diff mode and can be used to
-manage merge conflicts. Since my `git difftool` config provides the same
+unified diff view,[^1] while the former relies on Vim diff mode and can be used
+to manage merge conflicts. Since my `git difftool` config provides the same
 functionnality as the two-way diff mode provided by `DiffviewOpen` (using the qf
 list instead of a tree view), that's okay for a solo programer like me.
 
@@ -111,4 +111,4 @@ list instead of a tree view), that's okay for a solo programer like me.
 
 [4]: https://github.com/esmuellert/codediff.nvim
 
-{{% music %}}XXX • *XXX*{{% /music %}}
+{{% music %}}Plastique Noir • *Fugitive Dawn*{{% /music %}}
