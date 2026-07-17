@@ -1,13 +1,13 @@
 ---
-title: "Fzf Lua as Git Browser"
+title: "Using fzf-lua as a Git browser"
 date: 2026-07-16T20:47:50+02:00
-draft: true
-tags: []
+draft: false
+tags: ["vim"]
 categories: ["2026"]
 ---
 
 As you may know, I tend to stick to a few tools that allow me to do 80% of my
-job quickly in Neovim. This means that I barely use more than 5 plugins, and
+job quickly in Neovim. This means that I barely need more than 5 plugins, and
 most of them offer some bindings to [fzf-lua][1].
 
 ```shell
@@ -58,9 +58,13 @@ require("fzf-lua").setup {
   -- -->%-
 ```
 
+This basicaly looks like this:
+
+{{< figure src="/img/2026-07-17-08-18-14.png" >}}
+
 Alternatively, I can call `git difftool -d master` from the command line, and it
-will open Neovim in two-way diff mode with the quickfix list populated with
-modified files. My git config file includes the following lines:
+will open Neovim in diff mode with a two-way layout, with the quickfix list
+populated with modified files. My git config file includes the following lines:
 
 ```shell
 [difftool]
@@ -82,28 +86,26 @@ function gdv() {
 ```
 
 Take a careful look at the Neovim documentation for [diff-related][2] utilities
-and you will find a nice wrapper, `DiffOrig`:
-
-```vimL
-command DiffOrig
-```
-
-This is particularly useful when you are not tracking your files using Git, or
-when you just started writing a new file from scratch without indexing it first.
+and you will also find a nice wrapper, `DiffOrig`, which helps showing diffs
+between the current state of a buffer and its original content when it was first
+opened. This is particularly useful when you are not tracking your files using
+Git, or when you just started writing a new file from scratch without indexing
+it first.
 
 Of note, I've tried various plugins in the pasr. I should mention
 [diffview.nvim][3] and [codediff.nvim][4]. The latter allows to toggle split vs.
-unified diff view, while the former relies on Vim diff mode and can be used to
+unified diff view,[^1] while the former relies on Vim diff mode and can be used to
 manage merge conflicts. Since my `git difftool` config provides the same
 functionnality as the two-way diff mode provided by `DiffviewOpen` (using the qf
-list instead of a tree view), that's okay for a solo programer like me. I really
-liked `codediff.nvim`, though, but the highlights group were messy with my
-current settings (light monochromatic theme, except for diff highlight groups,
-with `notermguicolors`).
+list instead of a tree view), that's okay for a solo programer like me.
+
+[^1]: I really liked `codediff.nvim`, though, but the highlights group were
+    messy with my current settings (light monochromatic theme, except for diff
+    highlight groups, with `notermguicolors`).
 
 [1]: https://github.com/ibhagwan/fzf-lua
 
-[2]: https://github.com/ibhagwan/fzf-lua
+[2]: https://neovim.io/doc/user/diff/
 
 [3]: https://github.com/sindrets/diffview.nvim
 
