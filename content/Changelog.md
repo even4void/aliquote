@@ -10,27 +10,27 @@ date: 2021-09-02T00:00:00
     Date:   Sun Jan 21 00:57:45 2018 +0100
 ```
 
-[2026-07-26] Add AI notice and remove `figure` overlay [2024-08-06] Update base
-colors (some background color are taken from <http://ro-che.info>) and convert
-`<img>` tag to proper HTML5 `<figure>`<br> [2023-04-13] Easter cleansing: more
-minimalistic theme (drawing inspiration from <htts://jcs.org>)<br> [2023-01-08]
-Remove feather JS, update About page, cleanup unused folders<br> [2022-09-06]
-Update link display (closer in spirit to HTML specs)<br> [2022-08-29] Add dark
-theme<br> [2022-06-06] Update default theme (Hugo 0.92)<br> [2021-09-02] Remove
-Now page<br> [2021-06-29] Update base colors<br> [2021-06-14] Update contact
-informations<br> [2020-08-20] Update the Archives page<br> [2020-06-15] Replace
-Twitter with Matrix for DM<br> [2019-09-22] Add a [Now](/now) page<br>
-[2019-09-19] Site redesign (CSS, search engine, fonts)<br> [2019-09-13] Massive
-retagging (bis)<br> [2019-08-22] Massive retagging<br> [2019-08-09] Update a bit
-of CSS<br> [2019-04-30] Minor fix to the design of the [Micro](/micro) blog<br>
-[2019-01-23] Further improvements to my digital anonymization strategy<bR>
-[2018-06-29] Add [privacy](/privacy/) statements<br> [2018-05-17] Add a
-Changelog (this page)<br> [2018-05-09] Add a [micro-blog](/micro/)<br>
-[2018-05-04] Add [Teaching materials](/teaching/)<br> [2018-05-03] Remove Google
-Search<br> [2018-04-30] Remove Google Analytics<br> [2018-04-14] Add a
-[FAQ](/articles/how-i-do/)<br> [2018-03-09] Update HTML layout and CSS<br>
-[2018-03-07] Switch to the Even theme instead of Academic<br> [2018-02-23]
-Finish migrating old posts<br>
+[2026-07-26] Add AI notice and remove `figure` overlay<br> [2024-08-06] Update
+base colors (some background color are taken from <http://ro-che.info>) and
+convert `<img>` tag to proper HTML5 `<figure>`<br> [2023-04-13] Easter
+cleansing: more minimalistic theme (drawing inspiration from
+<htts://jcs.org>)<br> [2023-01-08] Remove feather JS, update About page, cleanup
+unused folders<br> [2022-09-06] Update link display (closer in spirit to HTML
+specs)<br> [2022-08-29] Add dark theme<br> [2022-06-06] Update default theme
+(Hugo 0.92)<br> [2021-09-02] Remove Now page<br> [2021-06-29] Update base
+colors<br> [2021-06-14] Update contact informations<br> [2020-08-20] Update the
+Archives page<br> [2020-06-15] Replace Twitter with Matrix for DM<br>
+[2019-09-22] Add a [Now](/now) page<br> [2019-09-19] Site redesign (CSS, search
+engine, fonts)<br> [2019-09-13] Massive retagging (bis)<br> [2019-08-22] Massive
+retagging<br> [2019-08-09] Update a bit of CSS<br> [2019-04-30] Minor fix to the
+design of the [Micro](/micro) blog<br> [2019-01-23] Further improvements to my
+digital anonymization strategy<bR> [2018-06-29] Add [privacy](/privacy/)
+statements<br> [2018-05-17] Add a Changelog (this page)<br> [2018-05-09] Add a
+[micro-blog](/micro/)<br> [2018-05-04] Add [Teaching materials](/teaching/)<br>
+[2018-05-03] Remove Google Search<br> [2018-04-30] Remove Google Analytics<br>
+[2018-04-14] Add a [FAQ](/articles/how-i-do/)<br> [2018-03-09] Update HTML
+layout and CSS<br> [2018-03-07] Switch to the Even theme instead of Academic<br>
+[2018-02-23] Finish migrating old posts<br>
 
 An even older Changelog is available below:
 
