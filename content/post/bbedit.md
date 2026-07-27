@@ -25,8 +25,8 @@ languages like HTML or XML. Text filters and the regex playground are delightful
 additions. The fact that you can feed some text or a whole buffer to shell
 scripts of yours is really what makes this editor appealing, as was the case
 with Textmate. You get a reliable and snappy editor and you tweak your text with
-Unix tools and custom pipelines. See this [blog][3] [posts][8] for more thorough
-and educated reviews.
+Unix tools and custom pipelines. See these [blog][3] [posts][8] for more
+thorough and educated reviews.
 
 LSP support is okay, I mean you get go to definition and references, sometimes
 code action (e.g., Rust), but no hover information or inlay hints. Hover
