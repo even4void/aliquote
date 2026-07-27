@@ -1,5 +1,5 @@
 ---
-title: "Running virtual machines and containers on macOS"
+title: "Virtual machines and containers on macOS"
 date: 2026-07-06T19:49:39+02:00
 draft: false
 tags: ["apple"]
