@@ -25,8 +25,8 @@ languages like HTML or XML. Text filters and the regex playground are delightful
 additions. The fact that you can feed some text or a whole buffer to shell
 scripts of yours is really what makes this editor appealing, as was the case
 with Textmate. You get a reliable and snappy editor and you tweak your text with
-Unix tools and custom pipelines. See this [blog post][3] for a more thorough and
-educated review.
+Unix tools and custom pipelines. See this [blog][3] [posts][8] for more thorough
+and educated reviews.
 
 LSP support is okay, I mean you get go to definition and references, sometimes
 code action (e.g., Rust), but no hover information or inlay hints. Hover
@@ -49,10 +49,10 @@ developers have taken such care over every detail that it's frustrating to think
 that far less satisfactory alternatives are being used instead. But Zed focus on
 collaborative programming and agentic coding, and I'm not into that.
 
-I should note that BBEdit also includes some AI capabilities, in the form of a
-dedicated worksheet to interact with ChatGPT, Claude or Ollama. Again, I'm not
-interested in AI chat or assistive coding, for many reasons. Above all, I prefer
-my 100% human stupidity, to quote someone's else sayings,[^1] and coding
+I should note that BBEdit also includes some [AI capabilities][4], in the form
+of a dedicated worksheet to interact with ChatGPT, Claude or Ollama. Again, I'm
+not interested in AI chat or assistive coding, for many reasons. Above all, I
+prefer my 100% human stupidity, to quote someone's else sayings,[^1] and coding
 haphazardly sometimes. Drew Devault has [some thoughts][5] about the use of
 generative AI in software development, like Brian "Beej" Hall does, but go read
 [On Making][6]. Honorable mention to Bozhidar Batsov as well (see [Emacs and Vim
@@ -71,6 +71,7 @@ versions of OS X and macOS.
 [5]: https://drewdevault.com/blog/Forking-vim/
 [6]: https://beej.us/blog/data/ai-making/
 [7]: https://batsov.com/articles/2026/03/09/emacs-and-vim-in-the-age-of-ai/
+[8]: https://125px.com/2021/09/back-to-bbedit/
 
 [^1]: I've lost the reference unfortunately.
 
