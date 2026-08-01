@@ -40,19 +40,19 @@ configured in the Preferences pane.
 What you really get, however, is a truly macOS app, which includes the "share"
 functionality, access to common macOS utilities (dictionary, address book, and
 so on), and all the default keybindings you are used to -- except that I use the
-Vi emulation mode instead of the default Emacs ones. I would say that, compared
-to Zed, you get a reliable and fast text editor with perfect text rendering
-which perfectly integrates into the macOS ecosystem. This is not to say that Zed
-is bad; to be honest, this is the first text editor I've seen in the last 15
-years that provides so many bounties while feeling so native to the OS. The
-developers have taken such care over every detail that it's frustrating to think
-that far less satisfactory alternatives are being used instead. But Zed focus on
-collaborative programming and agentic coding, and I'm not into that.
+Vi emulation mode[^1] instead of the default Emacs ones. I would say that,
+compared to Zed, you get a reliable and fast text editor with perfect text
+rendering which perfectly integrates into the macOS ecosystem. This is not to
+say that Zed is bad; to be honest, this is the first text editor I've seen in
+the last 15 years that provides so many bounties while feeling so native to the
+OS. The developers have taken such care over every detail that it's frustrating
+to think that far less satisfactory alternatives are being used instead. But Zed
+focus on collaborative programming and agentic coding, and I'm not into that.
 
 I should note that BBEdit also includes some [AI capabilities][4], in the form
 of a dedicated worksheet to interact with ChatGPT, Claude or Ollama. Again, I'm
 not interested in AI chat or assistive coding, for many reasons. Above all, I
-prefer my 100% human stupidity, to quote someone's else sayings,[^1] and coding
+prefer my 100% human stupidity, to quote someone's else sayings,[^2] and coding
 haphazardly sometimes. Drew Devault has [some thoughts][5] about the use of
 generative AI in software development, like Brian "Beej" Hall does, but go read
 [On Making][6]. Honorable mention to Bozhidar Batsov as well (see [Emacs and Vim
@@ -73,6 +73,8 @@ versions of OS X and macOS.
 [7]: https://batsov.com/articles/2026/03/09/emacs-and-vim-in-the-age-of-ai/
 [8]: https://125px.com/2021/09/back-to-bbedit/
 
-[^1]: I've lost the reference unfortunately.
+[^1]: It features the bare minimum (normal/insert/visual mode).
+
+[^2]: I've lost the reference unfortunately.
 
 {{% music %}}Camper Van Beethoven • *Think About Me*{{% /music %}}

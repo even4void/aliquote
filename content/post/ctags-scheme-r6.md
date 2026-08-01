@@ -10,7 +10,7 @@ It's 2026 and I'm still using ctags. Who else? I mainly use (universal) ctags to
 browse definitions of symbol at point for Scheme and Lisp filetypes in Neovim
 since there're no feature-complete LSP available for those languages.
 
-I was browsing Ivan Raikov's project [array-morphisms][1] and came across a call
+I was browsing Ivan Raikov's project [array-morphisms](https://github.com/iraikov/array-morphisms/tree/main) and came across a call
 to a procedure that I wanted to inspect. After generating a tag file as usual
 (`ctags -R .`) and calling fzf-lua to grep the tag associated to the word under
 the cursor, I realized that it gave no result at all. I checked the tag file,
@@ -18,9 +18,9 @@ and indeed the corresponding `define` statement did not meet any of my
 expectations (it was found at random places as a function call, not a top-level
 definition). I suspect this has to do with how Universal Ctags tries to match
 the `define` keyword at the start of the line, which means that procedures
-defined inside a [module][2] statement are not tagged properly.
+defined inside a [module](https://wiki.call-cc.org/man/5/Modules) statement are not tagged properly.
 
-I tried [any-jump.vim][3] which kinda works as expected (I only want go to
+I tried [any-jump.vim](https://github.com/pechorin/any-jump.vim/) which kinda works as expected (I only want go to
 definitions, not references, and I had to use ag instead of rg for whatever
 reasons), but that's not satisfactory. I already have everything I need with
 fzf-lua as a picker.
@@ -88,12 +88,7 @@ elseif client and client.server_capabilities.workspaceSymbolProvider then
 end
 ```
 
-Bonus reading for Ctags users: [Surprising Ctags Behavior][4].
-
-[1]: https://github.com/iraikov/array-morphisms/tree/main
-[2]: https://wiki.call-cc.org/man/5/Modules
-[3]: https://github.com/pechorin/any-jump.vim/
-[4]: https://joshleeb.com/posts/ctags.html
+Bonus reading for Ctags users: [Surprising Ctags Behavior](https://joshleeb.com/posts/ctags.html).
 
 [^1]: I could probably use `\h+` instead of the character class `[ \t]+`, and
     `\S+` instead of `[^[:space:]]+`.
