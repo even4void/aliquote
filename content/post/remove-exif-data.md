@@ -1,14 +1,14 @@
 ---
 title: "Remove EXIF data from photos"
 date: 2026-08-02T11:59:53+02:00
-draft: true
+draft: false
 tags: ["this"]
 categories: ["2026"]
 ---
 
 I'm being so lazy these days that I often find myself dragging and dropping
-photos from Apple Photos onto my Desktop, which does not strip out EXIF data,
-in particular geolocalisation and time zone. I still want to keep original ICC
+photos from Apple Photos onto my Desktop, which does not strip out EXIF data, in
+particular geolocalisation and time zone. I still want to keep original ICC
 profile. I could use Apple Photos own facilities to remove metadata, or, says,
 [ImageOptim][1], but I want to automate things as much as possible. Plus I have
 plenty of JPEGs that are lying around and I'm not sure about their state.
@@ -31,11 +31,11 @@ File Inode Change Date/Time     : 2026:08:02 14:00:07+02:00
 Profile Date Time               : 2022:01:01 00:00:00
 ```
 
-Note that this keeps the original picture using a dedicated suffix
-(`_original`) but it is easy to overwrite the file instead. Here's a quick Bash
-script that does the job on all pictures in JPEG format: (I do not rely on the
-mimetype, `image/jpeg`, but that might be a safer way to proceed all files
-without worrying about file extension.)
+Note that this keeps the original picture using a dedicated suffix (`_original`)
+but it is easy to overwrite the file instead. Here's a quick Bash script that
+does the job on all pictures in JPEG format: (I do not rely on the mimetype,
+`image/jpeg`, but that might be a safer way to proceed all files without
+worrying about file extension.)
 
 ```bash
 wd="static/img"
