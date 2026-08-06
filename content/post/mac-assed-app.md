@@ -21,8 +21,15 @@ are the most dominant complaints about Tahoe I've seen in recents months
 Of course I'm biased since I have been working on MacBook for over twenty years.
 I barely know how to use a Windows machine (and I don't care, TBH), and I don't
 really think this year will be the one for Linux on the Desktop once again.
+There's something unique to macOS (and MacBook as well), but it has already been
+[discussed elsewhere][4].
 
 Services, Automator and builtin stuff.
+
+Even if AppleScript may seem like a thing of the past, it is handy to be able to
+write scripts that talk to graphical applications.
+
+And what about those nifty [tips & tricks][5] that I mentioned in the past? Or maybe those cool [drag and drop][6] actions?
 
 - Text editor
 
@@ -39,5 +46,8 @@ Services, Automator and builtin stuff.
 [1]: /post/typora/
 [2]: https://daringfireball.net/linked/2020/03/20/mac-assed-mac-apps
 [3]: https://tonsky.me/blog/tahoe-icons/
+[4]: https://bla
+[5]: https://saurabhs.org/macos-tips
+[6]: https://www.theverge.com/2021/6/7/22523322/apple-wwdc-impressive-drag-and-drop-universal-control-demo
 
 {{% music %}}XXX • *XXX*{{% /music %}}
