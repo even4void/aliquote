@@ -12,7 +12,14 @@ Most importantly, it is available on iOS too. I use Reminder for various stuff. 
 
 {{< figure src="/img/2018-10-21-13-28-07.png" >}}
 
-Note that it also possible to send reminder from Apple Mail directly (although it is not obvious --- you have to left-click on the title of a message to send it to the Reminder App). It is also interesting to remark that copy/pasting the above list yields the following plain text checklist:
+Note that it also possible to send reminder from Apple Mail directly (although it is not obvious --- you have to left-click on the title of a message to send it to the Reminder App).
+
+{{% alert note %}}
+<small>[2026-08-06]</small><br>
+This still works on macOS 26 (Tahoe), eight years later. However, we can also simply drag and drop and email onto Reminders, like good old [text clippings](https://www.macrumors.com/how-to/use-text-clippings-in-macos/), and it will add it as a new task originating from Mail app.
+{{% /alert %}}
+
+It is also interesting to remark that copy/pasting the above list yields the following plain text checklist:
 
 ```
 [ ] ECON 626 Empirical Microeconometrics

@@ -1,7 +1,7 @@
 ---
-title: "Apple Reminders"
+title: "On Apple Reminders"
 date: 2026-08-06T12:59:18+02:00
-draft: true
+draft: false
 tags: ["apple"]
 categories: ["2026"]
 ---
@@ -23,7 +23,7 @@ since I was looking for an easy way to import a bunch of URLs.
    However it only provides basic functionalities and it doesn't seem to handle
    to handle tag or web links.
 
-2. [remindtl][4]: cli for Apple Reminders app. It looks like it offers
+2. [remindctl][4]: cli for Apple Reminders app. It looks like it offers
    everything I need, including search and smart filters. However, the author
    notes that "remindctl intentionally sticks to public EventKit APIs. These
    Reminders.app features are not exposed through EventKit today", which
@@ -38,11 +38,23 @@ since I was looking for an easy way to import a bunch of URLs.
    preceding software, this app relies on the private ReminderKit API. URLs are
    passed using the `-u` (or `--url`) flag. Perfect fit.
 
+4. [RemCTL][6]: The Power-User Reminders CLI for macOS and AI Agents. This looks
+   really promising, but I don't think I will ever need all this extra stuff for
+   AI agents, right? Full disk access, seriously?
+
+5. [remind][7]: Apple Reminders for terminal natives. It doesn't include URL or
+   tags so it doesn't fit my requirements unfortunately.
+
+6. [remi][8]: The missing CLI for Apple Reminders - with section support and
+   iCloud sync. It looks interesting as it allows to manage subsection, natural
+   language and fuzzy searches. It is not clear whether it support EventKit,
+   though.
+
 I decided to go with [rem][5] which fulfills the essential needs mentioned in
 the introduction. I choose to install it with `go install` instead of Homebrew.
 It doesn't ask to grant access to the full HD, only Reminders data, which is
 okay for me. Default output is a colored ASCII table but it can be plain text.
-It offers Basha nd Zsh completions; this is a feature (although I changed the
+It offers Bash nd Zsh completions; this is a feature (although I changed the
 default target to my own `site-functions` directory:
 
 ```shell
@@ -79,18 +91,7 @@ take a look at what's left:
 
 ```shell
 aliquote master*?
-» rem stats
-Reminder Statistics
-===================
-Total:           484
-Completed:       460
-Incomplete:      24
-Flagged:         2
-Overdue:         0
-Completion Rate: 95.0%
-Lists:           2
-
-Per List:
+» rem lists --count
 ┌───────────────┬───────────┐
 │ NAME          │ REMINDERS │
 ├───────────────┼───────────┤
@@ -150,21 +151,71 @@ id,name,body,list_name,due_date,remind_me_date,priority,priority_label,flagged,c
 ```
 
 It was not too difficult to format my list of plain URLs, which was originally
-in [Org format][6], as desired, thanks to Vim search/replace facilities. This
+in [Org format][9], as desired, thanks to Vim search/replace facilities. This
 involved replacing Org tag to proper #hashtag, getting correct capture group for
 title, due date, URL and tag, and deleting few remaining entries that would not
 fit this format. Here we go:
 
 ![img](/img/2026-08-06-18-30-00.png)
 
-It took 38s. Task done.[^2]
+It took 38s. Task done, see below (left).[^2]
+
+I used the GitHub command line utility to extract issues for some repos I
+maintained or authored, and likewise bulk import the list into Reminders
+(right).
+
+{{< fluid_imgs "pure-u-1-2|/img/2026-08-06-20-45-22.png" "pure-u-1-2|/img/2026-08-06-20-45-30.png" >}}
+
+Final stats below:
+
+```shell
+» rem stats
+Reminder Statistics
+===================
+Total:           1311
+Completed:       1264
+Incomplete:      47
+Flagged:         2
+Overdue:         0
+Completion Rate: 96.4%
+Lists:           5
+
+Per List:
+┌───────────────┬───────────┐
+│ NAME          │ REMINDERS │
+├───────────────┼───────────┤
+│ Read it later │ 923       │
+│ TODO          │ 313       │
+│ Courses       │ 0         │
+│ GitHub        │ 75        │
+│ Projects      │ 0         │
+└───────────────┴───────────┘
+```
+
+I'll just need to apply the very same process to the Projects list.
+
+### Sidenote
+
+While looking for a Reminders cli utility, I came across other projects like
+[apple-git][10], to control Github via Apple Reminders, and
+[reminders-menubar][11], which features a menu bar application to view and
+interact with reminders. And also, obscure stuff on how to Notes and Reminders
+database are managed internally: [Reading Notes database on macOS][12],
+[Accessing / Exporting Apple's Reminders Data on macOS][13].
 
 [1]: /post/reminder-app-and-org/
 [2]: https://obyford.com/posts/using-applescript-to-create-reminders-from-text-lists/
 [3]: https://github.com/keith/reminders-cli
 [4]: https://github.com/openclaw/remindctl
 [5]: https://rem.sidv.dev
-[6]: /pub/urls.html
+[6]: https://www.macstories.net/stories/introducing-remctl-the-power-user-reminders-cli-for-macos-and-ai-agents/
+[7]: https://github.com/migueravila/remind
+[8]: https://github.com/mattheworiordan/remi
+[9]: /pub/urls.html
+[10]: https://github.com/dkyazzentwatwa/apple-git
+[11]: https://github.com/damascenorafael/reminders-menubar
+[12]: https://www.swiftforensics.com/2018/02/reading-notes-database-on-macos.html
+[13]: https://gist.github.com/0xdevalias/ccc2b083ff58b52aa701462f2cfb3cc8
 
 [^1]: See also [Using AppleScript to create reminders from text lists][2].
 
