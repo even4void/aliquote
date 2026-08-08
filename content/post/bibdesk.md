@@ -94,7 +94,7 @@ field to all my BibTeX entries (1763 in total). This could have been done with
 BBEdit as well (no more fuzzing between escaping special symbols or dealing with
 verymagic command in Vim, yeah), see below (right):
 
-{{< fluid_imgs "pure-u-1-2|/img/2026-08-08-12-54-57.png" "pure-u-1-2|/img/2026-08-08-08-15-03.png" >}}
+{{< fluid_imgs "pure-u-1-2|/img/2026-08-08-18-22-13.png" "pure-u-1-2|/img/2026-08-08-08-15-03.png" >}}
 
 Anyway, this worked like a charm. I use the URI I'm used to use in Reminders and
 Notes, but apparently absolute and relative paths work too (it can be defined in
