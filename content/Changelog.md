@@ -10,6 +10,7 @@ date: 2021-09-02T00:00:00
     Date:   Sun Jan 21 00:57:45 2018 +0100
 ```
 
+[2026-08-08] Add pre-commit hook to remove sensitive metadata from pictures<br>
 [2026-07-26] Add AI notice and remove `figure` overlay<br> [2024-08-06] Update
 base colors (some background color are taken from <http://ro-che.info>) and
 convert `<img>` tag to proper HTML5 `<figure>`<br> [2023-04-13] Easter
