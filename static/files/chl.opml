@@ -50,6 +50,7 @@
     <outline type="rss" xmlUrl="https://blog.poisson.chat/rss.xml" htmlUrl="https://blog.poisson.chat/" title="Lysxia's blog" text="Lysxia's blog"/>
     <outline type="rss" xmlUrl="https://blog.regehr.org/feed" htmlUrl="https://blog.regehr.org/" title="Embedded in Academia" text="Embedded in Academia"/>
     <outline type="rss" xmlUrl="https://blog.reverberate.org/feed.xml" htmlUrl="https://blog.reverberate.org/" title="Josh Haberman" text="Josh Haberman"/>
+    <outline type="rss" xmlUrl="https://blog.veitheller.de/feed.rss" htmlUrl="" title="" text=""/>
     <outline type="rss" xmlUrl="https://blog.vero.site/index.xml" htmlUrl="https://blog.vero.site/" title="Bounded-Error Log" text="Bounded-Error Log"/>
     <outline type="rss" xmlUrl="https://blog.xoria.org/atom.xml" htmlUrl="https://blog.xoria.org/" title="Luna&#x2019;s Blog" text="Luna&#x2019;s Blog"/>
     <outline type="rss" xmlUrl="https://borretti.me/feed.xml" htmlUrl="https://borretti.me/" title="Fernando Borretti" text="Fernando Borretti"/>
@@ -140,6 +141,7 @@
     <outline type="rss" xmlUrl="https://thephd.dev/feed.xml" htmlUrl="https://thephd.dev/" title="The Pasture" text="The Pasture"/>
     <outline type="rss" xmlUrl="https://turtleware.eu/rss.xml" htmlUrl="https://turtleware.eu/rss.xml" title="TurtleWare" text="TurtleWare"/>
     <outline type="rss" xmlUrl="https://unixdigest.com/articles.xml" htmlUrl="https://unixdigest.com/" title="Unix Digest - Articles" text="Unix Digest - Articles"/>
+    <outline type="rss" xmlUrl="https://unsung.aresluna.org/feed.xml" htmlUrl="" title="" text=""/>
     <outline type="rss" xmlUrl="https://vgel.me/feed.xml" htmlUrl="https://vgel.me/" title="Theia Vogel's website &amp; blog" text="Theia Vogel's website &amp; blog"/>
     <outline type="rss" xmlUrl="https://vonheikemen.github.io/devlog/atom.xml" htmlUrl="https://vonheikemen.github.io/devlog/" title="Devlog" text="Devlog"/>
     <outline type="rss" xmlUrl="https://weinholt.se/feed.xml" htmlUrl="https://weinholt.se/" title="weinholt.se" text="weinholt.se"/>
