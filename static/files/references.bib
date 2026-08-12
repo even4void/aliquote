@@ -1,5 +1,19 @@
 
 
+@article{rinberg-2019-fast-concurrent-data,
+	abstract = {Data sketches are approximate succinct summaries of long streams. They are widely used for processing massive amounts of data and answering statistical queries about it in real-time. Existing libraries producing sketches are very fast, but do not allow parallelism for creating sketches using multiple threads or querying them while they are being built. We present a generic approach to parallelising data sketches efficiently, while bounding the error that such parallelism introduces. Utilising relaxed semantics and the notion of strong linearisability we prove our algorithm's correctness and analyse the error it induces in two specific sketches. Our implementation achieves high scalability while keeping the error small.},
+	author = {Arik Rinberg and Alexander Spiegelman and Edward Bortnikov and Eshcar Hillel and Idit Keidar and Lee Rhodes and Hadar Serviansky},
+	date-added = {2026-08-11 14:38:00 +0200},
+	date-modified = {2026-08-11 14:38:00 +0200},
+	eprint = {1902.10995},
+	month = {02},
+	title = {Fast Concurrent Data Sketches},
+	url = {https://arxiv.org/pdf/1902.10995.pdf},
+	year = {2019},
+	bdsk-file-1 = {YnBsaXN0MDDSAQIDBFxyZWxhdGl2ZVBhdGhYYm9va21hcmtfEEUuLi8uLi8uLi8uLi8uLi9Eb2N1bWVudHMvcGFwZXJzL3JpbmJlcmctMjAxOS1mYXN0LWNvbmN1cnJlbnQtZGF0YS5wZGZPEQRAYm9va0AEAAAAAAUQQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACADAAAFAAAAAQEAAFVzZXJzAAAAAwAAAAEBAABjaGwACQAAAAEBAABEb2N1bWVudHMAAAAGAAAAAQEAAHBhcGVycwAAJQAAAAEBAAByaW5iZXJnLTIwMTktZmFzdC1jb25jdXJyZW50LWRhdGEucGRmAAAAFAAAAAEGAAAEAAAAFAAAACAAAAA0AAAARAAAAAgAAAAEAwAAnUcAAAAAAAAIAAAABAMAAAKXAAAAAAAACAAAAAQDAAAzlwAAAAAAAAgAAAAEAwAAv/gEAAAAAAAIAAAABAMAALQB4gAAAAAAFAAAAAEGAACQAAAAoAAAALAAAADAAAAA0AAAAAgAAAAABAAAQcgVp5R76wIYAAAAAQIAAAEAAAAAAAAADwAAAAAAAAAAAAAAAAAAAAgAAAAEAwAAAwAAAAAAAAAEAAAAAwMAAPUBAAAIAAAAAQkAAGZpbGU6Ly8vDAAAAAEBAABNYWNpbnRvc2ggSEQIAAAABAMAAACQgpbnAAAACAAAAAAEAABBx/Zk94AAACQAAAABAQAAMTkxQkQyOTUtMTM1MC00M0EyLUEwOTUtQTJENDEzQTRCNUJFGAAAAAECAACBAAAAAQAAAO8TAAABAAAAAAAAAAAAAAABAAAAAQEAAC8AAAAAAAAAAQUAAPMAAAABAgAAY2Q2NWEyYTIwYWM3NTFmZTYzY2MyYzc1NGFlMjhmMDllMjJhMTcwZjFhMzM3ZmI2M2NmYjk2MTQxYzc5NTY4ODswMDswMDAwMDAwMDswMDAwMDAwMDswMDAwMDAwMDswMDAwMDAwMDAwMDAwMDIwO2NvbS5hcHBsZS5hcHAtc2FuZGJveC5yZWFkLXdyaXRlOzAxOzAxMDAwMDEyOzAwMDAwMDAwMDBlMjAxYjQ7NTc7L3VzZXJzL2NobC9kb2N1bWVudHMvcGFwZXJzL3JpbmJlcmctMjAxOS1mYXN0LWNvbmN1cnJlbnQtZGF0YS5wZGYAAC8AAAABAQAATlNVUkxCb29rbWFya1F1YXJhbnRpbmVNb3VudGVkTmV0d29ya1ZvbHVtZXNLZXkA2AAAAP7///8BAAAAAAAAABEAAAAEEAAAdAAAAAAAAAAFEAAA4AAAAAAAAAAQEAAADAEAAAAAAABAEAAA/AAAAAAAAAACIAAA2AEAAAAAAAAFIAAASAEAAAAAAAAQIAAAWAEAAAAAAAARIAAAjAEAAAAAAAASIAAAbAEAAAAAAAATIAAAfAEAAAAAAAAgIAAAuAEAAAAAAAAwIAAA5AEAAAAAAAABwAAALAEAAAAAAAARwAAAFAAAAAAAAAASwAAAPAEAAAAAAACA8AAA7AEAAAAAAADoAgCA5AEAAAAAAAAACAANABoAIwBrAAAAAAAAAgEAAAAAAAAABQAAAAAAAAAAAAAAAAAABK8=},
+	bdsk-url-1 = {https://arxiv.org/pdf/1902.10995.pdf},
+	bdsk-url-2 = {https://arxiv.org/abs/1902.10995}}
+
 @article{abbas-2014-assessment-de-novo,
 	author = {Mostafa M. Abbas and Qutaibah M. Malluhi and Ponnuraman Balkrishnan},
 	file = {~/Documents/papers/abbas-2014-assessment-de-novo.pdf},
@@ -3186,8 +3200,10 @@
 
 @book{compeau-2015-bioin-algor-vol1,
 	author = {Phillip Compeau and Pavel Pevzner},
+	date-modified = {2026-08-11 14:30:02 +0200},
 	edition = {2},
 	file = {~/Documents/papers/compeau-2015-bioin-algor-vol1.pdf},
+	keywords = {bioinformatics, algorithms},
 	publisher = {Active Learning Publishers},
 	title = {Bioinformatics Algorithms: An Active Learning Approach},
 	volume = {1},
@@ -3195,8 +3211,10 @@
 
 @book{compeau-2015-bioin-algor-vol2,
 	author = {Phillip Compeau and Pavel Pevzner},
+	date-modified = {2026-08-11 14:30:08 +0200},
 	edition = {2},
 	file = {~/Documents/papers/compeau-2015-bioin-algor-vol2.pdf},
+	keywords = {bioinformatics, algorithms},
 	publisher = {Active Learning Publishers},
 	title = {Bioinformatics Algorithms: An Active Learning Approach},
 	volume = {2},
@@ -3213,7 +3231,8 @@
 @book{conery-2016-impos-handb,
 	address = {111 Jackson, Seattle WA 96714},
 	author = {Rob Conery},
-	date-modified = {2026-08-10 14:34:34 +0200},
+	date-modified = {2026-08-11 14:30:19 +0200},
+	keywords = {computing},
 	publisher = {Big Machine, Inc.},
 	title = {The Imposter's Handbook},
 	year = {2016}}
@@ -3234,9 +3253,11 @@
 
 @book{congdon-2006-bayes-statis-model,
 	author = {Peter Congdon},
+	date-modified = {2026-08-11 14:30:28 +0200},
 	doi = {10.1002/9780470035948},
 	edition = {2},
 	file = {~/Documents/papers/congdon-2006-bayes-statis-model.pdf},
+	keywords = {statistics, bayesian},
 	publisher = {Wiley},
 	title = {Bayesian Statistical Modelling},
 	url = {https://doi.org/10.1002/9780470035948},
@@ -3244,9 +3265,11 @@
 
 @book{conte-1980-elemen-numer-analy,
 	author = {S. D. Conte and Carl de Boor},
+	date-modified = {2026-08-11 14:30:44 +0200},
 	doi = {10.1137/1.9781611975208},
 	edition = {3},
 	file = {~/Documents/papers/conte-1980-elemen-numer-analy.pdf},
+	keywords = {numerical-analysis, algorithms},
 	publisher = {McGraw-Hill},
 	title = {Elementary Numerical Analysis: An Algorithmic Approach},
 	url = {https://doi.org/10.1137/1.9781611975208},
@@ -3254,14 +3277,17 @@
 
 @book{conway-2012-machin-learn-hacker,
 	author = {Drew Conway and John Myles White},
-	date-modified = {2026-08-10 14:35:23 +0200},
+	date-modified = {2026-08-11 14:30:53 +0200},
+	keywords = {machine-learning},
 	publisher = {O'Reilly Media, Inc.},
 	title = {Machine Learning for Hackers},
 	year = {2012}}
 
 @book{cook-2017-pract-machin,
 	author = {Darren Cook},
+	date-modified = {2026-08-11 14:31:07 +0200},
 	file = {~/Documents/papers/cook-2017-pract-machin.pdf},
+	keywords = {machine-learning, python},
 	publisher = {O'Reilly Media Inc},
 	title = {Practical Machine Learning with {H2O}},
 	year = {2017}}
@@ -3276,52 +3302,66 @@
 
 @misc{corallo-2020-bring-gnu,
 	author = {Andrea Corallo and Luca Nassi and Nicola Manca},
+	date-modified = {2026-08-11 14:31:13 +0200},
 	file = {~/Documents/papers/corallo-2020-bring-gnu.pdf},
+	keywords = {emacs},
 	title = {Bringing {GNU} Emacs to Native Code},
 	year = {2020}}
 
 @book{corbae-2008-intro-math-econ,
 	author = {Dean Corbae and Max Stinchcombe and Juraj Zeman},
+	date-modified = {2026-08-11 14:31:28 +0200},
 	doi = {10.1515/9781400833085},
 	file = {~/Documents/papers/corbae-2008-intro-math-econ.pdf},
+	keywords = {mathematics, econometrics, economics},
 	title = {An Introduction to Mathematical Analysis for Economic Theory and Econometrics},
 	url = {https://doi.org/10.1515/9781400833085},
 	year = {2008}}
 
 @book{cormen-2009-introd-algor,
 	author = {Thomas H Cormen and Charles E Leiserson and Ronald L Rivest and Clifford Stein},
+	date-modified = {2026-08-11 14:31:35 +0200},
 	edition = {3},
 	file = {~/Documents/papers/cormen-2009-introd-algor.pdf},
+	keywords = {algorithms},
 	publisher = {The MIT Press},
 	title = {Introduction to Algorithms},
 	year = {2009}}
 
 @book{cormen-2013-algor-unloc,
 	author = {Thomas H. Cormen},
+	date-modified = {2026-08-11 14:31:42 +0200},
 	file = {~/Documents/papers/cormen-2013-algor-unloc.pdf},
+	keywords = {algorithms},
 	publisher = {The MIT Press},
 	title = {Algorithms Unlocked},
 	year = {2013}}
 
 @misc{cormode-2017-data-sketching,
+	annote = {\cite{rinberg-2019-fast-concurrent-data}, https://vldb.org/pvldb/vol14/p1655-lemiesz.pdf},
 	author = {Graham Cormode},
+	date-modified = {2026-08-11 14:42:03 +0200},
 	file = {~/Documents/papers/cormode-2017-data-sketching.pdf},
+	keywords = {data-science, algorithms},
 	title = {What is Data Sketching, and Why Should {I} Care?},
 	year = {2017}}
 
 @misc{coutts-2007-stream-fusion,
 	author = {Duncan Coutts and Roman Leshchinskiy and Don Stewart},
+	date-modified = {2026-08-11 14:40:48 +0200},
 	doi = {10.1145/1291220.1291199},
 	file = {~/Documents/papers/coutts-2007-stream-fusion.pdf},
+	keywords = {algorithms, haskell},
 	title = {Stream Fusion: From Lists to Streams to Nothing at All},
 	url = {https://doi.org/10.1145/1291220.1291199},
 	year = {2007}}
 
 @book{cover-2006-elemen-infor-theor,
 	author = {Thomas M. Cover and Joy A. Thomas},
-	date-modified = {2026-08-10 14:35:36 +0200},
+	date-modified = {2026-08-11 14:43:05 +0200},
 	doi = {10.1002/047174882X},
 	edition = {2},
+	keywords = {information-theory},
 	publisher = {John Wiley \& Sons},
 	title = {Elements of Information Theory},
 	url = {https://doi.org/10.1002/047174882X},
@@ -3329,9 +3369,10 @@
 
 @article{cox-2004-speakin-stata,
 	author = {Nick Cox},
-	date-modified = {2026-08-10 14:35:42 +0200},
+	date-modified = {2026-08-11 14:44:32 +0200},
 	doi = {10.1177/1536867X0400400408},
 	journal = {The Stata Journal},
+	keywords = {stata, graphics, diagnostics},
 	number = {4},
 	pages = {449--475},
 	title = {Speaking Stata: Graphing Model Diagnostics},
@@ -3355,8 +3396,10 @@
 
 @book{cox-2006-princ-statis-infer,
 	author = {D. R. Cox},
+	date-modified = {2026-08-11 14:43:33 +0200},
 	doi = {10.1017/CBO9780511813559},
 	file = {~/Documents/papers/cox-2006-princ-statis-infer.pdf},
+	keywords = {statistics, inference},
 	publisher = {Cambridge University Press},
 	title = {Principles of Statistical Inference},
 	url = {https://doi.org/10.1017/CBO9780511813559},
@@ -3364,17 +3407,21 @@
 
 @book{cox-2014-speak-stata-graph,
 	author = {Nicholas J. Cox},
+	date-modified = {2026-08-11 14:44:24 +0200},
 	file = {~/Documents/papers/cox-2014-speak-stata-graph.pdf},
+	keywords = {stata, graphics},
 	publisher = {Stata Press},
 	title = {Speaking Stata Graphics},
 	year = {2014}}
 
 @article{cox-2017-statis,
 	author = {D. R. Cox and Bradley Efron},
+	date-modified = {2026-08-11 14:44:56 +0200},
 	doi = {10.1126/sciadv.1700768},
 	eid = {e1700768},
 	file = {~/Documents/papers/cox-2017-statis.pdf},
 	journal = {Science Advances},
+	keywords = {statistics, data-science, machine-learning},
 	pages = {1--5},
 	title = {Statistical thinking for 21st century scientists},
 	url = {https://doi.org/10.1126/sciadv.1700768},
@@ -3383,14 +3430,18 @@
 
 @book{crane-2019-discr-differ-geomet,
 	author = {Keenan Crane},
+	date-modified = {2026-08-11 14:45:10 +0200},
 	file = {~/Documents/papers/crane-2019-discr-differ-geomet.pdf},
+	keywords = {differential-geometry, discrete},
 	title = {Discrete Differential Geometry: An Applied Introduction},
 	year = {2019}}
 
 @book{crawley-2007-r-book,
 	author = {Michael J Crawley},
+	date-modified = {2026-08-11 14:45:17 +0200},
 	doi = {10.1002/9780470515075},
 	file = {~/Documents/papers/crawley-2007-r-book.pdf},
+	keywords = {rstats},
 	publisher = {John Wiley \& Sons},
 	title = {The {R} Book},
 	url = {https://doi.org/10.1002/9780470515075},
@@ -3398,15 +3449,19 @@
 
 @book{cristanini-2006-introd-comput-genom,
 	author = {Nello Cristanini and Matthew W. Hahn},
+	date-modified = {2026-08-11 14:45:30 +0200},
 	file = {~/Documents/papers/cristanini-2006-introd-comput-genom.pdf},
+	keywords = {genomics},
 	publisher = {Cambridge University Press},
 	title = {Introduction to Computational Genomics: A Case Studies Approach},
 	year = {2006}}
 
 @book{crochemore-2007-algor-strin,
 	author = {Maxime Crochemore and Christophe Hancart and Thierry Lecroq},
+	date-modified = {2026-08-11 14:45:39 +0200},
 	doi = {10.1017/CBO9780511546853},
 	file = {~/Documents/papers/crochemore-2007-algor-strin.pdf},
+	keywords = {algorithms},
 	publisher = {Cambridge University Press},
 	title = {Algorithms on Strings},
 	url = {https://doi.org/10.1017/CBO9780511546853},
@@ -3423,16 +3478,20 @@
 
 @book{cusack-2018-active-intro-discrete,
 	author = {Charles A. Cusack and David A. Santos},
+	date-modified = {2026-08-11 14:45:49 +0200},
 	file = {~/Documents/papers/cusack-2018-active-intro-discrete.pdf},
+	keywords = {mathematics, discrete},
 	publisher = {opensourcemath.org},
 	title = {An Active Introduction to Discrete Mathematics and Algorithms},
 	year = {2018}}
 
 @article{cytron-1991-efficiently-computing-static,
 	author = {Ron Cytron and Jeanne Ferrante and Barry K. Rosen and Mark N. Wegman},
+	date-modified = {2026-08-11 14:46:20 +0200},
 	doi = {10.1145/115372.115320},
 	file = {~/Documents/papers/cytron-1991-efficiently-computing-static.pdf},
 	journal = {ACM Transactions on Programming Languages and Systems},
+	keywords = {algorithms, data-structures},
 	number = {4},
 	pages = {451--490},
 	title = {Efficiently Computing Static Single Assignment Form and the Control Dependence Graph},
@@ -3442,9 +3501,10 @@
 
 @book{dalgaard-2008-introd-statis-r,
 	author = {P. D. Dalgaard},
-	date-modified = {2026-08-10 14:35:47 +0200},
+	date-modified = {2026-08-11 14:46:32 +0200},
 	doi = {10.1007/978-0-387-79054-1},
 	edition = {2nd},
+	keywords = {statistics, rstats},
 	publisher = {Springer},
 	title = {Introductory Statistics with {R}},
 	url = {https://doi.org/10.1007/978-0-387-79054-1},
@@ -3452,78 +3512,99 @@
 
 @book{danjou-2018-serious-python,
 	author = {Julien Danjou},
+	date-modified = {2026-08-11 14:46:40 +0200},
 	file = {~/Documents/papers/danjou-2018-serious-python.pdf},
+	keywords = {python},
 	publisher = {No Starch Press},
 	title = {Serious Python},
 	year = {2018}}
 
 @misc{danvy-2001-defunctionalization-at-work,
 	author = {Olivier Danvy and Lasse R. Nielsen},
+	date-modified = {2026-08-11 14:55:20 +0200},
 	doi = {10.1145/773184.773202},
 	file = {~/Documents/papers/danvy-2001-defunctionalization-at-work.pdf},
+	keywords = {functional-programming},
 	title = {Defunctionalization at Work},
 	url = {https://doi.org/10.1145/773184.773202},
 	year = {2001}}
 
 @book{darve-2021-num-linear-julia,
 	author = {Eric Darve and Mary Wootters},
+	date-modified = {2026-08-11 14:55:33 +0200},
 	file = {~/Documents/papers/darve-2021-num-linear-julia.pdf},
+	keywords = {linear-algebra, numerics, julia},
 	publisher = {SIAM},
 	title = {Numerical Linear Algebra with Julia},
 	year = {2021}}
 
 @book{dasgupta-2006-algor,
 	author = {S. Dasgupta and C. H. Papadimitriou and U. V. Vazirani},
+	date-modified = {2026-08-11 14:55:42 +0200},
 	file = {~/Documents/papers/dasgupta-2006-algor.pdf},
+	keywords = {algorithms},
 	publisher = {McGraw-Hill},
 	title = {Algorithms},
 	year = {2006}}
 
 @misc{dasgupta-2007-effic-dna,
 	author = {Bhaskar Dasgupta and Ming-Yang Kao},
+	date-modified = {2026-08-11 15:02:16 +0200},
 	doi = {10.1002/9780470253441.ch10},
 	file = {~/Documents/papers/dasgupta-2007-effic-dna.pdf},
+	keywords = {bioinformatics, algorithms, genomics},
 	title = {Efficient combinatorial algorithms for {DNA} sequence processing},
 	url = {https://doi.org/10.1002/9780470253441.ch10},
 	year = {2007}}
 
 @book{dasgupta-2008-asymp-theor,
 	author = {Anirban DasGupta},
+	date-modified = {2026-08-11 15:04:35 +0200},
 	file = {~/Documents/papers/dasgupta-2008-asymp-theor.pdf},
+	keywords = {statistics, probability, asymptotic},
 	publisher = {Springer},
 	title = {Asymptotic Theory of Statistics and Probability},
 	year = {2008}}
 
 @book{date-2000-foundations-future-database,
 	author = {C J Date and Hugh Darwen},
+	date-modified = {2026-08-11 15:04:44 +0200},
 	file = {~/Documents/papers/date-2000-foundations-future-database.pdf},
+	keywords = {database},
 	publisher = {Addison-Wesley},
 	title = {Foundation for Future Database Systems: The Third Manifesto},
 	year = {2000}}
 
 @book{date-2013-relat-theor,
 	author = {C J Date},
-	date-modified = {2026-08-10 14:35:53 +0200},
+	date-modified = {2026-08-11 15:04:56 +0200},
+	keywords = {computing},
 	publisher = {O'Reilly Media Inc},
 	title = {Relational Theory for Computer Professionals},
 	year = {2013}}
 
 @misc{daugherty-2015-combin-analy,
 	author = {Zajj Daugherty},
+	date-modified = {2026-08-11 15:05:03 +0200},
 	file = {~/Documents/papers/daugherty-2015-combin-analy.pdf},
+	keywords = {combinatorics},
 	title = {Combinatorial Analysis},
 	year = {2015}}
 
 @misc{daume-2002-yet-another-haskell-tutorial,
 	author = {Hal Daum{\'e} III},
+	date-modified = {2026-08-11 15:05:10 +0200},
 	file = {~/Documents/papers/daume-2002-yet-another-haskell-tutorial.pdf},
+	keywords = {haskell},
 	title = {Yet Another Haskell Tutorial},
 	year = {2002}}
 
 @book{davenport-2008-higher-arith,
 	author = {H. Davenport},
+	date-modified = {2026-08-11 15:05:23 +0200},
 	doi = {10.1017/CBO9780511818097},
 	file = {~/Documents/papers/davenport-2008-higher-arith.pdf},
+	keywords = {mathematics, arithmetic},
 	publisher = {Cambridge University Press},
 	title = {The Higher Arithmetic},
 	url = {https://doi.org/10.1017/CBO9780511818097},
@@ -3531,24 +3612,29 @@
 
 @book{david-2003-order-statistics,
 	author = {H. A. David and H. N. Nagaraja},
+	date-modified = {2026-08-11 15:05:33 +0200},
 	edition = {3},
 	file = {~/Documents/papers/david-2003-order-statistics.pdf},
+	keywords = {statistics, non-parametric},
 	publisher = {Wiley},
 	title = {Order Statistics},
 	year = {2003}}
 
 @book{davidson-2003-econom-theor-method,
 	author = {Russell Davidson and James G. MacKinnon},
+	date-modified = {2026-08-11 15:05:41 +0200},
 	file = {~/Documents/papers/davidson-2003-econom-theor-method.pdf},
+	keywords = {econometrics},
 	publisher = {Oxford University Press},
 	title = {Econometric Theory and Methods},
 	year = {2003}}
 
 @article{davidson-2011-mathem-model,
 	author = {Fordyce A. Davidson and Graeme P. Boswell and Mark W. F. Fischer and Luke Heaton and Daniel Hofstadler and Marcus Roper},
-	date-modified = {2026-08-10 14:35:58 +0200},
+	date-modified = {2026-08-11 15:05:56 +0200},
 	doi = {10.5598/imafungus.2011.02.01.06},
 	journal = {IMA Fungus},
+	keywords = {mathematics, biology},
 	number = {1},
 	pages = {33--37},
 	title = {Mathematical Modelling Of Fungal Growth And Function},
@@ -3558,15 +3644,19 @@
 
 @book{davidson-2015-bayesian-methods-hackers,
 	author = {Cameron Davidson-Pilon},
+	date-modified = {2026-08-11 15:06:15 +0200},
 	file = {~/Documents/papers/davidson-2015-bayesian-methods-hackers.pdf},
+	keywords = {bayesian, probabilistic-programming, python},
 	publisher = {Addison-Wesley Professional},
 	title = {Bayesian Methods for Hackers: Probabilistic Programming and Bayesian Inference},
 	year = {2015}}
 
 @book{davis-2001-lectur-notes,
 	author = {James F. Davis and Paul Kirk},
+	date-modified = {2026-08-11 15:06:24 +0200},
 	doi = {10.1090/gsm/035},
 	file = {~/Documents/papers/davis-2001-lectur-notes.pdf},
+	keywords = {topology, algebric},
 	publisher = {American Mathematical Society},
 	title = {Lecture Notes in Algebraic Topology},
 	url = {https://doi.org/10.1090/gsm/035},
@@ -3574,15 +3664,19 @@
 
 @book{davis-2019-cloud-nativ-patter,
 	author = {Cornelia Davis and Gene Kim},
+	date-modified = {2026-08-11 15:06:34 +0200},
 	file = {~/Documents/papers/davis-2019-cloud-nativ-patter.pdf},
+	keywords = {computing, web},
 	publisher = {Manning},
 	title = {Cloud Native Patterns},
 	year = {2019}}
 
 @article{de-2005-aband-xlisp-stat,
 	author = {Jan De Leeuw},
+	date-modified = {2026-08-11 15:07:04 +0200},
 	file = {~/Documents/papers/de-2005-aband-xlisp-stat.pdf},
 	journal = {Journal of Statistical Software},
+	keywords = {statistics, lisp, software},
 	number = {7},
 	pages = {1--5},
 	title = {On Abandoning {XLISP-STAT}},
@@ -3591,23 +3685,29 @@
 
 @misc{de-2009-statis-softw,
 	author = {Jan De Leeuw},
+	date-modified = {2026-08-11 15:06:58 +0200},
 	doi = {10.1007/978-3-642-04898-2_553},
 	file = {~/Documents/papers/de-2009-statis-softw.pdf},
+	keywords = {statistics, software},
 	title = {Statistical Software - Overview},
 	url = {https://doi.org/10.1007/978-3-642-04898-2_553},
 	year = {2009}}
 
 @book{dechaumphai-2022-numerical-methods-science,
 	author = {Dechaumphai P. and N. Wansophark},
+	date-modified = {2026-08-11 15:08:39 +0200},
 	file = {~/Documents/papers/dechaumphai-2022-numerical-methods-science.pdf},
+	keywords = {numerics, software, mathematica, matlab, python, clang},
 	publisher = {Alpha Science International Ltd.},
 	title = {Numerical Methods in Science and Engineering Theories with {MATLAB}, Mathematica, Fortran, {C} and Python Programs},
 	year = {2022}}
 
 @book{deisenroth-2019-mathem-machin-learn,
 	author = {Marc Peter Deisenroth and A. Aldo Faisal and Cheng Soon Ong},
+	date-modified = {2026-08-11 15:32:16 +0200},
 	doi = {10.1017/9781108679930},
 	file = {~/Documents/papers/deisenroth-2019-mathem-machin-learn.pdf},
+	keywords = {mathematics, machine-learning},
 	publisher = {Cambridge University Press},
 	title = {Mathematics for Machine Learning},
 	url = {https://doi.org/10.1017/9781108679930},
@@ -3615,41 +3715,52 @@
 
 @misc{dejneka-2004-effic-hardw,
 	author = {Alexey Dejneka and Christophe Rhodes},
+	date-modified = {2026-08-11 15:32:30 +0200},
 	file = {~/Documents/papers/dejneka-2004-effic-hardw.pdf},
+	keywords = {numerics, arithmetic, lisp},
 	title = {Efficient Hardware Arithmetic in Common Lisp},
 	year = {2004}}
 
 @book{delannoy-2008-programmer-java,
 	author = {Claude Delannoy},
+	date-modified = {2026-08-11 15:32:43 +0200},
 	file = {~/Documents/papers/delannoy-2008-programmer-java.pdf},
+	keywords = {java},
 	publisher = {Eyrolles},
 	title = {Programmer en Java},
 	year = {2008}}
 
 @book{delannoy-2009-programmer-c,
 	author = {Claude Delannoy},
+	date-modified = {2026-08-11 15:32:50 +0200},
 	edition = {5},
 	file = {~/Documents/papers/delannoy-2009-programmer-c.pdf},
+	keywords = {clang},
 	publisher = {Eyrolles},
 	title = {Programmer en langage {C}},
 	year = {2009}}
 
 @misc{deleeuw-2021-block-relaxation,
 	author = {Jan de Leeuw},
+	date-modified = {2026-08-11 15:33:02 +0200},
 	file = {~/Documents/papers/deleeuw-2021-block-relaxation.pdf},
+	keywords = {statistics, multivariate-analysis},
 	title = {Block Relaxation Methods in Statistics},
 	year = {2021}}
 
 @misc{deleeuw-2021-gifi-analysis,
 	author = {Jan de Leeuw},
+	date-modified = {2026-08-11 15:33:12 +0200},
 	file = {~/Documents/papers/deleeuw-2021-gifi-analysis.pdf},
+	keywords = {statistics, multivariate-analysis},
 	title = {Gifi Analysis of Multivariate Data},
 	year = {2021}}
 
 @book{demmel-1997-applied-numer,
 	author = {James W. Demmel},
-	date-modified = {2026-08-10 14:36:03 +0200},
+	date-modified = {2026-08-11 15:34:11 +0200},
 	doi = {10.1137/1.9781611971446},
+	keywords = {linear-algebra, numerics},
 	publisher = {Society for Industrial and Applied Mathematics},
 	title = {Applied Numerical Linear Algebra},
 	url = {https://doi.org/10.1137/1.9781611971446},
@@ -3657,9 +3768,11 @@
 
 @article{dessimoz-2008-covariance-max,
 	author = {Christophe Dessimoz and Manuel Gil},
+	date-modified = {2026-08-11 15:34:36 +0200},
 	doi = {10.1186/1471-2148-8-179},
 	file = {~/Documents/papers/dessimoz-2008-covariance-max.pdf},
 	journaltitle = {BMC Evolutionary Biology},
+	keywords = {statistics, phylogenetics, genomics},
 	number = {179},
 	pages = {1--9},
 	title = {Covariance of maximum likelihood evolutionary distances between sequences aligned pairwise},
@@ -3669,9 +3782,11 @@
 
 @article{deville-2004-efficient-balanced-sampling,
 	author = {Jean-Claude Deville and Yves Till{\'e}},
+	date-modified = {2026-08-11 15:34:52 +0200},
 	doi = {10.1093/biomet/91.4.893},
 	file = {~/Documents/papers/deville-2004-efficient-balanced-sampling.pdf},
 	journaltitle = {Biometrika},
+	keywords = {statistics, sampling, design-of-experiments},
 	number = {4},
 	pages = {893--912},
 	title = {Efficient Balanced Sampling: The Cube Method},
@@ -3681,15 +3796,18 @@
 
 @book{devlin-2018-seeing-theory,
 	author = {Devlin and Guo and Kunin and Xiang},
+	date-modified = {2026-08-11 15:35:08 +0200},
 	file = {~/Documents/papers/devlin-2018-seeing-theory.pdf},
+	keywords = {statistics},
 	publisher = {Seeing Theory},
 	title = {Seeing Theory},
 	year = {2018}}
 
 @book{devroye-1986-non-unifor,
 	author = {Luc Devroye},
-	date-modified = {2026-08-10 14:36:09 +0200},
+	date-modified = {2026-08-11 15:35:27 +0200},
 	doi = {10.1007/978-1-4613-8643-8},
+	keywords = {statistics, distributions, random},
 	publisher = {Springer},
 	title = {Non-Uniform Random Variate Generation},
 	url = {https://doi.org/10.1007/978-1-4613-8643-8},
@@ -3707,15 +3825,18 @@
 
 @book{dey-2006-bayesian-thinking,
 	author = {Dipak K. Dey and C. R. Rao},
+	date-modified = {2026-08-11 15:35:40 +0200},
 	file = {~/Documents/papers/dey-2006-bayesian-thinking.pdf},
+	keywords = {statistics, bayesian},
 	publisher = {North Holland},
 	title = {Handbook of Statistics 25: Bayesian Thinking, Modeling and Computation},
 	year = {2006}}
 
 @book{deza-2013-encyclopedia-distances,
 	author = {Michel Marie Deza and Elena Deza},
-	date-modified = {2026-08-10 14:36:20 +0200},
+	date-modified = {2026-08-11 15:36:28 +0200},
 	doi = {10.1007/978-3-662-44342-2},
+	keywords = {probability, graphs, statistics},
 	publisher = {Springer},
 	title = {Encyclopedia of Distances},
 	url = {https://doi.org/10.1007/978-3-662-44342-2},
@@ -3723,9 +3844,11 @@
 
 @book{dhrymes-2013-maths-econ,
 	author = {Phoebus J Dhrymes},
+	date-modified = {2026-08-11 15:36:49 +0200},
 	doi = {10.1007/978-1-4614-8145-4},
 	edition = {4},
 	file = {~/Documents/papers/dhrymes-2013-maths-econ.pdf},
+	keywords = {mathematics, econometrics},
 	publisher = {Springer},
 	title = {Mathematics for Econometrics},
 	url = {https://doi.org/10.1007/978-1-4614-8145-4},
@@ -3733,8 +3856,10 @@
 
 @misc{diaconis-1997-iterat-random-funct,
 	author = {Persi Diaconis and David Freedman},
+	date-modified = {2026-08-11 15:37:13 +0200},
 	doi = {10.1137/S0036144598338446},
 	file = {~/Documents/papers/diaconis-1997-iterat-random-funct.pdf},
+	keywords = {mathematics, markov-chains},
 	title = {Iterated Random Functions},
 	url = {https://doi.org/10.1137/S0036144598338446},
 	year = {1997}}
@@ -3749,9 +3874,11 @@
 
 @article{diciccio-1996-boots-confid-inter,
 	author = {Ahomas J. DiCiccio and Bradley Efron},
+	date-modified = {2026-08-11 15:37:29 +0200},
 	doi = {10.1017/9781108773157.007},
 	file = {~/Documents/papers/diciccio-1996-boots-confid-inter.pdf},
 	journaltitle = {Statistical Science},
+	keywords = {statistics, resampling, bootstrap},
 	number = {3},
 	pages = {189--228},
 	title = {Bootstrap Confidence Intervals},
@@ -3761,27 +3888,35 @@
 
 @misc{diebold-2019-econometric-data-science,
 	author = {Francis X. Diebold},
+	date-modified = {2026-08-11 15:37:40 +0200},
 	file = {~/Documents/papers/diebold-2019-econometric-data-science.pdf},
+	keywords = {econometrics, data-science},
 	title = {Econometric Data Science: A Predictive Modeling Approach},
 	year = {2019}}
 
 @misc{diebold-2019-time-series-econometrics,
 	author = {Francis X. Diebold},
+	date-modified = {2026-08-11 15:37:49 +0200},
 	file = {~/Documents/papers/diebold-2019-time-series-econometrics.pdf},
+	keywords = {econometrics, time-series},
 	title = {Time-Series Econometrics},
 	year = {2019}}
 
-@misc{diehl-2018-what-i,
+@misc{diehl-2018-what-learn-haskell,
 	author = {Stephen Diehl},
-	file = {~/Documents/papers/diehl-2018-what-i.pdf},
-	title = {What {I} Wish {I} Knew When Learning Haskell},
+	date-modified = {2026-08-11 15:38:49 +0200},
+	file = {~/Documents/papers/diehl-2018-what-learn-haskell.pdf},
+	keywords = {haskell},
+	title = {What I Wish I Knew When Learning Haskell},
 	url = {https://github.com/sdiehl/wiwinwlh},
 	year = {2018}}
 
 @book{diestel-2000-graph-theor,
 	author = {Reinhard Diestel},
+	date-modified = {2026-08-11 15:39:02 +0200},
 	doi = {10.4171/owr/2013/02},
 	file = {~/Documents/papers/diestel-2000-graph-theor.pdf},
+	keywords = {mathematics, graphs},
 	publisher = {Springer-Verlag},
 	title = {Graph Theory},
 	url = {https://doi.org/10.4171/owr/2013/02},
@@ -3789,9 +3924,11 @@
 
 @article{dietz-2015-under-integ,
 	author = {Will Dietz and Peng Li and John Regehr and Vikram Adve},
+	date-modified = {2026-08-11 15:39:11 +0200},
 	doi = {10.1145/2743019},
 	file = {~/Documents/papers/dietz-2015-under-integ.pdf},
 	journaltitle = {ACM Transactions on Software Engineering and Methodology},
+	keywords = {clang, numerics},
 	title = {Understanding Integer Overflow in {C/C++}},
 	url = {https://doi.org/10.1145/2743019},
 	year = {2015}}
@@ -3813,8 +3950,9 @@
 
 @book{dinov-2018-data-scien,
 	author = {Ivo D. Dinov},
-	date-modified = {2026-08-10 14:36:40 +0200},
+	date-modified = {2026-08-11 15:39:26 +0200},
 	doi = {10.1007/978-3-031-17483-4},
+	keywords = {data-science, biomedical, rstats},
 	publisher = {Springer},
 	title = {Data Science and Predictive Analytics: Biomedical and Health Applications using {R}},
 	url = {https://doi.org/10.1007/978-3-031-17483-4},
@@ -3822,52 +3960,66 @@
 
 @book{dmitrienko-2017-analysis-clinical-trials,
 	author = {Alex Dmitrienko and Gary G. Koch},
+	date-modified = {2026-08-11 15:39:44 +0200},
 	edition = {2},
 	file = {~/Documents/papers/dmitrienko-2017-analysis-clinical-trials.pdf},
+	keywords = {statistics, clinical-trials, biomedical, sas},
 	publisher = {SAS Institute},
 	title = {Analysis of Clinical Trials Using {SAS}},
 	year = {2017}}
 
 @book{doerr-2024-applied-discrete-structure,
 	author = {Al Doerr and Ken Levasseur},
+	date-modified = {2026-08-11 21:28:59 +0200},
 	edition = {3},
 	file = {~/Documents/papers/doerr-2024-applied-discrete-structure.pdf},
+	keywords = {mathematics, discrete},
 	publisher = {http://discretemath.org},
 	title = {Applied Discrete Structures},
 	year = {2024}}
 
 @book{dogson-2002-introd-gener,
 	author = {Annette J. Dogson},
+	date-modified = {2026-08-11 21:29:08 +0200},
 	edition = {2},
 	file = {~/Documents/papers/dogson-2002-introd-gener.pdf},
+	keywords = {statistics, glm},
 	publisher = {Chapman \& Hall},
 	title = {An Introduction to Generalized Linear Models},
 	year = {2002}}
 
 @book{dominus-2005-higher-order-perl,
 	author = {Mark Jason Dominus},
+	date-modified = {2026-08-11 21:29:14 +0200},
 	file = {~/Documents/papers/dominus-2005-higher-order-perl.pdf},
+	keywords = {perl},
 	publisher = {Morgan Kaufman},
 	title = {Higher-Order Perl},
 	year = {2005}}
 
 @misc{dominus-2010-short-introd-topol,
 	author = {Mark Jason Dominus},
+	date-modified = {2026-08-11 21:48:23 +0200},
 	file = {~/Documents/papers/dominus-2010-short-introd-topol.pdf},
+	keywords = {mathematics, topology},
 	title = {Short Introduction to Topology},
 	year = {2010}}
 
 @misc{domkin-2020-progr-algor,
 	author = {Vsevolod Domkin},
+	date-modified = {2026-08-11 21:48:32 +0200},
 	file = {~/Documents/papers/domkin-2020-progr-algor.pdf},
 	howpublished = {Leanpub},
+	keywords = {algorithms},
 	title = {Programming Algorithms},
 	year = {2020}}
 
 @book{domkin-2021-progr-algor-lisp,
 	author = {Vsevolod Domkin},
+	date-modified = {2026-08-11 21:48:43 +0200},
 	doi = {10.1007/978-1-4842-6428-7},
 	file = {~/Documents/papers/domkin-2021-progr-algor-lisp.pdf},
+	keywords = {algorithms, lisp},
 	publisher = {Apress},
 	title = {Programming Algorithms in Lisp},
 	url = {https://doi.org/10.1007/978-1-4842-6428-7},
@@ -3889,31 +4041,38 @@
 
 @misc{dorie-2018-autom,
 	author = {Vincent Dorie and Jennifer Hill and Uri Shalit and Marc Scott and Dan Cervone},
-	date-modified = {2026-08-10 14:36:48 +0200},
+	date-modified = {2026-08-11 21:49:15 +0200},
 	doi = {10.1214/18-STS667},
 	howpublished = {arXiv 1707.02641v4},
+	keywords = {statistics, causal-effect, inference},
 	title = {Automated versus do-it-yourself methods for causal inference: Lessons learned from a data analysis competition},
 	url = {https://doi.org/10.1214/18-STS667},
 	year = {2018}}
 
 @book{dougherty-1997-sed-awk,
 	author = {Dale Dougherty and Arnold Robbins},
+	date-modified = {2026-08-11 21:49:23 +0200},
 	edition = {2},
 	file = {~/Documents/papers/dougherty-1997-sed-awk.pdf},
+	keywords = {sed, awk},
 	publisher = {O'Reilly},
 	title = {Sed \& Awk},
 	year = {1997}}
 
 @book{dowek-2009-princ-progr-languag,
 	author = {Gilles Dowek},
+	date-modified = {2026-08-11 21:49:34 +0200},
 	file = {~/Documents/papers/dowek-2009-princ-progr-languag.pdf},
+	keywords = {computing},
 	publisher = {Springer},
 	title = {Principles of Programming Languages},
 	year = {2009}}
 
 @book{downey-2012-think-python,
 	author = {Allen Downey},
+	date-modified = {2026-08-11 21:49:48 +0200},
 	file = {~/Documents/papers/downey-2012-think-python.pdf},
+	keywords = {python},
 	publisher = {Green Tea Press},
 	series = {How to Think Like a Computer Scientist},
 	title = {Think Python},
@@ -3921,7 +4080,9 @@
 
 @book{downey-2013-think-bayes,
 	author = {Allen B. Downey},
+	date-modified = {2026-08-11 21:50:01 +0200},
 	file = {~/Documents/papers/downey-2013-think-bayes.pdf},
+	keywords = {statistics, bayesian},
 	publisher = {O'Reilly Media, Inc.},
 	title = {Think Bayes, Bayesian Statistics Made Simple},
 	url = {http://greenteapress.com/wp/think-bayes/},
@@ -3929,22 +4090,28 @@
 
 @book{downey-2014-think-stats,
 	author = {Allen Downey},
+	date-modified = {2026-08-11 21:50:46 +0200},
 	file = {~/Documents/papers/downey-2014-think-stats.pdf},
+	keywords = {statistics, python},
 	publisher = {Green Tea Press},
 	title = {Think Stats: Exploratory Data Analysis in Python},
 	year = {2014}}
 
 @book{downey-2016-think-data-struc,
 	author = {Allen B. Downey},
+	date-modified = {2026-08-11 21:51:14 +0200},
 	file = {~/Documents/papers/downey-2016-think-data-struc.pdf},
+	keywords = {algorithms, data-structures, java},
 	publisher = {Green Tea Press},
 	title = {Think Data Structures: Algorithms and Information Retrieval in Java},
 	year = {2016}}
 
 @book{draief-2010-epidemics-and-rumours,
 	author = {Moez Draief and Laurent Massouli{\'e}},
+	date-modified = {2026-08-11 21:51:39 +0200},
 	doi = {10.1017/CBO9780511806018},
 	file = {~/Documents/papers/draief-2010-epidemics-and-rumours.pdf},
+	keywords = {graphs, epidemiology},
 	publisher = {Cambridge University Press},
 	title = {Epidemics and Rumours in Complex Networks},
 	url = {https://doi.org/10.1017/CBO9780511806018},
@@ -3952,32 +4119,39 @@
 
 @book{drew-2017-comput-probab,
 	author = {J. H. Drew and D. L. Evans and A. G. Glen and L. M. Leemis},
+	date-modified = {2026-08-11 21:51:52 +0200},
 	edition = {2},
 	file = {~/Documents/papers/drew-2017-comput-probab.pdf},
+	keywords = {mathematics, probability},
 	publisher = {Springer},
 	title = {Computational Probability: Algorithms and Applications in the Mathematical Sciences},
 	year = {2017}}
 
 @book{dreyfus-2011-bsd,
 	author = {Emmanuel Dreyfus},
+	date-modified = {2026-08-11 21:52:00 +0200},
 	edition = {2},
 	file = {~/Documents/papers/dreyfus-2011-bsd.pdf},
+	keywords = {unix},
 	publisher = {Eyrolles},
 	title = {{BSD}},
 	year = {2011}}
 
 @misc{drton-2008-lectur-algeb-statis,
 	author = {Mathias Drton and Bernd Sturmfels and Seth Sullivant},
+	date-modified = {2026-08-11 21:52:20 +0200},
 	doi = {10.1007/978-3-7643-8905-5},
 	file = {~/Documents/papers/drton-2008-lectur-algeb-statis.pdf},
+	keywords = {statistics, algebric},
 	title = {Lectures on Algebraic Statistics},
 	url = {https://doi.org/10.1007/978-3-7643-8905-5},
 	year = {2008}}
 
 @book{dua-2013-data-minin-bioin,
 	author = {Sumeet Dua and Pradeep Chowriappa},
-	date-modified = {2026-08-10 14:36:57 +0200},
+	date-modified = {2026-08-11 21:52:38 +0200},
 	doi = {10.1201/b13091},
+	keywords = {bioinformatics, data-mining},
 	publisher = {CRC Press},
 	title = {Data Mining for Bioinformatics},
 	url = {https://doi.org/10.1201/b13091},
@@ -3985,8 +4159,10 @@
 
 @book{dubin-2003-numer-analy,
 	author = {Daniel Dubin},
+	date-modified = {2026-08-11 21:52:52 +0200},
 	doi = {10.1002/0471723657},
 	file = {~/Documents/papers/dubin-2003-numer-analy.pdf},
+	keywords = {numerics, mathematica},
 	publisher = {Wiley},
 	title = {Numerical and Analytical Methods for Scientists and Engineers using Mathematica},
 	url = {https://doi.org/10.1002/0471723657},
@@ -3994,8 +4170,10 @@
 
 @book{duboue-2020-art-feature-engineering,
 	author = {Pablo Duboue},
+	date-modified = {2026-08-11 21:53:06 +0200},
 	doi = {10.1017/9781108671682},
 	file = {~/Documents/papers/duboue-2020-art-feature-engineering.pdf},
+	keywords = {machine-learning, feature},
 	publisher = {Cambridge University Press},
 	title = {The Art of Feature Engineering: Essentials for Machine Learning},
 	url = {https://doi.org/10.1017/9781108671682},
@@ -4003,8 +4181,10 @@
 
 @book{duchateau-2007-frail-model,
 	author = {Luc Duchateau and Paul Janssen},
+	date-modified = {2026-08-11 21:53:35 +0200},
 	doi = {10.1007/978-3-642-04898-2_261},
 	file = {~/Documents/papers/duchateau-2007-frail-model.pdf},
+	keywords = {statistics, random-effects, survival},
 	publisher = {Springer},
 	title = {The Frailty Model},
 	url = {https://doi.org/10.1007/978-3-642-04898-2_261},
@@ -4012,8 +4192,9 @@
 
 @book{dudewicz-2016-handbook-fitting-distributions,
 	author = {Edward J. Dudewicz and Zaven A Karian},
-	date-modified = {2026-08-10 14:38:49 +0200},
+	date-modified = {2026-08-11 21:53:55 +0200},
 	doi = {10.1201/b10159},
+	keywords = {statistics, distributions, rstats},
 	publisher = {CRC Press},
 	title = {Handbook of Fitting Statistical Distributions with {R}},
 	url = {https://doi.org/10.1201/b10159},
@@ -4022,8 +4203,9 @@
 @book{dudoit-2008-multip-testin,
 	address = {New York},
 	author = {S Dudoit and J van der Laan},
-	date-modified = {2026-08-10 14:38:54 +0200},
+	date-modified = {2026-08-11 21:54:11 +0200},
 	doi = {10.1007/978-0-387-49317-6},
+	keywords = {statistics, genomics},
 	publisher = {Springer},
 	title = {Multiple Testing Procedures with Applications to Genomics},
 	url = {https://doi.org/10.1007/978-0-387-49317-6},
@@ -4031,9 +4213,11 @@
 
 @book{dupont-2009-statis-model,
 	author = {W. D. Dupont},
+	date-modified = {2026-08-11 21:54:29 +0200},
 	doi = {10.1017/CBO9780511575884},
 	edition = {2nd},
 	file = {~/Documents/papers/dupont-2009-statis-model.pdf},
+	keywords = {statistics, biomedical, stata},
 	publisher = {Cambridge University Press},
 	title = {Statistical Modeling for Biomedical Researchers},
 	url = {https://doi.org/10.1017/CBO9780511575884},
@@ -4041,8 +4225,10 @@
 
 @book{durbin-1998-biol-sequence-analysis,
 	author = {Richard Durbin and Sean R. Eddy and Anders Krogh and Graeme Mitchinson},
+	date-modified = {2026-08-11 21:55:26 +0200},
 	doi = {10.1017/CBO9780511790492},
 	file = {~/Documents/papers/durbin-1998-biol-sequence-analysis.pdf},
+	keywords = {biology, genomics, probability},
 	publisher = {Cambridge University Press},
 	title = {Biological Sequence Analysis: Probabilistic Models of Proteins and Nucleic Acids},
 	url = {https://doi.org/10.1017/CBO9780511790492},
@@ -4050,8 +4236,10 @@
 
 @book{durrett-2008-probab-model,
 	author = {Richard Durrett},
+	date-modified = {2026-08-11 21:55:48 +0200},
 	doi = {10.1007/978-0-387-78168-6},
 	file = {~/Documents/papers/durrett-2008-probab-model.pdf},
+	keywords = {biology, genomics, probability},
 	publisher = {Springer},
 	title = {Probability Models for {DNA} Sequence Evolution},
 	url = {https://doi.org/10.1007/978-0-387-78168-6},
@@ -4059,16 +4247,20 @@
 
 @book{dybvig-2009-schem-progr-languag,
 	author = {R. Kent Dybvig},
+	date-modified = {2026-08-11 21:55:55 +0200},
 	edition = {4},
 	file = {~/Documents/papers/dybvig-2009-schem-progr-languag.pdf},
+	keywords = {scheme},
 	publisher = {The MIT Press},
 	title = {The Scheme Programming Language},
 	year = {2009}}
 
 @book{easley-2010-networks-crowds-markets,
 	author = {David Easley and Jon Kleinberg},
+	date-modified = {2026-08-11 21:56:12 +0200},
 	doi = {10.1017/CBO9780511761942},
 	file = {~/Documents/papers/easley-2010-networks-crowds-markets.pdf},
+	keywords = {statistics, graphs},
 	publisher = {Cambridge University Press},
 	title = {Networks, Crowds, and Markets: Reasoning about a Highly Connected World},
 	url = {https://doi.org/10.1017/CBO9780511761942},
@@ -4076,9 +4268,10 @@
 
 @article{edgar-2004-muscl,
 	author = {Robert C. Edgar},
-	date-modified = {2026-08-10 14:38:59 +0200},
+	date-modified = {2026-08-11 21:56:28 +0200},
 	doi = {10.1093/nar/gkh340},
 	journal = {Nucleic Acids Research},
+	keywords = {bioinformatics, genomics},
 	number = {5},
 	pages = {1792--1797},
 	title = {{MUSCLE}: Multiple Sequence Alignment With High Accuracy And High Throughput},
@@ -4088,9 +4281,11 @@
 
 @article{edgar-2010-searc-blast,
 	author = {Robert C. Edgar},
+	date-modified = {2026-08-11 21:56:41 +0200},
 	doi = {10.1093/bioinformatics/btq461},
 	file = {~/Documents/papers/edgar-2010-searc-blast.pdf},
 	journaltitle = {Bioinformatics},
+	keywords = {bioinformatics, genomics},
 	number = {19},
 	pages = {2460--2461},
 	title = {Search and clustering orders of magnitude faster than {BLAST}},
@@ -4100,9 +4295,11 @@
 
 @article{edwards-2016-method-issues,
 	author = {Jessie K. Edwards and Laura L. Hester and Mugdha Gokhale and Catherine R. Lesko},
+	date-modified = {2026-08-11 22:01:59 +0200},
 	doi = {10.1007/s40471-016-0089-1},
 	file = {~/Documents/papers/edwards-2016-method-issues.pdf},
 	journaltitle = {Current Epidemiological Report},
+	keywords = {statistics, pharmaco, epidemiology},
 	number = {4},
 	pages = {285--296},
 	title = {Methodologic Issues When Estimating Risks in Pharmacoepidemiology},
@@ -4112,9 +4309,11 @@
 
 @article{efron-1986-boots-method,
 	author = {B. Efron and R. Tibshirani},
+	date-modified = {2026-08-11 22:02:25 +0200},
 	doi = {10.1214/ss/1177013815},
 	file = {~/Documents/papers/efron-1986-boots-method.pdf},
 	journal = {Statistical Science},
+	keywords = {statistics, measurement-error, bootstrap},
 	number = {1},
 	pages = {54--75},
 	title = {Bootstrap Methods for Standard Errors, Confidence Intervals, and Other Measures of Statistical Accuracy},
@@ -4124,9 +4323,11 @@
 
 @article{efron-1996-boots-confid,
 	author = {Bradley Efron and Elizabeth Halloran and Susan Holmes},
+	date-modified = {2026-08-11 22:02:40 +0200},
 	doi = {10.1073/pnas.93.23.13429},
 	file = {~/Documents/papers/efron-1996-boots-confid.pdf},
 	journal = {Proc. Natl. Acad. Sci. USA},
+	keywords = {statistics, phylogenetics, bootstrap},
 	pages = {13429--13434},
 	title = {Bootstrap Confidence Levels For Phylogenetic Trees},
 	url = {https://doi.org/10.1073/pnas.93.23.13429},
@@ -4135,9 +4336,11 @@
 
 @article{efron-2003-secon-thoug-boots,
 	author = {Bradley Efron},
+	date-modified = {2026-08-11 22:02:50 +0200},
 	doi = {10.1214/ss/1063994968},
 	file = {~/Documents/papers/efron-2003-secon-thoug-boots.pdf},
 	journaltitle = {Statistical Science},
+	keywords = {statistics, bootstrap},
 	number = {2},
 	pages = {135--140},
 	title = {Second Thoughts on the Bootstrap},
@@ -4146,9 +4349,12 @@
 	year = {2003}}
 
 @book{efron-2016-comput-age,
+	annote = {https://aliquote.org/post/computer-age-statistical-inference/},
 	author = {Bradley Efron and Trevor Hastie},
+	date-modified = {2026-08-11 22:03:32 +0200},
 	doi = {10.1017/CBO9781316576533},
 	file = {~/Documents/papers/efron-2016-comput-age.pdf},
+	keywords = {statistics, machine-learning, data-science},
 	publisher = {Cambridge University Press},
 	title = {Computer Age Statistical Inference},
 	url = {https://web.stanford.edu/~hastie/CASI/},
@@ -4156,9 +4362,11 @@
 
 @article{efron-2020-predic-estim-attrib,
 	author = {Bradley Efron},
+	date-modified = {2026-08-11 22:04:08 +0200},
 	doi = {10.1111/insr.12409},
 	file = {~/Documents/papers/efron-2020-predic-estim-attrib.pdf},
 	journaltitle = {Journal of the American Statistical Association},
+	keywords = {statistics, machine-learning},
 	number = {530},
 	pages = {636--655},
 	title = {Prediction, Estimation, and Attribution},
@@ -4182,13 +4390,16 @@
 
 @misc{eijkhout-2001-tex-topic,
 	author = {Victor Eijkhout},
+	date-modified = {2026-08-11 22:04:26 +0200},
 	file = {~/Documents/papers/eijkhout-2001-tex-topic.pdf},
+	keywords = {tex},
 	title = {Tex by Topic: A Texnician's Reference},
 	year = {2001}}
 
 @book{eijkhout-2015-introd-high,
 	author = {Victor Eijkhout},
-	date-modified = {2026-08-10 14:39:39 +0200},
+	date-modified = {2026-08-11 22:05:24 +0200},
+	keywords = {computing, hpc, numerics},
 	publisher = {Lulu.com},
 	title = {Introduction to High Performance Scientific Computing},
 	year = {2015}}
@@ -4205,22 +4416,27 @@
 
 @book{eisenberg-2016-etudes-clojur,
 	author = {J. D. Eisenberg},
+	date-modified = {2026-08-11 22:05:41 +0200},
 	file = {~/Documents/papers/eisenberg-2016-etudes-clojur.pdf},
+	keywords = {clojurescript},
 	publisher = {O'Reilly},
 	title = {Etudes for {ClojureScript}},
 	year = {2016}}
 
 @book{ejaz-2017-big-compl,
 	author = {S. Ejaz Ahmed},
-	date-modified = {2026-08-10 14:39:56 +0200},
+	date-modified = {2026-08-11 22:05:59 +0200},
+	keywords = {statistics, big-data},
 	publisher = {Springer},
 	title = {Big and Complex Data Analysis: Methodologies and Applications},
 	year = {2017}}
 
 @article{ekstrand-2011-collab-filter,
 	author = {Michael D. Ekstrand and John T. Riedl and Joseph A. Konstan},
+	date-modified = {2026-08-11 22:06:33 +0200},
 	file = {~/Documents/papers/ekstrand-2011-collab-filter.pdf},
 	journal = {Foundations and Trends in Human--Computer Interaction},
+	keywords = {recommender-systems, big-data},
 	number = {2},
 	pages = {81--173},
 	title = {Collaborative Filtering Recommender Systems},
@@ -4229,15 +4445,19 @@
 
 @book{el-2013-anony-healt-data,
 	author = {Khaled El Emam and Luk Arbuckle},
+	date-modified = {2026-08-11 22:06:47 +0200},
 	file = {~/Documents/papers/el-2013-anony-healt-data.pdf},
+	keywords = {statistics, biomedical},
 	publisher = {O'Reilly Media Inc},
 	title = {Anonymizing Health Data},
 	year = {2013}}
 
 @book{elston-2008-basic-biost,
 	author = {Robert C. Elston and William D. Johnson},
+	date-modified = {2026-08-11 22:07:11 +0200},
 	doi = {10.1002/9780470740781},
 	file = {~/Documents/papers/elston-2008-basic-biost.pdf},
+	keywords = {statistics, biostatistics, biomedical, epidemiology},
 	publisher = {Wiley},
 	title = {Basic Biostatistics for Geneticists and Epidemiologists: A Practical Approach},
 	url = {https://doi.org/10.1002/9780470740781},
@@ -4245,15 +4465,19 @@
 
 @book{emerick-2012-clojur-progr,
 	author = {Chas Emerick and Brian Carper and Christophe Grand},
+	date-modified = {2026-08-11 22:07:19 +0200},
 	file = {~/Documents/papers/emerick-2012-clojur-progr.pdf},
+	keywords = {clojure},
 	publisher = {O'Reilly},
 	title = {Clojure Programming},
 	year = {2012}}
 
 @book{emmert-2010-medical-biostatistics,
 	author = {Frank Emmert-Streib and Matthias Dehmer},
+	date-modified = {2026-08-11 22:07:33 +0200},
 	doi = {10.1002/9783527630332},
 	file = {~/Documents/papers/emmert-2010-medical-biostatistics.pdf},
+	keywords = {statistics, biomedical},
 	publisher = {John Wiley \& Sons},
 	title = {Medical Biostatistics for Complex Diseases},
 	url = {https://doi.org/10.1002/9783527630332},
@@ -4261,9 +4485,10 @@
 
 @article{emms-2015-orthof,
 	author = {David M. Emms and Steven Kelly},
-	date-modified = {2026-08-10 14:41:45 +0200},
+	date-modified = {2026-08-11 22:07:51 +0200},
 	doi = {10.1186/s13059-015-0721-2},
 	journal = {Genome Biology},
+	keywords = {bioinformatics, phylogenetics, genomics},
 	number = {157},
 	pages = {1--14},
 	read = {0},
@@ -4274,44 +4499,53 @@
 
 @misc{emms-2018-orthof,
 	author = {D. M. Emms and S. Kelly},
-	date-modified = {2026-08-10 14:41:44 +0200},
+	date-modified = {2026-08-11 22:08:07 +0200},
 	howpublished = {bioRxiv},
+	keywords = {bioinformatics, phylogenetics, genomics},
 	read = {0},
 	title = {{OrthoFinder2}: fast and accurate phylogenomic orthology analysis from gene sequences},
 	year = {2018}}
 
 @book{enders-2015-applied-econometric-time,
 	author = {Walter Enders},
+	date-modified = {2026-08-11 22:08:18 +0200},
 	edition = {4},
 	file = {~/Documents/papers/enders-2015-applied-econometric-time.pdf},
+	keywords = {econometrics, time-series},
 	publisher = {Wiley},
 	title = {Applied Econometric Time Series},
 	year = {2015}}
 
 @misc{engel-2025-exploring-mathematics-python,
 	author = {Arthur Engel and Andrew Davison},
+	date-modified = {2026-08-11 22:08:43 +0200},
 	file = {~/Documents/papers/engel-2025-exploring-mathematics-python.pdf},
 	howpublished = {https://coe.psu.ac.th/ad/explore/},
+	keywords = {mathematics, python},
 	title = {Exploring Mathematics with Python},
 	year = {2025}}
 
 @book{engheim-2023-julia-second-language,
 	author = {Erik Engheim},
-	date-modified = {2026-08-10 14:42:16 +0200},
+	date-modified = {2026-08-11 22:08:51 +0200},
+	keywords = {julia},
 	publisher = {Manning Publications},
 	title = {Julia as a Second Language: General Purpose Programming with a Taste of Data Science},
 	year = {2023}}
 
 @misc{erickson-2015-model-comput,
 	author = {Jeff Erickson},
-	date-modified = {2026-08-10 14:48:51 +0200},
+	date-modified = {2026-08-11 22:08:59 +0200},
+	keywords = {computing},
 	title = {Models of Computation},
 	url = {http://www.cs.illinois.edu/~jeffe/teaching/algorithms/},
 	year = {2015}}
 
 @book{erickson-2018-algor,
 	author = {Jeff Erickson},
+	date-modified = {2026-08-11 22:09:08 +0200},
 	file = {~/Documents/papers/erickson-2018-algor.pdf},
+	keywords = {algorithms},
 	publisher = {Jeff Erickson},
 	title = {Algorithms},
 	url = {http://jeffe.cs.illinois.edu/teaching/algorithms/},
@@ -4319,28 +4553,36 @@
 
 @misc{ertl-2017-new-hyper,
 	author = {Otmar Ertl},
+	date-modified = {2026-08-11 22:09:34 +0200},
 	file = {~/Documents/papers/ertl-2017-new-hyper.pdf},
-	title = {New cardinality estimation algorithms for {HyperLogLog} sketches},
+	keywords = {algorithms, streaming},
+	title = {New cardinality estimation algorithms for HyperLogLog sketches},
 	year = {2017}}
 
 @article{erwig-2006-prob-functional-programming,
 	author = {Martin Erwig and Steve Kollmansberger},
+	date-modified = {2026-08-11 22:09:45 +0200},
 	file = {~/Documents/papers/erwig-2006-prob-functional-programming.pdf},
 	journal = {Journal of Functional Programming},
+	keywords = {probabilistic-programming, haskell},
 	pages = {1--14},
 	title = {Probabilistic Functional Programming in Haskell},
 	year = {2006}}
 
 @misc{etheridge-2005-haskel-tutor,
 	author = {Eric Etheridge},
+	date-modified = {2026-08-11 22:09:53 +0200},
 	file = {~/Documents/papers/etheridge-2005-haskel-tutor.pdf},
+	keywords = {haskell, clang},
 	title = {Haskell Tutorial for {C} Programmers},
 	year = {2005}}
 
 @book{etheridge-2011-some-mathem,
 	author = {Alison Etheridge},
+	date-modified = {2026-08-11 22:10:06 +0200},
 	doi = {10.1007/978-3-642-16632-7},
 	file = {~/Documents/papers/etheridge-2011-some-mathem.pdf},
+	keywords = {mathematics, genetics},
 	publisher = {Springer},
 	title = {Some Mathematical Models from Population Genetics},
 	url = {https://doi.org/10.1007/978-3-642-16632-7},
@@ -4348,25 +4590,30 @@
 
 @book{etter-2013-engin-probl,
 	author = {Delores M. Etter},
-	date-modified = {2026-08-10 14:48:57 +0200},
+	date-modified = {2026-08-11 22:10:14 +0200},
 	edition = {4},
+	keywords = {clang},
 	publisher = {Pearson Education Inc.},
 	title = {Engineering Problem Solving with {C}},
 	year = {2013}}
 
 @article{etz-2017-introd-to,
 	author = {A. Etz},
+	date-modified = {2026-08-12 17:02:59 +0200},
 	doi = {10.1177/2515245917744314},
 	file = {~/Documents/papers/etz-2017-introd-to.pdf},
 	journal = {Advances in Methods and Practices in Psychological Science},
+	keywords = {statistics, likelihood, inference},
 	title = {Introduction To the Concept of Likelihood and Its Applications},
 	url = {https://psyarxiv.com/85ywt},
 	year = {2017}}
 
 @book{eubank-2011-statis-c-r,
 	author = {Randall L. Eubank and Ana Kupresanin},
+	date-modified = {2026-08-12 17:03:24 +0200},
 	doi = {10.1201/b11538},
 	file = {~/Documents/papers/eubank-2011-statis-c-r.pdf},
+	keywords = {statistics, computing, clang, rstats},
 	publisher = {CRC Press},
 	title = {Statistical computing in C++ and {R}},
 	url = {https://doi.org/10.1201/b11538},
@@ -4374,8 +4621,9 @@
 
 @book{everitt-2001-analy-medic,
 	author = {B. Everitt and S. Rabe-Hesketh},
-	date-modified = {2026-08-10 14:53:21 +0200},
+	date-modified = {2026-08-12 17:03:36 +0200},
 	doi = {10.1007/978-1-4757-3285-6},
+	keywords = {statistics, biomedical, rstats},
 	publisher = {Springer},
 	title = {Analyzing Medical Data Using {S-PLUS}},
 	url = {https://doi.org/10.1007/978-1-4757-3285-6},
@@ -4383,9 +4631,11 @@
 
 @book{everitt-2011-clust-analy,
 	author = {Brian S. Everitt and Sabine Landau and Morven Leese and Daniel Stahl},
+	date-modified = {2026-08-12 17:03:44 +0200},
 	doi = {10.1007/BF00154794},
 	edition = {5},
 	file = {~/Documents/papers/everitt-2011-clust-analy.pdf},
+	keywords = {statistics, clustering},
 	publisher = {Wiley},
 	title = {Cluster Analysis},
 	url = {https://doi.org/10.1007/BF00154794},
@@ -4393,61 +4643,77 @@
 
 @misc{ewens-2006-mathem-popul-genet,
 	author = {Warren J. Ewens},
+	date-modified = {2026-08-12 17:03:55 +0200},
 	doi = {10.1007/978-0-387-21822-9},
 	file = {~/Documents/papers/ewens-2006-mathem-popul-genet.pdf},
+	keywords = {mathematics, genetics},
 	title = {Mathematical Population Genetics},
 	url = {https://doi.org/10.1007/978-0-387-21822-9},
 	year = {2006}}
 
 @misc{eynard-2018-random-matric,
 	author = {Bertrand Eynard and Taro Kimura and Sylvain Ribault},
+	date-modified = {2026-08-12 17:04:26 +0200},
 	file = {~/Documents/papers/eynard-2018-random-matric.pdf},
 	howpublished = {arXiv:1510.04430v2},
+	keywords = {mathematics, random},
 	title = {Random Matrices},
 	year = {2018}}
 
 @book{fabian-2018-data-oriented-design,
 	author = {Richard Fabian},
+	date-modified = {2026-08-12 17:04:42 +0200},
 	file = {~/Documents/papers/fabian-2018-data-oriented-design.pdf},
+	keywords = {computing, data-structures},
 	publisher = {Richard Fabian},
 	title = {Data-Oriented Design},
 	year = {2018}}
 
 @book{fairbank-2019-programming-elm,
 	author = {Jeremy Fairbank},
+	date-modified = {2026-08-12 17:04:51 +0200},
 	file = {~/Documents/papers/fairbank-2019-programming-elm.pdf},
+	keywords = {elm, web},
 	publisher = {Pragmatic Bookshelf},
 	title = {Programming Elm: Build Safe and Maintainable Front-End Applications},
 	year = {2019}}
 
 @book{falcao-2022-optimum-path-forest,
 	author = {Alexandre Xavier Falcao and Joao Paulo Papa},
+	date-modified = {2026-08-12 17:05:11 +0200},
 	file = {~/Documents/papers/falcao-2022-optimum-path-forest.pdf},
+	keywords = {statistics, algorithms},
 	publisher = {Academic Press},
 	title = {Optimum-Path Forest: Theory, Algorithms, and Applications},
 	year = {2022}}
 
 @book{fall-2012-tcp-illustrated-vol1,
 	author = {Kevin R. Fall and W. Richard Stevens},
+	date-modified = {2026-08-12 17:05:22 +0200},
 	edition = {2},
 	file = {~/Documents/papers/fall-2012-tcp-illustrated-vol1.pdf},
+	keywords = {unix, web},
 	publisher = {Addison-Wesley},
 	title = {{TCP/IP} Illustrated, Volume 1: The Protocols},
 	year = {2012}}
 
 @misc{fan-2015-overv-estim,
 	author = {J. Fan and Y. Liao and H. Liu},
+	date-modified = {2026-08-12 17:05:42 +0200},
 	doi = {10.1111/ectj.12061},
 	file = {~/Documents/papers/fan-2015-overv-estim.pdf},
 	howpublished = {arXiv:1504.02995v2},
+	keywords = {statistics, multivariate-analysis, big-data},
 	title = {An Overview on the Estimation of Large Covariance and Precision Matrices},
 	url = {https://doi.org/10.1111/ectj.12061},
 	year = {2015}}
 
 @book{faraway-2006-exten-linear,
 	author = {Julian J. Faraway},
+	date-modified = {2026-08-12 17:05:55 +0200},
 	doi = {10.1201/9781315382722},
 	file = {~/Documents/papers/faraway-2006-exten-linear.pdf},
+	keywords = {statistics, glm, rstats},
 	location = {Boca Raton, FL},
 	publisher = {Chapman \& Hall/CRC},
 	title = {Extending the Linear Model with {R}: Generalized Linear, Mixed Effects and Nonparametric Regression Models},
@@ -4456,7 +4722,8 @@
 
 @book{faroult-2006-art-sql,
 	author = {St{\'e}phane Faroult},
-	date-modified = {2026-08-10 14:53:26 +0200},
+	date-modified = {2026-08-12 17:06:04 +0200},
+	keywords = {database, sql},
 	publisher = {O'Reilly},
 	title = {The Art of {SQL}},
 	year = {2006}}
@@ -4476,21 +4743,27 @@
 
 @misc{fda-2026-bayesian-methodologgy-rct,
 	author = {U. S. Department of Health and Human Services},
+	date-modified = {2026-08-12 17:06:40 +0200},
 	file = {~/Documents/papers/fda-2026-bayesian-methodologgy-rct.pdf},
 	howpublished = {https://github.com/nnethercote/perf-book},
+	keywords = {statistics, bayesian, clinical-trials, biomedical},
 	title = {Use of Bayesian Methodology in Clinical Trials of Drug and Biological Products: Guidance for Industry},
 	year = {2026}}
 
 @book{feil-2003-essen-discr,
 	author = {Todd Feil and Joan Krone},
+	date-modified = {2026-08-12 17:06:56 +0200},
 	file = {~/Documents/papers/feil-2003-essen-discr.pdf},
+	keywords = {mathematics, computing, discrete},
 	publisher = {Prentice Hall},
 	title = {Essential Discrete Mathematics for Computer Science},
 	year = {2003}}
 
 @book{feldman-2020-elm-action,
 	author = {Richard Feldman},
+	date-modified = {2026-08-12 17:07:02 +0200},
 	file = {~/Documents/papers/feldman-2020-elm-action.pdf},
+	keywords = {elm},
 	publisher = {Manning},
 	title = {Elm in Action},
 	year = {2020}}
@@ -4506,8 +4779,9 @@
 
 @book{felleisen-2001-how-to,
 	author = {M. Felleisen and R. B. Findler and M. Flatt and S. Krishnamurthi},
-	date-modified = {2026-08-10 14:53:34 +0200},
+	date-modified = {2026-08-12 17:07:11 +0200},
 	edition = {1},
+	keywords = {computing, scheme},
 	publisher = {The MIT Press},
 	title = {How To Design Programs},
 	url = {https://htdp.org/2018-01-06/Book/},
@@ -4515,9 +4789,11 @@
 
 @article{felsenstein-1981-evolutionary-trees,
 	author = {Joseph Felsenstein},
+	date-modified = {2026-08-12 17:07:35 +0200},
 	doi = {10.1007/BF01734359},
 	file = {~/Documents/papers/felsenstein-1981-evolutionary-trees.pdf},
 	journaltitle = {Journal of Molecular Evolution},
+	keywords = {bioinformatics, phylogenetics, likelihood},
 	pages = {368--376},
 	title = {Evolutionary Trees from {DNA} Sequences: A Maximum Likelihood Approach},
 	url = {https://doi.org/10.1007/BF01734359},
@@ -4526,17 +4802,21 @@
 
 @misc{felsenstein-2016-theor-evolut-genet,
 	author = {Joseph Felsenstein},
+	date-modified = {2026-08-12 17:07:51 +0200},
 	file = {~/Documents/papers/felsenstein-2016-theor-evolut-genet.pdf},
 	howpublished = {Department of Genome Sciences},
+	keywords = {mathematics, genetics, phylogenetics},
 	title = {Theoretical Evolutionary Genetics},
 	url = {http://evolution.genetics.washington.edu/pgbook/pgbook.html},
 	year = {2016}}
 
 @misc{ferragina-2020-pgm-index,
 	author = {Paolo Ferragina and Giorgio Vinciguerra},
+	date-modified = {2026-08-12 17:08:03 +0200},
 	doi = {10.14778/3389133.3389135},
 	file = {~/Documents/papers/ferragina-2020-pgm-index.pdf},
 	howpublished = {Proceedings of the VLDB Endowment, Vol. 13, No. 8},
+	keywords = {computing, algorithms},
 	title = {The {PGM-index}: A Fully-Dynamic Compressed Learned Index with Provable Worst-Case Bound},
 	url = {https://doi.org/10.14778/3389133.3389135},
 	year = {2016}}
@@ -4556,8 +4836,10 @@
 
 @book{fieller-2016-basic-matrix,
 	author = {Nick Fieller},
+	date-modified = {2026-08-12 17:08:17 +0200},
 	doi = {10.1201/9781315370200},
 	file = {~/Documents/papers/fieller-2016-basic-matrix.pdf},
+	keywords = {linear-algebra, rstats},
 	publisher = {CRC Press},
 	title = {Basics of Matrix Algebra for Statistics with {R}},
 	url = {https://doi.org/10.1201/9781315370200},
@@ -4565,9 +4847,10 @@
 
 @article{figueroa-2021-which-haskel,
 	author = {Isamel Figueroa and Paul Leger and Hiroaki Fukuda},
-	date-modified = {2026-08-10 14:53:40 +0200},
+	date-modified = {2026-08-12 17:08:51 +0200},
 	doi = {10.1016/j.scico.2020.102523},
 	journaltitle = {Science of Computer Programming},
+	keywords = {haskell, algorithms},
 	number = {12523},
 	pages = {1--19},
 	title = {Which monads Haskell developers use: An exploratory study},
@@ -4577,52 +4860,64 @@
 
 @misc{filion-2017-analy-combin,
 	author = {Guillaume J. Filion},
+	date-modified = {2026-08-12 17:09:04 +0200},
 	file = {~/Documents/papers/filion-2017-analy-combin.pdf},
 	howpublished = {bioRxiv},
+	keywords = {bioinformatics, combinatorics},
 	title = {Analytic Combinatorics for Bioinformatics I: Seeding Methods},
 	year = {2017}}
 
 @book{filipuk-2019-analysis-with-mathematica,
 	author = {Galina Filipuk and Andrzej Kozlowski},
+	date-modified = {2026-08-12 17:09:18 +0200},
 	file = {~/Documents/papers/filipuk-2019-analysis-with-mathematica.pdf},
+	keywords = {numerical-analysis, mathematica},
 	publisher = {De Gruyter},
 	title = {Analysis with Mathematica: Single Variable Calculus},
 	year = {2019}}
 
 @book{filipuk-2020-analysis-with-mathematica,
 	author = {Galina Filipuk and Andrzej Kozlowski},
+	date-modified = {2026-08-12 17:09:31 +0200},
 	file = {~/Documents/papers/filipuk-2020-analysis-with-mathematica.pdf},
+	keywords = {numerical-analysis, mathematica},
 	publisher = {De Gruyter},
 	title = {Analysis with Mathematica: Multivariable Calculus},
 	year = {2020}}
 
 @misc{finseth-2020-craft-text,
 	author = {Craig A. Finseth},
+	date-modified = {2026-08-12 17:09:47 +0200},
 	file = {~/Documents/papers/finseth-2020-craft-text.pdf},
+	keywords = {emacs},
 	title = {The Craft of Text Editing or A Cookbook for an Emacs},
 	year = {2020}}
 
 @book{fischer-2010-crafting-a-compiler,
 	author = {Charles N. Fischer and Ron K. Cytron and Richard J. LeBlanc},
+	date-modified = {2026-08-12 17:09:55 +0200},
 	file = {~/Documents/papers/fischer-2010-crafting-a-compiler.pdf},
+	keywords = {compiler},
 	publisher = {Addison-Wesley},
 	title = {Crafting a Compiler},
 	year = {2010}}
 
 @misc{fischer-2019-space-tree,
 	author = {Mareike Fischer and Andrew Francis},
-	date-modified = {2026-08-10 14:53:46 +0200},
+	date-modified = {2026-08-12 17:10:05 +0200},
 	doi = {10.1007/s11538-020-00744-9},
 	howpublished = {arXiv:1910.05679v1},
+	keywords = {phylogenetics},
 	title = {The Space of Tree-Based Phylogenetic Networks},
 	url = {https://doi.org/10.1007/s11538-020-00744-9},
 	year = {2019}}
 
 @article{fisher-1925-theor-statis-estim,
 	author = {R. A. Fisher},
-	date-modified = {2026-08-10 14:53:51 +0200},
+	date-modified = {2026-08-12 17:10:24 +0200},
 	doi = {10.1017/S0305004100009580},
 	journal = {Mathematical Proceedings of the Cambridge Philosophical Society},
+	keywords = {statistics, estimation},
 	pages = {700--725},
 	title = {Theory of Statistical Estimation},
 	url = {https://doi.org/10.1017/S0305004100009580},
@@ -4631,8 +4926,9 @@
 
 @book{fisher-1960-desig-exper,
 	author = {R. A. Fisher},
-	date-modified = {2026-08-10 14:53:57 +0200},
+	date-modified = {2026-08-12 17:10:33 +0200},
 	doi = {10.1136/bmj.1.3923.554-a},
+	keywords = {statistics, design-of-experiments},
 	publisher = {Edinburgh: Oliver and Boyd},
 	title = {The Design of Experiments},
 	url = {https://doi.org/10.1136/bmj.1.3923.554-a},
@@ -4640,15 +4936,19 @@
 
 @book{fitzgerald-2012-introd-regul-expres,
 	author = {Michael Fitzgerald},
+	date-modified = {2026-08-12 17:10:40 +0200},
 	file = {~/Documents/papers/fitzgerald-2012-introd-regul-expres.pdf},
+	keywords = {regex},
 	publisher = {O'Reilly},
 	title = {Introducing Regular Expressions},
 	year = {2012}}
 
 @book{fitzmaurice-2004-applied-longitudinal,
 	author = {Garrett M. Fitzmaurice and Nan M. Laird and James H. Ware},
+	date-modified = {2026-08-12 17:11:00 +0200},
 	doi = {10.1002/9781119513469},
 	file = {~/Documents/papers/fitzmaurice-2004-applied-longitudinal.pdf},
+	keywords = {statistics, longitudinal, random-effects},
 	publisher = {Wiley},
 	title = {Applied Longitudinal Analysis},
 	url = {https://doi.org/10.1002/9781119513469},
@@ -4656,14 +4956,18 @@
 
 @misc{flajolet-2002-analy-combin,
 	author = {Philippe Flajolet and Robert Sedgewick},
+	date-modified = {2026-08-12 17:11:12 +0200},
 	file = {~/Documents/papers/flajolet-2002-analy-combin.pdf},
+	keywords = {combinatorics},
 	title = {Analytic Combinatorics, Symbolic Combinatorics},
 	year = {2002}}
 
 @book{flajolet-2008-analy-combin,
 	author = {Philippe Flajolet and Robert Sedgewick},
+	date-modified = {2026-08-12 17:11:21 +0200},
 	doi = {10.1017/CBO9780511801655},
 	file = {~/Documents/papers/flajolet-2008-analy-combin.pdf},
+	keywords = {combinatorics},
 	publisher = {Cambridge University Press},
 	title = {Analytic Combinatorics},
 	url = {https://doi.org/10.1017/CBO9780511801655},
@@ -4671,16 +4975,20 @@
 
 @misc{flanagan-1993-essence-compiling-cont,
 	author = {Cormac Flanagan and Amr Sabry and Bruce F. Duba and Matthias Felleisen},
+	date-modified = {2026-08-12 17:11:30 +0200},
 	doi = {10.1145/155090.155113},
 	file = {~/Documents/papers/flanagan-1993-essence-compiling-cont.pdf},
+	keywords = {compiler, functional-programming},
 	title = {The Essence of Compiling with Continuations},
 	url = {https://doi.org/10.1145/155090.155113},
 	year = {1993}}
 
 @misc{flatt-1999-progr-languag,
 	author = {Matthew Flatt and Robert Bruce Findler and Shriram Krishnamurthi and Matthias Felleisen},
+	date-modified = {2026-08-12 17:11:44 +0200},
 	doi = {10.1145/317636.317793},
 	file = {~/Documents/papers/flatt-1999-progr-languag.pdf},
+	keywords = {functional-programming, lisp},
 	title = {Programming Languages as Operating Systems (or Revenge of the Son of the Lisp Machine)},
 	url = {https://doi.org/10.1145/317636.317793},
 	year = {1999}}
@@ -4688,8 +4996,10 @@
 @inproceedings{flatt-2019-rebuil-racket,
 	author = {M. Flatt and C. Derici and R. K. Dybvig and A. W. Keep and G. E. Massaccesi and S. Spall and S. Tobin-Hochstadt and J. Zeppieri},
 	booktitle = {Proc. {ACM} Program. Lang},
+	date-modified = {2026-08-12 17:11:57 +0200},
 	doi = {10.1145/3341642},
 	file = {~/Documents/papers/flatt-2019-rebuil-racket.pdf},
+	keywords = {functional-programming, racket, scheme},
 	number = {78},
 	pages = {1--14},
 	title = {Rebuilding Racket on Chez Scheme (Experience Report)},
@@ -4699,26 +5009,32 @@
 
 @misc{fluet-2001-contification-using-dominators,
 	author = {Matthew Fluet and Stephen Weeks},
+	date-modified = {2026-08-12 17:12:26 +0200},
 	doi = {10.1145/507669.507639},
 	file = {~/Documents/papers/fluet-2001-contification-using-dominators.pdf},
 	howpublished = {ICFP '01},
+	keywords = {functional-programming},
 	title = {Contification Using Dominators},
 	url = {https://doi.org/10.1145/507669.507639},
 	year = {2001}}
 
 @misc{fog-2008-sampl-method,
 	author = {Agner Fog},
+	date-modified = {2026-08-12 17:12:39 +0200},
 	doi = {10.1080/03610910701790236},
 	file = {~/Documents/papers/fog-2008-sampl-method.pdf},
+	keywords = {statistics, sampling, distributions},
 	title = {Sampling Methods for Wallenius' and Fisher's Noncentral Hypergeometric Distributions},
 	url = {https://doi.org/10.1080/03610910701790236},
 	year = {2008}}
 
 @article{fog-2015-pseud-random,
 	author = {Agner Fog},
+	date-modified = {2026-08-12 17:12:54 +0200},
 	doi = {10.22237/jmasm/1430454120},
 	file = {~/Documents/papers/fog-2015-pseud-random.pdf},
 	journaltitle = {Journal of Modern Applied Statistical Methods},
+	keywords = {algorithms, random},
 	number = {1},
 	pages = {308--334},
 	title = {Pseudo-Random Number Generators for Vector Processors and Multicore Processors},
@@ -4728,36 +5044,44 @@
 
 @book{fogus-2013-funct-javas,
 	author = {Michael Fogus},
-	date-modified = {2026-08-10 14:54:04 +0200},
+	date-modified = {2026-08-12 17:13:03 +0200},
+	keywords = {functional-programming, javascript},
 	publisher = {O'Reilly},
 	title = {Functional Javascript},
 	year = {2013}}
 
 @book{fogus-2014-joy-clojur,
 	author = {Michael Fogus and Chris Houser},
+	date-modified = {2026-08-12 17:13:10 +0200},
 	file = {~/Documents/papers/fogus-2014-joy-clojur.pdf},
+	keywords = {clojure},
 	publisher = {Manning},
 	title = {The Joy of Clojure},
 	year = {2014}}
 
 @misc{fong-2018-seven-sketc-compos,
 	author = {Brendan Fong and David I. Spivak},
+	date-modified = {2026-08-12 17:13:43 +0200},
 	doi = {10.1017/9781108668804},
 	file = {~/Documents/papers/fong-2018-seven-sketc-compos.pdf},
 	howpublished = {arXiv:1803.053116v1},
+	keywords = {category-theory},
 	title = {Seven Sketches in Compositionality: An Invitation to Applied Category Theory},
 	url = {https://doi.org/10.1017/9781108668804},
 	year = {2018}}
 
 @misc{fong-2020-progr-categ,
 	author = {Brendan Fong and Bartosz Milewski and David I. Spivak},
+	date-modified = {2026-08-12 17:13:53 +0200},
 	file = {~/Documents/papers/fong-2020-progr-categ.pdf},
+	keywords = {functional-programming, category-theory},
 	title = {Programming with Categories},
 	year = {2020}}
 
 @book{fontaine-2017-master-postg,
 	author = {Dimitri Fontaine},
-	date-modified = {2026-08-10 14:54:11 +0200},
+	date-modified = {2026-08-12 17:14:06 +0200},
+	keywords = {database, postgresql},
 	note = {epub},
 	publisher = {Lulu},
 	title = {Mastering {PostgreSQL} in Application Development},
@@ -4766,8 +5090,10 @@
 
 @book{forbes-2011-stat-distributions,
 	author = {Catherine Forbes and Merran Evans and Nicholas Hastings and Brian Peacock},
+	date-modified = {2026-08-12 17:14:14 +0200},
 	doi = {10.1002/9780470627242},
 	file = {~/Documents/papers/forbes-2011-stat-distributions.pdf},
+	keywords = {statistics, distributions},
 	publisher = {Wiley},
 	title = {Statistical Distributions},
 	url = {https://doi.org/10.1002/9780470627242},
@@ -4775,8 +5101,10 @@
 
 @book{forsyth-2018-probab-statis,
 	author = {David Forsyth},
+	date-modified = {2026-08-12 17:14:32 +0200},
 	doi = {10.1007/978-3-319-64410-3},
 	file = {~/Documents/papers/forsyth-2018-probab-statis.pdf},
+	keywords = {computing, statistics, probability},
 	publisher = {Springer},
 	title = {Probability and Statistics for Computer Science},
 	url = {https://doi.org/10.1007/978-3-319-64410-3},
@@ -4794,16 +5122,20 @@
 
 @misc{fraser-1950-normal-sampl,
 	author = {D. A. S. Fraser},
+	date-modified = {2026-08-12 17:14:46 +0200},
 	doi = {10.4153/CJM-1951-041-9},
 	file = {~/Documents/papers/fraser-1950-normal-sampl.pdf},
+	keywords = {statistics, distributions, random},
 	title = {Normal Samples with Linear Constraints and Given Variances},
 	url = {https://doi.org/10.4153/CJM-1951-041-9},
 	year = {1950}}
 
 @book{freedman-2009-statis-model,
 	author = {David A. Freedman},
+	date-modified = {2026-08-12 17:14:56 +0200},
 	doi = {10.1017/CBO9780511815867},
 	file = {~/Documents/papers/freedman-2009-statis-model.pdf},
+	keywords = {statistics, inference},
 	publisher = {Cambridge University Press},
 	title = {Statistical Models},
 	url = {https://doi.org/10.1017/CBO9780511815867},
@@ -4811,31 +5143,38 @@
 
 @book{freeman-2017-pures-examp,
 	author = {Phil Freeman},
+	date-modified = {2026-08-12 17:15:03 +0200},
 	file = {~/Documents/papers/freeman-2017-pures-examp.pdf},
+	keywords = {purescript},
 	publisher = {Leanpub},
 	title = {{PureScript} by Example},
 	year = {2017}}
 
 @book{friedl-2006-master-regul-expres,
 	author = {Jeffrey E L Friedl},
+	date-modified = {2026-08-12 17:15:10 +0200},
 	edition = {3},
 	file = {~/Documents/papers/friedl-2006-master-regul-expres.pdf},
+	keywords = {regex},
 	publisher = {O'Reilly Media Inc},
 	title = {Mastering Regular Expressions},
 	year = {2006}}
 
 @book{friedman-1995-littl-schem,
 	author = {Daniel P. Friedman and M. Felleisen},
+	date-modified = {2026-08-12 17:15:16 +0200},
 	edition = {4},
 	file = {~/Documents/papers/friedman-1995-littl-schem.pdf},
+	keywords = {scheme},
 	publisher = {MIT Press},
 	title = {The Little Schemer},
 	year = {1995}}
 
 @book{friedman-1995-season-schem,
 	author = {Daniel P. Friedman and Matthias Felleisen},
-	date-modified = {2026-08-10 14:54:21 +0200},
+	date-modified = {2026-08-12 17:15:23 +0200},
 	doi = {10.7551/mitpress/6109.001.0001},
+	keywords = {scheme},
 	publisher = {The MIT Press},
 	title = {The Seasoned Schemer},
 	url = {https://doi.org/10.7551/mitpress/6109.001.0001},
@@ -4843,9 +5182,11 @@
 
 @article{friedman-2001-greed-funct-approx,
 	author = {Jerome H. Friedman},
+	date-modified = {2026-08-12 17:15:36 +0200},
 	doi = {10.1214/aos/1013203451},
 	file = {~/Documents/papers/friedman-2001-greed-funct-approx.pdf},
 	journal = {The Annals of Statistics},
+	keywords = {machine-learning, boosting},
 	number = {5},
 	pages = {1189--1232},
 	title = {Greedy Function Approximation: A Gradient Boosting Machine},
@@ -4855,8 +5196,10 @@
 
 @book{friedman-2005-reason-schem,
 	author = {Daniel P. Friedman and William E. Byrd and Oleg Kiselyov},
+	date-modified = {2026-08-12 17:15:45 +0200},
 	doi = {10.7551/mitpress/5801.001.0001},
 	file = {~/Documents/papers/friedman-2005-reason-schem.pdf},
+	keywords = {scheme},
 	publisher = {The MIT Press},
 	title = {The Reasoned Schemer},
 	url = {https://doi.org/10.7551/mitpress/5801.001.0001},
@@ -4864,31 +5207,38 @@
 
 @book{friedman-2008-essen-progr-languag,
 	author = {Daniel P. Friedman and Mitchell Wand},
+	date-modified = {2026-08-12 17:16:06 +0200},
 	edition = {3},
 	file = {~/Documents/papers/friedman-2008-essen-progr-languag.pdf},
+	keywords = {functional-programming, scheme},
 	publisher = {The MIT Press},
 	title = {Essentials of Programming Languages},
 	year = {2008}}
 
 @book{friedman-2018-littl-typer,
 	author = {Daniel P. Friedman and David Thrane Christiansen},
+	date-modified = {2026-08-12 17:15:52 +0200},
 	file = {~/Documents/papers/friedman-2018-littl-typer.pdf},
+	keywords = {scheme},
 	publisher = {MIT Press},
 	title = {The Little Typer},
 	year = {2018}}
 
 @book{friedman-2023-littl-learner,
 	author = {Daniel P. Friedman and Anurag Mendhekar},
-	date-modified = {2026-08-10 14:54:26 +0200},
+	date-modified = {2026-08-12 17:15:57 +0200},
+	keywords = {scheme},
 	publisher = {MIT Press},
 	title = {The Little Learner},
 	year = {2023}}
 
 @article{fritz-2012-effec-size-estim,
 	author = {Catherine O. Fritz and Peter E. Morris and Jennifer J. Richler},
+	date-modified = {2026-08-12 17:16:20 +0200},
 	doi = {10.1037/a0024338},
 	file = {~/Documents/papers/fritz-2012-effec-size-estim.pdf},
 	journal = {Journal of Experimental Psychology: General},
+	keywords = {statistics, power-analysis, effect-size},
 	number = {1},
 	pages = {2--18},
 	title = {Effect Size Estimates: Current Use, Calculations, and Interpretation},
@@ -4898,9 +5248,11 @@
 
 @article{froslev-2020-algo-post-curat,
 	author = {Tobias Guldberg Froslev and Rasmus Kjoller and Hans Henrik Bruun and Rasmus Ejrnaes and Brunbjerg and Carlotta Pietroni and Anders Johannes Hansen},
+	date-modified = {2026-08-12 17:16:41 +0200},
 	doi = {10.1038/s41467-017-01312-x},
 	file = {~/Documents/papers/froslev-2020-algo-post-curat.pdf},
 	journal = {Nature Communications},
+	keywords = {bioinformatics, genomics, algorithms, ecology},
 	number = {1188},
 	pages = {1--11},
 	title = {Algorithm for Post-Clustering Curation of {DNA} Amplicon Data Yields Reliable Biodiversity Estimates},
@@ -4910,16 +5262,20 @@
 
 @book{fry-2008-visual-data,
 	author = {Ben Fry},
+	date-modified = {2026-08-12 17:16:51 +0200},
 	file = {~/Documents/papers/fry-2008-visual-data.pdf},
+	keywords = {graphics},
 	publisher = {O'Reilly Media Inc.},
 	title = {Visualizing Data},
 	year = {2008}}
 
 @article{fudge-2014-fifty-years-j,
 	author = {Douglas Fudge},
+	date-modified = {2026-08-12 17:17:20 +0200},
 	doi = {10.1242/jeb.104976},
 	file = {~/Documents/papers/fudge-2014-fifty-years-j.pdf},
 	journal = {The Journal of Experimental Biology},
+	keywords = {misc},
 	pages = {1202--1204},
 	title = {Fifty Years of J. R. Platt's Strong Inference},
 	url = {https://doi.org/10.1242/jeb.104976},
@@ -4928,24 +5284,30 @@
 
 @book{fusco-2007-linux-programmer-toolbox,
 	author = {John Fusco},
+	date-modified = {2026-08-12 17:17:27 +0200},
 	file = {~/Documents/papers/fusco-2007-linux-programmer-toolbox.pdf},
+	keywords = {unix},
 	publisher = {Prentice Hall},
 	title = {The Linux Programmer's Toolbox},
 	year = {2007}}
 
 @misc{gabry-2018-visual-bayes,
 	author = {Jonah Gabry and Daniel Simpson and Aki Vehtari and Michael Betancourt and Andrew Gelman},
+	date-modified = {2026-08-12 17:17:39 +0200},
 	doi = {10.1111/rssa.12378},
 	file = {~/Documents/papers/gabry-2018-visual-bayes.pdf},
 	howpublished = {arXiv:1709.01449v5},
+	keywords = {graphics, bayesian},
 	title = {Visualization in Bayesian workflow},
 	url = {https://doi.org/10.1111/rssa.12378},
 	year = {2018}}
 
 @book{gagniuc-2021-algorithms-in-bioinformatics,
 	author = {Paul A. Gagniuc},
+	date-modified = {2026-08-12 17:17:48 +0200},
 	doi = {10.1002/9781119698005},
 	file = {~/Documents/papers/gagniuc-2021-algorithms-in-bioinformatics.pdf},
+	keywords = {bioinformatics, algorithms},
 	publisher = {Wiley},
 	title = {Algorithms in Bioinformatics: Theory and Implementation},
 	url = {https://doi.org/10.1002/9781119698005},
@@ -4953,16 +5315,20 @@
 
 @book{gallmeister-1995-posix-4,
 	author = {Bill O. Gallmeister},
+	date-modified = {2026-08-12 17:17:56 +0200},
 	file = {~/Documents/papers/gallmeister-1995-posix-4.pdf},
+	keywords = {unix},
 	publisher = {O'Reilly},
 	title = {{POSIX 4}: Programming for the Real World},
 	year = {2017}}
 
 @article{gardner-1986-confid-inter,
 	author = {M. J. Gardner and D. G. Altman},
+	date-modified = {2026-08-12 17:18:10 +0200},
 	doi = {10.1136/bmj.292.6522.746},
 	file = {~/Documents/papers/gardner-1986-confid-inter.pdf},
 	journal = {Bristish Medical Journal},
+	keywords = {statistics, estimation, inference},
 	pages = {746--750},
 	title = {Confidence Intervals Rather Than {P} Values: Estimation Rather Than Hypothesis Testing},
 	url = {https://doi.org/10.1136/bmj.292.6522.746},
@@ -4971,22 +5337,28 @@
 
 @book{garfinkel-1994-ugh,
 	author = {Simson Garfinkel and Daniel Weise and Steven Strassmann},
+	date-modified = {2026-08-12 17:18:16 +0200},
 	file = {~/Documents/papers/garfinkel-1994-ugh.pdf},
+	keywords = {unix},
 	publisher = {IDG Books},
 	title = {The {UNIX-HATERS} Handbook},
 	year = {1994}}
 
 @book{garfinkel-2017-modeling-life,
 	author = {Alan Garfinkel and Jane Shevtsov and Yina Guo},
+	date-modified = {2026-08-12 17:18:26 +0200},
 	file = {~/Documents/papers/garfinkel-2017-modeling-life.pdf},
+	keywords = {mathematics, biology},
 	publisher = {Springer},
 	title = {Modeling Life: The Mathematics of Biological Systems},
 	year = {2017}}
 
 @book{garrido-2014-introd-comput,
 	author = {Jos{\'e} M. Garrido},
+	date-modified = {2026-08-12 17:19:14 +0200},
 	doi = {10.1201/b16036},
 	file = {~/Documents/papers/garrido-2014-introd-comput.pdf},
+	keywords = {clang},
 	publisher = {Chapman \& Hall / CRC Press},
 	title = {Introduction to Computational Modeling using {C} and Open-Source Tools},
 	url = {https://doi.org/10.1201/b16036},
@@ -4994,24 +5366,30 @@
 
 @book{garrity-2013-algebraic-geometry,
 	author = {Thomas Garrity and Richard Belshoff and Lynette Boos and Ryan Brown and Carl Lienert},
+	date-modified = {2026-08-12 17:19:43 +0200},
 	file = {~/Documents/papers/garrity-2013-algebraic-geometry.pdf},
+	keywords = {geometry, algebric},
 	publisher = {American Mathematical Society},
 	title = {Algebraic Geometry: A Problem Solving Approach},
 	year = {2013}}
 
 @book{gathen-2013-modern-computer-algebra,
 	author = {Joachim von zur Gathen and J{\"u}rgen Gerhard},
+	date-modified = {2026-08-12 17:19:58 +0200},
 	edition = {3},
 	file = {~/Documents/papers/gathen-2013-modern-computer-algebra.pdf},
+	keywords = {computing, algebra},
 	publisher = {Cambridge University Press},
 	title = {Modern Computer Algebra},
 	year = {2013}}
 
 @article{gauthier-2020-cubic,
 	author = {J. Gauthier and Q. V. Wu and T. A. Gooley},
+	date-modified = {2026-08-12 17:20:11 +0200},
 	doi = {10.1038/s41409-019-0679-x},
 	file = {~/Documents/papers/gauthier-2020-cubic.pdf},
 	journaltitle = {Bone Marrow Transplantation},
+	keywords = {statistics, splines, biomedical},
 	pages = {675--680},
 	title = {Cubic splines to model relationships between continuous variables and outcomes: a guide for clinicians},
 	url = {https://doi.org/10.1038/s41409-019-0679-x},
@@ -5020,9 +5398,11 @@
 
 @book{gautschi-2012-numerical-analysis,
 	author = {Walter Gautschi},
+	date-modified = {2026-08-12 17:20:18 +0200},
 	doi = {10.1007/978-0-8176-8259-0},
 	edition = {2},
 	file = {~/Documents/papers/gautschi-2012-numerical-analysis.pdf},
+	keywords = {numerical-analysis},
 	publisher = {Birkh{\"a}user},
 	title = {Numerical Analysis},
 	url = {https://doi.org/10.1007/978-0-8176-8259-0},
@@ -5030,9 +5410,10 @@
 
 @article{gavryushkina-2013-recur-algor,
 	author = {A. Gavryushkina and D. Welch and A. Drummond},
-	date-modified = {2026-08-10 14:54:34 +0200},
+	date-modified = {2026-08-12 17:20:28 +0200},
 	doi = {10.1186/1748-7188-8-26},
 	journal = {Algorithms for Molecular Biology},
+	keywords = {phylogenetics, algorithms},
 	number = {26},
 	pages = {1--13},
 	title = {Recursive Algorithms for Phylogenetic Tree Counting},
@@ -5042,21 +5423,27 @@
 
 @misc{geisler-2025-comprehensive-rust,
 	author = {Martin Geisler},
+	date-modified = {2026-08-12 17:20:34 +0200},
 	file = {~/Documents/papers/geisler-2025-comprehensive-rust.pdf},
+	keywords = {rust},
 	title = {Comprehensive Rust},
 	year = {2025}}
 
 @book{gelfand-2019-handbook-environmental-ecological,
 	author = {Alan Gelfand and Montse Fuentes and Jennifer Ann Hoeting and Richard L. Smith},
+	date-modified = {2026-08-12 17:20:48 +0200},
 	file = {~/Documents/papers/gelfand-2019-handbook-environmental-ecological.pdf},
+	keywords = {statistics, ecology, environmental},
 	publisher = {Chapman and Hall},
 	title = {Handbook of Environmental and Ecological Statistics},
 	year = {2019}}
 
 @book{gelman-2006-data-analy,
 	author = {Andrew Gelman and Jennifer Hill},
+	date-modified = {2026-08-12 17:21:04 +0200},
 	doi = {10.1017/CBO9780511790942},
 	file = {~/Documents/papers/gelman-2006-data-analy.pdf},
+	keywords = {statistics, multivariate-analysis, regression, random-effects},
 	publisher = {Cambridge University Press},
 	title = {Data Analysis Using Regression and Multilevel Hierarchical Models},
 	url = {https://doi.org/10.1017/CBO9780511790942},
@@ -5064,24 +5451,30 @@
 
 @misc{gelman-2011-philos-bayes,
 	author = {Andrew Gelman and Cosma Rohilla Shalizi},
+	date-modified = {2026-08-12 17:21:13 +0200},
 	doi = {10.1111/j.2044-8317.2011.02037.x},
 	file = {~/Documents/papers/gelman-2011-philos-bayes.pdf},
 	howpublished = {arXiv:1006.3868v4},
+	keywords = {statistics, bayesian},
 	title = {Philosophy and the practice of Bayesian statistics},
 	url = {https://doi.org/10.1111/j.2044-8317.2011.02037.x},
 	year = {2011}}
 
 @misc{gelman-2012-bayes-data,
 	author = {A. Gelman and J. Carlin and H. Stern and R. Charnigo},
+	date-modified = {2026-08-12 17:21:21 +0200},
 	file = {~/Documents/papers/gelman-2012-bayes-data.pdf},
+	keywords = {statistics, bayesian},
 	title = {Bayesian Data Analysis Solutions Manual},
 	year = {2012}}
 
 @book{gelman-2014-bayes-data-analy,
 	author = {Andrew Gelman and B. {Carlin, John} and Hal S. Stern and David B. Dunson and Aki Vehtari and Donald B. Rubin},
+	date-modified = {2026-08-12 17:21:31 +0200},
 	doi = {10.1201/9780429258411},
 	edition = {3},
 	file = {~/Documents/papers/gelman-2014-bayes-data-analy.pdf},
+	keywords = {statistics, bayesian},
 	publisher = {Chapman \& Hall / CRC Press},
 	title = {Bayesian Data Analysis},
 	url = {https://doi.org/10.1201/9780429258411},
@@ -5089,17 +5482,21 @@
 
 @misc{gelman-2020-most-important-stat-ideas,
 	author = {Andrew Gelman and Aki Vehtari},
+	date-modified = {2026-08-12 17:21:51 +0200},
 	doi = {10.48550/arXiv.2012.00174},
 	file = {~/Documents/papers/gelman-2020-most-important-stat-ideas.pdf},
 	howpublished = {arXiv:2012.00174},
+	keywords = {statistics},
 	title = {What are the most important statistical ideas of the past 50 years?},
 	url = {https://doi.org/10.48550/arXiv.2012.00174},
 	year = {2020}}
 
 @book{gelman-2020-regression-other-stories,
 	author = {Andrew Gelman and Jennifer Hill and Ari Vehtari},
+	date-modified = {2026-08-12 17:21:59 +0200},
 	doi = {10.1017/9781139161879},
 	file = {~/Documents/papers/gelman-2020-regression-other-stories.pdf},
+	keywords = {statistics, regression},
 	publisher = {Cambridge University Press},
 	title = {Regression and Other Stories},
 	url = {https://doi.org/10.1017/9781139161879},
@@ -5107,16 +5504,20 @@
 
 @book{gentle-2002-elemen-comput-statis,
 	author = {James E. Gentle},
+	date-modified = {2026-08-12 17:22:14 +0200},
 	file = {~/Documents/papers/gentle-2002-elemen-comput-statis.pdf},
+	keywords = {computational-statistics},
 	publisher = {Springer},
 	title = {Elements of Computational Statistics},
 	year = {2002}}
 
 @book{gentle-2003-random-number,
 	author = {James E. Gentle},
+	date-modified = {2026-08-12 17:22:26 +0200},
 	doi = {10.1007/978-1-4757-2960-3},
 	edition = {2},
 	file = {~/Documents/papers/gentle-2003-random-number.pdf},
+	keywords = {numerics, random, monte-carlo},
 	publisher = {Springer},
 	title = {Random Number Generation and Monte Carlo Methods},
 	url = {https://doi.org/10.1007/978-1-4757-2960-3},
@@ -5124,8 +5525,10 @@
 
 @book{gentle-2007-matrix-algeb,
 	author = {James E. Gentle},
+	date-modified = {2026-08-12 17:22:36 +0200},
 	doi = {10.1007/978-0-387-70873-7},
 	file = {~/Documents/papers/gentle-2007-matrix-algeb.pdf},
+	keywords = {statistics, linear-algebra},
 	publisher = {Springer},
 	title = {Matrix Algebra: Theory, Computations, and Applications in Statistics},
 	url = {https://doi.org/10.1007/978-0-387-70873-7},
@@ -5133,8 +5536,10 @@
 
 @book{gentle-2009-comput-statis,
 	author = {James E. Gentle},
+	date-modified = {2026-08-12 17:22:44 +0200},
 	doi = {10.1007/978-0-387-98144-4},
 	file = {~/Documents/papers/gentle-2009-comput-statis.pdf},
+	keywords = {computational-statistics},
 	publisher = {Springer},
 	title = {Computational Statistics},
 	url = {https://doi.org/10.1007/978-0-387-98144-4},
@@ -5142,8 +5547,10 @@
 
 @book{gentle-2012-handb-comput-statis,
 	author = {James E. Gentle and Wolfgang Hardle and Yuichi Mori},
+	date-modified = {2026-08-12 17:22:53 +0200},
 	doi = {10.1007/978-3-642-21551-3},
 	file = {~/Documents/papers/gentle-2012-handb-comput-statis.pdf},
+	keywords = {computational-statistics},
 	publisher = {Springer},
 	title = {Handbook of Computational Statistics: Concepts and Methods},
 	url = {https://doi.org/10.1007/978-3-642-21551-3},
@@ -5151,30 +5558,36 @@
 
 @misc{gentle-2013-theor-statis,
 	author = {James E. Gentle},
+	date-modified = {2026-08-12 17:23:00 +0200},
 	file = {~/Documents/papers/gentle-2013-theor-statis.pdf},
+	keywords = {statistics},
 	title = {Theory of Statistics},
 	year = {2013}}
 
 @book{geron-2016-hands-machin,
 	author = {Aur{\'e}lien G{\'e}ron},
-	date-modified = {2026-08-10 14:54:39 +0200},
+	date-modified = {2026-08-12 17:23:11 +0200},
+	keywords = {machine-learning, python},
 	publisher = {O'Reilly Media Inc},
 	title = {Hands-On Machine Learning with Scikit-Learn and {TensorFlow}},
 	year = {2016}}
 
 @book{gersting-2014-mathem-struc,
 	author = {Judith L. Gersting},
-	date-modified = {2026-08-10 14:54:47 +0200},
+	date-modified = {2026-08-12 17:23:26 +0200},
 	edition = {7},
+	keywords = {mathematics, data-structures, computing},
 	publisher = {W. H. Freeman and Company},
 	title = {Mathematical Structures for Computer Science},
 	year = {2014}}
 
 @article{ghahramani-2015-probab,
 	author = {Zoubin Ghahramani},
+	date-modified = {2026-08-12 17:23:37 +0200},
 	doi = {10.1038/nature14541},
 	file = {~/Documents/papers/ghahramani-2015-probab.pdf},
 	journal = {Nature},
+	keywords = {machine-learning, probabilistic-programming},
 	pages = {452--459},
 	title = {Probabilistic machine learning and artificial intelligence},
 	url = {https://doi.org/10.1038/nature14541},
@@ -5183,53 +5596,65 @@
 
 @misc{ghemawat-2003-googl-file-system,
 	author = {Sanjay Ghemawat and Howard Gobioff and Shun-Tak Leung},
+	date-modified = {2026-08-12 17:23:45 +0200},
 	doi = {10.1145/945445.945450},
 	file = {~/Documents/papers/ghemawat-2003-googl-file-system.pdf},
 	howpublished = {SOSP'03},
+	keywords = {algorithms, web},
 	title = {The Google File System},
 	url = {https://doi.org/10.1145/945445.945450},
 	year = {2003}}
 
 @book{gheorghe-2014-elasticsearch-in-action,
 	author = {Radu Gheorghe and Matthew Lee Hinman},
+	date-modified = {2026-08-12 17:23:51 +0200},
 	edition = {MEAP},
 	file = {~/Documents/papers/gheorghe-2014-elasticsearch-in-action.pdf},
+	keywords = {elasticsearch},
 	publisher = {Manning},
 	title = {Elasticsearch in Action},
 	year = {2014}}
 
 @book{ghosh-1996-design-analysis-experiments,
 	author = {S. Ghosh and C. R. Rao},
+	date-modified = {2026-08-12 17:24:01 +0200},
 	file = {~/Documents/papers/ghosh-1996-design-analysis-experiments.pdf},
+	keywords = {statistics, design-of-experiments},
 	publisher = {Elsevier},
 	title = {Handbook of Statistics 13: Design and Analysis of Experiments},
 	year = {1996}}
 
 @book{ghosh-2006-introd-bayes-analy,
 	author = {Jayanta K. Ghosh and Mohan Delampady and Tapas Samanta},
-	date-modified = {2026-08-10 14:54:53 +0200},
+	date-modified = {2026-08-12 17:24:10 +0200},
+	keywords = {statistics, bayesian},
 	publisher = {Springer},
 	title = {An Introduction to Bayesian Analysis: Theory and Methods},
 	year = {2006}}
 
 @book{ghrist-2014-elemen-applied-topol,
 	author = {Robert Ghrist},
-	date-modified = {2026-08-10 14:54:58 +0200},
+	date-modified = {2026-08-12 17:24:17 +0200},
+	keywords = {topology},
 	publisher = {CreateSpace Independent Publishing},
 	title = {Elementary Applied Topology},
 	year = {2014}}
 
 @misc{ghuloum-2006-increm-approac,
 	author = {Abdulaziz Ghuloum},
+	date-modified = {2026-08-12 17:24:27 +0200},
 	file = {~/Documents/papers/ghuloum-2006-increm-approac.pdf},
 	howpublished = {Proceedings of the 2006 Scheme and Functional Programming Workshop},
+	keywords = {compiler, functional-programming},
 	title = {An Incremental Approach to Compiler Construction},
 	year = {2006}}
 
 @book{gibilisco-2010-algeb-geomet,
 	author = {Paolo Gibilisco and Eva Riccomagno and Maria Piera Rogantin and Henry P. Wynn},
+	date-modified = {2026-08-12 17:24:45 +0200},
 	doi = {10.1017/CBO9780511642401.002},
 	file = {~/Documents/papers/gibilisco-2010-algeb-geomet.pdf},
+	keywords = {statistics, algebric, geometric},
 	publisher = {Cambridge University Press},
 	title = {Algebraic and Geometric Methods in Statistics},
 	url = {https://doi.org/10.1017/CBO9780511642401.002},
@@ -5251,7 +5676,8 @@
 
 @book{gillespie-2017-effic-r-progr,
 	author = {Colin Gillespie and Robin Lovelace},
-	date-modified = {2026-08-10 14:55:04 +0200},
+	date-modified = {2026-08-12 17:24:53 +0200},
+	keywords = {rstats},
 	publisher = {O'Reilly Media Inc},
 	title = {Efficient {R} Programming},
 	year = {2017}}
@@ -5267,9 +5693,11 @@
 
 @book{givens-2013-computational-statistics,
 	author = {Geof H. Givens and Jennifer A. Hoeting},
+	date-modified = {2026-08-12 17:25:00 +0200},
 	doi = {10.1002/9781118555552},
 	edition = {2},
 	file = {~/Documents/papers/givens-2013-computational-statistics.pdf},
+	keywords = {computational-statistics},
 	publisher = {John Wiley \& Sons},
 	title = {Computational Statistics},
 	url = {https://doi.org/10.1002/9781118555552},
@@ -5277,13 +5705,17 @@
 
 @book{goalkicker-2022-haskell-notes,
 	author = {GoalKicker.com},
+	date-modified = {2026-08-12 17:25:09 +0200},
 	file = {~/Documents/papers/goalkicker-2022-haskell-notes.pdf},
+	keywords = {haskell},
 	title = {Haskell Notes for Professionals},
 	year = {2022}}
 
 @book{goasguen-2018-docker-cookb,
 	author = {S{\'e}bastien Goasguen},
+	date-modified = {2026-08-12 17:25:13 +0200},
 	file = {~/Documents/papers/goasguen-2018-docker-cookb.pdf},
+	keywords = {docker},
 	publisher = {O'Reilly},
 	title = {Docker Cookbook},
 	year = {2018}}
@@ -5298,37 +5730,47 @@
 
 @book{goffinet-2020-linux-admin-vol1,
 	author = {Fran{\c{c}}ois-Emmanuel Goffinet},
+	date-modified = {2026-08-12 17:25:25 +0200},
 	file = {~/Documents/papers/goffinet-2020-linux-admin-vol1.pdf},
+	keywords = {unix},
 	publisher = {Leanpu},
 	title = {Linux Administration Volume 1: Linux Administration Fondamentale},
 	year = {2020}}
 
 @book{goffinet-2020-linux-admin-vol2,
 	author = {Fran{\c{c}}ois-Emmanuel Goffinet},
+	date-modified = {2026-08-12 17:25:30 +0200},
 	file = {~/Documents/papers/goffinet-2020-linux-admin-vol2.pdf},
+	keywords = {unix},
 	publisher = {Leanpu},
 	title = {Linux Administration Volume 2: Linux Administration Avanc{\'e}e},
 	year = {2020}}
 
 @book{goffinet-2020-linux-admin-vol3,
 	author = {Fran{\c{c}}ois-Emmanuel Goffinet},
+	date-modified = {2026-08-12 17:25:34 +0200},
 	file = {~/Documents/papers/goffinet-2020-linux-admin-vol3.pdf},
+	keywords = {unix},
 	publisher = {Leanpu},
 	title = {Linux Administration Volume 3: Linux Administration S{\'e}curis{\'e}e},
 	year = {2020}}
 
 @book{goffinet-2020-linux-admin-vol4,
 	author = {Fran{\c{c}}ois-Emmanuel Goffinet},
+	date-modified = {2026-08-12 17:25:42 +0200},
 	file = {~/Documents/papers/goffinet-2020-linux-admin-vol4.pdf},
+	keywords = {unix},
 	publisher = {Leanpu},
 	title = {Linux Administration Volume 4: Linux Administration Services {TCP/IP}},
 	year = {2020}}
 
 @misc{goldberg-1991-what-every,
 	author = {David Goldberg},
+	date-modified = {2026-08-12 17:25:57 +0200},
 	doi = {10.1145/103162.103163},
 	file = {~/Documents/papers/goldberg-1991-what-every.pdf},
 	howpublished = {Computing Surveys},
+	keywords = {numerics, floats},
 	title = {What Every Computer Scientist Should Know About Floating-Point Arithmetic},
 	url = {https://doi.org/10.1145/103162.103163},
 	year = {1991}}
@@ -5344,9 +5786,11 @@
 
 @book{golub-1996-matrix-comput,
 	author = {Gene H. Golub and Charles F. Van Loan},
+	date-modified = {2026-08-12 17:26:07 +0200},
 	doi = {10.56021/9781421407944},
 	edition = {3},
 	file = {~/Documents/papers/golub-1996-matrix-comput.pdf},
+	keywords = {computing, linear-algebra},
 	publisher = {The John Hopkins University Press},
 	title = {Matrix Computations},
 	url = {https://doi.org/10.56021/9781421407944},
@@ -5354,7 +5798,8 @@
 
 @book{gonick-2017-chancing-the-laws,
 	author = {Larry Gonick and Robert Matthews},
-	date-modified = {2026-08-10 14:55:11 +0200},
+	date-modified = {2026-08-12 17:26:21 +0200},
+	keywords = {misc},
 	publisher = {Skyhorse Publishing},
 	title = {Chancing it the laws of chance and they can work for you},
 	year = {2017}}
@@ -5362,7 +5807,9 @@
 @book{good-2005-permut-param,
 	address = {New York},
 	author = {Phillip Good},
+	date-modified = {2026-08-12 17:26:41 +0200},
 	file = {~/Documents/papers/good-2005-permut-param.pdf},
+	keywords = {statistics, non-parametric, rerandomization, bootstrap},
 	publisher = {Springer-Verlag},
 	title = {Permutation, Parametric, and Bootstrap Tests of Hypotheses},
 	year = {2004}}
@@ -5370,45 +5817,56 @@
 @book{good-2005-resampling-methods,
 	address = {Boston},
 	author = {Phillip Good},
+	date-modified = {2026-08-12 17:26:57 +0200},
 	file = {~/Documents/papers/good-2005-resampling-methods.pdf},
+	keywords = {statistics, resampling},
 	publisher = {Birkhauser},
 	title = {Resampling Methods: A Practical Guide to Data Analysis},
 	year = {2005}}
 
 @book{goodfellow-2017-deep-learn,
 	author = {Ian Goodfellow and Yoshua Bengio and Aaron Courville},
+	date-modified = {2026-08-12 17:27:04 +0200},
 	file = {~/Documents/papers/goodfellow-2017-deep-learn.pdf},
+	keywords = {deep-learning},
 	publisher = {The MIT Press},
 	title = {Deep Learning},
 	year = {2017}}
 
 @misc{goodman-2013-princ-pract,
 	author = {Noah D. Goodman},
+	date-modified = {2026-08-12 17:27:12 +0200},
 	doi = {10.1145/2429069.2429117},
 	file = {~/Documents/papers/goodman-2013-princ-pract.pdf},
+	keywords = {probabilistic-programming},
 	title = {The Principles and Practice of Probabilistic Programming},
 	url = {https://doi.org/10.1145/2429069.2429117},
 	year = {2013}}
 
 @book{goodrich-2013-data-struc,
 	author = {Michael T. Goodrich and Roberto Tamassia and Michael H. Godwasser},
+	date-modified = {2026-08-12 17:27:22 +0200},
 	file = {~/Documents/papers/goodrich-2013-data-struc.pdf},
+	keywords = {python, data-structures, algorithms},
 	publisher = {Wiley},
 	title = {Data Structures and Algorithms in Python},
 	year = {2013}}
 
 @book{gorelick-2014-high-perfor-python,
 	author = {Micha Gorelick and Ian Ozsvald},
+	date-modified = {2026-08-12 17:27:29 +0200},
 	file = {~/Documents/papers/gorelick-2014-high-perfor-python.pdf},
+	keywords = {python, hpc},
 	publisher = {O'Reilly},
 	title = {High Performance Python},
 	year = {2014}}
 
 @article{gori-2016-clust-genes,
 	author = {Kevin Gori and Tomasz Suchan and Nadir Alvarez and Nick Goldman and Christophe Dessimoz},
-	date-modified = {2026-08-10 14:55:16 +0200},
+	date-modified = {2026-08-12 17:27:44 +0200},
 	doi = {10.1093/molbev/msw038},
 	journal = {Molecular Biology and Evolution},
+	keywords = {statistics, genetics, clustering},
 	number = {6},
 	pages = {1590--1605},
 	title = {Clustering Genes of Common Evolutionary History},
@@ -5418,8 +5876,10 @@
 
 @article{gosset-1908-probab-error-mean,
 	author = {William Sealy Gosset},
+	date-modified = {2026-08-12 17:27:55 +0200},
 	file = {~/Documents/papers/gosset-1908-probab-error-mean.pdf},
 	journal = {Biometrika},
+	keywords = {statistics, inference},
 	number = {1},
 	pages = {1--25},
 	title = {The Probable Error of a Mean},
@@ -5438,9 +5898,11 @@
 
 @article{gould-2001-statis-softw-certif,
 	author = {William Gould},
+	date-modified = {2026-08-12 17:28:13 +0200},
 	doi = {10.1177/1536867X0100100102},
 	file = {~/Documents/papers/gould-2001-statis-softw-certif.pdf},
 	journal = {The Stata Journal},
+	keywords = {statistics, stata, numerics},
 	number = {1},
 	pages = {29--50},
 	title = {Statistical Software Certification},
@@ -5450,38 +5912,48 @@
 
 @book{gould-2010-maxim-likel,
 	author = {W. Gould and J. Pitblado and W. Sribney},
+	date-modified = {2026-08-12 17:28:23 +0200},
 	edition = {4},
 	file = {~/Documents/papers/gould-2010-maxim-likel.pdf},
+	keywords = {stata, likelihood, estimation},
 	publisher = {Stata Press},
 	title = {Maximum Likelihood Estimation with Stata},
 	year = {2010}}
 
 @book{gould-2018-mata-book,
 	author = {William Gould},
+	date-modified = {2026-08-12 17:28:33 +0200},
 	file = {~/Documents/papers/gould-2018-mata-book.pdf},
+	keywords = {stata, mata, computing},
 	publisher = {Stata Press},
 	title = {The Mata Book: A Book for Serious Programmers and Those Who Want to Be},
 	year = {2018}}
 
 @book{govindaraju-2015-big-data-analytics,
 	author = {Venu Govindaraju and Vijay Raghavann and C. R. Rao},
+	date-modified = {2026-08-12 17:28:43 +0200},
 	file = {~/Documents/papers/govindaraju-2015-big-data-analytics.pdf},
+	keywords = {statistics, big-data},
 	publisher = {Elsevier},
 	title = {Handbook of Statistics 33: Big Data Analytics},
 	year = {2015}}
 
 @misc{gowers-2000-two-culture-mathematics,
 	author = {W. T. Gowers},
+	date-modified = {2026-08-12 17:28:51 +0200},
 	file = {~/Documents/papers/gowers-2000-two-culture-mathematics.pdf},
 	howpublished = {Mathematics: Frontiers and Perspectives},
+	keywords = {mathematics},
 	title = {The Two Cultures of Mathematics},
 	year = {2000}}
 
 @article{graefe-2010-moder-b,
 	author = {Goetz Graefe},
+	date-modified = {2026-08-12 17:28:57 +0200},
 	doi = {10.1561/1900000028},
 	file = {~/Documents/papers/graefe-2010-moder-b.pdf},
 	journal = {Foundations and Trends in Databases},
+	keywords = {algorithms},
 	number = {4},
 	pages = {203--402},
 	title = {Modern B-Tree Techniques},
@@ -5491,44 +5963,56 @@
 
 @book{graham-1993-lisp,
 	author = {Paul Graham},
+	date-modified = {2026-08-12 17:29:08 +0200},
 	file = {~/Documents/papers/graham-1993-lisp.pdf},
+	keywords = {lisp, algorithms},
 	publisher = {Prentice Hall},
 	title = {On Lisp: Advanced Techniques for Common Lisp},
 	year = {1993}}
 
 @book{graham-1994-concr-mathem,
 	author = {Ronald L Graham and Donald E Knuth and Oren Patashnik},
+	date-modified = {2026-08-12 17:29:21 +0200},
 	edition = {2},
 	file = {~/Documents/papers/graham-1994-concr-mathem.pdf},
+	keywords = {mathematics},
 	publisher = {Addison-Wesley},
 	title = {Concrete Mathematics},
 	year = {1994}}
 
 @book{graham-1996-ansi-common-lisp,
 	author = {Paul Graham},
+	date-modified = {2026-08-12 17:29:37 +0200},
 	file = {~/Documents/papers/graham-1996-ansi-common-lisp.pdf},
+	keywords = {lisp},
 	publisher = {Prentice Hall},
 	title = {{ANSI} Common Lisp},
 	year = {1996}}
 
 @book{graham-2004-hackers-and-painters,
 	author = {Paul Graham},
+	date-modified = {2026-08-12 17:29:45 +0200},
 	file = {~/Documents/papers/graham-2004-hackers-and-painters.pdf},
+	keywords = {misc},
 	publisher = {O'Reilly},
 	title = {Hackers and Painters},
 	year = {2004}}
 
 @book{gray-2000-intro-statistical-signal,
 	author = {Robert M. Gray and Lee D. Davisson},
+	date-modified = {2026-08-12 17:29:54 +0200},
 	file = {~/Documents/papers/gray-2000-intro-statistical-signal.pdf},
+	keywords = {statistics, signal-processing},
 	publisher = {Cambridge University Press},
 	title = {An Introduction to Statistical Signal Processing},
 	year = {2020}}
 
 @article{greenberg-1985-mathem-model,
 	author = {R. S. Greenberg and D. G. Kleinbaum},
+	date-modified = {2026-08-12 17:30:08 +0200},
 	file = {~/Documents/papers/greenberg-1985-mathem-model.pdf},
 	journal = {Annual Review of Public Health},
+	keywords = {mathematics, statistics, epidemiology},
 	pages = {223--245},
 	title = {Mathematical Modeling Strategies for the Analysis of Epidemiological Research},
 	volume = {6},
@@ -5536,16 +6020,19 @@
 
 @book{greene-2012-econom-analy,
 	author = {William H. Greene},
-	date-modified = {2026-08-10 14:55:23 +0200},
+	date-modified = {2026-08-12 17:30:15 +0200},
 	edition = {7},
+	keywords = {econometrics},
 	publisher = {Prentice-Hall},
 	title = {Econometric Analysis},
 	year = {2012}}
 
 @article{greenland-2016-spars-data-bias,
 	author = {Sander Greenland and Mohammad Ali Mansournia and Douglas G Altman},
+	date-modified = {2026-08-12 17:30:24 +0200},
 	file = {~/Documents/papers/greenland-2016-spars-data-bias.pdf},
 	journal = {BMJ},
+	keywords = {big-data, sparse},
 	number = {i1981},
 	pages = {1--6},
 	title = {Sparse Data Bias: A Problem Hiding In Plain Sight},
@@ -5554,15 +6041,19 @@
 
 @book{gribomont-2000-elem-prog-scheme,
 	author = {Pascal Gribomont},
+	date-modified = {2026-08-12 17:30:32 +0200},
 	file = {~/Documents/papers/gribomont-2000-elem-prog-scheme.pdf},
+	keywords = {scheme},
 	publisher = {Dunod},
 	title = {El{\'e}ments de programmation en Scheme},
 	year = {2000}}
 
 @book{gries-2013-pract-progr,
 	author = {Paul Gries and Jennifer Campbell and Jason Montojo},
+	date-modified = {2026-08-12 17:30:40 +0200},
 	edition = {2},
 	file = {~/Documents/papers/gries-2013-pract-progr.pdf},
+	keywords = {python},
 	publisher = {The Pragmatic Bookshelf},
 	series = {An Introduction to Computer Science Using Python 3},
 	title = {Practical Programming},
@@ -5570,22 +6061,28 @@
 
 @book{griffiths-1985-applied-stat-algorithms,
 	author = {P. Griffiths and I. D. Hill},
+	date-modified = {2026-08-12 17:30:49 +0200},
 	file = {~/Documents/papers/griffiths-1985-applied-stat-algorithms.pdf},
+	keywords = {statistics, algorithms},
 	publisher = {Royal Statistical Society},
 	title = {Applied Statistics Algorithms},
 	year = {1985}}
 
 @book{grigorik-2013-high-perf-browser,
 	author = {Ilya Grigorik},
+	date-modified = {2026-08-12 18:30:57 +0200},
 	file = {~/Documents/papers/grigorik-2013-high-perf-browser.pdf},
+	keywords = {web, hpc},
 	publisher = {O'Reilly},
 	title = {High performance Browser Networking},
 	year = {2013}}
 
 @book{grimmett-2001-one-thous,
 	author = {Geoffrey R. Grimmett and David R. Stirzaker},
+	date-modified = {2026-08-12 18:31:05 +0200},
 	doi = {10.1093/oso/9780198572213.001.0001},
 	file = {~/Documents/papers/grimmett-2001-one-thous.pdf},
+	keywords = {probability},
 	publisher = {Oxford University Press},
 	title = {One Thousand Exercises in Probability},
 	url = {https://doi.org/10.1093/oso/9780198572213.001.0001},
@@ -5593,9 +6090,11 @@
 
 @book{grimmett-2001-probab-random-proces,
 	author = {Geoffrey Grimmett and David Stirzaker},
+	date-modified = {2026-08-12 18:31:17 +0200},
 	doi = {10.1093/oso/9780198572237.001.0001},
 	edition = {3},
 	file = {~/Documents/papers/grimmett-2001-probab-random-proces.pdf},
+	keywords = {probability, random-processes},
 	publisher = {Oxford University Press},
 	title = {Probability and Random Processes},
 	url = {https://doi.org/10.1093/oso/9780198572237.001.0001},
@@ -5603,15 +6102,19 @@
 
 @book{grinberg-2018-flask-web-devel,
 	author = {Miguel Grinberg},
+	date-modified = {2026-08-12 18:31:29 +0200},
 	edition = {2},
 	file = {~/Documents/papers/grinberg-2018-flask-web-devel.pdf},
+	keywords = {python, flask, web},
 	publisher = {O'Reilly},
 	title = {Flask Web Development},
 	year = {2018}}
 
 @book{grolemund-2014-hands-progr-r,
 	author = {Garrett Grolemund},
+	date-modified = {2026-08-12 18:31:38 +0200},
 	file = {~/Documents/papers/grolemund-2014-hands-progr-r.pdf},
+	keywords = {rstats},
 	publisher = {O'Reilly},
 	title = {Hands-On Programming with {R}},
 	year = {2014}}
@@ -8015,10 +8518,10 @@
 
 @book{kollo-2005-advan-multiv,
 	author = {Tonu Kollo and Dietrich von Rosen},
-	date-modified = {2026-08-09 22:00:53 +0200},
+	date-modified = {2026-08-11 15:33:42 +0200},
 	doi = {10.1007/1-4020-3419-9},
 	file = {~/Documents/papers/kollo-2005-advan-multiv.pdf},
-	keywords = {statistics, linear-algebra, mutlivariate-analysis},
+	keywords = {statistics, linear-algebra, multivariate-analysis},
 	publisher = {Springer},
 	title = {Advanced Multivariate Statistics with Matrices},
 	url = {https://doi.org/10.1007/1-4020-3419-9},
@@ -10774,11 +11277,11 @@
 
 @article{ottenbacher-2004-review-two,
 	author = {K. J. Ottenbacher and H. R. Ottenbacher and L. Tooth and G. V. Ostir},
-	date-modified = {2026-08-09 21:40:26 +0200},
+	date-modified = {2026-08-11 15:33:35 +0200},
 	doi = {10.1016/j.jclinepi.2003.05.003},
 	file = {~/Documents/papers/ottenbacher-2004-review-two.pdf},
 	journal = {Journal of Clinical Epidemiology},
-	keywords = {statistics, epidemiology, mutlivariate-analysis},
+	keywords = {statistics, epidemiology,multivariate-analysis},
 	pages = {1147--1152},
 	title = {A Review of Two Journals Found That Articles Using Multivariable Logistic Regression Frequently Did Not Report Commonly Recommended Assumptions},
 	url = {https://doi.org/10.1016/j.jclinepi.2003.05.003},
@@ -15777,6 +16280,16 @@
 				<string>Keywords</string>
 				<key>value</key>
 				<string>scipy</string>
+				<key>version</key>
+				<string>1</string>
+			</dict>
+			<dict>
+				<key>comparison</key>
+				<integer>2</integer>
+				<key>key</key>
+				<string>Keywords</string>
+				<key>value</key>
+				<string>sas</string>
 				<key>version</key>
 				<string>1</string>
 			</dict>

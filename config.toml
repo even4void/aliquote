@@ -11,10 +11,6 @@ pygmentsStyle = "bw"
 pygmentsCodefences = true
 pygmentsCodefencesGuessSyntax = true
 
-[module]
-[[module.imports]]
-path = "cj.rs/gohugo-asciinema"
-
 [blackfriday]
 fractions = false
 
@@ -34,12 +30,6 @@ mainSections = ["tweet"]
 featherIconsCDN = true
 wc = true
 mode = "auto"
-
-[params.asciinema.defaults]
-theme = "solarized-light"
-loop = true
-autoPlay = true
-speed = 5.0
 
 [outputs]
 home = ["HTML", "RSS", "JSON"]
@@ -67,3 +57,4 @@ url = "/search"
 [taxonomies]
 tag = "tags"
 category = "categories"
+
