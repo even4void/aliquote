@@ -1,5 +1,5 @@
 ---
-title: "Permutation test in Lisp"
+title: "Permutation test in Scheme"
 date: 2023-12-22T09:26:56+01:00
 draft: false
 tags: ["scheme", "statistics"]

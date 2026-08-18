@@ -8,8 +8,6 @@ categories: ["2018"]
 
 Let us celebrate this new Spring with some papers fetched from arXiv, not necessarily from the last weeks but at least in reverse chronological order in my Twitter timeline.
 
-<!--more-->
-
 ### Crisan, A., Munzner, T., & Gardy, J. L. (2018). [Adjutant: an R-based tool to support topic discovery for systematic and literature review](https://www.biorxiv.org/content/early/2018/03/27/290031)
 
 A short paper describing a [Shiny application](https://github.com/amcrisan/Adjutant) allowing to fetch data from Pubmed and to apply topic clustering on the results using [t-SNE](https://lvdmaaten.github.io/tsne/) followed by the [hdbscan](https://hdbscan.readthedocs.io/en/latest/) ([R package](https://cran.r-project.org/web/packages/dbscan/)) algorithm. Importantly, data can be saved locally if the user want to perform additional analyses.
@@ -33,7 +31,7 @@ In the present review, the authors discuss several lessons learned from bugs or 
 
 Sometimes you come across some big work on arXiv. This is it! Here is a fresh new introduction to Machine Learning techniques, in a hundred of pages, for physicists this time. The [companion website](https://physics.bu.edu/~pankajm/MLnotebooks.html) has everything to get started with iPython notebooks and the [scikit-learn](http://scikit-learn.org/stable/index.html) library. The applications cover basic algorithms like [gradient descent](http://ruder.io/optimizing-gradient-descent/) and popular statistical methods: (regularized) linear and logistic regression, bagging and boosting, deep neural network using [Keras](https://keras.io/), [TensorFlow](https://www.tensorflow.org/) or [PyTorch](http://pytorch.org/), and even variational auto encoders using Keras. I should note that the authors introduce ML as a subfield of AI without further ado (why is this is not considered as a subfield of statistics?) and that they "focus on prediction problems and refer the reader to one of many excellent textbooks on classical statistics for more information on estimation" (other than prediction, I have a hard time believing that black-box models like bagging and boosting can offer anymore than predictive performance over well tuned regression models).
 
-### Drovandi, C. C., Grazian, C., Mengersen, K., & Robert, C. (2018). [Approximating the likelihood in approximate bayesian computation](Approximating the likelihood in approximate bayesian computation)
+### Drovandi, C. C., Grazian, C., Mengersen, K., & Robert, C. (2018). [Approximating the likelihood in approximate bayesian computation](https://arxiv.org/abs/1803.06645)
 
 This paper presents alternative approaches to [approximate bayesian computation](https://en.wikipedia.org/wiki/Approximate_Bayesian_computation) (ABC) which allows to compute a non-parametric estimate of the likelihood of a summary statistic based on computer simulation. This covers a bayesian version of the synthetic likelihood method proposed by [Wood (2010)](http://opus.bath.ac.uk/20604/2/synlik_4.pdf) and the non-parametric empirical likelihood developed by [Mengersen et al. (2013)](https://arxiv.org/abs/1205.5658) The latter allows for the use of Bayes factor in model comparison and it also avoid computational simulation under certain circonstances.
 
