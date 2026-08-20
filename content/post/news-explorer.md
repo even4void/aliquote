@@ -31,10 +31,10 @@ enough, I can just switch to Safari to browse the very same article online.
 
 {{< figure src="/img/2026-08-20-11-07-49.png" >}}
 
-News Explorer fulfills all the above requirements and let me replicate my actual
-workflow when using Newsboat. And it is somewhat faster! I didn't check if my
-feeds are perfectly synced between my MacBook and my iPhone, and I limited the
-iCloud storage to two weeks. I'll keep managing my permanent archives with
+[News Explorer][5] fulfills all the above requirements and let me replicate my
+actual workflow when using Newsboat. And it is somewhat faster! I didn't check
+if my feeds are perfectly synced between my MacBook and my iPhone, and I limited
+the iCloud storage to two weeks. I'll keep managing my permanent archives with
 Newsboat (storing plain text data in a SQLite database is cheap). Behind the
 scene, News Explorer relies on snapshots which allow to reduce the time between
 successive updates.
@@ -58,5 +58,6 @@ way around.
 [2]: https://netnewswire.com
 [3]: https://reeder.app
 [4]: https://newsboat.org
+[5]: https://betamagic.nl/products/newsexplorer.html
 
 {{% music %}}Cold Cave • *Life Magazine (Delorean Remix)*{{% /music %}}
