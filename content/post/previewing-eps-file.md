@@ -29,8 +29,12 @@ possible. However, the Finder Preview Pane displays the quick action so in case
 I need to preview many files at once, I can just open it with its defualt
 shortcut (`⇧⌘P`).
 
-[1]: https://www.tug.org/mactex/
+If you want the full Service file, it is available here: [Preview Encapsulated
+PostScript][2]. Unzip, rename, and put the workflow in `$HOME/Library/Services`.
 
-[^1]: Apple alos removed the `pstopdf` utility when Sonoma was released.
+[1]: https://www.tug.org/mactex/
+[2]: https://aliquote.org/pub/pep.wkflow.zip
+
+[^1]: Apple also removed the `pstopdf` utility when Sonoma was released.
 
 {{% music %}}The Velvet Underground • *Louise*{{% /music %}}
