@@ -15,8 +15,8 @@ EPS as a high-def graphical backend for further $\TeX$ processing.
 
 Here's one way to preview EPS file using a Quick Action from the Finder. It
 assumes you have the `epstopdf` program, which is usually bundled with
-[MacTeX][1].[^1] There're probably other options worth of exploring but I was in
-a hurry and I'm no AppleScript expert.
+[MacTeX][1].[^1] There're probably other options but I was in a hurry and I'm no
+AppleScript expert.
 
 {{< figure src="/img/2026-08-20-15-10-39.png" >}}
 
