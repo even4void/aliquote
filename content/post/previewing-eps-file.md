@@ -18,16 +18,30 @@ assumes you have the `epstopdf` program, which is usually bundled with
 [MacTeX][1].[^1] There're probably other options but I was in a hurry and I'm no
 AppleScript expert.
 
-{{< figure src="/img/2026-08-20-15-10-39.png" >}}
+{{< figure src="/img/2026-08-21-10-53-13.png" caption="The preceding version of this workflow includes two additional steps that happened to be unnecessary. This version was updated on 2026-08-21." >}}
 
 Yes, this is using Automator to define a convoluted workflow (basically to
-filter Finder items based on their extension) but it does the job actually. Now,
-I can right click on an EPS file and it get converted on the fly (in the user
-home directory) and sent to Preview app. It would be cool if we could call the
-Quick Action when double clicking the file directly but it seems it is not
-possible. However, the Finder Preview Pane displays the quick action so in case
-I need to preview many files at once, I can just open it with its defualt
-shortcut (`⇧⌘P`).
+filter Finder items based on their extension) but it does not quite do the job
+actually. The Quick Action remains available for any filetype. In order for this
+action to be visible only for EPS file, we need to edit the `Info.plist` that
+sits in the workflow folder manually. If you look carefully, you'll notice that
+the `NSSendFileTypes` key is set to `<string>public.item</string>`. Update the
+key to the following values and it should work:
+
+```xml
+<key>NSSendFileTypes</key>
+<array>
+    <string>com.adobe.encapsulated-postscript</string>
+    <string>public.eps</string>
+</array>
+```
+
+Now, I can right click on an EPS file and it get converted on the fly (in the
+user home directory) and sent to Preview app. This action is not available for
+other filetypes. It would be cool if we could call the Quick Action when double
+clicking the file directly but it seems it is not possible. However, the Finder
+Preview Pane displays the quick action so in case I need to preview many files
+at once, I can just open it with its defualt shortcut (`⇧⌘P`).
 
 If you want the full Service file, it is available here: [Preview Encapsulated
 PostScript][2]. Unzip, rename, and put the workflow in `$HOME/Library/Services`.
