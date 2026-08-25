@@ -60,7 +60,7 @@ CONTEXT. I do not even speak of journal entries and magazines available online.
 This is not texdoc or the not so short intro to $\LaTeX$. You get all the
 details, and all the templates from the talks given all over the past 15 years.
 
-{{< figure src="/img/2026-08-25-21-52-21.png" >}}
+{{< figure src="/img/2026-08-25-22-02-22.png" caption="Hans Hagen (PRAGMA ADE, Hasselt, NL)" >}}
 
 The CGJ, MAPS and PRACJOURN template are available in your TL distribution. The
 [TeX-sidenotes][3] package provides you with the Tufte handout for free as well.
