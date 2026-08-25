@@ -1,0 +1,79 @@
+---
+title: "CONTEXT once and for all"
+date: 2026-08-25T20:36:42+02:00
+draft: true
+tags: ["tex"]
+categories: ["2026"]
+---
+
+I keep installing the latest MacTeX distribution on my MacBook. I did this for
+as long as I remember having a Mac. I never used MS Word (except for occasional
+proof-reading of scientific papers), and when it was absolutely necessary to
+produce a DOC, then DOCX document, I wrote everything in Pages and then exported
+it to the desired format. Working with MS format in Pages was (and is still) a
+pain because you need to export the final version each time. And working with
+Bibtex was never an option. Yes, we could use Endnote in principle, should we
+were willing to loose cross-references after exchanging the file with a
+colleague. Anyway, I always wrote in $\LaTeX$, although I never really like the
+plethora of packages which need to be part of the whole document.[^1] I'm
+talking using the base classes like article or report, not more elaborated stuff
+like KOMA-Script, memoir & Co. Now I don't even know what the state of the art
+is: what is the mandatory set of default packages to include, should we use
+lualatex only, who's still using the dvi-ps-pdf toolchain, should lmodern be the
+default font now. I stopped following best practices and I spent years letting
+Pandoc do all the job of converting my Markdown document for me, although
+Markdown remains very limited in its basic form.
+
+I had a great time with Org, then plain $\TeX$, and now I remember that I've
+only been tied to $\LaTeX$ because of literate programming with R or Stata. I
+had my time with Sweave, knitr, now quarto. I also had good times with noweb and
+statweave. Remember the 2000s? The only format I've always felt comfortable with
+was CONTEXT, though. Sadly, I only spent a few years writing in CONTEXT. This
+was in 2008-2010, Bibtex support was already there, the simple-slides and filter
+modules written by Aditya Mahajan were already useable, CONTEXT felt closer to
+plain $\TeX$, and the documentation was already excellent. The design of this
+website was largely inspired by that of the [PRAGMA Advanced Document
+Enginnering][1] itself. But literate programming was the clear winner at that
+time. I had reports to produce every week or so, and knitr soon became the *de
+facto* typesetting system. I may have produced more than a thousand of such
+reports over a period of 10 years,[^2] and all of this was perfectly
+reproducible. I can still run some of those reports 10 years later.
+
+I can't count the number of times I've seen the same slides being shown at
+conferences or internal meetings, all based on standard Beamer templates. Yes,
+there was an alternative, Metropolis (originally [mtheme][2] -- the so-called
+modern $\LaTeX$ Beamer theme), and everyone started using that theme. How come
+nobody wrote their own template? I had to resort to foiltex or a stremlined
+version of Metropolis to feel like I have something to say about clear
+presentation and typography.
+
+It's appalling to see that the scientific publishing machine (think AMSTeX,
+arXiv, etc.) has imposed such a stranglehold on LaTeX that Context found no
+place within the system. Yet, it comes battery included. You will rarely need to
+include third-party modules, or even redefine default behavior, and typesetting
+math is far superior to that of LaTeX without specifying any options at all.
+
+{{< figure src="/img/2026-08-25-21-41-35.png" >}}
+
+There are thousands of pages of documentation published on all aspects of
+CONTEXT. I do not even speak of journal entries and magazines available online.
+This is not texdoc or the not so short intro to $\LaTeX$. You get all the
+details, and all the templates from the talks given all over the past 15 years.
+
+{{< figure src="/img/2026-08-25-21-52-21.png" >}}
+
+The CGJ, MAPS and PRACJOURN template are available in your TL distribution. The
+[TeX-sidenotes][3] package provides you with the Tufte handout for free as well.
+I devised a dozens of templates for Texshop in less than an hour with all those
+resources. I still have my old templates from the old me.
+
+[1]: https://www.pragma-ade.nl
+[2]: https://github.com/matze/mtheme
+[3]: https://github.com/andythomas/TeX-sidenotes/tree/master
+
+[^1]: I don't even speak of writing in French back in the days (circa 2000).
+
+[^2]: And again, I don't even speak of the number of times I was asked if I
+    could produce an Excel table instead of my nicely formatted PDF report.
+
+{{% music %}}The March Violets • *Rich City*{{% /music %}}
