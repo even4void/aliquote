@@ -1,7 +1,7 @@
 ---
 title: "CONTEXT once and for all"
 date: 2026-08-25T20:36:42+02:00
-draft: true
+draft: false
 tags: ["tex"]
 categories: ["2026"]
 ---
@@ -52,28 +52,47 @@ arXiv, etc.) has imposed such a stranglehold on LaTeX that Context found no
 place within the system. Yet, it comes battery included. You will rarely need to
 include third-party modules, or even redefine default behavior, and typesetting
 math is far superior to that of LaTeX without specifying any options at all.
+Although I only used CONTEXT to process my slides and posters back in the days,
+I now want to write everything using the new typesetting system.[^3]
 
 {{< figure src="/img/2026-08-25-21-41-35.png" >}}
 
-There are thousands of pages of documentation published on all aspects of
+There are thousands of pages of [documentation][3] published on all aspects of
 CONTEXT. I do not even speak of journal entries and magazines available online.
 This is not texdoc or the not so short intro to $\LaTeX$. You get all the
-details, and all the templates from the talks given all over the past 15 years.
+details, and all the templates from the talks given all around during the past
+15 years.
 
 {{< figure src="/img/2026-08-25-22-02-22.png" caption="Hans Hagen (PRAGMA ADE, Hasselt, NL)" >}}
 
 The CGJ, MAPS and PRACJOURN template are available in your TL distribution. The
-[TeX-sidenotes][3] package provides you with the Tufte handout for free as well.
-I devised a dozens of templates for Texshop in less than an hour with all those
-resources. I still have my old templates from the old me.
+[TeX-sidenotes][5] package provides you with the Tufte handout for free as well.
+I devised a dozens of templates for TeXShop in less than an hour with all those
+resources. Hopefully I still have my old templates from the old me and I guess
+I'll just need to adapt the environments a little.
+
+I warmly recommend you give CONTEXT a try if you're tired of $\LaTeX$ or MS
+Word. Don't be afraid, despite the large number of available commands, you can
+get started with as few as a [dozen of commands][6] or so:
+
+{{< figure src="/img/2026-08-27-11-35-36.png" caption="Source: <i>CONTEXT: the manual</i> (old version)" >}}
 
 [1]: https://www.pragma-ade.nl
 [2]: https://github.com/matze/mtheme
-[3]: https://github.com/andythomas/TeX-sidenotes/tree/master
+[3]: https://wiki.contextgarden.net/Documentation
+[4]: https://github.com/andythomas/TeX-sidenotes/tree/master
+[5]: https://tex.stackexchange.com/users/270600/max-chernoff
+[6]: https://mirror.gutenberg-asso.fr/tex.loria.fr/formats/context/cont-enp.pdf
 
 [^1]: I don't even speak of writing in French back in the days (circa 2000).
 
 [^2]: And again, I don't even speak of the number of times I was asked if I
     could produce an Excel table instead of my nicely formatted PDF report.
+
+[^3]: Quoting [Max Chernoff][4] on TeX.SE: "The most recent version of ConTeXt
+    is included in TeX Live, but TeX Live also includes the older versions.
+    context <filename>.tex will compile with the latest version (MkXL), context
+    --luatex <filename>.tex will compile with the slightly older version (MkIV),
+    and texexec <filename>.tex will compile with the oldest version (MkII)."
 
 {{% music %}}The March Violets • *Rich City*{{% /music %}}
