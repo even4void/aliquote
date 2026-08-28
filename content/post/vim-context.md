@@ -34,12 +34,19 @@ setl complete+=,k~/.local/share/context/words
 
 And now you can use `<C-n>` and `<C-p>` as you type. You also likely want to get
 some auto-formatting option. The following lines will allow to use `gq` and `=`
-to hard wrap text at 80 chars and reformat table most of the times:
+to hard wrap text at 80 chars and reformat table manually most of the times:
 
 ```vim
 setlocal formatprg=fmt\ -w80
 setlocal equalprg=column\ -t
 ```
+
+You can also set [`textwidth` and `formatoptions`][1] and forget about external
+tools, or you can rely on [tex-fmt][2] which handles indenting and table
+formatting for plain $\TeX$ and CONTEXT (default hard wrapping at 80 chars is
+also enabled by default).
+
+{{< figure src="/img/2026-08-28-08-34-45.png" >}}
 
 The ft plugin that ships with Vim and Neovim already includes everything you
 need to compile a CONTEXT document. Use `:ConTeXt` or `:make`, and you're done.
@@ -47,7 +54,8 @@ This matches the ConTeXt-TL engine you have in TeXShop on macOS. Also, CONTEXT
 is not $\LaTeX$, and any error will appear nicely formatted in the QuickFix
 list. Just ensure that you set up synctex properly if you want to use
 forward/reverse search (on macOS, it should be possible to interact with TeXShop
-previewer directly if TeXShop is configured to use an alternate editor):
+previewer directly if TeXShop is configured to use an alternate editor -- this
+is what Vimtex does):
 
 ```vim
 let b:context_synctex=1
@@ -60,30 +68,38 @@ follows:
 let b:context_extra_options="--luatex"
 ```
 
-The [CG wiki][1] provides extra advices for abbreviations, cleaning auxiliary
+The [CG wiki][3] provides extra advices for abbreviations, cleaning auxiliary
 files (fewer than those returned by latexmk or pdflatex in any case). Note that
 the ft plugin provides the handy shortcuts you are used to when navigating
 between section and paragraphs (`]]`, `[]`, etc.), as well as a properly
 configured `%` matchit operator.
 
 As for browsing the doc using `keywordprg` I currently use the CG wiki for the
-[CONTEXT command reference][2] using the same helper shell script that I
-described in a [previous post][3]. As seen in the screenshot below (right), it
+[CONTEXT command reference][4] using the same helper shell script that I
+described in a [previous post][5]. As seen in the screenshot below (right), it
 launches w3m in a new window and displays the online doc with proper
-highlighting and working links. On the left you can see the result of calling
-`:make` on a document. Using `:ConTeXt` just adds some colored output. It's up
-to you.
+highlighting and working links. It is not entirely satisfying since some
+commands are not documented, and sometimes the site is not accessible or slow to
+respond. Maybe a better solution would be to parse the entire [ConTEXt
+commands][7] manual. On the left you can see the result of calling `:make` on a
+document. Using `:ConTeXt` just adds some colored output. It's up to you.
 
-{{< fluid_imgs
-"pure-u-1-2|/img/2026-08-27-10-42-35.png"
-"pure-u-1-2|/img/2026-08-27-15-26-25.png" >}}
+{{< fluid_imgs "pure-u-1-2|/img/2026-08-27-10-42-35.png" "pure-u-1-2|/img/2026-08-27-15-26-25.png" >}}
 
 See, no LSP, no super-charged plugin. Actually this is how I write Lisp-related
 or Stata stuff and it's perfectly fine to have a minimal toolbox at your
 fingertips. And things never break!
 
-[1]: https://wiki.contextgarden.net/Input_and_compilation/Text_editors/Vim
-[2]: https://wiki.contextgarden.net/Command
-[3]: /post/neovim-markdown
+[1]: https://blog.ezyang.com/2010/03/vim-textwidth/
+[2]: https://github.com/WGUNDERWOOD/tex-fmt
+[3]: https://wiki.contextgarden.net/Input_and_compilation/Text_editors/Vim
+[4]: https://wiki.contextgarden.net/Command
+[5]: /post/neovim-markdown
+[6]: https://badness.dev/
+[7]: https://www.pragma-ade.nl/general/qrcs/setup-en.pdf
 
-{{% music %}}Jeff Buckley • *Everybody Here Wants You*{{% /music %}}
+[^1]: It looks like [Badness][6], which is written by the author of the Markdown
+    Panache language server, actually does a pretty good job at formatting plain
+    $\TeX$ (except for hard wrapping, but we may use 'semantic' wrapping
+    instead) as well as CONTEXT. {{% music %}}Jeff Buckley • *Everybody Here
+    Wants You*{{% /music %}}

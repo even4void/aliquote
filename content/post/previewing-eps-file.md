@@ -10,7 +10,7 @@ Apple dropped support for quicklooking and viewing Encapsulated PostScript (EPS)
 file a while ago, but I wasn't aware of that since I used OSX Mojave before
 turning back to macOS two years ago after a 4-year hiatus. I was in the middle
 of browsing some old Stata code for a biostatistical primer and I wanted to
-check some figures. All the code was written using Stata 13 which only support
+check some figures. All the code was written using Stata 13 which only supported
 EPS as a high-def graphical backend for further $\TeX$ processing.
 
 Here's one way to preview EPS file using a Quick Action from the Finder. It
@@ -44,7 +44,8 @@ Preview Pane displays the quick action so in case I need to preview many files
 at once, I can just open it with its defualt shortcut (`⇧⌘P`).
 
 If you want the full Service file, it is available here: [Preview Encapsulated
-PostScript][2]. Unzip, rename, and put the workflow in `$HOME/Library/Services`.
+PostScript][2] (fixed as of 2026-08-21). Unzip, rename, and put the workflow in
+`$HOME/Library/Services`.
 
 [1]: https://www.tug.org/mactex/
 [2]: https://aliquote.org/pub/pep.wkflow.zip
