@@ -13,7 +13,7 @@ produce a DOC (then a DOCX) document, I wrote everything in Pages and then
 exported it to the desired format. Working with MS format in Pages was (and is
 still) a pain because you always end up exporting the final version each time.
 Importing and exporting after each major revision has always felt like a pain in
-the ass. And working with Bibtex was never an option. Yes, we could use Endnote
+the ass. And working with BibTeX was never an option. Yes, we could use Endnote
 in principle, should we were willing to loose cross-references after exchanging
 the file with a colleague. I transferred my licence to a former colleague of
 mine. Anyway, I always wrote in $\LaTeX$ since my PhD, although I never really
@@ -34,7 +34,7 @@ only been tied to $\LaTeX$ because of literate programming with R or Stata. I
 had my time with Sweave, knitr, now quarto. I also had good times with noweb and
 statweave. Remember the 2000s? The only format I've always felt comfortable with
 was CONTEXT, though. Sadly, I only spent a few years writing in CONTEXT. This
-was in 2008-2010, Bibtex support was already there, the simple-slides and filter
+was in 2008-2010, BibTeX support was already there, the simple-slides and filter
 modules written by Aditya Mahajan were already useable, CONTEXT felt closer to
 plain $\TeX$, and the documentation was already excellent. The design of this
 website was largely inspired by that of the [PRAGMA Advanced Document
