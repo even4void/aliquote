@@ -13,6 +13,16 @@ of browsing some old Stata code for a biostatistical primer and I wanted to
 check some figures. All the code was written using Stata 13 which only supported
 EPS as a high-def graphical backend for further $\TeX$ processing.
 
+{{% alert note %}}
+<small>[2026-09-04]</small><br>
+See [PostScript’s sudden death in
+Sonoma](https://eclecticlight.co/2023/09/25/postscripts-sudden-death-in-sonoma/)
+for a more in-depth discussion. See also [this
+thread](https://discussions.apple.com/thread/256094283?sortBy=rank) on Apple
+Community help forum.
+{{% /alert %}}
+
+
 Here's one way to preview EPS file using a Quick Action from the Finder. It
 assumes you have the `epstopdf` program, which is usually bundled with
 [MacTeX][1].[^1] There're probably other options but I was in a hurry and I'm no
