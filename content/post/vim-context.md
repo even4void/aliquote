@@ -48,6 +48,18 @@ also enabled by default).
 
 {{< figure src="/img/2026-08-28-08-34-45.png" >}}
 
+{{% alert note %}}
+<small>[2026-09-05]</small><br>
+There's not much we can do with tex-fmt as it primarily targets $\LaTeX$ format.
+I use the following settings: `setlocal formatprg=tex-fmt\ --nowrap\ --stdin`.
+However, I often end up using Vim builtin formatting facilities (think `gwip` ,
+with appropriate `textwidth` -- I don't mind about indenting and the like) As
+for syntax checking, I rely on chktex with a global [config
+file](https://aliquote.org/pub/chktexrc). You'll need to define a global
+`.checktexrc` in your XDG config directory and `export
+CHKTEXRC=$XDG_CONFIG_HOME/chktex`. This sort of works for many common mistakes.
+{{% /alert %}}
+
 The ft plugin that ships with Vim and Neovim already includes everything you
 need to compile a CONTEXT document. Use `:ConTeXt` or `:make`, and you're done.
 This matches the ConTeXt-TL engine you have in TeXShop on macOS. Also, CONTEXT
