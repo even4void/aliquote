@@ -6,6 +6,8 @@ tags: ["arxiv"]
 categories: ["2026"]
 ---
 
+Again, I'm so late on this reading list (originally drafted in April).
+
 ### [Stress-Testing Assumptions: A Guide to Bayesian Sensitivity Analyses in Causal Inference][1]
 
 > While observational data are routinely used to estimate causal effects of
@@ -32,6 +34,11 @@ categories: ["2026"]
 > analyses in Bayesian causal inference. Our goal is for the reader to walk away
 > with implementation-level knowledge.
 
+This paper is about sensitivity analysis in observational studies using Bayesian
+methods. Such an approach allows to handle missing data as unobserved quantities
+(like model parameters) while sampling form the joint posterior of parameters
+and missing quantities using Stan to make inference on the ATE, $\psi$.
+
 ### [Efficient Tests for Testing in Two-way ANOVA under Heteroscedasticity][2]
 
 > New tests are developed for two-way ANOVA models with heterogeneous error
@@ -49,7 +56,7 @@ categories: ["2026"]
 > effects are seen to have comparable power and size performance to the existing
 > tests. The behavior of the proposed tests under the non-normal error
 > distribution is also discussed. Four real data sets are used to demonstrate
-> the application of the proposed tests. A software package is made in `R' to
+> the application of the proposed tests. A software package is made in \`R' to
 > make it simple to apply the tests to experimental data sets.
 
 ### [Sample Size Calculations for Developing Clinical Prediction Models: Overview and pmsims R package][3]
@@ -177,7 +184,7 @@ categories: ["2026"]
 > our "leave-one-out ep-BH method" to design a new method with finite-sample FDR
 > control for the simultaneous t-test setting.
 
-{{% music %}}The Wake • _Rusted 20_{{% /music %}}
+{{% music %}}The Wake • *Rusted 20*{{% /music %}}
 
 [1]: https://arxiv.org/abs/2602.23640
 [2]: https://arxiv.org/abs/2602.23815

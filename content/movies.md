@@ -4,9 +4,15 @@ date: 2022-08-03T00:00:00
 url: "/articles/movies/"
 ---
 
-Here is a list of TV shows I watched over the past few years, along with personal ratings.
+Here is a list of TV shows I watched over the past few years, along with
+personal ratings.
 
-I haven't watched TV in about ten years, probably even before I removed the TV from my room. I didn't really enjoy series until I avidly watched 24 every week for many weeks. Since then I occasionally watch TV series, alone or with my son, on Apple Tv or Netflix. I prefer to wait for whole seasons to be available, and watch them at a safe pace (one or two episodes a day). Anyway, it all looks like a lot of screen time today.
+I haven't watched TV in about ten years, probably even before I removed the TV
+from my room. I didn't really enjoy series until I avidly watched 24 every week
+for many weeks. Since then I occasionally watch TV series, alone or with my son,
+on Apple Tv or Netflix. I prefer to wait for whole seasons to be available, and
+watch them at a safe pace (one or two episodes a day). Anyway, it all looks like
+a lot of screen time today.
 
 <small>
 <table border="0">
@@ -17,6 +23,7 @@ I haven't watched TV in about ten years, probably even before I removed the TV f
 <td><em>Seasons (Ep.)</em></td>
 <td><em>Rating</em></td>
 </tr>
+<tr><td><a href="https://tv.apple.com/fr/show/years-and-years/umc.cmc.25jgn02fsa74mp5ewrxmmns0v">Years and Years</a></td><td>2026</td><td>1 (6)</td><td>&#9733;&#9733;&#9733;&#9734;&#9734;</td></tr>
 <tr><td><a href="https://en.wikipedia.org/wiki/House_of_the_Dragon">House of the Dragon</a></td><td>2024</td><td>2 (18)</td><td>&#9733;&#9733;&#9733;&#9733;&#9734;</td></tr>
 <tr><td><a href="https://en.wikipedia.org/wiki/Alias_Grace_(miniseries)">Alias Grace</a></td><td>2024</td><td>1 (6)</td><td>&#9733;&#9733;&#9733;&#9734;&#9734;</td></tr>
 <tr><td><a href="https://en.wikipedia.org/wiki/The_Queen%27s_Gambit_(miniseries)">The Queen's Gambit</a></td><td>2024</td><td>1 (7)</td><td>&#9733;&#9733;&#9733;&#9733;&#9734;</td></tr>
