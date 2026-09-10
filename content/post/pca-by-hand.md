@@ -7,7 +7,7 @@ categories: ["2026"]
 ---
 
 Usually, statistical software implements principal component analysis (PCA)
-using eigen decomposition, base don the correlation or covariance matrix, or
+using eigen decomposition, based on the correlation or covariance matrix, or
 singular value decomposition (SVD), based on the rectangular dataset.
 
 Consider the Holzinger & Swineford dataset from the [lavaan][1] R package. It is
