@@ -65,11 +65,11 @@ reviewer? (little joke about post-hoc power analysis)
 
 Little is said about the connection between ANOVA, the t-test, and the theory of
 linear models, but this little gem (Fig. 17.10) reminds me of Bill Huber's
-beautiful depiction of how covariance acts the way it does:
+[beautiful depiction][3] of how covariance acts the way it does:
 
 > everybody get out your crayons!
 
-That should be the motto for data exploration in statistics!
+That should be the motto for data exploration in statistics, IMHO!
 
 [1]: http://www.biostathandbook.com/
 [2]: https://www.taylorfrancis.com/books/mono/10.1201/9781315367002/data-analysis-life-sciences-rafael-irizarry-michael-love
