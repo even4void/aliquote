@@ -1,7 +1,7 @@
 ---
 title: "Lisp REPL for Vim"
 date: 2026-09-20T19:56:27+02:00
-draft: true
+draft: false
 tags: ["vim", "lisp"]
 categories: ["2026"]
 ---
@@ -20,7 +20,8 @@ here are two options:
 1. [icl][2]: An enhanced REPL
 2. [sbcli][3]: A REPL for my SBCL needs
 
-Both provide readline capabilities, syntax highlighting if you like that.
+Both provide readline capabilities, as well as syntax highlighting if you like
+that.
 
 I would say icl is more in the spirit of modern REPL (like [arf][4] for R) and
 it also offers a notebook interface, which I didn't really explore, with a focus
@@ -30,6 +31,16 @@ that it is now vide coded. As a result, maybe, it now features
 
 > AI integration - Use ,explain to get AI-powered explanations of code, errors,
 > and results
+
+One other curious thing is that it now ships with some bindings to Lisp-Stat
+(which apparently still doesn't care about Luke Tierney original work, but
+that's not the point).
+
+On the contrary, sbcli has a more focused objective: helping the user along the
+various steps of developing a program in Lisp. This includes printing
+documentation for symbols, entering inspection mode for a symbol, and managing
+an interactive debugger with available restarts; it also allows to print the
+return type of any expression or to dump the disassembly of a symbol.
 
 [1]: https://github.com/kovisoft/slimv
 [2]: https://github.com/atgreen/icl

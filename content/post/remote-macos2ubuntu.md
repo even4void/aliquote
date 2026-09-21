@@ -78,4 +78,4 @@ Tailscale network and connect using its tailnet IP instead of your work network.
     allows to share native Wayland compositors, but I have no idea if that
     really works.
 
-{{% music %}}XXX • *XXX*{{% /music %}}
+{{% music %}}Alan Walker • *Faded (Dash Berlin remix)*{{% /music %}}
