@@ -21,7 +21,7 @@ $ x11vnc -storepasswd
 ```
 
 This, of course, assumes you are running on x11 and not Wayland (check that with
-echo $XDG_SESSION_TYPE). [^1] Now, let the app run in the background using the
+`echo $XDG_SESSION_TYPE`).[^1] Now, let the app run in the background using the
 following instruction:
 
 ```shell
@@ -35,7 +35,7 @@ for us:
 $ x11vnc -usepw -auth guess
 ```
 
-If that still doesn't work, e.g. we're getting a « denying additional client »
+If that still doesn't work, e.g. we're getting a 'denying additional client'
 error message from Ubuntu, it's probably because we need to allow multiple
 connections to the server:
 
@@ -44,7 +44,7 @@ $ x11vnc -usepw -auth guess -shared -forever
 ```
 
 Now you be able to connect to your Ubuntu workstation using Spotlight
-(vnc://<yourip>:5900) or the Screen Sharing app directly. Note that once you
+(`vnc://<yourip>:5900`) or the Screen Sharing app directly. Note that once you
 connected using Spotlight, the distant machine will be available in the list of
 available connections in the Screen Sharing app.
 
