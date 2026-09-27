@@ -58,9 +58,9 @@ else if pathname contains ".r" or pathname contains ".R" then
     end tell
 else
     tell application "Terminal"
-				if not (exists window 1) then reopen
-				activate
-				do script with command the_selection in front window
+        if not (exists window 1) then reopen
+        activate
+        do script with command the_selection in front window
     end tell
 end if
 ```
