@@ -24,8 +24,8 @@ Algorithms*) to assess randomness of a sequence of numbers (possibly generated
 by a PRNG). See also [Knuth's series for chi squared percentage points][2] by
 John D. Cook.
 
-[Andy Ross][3] gave an example of how to perform a proper χ² test for
-a one-dimensional dataset:
+[Andy Ross][3] gave an example of how to perform a proper χ² test for a
+one-dimensional dataset:
 
 ```wolfram
 pearsonTest[obs_List, exp_List] /; Length[obs] == Length[exp] :=
@@ -63,12 +63,12 @@ help for `anova.glm()`, you'll notice that there are both an LRT and a score
 and $X_2$, the model (log of the counts) reads:
 
 $$
-  log(y) = \beta_0 + \beta_1 X_1 + \beta_2 X_2 + \beta_3 X_2 X_3,
+  log(y) = \beta_0 + \beta_1 X_1 + \beta_2 X_2 + \beta_3 X_1 X_2,
 $$
 
 and the test of independence we use in a standard $\chi^2$ test for a
-contingency table amount to test $H_0: \beta_3 = 0$, which reads "no interaction
-between $X_1$ and $X_2$."
+contingency table amounts to test $H_0: \beta_3 = 0$, which reads "no
+interaction between $X_1$ and $X_2$."
 
 Consider the builtin dose dataset from Stata, which is comprised of 96
 observations relating dose frequency (dosage) and time to recovery (function):
