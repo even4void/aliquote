@@ -57,8 +57,11 @@ else if pathname contains ".r" or pathname contains ".R" then
         end tell
     end tell
 else
-    display dialog "Unknown filetype" with icon note buttons {"Ok"} default button 1
-    error number -128
+    tell application "Terminal"
+				if not (exists window 1) then reopen
+				activate
+				do script with command the_selection in front window
+    end tell
 end if
 ```
 
