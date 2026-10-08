@@ -18,7 +18,7 @@ When you first launch Exploratory, it will install the latest R release and arou
 
 ## Let's get started: importing some data
 
-I have tried the hard way but it was too much a pain for this short review. See the [sidenote](#sidenote).
+I have tried the hard way but it was too much a pain for this short review. See the sidenote.
 
 So I will stick with the [birth weight dataset](https://stats.stackexchange.com/a/21504) from Hosmer and Lemeshow that I have been perusing for my courses the last 10 years or so. Let start a new project and import a dataset as a CSV file. You can also import the RData file that comes with R in the MASS package (`birthwt`). Once it is done, the project will be listed on the welcome screen.
 
