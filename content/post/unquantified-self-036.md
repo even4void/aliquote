@@ -1,6 +1,6 @@
 ---
 title: "The unquantified self #36"
-date: 2026-10-09T15:06:24+32:00
+date: 2026-10-09T15:06:24+02:00
 draft: true
 tags: ["self"]
 categories: ["2026"]
