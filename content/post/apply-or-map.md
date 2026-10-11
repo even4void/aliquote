@@ -6,11 +6,32 @@ tags: ["mathematica", "lisp"]
 categories: ["2026"]
 ---
 
-A student who was using Mathematica (or was it already Wolfram at that time?) extensively once asked me about the difference between `Apply` and `Map`. I replied with an example of application in Lisp (map) and in R (apply). Lately, I realized that there's a lot more similarity between Mathematica `Map` and `Apply` and Lisp idioms. Let's see it in action, but before that, what's the hell are Mathematica `Map` and `Apply` procedures doing?
+A student who was using Mathematica (or was it already Wolfram at that time?)
+extensively once asked me about the difference between `Apply` and `Map`. I
+replied with an example of application in Lisp (map) and in R (apply). Lately, I
+realized that there's a lot more similarity between Mathematica `Map` and
+`Apply` and Lisp idioms. Let's see it in action, but before that, what's the
+hell are Mathematica `Map` and `Apply` procedures doing?
+
+Note that most numerical function are auto-vectorized, or Listable in Wolfram
+parlance (77% in Wolfram 15).
+
+```wolfram
+With[{all = Names["System`*"]},
+ numeric = 
+  Pick[all, MemberQ[#, NumericFunction] & /@ Attributes /@ all];
+ listable = Pick[all, MemberQ[#, Listable] & /@ Attributes /@ all];
+ ]
+Length /@ {numeric, listable}
+```
+
+Issuing `Complement[numeric, Intersection[numeric, listable]]` will show you
+which ones are not. There's often no need to `Map` Listable functions over list
+of, say, integers using `Table`
 
 https://mathematica.stackexchange.com/questions/46238/scan-vs-map-vs-apply
 https://community.wolfram.com/t/relationship-between-apply-and-map/15885/3
 http://clhs.lisp.se/Body/f_map.htm
 https://www.geeksforgeeks.org/lisp/mapping-functions-in-lisp/
 
-{{% music %}}XXX • _XXX_{{% /music %}}
+{{% music %}}Siouxsie and The Banshees • *Slowdive*{{% /music %}}

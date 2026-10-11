@@ -1,7 +1,7 @@
 ---
 title: "The unquantified self #36"
 date: 2026-10-09T15:06:24+02:00
-draft: true
+draft: false
 tags: ["self"]
 categories: ["2026"]
 ---
@@ -15,12 +15,12 @@ those two seasons again, before tackling season 3. First, it helps recalling the
 sequence of events, and second, of course, it means spending more time with my
 son.
 
-A few days ago, I came across this blog post on [Resurrecting ichat audio and
-video conferencing][2], which comes with a nice picture of an iSight. I have
+A few days ago, I came across this blog post, [Resurrecting ichat audio and
+video conferencing][2], which comes with a nice picture of an iSight.[^1] I have
 fond memories of those early devices, although I never got one. However, I still
 have this Mighty Mouse (bluetooth), and it still works with my MacBook M4 Pro.
 
-{{< figure src="/img/IMG_1775.jpeg" caption="My desktop at the time of this writing" >}}
+{{< figure src="/img/IMG_1775.jpeg" >}}
 
 I still rely on [Beets][3] to process all my music. Actually, my workflow is
 quite simple: once I grabbed some MP3s from YT or Bandcamp, I let Beets analyze
@@ -76,7 +76,7 @@ use it as my default text editor for some weeks. By the way, I created a minimal
 friction compared to my default Neovim config that was hardly in sync across all
 machines. And I happen to use bare Vim 9 with pleasure on macOS.
 
-{{< figure src="/img/2026-10-09-17-54-22.png" >}}
+{{< figure src="/img/2026-10-09-17-54-22.png" caption="My desktop at the time of this writing" >}}
 
 I read zero book since August. I do not feel ashamed, but I must admit I miss
 those quiet moments. In the meantime I did a lot of archiving on my MacBook,
@@ -84,9 +84,16 @@ took some time to get up to speed with Wolfram 15 as well as to brush my skills
 with Stata 19. There are still so many exciting things to discover and get to
 grips with that I reckon I'll be busy with them right up until Christmas.
 
+{{% music %}}Cocteau Twins • *The Hollow Men*{{% /music %}}
+
 [1]: /articles/movies
 [2]: https://blog.pipetogrep.org/2026/09/11/resurrecting-ichat-audio-and-video-conferencing/
 [3]: https://beets.io
 [4]: https://www.nightbirdsevolve.com/meta/
+[5]: https://blog.colinbreck.com/i-dont-want-to-read-what-you-didnt-write/
 
-{{% music %}}Cocteau Twins • *The Hollow Men*{{% /music %}}
+[^1]: It's still an item that comes from HackerNews, but I am becoming
+    increasingly disappointed with the quality of the content posted on this
+    front page ever since all the AI crap first appeared. I'm increasingly
+    relying on my curated RSS feeds nowadays. See also [I Don't Want to Read
+    What You Didn't Write][5].
