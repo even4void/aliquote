@@ -23,6 +23,7 @@ a lot of screen time today.
 <td><em>Seasons (Ep.)</em></td>
 <td><em>Rating</em></td>
 </tr>
+<tr><td><a href="https://tv.apple.com/fr/show/a-knight-of-the-seven-kingdoms/umc.cmc.4imxd4eidvdbx873e9jetgkik">A Night of the Sevens Kingdoms</a></td><td>2026</td><td>1 (6)</td><td>&#9733;&#9733;&#9733;&#9734;&#9734;</td></tr>
 <tr><td><a href="https://tv.apple.com/fr/show/years-and-years/umc.cmc.25jgn02fsa74mp5ewrxmmns0v">Years and Years</a></td><td>2026</td><td>1 (6)</td><td>&#9733;&#9733;&#9733;&#9734;&#9734;</td></tr>
 <tr><td><a href="https://en.wikipedia.org/wiki/House_of_the_Dragon">House of the Dragon</a></td><td>2024+</td><td>3 (24)</td><td>&#9733;&#9733;&#9733;&#9733;&#9734;</td></tr>
 <tr><td><a href="https://en.wikipedia.org/wiki/Alias_Grace_(miniseries)">Alias Grace</a></td><td>2024</td><td>1 (6)</td><td>&#9733;&#9733;&#9733;&#9734;&#9734;</td></tr>
@@ -79,7 +80,7 @@ a lot of screen time today.
 <tr><td><a href="https://fr.wikipedia.org/wiki/Altered_Carbon">Altered Carbon</a></td><td>2022</td><td>2 (18)</td><td>&#9733;&#9733;&#9733;&#9734;&#9734;</td></tr>
 <tr><td><a href="https://en.wikipedia.org/wiki/Severance_(TV_series)">Severance</a></td><td>2022</td><td>1 (9)</td><td>&#9733;&#9733;&#9734;&#9734;&#9734;</td></tr>
 <tr><td><a href="https://en.wikipedia.org/wiki/Teen_Wolf_(2011_TV_series)">Teen Wolf</a></td><td>2021+</td><td>6 (100)</td><td>&#9733;&#9734;&#9734;&#9734;&#9734;</td></tr>
-<tr><td><a href="https://en.wikipedia.org/wiki/The_Witcher_(TV_series)">The Witcher</a></td><td>2021+</td><td>2 (16)</td><td>&#9733;&#9733;&#9733;&#9734;&#9734;</td></tr>
+<tr><td><a href="https://en.wikipedia.org/wiki/The_Witcher_(TV_series)">The Witcher</a></td><td>2021+</td><td>4 (32)</td><td>&#9733;&#9733;&#9733;&#9734;&#9734;</td></tr>
 <tr><td><a href="https://en.wikipedia.org/wiki/Homeland_(TV_series)">Homeland</a></td><td>2021</td><td>8 (96)</td><td>&#9733;&#9733;&#9733;&#9734;&#9734;</td></tr>
 <tr><td><a href="https://en.wikipedia.org/wiki/Biohackers">Biohackers</a></td><td>2021</td><td>2 (12)</td><td>&#9733;&#9733;&#9734;&#9734;&#9734;</td></tr>
 <tr><td><a href="https://en.wikipedia.org/wiki/See_(TV_Series)">See</a></td><td>2021</td><td>2 (16)</td><td>&#9733;&#9733;&#9733;&#9733;&#9734;</td></tr>
