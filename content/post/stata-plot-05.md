@@ -1,5 +1,5 @@
 ---
-title: "Stata plot the week #5"
+title: "Stata plot of the week #5"
 date: 2026-08-27T21:01:20+02:00
 draft: false
 tags: ["stata", "dataviz"]
@@ -36,7 +36,7 @@ vim.keymap.set("v", "s", send_visual_to_stata, { desc = "Send visual selection t
 
 That's okay, I use the same mapping as the one I use to send visual selection to
 running REPL in a Neovim terminal. Now I'm just checking that StataBE.app is
-runnig in the background and send my visual selection to the app instead of the
+running in the background and send my visual selection to the app instead of the
 builtin terminal.
 
 Anyway, here are two plots I produced using Stata 13 3 years ago (EPS files
@@ -60,7 +60,7 @@ graph twoway (rarea low high age if age <= 9, sort color(gs14)) (scatter fev age
 
 Not that bad. I would love if line and point got the same color automagically. I
 still prefer my own version, but the updated default qualitative palette looks
-ggod to me.
+good to me. I prefer the blue/orange version, though.
 
 [1]: https://ideas.repec.org/c/boc/bocode/s458251.html
 [2]: https://github.com/even4void/biostats/blob/master/stata/hand02.do

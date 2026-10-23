@@ -35,7 +35,8 @@ Anyway, here's the list of expression that I am aware of:
 <tr><td><code>+=</code></td><td><code>AddTo[•, •]</code></td><td>like in C or Python</td></tr>
 <tr><td><code>++</code></td><td><code>Increment[•]</code></td><td>like in C</td></tr>
 <tr><td><code>/.</code></td><td><code>ReplaceAll[•, •]</code></td><td>applies a rule to transform each subpart of an expression</td></tr>
-<tr><td><code>;;</code></td><td><code>Span[•, •]</code></td><td>span of elements from start to stop</td></tr>
+<tr><td><code>/;</code></td><td><code>Condition[•, •]</code></td><td>add a condition or constraint</td></tr>
+<<tr><td><code>;;</code></td><td><code>Span[•, •]</code></td><td>span of elements from start to stop</td></tr>
 <tr><td><code>{}</code></td><td><code>List[•]</code><td>create a list</td></tr>
 <tr><td><code>#^2&[3]</code></td><td><code>Function[x, x^2][3]</code><td>example of a pure function</td></tr>
 </tbody>
