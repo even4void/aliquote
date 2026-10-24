@@ -1,37 +1,119 @@
 ---
 title: "Apply or Map"
-date: 2026-10-09T20:13:58+02:00
+date: 2026-10-11T20:13:58+02:00
 draft: true
 tags: ["mathematica", "lisp"]
 categories: ["2026"]
 ---
 
-A student who was using Mathematica (or was it already Wolfram at that time?)
-extensively once asked me about the difference between `Apply` and `Map`. I
-replied with an example of application in Lisp (map) and in R (apply). Lately, I
-realized that there's a lot more similarity between Mathematica `Map` and
-`Apply` and Lisp idioms. Let's see it in action, but before that, what's the
-hell are Mathematica `Map` and `Apply` procedures doing?
+Did you ever wonder what's the difference between `Apply` and `Map` in Wolfram.
+I mean we already have those procedures or functions in Lisp (`map`) and in R
+(`apply`) -- there are also higher-order functions available in R, like
+`Reduce`. In the case of Lisp, the [CLHS][1] says:
 
-Note that most numerical function are auto-vectorized, or Listable in Wolfram
-parlance (77% in Wolfram 15).
+> Applies function to successive sets of arguments in which one argument is
+> obtained from each sequence. The function is called first on all the elements
+> with index 0, then on all those with index 1, and so on. The result-type
+> specifies the type of the resulting sequence.
 
-```wolfram
-With[{all = Names["System`*"]},
- numeric = 
-  Pick[all, MemberQ[#, NumericFunction] & /@ Attributes /@ all];
- listable = Pick[all, MemberQ[#, Listable] & /@ Attributes /@ all];
- ]
-Length /@ {numeric, listable}
+A simple example of use using SBCL:
+
+```lisp
+* (map 'list #'+ '(1 2 3) '(4 5 6))
+(5 7 9)
 ```
 
-Issuing `Complement[numeric, Intersection[numeric, listable]]` will show you
-which ones are not. There's often no need to `Map` Listable functions over list
-of, say, integers using `Table`
+There's also `mapcar` which works on lists and returns a list, contrary to `map`
+which applies a function to elements of one or more sequences, such as lists or
+strings, and requires that the return type be specified. Other mapping functions
+are available in CL (e.g., `mapcan`, `mapc`, `maplist`).
 
-https://mathematica.stackexchange.com/questions/46238/scan-vs-map-vs-apply
-https://community.wolfram.com/t/relationship-between-apply-and-map/15885/3
-http://clhs.lisp.se/Body/f_map.htm
-https://www.geeksforgeeks.org/lisp/mapping-functions-in-lisp/
+The equivalent of CL `(mapcar #'(lambda (x) (* x x)) '(1 2 3 4 5))` could
+possibly read as follows in Wolfram:
+
+```wolfram
+In[1]:= Table[x*x, {x, 5}]                                                                                              
+Out[1]= {1, 4, 9, 16, 25}
+In[2]:= Map[#^2 &, Range[5]]                                                                                            
+Out[2]= {1, 4, 9, 16, 25}
+```
+
+In R, the `apply` family of functions works in a similar spirit on a variety of
+data structures, e.g. `sapply` for vectors or `lapply` for lists. The `apply`
+function works on rectangular arrays, e.g. to compute column means of a matrix:
+
+```r
+> set.seed(101)
+> xs = replicate(3, rnorm(100))
+> apply(xs, 2, mean)
+[1] -0.037191100 -0.042002372  0.002070399
+```
+
+However, Wolfram's `Apply` function behaves differently in this case:
+
+> `Apply[f,expr,levelspec]` replaces heads in parts of expr specified by
+> levelspec.
+
+Which means the following doesn't perform the same operation as `Map`:
+
+```wolfram
+In[17]:= Apply[#^2 &, Range[5]]                                                                                            
+Out[17]= 1
+In[28]:= Apply[#^2 &, Rest[Range[5]]]                                                                                   
+Out[28]= 4
+```
+
+As can be seen, the pure function is only applied to the first element of the
+argument. On the contrary `Map[f,expr]` evaluates `f` *for each* element of
+`expr` and returns the same list structure. This, however, is easy to
+understand: there's no reducer involved (like R `mean` which returns a single
+value given a sequence of numeric quantities). Replace the above pure function
+with a reducing function like `Plus` or `Times` and you'll get a more
+interesting result. By the way, most Wolfram functions are auto-vectorized, much
+like R ones. So you may be better using `Total` and `colMeans` instead of the
+above illustrations.[^1] But see [this answer][2] on Mathematica SE to get a
+better understanding of the inner working of `Map` and `Apply`.
+
+I believe the confusion with R's behavior for `apply` -- I mean, my own mental
+representation of how R works; in the case of Lisp I tend to think in terms of
+map-filter-reduce idioms -- is that `apply(xs, 2, f)` can be used either as
+Wolfram `Apply` or `Map` depending on the function that is passed to it:
+
+```r
+f <- function(x) sum(x) 
+f <- function(x) x*x 
+```
+
+In the later case, each element taken columnwise is squared, and the same 100x3
+matrix of elements is returned. Since higher-order functions are available in R,
+one may be better off using R's `Map` directly:
+
+```r
+> unlist(Map(f, xs[,2]))
+```
+
+If you read the documentation carefully, you will notice that the R core team
+mentions Lisp `mapcar` as the most resembling procedure.
 
 {{% music %}}Siouxsie and The Banshees • *Slowdive*{{% /music %}}
+
+[^1]: I apologize in advance for the following snippet I found while watching
+    one of Wolfram U's videos, but I can't find the original author anymore.
+    Most numerical function are Listable in Wolfram parlance (77% in Wolfram
+    15).
+
+    ```
+    With[{all = Names["System`*"]},
+    numeric = 
+    Pick[all, MemberQ[#, NumericFunction] & /@ Attributes /@ all];
+    listable = Pick[all, MemberQ[#, Listable] & /@ Attributes /@ all];
+    ]
+    Length /@ {numeric, listable}
+    ```
+
+    Issuing `Complement[numeric, Intersection[numeric, listable]]` will show you
+    which ones are not. There's often no need to `Map` Listable functions over
+    list of, say, integers using `Table`
+
+[1]: http://clhs.lisp.se/Body/f_map.htm
+[2]: https://mathematica.stackexchange.com/a/46248
