@@ -1,7 +1,7 @@
 ---
 title: "Map, filter and reduce"
 date: 2026-10-24T17:41:12+02:00
-draft: true
+draft: false
 tags: ["lisp", "statistics"]
 categories: ["2026"]
 ---
@@ -68,7 +68,11 @@ says:
 
 If you are working with data all day long, you probably know what this means,
 even if your statistical package does not strictly belong to the functional
-family of PLs like Clojure or Scheme.
+family of PLs like Clojure or Scheme. Mathematica, or rather the Wolram
+language, is well suited for that kind of data flow. Stata, which is the second
+statistical software I use these days, is less. Awk, which is an even older
+beast, might look like a good candidate too, as suggested by [Trevor Jim][14]
+ten years ago.
 
 {{% music %}}Actors • *Cold Eyes*{{% /music %}}
 
@@ -95,3 +99,4 @@ family of PLs like Clojure or Scheme.
 [11]: https://people.cs.nott.ac.uk/pszgmh/fold.pdf
 [12]: https://dl.acm.org/doi/10.1145/359576.359579
 [13]: https://dl.acm.org/doi/10.1145/1327452.1327492
+[14]: http://trevorjim.com/awk-unix-and-functional-programming/
