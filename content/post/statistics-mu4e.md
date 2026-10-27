@@ -10,6 +10,11 @@ Since I am using [mu](http://www.djcbsoftware.nl/code/mu/) to manage my email lo
 
 Personal analytics is gaining increased attention, and even Apple now provides iPhone users with the [iOS Health](https://www.apple.com/ios/whats-new/health/) App. However, I am more concerned with what information is available directly under my hands, namely my computer. I very much like Seth Brown's [Vim Croquet](http://www.drbunsen.org/vim-croquet/) or Stephen Wolfram's [blog post](http://blog.stephenwolfram.com/2012/03/the-personal-analytics-of-my-life/) in this respect. Indeed, they are using basic tools to analyze raw data stored on their computers. Regarding email activity, it is almost impossible to get useful statistics from Apple Mail, although some [alternate Mail clients](/post/alternative-mail-reader-for-mac-os-x) do provide some basic usage statistics. I use both Apple Mail and [mu4e](http://www.djcbsoftware.nl/code/mu/mu4e.html) under Emacs. At my office, I often have to fetch and process my emails through Gmail web interface. This is not very practical, but I have to live with that.
 
+{{% alert note %}}
+<small>[2026-10-27]</small><br>
+See also [Personal analytics on my email data](https://tali.link/posts/gmail-analytics/) for interesting stuff made with Mathematica by Taliesin Beynon.
+{{% /alert %}}
+
 The [mu cheatsheet](http://www.djcbsoftware.nl/code/mu/cheatsheet.html) contains useful queries. For example, to find all messages that include an image as attachment, we can use:
 
 ```
@@ -75,7 +80,7 @@ Regarding question 3, I will limit myself to folders I keep in sync on my HD. In
 
 ```
 $ ls Maildir
-INBOX  aphp  cache  cea  cours  drafts  inserm  log  mailing  private  
+INBOX  aphp  cache  cea  cours  drafts  inserm  log  mailing  private
 queue  review  sent  trash  xapian
 ```
 
@@ -100,14 +105,14 @@ $ mu find --sortfield=date --fields="d" date:8y..1d | \
   uniq -c | awk '{print $2 " " $1}' > 1.dat
 ```
 
-To plot them, I used R with the following program: 
+To plot them, I used R with the following program:
 ```r
 d <- read.table("1.dat", header = FALSE)
 d$V1 <- paste(d$V1, "15", sep = "-")
 d$V1 <- as.Date(as.POSIXct(d$V1, format = "%Y-%b-%d", tz = "GMT"))
 names(d) <- c("Time", "Emails")
 p <- ggplot(data = d, aes(x = Time, y = Emails)) + geom_line() +
-  scale_x_date(breaks = "1 year", minor_breaks = "2 months", 
+  scale_x_date(breaks = "1 year", minor_breaks = "2 months",
                labels = date_format("%b %Y")) + xlab("")
 p + theme_bw()
 ```
