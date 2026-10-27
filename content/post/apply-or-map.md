@@ -107,7 +107,7 @@ mentions Lisp `mapcar` as the most resembling procedure.
 
 I rarely use `Apply` in Mathematica, but I did use `apply`, `sapply` and
 `lapply` a lot when programming in R. That may be the source of my confusion and
-I will recall that a better mental model is that of Lisp dialects: The
+I will recall that a better mental model is that of Lisp dialects:[^3] The
 equivalent of `Apply[Plus, {1, 2, 3}]` is evidently `(apply #'+ '(1 2 3))` in
 Lisp.
 
@@ -133,6 +133,9 @@ Lisp.
     which ones are not. There's often no need to `Map` Listable functions over
     list of, say, integers using `Table`.
 
+[^3]: See also [this discussion][4] on HN.
+
 [1]: http://clhs.lisp.se/Body/f_map.htm
 [2]: https://www.lispworks.com/documentation/HyperSpec/Body/f_mapc_.htm
 [3]: https://mathematica.stackexchange.com/a/46248
+[4]: https://news.ycombinator.com/item?id=8321788
