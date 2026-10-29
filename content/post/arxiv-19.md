@@ -1,7 +1,7 @@
 ---
 title: "ArXiving on March 2026"
-date: 2026-04-07T09:33:56+01:00
-draft: true
+date: 2026-10-29T09:33:56+01:00
+draft: false
 tags: ["arxiv"]
 categories: ["2026"]
 ---
@@ -59,6 +59,13 @@ and missing quantities using Stan to make inference on the ATE, $\psi$.
 > the application of the proposed tests. A software package is made in \`R' to
 > make it simple to apply the tests to experimental data sets.
 
+Balanced ANOVA designs in which variance are not too disproportionate from one
+condition to the other make things easier (orthogonal sum of squares, nice
+behavior of F- or t-tests). There's rarely any need to test for the homogeneity
+of variance in balanced design, BTW -- those preliminary tests even perform
+worse than ANOVA tests when its ideal conditions do not hold.[^1] Hill climbing
+algorithms coupled to parametric bootstrap are discussed in this article.
+
 ### [Sample Size Calculations for Developing Clinical Prediction Models: Overview and pmsims R package][3]
 
 > Background: Clinical prediction models are increasingly used to inform
@@ -85,6 +92,19 @@ and missing quantities using Stan to make inference on the ATE, $\psi$.
 > extend these methods to hierarchical and multimodal data, incorporate fairness
 > and stability metrics, and address challenges such as missing data and complex
 > dependency structures.
+
+Again a paper that offers an R solution, [pmsims][10], to a power-related issue.
+This time this study focus on clinical prediction models and put emphasis on the
+underlying risk criteria -- mean-based (find the smallest n such that the
+expected performance exceeds a target level) vs. assurance-based (the same idea
+except that it requires that the performance exceeds the target level with a
+high probability, e.g. 80%) criteria. Compared to rule of thumb regarding number
+of events per variable, or closed form analytic formulae (which I used a lot in
+the past) simulation-based approached offer the advantage of allowing for more
+flexible design, especially multilevel or nested data or high dimensional
+dataset, and to relax distributional assumptions.
+
+{{< figure src="/img/2026-10-29-17-50-03.png" >}}
 
 ### [Extending the saemix package for R to fit non Gaussian outcomes][4]
 
@@ -113,6 +133,13 @@ and missing quantities using Stan to make inference on the ATE, $\psi$.
 > for covariate and interindividual variability model was also implemented to
 > build the covariate model and applied to categorical and survival-type data.
 
+I first heard of the SAEM framework when working with mixed-effect modeling back
+in 2009 for genetic studies. It was implemented in MATLAB, IIRC, and it was
+targeting pharmacological compartmental models or dose-response design. The
+present R package works with survival and non-Gaussian data specified by their
+log-likelihood functions and the precision of parameter estimate is assessed
+using bootstrap.
+
 ### [Trajectory-informed graph-based clustering for longitudinal cancer subtyping][5]
 
 > Cancer subtyping plays a crucial role in informing prognosis and guiding
@@ -135,6 +162,13 @@ and missing quantities using Stan to make inference on the ATE, $\psi$.
 > clustering to enhance personalized oncology by bridging cross-sectional
 > biomarkers with dynamic disease evolution.
 
+This articles discusses cancer subtyping based on patient similarity graph using
+time-varying imaging-derived features and multimodal clinical auxiliary
+information: covariates, transitions among key clinical states such as therapy,
+surveillance, relapse, and death. "This graph structure enables the
+identification of patient subgroups that are not only phenotypically and
+genotypically distinct but also aligned with patterns of disease progression."
+
 ### [Cancer Survival Rates Are Misleading][6]
 
 > Five-year cancer survival rates are widely reported and often interpreted to
@@ -149,6 +183,12 @@ and missing quantities using Stan to make inference on the ATE, $\psi$.
 > clinical literature and argues that randomized trials and mortality outcomes
 > are needed to support screening and treatment claims; five-year survival alone
 > provides little actionable evidence and is easily misread.
+
+Early detection saves lives, or increasing survival over time proves better
+treatment? Allen Downey makes use of simple Markov model of tumor progression to
+show that survival rates alone are not informatice enough to make such strong
+claims, especially in light of the counterfactuals that he details throughout
+his paper.
 
 ### [A practical introduction to ODE modelling in Stan for biological systems][7]
 
@@ -169,22 +209,19 @@ and missing quantities using Stan to make inference on the ATE, $\psi$.
 > underpin Stan and discusses computational Bayesian modelling in the context of
 > biological applications.
 
-### [Tiny but uniform improvements of adaptive BH procedures via compound e-values][8]
+I rarely use Stan these days but I didn't know it offers support for ODEs. This
+article is full of nice illustrations including the low-level machinery for
+Bayesian inference, like Markov chain-based sampler, the Metropolis--Hastings
+algorithm or Hamiltonian Monte Carlo. Stan coding is discussed page 13 ff., and
+several examples are provided after that, with code available on [GitHub][11].
 
-> After the seminal Benjamini-Hochberg (BH) procedure for controlling the false
-> discovery rate (FDR) was proposed, dozens of papers have attempted to improve
-> its power by adapting to the unknown proportion of nulls. We observe that most
-> null proportion estimates are simply compound e-values in disguise, and thus
-> most adaptive FDR procedures can be interpreted as instances of the e-weighted
-> BH (ep-BH) procedure of Ignatiadis, Wang, and Ramdas [2024], i.e., the BH
-> procedure weighted by compound e-values. This lens helps us show that most
-> existing procedures are inadmissible, and we provide uniform improvements to
-> them. While the improvements are small in practice, they still come for free
-> (without additional assumptions), and help unify the literature. We also use
-> our "leave-one-out ep-BH method" to design a new method with finite-sample FDR
-> control for the simultaneous t-test setting.
+{{< figure src="/img/2026-10-29-18-09-28.png" >}}
 
 {{% music %}}The Wake • *Rusted 20*{{% /music %}}
+
+[^1]: D.W. Zimmerman (2004). [A note on preliminary tests of equality of
+    variances][9]. British Journal of Mathematical and Statistical Psychology,
+    57(1): 173-181.
 
 [1]: https://arxiv.org/abs/2602.23640
 [2]: https://arxiv.org/abs/2602.23815
@@ -193,4 +230,6 @@ and missing quantities using Stan to make inference on the ATE, $\psi$.
 [5]: https://arxiv.org/abs/2603.10089
 [6]: https://arxiv.org/abs/2603.19945
 [7]: https://arxiv.org/abs/2603.20343
-[8]: https://arxiv.org/abs/2603.21424
+[9]: https://pubmed.ncbi.nlm.nih.gov/15171807/
+[10]: https://github.com/pmsims-package/pmsims/
+[11]: https://github.com/jodie-c/stan_tutorial
