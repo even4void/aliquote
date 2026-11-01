@@ -1,5 +1,5 @@
 ---
-title: "Wolfram for Bioinformatics"
+title: "Analysis of SNP distribution"
 date: 2026-11-01T10:37:32+01:00
 draft: true
 tags: ["mathematica", "bioinformatics"]
@@ -19,7 +19,6 @@ The variant file was generated using [bcftools][1] as follows:
 ```shell
 bcftools query -I ’TYPE="snp""’ -f ‘%CHROM %POS %REF %ALT\n’ strain.allsites.vcf.gz > strain.dist
 ```
-
 
 The `strain.allsites.vcf.gz` comes from a separate pipeline but suffice it to
 say that it contains all variants detected for a strain mapped over a reference
