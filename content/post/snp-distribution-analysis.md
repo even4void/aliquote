@@ -1,7 +1,7 @@
 ---
 title: "Analysis of SNP distribution"
 date: 2026-11-01T10:37:32+01:00
-draft: true
+draft: false
 tags: ["mathematica", "bioinformatics"]
 categories: ["2026"]
 ---
@@ -46,10 +46,39 @@ This provides the distribution of succesive differences between each SNP with a
 bin size of 50 bp. Now, let's apply this to all contig:
 
 ```wolfram
-Histogram[Flatten[Differences[#[[All, 2]]] & /@ chrm], {50}, ImageSize -> Large]
+xs = Flatten[Differences[#[[All, 2]]] & /@ chrm];
+Histogram[xs, {50}, ImageSize -> Large]
 ```
 
 {{< figure src="/img/2026-11-01-10-51-07.png" >}}
+
+We can do a lot more with empirical distributions in Mathematica. Here for
+example, we plot the CDF of the empirical distribution (we could also use a
+`SmoothKernelDistribution` estimate):
+
+```wolfram
+xd = EmpiricalDistribution[xs]
+Plot[CDF[xd, x], {x, 0, 1000}, PlotRange -> {All, {0, 1}}]
+```
+
+How does it compare to a Negative Binomial Distribution, with parameters
+estimated by maximum likelihood from the observed data?
+
+```wolfram
+Plot[{CDF[xd, x], 
+  CDF[NegativeBinomialDistribution[n, p] /. params, x]}, {x, 0, 500}, 
+ Exclusions -> None, PlotStyle -> Thick, PlotRange -> {All, {0, 1}}, 
+ PlotLegends -> Placed[{"Empirical", "Model"}, {Right, Bottom}], 
+ ImageSize -> Large]
+```
+
+{{< figure src="/img/2026-11-06-15-08-38.png" >}}
+
+Clearly, there's a clear departure from the NB distribution in this case, but I
+hope the above example shows the flexibility of Mathematica when it comes to
+manipulate empirical and probability distributions. I would have more to say
+about finding a good-looking PDF for this kind of data, but that should deserve
+another post.
 
 {{% music %}}LCD Soundsystem • *All I Want*{{% /music %}}
 
