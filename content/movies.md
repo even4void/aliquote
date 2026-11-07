@@ -23,7 +23,7 @@ a lot of screen time today.
 <td><em>Seasons (Ep.)</em></td>
 <td><em>Rating</em></td>
 </tr>
-<tr><td><a href="https://www.netflix.com/title/81682935">Black Doves</a></td><td>2026</td><td>1 (6)</td><td>&#9733;&#9733;&#9733;&#9734;&#9734;</td></tr>
+<tr><td><a href="https://www.netflix.com/title/81682935">Black Doves</a></td><td>2026</td><td>2 (12)</td><td>&#9733;&#9733;&#9733;&#9734;&#9734;</td></tr>
 <tr><td><a href="https://www.netflix.com/fr/title/81487660">Dept. Q</a></td><td>2026</td><td>1 (9)</td><td>&#9733;&#9733;&#9733;&#9733;&#9734;</td></tr>
 <tr><td><a href="https://tv.apple.com/fr/show/a-knight-of-the-seven-kingdoms/umc.cmc.4imxd4eidvdbx873e9jetgkik">A Night of the Sevens Kingdoms</a></td><td>2026</td><td>1 (6)</td><td>&#9733;&#9733;&#9734;&#9734;&#9734;</td></tr>
 <tr><td><a href="https://tv.apple.com/fr/show/years-and-years/umc.cmc.25jgn02fsa74mp5ewrxmmns0v">Years and Years</a></td><td>2026</td><td>1 (6)</td><td>&#9733;&#9733;&#9733;&#9734;&#9734;</td></tr>
