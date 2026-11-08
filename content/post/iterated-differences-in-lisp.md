@@ -38,7 +38,7 @@ though. Should we were cheating, we would rely on the omnipotent `loop` macro:
         collect (- j i)))
 ```
 
-A purely recursive solution with consing would also works in this case:
+A purely recursive solution using the `when` macro would also work in this case:
 
 ```lisp
 (defun diff-three (xs)
@@ -47,7 +47,11 @@ A purely recursive solution with consing would also works in this case:
           (diff-three (cdr xs)))))
 ```
 
-My preferred solution remains:
+My preferred solution, which I have had for years in a stat project which never
+saw the light of day, like so many others, remains: shift the original list
+leftwise, and then compute the difference between each pair of item from both
+list; `mapcar` will stop once the shortest list has been read to its end. Here's
+the one-liner:
 
 ```lisp
 (defun diff-four (xs)
@@ -73,7 +77,15 @@ The venerable [XLispStat][4] has it too:
 
 ### Sidenote
 
-As for statistical applications, the mean of the squared successive differences provides an estimate of [process variation][5] but it can also be used to assess the randomness of chronologically ordered observations (e.g. time series data or residuals from a regression model) by comparing its estimate with the variance of the whole series -- this is the basis of von Neumann ratio test, and the Durbin-Watson tests statistic for first-order serial correlation in residuals. The [Bartels rank test][6] is the rank version of von Neumann's non parametric test and it might be used to test the serial correlation or trend in an ordered sample. A related test for randomness on binary events is the [Run test][7].
+As for statistical applications, the mean of the squared successive differences
+provides an estimate of [process variation][5] but it can also be used to assess
+the randomness of chronologically ordered observations (e.g. time series data or
+residuals from a regression model) by comparing its estimate with the variance
+of the whole series -- this is the basis of von Neumann ratio test, and the
+Durbin-Watson tests statistic for first-order serial correlation in residuals.
+The [Bartels rank test][6] is the rank version of von Neumann's non parametric
+test and it might be used to test the serial correlation or trend in an ordered
+sample. A related test for randomness on binary events is the [Run test][7].
 
 {{% music %}}My Life With The Thrill Kill Kult • *Leathersex*{{% /music %}}
 
