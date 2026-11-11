@@ -2,7 +2,7 @@
 title: "Expected tosses for consecutive Heads"
 date: 2026-11-09T19:59:40+01:00
 draft: false
-tags: ["statistics", "mathematica"]
+tags: ["math", "recreations", "mathematica"]
 categories: ["2026"]
 ---
 
