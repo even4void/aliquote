@@ -19,41 +19,70 @@ this process.
 3. What's the expected value of Y
 
 Sure we can enumerate all possible states as the author did. However, we know
-that $X$ follows a modified Geometrical law: for $n \geq 2$ (we can't get 2
-heads with one trial only) $\Pr(N = n) = \frac{F_{n-1}}{2^n}$, where $F_{n-1}$
-is the $n - 1$th term of the Fibonacci series. Assuming a fair coin ($p = 1/2$),
+that $X$ follows a modified Geometrical law: for $k \geq 2$ (we can't get 2
+heads with one trial only) $\Pr(X = k) = \frac{F_{k-1}}{2^k}$, where $F_{k-1}$
+is the $k - 1$th term of the Fibonacci series. Assuming a fair coin ($p = 1/2$),
 the expected number of trials before observing $k = 2$ Heads is given by
 $E(k) = \frac{1}{p} + \frac{1}{p^2}$, or $2(2^k - 1) = 2^{k+1} - 2$. For $k = 2$
 we would need 6 flips.
 
-The transition matrix for the corresponding 3-state Markov chain, where state 0 = 0 consecutive Head, state 1 = 1 consecutive Head, and State 2 = 2 consecutive Heads (absorbing state), is:
+The transition matrix for the corresponding 3-state Markov chain, where state 0 =
+0 consecutive Head, state 1 = 1 consecutive Head, and State 2 = 2 consecutive
+Heads (absorbing state), is:
 
 $$
   \begin{pmatrix}
-    0.5 & 0.5 & 0   \cr
+    0.5 & 0.5 & 0 \cr
     0.5 & 0   & 0.5 \cr
-    0   & 0   & 1   \cr
+    0   & 0   & 1 \cr
   \end{pmatrix}
 $$
+
+{{< figure src="/img/two-heads-vs-three.png" >}}
 
 Let's look at the transient states 0 and 1:
 
 $$
   Q = \begin{pmatrix}
-    0.5 & 0.5 & 0   \cr
-    0.5 & 0   & 0.5 \cr
-    0   & 0   & 1   \cr
-  \end{pmatrix}
+        0.5 & 0.5 \cr
+        0.5 & 0 \cr
+      \end{pmatrix}
 $$
 
-The fundamental matrix, $N = (I-q)^{-1}$, is derived from:
+The fundamental matrix, $N = (I - Q)^{-1}$, is derived from:
 
 $$
-I - Q = \begin{pmatrix} 1 & 0 \cr 0 & 1 \end{pmatrix} - \begin{pmatrix} 0.5 & 0.5 \cr 0.5 & 0 \end{pmatrix} = \begin{pmatrix} 0.5 & -0.5 \cr -0.5 & 1 \end{pmatrix}
+  I - Q = \begin{pmatrix} 1 & 0 \cr 0 & 1 \end{pmatrix} - \begin{pmatrix} 0.5 & 0.5 \cr 0.5 & 0 \end{pmatrix} = \begin{pmatrix} 0.5 & -0.5 \cr -0.5 & 1 \end{pmatrix}
 $$
 
-So that $N = \begin{pmatrix} 4 & 2 \cr 2 & 2\end{pmatrix}$. The sum of first row reflects the number of time we will visit state 0 and state 1 before absorbtion.
+So that $N = \begin{pmatrix} 4 & 2 \cr 2 & 2 \end{pmatrix}$. The sum of the
+first row reflects the number of time we will visit state 0 and state 1 before
+absorption, i.e. 6 flips like we said earlier.
+
+The random variable Y follows a similar law, and the expected number of flips
+before $k = 3$ Heads therefore is 14.[^1]
+
+Back to the first question. The probability can be found by summing the joint probabilities: $P(X>Y) = \sum_{y=3}^\infty\sum_{x=y+1}^\infty P(X=x)\cdot P(Y=y)$ (the second lower bound results from the strict inequality constraint, $X>Y$). Or developing the system of equations for all possible joint states like the original author did. Instead of Markov chain analysis, I tried to use the transition matrices and define probability distribution in Mathematica as follows:
+
+```wolfram
+X = DiscreteMarkovProcess[1, {{1/2, 1/2, 0}, {1/2, 0, 1/2}, {0, 0, 1}}];
+Y = DiscreteMarkovProcess[
+   1, {{1/2, 1/2, 0, 0}, {1/2, 0, 1/2, 0}, {1/2, 0, 0, 1/2}, {0, 0, 0,
+      1}}];
+distX = FirstPassageTimeDistribution[X, 3];
+distY = FirstPassageTimeDistribution[Y, 4];
+```
+
+The PDFs look okay but `Probability[x > y, {x \[Distributed] distX, y \[Distributed] distY}]` took way too much time to me. I suspect Mathematica is using symbolic computation under the hood or get lost in an infinite sum.
+
+{{< figure src="/img/two-heads-vs-three-pdf.png" >}}
+
+
 
 {{% music %}}Lauren Hoffman • *The Chemical*{{% /music %}}
 
+[^1]: It is also possible to use generating functions to achieve the same
+    conclusion, see this [math.SE][2] thread.
+
 [1]: https://pratikpoddarcse.blogspot.com/2009/10/lets-say-keep-tossing-fair-coin-until.html
+[2]: https://math.stackexchange.com/a/2845284
