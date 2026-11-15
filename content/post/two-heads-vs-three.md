@@ -21,8 +21,9 @@ Heads vs 3 Heads Puzzle][1], this morning:
 Sure we can enumerate all possible states as the author did. However, we know
 that $X$ follows a modified Geometrical law: for $k \geq 2$ (we can't get 2
 heads with one trial only) $\Pr(X = k) = \frac{F_{k-1}}{2^k}$, where $F_{k-1}$
-is the $k - 1$th term of the Fibonacci series. Assuming a fair coin ($p = 1/2$),
-the expected number of trials before observing $k = 2$ Heads is given by
+is the $k - 1$th term of the Fibonacci series. We already dealt with [Fibonacci
+numbers and power series][3] in the past. Assuming a fair coin ($p = 1/2$), the
+expected number of trials before observing $k = 2$ Heads is given by
 $2(2^k - 1) = 2^{k+1} - 2$. For $k = 2$ we would need 6 flips.
 
 The transition matrix for the corresponding 3-state Markov chain, where state 0 =
@@ -109,3 +110,4 @@ We get the expected result, $\frac{361}{1699}$ (0.2125).
 
 [1]: https://pratikpoddarcse.blogspot.com/2009/10/lets-say-keep-tossing-fair-coin-until.html
 [2]: https://math.stackexchange.com/a/2845284
+[3]: /post/power-series/
