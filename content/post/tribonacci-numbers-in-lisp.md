@@ -1,7 +1,7 @@
 ---
 title: "Tribonacci numbers in Lisp"
 date: 2026-11-15T18:03:40+01:00
-draft: true
+draft: false
 tags: ["math", "lisp"]
 categories: ["2026"]
 ---
@@ -26,16 +26,18 @@ memoization):
                    (* 2.0d0 alpha)
                    1.0d0)))
     (values (round (/ (expt alpha n) denom)))))
-
-(loop for i from 0 to 14
-      collect (trib-number i))
 ```
+
+Nothing fancy. We could use a more detailed formula, see below, but for now all
+we do is to ensure that we work using double precision to preserve precision as
+much as possible.[^1] More involved formulae using, e.g., matrix exponentiation
+do exist, though. 
 
 Let $T_0 = 0$, $T_1 = 0$, $T_2 = 1$, with $T_n = T_{n-1} + T_{n-2} + T_{n-3}$.
 Binet's formula reads:
 
 $$
-  T_{n} = \frac{\alpha^{n}}{(\alpha - \beta )(\alpha - \gamma )}
+T_{n} = \frac{\alpha^{n}}{(\alpha - \beta )(\alpha - \gamma )}
           + \frac{\beta^{n}}{(\beta - \alpha )(\beta - \gamma )}
           + \frac{\gamma^{n}}{(\gamma - \alpha )(\gamma - \beta )}.
 $$
@@ -66,6 +68,21 @@ $$
   = \left\lfloor \frac{\alpha^{n}}{3\alpha^{2} - 2\alpha - 1} \right\rceil.
 $$
 
+```lisp
+(loop for i from 0 to 14
+      collect (tribonacci-binet i))
+;; => (0 0 1 1 2 4 7 13 24 44 81 149 274 504 927)
+```
+
+This seems to [work nicely][3].
+
 {{% music %}}Lamb • *Gabriel*{{% /music %}}
 
+[^1]: This is limited to the $n \leq 57$ case since even when $T_n$ fits in
+    less than 53 bits or $\approx 9.10^{15}$ there's still some error
+    propagation that amplifies rounding approximation. See also [Tribonacci
+    numbers that are palindromic concatenations of two distinct repdigits][2]
+
 [1]: /post/two-heads-vs-three/
+[2]: https://arxiv.org/abs/2610.15770
+[3]: https://oeis.org/A000073
