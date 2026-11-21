@@ -2,7 +2,7 @@
 title: "Micro statistics for 2026"
 date: 2026-11-21T19:39:52+01:00
 draft: false
-tags: ["this", "micro"]
+tags: ["this"]
 categories: ["2026"]
 ---
 
