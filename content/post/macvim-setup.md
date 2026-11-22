@@ -79,9 +79,9 @@ block) seem to cause some issues. Hopefully, this will be fixed in the next
 revision of this function or its companion macOS shortcut (because we can't call
 Writing Tools from AppleScript).
 
-{{% music %}}XXX • *XXX*{{% /music %}}
+{{% music %}}Kid Loco • *The Boat Song*{{% /music %}}
 
 [^1]: Be careful that French localization relies on slanted apostrophe, which
-    means we have to use `⌥ + ⇧ + '`.
+    means we have to use `⌥+⇧+'`.
 
 [1]: https://github.com/prabirshrestha/vim-lsp
