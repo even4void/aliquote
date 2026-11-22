@@ -1,5 +1,5 @@
 ---
-title: "lost + found 2023"
+title: "lost+found 2023"
 date: 2024-01-08T16:19:24+01:00
 draft: false
 tags: ["this"]
